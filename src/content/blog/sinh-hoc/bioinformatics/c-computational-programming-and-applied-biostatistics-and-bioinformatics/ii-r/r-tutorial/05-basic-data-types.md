@@ -56,7 +56,7 @@ Chúng ta đã nói rằng giá trị logical có thể dùng để subset 1 dat
 
 - Có nhiều các để kiểm tra loại dữ liệu: typeof, storage.mode, mode, str, class (→ [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
-![image_044](/vault-assets/image-044-5516caab.png)
+![image_044](/vault-assets/image-044-5516caab.webp)
 
 ## Coercion: converting between classes (chuyển đổi giữa các class)
 
@@ -64,7 +64,7 @@ Chúng ta đã nói rằng giá trị logical có thể dùng để subset 1 dat
 
 - Chuyển đổi class của data được biết đến là coercion (cưỡng ép kiểu dữ liệu). (→ [Làm quen với R](/blog/lam-quen-voi-r/))
 
-![image_045](/vault-assets/image-045-b4010a37.png)
+![image_045](/vault-assets/image-045-b4010a37.webp)
 
 - Lệnh as.logical() chuyển đổi low.birthweight thành một logical vector nhưng không thể chuyển đổi smoker và trả về một vector chứa các missing data biểu diễn bằng NA, tại sao?
 

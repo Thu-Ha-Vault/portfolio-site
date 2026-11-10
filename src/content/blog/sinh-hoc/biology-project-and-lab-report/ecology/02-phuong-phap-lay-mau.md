@@ -99,6 +99,6 @@ isIndex: false
 - Xem thêm: [Virtual Lab: lấy mẫu đếm mọt](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – bốc thăm cốc, tính khoảng tin cậy, đối chiếu số liệu của bài (cộng lại cột xᵢ² được 1554).
 
 ## Tài liệu gốc
-![IMG_4530](/vault-assets/img-4530-0700f867.jpg)
-![IMG_4531](/vault-assets/img-4531-abe8a862.jpg)
-![IMG_4532](/vault-assets/img-4532-7d3818ec.jpg)
+![IMG_4530](/vault-assets/img-4530-0700f867.webp)
+![IMG_4531](/vault-assets/img-4531-abe8a862.webp)
+![IMG_4532](/vault-assets/img-4532-7d3818ec.webp)

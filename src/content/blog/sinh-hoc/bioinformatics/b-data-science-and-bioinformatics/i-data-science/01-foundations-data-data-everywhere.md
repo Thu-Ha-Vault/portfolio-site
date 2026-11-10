@@ -51,7 +51,7 @@ isIndex: false
 - These are separated by how many decisions you know you want to make before you begin with them.
 ### Understand the data ecosystem
 
-![image_016](/vault-assets/image-016-43528d0a.png)
+![image_016](/vault-assets/image-016-43528d0a.webp)
 
 - An [ecosystem] is a group of elements that interact with one another. Ecosystems can be large, like the jungle in a tropical rainforest or the Australian outback. Or, tiny, like tadpoles in a puddle, or bacteria on your skin. And just like the kangaroos and koala bears in the Australian outback, data lives inside its own ecosystem too.
 - [Data ecosystems]: The various elements that interact with one another in order to produce, manage, store, organize, analyze, and share data. These include
@@ -102,7 +102,7 @@ isIndex: false
 	- [Archive]: storing data in a place where it’s still available, but may not be use again.
 	- [Destroy]: use a secure data erasure software, paper files would be shredded too. Protecting a company’s private information, as well as private data about its customers.
 
-![image_017](/vault-assets/image-017-02d8c2c0.png)
+![image_017](/vault-assets/image-017-02d8c2c0.webp)
 
 - [Database]: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy.
 ### Outline the data analysis process
@@ -146,7 +146,7 @@ isIndex: false
 
 ### Master spreadsheet basics
 
-![image_018](/vault-assets/image-018-447701e0.png)
+![image_018](/vault-assets/image-018-447701e0.webp)
 
 - [Attribute] (column names, column labels, headers, header row): A characteristics or quality of data used to label a column in a table.
 
@@ -156,7 +156,7 @@ isIndex: false
 - Like spreadsheet, SQL can: Store, Organize, Analyze (→ [Digital marketing Course 5: Spreadsheet limits, SQL and Python](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - SQL need a database that will understand its language: Oracle, MySQL, PostgreSQL, Microsoft SQL Server,… SQL work the same in each.
 - Query: A request for data or information from a database
-![image_019](/vault-assets/image-019-81acf5e3.png)
+![image_019](/vault-assets/image-019-81acf5e3.webp)
 
 https://www.coursera.org/learn/foundations-data/supplement/simon/sql-guide-getting-started
 
@@ -196,4 +196,4 @@ https://www.coursera.org/learn/foundations-data/supplement/simon/sql-guide-getti
 	- Risk analyst—analyzes financial documents, economic conditions, and client data to help companies determine the level of risk involved in making a particular business decision
 	- Healthcare analyst—analyzes medical data to improve the business aspect of hospitals and medical facilities
 
-![image_020](/vault-assets/image-020-980b3c8a.png)
+![image_020](/vault-assets/image-020-980b3c8a.webp)

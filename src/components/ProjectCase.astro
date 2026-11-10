@@ -1,29 +1,66 @@
 ---
+/**
+ * Project case card, "neon brutal" (spec §5, §7.3). Used on the home projects band and on /projects/.
+ * Styles live in src/styles/brutal.css (.case*, .status, .tags, .track).
+ *   ≥ 900px: two columns. Left: title, summary, status pill, deadline, tags. Right: cover, PhaseTrack, buttons.
+ *   < 900px: cover first, then everything else stacked (grid areas; DOM order keeps the title first).
+ * Cover: the project's real image when it has `cover {src, alt}` (site.config.json projects[].cover, set by the
+ * sync only when the file exists), else the procedural motif from src/lib/cover.ts captioned "Minh hoạ".
+ */
+import { getCollection } from 'astro:content';
 import T from './T.astro';
+import Cover from './Cover.astro';
 import PhaseTrack from './PhaseTrack.astro';
 import { statusKey, fmtDate, type Project } from '../lib';
+import { tagTopics, topicById, prettyTag, coverSize, realCover } from '../pages/projects/_helpers';
+
 interface Props { project: Project; heading?: 'h2' | 'h3' }
 const { project, heading = 'h3' } = Astro.props;
 const d = project.data;
 const s = statusKey(d.status);
 const H = heading;
-const tags = d.tags.filter((t) => !['project', 'case-study'].includes(t)).slice(0, 4);
+const tagTopic = await tagTopics(() => getCollection('blog'));
+const tags = d.tags
+  .filter((t) => !['project', 'case-study'].includes(t))
+  .slice(0, 4)
+  .map((t) => ({ label: prettyTag(t), topic: topicById(tagTopic.get(t)) }));
+const real = realCover(d.cover);
+const size = real ? await coverSize(real.src) : undefined;
+const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau', demo: 'Demo', slides: 'Slides' };
+const links = Object.entries(d.links).filter(([, v]) => v);
 ---
 <article class="case">
-  <div>
-    <H><a href={d.url}>{d.title}</a></H>
+  <div class="case-main">
+    <H class="case-title"><a href={d.url}>{d.title}</a></H>
     {d.summary_vi ? <p class="summary"><T vi={d.summary_vi} en={d.summary_en ?? d.summary_vi} /></p> : d.description && <p class="summary">{d.description}</p>}
-    <ul class="facts">
-      {s && <li><span class="status"><T k={s} /></span></li>}
-      {d.deadline && <li><T k="due" /> <strong>{fmtDate(d.deadline)}</strong></li>}
-    </ul>
-    {tags.length > 0 && <ul class="tags">{tags.map((t) => <li>{t}</li>)}</ul>}
+    {(s || d.deadline) && (
+      <ul class="facts">
+        {s && <li><span class="status" data-status={s}><T k={s} /></span></li>}
+        {d.deadline && <li><T k="due" /> <strong>{fmtDate(d.deadline)}</strong></li>}
+      </ul>
+    )}
+    {tags.length > 0 && (
+      <ul class="tags">
+        {tags.map((t) => (
+          <li>
+            {t.topic && <span class="tag-sq" style={`--sq: var(--t-${t.topic.token})`} aria-hidden="true"></span>}
+            {t.label}
+          </li>
+        ))}
+      </ul>
+    )}
   </div>
-  <div>
+  <figure class="case-cover">
+    <a href={d.url} tabindex="-1" aria-hidden="true">
+      {real ? <Cover src={real.src} width={size?.w} height={size?.h} alt="" /> : <Cover entry={project} />}
+    </a>
+    <figcaption>{real ? <T vi={real.alt} en={real.alt_en ?? real.alt} /> : <T vi="Minh hoạ" en="Illustration" />}</figcaption>
+  </figure>
+  <div class="case-side">
     <PhaseTrack phases={d.phases} />
-    <div class="actions" style="margin-top:24px">
+    <div class="actions case-actions">
       <a class="button" href={d.url}><T k="viewProject" /></a>
-      {Object.entries(d.links).map(([k, v]) => <a class="button" href={v} rel="noopener">{k === 'github' ? 'GitHub' : k === 'kaggle' ? 'Kaggle' : k === 'tableau' ? 'Tableau' : k}</a>)}
+      {links.map(([k, v]) => <a class="button" href={v} rel="noopener">{linkLabel[k] ?? k}</a>)}
     </div>
   </div>
 </article>

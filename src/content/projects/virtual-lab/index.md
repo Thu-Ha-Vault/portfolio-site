@@ -27,6 +27,10 @@ description: >-
   Môi trường thí nghiệm ảo cho các thí nghiệm hoá – sinh: từ lai giống và nuôi
   sinh vật (đậu Hà Lan của Mendel, ruồi giấm của Morgan, phôi cá ngựa vằn), phản
   ứng giữa các hoá chất với dụng cụ thí nghiệm, đến các máy như PC
+cover:
+  src: /project-covers/virtual-lab.webp
+  alt: Mô phỏng máy luân nhiệt (thermocycler) trong Virtual Lab
+  alt_en: The thermocycler simulation in the Virtual Lab
 ---
 > Môi trường thí nghiệm ảo cho các thí nghiệm hoá – sinh: từ lai giống và nuôi sinh vật (đậu Hà Lan của Mendel, ruồi giấm của Morgan, phôi cá ngựa vằn), phản ứng giữa các hoá chất với dụng cụ thí nghiệm, đến các máy như PCR, HPLC.
 

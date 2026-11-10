@@ -72,10 +72,10 @@ isIndex: false
 
 ## Tài liệu gốc
 
-![DVCXS - IMG_4197](/vault-assets/dvcxs-img-4197-2ca069ee.jpg)
-![DVCXS - IMG_4190](/vault-assets/dvcxs-img-4190-1336e375.jpg)
-![DVCXS - IMG_4192](/vault-assets/dvcxs-img-4192-1a28ad15.jpg)
-![DVCXS - IMG_4203](/vault-assets/dvcxs-img-4203-20c502ae.jpg)
-![DVCXS - IMG_4206](/vault-assets/dvcxs-img-4206-f9be144e.jpg)
+![DVCXS - IMG_4197](/vault-assets/dvcxs-img-4197-2ca069ee.webp)
+![DVCXS - IMG_4190](/vault-assets/dvcxs-img-4190-1336e375.webp)
+![DVCXS - IMG_4192](/vault-assets/dvcxs-img-4192-1a28ad15.webp)
+![DVCXS - IMG_4203](/vault-assets/dvcxs-img-4203-20c502ae.webp)
+![DVCXS - IMG_4206](/vault-assets/dvcxs-img-4206-f9be144e.webp)
 
 - Folder Drive gốc (còn các ảnh IMG_4188–4207, 4076, 4204, 4205): https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

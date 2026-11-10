@@ -1,11 +1,36 @@
 ---
 import Base from '../layouts/Base.astro';
 import T from '../components/T.astro';
+import { ui } from '../i18n';
 ---
 <Base title="404">
-  <div class="wrap page-head">
-    <h1>404</h1>
-    <p><T k="notFound" /></p>
-    <p style="margin-top:24px"><a class="button" href="/"><T k="backHome" /></a></p>
+  <div class="wrap page-head nf">
+    <svg class="nf-mark" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M60 12L16 98L104 92Z" />
+        <path d="M60 12L68 76M16 98L68 76" />
+        <path d="M104 92L68 76" stroke-dasharray="3 4" />
+      </g>
+      <g fill="#fff">
+        <circle cx="60" cy="12" r="3.5" />
+        <circle cx="16" cy="98" r="3.5" />
+        <circle cx="104" cy="92" r="3.5" />
+      </g>
+      <circle cx="68" cy="76" r="4" fill="var(--void)" stroke="#fff" stroke-width="1.25" />
+    </svg>
+    <p class="nf-code">404</p>
+    <h1><T k="notFound" /></h1>
+    <p class="nf-lede"><T vi="Đường dẫn có thể đã đổi khi mình sắp xếp lại ghi chép." en="The link may have changed when I reorganised my notes." /></p>
+    <form class="nf-search" role="search" action="/blog/" method="get">
+      <label class="search-label" for="nf-q"><T k="search" /></label>
+      <div class="nf-search-row">
+        <input class="search" id="nf-q" name="q" type="search" autocomplete="off" enterkeyhint="search" spellcheck="false" placeholder={ui.searchPlaceholder[0]} data-placeholder-vi={ui.searchPlaceholder[0]} data-placeholder-en={ui.searchPlaceholder[1]} />
+        <button class="button flat" type="submit"><T vi="Tìm" en="Search" /></button>
+      </div>
+    </form>
+    <p class="actions nf-actions">
+      <a class="button solid" href="/"><T k="backHome" /></a>
+      <a class="nf-link" href="/blog/"><T vi="Xem tất cả bài viết" en="See all posts" /></a>
+    </p>
   </div>
 </Base>

@@ -1,0 +1,263 @@
+/* galaxy.css: home hero stage, the 3D galaxy (.galaxy*, .g-*), the lab strip and the home CTA spacing.
+   Spec §4 (hero), §7.2 (lab strip), §8 #1, #8, #14 (motion).
+   Gutter guard: nothing here puts a padding shorthand on an element that also carries .wrap. */
+
+/* ---------- stage ---------- */
+.hero-stage {
+  --legend-h: 56px;
+  --g-h: min(112vw, 720px); /* mobile canvas height */
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+  /* the canvas runs under the sticky glass header */
+  margin-top: calc(-1 * var(--masthead-h));
+  padding-top: var(--masthead-h);
+}
+/* static scrim behind the copy, above the canvas */
+.hero-stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(closest-side at 28% 50%, rgba(16, 5, 46, 0.55), transparent);
+}
+/* Header frost trigger (motion #9): the first 8px of the stage. While it is on screen the page is at the top and
+   the canvas runs under a clear bar; once it leaves, the bar frosts, before any hero text can slide under the
+   wordmark and nav. (Frosting only after the whole hero had passed let the h1 collide with the nav.) */
+.hero-sentinel { position: absolute; left: 0; top: 0; height: 8px; width: 1px; pointer-events: none; visibility: hidden; }
+
+/* ---------- poster: paints first (LCP) and is the no-WebGL fallback ---------- */
+.hero-poster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--legend-h);
+  height: var(--g-h);
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(18% 16% at 50% 50%, rgba(255, 214, 245, 0.32), transparent 70%),
+    radial-gradient(46% 40% at 50% 52%, rgba(122, 92, 255, 0.3), transparent 72%);
+}
+.hero-poster svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+/* ---------- copy ---------- */
+.hero-copy { position: relative; z-index: 3; pointer-events: none; padding-top: 40px; padding-bottom: 28px; }
+.hero-col { pointer-events: auto; }
+.hero-title {
+  margin: 0 0 20px;
+  max-width: 14ch;
+  font-family: var(--display);
+  font-size: var(--fs-hero);
+  font-weight: 400;
+  font-stretch: 100%;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  padding-block: 0.06em 0.02em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+/* weight 300 only at 64px or more: clamp(48px, 6.2vw, 96px) reaches 64px at about 1032px */
+@media (min-width: 1040px) { .hero-title { font-weight: 300; } }
+.hero-sub {
+  margin: 0 0 20px;
+  font: 500 clamp(12px, 1.3vw, 17px)/1.5 var(--sans);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.hero-col .intro { margin: 0 0 32px; max-width: 42ch; font: 400 19px/1.7 var(--sans); color: var(--ink-soft); }
+
+/* ignition: once per session (index.astro adds .is-lit on later visits); LCP-safe h1 (opacity .01, no blur:
+   a filter on the LCP text pushed its LCP entry toward the end of the animation in Chrome) */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-stage:not(.is-lit) .hero-title { animation: hero-h1 900ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both; }
+  .hero-stage:not(.is-lit) .hero-sub { animation: hero-sub 1200ms cubic-bezier(0.2, 0.7, 0.2, 1) 300ms both; }
+  .hero-stage:not(.is-lit) .hero-col .intro,
+  .hero-stage:not(.is-lit) .hero-col .actions { animation: hero-fade 500ms ease 450ms both; }
+}
+@keyframes hero-h1 { from { opacity: 0.01; } to { opacity: 1; } }
+@keyframes hero-sub { from { letter-spacing: 0.42em; } to { letter-spacing: 0.28em; } }
+@keyframes hero-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- galaxy ---------- */
+.galaxy {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--ink);
+  touch-action: pan-y; /* horizontal drag rotates, vertical swipe scrolls the page */
+}
+.galaxy:not(.galaxy--stage) { aspect-ratio: 1 / 0.92; min-height: 340px; border-radius: var(--r-panel); background: var(--void); }
+.galaxy canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: pan-y;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.galaxy.is-ready canvas { opacity: 1; }
+.galaxy.is-fallback canvas { display: none; }
+
+.galaxy--stage { z-index: 1; width: 100%; height: var(--g-h); flex: none; }
+/* mobile: top and bottom fades only (the mask sits on the canvas, never on the container) */
+.galaxy--stage canvas {
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent);
+  mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent);
+}
+.galaxy:fullscreen { background: var(--void); }
+.galaxy:fullscreen canvas { -webkit-mask-image: none; mask-image: none; }
+
+.g-hint {
+  position: absolute; left: 16px; top: 14px; z-index: 2; margin: 0; max-width: min(70%, 34ch);
+  font-size: 13.5px; line-height: 1.45; color: var(--ink-soft);
+  /* solid backing chip, like .g-tip: the hint is instructional text and can sit over a bright vesicle */
+  padding: 6px 10px; border-radius: 4px; background: rgba(26, 11, 69, 0.9);
+  pointer-events: none; transition: opacity 0.6s;
+}
+.g-hint.is-gone { opacity: 0; }
+
+.g-labels { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.g-label {
+  position: absolute; left: 0; top: 0; pointer-events: auto; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 4px;
+  font: 500 14px/1.35 var(--sans); color: var(--ink); text-decoration: none;
+  text-shadow: 0 0 3px var(--void), 0 0 12px var(--void), 0 0 2px var(--void);
+  opacity: 0; will-change: transform, opacity;
+}
+.g-label .glyph { color: var(--c, var(--ink)); flex: none; }
+.g-label:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+.g-tip {
+  position: absolute; left: 0; top: 0; z-index: 4; max-width: 260px; padding: 12px 14px;
+  border-radius: 4px; background: rgba(26, 11, 69, 0.94); border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid; gap: 4px; font-size: 14px; line-height: 1.4; color: var(--ink);
+}
+.g-tip[hidden] { display: none; }
+.g-tip strong { font-weight: 600; color: #fff; }
+.g-tip span { color: var(--ink-soft); font-size: 13.5px; }
+.g-tip a { color: var(--link); font-weight: 500; margin-top: 4px; justify-self: start; }
+
+/* controls: no backdrop-filter (blur over a live canvas is too costly); pressed = white ring */
+.g-controls { position: absolute; right: 16px; bottom: 16px; z-index: 3; display: flex; gap: 6px; }
+.g-controls button {
+  width: 40px; height: 40px; display: grid; place-items: center; padding: 0; cursor: pointer;
+  color: var(--ink); background: rgba(26, 11, 69, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.22); border-radius: var(--r-control);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.g-controls button[hidden] { display: none; }
+.g-controls button:hover { background: rgba(37, 18, 88, 0.9); color: #fff; }
+/* Paused: a filled white button with a play glyph, so "paused" never looks like "focused" (the focus ring sits
+   3px outside the button). The label stays "Pause motion" with aria-pressed. */
+.g-controls button[aria-pressed='true'] { color: var(--on-light); background: #fff; border-color: #fff; }
+.g-controls button[aria-pressed='true']:hover { background: #ece8fb; color: var(--on-light); }
+.g-controls .i-play { display: none; }
+.g-controls button[aria-pressed='true'] .i-play { display: inline; }
+.g-controls button[aria-pressed='true'] .i-pause { display: none; }
+
+.g-fallback {
+  position: absolute; left: 16px; right: 16px; bottom: 16px; z-index: 3; margin: 0; max-width: 40em;
+  padding: 12px 14px; border-radius: 4px; background: rgba(26, 11, 69, 0.9);
+  font-size: 15px; line-height: 1.5; color: var(--ink);
+}
+.galaxy.is-fallback .g-controls, .galaxy.is-fallback .g-hint, .galaxy.is-fallback .g-labels { display: none; }
+
+/* ---------- legend strip ---------- */
+.g-legend {
+  position: relative; z-index: 4; flex: none;
+  min-height: var(--legend-h); display: flex; align-items: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+}
+.g-legend-list {
+  list-style: none; margin-block: 0;
+  display: flex; align-items: center; gap: 4px 28px;
+  padding-top: 12px; padding-bottom: 12px; /* room for the focus ring inside the scroller */
+  overflow-x: auto; scrollbar-width: thin; scrollbar-color: #7466b0 transparent;
+}
+.g-legend-list li { flex: none; }
+.g-legend a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 32px; white-space: nowrap;
+  font: 500 14.5px/1.4 var(--sans); color: var(--ink); text-decoration: none;
+}
+.g-legend a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.g-legend .glyph { color: var(--c, var(--ink)); flex: none; }
+.g-legend .n { font-weight: 400; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+/* ---------- desktop: copy left, canvas bleeding off the right, top and bottom ---------- */
+@media (min-width: 900px) {
+  .hero-stage {
+    min-height: clamp(600px, 92vh, 880px);
+    justify-content: center;
+    padding-bottom: var(--legend-h);
+  }
+  .hero-copy { padding-top: 48px; padding-bottom: 48px; }
+  .hero-col { width: min(46vw, 620px); }
+  .hero-poster { top: 0; bottom: 0; left: 34%; height: auto; }
+  .galaxy--stage { position: absolute; inset: 0 0 0 34%; width: auto; height: auto; }
+  .galaxy--stage canvas {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 25%), linear-gradient(180deg, #000 82%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0, #000 25%), linear-gradient(180deg, #000 82%, transparent);
+    mask-composite: intersect;
+  }
+  .galaxy--stage .g-hint { left: auto; right: 16px; top: calc(var(--masthead-h) + 14px); text-align: right; }
+  .galaxy--stage .g-controls { bottom: calc(var(--legend-h) + 14px); }
+  .galaxy--stage .g-fallback { left: 25%; bottom: calc(var(--legend-h) + 16px); }
+  .galaxy--stage:fullscreen .g-controls { bottom: 16px; }
+  .galaxy--stage:fullscreen .g-hint { top: 14px; }
+  .g-legend { position: absolute; left: 0; right: 0; bottom: 0; }
+}
+@media (max-width: 640px) { .g-hint { font-size: 12.5px; } }
+
+/* ---------- lab strip "Từ phòng lab và thực địa" (spec §7.2) ---------- */
+.lab-strip { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.lab-tile { display: block; color: var(--ink); text-decoration: none; border-radius: var(--r-plate); }
+.lab-tile figure { margin: 0; }
+.lab-img {
+  position: relative; aspect-ratio: 3 / 4; overflow: hidden; border-radius: var(--r-plate);
+  background: var(--deep); outline: 1px solid rgba(255, 255, 255, 0.12); outline-offset: -1px;
+}
+.lab-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+/* fluorescence LUT at rest; true colour crossfades in on hover or keyboard focus */
+.lab-true { opacity: 0; transition: opacity 300ms ease; }
+.lab-tile:hover .lab-true, .lab-tile:focus-visible .lab-true { opacity: 1; }
+@media (hover: none) { .lab-true { opacity: 1; } }
+.lab-tile figcaption { margin-top: 12px; display: grid; gap: 2px; }
+/* Latin names in display italic; the display face never goes below 22px */
+.lab-sci { font: italic 400 22px/1.2 var(--display); padding-block: 0.06em 0.02em; color: var(--ink); }
+.lab-title { font: 400 14px/1.45 var(--sans); color: var(--ink-soft); transition: color 120ms ease; }
+.lab-tile:hover .lab-title, .lab-tile:focus-visible .lab-title { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 560px) and (max-width: 899.98px) { .lab-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 559.98px) {
+  .lab-strip {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72vw;
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    margin-inline: -16px; padding-inline: 16px; scroll-padding-inline: 16px;
+    padding-top: 12px; padding-bottom: 12px; /* room for the focus ring inside the scroller */
+  }
+  .lab-strip > li { scroll-snap-align: start; }
+}
+
+/* ---------- home CTA spacing (was an inline style) ---------- */
+.home-cta { padding-bottom: 16px; }
+
+/* ---------- forced colors and print ---------- */
+@media (forced-colors: active) {
+  .hero-stage::after, .hero-poster { display: none; }
+  .g-controls button { border: 1px solid ButtonText; background: ButtonFace; color: ButtonText; }
+  .g-controls button[aria-pressed='true'] { background: Highlight; color: HighlightText; border-color: Highlight; forced-color-adjust: none; }
+  .g-hint { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
+  .g-legend { background: Canvas; border-top: 1px solid CanvasText; }
+}
+@media print {
+  .hero-stage { margin-top: 0; padding-top: 0; min-height: 0; }
+  .hero-stage::after, .hero-poster, .galaxy--stage { display: none !important; }
+  .g-legend { position: static; background: none; }
+}

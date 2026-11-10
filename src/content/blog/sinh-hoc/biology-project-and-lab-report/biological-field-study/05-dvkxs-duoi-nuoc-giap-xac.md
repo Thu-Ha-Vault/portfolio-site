@@ -55,8 +55,8 @@ isIndex: false
 - Điều tra vùng triều phụ thuộc mạnh vào **lịch thuỷ triều**: lúc triều rút lộ bãi bùn, nhiều cua, ốc dễ thu hơn.
 
 ## Phiếu báo cáo viết tay
-![IMG_4917](/vault-assets/img-4917-894c76e2.jpg)
-![IMG_4918](/vault-assets/img-4918-427e4c2c.jpg)
+![IMG_4917](/vault-assets/img-4917-894c76e2.webp)
+![IMG_4918](/vault-assets/img-4918-427e4c2c.webp)
 - Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – thu cua theo triều, đào hố, đeo găng.
 
 ## Tài liệu gốc

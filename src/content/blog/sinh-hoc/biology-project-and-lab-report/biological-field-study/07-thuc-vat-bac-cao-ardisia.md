@@ -18,6 +18,7 @@ updated: '2026-10-16'
 order: 7
 description: 'Ngày 02/07/2023. Giảng viên: TS. Nguyễn Thị Kim Thanh, ThS. Lã Thị Thuỳ.'
 isIndex: false
+cover: /vault-assets/img-4987-38846a6d-cover-960.webp
 ---
 > Ngày 02/07/2023. Giảng viên: TS. Nguyễn Thị Kim Thanh, ThS. Lã Thị Thuỳ.
 
@@ -43,13 +44,13 @@ isIndex: false
 - Giấy báo + nhãn tiêu bản là bước đầu của quy trình **làm tiêu bản khô (herbarium)**. (→ [Bidens pilosa: tiêu bản khô và giải phẫu](/blog/morphological-and-anatomical-study-of-bidens-pilosa-var-minor-blume-sher-from-tr/))
 
 ## Ảnh mẫu vật
-![IMG_4985](/vault-assets/img-4985-0facdc0f.jpg)
-![IMG_4987](/vault-assets/img-4987-38846a6d.jpg)
-![IMG_4988](/vault-assets/img-4988-733356c6.jpg)
-![IMG_4989](/vault-assets/img-4989-7a3e2265.jpg)
-![IMG_4990](/vault-assets/img-4990-1b31b88f.jpg)
-![IMG_4991](/vault-assets/img-4991-c79bddd1.jpg)
-![IMG_4992](/vault-assets/img-4992-888777ae.jpg)
+
+![IMG_4987](/vault-assets/img-4987-38846a6d.webp)
+![IMG_4988](/vault-assets/img-4988-733356c6.webp)
+![IMG_4989](/vault-assets/img-4989-7a3e2265.webp)
+![IMG_4990](/vault-assets/img-4990-1b31b88f.webp)
+![IMG_4991](/vault-assets/img-4991-c79bddd1.webp)
+![IMG_4992](/vault-assets/img-4992-888777ae.webp)
 - Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – khoá lưỡng phân rút gọn dẫn tới Ardisia.
 
 ## Tài liệu gốc

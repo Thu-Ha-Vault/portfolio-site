@@ -122,13 +122,13 @@ isIndex: false
 ## Tài liệu gốc
 - Ảnh báo cáo (thứ tự trang theo nội dung):
 
-![DVCXS - IMG_0028](/vault-assets/dvcxs-img-0028-21e2d744.jpg)
-![DVCXS - IMG_0029](/vault-assets/dvcxs-img-0029-bd8cf0eb.jpg)
-![DVCXS - IMG_0027](/vault-assets/dvcxs-img-0027-20fdc82a.jpg)
+![DVCXS - IMG_0028](/vault-assets/dvcxs-img-0028-21e2d744.webp)
+![DVCXS - IMG_0029](/vault-assets/dvcxs-img-0029-bd8cf0eb.webp)
+![DVCXS - IMG_0027](/vault-assets/dvcxs-img-0027-20fdc82a.webp)
 
 - Ảnh mẫu mổ cá chép và mẫu bộ xương cá xương:
 
-![DVCXS - IMG_3962](/vault-assets/dvcxs-img-3962-1bdfca6d.jpg)
-![DVCXS - IMG_4034](/vault-assets/dvcxs-img-4034-668a8e01.jpg)
+![DVCXS - IMG_3962](/vault-assets/dvcxs-img-3962-1bdfca6d.webp)
+![DVCXS - IMG_4034](/vault-assets/dvcxs-img-4034-668a8e01.webp)
 
 - Folder Drive gốc: https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

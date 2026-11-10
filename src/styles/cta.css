@@ -1,0 +1,94 @@
+/* cta.css: CTA panel to ceovanta.com (.cta), spec §9 Step 7 and motion #11.
+   Solid --deep panel (radius 6px) with a 1.5px iris border, one static seeded vesicle clipped off the
+   right edge, a display-italic title and a solid white button. The vesicle and the border are decor:
+   forced colors and print drop them. */
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.cta {
+  position: relative;
+  isolation: isolate; /* the vesicle (z-index -1) paints above the panel fill, below the copy */
+  overflow: clip;
+  display: grid;
+  gap: 18px 32px;
+  align-items: center;
+  padding: 28px;
+  color: var(--ink);
+  border: 1.5px solid transparent;
+  border-radius: var(--r-panel);
+  background:
+    linear-gradient(var(--deep), var(--deep)) padding-box,
+    var(--iris) border-box;
+}
+
+/* One static 240px vesicle. Single column (mobile and the narrow post column): it rises out of the
+   bottom-right corner beside the button, below the copy. */
+.cta-blob {
+  position: absolute;
+  z-index: -1;
+  right: -100px;
+  bottom: -150px;
+  width: 240px;
+  height: 240px;
+  max-width: none;
+  pointer-events: none;
+}
+
+.cta-copy { min-width: 0; }
+.cta-title {
+  font: italic 400 var(--fs-cta)/1.2 var(--display);
+  letter-spacing: 0;
+  color: var(--ink);
+  margin: 0 0 10px;
+  padding-block: 0.06em 0.02em; /* room for stacked Vietnamese marks */
+}
+.cta p {
+  margin: 0;
+  font: 400 17px/1.6 var(--sans);
+  color: var(--ink-soft);
+  max-width: 34em;
+}
+.cta-button { justify-self: start; }
+
+/* Wide panel (home): copy left, button right, the vesicle half off the right edge beside the button. */
+@media (min-width: 760px) {
+  .cta {
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding-block: 40px;
+    padding-inline: 48px 150px;
+  }
+  .cta-blob { bottom: auto; top: 50%; right: -100px; translate: 0 -50%; }
+  /* The post / project column (40rem) stays one column with the corner vesicle. */
+  .after .cta { grid-template-columns: minmax(0, 1fr); padding: 32px; }
+  .after .cta-blob { top: auto; bottom: -150px; translate: none; }
+}
+
+/* Motion #11: on hover or focus-within the border becomes a conic iris that spins (6s per turn).
+   --iris-stops is set inline by Cta.astro from IRIS_STOPS (seamless loop). Hover keeps it spinning while the
+   pointer stays; keyboard focus gets one turn only, so a focused button never sits beside an endless loop
+   (WCAG 2.2.2). Reduced motion keeps the static linear iris border. */
+@media (prefers-reduced-motion: no-preference) {
+  .cta:is(:hover, :focus-within) {
+    background:
+      linear-gradient(var(--deep), var(--deep)) padding-box,
+      conic-gradient(from var(--angle), var(--iris-stops, #f45fd0, #b18cff, #4cd8ff, #ffc94a, #f45fd0)) border-box;
+    animation: cta-spin 6s linear 1;
+  }
+  .cta:hover { animation-iteration-count: infinite; }
+}
+@keyframes cta-spin {
+  to { --angle: 360deg; }
+}
+
+@media (forced-colors: active) {
+  .cta, .cta:is(:hover, :focus-within) { background: Canvas; border: 1.5px solid CanvasText; animation: none; }
+  .cta-blob { display: none; }
+}
+@media print {
+  .cta, .cta:is(:hover, :focus-within) { background: none; border: 1px solid #000; animation: none; }
+  .cta-blob { display: none; }
+}

@@ -111,18 +111,18 @@ isIndex: false
 ## Tài liệu gốc
 - Ảnh báo cáo:
 
-![DVCXS - IMG_4099](/vault-assets/dvcxs-img-4099-df267fc0.jpg)
-![DVCXS - IMG_4100](/vault-assets/dvcxs-img-4100-7ee07818.jpg)
-![DVCXS - IMG_4101](/vault-assets/dvcxs-img-4101-25e0d3b7.jpg)
+![DVCXS - IMG_4099](/vault-assets/dvcxs-img-4099-df267fc0.webp)
+![DVCXS - IMG_4100](/vault-assets/dvcxs-img-4100-7ee07818.webp)
+![DVCXS - IMG_4101](/vault-assets/dvcxs-img-4101-25e0d3b7.webp)
 
 - Hình vẽ khoang miệng ếch (bản vẽ chì riêng, không chú thích chữ):
 
-![DVCXS - IMG_0040](/vault-assets/dvcxs-img-0040-8e66b1f5.jpg)
+![DVCXS - IMG_0040](/vault-assets/dvcxs-img-0040-8e66b1f5.webp)
 
 - Ảnh mẫu mổ: lật da thấy lớp mao mạch dưới da; toàn thân và nội quan.
 
-![DVCXS - IMG_4054](/vault-assets/dvcxs-img-4054-8d882bee.jpg)
-![DVCXS - IMG_4080](/vault-assets/dvcxs-img-4080-6c21fc57.jpg)
-![DVCXS - IMG_4066](/vault-assets/dvcxs-img-4066-030d23d3.jpg)
+![DVCXS - IMG_4054](/vault-assets/dvcxs-img-4054-8d882bee.webp)
+![DVCXS - IMG_4080](/vault-assets/dvcxs-img-4080-6c21fc57.webp)
+![DVCXS - IMG_4066](/vault-assets/dvcxs-img-4066-030d23d3.webp)
 
 - Folder Drive gốc: https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

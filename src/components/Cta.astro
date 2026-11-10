@@ -1,15 +1,47 @@
 ---
+/**
+ * CTA panel to ceovanta.com (spec §9 Step 7, motion #11).
+ * Solid --deep panel, 1.5px iris border, one static seeded vesicle clipped off the right edge,
+ * display-italic title and a solid white button. On hover / focus-within the border turns into a
+ * conic iris that spins (cta.css, no-preference only); the reduced-motion fallback is the static linear border.
+ */
 import config from '../../site.config.json';
 import T from './T.astro';
+import { IRIS_STOPS } from '../data/topics';
+import { rngFor, blobPath, rimArc } from '../lib/cover';
+
 interface Props { campaign: string }
 const { campaign } = Astro.props;
 const c = config.cta;
 const href = `${c.url}?${c.utm}&utm_campaign=${encodeURIComponent(campaign)}`;
+
+// One static 240px vesicle from a fixed seed, so the panel looks the same on every page.
+const blob = blobPath(rngFor('cta'), 120, 120, 100, 7, 0.08);
+const iris = IRIS_STOPS.map((s) => `<stop offset="${s.at}" stop-color="${s.hex}"/>`).join('');
+const shade =
+  '<stop offset="0" stop-color="#fff" stop-opacity=".5"/>' +
+  '<stop offset=".34" stop-color="#fff" stop-opacity="0"/>' +
+  '<stop offset=".8" stop-color="#10052e" stop-opacity=".14"/>' +
+  '<stop offset="1" stop-color="#10052e" stop-opacity=".45"/>';
+// Stop list for the spinning conic border. The first colour is repeated at 100% so the loop has no seam.
+const conicStops = [
+  ...IRIS_STOPS.map((s) => `${s.hex} ${Math.round(s.at * 92)}%`),
+  `${IRIS_STOPS[0].hex} 100%`,
+].join(', ');
 ---
-<aside class="cta">
-  <div>
-    <h2><T vi={c.title_vi} en={c.title_en} /></h2>
+<aside class="cta" aria-labelledby="cta-title" style={`--iris-stops: ${conicStops}`}>
+  <svg class="cta-blob" viewBox="0 0 240 240" width="240" height="240" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="cta-iris" x1="0" y1="0" x2="1" y2="1" set:html={iris} />
+      <radialGradient id="cta-shade" cx=".5" cy=".5" r=".55" fx=".34" fy=".28" set:html={shade} />
+    </defs>
+    <path d={blob} fill="url(#cta-iris)" />
+    <path d={blob} fill="url(#cta-shade)" />
+    <path d={rimArc(120, 120, 82, 205, 270)} fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round" />
+  </svg>
+  <div class="cta-copy">
+    <h2 class="cta-title" id="cta-title"><T vi={c.title_vi} en={c.title_en} /></h2>
     <p><T vi={c.text_vi} en={c.text_en} /></p>
   </div>
-  <a class="button" href={href}><T vi={c.button_vi} en={c.button_en} /></a>
+  <a class="button solid cta-button" href={href}><T vi={c.button_vi} en={c.button_en} /></a>
 </aside>

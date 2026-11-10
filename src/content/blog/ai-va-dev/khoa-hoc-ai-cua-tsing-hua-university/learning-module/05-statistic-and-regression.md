@@ -190,7 +190,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
   * *Hành động can thiệp:* Dựa vào cấu trúc nhóm của ma trận để định hình các biến độc lập, biến phụ thuộc, biến điều tiết/trung gian nhằm phục vụ trực tiếp cho việc chạy hồi quy hoặc mô hình phương trình cấu trúc (SEM) sau khi có dữ liệu.
 ### 2. Scale Design
 ####  Từ khái niệm đến cấu trúc đo lường (From Concept to Constructs)
-![Ảnh chụp Màn hình 2026-09-24 lúc 00.39.48](/vault-assets/anh-chup-man-hinh-2026-09-24-luc-00-39-48-97be12a4.png)
+![Ảnh chụp Màn hình 2026-09-24 lúc 00.39.48](/vault-assets/anh-chup-man-hinh-2026-09-24-luc-00-39-48-97be12a4.webp)
 ##### 1. Bản chất & Định nghĩa cốt lõi (Slide 6 & Transcript P7)
 * **Phân loại nhiệm vụ:** **Thao tác hóa khái niệm & Thiết kế công cụ đo lường (Operationalization & Measurement Design Task)**.
 * **Bản chất kỹ thuật:** 
@@ -508,9 +508,9 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 	- Standardization
 	- Covariance
 	- Correlation:
-![Ảnh chụp Màn hình 2026-09-13 lúc 14.10.12](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-10-12-16bfa21a.png)
+![Ảnh chụp Màn hình 2026-09-13 lúc 14.10.12](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-10-12-16bfa21a.webp)
 - Linear Regression Analysis: a classic statistical method for analyzing relationships between variable (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/))
-![Ảnh chụp Màn hình 2026-09-13 lúc 14.11.28](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-11-28-977f4106.png)
+![Ảnh chụp Màn hình 2026-09-13 lúc 14.11.28](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-11-28-977f4106.webp)
 
 ## Sampling Theory
 ### Why do we sample?: 
@@ -575,16 +575,16 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 	- Snowball sampling: each research participant is asked to recommend other potential participants
 ### How to Determine Sample Size for Statistical Inference
 - What is the purpose of sampling: To make accurate inferences about the population
-- Use as large a sample as possible! Or more practically: What is the minimum acceptable sample size: ![Ảnh chụp Màn hình 2026-09-13 lúc 15.36.22](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-36-22-247d8f63.png)
+- Use as large a sample as possible! Or more practically: What is the minimum acceptable sample size: ![Ảnh chụp Màn hình 2026-09-13 lúc 15.36.22](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-36-22-247d8f63.webp)
 - Sample Size Formular (→ Convergence of Random Variables)
 	- Simple Random Sampling:
-  ![Ảnh chụp Màn hình 2026-09-13 lúc 15.37.18](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-37-18-76ee1e76.png)
+  ![Ảnh chụp Màn hình 2026-09-13 lúc 15.37.18](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-37-18-76ee1e76.webp)
 - Properities of Sampling Distributions: Sampling distributions are characterized by two fundamental properties, described by the 
 	- Law of Large Numbers: tells us that in a single draw, as the sample size increases, the sample mean gets closer to the population mean. This serves as one of the theoretical foundations for calculating sample size.
 	- Central Limit Theorem: goes a step further, describing the probabilistic characteristics of sample means under repeated sampling. As the sample size in each draw increases, the distribution of sample means becomes more concentrated with a smaller standard deviation. Moreover, regardless of the underlying population distribution, the distribution of sample means will tend toward a normal distribution. This provides another crucial theoretical basis for statistical inference.
-	![Ảnh chụp Màn hình 2026-09-13 lúc 15.39.35](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-39-35-17a662de.png)
+	![Ảnh chụp Màn hình 2026-09-13 lúc 15.39.35](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-39-35-17a662de.webp)
 - Population Size and Mininum Sample Size: for large populations, ensuring a sample size of approximately four hundred is sufficient to meet the basic requirements for statistical inference. This finding holds significant practical implications for the design of empirical research studies.
-![Ảnh chụp Màn hình 2026-09-13 lúc 15.41.02](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-41-02-5817f130.png)
+![Ảnh chụp Màn hình 2026-09-13 lúc 15.41.02](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-41-02-5817f130.webp)
 ## Sampling Weights
 
 ### I. Trọng Số Lấy Mẫu (Sampling Weights)

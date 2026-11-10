@@ -110,9 +110,5 @@ isIndex: false
 </div>
 
 ## Tài liệu gốc
-![IMG_5834](/vault-assets/img-5834-0379b816.jpg)
-![IMG_5835](/vault-assets/img-5835-5f80cf5b.jpg)
-![IMG_5836](/vault-assets/img-5836-5780fd25.jpg)
-![IMG_5870](/vault-assets/img-5870-d8a626d6.jpg)
-![IMG_5871](/vault-assets/img-5871-a11cf9c2.jpg)
-![IMG_5872](/vault-assets/img-5872-c373d634.jpg)
+
+![IMG_5870](/vault-assets/img-5870-d8a626d6.webp)

@@ -41,7 +41,12 @@
       "slug": "cyclistic-bike-share",
       "title": "Cyclistic bike-share: casual riders vs annual members",
       "summary_vi": "Phân tích 12 tháng dữ liệu chuyến đi xe đạp công cộng ở Chicago để tìm khác biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng marketing chuyển đổi khách vãng lai thành hội viên. Python (pandas), Tableau.",
-      "summary_en": "Twelve months of Chicago bike-share trips, analyzed to show how casual riders and annual members ride differently, ending in three marketing recommendations to convert casual riders. Python (pandas), Tableau."
+      "summary_en": "Twelve months of Chicago bike-share trips, analyzed to show how casual riders and annual members ride differently, ending in three marketing recommendations to convert casual riders. Python (pandas), Tableau.",
+      "cover": {
+        "src": "",
+        "alt": "Minh hoạ trừu tượng: bánh xe nan trắng và các túi màng",
+        "alt_en": "Abstract illustration: a wheel of white spokes with vesicles"
+      }
     },
     {
       "folder": "Projects/Case Study - Track B",
@@ -54,7 +59,12 @@
       "slug": "capstone-track-b",
       "title": "Capstone Track B: a health data case study",
       "summary_vi": "Case study tự chọn đề tài và tự tìm dữ liệu, hướng tới sức khoẻ cộng đồng: sốt xuất huyết theo mùa, chất lượng không khí Hà Nội hoặc dữ liệu sàng lọc bệnh. Trình bày khoảng 30 phút cho khách hàng giả định.",
-      "summary_en": "A self-directed case study with my own question and public data, focused on public health: seasonal dengue, Hanoi air quality or disease screening data. Ends in a 30-minute client presentation."
+      "summary_en": "A self-directed case study with my own question and public data, focused on public health: seasonal dengue, Hanoi air quality or disease screening data. Ends in a 30-minute client presentation.",
+      "cover": {
+        "src": "",
+        "alt": "Minh hoạ trừu tượng: khối cầu lưới và các túi màng",
+        "alt_en": "Abstract illustration: a wireframe icosphere with vesicles"
+      }
     },
     {
       "folder": "Projects/Virtual_Lab",
@@ -63,7 +73,12 @@
       "slug": "virtual-lab",
       "title": "Virtual Lab: a 3D biology laboratory",
       "summary_vi": "Phòng thí nghiệm sinh học ảo 3D để học sinh, sinh viên thực hành thí nghiệm mà không cần phòng lab thật: danh mục thí nghiệm, kiến trúc mô phỏng và bộ khung phòng thí nghiệm.",
-      "summary_en": "A 3D virtual biology lab where students can practice experiments without a physical lab: experiment catalogue, simulation architecture and lab layout."
+      "summary_en": "A 3D virtual biology lab where students can practice experiments without a physical lab: experiment catalogue, simulation architecture and lab layout.",
+      "cover": {
+        "src": "/project-covers/virtual-lab.webp",
+        "alt": "Mô phỏng máy luân nhiệt (thermocycler) trong Virtual Lab",
+        "alt_en": "The thermocycler simulation in the Virtual Lab"
+      }
     }
   ],
   "cta": {
@@ -76,5 +91,112 @@
     "button_vi": "Ghé CEOVANTA",
     "button_en": "Visit CEOVANTA"
   },
-  "allowEmails": []
+  "allowEmails": [],
+  "images": {
+    "maxEdge": 1600,
+    "quality": 78,
+    "exclude": [
+      "img-5834-0379b816.jpg",
+      "img-5834-*",
+      "img-4985-0facdc0f.jpg",
+      "img-4985-*",
+      "img-5835-*",
+      "img-5836-*",
+      "img-5871-*",
+      "img-5872-*"
+    ],
+    "coverSkip": [
+      "anh-chup-man-hinh-*",
+      "image-*",
+      "pasted-image-*",
+      "dvcxs-*",
+      "so-trang-*",
+      "img-4516-*",
+      "img-4517-*",
+      "img-4530-*",
+      "img-4531-*",
+      "img-4532-*",
+      "img-4917-*",
+      "img-4918-*",
+      "img-5870-*",
+      "img-3321-*",
+      "img-3401-*"
+    ],
+    "coverSkipFolders": [
+      "Resources/Tiếng Pháp/Writing"
+    ],
+    "coverSkipNotes": [
+      "Resources/Sinh học/Biology Project and Lab Report/Invertebrate Zoology/06 - Ngành Thân mềm - Ốc.md",
+      "Resources/Sinh học/Biology Project and Lab Report/Invertebrate Zoology/07 - Ngành Chân khớp - Gián và phần phụ miệng.md"
+    ]
+  },
+  "gallery": [
+    {
+      "file": "bat-1-hipposideros-sp1-143972ff.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/02 - ĐVCXS trên cạn - Chim và thú",
+      "alt": "Dơi treo mình trên trần hang đá vôi, soi bằng đèn pin",
+      "alt_en": "A bat hanging from a limestone cave ceiling, lit by a torch",
+      "sci": "Hipposideros sp.",
+      "crop": [
+        0.27,
+        0,
+        0.5,
+        1
+      ]
+    },
+    {
+      "file": "img-4180-576a2c66.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Botany/01 - Giải phẫu lá, thân, rễ",
+      "alt": "Khay 24 giếng ngâm lát cắt thực vật, nhãn viết tay từng mẫu",
+      "alt_en": "A 24-well plate holding plant sections, each well labelled by hand"
+    },
+    {
+      "file": "img-4988-733356c6.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/07 - Thực vật bậc cao - Ardisia",
+      "alt": "Cành Ardisia mang chùm quả mọng đỏ, trải trên giấy báo để ép mẫu",
+      "alt_en": "An Ardisia branch with red berries, laid on newspaper for pressing",
+      "sci": "Ardisia sp.",
+      "crop": [
+        0.02,
+        0.2,
+        0.78,
+        0.78
+      ]
+    },
+    {
+      "file": "img-5006-43ecd984.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/08 - Thực vật bậc thấp - Nấm Trametes",
+      "alt": "Nấm lỗ hình quạt có vân đồng tâm mọc trên gỗ mục",
+      "alt_en": "A fan-shaped bracket fungus with concentric zones on rotting wood",
+      "sci": "Trametes sp.",
+      "crop": [
+        0,
+        0.28,
+        0.48,
+        0.48
+      ]
+    },
+    {
+      "file": "img-4983-5c8764bc.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/Ảnh thực địa",
+      "alt": "Cây non mọc trong hốc đá vôi trên đảo Cát Bà",
+      "alt_en": "A seedling growing from a limestone hollow on Cát Bà island",
+      "caption": "Cây non trong hốc đá vôi, Cát Bà",
+      "caption_en": "A seedling in a limestone hollow, Cát Bà"
+    },
+    {
+      "file": "img-5014-67ba2cc6.jpg",
+      "note": "Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/Ảnh thực địa",
+      "alt": "Mặt trên nâu đỏ viền trắng của một mẫu nấm lỗ",
+      "alt_en": "The red-brown, white-rimmed upper surface of a bracket fungus",
+      "crop": [
+        0.31,
+        0.24,
+        0.62,
+        0.62
+      ],
+      "caption": "Mặt trên của một mẫu nấm lỗ, Cát Bà",
+      "caption_en": "Upper surface of a bracket fungus, Cát Bà"
+    }
+  ]
 }

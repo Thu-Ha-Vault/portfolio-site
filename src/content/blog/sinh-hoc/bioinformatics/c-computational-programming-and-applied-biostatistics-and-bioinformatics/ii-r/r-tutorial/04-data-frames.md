@@ -26,7 +26,7 @@ isIndex: false
 
 - Đối tượng birthweight là gì? Trong khung enviroment, ta có thể thấy nó là ‘42 obs. of 18 variables”. 42 quan sát của 18 biến: một dữ liệu bảng có 42 hàng và 18 cột. Ta có thể xác nhận điều này bằng lệnh class() và dim().
 
-![image_041](/vault-assets/image-041-b0fe7bbc.png)
+![image_041](/vault-assets/image-041-b0fe7bbc.webp)
 
 - Chạy dim(birthweight) hỏi R kích thước của đối tượng birthweight, đáp án là 42 (hàng) và 21 (cột). [1] không phải một phần của output: Đây là một chỉ mục của R để giúp ta theo dõi giá trị khi output là một giá trị lớn.
 
@@ -42,7 +42,7 @@ isIndex: false
 
 - Cách dễ nhất để lấy tất cả giá trị trong cột “birthweight” là sử dụng `$`: `birthweight$birthweight`
 
-![image_042](/vault-assets/image-042-0d697676.png)
+![image_042](/vault-assets/image-042-0d697676.webp)
 
 - Lúc này, có 3 số trong ngoặc vuông: một ở mỗi dòng output. Đó là vị trí của số tiếp theo trong vector input. Chúng cho ta một ý tưởng chung về độ dài của vector là giúp ta xác định giá trị của một quan sát nhất định chỉ với một cái liếc.
 
@@ -51,7 +51,7 @@ isIndex: false
 - `$` là một đường tắt cho `[[`, yêu cầu gõ thêm 6 kí tự nữa (hai cặp ngoặc vuông và 1 cặp ngoặc kép. Chúng hoạt động giống nhau, trả kết quả: 
 `birthweight[["birthweight"]]`
 
-![image_043](/vault-assets/image-043-adc808fe.png)
+![image_043](/vault-assets/image-043-adc808fe.webp)
 
 - Một điểm khác biệt là `[[` hoạt động với index, hoặc column number, `$` thì không.
 

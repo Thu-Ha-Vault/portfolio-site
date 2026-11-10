@@ -209,7 +209,7 @@ isIndex: false
 	- Political System: Shaping national identity and political stance, which directly relates to social stability
 	- Economic System: Providing a workforce that matches labor market demands to drive economic growth.
 	- Integration: Education acts as the engine that powers other social subsystems
-![Ảnh chụp Màn hình 2026-09-11 lúc 13.55.21](/vault-assets/anh-chup-man-hinh-2026-09-11-luc-13-55-21-a0865ac8.png)
+![Ảnh chụp Màn hình 2026-09-11 lúc 13.55.21](/vault-assets/anh-chup-man-hinh-2026-09-11-luc-13-55-21-a0865ac8.webp)
 We can observe that education's contributions to other social systems fundamentally represent extensions of its core functions. When education shapes citizens' political stances, this is essentially an extension of the socialization function, as it involves cultivating shared values and fostering a sense of collective identity. Similarly, when education prepares qualified workers for the labor market, this exemplifies the differentiation function in action, guiding individuals toward social roles that align with their capabilities and society's needs.
 
 These interconnected functions lead us to a crucial insight: education serves as the backbone that maintains, reproduces, and evolves social structure. Education doesn't merely preserve traditions from the past or address present-day needs. It actively prepares society for future possibilities by equipping new generations with the knowledge, skills, and values necessary for continued social development. Through socialization, education ensures cultural continuity. Through differentiation, it enables social mobility and adaptation. Through knowledge transmission, it builds upon accumulated human understanding.

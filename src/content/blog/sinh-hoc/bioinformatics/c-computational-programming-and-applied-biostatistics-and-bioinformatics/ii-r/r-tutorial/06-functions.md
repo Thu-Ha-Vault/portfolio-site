@@ -63,7 +63,7 @@ isIndex: false
 
 - Nếu như ta muốn làm điều này với cả 3 trường nhưng không muốn code 3 lần.
 
-![image_046](/vault-assets/image-046-114fedb6.png)
+![image_046](/vault-assets/image-046-114fedb6.webp)
 
 - Lệnh cbind() dùng để ghép đối tượng theo cột. Sau khi có tháng sinh trong cùng một cột, ta có thể tính trung bình cân nặng khi sinh theo tháng.
 

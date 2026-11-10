@@ -93,19 +93,19 @@ isIndex: false
 ## Tài liệu gốc
 - Ảnh báo cáo (trang 2 đã xoay đúng chiều):
 
-![DVCXS - IMG_4277](/vault-assets/dvcxs-img-4277-ebdc5e54.jpg)
-![DVCXS - IMG_4278](/vault-assets/dvcxs-img-4278-46cab8f9.jpg)
+![DVCXS - IMG_4277](/vault-assets/dvcxs-img-4277-ebdc5e54.webp)
+![DVCXS - IMG_4278](/vault-assets/dvcxs-img-4278-46cab8f9.webp)
 
 - Mẫu bộ xương: kì đà (cột sống và chi), thỏ (lồng ngực và chi trước), đai hông – chi sau và chi trước của thú:
 
-![DVCXS - IMG_4264](/vault-assets/dvcxs-img-4264-ffdddfa3.jpg)
-![DVCXS - IMG_4265](/vault-assets/dvcxs-img-4265-0478c0f7.jpg)
-![DVCXS - IMG_0097](/vault-assets/dvcxs-img-0097-43528f07.jpg)
-![DVCXS - IMG_0098](/vault-assets/dvcxs-img-0098-950ae300.jpg)
+![DVCXS - IMG_4264](/vault-assets/dvcxs-img-4264-ffdddfa3.webp)
+![DVCXS - IMG_4265](/vault-assets/dvcxs-img-4265-0478c0f7.webp)
+![DVCXS - IMG_0097](/vault-assets/dvcxs-img-0097-43528f07.webp)
+![DVCXS - IMG_0098](/vault-assets/dvcxs-img-0098-950ae300.webp)
 
 - Mẫu bộ xương chim và sọ chim:
 
-![DVCXS - IMG_4233](/vault-assets/dvcxs-img-4233-f7a013fa.jpg)
-![DVCXS - IMG_4236](/vault-assets/dvcxs-img-4236-97269f24.jpg)
+![DVCXS - IMG_4233](/vault-assets/dvcxs-img-4233-f7a013fa.webp)
+![DVCXS - IMG_4236](/vault-assets/dvcxs-img-4236-97269f24.webp)
 
 - Folder Drive gốc: https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

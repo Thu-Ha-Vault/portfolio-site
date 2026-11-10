@@ -2,10 +2,14 @@
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import T from '../../components/T.astro';
+import Cover from '../../components/Cover.astro';
 import ShareBar from '../../components/ShareBar.astro';
 import Cta from '../../components/Cta.astro';
 import config from '../../../site.config.json';
 import { blogEntries, siblings, breadcrumbs, hasMermaid, fmtDate, param } from '../../lib';
+import { topicNames, ui } from '../../i18n';
+import { glyphSvg, topicVar } from '../../data/topics';
+import { ogUrl } from '../../lib/cover';
 
 export async function getStaticPaths() {
   const all = await blogEntries();
@@ -17,6 +21,16 @@ const d = entry.data;
 const { prev, next } = siblings(all, entry);
 const crumbs = breadcrumbs(all, entry.id);
 const url = new URL(d.url, Astro.site).toString();
+const [topicVi, topicEn] = d.topic ? (topicNames[d.topic] ?? [d.topic, d.topic]) : ['', ''];
+// Reading time from the markdown body: strip code, math, links and markup, then about 220 words a minute.
+const words = (entry.body ?? '')
+  .replace(/```[\s\S]*?```/g, ' ')
+  .replace(/\$\$[\s\S]*?\$\$/g, ' ')
+  .replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/[#>*_`|\-]+/g, ' ')
+  .split(/\s+/)
+  .filter(Boolean).length;
+const minutes = Math.max(1, Math.round(words / 220));
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
@@ -24,29 +38,42 @@ const jsonLd = {
   description: d.description,
   dateModified: d.updated,
   url,
+  image: new URL(ogUrl(d.url), Astro.site).toString(),
   author: { '@type': 'Person', name: config.author.name, url: config.site },
   keywords: d.tags.join(', '),
 };
 ---
-<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)} type="article" jsonLd={jsonLd}>
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)} type="article" jsonLd={jsonLd} reading image={ogUrl(d.url)}>
   <div class="wrap article">
-    <ol class="crumbs">
-      <li><a href="/blog/"><T k="blog" /></a></li>
-      {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
-    </ol>
-    <header class="article-head">
-      <h1>{d.title}</h1>
-      <p class="byline">
-        {d.updated && <span><T k="updated" /> <time datetime={d.updated}>{fmtDate(d.updated)}</time></span>}
-        {d.source && <a href={d.source} rel="noopener"><T k="source" /></a>}
-      </p>
-    </header>
+    <div class="post-top">
+      <Cover entry={entry} class="post-cover" loading="eager" fetchpriority="high" />
+      <nav class="crumbs-nav" aria-label={ui.crumbs[0]} data-aria-vi={ui.crumbs[0]} data-aria-en={ui.crumbs[1]}>
+        <ol class="crumbs">
+          <li><a href="/blog/"><T k="blog" /></a></li>
+          {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
+        </ol>
+      </nav>
+      <header class="article-head">
+        <h1>{d.title}</h1>
+        <p class="byline">
+          {d.topic && (
+            <span class="byline-topic" style={`--tc:${topicVar(d.topic)}`}>
+              <Fragment set:html={glyphSvg(d.topic, 12)} />
+              <span data-vi={topicVi} data-en={topicEn}>{topicVi}</span>
+            </span>
+          )}
+          {d.updated && <span><T k="updated" /> <time datetime={d.updated}>{fmtDate(d.updated)}</time></span>}
+          <span>{minutes} <T vi="phút đọc" en="min read" /></span>
+          {d.source && <span><a href={d.source} rel="noopener"><T k="source" /></a></span>}
+        </p>
+      </header>
+    </div>
     <article class="prose"><Content /></article>
     <div class="after">
       {(prev || next) && (
-        <nav class="pager" aria-label="Pagination">
-          {prev && <a href={prev.data.url}><small><T k="prev" /></small>{prev.data.title}</a>}
-          {next && <a class="next" href={next.data.url}><small><T k="next" /></small>{next.data.title}</a>}
+        <nav class="pager" aria-label="Bài trước và bài sau" data-aria-vi="Bài trước và bài sau" data-aria-en="Previous and next">
+          {prev && <a class="prev" href={prev.data.url}><small><T k="prev" /></small><span>{prev.data.title}</span></a>}
+          {next && <a class="next" href={next.data.url}><small><T k="next" /></small><span>{next.data.title}</span></a>}
         </nav>
       )}
       <ShareBar url={url} title={d.title} />

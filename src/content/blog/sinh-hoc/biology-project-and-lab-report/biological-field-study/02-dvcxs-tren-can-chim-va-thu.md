@@ -21,6 +21,8 @@ description: >-
   Ngày 27/06/2023 – VQG Cát Bà. Giảng viên: TS. Hoàng Trung Thành, TS. Nguyễn
   Thị Lan Anh.
 isIndex: false
+cover: /vault-assets/bat-1-hipposideros-sp1-143972ff-cover-960.webp
+cover_alt: 'Dơi treo mình trên trần hang đá vôi, soi bằng đèn pin'
 ---
 > Ngày 27/06/2023 – VQG Cát Bà. Giảng viên: TS. Hoàng Trung Thành, TS. Nguyễn Thị Lan Anh.
 
@@ -61,22 +63,22 @@ isIndex: false
 
 ## Ảnh mẫu vật
 ### Dơi nếp mũi *Hipposideros* sp1 (Hình 3a, 3b)
-![Bat 1 - Hipposideros sp1](/vault-assets/bat-1-hipposideros-sp1-143972ff.jpg)
-![Bat 1 echolocation, 98.6 kHz](/vault-assets/bat-1-echolocation-98-6-khz-8c60f911.jpg)
+![Bat 1 - Hipposideros sp1](/vault-assets/bat-1-hipposideros-sp1-143972ff.webp)
+![Bat 1 echolocation, 98.6 kHz](/vault-assets/bat-1-echolocation-98-6-khz-8c60f911.webp)
 ### Dơi nếp mũi *Hipposideros* sp2 (Hình 4a, 4b)
-![Bat 2 - Hipposideros sp2](/vault-assets/bat-2-hipposideros-sp2-290cbb6d.jpg)
-![Bat 2 echolocation, 78.1 kHz](/vault-assets/bat-2-echolocation-78-1-khz-3441abba.jpg)
+![Bat 2 - Hipposideros sp2](/vault-assets/bat-2-hipposideros-sp2-290cbb6d.webp)
+![Bat 2 echolocation, 78.1 kHz](/vault-assets/bat-2-echolocation-78-1-khz-3441abba.webp)
 ### Họ Hút mật – con mái và con trống (Hình 5a–5d)
-![Bird 1, female a](/vault-assets/bird-1-female-a-c0bb1bc2.jpg)
-![Bird 1, female b](/vault-assets/bird-1-female-b-c29ddfca.jpg)
-![Bird 1, male a](/vault-assets/bird-1-male-a-d7cb3f97.jpg)
-![Bird 1, male b](/vault-assets/bird-1-male-b-166be58a.jpg)
+![Bird 1, female a](/vault-assets/bird-1-female-a-c0bb1bc2.webp)
+![Bird 1, female b](/vault-assets/bird-1-female-b-c29ddfca.webp)
+![Bird 1, male a](/vault-assets/bird-1-male-a-d7cb3f97.webp)
+![Bird 1, male b](/vault-assets/bird-1-male-b-166be58a.webp)
 ### Bông lau họng vạch (Hình 6)
-![Bird 2](/vault-assets/bird-2-f4334e14.jpg)
+![Bird 2](/vault-assets/bird-2-f4334e14.webp)
 ### Chi Quạ (Hình 7)
-![Bird 3](/vault-assets/bird-3-6890ec92.jpg)
+![Bird 3](/vault-assets/bird-3-6890ec92.webp)
 ### Chim săn mồi bay lượn (chưa định loại)
-![Bird 4](/vault-assets/bird-4-5e85a8c6.jpg)
+![Bird 4](/vault-assets/bird-4-5e85a8c6.webp)
 - Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – ghi siêu âm dơi (98,6 và 78,1 kHz) và điều tra chim theo tuyến trong protocol `fe-groups`.
 
 ## Tài liệu gốc

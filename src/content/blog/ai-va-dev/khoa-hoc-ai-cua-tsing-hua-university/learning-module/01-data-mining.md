@@ -60,21 +60,21 @@ isIndex: false
 - **Ý tưởng cốt lõi:** Giám sát hành vi tìm kiếm thông tin y tế của người dùng thông qua các truy vấn trên công cụ tìm kiếm trực tuyến (search engine) để phát hiện dịch bệnh.
 - **Lợi thế:** Cho phép nhận diện và cảnh báo các đợt bùng phát dịch bệnh sớm hơn rất nhiều so với các hệ thống giám sát y tế truyền thống.
 - **Bằng chứng nghiên cứu:** Bài báo công bố trên tạp chí _Nature_ (tháng 2/2009) chứng minh xu hướng tìm kiếm trực tuyến phản ánh rất sát diễn biến lây lan của dịch cúm thực tế giai đoạn 2004–2008.
-![Ảnh chụp Màn hình 2026-09-16 lúc 00.18.02](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-18-02-142c730a.png)
+![Ảnh chụp Màn hình 2026-09-16 lúc 00.18.02](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-18-02-142c730a.webp)
 ####  2. Thách thức và sai số của mô hình ban đầu – Google Flu Trends (Slide 15, 16)
 - **Hạn chế trong thực tế:** Mặc dù triển vọng, Google Flu Trends đã bộc lộ những sai số dự báo nghiêm trọng.
 - **Mức độ sai lệch:** Trong một số thời điểm (như đại dịch cúm A/H1N1 năm 2009 hay các năm sau đó), ước tính số ca cúm của Google cao gấp hơn hai lần so với số liệu thực tế được báo cáo bởi CDC Hoa Kỳ.
 - **Bài học rút ra:** Được phân tích trong các nghiên cứu trên _PLoS ONE_ (2011), _Nature_ (2013) và _Science_ (2014, bài báo _"The Parable of Google Flu: Traps in Big Data Analysis"_), chỉ ra rằng dữ liệu lớn không phải lúc nào cũng hoàn hảo; mô hình cần được kiểm chứng nghiêm ngặt và tinh chỉnh liên tục để tránh các bẫy dữ liệu (data traps).
-![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.34](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-34-baad5a85.png)
+![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.34](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-34-baad5a85.webp)
 
-![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.42](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-42-35ef6fdf.png)#### 3. Giải pháp cải tiến: Mô hình ARGO (Slide 17)
+![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.42](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-42-35ef6fdf.webp)#### 3. Giải pháp cải tiến: Mô hình ARGO (Slide 17)
 - **Phương pháp đề xuất:** Mô hình **ARGO** (_AutoRegression with Google search data_), công bố trên _PNAS_ (2015).
 - **Cải tiến kỹ thuật:** Thay vì chỉ phụ thuộc hoàn toàn vào từ khóa tìm kiếm, ARGO kết hợp **dữ liệu tìm kiếm của Google** với **dữ liệu dịch tễ học trễ (lagged data) từ CDC**.
 - **Kết quả:**
     - Đường cong dự đoán bám sát chính xác các đợt bùng phát thực tế do cơ quan y tế ghi nhận, khắc phục đáng kể tình trạng thổi phồng số liệu trước đây.  
     - Khai thác triệt để thói quen tự nhiên của người dân (tìm kiếm triệu chứng ngay khi cảm thấy không khỏe) để tạo ra các chỉ dấu dự báo sớm.
 - **Giá trị thực tiễn:** Tạo ra dữ liệu theo thời gian thực (near real-time) giúp cơ quan quản lý phản ứng nhanh hơn nhiều so với quy trình truyền thống (khám bệnh $\rightarrow$ bác sĩ báo cáo $\rightarrow$ tổng hợp dữ liệu), chứng minh giá trị xã hội to lớn của khai phá dữ liệu trong y tế công cộng.
-![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.00](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-00-e2da98d3.png)
+![Ảnh chụp Màn hình 2026-09-16 lúc 00.17.00](/vault-assets/anh-chup-man-hinh-2026-09-16-luc-00-17-00-e2da98d3.webp)
 
 ### 4V of Big Data
 - **Volume**: Data at scale; terabytes to petabytes of data
@@ -110,8 +110,8 @@ isIndex: false
 		- Choosing the mining algorithm(s)
 		- Data mining: search for patterns of interest
 	- Layer 4: Pattern evaluation and knowledge presentation: visualization, transformation, removing redundant patterns
-![Ảnh chụp Màn hình 2026-09-18 lúc 13.53.32](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-53-32-625e34d1.png)
-![Ảnh chụp Màn hình 2026-09-18 lúc 13.54.01](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-54-01-db0560df.png)
+![Ảnh chụp Màn hình 2026-09-18 lúc 13.53.32](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-53-32-625e34d1.webp)
+![Ảnh chụp Màn hình 2026-09-18 lúc 13.54.01](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-54-01-db0560df.webp)
 - As you can see from this diagram, data mining didn’t appear out of nowhere. It is actually a fusion of several mature disciplines. At its base, we have Data Sources like files and database systems, which feed into Data Warehouses. From there, traditional methods like Statistical Analysis and OLAP help us explore the data. But to truly discover information, we rely on core pillars: Statistics provides the theoretical foundation for understanding data distributions; Machine Learning and Artificial Intelligence offer the algorithms that allow computers to automatically learn patterns; Pattern Recognition gives us the techniques to classify complex structures; and Database Systems provide the platform to handle massive amounts of data efficiently. In short, data mining stands on the shoulders of these giants.
 - If these traditional fields are already so well-established, why do we need data mining as a separate discipline? The answer lies in the unique challenges of modern data. First, consider the sheer scale: we are dealing with terabytes or even petabytes of data, which can overwhelm traditional algorithms. Second, there is the issue of high dimensionality, where a single data object might have hundreds of attributes, leading to what we call the "curse of dimensionality." Finally, data is increasingly heterogeneous and distributed, coming in various forms like text, images, and videos, often stored across different locations.
 - These unprecedented challenges have driven the rapid evolution of data mining as an independent field. It not only inherits the best practices from traditional disciplines but also innovates to address the specific needs of the big data era. This evolution has also given rise to Data Science, which has become one of the most exciting and impactful areas of study and application today.
@@ -122,7 +122,7 @@ isIndex: false
 	- High dimensionality of data: Real-world objects often have hundreds or thousands of attributes, making analysis significantly more complex.
 	- Heterogeneous, distributed nature of complex data: Information comes from diverse sources, stored in different locations, and in various formats, requiring more flexible and robust approaches.
 - Data mining and Data Science
-![Ảnh chụp Màn hình 2026-09-18 lúc 13.58.33](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-58-33-12429302.png)
+![Ảnh chụp Màn hình 2026-09-18 lúc 13.58.33](/vault-assets/anh-chup-man-hinh-2026-09-18-luc-13-58-33-12429302.webp)
 ## Data Mining: On what kind of data and functionality and Evaluation
 ### Type of data
 - What kinds of data can we actually mine? This is a crucial question because the nature of your data dictates which techniques and algorithms you should use.
@@ -364,7 +364,7 @@ $$\{\text{Header\_Anomaly}, \text{Unusual\_Sender\_Pattern}, \text{Content\_Feat
 	- as a model (plugin) in LLM
 	- New tasks for Data Mining: multitask, mining-assistant.
 ### Sự thay đổi mô hình học tập (Learning Paradigm Shift)
-![Ảnh chụp Màn hình 2026-09-23 lúc 23.29.56](/vault-assets/anh-chup-man-hinh-2026-09-23-luc-23-29-56-deb9ef20.png)
+![Ảnh chụp Màn hình 2026-09-23 lúc 23.29.56](/vault-assets/anh-chup-man-hinh-2026-09-23-luc-23-29-56-deb9ef20.webp)
 #### 1. Bản chất & Định nghĩa cốt lõi (Slide 44 & Transcript P44)
 * **Phân loại nhiệm vụ:** **Nền tảng học máy & Mô hình hóa (Learning Paradigms / Foundations)**.
 * **Bản chất kỹ thuật:** 
@@ -518,7 +518,7 @@ $$\text{Instruction} + \text{Context} \xrightarrow{\text{Autoregressive Generati
 * **Theo góc nhìn Xây dựng hệ thống học máy hoàn chỉnh:**
   * *Mục tiêu:* Tạo liên kết khép kín giữa mô tả hiện trạng và hành động tương lai.
   * *Hành động can thiệp:* Phối hợp kỹ thuật gom cụm (K-means) để phân nhóm đối tượng, dùng Apriori trích xuất hành vi và dùng Adaboost/Random Forests để đưa ra quyết định gợi ý hoặc can thiệp cá nhân hóa tức thì.
-![Ảnh chụp Màn hình 2026-09-23 lúc 23.53.13](/vault-assets/anh-chup-man-hinh-2026-09-23-luc-23-53-13-cbcd2f25.png)
+![Ảnh chụp Màn hình 2026-09-23 lúc 23.53.13](/vault-assets/anh-chup-man-hinh-2026-09-23-luc-23-53-13-cbcd2f25.webp)
 ### Major Data Mining Issues
 - **Data scale and complexity:** Massive Data, Data Diversity. We are no longer dealing with small, neat datasets. Instead, we face massive volumes of data with incredible diversity in formats and sources. This sheer size and variety make traditional processing methods insufficient.
 - **Model Complexity:** Large Model Parameters, Model Interpretability. Modern models often involve a vast number of parameters, which can be difficult to manage.More importantly, as these models grow more complex, ensuring their interpretability becomes a critical challenge. We need to understand not just what the model predicts, but why it makes those predictions.

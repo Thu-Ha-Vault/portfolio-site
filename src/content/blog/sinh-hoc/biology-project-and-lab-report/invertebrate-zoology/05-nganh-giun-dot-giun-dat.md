@@ -20,6 +20,7 @@ description: >-
   Folder Drive không có vở ghi cho ngành này, chỉ có ảnh hình thái ngoài và ảnh
   mổ giun đất. Phần kiến thức là bổ sung.
 isIndex: false
+cover: /vault-assets/img-3264-27cc18f4-cover-960.webp
 ---
 > Folder Drive không có vở ghi cho ngành này, chỉ có ảnh hình thái ngoài và ảnh mổ giun đất. Phần kiến thức là bổ sung.
 
@@ -41,13 +42,13 @@ isIndex: false
 
 ### Hình thái ngoài
 - Cơ thể dài, phân nhiều đốt; gần đầu có **đai sinh dục** sẫm màu, các đốt không có ngấn rõ.
-	![IMG_3264](/vault-assets/img-3264-27cc18f4.jpg)
+	![IMG_3264](/vault-assets/img-3264-27cc18f4.webp)
 
 ### Mổ giun đất
 - Đặt nằm sấp, ghim hai bên, cắt dọc mặt lưng và phanh da trong nước. Toàn cảnh: nửa trước (bên trái ảnh) nhiều nội quan, nửa sau là **ruột** chứa đầy đất, thấy rõ **các vách đốt** chia khoang cơ thể.
-	![IMG_3268](/vault-assets/img-3268-43bca48a.jpg)
+	![IMG_3268](/vault-assets/img-3268-43bca48a.webp)
 - Cận cảnh phần đầu: **hầu**, các khối trắng là **túi chứa tinh** (?), đoạn màu cam – đỏ là **diều – dạ dày cơ** và đầu ruột, mạch máu đỏ chạy dọc (**mạch lưng**).
-	![IMG_3269](/vault-assets/img-3269-a1ffc1d3.jpg)
+	![IMG_3269](/vault-assets/img-3269-a1ffc1d3.webp)
 - Xem thêm: [Virtual Lab: mổ giun đất](/projects/virtual-lab/thi-nghiem-giai-doan-5/) – mô phỏng cách đặt mẫu, đường cắt và danh sách cơ quan cần quan sát
 - Xem thêm: [Virtual Lab: hình giải phẫu giun đất](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – vị trí cơ quan theo đốt của *Pheretima* (Bahl 1919, 1921)
 

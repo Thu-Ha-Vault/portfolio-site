@@ -50,4 +50,4 @@ Si c'est la première fois que vous allez au Vietnam, pour le logement, je vous 
 </details>
 
 ## Bản gốc
-![IMG_3551](/vault-assets/img-3551-85e99d5b.jpg)
+![IMG_3551](/vault-assets/img-3551-85e99d5b.webp)

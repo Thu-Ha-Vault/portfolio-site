@@ -20,6 +20,7 @@ description: >-
   (Hydra) nhuộm đỏ dưới kính hiển vi. Phần kiến thức bên dưới là bổ sung để làm
   khung cho ảnh.
 isIndex: false
+cover: /vault-assets/img-3205-448e3334-cover-960.webp
 ---
 > Folder Drive không có vở ghi cho ngành này, chỉ có ảnh tiêu bản thủy tức (*Hydra*) nhuộm đỏ dưới kính hiển vi. Phần kiến thức bên dưới là bổ sung để làm khung cho ảnh.
 
@@ -40,15 +41,15 @@ isIndex: false
 
 ### Phần đầu thủy tức
 - Tiêu bản toàn thân nhuộm đỏ: **đế miệng (hypostome)** ở đỉnh, quanh là **vòng tua miệng** cuộn lại; trên tua thấy các hạt nhỏ xếp thành đốt – có thể là các "pin" tế bào gai (?).
-	![IMG_3205](/vault-assets/img-3205-448e3334.jpg)
+	![IMG_3205](/vault-assets/img-3205-448e3334.webp)
 
 ### Thủy tức đang mọc chồi
 - Toàn thân ở vật kính nhỏ: tua miệng ở đầu, thân dài, phía dưới có **một chồi bên** (cơ thể con đang hình thành), phần gốc là **đế bám**.
-	![IMG_3209](/vault-assets/img-3209-a715ccf8.jpg)
+	![IMG_3209](/vault-assets/img-3209-a715ccf8.webp)
 
 ### Lát cắt ngang (?)
 - Một vòng tế bào nhuộm đỏ bao quanh khoang rỗng ở giữa – có thể là **lát cắt ngang thân thủy tức** (2 lớp tế bào quanh khoang vị) (?).
-	![IMG_3212](/vault-assets/img-3212-ec969ba7.jpg)
+	![IMG_3212](/vault-assets/img-3212-ec969ba7.webp)
 
 ## Nguồn
 - Ảnh gốc: [Drive – ĐVKXS](https://drive.google.com/drive/folders/1-y3O-42VGwxAIV6oC_qxI8IH_eNs3ahg) (IMG_3203–3212). IMG_3203, 3206 trùng với 3205; IMG_3210 trùng với 3209.

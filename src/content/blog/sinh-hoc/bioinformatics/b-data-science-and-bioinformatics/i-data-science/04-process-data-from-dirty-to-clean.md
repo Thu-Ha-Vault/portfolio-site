@@ -115,7 +115,7 @@ isIndex: false
 
 - Important note: Sometimes data with errors can be a warning sign that the data isn’t reliable. Use your best judgment.
 
-![image_032](/vault-assets/image-032-0238919d.png)
+![image_032](/vault-assets/image-032-0238919d.webp)
 
 - Population: All possible data values in a certain dataset.
 
@@ -316,7 +316,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 - Not accounting for data cleaning in your deadlines/process: All good things take time, and that includes data cleaning. It is important to keep that in mind when going through your process and looking at your deadlines. When you set aside time for data cleaning, it helps you get a more accurate estimate for ETAs for stakeholders, and can help you know when to request an adjusted ETA.
 
-![image_033](/vault-assets/image-033-b6c6d2eb.png)
+![image_033](/vault-assets/image-033-b6c6d2eb.webp)
 
 - CLEAN DTA:
 
@@ -642,7 +642,7 @@ column name DESC: Sorting
 
 - System issues
 
-![image_034](/vault-assets/image-034-841115ce.png)
+![image_034](/vault-assets/image-034-841115ce.webp)
 
 - The IMPORTRANGE function in Google Sheets and the Paste Link feature (a Paste Special option in Microsoft Excel) both allow you to insert data from one sheet to another. Using these on a large amount of data is more efficient than manual copying and pasting. They also reduce the chance of errors being introduced by copying and pasting the wrong data. They are also helpful for data cleaning because you can “cherry pick” the data you want to analyze and leave behind the data that isn’t relevant to your project. Basically, it is like canceling noise from your data so you can focus on what is most important to solve your problem. This functionality is also useful for day-to-day data monitoring; with it, you can build a tracking spreadsheet to share the relevant data with others. The data is synced with the data source so when the data is updated in the source file, the tracked data is also refreshed.
 

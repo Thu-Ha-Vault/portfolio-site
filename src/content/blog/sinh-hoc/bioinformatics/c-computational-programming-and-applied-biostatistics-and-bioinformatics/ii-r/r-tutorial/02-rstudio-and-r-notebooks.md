@@ -24,7 +24,7 @@ isIndex: false
 
 - Cửa sổ RStudio:
 
-![image_036](/vault-assets/image-036-ac9a3654.png)
+![image_036](/vault-assets/image-036-ac9a3654.webp)
 
 - Console: Bên phải màn hình. Là một giao diện dòng lệnh cho R, ta gõ một lệnh và ấn Enter để chạy, kết quả hiển thị bên dưới.
 
@@ -32,7 +32,7 @@ isIndex: false
 
 - Nếu ta ấn Enter trước khi hoàn thành lệnh, dòng tiếp theo sẽ bắt đầu bằng kí tự (+). Cho ta biết rằng R cần thêm input.
 
-![image_037](/vault-assets/image-037-96577865.png)
+![image_037](/vault-assets/image-037-96577865.webp)
 
 - The workspace browser: bên trái phía trên màn hình là workspace (hay environment) browser. Phần này cho thấy các đối tượng có mặt trong môi trường.
 
@@ -40,9 +40,9 @@ isIndex: false
 
 - RStudio chỉ show giá trị của đối tượng mà ta đã gán
 
-![image_038](/vault-assets/image-038-f288de74.png)
+![image_038](/vault-assets/image-038-f288de74.webp)
 
-![image_039](/vault-assets/image-039-e0912d2a.png)
+![image_039](/vault-assets/image-039-e0912d2a.webp)
 
 - Kí hiệu (<-) là một cặp kí tự đặc biệt gọi là toán tử gán (assignment operator) giúp lưu trữ kết quả của phép cộng vào đối tượng ở bên trái mũi tên.
 
@@ -56,7 +56,7 @@ isIndex: false
 
 - Tạo một R notebook mới bằng thanh menu: File > New File > R Notebooks:
 
-![image_040](/vault-assets/image-040-965f9253.png)
+![image_040](/vault-assets/image-040-965f9253.webp)
 
 - R notebooks là 1 loại tài liệu markdown đặc biệt kết hợp các đoạn mã R có thể thực thi và đầu ra của chúng, cùng với văn bản có thể được định dạng bằng các ký tự đặc biệt để mã hóa định dạng như tiêu đề, phông chữ in đậm hoặc in nghiêng, dấu đầu dòng, liên kết, v.v.
 

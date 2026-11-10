@@ -1,28 +1,38 @@
 ---
+/** Share links (spec §6): plain 1px --edge outline pills, radius 3px. No glass, no motion. */
 import T from './T.astro';
 interface Props { url: string; title: string }
 const { url, title } = Astro.props;
 const u = encodeURIComponent(url), t = encodeURIComponent(title);
+const links = [
+  ['Facebook', `https://www.facebook.com/sharer/sharer.php?u=${u}`],
+  ['LinkedIn', `https://www.linkedin.com/sharing/share-offsite/?url=${u}`],
+  ['X', `https://x.com/intent/post?url=${u}&text=${t}`],
+  ['Threads', `https://www.threads.net/intent/post?text=${t}%20${u}`],
+];
 ---
-<section class="share">
-  <h2><T k="share" /></h2>
+<section class="share" aria-labelledby="share-title">
+  <h2 id="share-title"><T k="share" /></h2>
   <ul>
-    <li><a href={`https://www.facebook.com/sharer/sharer.php?u=${u}`} target="_blank" rel="noopener">Facebook</a></li>
-    <li><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${u}`} target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href={`https://x.com/intent/post?url=${u}&text=${t}`} target="_blank" rel="noopener">X</a></li>
-    <li><a href={`https://www.threads.net/intent/post?text=${t}%20${u}`} target="_blank" rel="noopener">Threads</a></li>
-    <li><button type="button" data-copy={url}><T k="copyLink" /></button></li>
+    {links.map(([name, href]) => <li><a class="pill" href={href} target="_blank" rel="noopener">{name}</a></li>)}
+    <li><button class="pill" type="button" data-copy={url}><T k="copyLink" /></button></li>
   </ul>
+  <span class="visually-hidden" role="status" data-copy-status></span>
   <script is:inline>
-    document.querySelectorAll('[data-copy]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        var done = function () {
-          var s = b.querySelector('span');
-          var lang = document.documentElement.lang === 'en' ? 'en' : 'vi';
-          s.textContent = lang === 'en' ? 'Link copied' : 'Đã chép link';
-        };
-        if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, function () {});
+    (function () {
+      var status = document.querySelector('[data-copy-status]');
+      document.querySelectorAll('[data-copy]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var done = function () {
+            var en = document.documentElement.lang === 'en';
+            var msg = en ? 'Link copied' : 'Đã chép link';
+            var s = b.querySelector('span');
+            if (s) s.textContent = msg;
+            if (status) status.textContent = msg;
+          };
+          if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, function () {});
+        });
       });
-    });
+    })();
   </script>
 </section>

@@ -20,6 +20,7 @@ description: >-
   ảnh IMG3949–IMG3996, IMG5221, IMG5586). Ảnh bảng và ảnh có người không giữ
   trong vault.
 isIndex: false
+cover: /vault-assets/img-3950-ba9f53e2-cover-960.webp
 ---
 > Chép lại từ ảnh bảng và ảnh mẫu vật buổi thực hành tảo (folder Drive [Thực vật](https://drive.google.com/drive/folders/1-0xFcmG10pAwRmsOOQphm7RH60JEHijh), ảnh `IMG_3949`–`IMG_3996`, `IMG_5221`, `IMG_5586`). Ảnh bảng và ảnh có người không giữ trong vault.
 
@@ -69,12 +70,12 @@ flowchart LR
 
 ## Mẫu vật và hình quan sát
 - **Rau câu** (*Gracilaria*, tảo đỏ) – mẫu tươi trong đĩa petri:
-	- ![IMG_3950](/vault-assets/img-3950-ba9f53e2.jpg)
+	- ![IMG_3950](/vault-assets/img-3950-ba9f53e2.webp)
 - **Rong mơ** (*Sargassum*, tảo nâu) và **Tảo quạt** (*Padina*, tảo nâu, tiêu bản ép khô) – giảng viên giới thiệu mẫu (ảnh có người, không giữ).
 - **Zygnema** (tảo lục tiếp hợp): ảnh tra cứu trên ResearchGate, mỗi tế bào có 2 lục lạp hình sao.
 - **Tảo silic**: hình vẽ cấu tạo vỏ trong sách, có trục **pervalvar**, mảnh vỏ trên (*epivalve*) và mảnh vỏ dưới (*hypovalve*).
 - Tế bào lớn vách mỏng, tế bào chất dồn ở góc tế bào, quan sát dưới kính hiển vi (tảo hay mẫu khác (?)):
-	- ![IMG_3989](/vault-assets/img-3989-37584f31.jpg)
+	- ![IMG_3989](/vault-assets/img-3989-37584f31.webp)
 - Thực vật bậc thấp khác trong vault: [Nấm lỗ Trametes](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/) (nay xếp vào giới Nấm, không thuộc thực vật).
 
 <details class="callout callout-question">

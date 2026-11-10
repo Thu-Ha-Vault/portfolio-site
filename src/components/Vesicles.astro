@@ -1,0 +1,104 @@
+---
+/**
+ * Vesicle backdrop (spec §3): static, decorative, never animated. Base.astro renders it inside
+ * <div class="vesicle-layer" aria-hidden="true"> on every page except home; light reading hides it (global.css).
+ *
+ * - ≥1280px: three seeded iris blobs in the right gutter (one sharp, one out of focus, one 80px sphere with a rim arc).
+ * - 720–1279px: one 220px blob at 50% opacity, top-right, mostly under the glass header.
+ * - <720px: one 150px blob half off-screen behind the header, so the frost has something to reveal.
+ * Fixed elements add no scrollable overflow, so the off-screen parts never cause a horizontal scroll.
+ */
+import { IRIS_STOPS } from '../data/topics';
+import { rngFor, blobPath, rimArc } from '../lib/cover';
+
+const rng = rngFor('vesicles');
+const sharp = blobPath(rng, 375, 175, 130, 7, 0.09);
+const soft = blobPath(rng, 175, 70, 80, 6, 0.12);
+const solo = blobPath(rngFor('vesicles:solo'), 110, 110, 96, 7, 0.09);
+const iris = IRIS_STOPS.map((s) => `<stop offset="${s.at}" stop-color="${s.hex}"/>`).join('');
+// One glossy shading layer shared by every blob: white highlight upper-left, a darker thin-film edge.
+const shade =
+  '<stop offset="0" stop-color="#fff" stop-opacity=".55"/>' +
+  '<stop offset=".32" stop-color="#fff" stop-opacity="0"/>' +
+  '<stop offset=".8" stop-color="#10052e" stop-opacity=".12"/>' +
+  '<stop offset="1" stop-color="#10052e" stop-opacity=".42"/>';
+---
+<div class="vesicles">
+  <svg class="v-wide" viewBox="0 0 500 560" width="500" height="560" focusable="false" aria-hidden="true">
+    <defs>
+      <linearGradient id="ves-iris" x1="0" y1="0" x2="1" y2="1" set:html={iris} />
+      <linearGradient id="ves-iris-r" x1="1" y1="0" x2="0" y2="1" set:html={iris} />
+      <radialGradient id="ves-shade" cx=".5" cy=".5" r=".55" fx=".34" fy=".28" set:html={shade} />
+      <filter id="ves-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12" /></filter>
+    </defs>
+    <g opacity=".7" filter="url(#ves-blur)"><path d={soft} fill="url(#ves-iris-r)" /></g>
+    <path d={sharp} fill="url(#ves-iris)" />
+    <path d={sharp} fill="url(#ves-shade)" />
+    <path d={rimArc(375, 175, 108, 205, 270)} fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round" />
+    <circle cx="385" cy="450" r="40" fill="url(#ves-iris-r)" />
+    <circle cx="385" cy="450" r="40" fill="url(#ves-shade)" />
+    <path d={rimArc(385, 450, 33, 200, 280)} fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round" />
+  </svg>
+  <svg class="v-solo" viewBox="0 0 220 220" width="220" height="220" focusable="false" aria-hidden="true">
+    <defs>
+      <linearGradient id="ves-solo" x1="0" y1="0" x2="1" y2="1" set:html={iris} />
+      <radialGradient id="ves-solo-shade" cx=".5" cy=".5" r=".55" fx=".34" fy=".28" set:html={shade} />
+    </defs>
+    <path d={solo} fill="url(#ves-solo)" />
+    <path d={solo} fill="url(#ves-solo-shade)" />
+    <path d={rimArc(110, 110, 80, 205, 270)} fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round" />
+  </svg>
+</div>
+
+<style>
+  /* A zero-size anchor at the viewport's top-right corner; z-index -1 puts it above body::before (the glow)
+     and below all content. The masthead (z 30) frosts over it. */
+  .vesicles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  /* display is set per variant below (not here: `.vesicles svg` would out-rank `.v-wide`). */
+  .v-wide,
+  .v-solo {
+    position: absolute;
+    height: auto;
+    max-width: none;
+  }
+  .v-wide { display: none; }
+  /* < 720px: 150px, half off-screen, mostly behind the header */
+  .v-solo {
+    display: block;
+    width: 150px;
+    top: -64px;
+    right: -75px;
+    opacity: .8;
+  }
+  /* 720–1279px: 220px at 50%, top-right, mostly under the header */
+  @media (min-width: 720px) {
+    .v-solo {
+      width: 220px;
+      top: -96px;
+      right: -80px;
+      opacity: .5;
+    }
+  }
+  /* ≥ 1280px: the full cluster in the right gutter beside the 40rem column;
+     the shapes sit in the right ~55% of the 500-wide viewBox so they clear the .wrap column from 1280px up */
+  @media (min-width: 1280px) {
+    .v-solo { display: none; }
+    .v-wide {
+      display: block;
+      width: min(36vw, 500px);
+      top: -10vh;
+      right: -6vw;
+    }
+  }
+  @media (forced-colors: active) {
+    .vesicles { display: none; }
+  }
+</style>

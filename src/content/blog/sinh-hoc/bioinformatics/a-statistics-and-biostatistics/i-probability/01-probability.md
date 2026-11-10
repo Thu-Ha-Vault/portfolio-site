@@ -36,23 +36,23 @@ isIndex: false
 
 - Biến cố đầy đủ (partition) của Ω là một chuỗi các tập không giao nhau A1, A2,... .
 
-![image_001](/vault-assets/image-001-d27b9c75.png)
+![image_001](/vault-assets/image-001-d27b9c75.webp)
 
 - Cho một biến cố A, định nghĩa hàm chỉ thị của A: .
 
-![image_002](/vault-assets/image-002-eca392b9.png)
+![image_002](/vault-assets/image-002-eca392b9.webp)
 
 - Một chuỗi tập hợp A1, A2, … là tăng đơn điệu nếu A1 ⊂ A2 ⊂ ··· và ta định nghĩa
 
-![image_003](/vault-assets/image-003-86a2f264.png)
+![image_003](/vault-assets/image-003-86a2f264.webp)
 
 - Một chuỗi tập hợp A1, A2, … là giảm đơn điệu nếu A1 ⊃ A2 ⊃ · · · và ta định nghĩa
 
-![image_003](/vault-assets/image-003-86a2f264.png)
+![image_003](/vault-assets/image-003-86a2f264.webp)
 
-![image_004](/vault-assets/image-004-2e098238.png)
+![image_004](/vault-assets/image-004-2e098238.webp)
 
-![image_005](/vault-assets/image-005-c809f746.png)
+![image_005](/vault-assets/image-005-c809f746.webp)
 
 ## Probability
 
@@ -64,7 +64,7 @@ isIndex: false
 
 - Tiên đề 3: Nếu A1, A2, … không giao nhau thì:
 
-![image_006](/vault-assets/image-006-517052d0.png)
+![image_006](/vault-assets/image-006-517052d0.webp)
 
 - Có nhiều cách để biểu diễn P(A). Hai cách phổ biến nhất là tần số (frequencies) và mức độ tin tưởng (degree of belief). Đều tuân theo 3 tiên đề. Sự khác biệt giữa hai cách này không quan trọng lắm cho đến khi ta quan tâm đến suy rộng thống kê. Tại đó, sự khác biệt giữa hai cách dẫn đến hai trường phái suy rộng: tần số (frequentist) và Bayesian.
 
@@ -72,27 +72,27 @@ isIndex: false
 
 - Với mức độ tin tưởng, P(A) đo lường mức độ tin tưởng của người quan sát rằng A đúng.
 
-![image_007](/vault-assets/image-007-1697867a.png)
+![image_007](/vault-assets/image-007-1697867a.webp)
 
 ## Probability on Finite Sample Spaces (Xác suất không gian mẫu hữu hạn)
 
-![image_008](/vault-assets/image-008-3d99f2a7.png)
+![image_008](/vault-assets/image-008-3d99f2a7.webp)
 
-![image_009](/vault-assets/image-009-01412743.png)
+![image_009](/vault-assets/image-009-01412743.webp)
 
 - Cho không gian mẫu Ω = {ω1, …, ωn} là hữu hạn và mỗi kết quả có khả năng như nhau: được gọi là phân phối xác suất đồng nhất.
 
-![image_010](/vault-assets/image-010-72981ba4.png)
+![image_010](/vault-assets/image-010-72981ba4.webp)
 
 - Để tính toán xác suất, ta cần đếm số lượng các điểm trong một biến cố A. Phương pháp để đếm các điểm gọi là phương pháp tổ hợp.
 
 - Cho n đối tượng, số cách sắp xếp các đối tượng là , để thuận tiện, ta định nghĩa 0!=1. Ta cũng định nghĩa:  “n choose k”, số cách phân biệt để chọn k đối tượng từ n. (→ [Tương tác gen](/blog/tuong-tac-gen/), [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 
-![image_011](/vault-assets/image-011-f882d24f.png)
+![image_011](/vault-assets/image-011-f882d24f.webp)
 
-![image_012](/vault-assets/image-012-36bb4709.png)
+![image_012](/vault-assets/image-012-36bb4709.webp)
 
-![image_013](/vault-assets/image-013-839d08d9.png)
+![image_013](/vault-assets/image-013-839d08d9.webp)
 
 ## Independent Events (Biến cố độc lập)
 
@@ -100,7 +100,7 @@ isIndex: false
 
 - Định nghĩa:
 
-![image_014](/vault-assets/image-014-82abe1d8.png)
+![image_014](/vault-assets/image-014-82abe1d8.webp)
 
 - Độc lập có thể phát sinh từ hai cách phân biệt.
 
@@ -114,7 +114,7 @@ isIndex: false
 
 - Cho răng P(B) > 0, ta định nghĩa xác suất có điều kiện của A theo B là (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 
-![image_015](/vault-assets/image-015-aea1265c.png)
+![image_015](/vault-assets/image-015-aea1265c.webp)
 
 ## Bayes’ Theorem
 

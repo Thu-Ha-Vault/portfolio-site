@@ -109,5 +109,5 @@ isIndex: false
 - Các yếu tố phụ không đặc hiệu vẫn làm tăng mức ô nhiễm tổng hợp ($R_{dư}$ > 0 ở cả 3 điểm), nên đánh giá từng chất riêng lẻ sẽ đánh giá thấp mức ô nhiễm thực tế.
 
 ## Tài liệu gốc
-![IMG_4517](/vault-assets/img-4517-86720ad6.jpg)
-![IMG_4516](/vault-assets/img-4516-fd85db2d.jpg)
+![IMG_4517](/vault-assets/img-4517-86720ad6.webp)
+![IMG_4516](/vault-assets/img-4516-fd85db2d.webp)

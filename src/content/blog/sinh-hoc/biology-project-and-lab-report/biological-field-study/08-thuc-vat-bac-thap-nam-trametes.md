@@ -21,6 +21,8 @@ description: >-
   tả một mẫu nấm lỗ theo phiếu mô tả nấm lớn (đặc điểm sinh cảnh → phân loại →
   hình thái).
 isIndex: false
+cover: /vault-assets/img-5006-43ecd984-cover-960.webp
+cover_alt: Nấm lỗ hình quạt có vân đồng tâm mọc trên gỗ mục
 ---
 > Ngày 03/07/2023. Giảng viên: TS. Đỗ Thị Xuyến, TS. Nguyễn Hoài An. Báo cáo mô tả một mẫu nấm lỗ theo **phiếu mô tả nấm lớn** (đặc điểm sinh cảnh → phân loại → hình thái).
 
@@ -62,10 +64,10 @@ isIndex: false
 - Ngoài mẫu được mô tả, trên tuyến còn gặp nhiều **nấm mũ có phiến** mọc trên đất rừng và nấm lỗ khác (xem ảnh thực địa) nhưng chưa được định loại trong báo cáo.
 
 ## Ảnh mẫu vật (Hình 13.1–13.3)
-![IMG_5006](/vault-assets/img-5006-43ecd984.jpg)
-![IMG_5009](/vault-assets/img-5009-c2639ed2.jpg)
-![IMG_5010](/vault-assets/img-5010-8e5c01ed.jpg)
-![IMG_5011](/vault-assets/img-5011-784a83f9.jpg)
+![IMG_5006](/vault-assets/img-5006-43ecd984.webp)
+![IMG_5009](/vault-assets/img-5009-c2639ed2.webp)
+![IMG_5010](/vault-assets/img-5010-8e5c01ed.webp)
+![IMG_5011](/vault-assets/img-5011-784a83f9.webp)
 - Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – khoá lưỡng phân rút gọn dẫn tới Trametes.
 
 ## Tài liệu gốc

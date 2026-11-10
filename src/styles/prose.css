@@ -1,0 +1,253 @@
+/* prose.css: long-form reading (spec §6, §7.4). Blog posts, topic pages and project notes (body.is-reading).
+   Order on the page: cover (static), crumbs, h1, byline, prose, pager, share, CTA.
+   Still and flat: no glow, motion or decor behind the column; colour-only transitions capped at 120ms.
+   Light reading mode swaps the tokens (global.css); the few literal colours here get overrides at the end. */
+
+/* ---------- article frame ---------- */
+.article { padding-top: 32px; padding-bottom: 64px; }
+
+/* post header: cover column (900px and up) or a 16:7 strip above the crumbs */
+.post-top { display: grid; grid-template-columns: minmax(0, 1fr); }
+.post-cover { aspect-ratio: 16 / 7; margin: 0 0 20px; }
+@media (min-width: 900px) {
+  .post-top { grid-template-columns: minmax(0, 1fr) 420px; grid-template-areas: 'crumbs cover' 'head cover'; grid-template-rows: auto 1fr; column-gap: 48px; align-items: start; }
+  .post-top > .crumbs-nav { grid-area: crumbs; }
+  .post-top > .article-head { grid-area: head; }
+  .post-top > .post-cover { grid-area: cover; aspect-ratio: 16 / 9; margin: 0 0 40px; }
+}
+
+/* topic page banner: full .wrap width, faded at the bottom */
+.topic-banner {
+  height: 160px;
+  margin: 0 0 20px;
+  -webkit-mask-image: linear-gradient(#000 60%, transparent);
+  mask-image: linear-gradient(#000 60%, transparent);
+}
+@media (max-width: 639.98px) { .topic-banner { height: 112px; } }
+
+/* ---------- crumbs and head ---------- */
+.crumbs { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14.5px; line-height: 1.5; margin: 0 0 20px; padding: 0; list-style: none; color: var(--ink-soft); }
+.crumbs li { min-width: 0; overflow-wrap: anywhere; }
+.crumbs li + li::before { content: '/'; color: var(--ink-soft); margin-right: 10px; }
+.crumbs a { color: var(--ink-soft); text-decoration: underline 1px transparent; text-underline-offset: 3px; transition: color 120ms, text-decoration-color 120ms; }
+.crumbs a:hover { color: var(--ink); text-decoration-color: currentColor; }
+.article-head { max-width: 46rem; margin-bottom: 40px; }
+.article-head h1 { font-size: var(--fs-page-h1); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 16px; padding-block: 0.06em 0.02em; overflow-wrap: break-word; }
+.byline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px; margin: 0; font-size: var(--fs-meta); line-height: 1.5; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.byline-topic { display: inline-flex; align-items: center; gap: 6px; }
+.byline a { color: var(--link); }
+.byline a:hover { color: var(--ink); }
+.byline-topic .glyph { color: var(--tc, var(--ink-soft)); }
+
+/* ---------- prose body ---------- */
+.prose {
+  max-width: var(--measure);
+  font: 400 var(--fs-prose)/1.75 var(--sans);
+  color: var(--text);
+  overflow-wrap: break-word;
+}
+@media (max-width: 399.98px) { .prose { font-size: 17px; } }
+.prose > :first-child { margin-top: 0; }
+.prose h2 { font: 500 var(--fs-prose-h2)/1.2 var(--display); letter-spacing: 0; color: var(--ink); margin: 56px 0 16px; padding-block: 0.04em 0.02em; }
+.prose h3 { font: 600 21px/1.35 var(--sans); color: var(--ink); margin: 40px 0 12px; }
+.prose h4 { font: 600 18px/1.4 var(--sans); color: var(--ink); margin: 32px 0 8px; }
+.prose p, .prose ul, .prose ol, .prose dl { margin: 0 0 1.1em; }
+.prose ul, .prose ol { padding-left: 1.3em; }
+.prose li { margin: 0.35em 0; }
+.prose li::marker { color: var(--ink-soft); }
+.prose li > ul, .prose li > ol { margin: 0.35em 0; }
+.prose strong { font-weight: 600; color: #fff; }
+/* bold link text keeps the link colour (Coursera notes often wrap whole links in <strong>) */
+.prose a :is(strong, b) { color: inherit; }
+.prose em { font-style: italic; }
+.prose a { color: var(--link); }
+.prose a:hover { color: var(--ink); }
+.prose mark { background: rgba(244, 95, 208, 0.22); color: inherit; padding: 0 0.15em; border-radius: 2px; }
+.prose hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+.prose input[type='checkbox'] { margin-right: 8px; accent-color: var(--link); }
+.prose sup, .prose sub { line-height: 0; }
+
+/* blockquote: display italic with a 3px iris rule. The display face never goes below 22px (§1 hard rule).
+   Lists, tables and code inside a quote stay in the reading face. */
+.prose blockquote {
+  margin: 28px 0;
+  padding-block: 2px;
+  padding-inline: 20px 0;
+  font: italic 400 22px/1.5 var(--display);
+  color: var(--ink-soft);
+  border-left: 3px solid var(--iris-pink);
+  border-image: var(--iris) 1;
+}
+.prose blockquote > :last-child { margin-bottom: 0; }
+.prose blockquote :is(ul, ol, table, pre, .table-scroll) { font: normal 400 17px/1.7 var(--sans); }
+.prose blockquote strong { color: var(--ink); }
+
+/* code: --deep panels with the dark Shiki colours; light reading swaps to the Shiki light theme (global.css) */
+.prose code { font-family: var(--mono); font-size: 0.85em; background: var(--deep); border: 1px solid var(--line); padding: 0.08em 0.35em; border-radius: var(--r-control); overflow-wrap: anywhere; }
+.prose pre {
+  margin: 24px 0;
+  padding: 16px 18px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  border: 1px solid var(--line);
+  border-radius: var(--r-plate);
+  overflow-x: auto;
+  scrollbar-color: #7466b0 #1a0b45;
+}
+.prose pre.astro-code { background-color: var(--deep) !important; }
+.prose pre code { background: none; border: 0; padding: 0; font-size: inherit; overflow-wrap: normal; }
+
+/* KaTeX inherits the text colour. position: relative keeps KaTeX's visually hidden MathML inside the
+   prose column, so it can't widen the page. */
+.prose .katex { color: inherit; position: relative; }
+/* An inline formula wider than its line (marked by the page script) scrolls on its own instead of widening the page. */
+.prose .katex.is-wide { display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: middle; padding-block: 0.15em; scrollbar-width: thin; scrollbar-color: #7466b0 transparent; }
+.prose .katex-display { overflow-x: auto; overflow-y: hidden; padding-block: 4px; margin: 1.1em 0; }
+
+/* mermaid (rendered by Base.astro with token theme variables) */
+.mermaid { margin: 28px 0; text-align: center; font-family: var(--sans); overflow-x: auto; }
+/* natural size (useMaxWidth: false): a wide diagram scrolls inside .mermaid instead of shrinking to illegible labels */
+.mermaid svg { max-width: none; height: auto; }
+.mermaid[tabindex]:focus-visible { outline-offset: 2px; }
+
+/* ---------- figures (spec §7.4) ---------- */
+.prose img { display: block; max-width: 100%; height: auto; margin: 24px 0; }
+/* specimen plates: SVG diagrams and white screenshots. Never inverted or recoloured. */
+.prose img.plate {
+  box-sizing: content-box;
+  max-width: calc(100% - 24px);
+  padding: 12px;
+  background: var(--plate);
+  border-radius: var(--r-plate);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2), 0 18px 40px -18px rgba(177, 140, 255, 0.45);
+}
+.prose img.photo { border-radius: var(--r-plate); outline: 1px solid rgba(255, 255, 255, 0.12); outline-offset: 0; }
+.prose figure.prose-fig { margin: 28px 0; }
+.prose figure.prose-fig img { margin: 0; }
+.prose figcaption { margin-top: 10px; font: 400 14px/1.5 var(--sans); color: var(--ink-soft); }
+.prose li img { margin: 12px 0; }
+
+/* ---------- tables (wrapped by rehype-table-scroll) ---------- */
+.prose .table-scroll {
+  margin: 24px 0;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-color: #7466b0 #1a0b45;
+  border-radius: 2px;
+}
+.prose .table-scroll.has-overflow:not(.at-end) {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
+}
+.prose .table-scroll:focus-visible { outline-offset: 2px; -webkit-mask-image: none; mask-image: none; }
+.prose table { border-collapse: collapse; min-width: 100%; margin: 24px 0; font: 400 15.5px/1.5 var(--sans); font-variant-numeric: tabular-nums; color: var(--text); }
+.prose .table-scroll > table { margin: 0; }
+.prose th, .prose td { padding: 9px 14px; text-align: left; vertical-align: top; min-width: 7em; }
+.prose th { font-weight: 600; color: var(--ink); background: var(--raise); border-bottom: 2px solid var(--edge); }
+.prose td { border-bottom: 1px solid var(--line); }
+.prose th:first-child, .prose td:first-child { padding-left: 12px; }
+
+/* ---------- callouts: --deep panel, 3px left rule by type (iris stops) ---------- */
+.callout {
+  --co: #4cd8ff;
+  margin: 24px 0;
+  padding: 14px 18px 14px 18px;
+  background: var(--deep);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--co);
+  border-radius: var(--r-panel);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.callout > :last-child { margin-bottom: 0; }
+.callout summary, .callout-title { font: 600 16px/1.4 var(--sans); color: var(--ink); margin: 0 0 8px; }
+.callout summary { cursor: pointer; }
+.callout summary::marker { color: var(--ink-soft); }
+details.callout:not([open]) summary { margin: 0; }
+.callout-question, .callout-help, .callout-faq { --co: #b18cff; }
+.callout-warning, .callout-caution, .callout-attention { --co: #ffc94a; }
+.callout-danger, .callout-error, .callout-bug, .callout-failure, .callout-fail, .callout-missing { --co: #f45fd0; }
+.callout-success, .callout-check, .callout-done { --co: #a8f06a; }
+
+/* ---------- after the prose: children, pager, share ---------- */
+.after { max-width: var(--measure); margin-top: 56px; }
+.children h2, .share h2 { font-size: 24px; line-height: 1.25; margin: 0 0 16px; }
+.children { margin-bottom: 48px; }
+.topic-children { max-width: 46rem; }
+.children .rows a { grid-template-columns: minmax(0, 1fr) auto; }
+.children .rows .t.is-topic { font-weight: 600; }
+.children .rows .where { font-variant-numeric: tabular-nums; }
+
+/* pager and share: plain 1px --edge outline pills, radius 3px, not glass */
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 48px; }
+.pager a {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid var(--edge);
+  border-radius: var(--r-control);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 120ms, border-color 120ms;
+}
+.pager a span { text-decoration: underline 1px transparent; text-underline-offset: 3px; transition: text-decoration-color 120ms; }
+.pager a:hover { border-color: var(--ink-soft); color: var(--link); }
+.pager a:hover span { text-decoration-color: currentColor; }
+.pager small { display: block; font-weight: 400; color: var(--ink-soft); font-size: var(--fs-meta); margin-bottom: 4px; }
+.pager .next { grid-column: 2; text-align: right; }
+@media (max-width: 559.98px) { .pager { grid-template-columns: 1fr; } .pager .next { grid-column: 1; text-align: left; } }
+
+.share { margin-bottom: 48px; }
+.share ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding-block: 0;
+  padding-inline: 16px;
+  border: 1px solid var(--edge);
+  border-radius: var(--r-control);
+  background: transparent;
+  color: var(--ink);
+  font: 500 15px var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 120ms, border-color 120ms;
+}
+.pill:hover { color: var(--link); border-color: var(--ink-soft); }
+
+/* ---------- light reading overrides (tokens swap in global.css; literal colours swap here) ---------- */
+html[data-reading='light'] body.is-reading .prose strong { color: var(--ink); }
+html[data-reading='light'] body.is-reading .prose a :is(strong, b) { color: inherit; }
+html[data-reading='light'] body.is-reading .prose mark { background: rgba(244, 95, 208, 0.2); }
+html[data-reading='light'] body.is-reading .prose img.plate { box-shadow: 0 0 0 1px var(--line); }
+html[data-reading='light'] body.is-reading .prose img.photo { outline-color: rgba(30, 27, 58, 0.14); }
+html[data-reading='light'] body.is-reading .prose pre,
+html[data-reading='light'] body.is-reading .prose .table-scroll { scrollbar-color: #8a86a8 #eef0f7; }
+/* Callout rules in light reading: the iris stops darkened to at least 3:1 on --deep #eef0f7. Deliberately not the
+   stained topic hexes (those belong to topics, paired with their glyph and name; spec §2). */
+html[data-reading='light'] body.is-reading .callout { --co: #0f6f8f; }
+html[data-reading='light'] body.is-reading :is(.callout-question, .callout-help, .callout-faq) { --co: #6b46c1; }
+html[data-reading='light'] body.is-reading :is(.callout-warning, .callout-caution, .callout-attention) { --co: #8a5a00; }
+html[data-reading='light'] body.is-reading :is(.callout-danger, .callout-error, .callout-bug, .callout-failure, .callout-fail, .callout-missing) { --co: #a8288c; }
+html[data-reading='light'] body.is-reading :is(.callout-success, .callout-check, .callout-done) { --co: #3b7a12; }
+html[data-reading='light'] body.is-reading .post-cover.is-procedural,
+html[data-reading='light'] body.is-reading .topic-banner.is-procedural { opacity: 0.92; }
+
+/* ---------- forced colors and print ---------- */
+@media (forced-colors: active) {
+  .prose blockquote { border-image: none; border-left-color: CanvasText; }
+  .callout { border-left-color: CanvasText; }
+  .prose img.plate { forced-color-adjust: none; }
+  .pager a, .pill { border-color: ButtonText; }
+}
+@media print {
+  .post-cover, .topic-banner, .share, .pager { display: none !important; }
+  .prose { color: #000; }
+  .prose strong { color: #000; }
+  .prose blockquote { border-image: none; border-left-color: #000; }
+  .callout { background: none; border-color: #999; }
+  .prose pre.astro-code, .prose pre.astro-code span { background: #fff !important; color: #000 !important; }
+  .prose .table-scroll { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+}

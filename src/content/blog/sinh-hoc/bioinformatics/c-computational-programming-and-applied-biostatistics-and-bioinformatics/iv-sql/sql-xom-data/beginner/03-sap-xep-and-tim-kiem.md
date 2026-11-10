@@ -96,21 +96,21 @@ SELECT * FROM products LIMIT 5 OFFSET 5;
 SELECT department FROM employees;
 ```
 - Kết quả có 30 dòng — mỗi phòng ban lặp lại nhiều lần!
-![Ảnh chụp Màn hình 2026-07-15 lúc 21.59.16](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-21-59-16-1ab2da09.png)
+![Ảnh chụp Màn hình 2026-07-15 lúc 21.59.16](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-21-59-16-1ab2da09.webp)
 ## b. DISTINCT cơ bản
 - Thêm `DISTINCT` để chỉ lấy giá trị **duy nhất**: (→ [SQL Tutorial](/blog/tutorial-biology-2/))
 ```sql
 SELECT DISTINCT department FROM employees;
 ```
 - Kết quả chỉ còn 4 dòng: Engineering, Marketing, Sales, HR.
-![Ảnh chụp Màn hình 2026-07-15 lúc 22.00.04](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-22-00-04-ec4cc4b6.png)
+![Ảnh chụp Màn hình 2026-07-15 lúc 22.00.04](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-22-00-04-ec4cc4b6.webp)
 ## c. DISTINCT nhiều cột
 ```sql
 SELECT DISTINCT department, position
 FROM employees;
 ```
 - Trả về các **cặp** phòng ban + chức vụ duy nhất. VD: (Engineering, Trưởng phòng) và (Engineering, Nhân viên) là 2 cặp khác nhau.
-![Ảnh chụp Màn hình 2026-07-15 lúc 22.00.36](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-22-00-36-97dada31.png)
+![Ảnh chụp Màn hình 2026-07-15 lúc 22.00.36](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-22-00-36-97dada31.webp)
 ## Lưu ý cơ bản
 - `DISTINCT` đặt **ngay sau** `SELECT`
 - `DISTINCT` áp dụng cho **toàn bộ** dòng, không phải từng cột

@@ -67,6 +67,6 @@ flowchart LR
 </div>
 
 ## Tài liệu gốc
-![Ảnh chụp Màn hình 2021-12-11 lúc 08.52.41](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-08-52-41-0a3c8e11.png)
-![Ảnh chụp Màn hình 2021-12-11 lúc 08.57.43](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-08-57-43-3c651314.png)
-![Ảnh chụp Màn hình 2021-12-11 lúc 09.10.42](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-09-10-42-b1489c93.png)
+![Ảnh chụp Màn hình 2021-12-11 lúc 08.52.41](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-08-52-41-0a3c8e11.webp)
+![Ảnh chụp Màn hình 2021-12-11 lúc 08.57.43](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-08-57-43-3c651314.webp)
+![Ảnh chụp Màn hình 2021-12-11 lúc 09.10.42](/vault-assets/anh-chup-man-hinh-2021-12-11-luc-09-10-42-b1489c93.webp)

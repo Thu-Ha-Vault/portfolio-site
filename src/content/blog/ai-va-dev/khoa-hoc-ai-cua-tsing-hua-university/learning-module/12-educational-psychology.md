@@ -75,7 +75,7 @@ isIndex: false
 		2. Metacognitive Control/Regulation: Mainly operates in working memory, answering "when/how to do". Responsible for management and control of cognitive behaviors.
 			- Core Process of Metacognitive Control: 
 				- Core Idea: Metacognitive control is a dynamic cyclical process that ensures learning activities proceed effectively toward goal
-				- ![Ảnh chụp Màn hình 2026-09-14 lúc 22.55.05](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-22-55-05-80069c1f.png)
+				- ![Ảnh chụp Màn hình 2026-09-14 lúc 22.55.05](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-22-55-05-80069c1f.webp)
 	- Detailed Metacognitive Strategies: 
 		- Planing Strategies:
 			- Function of Planing Strategies: According to cognitive goals, systematically planning activities, predicting results, and selecting strategies before action to lay the foundation for successful learning tasks
@@ -130,7 +130,7 @@ isIndex: false
 		- **4. Academic Help-Seeking Strategies:** Effectively obtaining help from others when needed.
 			- **Core Principle:** Viewing help-seeking as a positive learning strategy, not a sign of incompetence.
 			* **Specific Methods:** Seeking teacher help, discussing with peers, utilizing teaching assistants or tutoring resources.
-![Ảnh chụp Màn hình 2026-09-14 lúc 22.34.23](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-22-34-23-0fc4fced.png)
+![Ảnh chụp Màn hình 2026-09-14 lúc 22.34.23](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-22-34-23-0fc4fced.webp)
 ### Integration: What is Self-Regulated Learning (SRL)? 
 - **Definition of Self-Regulated Learning:** A dynamic learning process in which learners actively motivate themselves and actively, systematically use learning strategies (including cognitive, metacognitive, and resource management strategies) to achieve personal goals. (→ [AI in Education](/blog/artificial-intelligence-in-education/))
 - **Core Distinction:** Not only possessing strategy knowledge, but also having the willingness and ability to actively apply strategies in appropriate contexts.
@@ -214,7 +214,7 @@ isIndex: false
 	- ***Individual Constructivism: Generative Learning Theory***
 		- **Generative Learning Theory (Wittrock)** : Learning is the process by which learners actively construct internal mental representations based on prior knowledge and experience.
 		- **Generative Learning Process** : Learners interact with sensory information received from the environment through knowledge and strategies stored in long-term memory, actively attending to and selecting information, and generating meaning from information.
-		- *Generative Learning Model Diagram*: ![Ảnh chụp Màn hình 2026-09-14 lúc 23.35.28](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-23-35-28-dfb5c5da.png)
+		- *Generative Learning Model Diagram*: ![Ảnh chụp Màn hình 2026-09-14 lúc 23.35.28](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-23-35-28-dfb5c5da.webp)
 	- ***Individual Constructivism: Cognitive Flexibility Theory***
 		- **Cognitive Flexibility Theory (Spiro)** : Explains how to promote flexible transfer and application of knowledge through deepening understanding, aiming to cultivate learners' adaptive response capabilities to deal with complex and irregular real situations.
 		- **Well-Structured Domains & Introductory Acquisition**

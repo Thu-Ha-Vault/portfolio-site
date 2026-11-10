@@ -4,6 +4,8 @@ import T from '../../components/T.astro';
 import PostRows from '../../components/PostRows.astro';
 import { blogEntries, byUpdated } from '../../lib';
 import { topicNames, ui } from '../../i18n';
+import { glyphSvg, topicVar } from '../../data/topics';
+import { ogUrl } from '../../lib/cover';
 
 const blog = await blogEntries();
 const posts = blog.filter((e) => !e.data.isIndex).sort(byUpdated);
@@ -11,37 +13,69 @@ const topics = [...new Set(posts.map((p) => p.data.topic ?? ''))]
   .map((t) => ({ t, n: posts.filter((p) => p.data.topic === t).length }))
   .sort((a, b) => b.n - a.n);
 ---
-<Base title="Blog" description="Notes on biology, data science, AI, business and languages, written while learning.">
-  <div class="wrap">
-    <header class="page-head">
-      <h1><T k="blog" /></h1>
-      <p><T k="blogIntro" /></p>
-    </header>
-    <div class="filters" role="group" aria-label="Topics">
-      <button type="button" aria-pressed="true" data-filter=""><T k="allTopics" /> {posts.length}</button>
+<Base title="Blog" description="Notes on biology, data science, AI, business and languages, written while learning." image={ogUrl('/blog/')}>
+  <div class="wrap page-head">
+    <h1><T k="blog" /></h1>
+    <p><T k="blogIntro" /></p>
+  </div>
+  <div class="wrap list-page">
+    <form class="search-form" role="search" action="/blog/" method="get" data-search>
+      <label class="search-label" for="q"><T k="search" /></label>
+      <input class="search" id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" spellcheck="false" placeholder={ui.searchPlaceholder[0]} data-placeholder-vi={ui.searchPlaceholder[0]} data-placeholder-en={ui.searchPlaceholder[1]} />
+      <p class="result-count" aria-live="polite"><span id="count">{posts.length}</span> <T vi="ghi chép" en="notes" /></p>
+    </form>
+    <div class="filters" role="group" aria-label={ui.topics[0]} data-aria-vi={ui.topics[0]} data-aria-en={ui.topics[1]}>
+      <button type="button" class="chip" aria-pressed="true" data-filter=""><T k="allTopics" /> <span class="n">{posts.length}</span></button>
       {topics.map(({ t, n }) => {
         const [vi, en] = topicNames[t] ?? [t, t];
-        return <button type="button" aria-pressed="false" data-filter={t}><span data-vi={vi} data-en={en}>{vi}</span> {n}</button>;
+        return (
+          <button type="button" class="chip" aria-pressed="false" data-filter={t} style={`--tc:${topicVar(t, 'var(--ink)')}`}>
+            <Fragment set:html={glyphSvg(t, 12)} />
+            <span data-vi={vi} data-en={en}>{vi}</span> <span class="n">{n}</span>
+          </button>
+        );
       })}
     </div>
-    <label class="search-label" for="q"><T k="search" /></label>
-    <input class="search" id="q" type="search" autocomplete="off" placeholder={ui.searchPlaceholder[0]} data-placeholder-vi={ui.searchPlaceholder[0]} data-placeholder-en={ui.searchPlaceholder[1]} />
-    <p class="result-count" id="count" aria-live="polite">{posts.length}</p>
     <PostRows posts={posts} id="posts" filterable />
-    <p class="empty" id="empty" hidden><T k="noResults" /></p>
+    <div class="empty" id="empty" hidden>
+      <p>
+        <span id="empty-with-q">
+          <T vi="Không có ghi chép nào khớp “" en="No notes match “" /><span class="empty-q" id="empty-q"></span><T vi="”. " en="”. " />
+        </span>
+        <span id="empty-no-q" hidden><T vi="Không có ghi chép nào khớp. " en="No notes match. " /></span>
+        <T vi="Thử từ khoá ngắn hơn hoặc chọn chủ đề khác." en="Try a shorter keyword or choose another topic." />
+      </p>
+      <button type="button" class="button flat" id="clear"><T vi="Xoá bộ lọc" en="Clear filters" /></button>
+    </div>
   </div>
   <script is:inline>
     (function () {
+      var form = document.querySelector('[data-search]');
       var q = document.getElementById('q');
       var items = Array.prototype.slice.call(document.querySelectorAll('#posts li'));
+      var list = document.getElementById('posts');
       var empty = document.getElementById('empty');
+      var emptyQ = document.getElementById('empty-q');
+      var withQ = document.getElementById('empty-with-q');
+      var noQ = document.getElementById('empty-no-q');
       var count = document.getElementById('count');
       var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-filter]'));
       var topic = '';
       var norm = function (s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd'); };
       items.forEach(function (li) { li.dataset.n = norm(li.dataset.q || ''); });
+      function syncUrl() {
+        try {
+          var p = new URLSearchParams(location.search);
+          var v = q.value.trim();
+          if (v) p.set('q', v); else p.delete('q');
+          if (topic) p.set('topic', topic); else p.delete('topic');
+          var s = p.toString();
+          history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
+        } catch (e) {}
+      }
       function run() {
-        var words = norm(q.value.toLowerCase().trim()).split(/\s+/).filter(Boolean);
+        var raw = q.value.trim();
+        var words = norm(raw.toLowerCase()).split(/\s+/).filter(Boolean);
         var shown = 0;
         items.forEach(function (li) {
           var ok = (!topic || li.dataset.topic === topic) && words.every(function (w) { return li.dataset.n.indexOf(w) !== -1; });
@@ -49,18 +83,35 @@ const topics = [...new Set(posts.map((p) => p.data.topic ?? ''))]
           if (ok) shown++;
         });
         empty.hidden = shown > 0;
+        list.hidden = shown === 0;
+        emptyQ.textContent = raw;
+        withQ.hidden = !raw;
+        noQ.hidden = !!raw;
         count.textContent = shown;
       }
+      function setTopic(t) {
+        topic = t;
+        buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x.dataset.filter === t)); });
+      }
       buttons.forEach(function (b) {
-        b.addEventListener('click', function () {
-          topic = b.dataset.filter;
-          buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
-          run();
-        });
+        b.addEventListener('click', function () { setTopic(b.dataset.filter); run(); syncUrl(); });
       });
-      q.addEventListener('input', run);
-      var t = new URLSearchParams(location.search).get('topic');
-      if (t) { var b = buttons.find(function (x) { return x.dataset.filter === t; }); if (b) b.click(); }
+      q.addEventListener('input', function () { run(); syncUrl(); });
+      form.addEventListener('submit', function (e) { e.preventDefault(); run(); syncUrl(); });
+      document.getElementById('clear').addEventListener('click', function () {
+        q.value = '';
+        setTopic('');
+        run();
+        syncUrl();
+        q.focus();
+      });
+      var params = new URLSearchParams(location.search);
+      var t = params.get('topic');
+      if (t && buttons.some(function (x) { return x.dataset.filter === t; })) setTopic(t);
+      var pq = params.get('q');
+      if (pq) q.value = pq;
+      if (t || pq) run();
+      if (pq) q.focus();
     })();
   </script>
 </Base>

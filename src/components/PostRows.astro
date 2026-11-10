@@ -1,18 +1,36 @@
 ---
+/**
+ * Post rows (spec §6): date | title | glyph + topic name, separated by 1px --line rules.
+ * - `thumbs` (home "Mới cập nhật" only): a 56px procedural cover thumb on the left at 640px and up (§7.1).
+ *   /blog/ rows and search results never get images.
+ * - `filterable`: adds data-topic / data-q for the /blog/ search script.
+ * The topic hex only colours the polyhedron glyph; the topic name stays --ink-soft (§2 colour semantics).
+ */
 import { topicNames } from '../i18n';
 import { fmtDate, type Blog } from '../lib';
-interface Props { posts: Blog[]; id?: string; filterable?: boolean }
-const { posts, id, filterable = false } = Astro.props;
+import { glyphSvg, topicVar } from '../data/topics';
+import { thumbUrl, COVER_SIZE } from '../lib/cover';
+interface Props { posts: Blog[]; id?: string; filterable?: boolean; thumbs?: boolean }
+const { posts, id, filterable = false, thumbs = false } = Astro.props;
 ---
-<ul class="rows" id={id}>
+<ul class:list={['rows', { 'has-thumbs': thumbs }]} id={id}>
   {posts.map((p) => {
-    const [vi, en] = topicNames[p.data.topic ?? ''] ?? [p.data.topic ?? '', p.data.topic ?? ''];
+    const topic = p.data.topic ?? '';
+    const [vi, en] = topicNames[topic] ?? [topic, topic];
     return (
-      <li data-topic={filterable ? p.data.topic : undefined} data-q={filterable ? `${p.data.title} ${p.data.folder ?? ''} ${p.data.tags.join(' ')}`.toLowerCase() : undefined}>
+      <li data-topic={filterable ? topic : undefined} data-q={filterable ? `${p.data.title} ${p.data.folder ?? ''} ${p.data.tags.join(' ')} ${vi} ${en}`.toLowerCase() : undefined}>
         <a href={p.data.url}>
+          {thumbs && (
+            <img class="row-thumb" src={thumbUrl(p.data.url)} width={COVER_SIZE.thumb.width} height={COVER_SIZE.thumb.height} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+          )}
           <time datetime={p.data.updated}>{fmtDate(p.data.updated)}</time>
           <span class="t">{p.data.title}</span>
-          <span class="where" data-vi={vi} data-en={en}>{vi}</span>
+          {topic && (
+            <span class="where" style={`--tc:${topicVar(topic)}`}>
+              <Fragment set:html={glyphSvg(topic, 12)} />
+              <span data-vi={vi} data-en={en}>{vi}</span>
+            </span>
+          )}
         </a>
       </li>
     );

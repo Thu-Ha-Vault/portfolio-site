@@ -1,3 +1,5 @@
+import { TOPICS } from './data/topics';
+
 export const ui = {
   projects: ['Dự án', 'Projects'],
   blog: ['Blog', 'Blog'],
@@ -6,7 +8,6 @@ export const ui = {
   seeProjects: ['Xem dự án', 'See projects'],
   readBlog: ['Đọc blog', 'Read the blog'],
   mapCaption: ['Second Brain của mình dưới dạng một dải ngân hà: mỗi nhánh là một chủ đề, mỗi ngôi sao là một bài ghi chép, các khoá học tạo thành chòm sao.', 'My Second Brain as a galaxy: each arm is a topic, each star is a note, and courses form constellations.'],
-  galaxyHint: ['Kéo để xoay, cuộn để phóng to, bấm vào ngôi sao để mở bài.', 'Drag to rotate, scroll to zoom, click a star to open it.'],
   galaxyOpen: ['Mở bài', 'Open'],
   projectsIntro: ['Các dự án mình đang làm, theo đúng quy trình phân tích dữ liệu Ask, Prepare, Process, Analyze, Share, Act.', 'What I am building, tracked through the data analysis process: Ask, Prepare, Process, Analyze, Share, Act.'],
   allProjects: ['Tất cả dự án', 'All projects'],
@@ -32,21 +33,23 @@ export const ui = {
   copyLink: ['Chép link', 'Copy link'],
   copied: ['Đã chép link', 'Link copied'],
   footer: ['Nội dung được đồng bộ từ Second Brain (Obsidian) của mình.', 'Content synced from my Obsidian Second Brain.'],
-  noResults: ['Không có bài nào khớp. Thử từ khoá ngắn hơn hoặc chọn chủ đề khác.', 'No posts match. Try a shorter keyword or another topic.'],
   topicsIntro: ['Toàn bộ ghi chép, xếp theo khoá học và môn học.', 'Every note, organized by course and subject.'],
   blogIntro: ['Ghi chép từ các khoá học, sách và sổ tay, cập nhật liên tục.', 'Notes from courses, books and notebooks, updated continuously.'],
   notFound: ['Không tìm thấy trang này.', 'This page does not exist.'],
   backHome: ['Về trang chủ', 'Back to home'],
+  skip: ['Bỏ qua, tới nội dung', 'Skip to content'],
+  home: ['Trang chủ', 'Home'],
+  mainNav: ['Điều hướng chính', 'Main'],
+  switchLang: ['Đổi sang tiếng Anh', 'Switch to Vietnamese'],
+  readingLight: ['Đọc nền sáng', 'Light reading'],
+  crumbs: ['Đường dẫn', 'Breadcrumb'],
+  findMe: ['Tìm mình ở', 'Find me on'],
+  socialLinks: ['Liên kết', 'Links'],
 } as const;
 
 export type UiKey = keyof typeof ui;
 
-/** Display names for top-level topics (slug → [vi, en]). */
-export const topicNames: Record<string, [string, string]> = {
-  biology: ['Sinh học', 'Biology'],
-  'ai-development': ['AI và lập trình', 'AI and development'],
-  business: ['Kinh doanh', 'Business'],
-  french: ['Tiếng Pháp', 'French'],
-  english: ['Tiếng Anh', 'English'],
-  'university-courses': ['Học phần đại cương', 'University courses'],
-};
+/** Display names for top-level topics (slug → [vi, en]). Derived from src/data/topics.ts. */
+export const topicNames: Record<string, [string, string]> = Object.fromEntries(
+  TOPICS.map((t) => [t.id, [t.names.vi, t.names.en] as [string, string]]),
+);

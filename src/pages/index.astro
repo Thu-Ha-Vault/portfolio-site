@@ -6,6 +6,7 @@ import ProjectCase from '../components/ProjectCase.astro';
 import PostRows from '../components/PostRows.astro';
 import Cta from '../components/Cta.astro';
 import config from '../../site.config.json';
+import graph from '../data/graph.json';
 import { blogEntries, projectEntries, byUpdated } from '../lib';
 
 const blog = await blogEntries();
@@ -23,18 +24,45 @@ const jsonLd = {
   description: config.author.bio_en,
   ...(sameAs.length ? { sameAs } : {}),
 };
+
+// Hero subtitle (spec §1, approved): "{N} ghi chép trong {K} chủ đề" / "{N} notes across {K} topics", from graph.json.
+const withNotes = graph.nodes.filter((n) => n.notes > 0);
+const noteCount = withNotes.reduce((s, n) => s + n.notes, 0);
+const topicCount = withNotes.length;
+
+// Lab strip "Từ phòng lab và thực địa" (spec §7.2): owner-approved photos, written by sync to src/data/gallery.json.
+type GalleryItem = {
+  file: string; url: string; title: string; title_en?: string; topic?: string; alt: string; alt_en?: string; sci?: string;
+  width: number; height: number; src: string; srcset: string; lut: string; lutSrcset: string;
+};
+const galleryMods = import.meta.glob<GalleryItem[]>('../data/gallery.json', { eager: true, import: 'default' });
+const gallery = (Object.values(galleryMods)[0] ?? []) as GalleryItem[];
+const labSizes = '(min-width: 1160px) 352px, (min-width: 900px) 30vw, (min-width: 560px) 46vw, 72vw';
 ---
 <Base jsonLd={jsonLd}>
-  <section class="wrap hero">
-    <div>
-      <h1><T k="heroTitle" /></h1>
-      <p class="intro"><T vi={config.author.bio_vi} en={config.author.bio_en} /></p>
-      <div class="actions">
-        <a class="button solid" href="#projects"><T k="seeProjects" /></a>
-        <a class="button" href="/blog/"><T k="readBlog" /></a>
+  <section class="hero-stage" data-hero aria-labelledby="hero-title">
+    <script is:inline>
+      // Ignition runs once per session (spec §8 #1). Later visits render already lit, with no CSS keyframes.
+      (function (s) {
+        try {
+          if (sessionStorage.getItem('lit')) { s.classList.add('is-lit'); s.dataset.ignite = '0'; }
+          else { sessionStorage.setItem('lit', '1'); s.dataset.ignite = '1'; }
+        } catch (e) { s.classList.add('is-lit'); s.dataset.ignite = '0'; }
+      })(document.currentScript.parentElement);
+    </script>
+    <div class="wrap hero-copy">
+      <div class="hero-col">
+        <h1 class="hero-title" id="hero-title"><T k="heroTitle" /></h1>
+        <p class="hero-sub"><T vi={`${noteCount} ghi chép trong ${topicCount} chủ đề`} en={`${noteCount} notes across ${topicCount} topics`} /></p>
+        <p class="intro"><T vi={config.author.bio_vi} en={config.author.bio_en} /></p>
+        <div class="actions">
+          <a class="button solid" href="#projects"><T k="seeProjects" /></a>
+          <a class="button" href="/blog/"><T k="readBlog" /></a>
+        </div>
       </div>
     </div>
-    <Galaxy><T k="mapCaption" /></Galaxy>
+    <Galaxy variant="stage"><T k="mapCaption" /></Galaxy>
+    <span class="hero-sentinel" aria-hidden="true"></span>
   </section>
 
   <section class="band brutal" id="projects">
@@ -63,11 +91,42 @@ const jsonLd = {
         <h2><T k="recentNotes" /></h2>
         <a href="/blog/"><T k="allPosts" /></a>
       </div>
-      <PostRows posts={recent} />
+      <PostRows posts={recent} thumbs />
     </div>
   </section>
 
-  <section class="wrap" style="padding-bottom:16px">
+  {gallery.length >= 3 && (
+    <section class="band lab" aria-labelledby="lab-title">
+      <div class="wrap">
+        <div class="band-head">
+          <div>
+            <h2 id="lab-title"><T vi="Từ phòng lab và thực địa" en="From the lab and the field" /></h2>
+            <p><T vi="Ảnh mình chụp trong giờ thực hành và các chuyến thực địa. Mỗi ảnh dẫn tới bài ghi chép của nó." en="Photos from my lab sessions and field trips. Each one opens its note." /></p>
+          </div>
+        </div>
+        <ul class="lab-strip">
+          {gallery.map((g) => (
+            <li>
+              <a class="lab-tile" href={g.url}>
+                <figure>
+                  <div class="lab-img">
+                    <img class="lab-lut" src={g.lut} srcset={g.lutSrcset} sizes={labSizes} width={g.width} height={g.height} alt={g.alt} data-alt-vi={g.alt} data-alt-en={g.alt_en ?? g.alt} loading="lazy" decoding="async" />
+                    <img class="lab-true" src={g.src} srcset={g.srcset} sizes={labSizes} width={g.width} height={g.height} alt="" loading="lazy" decoding="async" />
+                  </div>
+                  <figcaption>
+                    {g.sci && <i class="lab-sci">{g.sci}</i>}
+                    {g.title_en ? <span class="lab-title" data-vi={g.title} data-en={g.title_en}>{g.title}</span> : <span class="lab-title">{g.title}</span>}
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="wrap home-cta">
     <Cta campaign="home" />
   </section>
 </Base>

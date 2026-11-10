@@ -124,7 +124,7 @@ FROM [table_name]
 - LEFT, RIGHT: Choose part of the string to isolate in a new column
 - FIND: locate specific characters in a string (Case sensitive)
 
-![image_035](/vault-assets/image-035-837a1a21.png)
+![image_035](/vault-assets/image-035-837a1a21.webp)
 
 - Get support during analysis
 - Asking peers or members
@@ -173,7 +173,7 @@ FROM [table_name]
 	- Outer: A function that combines RIGHT and LEFT JOIN to return all matching records in both tables
 - Using JOIN: https://www.coursera.org/learn/analyze-data/supplement/DBOi7/use-joins-effectively
 **The table mentioned first is left, and the tablee mentioned second is right**
-	![Ảnh chụp Màn hình 2026-05-23 lúc 00.10.07](/vault-assets/anh-chup-man-hinh-2026-05-23-luc-00-10-07-e41f79c6.png)
+	![Ảnh chụp Màn hình 2026-05-23 lúc 00.10.07](/vault-assets/anh-chup-man-hinh-2026-05-23-luc-00-10-07-e41f79c6.webp)
 - Primary keys reference columns in which each value is unique.
 - Foreign keys are primary keys in other tables
 - [Aliases]: https://www.coursera.org/learn/analyze-data/supplement/qURXP/secret-identities-the-importance-of-aliases

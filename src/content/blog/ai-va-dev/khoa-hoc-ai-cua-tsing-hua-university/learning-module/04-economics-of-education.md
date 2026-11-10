@@ -263,7 +263,7 @@ $$\text{Nguồn lực khan hiếm (Tài chính, Thời gian, Nhân lực)} \xrig
 	- The market lending rate paid to finance education investment
 	- Assumed to be fixed, hence represented as horizontal line
 
-![Ảnh chụp Màn hình 2026-09-12 lúc 23.16.52](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-16-52-9c909ec2.png)
+![Ảnh chụp Màn hình 2026-09-12 lúc 23.16.52](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-16-52-9c909ec2.webp)
 ### Basic Assumptions of the Classical Theory
 - Rational Agent Assumption: Individuals are utility-maximizing rational decision-makers who can clearly calculate costs and benefits
 - Perfect Information Assumption: Individuals can accurately predict future wage levels and employment conditions to make optimal decisions.
@@ -315,13 +315,13 @@ Key Difference: The cost of acquiring a signal varies across individuals
 -> Core Debate: Does education "enhance" ability (HCT) or merely "certify" existing ability (ST)?
 ### The Dynamic Process of Signaling Equilibrium
 - Self-fulfilling Logic
-![Ảnh chụp Màn hình 2026-09-12 lúc 23.55.06](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-55-06-01cecb70.png)
+![Ảnh chụp Màn hình 2026-09-12 lúc 23.55.06](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-55-06-01cecb70.webp)
 ### Separating Equilibrium: The differentiating Role of Signals
 - High-ability workers choose education (lower cost)
 - Low-ability workers forgo education (cost too high)
 - Employers assess ability via signals and pay accordingly
 - Effective market separation is achieved
-![Ảnh chụp Màn hình 2026-09-12 lúc 23.57.18](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-57-18-e4b05df1.png)
+![Ảnh chụp Màn hình 2026-09-12 lúc 23.57.18](/vault-assets/anh-chup-man-hinh-2026-09-12-luc-23-57-18-e4b05df1.webp)
 ### Pooling Equilibrium: Signal Failure
 - Same Signal Chosen: All types of workers choose to send the same signal (or none at all)
 - Average Wage Paid: Employers cannot distinguish ability; only a uniform average wage is offered
@@ -339,14 +339,14 @@ Key Difference: The cost of acquiring a signal varies across individuals
 - Credential Effect: Education threshold phenomenon
 - Credential Inflation: Rising diploma requirements over time
 ### The Complete Signaling Mechanism Chain
-![Ảnh chụp Màn hình 2026-09-13 lúc 00.07.10](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-00-07-10-e0d267cd.png)
+![Ảnh chụp Màn hình 2026-09-13 lúc 00.07.10](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-00-07-10-e0d267cd.webp)
 **Key Insight**: Even without directly raising productivity, education can affect wages by shaping employer perceptions
 ### Theoretical Value and Real-World Significance
 - Reframing Educational Value: Transmitting information may matter more than building capacity
 - Explaining Market Premiums: A new perspective on the wage advantage of higher education
 - General Analytical Framework: Applicable to all markets with information asymmetry
 - Policy Warning: Beware of credential inflation and resource misallocation
-![Ảnh chụp Màn hình 2026-09-13 lúc 00.10.23](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-00-10-23-e85b637d.png)
+![Ảnh chụp Màn hình 2026-09-13 lúc 00.10.23](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-00-10-23-e85b637d.webp)
 ## Labor Market Segmentation Theory 
 ### Limitations of the Perfectly Competitive Market
 1. Traditional Theory Assumptions: In a perfectly competitive market, wages are entirely determined by individual marginal productivity.

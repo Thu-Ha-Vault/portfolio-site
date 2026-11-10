@@ -218,9 +218,9 @@ isIndex: false
 - Click the fill handle for a cell and drag it down a column to auto-fill other cells in the column with the same formula or function used in that cell.
 - Click the fill handle for a cell and drag it across a row to auto-fill other cells in the row with the same formula or function used in that cell.
 
-![image_021](/vault-assets/image-021-70caf1c9.png)
+![image_021](/vault-assets/image-021-70caf1c9.webp)
 
-![image_022](/vault-assets/image-022-efcdc1e8.png)
+![image_022](/vault-assets/image-022-efcdc1e8.webp)
 
 ### Save time with structured thinking
 - ​​Problem domain: The specific area of analysis that encompasses every activity affecting or affected by the problem.
@@ -277,7 +277,7 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 
 - Context: The condition in which something exist or happens. Context in data analytics is the condition and circumstances that surround and give meaning to the data. Context is important in data analytics because it helps make disorganized data accessible and understood. The fact is, data has little value if it is not paired with context
 
-![image_023](/vault-assets/image-023-3bc6d92f.png)
+![image_023](/vault-assets/image-023-3bc6d92f.webp)
 
 - Context can turn raw data into meaningful information. It is very important for data analysts to contextualize their data. This means giving the data perspective by defining it. To do this, you need to identify:
 	- Who: The person or organization that created, collected, and/or funded the data collection
@@ -294,7 +294,7 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 - Customer-facing team: The customer-facing team includes anyone in an organization who has some level of interaction with customers and potential customers. Typically they compile information, set expectations, and communicate customer feedback to other parts of the internal organization. These stakeholders have their own objectives and may come to you with specific asks. It is important to let the data tell the story and not be swayed by asks from your stakeholders to find certain patterns that might not exist.
 - Data science team: Organizing data within a company takes teamwork. There's a good chance you'll find yourself working with other data analysts, data scientists, and data engineers.
 
-![image_024](/vault-assets/image-024-6eb7f368.png)
+![image_024](/vault-assets/image-024-6eb7f368.webp)
 
 - Working effectively with stakeholders: (→ [ANR case studies, part 2](/blog/case-studies-of-anr-part-2-with-enrichment-planting/))
 	- Discuss goals. Stakeholder requests are often tied to a bigger project or goal. When they ask you for something, take the opportunity to learn more. Start a discussion. Ask about the kind of results the stakeholder wants. Sometimes, a quick chat about goals can help set expectations and plan the next steps.
@@ -367,4 +367,4 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 	- Confirm next steps and timeline for additional actions
 	- Ask for feedback (this is an effective way to figure out if you missed anything in your recap)
 
-![image_025](/vault-assets/image-025-6c49d98d.png)
+![image_025](/vault-assets/image-025-6c49d98d.webp)

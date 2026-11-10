@@ -58,7 +58,7 @@ isIndex: false
 	- Select the right data type
 	- Determine the time frame: If you are collecting your own data, decide how long you will need to collect it, especially if you are tracking trends over a long period of time. If you need an immediate answer, you might not have time to collect new data. In this case, you would need to use historical data that already exists.
 
-![image_026](/vault-assets/image-026-1df3acd4.png)
+![image_026](/vault-assets/image-026-1df3acd4.webp)
 
 #### Differentiate data formats and structures
 - Quantitative and qualitative data: (→ [Digital marketing: quantitative data in social media analytics](/blog/from-likes-to-leads-interact-with-customers-online/))
@@ -78,7 +78,7 @@ isIndex: false
 	- Spreadsheets
 	- Databases that store dataset
 
-![image_027](/vault-assets/image-027-07253a6f.png)
+![image_027](/vault-assets/image-027-07253a6f.webp)
 
 - The fairness issue: The lack of structure makes unstructured data difficult to search, manage, and analyze. But recent advancements in artificial intelligence and machine learning algorithms are beginning to change that. Now, the new challenge facing data scientists is making sure these tools are inclusive and unbiased. Otherwise, certain elements of a dataset will be more heavily weighted and/or represented than others. And as you're learning, an unfair dataset does not accurately represent the population, causing skewed outcomes, low accuracy levels, and unreliable analysis.
 - Data modeling: is the process of creating diagrams that visually represent how data is organized and structured.  These visual representations are called data models. You can think of data modeling as a blueprint of a house. At any point, there might be electricians, carpenters, and plumbers using that blueprint. Each one of these builders has a different relationship to the blueprint, but they all need it to understand the overall structure of the house. Data models are similar; different users might have different data needs, but the data model gives them an understanding of the structure as a whole.
@@ -101,7 +101,7 @@ isIndex: false
 - The NOT operator: Finally, the NOT operator lets you filter by subtracting specific conditions from the results. Your condition is "You will buy any grey shoe except for those with any traces of pink in them." Your Boolean statement would be IF (Color="Grey") AND (Color=NOT "Pink") then buy them. Now, all of the grey shoes that aren't pink are marked true by the Boolean logic for the NOT Pink condition. The pink shoes are marked false by the Boolean logic for the NOT Pink condition.
 - The power of multiple conditions: For data analysts, the real power of Boolean logic comes from being able to combine multiple conditions in a single statement. For example, if you wanted to filter for shoes that were grey or pink, and waterproof, you could construct a Boolean statement such as: “IF ((Color = "Grey") OR (Color = "Pink")) AND (Waterproof="True". Notice that you can use parentheses to group your conditions together.
 
-![image_028](/vault-assets/image-028-7e7032c7.png)
+![image_028](/vault-assets/image-028-7e7032c7.webp)
 
 - Wide data: is a dataset in which every data subject has a single row with multiple columns to hold the values of various attributes of the subject. It is helpful for comparing specific attributes across different subjects.
 Population-Latin-and-Caribbean-Countries-2010-2019.xlsx
@@ -264,9 +264,9 @@ In a non-relational table, you will find all of the possible variables you might
 
 - More than one foreign key is allowed to exist in a table
 
-![image_029](/vault-assets/image-029-b6f56e13.png)
+![image_029](/vault-assets/image-029-b6f56e13.webp)
 
-![image_030](/vault-assets/image-030-4e91a1b9.png)
+![image_030](/vault-assets/image-030-4e91a1b9.webp)
 
 - Normalization: a process of organizing data in a relational database. For example, creating tables and establishing relationships between those tables. It is applied to eliminate data redundancy, increase data integrity, and reduce complexity in a database.
 
@@ -418,7 +418,7 @@ Together, these benefits empower data analysts to effectively analyze and interp
 
 - You will never be automatically charged
 
-![image_031](/vault-assets/image-031-ea8e1b71.png)
+![image_031](/vault-assets/image-031-ea8e1b71.webp)
 
 - BigQuery Studio components: Once you have navigated to BigQuery from the project space, most of the major components of the BigQuery console will be present:
 

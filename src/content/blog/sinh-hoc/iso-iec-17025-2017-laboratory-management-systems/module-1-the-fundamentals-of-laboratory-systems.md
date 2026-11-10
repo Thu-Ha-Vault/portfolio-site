@@ -35,9 +35,9 @@ isIndex: false
 - Enabling the laboratories to generate valid results
 ## What does ISO/IEC 17025 require from Laboratories? 
 - ISO/IEC 17025 requires laboratories to plan and implement actions for addressing risks and opportunities. Managing risks and opportunities establishes a solid basis for a highly effective management system. This, in turn, achieves improved results and prevents any adverse effects.
-![Ảnh chụp Màn hình 2026-07-11 lúc 22.53.16](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-53-16-fe11f067.png)
+![Ảnh chụp Màn hình 2026-07-11 lúc 22.53.16](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-53-16-fe11f067.webp)
 ## Examples of Testing & Calibrating Laboratories
-![Ảnh chụp Màn hình 2026-07-11 lúc 22.54.06](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-54-06-8e39eb11.png)
+![Ảnh chụp Màn hình 2026-07-11 lúc 22.54.06](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-54-06-8e39eb11.webp)
 ## The Importance of ISO/IEC 17025:2017
 - ISO/IEC 17025 assists sampling, conformity, and testing in laboratories in many ways, such as
 	- It harmonizes procedures
@@ -49,12 +49,12 @@ isIndex: false
 Structurally, ISO/IEC 17025 is divided into five main sections containing requirements for laboratory accreditation. These sections are:
 ![Infographic showing the nested sections 4 through 8 of ISO/IEC 17025:2017 requirements.](https://courseware-assets.alison.com/public/published/8432/images/1644736722463559376.png)
 ## Verbal Forms Used Throughout  ISO/IEC 17025
-![Ảnh chụp Màn hình 2026-07-11 lúc 22.56.49](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-56-49-6f80f287.png)
+![Ảnh chụp Màn hình 2026-07-11 lúc 22.56.49](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-56-49-6f80f287.webp)
 ## Changes in the Current Edition of  ISO/IEC 17025
-![Ảnh chụp Màn hình 2026-07-11 lúc 22.57.37](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-57-37-0a1ae630.png)
+![Ảnh chụp Màn hình 2026-07-11 lúc 22.57.37](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-22-57-37-0a1ae630.webp)
 # 3. Accrediting to ISO/IEC 17025:2017
 ## Benefit of Accreditation of ISO/IEC 17025:2016
-![Ảnh chụp Màn hình 2026-07-11 lúc 23.01.16](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-23-01-16-fac8fa0a.png)
+![Ảnh chụp Màn hình 2026-07-11 lúc 23.01.16](/vault-assets/anh-chup-man-hinh-2026-07-11-luc-23-01-16-fac8fa0a.webp)
 - **Increasing Customer Confidence from ISO/IEC 17025 Accreditation: **
 	- By accrediting to ISO/IEC 17025, your laboratory will demonstrate that  
 		- (1) It is capable of providing valid results with consistency  

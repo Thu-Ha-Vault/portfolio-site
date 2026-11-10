@@ -54,7 +54,7 @@ Start the fallback with the size-adjust and ascent-override values above, then t
 
 | Element | Font | Size / weight / line-height / tracking |
 |---|---|---|
-| Hero h1 | display | clamp(48px, 6.2vw, 96px). Weight **400 below 900px, 300 at 900px and up**. wdth 100, lh 1.08, ls −0.01em, `padding-block: .06em .02em`, `text-wrap: balance`, max-width 14ch, colour --ink, solid (no gradient) |
+| Hero h1 | display | clamp(48px, 6.2vw, 96px). Weight **400 below 1040px, 300 at 1040px and up** (the clamp only reaches 64px at about 1032px, and weight 300 needs 64px or more). wdth 100, lh 1.08, ls −0.01em, `padding-block: .06em .02em`, `text-wrap: balance`, max-width 14ch, colour --ink, solid (no gradient) |
 | Hero subtitle (the only tracked caps on the site) | sans 500 uppercase | clamp(12px, 1.3vw, 17px), ls .28em, lh 1.5 |
 | Hero intro | sans 400 | 19px / 1.7, --ink-soft, max 42ch |
 | Page h1 (blog, topics, article, 404) | display 400 | clamp(38px, 5.2vw, 60px), lh 1.12, ls −0.01em |
@@ -67,7 +67,7 @@ Start the fallback with the size-adjust and ascent-override values above, then t
 | Prose body | sans 400 | 18px (17px below 400px) / 1.75, --text, max-width 40rem, paragraph gap 1.1em |
 | Prose h2 | display 500 | 30px, lh 1.2, margin 56px 0 16px |
 | Prose h3 / h4 | sans 600 | 21px / 18px |
-| Blockquote | display italic 400 | 21px / 1.5 |
+| Blockquote | display italic 400 | 22px / 1.5 (the display face never goes below 22px) |
 | Nav | sans 500 | 16px |
 | Buttons | sans 500 (600 on solid) | 15px, ls .01em |
 | Chips | sans 500 | 14.5px |
@@ -220,10 +220,10 @@ Other changes in light reading mode:
 - On `.is-reading` pages, use only a 30%-opacity wash confined to the top-left 40vh, never behind the prose column.
 
 **Masthead (glass header)**
-- `position: sticky; top: 0; z-index: 30; height: 64px` (56px below 640px).
+- `position: sticky; top: 0; z-index: 30; min-height: 64px` (56px below 640px). Below 640px the nav takes its own row under the wordmark and language chip, so the bar is 84px there; `--masthead-h` holds the real height (Base.astro keeps it in sync with a ResizeObserver) and the hero pulls up under the bar by that amount.
 - `background: var(--glass), rgba(16,5,46,.35)`; `box-shadow: var(--glass-top), 0 1px 0 rgba(0,0,0,.25)`. No radius, no bottom border.
-- Frost lives on `::before` (`inset: 0; backdrop-filter: blur(14px) saturate(150%); -webkit-backdrop-filter: …; opacity: 0; transition: opacity 240ms`). `.is-frosted` sets opacity to 1.
-- On home it frosts only after the hero sentinel leaves the viewport (see the motion table). Every other page renders with `.is-frosted` from the start.
+- Frost (as built): `view-transition-name` makes `.masthead` a backdrop root, so a `backdrop-filter` on `::before` would only blur the bar itself. The blur therefore sits on `.masthead.is-frosted` (`backdrop-filter: blur(14px) saturate(150%)`, switched instantly, never animated), and `::before` carries a `rgba(16,5,46,.22)` tint whose opacity fades over 240ms. Do not move the blur back onto `::before`.
+- On home the bar is clear only while the page is at the very top; it frosts once the first 8px of the hero (`.hero-sentinel`) leave the viewport, so hero text never slides under a clear bar (see the motion table). Every other page renders with `.is-frosted` from the start.
 - `@supports not (backdrop-filter: blur(1px))`: replace the frost with `background: var(--glass-fallback)`.
 - Wordmark: display italic 22px, --ink.
 - Nav: --ink at 78% opacity, 16px/500. `[aria-current="page"]` gets full --ink and a 2px iris underline (`border-bottom: 2px solid; border-image: var(--iris) 1`) at a 6px offset.
@@ -475,7 +475,7 @@ Rules for all core flows:
 - Callouts: `--deep`, 1px `--line`, radius 6px, a 3px left rule by type (note #4cd8ff, question #b18cff, warning #ffc94a, danger #f45fd0, success #a8f06a, all iris stops), with the title in sans 600.
 - Code: `--deep` background with dark Shiki colours by default (see the file list).
 - KaTeX inherits the text colour.
-- Mermaid: `theme: 'base'` with themeVariables read from tokens (`background: #1a0b45`, `primaryColor: #251258`, `primaryTextColor: #ede9fc`, `lineColor: #b9b1d8`, `fontFamily: 'Be Vietnam Pro'`). Keep the source in `data-src` and re-render when reading mode toggles.
+- Mermaid: natural size (`useMaxWidth: false` for every diagram type), so a wide flowchart keeps readable labels and scrolls inside `.mermaid`, which becomes a named, focusable region while it overflows. `theme: 'base'` with themeVariables read from tokens (`background: #1a0b45`, `primaryColor: #251258`, `primaryTextColor: #ede9fc`, `lineColor: #b9b1d8`, `fontFamily: 'Be Vietnam Pro'`). Keep the source in `data-src` and re-render when reading mode toggles.
 - Images: specimen plates and photo frames (§7).
 - Pager and share: plain 1px `--edge` outline pills (radius 3px), not glass.
 - No glow, motion or decor behind the column.
@@ -527,7 +527,10 @@ Rules for all core flows:
 ### 7.2 Real photos (curated only)
 - Schema: add `cover: z.string().optional()` and `cover_alt: z.string().optional()` to the base schema in `src/content.config.ts`. A vault-side `cover: none` disables the automatic pick.
 - Auto-pick in sync: the note's first JPG with aspect ratio 0.6–1.8. **Skip** `anh-chup-man-hinh-*`, `image-*`, `pasted-image-*`, `dvcxs-*` (dissections and handwritten pages), SVGs, and the French handwritten essays.
-- Privacy exclusion list in `site.config.json` (`images.exclude`): `img-5834-0379b816.jpg`, and `img-4985-0facdc0f.jpg` unless a hand-cropped version is supplied.
+- Privacy exclusion list in `site.config.json` (`images.exclude`): `img-5834-0379b816.jpg`, and `img-4985-0facdc0f.jpg` unless a hand-cropped version is supplied. Sync applies the list **everywhere**: an excluded photo is never written to `public/`, and its embed is dropped from the note, not only kept out of covers and the gallery.
+- Auto-picked covers get 480px and 960px WebP renditions (`<stem>-cover-480|960.webp`, reusing the gallery crop when the photo is also in the gallery) and `Cover.astro` serves them with `srcset`/`sizes`. `cover_alt` defaults to the alt text the photo was embedded with, when that is meaningful (not `IMG_1234`), else its gallery alt; otherwise the cover stays decorative.
+- `gallery[].caption` / `caption_en` override the note title as the tile caption (two photos from one note).
+- `images.coverSkipNotes` lists vault notes that never get an automatic cover (the Mollusca and cockroach dissection notes, whose every photo is a dissection); `images.coverSkip` also holds `img-3321-*` and `img-3401-*`.
 - A real photo replaces the procedural banner on its post. On the post page it is always shown in **true colour**.
 - **Home strip "Từ phòng lab và thực địa"**, placed between the recent rows and the CTA:
   - An allowlist `site.config.json "gallery": [{file, note, alt, sci?}]`.
@@ -572,7 +575,7 @@ Rules for all core flows:
 
 | # | Effect | Trigger | Technique, duration, easing | Reduced-motion fallback |
 |---|---|---|---|---|
-| 1 | **Hero ignition** (the one orchestrated moment) | First hero init per session (`sessionStorage.lit`); later visits render already lit | WebGL `uIgnite` 0→1 over 1600ms, easeOutCubic. Star `on = smoothstep(rr-0.1, rr, uIgnite*1.3 - armDelay)`, with rr = radius/300 and armDelay = 0–0.15 by note-count rank, so the light spreads from the core and bigger topics light first. It scales gl_PointSize and colour. Blobs scale 0.6→1 over 1800ms, staggered 120ms. CSS (inside `no-preference`): h1 opacity .01→1 and blur(6px)→0 over 900ms `cubic-bezier(.2,.7,.2,1)`, delay 120ms. Subtitle letter-spacing .42em→.28em over 1200ms, delay 300ms. Intro and buttons fade opacity over 500ms, delay 450ms | `uIgnite=1` at once, no CSS keyframes, text visible at paint |
+| 1 | **Hero ignition** (the one orchestrated moment) | First hero init per session (`sessionStorage.lit`); later visits render already lit | WebGL `uIgnite` 0→1 over 1600ms, easeOutCubic. Star `on = smoothstep(rr-0.1, rr, uIgnite*1.3 - armDelay)`, with rr = radius/300 and armDelay = 0–0.15 by note-count rank, so the light spreads from the core and bigger topics light first. It scales gl_PointSize and colour. Blobs scale 0.6→1 over 1800ms, staggered 120ms. CSS (inside `no-preference`): h1 opacity .01→1 (no blur filter: it delayed the h1's LCP entry in Chrome) over 900ms `cubic-bezier(.2,.7,.2,1)`, delay 120ms. Subtitle letter-spacing .42em→.28em over 1200ms, delay 300ms. Intro and buttons fade opacity over 500ms, delay 450ms | `uIgnite=1` at once, no CSS keyframes, text visible at paint |
 | 2 | Vesicle drift and morph | Continuous while the hero is visible and the tab is visible | Noise displacement (~24s loop), y bob 18–31s, iris band travel `uTime*0.02` | `uTime` frozen at seed; static frame |
 | 3 | Topic polyhedra spin | Continuous while visible | 0.12 rad/s around a seeded tilted axis | Static |
 | 4 | Galaxy auto-rotate | Continuous while visible | OrbitControls autoRotate 0.5 (existing) | Off |
@@ -580,9 +583,9 @@ Rules for all core flows:
 | 6 | Topic focus | Hover or keyboard focus on a legend item, `.g-label` or nav topic link | `uFocus[i]`: chosen arm ×1.6, others to .25, over 280ms easeOut. That arm's constellation is drawn in white (existing hiLines). Its polyhedron scales 1→1.35 and faces .08→.18. Reverse over 180ms on leave | Instant switch, still works |
 | 7 | Pointer parallax | Pointer move; only with `(pointer: fine) and (hover: hover)` | The camera-child blob group is offset by pointer×6 units with lerp 0.06 per frame. DoF sprites ×0.5. The camera itself does not move | Off. Off on coarse pointers |
 | 8 | Hero canvas fade-in | Scene ready | Canvas opacity 0→1 over 400ms ease over the poster | Instant |
-| 9 | Header frost | IntersectionObserver on `.hero-sentinel` (bottom of the hero) | `.is-frosted` toggles `::before` opacity over 240ms ease. backdrop-filter is never animated | Instant |
+| 9 | Header frost | IntersectionObserver on `.hero-sentinel` (the first 8px of the hero: clear at scrollY 0, frosted as soon as the page scrolls) | `.is-frosted` toggles `::before` opacity over 240ms ease. backdrop-filter is never animated | Instant |
 | 10 | Glass button sheen | `:hover` or `:focus-visible` on `.button` in the hero, header, CTA and 404 only | `::after` linear-gradient(100deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%), translateX(−120%→120%) once over 700ms ease-out | None; the background steps .20→.28 |
-| 11 | CTA iris border | `:hover` or `:focus-within` on `.cta` | `@property --angle <angle>`. The border-box becomes `conic-gradient(from var(--angle), iris stops)` and spins 0→360deg over 6s linear, only while active | Static linear iris border |
+| 11 | CTA iris border | `:hover` or `:focus-within` on `.cta` | `@property --angle <angle>`. The border-box becomes `conic-gradient(from var(--angle), iris stops)` and spins 0→360deg over 6s linear: continuously while hovered, one turn on keyboard focus (no endless loop beside a focused control) | Static linear iris border |
 | 12 | Neon-brutal press | Hover, focus-within or `:active` on `.brutal .case` links and `.brutal .button` | 120ms ease-out. Hover: translate(−2px,−2px), slab 8→11px, button shadow 4→6px. Active (80ms): translate(4px,4px), slab and shadow 0 | No transform; only the slab and shadow offset change |
 | 13 | PhaseTrack fill | Track first reaches 40% visibility | JS adds `.will-fill` only if IntersectionObserver exists and motion is allowed, so bars are full with no JS. Span `transform: scaleX(0→1)`, origin left, 900ms `cubic-bezier(.2,.7,.2,1)`, stagger 80ms per phase | Shown full |
 | 14 | Photo channel merge | Hover or focus-visible on a lab-strip tile | Crossfade from the LUT WebP to true colour, opacity over 300ms ease | Instant swap |
@@ -787,3 +790,12 @@ Light reading mode on #fcfcfd:
 2. Approval of up to 4 additional gallery photos.
 3. Whether light reading mode is wanted at all. If not, it is safe to cut, because dark is the default.
 4. Whether the subtitle copy ("{N} ghi chép trong {K} chủ đề") is acceptable.
+
+---
+
+## 11. Owner decisions (2026-11-10)
+
+1. **Hero title: do not rename.** Keep "Từ phòng thí nghiệm sinh học đến dữ liệu và kinh doanh." / EN equivalent. Do not offer the rename again.
+2. **Gallery: approved.** The implementer's proposed additional photos (up to 4, from `biological-field-study/anh-thuc-dia.md` and `vertebrate-zoology/06-tham-quan-bao-tang-dong-vat.md`: Trametes, the museum visit, a cropped Ardisia, …) are approved and go into `site.config.json "gallery"` together with the two seed entries, so the home strip renders. The privacy exclusions in §7.2 still apply (no `img-5834-*`, no uncropped `img-4985-*`, no photos of people, screenshots or handwritten pages).
+3. **Light reading mode: keep it** (opt-in, reading pages only, as specified in §2).
+4. **Hero subtitle "{N} ghi chép trong {K} chủ đề" / "{N} notes across {K} topics": approved.**

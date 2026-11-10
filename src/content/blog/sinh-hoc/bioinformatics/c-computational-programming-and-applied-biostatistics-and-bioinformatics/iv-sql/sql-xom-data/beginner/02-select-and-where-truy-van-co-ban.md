@@ -171,7 +171,7 @@ SELECT product_name, price, stock_quantity,
        price * stock_quantity
 FROM products;
 ```
-Cột mới `price * stock_quantity` là giá trị tồn kho. Nhưng tên cột sẽ hiển thị là `price * stock_quantity` — rất xấu!![Ảnh chụp Màn hình 2026-07-15 lúc 21.42.12](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-21-42-12-af4fa0e5.png)
+Cột mới `price * stock_quantity` là giá trị tồn kho. Nhưng tên cột sẽ hiển thị là `price * stock_quantity` — rất xấu!![Ảnh chụp Màn hình 2026-07-15 lúc 21.42.12](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-21-42-12-af4fa0e5.webp)
 ## b. AS - Đặt tên cột 
 - Dùng `AS` để đặt tên đẹp:
 ```sql

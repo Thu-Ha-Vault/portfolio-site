@@ -67,4 +67,4 @@ Je suis d'accord avec l'interdiction des motos et des voitures à Hanoï pour pl
 </details>
 
 ## Bản gốc
-![IMG_3550](/vault-assets/img-3550-6523add3.jpg)
+![IMG_3550](/vault-assets/img-3550-6523add3.webp)

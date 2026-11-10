@@ -46,7 +46,7 @@ cat("A\n")
 cat("B\n")
 ```
 - Kết quả:
-![Ảnh chụp Màn hình 2026-07-22 lúc 22.52.50](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-52-50-af2d18c9.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 22.52.50](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-52-50-af2d18c9.webp)
 ## c. Biến và phép gán '<-'
 - R dùng mũi tên `<-` để gán giá trị vào biến — đọc là "nhận giá trị". Đây là điểm lạ mắt nhất với người đến từ Python/SQL:
 ```r
@@ -59,7 +59,7 @@ cat("Age:", age, "\n")
 cat("Height:", height, "m\n")
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 22.53.45](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-53-45-78027773.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 22.53.45](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-53-45-78027773.webp)
 - Chú ý `cat()` nhận **nhiều tham số, cách nhau dấu phẩy** và tự chèn 1 dấu cách giữa chúng.
 - Dấu `=` cũng gán được, nhưng cộng đồng R quy ước: `<-` cho phép gán biến, `=` chỉ dùng khi truyền tham số vào hàm (vd `seq(0, 1, by = 0.2)`):
 ```r
@@ -87,7 +87,7 @@ cat(class(name), "\n")
 cat(class(result), "\n")
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 22.55.16](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-55-16-914e1de0.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 22.55.16](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-55-16-914e1de0.webp)
 - Lưu ý: `42` mặc định là `numeric` (số thực), không phải integer — R không phân biệt gắt như Python. Muốn integer thật sự phải viết `42L`.
 ## e. Chuyển đổi kiểu
 - Họ hàm `as.*()` chuyển giá trị sang kiểu khác — cần thiết khi dữ liệu đọc vào ở dạng chuỗi nhưng muốn tính toán: (→ [Basic data types](/blog/basic-data-types/))
@@ -100,7 +100,7 @@ z <- as.character(456)
 cat(class(z), "\n")
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 22.56.19](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-56-19-bbdbf4e4.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 22.56.19](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-56-19-bbdbf4e4.webp)
 - Chuyển thất bại (chuỗi không phải số) sẽ trả về `NA` — giá trị "thiếu" của R, sẽ học kỹ ở bài sau:
 ```r
 bad <- as.numeric("hello")
@@ -131,14 +131,14 @@ cat("y:", y, "\n")
 cat("z:", z, "\n")
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 23.00.15](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-00-15-8b8dbe8b.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 23.00.15](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-00-15-8b8dbe8b.webp)
 - **Quan trọng**: vector chỉ chứa **một kiểu dữ liệu**. Nếu trộn số với chuỗi, R lặng lẽ chuyển tất cả thành chuỗi (coercion) — không báo lỗi:
 ```r
 mixed <- c(1, "two", 3)
 cat(class(mixed), "\n")
 cat(mixed, "\n")
 ```
-- Kết quả: ![Ảnh chụp Màn hình 2026-07-22 lúc 23.00.50](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-00-50-1440ff0f.png)
+- Kết quả: ![Ảnh chụp Màn hình 2026-07-22 lúc 23.00.50](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-00-50-1440ff0f.webp)
 ## b. Truy cập phần tử - index từ 1
 - R đánh chỉ số từ **1**, không phải 0 như Python. Dấu ngoặc vuông `[ ]` nhận một chỉ số, một dãy, hoặc một vector chỉ số:
 ```r
@@ -151,7 +151,7 @@ cat(score[c(1, 3, 5)], "\n")   # chọn nhiều vị trí
 cat(score[-1], "\n")           # dấu TRỪ = loại bỏ vị trí 1
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 23.01.35](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-01-35-4dc7c20f.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 23.01.35](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-01-35-4dc7c20f.webp)
 - Chú ý dòng cuối: `score[-1]` trong R nghĩa là "bỏ phần tử 1 đi" — hoàn toàn khác Python (nơi `[-1]` là phần tử cuối).
 ## c. Lọc theo điều kiện
 - Đặt một biểu thức so sánh vào trong `[ ]` — R giữ lại các phần tử thỏa điều kiện. Đây là cách lọc dữ liệu phổ biến nhất trong R:
@@ -163,7 +163,7 @@ cat(score[score >= 8], "\n")   # lọc: giữ nơi TRUE
 cat(sum(score >= 8), "\n")     # đếm số phần tử thỏa (TRUE = 1)
 ```
 - Kết quả: 
-![Ảnh chụp Màn hình 2026-07-22 lúc 23.02.33](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-02-33-3aba6654.png)
+![Ảnh chụp Màn hình 2026-07-22 lúc 23.02.33](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-02-33-3aba6654.webp)
 - Mẹo dòng cuối: `sum()` trên vector logic đếm số `TRUE` — vì R coi `TRUE` là 1, `FALSE` là 0.
 ## d. Vectorization - sức mạnh của R
 - Phép toán trên vector tự áp dụng cho **từng phần tử** — không cần vòng lặp. Đây là điểm khác biệt lớn nhất giữa R và các ngôn ngữ thông thường:
@@ -175,7 +175,7 @@ cat(x + 10, "\n")
 cat(x^2, "\n")
 cat(sqrt(x), "\n")
 ```
-- Kết quả: ![Ảnh chụp Màn hình 2026-07-22 lúc 23.04.15](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-04-15-731b5239.png)
+- Kết quả: ![Ảnh chụp Màn hình 2026-07-22 lúc 23.04.15](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-23-04-15-731b5239.webp)
 - Hai vector cùng độ dài thì tính theo cặp vị trí:
 ```r
 price <- c(100, 200, 300)

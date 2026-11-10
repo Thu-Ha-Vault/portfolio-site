@@ -3,11 +3,14 @@
 //   Blog     ← every .md under config.blog.root (minus config.blog.exclude)
 //   Projects ← every .md inside each folder listed in config.projects
 // Wikilinks, embeds, callouts and Obsidian-only syntax are converted to plain Markdown.
+// Images: JPG/PNG → auto-rotated WebP (long edge ≤ images.maxEdge) in public/vault-assets/, sizes in
+// src/data/images.json, an automatic `cover` per note, and the home gallery thumbs in public/vault-thumbs/.
 // Usage: VAULT_DIR=../Sky_Vault node scripts/sync-vault.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import matter from 'gray-matter';
+import sharp from 'sharp';
 import { execFileSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -16,6 +19,11 @@ const VAULT = path.resolve(ROOT, process.env.VAULT_DIR || '../Sky_Vault');
 const OUT_BLOG = path.join(ROOT, 'src/content/blog');
 const OUT_PROJECTS = path.join(ROOT, 'src/content/projects');
 const OUT_ASSETS = path.join(ROOT, 'public/vault-assets');
+const OUT_THUMBS = path.join(ROOT, 'public/vault-thumbs');
+const IMAGES_JSON = path.join(ROOT, 'src/data/images.json');
+const GALLERY_JSON = path.join(ROOT, 'src/data/gallery.json');
+// converted WebPs are cached here between runs, so a re-sync only re-encodes new or changed images
+const CACHE_DIR = path.join(ROOT, 'node_modules/.cache/vault-assets');
 
 if (!fs.existsSync(VAULT)) {
   console.error(`Vault not found at ${VAULT}. Set VAULT_DIR.`);
@@ -26,6 +34,12 @@ const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.a
 const SKIP_DIRS = new Set(['.obsidian', '.git', '.venv', 'node_modules', '.smart-env', '.claudian', '.qodo', '.trash']);
 const SKIP_FILES = new Set(['CLAUDE.md', 'AGENTS.md']);
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
+// JPG and PNG are auto-rotated, capped at the long edge and re-encoded as WebP only (spec §7.0)
+const RASTER_EXT = new Set(['.png', '.jpg', '.jpeg']);
+const imgCfg = config.images || {};
+const MAX_EDGE = imgCfg.maxEdge || 1600;
+const WEBP_QUALITY = imgCfg.quality || 78;
+const ENCODE_KEY = `webp-v1-${MAX_EDGE}-${WEBP_QUALITY}`;
 
 // ---------- helpers ----------
 const rel = (abs) => path.relative(VAULT, abs).split(path.sep).join('/');
@@ -260,36 +274,155 @@ const commonPrefix = (a, b) => {
   return i;
 };
 
-const copiedAssets = new Map();
-function publishAsset(name, fromAbs) {
-  let abs = null;
-  const direct = path.resolve(path.dirname(fromAbs), decodeURI(name));
-  if (fs.existsSync(direct) && fs.statSync(direct).isFile()) abs = direct;
-  else {
-    const cands = byBasename.get(path.basename(name).toLowerCase()) || [];
-    if (cands.length) {
-      const fromDir = path.dirname(fromAbs);
-      abs = [...cands].sort((a, b) => commonPrefix(b, fromDir) - commonPrefix(a, fromDir))[0];
-    }
+// ---------- images ----------
+// publishAsset() only decides the public name (so links can be rewritten while the notes are converted);
+// the files are written later by processAssets(), which also measures them for src/data/images.json.
+const assetJobs = new Map(); // abs → { abs, ext, stem, file, url, raster, digest }
+const jobsByContent = new Map(); // sha1 of the file bytes → job: byte-identical images at two vault paths publish once
+let noteImages = null; // images embedded by the note being converted, in order (for the cover pick)
+let noteAlts = null; // job → the alt text it was embedded with in that note (for cover_alt)
+// Sentinel returned by publishAsset() for a photo on the privacy list (site.config.json images.exclude):
+// it is never written to public/ and its embed is dropped from the note, not only kept out of covers and the gallery.
+const PRIVATE = Symbol('private');
+
+/** Public file stem of a vault image: slug of its name + a hash of its vault path. */
+const assetStem = (abs) => {
+  const ext = path.extname(abs);
+  const hash = crypto.createHash('sha1').update(rel(abs)).digest('hex').slice(0, 8);
+  return `${slugify(path.basename(abs, ext))}-${hash}`;
+};
+
+function resolveAsset(name, fromAbs) {
+  let decoded = name;
+  try {
+    decoded = decodeURI(name);
+  } catch {}
+  // relative to the note, then relative to the vault root (Obsidian writes full vault paths)
+  for (const p of [path.resolve(path.dirname(fromAbs), decoded), path.join(VAULT, decoded)]) {
+    if (fs.existsSync(p) && fs.statSync(p).isFile()) return p;
   }
-  if (!abs) return null;
+  const cands = byBasename.get(path.basename(decoded).toLowerCase()) || [];
+  if (!cands.length) return null;
+  const fromDir = path.dirname(fromAbs);
+  return [...cands].sort((a, b) => commonPrefix(b, fromDir) - commonPrefix(a, fromDir))[0];
+}
+
+/** True when a vault image matches the privacy list (images.exclude), by its public stem or file name. */
+function isPrivateImage(abs) {
+  const ext = path.extname(abs).toLowerCase();
+  const stem = assetStem(abs);
+  return excludedRes.some((re) => re.test(stem) || re.test(stem + ext) || re.test(stem + '.webp'));
+}
+
+function assetJob(abs) {
   const ext = path.extname(abs).toLowerCase();
   if (!IMAGE_EXT.has(ext)) return null;
   if (fs.statSync(abs).size > MAX_IMAGE_BYTES) return null;
-  if (copiedAssets.has(abs)) return copiedAssets.get(abs);
-  const hash = crypto.createHash('sha1').update(rel(abs)).digest('hex').slice(0, 8);
-  const file = `${slugify(path.basename(abs, ext))}-${hash}${ext}`;
-  const outPath = path.join(OUT_ASSETS, file);
-  fs.copyFileSync(abs, outPath);
-  // shrink large raster images on macOS (sips is built in); elsewhere copy as-is
-  if (process.platform === 'darwin' && ext !== '.svg' && ext !== '.gif' && fs.statSync(outPath).size > 300 * 1024) {
-    try {
-      execFileSync('sips', ['-Z', '1600', outPath], { stdio: 'ignore' });
-    } catch {}
+  if (isPrivateImage(abs)) return null;
+  let job = assetJobs.get(abs);
+  if (!job) {
+    const digest = crypto.createHash('sha1').update(fs.readFileSync(abs)).digest('hex');
+    job = jobsByContent.get(digest);
+    if (!job) {
+      const stem = assetStem(abs);
+      const raster = RASTER_EXT.has(ext);
+      const file = stem + (raster ? '.webp' : ext);
+      job = { abs, ext, stem, file, url: `/vault-assets/${file}`, raster, digest };
+      jobsByContent.set(digest, job);
+    }
+    assetJobs.set(abs, job);
   }
-  const url = `/vault-assets/${file}`;
-  copiedAssets.set(abs, url);
-  return url;
+  return job;
+}
+
+function publishAsset(name, fromAbs, alt = '') {
+  const abs = resolveAsset(name, fromAbs);
+  if (abs && IMAGE_EXT.has(path.extname(abs).toLowerCase()) && isPrivateImage(abs)) {
+    privateDropped.add(rel(abs));
+    return PRIVATE;
+  }
+  const job = abs && assetJob(abs);
+  if (!job) return null;
+  if (noteImages) noteImages.push(job);
+  if (noteAlts && alt && !noteAlts.has(job)) noteAlts.set(job, alt);
+  return job.url;
+}
+
+/** Width and height of an SVG from its attributes or viewBox (when sharp cannot read it). */
+function svgSize(file) {
+  const head = fs.readFileSync(file, 'utf8').slice(0, 4000);
+  const tag = (head.match(/<svg[^>]*>/i) || [''])[0];
+  const num = (attr) => {
+    const m = tag.match(new RegExp(`\\s${attr}=["']\\s*([\\d.]+)(px)?\\s*["']`, 'i'));
+    return m ? Math.round(Number(m[1])) : 0;
+  };
+  let w = num('width'), h = num('height');
+  const vb = tag.match(/viewBox=["']\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)/i);
+  if ((!w || !h) && vb) [w, h] = [Math.round(Number(vb[1])), Math.round(Number(vb[2]))];
+  return w && h ? { w, h } : null;
+}
+
+async function convertRaster(job) {
+  const st = fs.statSync(job.abs);
+  const key = crypto.createHash('sha1').update(`${job.abs}|${st.size}|${st.mtimeMs}|${ENCODE_KEY}`).digest('hex');
+  const cached = path.join(CACHE_DIR, key + '.webp');
+  const meta = path.join(CACHE_DIR, key + '.json');
+  if (fs.existsSync(cached) && fs.existsSync(meta)) {
+    fs.copyFileSync(cached, path.join(OUT_ASSETS, job.file));
+    return JSON.parse(fs.readFileSync(meta, 'utf8'));
+  }
+  const { data, info } = await sharp(job.abs, { failOn: 'none' })
+    .rotate()
+    .resize({ width: MAX_EDGE, height: MAX_EDGE, fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: WEBP_QUALITY })
+    .toBuffer({ resolveWithObject: true });
+  const dims = { w: info.width, h: info.height };
+  fs.writeFileSync(path.join(OUT_ASSETS, job.file), data);
+  try {
+    fs.mkdirSync(CACHE_DIR, { recursive: true });
+    fs.writeFileSync(cached, data);
+    fs.writeFileSync(meta, JSON.stringify(dims));
+  } catch {}
+  return dims;
+}
+
+async function copyOther(job) {
+  const out = path.join(OUT_ASSETS, job.file);
+  fs.copyFileSync(job.abs, out);
+  try {
+    const m = await sharp(job.abs, { failOn: 'none' }).metadata();
+    const h = m.pageHeight || m.height;
+    if (m.width && h) return { w: m.width, h };
+  } catch {}
+  return job.ext === '.svg' ? svgSize(job.abs) : null;
+}
+
+/** Writes every queued image and returns { url: {w, h} }. Failed conversions fall back to the original file. */
+async function processAssets() {
+  const dims = {};
+  const jobs = [...new Set(assetJobs.values())];
+  let next = 0;
+  const worker = async () => {
+    while (next < jobs.length) {
+      const job = jobs[next++];
+      try {
+        const d = job.raster ? await convertRaster(job) : await copyOther(job);
+        if (d) dims[job.url] = d;
+      } catch (err) {
+        // keep the original bytes under their own extension; the note links are remapped afterwards
+        const file = job.stem + job.ext;
+        fs.copyFileSync(job.abs, path.join(OUT_ASSETS, file));
+        const url = `/vault-assets/${file}`;
+        console.warn(`WebP conversion failed for ${rel(job.abs)} (${err.message}); published the original as ${url}`);
+        job.failedUrl = job.url;
+        job.url = url;
+        job.file = file;
+        job.raster = false;
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: 4 }, worker));
+  return dims;
 }
 
 const headingAnchor = (h) =>
@@ -309,8 +442,10 @@ function transformInline(text, fromAbs, stats) {
     const [file] = target.split('#');
     const ext = path.extname(file).toLowerCase();
     if (IMAGE_EXT.has(ext)) {
-      const url = publishAsset(file, fromAbs);
-      if (url) return `![${mdText(alias && !/^\d+(x\d+)?$/.test(alias) ? alias : path.basename(file, ext))}](${url})`;
+      const alt = alias && !/^\d+(x\d+)?$/.test(alias) ? alias : path.basename(file, ext);
+      const url = publishAsset(file, fromAbs, alt);
+      if (url === PRIVATE) return '';
+      if (url) return `![${mdText(alt)}](${url})`;
       stats.missingAssets++;
       return '';
     }
@@ -324,9 +459,15 @@ function transformInline(text, fromAbs, stats) {
   });
   // relative markdown images ![alt](assets/x.png)
   text = text.replace(/!\[([^\]]*)\]\((?!https?:|\/)([^)\s]+)\)/g, (m, alt, href) => {
-    const url = publishAsset(href, fromAbs);
+    const url = publishAsset(href, fromAbs, alt);
+    if (url === PRIVATE) return '';
     return url ? `![${alt}](${url})` : alt ? `*${alt}*` : '';
   });
+  // signed, expiring remote images (Coursera imageAssetProxy, any URL with an Expires= signature) break after
+  // a while and render as broken boxes: keep only their alt text, set in italics like a missing local image
+  text = text.replace(/!\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)/g, (m, alt, href) =>
+    /imageAssetProxy|[?&]Expires=/i.test(href) ? (alt ? `*${alt}*` : '') : m
+  );
   // ==highlight==
   text = text.replace(/==([^=\n]+)==/g, '<mark>$1</mark>');
   return text;
@@ -414,8 +555,15 @@ function convertBody(content, fromAbs, stats) {
 rmrf(OUT_BLOG);
 rmrf(OUT_PROJECTS);
 rmrf(OUT_ASSETS);
+rmrf(OUT_THUMBS);
 
-const stats = { notes: 0, unresolved: 0, missingAssets: 0 };
+const stats = { notes: 0, unresolved: 0, missingAssets: 0, covers: 0, noDims: 0 };
+const pending = [];
+const globRe = (g) =>
+  new RegExp('^' + g.split('*').map((x) => x.replace(/[.+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$', 'i');
+// privacy list: never published anywhere (prose, covers, gallery)
+const excludedRes = (imgCfg.exclude || []).map(globRe);
+const privateDropped = new Set();
 const toArray = (v) => (Array.isArray(v) ? v : v == null || v === '' ? [] : [v]);
 const toDate = (v) => {
   if (!v) return undefined;
@@ -458,7 +606,28 @@ for (const [abs, dest] of published) {
       fm.links = Object.fromEntries(Object.entries(dest.cfg.links || {}).filter(([, v]) => v));
     }
   }
+  noteImages = [];
+  noteAlts = new Map();
   let body = convertBody(content, abs, stats);
+  const images = noteImages;
+  const alts = noteAlts;
+  noteImages = null;
+  noteAlts = null;
+  // vault-side `cover:` picks the photo (`cover: none` turns the automatic pick off)
+  let explicitCover = null;
+  if (data.cover != null && data.cover !== '') {
+    const v = String(data.cover).trim();
+    if (data.cover === false || /^(none|false|off|no)$/i.test(v)) explicitCover = 'none';
+    else if (/^https?:/.test(v)) explicitCover = { url: v };
+    else {
+      const name = v.replace(/^!?\[\[|\]\]$/g, '').split('|')[0].replace(/^<|>$/g, '');
+      const abs2 = resolveAsset(name, abs);
+      const job = abs2 && assetJob(abs2);
+      if (job) explicitCover = job;
+      else if (abs2 && isPrivateImage(abs2)) explicitCover = 'none';
+      else console.warn(`cover not found for ${r}: ${v}`);
+    }
+  }
   if (dest.collection === 'projects' && dest.isIndex) {
     const todo = content.split(/^## /m).find((sec) => /^(Việc cần làm|Tasks|To do)/i.test(sec));
     if (todo) {
@@ -509,9 +678,216 @@ for (const [abs, dest] of published) {
   const outDir = dest.collection === 'blog' ? OUT_BLOG : OUT_PROJECTS;
   const outFile = path.join(outDir, dest.slug + (dest.isIndex ? '/index' : '') + '.md');
   fm.isIndex = !!dest.isIndex;
+  pending.push({ abs, dest, data, fm, body, outFile, images, alts, explicitCover });
+}
+
+// ---------- images: convert, measure, pick covers ----------
+const imageDims = await processAssets();
+const remap = [...assetJobs.values()].filter((j) => j.failedUrl);
+const coverSkip = (imgCfg.coverSkip || []).map(globRe);
+const excluded = (imgCfg.exclude || []).map(globRe);
+const coverSkipFolders = (imgCfg.coverSkipFolders || []).map((f) => f.replace(/\/$/, '') + '/');
+// notes whose photos are all dissections (or otherwise unfit as a banner): no automatic cover, procedural instead
+const coverSkipNotes = new Set((imgCfg.coverSkipNotes || []).map((n) => n.normalize('NFC')));
+const stemMatches = (res, job) => res.some((re) => re.test(job.stem) || re.test(job.file));
+const isExcludedImage = (job) => stemMatches(excluded, job);
+/** Automatic cover: the note's first JPG with an aspect ratio of 0.6–1.8 that is not a screenshot, a handwritten page or excluded. */
+function autoCover(images) {
+  for (const job of images) {
+    if (!['.jpg', '.jpeg'].includes(job.ext)) continue;
+    if (stemMatches(coverSkip, job) || isExcludedImage(job)) continue;
+    if (coverSkipFolders.some((f) => rel(job.abs).normalize('NFC').startsWith(f.normalize('NFC')))) continue;
+    const d = imageDims[job.url];
+    if (!d) continue;
+    const ratio = d.w / d.h;
+    if (ratio >= 0.6 && ratio <= 1.8) return job;
+  }
+  return null;
+}
+// Post covers are shown at most 420 CSS px wide (desktop column) or as a full-width 16:7 strip below 900px, so a
+// real-photo cover gets 480px and 960px WebP renditions next to its asset (Cover.astro emits srcset/sizes).
+// A photo that is also in the home gallery reuses the gallery's hand-tuned crop (it hides hands and the like).
+const galleryByDigest = new Map();
+{
+  const byStem0 = new Map();
+  for (const f of allFiles) if (RASTER_EXT.has(path.extname(f).toLowerCase())) byStem0.set(assetStem(f), f);
+  for (const g of config.gallery || []) {
+    const f = byStem0.get(String(g.file || '').replace(/\.[a-z0-9]+$/i, ''));
+    if (f) galleryByDigest.set(crypto.createHash('sha1').update(fs.readFileSync(f)).digest('hex'), g);
+  }
+}
+const COVER_WIDTHS = [480, 960];
+const coverRenditions = new Map(); // job → url of the widest rendition
+async function coverRendition(job) {
+  if (!job.raster || job.failedUrl) return job.url;
+  if (coverRenditions.has(job)) return coverRenditions.get(job);
+  const g = galleryByDigest.get(job.digest);
+  const base = await sharp(job.abs, { failOn: 'none' }).rotate().toBuffer({ resolveWithObject: true });
+  const W = base.info.width, H = base.info.height;
+  let region = null;
+  if (g && Array.isArray(g.crop) && g.crop.length === 4) {
+    const [x, y, w, h] = g.crop.map(Number);
+    const left = Math.round(x * W), top = Math.round(y * H);
+    region = { left, top, width: Math.min(Math.round(w * W), W - left), height: Math.min(Math.round(h * H), H - top) };
+  }
+  let url = job.url;
+  for (const w of COVER_WIDTHS) {
+    let p = sharp(base.data);
+    if (region) p = p.extract(region);
+    const file = `${job.stem}-cover-${w}.webp`;
+    const info = await p.resize({ width: w, withoutEnlargement: true }).webp({ quality: WEBP_QUALITY }).toFile(path.join(OUT_ASSETS, file));
+    url = `/vault-assets/${file}`;
+    imageDims[url] = { w: info.width, h: info.height };
+  }
+  coverRenditions.set(job, url);
+  return url;
+}
+/** Alt text worth keeping for a cover: not a camera file name such as IMG_1234 or the bare file name. */
+const meaningfulAlt = (alt, job) => {
+  const a = String(alt || '').trim();
+  if (a.length < 4) return '';
+  if (/^(img|dsc|dscn|dcim|pxl|image|photo|pasted image|screenshot|ảnh chụp màn hình)[\s_-]*\d/i.test(a)) return '';
+  if (slugify(a) === slugify(path.basename(job.abs, path.extname(job.abs)))) return '';
+  return a;
+};
+const publicFileExists = (src) => src.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', decodeURI(src.split(/[?#]/)[0])));
+
+for (const p of pending) {
+  const { abs, dest, data, fm, outFile, images, alts, explicitCover } = p;
+  let body = p.body;
+  for (const j of remap) body = body.split(j.failedUrl).join(j.url);
+  for (const job of images) if (!imageDims[job.url]) {
+    stats.noDims++;
+    console.warn(`no dimensions for ${job.url} (${rel(abs)}): rendered without width/height`);
+  }
+  let src = null;
+  let coverJob = null;
+  if (explicitCover && explicitCover !== 'none') {
+    src = explicitCover.url;
+    coverJob = explicitCover.abs ? explicitCover : null;
+  }
+  else if (!explicitCover && !dest.isIndex && !coverSkipNotes.has(rel(abs).normalize('NFC'))) coverJob = autoCover(images);
+  if (coverJob && coverJob.abs) src = await coverRendition(coverJob);
+  // cover_alt: the vault value, else the alt the photo was embedded with, else its gallery alt; otherwise decorative
+  const alt = data.cover_alt
+    ? String(data.cover_alt)
+    : coverJob && coverJob.abs
+      ? meaningfulAlt(alts.get(coverJob), coverJob) || galleryByDigest.get(coverJob.digest)?.alt || ''
+      : '';
+  if (dest.collection === 'projects') {
+    // site.config.json projects[].cover ({src, alt, alt_en}) wins on the project page; an empty src keeps the procedural banner
+    const c = dest.isIndex && dest.cfg.cover;
+    if (c && c.src) {
+      if (/^https?:/.test(c.src) || publicFileExists(c.src)) fm.cover = { src: c.src, alt: c.alt || '', ...(c.alt_en ? { alt_en: c.alt_en } : {}) };
+      else console.warn(`project cover ${c.src} for ${dest.project} does not exist yet; using the procedural banner`);
+    } else if (src) fm.cover = { src, alt };
+  } else if (src) {
+    fm.cover = src;
+    if (alt) fm.cover_alt = alt;
+  }
+  if (fm.cover) stats.covers++;
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, matter.stringify(body, fm));
   stats.notes++;
+}
+fs.mkdirSync(path.dirname(IMAGES_JSON), { recursive: true });
+fs.writeFileSync(
+  IMAGES_JSON,
+  '{\n' +
+    Object.entries(imageDims)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([url, d]) => `  ${JSON.stringify(url)}: { "w": ${d.w}, "h": ${d.h} }`)
+      .join(',\n') +
+    '\n}\n'
+);
+
+// ---------- home strip "Từ phòng lab và thực địa": owner-approved photos only (site.config.json "gallery", spec §7.2) ----------
+// Each photo gets 480px and 960px WebP in true colour and in a fluorescence LUT (black → --void #10052e,
+// white → the note's topic hex), written to public/vault-thumbs/ and listed in src/data/gallery.json.
+{
+  const topicHex = {};
+  try {
+    const ts = fs.readFileSync(path.join(ROOT, 'src/data/topics.ts'), 'utf8');
+    for (const m of ts.matchAll(/id:\s*'([^']+)'[\s\S]*?hex:\s*'(#[0-9a-fA-F]{6})'/g)) topicHex[m[1]] = m[2];
+  } catch {}
+  const rgb = (hex) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+  const VOID = rgb('#10052e');
+  // notes are named by vault path (or bare file name), compared in NFC because macOS may store names decomposed
+  const noteByPath = new Map();
+  for (const abs of published.keys()) {
+    const k = rel(abs).normalize('NFC').replace(/\.md$/i, '');
+    noteByPath.set(k, abs);
+    if (!noteByPath.has(path.basename(k))) noteByPath.set(path.basename(k), abs);
+  }
+  const byStem = new Map();
+  for (const f of allFiles) if (RASTER_EXT.has(path.extname(f).toLowerCase())) byStem.set(assetStem(f), f);
+  const entries = [];
+  for (const g of config.gallery || []) {
+    const stem = String(g.file || '').replace(/\.[a-z0-9]+$/i, '');
+    const srcAbs = byStem.get(stem);
+    const note = g.note && noteByPath.get(String(g.note).normalize('NFC').replace(/\.md$/i, ''));
+    const dest = note && published.get(note);
+    if (!srcAbs) { console.warn(`gallery: ${g.file} not found in the vault`); continue; }
+    // screenshots, handwritten pages, dissections and excluded photos never reach the gallery, even when listed
+    if (isExcludedImage({ stem, file: g.file }) || stemMatches(coverSkip, { stem, file: g.file })) {
+      console.warn(`gallery: ${g.file} matches images.exclude or images.coverSkip; skipped`);
+      continue;
+    }
+    if (!dest) { console.warn(`gallery: note ${g.note} is not published; ${g.file} skipped`); continue; }
+    const base = await sharp(srcAbs, { failOn: 'none' }).rotate().toBuffer({ resolveWithObject: true });
+    const W = base.info.width, H = base.info.height;
+    let region = null;
+    if (Array.isArray(g.crop) && g.crop.length === 4) {
+      const [x, y, w, h] = g.crop.map(Number);
+      const left = Math.round(x * W), top = Math.round(y * H);
+      region = { left, top, width: Math.min(Math.round(w * W), W - left), height: Math.min(Math.round(h * H), H - top) };
+    }
+    const hex = topicHex[dest.topic] || topicHex.biology || '#2ef2ff';
+    const ink = rgb(hex);
+    const pipe = (w) => {
+      let p = sharp(base.data);
+      if (region) p = p.extract(region);
+      return p.resize({ width: w, withoutEnlargement: true });
+    };
+    const tc = [], lut = [];
+    let size = null;
+    for (const w of [480, 960]) {
+      const tName = `${stem}-${w}.webp`, lName = `${stem}-${w}-lut.webp`;
+      const t = await pipe(w).webp({ quality: WEBP_QUALITY }).toFile(path.join(OUT_THUMBS, tName));
+      // LUT: grey level g maps linearly from VOID (g = 0) to the topic hex (g = 255)
+      const { data: grey, info } = await pipe(w).toColourspace('b-w').raw().toBuffer({ resolveWithObject: true });
+      const n = info.width * info.height, ch = info.channels;
+      const out = Buffer.alloc(n * 3);
+      for (let i = 0; i < n; i++) {
+        const v = grey[i * ch] / 255;
+        for (let c = 0; c < 3; c++) out[i * 3 + c] = Math.round(VOID[c] + (ink[c] - VOID[c]) * v);
+      }
+      await sharp(out, { raw: { width: info.width, height: info.height, channels: 3 } })
+        .webp({ quality: WEBP_QUALITY })
+        .toFile(path.join(OUT_THUMBS, lName));
+      tc.push(`/vault-thumbs/${tName} ${t.width}w`);
+      lut.push(`/vault-thumbs/${lName} ${t.width}w`);
+      size = { width: t.width, height: t.height };
+    }
+    entries.push({
+      file: g.file,
+      url: dest.url,
+      // gallery[].caption overrides the note title, so two photos from one note still say what each shows
+      title: g.caption || titleOf(note).replace(/^_MOC - /, ''),
+      ...(g.caption_en ? { title_en: g.caption_en } : {}),
+      topic: dest.topic,
+      alt: g.alt || '',
+      ...(g.alt_en ? { alt_en: g.alt_en } : {}),
+      ...(g.sci ? { sci: g.sci } : {}),
+      ...size,
+      src: tc[tc.length - 1].split(' ')[0],
+      srcset: tc.join(', '),
+      lut: lut[lut.length - 1].split(' ')[0],
+      lutSrcset: lut.join(', '),
+    });
+  }
+  fs.writeFileSync(GALLERY_JSON, JSON.stringify(entries, null, 2) + '\n');
+  stats.gallery = entries.length;
 }
 
 for (const [abs, dest] of published) {
@@ -568,5 +944,7 @@ fs.writeFileSync(
 console.log(
   `Synced ${stats.notes} notes (${[...published.values()].filter((d) => d.collection === 'blog').length} blog, ` +
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
-    `${copiedAssets.size} images. Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}.`
+    `${new Set(assetJobs.values()).size} images (${stats.covers} covers, ${stats.gallery} gallery photos, ${stats.noDims} without dimensions). ` +
+    `Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}.` +
+    (privateDropped.size ? ` Private photos dropped from notes (images.exclude): ${privateDropped.size}.` : '')
 );

@@ -2,7 +2,10 @@
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import T from '../../components/T.astro';
+import { ui } from '../../i18n';
+import Cover from '../../components/Cover.astro';
 import { blogEntries, childrenOf, breadcrumbs, hasMermaid, param } from '../../lib';
+import { ogUrl } from '../../lib/cover';
 
 export async function getStaticPaths() {
   const all = await blogEntries();
@@ -15,22 +18,25 @@ const countIn = (id: string) => all.filter((e) => e.id.startsWith(id + '/') && !
 const kids = childrenOf(all, entry.id).filter((k) => !k.data.isIndex || countIn(k.id) > 0);
 const crumbs = breadcrumbs(all, entry.id);
 ---
-<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)}>
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)} reading image={ogUrl(d.url)}>
   <div class="wrap article">
-    <ol class="crumbs">
-      <li><a href="/topics/"><T k="topics" /></a></li>
-      {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
-    </ol>
+    <Cover entry={entry} class="topic-banner" loading="eager" />
+    <nav class="crumbs-nav" aria-label={ui.crumbs[0]} data-aria-vi={ui.crumbs[0]} data-aria-en={ui.crumbs[1]}>
+      <ol class="crumbs">
+        <li><a href="/topics/"><T k="topics" /></a></li>
+        {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
+      </ol>
+    </nav>
     <header class="article-head">
       <h1>{d.title}</h1>
-      <p class="byline">{countIn(entry.id)} <T k="notes" /></p>
+      <p class="byline"><span><span class="num">{countIn(entry.id)}</span> <T k="notes" /></span></p>
     </header>
     {kids.length > 0 && (
-      <section class="children" style="max-width:46rem">
-        <h2><T k="inThisTopic" /></h2>
+      <section class="children topic-children" aria-labelledby="in-topic">
+        <h2 id="in-topic"><T k="inThisTopic" /></h2>
         <ul class="rows">
           {kids.map((k) => (
-            <li><a href={k.data.url}><span class={`t${k.data.isIndex ? ' is-topic' : ''}`}>{k.data.title}</span><span class="where">{k.data.isIndex ? countIn(k.id) : ''}</span></a></li>
+            <li><a href={k.data.url}><span class={`t${k.data.isIndex ? ' is-topic' : ''}`}>{k.data.title}</span><span class="where num">{k.data.isIndex ? countIn(k.id) : ''}</span></a></li>
           ))}
         </ul>
       </section>

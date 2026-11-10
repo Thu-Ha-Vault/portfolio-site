@@ -103,20 +103,20 @@ isIndex: false
 ## Tài liệu gốc
 - Ảnh báo cáo:
 
-![DVCXS - IMG_5933](/vault-assets/dvcxs-img-5933-7a3eebea.jpg)
-![DVCXS - IMG_5932](/vault-assets/dvcxs-img-5932-d3fda135.jpg)
+![DVCXS - IMG_5933](/vault-assets/dvcxs-img-5933-7a3eebea.webp)
+![DVCXS - IMG_5932](/vault-assets/dvcxs-img-5932-d3fda135.webp)
 
 - Ảnh mẫu vật trong bảo tàng:
 
-![DVCXS - IMG_4321](/vault-assets/dvcxs-img-4321-bd4a523a.jpg)
-![DVCXS - IMG_4346](/vault-assets/dvcxs-img-4346-a5bd998f.jpg)
-![DVCXS - IMG_4349](/vault-assets/dvcxs-img-4349-7a6810d6.jpg)
-![DVCXS - IMG_4322](/vault-assets/dvcxs-img-4322-cad09e67.jpg)
-![DVCXS - IMG_4329](/vault-assets/dvcxs-img-4329-67875297.jpg)
-![DVCXS - IMG_4339](/vault-assets/dvcxs-img-4339-231864fa.jpg)
-![DVCXS - IMG_4341](/vault-assets/dvcxs-img-4341-4702b51b.jpg)
-![DVCXS - IMG_4343](/vault-assets/dvcxs-img-4343-5f2e536b.jpg)
-![DVCXS - IMG_4344](/vault-assets/dvcxs-img-4344-f82948e7.jpg)
-![DVCXS - IMG_4337](/vault-assets/dvcxs-img-4337-04911d8a.jpg)
+![DVCXS - IMG_4321](/vault-assets/dvcxs-img-4321-bd4a523a.webp)
+![DVCXS - IMG_4346](/vault-assets/dvcxs-img-4346-a5bd998f.webp)
+![DVCXS - IMG_4349](/vault-assets/dvcxs-img-4349-7a6810d6.webp)
+![DVCXS - IMG_4322](/vault-assets/dvcxs-img-4322-cad09e67.webp)
+![DVCXS - IMG_4329](/vault-assets/dvcxs-img-4329-67875297.webp)
+![DVCXS - IMG_4339](/vault-assets/dvcxs-img-4339-231864fa.webp)
+![DVCXS - IMG_4341](/vault-assets/dvcxs-img-4341-4702b51b.webp)
+![DVCXS - IMG_4343](/vault-assets/dvcxs-img-4343-5f2e536b.webp)
+![DVCXS - IMG_4344](/vault-assets/dvcxs-img-4344-f82948e7.webp)
+![DVCXS - IMG_4337](/vault-assets/dvcxs-img-4337-04911d8a.webp)
 
 - Folder Drive gốc (còn các ảnh IMG_4320–4349): https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

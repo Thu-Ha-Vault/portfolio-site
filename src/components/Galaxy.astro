@@ -1,121 +1,314 @@
 ---
-// 3D galaxy of the Second Brain. Each topic is a neon spiral arm, each note a star, courses form
-// constellations (lines to their course star) and wikilinks between notes are faint light trails.
-// Data comes from /data/galaxy.json (written by scripts/sync-vault.mjs) and is loaded lazily.
+// 3D galaxy of the Second Brain (spec §4, §8). Each topic is a neon spiral arm, each note a star, courses form
+// white constellations, wikilinks are faint light trails, and each topic star is a ball-and-stick polyhedron.
+// variant="stage" is the home hero environment: a full-bleed canvas behind the copy with a camera-child column
+// of iridescent vesicles, a CSS poster underneath (LCP and no-WebGL fallback) and a legend strip.
+// Data comes from /data/galaxy.json (written by scripts/sync-vault.mjs) and three.js is loaded lazily.
 import { topicNames, ui } from '../i18n';
+import { topicById, glyphSvg, IRIS_STOPS } from '../data/topics';
 import graph from '../data/graph.json';
 
-const neon: Record<string, string> = {
-  biology: '#2ef2ff',
-  business: '#ff3db4',
-  'ai-development': '#a78bfa',
-  french: '#ffb627',
-  'university-courses': '#9dff5c',
-  english: '#ff6b5e',
-};
+interface Props { variant?: 'stage' | 'box' }
+const { variant = 'box' } = Astro.props;
+const stage = variant === 'stage';
+
 const topics = graph.nodes
   .filter((n) => n.notes > 0)
-  .map((n) => ({ id: n.topic, url: n.url, notes: n.notes, color: neon[n.topic] ?? '#ffffff', names: topicNames[n.topic] ?? [n.title, n.title] }));
-const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
+  .map((n) => {
+    const t = topicById(n.topic);
+    return {
+      id: n.topic,
+      url: n.url,
+      notes: n.notes,
+      color: t?.hex ?? '#ffffff',
+      token: t?.token ?? '',
+      poly: t?.poly ?? 'icosahedron',
+      names: topicNames[n.topic] ?? [n.title, n.title],
+    };
+  });
+
+// Vesicle column in view space: fx/fy are fractions of the frustum half-width/half-height at depth z (spec §4).
+// The first three are used on coarse pointers / low-end devices. The poster draws the first two, pre-blurred.
+const BLOBS = [
+  { fx: 0.4, fy: 0.72, z: -300, r: 40 },
+  { fx: 0.55, fy: 0.12, z: -420, r: 52 },
+  { fx: 0.24, fy: -0.66, z: -300, r: 42 },
+  { fx: 0.3, fy: -0.1, z: -260, r: 18 },
+  { fx: 0.5, fy: -0.3, z: -360, r: 12 },
+];
+const FOV = 55;
+const tanH = Math.tan(((FOV / 2) * Math.PI) / 180);
+// poster viewBox 115×100 (≈ the desktop canvas aspect), preserveAspectRatio slice
+const posterBlobs = BLOBS.slice(0, 2).map((b, i) => ({
+  id: `pb${i}`,
+  cx: +(57.5 + b.fx * 57.5).toFixed(2),
+  cy: +(50 - b.fy * 50).toFixed(2),
+  r: +((b.r / (-b.z * tanH)) * 50).toFixed(2),
+}));
+const irisAt = (x: number) => IRIS_STOPS.reduce((best, s) => (Math.abs(s.at - x) < Math.abs(best.at - x) ? s : best)).hex;
+
+const L = {
+  label: ['Bản đồ ghi chép 3D', '3D map of my notes'],
+  hint: ['Kéo ngang để xoay, bấm vào một ngôi sao để mở bài.', 'Drag sideways to rotate, click a star to open its note.'],
+  controls: ['Điều khiển bản đồ', 'Map controls'],
+  pause: ['Tạm dừng chuyển động', 'Pause motion'],
+  zoomIn: ['Phóng to', 'Zoom in'],
+  zoomOut: ['Thu nhỏ', 'Zoom out'],
+  reset: ['Đặt lại góc nhìn', 'Reset view'],
+  full: ['Toàn màn hình', 'Full screen'],
+  legend: ['Chủ đề trên bản đồ', 'Topics on the map'],
+  fallback: [
+    'Trình duyệt này không hiển thị được bản đồ 3D. Bạn vẫn có thể mở từng chủ đề ở danh sách bên dưới.',
+    "This browser can't show the 3D map. You can still open each topic from the list below.",
+  ],
+  links: ['liên kết', 'links'],
+} as const;
+const config = { topics, blobs: BLOBS, fov: FOV, ui: { open: ui.galaxyOpen, links: L.links } };
+const descId = stage ? 'galaxy-desc' : 'galaxy-desc-box';
+const controls = [
+  { act: 'pause', l: L.pause, pressed: 'false', icon: '<g class="i-pause"><rect x="5.5" y="4.5" width="3" height="11" rx=".6" fill="currentColor"/><rect x="11.5" y="4.5" width="3" height="11" rx=".6" fill="currentColor"/></g><path class="i-play" d="M6.5 4.2v11.6l9.3-5.8z" fill="currentColor"/>' },
+  { act: 'in', l: L.zoomIn, icon: '<path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' },
+  { act: 'out', l: L.zoomOut, icon: '<path d="M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' },
+  { act: 'reset', l: L.reset, icon: '<circle cx="10" cy="10" r="2.5" fill="currentColor"/><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/>' },
+  { act: 'full', l: L.full, icon: '<path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>' },
+];
 ---
-<figure class="galaxy-figure">
-  <div class="galaxy" data-galaxy data-config={JSON.stringify(config)}>
-    <canvas aria-hidden="true"></canvas>
-    <p class="g-hint" data-vi={ui.galaxyHint[0]} data-en={ui.galaxyHint[1]}>{ui.galaxyHint[0]}</p>
-    <div class="g-labels"></div>
-    <div class="g-tip" hidden role="status"></div>
-    <div class="g-controls">
-      <button type="button" data-act="rotate" aria-pressed="true" aria-label="Auto-rotate">
-        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16 10a6 6 0 1 1-2-4.5M16 3v3.5h-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <button type="button" data-act="in" aria-label="Zoom in"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-      <button type="button" data-act="out" aria-label="Zoom out"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-      <button type="button" data-act="reset" aria-label="Reset view"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="2.5" fill="currentColor"/><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
-      <button type="button" data-act="full" aria-label="Full screen"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    </div>
-    <p class="g-fallback" hidden data-vi="Trình duyệt này không hiển thị được bản đồ 3D. Bạn vẫn có thể mở từng chủ đề ở danh sách bên dưới." data-en="This browser can't show the 3D map. You can still open each topic from the list below.">Trình duyệt này không hiển thị được bản đồ 3D. Bạn vẫn có thể mở từng chủ đề ở danh sách bên dưới.</p>
+{stage && (
+  <div class="hero-poster" aria-hidden="true">
+    <svg viewBox="0 0 115 100" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <defs>
+        {posterBlobs.map((b) => (
+          <radialGradient id={b.id} cx="50%" cy="50%" r="50%" fx="34%" fy="30%">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".9" />
+            <stop offset=".18" stop-color={irisAt(0)} />
+            <stop offset=".5" stop-color={irisAt(0.26)} />
+            <stop offset=".78" stop-color={irisAt(0.52)} stop-opacity=".85" />
+            <stop offset="1" stop-color={irisAt(0.64)} stop-opacity="0" />
+          </radialGradient>
+        ))}
+      </defs>
+      {posterBlobs.map((b) => <circle cx={b.cx} cy={b.cy} r={b.r} fill={`url(#${b.id})`} />)}
+    </svg>
   </div>
-  <ul class="g-legend">
+)}
+<div
+  class:list={['galaxy', { 'galaxy--stage': stage }]}
+  data-galaxy
+  data-config={JSON.stringify(config)}
+  role="region"
+  aria-label={L.label[0]}
+  data-aria-vi={L.label[0]}
+  data-aria-en={L.label[1]}
+  aria-describedby={descId}
+>
+  <canvas aria-hidden="true"></canvas>
+  <p id={descId} class="visually-hidden"><slot /></p>
+  <p class="g-hint" data-vi={L.hint[0]} data-en={L.hint[1]}>{L.hint[0]}</p>
+  <div class="g-labels" aria-hidden="true"></div>
+  <div class="g-tip" hidden role="status"></div>
+  <div class="g-controls" role="group" aria-label={L.controls[0]} data-aria-vi={L.controls[0]} data-aria-en={L.controls[1]}>
+    {controls.map((c) => (
+      <button
+        type="button"
+        data-act={c.act}
+        aria-pressed={c.pressed}
+        aria-label={c.l[0]}
+        data-aria-vi={c.l[0]}
+        data-aria-en={c.l[1]}
+        title={c.l[0]}
+        data-title-vi={c.l[0]}
+        data-title-en={c.l[1]}
+      >
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false" set:html={c.icon} />
+      </button>
+    ))}
+  </div>
+  <p class="g-fallback" hidden data-vi={L.fallback[0]} data-en={L.fallback[1]}>{L.fallback[0]}</p>
+</div>
+<nav class="g-legend" aria-label={L.legend[0]} data-aria-vi={L.legend[0]} data-aria-en={L.legend[1]} data-galaxy-legend>
+  <ul class="wrap g-legend-list">
     {topics.map((t) => (
-      <li><a href={t.url}><span class="dot" style={`--c:${t.color}`}></span><span data-vi={t.names[0]} data-en={t.names[1]}>{t.names[0]}</span> <span class="n">{t.notes}</span></a></li>
+      <li>
+        <a href={t.url} data-topic={t.id} style={t.token ? `--c:var(--t-${t.token})` : undefined}>
+          <Fragment set:html={glyphSvg(t.id, 12)} />
+          <span data-vi={t.names[0]} data-en={t.names[1]}>{t.names[0]}</span>
+          <span class="n">{t.notes}</span>
+        </a>
+      </li>
     ))}
   </ul>
-  <figcaption><slot /></figcaption>
-</figure>
+</nav>
 
 <script>
-  type Topic = { id: string; url: string; notes: number; color: string; names: [string, string] };
+  import { IRIS_STOPS, glyphSvg } from '../data/topics';
+
+  type Topic = { id: string; url: string; notes: number; color: string; token: string; poly: string; names: [string, string] };
   type Node = { t: string; u: string; g: string; k: 0 | 1 | 2; p: number };
+  type Blob = { fx: number; fy: number; z: number; r: number };
+  type Cfg = { topics: Topic[]; blobs: Blob[]; fov: number; ui: { open: [string, string]; links: [string, string] } };
 
   const root = document.querySelector<HTMLElement>('[data-galaxy]');
   if (root) {
-    const start = () => init(root).catch(() => fail(root));
+    const start = () =>
+      init(root).catch((e) => {
+        console.warn('galaxy', e);
+        fail(root);
+      });
     if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((es) => {
-        if (es.some((e) => e.isIntersecting)) { io.disconnect(); start(); }
-      }, { rootMargin: '200px' });
+      const io = new IntersectionObserver(
+        (es) => {
+          if (es.some((e) => e.isIntersecting)) {
+            io.disconnect();
+            start();
+          }
+        },
+        { rootMargin: '200px' },
+      );
       io.observe(root);
     } else start();
   }
 
+  /** No WebGL: keep the poster, hide the controls and hint, show the text fallback. */
   function fail(el: HTMLElement) {
+    el.classList.remove('is-ready');
     el.classList.add('is-fallback');
     el.querySelector<HTMLElement>('.g-fallback')!.hidden = false;
   }
 
-  async function init(el: HTMLElement) {
-    const THREE = await import('three');
-    const { OrbitControls } = await import('three/examples/jsm/controls/OrbitControls.js');
-    const cfg = JSON.parse(el.dataset.config!) as { topics: Topic[] };
-    const data = (await (await fetch('/data/galaxy.json')).json()) as { nodes: Node[]; links: [number, number][] };
-    const canvas = el.querySelector('canvas')!;
-    const lang = () => (document.documentElement.lang === 'en' ? 1 : 0);
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
+  const smooth = (a: number, b: number, x: number) => {
+    const t = clamp((x - a) / (b - a), 0, 1);
+    return t * t * (3 - 2 * t);
+  };
+  const easeOut = (t: number) => 1 - Math.pow(1 - clamp(t, 0, 1), 3);
+  const hexRgb = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
 
-    let renderer: InstanceType<typeof THREE.WebGLRenderer>;
+  // 3D simplex noise (Ashima Arts / Stefan Gustavson, MIT).
+  const SNOISE = `
+    vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}
+    vec4 mod289(vec4 x){return x-floor(x*(1.0/289.0))*289.0;}
+    vec4 permute(vec4 x){return mod289(((x*34.0)+1.0)*x);}
+    vec4 taylorInvSqrt(vec4 r){return 1.79284291400159-0.85373472095314*r;}
+    float snoise(vec3 v){
+      const vec2 C=vec2(1.0/6.0,1.0/3.0); const vec4 D=vec4(0.0,0.5,1.0,2.0);
+      vec3 i=floor(v+dot(v,C.yyy)); vec3 x0=v-i+dot(i,C.xxx);
+      vec3 g=step(x0.yzx,x0.xyz); vec3 l=1.0-g; vec3 i1=min(g.xyz,l.zxy); vec3 i2=max(g.xyz,l.zxy);
+      vec3 x1=x0-i1+C.xxx; vec3 x2=x0-i2+C.yyy; vec3 x3=x0-D.yyy;
+      i=mod289(i);
+      vec4 p=permute(permute(permute(i.z+vec4(0.0,i1.z,i2.z,1.0))+i.y+vec4(0.0,i1.y,i2.y,1.0))+i.x+vec4(0.0,i1.x,i2.x,1.0));
+      float n_=0.142857142857; vec3 ns=n_*D.wyz-D.xzx;
+      vec4 j=p-49.0*floor(p*ns.z*ns.z); vec4 x_=floor(j*ns.z); vec4 y_=floor(j-7.0*x_);
+      vec4 x=x_*ns.x+ns.yyyy; vec4 y=y_*ns.x+ns.yyyy; vec4 h=1.0-abs(x)-abs(y);
+      vec4 b0=vec4(x.xy,y.xy); vec4 b1=vec4(x.zw,y.zw);
+      vec4 s0=floor(b0)*2.0+1.0; vec4 s1=floor(b1)*2.0+1.0; vec4 sh=-step(h,vec4(0.0));
+      vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy; vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;
+      vec3 p0=vec3(a0.xy,h.x); vec3 p1=vec3(a0.zw,h.y); vec3 p2=vec3(a1.xy,h.z); vec3 p3=vec3(a1.zw,h.w);
+      vec4 norm=taylorInvSqrt(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3)));
+      p0*=norm.x; p1*=norm.y; p2*=norm.z; p3*=norm.w;
+      vec4 m=max(0.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.0); m=m*m;
+      return 42.0*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)));
+    }`;
+
+  const MAX_ARMS = 8;
+  const FOCUS = `uniform float uFocus[${MAX_ARMS}];
+    float focusOf(float arm){ return arm < -0.5 ? 1.0 : uFocus[int(arm + 0.5)]; }`;
+
+  async function init(el: HTMLElement) {
+    // Probe WebGL before downloading three.js and galaxy.json: devices without it keep the poster at no cost.
     try {
-      renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+      const probe = document.createElement('canvas');
+      const gl = (probe.getContext('webgl2') || probe.getContext('webgl')) as WebGLRenderingContext | null;
+      if (!gl) return fail(el);
+      gl.getExtension('WEBGL_lose_context')?.loseContext(); // release the probe: the scene uses one context only
     } catch {
       return fail(el);
     }
+    const [THREE, { OrbitControls }] = await Promise.all([import('three'), import('three/examples/jsm/controls/OrbitControls.js')]);
     THREE.ColorManagement.enabled = false;
+    const cfg = JSON.parse(el.dataset.config!) as Cfg;
+    const res = await fetch('/data/galaxy.json');
+    if (!res.ok) throw new Error(`galaxy.json ${res.status}`);
+    const data = (await res.json()) as { nodes: Node[]; links: [number, number][] };
+    const canvas = el.querySelector('canvas')!;
+    const stageEl = el.closest<HTMLElement>('[data-hero]');
+    const isStage = el.classList.contains('galaxy--stage');
+    const legend = document.querySelector<HTMLElement>('[data-galaxy-legend]');
+    const lang = () => (document.documentElement.lang === 'en' ? 1 : 0);
+    const mqReduce = matchMedia('(prefers-reduced-motion: reduce)');
+    const mqParallax = matchMedia('(pointer: fine) and (hover: hover)');
+    const mqDesk = matchMedia('(min-width: 900px)');
+    const coarse = matchMedia('(pointer: coarse)').matches;
+    const lowEnd = coarse || (navigator.hardwareConcurrency || 8) <= 4;
+    const voidHex = getComputedStyle(document.documentElement).getPropertyValue('--void').trim() || '#10052e';
+
+    // ignition runs once per session: index.astro sets data-ignite while parsing; other pages use sessionStorage
+    let igniteWanted = stageEl?.dataset.ignite === '1';
+    if (stageEl?.dataset.ignite == null) {
+      try {
+        igniteWanted = !sessionStorage.getItem('lit');
+        sessionStorage.setItem('lit', '1');
+      } catch {
+        igniteWanted = false;
+      }
+    }
+
+    let renderer: InstanceType<typeof THREE.WebGLRenderer>;
+    try {
+      // Opaque canvas on purpose: a transparent one gives the additive sprites dark halos.
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
+    } catch {
+      return fail(el);
+    }
     renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    // OrbitControls sets touch-action: none; vertical swipes must scroll the page
+    const setTouch = () => (canvas.style.touchAction = 'pan-y');
 
     const scene = new THREE.Scene();
-    // opaque deep-space backdrop drawn into the scene (a transparent canvas makes additive glow show dark halos)
-    const bg = document.createElement('canvas');
-    bg.width = bg.height = 512;
-    const g2 = bg.getContext('2d')!;
-    const grad = g2.createRadialGradient(256, 236, 10, 256, 256, 360);
-    grad.addColorStop(0, '#2a1758');
-    grad.addColorStop(0.45, '#110c30');
-    grad.addColorStop(1, '#04030c');
-    g2.fillStyle = grad;
-    g2.fillRect(0, 0, 512, 512);
-    scene.background = new THREE.CanvasTexture(bg);
-    const camera = new THREE.PerspectiveCamera(55, 1, 1, 4000);
+    scene.background = new THREE.Color(voidHex);
+    const camera = new THREE.PerspectiveCamera(cfg.fov, 1, 1, 4000);
+    scene.add(camera); // the vesicle column is a child of the camera
     const HOME = new THREE.Vector3(0, 230, 330);
     camera.position.copy(HOME);
     const controls = new OrbitControls(camera, canvas);
-    controls.enableDamping = true;
+    setTouch();
+    controls.enableDamping = !mqReduce.matches; // no inertial coast under reduced motion
     controls.enablePan = false;
+    controls.enableZoom = false; // zoom stays on the +/− buttons and the keyboard
     controls.minDistance = 60;
     controls.maxDistance = 900;
-    controls.autoRotate = !reduce;
     controls.autoRotateSpeed = 0.5;
+
+    // shared uniforms
+    const U = {
+      uScale: { value: 400 },
+      uIgnite: { value: 0 },
+      uStir: { value: 0 },
+      uPointer: { value: new THREE.Vector2(9, 9) },
+      uRipple: { value: new THREE.Vector2(0, 0) }, // x radius (NDC), y strength
+      uAspect: { value: 1 },
+      uFocus: { value: new Array(MAX_ARMS).fill(1) as number[] },
+      uTime: { value: 0 },
+    };
 
     // ---------- layout: one logarithmic spiral arm per topic ----------
     const seed = (s: number) => () => ((s = Math.imul(s ^ (s >>> 15), 2246822507) + 0x6d2b79f5), ((s ^= s >>> 13) >>> 0) / 4294967296);
     const rand = seed(20261110);
     const gauss = () => (rand() + rand() + rand() - 1.5) * 1.15;
-    const topicOrder = [...cfg.topics].sort((a, b) => b.notes - a.notes);
+    const topicOrder = [...cfg.topics].sort((a, b) => b.notes - a.notes).slice(0, MAX_ARMS);
     const tIndex = new Map(topicOrder.map((t, i) => [t.id, i]));
     const color = new Map(cfg.topics.map((t) => [t.id, new THREE.Color(t.color)]));
+    const WHITE = new THREE.Color('#ffffff');
+    const ORIGIN = new THREE.Vector3();
     const pos = data.nodes.map(() => new THREE.Vector3());
-    const depth = data.nodes.map((n) => { let d = 0, p = n.p; while (p >= 0 && d < 20) { d++; p = data.nodes[p].p; } return d; });
+    const depth = data.nodes.map((n) => {
+      let d = 0, p = n.p;
+      while (p >= 0 && d < 20) { d++; p = data.nodes[p].p; }
+      return d;
+    });
     const arms = topicOrder.length;
     const armAngle = (i: number) => (i / arms) * Math.PI * 2;
+    // bigger topics light first (0–0.15 by note-count rank)
+    const armDelay = (i: number) => (arms > 1 ? (i / (arms - 1)) * 0.15 : 0);
     for (const t of topicOrder) {
       const i = tIndex.get(t.id)!;
       const notes = data.nodes.map((n, j) => [n, j] as const).filter(([n]) => n.g === t.id && n.k === 0);
@@ -142,18 +335,32 @@ const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
       c.forEach((x) => pos[j].add(pos[x]));
       pos[j].divideScalar(c.length).add(new THREE.Vector3(0, 12, 0));
     });
+    const armOf = (g: string) => tIndex.get(g) ?? -1;
+    // ignition threshold: radius/300 + arm delay, so light spreads from the core outward
+    const thrOf = (v: InstanceType<typeof THREE.Vector3>, arm: number) => v.length() / 300 + (arm >= 0 ? armDelay(arm) : 0);
+    const ignOn = (thr: number) => smooth(thr - 0.1, thr, U.uIgnite.value * 1.3);
 
-    // ---------- glowing point sprites ----------
+    // ---------- glowing point sprites (ignition, plankton flash, topic focus) ----------
     const starMat = new THREE.ShaderMaterial({
-      uniforms: { uScale: { value: 400 } },
+      uniforms: { uScale: U.uScale, uIgnite: U.uIgnite, uStir: U.uStir, uPointer: U.uPointer, uRipple: U.uRipple, uAspect: U.uAspect, uFocus: U.uFocus },
       vertexShader: `
-        attribute float size; attribute vec3 color; varying vec3 vColor;
-        uniform float uScale;
+        attribute float size; attribute vec3 color; attribute float arm; attribute float thr;
+        uniform float uScale, uIgnite, uStir, uAspect; uniform vec2 uPointer, uRipple;
+        ${FOCUS}
+        varying vec3 vColor;
         void main() {
-          vColor = color;
           vec4 mv = modelViewMatrix * vec4(position, 1.0);
-          gl_PointSize = size * uScale / -mv.z;
-          gl_Position = projectionMatrix * mv;
+          vec4 clip = projectionMatrix * mv;
+          float on = smoothstep(thr - 0.1, thr, uIgnite * 1.3);
+          float f = focusOf(arm);
+          vec2 dd = (clip.xy / max(clip.w, 1e-4) - uPointer) * vec2(uAspect, 1.0);
+          float d2 = dot(dd, dd);
+          float boost = exp(-d2 / 0.012) * uStir;
+          float rd = sqrt(d2) - uRipple.x;
+          boost = max(boost, uRipple.y * exp(-rd * rd / 0.0016));
+          gl_PointSize = size * mix(0.15, 1.0, on) * (1.0 + 1.2 * boost) * mix(1.0, f, 0.35) * uScale / -mv.z;
+          vColor = (color * f + vec3(0.6 * boost)) * on;
+          gl_Position = clip;
         }`,
       fragmentShader: `
         varying vec3 vColor;
@@ -162,86 +369,344 @@ const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
           float glow = smoothstep(0.5, 0.0, d);
           float halo = glow * glow * glow;
           float core = smoothstep(0.09, 0.0, d);
-          gl_FragColor = vec4(vColor * (halo * 0.9 + core * 1.4) + vec3(core * 0.35), 1.0);
+          gl_FragColor = vec4(vColor * (halo * 0.9 + core * 1.4) + vColor * vec3(core * 0.25), 1.0);
         }`,
       transparent: true,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
     });
-    const baseSize = data.nodes.map((n) => (n.k === 2 ? 30 : n.k === 1 ? 14 : 7));
+    const baseSize = data.nodes.map((n) => (n.k === 2 ? 22 : n.k === 1 ? 14 : 7));
     const sizeAttr = new THREE.Float32BufferAttribute(baseSize.slice(), 1);
-    const colArr: number[] = [];
-    data.nodes.forEach((n) => {
-      const c = color.get(n.g) ?? new THREE.Color('#fff');
+    const colArr: number[] = [], armArr: number[] = [], thrArr: number[] = [];
+    data.nodes.forEach((n, j) => {
+      const c = color.get(n.g) ?? WHITE;
       const boost = n.k === 0 ? 0.55 : n.k === 1 ? 0.85 : 1;
       colArr.push(c.r * boost, c.g * boost, c.b * boost);
+      const a = armOf(n.g);
+      armArr.push(a);
+      thrArr.push(thrOf(pos[j], a));
     });
     const starGeo = new THREE.BufferGeometry();
     starGeo.setAttribute('position', new THREE.Float32BufferAttribute(pos.flatMap((p) => [p.x, p.y, p.z]), 3));
     starGeo.setAttribute('color', new THREE.Float32BufferAttribute(colArr, 3));
     starGeo.setAttribute('size', sizeAttr);
+    starGeo.setAttribute('arm', new THREE.Float32BufferAttribute(armArr, 1));
+    starGeo.setAttribute('thr', new THREE.Float32BufferAttribute(thrArr, 1));
     scene.add(new THREE.Points(starGeo, starMat));
 
     // galactic core + nebula haze along each arm + distant background stars
-    const extra = { p: [] as number[], c: [] as number[], s: [] as number[] };
-    const push = (v: InstanceType<typeof THREE.Vector3>, c: InstanceType<typeof THREE.Color>, s: number, k = 1) => {
-      extra.p.push(v.x, v.y, v.z); extra.c.push(c.r * k, c.g * k, c.b * k); extra.s.push(s);
+    const extra = { p: [] as number[], c: [] as number[], s: [] as number[], a: [] as number[], t: [] as number[] };
+    const push = (v: InstanceType<typeof THREE.Vector3>, c: InstanceType<typeof THREE.Color>, s: number, k: number, arm: number, thr: number) => {
+      extra.p.push(v.x, v.y, v.z); extra.c.push(c.r * k, c.g * k, c.b * k); extra.s.push(s); extra.a.push(arm); extra.t.push(thr);
     };
-    push(new THREE.Vector3(0, 0, 0), new THREE.Color('#ffd6f5'), 60, 0.55);
-    push(new THREE.Vector3(0, 0, 0), new THREE.Color('#7a5cff'), 220, 0.22);
+    push(ORIGIN, new THREE.Color('#ffd6f5'), 60, 0.55, -1, 0);
+    push(ORIGIN, new THREE.Color('#7a5cff'), 220, 0.22, -1, 0.05);
     for (const t of topicOrder) {
       const i = tIndex.get(t.id)!, c = color.get(t.id)!, Rmax = 70 + 9 * Math.sqrt(t.notes);
       for (let k = 0; k < 26; k++) {
         const s = rand(), r = 30 + s * (Rmax - 30), a = armAngle(i) + s * 2.4;
-        push(new THREE.Vector3(Math.cos(a) * r + gauss() * 14, gauss() * 6, Math.sin(a) * r + gauss() * 14), c, 70 + rand() * 80, 0.05);
+        const v = new THREE.Vector3(Math.cos(a) * r + gauss() * 14, gauss() * 6, Math.sin(a) * r + gauss() * 14);
+        push(v, c, 70 + rand() * 80, 0.05, i, thrOf(v, i));
       }
     }
+    const far = new THREE.Color('#cfd8ff');
     for (let k = 0; k < 1400; k++) {
       const u = rand() * 2 - 1, th = rand() * Math.PI * 2, r = 700 + rand() * 900, q = Math.sqrt(1 - u * u);
-      push(new THREE.Vector3(r * q * Math.cos(th), r * u, r * q * Math.sin(th)), new THREE.Color('#cfd8ff'), 3 + rand() * 4, 0.35 + rand() * 0.4);
+      push(new THREE.Vector3(r * q * Math.cos(th), r * u, r * q * Math.sin(th)), far, 3 + rand() * 4, 0.35 + rand() * 0.4, -1, 0.5 + rand() * 0.6);
     }
     const extraGeo = new THREE.BufferGeometry();
     extraGeo.setAttribute('position', new THREE.Float32BufferAttribute(extra.p, 3));
     extraGeo.setAttribute('color', new THREE.Float32BufferAttribute(extra.c, 3));
     extraGeo.setAttribute('size', new THREE.Float32BufferAttribute(extra.s, 1));
+    extraGeo.setAttribute('arm', new THREE.Float32BufferAttribute(extra.a, 1));
+    extraGeo.setAttribute('thr', new THREE.Float32BufferAttribute(extra.t, 1));
     scene.add(new THREE.Points(extraGeo, starMat));
 
-    // ---------- constellation lines ----------
-    const lineMat = (opacity: number) => new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity, depthWrite: false, blending: THREE.AdditiveBlending });
-    const segs = (pairs: [number, number][], tint?: InstanceType<typeof THREE.Color>) => {
-      const p: number[] = [], c: number[] = [];
-      for (const [a, b] of pairs) {
-        const A = a < 0 ? new THREE.Vector3() : pos[a], B = b < 0 ? new THREE.Vector3() : pos[b];
+    // ---------- constellation lines: courses in white at .16, wikilinks as faint coloured trails ----------
+    const lineMat = (opacity: number) =>
+      new THREE.ShaderMaterial({
+        uniforms: { uOpacity: { value: opacity }, uIgnite: U.uIgnite, uFocus: U.uFocus },
+        vertexShader: `
+          attribute vec3 color; attribute float arm;
+          uniform float uOpacity, uIgnite;
+          ${FOCUS}
+          varying vec3 vC;
+          void main() {
+            vC = color * uOpacity * min(focusOf(arm), 1.0) * smoothstep(0.35, 1.0, uIgnite);
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+          }`,
+        fragmentShader: `varying vec3 vC; void main() { gl_FragColor = vec4(vC, 1.0); }`,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+      });
+    const segs = (pairs: [number, number][], tint?: InstanceType<typeof THREE.Color>, byArm = true) => {
+      const p: number[] = [], c: number[] = [], a: number[] = [];
+      for (const [x, y] of pairs) {
+        const A = x < 0 ? ORIGIN : pos[x], B = y < 0 ? ORIGIN : pos[y];
         p.push(A.x, A.y, A.z, B.x, B.y, B.z);
-        const ca = tint ?? color.get(data.nodes[a < 0 ? b : a].g)!, cb = tint ?? color.get(data.nodes[b < 0 ? a : b].g)!;
+        const na = data.nodes[x < 0 ? y : x], nb = data.nodes[y < 0 ? x : y];
+        const ca = tint ?? color.get(na.g) ?? WHITE, cb = tint ?? color.get(nb.g) ?? WHITE;
         c.push(ca.r, ca.g, ca.b, cb.r, cb.g, cb.b);
+        const arm = byArm ? armOf(na.g) : -1;
+        a.push(arm, arm);
       }
       const g = new THREE.BufferGeometry();
       g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
       g.setAttribute('color', new THREE.Float32BufferAttribute(c, 3));
+      g.setAttribute('arm', new THREE.Float32BufferAttribute(a, 1));
       return g;
     };
     const tree: [number, number][] = data.nodes.map((n, j) => [j, n.k === 2 ? -1 : n.p] as [number, number]);
-    scene.add(new THREE.LineSegments(segs(tree), lineMat(0.2)));
+    scene.add(new THREE.LineSegments(segs(tree, WHITE), lineMat(0.16)));
     scene.add(new THREE.LineSegments(segs(data.links), lineMat(0.07)));
-    const hiGeo = new THREE.BufferGeometry();
-    const hiLines = new THREE.LineSegments(hiGeo, lineMat(0.95));
+    const hiLines = new THREE.LineSegments(new THREE.BufferGeometry(), lineMat(0.95));
+    hiLines.visible = false;
     scene.add(hiLines);
+    const armTree = topicOrder.map((t) => tree.filter(([j, p]) => p >= 0 && data.nodes[j].g === t.id));
 
-    // ---------- labels for topic stars ----------
+    // ---------- white vertex dots (course stars 3px, polyhedra 5px) ----------
+    const dotMats: { mat: InstanceType<typeof THREE.ShaderMaterial>; px: number }[] = [];
+    const dotMat = (px: number) => {
+      const mat = new THREE.ShaderMaterial({
+        uniforms: { uPx: { value: px }, uIgnite: U.uIgnite, uFocus: U.uFocus },
+        vertexShader: `
+          attribute float arm; attribute float thr;
+          uniform float uPx, uIgnite;
+          ${FOCUS}
+          varying float vA;
+          void main() {
+            vA = smoothstep(thr - 0.1, thr, uIgnite * 1.3) * clamp(focusOf(arm), 0.35, 1.0);
+            gl_PointSize = uPx;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+          }`,
+        fragmentShader: `
+          varying float vA;
+          void main() {
+            float a = smoothstep(0.5, 0.3, length(gl_PointCoord - 0.5)) * vA;
+            if (a < 0.01) discard;
+            gl_FragColor = vec4(vec3(1.0), a);
+          }`,
+        transparent: true,
+        depthWrite: false,
+      });
+      dotMats.push({ mat, px });
+      return mat;
+    };
+    const dotGeo = (pts: number[], arm: number[], thr: number[]) => {
+      const g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+      g.setAttribute('arm', new THREE.Float32BufferAttribute(arm, 1));
+      g.setAttribute('thr', new THREE.Float32BufferAttribute(thr, 1));
+      return g;
+    };
+    {
+      const courses = [...data.nodes.keys()].filter((j) => data.nodes[j].k === 1);
+      scene.add(new THREE.Points(dotGeo(courses.flatMap((j) => [pos[j].x, pos[j].y, pos[j].z]), courses.map((j) => armArr[j]), courses.map((j) => thrArr[j])), dotMat(3)));
+    }
+
+    // ---------- topic polyhedra: ball-and-stick wireframes (spec §4, decorative layer 2) ----------
+    const polyGeo = (name: string) => {
+      switch (name) {
+        case 'cube': return new THREE.BoxGeometry(10.5, 10.5, 10.5);
+        case 'octahedron': return new THREE.OctahedronGeometry(9.5, 0);
+        case 'tetrahedron': return new THREE.TetrahedronGeometry(10, 0);
+        case 'dodecahedron': return new THREE.DodecahedronGeometry(9, 0);
+        case 'bipyramid': {
+          const top = [0, 10, 0], bot = [0, -10, 0];
+          const eq = [0, 1, 2].map((k) => [Math.cos((k * 2 * Math.PI) / 3) * 8, 0, Math.sin((k * 2 * Math.PI) / 3) * 8]);
+          const tri: number[] = [];
+          for (let k = 0; k < 3; k++) {
+            const a = eq[k], b = eq[(k + 1) % 3];
+            tri.push(...top, ...b, ...a, ...bot, ...a, ...b);
+          }
+          const g = new THREE.BufferGeometry();
+          g.setAttribute('position', new THREE.Float32BufferAttribute(tri, 3));
+          g.computeVertexNormals();
+          return g;
+        }
+        default: return new THREE.IcosahedronGeometry(9, 0);
+      }
+    };
+    const polyDot = dotMat(5);
+    const polys = topicOrder.map((t, i) => {
+      const j = data.nodes.findIndex((n) => n.g === t.id && n.k === 2);
+      if (j < 0) return null;
+      const geo = polyGeo(t.poly);
+      const group = new THREE.Group();
+      group.position.copy(pos[j]);
+      const edgeMat = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.85, depthWrite: false });
+      const faceMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.08, depthWrite: false, side: THREE.DoubleSide });
+      group.add(new THREE.Mesh(geo, faceMat));
+      group.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo), edgeMat));
+      const seen = new Set<string>(), vp: number[] = [];
+      const pa = geo.getAttribute('position');
+      for (let k = 0; k < pa.count; k++) {
+        const key = `${pa.getX(k).toFixed(2)},${pa.getY(k).toFixed(2)},${pa.getZ(k).toFixed(2)}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        vp.push(pa.getX(k), pa.getY(k), pa.getZ(k));
+      }
+      const n = vp.length / 3;
+      group.add(new THREE.Points(dotGeo(vp, new Array(n).fill(i), new Array(n).fill(thrArr[j])), polyDot));
+      const r = seed(9001 + i * 31);
+      const axis = new THREE.Vector3(r() - 0.5, 1.4, r() - 0.5).normalize();
+      group.scale.setScalar(0.001);
+      scene.add(group);
+      return { group, edgeMat, faceMat, axis, angle: r() * Math.PI * 2, thr: thrArr[j], arm: i };
+    }).filter((p): p is NonNullable<typeof p> => p !== null);
+
+    // ---------- iridescent vesicles: a camera-child column (decorative layer 1) ----------
+    const irisData = new Uint8Array(256 * 4);
+    for (let i = 0; i < 256; i++) {
+      const x = i / 255;
+      let k = 0;
+      while (k < IRIS_STOPS.length - 2 && x > IRIS_STOPS[k + 1].at) k++;
+      const a = IRIS_STOPS[k], b = IRIS_STOPS[k + 1];
+      const t = clamp((x - a.at) / (b.at - a.at || 1), 0, 1);
+      const ca = hexRgb(a.hex), cb = hexRgb(b.hex);
+      for (let c = 0; c < 3; c++) irisData[i * 4 + c] = Math.round(ca[c] + (cb[c] - ca[c]) * t);
+      irisData[i * 4 + 3] = 255;
+    }
+    const irisTex = new THREE.DataTexture(irisData, 256, 1, THREE.RGBAFormat);
+    irisTex.wrapS = THREE.RepeatWrapping;
+    irisTex.magFilter = irisTex.minFilter = THREE.LinearFilter;
+    irisTex.needsUpdate = true;
+
+    const blobGroup = new THREE.Group();
+    const dofGroup = new THREE.Group();
+    camera.add(dofGroup, blobGroup);
+    const blobCount = lowEnd ? 3 : 5;
+    // three r187: detail n gives 20·(n+1)² triangles; 18 ≈ 7.2k, 10 ≈ 2.4k
+    const sphere = new THREE.IcosahedronGeometry(1, lowEnd ? 10 : 18);
+    const blobVert = `
+      uniform float uTime, uSeed;
+      varying vec3 vN; varying vec3 vV;
+      ${SNOISE}
+      vec3 disp(vec3 n) { return n * (1.0 + 0.14 * snoise(n * 1.3 + vec3(uSeed * 17.0, uSeed * 31.0, uTime * 0.04))); }
+      void main() {
+        vec3 n0 = normalize(position);
+        vec3 up = abs(n0.y) < 0.99 ? vec3(0.0, 1.0, 0.0) : vec3(1.0, 0.0, 0.0);
+        vec3 t = normalize(cross(up, n0));
+        vec3 b = cross(n0, t);
+        // analytic normal: displace two tangent-offset neighbours and take the cross product
+        vec3 p0 = disp(n0);
+        vec3 p1 = disp(normalize(n0 + t * 0.01));
+        vec3 p2 = disp(normalize(n0 + b * 0.01));
+        vN = normalize(normalMatrix * normalize(cross(p1 - p0, p2 - p0)));
+        vec4 mv = modelViewMatrix * vec4(p0, 1.0);
+        vV = -mv.xyz;
+        gl_Position = projectionMatrix * mv;
+      }`;
+    const blobFrag = `
+      uniform sampler2D uIris; uniform float uTime, uSeed;
+      varying vec3 vN; varying vec3 vV;
+      void main() {
+        vec3 N = normalize(vN); vec3 V = normalize(vV);
+        float fres = pow(1.0 - max(dot(N, V), 0.0), 1.6);
+        float t = fract(fres * 0.9 + N.y * 0.25 + uTime * 0.02 + uSeed);
+        vec3 col = mix(texture2D(uIris, vec2(t, 0.5)).rgb, texture2D(uIris, vec2(fract(t + 0.3), 0.5)).rgb, 0.35);
+        vec3 L = normalize(vec3(-0.45, 0.75, 0.55));
+        col *= 0.7 + 0.3 * max(dot(N, L), 0.0);
+        float key = pow(max(dot(reflect(-L, N), V), 0.0), 26.0);
+        col += vec3(1.0) * (pow(fres, 4.0) * 0.55 + key * 0.4);
+        gl_FragColor = vec4(min(col, vec3(1.0)), 1.0);
+      }`;
+    const blobs = cfg.blobs.slice(0, blobCount).map((b, i) => {
+      const r = seed(4242 + i * 97);
+      const mat = new THREE.ShaderMaterial({
+        uniforms: { uTime: U.uTime, uSeed: { value: r() }, uIris: { value: irisTex } },
+        vertexShader: blobVert,
+        fragmentShader: blobFrag,
+      });
+      const mesh = new THREE.Mesh(sphere, mat);
+      blobGroup.add(mesh);
+      return { ...b, mesh, base: new THREE.Vector3(), period: 18 + r() * 13, phase: r() * Math.PI * 2, scale: igniteWanted ? 0.6 : 1 };
+    });
+    // depth of field: two pre-blurred amber/teal discs behind the column
+    const dofTex = (hex: string) => {
+      const c = document.createElement('canvas');
+      c.width = c.height = 128;
+      const g = c.getContext('2d')!;
+      const [r, gg, b] = hexRgb(hex);
+      const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+      gr.addColorStop(0, `rgba(${r},${gg},${b},1)`);
+      gr.addColorStop(0.45, `rgba(${r},${gg},${b},0.55)`);
+      gr.addColorStop(1, `rgba(${r},${gg},${b},0)`);
+      g.fillStyle = gr;
+      g.fillRect(0, 0, 128, 128);
+      return new THREE.CanvasTexture(c);
+    };
+    const dofs = [
+      { fx: 0.62, fy: 0.34, z: -640, s: 260, hex: IRIS_STOPS[4].hex },
+      { fx: 0.3, fy: -0.42, z: -580, s: 200, hex: IRIS_STOPS[2].hex },
+    ].map((d) => {
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: dofTex(d.hex), transparent: true, opacity: 0.5, depthWrite: false }));
+      sp.scale.setScalar(d.s);
+      dofGroup.add(sp);
+      return { ...d, sp };
+    });
+    const placeColumn = () => {
+      const tanH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+      for (const b of blobs) { const hh = -b.z * tanH; b.base.set(b.fx * hh * camera.aspect, b.fy * hh, b.z); }
+      for (const d of dofs) { const hh = -d.z * tanH; d.sp.position.set(d.fx * hh * camera.aspect, d.fy * hh, d.z); }
+    };
+
+    // Compile every shader before the first frame without blocking the main thread (KHR_parallel_shader_compile
+    // where available). Nothing renders or listens yet, so the await cannot race a frame.
+    try {
+      await renderer.compileAsync(scene, camera);
+    } catch {}
+
+    // ---------- labels for topic stars (decorative copies of the legend links) ----------
     const labelBox = el.querySelector<HTMLElement>('.g-labels')!;
-    const labels = topicOrder.map((t) => {
+    const labels = topicOrder.map((t, i) => {
       const j = data.nodes.findIndex((n) => n.g === t.id && n.k === 2);
       const a = document.createElement('a');
       a.href = t.url;
       a.className = 'g-label';
-      a.style.setProperty('--c', t.color);
-      a.dataset.vi = t.names[0];
-      a.dataset.en = t.names[1];
-      a.textContent = t.names[lang()];
+      a.tabIndex = -1;
+      if (t.token) a.style.setProperty('--c', `var(--t-${t.token})`);
+      a.innerHTML = glyphSvg(t.id, 12);
+      const s = document.createElement('span');
+      s.dataset.vi = t.names[0];
+      s.dataset.en = t.names[1];
+      s.textContent = t.names[lang()];
+      a.append(s);
+      a.addEventListener('pointerenter', () => setFocus(i));
+      a.addEventListener('pointerleave', () => setFocus(-1));
       labelBox.append(a);
-      return { a, j };
-    });
+      return { a, j, arm: i, op: -1, w: 0 };
+    }).filter((l) => l.j >= 0);
+
+    // ---------- state ----------
+    // the visitor's own pause and the OS setting are separate: turning reduced motion off never undoes a pause
+    let userPaused = false;
+    let paused = mqReduce.matches;
+    let simTime = 0;
+    let igniteStart = -1;
+    let stir = 0;
+    let ripple = -1;
+    let dragging = false, resumeAt = 0;
+    let zoomAnim: { from: number; to: number; start: number } | null = null;
+    let focusArm = -1;
+    let focusAnim: { from: number[]; to: number[]; start: number; dur: number } | null = null;
+    const par = { x: 0, y: 0, tx: 0, ty: 0 };
+    let inView = true, lost = false;
+    const motion = () => !paused;
+
+    // ---------- topic focus (legend, labels): chosen arm ×1.6, others .25 ----------
+    function setFocus(arm: number) {
+      if (arm === focusArm) return;
+      focusArm = arm;
+      const to = U.uFocus.value.map((_, i) => (arm < 0 ? 1 : i === arm ? 1.6 : 0.25));
+      if (mqReduce.matches) {
+        for (let i = 0; i < MAX_ARMS; i++) U.uFocus.value[i] = to[i];
+        focusAnim = null;
+      } else focusAnim = { from: U.uFocus.value.slice(), to, start: performance.now(), dur: arm < 0 ? 180 : 280 };
+      updateHi();
+      kick();
+    }
 
     // ---------- hover, click, tooltip ----------
     const tip = el.querySelector<HTMLElement>('.g-tip')!;
@@ -250,6 +715,18 @@ const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
     data.links.forEach(([a, b]) => { neighbours[a].push(b); neighbours[b].push(a); });
     let hover = -1, downAt: { x: number; y: number } | null = null;
     const screen = new THREE.Vector3();
+    function updateHi() {
+      let pairs: [number, number][] | null = null;
+      if (hover >= 0) {
+        const n = data.nodes[hover];
+        pairs = neighbours[hover].map((b) => [hover, b] as [number, number]);
+        if (n.p >= 0) pairs.push([hover, n.p]);
+        kids[hover].forEach((c) => pairs!.push([hover, c]));
+      } else if (focusArm >= 0) pairs = armTree[focusArm];
+      hiLines.geometry.dispose();
+      hiLines.geometry = pairs && pairs.length ? segs(pairs, WHITE, false) : new THREE.BufferGeometry();
+      hiLines.visible = !!(pairs && pairs.length);
+    }
     const pick = (cx: number, cy: number) => {
       const r = canvas.getBoundingClientRect();
       let best = -1, bd = 16 * 16;
@@ -262,98 +739,314 @@ const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
       });
       return best;
     };
-    const setHover = (j: number, cx = 0, cy = 0) => {
-      if (j === hover) { if (j >= 0) placeTip(cx, cy); return; }
-      if (hover >= 0) sizeAttr.setX(hover, baseSize[hover]);
-      hover = j;
-      canvas.style.cursor = j >= 0 ? 'pointer' : '';
-      if (j < 0) { tip.hidden = true; hiLines.visible = false; sizeAttr.needsUpdate = true; return; }
-      sizeAttr.setX(j, baseSize[j] * 2.2);
-      sizeAttr.needsUpdate = true;
-      const n = data.nodes[j];
-      const pairs: [number, number][] = neighbours[j].map((b) => [j, b]);
-      if (n.p >= 0) pairs.push([j, n.p]);
-      kids[j].forEach((c) => pairs.push([j, c]));
-      hiLines.geometry.dispose();
-      hiLines.geometry = segs(pairs, new THREE.Color('#ffffff'));
-      hiLines.visible = true;
-      tip.innerHTML = '';
-      const strong = document.createElement('strong');
-      strong.textContent = n.t;
-      const meta = document.createElement('span');
-      meta.textContent = neighbours[j].length ? `${nameOf(n.g)}, ${neighbours[j].length} ${lang() ? 'links' : 'liên kết'}` : nameOf(n.g);
-      const go = document.createElement('a');
-      go.href = n.u;
-      go.textContent = lang() ? 'Open' : 'Mở bài';
-      tip.append(strong, meta, go);
-      tip.hidden = false;
-      placeTip(cx, cy);
-    };
     const placeTip = (cx: number, cy: number) => {
       const r = el.getBoundingClientRect();
       const x = Math.min(cx - r.left + 14, r.width - tip.offsetWidth - 8);
       const y = Math.min(cy - r.top + 14, r.height - tip.offsetHeight - 8);
       tip.style.transform = `translate(${Math.max(8, x)}px, ${Math.max(8, y)}px)`;
     };
-    canvas.addEventListener('pointermove', (e) => { if (!e.buttons) setHover(pick(e.clientX, e.clientY), e.clientX, e.clientY); });
-    canvas.addEventListener('pointerleave', () => setTimeout(() => { if (!tip.matches(':hover')) setHover(-1); }, 60));
+    const setHover = (j: number, cx = 0, cy = 0) => {
+      if (j === hover) { if (j >= 0) placeTip(cx, cy); return; }
+      if (hover >= 0) sizeAttr.setX(hover, baseSize[hover]);
+      hover = j;
+      canvas.style.cursor = j >= 0 ? 'pointer' : '';
+      if (j >= 0) sizeAttr.setX(j, baseSize[j] * 2.2);
+      sizeAttr.needsUpdate = true;
+      updateHi();
+      kick();
+      if (j < 0) { tip.hidden = true; return; }
+      const n = data.nodes[j];
+      tip.replaceChildren();
+      const strong = document.createElement('strong');
+      strong.textContent = n.t;
+      const meta = document.createElement('span');
+      meta.textContent = neighbours[j].length ? `${nameOf(n.g)}, ${neighbours[j].length} ${cfg.ui.links[lang()]}` : nameOf(n.g);
+      const go = document.createElement('a');
+      go.href = n.u;
+      go.textContent = cfg.ui.open[lang()];
+      tip.append(strong, meta, go);
+      tip.hidden = false;
+      placeTip(cx, cy);
+    };
+    const toNdc = (cx: number, cy: number) => {
+      const r = canvas.getBoundingClientRect();
+      return { x: ((cx - r.left) / r.width) * 2 - 1, y: -(((cy - r.top) / r.height) * 2 - 1) };
+    };
+    // pick() at most once per animation frame
+    let pickRaf = 0, pickAt: { x: number; y: number } | null = null;
+    canvas.addEventListener('pointermove', (e) => {
+      if (motion() && e.pointerType !== 'touch') {
+        const p = toNdc(e.clientX, e.clientY);
+        U.uPointer.value.set(p.x, p.y);
+        stir = 1; // plankton flash
+        kick();
+      }
+      if (e.buttons) return;
+      pickAt = { x: e.clientX, y: e.clientY };
+      if (!pickRaf) pickRaf = requestAnimationFrame(() => {
+        pickRaf = 0;
+        if (pickAt) setHover(pick(pickAt.x, pickAt.y), pickAt.x, pickAt.y);
+      });
+    });
+    canvas.addEventListener('pointerleave', () => {
+      pickAt = null;
+      setTimeout(() => { if (!tip.matches(':hover')) setHover(-1); }, 60);
+    });
     tip.addEventListener('pointerleave', () => setHover(-1));
     canvas.addEventListener('pointerdown', (e) => { downAt = { x: e.clientX, y: e.clientY }; });
     canvas.addEventListener('pointerup', (e) => {
       if (!downAt || Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y) > 5) return;
+      if (e.pointerType === 'touch' && motion()) {
+        const p = toNdc(e.clientX, e.clientY);
+        U.uPointer.value.set(p.x, p.y);
+        stir = 1;
+        ripple = performance.now();
+        kick();
+      }
       const j = pick(e.clientX, e.clientY);
       if (j < 0) return setHover(-1);
       if (e.pointerType === 'mouse') location.href = data.nodes[j].u;
       else setHover(j, e.clientX, e.clientY); // touch: first tap shows the card with an open link
     });
+    // pointer parallax over the whole stage (fine pointers only)
+    (stageEl ?? el).addEventListener('pointermove', (e) => {
+      if (e.pointerType !== 'mouse' || !mqParallax.matches || !motion()) return;
+      const r = (stageEl ?? el).getBoundingClientRect();
+      par.tx = (((e.clientX - r.left) / r.width) * 2 - 1) * 6;
+      par.ty = -(((e.clientY - r.top) / r.height) * 2 - 1) * 6;
+      kick();
+    });
+
+    // ---------- legend strip drives the topic focus ----------
+    legend?.querySelectorAll<HTMLAnchorElement>('a[data-topic]').forEach((a) => {
+      const arm = tIndex.get(a.dataset.topic!) ?? -1;
+      if (arm < 0) return;
+      a.addEventListener('pointerenter', () => setFocus(arm));
+      a.addEventListener('pointerleave', () => { if (document.activeElement !== a) setFocus(-1); });
+      a.addEventListener('focus', () => setFocus(arm));
+      a.addEventListener('blur', () => setFocus(-1));
+    });
 
     // ---------- controls ----------
     const hint = el.querySelector<HTMLElement>('.g-hint')!;
-    const rotBtn = el.querySelector<HTMLButtonElement>('[data-act="rotate"]')!;
-    const setRotate = (on: boolean) => { controls.autoRotate = on; rotBtn.setAttribute('aria-pressed', String(on)); };
-    setRotate(!reduce);
-    controls.addEventListener('start', () => { setRotate(false); hint.classList.add('is-gone'); });
+    const pauseBtn = el.querySelector<HTMLButtonElement>('[data-act="pause"]')!;
+    const fullBtn = el.querySelector<HTMLButtonElement>('[data-act="full"]');
+    if (fullBtn && !document.fullscreenEnabled) fullBtn.hidden = true;
+    const setPaused = (p: boolean) => {
+      paused = p;
+      controls.enableDamping = !mqReduce.matches; // no inertial coast under reduced motion
+      pauseBtn.setAttribute('aria-pressed', String(p));
+      if (p) {
+        stir = 0;
+        ripple = -1;
+        par.tx = par.ty = 0;
+      }
+      if (mqReduce.matches) {
+        par.x = par.y = 0;
+        finishIgnite();
+      }
+      kick();
+    };
+    controls.addEventListener('start', () => { dragging = true; hint.classList.add('is-gone'); });
+    controls.addEventListener('end', () => { dragging = false; resumeAt = performance.now() + 4000; });
+    controls.addEventListener('change', () => kick());
+    const dist = () => camera.position.distanceTo(controls.target);
+    const setDist = (d: number) => {
+      const off = camera.position.clone().sub(controls.target).setLength(d);
+      camera.position.copy(controls.target).add(off);
+    };
     const zoom = (f: number) => {
-      const off = camera.position.clone().sub(controls.target).multiplyScalar(f);
-      const len = Math.min(controls.maxDistance, Math.max(controls.minDistance, off.length()));
-      camera.position.copy(controls.target).add(off.setLength(len));
+      const to = clamp(dist() * f, controls.minDistance, controls.maxDistance);
+      if (mqReduce.matches) setDist(to);
+      else zoomAnim = { from: dist(), to, start: performance.now() };
+      kick();
+    };
+    const turn = (a: number) => {
+      const off = camera.position.clone().sub(controls.target).applyAxisAngle(new THREE.Vector3(0, 1, 0), a);
+      camera.position.copy(controls.target).add(off);
+      resumeAt = performance.now() + 4000;
+      kick();
     };
     el.querySelector('.g-controls')!.addEventListener('click', (e) => {
       const act = (e.target as HTMLElement).closest('button')?.dataset.act;
-      if (act === 'rotate') setRotate(!controls.autoRotate);
+      if (act === 'pause') { userPaused = !paused; setPaused(userPaused || mqReduce.matches); }
       if (act === 'in') zoom(0.75);
       if (act === 'out') zoom(1.33);
-      if (act === 'reset') { controls.target.set(0, 0, 0); camera.position.copy(HOME); }
+      if (act === 'reset') { zoomAnim = null; controls.target.set(0, 0, 0); camera.position.copy(HOME); setFocus(-1); kick(); }
       if (act === 'full') document.fullscreenElement ? document.exitFullscreen() : el.requestFullscreen?.();
     });
+    // keyboard: + / − zoom, ← / → rotate, while focus is inside the map
+    el.addEventListener('keydown', (e) => {
+      if (e.altKey || e.ctrlKey || e.metaKey) return;
+      if (e.key === '+' || e.key === '=') zoom(0.75);
+      else if (e.key === '-' || e.key === '_') zoom(1.33);
+      else if (e.key === 'ArrowLeft') turn(-0.2);
+      else if (e.key === 'ArrowRight') turn(0.2);
+      else return;
+      e.preventDefault();
+    });
+    const onReduce = () => setPaused(userPaused || mqReduce.matches);
+    if (mqReduce.addEventListener) mqReduce.addEventListener('change', onReduce);
+    else mqReduce.addListener(onReduce);
+    pauseBtn.setAttribute('aria-pressed', String(paused));
 
-    // ---------- render loop ----------
+    // ---------- ignition (once per session) ----------
+    function finishIgnite() {
+      igniteStart = -1;
+      U.uIgnite.value = 1;
+      for (const b of blobs) b.scale = 1;
+    }
+    if (igniteWanted && !mqReduce.matches) igniteStart = performance.now();
+    else finishIgnite();
+
+    // ---------- size, DPR cap, view offset ----------
+    let W = 1, H = 1, canvasLeft = 0, vw = innerWidth, copyRight = 0;
     const resize = () => {
-      const w = el.clientWidth, h = el.clientHeight;
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
+      W = Math.max(1, el.clientWidth);
+      H = Math.max(1, el.clientHeight);
+      let dpr = Math.min(devicePixelRatio || 1, 1.5);
+      if (W * H * dpr * dpr > 3e6) dpr = Math.sqrt(3e6 / (W * H)); // drawing buffer ≤ 3 MP
+      renderer.setPixelRatio(dpr);
+      renderer.setSize(W, H, false);
+      camera.aspect = W / H;
+      const r = el.getBoundingClientRect();
+      canvasLeft = r.left;
+      vw = document.documentElement.clientWidth || innerWidth;
+      copyRight = stageEl?.querySelector('.hero-col')?.getBoundingClientRect().right ?? 0;
+      if (isStage && stageEl && mqDesk.matches && !document.fullscreenElement) {
+        // put the galaxy core at about 66% of the stage width
+        const sr = stageEl.getBoundingClientRect();
+        const want = clamp(0.66 * sr.width - (r.left - sr.left), 0.3 * W, 0.7 * W);
+        camera.setViewOffset(W, H, W / 2 - want, 0, W, H);
+      } else camera.clearViewOffset();
       camera.updateProjectionMatrix();
-      starMat.uniforms.uScale.value = h * renderer.getPixelRatio() * 0.5;
+      U.uScale.value = H * dpr * 0.5;
+      U.uAspect.value = W / H;
+      for (const d of dotMats) d.mat.uniforms.uPx.value = d.px * dpr;
+      placeColumn();
+      measureLabels();
+      kick();
     };
+    function measureLabels() {
+      for (const l of labels) l.w = l.a.offsetWidth;
+    }
+    new MutationObserver(() => { measureLabels(); kick(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
     new ResizeObserver(resize).observe(el);
-    resize();
-    let visible = true;
-    new IntersectionObserver((es) => { visible = es[0].isIntersecting; }).observe(el);
+    document.addEventListener('fullscreenchange', resize);
+
+    // ---------- render loop: visible + on screen only, on demand when still ----------
+    new IntersectionObserver((es) => { inView = es[es.length - 1].isIntersecting; kick(); }).observe(el);
+    document.addEventListener('visibilitychange', () => kick());
+    canvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); lost = true; el.classList.remove('is-ready'); });
+    canvas.addEventListener('webglcontextrestored', () => { lost = false; el.classList.add('is-ready'); kick(); });
+
+    let raf = 0, lastT = performance.now(), lastDraw = 0;
+    const TIME0 = 7.3; // seeded frozen time for reduced motion
     const v = new THREE.Vector3();
-    const tick = () => {
-      requestAnimationFrame(tick);
-      if (!visible || document.hidden) return;
-      controls.update();
-      renderer.render(scene, camera);
-      const w = el.clientWidth, h = el.clientHeight;
-      for (const { a, j } of labels) {
-        v.copy(pos[j]).project(camera);
-        const show = v.z < 1 && Math.abs(v.x) < 1.1 && Math.abs(v.y) < 1.1;
-        a.style.opacity = show ? '1' : '0';
-        a.style.transform = `translate(${((v.x * 0.5 + 0.5) * w).toFixed(1)}px, ${((-v.y * 0.5 + 0.5) * h).toFixed(1)}px) translate(-50%, -190%)`;
+    const q = new THREE.Quaternion();
+    function kick() {
+      if (!raf && inView && !document.hidden && !lost) raf = requestAnimationFrame(frame);
+    }
+    function frame(now: number) {
+      raf = 0;
+      if (!inView || document.hidden || lost) return;
+      if (coarse && now - lastDraw < 1000 / 30 - 4) { raf = requestAnimationFrame(frame); return; } // 30fps on coarse pointers
+      const dt = Math.min(0.1, Math.max(0, (now - lastT) / 1000));
+      lastT = lastDraw = now;
+      let busy = motion();
+      if (motion()) simTime += dt;
+      U.uTime.value = TIME0 + simTime;
+
+      // ignition: uIgnite 0→1 over 1600ms easeOutCubic; blobs 0.6→1 over 1800ms staggered 120ms
+      if (igniteStart >= 0) {
+        const e = now - igniteStart;
+        U.uIgnite.value = easeOut(e / 1600);
+        blobs.forEach((b, i) => (b.scale = 0.6 + 0.4 * easeOut((e - i * 120) / 1800)));
+        if (e > 1800 + blobs.length * 120) finishIgnite();
+        else busy = true;
       }
-    };
-    el.classList.add('is-ready');
-    tick();
+      if (focusAnim) {
+        const p = clamp((now - focusAnim.start) / focusAnim.dur, 0, 1), k = easeOut(p);
+        for (let i = 0; i < MAX_ARMS; i++) U.uFocus.value[i] = focusAnim.from[i] + (focusAnim.to[i] - focusAnim.from[i]) * k;
+        if (p >= 1) focusAnim = null;
+        else busy = true;
+      }
+      // plankton flash decays exp(-dt/300ms); tap ripple 0→0.35 NDC over 700ms
+      if (stir > 0.002) { stir *= Math.exp((-dt * 1000) / 300); busy = true; } else stir = 0;
+      U.uStir.value = stir;
+      if (ripple >= 0) {
+        const p = (now - ripple) / 700;
+        if (p >= 1) { ripple = -1; U.uRipple.value.set(0, 0); }
+        else { U.uRipple.value.set(0.35 * easeOut(p), 1 - p); busy = true; }
+      }
+      if (zoomAnim) {
+        const p = clamp((now - zoomAnim.start) / 240, 0, 1);
+        setDist(zoomAnim.from + (zoomAnim.to - zoomAnim.from) * easeOut(p));
+        if (p >= 1) zoomAnim = null;
+        busy = true;
+      }
+      // pointer parallax on the camera-child column (DoF ×0.5); the camera itself does not move
+      const k = 1 - Math.pow(1 - 0.06, dt * 60);
+      par.x += (par.tx - par.x) * k;
+      par.y += (par.ty - par.y) * k;
+      if (Math.abs(par.tx - par.x) + Math.abs(par.ty - par.y) > 0.01) busy = true;
+      blobGroup.position.set(par.x, par.y, 0);
+      dofGroup.position.set(par.x * 0.5, par.y * 0.5, 0);
+
+      for (const b of blobs) {
+        const bob = 6 * Math.sin((simTime / b.period) * Math.PI * 2 + b.phase);
+        b.mesh.position.set(b.base.x, b.base.y + bob, b.base.z);
+        b.mesh.scale.setScalar(b.r * b.scale);
+      }
+      const desk = isStage && mqDesk.matches && !document.fullscreenElement;
+      for (const p of polys) {
+        if (motion()) p.angle += 0.12 * dt;
+        q.setFromAxisAngle(p.axis, p.angle);
+        p.group.quaternion.copy(q);
+        const f = U.uFocus.value[p.arm];
+        const fp = clamp((f - 1) / 0.6, 0, 1);
+        p.group.scale.setScalar(Math.max(0.001, ignOn(p.thr) * (1 + 0.35 * fp)));
+        // the same screen-x fade as the labels, so no white wireframe crosses the h1 (last frame's camera is fine)
+        let fade = 1;
+        if (desk) {
+          v.copy(p.group.position).project(camera);
+          const sx = canvasLeft + (v.x * 0.5 + 0.5) * W;
+          fade = smooth(0.46, 0.54, sx / vw) * smooth(copyRight + 8, copyRight + 40, sx - 14);
+        }
+        p.group.visible = fade > 0.02;
+        p.faceMat.opacity = (0.08 + 0.1 * fp) * fade;
+        p.edgeMat.opacity = 0.85 * clamp(f, 0.3, 1) * fade;
+      }
+
+      controls.autoRotate = motion() && !dragging && now > resumeAt;
+      if (controls.update(dt)) busy = true;
+      renderer.render(scene, camera);
+      if (!el.classList.contains('is-ready')) el.classList.add('is-ready');
+
+      // labels: never over the h1 (smoothstep .46–.54 of the viewport on desktop), fade at the canvas edges
+      for (const l of labels) {
+        v.copy(pos[l.j]).project(camera);
+        const x = (v.x * 0.5 + 0.5) * W, y = (-v.y * 0.5 + 0.5) * H;
+        let op = v.z < 1 ? smooth(1.08, 0.9, Math.max(Math.abs(v.x), Math.abs(v.y))) : 0;
+        // keep the label inside the canvas (widths are measured on resize and language change)
+        const lx = l.w ? clamp(x, l.w / 2 + 6, W - l.w / 2 - 6) : x;
+        if (desk) {
+          op *= smooth(0.46, 0.54, (canvasLeft + lx) / vw);
+          // wide screens: the copy column can reach past 54%, so also fade by the label's left edge
+          op *= smooth(copyRight + 8, copyRight + 56, canvasLeft + lx - l.w / 2);
+        }
+        op *= ignOn(thrArr[l.j]);
+        if (focusArm >= 0 && focusArm !== l.arm) op *= 0.45;
+        op = Math.round(op * 50) / 50;
+        if (op !== l.op) {
+          l.op = op;
+          l.a.style.opacity = String(op);
+          l.a.style.visibility = op < 0.05 ? 'hidden' : '';
+        }
+        l.a.style.transform = `translate(${lx.toFixed(1)}px, ${y.toFixed(1)}px) translate(-50%, calc(-100% - 14px))`;
+      }
+      if (busy) kick();
+    }
+    resize();
   }
 </script>

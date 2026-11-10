@@ -18,6 +18,9 @@ const base = {
   order: z.number().optional(),
   description: z.string().optional(),
   isIndex: z.boolean().default(false),
+  /** real photo chosen by the sync (/vault-assets/….webp); missing → procedural cover. Vault `cover: none` turns it off. */
+  cover: z.string().optional(),
+  cover_alt: z.string().optional(),
 };
 
 const id = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '').replace(/\/index$/, '');
@@ -37,6 +40,8 @@ const projects = defineCollection({
     summary_en: z.string().optional(),
     links: z.record(z.string(), z.string()).default({}),
     phases: z.array(z.object({ name: z.string(), done: z.number(), total: z.number() })).default([]),
+    /** project index: site.config.json projects[].cover; project notes: the sync's photo pick. Missing → procedural banner. */
+    cover: z.object({ src: z.string(), alt: z.string(), alt_en: z.string().optional() }).optional(),
   }),
 });
 

@@ -20,6 +20,7 @@ description: >-
   Folder Drive không có vở ghi cho ngành này, chỉ có ảnh lát cắt ngang và ảnh mổ
   giun đũa (Ascaris). Phần kiến thức là bổ sung.
 isIndex: false
+cover: /vault-assets/img-3243-5beddb1b-cover-960.webp
 ---
 > Folder Drive không có vở ghi cho ngành này, chỉ có ảnh lát cắt ngang và ảnh mổ giun đũa (*Ascaris*). Phần kiến thức là bổ sung.
 
@@ -40,13 +41,13 @@ isIndex: false
 
 ### Lát cắt ngang giun đũa cái
 - Lát cắt tròn: ngoài là lớp **cuticle** và lớp cơ; trong khoang cơ thể có **ruột** (dải dẹt bên trái), 3 khối lớn chứa trứng là **tử cung**, nhiều lát cắt tròn nhỏ là **ống buồng trứng / ống dẫn trứng** (?).
-	![IMG_3243](/vault-assets/img-3243-5beddb1b.jpg)
+	![IMG_3243](/vault-assets/img-3243-5beddb1b.webp)
 
 ### Mổ giun đũa
 - Giun được ghim trên khay sáp, cắt dọc và phanh thành cơ thể; bên trong thấy **ruột** dạng dải dẹt chạy suốt chiều dài, và **búi ống sinh dục** trắng, mảnh, cuộn rối (đặc trưng của con **cái** – hệ sinh dục dạng ống rất dài).
-	![IMG_3246](/vault-assets/img-3246-81a30db3.jpg)
+	![IMG_3246](/vault-assets/img-3246-81a30db3.webp)
 - Cận cảnh búi ống sinh dục ở nửa sau cơ thể.
-	![IMG_3249](/vault-assets/img-3249-e7342424.jpg)
+	![IMG_3249](/vault-assets/img-3249-e7342424.webp)
 - Xem thêm: [Virtual Lab: mổ giun đũa cái](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – mổ ảo theo ảnh mẫu của bài.
 
 ## Nguồn

@@ -122,13 +122,13 @@ isIndex: false
 ## Tài liệu gốc
 - Ảnh báo cáo:
 
-![DVCXS - IMG_4140](/vault-assets/dvcxs-img-4140-c6dae0e1.jpg)
-![DVCXS - IMG_4141](/vault-assets/dvcxs-img-4141-9b8c6c67.jpg)
-![DVCXS - IMG_4142](/vault-assets/dvcxs-img-4142-378cbd9e.jpg)
+![DVCXS - IMG_4140](/vault-assets/dvcxs-img-4140-c6dae0e1.webp)
+![DVCXS - IMG_4141](/vault-assets/dvcxs-img-4141-9b8c6c67.webp)
+![DVCXS - IMG_4142](/vault-assets/dvcxs-img-4142-378cbd9e.webp)
 
 - Mẫu bộ xương ếch đồng (nhãn *Hoplobatrachus rugulosus* (Wiegmann, 1834)):
 
-![DVCXS - IMG_4105](/vault-assets/dvcxs-img-4105-089c42d2.jpg)
-![DVCXS - IMG_4106](/vault-assets/dvcxs-img-4106-8323076d.jpg)
+![DVCXS - IMG_4105](/vault-assets/dvcxs-img-4105-089c42d2.webp)
+![DVCXS - IMG_4106](/vault-assets/dvcxs-img-4106-8323076d.webp)
 
 - Folder Drive gốc: https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

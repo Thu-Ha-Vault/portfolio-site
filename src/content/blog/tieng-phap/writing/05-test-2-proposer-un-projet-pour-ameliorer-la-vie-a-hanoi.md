@@ -96,8 +96,8 @@ Pour résoudre ces problèmes, la première étape du projet serait de réduire 
 </details>
 
 ## Bản gốc
-![IMG_3552](/vault-assets/img-3552-9a2f9c21.jpg)
-![IMG_3553](/vault-assets/img-3553-04d9b8e9.jpg)
+![IMG_3552](/vault-assets/img-3552-9a2f9c21.webp)
+![IMG_3553](/vault-assets/img-3553-04d9b8e9.webp)
 
 ### Bản nháp
-![IMG_3549](/vault-assets/img-3549-ae0fd2c5.jpg)
+![IMG_3549](/vault-assets/img-3549-ae0fd2c5.webp)

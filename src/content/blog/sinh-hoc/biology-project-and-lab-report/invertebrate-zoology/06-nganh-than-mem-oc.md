@@ -40,9 +40,9 @@ isIndex: false
 
 ## Mẫu vật thực hành
 - Mẫu đã tách vỏ, ghim trên khay sáp, mở **xoang áo** (màng áo mỏng trong suốt bên phải ảnh). Thấy phần **chân – đầu** màu vàng nhạt, mảnh **nắp miệng** sẫm màu (bên trái), và **khối nội tạng** xoắn ở phía dưới.
-	![IMG_3321](/vault-assets/img-3321-441935ec.jpg)
+	![IMG_3321](/vault-assets/img-3321-441935ec.webp)
 - Sau khi bóc tiếp: thấy **ống tiêu hoá** cuộn, **tuyến tiêu hoá (gan tuỵ)** và một dải màu vàng tươi kéo ra ngoài – có thể là **tuyến sinh dục** hoặc một phần tuyến tiêu hoá (?).
-	![IMG_3325](/vault-assets/img-3325-30f9752f.jpg)
+	![IMG_3325](/vault-assets/img-3325-30f9752f.webp)
 - Xem thêm: [Virtual Lab: mổ ốc có nắp](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – mổ ảo theo ảnh mẫu của bài.
 
 ## Nguồn

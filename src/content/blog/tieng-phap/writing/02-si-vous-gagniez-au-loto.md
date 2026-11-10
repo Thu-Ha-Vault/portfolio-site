@@ -54,4 +54,4 @@ Si je gagnais au loto, je serais très heureuse parce que je pourrais réaliser 
 </details>
 
 ## Bản gốc
-![IMG_3548](/vault-assets/img-3548-c99bac3e.jpg)
+![IMG_3548](/vault-assets/img-3548-c99bac3e.webp)

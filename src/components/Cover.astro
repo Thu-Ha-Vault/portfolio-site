@@ -1,0 +1,91 @@
+---
+/**
+ * Cover image (spec §7.1–7.3): an <img> with intrinsic width/height so it never shifts layout.
+ *
+ *   <Cover entry={entry} />                       banner 640×360: the entry's real photo if it has one, else the procedural cover
+ *   <Cover entry={entry} variant="thumb" />       96×96 procedural thumb (home "Mới cập nhật" rows, 56px via CSS)
+ *   <Cover url="/blog/foo/" />                    procedural banner by URL (no entry at hand)
+ *   <Cover src="/project-covers/virtual-lab.webp" width={1600} height={900} alt="…" />   any explicit image
+ *
+ * Procedural covers are decorative: alt="" and aria-hidden. A real photo keeps its alt text.
+ * Styling: the global `.cover-img` class (zero specificity) sets display:block, width 100%, object-fit cover,
+ * radius 4px and a --deep placeholder; pages size and crop it (aspect-ratio / height) with their own class.
+ */
+import { coverFor, coverUrl, thumbUrl, COVER_SIZE } from '../lib/cover';
+
+interface Props {
+  entry?: { data: { url: string; topic?: string; project?: string; cover?: unknown; cover_alt?: string } };
+  url?: string;
+  src?: string;
+  variant?: 'banner' | 'thumb';
+  alt?: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  /** `sizes` for a real photo that has 480/960 renditions (sync writes `<stem>-cover-480|960.webp`). */
+  sizes?: string;
+}
+
+const { entry, url, src: srcProp, variant = 'banner', alt: altProp, width: wProp, height: hProp, class: cls, loading = 'lazy', fetchpriority, sizes: sizesProp } = Astro.props;
+
+// Intrinsic sizes of vault photos (written by scripts/sync-vault.mjs); optional until that step lands.
+const manifests = import.meta.glob<{ default: Record<string, { w: number; h: number }> }>('../data/images.json', { eager: true });
+const sizes: Record<string, { w: number; h: number }> = Object.values(manifests)[0]?.default ?? {};
+
+let src: string;
+let alt = '';
+let procedural = true;
+if (srcProp) {
+  src = srcProp;
+  alt = altProp ?? '';
+  procedural = false;
+} else if (variant === 'thumb') {
+  src = thumbUrl(entry?.data.url ?? url ?? '/');
+} else if (entry) {
+  const c = coverFor(entry);
+  src = c.src;
+  alt = altProp ?? c.alt;
+  procedural = c.procedural;
+} else {
+  src = coverUrl(url ?? '/');
+}
+
+const box = variant === 'thumb' ? COVER_SIZE.thumb : COVER_SIZE.banner;
+const known = sizes[src];
+const width = wProp ?? (procedural ? box.width : known?.w);
+const height = hProp ?? (procedural ? box.height : known?.h);
+const decorative = procedural || alt === '';
+// Real-photo covers come as 480/960 WebP renditions: serve the right one for the slot (spec §7.1 placement).
+let srcset: string | undefined;
+const m = !procedural && src.match(/^(.*-cover-)\d+\.webp$/);
+if (m) {
+  const set = [480, 960].map((w) => `${m[1]}${w}.webp`).filter((u) => sizes[u]).map((u) => `${u} ${sizes[u].w}w`);
+  if (set.length > 1) srcset = set.join(', ');
+}
+const imgSizes = srcset ? (sizesProp ?? '(min-width: 900px) 420px, 100vw') : undefined;
+---
+<img
+  class:list={['cover-img', { 'is-procedural': procedural }, cls]}
+  src={src}
+  srcset={srcset}
+  sizes={imgSizes}
+  width={width}
+  height={height}
+  alt={decorative ? '' : alt}
+  aria-hidden={decorative ? 'true' : undefined}
+  loading={loading}
+  decoding="async"
+  fetchpriority={fetchpriority}
+/>
+<style is:global>
+  :where(.cover-img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--deep);
+  }
+</style>

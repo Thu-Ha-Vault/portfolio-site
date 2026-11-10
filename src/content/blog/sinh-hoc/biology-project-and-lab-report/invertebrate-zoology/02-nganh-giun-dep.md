@@ -74,7 +74,7 @@ isIndex: false
 
 ### Mẫu vật: sán lá gan
 - Tiêu bản toàn thân nhuộm: cơ thể hình lá dẹp; **giác miệng** ở đầu nhọn (chấm sẫm phía dưới ảnh), giữa thân là **tinh hoàn phân nhánh** màu sẫm chiếm phần lớn cơ thể. Hình dạng phù hợp *Fasciola* (?).
-	![IMG_3232](/vault-assets/img-3232-daf16aec.jpg)
+	![IMG_3232](/vault-assets/img-3232-daf16aec.webp)
 
 ## Sán lá đơn chủ (Monogenea)
 - Khoảng 1100 loài, chủ yếu sống **kí sinh ngoài** (trên da vật chủ, thường là cá).
