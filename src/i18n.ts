@@ -5,7 +5,7 @@ export const ui = {
   heroTitle: ['Từ phòng thí nghiệm sinh học đến dữ liệu và kinh doanh.', 'From the biology lab to data and business.'],
   seeProjects: ['Xem dự án', 'See projects'],
   readBlog: ['Đọc blog', 'Read the blog'],
-  mapCaption: ['Mỗi vòng tròn là một chủ đề trong Second Brain của mình, chấm bên trong là các bài ghi chép, đường nối là liên kết giữa các chủ đề.', 'Each circle is a topic in my Second Brain; the dots are notes and the lines are links between topics.'],
+  mapCaption: ['Second Brain của mình: mỗi vùng là một chủ đề, mỗi chấm là một bài ghi chép, đường hồng nối những chủ đề có liên kết với nhau.', 'My Second Brain: each region is a topic, each dot is a note, and the pink lines connect topics that link to each other.'],
   projectsIntro: ['Các dự án mình đang làm, theo đúng quy trình phân tích dữ liệu Ask, Prepare, Process, Analyze, Share, Act.', 'What I am building, tracked through the data analysis process: Ask, Prepare, Process, Analyze, Share, Act.'],
   allProjects: ['Tất cả dự án', 'All projects'],
   viewProject: ['Xem dự án', 'View project'],

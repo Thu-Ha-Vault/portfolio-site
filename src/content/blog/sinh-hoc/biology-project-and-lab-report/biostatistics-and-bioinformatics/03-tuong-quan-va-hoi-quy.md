@@ -27,7 +27,7 @@ isIndex: false
 
 ## Khái niệm chính
 - **Biến độc lập** $X$ và **biến phụ thuộc** $Y$.
-- **Hệ số tương quan** $r$ – chỉ tiêu về mức độ liên hệ **tuyến tính**: (→ [Multivariate Models](/blog/multivariate-models/), [Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/), [Giải thích correlation coefficient khi thuyết trình](/blog/share-data-through-the-art-of-visualization/))
+- **Hệ số tương quan** $r$ – chỉ tiêu về mức độ liên hệ **tuyến tính**: (→ Multivariate Models, [Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/), [Giải thích correlation coefficient khi thuyết trình](/blog/share-data-through-the-art-of-visualization/))
 	- $r = \dfrac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}$, $r \in [-1; 1]$.
 	- Excel: *Data → Data Analysis → Correlation*.
 
@@ -37,7 +37,7 @@ isIndex: false
 | Khoảng giá trị | $[-1; 1]$ | $[0; 1]$ |
 | Ý nghĩa | Độ mạnh yếu và chiều hướng của quan hệ **tuyến tính** | Mức độ chặt chẽ của liên hệ tương quan **phi tuyến** |
 
-- **Mô hình hồi quy tuyến tính đơn**: $y_i = \alpha + \beta x_i + \varepsilon_i$ (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/), [Statistic and Regression](/blog/statistic-and-regression/))
+- **Mô hình hồi quy tuyến tính đơn**: $y_i = \alpha + \beta x_i + \varepsilon_i$ (→ Linear and Logistic Regression, [Statistic and Regression](/blog/statistic-and-regression/))
 	- $\alpha$: hệ số chặn (*intercept*, giá trị khi $x_i = 0$); $\beta$: độ dốc (*slope*), hệ số hồi quy.
 	- $\varepsilon_i$: sai số, phân phối chuẩn với trung bình 0 và phương sai $\sigma^2$.
 - **Phương pháp bình phương tối thiểu (Least Squares)**: tìm $\alpha, \beta$ sao cho $\sum (y_i - \alpha - \beta x_i)^2$ nhỏ nhất:

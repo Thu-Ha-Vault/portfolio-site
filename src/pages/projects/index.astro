@@ -9,7 +9,7 @@ const projects = (await projectEntries())
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || (a.data.deadline ?? '9999').localeCompare(b.data.deadline ?? '9999'));
 ---
 <Base title="Projects" description="Data analysis case studies and learning projects, tracked from Ask to Act.">
-  <div class="wrap">
+  <div class="wrap brutal">
     <header class="page-head">
       <h1><T k="projects" /></h1>
       <p><T k="projectsIntro" /></p>

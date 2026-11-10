@@ -47,7 +47,7 @@ isIndex: false
 
 ## The apply() family of functions
 
-- Đây là một trong các nhóm function hữu dụng nhất trong R. Nhóm lệnh này thực hiện một lệnh lên mỗi một phần tử trong cấu trúc dữ (→ [Rẽ nhánh & Vòng lặp](/blog/re-nhanh-and-vong-lap/), [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
+- Đây là một trong các nhóm function hữu dụng nhất trong R. Nhóm lệnh này thực hiện một lệnh lên mỗi một phần tử trong cấu trúc dữ (→ Rẽ nhánh & Vòng lặp, [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
 - Lệnh apply(): lấy một matrix, áp dụng một lệnh lên cột hoặc hàng và trả về 1 vector.
 
@@ -79,4 +79,4 @@ isIndex: false
 
 ## Merging data frames
 
-- Xem thêm: [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/) – merge data frame
+- Xem thêm: Tổng hợp dữ liệu – merge data frame

@@ -35,7 +35,7 @@ isIndex: false
 	- Kích thước mẫu quá nhỏ so với tổng thể.
 	- Phương pháp chọn mẫu không khách quan.
 - **Đặc trưng của tổng thể**: kích thước $N$, trung bình $\mu$, độ lệch chuẩn $\sigma$, luật phân phối $F(x)$.
-- **Bản chất của Chương 3**: ước lượng các tham số của tổng thể ($\mu$, $\sigma^2$, $p$) từ mẫu thu được. (→ [Models, Statistical Inference and Learning](/blog/models-statistical-inference-and-learning/))
+- **Bản chất của Chương 3**: ước lượng các tham số của tổng thể ($\mu$, $\sigma^2$, $p$) từ mẫu thu được. (→ Models, Statistical Inference and Learning)
 
 ## Công thức / phương pháp
 
@@ -54,7 +54,7 @@ isIndex: false
 | Hệ số biến thiên | $C_v = \dfrac{s}{\bar{x}} \cdot 100\%$ | |
 | Độ nhọn / độ lệch | `KURT()`, `SKEW()` | |
 
-- Trong công thức trung vị/bách phân vị: $b$ là giới hạn dưới của lớp chứa Me (hoặc $P_i$), $d$ là độ dài lớp, $m_j$ là tần số cộng dồn của lớp ngay dưới. Với Mode: $a_i$ là giới hạn dưới, $d_i$ là độ dài lớp chứa Mode. (→ [Estimating the CDF](/blog/estimating-the-cdf-and-statistical-functionals/))
+- Trong công thức trung vị/bách phân vị: $b$ là giới hạn dưới của lớp chứa Me (hoặc $P_i$), $d$ là độ dài lớp, $m_j$ là tần số cộng dồn của lớp ngay dưới. Với Mode: $a_i$ là giới hạn dưới, $d_i$ là độ dài lớp chứa Mode. (→ Estimating the CDF)
 - **Đọc độ nhọn và độ lệch** (cách ghi trong bài):
 	- **Kurtosis** > 0: phân phối nhọn (*leptokurtic*); < 0: phân phối bẹt (*platykurtic*).
 	- **Skewness** < 0: phân phối lệch trái; > 0: lệch phải.
@@ -68,7 +68,7 @@ isIndex: false
 | Xác suất $p$ | $p = f$ | $f \pm U_{\alpha/2}\sqrt{\dfrac{f(1-f)}{n}}$ | |
 
 - Khi $n > 30$: công thức chỉ còn $n$ (thay cho $n-1$); với phương sai, bậc tự do của $\chi^2$ không đổi.
-- Hệ số $U_{\alpha/2}$ của phân phối chuẩn: **95% → 1,96**; **99% → 2,58**; **99,9% → 3,3**. (→ [Random Variables](/blog/random-variables/))
+- Hệ số $U_{\alpha/2}$ của phân phối chuẩn: **95% → 1,96**; **99% → 2,58**; **99,9% → 3,3**. (→ Random Variables)
 - **Kích thước mẫu tối thiểu** (rút từ công thức sai số): (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/), [Ecology Bài 2: cỡ mẫu N = 25s²/x̄²](/blog/phuong-phap-lay-mau/))
 	- Cho tỷ lệ: $n = \left(\dfrac{U_{\alpha/2}}{\varepsilon}\right)^2 f(1-f)$.
 	- Cho trung bình (khi $n$ lớn, $t_{(n-1,\ \alpha/2)} \approx U_{\alpha/2}$): $n = \left(\dfrac{U_{\alpha/2}\,\sigma}{\varepsilon}\right)^2$.

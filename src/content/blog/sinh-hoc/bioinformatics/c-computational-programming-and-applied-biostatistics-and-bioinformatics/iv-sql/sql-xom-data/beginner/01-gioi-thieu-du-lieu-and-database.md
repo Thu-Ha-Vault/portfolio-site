@@ -28,7 +28,7 @@ isIndex: false
 	- File nặng, mở chậm
 	- Nhiều người không thể cùng sửa
 	- Khó liên kết dữ liệu giữa các sheet
-- **Database** giải quyết tất cả các vấn đề trên. Nó lưu trữ dữ liệu có cấu trúc, cho phép truy vấn nhanh và hỗ trợ nhiều người dùng cùng lúc. (→ [Database (SQL Tutorial)](/blog/database/))
+- **Database** giải quyết tất cả các vấn đề trên. Nó lưu trữ dữ liệu có cấu trúc, cho phép truy vấn nhanh và hỗ trợ nhiều người dùng cùng lúc. (→ Database (SQL Tutorial))
 ## b. Database vs Excel
 | Tiêu chí         | Excel                  | Database                   |
 | ---------------- | ---------------------- | -------------------------- |

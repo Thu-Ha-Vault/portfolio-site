@@ -12,7 +12,7 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/01 - Introduction.md
-url: /blog/introduction-biology/
+url: /blog/introduction/
 topic: biology
 updated: '2026-10-14'
 order: 1

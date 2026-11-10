@@ -27,16 +27,16 @@ const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', 
       <li><a href="/projects/"><T k="projects" /></a></li>
       {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
     </ol>
-    <header class="article-head">
+    <header class={`article-head${d.isIndex ? ' brutal' : ''}`}>
       <h1>{d.title}</h1>
       <p class="byline">
         {s && <span class="status"><T k={s} /></span>}
         {d.deadline && <span><T k="due" /> {fmtDate(d.deadline)}</span>}
         {d.updated && <span><T k="updated" /> {fmtDate(d.updated)}</span>}
       </p>
-      {d.isIndex && d.phases.length > 0 && <div style="margin-top:28px;max-width:40rem"><PhaseTrack phases={d.phases} /></div>}
+      {d.isIndex && d.phases.length > 0 && <div class="brutal" style="margin-top:28px;max-width:44rem"><PhaseTrack phases={d.phases} /></div>}
       {d.isIndex && Object.keys(d.links).length > 0 && (
-        <div class="actions" style="margin-top:24px">
+        <div class="actions brutal" style="margin-top:24px">
           {Object.entries(d.links).map(([k, v]) => <a class="button" href={v} rel="noopener">{linkLabel[k] ?? k}</a>)}
         </div>
       )}
@@ -44,7 +44,7 @@ const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', 
     <article class="prose"><Content /></article>
     <div class="after">
       {kids.length > 0 && (
-        <section class="children">
+        <section class="children brutal">
           <h2><T k="projectNotes" /></h2>
           <ul class="rows">{kids.map((k) => <li><a href={k.data.url}><span class="t">{k.data.title}</span></a></li>)}</ul>
         </section>

@@ -324,6 +324,6 @@ isIndex: false
 ## 6.4. Sociological Reflections on AI and Education
 
 ## 6.5. Global Governance of AI in Education and China's Policy Practice
-- Xem thêm: [AI Governance and Regulation (Columbia)](/blog/ai-governance-and-regulation/) – Module 6 về governance framework (ISO 42001, SAIF) và quy định AI (EU AI Act)
+- Xem thêm: AI Governance and Regulation (Columbia) – Module 6 về governance framework (ISO 42001, SAIF) và quy định AI (EU AI Act)
 
 ## 6.6. Neural and Cognitive Mechanism of AI-Provided Learning Support

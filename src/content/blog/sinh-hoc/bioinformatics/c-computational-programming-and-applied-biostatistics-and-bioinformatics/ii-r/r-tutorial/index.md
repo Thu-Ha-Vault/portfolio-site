@@ -23,15 +23,15 @@ isIndex: true
 ---
 ## Map of Content
 
-- [Introduction](/blog/introduction-biology/)
+- [Introduction](/blog/introduction/)
 - [RStudio and R notebooks](/blog/rstudio-and-r-notebooks/)
 - [Importing and exporting data](/blog/importing-and-exporting-data/)
 - [Data frames](/blog/data-frames/)
 - [Basic data types](/blog/basic-data-types/)
 - [Functions](/blog/functions/)
 - Installing packages
-- [Introduction to tidyverse](/blog/introduction-to-tidyverse/)
-- [Visualizations](/blog/visualizations/)
+- Introduction to tidyverse
+- Visualizations
 - Xem thêm: [Introduction to Data Analysis Using Python](/blog/introduction-to-data-analysis-using-python/) – Course 7 (Google Data Analytics) học Python, có phần giới thiệu R và so sánh Python với R
 - Xem thêm: [Data Science](/topics/data-science/) – R dùng trong phân tích dữ liệu
 - Xem thêm: [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/) – tra cứu nhanh các lệnh học có hệ thống trong R Tutorial và R Xóm Data
@@ -40,6 +40,6 @@ isIndex: true
 
 - [Làm quen với R](/blog/lam-quen-voi-r/)
 - Cấu trúc dữ liệu
-- [Rẽ nhánh & Vòng lặp](/blog/re-nhanh-and-vong-lap/)
+- Rẽ nhánh & Vòng lặp
 - Hàm & Xử lý chuỗi
-- [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/)
+- Tổng hợp dữ liệu

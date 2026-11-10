@@ -119,4 +119,4 @@ isIndex: false
 ## Bayes’ Theorem
 
 - Xem thêm: Bayesian Inference – định lý Bayes là nền tảng của suy luận Bayes
-- Xem thêm: [Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/) – Bayes classifier / Naive Bayes dựa trên định lý Bayes
+- Xem thêm: Bayes Classifier – Bayes classifier / Naive Bayes dựa trên định lý Bayes

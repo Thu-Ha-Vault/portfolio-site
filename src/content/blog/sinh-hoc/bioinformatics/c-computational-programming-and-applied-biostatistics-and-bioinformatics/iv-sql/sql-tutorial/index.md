@@ -22,5 +22,5 @@ isIndex: true
 ## Map of Content
 
 - [Tutorial](/blog/tutorial-biology-2/)
-- [Database](/blog/database/)
+- Database
 - References

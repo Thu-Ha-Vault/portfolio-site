@@ -43,7 +43,7 @@ du_lieu   <- data.frame(gioi_tinh, diem_toan, can_nang)
 - **Histogram** `hist()`: phân bố của biến liên tục (cân nặng).
 - **Biểu đồ tròn** `pie()`: tỷ lệ các nhóm.
 - **Biểu đồ tán xạ** `plot(x, y)`; `plot(x, type = "l")` vẽ dạng đường.
-- Xem thêm: [Visualizations](/blog/visualizations/), [Share Data through the Art of Visualization](/blog/share-data-through-the-art-of-visualization/) – trực quan hoá dữ liệu trong R (R Tutorial) và nguyên tắc chọn, thiết kế biểu đồ (Google Data Analytics)
+- Xem thêm: Visualizations, [Share Data through the Art of Visualization](/blog/share-data-through-the-art-of-visualization/) – trực quan hoá dữ liệu trong R (R Tutorial) và nguyên tắc chọn, thiết kế biểu đồ (Google Data Analytics)
 
 ```r
 xep_loai <- cut(du_lieu$diem_toan, breaks = c(0, 5, 6.5, 8, 10),
@@ -81,7 +81,7 @@ boxplot(wt_no_out)
 ```
 
 ## Tính các giá trị đặc trưng
-- `summary(x)` (min, $Q_1$, median, mean, $Q_3$, max), `mean()`, `median()`, `max()`, `min()`, `var()` (phương sai mẫu, chia $n-1$), `sd()`. (→ [Đặc trưng thống kê mẫu (Excel)](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), [Estimating the CDF](/blog/estimating-the-cdf-and-statistical-functionals/))
+- `summary(x)` (min, $Q_1$, median, mean, $Q_3$, max), `mean()`, `median()`, `max()`, `min()`, `var()` (phương sai mẫu, chia $n-1$), `sd()`. (→ [Đặc trưng thống kê mẫu (Excel)](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), Estimating the CDF)
 
 ## Tài liệu gốc
 - Chuong2_Trinh_bay_va_mo_ta_du_lieu.Rmd

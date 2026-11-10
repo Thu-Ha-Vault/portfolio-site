@@ -66,7 +66,7 @@ isIndex: false
 	- Keratin là họ protein thường gặp trong biểu mô động vật có vú.
 
 ## Kết luận & thảo luận
-- Ngưỡng ý nghĩa: kết quả được xem là có ý nghĩa nếu xác suất trùng khớp ngẫu nhiên < 5%. (→ [Hypothesis testing](/blog/hypothesis-testing-and-p-values/))
+- Ngưỡng ý nghĩa: kết quả được xem là có ý nghĩa nếu xác suất trùng khớp ngẫu nhiên < 5%. (→ Hypothesis testing)
 - Score cao (> 70) nhưng coverage thấp (< 50%) có thể do:
 	- **Số peptide quan sát**: nhiều peptide khớp → score cao nhưng chỉ phủ một phần chuỗi.
 	- **Độ chính xác khối lượng** cao → score cao dù ít peptide.

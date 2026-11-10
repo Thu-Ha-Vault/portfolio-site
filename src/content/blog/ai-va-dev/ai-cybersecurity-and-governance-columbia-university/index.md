@@ -29,7 +29,7 @@ isIndex: true
 	- Sau Twitter, làm **CISO** của nhiều công ty đại chúng: LifeLock, Symantec's Consumer Business Unit, QuantumScape.
 	- Hiện cố vấn cho nhiều quỹ venture capital; tập trung vào **securing AI** và **AI for cybersecurity**.
 	- Đồng tác giả 2 cuốn sách:
-		- *Big Breaches: Cybersecurity Lessons for Everyone* (liên quan [Module 1](/blog/cybersecurity-primer/) và [Module 5](/blog/breaches-on-and-with-ai/))
+		- *Big Breaches: Cybersecurity Lessons for Everyone* (liên quan [Module 1](/blog/cybersecurity-primer/) và Module 5)
 		- *Foundations of Security: What Every Programmer Needs to Know*
 	- Sở hữu hơn chục bằng sáng chế, hàng chục bài báo kỹ thuật, thường xuyên diễn thuyết tại các sự kiện lớn trong ngành.
 	- Học vấn: PhD và MS Computer Science (Stanford); BS Computer Science with honors with distinction (Columbia University).
@@ -56,10 +56,10 @@ Sau khoá học, người học có thể:
 | --- | --- | --- |
 | Module 1 | Cybersecurity Primer | [01 - Cybersecurity Primer](/blog/cybersecurity-primer/) |
 | Module 2 | AI Primer | 02 - AI Primer |
-| Module 3 | Multimodal GenAI Risks | [03 - Multimodal GenAI Risks](/blog/multimodal-genai-risks/) |
-| Module 4 | Agentic AI Risks | [04 - Agentic AI Risks](/blog/agentic-ai-risks/) |
-| Module 5 | Breaches on and with AI | [05 - Breaches on and with AI](/blog/breaches-on-and-with-ai/) |
-| Module 6 | AI Governance and Regulation | [06 - AI Governance and Regulation](/blog/ai-governance-and-regulation/) |
+| Module 3 | Multimodal GenAI Risks | 03 - Multimodal GenAI Risks |
+| Module 4 | Agentic AI Risks | 04 - Agentic AI Risks |
+| Module 5 | Breaches on and with AI | 05 - Breaches on and with AI |
+| Module 6 | AI Governance and Regulation | 06 - AI Governance and Regulation |
 | Faculty Spotlight | An Interview with Professor Junfeng Yang | `07 - Faculty Spotlight - Junfeng Yang` |
 
 ## Learning Activities

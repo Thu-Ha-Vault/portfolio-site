@@ -22,7 +22,7 @@ isIndex: false
 ---
 ## Violation of the Ordinary Least Squares (OLS) Assumptions
 ### 1. 10 giả định cổ điển của OLS (Classical Hypotheses)
-Để ước lượng OLS không thiên vị (*unbiased*) và nhất quán (*consistent*), mô hình cần thỏa mãn: (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+Để ước lượng OLS không thiên vị (*unbiased*) và nhất quán (*consistent*), mô hình cần thỏa mãn: (→ Linear and Logistic Regression)
 1. **Không có sai số chỉ định mô hình:** Dạng hàm hồi quy đúng theo lý thuyết.
 2. **Mẫu ngẫu nhiên mang tính đại diện.**
 3. **Sai số ngẫu nhiên $\varepsilon$ tuân theo phân phối chuẩn** có kỳ vọng bằng 0: $E(\varepsilon) = 0$.
@@ -76,7 +76,7 @@ $$E[Y_i \mid D_i=1] - E[Y_i \mid D_i=0] = \underbrace{E[Y_{1i} - Y_{0i} \mid D_i
 1. **Bản chất của OLS:** OLS tính toán mức độ thay đổi của $Y$ tương ứng với $X$ dựa trên hiệp phương sai giữa chúng. OLS chỉ bóc tách được đúng tác động nhân quả nếu phần biến thiên của $X$ hoàn toàn "sạch" (không dính líu gì tới các yếu tố trong sai số $\varepsilon$). (→ [Statistic and Regression](/blog/statistic-and-regression/))
 2. **Tại sao có hiện tượng nội sinh?** Khi có một yếu tố thứ 3 (như năng lực, hoàn cảnh gia đình) vừa tác động lên quyết định đi học ($X$), vừa tác động trực tiếp lên mức lương tương lai ($Y$). Vì ta không đo được yếu tố này nên nó ẩn trong sai số $\varepsilon$. Kết quả là $X$ tương quan với $\varepsilon$.
 3. **Tại sao OLS thất bại?** Khi $X$ và $\varepsilon$ chồng lấn lên nhau, OLS sẽ gán nhầm cả phần ảnh hưởng của các yếu tố ẩn này vào hệ số của $X$, dẫn đến ước lượng sai lệch (thổi phồng hoặc đánh giá thấp tác động thực).
-4. **Hướng giải quyết tiếp theo:** Do OLS bị thiên lệch khi có biến nội sinh, ta phải tìm một biến thứ ba gọi là **Biến công cụ (Instrumental Variable - IV)**—một biến chỉ tác động vào $X$ mà hoàn toàn không liên quan gì đến sai số $\varepsilon$—để tách lấy phần biến thiên "sạch" của $X$. (→ [Causal Inference](/blog/causal-inference-biology/))
+4. **Hướng giải quyết tiếp theo:** Do OLS bị thiên lệch khi có biến nội sinh, ta phải tìm một biến thứ ba gọi là **Biến công cụ (Instrumental Variable - IV)**—một biến chỉ tác động vào $X$ mà hoàn toàn không liên quan gì đến sai số $\varepsilon$—để tách lấy phần biến thiên "sạch" của $X$. (→ Causal Inference)
 ## Ý Tưởng Cốt Lõi Của Phương Pháp Biến Công Cụ (The Core Idea of Instrumental Variables in Causal Inference)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–6 & Transcript)
 * **Phân loại nhiệm vụ:** **Suy luận Nhân quả & Xử lý Vấn đề Nội sinh trong Kinh tế lượng (Causal Inference & Endogeneity Correction - Explanatory & Inferential Modeling)**.
@@ -375,7 +375,7 @@ $$E[Y_i \mid D_i=1] - E[Y_i \mid D_i=0] = \underbrace{E[Y_{1i} - Y_{0i} \mid D_i
   * *Hành động can thiệp:* Chủ động tìm kiếm và kết hợp nhiều biến công cụ phản ánh các cơ chế can thiệp ngoại sinh khác nhau (như rào cản địa lý kết hợp mức độ sẵn có của nguồn cung); theo dõi sự gia tăng của $R^2$ ở giai đoạn 1 để đảm bảo chỉ số thống kê $F > 10$, giúp giảm biên độ dao động của sai số chuẩn ở giai đoạn 2.
 * **Theo góc nhìn Thẩm định Quy chuẩn Mô hình & Kiểm toán Giả định (Model Diagnostics & Exogeneity Verification):**
   * *Mục tiêu:* Đảm bảo tính vững chắc của các ràng buộc nhận diện vượt mức trước khi diễn giải kết luận nghiên cứu.
-  * *Hành động can thiệp:* Bắt buộc thực hiện kiểm định Hausman hoặc kiểm định Hansen-Sargan ($J$-test) khi đưa thêm công cụ mới; tuân thủ nguyên tắc tiên quyết: tập con công cụ đối chứng ($Z_{\text{sub}}$) phải được chứng minh chặt chẽ về tính hợp lệ và có số lượng tối thiểu bằng số biến giải thích nội sinh trong phương trình. (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/))
+  * *Hành động can thiệp:* Bắt buộc thực hiện kiểm định Hausman hoặc kiểm định Hansen-Sargan ($J$-test) khi đưa thêm công cụ mới; tuân thủ nguyên tắc tiên quyết: tập con công cụ đối chứng ($Z_{\text{sub}}$) phải được chứng minh chặt chẽ về tính hợp lệ và có số lượng tối thiểu bằng số biến giải thích nội sinh trong phương trình. (→ Hypothesis Testing and p-values)
 * **Theo góc nhìn Đánh giá Tác động Can thiệp & Hoạch định Chính sách Công (Policy Impact Evaluation):**
   * *Mục tiêu:* Cung cấp bằng chứng thực nghiệm chuẩn xác về lợi ích ngoại tác tích cực của chính sách giáo dục lên phát triển xã hội.
   * *Hành động can thiệp:* Sử dụng các hệ số ước lượng 2SLS có độ chính xác cao từ mô hình đa biến công cụ để định lượng các giá trị vô hình của giáo dục (như ý thức công dân và tỷ lệ cử tri đi bầu); hỗ trợ các nhà hoạch định chính sách xây dựng luận cứ đầu tư mở rộng mạng lưới trường học dựa trên cả giá trị kinh tế lẫn giá trị thúc đẩy tiến trình dân chủ cộng đồng.

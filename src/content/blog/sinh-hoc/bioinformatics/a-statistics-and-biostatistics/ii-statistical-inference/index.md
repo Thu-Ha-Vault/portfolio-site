@@ -23,10 +23,10 @@ isIndex: true
 ---
 ## Map of Content
 
-- [Models, Statistical Inference and Learning](/blog/models-statistical-inference-and-learning/)
-- [Estimating the CDF and Statistical Functionals](/blog/estimating-the-cdf-and-statistical-functionals/)
-- [The Bootstrap](/blog/the-bootstrap/)
+- Models, Statistical Inference and Learning
+- Estimating the CDF and Statistical Functionals
+- The Bootstrap
 - Parametric Inference
-- [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/)
+- Hypothesis Testing and p-values
 - Bayesian Inference
 - Statistical Decision Theory

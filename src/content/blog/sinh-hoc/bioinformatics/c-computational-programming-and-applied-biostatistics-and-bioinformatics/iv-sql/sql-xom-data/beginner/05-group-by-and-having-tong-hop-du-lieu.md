@@ -26,7 +26,7 @@ isIndex: false
 ---
 ## a. Tại sao cần GROUP BY
 - Bạn muốn biết **tổng lương mỗi phòng ban**. Không thể dùng `SUM` đơn giản vì nó tính cho toàn bộ bảng.
-- `GROUP BY` chia dữ liệu thành **nhóm** và áp dụng hàm aggregate cho **từng nhóm**. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), [Introduction to tidyverse](/blog/introduction-to-tidyverse/), [Tổng hợp dữ liệu (R)](/blog/tong-hop-du-lieu/))
+- `GROUP BY` chia dữ liệu thành **nhóm** và áp dụng hàm aggregate cho **từng nhóm**. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), Introduction to tidyverse, Tổng hợp dữ liệu (R))
 ## b. GROUP BY cơ bản
 ```sql
 SELECT department, SUM(salary) AS total_salary

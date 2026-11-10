@@ -21,7 +21,7 @@ isIndex: true
 ## Map of Content
 
 - [Probability](/blog/probability-biology/)
-- [Random Variables](/blog/random-variables/)
-- [Expectation](/blog/expectation/)
+- Random Variables
+- Expectation
 - Inequalities
 - Convergence of Random Variables

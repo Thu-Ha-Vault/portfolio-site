@@ -149,7 +149,7 @@ Important principles:
 
 ## Definition
 
-Control areas are untreated sites located near ANR sites. (→ [Causal Inference](/blog/causal-inference-biology/))
+Control areas are untreated sites located near ANR sites. (→ Causal Inference)
 
 Purpose:
 Provide comparison to distinguish:

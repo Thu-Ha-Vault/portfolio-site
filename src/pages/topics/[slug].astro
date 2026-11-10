@@ -11,9 +11,9 @@ export async function getStaticPaths() {
 const { entry, all } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
-const kids = childrenOf(all, entry.id);
-const crumbs = breadcrumbs(all, entry.id);
 const countIn = (id: string) => all.filter((e) => e.id.startsWith(id + '/') && !e.data.isIndex).length;
+const kids = childrenOf(all, entry.id).filter((k) => !k.data.isIndex || countIn(k.id) > 0);
+const crumbs = breadcrumbs(all, entry.id);
 ---
 <Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)}>
   <div class="wrap article">

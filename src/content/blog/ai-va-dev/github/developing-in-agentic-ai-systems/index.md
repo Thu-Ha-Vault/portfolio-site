@@ -18,7 +18,7 @@ source: >-
 isIndex: true
 ---
 ## Map of Content
-- [1. Introduction](/blog/introduction/)
+- 1. Introduction
 - [2. Foundations of Agentic AI in GitHub](/blog/foundations-of-agentic-ai-in-github/)
 - 3. Designing Agent Architecture and SDLC Integration
 - 4. Tooling, MCP, and Agent Execution Environments

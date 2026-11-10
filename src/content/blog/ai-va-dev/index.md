@@ -15,4 +15,4 @@ isIndex: true
 - [Khoá học AI của Tsing Hua University](/topics/khoa-hoc-ai-cua-tsing-hua-university/)
 - [GitHub](/topics/github/)
 - [AI Cybersecurity and Governance (Columbia University)](/topics/ai-cybersecurity-and-governance-columbia-university/)
-- Xem thêm: [Tin học đại cương](/blog/tin-hoc-tin-hoc-dai-cuong-tin-hoc-co-so/) – tài liệu Tin học năm nhất (HUS), nền tảng trước khi học AI và DEV
+- Xem thêm: Tin học đại cương – tài liệu Tin học năm nhất (HUS), nền tảng trước khi học AI và DEV

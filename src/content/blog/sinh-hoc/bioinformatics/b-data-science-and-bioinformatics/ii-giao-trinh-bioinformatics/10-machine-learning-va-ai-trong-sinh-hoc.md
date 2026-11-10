@@ -32,7 +32,7 @@ Machine learning giúp dự đoán từ dữ liệu omics (phân loại khối u
 
 ## 10.1 Machine learning cổ điển với scikit-learn
 
-- **Có giám sát:** hồi quy logistic có điều chuẩn (L1/L2), random forest, gradient boosting (XGBoost), SVM. (→ [Classification](/blog/classification/))
+- **Có giám sát:** hồi quy logistic có điều chuẩn (L1/L2), random forest, gradient boosting (XGBoost), SVM. (→ Classification)
 - **Không giám sát:** PCA, phân cụm, UMAP (đã học ở Phần 3).
 - **Đặc thù omics:** số đặc trưng (p, hàng chục nghìn gen) lớn hơn nhiều số mẫu (n, vài trăm), nên dễ quá khớp (overfitting).
 

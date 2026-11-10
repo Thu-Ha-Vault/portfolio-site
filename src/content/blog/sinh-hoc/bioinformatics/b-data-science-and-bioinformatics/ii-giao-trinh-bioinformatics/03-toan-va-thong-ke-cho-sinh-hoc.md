@@ -48,7 +48,7 @@ Phần lớn lỗi diễn giải trong bioinformatics đến từ thống kê, k
 
 ## 3.3 Kiểm định nhiều lần (multiple testing)
 
-Kiểm định 20.000 gen với ngưỡng 0,05 sẽ cho khoảng 1.000 kết quả dương tính giả dù không có gen nào thực sự khác biệt. Hai cách hiệu chỉnh (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/)):
+Kiểm định 20.000 gen với ngưỡng 0,05 sẽ cho khoảng 1.000 kết quả dương tính giả dù không có gen nào thực sự khác biệt. Hai cách hiệu chỉnh (→ Hypothesis Testing and p-values):
 
 - **Bonferroni:** nhân p-value với số kiểm định. Rất nghiêm ngặt.
 - **Benjamini–Hochberg (FDR):** kiểm soát tỷ lệ phát hiện sai trong các kết quả dương tính. Là chuẩn trong omics, báo cáo dưới tên "adjusted p-value" hoặc "q-value".
@@ -73,7 +73,7 @@ $$
 
 ## 3.6 Hồi quy
 
-Hồi quy tuyến tính, logistic và mô hình tuyến tính tổng quát (GLM) (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/)). DESeq2 thực chất là một GLM nhị thức âm, nên thiết kế `~ batch + condition` chính là thêm biến lô vào mô hình.
+Hồi quy tuyến tính, logistic và mô hình tuyến tính tổng quát (GLM) (→ Linear and Logistic Regression). DESeq2 thực chất là một GLM nhị thức âm, nên thiết kế `~ batch + condition` chính là thêm biến lô vào mô hình.
 
 **Bài tập**
 

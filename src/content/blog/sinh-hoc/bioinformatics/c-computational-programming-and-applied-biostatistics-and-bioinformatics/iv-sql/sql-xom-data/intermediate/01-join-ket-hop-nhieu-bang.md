@@ -24,7 +24,7 @@ isIndex: false
 - Dữ liệu được chia thành nhiều bảng để tránh trùng lặp. Ví dụ:
 	- Bảng `orders` có `customer_id` — nhưng không có tên khách hàng
 	- Bảng `customers` có `full_name` — nhưng không có thông tin đơn hàng
-**JOIN** kết hợp 2 bảng dựa trên cột chung. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), [Tổng hợp dữ liệu (R)](/blog/tong-hop-du-lieu/))
+**JOIN** kết hợp 2 bảng dựa trên cột chung. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), Tổng hợp dữ liệu (R))
 ## b. INNER JOIN cơ bản
 ```sql
 SELECT orders.id, customers.full_name, orders.total_amount

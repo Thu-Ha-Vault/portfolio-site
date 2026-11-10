@@ -129,7 +129,7 @@ Folder: [Xác suất thống kê](https://drive.google.com/drive/folders/1-Kjts4
 - **Bốn không gian con cơ bản** của $A$: không gian null $\operatorname{Null}(A)$, không gian cột, không gian hàng, không gian null trái.
 - **Đổi cơ sở**: $P$ là ma trận chuyển từ cơ sở $B$ sang $B'$ thì $[x]_B = P\,[x]_{B'}$.
 - **Quá trình Gram–Schmidt**: từ cơ sở $v_1, \dots, v_n$ dựng cơ sở trực giao $u_1 = v_1$, $u_k = v_k - \sum_{j<k} \dfrac{u_j^T v_k}{u_j^T u_j} u_j$, rồi chuẩn hoá.
-- **Bình phương tối thiểu** (least squares): khi $Ax = b$ vô nghiệm, tìm $\hat x$ giải $A^TA\hat x = A^Tb$ (hình chiếu trực giao của $b$ lên không gian cột). Đây là cơ sở của hồi quy tuyến tính (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/)).
+- **Bình phương tối thiểu** (least squares): khi $Ax = b$ vô nghiệm, tìm $\hat x$ giải $A^TA\hat x = A^Tb$ (hình chiếu trực giao của $b$ lên không gian cột). Đây là cơ sở của hồi quy tuyến tính (→ Linear and Logistic Regression).
 
 ### 6. Ánh xạ tuyến tính, trị riêng
 

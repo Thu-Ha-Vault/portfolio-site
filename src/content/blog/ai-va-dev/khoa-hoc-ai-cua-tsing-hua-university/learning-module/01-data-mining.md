@@ -140,7 +140,7 @@ isIndex: false
 ### Data Mining Tasks
 - **Predictive tasks**: use some variables to predict unknown of future values of other variables. Use existing data to make informed forecasts about unknown or future outcomes. (→ [Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/))
 	- **Classification**: The goal here is to assign new data points to predefined categories based on their features.
-	- **Regression**: used to estimate continuous numerical values. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+	- **Regression**: used to estimate continuous numerical values. (→ Linear and Logistic Regression)
 	- **Deviation/Outlier Detection**: This technique identifies data points that significantly differ from the normal pattern.
 - **Descriptive tasks**: Find human-interpretable patterns that describe the data. Help us uncover hidden patterns and structures within the data to improve our understanding.
 	- **Association Rule Discovery**: this technique reveals relationships between different items, such as identifying which products are frequently bought together in a supermarket.
@@ -200,7 +200,7 @@ $$(\text{Shoes}) \rightarrow (\text{Racket}, \text{Racketball}) \rightarrow (\te
 $$f(X_1, X_2, \dots, X_n) \rightarrow Y \quad \text{với } Y \in \{C_1, C_2, \dots, C_k\}$$
   * Dữ liệu đầu vào bao gồm các thuộc tính định danh/phân loại (categorical) và thuộc tính liên tục (continuous).
 * **Điểm đặc trưng & Quy trình:** 
-  * Gồm hai pha riêng biệt: (→ [Classification](/blog/classification/))
+  * Gồm hai pha riêng biệt: (→ Classification)
     1. *Giai đoạn huấn luyện (Model Training):* Thuật toán phân tích **Tập huấn luyện (Training Set)** đã có nhãn để rút trích quy luật và tạo ra **Mô hình phân lớp (Classifier)**.
     2. *Giai đoạn kiểm thử/ứng dụng (Testing/Inference):* Dùng **Tập kiểm thử (Test Set)** và dữ liệu mới chưa gán nhãn để đánh giá độ chính xác cũng như thực hiện dự đoán.
   * Khác biệt cơ bản với gom cụm (Clustering): Classification yêu cầu nhãn mục tiêu xác định từ trước, trong khi Clustering không dùng nhãn sẵn có.
@@ -475,7 +475,7 @@ $$\text{Instruction} + \text{Context} \xrightarrow{\text{Autoregressive Generati
 - Linear Regression
 - Logistic Regression
 - CART-Decision Tree
-- Naive Bayes (→ [Error Rates and the Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/))
+- Naive Bayes (→ Error Rates and the Bayes Classifier)
 - KNN (K-Nearest Neighbors)
 - Apriori
 - K-means

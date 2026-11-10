@@ -44,12 +44,12 @@ isIndex: false
 - **Thống kê mô tả** (handout Part 2):
 	- **Phương sai mẫu** $s^2$, **độ lệch chuẩn** $s = \sqrt{s^2}$: độ phân tán quanh trung bình.
 	- **Sai số chuẩn của trung bình** $SEM = \dfrac{s}{\sqrt{n}}$: ~68% trung bình mẫu nằm trong ±1 SEM quanh trung bình quần thể.
-	- **Khoảng tin cậy 95%**: handout xấp xỉ $95\%\,CI \approx 2 \times SEM$; báo cáo dùng $1{,}96 \times SEM$ (hàm CONFIDENCE của Excel). (→ [Statistical Inference](/blog/models-statistical-inference-and-learning/))
+	- **Khoảng tin cậy 95%**: handout xấp xỉ $95\%\,CI \approx 2 \times SEM$; báo cáo dùng $1{,}96 \times SEM$ (hàm CONFIDENCE của Excel). (→ Statistical Inference)
 	- Thanh sai số 95% CI **không chồng nhau** → gợi ý khác biệt có ý nghĩa; chồng nhau → có thể không có ý nghĩa.
-- **Kiểm định t hai mẫu** (handout Part 4): (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
+- **Kiểm định t hai mẫu** (handout Part 4): (→ Hypothesis Testing, [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 	- $H_0$: trung bình của nhóm không sống sót = trung bình nhóm sống sót (khác biệt do ngẫu nhiên).
 	- So sánh $|t_{obs}|$ với $t_{crit}$ (n = 50/nhóm → $t_{crit} = 1{,}98$, mức 5%): $|t_{obs}| > t_{crit}$ → bác bỏ $H_0$.
-- **Phần mở rộng của handout** (báo cáo không làm): vẽ scatterplot độ sâu mỏ – chiều dài cánh, thêm đường **hồi quy tuyến tính** và tính **hệ số xác định** $r^2$ (tỷ lệ biến thiên của y được x giải thích). (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+- **Phần mở rộng của handout** (báo cáo không làm): vẽ scatterplot độ sâu mỏ – chiều dài cánh, thêm đường **hồi quy tuyến tính** và tính **hệ số xác định** $r^2$ (tỷ lệ biến thiên của y được x giải thích). (→ Linear and Logistic Regression)
 
 ## Vật liệu & phương pháp
 - **Phần 1 – Xem video** HHMI (http://www.hhmi.org/biointeractive/origin-species-beak-finch):

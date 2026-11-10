@@ -24,7 +24,7 @@ isIndex: true
 	- [02a - Đề thi giữa kì Hoá đại cương 2019-2020](/blog/de-thi-giua-ki-1-hoa-dai-cuong-2019-2020-3-de-kem-loi-giai/)
 - [03 - Vật lý](/blog/vat-ly-dai-cuong-co-nhiet-dien-quang/): Cơ – Nhiệt, Điện – Quang
 	- [03a - Điện và Quang](/blog/dien-va-quang-chep-tu-anh-chup-bang-lop-vat-ly-dai-cuong/): chép bảng lớp – điện trường, tụ điện, Biot–Savart, cảm ứng, mạch RL, Maxwell, giao thoa
-- [04 - Tin học](/blog/tin-hoc-tin-hoc-dai-cuong-tin-hoc-co-so/): Tin học đại cương, Tin học cơ sở
+- 04 - Tin học: Tin học đại cương, Tin học cơ sở
 
 ### Lý luận chính trị và kỹ năng
 - [05 - Lịch sử Đảng - Cách tiếp cận một số vấn đề khó](/blog/lich-su-dang-cong-san-viet-nam-cach-tiep-can-mot-so-van-de-kho/): đề cương ôn – chuyển hướng chiến lược 1939–1945, Hội nghị TƯ 8, đường lối chống Mỹ, Đổi mới 1986

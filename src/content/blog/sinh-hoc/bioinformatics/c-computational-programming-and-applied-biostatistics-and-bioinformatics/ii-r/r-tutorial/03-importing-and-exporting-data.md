@@ -34,7 +34,7 @@ isIndex: false
 
 ## Import data using read.csv() (Nhập dữ liệu)
 
-- Nhập dữ liệu thủ công thường tốn thời gian và dẫn đến nhiều lỗi. R có một số function để đọc dữ liệu với nhiều định dạng. Dữ liệu trong bài này là .csv: (→ [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/))
+- Nhập dữ liệu thủ công thường tốn thời gian và dẫn đến nhiều lỗi. R có một số function để đọc dữ liệu với nhiều định dạng. Dữ liệu trong bài này là .csv: (→ Tổng hợp dữ liệu)
 birthweight <- read.csv("birthweight.csv")
 
 - CSV: comma separated value, CSV file là một text file mà mỗi dòng trong file đại diện cho một hàng trong dữ liệu bảng, và các cột được ngăn cách bằng dấu phẩy. Dữ liệu trong file CSV bây giờ đã được lưu trữ trong biến “birthweight”

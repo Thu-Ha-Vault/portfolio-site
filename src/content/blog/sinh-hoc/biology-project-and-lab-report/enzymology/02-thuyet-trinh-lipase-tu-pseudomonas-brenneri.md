@@ -43,11 +43,11 @@ isIndex: false
 	5. **Dừng phản ứng**: acid hoặc base mạnh.
 	6. **Đo**: độ hấp thụ ở khoảng **410 nm** (slide ghi 410 nm; báo cáo Bài 1 ghi 405 nm).
 	7. **Tính hoạt độ**:
-		- Dựng **đường chuẩn** p-nitrophenol thương mại: $y = mx + b$ ($y$: độ hấp thụ, $x$: nồng độ, $m$: độ dốc ≈ hệ số hấp thụ mol của p-nitrophenol), tính bằng OpenOffice Calc. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+		- Dựng **đường chuẩn** p-nitrophenol thương mại: $y = mx + b$ ($y$: độ hấp thụ, $x$: nồng độ, $m$: độ dốc ≈ hệ số hấp thụ mol của p-nitrophenol), tính bằng OpenOffice Calc. (→ Linear and Logistic Regression)
 		- $\text{Catalytic activity (μmol/min/mL)} = \dfrac{[P]_f - [P]_i}{t}$ với $[P]_i$, $[P]_f$: nồng độ p-nitrophenol đầu/cuối, $t$ = 30 phút.
 		- **1 U** = 1 μmol p-nitrophenol/phút.
 		- $\text{Hoạt độ còn lại (\%)} = \dfrac{\text{Hoạt độ sau xử lý}}{\text{Hoạt độ ban đầu}} \times 100$
-	8. **Phân tích dữ liệu**: IU/mg hoặc IU/ml; mỗi mẫu đo 3 lần (trung bình, SD); so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/))
+	8. **Phân tích dữ liệu**: IU/mg hoặc IU/ml; mỗi mẫu đo 3 lần (trung bình, SD); so sánh bằng **t-test**. (→ Hypothesis Testing)
 
 ## Kết quả chính
 - **Phân lập**: 16S rRNA xác định *P. reinekei* và *P. brenneri*; lipase ngoại bào bền trong n-hexane (phương pháp phủ đĩa, chiếu UV trên thạch Rhodamine B).

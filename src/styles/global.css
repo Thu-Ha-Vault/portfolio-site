@@ -116,14 +116,22 @@ main { min-height: 70vh; }
 .map-figure { margin: 0; }
 .map-figure svg { display: block; width: 100%; height: auto; overflow: visible; }
 .map-figure figcaption { font-size: 14px; color: var(--ink-soft); max-width: 44em; margin-top: 12px; }
-.map-node .cell { fill: var(--hema-tint); stroke: var(--hema); stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.map-node .nucleus { fill: var(--hema); opacity: 0.55; transition: fill 0.2s; }
-.map-node .label { font: 600 15px var(--sans); fill: var(--ink); }
-.map-node .count { font: 500 13px var(--sans); fill: var(--ink-soft); }
-.map-node:hover .cell, .map-node:focus-visible .cell { fill: var(--eosin-tint); stroke: var(--eosin); }
-.map-node:hover .nucleus, .map-node:focus-visible .nucleus { fill: var(--eosin); opacity: 0.8; }
-.map-node:focus-visible { outline: none; }
-.map-edge { fill: none; stroke: var(--hema); opacity: 0.35; stroke-linecap: round; }
+.brain-shape { fill: var(--slide); stroke: var(--ink-soft); stroke-width: 1.5; }
+.brain-stem { fill: var(--slide); stroke: var(--ink-soft); stroke-width: 1.5; opacity: 0.8; }
+.sulcus { fill: none; stroke: var(--ink-soft); stroke-width: 1.3; opacity: 0.22; stroke-linecap: round; }
+.axon { fill: none; stroke: var(--eosin); opacity: 0.45; stroke-linecap: round; }
+.region .hit { fill: transparent; }
+.region .dendrite { stroke: var(--hema); stroke-width: 0.8; opacity: 0.35; transition: stroke 0.2s, opacity 0.2s; }
+.region .neuron { fill: var(--hema); opacity: 0.75; transition: fill 0.2s; }
+.region .hub { fill: var(--ink); }
+.region .hub-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; opacity: 0.5; }
+.region .label { font: 650 14.5px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--slide); stroke-width: 4px; stroke-linejoin: round; }
+.region .count { font-weight: 500; fill: var(--ink-soft); }
+.region:hover .neuron, .region:focus-visible .neuron { fill: var(--eosin); }
+.region:hover .dendrite, .region:focus-visible .dendrite { stroke: var(--eosin); opacity: 0.6; }
+.region:hover .hub, .region:focus-visible .hub { fill: var(--eosin); }
+.region:focus-visible { outline: none; }
+.region:focus-visible .hit { stroke: var(--eosin); stroke-width: 2; stroke-dasharray: 4 3; }
 
 /* ---------- sections ---------- */
 .band { padding: 56px 0; border-top: 1px solid var(--rule); }
@@ -274,3 +282,37 @@ details.callout:not([open]) summary { margin: 0; }
 .colophon-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
 
 .empty { color: var(--ink-soft); padding: 24px 0; }
+
+/* ---------- brutalist accents: portfolio pages only (projects showcase, project pages) ----------
+   Reading, search, filters, tables and error pages keep the quiet minimalist styles above. */
+.brutal { --edge: 3px solid var(--ink); }
+.brutal .band-head { border-top: 8px solid var(--ink); padding-top: 20px; }
+.brutal .band-head h2, .brutal .page-head h1 { font-weight: 800; letter-spacing: -0.04em; }
+.brutal .page-head { border-bottom: 8px solid var(--ink); margin-bottom: 40px; }
+.brutal .case { border: var(--edge); background: var(--paper); box-shadow: 8px 8px 0 var(--ink); padding: 28px; margin: 0 8px 36px 0; }
+.brutal .case:first-child { border-top: var(--edge); padding-top: 28px; }
+.brutal .case h2, .brutal .case h3 { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+.brutal .tags li { border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 0; font-weight: 600; }
+.brutal .status { display: inline-block; background: var(--eosin); color: #fff; border: 2px solid var(--ink); padding: 1px 8px; }
+.brutal .track { gap: 0; border: var(--edge); background: var(--paper); }
+.brutal .track li { padding: 10px 10px 8px; border-right: 2px solid var(--ink); }
+.brutal .track li:last-child { border-right: 0; }
+.brutal .track .bar { height: 12px; border-radius: 0; border: 2px solid var(--ink); background: var(--slide); }
+.brutal .track .bar span { border-radius: 0; }
+.brutal .track-label { font-weight: 700; color: var(--ink); }
+@media (max-width: 560px) { .brutal .track li { border-bottom: 2px solid var(--ink); } }
+.brutal .button { border-radius: 0; border: 3px solid var(--ink); color: var(--ink); background: var(--paper); box-shadow: 4px 4px 0 var(--ink); font-weight: 700; transition: transform 0.1s, box-shadow 0.1s; }
+.brutal .button:hover { color: var(--ink); background: var(--eosin-tint); border-color: var(--ink); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.brutal .button:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--ink); }
+.brutal .compact-cases { border-top: var(--edge); }
+.brutal .compact-cases li { border-bottom: var(--edge); }
+.brutal .compact-cases strong { font-weight: 800; }
+.article-head.brutal { max-width: 52rem; border: var(--edge); box-shadow: 8px 8px 0 var(--ink); padding: 28px; margin-right: 8px; }
+.article-head.brutal h1 { font-weight: 800; letter-spacing: -0.04em; }
+.children.brutal .rows { border-top: var(--edge); }
+.children.brutal .rows li { border-bottom: 2px solid var(--ink); }
+.children.brutal h2 { font-weight: 800; }
+
+.brutal .track .name { white-space: normal; overflow: visible; font-size: 13px; line-height: 1.25; overflow-wrap: anywhere; }
+.brutal .track .name::before { content: counter(step) ' '; }
+.brutal .track li { padding: 10px 8px 8px; }

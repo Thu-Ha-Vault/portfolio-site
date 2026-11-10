@@ -61,7 +61,7 @@ chick_weight_21 <- function(diet_number) {
 for (d in 1:4) chick_weight_21(d)
 ```
 
-- Gợi ý: các phép "tính theo nhóm" này có thể viết gọn bằng `tapply(chickwts$weight, chickwts$feed, mean)` hoặc `aggregate()`. (→ [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/))
+- Gợi ý: các phép "tính theo nhóm" này có thể viết gọn bằng `tapply(chickwts$weight, chickwts$feed, mean)` hoặc `aggregate()`. (→ Tổng hợp dữ liệu)
 
 ## Buổi 7: Lập trình hàm và phân tích dữ liệu Stat2Data
 ### Bài tập lập trình (vòng `while`, ` 10   # lấy chữ số cuối

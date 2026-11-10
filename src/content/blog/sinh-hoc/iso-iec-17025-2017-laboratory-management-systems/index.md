@@ -21,6 +21,6 @@ description: >-
 isIndex: true
 ---
 - [Module 1 The Fundamentals of Laboratory Systems](/blog/the-fundamentals-of-laboratory-systems/) 
-- [Module 2 Essential Requirements of Laboratory Process Management](/blog/essential-requirements-of-laboratory-process-management/)
+- Module 2 Essential Requirements of Laboratory Process Management
 - Module 3 Lab Management System, Complaints and Nonconformities (NCs)
 - Module 4 Course Assessment

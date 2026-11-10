@@ -234,7 +234,7 @@ FROM [table_name]
 - Data Validation Overview: 
 	- Data validation in spreadsheets adds drop-down lists to control data entry and protect structured data and formulas.
 	- It is part of a larger process that involves checking data completeness, accuracy, security, and consistency throughout analysis.
-- **Data validation process**: Checking and rechecking the quality of your data so that is complete, accurate, secure and consistent. (→ [Laboratory Process Management](/blog/essential-requirements-of-laboratory-process-management/))
+- **Data validation process**: Checking and rechecking the quality of your data so that is complete, accurate, secure and consistent. (→ Laboratory Process Management)
 - Using Tools for Validation
 	- Data validation should be applied regardless of the analysis tool, including spreadsheets and SQL.
 	- SQL queries can be used to verify data accuracy, such as confirming totals match sums of components and handling errors like division by zero.

@@ -80,7 +80,7 @@ colSums(is.na(combi))
 ```
 
 ## Lập trình cơ bản
-- `if (a >= b) {...} else {...}`: so sánh trung bình hai vector. (→ [Rẽ nhánh & Vòng lặp](/blog/re-nhanh-and-vong-lap/))
+- `if (a >= b) {...} else {...}`: so sánh trung bình hai vector. (→ Rẽ nhánh & Vòng lặp)
 - Vòng `for` tính $\sum (x_i^2 + y_i)$ và đối chiếu với cách **vector hoá** `sum(x^2 + y)` (cùng kết quả, gọn hơn).
 - Viết hàm: tính $\sum x_i^{\,i}$.
 

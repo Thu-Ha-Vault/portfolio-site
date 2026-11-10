@@ -23,16 +23,16 @@ isIndex: true
 ---
 ## Map of Content
 
-- [Linear and Logistic Regression](/blog/linear-and-logistic-regression/)
-- [Multivariate Models](/blog/multivariate-models/)
+- Linear and Logistic Regression
+- Multivariate Models
 - Inference About Independence
-- [Causal Inference](/blog/causal-inference-biology/)
-- [Directed Graphs and Conditional Independence](/blog/directed-graphs-and-conditional-independence/)
+- Causal Inference
+- Directed Graphs and Conditional Independence
 - Undirected Graphs
 - Log-Linear Models
 - Nonparametric Curve Estimation
 - Smoothing Using Orthogonal Functions
-- [Classification](/blog/classification/)
-- [Error Rates and the Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/)
+- Classification
+- Error Rates and the Bayes Classifier
 - Probability Redux: Stochastic Processes
-- [Simulation Methods](/blog/simulation-methods/)
+- Simulation Methods

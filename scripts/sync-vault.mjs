@@ -59,6 +59,32 @@ function rmrf(p) {
   fs.mkdirSync(p, { recursive: true });
 }
 
+
+/** Words of actual writing, ignoring headings, links, embeds, task boxes and "Xem thêm" lines. */
+function realWords(t) {
+  return (
+    t
+      .replace(/```[\s\S]*?```/g, ' code ')
+      .replace(/^#+ .*$/gm, '')
+      .replace(/^\s*[-*]\s*Xem thêm[^\n]*$/gim, '')
+      .replace(/^\s*[-*]\s*\[[ xX]\][^\n]*$/gm, '')
+      .replace(/^\*\*Links:\*\*.*$/gm, '')
+      .replace(/!\[\[[^\]]*\]\]|!\[[^\]]*\]\([^)]*\)/g, '')
+      .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2')
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+      .replace(/https?:\/\/\S+|<[^>]+>/g, '')
+      .match(/[\p{L}\p{N}]+/gu) || []
+  ).length;
+}
+function hasRealContent(body) {
+  const words = realWords(body);
+  if (words < 100) return false;
+  const parts = body.replace(/```[\s\S]*?```/g, ' code ').split(/^#+ .*$/m).slice(1);
+  if (!parts.length) return true;
+  const empty = parts.filter((p) => realWords(p) < 3).length / parts.length;
+  return !(words < 300 && empty >= 0.75);
+}
+
 // ---------- collect files ----------
 const allFiles = walk(VAULT);
 const byBasename = new Map(); // basename (no ext for md, with ext otherwise) → [abs]
@@ -105,7 +131,7 @@ for (const p of config.projects) {
 }
 
 // Respect `publish: false` in frontmatter.
-const stats0 = { skeletons: 0 };
+const stats0 = { skeletons: 0, hidden: [] };
 const parsed = new Map();
 for (const f of [...published.keys()]) {
   const src = fs.readFileSync(f, 'utf8');
@@ -119,15 +145,11 @@ for (const f of [...published.keys()]) {
     published.delete(f);
     continue;
   }
-  // skip note skeletons (only headings / nav line, no written content yet)
-  const text = fm.content
-    .replace(/^#+ .*$/gm, '')
-    .replace(/^\*\*Links:\*\*.*$/gm, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-  if (!published.get(f).isIndex && text.length < 200) {
+  // skip notes without real content yet: outlines of empty headings, to-do scaffolds, link lists
+  if (!published.get(f).isIndex && !hasRealContent(fm.content)) {
     published.delete(f);
     stats0.skeletons++;
+    stats0.hidden.push(rel(f));
     continue;
   }
   parsed.set(f, fm);
@@ -496,6 +518,7 @@ for (const [abs, dest] of published) {
   else if (!dest.isIndex) n.notes++;
 }
 fs.mkdirSync(path.join(ROOT, 'src/data'), { recursive: true });
+fs.writeFileSync(path.join(ROOT, 'hidden-notes.md'), '# Notes hidden from the site (no real content yet)\n\nRe-run `npm run sync` after writing them; they appear automatically.\n\n' + stats0.hidden.sort().map((h) => `- ${h}`).join('\n') + '\n');
 fs.writeFileSync(
   path.join(ROOT, 'src/data/graph.json'),
   JSON.stringify(
@@ -511,5 +534,5 @@ fs.writeFileSync(
 console.log(
   `Synced ${stats.notes} notes (${[...published.values()].filter((d) => d.collection === 'blog').length} blog, ` +
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
-    `${copiedAssets.size} images. Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Skipped empty skeletons: ${stats0.skeletons}.`
+    `${copiedAssets.size} images. Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}.`
 );

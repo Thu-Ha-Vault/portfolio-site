@@ -81,7 +81,7 @@ Công cụ nhanh hơn cho dữ liệu lớn: DIAMOND (protein), MMseqs2.
 
 - Phương pháp khoảng cách: UPGMA, Neighbor-Joining.
 - Dựa trên mô hình: Maximum Likelihood (IQ-TREE, RAxML), Bayesian (MrBayes).
-- Đánh giá độ tin cậy nhánh bằng bootstrap; hiển thị cây bằng iTOL hoặc FigTree. (→ [The Bootstrap](/blog/the-bootstrap/))
+- Đánh giá độ tin cậy nhánh bằng bootstrap; hiển thị cây bằng iTOL hoặc FigTree. (→ The Bootstrap)
 
 ```bash
 mafft --auto seqs.fa > aligned.fa

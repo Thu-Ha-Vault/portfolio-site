@@ -27,7 +27,7 @@ isIndex: false
 
 ## Khái niệm chính
 - **Mức ý nghĩa $\alpha$**: ngưỡng xác suất tối đa cho phép mắc **sai lầm loại I** (bác bỏ $H_0$ khi $H_0$ đúng).
-- **Các bước kiểm định**: (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/))
+- **Các bước kiểm định**: (→ Hypothesis Testing and p-values)
 	1. Xác định giả thiết $H_0$.
 	2. Định rõ mức ý nghĩa $\alpha$.
 	3. Chọn test thống kê.

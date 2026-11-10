@@ -93,7 +93,7 @@ $$\text{Tần số alen} = \dfrac{\text{Số giao tử mang alen đó}}{\Sigma\ 
 - → Cấu trúc di truyền của quần thể đạt **trạng thái cân bằng**:
 	- $p^2\,AA + 2pq\,Aa + q^2\,aa = 1$ (→ [Probability](/blog/probability-biology/))
 	- ($d \leftrightarrow p^2$, $h \leftrightarrow 2pq$, $r \leftrightarrow q^2$)
-	- → $d \cdot r = \left(\dfrac{h}{2}\right)^2$ (→ [Hypothesis testing](/blog/hypothesis-testing-and-p-values/))
+	- → $d \cdot r = \left(\dfrac{h}{2}\right)^2$ (→ Hypothesis testing)
 - ⟹ **Kết luận:** khi quần thể đạt trạng thái cân bằng di truyền → cấu trúc di truyền duy trì ổn định qua các thế hệ.
 
 ![Hình - Bảng Punnett cân bằng Hardy-Weinberg](/vault-assets/hinh-bang-punnett-can-bang-hardy-weinberg-a9e70e1e.svg)

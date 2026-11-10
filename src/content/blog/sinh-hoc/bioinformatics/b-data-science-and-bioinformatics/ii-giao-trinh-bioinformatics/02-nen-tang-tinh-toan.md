@@ -72,7 +72,7 @@ for record in SeqIO.parse("genes.fasta", "fasta"):
 R mạnh về thống kê và có hệ sinh thái **Bioconductor** với hơn 2.000 gói cho dữ liệu omics.
 
 - Nền tảng: vector, data.frame, factor, hàm `apply`.
-- **tidyverse:** dplyr (lọc, nhóm, tóm tắt), ggplot2 (vẽ đồ thị). (→ [Introduction to tidyverse](/blog/introduction-to-tidyverse/), [Visualizations (R)](/blog/visualizations/))
+- **tidyverse:** dplyr (lọc, nhóm, tóm tắt), ggplot2 (vẽ đồ thị). (→ Introduction to tidyverse, Visualizations (R))
 - Bioconductor: DESeq2, edgeR, limma, clusterProfiler, GenomicRanges.
 
 ```r

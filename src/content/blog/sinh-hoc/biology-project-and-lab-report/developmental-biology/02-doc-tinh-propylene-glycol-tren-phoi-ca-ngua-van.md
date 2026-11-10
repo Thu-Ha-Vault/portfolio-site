@@ -111,7 +111,7 @@ isIndex: false
 | Sai số (Error) | 131,48 | 15 | 8,77 | | | |
 | Tổng | 53272,22 | 23 | | | | |
 
-- Nồng độ PG ảnh hưởng **có ý nghĩa thống kê** tới tỷ lệ chết (p < 0,01, độ tin cậy 99%); thời gian phơi nhiễm **không** có ảnh hưởng có ý nghĩa. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/))
+- Nồng độ PG ảnh hưởng **có ý nghĩa thống kê** tới tỷ lệ chết (p < 0,01, độ tin cậy 99%); thời gian phơi nhiễm **không** có ảnh hưởng có ý nghĩa. (→ Hypothesis Testing)
 
 ## Kết luận & thảo luận
 - PG **không gây dị dạng hình thái** ở ấu thể cá ngựa vằn sống sót, nhưng **gây chết phôi**, đặc biệt ở nồng độ **≥ 150 mg/L**; 350 và 500 mg/L gây chết 100%.

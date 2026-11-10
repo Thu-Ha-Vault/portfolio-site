@@ -48,7 +48,7 @@ isIndex: false
 - **Ủ**: trong lọ thuỷ tinh nắp vặn, ví dụ 28 °C / 30 phút; thay đổi pH, nhiệt độ, thời gian ủ để tìm điều kiện tối ưu.
 - **Dừng phản ứng**: thêm dung dịch dừng (acid hoặc base mạnh).
 - **Đo**: độ hấp thụ ~405 nm bằng máy quang phổ. (→ [Mô phỏng máy quang phổ – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/))
-- **Phân tích dữ liệu**: biểu thị **IU/mg protein** (hoạt độ riêng) hoặc **IU/ml**; trung bình ± SD; so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
+- **Phân tích dữ liệu**: biểu thị **IU/mg protein** (hoạt độ riêng) hoặc **IU/ml**; trung bình ± SD; so sánh bằng **t-test**. (→ Hypothesis Testing, [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 
 ## Kết quả chính
 - **Phân lập**: 2 chủng phân giải lipid từ đất bền trong cyclohexane, ethanol, n-hexane, heptane, methanol (phương pháp phủ đĩa); 16S rRNA → *P. reinekei* và ***P. brenneri***.

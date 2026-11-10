@@ -239,7 +239,7 @@ Below each column header is a box that contains a summary of the data. This lets
 
 #### Work with database
 
-- Database: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy. (→ [Database](/blog/database/))
+- Database: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy. (→ Database)
 
 - Metadata: Data about data.
 

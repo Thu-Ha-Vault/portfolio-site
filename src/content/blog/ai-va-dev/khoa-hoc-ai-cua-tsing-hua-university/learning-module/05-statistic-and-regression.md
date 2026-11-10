@@ -234,7 +234,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
       * *Example 2:* Is the feedback your teacher provides on your assignments helpful?
   * If the purpose is to assess the effect of A on B, do not design a question like: **"How much do you think small-class teaching affects academic performance?"**
 #### Quality of Scales
-* **Validity**: the extent to which a specific instrument measures what it wants, attempts, or claims to measure. (→ [Application of SEM](/blog/application-of-structural-equation-modeling/))
+* **Validity**: the extent to which a specific instrument measures what it wants, attempts, or claims to measure. (→ Application of SEM)
 	* Indicates the degree to which a specific instrument measures what it intends, attempts, or claims to measure.
 * **Reliability**: consistency or stability of a set of test scores.
 	* Refers to the consistency or stability of a set of test scores. If a test or assessment procedure yields reliable scores, the scores are similar across all conditions.
@@ -503,7 +503,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 ## Fundamental Statistical Concepts
 - Basic Statistical Concepts:
 	- Variable: a construct that can be measured in a population (e.g., height, ability, self-esteem)
-	- Variance: measures how far a random variable deviates from its expected value, that is, its means (→ [Expectation](/blog/expectation/))
+	- Variance: measures how far a random variable deviates from its expected value, that is, its means (→ Expectation)
 	- Standard Deviation (SD)
 	- Standardization
 	- Covariance
@@ -721,7 +721,7 @@ $$\bar{x} = \frac{x_1 w_1 + x_2 w_2 + \dots + x_n w_n}{w_1 + w_2 + \dots + w_n}$
   * *Hành động can thiệp:* Cố định số lượng mẫu cụ thể trên từng đơn vị hành chính/trường học thay vì tỷ lệ phần trăm thả nổi, giúp đội ngũ khảo sát dễ dàng phân bổ nhân sự và lập kế hoạch phỏng vấn rõ ràng.
 ## Parameter Estimation (Cơ sở Ước lượng Tham số trong Suy luận Thống kê)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–9 & Transcript P1–P9)
-* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ước lượng Tham số (Statistical Inference / Parameter Estimation)**. (→ [Models, Statistical Inference and Learning](/blog/models-statistical-inference-and-learning/))
+* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ước lượng Tham số (Statistical Inference / Parameter Estimation)**. (→ Models, Statistical Inference and Learning)
 * **Bản chất kỹ thuật:** 
   * Quá trình sử dụng dữ liệu quan sát từ mẫu để suy diễn về các tham số chưa biết của tổng thể:
     $$\text{Population } (\mu, \sigma^2, \beta) \xrightarrow{\text{Sampling}} \text{Sample } (X) \xrightarrow{\text{Estimator } \hat{\theta}(X)} \text{Estimate } \hat{\theta} \pm \text{SE}(\hat{\theta})$$
@@ -761,7 +761,7 @@ $$\bar{x} = \frac{x_1 w_1 + x_2 w_2 + \dots + x_n w_n}{w_1 + w_2 + \dots + w_n}$
 # Hypothesis Testing
 ## Fundamental Principles of Hypothesis Testing (Các Nguyên Lý Cơ Bản của Kiểm Định Giả Thuyết)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 2–11 & Transcript P1–P14)
-* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ra quyết định có kiểm soát rủi ro (Statistical Inference & Hypothesis Testing Task)**. (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/))
+* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ra quyết định có kiểm soát rủi ro (Statistical Inference & Hypothesis Testing Task)**. (→ Hypothesis Testing and p-values)
 * **Bản chất kỹ thuật:** 
   * Xác định xem các kết quả quan sát được từ mẫu có phản ánh bản chất thực sự của tổng thể hay chỉ xuất hiện ngẫu nhiên do sai số lấy mẫu:
     $$H_0: \theta = \theta_0 \quad \text{vs.} \quad H_1: \theta \neq \theta_0 \quad (\text{hoặc } \theta > \theta_0, \; \theta < \theta_0)$$
@@ -922,7 +922,7 @@ $$\begin{cases}        \ge 3 \text{ nhóm} \land \text{Độc lập} \land \text
 # Linear Regression Analysis 
 ## Xây Dựng Mô Hình Hồi Quy Tuyến Tính (Building Linear Regression Models)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–7 & Transcript P1–P7)
-* **Phân loại nhiệm vụ:** **Hồi quy & Dự báo có giám sát (Predictive & Causal Modeling / Supervised Learning)**. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+* **Phân loại nhiệm vụ:** **Hồi quy & Dự báo có giám sát (Predictive & Causal Modeling / Supervised Learning)**. (→ Linear and Logistic Regression)
 * **Bản chất kỹ thuật:** 
   * Xác định quy luật biến thiên của biến phụ thuộc (biến được giải thích) $Y$ theo sự thay đổi của tập hợp các biến độc lập (biến giải thích) $X_1, X_2, \dots, X_k$:
     $$Y_i = \beta_0 + \sum_{j=1}^k \beta_j X_{ij} + u_i$$

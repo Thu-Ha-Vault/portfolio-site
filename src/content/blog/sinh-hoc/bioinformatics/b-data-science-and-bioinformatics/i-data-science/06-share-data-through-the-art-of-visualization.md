@@ -23,7 +23,7 @@ isIndex: false
 ## Module 1: Visualize data
 ### Understand data visualization
 #### Why data visualization matters?
-- Data visualization: The graphic representation and presentation of data (→ [Visualizations (R)](/blog/visualizations/))
+- Data visualization: The graphic representation and presentation of data (→ Visualizations (R))
 - History: Start with map
 	- Scientists and mathematicians began to truly embrace the idea of arranging data visually in the 1700s and 1800s
 - Time with data visuals probably split in two way:
@@ -58,7 +58,7 @@ isIndex: false
 	-  **Ranked bar chart**: If your data needs to be ranked, ​like when ordering the number of ​responses to survey questions. ​You should first think about what you ​want to highlight in your visualization.
 		- ​Bar charts with horizontal bars ​effectively show data that are ranked, ​with bars arranged in ascending or descending order. ​A bar chart should always be ranked by value, ​unless there's a natural order to ​the data like age or time
 	- **Correlation charts**: Show relationships among data, but they should be used with ​caution because they might lead ​viewers to think that the data shows causation. ​
-		- **Causation**: or a cause-effect relationship ​occurs when an action directly leads to an outcome. ​Correlation and causation are often mixed up because ​humans like to find patterns even when they don't exist. (→ [Causal Inference](/blog/causal-inference-biology/))
+		- **Causation**: or a cause-effect relationship ​occurs when an action directly leads to an outcome. ​Correlation and causation are often mixed up because ​humans like to find patterns even when they don't exist. (→ Causal Inference)
 		- Details: https://www.coursera.org/learn/visualize-data/supplement/PPdt5/correlation-and-causation
 #### Dynamic visualizations
 - **Static visualizations**: Do not change over time unless they're edited.

@@ -59,7 +59,7 @@ isIndex: false
 	- Tra cứu UniProt bằng **MaxQuant 1.5.3.17**: tối đa 2 missed cleavage, carbamidomethyl (C) cố định, oxidation (M) biến đổi, **FDR < 1%**; loại protein nhiễm (keratin, BSA, trypsin).
 	- Định lượng **không đánh dấu (label-free)**. (→ [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/))
 - **Tin sinh học**: InterProScan/Pfam (miền protein), Blast2GO (**GO**), **KEGG** (con đường), làm giàu bằng **Fisher's exact test** hiệu chỉnh **Benjamini–Hochberg (FDR)**, mạng **PPI bằng STRING**. (→ [Bioinformatics](/topics/bioinformatics/), [Phân tích làm giàu chức năng](/blog/transcriptomics-rna-seq-va-single-cell/))
-- **Thống kê**: GraphPad Prism 8, SPSS 19.0, ImageJ, R; t-test/Fisher test, $p < 0{,}05$. (→ [Hypothesis testing](/blog/hypothesis-testing-and-p-values/))
+- **Thống kê**: GraphPad Prism 8, SPSS 19.0, ImageJ, R; t-test/Fisher test, $p < 0{,}05$. (→ Hypothesis testing)
 
 ## Kết quả chính
 - **Đặc điểm EV**: TEM cho hình cầu/hình cốc; NTA kích thước trung bình **147,5 nm** (17,5–300 nm); có CD63, CD81, TSG101, không có Calnexin → tách EV hiệu quả.
@@ -84,7 +84,7 @@ isIndex: false
 
 ## Ý nghĩa / ứng dụng
 - Protein EV huyết tương liên quan đáng kể với HCC; rối loạn điều hoà **tầng bổ thể** (C1QB, C1QC, C4BPA, C4BPB) và **tầng đông máu** (F13B, FGA, FGB, FGG) có thể góp phần vào tiến triển HCC. (→ [2D-PAGE](/blog/dien-di-hai-chieu-2d-page/))
-- **C1QB, C1QC, C4BPA, C4BPB** là **dấu ấn phân tử tiềm năng** cho chẩn đoán HCC; phân tích EV (sinh thiết lỏng) là phương pháp hợp lệ để đánh giá HCC. (→ [Classification](/blog/classification/))
+- **C1QB, C1QC, C4BPA, C4BPB** là **dấu ấn phân tử tiềm năng** cho chẩn đoán HCC; phân tích EV (sinh thiết lỏng) là phương pháp hợp lệ để đánh giá HCC. (→ Classification)
 - Liên hệ thực hành: quy trình tương ứng với các bài [tách EV](/blog/phan-tach-exosome-va-cac-bong-ngoai-bao-tu-huyet-tuong-nguoi/), [thủy phân trypsin](/blog/thuy-phan-protein-trong-gel-dien-di/), [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/).
 
 ## Tài liệu tham khảo (trong bản gốc)

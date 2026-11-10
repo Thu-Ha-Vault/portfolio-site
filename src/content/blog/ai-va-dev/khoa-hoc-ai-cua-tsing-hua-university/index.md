@@ -24,7 +24,7 @@ isIndex: true
 - 03 - Qualitative Research
 - [04 - Economics of Education](/blog/economics-of-education/)
 - [05 - Statistic and Regression](/blog/statistic-and-regression/) (→ [Statistics and Biostatistics](/topics/statistics-and-biostatistics/))
-- [06 - Application of Structural Equation Modeling](/blog/application-of-structural-equation-modeling/)
+- 06 - Application of Structural Equation Modeling
 - 07 - Application of Structural Equation Modeling 1
 - 08 - Social Psychology
 - [09 - Sociology of Education](/blog/sociology-of-education/)

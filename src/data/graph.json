@@ -2,7 +2,7 @@
   "nodes": [
     {
       "topic": "biology",
-      "notes": 179,
+      "notes": 160,
       "url": "/topics/biology/",
       "title": "Sinh học"
     },
@@ -13,20 +13,20 @@
       "title": "Tiếng Pháp (French)"
     },
     {
-      "topic": "ai-development",
-      "notes": 16,
-      "url": "/topics/ai-development/",
-      "title": "AI và DEV"
-    },
-    {
       "topic": "business",
       "notes": 13,
       "url": "/topics/business/",
       "title": "Business (Kinh doanh)"
     },
     {
+      "topic": "ai-development",
+      "notes": 10,
+      "url": "/topics/ai-development/",
+      "title": "AI và DEV"
+    },
+    {
       "topic": "university-courses",
-      "notes": 9,
+      "notes": 8,
       "url": "/topics/university-courses/",
       "title": "Học phần đại cương (General Education Courses)"
     },
@@ -41,12 +41,7 @@
     {
       "a": "ai-development",
       "b": "biology",
-      "weight": 48
-    },
-    {
-      "a": "ai-development",
-      "b": "university-courses",
-      "weight": 2
+      "weight": 24
     },
     {
       "a": "biology",
@@ -56,7 +51,7 @@
     {
       "a": "biology",
       "b": "university-courses",
-      "weight": 20
+      "weight": 18
     },
     {
       "a": "english",

@@ -29,7 +29,7 @@ isIndex: false
 - Xây dựng nhiều mô hình **hồi quy tuyến tính** (đầy đủ biến, chọn tập con, đa thức, có tương tác) và so sánh bằng $R^2$, $R^2$ hiệu chỉnh, AIC, BIC, MSE; mở rộng với **Random Forest**.
 
 ## Nguyên lý
-- **Hồi quy tuyến tính**: tìm hàm dự đoán biến phụ thuộc $Y$ từ các biến độc lập $X$, sao cho đường hồi quy gần nhất với các điểm (tối thiểu sai số): (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
+- **Hồi quy tuyến tính**: tìm hàm dự đoán biến phụ thuộc $Y$ từ các biến độc lập $X$, sao cho đường hồi quy gần nhất với các điểm (tối thiểu sai số): (→ Linear and Logistic Regression)
 	- $\hat{Y} = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \varepsilon$.
 - **Bốn giả định** cần kiểm tra: quan hệ **tuyến tính** giữa $X$ và $Y$; sai số **độc lập**; **phương sai sai số không đổi** (theo thời gian, giá trị dự đoán, giá trị biến độc lập); phần dư **phân phối chuẩn**.
 - **Đánh giá mô hình**:
@@ -108,7 +108,7 @@ plot(lm.fit3)   # 4 biểu đồ chẩn đoán
 	- *Scale-Location*: mô hình đa thức có đường đỏ gần nằm ngang (phương sai đồng nhất hơn).
 	- *Residuals vs Leverage*: không có điểm ảnh hưởng vượt khoảng cách Cook; các điểm 365, 370, 373 nổi bật.
 	- Histogram phần dư của lm.fit3 hơi lệch phải, gần như chuẩn.
-- **Random Forest** (`randomForest(MEDV ~ ., data = training)`, `set.seed(12345)`): **RMSE = 2,93**, pseudo-$R^2$ = 0,854; biểu đồ giá dự đoán – giá thực bám sát đường chéo. (→ [Error Rates and the Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/), [Data Mining](/blog/data-mining/))
+- **Random Forest** (`randomForest(MEDV ~ ., data = training)`, `set.seed(12345)`): **RMSE = 2,93**, pseudo-$R^2$ = 0,854; biểu đồ giá dự đoán – giá thực bám sát đường chéo. (→ Error Rates and the Bayes Classifier, [Data Mining](/blog/data-mining/))
 
 ## Kết luận & thảo luận
 - Mô hình **Random Forest** với tất cả đặc trưng cho kết quả tốt nhất (RMSE thấp nhất) trong các mô hình thử nghiệm.
