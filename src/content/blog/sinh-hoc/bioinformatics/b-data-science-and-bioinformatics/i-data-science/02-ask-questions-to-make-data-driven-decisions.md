@@ -15,7 +15,7 @@ vaultPath: >-
   Science/02 - Ask questions to make Data-Driven decisions.md
 url: /blog/ask-questions-to-make-data-driven-decisions/
 topic: biology
-updated: '2026-10-14'
+updated: '2026-11-10'
 order: 2
 description: >-
   [Tableau]: There are many different visualization tools available. One of the
@@ -64,7 +64,7 @@ isIndex: false
 		- Focus groups
 		- Social media text analysis
 		- In-person interviews
-	- Qualitative data: Subjective or explanatory measures of qualities and characteristics
+	- Qualitative data: Subjective or explanatory measures of qualities and characteristics (→ [Project management: using data to inform decisions](/blog/project-execution-running-the-project/))
 		- Structured interview
 		- Surveys
 		- Polls
@@ -302,7 +302,7 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 	- Plan for the unexpected. Before you start a project, make a list of potential roadblocks. Then, when you discuss project expectations and timelines with your stakeholders, give yourself some extra time for problem-solving at each stage of the process.
 	- Know your project. Keep track of your discussions about the project over email or reports, and be ready to answer questions about how certain aspects are important for your organization. Get to know how your project connects to the rest of the company and get involved in providing the most insight possible. If you have a good understanding about why you are doing an analysis, it can help you connect your work with other goals and be more effective at solving larger problems.
 	- Start with words and visuals. It is common for data analysts and stakeholders to interpret things in different ways while assuming the other is on the same page. This illusion of agreement* has been historically identified as a cause of projects going back-and-forth a number of times before a direction is finally nailed down. To help avoid this, start with a description and a quick visual of what you are trying to convey. Stakeholders have many points of view and may prefer to absorb information in words or pictures. Work with them to make changes and improvements from there. The faster everyone agrees, the faster you can perform the first analysis to test the usefulness of the project, measure the feedback, learn from the data, and implement changes.
-	- Communicate often. Your stakeholders will want regular updates on your projects. Share notes about project milestones, setbacks, and changes. Then use your notes to create a shareable report. Another great resource to use is a change-log, which is a tool that will be explored further throughout the program. For now, just know that a change-log is a file containing a chronologically ordered list of modifications made to a project. Depending on the way you set it up, stakeholders can even pop in and view updates whenever they want.
+	- Communicate often. Your stakeholders will want regular updates on your projects. Share notes about project milestones, setbacks, and changes. Then use your notes to create a shareable report. Another great resource to use is a change-log, which is a tool that will be explored further throughout the program. For now, just know that a change-log is a file containing a chronologically ordered list of modifications made to a project. Depending on the way you set it up, stakeholders can even pop in and view updates whenever they want. (→ [Digital marketing Course 5: Work with stakeholders](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - Turnover rate: The rate at which employees leave a company.
 - Focus on to stay on task:
 	- Who are the primary and secondary stakeholders?

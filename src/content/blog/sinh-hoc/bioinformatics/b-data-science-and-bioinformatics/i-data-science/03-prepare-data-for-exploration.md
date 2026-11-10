@@ -15,7 +15,7 @@ vaultPath: >-
   Science/03 - Prepare Data for Exploration.md
 url: /blog/prepare-data-for-exploration/
 topic: biology
-updated: '2026-10-14'
+updated: '2026-11-10'
 order: 3
 description: >-
   The fairness issue: The lack of structure makes unstructured data difficult to
@@ -61,7 +61,7 @@ isIndex: false
 ![image_026](/vault-assets/image-026-1df3acd4.png)
 
 #### Differentiate data formats and structures
-- Quantitative and qualitative data:
+- Quantitative and qualitative data: (→ [Digital marketing: quantitative data in social media analytics](/blog/from-likes-to-leads-interact-with-customers-online/))
 	- Quantitative: can be measured or counted and then expressed as a number, with a certain quantity, amount or range.
 		- Discrete data: Data that is counted and has a limited number of values
 		- Continuous data: Data that is measured and can have almost any numeric value
@@ -180,6 +180,7 @@ Population, Latin and Caribbean Countries, 2010-2019, long format
 		- Email addresses
 		- Photographs
 		- Account numbers
+- Xem thêm: [Project management: data ethics](/blog/project-execution-running-the-project/) – ethics when PMs use data
 ### Understand open data
 - Data interoperability: The ability of data systems and services to openly connect and share data
 - In data analytics, open data is part of data ethics, which has to do with using data ethically. Openness refers to free access, usage, and sharing of data. But for data to be considered open, it has to:
@@ -359,7 +360,7 @@ Together, these benefits empower data analysts to effectively analyze and interp
 
 - Internal/External data.
 
-- CSV = Comma-separated values: A CSV file saves data in a table format
+- CSV = Comma-separated values: A CSV file saves data in a table format (→ [Digital marketing Course 5: Export Google Ads and Google Analytics data](/blog/assess-for-success-marketing-analytics-and-measurement/))
 
 - .csv file to ggsheet:
 
@@ -393,7 +394,7 @@ Together, these benefits empower data analysts to effectively analyze and interp
 
 - Sorting data: Arranging data into a meaningful order to make it easier to understand, analyze, and visualize
 
-- Filtering: Showing only the data that meets a specific criteria while hiding the rest
+- Filtering: Showing only the data that meets a specific criteria while hiding the rest (→ [Digital marketing Course 5: Sort and filter marketing data](/blog/assess-for-success-marketing-analytics-and-measurement/))
 
 #### Large datasets in SQL
 

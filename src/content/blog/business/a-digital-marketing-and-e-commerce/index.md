@@ -20,7 +20,7 @@ isIndex: true
 - [Course 1: Foundations of Digital Marketing and E-commerce](/blog/foundations-of-digital-marketing-and-e-commerce/)
 - [Course 2: Attract and Engage Customers with Digital Marketing](/blog/attract-and-engage-customers-with-digital-marketing/)
 - [Course 3: From Likes to Leads: Interact with Customers Online](/blog/from-likes-to-leads-interact-with-customers-online/)
-- Course 4: Think Outside the Inbox: Email Marketing
-- Course 5: Assess for Success: Marketing Analytics and Measurement
-- Course 6: Make the Sale: Build, Launch, and Manage E-commerce Stores
-- Course 7: Satisfaction Guaranteed: Develop Customer Loyalty Online
+- [Course 4: Think Outside the Inbox: Email Marketing](/blog/think-outside-the-inbox-email-marketing/)
+- [Course 5: Assess for Success: Marketing Analytics and Measurement](/blog/assess-for-success-marketing-analytics-and-measurement/)
+- [Course 6: Make the Sale: Build, Launch, and Manage E-commerce Stores](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/)
+- [Course 7: Satisfaction Guaranteed: Develop Customer Loyalty Online](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/)

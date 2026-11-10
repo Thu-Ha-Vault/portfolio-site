@@ -19,16 +19,16 @@
       "title": "AI và DEV"
     },
     {
+      "topic": "business",
+      "notes": 13,
+      "url": "/topics/business/",
+      "title": "Business (Kinh doanh)"
+    },
+    {
       "topic": "university-courses",
       "notes": 9,
       "url": "/topics/university-courses/",
       "title": "Học phần đại cương (General Education Courses)"
-    },
-    {
-      "topic": "business",
-      "notes": 6,
-      "url": "/topics/business/",
-      "title": "Business (Kinh doanh)"
     },
     {
       "topic": "english",
@@ -47,6 +47,11 @@
       "a": "ai-development",
       "b": "university-courses",
       "weight": 2
+    },
+    {
+      "a": "biology",
+      "b": "business",
+      "weight": 46
     },
     {
       "a": "biology",

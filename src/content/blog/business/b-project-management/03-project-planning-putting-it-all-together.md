@@ -87,6 +87,7 @@ isIndex: false
 	7. **Questions** (~15 min): gain clarity; benefit from diversity of thoughts
 - Rowena's tips: let teammates add questions/feedback in a shared document; poll **confidence** on a 1–5 scale (1 = not confident at all, 5 = extremely confident) and ask how to help → deliver on any promises you make
 - Logistics: put the agenda into a meeting agenda template, send it **a day or two ahead**; ask a teammate to **take notes** and record action items; recording is helpful for large or dispersed teams (get permission first); send a **follow-up email** with key points, outcomes, action items, invitation for questions
+- Xem thêm: [Course 4: project meetings](/blog/project-execution-running-the-project/) – other common meeting types
 #### Tips for leading a successful kick-off meeting
 - Kick-off meeting: first meeting among the project team, stakeholders, and sponsor at the start of a new project or **new project phase** → shared vision, goals and scope, roles and responsibilities
 - Best practices:
@@ -101,7 +102,7 @@ isIndex: false
 - Tips for leading a successful kick-off meeting: https://www.coursera.org/learn/project-planning-google/supplement/Xl6FA
 ### Defining tasks and milestones
 #### Understanding tasks and milestones
-- **Project milestone**: an important point within the project schedule that indicates progress and usually signifies the completion of a deliverable or phase → significant checkpoints to keep the project on schedule
+- **Project milestone**: an important point within the project schedule that indicates progress and usually signifies the completion of a deliverable or phase → significant checkpoints to keep the project on schedule (→ [Capstone: tasks and milestones](/blog/capstone-applying-project-management-in-the-real-world/))
 	- E.g. completing the first draft of a report (goal: publish the report); receiving sign-off from the customer on a major deliverable
 - **Project task**: an activity that needs to be accomplished within a set period of time → multiple tasks are needed to reach a milestone
 	- E.g. milestone "first draft of a report" ← tasks: hire a writer, conduct research, draft sections
@@ -109,6 +110,7 @@ isIndex: false
 	- Milestones: secure approval on the website design, implement feedback from user testing
 	- Tasks for the design milestone: designer creates initial mockups → you review → designer implements feedback
 - Tasks **ladder up** to milestones, which are crucial for project tracking
+- Xem thêm: [Course 4: tracking milestones](/blog/project-execution-running-the-project/) – tracking progress toward milestones
 #### The importance of setting milestones
 - Why break the project down instead of a quick to-do list:
 	- **Clear understanding of the amount of work**: milestones → manageable chunks → tasks (launching a website may be more work than you think)
@@ -120,7 +122,7 @@ isIndex: false
 	- Missing a milestone → schedule setback, overtime or additional resources; e.g. design not ready for Friday approval → development starts later; may also delay or lose a **client payment** tied to the deliverable
 	- Be extra mindful of milestones with **non-negotiable** deadlines
 #### How to set milestones
-- Step 1: **evaluate the project as a whole** → refer back to the **project charter** for the goal → list what the team needs to do
+- Step 1: **evaluate the project as a whole** → refer back to the **project charter** for the goal → list what the team needs to do (→ [Capstone: identifying milestones](/blog/capstone-applying-project-management-in-the-real-world/))
 	- Big items that indicate progress (completion of a deliverable or phase) = **milestones**; smaller items (e.g. anything a stakeholder wouldn't need to review) = **tasks**
 	- Office Green website: milestones = design approval, website development complete, user feedback implemented; tasks = mocking up initial designs, building a landing page
 	- No right number of milestones: some projects have many, others two or three
@@ -202,7 +204,7 @@ isIndex: false
 ### Using estimation to set project timelines
 #### Making realistic time estimates
 - The project manager identifies and helps assign tasks, then estimates how long they'll take (with the team) → estimates form the overall **project schedule**
-- **Time estimation**: a prediction of the total amount of time required to complete a task (overall duration, including **inactive time**)
+- **Time estimation**: a prediction of the total amount of time required to complete a task (overall duration, including **inactive time**) (→ [Capstone: time estimation](/blog/capstone-applying-project-management-in-the-real-world/))
 - **Effort estimation**: a prediction of the amount and difficulty of active work required to complete a task
 	- E.g. painting a wall: effort = **30 minutes**, time = **24 hours** (23.5 hours of drying) → during idle time the teammate can do other tasks (paint the mailbox, window trim)
 - Unrealistic effort estimates (usually **underestimating**) hurt the schedule; the culprit is often **optimism** → overlooking risks and setbacks
@@ -313,6 +315,7 @@ isIndex: false
 	- Extra tabs to house or link other documents (RACI chart, project charter, risk management plan, communication plan) → one place saves time, keeps everyone organized, no searching through emails; alternatively a digital document linking all documents
 - Alternatives: a digital document with tables or task lists, owners, due dates, links (for simple projects); **Kanban boards** (cards to track and visualize task progress)
 - Whatever the tool: include the project's **goals**, **tasks**, **owners**, **start and end dates**, and relevant **planning documentation**
+- Xem thêm: [Course 4: tracking methods](/blog/project-execution-running-the-project/) – Gantt charts and other tracking methods
 #### Project plan best practices
 - Five best practices for a plan that stays useful through execution and closing:
 	1. **Carefully review deliverables, milestones, and tasks**: the charter (goal, scope, deliverables) becomes more **granular** in planning → e.g. new website deliverable → milestones (kick-off with the web developer, stakeholder approval) → tasks (mock up the design, develop a landing page), each with an owner and start/end date; do this for **every** deliverable
@@ -335,6 +338,7 @@ isIndex: false
 - Work management tools (preferences vary by company, PM, customer): **Smartsheet**, **Asana**, **Jira**, **Trello** → collaboration and communication at the task level
 - Key takeaway: the tool should help collect and track project details, manage the schedule, and visualize progress
 - Creating a project plan: Tools and templates: https://www.coursera.org/learn/project-planning-google/supplement/3giHb
+- Xem thêm: [Course 5: Product Backlog in Asana](/blog/agile-project-management/) – work management tools for backlogs
 #### Introduction to Kanban boards
 - **Kanban board**: a visual tool to manage tasks and workflows (whiteboards, magnetic boards, poster boards, software); tasks written on **cards** placed in **columns** representing progress
 	- Most suitable for teams using an **Agile** approach (iterative, continuous releases, customer feedback with every iteration)
@@ -346,6 +350,7 @@ isIndex: false
 	- Back: **start date** (metrics, tracking, checking estimates); **blocked days** (days the task is halted, e.g. waiting on a deliverable); **finish date**
 - Software: **Asana**, **Trello** (evaluate which is best for you)
 - Introduction to Kanban boards: https://www.coursera.org/learn/project-planning-google/supplement/LyKYD
+- Xem thêm: [Course 5: Kanban and Scrum boards](/blog/agile-project-management/) – Kanban as an Agile framework
 ### Review: Building a project plan
 #### Wrap-up
 - Recap: why to create and manage a project plan, the project schedule at its center, realistic time and effort estimates, soft skills for gathering estimates, Gantt charts, best practices for a plan useful through planning and execution
@@ -367,16 +372,430 @@ isIndex: false
 - Don't go **over budget** (extra cost) or **under budget** (may affect next year's budget)
 	- Publicly traded companies (Google) and public sector organizations report financial performance to shareholders or auditors → show the requested money was used to secure budget for future projects
 	- Smaller businesses: tighter budgets → be especially careful not to overspend
+#### Key components of a project budget
+- A budget isn't just "we have $5,000"; you can't decide to spend **$200** if the market rate for a project of that caliber is **$2,000**
+- Project managers must account for:
+	- **Understanding stakeholder needs**: e.g. the project sponsor (Director of Product) needs the project to come in at a certain cost to make a profit
+	- **Budgeting for surprise expenses**: e.g. planters arrive broken (cracked in delivery, not the vendor's fault) → order additional planters
+	- **Maintaining adaptability**
+	- **Reviewing and reforecasting**: **reforecast** = create a separate revised budget based on how the project is tracking (recalibrate); e.g. overestimated plant costs, underestimated marketing costs → **reallocate** funds
+- Factors when creating a budget:
+	- **Resource cost rates**: the cost of each resource (labor, tools, equipment, materials, software)
+	- **Reserve analysis**: a method to check for remaining project resources → review all potential risks and decide if you need **buffer funds**
+	- **Contingency budget**: money included to cover potentially unforeseen events not accounted for in a cost estimate → compensates for uncertainty in cost and time estimates and unpredictable risk exposure
+	- **Cost of quality**: all costs incurred to prevent issues with products, processes, or tasks → **prevention costs**, **appraisal costs**, **internal failure costs**, **external failure costs**
+- Start with an initial estimate; it's okay if the budget changes (review and reforecast)
+#### Project budgeting 101
+- Budgets are created in the **initiation and planning phases** and reviewed and controlled through the life cycle → tool for communicating with stakeholders, progress tracker, cost control, **baseline** for the financial portion of the project (→ [Capstone: project budget](/blog/capstone-applying-project-management-in-the-real-world/))
+- Best practices:
+	- **Reference historical data**: review budgets of similar past projects, what went well and mistakes
+	- **Utilize your team, mentors, or manager** to double-check your work
+	- **Time-phase your budget**: allocate costs for tasks over the timeline when expenses are planned → compare **planned vs. actual costs** over time
+	- **Check, check, and double check**: accurate, error-free, easy to understand (approval from finance or senior management)
+- Categorize types of costs:
+	- **Direct costs**: items necessary to complete the project → wages and salaries of employees and contractors, materials, equipment rental, software licenses, project-related travel and transportation, staff training
+	- **Indirect costs** (**overhead costs**): not directly leading to completion but essential for the team to work → administrative costs, utilities, insurance, general office equipment, security
+- **Baseline budget**: an estimate of project costs you start with at the beginning → once approved, publish it and compare against actual performance
+	- Budget updates may need the same approvals as the initial budget
+	- **Re-baselining**: updating or modifying a project's baseline as a result of any approved change to the schedule, cost, or deliverable content (e.g. a significant scope change)
+- **Reserve analysis** → buffer funds (**contingency budget**); **cost of quality** = all costs to deliver a quality product or service, incl. internal and external failure costs (e.g. redesign due to defects → refunds, time and money for a new product)
+- Project budgeting 101: https://www.coursera.org/learn/project-planning-google/supplement/V2Sph
 ### Managing a project budget
+#### Creating a project budget
+- Budgets control costs and keep objectives within a framework that makes **financial sense** for the company
+- Techniques to avoid over- or underestimating:
+	- **Historical data**: review similar past projects (what past PMs did right and wrong); grows with experience
+	- **Leveraging experts**: gather insights of colleagues who worked on similar projects (don't share confidential information with people outside the company)
+	- **Bottom-up approach**: think through all parts of the project from beginning to end, list every material, resource, contract worker, or anything with a cost, and add it up; ask vendors for **quotes**
+	- **Confirm accuracy**: double-check everything
+	- **Set the baseline**: the dollar amount you measure against to know if you're on track and measure success → revisit and adjust in real time (frequency depends on project and company size)
+- Project Plant Pals budget (bottom-up): break the project into tasks → estimate each cost → add together → add **contingency** and **tax** → seek approval from key stakeholders
+	- Labor: designers and developers for the website and app; negotiate employee allocations, contractor rates, shop around for vendors and delivery services
+	- **Material costs**: equipment (e.g. modifications for an employee with a disability, hardware for remote workers), computers, software, storage space
+	- **Miscellaneous**: additional minor items not in other areas, not a major budget line
+	- **Fixed costs**: don't change over the project (e.g. about **$50** to post the web developer job on a job board = fixed, one-time cost)
+	- Travel expenses and meals
+	- **Buffers and reserves**: **5%** of the overall budget (standard practice; raise or lower depending on what you know) → client should be aware of it; if spending becomes excessive, problem-solve with the client and adjust scope
+	- A **planned cost vs. actual cost** column to track costs
+- Every project has an **estimated cost** and a **final cost** → goal: estimated as close to final as possible; recalibrate with the **estimated cost to complete**; compare with final costs of previous projects
+#### Helpful budget templates
+- Budgets can be built in a simple spreadsheet or complex software (choice needs input from your organization and customer)
+- Spreadsheet templates: Microsoft Excel Budget Templates, Microsoft Excel Website Budget Template (applicable to any project), Google Sheets Budget Template (sign in to make a copy)
+- Spreadsheet skills for budgeting: **SUM** and **AVERAGE** formulas, tables, filters (see course resources on spreadsheets)
+- Helpful budget templates: https://www.coursera.org/learn/project-planning-google/supplement/DeR5v
+#### Maintaining a project budget
+- **Monitoring the budget** enforces **accountability** for spending → shows whether plans are implemented financially and operationally
+- **Milestones** are checkpoints to re-review the budget and for **payment**:
+	- **Fixed contracts**: usually paid when certain milestones are reached
+	- **Time and materials contracts**: usually paid monthly based on hours worked and other fees (travel, meals)
+- **Cost control**: identifying factors that might impact the budget and creating effective actions to minimize **variances** → **proactive** budget management (reacting means a problem already exists)
+	- Establish a **sign-off plan**: which stakeholders/sponsor approve contractor or vendor time sheets and invoices; inform stakeholders of changes
+	- Don't approve new costs not agreed upon or out of scope; don't spend without pre-approval from the stakeholder or sponsor; have a good **business case** first
+	- Manage changes: update forecasts and estimates, track everything; revisit numbers regularly (no surprises, no repeated asks for more money)
+	- Accept that **budget misses** happen → agree with sponsors and key stakeholders beforehand on an **acceptable limit** for cost overruns (1%? 10%?)
+- Over budget → less funds for other areas of the business
+- **Under budget** isn't a dream: indicates poor initial estimating, money that could have bought extra resources or better quality, and future budgets may be **slashed**
+- Xem thêm: [Course 4: Belinda on budgets](/blog/project-execution-running-the-project/) – tracking and managing a budget during execution
+#### Overcoming budgeting challenges
+- **Challenge 1: Budget pre-allocation**: the budget is set before the project starts (strict budgeting cycles → estimates before scope is fully defined)
+	- Work with the customer to set expectations on scope and deliverables within the budget; detailed planning
+	- Monitor routinely; track all expenses and match them against the budget; track **fixed** (paid at milestones) and **time-and-materials** (paid monthly: hours, travel, meals) expenses
+- **Challenge 2: Inaccurately calculating TCO**: **total cost of ownership (TCO)** = expenses associated with a product or service over its **lifetime**, not just upfront costs
+	- E.g. a vehicle: price + license fees + registration fees + maintenance → may choose a vehicle with fewer maintenance needs
+	- Projects: budget for maintenance of a software service, warranties, supplies, required add-ons, upgrades
+- **Challenge 3: Scope creep**: changes, growth, and other factors that affect the project's scope after it begins → unplanned work and budget impact
+	- Causes: a vague **Statement of Work (SoW)**, undocumented conversations and agreements, unattainable timeframes, last-minute asks from priority stakeholders
+- Overcoming budgeting challenges: https://www.coursera.org/learn/project-planning-google/supplement/sAxAq
+#### Introduction to budgeting terms
+- **Cash flow**: the inflow and outflow of cash on the project → funding keeps the project running (compensate resources, pay invoices); if all cash comes at the start, monitor outflow; inflow lower than outflow → adjust the budget
+- **CAPEX (capital expenses)**: major, long-term, upfront expenses for assets the company will own and keep (buildings, equipment, vehicles) → expected future benefit
+- **OPEX (operating expenses)**: short-term, often recurring expenses for day-to-day running (wages, rent, utilities)
+	- E.g. IT project: major software acquisition = CAPEX; monthly wages of a contractor deploying it = OPEX → ask finance/accounting how they distinguish them
+- **Contingency reserves**: funds added to the estimated project cost to cover **identified risks** (also called **buffers**) → determined through the **risk management** process; also cover actual costs higher than estimates (e.g. a contractor gets a raise)
+- **Management reserves**: cover **unidentified risks** (e.g. a meteor hits your machinery on a construction project)
+	- Contingency reserves = an estimated amount; management reserves = a **percentage** of total cost, typically **5–10%** (higher for complex scope); using them usually needs **sponsor approval**
+- Introduction to budgeting terms: https://www.coursera.org/learn/project-planning-google/supplement/69UuL
 ### Introduction to procurement
+#### Understanding procurement
+- Analogy: taking up painting → research what supplies you need (oil, watercolor, acrylic; canvas, wood, paper) before you **procure** them
+- **Procurement**: obtaining all of the materials, services, and supplies required to complete the project
+- **Vendors**: individuals or businesses who provide essential goods and services
+- **Vendor management**: procurement for individuals or businesses → researching and sourcing vendors for a specific service or talent and managing that relationship
+	- Used when vendors provide **specialized skills** not available in your company
+	- Includes: sourcing vendors, getting **quotes**, deciding which best fulfill your needs, negotiating contracts, setting deadlines, evaluating performance, ensuring payments; knowing regulations (e.g. **Americans with Disabilities Act** in the US, or similar elsewhere)
+	- Not every project needs vendors
+- Plant Pals: Office Green has no copywriting department → a **contracted copywriter** drafts website copy for a slated amount of time
+#### The procurement process
+- Five steps:
+	1. **Initiating**: define what help you need outside current resources; make a case for extra resources
+	2. **Selecting**: decide what supplies you need and which vendors to use
+	3. **Contract writing**: contracts developed, reviewed, signed
+	4. **Control**: make payments, set up logistics and requirements to maintain quality, ensure the service agreement is met
+	5. **Completing**: measure the success of the procurement
+- **Agile procurement**: more **collaborative** with the project team and supplier, emphasis on the relationship; whole team helps identify what to procure; a **living contract** adapted based on evaluation (not fixed deliverables); recurring reviews and feedback → suppliers must agree to flexibility; contract may be renegotiated at multiple points
+- **Traditional procurement**: standard contracts with clear terms and deliverables; PM may handle procurement end to end; lengthy documentation with fixed requirements → clearer workstreams and deadlines, protection from unforeseen changes; renegotiation is harder (may have to start over) → be detailed and spend more time negotiating
+#### Tips for the procurement process
+- **Initiating**: decide which items are procured internally vs. **outsourced**; compare outsourced items' specifications, components, quality measurements, standards with your requirements → drop unnecessary features to reduce cost
+- **Selecting**: research vendors' reputation for quality, on-time work; interview preferred vendors; **site visits** if possible
+- **Contract writing**: attention to detail on **inclusions and exclusions** (e.g. storage, equipment, labor you could provide in-house cheaper); check vendor-written contracts for clarity and accuracy; consult **legal and compliance** to ensure the contract is ethical and legal
+- **Controlling**: periodically review vendor performance and quality; be professional but firm on requirements, milestones, cost; good vendor relationships ease adjustments and revisions; regular **check-in meetings**
+- **Completing**: measure success → quality of materials? issues with labor contracts? vendor relationships? → document **lessons learned**
+- Procurement is ongoing and can repeat during the life cycle (evaluate current vendors or select new ones, write new contracts)
+- Tips for the procurement process: https://www.coursera.org/learn/project-planning-google/supplement/MWar4
+#### Common procurement documentation
+- Key documents by procurement phase: **NDA** (initiating), **RFP** (selecting), **SOW** (contracting)
+- **Nondisclosure agreement (NDA)**: keeps confidential information within the organization (proprietary technology, sensitive product launches → no leaks to competitors or the public); best practice to have external contract workers sign one
+	- Plant Pals: vendors may sign an NDA because the project is new to market and not yet public
+- **Request for proposal (RFP)**: a document that outlines the details and requirements of an organization's project to be passed on to vendors → solicit **bids** to select the best vendor; used across departments and industries
+	- Typically includes: project overview, desired outcomes and goals, budget, deadlines, milestones, contact information
+	- Headers to add:
+		- **Overview**: purpose, problems it solves, new doors it opens
+		- **Goals**: measurable results
+		- **Scope of work**: project specifics, how goals will be achieved
+		- **Milestones**: key milestones
+		- **Submission requirements** (e.g. "submit as a presentation and include three prototypes") and questions for vendors (issues they see up front, cost breakdown)
+	- Vendors review it and send a **proposal** if they can fulfill the needs; Plant Pals: send RFPs to all possible plant providers → best price, quality, value
+	- Used as a verb: "Has this been RFP'd yet?"
+- NDA and RFP are **fixed** (little customization, unchanged once submitted); the **Statement of Work (SOW)** is sent after the vendor is selected and **evolves** as the project goes on
+- Xem thêm: [Course 4: closing with clients](/blog/project-execution-running-the-project/) – closing contracts and SOW at project end
+#### Creating a Statement of Work
+- **Statement of Work (SoW)**: a document that clearly lays out the products and services a vendor or contractor will provide for the organization, plus the contractor's needs and requirements to perform the agreed services → sent after the RFP and vendor selection
+	- Include the customer's, the organization's, and the vendor's needs → everyone knows what is expected
+	- The PM develops it, with input from **subject matter experts (SMEs)**; legal advisors review it or craft it alongside
+- Project Plant Pals SoW sections:
+	- **Page headers**: company name, project, creation date; key stakeholders (PM, sponsor = Director of Product)
+	- **Revisions table**: changes from several rounds of stakeholder review
+	- **Purpose**: desired outcomes, target audience (inclusive); e.g. launch a new service providing desk plants to offices and commercial businesses
+	- **Scope**: small, low-maintenance desk plants ordered online or from a print catalog, shipped to customers' work addresses; plants in scope: **6-inch leafy ferns**, **small cacti**, **5-inch bonsai trees**; vendor activities: store plants in a warehouse, maintain plant health (water, light), source vases in near-perfect condition
+	- **Out of scope**: e.g. annual reporting, custom plant orders not in scope → clear lines, right expectations
+	- **Deliverables**: e.g. vendor provides plant maintenance guides, develops a support page on Office Green's website
+	- **Milestones**: fulfill the first quarter of plant orders, deliver to all top customers, launch customer satisfaction surveys, collect and report insights from feedback
+	- **Hours** needed and the **date** services must be performed by
+	- **Terms and conditions** and disclaimers (e.g. revisions may take place as the project goes on → don't over-promise and under-deliver)
+	- **Payment terms**: when suppliers are paid → on-time payment builds strong relationships; good practice: pay **upon delivery** of goods and services, not before, unless agreed otherwise (e.g. plant provider paid at each milestone)
 ### Navigating procurement challenges
+#### Obtaining procurement support
+- Procurement continues after contracts are signed → **performance trackers** and **quarterly business reviews** to ensure both parties honor the agreement
+- **Legal team** help for unfamiliar terminology: large companies have one, some outsource it, startups/small companies consult legal advisors as needed
+- Laws on manufacturing and consumerism vary by country but nearly always cover **fair and ethical trade**
+- **Ethics and compliance** departments ensure operations follow the company's mission/value statement and government policies, prevent discrimination, ensure **corporate social responsibility**; the PM ensures stakeholders representing the business follow these policies, reminds the team of legal/compliance meetings, loops in stakeholders for necessary approvals
+- Plant Pals example: contract specified **non-toxic plants only** for pet-friendly offices, but the supplier provided a plant harmful to animals → Office Green could be liable → always have contracts reviewed in some capacity
+#### Ethics in the procurement process
+- Careless vendor choices → significant consequences (companies in scandals probably didn't research enough during procurement) → the PM ensures **safety, economic, and environmental** ethical risks are mitigated; monitor and evaluate throughout
+- Safeguards:
+	- Know your business's **legal requirements**
+	- Follow your profession's **code of ethics**: **PMI Code of Ethics** (for members and credential holders) → values: **honesty**, **responsibility**, **respect**, **fairness**; if unsure, use judgment, research, ask an SME (e.g. legal team)
+- Unethical issues and risks:
+	- **Bribery** or **corruption**; regulations in other countries may differ → laborers treated fairly, good working conditions, adequate compensation
+	- **Sole-supplier sourcing** / **non-competitive procurement** (restricting bidding to one supplier, e.g. to protect trade secrets) → must justify why
+	- **Interaction with state-owned entities**: government agencies may have tighter sourcing restrictions
+- Monitoring ethics through the project:
+	- **Initiating**: is the project ethical (company's Code of Ethics, environmental ethics from government agencies, ethically sourced labor)? Review regulations, assess risks, build a diverse, trusted team
+	- **Before contracts**: are suppliers ethical, procured ethically, paid a fair rate? Understand the **supply chain**
+	- **After signing**: assurance duties → auditing tasks and costs, quality control, approving invoices
+	- **During production**: day-to-day vendor relationships (deliverables, roadblocks)
+- Trust yourself: if something feels wrong, it probably is; ask legal or key stakeholders for a second opinion
+#### Avoiding ethical traps in procurement
+- **Ethical trap**: an ethical dilemma that causes us to make a decision without regard for our ethical principles; overlooking issues as "the cost of doing business" puts the project, company, and career at risk
+- Common ethical traps:
+	- **Corruption and bribery**: vendor tries to reduce competition; bribes (money, gifts, event tickets); **kickback** = a percentage of an awarded contract offered to an official who can ensure the win
+	- **Sole-supplier sourcing**: other similarly qualified vendors aren't allowed to bid (vendor contacts buyers before a bid is requested) → lose benefits of competition (reasonable pricing, quality standards, speedy delivery)
+	- **Interactions with state-owned entities**: agencies like the **Food and Drug Administration** and the **Occupational Safety and Health Administration** enforce stricter standards → unfamiliarity can cause unintentional traps
+- Avoiding ethical traps:
+	- **Understand the legal requirements** for your procurements (each country's regulations; lean on the legal team)
+	- **Stick to your ethical codes** (honesty, responsibility, respect, fairness; PMI code of ethics)
+	- **Test your ethics**:
+		- **Shame**: Would you be ashamed if someone knew what you did?
+		- **Community**: Would you want your friends to know the decision?
+		- **Legal**: Would you face legal action?
+		- **Situation**: Would your actions be justified in this situation?
+		- **Consequence**: Would a negative outcome be worth your actions?
+- Avoiding ethical traps in procurement: https://www.coursera.org/learn/project-planning-google/supplement/EwnXM
 ### Review: Managing budgeting and procurement
+#### Wrap-up
+- Recap: the project budget as a success metric (neither over nor under budget), cost control (stakeholders, sign-off, managing changes), procurement and vendor management (initiating, selecting, contract writing, control, completing), Agile (relationship-based, open negotiation, frequent vendor communication) vs. traditional procurement, NDAs, RFPs, SoWs, ethics in procurement
 ## Module 4: Managing risks effectively
 ### Understanding risk management
+#### Introduction: Managing risks effectively
+- Coming up: **risk management** and why it helps prevent project failure; anticipate and **mitigate** potential problems; identify risk types and measure their impact; communicate and resolve risks with a **mitigation plan**
+#### The importance of risk management
+- No project goes 100% according to plan (e.g. an employee catches a cold → rearrange the schedule; forgot ice for a family celebration) → flexibility + plan for risks
+- **Risk**: a potential event which can occur and can impact your project (hypothetical, "what-ifs") (→ [Capstone: risks](/blog/capstone-applying-project-management-in-the-real-world/))
+- **Issue**: a known or real problem that can affect the ability to complete a task → if a risk actually happens, it becomes an issue
+- **Risk management**: the process of identifying and evaluating potential risks and issues that could impact a project → done **regularly**, not once; shows what could go wrong, who to consult, how to mitigate
+- Consequences of no risk management:
+	- Missing the project goal, timelines, or success criteria (e.g. research analyst quits halfway through a research report)
+	- Not thinking through how the project could **pivot** and still meet its goals (e.g. a **backup supplier** for a large product shipment)
+	- Hard-to-foresee impacts (supplier lacks stock, budget cut unexpectedly) → risk management reduces the impact of unexpected events
+- Plant Pals risks: the web page not live in time for launch; **fulfillment shortage** (supplier runs low on cacti and ferns)
+- Unplanned issues will still come up → keep calm, find the **root cause**, come up with a solution; being prepared means less stress, more confidence
+#### Stanton: Managing my first project
+- Stanton: program manager at YouTube; first project = a sports highlight app (iOS, Android, website) → tried to get every detail right (perfect launch date, zero bugs)
+- Lesson: you probably won't get your first project plan correct → many things change (last-minute bug, client wants the screen blue instead of red, which isn't easy)
+- "Don't worry so much—changes happen" → how you **react and respond** matters more; stay **cool, calm, and collected**, understand everything going on, think **proactively** about what issues might arise
+#### Phases of risk management
+- Risk management is ongoing throughout the life cycle; five steps:
+	1. **Identify the risk**: identify and define potential risks with your team
+	2. **Analyze the risk**: determine **likelihood** and potential **impact** (serious, high-probability risks pose the greatest threat)
+	3. **Evaluate the risk**: use the analysis to decide which risks to **prioritize**
+	4. **Treat the risk**: plan how to treat and manage each risk (may ignore minor risks; serious risks need detailed **mitigation plans**)
+	5. **Monitor and control the risk**: assign team members to monitor, track, and mitigate risks
+- Phases of risk management: https://www.coursera.org/learn/project-planning-google/supplement/ghE9k
+#### Uncover opportunities using risk management
+- **Opportunity**: a potential positive outcome of a risk → capitalize on it to reach goals faster, more cheaply, or with less effort
+	- E.g. completing a milestone ahead of schedule, discounted materials, availability of additional resources (people, investments, equipment)
+- Use the same risk management techniques (identify, analyze, evaluate, treat, control) to add opportunities to the **risk management plan**; brainstorming, project history, prior experience
+- Further reading: *The Risk Management Process in Project Management*
+- Uncover opportunities using risk management: https://www.coursera.org/learn/project-planning-google/supplement/IHvJz
 ### Identifying and assessing risks
+#### Tools to help identify risks
+- **Brainstorming**: groups spontaneously share ideas without judgment → use the **RACI chart** to decide who to invite; a **diverse** team (roles, backgrounds, experiences) spots more risks (experienced members + fresh perspectives)
+- **Cause-and-effect diagram** (**fishbone diagram**): shows the possible causes of an event or risk → start from the risk (the **effect**, e.g. a supplier missing its deadlines) and work backwards to causes (poor delegation, lack of tracking tools); categorize into further causes (e.g. exceeding budget, **scope creep** impacting the timeline)
+- **Risk register**: a table or chart that contains your list of risks (list brainstorm outcomes here)
+- **Risk assessment**: the stage of risk management where qualities of a risk (likelihood, potential impact) are estimated or measured
+- **Probability and impact matrix**: a tool to prioritize project risks (Rowena uses it all the time at Google)
+	- **Impact**: the damage a risk could cause if it occurs → high (substantially alters the project) / medium / low (slight, unlikely to derail)
+	- **Probability**: the likelihood that a risk will occur → high / medium / low
+	- **Inherent risk**: the measure of a risk calculated by its probability and impact → high / medium / low (low impact + low probability = low; high + high = high)
+	- Focus on **medium to high** risks → detailed mitigation plans
+	- Accessibility: use both **color** and distinct **shapes or text** for risk levels
+- **Risk appetite**: the willingness of an organization to accept the possible outcomes of a risk (may differ between you, the team, stakeholders); low-level risks with minor setbacks are more tolerable
+- After assessment, update the risk register with high/medium/low ratings
+#### How to create a fishbone diagram
+- **Fishbone diagrams** (**Ishikawa diagrams**, cause-and-effect diagrams): developed by Japanese organizational theorist **Kaoru Ishikawa** in the **1960s** for quality control in the shipbuilding industry; shaped like a fish skeleton
+- Brainstorm potential causes of a problem or risk and sort them into categories → areas to focus on; find the **root cause** = the initial cause of a situation that introduces a problem or risk
+- Case: **Miguel**, PM at **Office Supply Inc.**, summer promotion with free delivery; past trouble delivering to downtown office buildings on time
+	1. **Define the problem**: "trouble delivering products to downtown office buildings on time" → the head of the fish
+	2. **Identify the categories** (common: people, technology, materials, transportation, money, time, environment, procedures) → Miguel uses people, technology, materials, transportation, environment
+	3. **Brainstorm the causes** with the team:
+		- People: lack of training, distractions, lack of people
+		- Technology: overcomplicated, outdated
+		- Materials: fragile packaging, lack of forklifts
+		- Transportation: trucks too small, trucks too big, lack of trucks
+		- Environment: city traffic, busy elevators, long distances
+		- Pro tip: judgment-free zone; for human factors, focus on **behaviors**, not individuals
+	4. **Analyze the causes**: one cause isn't necessarily the root cause
+		- More forklifts wouldn't significantly reduce warehouse-to-downtown time → a cause, not the root cause
+		- No set delivery schedule + the problem only exists in the city (traffic) → schedule deliveries **before rush hour**
+- Pro tip: in risk planning, fishbone diagrams find possible causes of a problem that may or may not occur; in execution, the root cause of an issue that already occurred
+- How to create a fishbone diagram: https://www.coursera.org/learn/project-planning-google/supplement/qxac5
+#### Types of risk
+- Main types:
+	- **Time risks**: the possibility that project tasks will take longer than anticipated → time is money; delays deplete the budget and upset stakeholders
+	- **Budget risks**: the possibility that the cost of a project will increase due to poor planning or expanding scope → overspending may mean you can't pay suppliers → reputational damage
+	- **Scope risks**: the possibility that a project won't produce the results outlined in the project goals → deliverables unacceptable to stakeholders or customers
+- **External risks**: from factors outside the company with little to no control → **environmental** (a major storm), **legal** (change in regulatory requirements); endless risk types, no single prescription
+- **Single point of failure**: a risk that has the potential to be catastrophic and halt work across a project (no one can progress until resolved)
+	- Office Green: a power outage takes down the internal database with all project information → mitigate by budgeting for a separate **cloud service backup**
+- **Dependency**: a relationship between two project tasks, where the start or completion of one depends on the start or completion of the other → links between tasks, often a huge source of risk
+	- E.g. no plant orders until a teammate signs a contract with a local supplier → if they miss the deadline and go on vacation for a week, the timeline slips → ask teammates for **out-of-office plans** at the start, have backup plans
+	- **Internal dependencies**: within the project, under your team's control (e.g. website design approval before development)
+	- **External dependencies**: outside your control (e.g. the plant vendor's farm had a lighter rain season → fewer plants)
+- No project is risk-free → careful, upfront planning
+- Xem thêm: [Course 4: why risks and changes occur](/blog/project-execution-running-the-project/) – risks that appear during execution
+#### Managing single point of failure risks
+- **Single point of failure**: a risk that, if it materialized, could cause significant disruption or even shut the project down → plan for these early
+	- E.g. only one **subject matter expert (SME)** (deep understanding of a job, process, function, technology, machine, ...) familiar with a critical system → one perspective, no backup
+- Case: Office Green uses seeds from a South American company for most offerings; the local government imposes a new **export tax** → seeds become too expensive to supply
+- Four mitigation strategies:
+	- **Avoid**: sidestep the situation entirely → use another seed widely available in several locations
+	- **Minimize**: reduce catastrophic effects (mitigation strategies are also called **workarounds**) → use both the original supplier and one from a neighboring country
+	- **Transfer**: shift responsibility to someone else → buy from a North American supplier that sources seeds from several South American countries (it owns the regulatory risks and costs)
+	- **Accept**: accept the risk as a normal cost of doing business
+		- **Active acceptance**: set aside extra funds to pay your way out of trouble (e.g. funds to source seeds from another supplier)
+		- **Passive acceptance**: "do nothing" (e.g. accept not receiving the seeds this season) → OK for small risks, not recommended for most single point of failure risks
+		- Be proactive: e.g. meet stakeholders to discuss the tax increase and its cost impact
+- Managing single point of failure risks: https://www.coursera.org/learn/project-planning-google/supplement/evShe
+#### Visualizing dependency relationships
+- Four common types of dependencies:
+	- **Finish to Start (FS)**: Task A must be completed before Task B can start (**most common**) → finish putting on socks → start putting on shoes
+	- **Finish to Finish (FF)**: Task A must finish before Task B can finish (not common) → finish making the icing → finish decorating the cake
+	- **Start to Start (SS)**: Task B can't begin until Task A begins (start together, run in parallel) → start paying for the train ride → start boarding the train
+	- **Start to Finish (SF)**: Task A must begin before Task B can be completed → coworker starts her shift → your friend finishes his shift
+- **Dependency graph**: visually represents the flow of work and helps identify associated risks; e.g. peanut butter and jelly sandwiches:
+	- A) Gather materials (bread, knife, jelly, peanut butter, plates, napkins) → after starting the project
+	- B) Put jelly on a piece of bread → after A
+	- C) Put peanut butter on a piece of bread → after A
+	- D) Put both pieces together → after B and C
+	- E) Serve to kids → after D
+- Visualizing dependency relationships: https://www.coursera.org/learn/project-planning-google/supplement/g20jO
+- Xem thêm: [Course 4: tracking dependencies](/blog/project-execution-running-the-project/) – identifying and tracking dependencies
 ### Mitigating and communicating risks
+#### Risk mitigation strategies
+- **Risk mitigation planning**: finding ways to eliminate or reduce the impact of potential risks
+- Four common ways (Office Green examples):
+	- **Avoid**: a contractor has a poor reputation for meeting deadlines → hire a different contractor
+	- **Accept**: for low probability and impact risks → monitor and be okay if it happens; e.g. a requested planter style is back-ordered, could delay deliveries by up to **2 days** vs. onboarding a new supplier (**2 weeks**) → accept
+	- **Reduce or control**: e.g. hire the contractor anyway because they do great work → **decision tree** (a flowchart that helps visualize the wider impact of a decision on the rest of your project) → options like daily email or meeting check-ins → daily check-in meetings
+	- **Transfer**: growing plants on site is too risky (bad weather, pests) → outsource plant production to local suppliers (can switch suppliers if quality issues)
+#### Building a risk management plan
+- **Risk management plan**: a living document that contains information regarding high-level risks and the mitigation plan for each → teammates and stakeholders understand potential problems and responses; update regularly (add new risks, remove irrelevant ones, change mitigation plans)
+- Example template (similar to one used at Google):
+	- Company name, project name, **document author** (who to contact), **document status** ("in progress" → "final"), date created and last updated (transparency on how current it is)
+	- **Document objective** (outline mitigation plans for Project Plant Pals)
+	- **Executive summary**: brief introduction to the project's normal conditions and an outline of potential risks
+	- **Risk register**: e.g. vendor falls behind on a deadline → **medium** inherent risk → mitigation: daily meetings with the vendor
+	- **Appendix**: probability and impact charts, probability and impact matrix
+- Share with team and stakeholders for input and alignment
+#### Communicating risks to stakeholders
+- Communicate risks to stakeholders (documentation, email, meetings, ...) → otherwise they're less equipped to help (more budget, more resources) and may be caught off guard → erodes **trust**
+- Communicate **early and often** about medium- and high-level risks → sets expectations for execution, shows you've planned mitigation, lets you suggest how they can help
+- Tailor communication to **severity**:
+	- **Low-level risks**: a simple email (e.g. list a few relevant risks in weekly planning updates and how you'll address them)
+	- **Medium-level risks**: a direct email with specifics and a detailed mitigation plan, link to the risk management plan; "urgent" in the subject line
+	- **High-level risks**: thorough, direct → an agenda item in the project plan meeting to present serious risks and mitigation plans; collect feedback and stakeholders' insights (they may have prior experience and strategies)
+- Rowena at Google: emails and presentations on project status share known risks and mitigation plans → stakeholders often uncover new risks (e.g. a stakeholder on another team flagged time and resource risks for their team → she asked her sponsors for more budget and resources)
 ### Review: Managing risks effectively
+#### Aji: Risk management at Google
+- Aji: Senior Program Manager at Google; program management = **bring order to chaos**; works on product launches and new processes across engineering, UX, People Ops
+- Risk management = looking ahead to anticipate issues (like the person on a ship watching for rocks); projects aren't done in a silo → **dependencies** on other teams → **de-risk**, manage and communicate risks to deliver on commitments
+- Steps: identify problems with the right people (comprehensive list) → figure out how to manage them **collaboratively** (everyone equally invested)
+- Example: reviewing **UX mocks** (visual ideal end state), Aji couldn't reconcile current state vs. planned changes → "if I'm having this issue, maybe others are too" → set up a meeting → within five minutes found two teams interpreting and executing differently → would have been too late at the end
+#### Wrap-up
+- Recap: risks vs. issues, risk management, brainstorming to identify risks, the probability and impact matrix, risk register, risk management plan, communicating risks to stakeholders
 ## Module 5: Organizing communication and documentation
 ### Creating an effective communication plan
+#### Introduction: Organizing communication and documentation
+- Last section: after schedule, budget, and risks → the importance of **project communication plans**, communication strategies, and how to create a communication plan for any project
+#### Why communication is critical
+- Communication is arguably the most important tool for a smooth project → success depends on everyone understanding what's happening and how their tasks contribute; the PM ensures everyone knows their roles and tasks and answers quick questions
+- Rowena's example: a design specialist skipped all project meetings in week 1 → was over capacity and couldn't meet short deadlines → breakdowns between the specialist and their manager, and between the specialist and the PM → followed up quickly, lost only **a week**, assigned another specialist
+- **Communication**: the flow of information → what is shared, how, and with whom
+	- Effective communication is **clear, honest, relevant, and frequent** (but not too frequent → **information overload**)
+	- Tools: meetings, emails, phone calls, written documents, formal presentations → accessible to everyone
+	- Not one-time or one-way: throughout the life cycle, from team, stakeholders, and you → clarify goals and client expectations, follow up on action items, communicate delays
+- The PM creates a consistent flow of communication and sets the tone for team communication
+#### Tips for effective communication
+- Four tips for effective team communication:
+	1. **Recognize and understand individual differences**: no assumptions about the audience's backgrounds, identities, experiences; be mindful of your own **biases**; appropriate, professional, neutral language; include and be curious about diverse points of view
+	2. **Brainstorm and craft the appropriate message**: who is the audience; why are you reaching out (conveying information, asking for input, clarifying an issue, resolving a problem); which channels they can use to contact you; detail vs. overview → state purpose, be clear and concise, stay on topic
+		- **Generative AI** prompt framework: **Task** (what to do, format, persona, audience), **Context** (narrows focus), **References** (examples of style, tone, format), **Evaluate** (check accuracy, bias, relevancy, consistency; AI output is a starting point, not a final product), **Iterate** (refine the prompt)
+	3. **Deliver your message**: choose the method (in person, video conference, phone, email, meeting), mind regions and time zones; avoid sensitive or private information; assume everyone at the company will receive it
+	4. **Obtain feedback and incorporate it**: check the message was clear, ask for feedback, encourage open communication, respond to questions quickly
+- Tips for effective communication: https://www.coursera.org/learn/project-planning-google/supplement/ATdf0
+#### Starting a communication plan
+- **Communication plan**: organizes and documents the process, types, and expectations of communication for the project → size and complexity vary, but always have one (especially with multiple stakeholders, phases, change management)
+- Questions it answers (Plant Pals sample plan):
+	- **What**: type of communication → status updates, issues, user feedback, daily check-ins, other project meetings
+	- **Who**: recipients → key stakeholders, core project team
+	- **When**: **frequency** and key dates (deadlines, major meetings) → not everyone needs the same amount at the same time: stakeholders less often (monthly high-level summary email, project review meeting), core team more detail (daily email updates, quick virtual check-ins)
+	- **How**: delivery method → email, in-person or virtual meetings, formal presentation
+	- **Why**: the goal → progress update, identify a risk, address barriers, next steps, detailed preparation plans, reflect on lessons learned (no purpose = wasted time)
+	- **Where**: where communication resources are stored + notes → easily accessible
+- Benefits: **continuity** (a new PM can quickly access past notes and current/upcoming communications); **change management** (the process of delivering your final project and getting it successfully implemented → others can fix problems, make decisions, reuse processes after you leave)
+#### Developing a communication plan
+- Benefits of planning communications up front: more effective communication, people engaged and motivated, stakeholders involved in effective conversations
+- Building the Plant Pals communication plan in a spreadsheet:
+	- **Type of communication** (use the **RACI chart** and **stakeholder map**):
+		- Busy senior executive stakeholders → a **newsletter** summarizing key milestones and progress
+		- Core team → **daily stand-up**: a daily meeting designed to bring everyone up to date on key information (each member briefly shares completed work and barriers; common in **Agile**)
+		- If daily meetings aren't possible (time zones, obligations) → daily email status updates, a **project tracker** for tasks and milestones (as the team that created this program did)
+	- **Recipients**: who needs details, who has high interest, who only needs major milestones → key stakeholders (monthly newsletter), core team (daily stand-ups), subgroups for marketing, procurement, product development (**weekly check-ins**)
+	- **Contact information and time zones** (hide the column, sensitive; or link privately)
+	- **Frequency**: senior stakeholders weekly or monthly with high-level updates (overall progress, recent wins, milestones, current metrics) → ask them which method works best; core team more day-to-day details (check in, offer help) → meeting more often unblocks issues
+	- **Key dates**: e.g. newsletter on the **first Monday of every month**, daily stand-ups at **noon**, weekly check-ins on **Wednesdays at 2, 3, and 4 o'clock** (recurring communications can say "every Monday")
+	- **Delivery methods**: email, in-person/virtual meetings, a regularly updated shared document, a presented progress report
+		- Adapt to teams and levels of authority (a director may have only **five minutes** → be concise; core team prefers instant message and video chat; a subgroup prefers emails and in-document comments)
+		- Long emails: add a note at the top, lead with key points and action items in **2–3 sentences**, longer details section at the bottom
+	- **Goal**: answer "so what?" for stakeholders; what helps the core team finish on time and stay motivated → newsletter = status update overview; stand-ups = progress updates, blockers, next steps
+	- **Sender/owner** column: communication is a team effort, based on expertise (e.g. PM sends the newsletter)
+- People absorb information differently (visual charts and graphs, presentations or meetings, reading first then discussing) → optimize with a brief email or survey:
+	- What is working in how we communicate with you?
+	- What is not working or not effective?
+	- Where can we improve?
+- Xem thêm: [Course 4: communicating in different ways](/blog/project-execution-running-the-project/) – applying the communication plan
+#### Best practices for building a communication plan
+- **Identify, identify, identify** before creating the plan:
+	- **Project stakeholders**: RACI chart or stakeholder map; audience; who to inform when
+	- **Communication frequency and method**: when, how often, preferred methods, level of detail
+	- **Goals**: need a response? encourage engagement or just update?
+	- **Barriers**: time zones, language, stakeholders needing time to reply (executives), privacy or internet access issues
+- **Document and develop** (choose a tool or template):
+	- Add a **notes** column (who to copy, backup plan if a stakeholder is out of office, reminders)
+	- Use **formatting** to highlight key details (launch announcement, urgent decision → different font color or size)
+	- Ensure the team can **access** the document (awareness, feedback, extra check)
+	- **Test your plan** (test email to yourself or a colleague; test visual, audio, technical aspects of virtual presentations)
+- **Check in**: routine check-ins on effectiveness → right information to the right stakeholders at the right time; key stakeholders may change; evaluate over- or under-sharing and missing stakeholders via anonymous survey forms, polls or open feedback sessions, one-on-one conversations
+- Best practices for building a communication plan: https://www.coursera.org/learn/project-planning-google/supplement/J5Zpk
 ### Documenting project planning resources
+#### The value of project documentation
+- Documentation is a form of communication others can reference and contribute to
+	- Rowena's example: teams from quality assurance, testing, design, partner engineering, program management → all plans and reports stored in **one centralized place**
+- Benefits:
+	- **Streamlined communication**: everyone knows where to find information; clear labels and folders → teams in different countries find and share research, less duplicate work
+	- **Visibility and accountability**: e.g. each task in the project plan has an owner and a due date; up-to-date plans prevent misinterpretation
+	- **Permissions**: people outside the core team may not need all meeting notes → give them a **status report** with final outcomes
+	- **Continuity**: if you get sick, transfer, or take leave, a new PM can pick up where you left off (guides, manuals, meeting notes, plans, processes centralized, labeled, with access for relevant roles)
+- **Knowledge management**: documenting plans and making them available so others can review the project for decisions or plan similar projects (e.g. a new architect halfway through a kitchen remodel checks old plans to see why the sink or plumbing was designed that way)
+- Share the right information with the right people at the right time:
+	- Daily updates to all VPs → unlikely to be read, waste of time, important info gets lost
+	- **Sensitive data** (financial data, user survey results) never to unauthorized viewers; e.g. a high-profile electric car launch → share only the final design, not the whole project folder (leaks, company policy, reputation) → **need-to-know basis**
+	- **Personally identifiable information (PII)**: anything that could reveal someone's identity (screen name, password, phone number, email address, first or last name) → e.g. raw Plant Pals user feedback surveys shared only with approved team members (others must request access); share results as a graph, chart, or summary report without PII
+#### Organizing project documentation
+- Planning resources so far: project plan, budget, RACI chart, risk management plan, communication plan → document and link them so anyone can access what they need quickly
+- Ways to organize:
+	- A **shared file drive** (e.g. **Google Drive**): a folder named after the project, with sub-folders
+	- A **centralized planning document** linking all files and resources → quick reference guide (select a resource name, link it)
+	- Group multiple spreadsheets as **tabs** in one sheet; include an **overview sheet** (called a **dashboard** in the Office Green example) with links to non-spreadsheet files, a brief project description, instructions, communication expectations
+#### Chris: Organizing artifacts for a job interview
+- Chris: diversity program manager at Google → diversity programming and strategy for a business unit (Black+, Latinx, Native Googlers); needs **buy-in** to get programs green-lit → organizes materials and tells a story
+- **Artifact**: anything you physically put together that describes or showcases your work (e.g. an **executive brief** or overview, a **roles and responsibilities** sheet)
+	- Useful for everyone you engage: stakeholders who sign off, teammates, volunteers or full-time help, outside vendors (where they fit and what they need to do)
+	- Showcase work at the end → baseline for more budget or taking the program to the next level
+- In a job interview, artifacts tangibly show detail, how far the project came, and **your contributions** → ability to run the whole process start to finish ("You're the quarterback, and the quarterback also holds the playbook")
 ### Course review: Project planning: Putting it all together
+#### Reflect and connect with your peers
+- Course completed: planning phase, milestones, budget, risks → a thorough project plan; connect with learners in the Google Project Management Community
+- Reflect and connect with your peers: https://www.coursera.org/learn/project-planning-google/supplement/NRJ5j
+#### Dan: The importance of project documentation
+- Dan: program manager at **Google Research** → keeps product teams (implementing research) and research teams (defining their research agenda) on the same page through communication and detailed documentation
+- **"Death by a thousand documents"** → keep **one master document** (master tracker) linking all sub-documents: program charter, budget, agreed scope, **approval matrices** (list of all approvals needed)
+- No one-size-fits-all: a risk management plan may be needed for one project but not another
+- Documents are **living and breathing**: constantly return, revise, continue; more detail up front → fewer iterations later
+#### Course 3 glossary
+- Course 3 glossary (Google Doc copy or DOCX download): https://www.coursera.org/learn/project-planning-google/supplement/sILOM
+#### Course wrap-up
+- Recap: planning phase components, milestones and tasks; project plans, time estimation, soft skills for estimates, plan tools; budgets and procurement; risk management; documentation and communication plans → next course with **Elita**: executing and closing a project (tracking progress, risk management, data-driven decisions, communication)
+#### Getting started on Course 4
+- Next: **Course 4: Project Execution: Running the Project** (→ [Course 4](/blog/project-execution-running-the-project/)) → tracking and measuring progress, continuous improvement and quality management, using data for decisions, team management and communication tools
+- Getting started on Course 4: https://www.coursera.org/learn/project-planning-google/supplement/lDwPG

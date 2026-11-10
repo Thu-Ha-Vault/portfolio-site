@@ -15,7 +15,7 @@ vaultPath: >-
   Science/04 - Process data from Dirty to Clean.md
 url: /blog/process-data-from-dirty-to-clean/
 topic: biology
-updated: '2026-10-14'
+updated: '2026-11-10'
 order: 4
 description: >-
   Data integrity: The accuracy, completeness, consistency, and trustworthiness
@@ -182,7 +182,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 - Statistical power: The probability of getting meaningful results from a test.
 
-- Hypothesis testing: A way to see if a survey or experiment has meaningful results
+- Hypothesis testing: A way to see if a survey or experiment has meaningful results (→ [Digital marketing Course 5: A/B tests](/blog/assess-for-success-marketing-analytics-and-measurement/))
 
 - If a test is statistically significant, it means the results of the test are real and not an error caused by random chance.
 
@@ -194,7 +194,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 #### Consider the margin or error
 
-- Margin of error: The maximum amount that the sample results are expected to differ from those of the actual population.
+- Margin of error: The maximum amount that the sample results are expected to differ from those of the actual population. (→ [Digital marketing Course 5: A/B test results in Google Ads](/blog/assess-for-success-marketing-analytics-and-measurement/))
 
 - Calculate margin of error: Margin of Error Calculator
 

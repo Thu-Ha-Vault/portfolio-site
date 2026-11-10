@@ -15,7 +15,7 @@ vaultPath: >-
   Science/01 - Foundations - Data, data, everywhere.md
 url: /blog/foundations-data-data-everywhere/
 topic: biology
-updated: '2026-10-14'
+updated: '2026-11-10'
 order: 1
 description: >-
   An [ecosystem] is a group of elements that interact with one another.
@@ -36,7 +36,7 @@ isIndex: false
 - Computer + Your Brain + Your Skills + Your Traits = Job Success
 ### Transform data into insights
 - An organization was experiencing a high turnover rate among new hires. Many employees left the company before the end of their first year on the job. The analysts used the data analysis process to answer the following question: How can the organization improve the retention rate for new employees
-- The six phases of data analysis: The [data analysis process] helps analysts break down business problems into a series of manageable tasks:
+- The six phases of data analysis: The [data analysis process] helps analysts break down business problems into a series of manageable tasks: (→ [Project management: six steps of data analysis](/blog/project-execution-running-the-project/))
 	- In the [ask] phase, you’ll work to understand the challenge to be solved or the question to be  answered. It will likely be assigned to you by stakeholders. As this is the ask phase, you’ll ask many questions to help you along the way.
 	- Next, in the [prepare] phase, you’ll find and collect the data you'll need to answer your questions. You’ll identify data sources, gather data, and verify that it is accurate and useful for answering your questions.
 	- The [process] phase is when you will clean and organize your data. Tasks you perform here include removing any inconsistencies; filling in missing values; and, in many cases, changing the data to a format that's easier to work with. Essentially, you’re ensuring the data is ready before you begin analysis.
@@ -153,7 +153,7 @@ isIndex: false
 - [Observation]: All of the attributes for something contained in a row of a data table
 
 ### Get started with SQL and data visualization
-- Like spreadsheet, SQL can: Store, Organize, Analyze
+- Like spreadsheet, SQL can: Store, Organize, Analyze (→ [Digital marketing Course 5: Spreadsheet limits, SQL and Python](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - SQL need a database that will understand its language: Oracle, MySQL, PostgreSQL, Microsoft SQL Server,… SQL work the same in each.
 - Query: A request for data or information from a database
 ![image_019](/vault-assets/image-019-81acf5e3.png)

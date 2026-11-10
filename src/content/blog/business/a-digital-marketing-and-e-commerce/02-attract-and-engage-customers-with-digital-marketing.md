@@ -60,14 +60,14 @@ isIndex: false
 - Case studies on how businesses apply strategies at each stage
 #### Customer personas for your target audience
 - Before creating marketing materials, you need to know who you're marketing to → define your **ideal customer**
-- **Customer persona** (also **buyer persona**, **marketing persona**, **audience persona**): represents a group of similar people in a desirable audience → reach people at the right time with the right message, offer, and products
+- **Customer persona** (also **buyer persona**, **marketing persona**, **audience persona**): represents a group of similar people in a desirable audience → reach people at the right time with the right message, offer, and products (→ [Course 6: Identify your target audience](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 	- Simple version includes:
 		- **Who** the person represents (characteristics)
 		- **Goal**: what they want to achieve
 		- **Barrier** to reaching their goal (**pain point**)
 	- Marketers usually create several personas (some businesses have over 10), because most businesses have more than one type of customer; personas can get complex (interests, behaviors, needs, skills)
 - Why create customer personas:
-	- Understand the **customer's perspective**: more specific than a **target audience** (broad and general) → consider the customer's priorities (which message or visuals appeal, do they help reach goals or relate to pain points)
+	- Understand the **customer's perspective**: more specific than a **target audience** (broad and general) → consider the customer's priorities (which message or visuals appeal, do they help reach goals or relate to pain points) (→ [Course 5: Target audience in media planning](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	- Easier to create **customized content**: how they think, what they want, what holds them back from purchasing
 	- Effective **ad targeting** (**targeted advertising**): most digital advertising platforms offer targeting tools
 - Example: company selling camping tents, campaign for a **six-person tent**
@@ -79,7 +79,7 @@ isIndex: false
 - Don't guess: you need actual data → research methods:
 	1. **Review customer data**: existing data (demographics, location, sales history, customer service notes)
 	2. **Conduct customer interviews**: what brought them to the product, how it solved their problem, other interests
-	3. **Analyze web data**: demographic data about social media followers; website analytics like **Google Analytics** (age, gender of visitors); online reviews and comments
+	3. **Analyze web data**: demographic data about social media followers; website analytics like **Google Analytics** (age, gender of visitors); online reviews and comments (→ [Course 7: Demographics in store analytics](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 	4. **Send out surveys**: email surveys to current customers; participation may be low → give away something for free to one respondent
 - Step 1 – define **who** the customer is: interests, traits, and **demographics** (age, gender identity, income, family size, occupation, education, location)
 	- E.g. pet business: a man in his 30s with two children who loves the outdoors and lives in the suburbs → more specific: a 32-year-old man with two children who owns a large dog and likes hiking
@@ -94,7 +94,7 @@ isIndex: false
 	- A 27-year-old budget-conscious renter in a rural area keeping up with homeowners' association demands
 - Best practice: keep personas readily available; for any marketing material ask: who are you trying to reach, what visuals and messages appeal to them, what online platforms do they spend time on?
 #### Learn to create customer personas
-- **Customer personas**: fictional users whose goals and characteristics represent the needs of a larger group of users → focus marketing on people most likely to buy
+- **Customer personas**: fictional users whose goals and characteristics represent the needs of a larger group of users → focus marketing on people most likely to buy (→ [Course 3: personas in social media marketing](/blog/from-likes-to-leads-interact-with-customers-online/))
 	- Businesses create multiple personas; each represents an individual from one **target group** (a set of people with similar interests, goals, or concerns)
 - Simple template with three components:
 	- **Who**: short description (name, age, location, household, education) + a photo
@@ -115,9 +115,9 @@ isIndex: false
 - Learn to create customer personas: https://www.coursera.org/learn/attract-and-engage-customers/supplement/HkRUD
 ### Awareness and consideration marketing funnel stages
 #### Introduction to the marketing funnel and its benefits
-- **Marketing funnel**: a process to take people who are unfamiliar with your products or services and turn them into paying customers → help a business accomplish its goals (profit, revenue, new customers, ...)
+- **Marketing funnel**: a process to take people who are unfamiliar with your products or services and turn them into paying customers → help a business accomplish its goals (profit, revenue, new customers, ...) (→ [Course 3: funnel in social media](/blog/from-likes-to-leads-interact-with-customers-online/))
 	- Reach and resonate with target audiences in all stages of the **customer journey**
-	- Just a **framework**: many kinds exist (e.g. a six-stage funnel); this course uses a **four-stage funnel**: **awareness, consideration, conversion, loyalty**
+	- Just a **framework**: many kinds exist (e.g. a six-stage funnel); this course uses a **four-stage funnel**: **awareness, consideration, conversion, loyalty** (→ [Course 6: Funnel in e-commerce](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 - Benefits:
 	- **Consider the buyer's journey**: instead of random strategies or only what drives sales at the bottom of the funnel → when do they first experience the brand, how, and what do they do after?
 	- **Optimize your marketing strategy**: find and fix gaps (e.g. display ads not connecting, or a landing page that loads slowly)
@@ -129,7 +129,7 @@ isIndex: false
 	- **Strategies**: support the plan to achieve the marketing goal; more general ideas (e.g. social media marketing)
 	- **Tactics**: actions taken to make the plan happen (e.g. actions on social media)
 - Strategies and tactics to build awareness:
-	- **Search engine optimization (SEO)**: improving a website to increase its visibility in a search engine (Google Search, Microsoft Bing)
+	- **Search engine optimization (SEO)**: improving a website to increase its visibility in a search engine (Google Search, Microsoft Bing) (→ [Course 3: social listening keywords vs. SEO keywords](/blog/from-likes-to-leads-interact-with-customers-online/))
 	- **Search engine marketing (SEM)**: increase a website's visibility in a search engine through **paid advertisement**
 	- **Display ads**: graphic-based advertising (photos, videos, or text) on websites and applications your potential customers visit
 	- **Social media marketing**: posts on social media platforms (Facebook, Instagram, LinkedIn), typically at no cost; e.g. a follower shares the brand's post to their followers
@@ -210,7 +210,7 @@ isIndex: false
 - Next: turn customers into repeat customers and loyal brand advocates
 - How a marketer increases the conversion rate of an e-commerce website: https://www.coursera.org/learn/attract-and-engage-customers/supplement/6FxrC
 #### Loyalty: Strategies to increase the loyalty of customers after a purchase
-- **Loyalty stage**: customers become **repeat customers** and **brand advocates** (voices of the brand: tell family and friends, share on social media, actively seek out the service)
+- **Loyalty stage**: customers become **repeat customers** and **brand advocates** (voices of the brand: tell family and friends, share on social media, actively seek out the service) (→ [Course 7: Customer loyalty](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 	- Not strictly necessary (you already earned the customer), but leads to repeat customers, higher conversion rate or conversion value, and free marketing
 - Post-purchase strategies and tactics:
 	- **Reward programs**: incentivize customers to come back (Starbucks, Chipotle, McDonald's apps); many **point-of-sale (POS) systems** (accept payments, manage customer information) have built-in reward programs
@@ -297,7 +297,7 @@ isIndex: false
 	- Best practice: Google your product or service by brand name and related words → analyze possible placements
 	- **Paid ads** usually at the top (and sometimes at the bottom), then **search listings**
 - Common **SERP features**:
-	- **Featured snippet**: a special box displaying information about a search; non-paid; you can mark a page as a featured snippet but Google systems decide
+	- **Featured snippet**: a special box displaying information about a search; non-paid; you can mark a page as a featured snippet but Google systems decide (→ [Course 7: FAQ pages and featured snippets](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 	- **Rich results**: specific information that makes a website display with additional features (e.g. product review rating, price, availability)
 	- **Images**: when visual content is valuable; any position (top, middle, bottom); non-paid
 	- **Videos**: from across the web, any position
@@ -320,7 +320,7 @@ isIndex: false
 - Purpose: get users relevant information available across the web, so the user keeps coming back
 ### Understand the basics of search engine optimization (SEO)
 #### What is SEO and why is it important?
-- **Search engine optimization (SEO)**: the process of increasing the visibility of website pages on search engines in order to attract more **relevant traffic** (the ideal customers you'd like to visit) → the non-paid process
+- **Search engine optimization (SEO)**: the process of increasing the visibility of website pages on search engines in order to attract more **relevant traffic** (the ideal customers you'd like to visit) → the non-paid process (→ [Course 6: SEO on e-commerce platforms](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 	- "SEO" can also be a job title ("We just hired a new SEO")
 	- Worth learning even on platforms like Blogger, Wix, or Squarespace
 - Why important: SEO makes it easier for algorithms to crawl, index, and understand content → if a site can't be crawled or understood, it may not be found
@@ -331,7 +331,7 @@ isIndex: false
 	- **Review website content or structure**: a well-organized website that is easy to crawl
 	- **Technical website development** (advanced): hosting, webpage redirects, error pages, **JavaScript** (a programming language), page load speed
 	- **Content development**: anything a visitor experiences (text, videos, photos) + **user experience**
-	- **Keyword research**: finding terms and phrases potential customers type into search engines → often combined with content development to inform content strategy; no perfect way to do it
+	- **Keyword research**: finding terms and phrases potential customers type into search engines → often combined with content development to inform content strategy; no perfect way to do it (→ [Course 7: SEO for product pages](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 #### First steps before implementing SEO
 - Pre-work for two groups: the **organization** requesting SEO and the **potential website visitors** → otherwise work may not align with organizational goals, or may not connect with (or even turn away) visitors
 - Factors to consider before any SEO task:
@@ -501,7 +501,7 @@ isIndex: false
 - What to know when building:
 	- **Make it easy for customers to use**: consider their objectives (be entertained, find a restaurant's address, read reviews) → outline the steps of the customer journey (e.g. search for a lamp → click a website → browse lamps → purchase)
 	- **Measure effectiveness** by how easily mobile customers complete common tasks → list common tasks, have several people test them; consistent interface, unified experience across platforms
-	- **Use a responsive web design**: the same code on desktop, tablet, and mobile, display adjusts to screen size → recommended by Google; maintain only one version of the site
+	- **Use a responsive web design**: the same code on desktop, tablet, and mobile, display adjusts to screen size → recommended by Google; maintain only one version of the site (→ [Course 6: Responsive and mobile-first design](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 - Top three beginner mistakes:
 	- **Forgetting the mobile customer**: mobile-formatted but not fully functional; be inclusive for people who do most tasks on a smartphone
 	- **Implementing the mobile site on a different domain**: separate mobile URLs increase maintenance and technical problems → responsive design serves desktop and mobile on the same URL
@@ -520,7 +520,7 @@ isIndex: false
 - Meta description recommendations (Google **might** use it, or a relevant section of the page text, in the snippet):
 	- A meta description for **every page** → may influence the snippet
 	- **Accurately summarize** the page content; inform and interest searchers; **no minimum or maximum length**
-	- **Unique descriptions** for each page; for large e-commerce sites with thousands of pages, descriptions can be **automatically generated** from page content (advanced)
+	- **Unique descriptions** for each page; for large e-commerce sites with thousands of pages, descriptions can be **automatically generated** from page content (advanced) (→ [Course 6: Product detail page](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 - A great page with a mismatched title frustrates searchers (may show in analytics; Google may show different title links)
 #### Control title links and snippets
 - Search results: a bold **title link** (the title of a result linking to a webpage) above a **snippet** (the description or summary) → generated from the title element and the meta description or a relevant section of visible text
@@ -548,7 +548,7 @@ isIndex: false
 - **Google knowledge panel**: information boxes that appear when you search for entities (people, places, organizations, things), displayed separately from general results → like a personal ID card for a brand; automatically generated from sources across the web
 	- Business details (e.g. Coursera's panel): official website link, site logo, brand industry, brand description, social profile links
 - Steps to set up business details:
-	1. **Create a Google Business Profile** (for local brick-and-mortar businesses): a free tool to tailor how business information appears on Google Search and Google Maps (hours, products and services, online orders, ...)
+	1. **Create a Google Business Profile** (for local brick-and-mortar businesses): a free tool to tailor how business information appears on Google Search and Google Maps (hours, products and services, online orders, ...) (→ [Course 6: Google Business Profile for e-commerce](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 	2. **Verify website ownership** in **Google Search Console** → control over how the site is presented and access to sensitive Google Search data
 	3. **Update the knowledge panel**: sign in with the Gmail account associated with the entity → overrides information found by Google algorithms
 	4. **Add structured data for rich results** (carousels, images, non-textual elements beyond the standard blue link); not automatically guaranteed → read *Understand how structured data works* (Google Search Central), check with the **Rich Results Test**
@@ -636,7 +636,7 @@ isIndex: false
 - Coach AK: when launching a new company he needed something faster than SEO → search ads put his company at the top of results in **less than 24 hours**, in front of the target audience at the exact moment they look for solutions
 #### Understand the benefits of SEM
 - Two main ways to get found in SERPs: **search listings** and **paid ads**
-- **Search engine marketing (SEM)**: increasing a product or service's visibility on a SERP through paid advertising
+- **Search engine marketing (SEM)**: increasing a product or service's visibility on a SERP through paid advertising (→ [Course 6: Google Ads search campaigns](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 	- You're typically charged when the ad is **clicked**, not when it shows
 	- Also possible on other search engines and **product-based search engines** (searches on e-commerce sites themselves)
 - Pay models:
@@ -650,6 +650,7 @@ isIndex: false
 	3. **Learn which ads drive sales**: drive traffic to specific pages to collect data on which content performs and converts
 	4. **Control where you send searchers**: e.g. homepage ranks for "leaking water heater repair", but SEM can send them to a page with a lead form or phone number → tailored messaging
 		- **Landing page**: any webpage where a visitor enters a website; should directly address the problem the customer is trying to solve
+- Xem thêm: [Course 4: build your mailing list](/blog/think-outside-the-inbox-email-marketing/) – using SEM to grow a mailing list
 #### Common SEM terms
 - **Digital advertising**: communication made by a company to promote its brand, product, or service using various platforms and online channels
 - **Traditional advertising**: non-digital placements, like newspapers, radio, TV, or billboards
@@ -689,7 +690,7 @@ isIndex: false
 #### How Google Ads works
 - Steps to create any Google ad (regardless of format):
 	1. **Define your campaign goal** (also **objective**): more sales, leads, website traffic, store visits → informs other options (e.g. traffic goal → bidding like "maximize clicks", putting your **ad spend** towards clicks)
-	2. **Choose your campaign type**: search, shopping, local, video → determines where ads show and how they look (search → SERPs; video → YouTube; local → Google Maps, websites, YouTube)
+	2. **Choose your campaign type**: search, shopping, local, video → determines where ads show and how they look (search → SERPs; video → YouTube; local → Google Maps, websites, YouTube) (→ [Course 6: Platforms for e-commerce ads](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 		- **Campaigns**: ads that share a budget, location targeting, and other settings; often organize categories of products and services; an account can run numerous campaigns
 	3. **Set a budget**: maximum spend, changeable anytime → an **average daily budget** over one month; Google Ads optimizes spend for days with more likely clicks and conversions (some days under, some over), but never exceeds the **monthly spending limit**
 	4. **Choose your bidding strategy**: recommended based on the goal (e.g. focus on conversions); **automated bidding strategies** use **machine learning** (software instructions that help the ad achieve its goal) → bids set by likelihood of conversion or sale, learning as ads are served
@@ -697,11 +698,12 @@ isIndex: false
 	6. **Create your ad**: primary text ad format = **responsive search ads** (several headlines, descriptions, and a landing page URL; Google tests combinations) → the landing page must deliver what the customer expects
 	7. **Set up conversions**: **conversion tracking** shows whether ads, targeting, and campaigns work → e.g. connect **Google Analytics** to Google Ads
 		- Provide clear information about data collected and get user **consent** (e.g. website pop-up / **cookie consent bar**)
+- Xem thêm: [Course 5: Introduction to Google Ads](/blog/assess-for-success-marketing-analytics-and-measurement/) – tour of the Google Ads interface (Overview, Campaigns, Recommendations, Reports pages)
 #### Google Ads bid strategies
 - **Bid strategy**: designed to help achieve campaign goals based on budget
 	- **Manual Cost Per Click (CPC)**: you set your own maximum cost per click
 	- **Automated bidding**: Google Ads sets bids based on the likelihood of a click or conversion
-	- **Smart Bidding**: a subset of automated bidding using machine learning to optimize for conversions or conversion value in each auction, with **auction-time signals** (device, location, time of day, remarketing list, language, operating system) → decides whether and how much to bid
+	- **Smart Bidding**: a subset of automated bidding using machine learning to optimize for conversions or conversion value in each auction, with **auction-time signals** (device, location, time of day, remarketing list, language, operating system) → decides whether and how much to bid (→ [Course 5: Cost-related performance goals](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - Types of bid strategies:
 
 | Bid strategy | Definition | Goal |
@@ -764,7 +766,7 @@ isIndex: false
 	- **Keywords**: words or phrases describing your product or service that help determine when and where your ad appears; ads are ranked on bid and relevance, among other factors
 - Google Ads account structure and organization explanation: https://www.coursera.org/learn/attract-and-engage-customers/supplement/Lt95L
 #### Creating a Google Ad
-- Guided steps to create a **responsive search ad** campaign in the Google Ads interface (you can also create a campaign without a goal):
+- Guided steps to create a **responsive search ad** campaign in the Google Ads interface (you can also create a campaign without a goal) (→ [Course 5: Get started with Google Ads](/blog/assess-for-success-marketing-analytics-and-measurement/)):
 	1. **Define your campaign objective**: Sales, Leads, Website traffic, App promotion, Local store visits and promotions, Awareness and consideration
 	2. **Choose the campaign type**: Search, Performance Max, Demand Gen, Display, Shopping, Video, Discovery (+ name the campaign)
 	3. **Choose your bidding strategy**
@@ -790,6 +792,7 @@ isIndex: false
 	2. **Broader reach**: Google adjusts size, appearance, and format to fit almost any ad space (manually uploaded ads only show where that size is supported)
 	3. **Use with videos**: Google tests videos against photos and shows the better performer
 	4. **Save time**: less time managing a complicated ad portfolio, more on performance improvement
+- Xem thêm: [Course 4: build your mailing list](/blog/think-outside-the-inbox-email-marketing/) – display ads as a source of email sign-ups
 #### How to optimize a responsive display ad for your goals
 - Responsive display ads are the most popular type of display ad
 - Creative best practices:
@@ -804,7 +807,7 @@ isIndex: false
 	4. **Background suits the product**: no fake backgrounds (e.g. product in outer space); physical setting with natural lighting and shadows
 - Google released responsive display ad technology in **2016**
 #### Advertise on YouTube
-- YouTube: millions of videos uploaded daily → reach audiences worldwide
+- YouTube: millions of videos uploaded daily → reach audiences worldwide (→ [Course 6: Video ads for e-commerce](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 - Two types of "YouTube ads":
 	- **Display ads**: static visual ads created with Display campaigns in Google Ads ("digital billboards") on the Google Display Network; on YouTube they appear next to the streaming video
 	- **TrueView video ads**: video ads where brands only pay when someone **chooses to view** them; managed in Google Ads but the video must first be uploaded to the brand's YouTube channel

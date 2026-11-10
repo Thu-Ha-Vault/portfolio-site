@@ -15,7 +15,7 @@ vaultPath: >-
   Science/06 - Share Data through the Art of Visualization.md
 url: /blog/share-data-through-the-art-of-visualization/
 topic: biology
-updated: '2026-11-09'
+updated: '2026-11-10'
 order: 6
 description: 'How to choose a data visualization.pdf - Some common errors to avoid:'
 isIndex: false
@@ -105,7 +105,7 @@ These first six principles of design are key considerations that you can make wh
 	- **Rhythm:** This refers to creating a sense of movement or flow in your visualization. Rhythm is closely tied to the movement principle. If your finished design doesn’t successfully create a flow, you might want to rearrange some of the elements to improve the rhythm.
 	- **Variety:** Your visualizations should have some variety in the chart types, lines, shapes, colors, and values you use. Variety keeps the audience engaged. But it is good to find balance since too much variety can confuse people. The variety you include should make your dashboards and other visualizations feel interesting and unified.
 	- **Unity:** The last principle is unity. This means that your final data visualization should be cohesive. If the visual is disjointed or not well organized, it will be confusing and overwhelming.
-- ***Question: Which one will make it easiest for the user to understand the point you're trying to make?***
+- ***Question: Which one will make it easiest for the user to understand the point you're trying to make?*** (→ [Digital marketing Course 5: Chart types in spreadsheets](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	- Over time: Line, Bar, Stacked Bar, Area
 	- Between objects: Ordered Bar, Ordered Column, Group Bar
 	- **Data Composition**: Combining the individual parts in a visualization and displaying them together as a whole: 
@@ -196,9 +196,10 @@ All four of these elements are important on their own, but a successful data vis
 	- Choose sheet (left corner) to show the viz screen
 		- Tables: dimensions of the data - contain qualitative values (such as names, dates, or geographical data). You can use dimensions to categorize, segment, and reveal the details in your data. Dimensions affect the level of detail in the view.
 		- Below the line: different measure that you can track for these dimension - contain numeric, quantitative values that you can measure. Measures can be aggregated. When you drag a measure into the view, Tableau applies an aggregation to that measure (by default).
+- Xem thêm: [Project management: data visualization tools](/blog/project-execution-running-the-project/) – visualizing project data
 ### Design visualizations in Tableau
 - **Diverging color palette**: Display two ranges of values using color intensity to show the magnitude of the number and the actual color to show which range the number is from
-- **Essential design principles**:
+- **Essential design principles** (→ [Digital marketing Course 5: Design principles for slides, data-ink ratio](/blog/assess-for-success-marketing-analytics-and-measurement/)):
 
 | **Principle**               | **Description**                                                                                                                                                                                                                                                                                                                          |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -257,7 +258,7 @@ All four of these elements are important on their own, but a successful data vis
 #### Tableau dashboard basics
 - Car dashboard analogy: warning lights constantly track and analyze the car's status so the driver can respond; without it you'd have to dig through the user manual
 - Companies use dashboards to share information, engage people with business plans and goals, and uncover potential problems
-- **Dashboard**: a tool that organizes information from multiple datasets into one central location for tracking, analysis, and simple visualization through tables, charts, and graphs
+- **Dashboard**: a tool that organizes information from multiple datasets into one central location for tracking, analysis, and simple visualization through tables, charts, and graphs (→ [Digital marketing Course 5: Tableau marketing dashboards](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	- Works by constantly monitoring live incoming data
 	- A big part of step 2 of the three data storytelling steps
 - Design dashboards for specific stakeholders: who will look at the data, what they need from it, how often they'll use it
@@ -480,7 +481,7 @@ All four of these elements are important on their own, but a successful data vis
 	- Avocado example: all searches containing the word "avocado" → answers general-interest questions; something specific like guacamole would need different data
 - Establish the **initial hypothesis** early: a theory you're trying to prove or disprove with data (e.g. average monthly prices will show clear trends to plan avocado demand)
 - Explain the solution to the business task using examples and visualizations
-- **McCandless Method** (general → specific, like building a pyramid):
+- **McCandless Method** (general → specific, like building a pyramid) (→ [Digital marketing Course 5: Create effective presentations](/blog/assess-for-success-marketing-analytics-and-measurement/)):
 	1. **Introduce the graphic by name** (e.g. "Yearly avocado search trends") – directs attention
 	2. **Answer the obvious questions before they're asked** – high-level first, then lower-level detail; e.g. where the data is from and what it covers; explain how to read an unusual chart in speaker notes ("time runs in a circle, winter months on top, summer on bottom; farther from center = more queries")
 	3. **State the insight** your data viz provides – get everyone on the same page before supporting details; e.g. consistent seasonal trend year over year; low interest October–December; searches peak in January/February (Super Bowl guacamole)

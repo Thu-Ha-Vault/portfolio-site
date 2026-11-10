@@ -14,7 +14,7 @@ vaultPath: >-
   Biostatistics and Bioinformatics/IV - SQL/_MOC - IV - SQL.md
 url: /topics/sql/
 topic: biology
-updated: '2026-11-09'
+updated: '2026-11-10'
 isIndex: true
 ---
 ## Map of Content
@@ -23,3 +23,4 @@ isIndex: true
 - Xem thêm: [Data Science](/topics/data-science/) – SQL dùng trong phân tích dữ liệu
 - Xem thêm: [Course 7: Python](/blog/introduction-to-data-analysis-using-python/) – so sánh spreadsheet, SQL và Python; pandas DataFrame và merge/join tương tự bảng và JOIN trong SQL
 - Xem thêm: [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/) – cheat sheet từ khoá SQL/MySQL tổng hợp từ các khoá SQL Tutorial, SQL Xóm Data
+- Xem thêm: [Digital marketing Course 7: Analytics tools](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/) – SQL as an analytics tool for e-commerce data

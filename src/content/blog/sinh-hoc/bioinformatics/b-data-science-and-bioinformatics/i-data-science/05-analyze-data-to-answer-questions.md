@@ -15,7 +15,7 @@ vaultPath: >-
   Science/05 - Analyze Data to Answer Questions.md
 url: /blog/analyze-data-to-answer-questions/
 topic: biology
-updated: '2026-10-17'
+updated: '2026-11-10'
 order: 5
 description: >-
   Get support during analysis Asking peers or members Note: If the units of
@@ -40,7 +40,7 @@ isIndex: false
 	- [Filter data]: Sometimes, an analysis may require only a subset of the data in your dataset. You can use a filter to show only the data that meets a specified criteria while hiding the rest. Filtering is useful when you have lots of data. You can save time by zeroing in on the data that’s important for your current analysis or the data that contains errors. Most spreadsheets and SQL databases allow you to filter your data in a variety of ways. Filtering gives you the ability to find what you are looking for without too much effort.
 - [Sort a pivot table]: A pivot table is a data summarization tool used to sort, reorganize, group, count, total, or average data. Items in the row and column areas of a pivot table are sorted in ascending order by any custom list first. If the items aren’t in a custom list, they will be sorted in ascending order by default. But, if you sort in descending order, you are setting up a rule that controls how the field is sorted even after new data points are added.
 ### Sort data in spreadsheets
-- [Sort sheet]: All of the data in a spreadsheet is sorted by the ranking of a specific sorted column - data across rows is kept together
+- [Sort sheet]: All of the data in a spreadsheet is sorted by the ranking of a specific sorted column - data across rows is kept together (→ [Digital marketing Course 5: Sort marketing data in spreadsheets](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - [Sort range]: Nothing else on the spreadsheet is rearranged besides the specified cells in a column
 - [Customized sort order]: When you sort data in a spreadsheet using multiple conditions
 ### Sort data using SQL
@@ -200,7 +200,7 @@ FROM [table_name]
 	- [Array]: A collection of values in cells
 - Pivot tables to organize calculations: [^cdf31e](#cdf31e)
 ### Pivot
-- Pivot tables: Let you view data in multiple ways to find insights and trends 
+- Pivot tables: Let you view data in multiple ways to find insights and trends (→ [Digital marketing Course 5: Pivot tables for marketing data](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	- Elements: https://www.coursera.org/learn/analyze-data/supplement/j6w9Z/elements-of-a-pivot-table
 	- Create and use: https://www.coursera.org/learn/analyze-data/supplement/qRo2l/use-pivot-tables-in-analysis
 - Case study:

@@ -167,7 +167,7 @@ isIndex: false
 	- **Search Engine Marketing (SEM) specialist**: identify customer personas, research keywords for SEO and **Pay Per Click (PPC)** ads, monitor metrics to optimize paid search, identify and monitor **key performance indicators (KPIs)** for SEM
 	- **Social media specialist**: develop and manage a social media marketing strategy, collaborate with sales and marketing teams, create content for customer connections and brand awareness, monitor engagement metrics
 	- **Email marketing specialist**: create email campaigns, build an archive of emails for lead generation, purge non-deliverable and unsubscribed addresses, monitor campaign metrics
-- Associate-level roles in **e-commerce**:
+- Associate-level roles in **e-commerce** (→ [Course 6: Entry-level e-commerce roles](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/)):
 	- **E-commerce analyst**: implement e-commerce strategies, set goals and KPIs (audience, acquisition, behavior, conversions), monitor and analyze metrics, leverage data for operational insights
 	- **E-commerce specialist**: campaigns to increase digital sales, optimize paid advertising with SEO and other tools, manage an online marketing presence, monitor spikes in traffic or sales
 - Roles to advance to:
@@ -262,7 +262,7 @@ isIndex: false
 - Identity traits to keep in mind: race, socioeconomic status, age, ability, gender, sexual orientation, religion, geographic location, culture, political perspective, military status, languages spoken
 - Also consider people who are **not** currently customers (marketing hasn't reached them)
 	- E.g. at least **one billion people** live with a disability → if the product isn't accessible or marketing doesn't feature or address them, they may not see it as relevant
-- Apply the principles when developing goals, researching audiences, planning campaigns, analyzing data
+- Apply the principles when developing goals, researching audiences, planning campaigns, analyzing data (→ [Course 5: Inclusive media planning](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - Inclusive marketing: https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce/supplement/lMOT8
 #### Janice - Inclusive marketing
 - Janice: Product Marketing Manager on the **Grow with Google** team (goal: create economic opportunity for everyone); partners with non-profit organizations
@@ -287,7 +287,7 @@ isIndex: false
 #### The customer journey and journey maps
 - An effective marketing strategy starts with learning about customers' needs and **pain points** (the specific problems customers and potential customers want to solve)
 	- Ask "How do we help customers address their pain points or achieve their goals?" instead of "How do we sell more products?"
-- **Customer journey**: the path from learning about a product → getting questions answered → making a purchase (and recommending it)
+- **Customer journey**: the path from learning about a product → getting questions answered → making a purchase (and recommending it) (→ [Course 6: Multichannel customer journey](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 - Example: a new weather app → search "best weather apps" → a familiar name (a friend or an online ad) → read reviews → pick the one topping best-of lists with a trial subscription → app doesn't work → live chat support fixes it quickly → after a month's trial, an email reminder → buy a subscription → loyal customer
 - **Touchpoint**: each interaction with the brand during the purchase journey → each can help or hurt the impression; a bad experience can mean an abandoned journey
 - **Customer journey map**: a visualization of the touchpoints a typical customer encounters along their purchase journey
@@ -301,7 +301,7 @@ isIndex: false
 #### The marketing funnel
 - **Marketing funnel** (also **sales funnel** or **conversion funnel**; used for over 100 years): a visual representation of the process through which people go from first learning about a brand to becoming loyal customers
 	- Wide at the top, narrow at the bottom: many enter, some reach the bottom; people drop off at every stage
-- Four stages:
+- Four stages (→ [Course 5: Map performance goals to funnel stages](/blog/assess-for-success-marketing-analytics-and-measurement/)):
 	- **Awareness**: a potential customer encounters the brand for the first time (an ad, a recommendation) → raise as much awareness as possible among the **target audience** (the group of people most likely to purchase a company's products)
 	- **Consideration**: potential customers think about doing business (browsing the website, comparing brands) → make a good impression
 	- **Conversion**: someone decides to make a purchase and become a customer → demonstrate value, user-friendly experience
@@ -346,7 +346,7 @@ isIndex: false
 - No one correct way to structure a funnel → try and test new ideas; a well-made product + a well-rounded marketing approach
 - Case study: How MERSEA structures its marketing funnel: https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce/supplement/Tbqs4
 #### Measuring success at the top of the funnel
-- Measuring outcomes at each stage shows what works, what doesn't, and where to improve
+- Measuring outcomes at each stage shows what works, what doesn't, and where to improve (→ [Course 5: Google Ads metrics by funnel stage](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - **Metric**: a quantifiable measurement used to track and assess progress toward an objective
 - Awareness metrics:
 	- **Impressions**: total number of times an ad appears on people's screens (including repeats) → an ad seen 200 times by 100 people = 200 impressions
@@ -415,7 +415,7 @@ isIndex: false
 - Module 3: how a funnel fits into a larger **digital marketing strategy** → branding and digital marketing → planning a strategy → common channels and tactics (SEO, social media marketing, email marketing)
 - Strategies ensure a brand's digital marketing and sales activities all work toward a **common goal** (Joi's first work as a product marketing manager: collaborating on social media strategies)
 #### The value of brands for digital marketing
-- **Brand**: how a business or organization is perceived by the public → influenced by values, culture, design elements, tone of voice
+- **Brand**: how a business or organization is perceived by the public → influenced by values, culture, design elements, tone of voice (→ [Course 6: Branding in e-commerce](/blog/make-the-sale-build-launch-and-manage-e-commerce-stores/))
 	- Not a physical asset like products or services; more like a **personality or reputation** → the sum of who you are and what people think about you
 - A company's brand guides all marketing and sales efforts → first understand the mission, values, unique offerings
 	- Marketing changes with the times, but **brand identity is permanent**: "If a brand is who you are, marketing is how you get people's attention"
@@ -459,13 +459,13 @@ isIndex: false
 #### Define your marketing goals
 - Every company, department, team, and employee benefits from clear, relevant goals
 - **Business goals**: desired aims, achievements, or outcomes for a business → big, long-term, can affect the whole company (increase profits, gain new customers, improve customer service, raise productivity, launch new products)
-- **Marketing goals**: smaller, more targeted objectives in a marketing plan that support business aims (raise brand awareness, increase web traffic, generate new leads, drive sales or conversions)
+- **Marketing goals**: smaller, more targeted objectives in a marketing plan that support business aims (raise brand awareness, increase web traffic, generate new leads, drive sales or conversions) (→ [Course 5: Performance goals in media planning](/blog/assess-for-success-marketing-analytics-and-measurement/))
 - Both must be **specific and measurable**; example: photo editing software company
 	- Business goal: "Grow our number of active customers by 25% over the next two years by adding five frequently-requested features to our software" (what, how, when)
 	- Website traffic doesn't necessarily equal new users → better: lead generation ("increase our lead generation by 40% in the next year by running upper-funnel ads that highlight our new features and increasing our mid-funnel budget by 20%")
 - Business goals are like the **top of a pyramid**: many marketing goals below support them; a strategy can have multiple goals, plus goals for each part (social media, email)
 #### How to set SMART goals
-- **SMART**: specific, measurable, attainable, relevant, time-bound → organized, a sense of direction, a time frame
+- **SMART**: specific, measurable, attainable, relevant, time-bound → organized, a sense of direction, a time frame (→ [Course 7: Customer satisfaction goals](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 	- **Specific**: What do you want to accomplish?
 	- **Measurable**: What success metrics determine whether the objective has been met?
 	- **Attainable**: Is this a realistic goal?
@@ -473,6 +473,7 @@ isIndex: false
 	- **Time-bound**: What is a realistic time frame?
 - Example (photography and photo sharing company, scrapbooks): "We aim to increase scrapbook sales by 15% by the end of the next quarter through a robust social media campaign where we focus heavily on influencer marketing."
 - How to set SMART goals: https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce/supplement/Lfm7D
+- Xem thêm: [Course 4: SMART goals](/blog/think-outside-the-inbox-email-marketing/) – SMART goals for an email marketing strategy
 ### Reach customers online
 #### Paid, owned, and earned media
 - All digital channels fit into three categories; a strong strategy uses all of them
@@ -552,6 +553,7 @@ isIndex: false
 	- Promotions for birthdays, holidays, anniversaries
 	- Messages matching the customer's funnel stage (no loyalty program emails for people still in consideration)
 	- Follow up on previous interactions (ask for an opinion on a recent purchase)
+- Xem thêm: [Course 4: email marketing strategy](/blog/think-outside-the-inbox-email-marketing/) – segmentation and building an email marketing strategy
 #### Types of email campaigns
 - Email marketing involves testing tactics to learn what works for your audience and goals
 - **Acquisition emails**: acquire new customers before they consider the brand → **awareness**; usually offer something free (downloadable guide, free trial, educational material)
@@ -560,6 +562,7 @@ isIndex: false
 - **Promotional emails**: inform subscribers of new or existing products or services → consideration and loyalty (encourage action)
 - **Retention emails**: to current customers to keep them as customers → **loyalty**
 - Types of email campaigns: https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce/supplement/NvKrS
+- Xem thêm: [Course 4: email campaigns](/blog/think-outside-the-inbox-email-marketing/) – email campaign types in depth
 ### Review: Digital marketing and e-commerce strategy
 #### Wrap-up
 - Module 3 recap: why digital marketing is essential for building a strong brand → foundations of a digital marketing strategy (know your audience, set goals that support the business's larger aims) → choosing channels and creating content: SEO, SEM, pay-per-click, display ads → social media to expand reach and engage, email marketing to build relationships
@@ -613,6 +616,7 @@ isIndex: false
 	- **Loyalty**: customer retention rate, customer lifetime value
 - Key takeaway: metrics gauge effectiveness and audience contentment during a campaign and give insights for future campaigns
 - Common metrics for success: https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce/supplement/MUDws
+- Xem thêm: [Course 4: email marketing metrics](/blog/think-outside-the-inbox-email-marketing/) – metrics applied to email campaign results
 #### Working with data
 - Performance marketing generates a lot of data: impressions and clicks at the top of the funnel → conversion and sales numbers at the bottom
 - **Data**: a collection of facts or information (e.g. total social media followers, hours a team spends on a project, total yearly revenue)
@@ -628,7 +632,7 @@ isIndex: false
 - **Data ethics**: the study and evaluation of moral challenges related to data collection and analysis → businesses apply ethical practices to:
 	1. **Follow regulations**: many countries have laws on generating, recording, curating, processing, sharing, and using personally identifiable data
 		- **Personally identifiable data (PID)**: information that can be used to directly identify, contact, or locate an individual
-		- **Data privacy**: the proper handling of data → collect, process, analyze, share, archive, delete according to the data privacy laws of the countries where your customers reside; know your organization's data security and privacy protocols
+		- **Data privacy**: the proper handling of data → collect, process, analyze, share, archive, delete according to the data privacy laws of the countries where your customers reside; know your organization's data security and privacy protocols (→ [Course 5: Cookies and user privacy](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	2. **Protect customer data** → **Data anonymization**: techniques to mask or remove personal information from data to protect people's identities; often on data from multiple sources; anonymized data can be shared more widely in an organization
 		- Often anonymized: names, telephone numbers, email addresses, photographs, account numbers, purchase transactions
 	3. **Use data fairly and without bias**: data only for legitimate business purposes
@@ -643,7 +647,7 @@ isIndex: false
 - What does good performance mean (many clicks, a viral Tweet, more website traffic)? → depends on marketing and business goals, but every marketer wants to know which touchpoints get customers to take action
 	- E.g. an art supplies company: many clicks on an ad for a new line of paints but few purchases → the ad might not be so successful
 - You can't know what customers think, only what they do → behaviors show where efforts succeed or fall short
-- **Attribution**: the process of determining which content and channels are responsible for generating leads, conversions, or sign-ups
+- **Attribution**: the process of determining which content and channels are responsible for generating leads, conversions, or sign-ups (→ [Course 5: Attribution in Google Ads and Analytics](/blog/assess-for-success-marketing-analytics-and-measurement/))
 	- Most analytics tools can find which touchpoints and keywords customers interact with before taking action → informed decisions on where to invest time, budget, resources
 - The last touchpoint doesn't always deserve all the credit: average journey ~6 touchpoints, not straightforward
 	- E.g. buying a computer: decide on a model after the 2nd touchpoint, put off the purchase (waiting for a holiday or a sale, distracted) → another touchpoint reminds them → both deserve credit

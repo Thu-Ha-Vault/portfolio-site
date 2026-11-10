@@ -57,7 +57,7 @@ isIndex: false
 	- **Data**: a dataset to download
 - **Portfolio**: A collection of case studies that can be shared with potential employers; hosted on GitHub, Kaggle, Tableau, or a blog; linked in your resume
 #### Explore portfolios
-- Ins and outs of building a portfolio:
+- Ins and outs of building a portfolio (→ [Digital marketing Course 7: Portfolio tips](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/)):
 	- It must represent **your own work** (never copy or slightly modify others' work)
 	- Work done for an employer or client belongs to them → need explicit permission to share
 	- Even with open or public datasets, ask the owner for permission before posting
@@ -311,7 +311,7 @@ isIndex: false
 - Myles: data engineer at Google, maintains **data lakes** of financial data (CapEx, OpEx, spend, revenue) for stakeholders
 - Data analytics is also **storytelling**; "if data analytics is step one, AI is step two"
 - Example: consolidated about 100 data access permissions into easy-to-read documentation; uses Gemini's summarization daily (emails, long forms, code)
-- Advice: treat AI like a **playground** (try and test, fake and real questions); use AI to teach you AI; ask it how well its output satisfied your input
+- Advice: treat AI like a **playground** (try and test, fake and real questions); use AI to teach you AI; ask it how well its output satisfied your input (→ [Digital marketing Course 7: Justine on AI at work](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 #### Use generative AI to work smarter and faster
 - **Generative AI (gen AI)**: AI that can generate new content (text, images, other media), e.g. Gemini, ChatGPT, Microsoft Copilot
 - **Prompt**: input that provides instructions to an AI tool about how to generate output
@@ -359,7 +359,7 @@ isIndex: false
 - Resources: The Data Cards Playbook, Stanford HAI, GAO *Science & Tech Spotlight: Generative AI*, Google Cloud *What is AI?*
 - Key takeaways from AI for Data Analytics: https://www.coursera.org/learn/google-data-analytics-capstone/supplement/JLNAE
 #### Introducing Google AI Essentials
-- Promotional video for the Google AI Essentials course
+- Promotional video for the Google AI Essentials course (→ [Digital marketing Course 7: Google AI Essentials](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 #### Take the next step with Google AI Essentials
 - **Google AI Essentials**: self-paced, under 10 hours, no experience required → use AI tools to generate ideas and content, research and organize, speed up daily tasks (e.g. drafting emails); write effective prompts, use AI responsibly (biases, avoiding harm); certificate from Google
 ### Program wrap-up

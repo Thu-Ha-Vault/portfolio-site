@@ -88,7 +88,7 @@ isIndex: false
 - Example of a failed initiation: a group was one day from launching a feature without having discussed it with her team → "a total miss"
 - **"Listening to learn" muscle**: a trainable skill; requires slowing down and looking at the landscape in front of you
 #### Performing a cost-benefit analysis
-- A **cost-benefit analysis** minimizes risks and maximizes gains; helps communicate with stakeholders and executives, keeps the project on track; uses objective data → reduces biases and stakeholder self-interest
+- A **cost-benefit analysis** minimizes risks and maximizes gains; helps communicate with stakeholders and executives, keeps the project on track; uses objective data → reduces biases and stakeholder self-interest (→ [Capstone: cost-benefit analysis in the charter](/blog/capstone-applying-project-management-in-the-real-world/))
 	- Makes a strong **business case**; organizations use it to reduce waste and invest resources responsibly
 - Guiding questions:
 	- Benefits: value created, money saved, money from existing customers, time saved, improved customer experience
@@ -122,7 +122,7 @@ isIndex: false
 	- E.g. email templates for responding to typical questions (customer response time goal); Office Green: launching the plant service + a finished website highlighting the new plants (tangible outputs showing how revenue will be generated); a common one is a **report** (chart, graph, presentation)
 	- Help quantify and realize the impact of the project; usually decided upfront with stakeholders or clients → hold everyone accountable; ask everyone to share their vision and expectations of the deliverables
 #### How to set SMART goals
-- **SMART goals**: **Specific, Measurable, Attainable, Relevant, Time-bound** → a method to create and evaluate goals; entry-level PMs may not set the main goals but must identify and clarify them
+- **SMART goals**: **Specific, Measurable, Attainable, Relevant, Time-bound** → a method to create and evaluate goals; entry-level PMs may not set the main goals but must identify and clarify them (→ [Capstone: SMART goals](/blog/capstone-applying-project-management-in-the-real-world/))
 - **Specific**: should answer at least two of these questions:
 	- What do I want to accomplish? Why is this a goal (specific reason, purpose, or benefit)? Who is involved / who is the recipient (employees, customers, the community)? Where should the goal be delivered? To what degree (requirements and constraints)?
 	- "Improve customer service response time" alone is not specific (1%? after five years? only half the staff?)
@@ -150,7 +150,7 @@ isIndex: false
 	- → "Obtain a Google Career Certificate by taking one course per month within the next six months."
 - SMART goals: Making goals meaningful: https://www.coursera.org/learn/project-initiation-google/supplement/mj0tv
 #### Introduction to OKRs
-- **OKRs (Objectives and Key Results)**: a popular tool used in many organizations and at Google → establish and clarify goals for an organization, department, project, or person; focus a team's time and effort on activities that drive success
+- **OKRs (Objectives and Key Results)**: a popular tool used in many organizations and at Google → establish and clarify goals for an organization, department, project, or person; focus a team's time and effort on activities that drive success (→ [Capstone: OKRs and problem urgency](/blog/capstone-applying-project-management-in-the-real-world/))
 	- Take SMART goals a step further: combine a goal and more detailed metrics to determine a measurable outcome; separate the components of SMART goals instead of grouping everything into one statement
 - **Objective (O)**: defines what needs to be achieved; the desired result or outcome (e.g. increase customer retention, improve the employee onboarding process)
 - **Key results (KR)**: the measurable outcomes that define when the objective has been met (e.g. 90% customer satisfaction rating by the end of the first quarter)
@@ -227,6 +227,7 @@ isIndex: false
 	- **Collect costs for out-of-scope work**: document all costs incurred, including indirectly impacted work, and what the charges are for
 - Avoiding scope creep requires everyone to agree on responsibilities, boundaries, and timelines, plus clear communication, expectation management, and a well-defined path to the outcome
 - Strategies for controlling scope creep: https://www.coursera.org/learn/project-initiation-google/supplement/fNCow
+- Xem thêm: [Course 4: why risks and changes occur](/blog/project-execution-running-the-project/) – scope creep while executing
 #### Managing changes to a project's scope
 - Managing scope goes hand in hand with goal-setting: redefining the scope can change the goal and vice versa → the PM's overall goal: deliver the project according to the **scope agreements** (within the deadline and approved budget) → continually make compromises and weigh trade-offs
 - **Triple constraint model**: the combination of the three most significant restrictions of any project: **scope, time, and cost**
@@ -247,8 +248,9 @@ isIndex: false
 - Example: a project reaching underserved communities initially scoped for middle and high school students → stakeholders wanted to expand to adult learners → the team kept the original scope (changing the audience would drastically change goals and strategies) and communicated it to stakeholders
 - Best practices: document everything at the beginning, share it with all stakeholders and team members, make sure everyone agrees; when scope must change, also be able to change the timeline, resources, or budget
 #### Optional: Reviewing the Triple Constraint
-- The **triple constraint model** helps manage scope, control scope creep, negotiate priorities, and consider trade-offs; further reading: *A Project Management Triple Constraint Example & Guide*
+- The **triple constraint model** helps manage scope, control scope creep, negotiate priorities, and consider trade-offs; further reading: *A Project Management Triple Constraint Example & Guide* (→ [Capstone: triple constraint for change requests](/blog/capstone-applying-project-management-in-the-real-world/))
 - Optional: Reviewing the Triple Constraint: https://www.coursera.org/learn/project-initiation-google/supplement/GvfKV
+- Xem thêm: [Course 5: identifying a needed change](/blog/agile-project-management/) – the triple constraint in Agile change
 ### Measuring a project's success
 #### Launching and landing a project
 - **Project launch**: delivering the final result of the project to the client or user (tasks completed, deliverables done, goal hit) → but does it work well and achieve the desired outcome?
@@ -320,6 +322,7 @@ isIndex: false
 	- Solutions for people with permanent disabilities unlock secondary benefits for everyone
 - In project management, you, your team, or stakeholders may have a visible or invisible disability → the PM must make sure the infrastructure and culture work for everyone; ask others what they need and share what you need
 - Many technologies started as accessibility features: **Google Assistant** (voice control of the home), **closed captioning** (watching TV in a noisy bar)
+- Xem thêm: [Course 4: accessible feedback](/blog/project-execution-running-the-project/) – accessibility when collecting feedback
 #### Choosing a project team
 - Choosing the right people is a big task → consider the project needs:
 	1. Make a list of **roles** needed for each task; each role is accountable for specific tasks (e.g. home construction: architect, site manager, construction workers)
@@ -379,7 +382,7 @@ isIndex: false
 - Want people who challenge choices, but everyone must agree on a common goal and vision; "technical problems aren't that hard, people problems are really hard" → the PM motivates the team and gets everyone bought in
 ### Evaluating stakeholders
 #### Completing a stakeholder analysis
-- **Stakeholder analysis**: a visual representation of all the stakeholders → avoid surprises, build partnerships, involve the right people at the right time; shows opportunities and risks, who takes which responsibilities
+- **Stakeholder analysis**: a visual representation of all the stakeholders → avoid surprises, build partnerships, involve the right people at the right time; shows opportunities and risks, who takes which responsibilities (→ [Capstone: stakeholder analysis](/blog/capstone-applying-project-management-in-the-real-world/))
 - Three key steps:
 	1. Make a list of all the stakeholders the project impacts
 	2. Determine the level of **interest** and **influence** for each stakeholder
@@ -447,6 +450,7 @@ isIndex: false
 - **Put your RACI into practice**: share it with sponsors and stakeholders for **buy-in and sign-off** → clear expectations, alignment; document acknowledgment in the project charter, meeting notes, and the RACI chart itself; keep checking in → streamlined communication and decision-making
 - **When to use a RACI chart**: evaluate complexity → a very small team, few stakeholders, clear roles, short timeline → a RACI chart could slow things down; larger projects or many stakeholders benefit greatly; creating one is always good practice even if you don't use it
 - Getting the most out of a RACI chart: https://www.coursera.org/learn/project-initiation-google/supplement/caqAJ
+- Xem thêm: [Course 4: project meetings](/blog/project-execution-running-the-project/) – RACI in project meetings
 ### Review: Working effectively with stakeholders
 #### Why projects fail: Initiation missteps
 - Some failure factors are out of your control (technology unavailable, a stakeholder drastically changes goals); others are more in your control (missing the agreed time, not fulfilling the stakeholder's vision)
@@ -499,7 +503,7 @@ isIndex: false
 - Format and content vary by project, organization, and audience (e.g. a marketing executive → impact on the brand; a chief technology officer → cost of engineering resources to maintain the project)
 - Best practice before the planning phase; a **living document** → reviewed and refined throughout
 #### Project charters: Elements and formats
-- The charter formally captures the project's goals, values, benefits, and details → the **compass** of the project, used throughout the life cycle; stakeholders use it to check alignment with strategic goals → right amount of detail, omit miscellaneous elements
+- The charter formally captures the project's goals, values, benefits, and details → the **compass** of the project, used throughout the life cycle; stakeholders use it to check alignment with strategic goals → right amount of detail, omit miscellaneous elements (→ [Capstone: drafting a project charter](/blog/capstone-applying-project-management-in-the-real-world/))
 - Develop it collaboratively with team and stakeholders early and often; use the **business case** (the reason for initiating the project) as the guiding direction
 - Usual key information: introduction/project summary; goals/objectives; business case/benefits and costs; project team; scope; success criteria; major requirements or key deliverables; budget; schedule/timeline or milestones; constraints and assumptions; risks; OKRs; approvals
 - Formats: a short, simple charter for smaller, less complex projects; for complex projects link to additional analysis or documents in an **appendix**; organizations may have their own template
@@ -555,6 +559,7 @@ isIndex: false
 	- E.g. a list of tasks, due dates, completion statuses, task owners → **sort** by due date, **filter** by task owner, **highlight** rows in colors to show tasks with the least progress
 - Get a basic understanding of the variety of software → recommend the right tool when there's no company standard (adds value at the start of a project)
 - Software changes constantly; no one knows every tool → many share functionality (task tracking, assignment), so understanding one deeply makes it easy to adapt
+- Xem thêm: [Course 4: communication tools](/blog/project-execution-running-the-project/) – tools for team communication
 #### Using Google Sheets for project management
 - **Collaborate with your team**: share permissions → **editing** (direct changes), **commenting** (comments and suggestions), **view only** (no changes); collaborate and assign tasks or action items through comments
 - **Format your spreadsheet**:

@@ -310,6 +310,7 @@ isIndex: false
 	- **Understanding motivations**: what pushes each teammate to do their best work, how they prefer feedback and recognition
 - Example: a coworker constantly late to meetings → ask them to arrive 15 minutes earlier, or explain how the behavior impacts the team
 - Influencing without authority is one of the most critical and most challenging aspects of project management (a common interview question)
+- Xem thêm: [Course 4: leading high-functioning teams](/blog/project-execution-running-the-project/) – team dynamics during execution
 #### Ellen: Traits of a successful project manager
 - Ellen: director of technical program management at Google (leads a team of program managers) → "you can do more together as a team than alone"
 - Two parts of project management: **laser-like focus on executing** the goal + **the people** → a successful project manager can do both
@@ -379,6 +380,7 @@ isIndex: false
 - **Close the project**: confirm all requested outcomes are complete, release the team to other projects, celebrate, pass off remaining deliverables and get stakeholder approval, document lessons learned, reflect on improvements
 - Following the life cycle ensures you capture customer expectations, set up for success with a plan, execute and address issues, and capture lessons learned
 - Summary of the project phases: https://www.coursera.org/learn/project-management-foundations/supplement/zDzB0
+- Xem thêm: [Course 4: project closure](/blog/project-execution-running-the-project/) – executing and closing in practice
 ### Comparing project management methodologies and approaches
 #### Introduction to project management methodologies
 - **Project management methodology**: a set of guiding principles and processes for owning a project through its life cycle → steps to take, tasks to complete, principles for managing the project
@@ -420,6 +422,7 @@ isIndex: false
 | Stakeholders | Project manager continually manages and monitors stakeholder engagement | Team frequently provides deliverables to stakeholders; progress depends on stakeholder feedback |
 
 - Comparing Waterfall and Agile approaches: https://www.coursera.org/learn/project-management-foundations/supplement/qNbkq
+- Xem thêm: [Course 5: Agile project management](/blog/agile-project-management/) – history and values of Agile in depth
 #### Introduction to Lean and Six Sigma
 - **Lean Six Sigma**: a combination of two parent methodologies, **Lean** and **Six Sigma** → common in projects that aim to save money, improve quality, and move through processes quickly; also focuses on team collaboration (a valued team is more motivated and productive)
 - Five phases: **DMAIC** (**define, measure, analyze, improve, control**) → a strategy for **process improvement**; can be used to solve any business problem
@@ -453,6 +456,8 @@ isIndex: false
 - **Lean Six Sigma**: Lean tools (Kanban boards, 5S) build quality into processes from the beginning; products are then inspected or tested against Six Sigma standards
 	- Difference: Lean **streamlines processes**; Six Sigma **reduces variation** in products by building in quality and inspecting against standards
 - Lean and Six Sigma methodologies: https://www.coursera.org/learn/project-management-foundations/supplement/djsGX
+- Xem thêm: [Course 4: data-driven improvement](/blog/project-execution-running-the-project/) – DMAIC and Lean Six Sigma for quality
+- Xem thêm: [Course 5: Kanban, XP and Lean](/blog/agile-project-management/) – Lean principles applied in Agile
 #### Common project management approaches and how to select one
 - **Waterfall**: traditional, linear and sequential; each stage completed before the next; the project manager prioritizes and assigns tasks; quality criteria defined at the beginning
 - **Agile**: short phases of collaborative, iterative work with frequent testing and regular improvements; some phases overlap; teams share responsibility for managing their own work
@@ -651,6 +656,7 @@ isIndex: false
 		- Write a document describing all budget, timeline, and training impacts → circulate for feedback and alignment from stakeholders → share with the CEO (full scope; agreement or resistance?)
 		- The CEO has someone write a formal memo explaining why the name change is needed and shares it with staff and their teams
 - Every organization's structure, culture, and processes differ → use the same questions (how will the organization react? which influencers? best means of communication? which practices?) to prepare for scenarios and support adoption
+- Xem thêm: [Course 5: facilitating organizational change](/blog/agile-project-management/) – change management when adopting Agile
 #### Corporate and project governance
 - **Governance**: the management framework within which decisions are made and accountability and responsibility are determined → "who is in charge"; may come up in interviews
 - **Corporate governance**: an organization's own standards and practices that direct and control its actions → the framework by which it achieves goals and objectives; balances requirements of stakeholders, management, customers; affects action plans, internal and external controls, performance measurements

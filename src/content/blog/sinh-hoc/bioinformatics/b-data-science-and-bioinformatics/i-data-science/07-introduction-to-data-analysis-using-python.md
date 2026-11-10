@@ -15,12 +15,12 @@ vaultPath: >-
   Science/07 - Introduction to Data Analysis Using Python.md
 url: /blog/introduction-to-data-analysis-using-python/
 topic: biology
-updated: '2026-11-09'
+updated: '2026-11-10'
 order: 7
 description: >-
   These tools are often used together: e.g. use SQL to pull a dataset → clean
-  and organize it in Python → export as a spreadsheet for quick insights
-  Introduction to Python Programming languages: the words and symbols used 
+  and organize it in Python → export as a spreadsheet for quick insights (→
+  Digital marketing Course 7: E-commerce analytics tools) Introduction t
 isIndex: false
 ---
 ## Module 1: Hello, Python!
@@ -70,7 +70,7 @@ isIndex: false
 | Formulas and functions?           | Yes                                                                                                               | Yes                                                                              | Yes                                                                                                         |
 | Visualizations?                   | Yes                                                                                                               | Yes, with an additional tool like a DBMS or BI tool                              | Yes, with libraries such as Seaborn, Matplotlib, Plotly                                                     |
 
-- These tools are often used together: e.g. use SQL to pull a dataset → clean and organize it in Python → export as a spreadsheet for quick insights
+- These tools are often used together: e.g. use SQL to pull a dataset → clean and organize it in Python → export as a spreadsheet for quick insights (→ [Digital marketing Course 7: E-commerce analytics tools](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/))
 #### Introduction to Python
 - Programming languages: the words and symbols used to write instructions for computers to follow
 - **Transistor**: the most fundamental component of the computer, controls the flow of electricity through a circuit; two states: on or off
@@ -155,7 +155,7 @@ isIndex: false
 | Data science focus  | Machine learning and automated analysis   | Exploratory data analysis and extensive statistical libraries  | Used across projects with open-source assets | Not as widely used but very powerful implementations |
 | Programming paradigm | Object-oriented                          | Functional language                                            | Object-oriented                             | Multi-paradigm (imperative & object-oriented)        |
 
-- Python: easy to learn, object-oriented, dynamic variables; sometimes requires a longer time to execute, but a great tool for machine learning and automated analysis
+- Python: easy to learn, object-oriented, dynamic variables; sometimes requires a longer time to execute, but a great tool for machine learning and automated analysis (→ [Digital marketing Course 5: Python and R for marketing analytics](/blog/assess-for-success-marketing-analytics-and-measurement/))
 #### Introduction to R
 - **R**: an open-source programming language and software environment specifically designed for statistical computing and graphics (→ [R Tutorial](/topics/tutorial/), [Bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/))
 	- Created in 1993 by Ross Ihaka and Robert Gentleman (University of Auckland, New Zealand)
