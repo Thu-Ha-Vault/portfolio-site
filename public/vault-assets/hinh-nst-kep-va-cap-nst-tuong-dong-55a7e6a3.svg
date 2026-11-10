@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 450" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+
+</defs>
+<rect width="980" height="450" rx="14" fill="#fbfaf7"/>
+<text x="290" y="34" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">Bộ NST trong tế bào (ví dụ 2n = 4, NST ở trạng thái kép)</text>
+<circle cx="110" cy="215" r="82" fill="#fff" stroke="#999" stroke-width="2"/>
+<g transform="translate(75,187) rotate(-20) scale(0.5)"><g><polyline points="-20.560000000000002,-52 -6.0,0 -20.560000000000002,52" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="20.560000000000002,-52 6.0,0 20.560000000000002,52" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="0" r="6.050000000000001" fill="#a63a2b"/></g></g>
+<g transform="translate(138,185) rotate(15) scale(0.5)"><g><polyline points="-20.560000000000002,-52 -6.0,0 -20.560000000000002,52" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="20.560000000000002,-52 6.0,0 20.560000000000002,52" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="0" r="6.050000000000001" fill="#1d4f8f"/></g></g>
+<g transform="translate(82,250) rotate(30) scale(0.5)"><g><polyline points="-15.520000000000001,-34 -6.0,0 -15.520000000000001,34" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15.520000000000001,-34 6.0,0 15.520000000000001,34" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="0" r="6.050000000000001" fill="#a63a2b"/></g></g>
+<g transform="translate(145,245) rotate(-10) scale(0.5)"><g><polyline points="-15.520000000000001,-34 -6.0,0 -15.520000000000001,34" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15.520000000000001,-34 6.0,0 15.520000000000001,34" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="0" r="6.050000000000001" fill="#1d4f8f"/></g></g>
+<text x="110" y="320" text-anchor="middle" font-size="13" fill="#666">tế bào 2n</text>
+<line x1="200" y1="215" x2="252" y2="215" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="226" y="203" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">2n kép</text>
+<g><polyline points="279.44,148 294.0,200 279.44,252" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="320.56,148 306.0,200 320.56,252" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="300" cy="200" r="6.050000000000001" fill="#a63a2b"/></g>
+<text x="300" y="130" text-anchor="middle" font-size="18" fill="#a63a2b" font-weight="bold">♀</text>
+<g><polyline points="349.44,148 364.0,200 349.44,252" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="390.56,148 376.0,200 390.56,252" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="370" cy="200" r="6.050000000000001" fill="#1d4f8f"/></g>
+<text x="370" y="130" text-anchor="middle" font-size="18" fill="#1d4f8f" font-weight="bold">♂</text>
+<g><polyline points="454.48,166 464.0,200 454.48,234" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="485.52,166 476.0,200 485.52,234" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="470" cy="200" r="6.050000000000001" fill="#a63a2b"/></g>
+<text x="470" y="148" text-anchor="middle" font-size="18" fill="#a63a2b" font-weight="bold">♀</text>
+<g><polyline points="524.48,166 534.0,200 524.48,234" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="555.52,166 546.0,200 555.52,234" fill="none" stroke="#2f7ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="540" cy="200" r="6.050000000000001" fill="#1d4f8f"/></g>
+<text x="540" y="148" text-anchor="middle" font-size="18" fill="#1d4f8f" font-weight="bold">♂</text>
+<text x="335" y="104" text-anchor="middle" font-size="12" fill="#666">(♀: từ mẹ, ♂: từ bố)</text>
+<path d="M 296 264 L 296 272 L 374 272 L 374 264" fill="none" stroke="#3a9a4a" stroke-width="2"/>
+<text x="335.0" y="291" text-anchor="middle" font-size="13" fill="#3a9a4a" font-weight="bold">NST tương đồng</text>
+<path d="M 466 264 L 466 272 L 544 272 L 544 264" fill="none" stroke="#3a9a4a" stroke-width="2"/>
+<text x="505.0" y="291" text-anchor="middle" font-size="13" fill="#3a9a4a" font-weight="bold">NST tương đồng</text>
+<path d="M 374 314 L 374 322 L 466 322 L 466 314" fill="none" stroke="#7d55b8" stroke-width="2"/>
+<text x="420.0" y="341" text-anchor="middle" font-size="13" fill="#7d55b8" font-weight="bold">NST không tương đồng</text>
+<line x1="374" y1="292" x2="374" y2="314" stroke="#7d55b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="466" y1="292" x2="466" y2="314" stroke="#7d55b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="290" y="380" text-anchor="middle" font-size="13" fill="#333">Cặp NST tương đồng: giống nhau về hình thái, kích thước,</text>
+<text x="290" y="398" text-anchor="middle" font-size="13" fill="#333">1 chiếc có nguồn gốc từ mẹ, 1 chiếc từ bố.</text>
+<line x1="600" y1="24" x2="600" y2="420" stroke="#ddd" stroke-width="1.5"/>
+<text x="790" y="34" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">NST đơn và NST kép</text>
+<g><polyline points="650,153 650,215 650,277" fill="none" stroke="#e05a47" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="650" cy="215" r="5.5" fill="#a63a2b"/></g>
+<text x="650" y="125" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">NST đơn</text>
+<text x="650" y="318" text-anchor="middle" font-size="13" fill="#666">(2n đơn)</text>
+<line x1="680" y1="215" x2="735" y2="215" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="707" y="203" text-anchor="middle" font-size="12" fill="#333">nhân đôi</text>
+<text x="707" y="238" text-anchor="middle" font-size="12" fill="#666">(pha S)</text>
+<g><polyline points="787.0,145 805.0,215 787.0,285" fill="none" stroke="#e05a47" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><polyline points="837.0,145 819.0,215 837.0,285" fill="none" stroke="#e05a47" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><circle cx="812" cy="215" r="8" fill="#a63a2b"/></g>
+<text x="812" y="125" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">NST kép</text>
+<text x="812" y="318" text-anchor="middle" font-size="13" fill="#666">(2n kép)</text>
+<line x1="878" y1="178" x2="796" y2="180" stroke="#888" stroke-width="1.2"/><circle cx="796" cy="180" r="2.2" fill="#888"/>
+<line x1="878" y1="178" x2="828" y2="180" stroke="#888" stroke-width="1.2"/><circle cx="828" cy="180" r="2.2" fill="#888"/>
+<text x="884" y="174" text-anchor="start" font-size="12" fill="#333">2 chromatid</text>
+<text x="884" y="189" text-anchor="start" font-size="12" fill="#333">chị em</text>
+<line x1="878" y1="262" x2="817" y2="220" stroke="#888" stroke-width="1.2"/><circle cx="817" cy="220" r="2.2" fill="#888"/>
+<text x="884" y="267" text-anchor="start" font-size="12" fill="#333">tâm động</text>
+<line x1="780" y1="350" x2="844" y2="350" stroke="#777" stroke-width="1.5" marker-start="url(#s)" marker-end="url(#s)"/>
+<line x1="780" y1="296" x2="780" y2="356" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="844" y1="296" x2="844" y2="356" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="812" y="372" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">≈ 1400 nm</text>
+<text x="790" y="410" text-anchor="middle" font-size="13" fill="#333">Mỗi NST kép gồm 2 chromatid chị em giống hệt nhau,</text>
+<text x="790" y="428" text-anchor="middle" font-size="13" fill="#333">dính nhau ở tâm động.</text>
+</svg>

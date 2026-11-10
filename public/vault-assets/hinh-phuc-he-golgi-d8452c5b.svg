@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+
+</defs>
+<rect width="960" height="430" rx="14" fill="#fbfaf7"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Phức hệ (bộ máy) Golgi</text>
+<path d="M260,392 C320,372 360,404 420,386 C480,368 520,402 580,386 C620,376 650,392 690,384" fill="none" stroke="#2f7ed8" stroke-width="18" stroke-linecap="round"/>
+<path d="M260,392 C320,372 360,404 420,386 C480,368 520,402 580,386 C620,376 650,392 690,384" fill="none" stroke="#dbe9fb" stroke-width="10" stroke-linecap="round"/>
+<circle cx="280.8" cy="373.9" r="3.5" fill="#555"/>
+<circle cx="320.4" cy="373.0" r="3.5" fill="#555"/>
+<circle cx="358.1" cy="377.5" r="3.5" fill="#555"/>
+<circle cx="397.5" cy="377.7" r="3.5" fill="#555"/>
+<circle cx="440.8" cy="368.6" r="3.5" fill="#555"/>
+<circle cx="480.4" cy="369.2" r="3.5" fill="#555"/>
+<circle cx="518.1" cy="375.2" r="3.5" fill="#555"/>
+<circle cx="557.5" cy="376.9" r="3.5" fill="#555"/>
+<circle cx="594.0" cy="370.4" r="3.5" fill="#555"/>
+<circle cx="621.3" cy="370.0" r="3.5" fill="#555"/>
+<circle cx="647.6" cy="372.5" r="3.5" fill="#555"/>
+<circle cx="674.9" cy="373.0" r="3.5" fill="#555"/>
+<circle cx="400" cy="346" r="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="3"/>
+<line x1="400" y1="332" x2="400" y2="316" stroke="#2f7ed8" stroke-width="2" marker-end="url(#b)" stroke-linecap="round"/>
+<circle cx="480" cy="352" r="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="3"/>
+<line x1="480" y1="338" x2="480" y2="322" stroke="#2f7ed8" stroke-width="2" marker-end="url(#b)" stroke-linecap="round"/>
+<circle cx="560" cy="344" r="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="3"/>
+<line x1="560" y1="330" x2="560" y2="314" stroke="#2f7ed8" stroke-width="2" marker-end="url(#b)" stroke-linecap="round"/>
+<path d="M320,272 Q480,328 640,272" fill="none" stroke="#7d55b8" stroke-width="20" stroke-linecap="round"/>
+<path d="M320,272 Q480,328 640,272" fill="none" stroke="#ece3f7" stroke-width="12" stroke-linecap="round"/>
+<path d="M324,242 Q480,298 636,242" fill="none" stroke="#7d55b8" stroke-width="20" stroke-linecap="round"/>
+<path d="M324,242 Q480,298 636,242" fill="none" stroke="#ece3f7" stroke-width="12" stroke-linecap="round"/>
+<path d="M328,212 Q480,268 632,212" fill="none" stroke="#7d55b8" stroke-width="20" stroke-linecap="round"/>
+<path d="M328,212 Q480,268 632,212" fill="none" stroke="#ece3f7" stroke-width="12" stroke-linecap="round"/>
+<path d="M332,182 Q480,238 628,182" fill="none" stroke="#7d55b8" stroke-width="20" stroke-linecap="round"/>
+<path d="M332,182 Q480,238 628,182" fill="none" stroke="#ece3f7" stroke-width="12" stroke-linecap="round"/>
+<path d="M336,152 Q480,208 624,152" fill="none" stroke="#7d55b8" stroke-width="20" stroke-linecap="round"/>
+<path d="M336,152 Q480,208 624,152" fill="none" stroke="#ece3f7" stroke-width="12" stroke-linecap="round"/>
+<circle cx="296" cy="262" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="302" cy="226" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="664" cy="262" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="658" cy="226" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="306" cy="190" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="654" cy="190" r="8" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="420" cy="126" r="12" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="417" cy="124" r="1.8" fill="#7d55b8"/>
+<circle cx="423" cy="128" r="1.8" fill="#7d55b8"/>
+<circle cx="422" cy="122" r="1.8" fill="#7d55b8"/>
+<circle cx="500" cy="112" r="12" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="497" cy="110" r="1.8" fill="#7d55b8"/>
+<circle cx="503" cy="114" r="1.8" fill="#7d55b8"/>
+<circle cx="502" cy="108" r="1.8" fill="#7d55b8"/>
+<circle cx="580" cy="128" r="12" fill="#ece3f7" stroke="#7d55b8" stroke-width="3"/>
+<circle cx="577" cy="126" r="1.8" fill="#7d55b8"/>
+<circle cx="583" cy="130" r="1.8" fill="#7d55b8"/>
+<circle cx="582" cy="124" r="1.8" fill="#7d55b8"/>
+<line x1="500" y1="96" x2="500" y2="66" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<line x1="420" y1="110" x2="396" y2="80" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<line x1="580" y1="112" x2="604" y2="82" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<text x="500" y="58" text-anchor="middle" font-size="13" fill="#523282" font-weight="bold">xuất bào / đến bào quan khác</text>
+<circle cx="720" cy="140" r="15" fill="#fde7d4" stroke="#e08a2e" stroke-width="3"/>
+<circle cx="717" cy="138" r="1.8" fill="#e08a2e"/>
+<circle cx="723" cy="142" r="1.8" fill="#e08a2e"/>
+<circle cx="722" cy="136" r="1.8" fill="#e08a2e"/>
+<line x1="650" y1="160" x2="700" y2="146" stroke="#e08a2e" stroke-width="2" marker-end="url(#o)" stroke-linecap="round"/>
+<text x="760" y="140" text-anchor="start" font-size="14" fill="#c46f12" font-weight="bold">Lysosome</text>
+<text x="760" y="156" text-anchor="start" font-size="12" fill="#666">(enzyme thuỷ phân)</text>
+<text x="760" y="210" text-anchor="start" font-size="14" fill="#523282" font-weight="bold">Bể chứa dẹp hình</text>
+<text x="760" y="226" text-anchor="start" font-size="14" fill="#523282" font-weight="bold">vòng cung (3 – 8 bể)</text>
+<line x1="756" y1="214" x2="640" y2="252" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="640" cy="252" r="2.5" fill="#555"/>
+<text x="760" y="300" text-anchor="start" font-size="13" fill="#333" font-weight="bold">Mặt cis (mặt nhận)</text>
+<line x1="756" y1="296" x2="630" y2="286" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="630" cy="286" r="2.5" fill="#555"/>
+<text x="760" y="380" text-anchor="start" font-size="14" fill="#1d4f8f" font-weight="bold">Lưới nội chất hạt</text>
+<text x="760" y="396" text-anchor="start" font-size="12" fill="#666">(tổng hợp protein)</text>
+<line x1="756" y1="376" x2="690" y2="384" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="690" cy="384" r="2.5" fill="#555"/>
+<text x="230" y="120" text-anchor="end" font-size="14" fill="#523282" font-weight="bold">Túi tiết</text>
+<text x="230" y="136" text-anchor="end" font-size="12" fill="#666">(mặt trans – mặt xuất)</text>
+<line x1="234" y1="124" x2="406" y2="124" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="406" cy="124" r="2.5" fill="#555"/>
+<text x="230" y="215" text-anchor="end" font-size="14" fill="#523282" font-weight="bold">Không bào bé</text>
+<text x="230" y="231" text-anchor="end" font-size="12" fill="#666">ở cuối bể chứa</text>
+<line x1="234" y1="220" x2="290" y2="226" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="290" cy="226" r="2.5" fill="#555"/>
+<text x="230" y="330" text-anchor="end" font-size="14" fill="#1d4f8f" font-weight="bold">Túi vận chuyển</text>
+<text x="230" y="346" text-anchor="end" font-size="12" fill="#666">(bóng nội bào)</text>
+<line x1="234" y1="336" x2="390" y2="346" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="390" cy="346" r="2.5" fill="#555"/>
+</svg>

@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 565" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <rect width="980" height="565" rx="14" fill="#fbfaf7"/>
+  <text x="490.0" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Hoán vị gen: trao đổi chéo ở kì đầu giảm phân I (tế bào AB/ab)</text>
+  <text x="85" y="58" text-anchor="middle" font-size="14" font-weight="bold" fill="#666">Cặp NST tương đồng</text>
+  <text x="280" y="58" text-anchor="middle" font-size="14" font-weight="bold" fill="#666">Tiếp hợp, trao đổi chéo</text>
+  <text x="515" y="58" text-anchor="middle" font-size="14" font-weight="bold" fill="#666">Kết thúc giảm phân I</text>
+  <text x="745" y="58" text-anchor="middle" font-size="14" font-weight="bold" fill="#666">Giao tử (n)</text>
+  <clipPath id="c1"><rect x="50.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c1)"><rect x="50.0" y="205.0" width="26" height="102.0" fill="#dbe9fb"/><rect x="50.0" y="307.0" width="26" height="68.0" fill="#dbe9fb"/>
+    <rect x="50.0" y="229.0" width="26" height="20" fill="#2f7ed8"/>
+    <rect x="50.0" y="331.0" width="26" height="20" fill="#2f7ed8"/>
+  </g>
+  <text x="63.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="63.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="50.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#2f7ed8" stroke-width="1.8"/>
+  <clipPath id="c2"><rect x="94.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c2)"><rect x="94.0" y="205.0" width="26" height="102.0" fill="#fde7d4"/><rect x="94.0" y="307.0" width="26" height="68.0" fill="#fde7d4"/>
+    <rect x="94.0" y="229.0" width="26" height="20" fill="#e08a2e"/>
+    <rect x="94.0" y="331.0" width="26" height="20" fill="#e08a2e"/>
+  </g>
+  <text x="107.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="107.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="94.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#e08a2e" stroke-width="1.8"/>
+  <circle cx="63" cy="276.4" r="7" fill="#555"/>
+  <circle cx="107" cy="276.4" r="7" fill="#555"/>
+  <text x="85" y="405.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AB/ab</text>
+  <clipPath id="c3"><rect x="216.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c3)"><rect x="216.0" y="205.0" width="26" height="102.0" fill="#dbe9fb"/><rect x="216.0" y="307.0" width="26" height="68.0" fill="#dbe9fb"/>
+    <rect x="216.0" y="229.0" width="26" height="20" fill="#2f7ed8"/>
+    <rect x="216.0" y="331.0" width="26" height="20" fill="#2f7ed8"/>
+  </g>
+  <text x="229.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="229.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="216.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#2f7ed8" stroke-width="1.8"/>
+  <clipPath id="c4"><rect x="246.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c4)"><rect x="246.0" y="205.0" width="26" height="102.0" fill="#dbe9fb"/><rect x="246.0" y="307.0" width="26" height="68.0" fill="#dbe9fb"/>
+    <rect x="246.0" y="229.0" width="26" height="20" fill="#2f7ed8"/>
+    <rect x="246.0" y="331.0" width="26" height="20" fill="#2f7ed8"/>
+  </g>
+  <text x="259.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="259.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="246.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#2f7ed8" stroke-width="1.8"/>
+  <circle cx="244" cy="276.4" r="8.3" fill="#555"/>
+  <clipPath id="c5"><rect x="288.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c5)"><rect x="288.0" y="205.0" width="26" height="102.0" fill="#fde7d4"/><rect x="288.0" y="307.0" width="26" height="68.0" fill="#fde7d4"/>
+    <rect x="288.0" y="229.0" width="26" height="20" fill="#e08a2e"/>
+    <rect x="288.0" y="331.0" width="26" height="20" fill="#e08a2e"/>
+  </g>
+  <text x="301.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="301.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="288.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#e08a2e" stroke-width="1.8"/>
+  <clipPath id="c6"><rect x="318.0" y="205.0" width="26" height="170.0" rx="13.0"/></clipPath>
+  <g clip-path="url(#c6)"><rect x="318.0" y="205.0" width="26" height="102.0" fill="#fde7d4"/><rect x="318.0" y="307.0" width="26" height="68.0" fill="#fde7d4"/>
+    <rect x="318.0" y="229.0" width="26" height="20" fill="#e08a2e"/>
+    <rect x="318.0" y="331.0" width="26" height="20" fill="#e08a2e"/>
+  </g>
+  <text x="331.0" y="244.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="331.0" y="346.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="318.0" y="205.0" width="26" height="170.0" rx="13.0" fill="none" stroke="#e08a2e" stroke-width="1.8"/>
+  <circle cx="316" cy="276.4" r="8.3" fill="#555"/>
+  <path d="M 259 285.0 L 301 329.0 M 259 329.0 L 301 285.0" stroke="#e05a47" stroke-width="4" stroke-linecap="round"/>
+  <text x="280" y="405.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#e05a47">trao đổi chéo giữa 2 chromatid</text>
+  <text x="280" y="423.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#e05a47">khác nguồn gốc</text>
+  <line x1="137" y1="290" x2="208" y2="290" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="172.5" y="278" text-anchor="middle" font-size="13" fill="#666">nhân đôi</text>
+  <rect x="455" y="85" width="120" height="160" rx="40" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c7"><rect x="489.0" y="100.0" width="24" height="130.0" rx="12.0"/></clipPath>
+  <g clip-path="url(#c7)"><rect x="489.0" y="100.0" width="24" height="78.0" fill="#dbe9fb"/><rect x="489.0" y="178.0" width="24" height="52.0" fill="#dbe9fb"/>
+    <rect x="489.0" y="116.0" width="24" height="20" fill="#2f7ed8"/>
+    <rect x="489.0" y="194.0" width="24" height="20" fill="#2f7ed8"/>
+  </g>
+  <text x="501.0" y="131.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="501.0" y="209.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="489.0" y="100.0" width="24" height="130.0" rx="12.0" fill="none" stroke="#2f7ed8" stroke-width="1.8"/>
+  <clipPath id="c8"><rect x="517.0" y="100.0" width="24" height="130.0" rx="12.0"/></clipPath>
+  <g clip-path="url(#c8)"><rect x="517.0" y="100.0" width="24" height="78.0" fill="#dbe9fb"/><rect x="517.0" y="178.0" width="24" height="52.0" fill="#fde7d4"/>
+    <rect x="517.0" y="116.0" width="24" height="20" fill="#2f7ed8"/>
+    <rect x="517.0" y="194.0" width="24" height="20" fill="#e08a2e"/>
+  </g>
+  <text x="529.0" y="131.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="529.0" y="209.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="517.0" y="100.0" width="24" height="130.0" rx="12.0" fill="none" stroke="#777" stroke-width="1.8"/>
+  <circle cx="515" cy="154.6" r="7.7" fill="#555"/>
+  <path d="M 355 250 C 410 250, 395 165, 449 165" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="455" y="335" width="120" height="160" rx="40" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c9"><rect x="489.0" y="350.0" width="24" height="130.0" rx="12.0"/></clipPath>
+  <g clip-path="url(#c9)"><rect x="489.0" y="350.0" width="24" height="78.0" fill="#fde7d4"/><rect x="489.0" y="428.0" width="24" height="52.0" fill="#dbe9fb"/>
+    <rect x="489.0" y="366.0" width="24" height="20" fill="#e08a2e"/>
+    <rect x="489.0" y="444.0" width="24" height="20" fill="#2f7ed8"/>
+  </g>
+  <text x="501.0" y="381.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="501.0" y="459.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="489.0" y="350.0" width="24" height="130.0" rx="12.0" fill="none" stroke="#777" stroke-width="1.8"/>
+  <clipPath id="c10"><rect x="517.0" y="350.0" width="24" height="130.0" rx="12.0"/></clipPath>
+  <g clip-path="url(#c10)"><rect x="517.0" y="350.0" width="24" height="78.0" fill="#fde7d4"/><rect x="517.0" y="428.0" width="24" height="52.0" fill="#fde7d4"/>
+    <rect x="517.0" y="366.0" width="24" height="20" fill="#e08a2e"/>
+    <rect x="517.0" y="444.0" width="24" height="20" fill="#e08a2e"/>
+  </g>
+  <text x="529.0" y="381.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="529.0" y="459.0" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="517.0" y="350.0" width="24" height="130.0" rx="12.0" fill="none" stroke="#e08a2e" stroke-width="1.8"/>
+  <circle cx="515" cy="404.6" r="7.7" fill="#555"/>
+  <path d="M 355 330 C 410 330, 395 415, 449 415" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="407.5" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">giảm phân I</text>
+  <circle cx="745" cy="120" r="48" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c11"><rect x="734.0" y="80.0" width="22" height="80.0" rx="11.0"/></clipPath>
+  <g clip-path="url(#c11)"><rect x="734.0" y="80.0" width="22" height="48.0" fill="#dbe9fb"/><rect x="734.0" y="128.0" width="22" height="32.0" fill="#dbe9fb"/>
+    <rect x="734.0" y="87.0" width="22" height="18" fill="#2f7ed8"/>
+    <rect x="734.0" y="135.0" width="22" height="18" fill="#2f7ed8"/>
+  </g>
+  <text x="745.0" y="100.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="745.0" y="148.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="734.0" y="80.0" width="22" height="80.0" rx="11.0" fill="none" stroke="#2f7ed8" stroke-width="1.8"/>
+  <path d="M 579 145 C 625 145, 645 120, 691 120" fill="none" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="807" y="122" font-size="20" font-weight="bold" font-style="italic" fill="#333">AB</text>
+  <text x="807" y="142" font-size="13" fill="#666">(LK) giao tử liên kết</text>
+  <circle cx="745" cy="228" r="48" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c12"><rect x="734.0" y="188.0" width="22" height="80.0" rx="11.0"/></clipPath>
+  <g clip-path="url(#c12)"><rect x="734.0" y="188.0" width="22" height="48.0" fill="#dbe9fb"/><rect x="734.0" y="236.0" width="22" height="32.0" fill="#fde7d4"/>
+    <rect x="734.0" y="195.0" width="22" height="18" fill="#2f7ed8"/>
+    <rect x="734.0" y="243.0" width="22" height="18" fill="#e08a2e"/>
+  </g>
+  <text x="745.0" y="208.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">A</text>
+  <text x="745.0" y="256.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="734.0" y="188.0" width="22" height="80.0" rx="11.0" fill="none" stroke="#777" stroke-width="1.8"/>
+  <path d="M 579 185 C 625 185, 645 228, 691 228" fill="none" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="807" y="230" font-size="20" font-weight="bold" font-style="italic" fill="#e05a47">Ab</text>
+  <text x="807" y="250" font-size="13" fill="#e05a47">(HV) giao tử hoán vị</text>
+  <circle cx="745" cy="362" r="48" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c13"><rect x="734.0" y="322.0" width="22" height="80.0" rx="11.0"/></clipPath>
+  <g clip-path="url(#c13)"><rect x="734.0" y="322.0" width="22" height="48.0" fill="#fde7d4"/><rect x="734.0" y="370.0" width="22" height="32.0" fill="#dbe9fb"/>
+    <rect x="734.0" y="329.0" width="22" height="18" fill="#e08a2e"/>
+    <rect x="734.0" y="377.0" width="22" height="18" fill="#2f7ed8"/>
+  </g>
+  <text x="745.0" y="342.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="745.0" y="390.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">B</text>
+  <rect x="734.0" y="322.0" width="22" height="80.0" rx="11.0" fill="none" stroke="#777" stroke-width="1.8"/>
+  <path d="M 579 395 C 625 395, 645 362, 691 362" fill="none" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="807" y="364" font-size="20" font-weight="bold" font-style="italic" fill="#e05a47">aB</text>
+  <text x="807" y="384" font-size="13" fill="#e05a47">(HV) giao tử hoán vị</text>
+  <circle cx="745" cy="470" r="48" fill="none" stroke="#bbb" stroke-width="2"/>
+  <clipPath id="c14"><rect x="734.0" y="430.0" width="22" height="80.0" rx="11.0"/></clipPath>
+  <g clip-path="url(#c14)"><rect x="734.0" y="430.0" width="22" height="48.0" fill="#fde7d4"/><rect x="734.0" y="478.0" width="22" height="32.0" fill="#fde7d4"/>
+    <rect x="734.0" y="437.0" width="22" height="18" fill="#e08a2e"/>
+    <rect x="734.0" y="485.0" width="22" height="18" fill="#e08a2e"/>
+  </g>
+  <text x="745.0" y="450.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">a</text>
+  <text x="745.0" y="498.3" text-anchor="middle" font-size="12" font-weight="bold" font-style="italic" fill="#fff">b</text>
+  <rect x="734.0" y="430.0" width="22" height="80.0" rx="11.0" fill="none" stroke="#e08a2e" stroke-width="1.8"/>
+  <path d="M 579 435 C 625 435, 645 470, 691 470" fill="none" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="807" y="472" font-size="20" font-weight="bold" font-style="italic" fill="#333">ab</text>
+  <text x="807" y="492" font-size="13" fill="#666">(LK) giao tử liên kết</text>
+  <text x="635.0" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">giảm phân II</text>
+  <text x="490.0" y="547" text-anchor="middle" font-size="14" fill="#333">→ 4 loại giao tử: 2 loại liên kết (tỉ lệ lớn) + 2 loại hoán vị (tỉ lệ nhỏ)</text>
+</svg>

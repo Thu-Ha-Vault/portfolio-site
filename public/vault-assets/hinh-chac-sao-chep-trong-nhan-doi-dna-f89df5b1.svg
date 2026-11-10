@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+
+</defs>
+<rect width="1000" height="540" rx="14" fill="#fbfaf7"/>
+<text x="500" y="32" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Nhân đôi DNA tại chạc sao chép (replication fork)</text>
+<line x1="50" y1="200.0" x2="50" y2="200.0" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="62" y1="219.02113032590307" x2="62" y2="180.97886967409693" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="74" y1="211.75570504584945" x2="74" y2="188.24429495415055" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="86" y1="188.24429495415055" x2="86" y2="211.75570504584945" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="98" y1="180.97886967409693" x2="98" y2="219.02113032590307" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="110" y1="200.0" x2="110" y2="200.0" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="122" y1="219.02113032590307" x2="122" y2="180.97886967409693" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="134" y1="211.75570504584948" x2="134" y2="188.24429495415052" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="146" y1="188.24429495415055" x2="146" y2="211.75570504584945" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="158" y1="180.97886967409693" x2="158" y2="219.02113032590307" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="170" y1="200.0" x2="170" y2="200.0" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="182" y1="219.02113032590307" x2="182" y2="180.97886967409693" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="194" y1="211.75570504584948" x2="194" y2="188.24429495415052" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="206" y1="188.24429495415055" x2="206" y2="211.75570504584945" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="218" y1="180.97886967409693" x2="218" y2="219.02113032590307" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="230" y1="199.99999999999997" x2="230" y2="200.00000000000003" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="242" y1="219.02113032590307" x2="242" y2="180.97886967409693" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="254" y1="211.75570504584948" x2="254" y2="188.24429495415052" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="266" y1="188.24429495415055" x2="266" y2="211.75570504584945" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="278" y1="180.97886967409693" x2="278" y2="219.02113032590307" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<line x1="290" y1="199.99999999999997" x2="290" y2="200.00000000000003" stroke="#9cc3ef" stroke-width="2" stroke-linecap="round"/>
+<polyline points="50.0,200.0 54.0,208.1 58.0,214.9 62.0,219.0 66.0,219.9 70.0,217.3 74.0,211.8 78.0,204.2 82.0,195.8 86.0,188.2 90.0,182.7 94.0,180.1 98.0,181.0 102.0,185.1 106.0,191.9 110.0,200.0 114.0,208.1 118.0,214.9 122.0,219.0 126.0,219.9 130.0,217.3 134.0,211.8 138.0,204.2 142.0,195.8 146.0,188.2 150.0,182.7 154.0,180.1 158.0,181.0 162.0,185.1 166.0,191.9 170.0,200.0 174.0,208.1 178.0,214.9 182.0,219.0 186.0,219.9 190.0,217.3 194.0,211.8 198.0,204.2 202.0,195.8 206.0,188.2 210.0,182.7 214.0,180.1 218.0,181.0 222.0,185.1 226.0,191.9 230.0,200.0 234.0,208.1 238.0,214.9 242.0,219.0 246.0,219.9 250.0,217.3 254.0,211.8 258.0,204.2 262.0,195.8 266.0,188.2 270.0,182.7 274.0,180.1 278.0,181.0 282.0,185.1 286.0,191.9 290.0,200.0 294.0,208.1 298.0,214.9" fill="none" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<polyline points="50.0,200.0 54.0,191.9 58.0,185.1 62.0,181.0 66.0,180.1 70.0,182.7 74.0,188.2 78.0,195.8 82.0,204.2 86.0,211.8 90.0,217.3 94.0,219.9 98.0,219.0 102.0,214.9 106.0,208.1 110.0,200.0 114.0,191.9 118.0,185.1 122.0,181.0 126.0,180.1 130.0,182.7 134.0,188.2 138.0,195.8 142.0,204.2 146.0,211.8 150.0,217.3 154.0,219.9 158.0,219.0 162.0,214.9 166.0,208.1 170.0,200.0 174.0,191.9 178.0,185.1 182.0,181.0 186.0,180.1 190.0,182.7 194.0,188.2 198.0,195.8 202.0,204.2 206.0,211.8 210.0,217.3 214.0,219.9 218.0,219.0 222.0,214.9 226.0,208.1 230.0,200.0 234.0,191.9 238.0,185.1 242.0,181.0 246.0,180.1 250.0,182.7 254.0,188.2 258.0,195.8 262.0,204.2 266.0,211.8 270.0,217.3 274.0,219.9 278.0,219.0 282.0,214.9 286.0,208.1 290.0,200.0 294.0,191.9 298.0,185.1" fill="none" stroke="#1d4f8f" stroke-width="5" stroke-linecap="round"/>
+<text x="40" y="186" text-anchor="end" font-size="13" fill="#1d4f8f" font-weight="bold">3'</text>
+<text x="40" y="222" text-anchor="end" font-size="13" fill="#1d4f8f" font-weight="bold">5'</text>
+<path d="M300,200 C330,200 340,130 390,130 L950,130" fill="none" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<path d="M300,200 C330,200 340,270 390,270 L950,270" fill="none" stroke="#1d4f8f" stroke-width="5" stroke-linecap="round"/>
+<text x="960" y="135" text-anchor="start" font-size="13" fill="#1d4f8f" font-weight="bold">5'</text>
+<text x="960" y="275" text-anchor="start" font-size="13" fill="#1d4f8f" font-weight="bold">3'</text>
+<line x1="396" y1="148" x2="416" y2="148" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<line x1="440" y1="148" x2="462" y2="148" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<line x1="462" y1="148" x2="560" y2="148" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<line x1="584" y1="148" x2="606" y2="148" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<line x1="606" y1="148" x2="744" y2="148" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<line x1="752" y1="148" x2="774" y2="148" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<line x1="774" y1="148" x2="940" y2="148" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<text x="440" y="172" text-anchor="middle" font-size="12" fill="#3a9a4a" font-weight="bold">5'</text>
+<line x1="420" y1="252" x2="918" y2="252" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<line x1="918" y1="252" x2="940" y2="252" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<text x="454" y="242" text-anchor="start" font-size="12" fill="#3a9a4a" font-weight="bold">3'</text>
+<text x="948" y="240" text-anchor="start" font-size="12" fill="#3a9a4a" font-weight="bold">5'</text>
+<polygon points="318,182 334,191 334,209 318,218 302,209 302,191" fill="#e08a2e" stroke="#9a5310" stroke-width="1.5"/>
+<text x="298" y="252" text-anchor="end" font-size="13" fill="#c46f12" font-weight="bold">Helicase</text>
+<text x="298" y="268" text-anchor="end" font-size="12" fill="#666">(tháo xoắn)</text>
+<ellipse cx="406" cy="160" rx="18" ry="10" fill="#fdecea" stroke="#e05a47" stroke-width="1.8"/>
+<text x="392" y="96" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">RNA polymerase</text>
+<text x="392" y="112" text-anchor="middle" font-size="12" fill="#666">(tổng hợp đoạn mồi)</text>
+<line x1="400" y1="116" x2="404" y2="148" stroke="#999" stroke-width="1.2" stroke-linecap="round"/>
+<ellipse cx="560" cy="152" rx="24" ry="14" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<line x1="548" y1="184" x2="592" y2="184" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<ellipse cx="420" cy="248" rx="24" ry="14" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<line x1="440" y1="296" x2="398" y2="296" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<text x="560" y="96" text-anchor="middle" font-size="13" fill="#523282" font-weight="bold">DNA polymerase</text>
+<text x="560" y="112" text-anchor="middle" font-size="12" fill="#666">(kéo dài 5' → 3')</text>
+<line x1="560" y1="116" x2="560" y2="136" stroke="#999" stroke-width="1.2" stroke-linecap="round"/>
+<text x="470" y="318" text-anchor="start" font-size="13" fill="#523282" font-weight="bold">DNA polymerase</text>
+<ellipse cx="748" cy="160" rx="16" ry="10" fill="#eeeeee" stroke="#777" stroke-width="1.8"/>
+<text x="748" y="96" text-anchor="middle" font-size="13" fill="#444" font-weight="bold">Ligase</text>
+<text x="748" y="112" text-anchor="middle" font-size="12" fill="#666">(nối đoạn Okazaki)</text>
+<line x1="748" y1="116" x2="748" y2="148" stroke="#999" stroke-width="1.2" stroke-linecap="round"/>
+<text x="950" y="196" text-anchor="end" font-size="13" fill="#3a9a4a" font-weight="bold">Mạch gián đoạn: các đoạn Okazaki</text>
+<text x="950" y="212" text-anchor="end" font-size="12" fill="#666">(tổng hợp ngược chiều tháo xoắn)</text>
+<text x="950" y="302" text-anchor="end" font-size="13" fill="#3a9a4a" font-weight="bold">Mạch liên tục</text>
+<text x="950" y="318" text-anchor="end" font-size="12" fill="#666">(tổng hợp cùng chiều tháo xoắn)</text>
+<line x1="260" y1="300" x2="120" y2="300" stroke="#555" stroke-width="2.5" marker-end="url(#a)" stroke-linecap="round"/>
+<text x="190" y="322" text-anchor="middle" font-size="12" fill="#555">chạc sao chép di chuyển</text>
+<line x1="250" y1="362" x2="285" y2="362" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<text x="292" y="367" text-anchor="start" font-size="13" fill="#333">mạch cũ (mạch khuôn)</text>
+<line x1="470" y1="362" x2="505" y2="362" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<text x="512" y="367" text-anchor="start" font-size="13" fill="#333">mạch mới</text>
+<line x1="620" y1="362" x2="655" y2="362" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+<text x="662" y="367" text-anchor="start" font-size="13" fill="#333">đoạn mồi (RNA)</text>
+<line x1="40" y1="390" x2="960" y2="390" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/>
+<text x="500" y="416" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Kết quả: 1 DNA mẹ → 2 DNA con giống nhau và giống mẹ (nguyên tắc bán bảo tồn)</text>
+<line x1="170" y1="450" x2="440" y2="450" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<line x1="170" y1="476" x2="440" y2="476" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<line x1="174" y1="453" x2="174" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="182" y1="453" x2="182" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="190" y1="453" x2="190" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="198" y1="453" x2="198" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="206" y1="453" x2="206" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="214" y1="453" x2="214" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="222" y1="453" x2="222" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="230" y1="453" x2="230" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="238" y1="453" x2="238" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="246" y1="453" x2="246" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="254" y1="453" x2="254" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="262" y1="453" x2="262" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="270" y1="453" x2="270" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="278" y1="453" x2="278" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="286" y1="453" x2="286" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="294" y1="453" x2="294" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="302" y1="453" x2="302" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="310" y1="453" x2="310" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="318" y1="453" x2="318" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="326" y1="453" x2="326" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="334" y1="453" x2="334" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="342" y1="453" x2="342" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="350" y1="453" x2="350" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="358" y1="453" x2="358" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="366" y1="453" x2="366" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="374" y1="453" x2="374" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="382" y1="453" x2="382" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="390" y1="453" x2="390" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="398" y1="453" x2="398" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="406" y1="453" x2="406" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="414" y1="453" x2="414" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="422" y1="453" x2="422" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="430" y1="453" x2="430" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="438" y1="453" x2="438" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<text x="200" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="260" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="320" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="380" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="305" y="505" text-anchor="middle" font-size="13" fill="#555">DNA con 1: 1 mạch cũ (×) + 1 mạch mới</text>
+<line x1="560" y1="450" x2="830" y2="450" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<line x1="560" y1="476" x2="830" y2="476" stroke="#3a9a4a" stroke-width="5" stroke-linecap="round"/>
+<line x1="564" y1="453" x2="564" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="572" y1="453" x2="572" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="580" y1="453" x2="580" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="588" y1="453" x2="588" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="596" y1="453" x2="596" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="604" y1="453" x2="604" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="612" y1="453" x2="612" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="620" y1="453" x2="620" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="628" y1="453" x2="628" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="636" y1="453" x2="636" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="644" y1="453" x2="644" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="652" y1="453" x2="652" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="660" y1="453" x2="660" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="668" y1="453" x2="668" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="676" y1="453" x2="676" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="684" y1="453" x2="684" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="692" y1="453" x2="692" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="700" y1="453" x2="700" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="708" y1="453" x2="708" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="716" y1="453" x2="716" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="724" y1="453" x2="724" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="732" y1="453" x2="732" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="740" y1="453" x2="740" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="748" y1="453" x2="748" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="756" y1="453" x2="756" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="764" y1="453" x2="764" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="772" y1="453" x2="772" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="780" y1="453" x2="780" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="788" y1="453" x2="788" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="796" y1="453" x2="796" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="804" y1="453" x2="804" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="812" y1="453" x2="812" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="820" y1="453" x2="820" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="828" y1="453" x2="828" y2="473" stroke="#cfe3c9" stroke-width="1.5" stroke-linecap="round"/>
+<text x="590" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="650" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="710" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="770" y="445" text-anchor="middle" font-size="14" fill="#1d4f8f" font-weight="bold">×</text>
+<text x="695" y="505" text-anchor="middle" font-size="13" fill="#555">DNA con 2: 1 mạch cũ (×) + 1 mạch mới</text>
+</svg>

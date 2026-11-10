@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="400" rx="14" fill="#fbfaf7"/>
+
+  <!-- Panel 1: một phân tử nước phân cực -->
+  <text x="180" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Phân tử nước phân cực</text>
+  <line x1="180" y1="170" x2="124.6" y2="212.8" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <line x1="180" y1="170" x2="235.4" y2="212.8" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="180" cy="170" r="40" fill="#e05a47" stroke="#a63a2b" stroke-width="2"/>
+  <text x="180" y="177" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">O</text>
+  <circle cx="124.6" cy="212.8" r="26" fill="#f2f2f2" stroke="#888" stroke-width="2"/>
+  <text x="124.6" y="219" text-anchor="middle" font-size="18" font-weight="bold" fill="#444">H</text>
+  <circle cx="235.4" cy="212.8" r="26" fill="#f2f2f2" stroke="#888" stroke-width="2"/>
+  <text x="235.4" y="219" text-anchor="middle" font-size="18" font-weight="bold" fill="#444">H</text>
+  <text x="180" y="118" text-anchor="middle" font-size="20" fill="#c0392b">δ⁻</text>
+  <text x="112" y="262" text-anchor="middle" font-size="20" fill="#2f7ed8">δ⁺</text>
+  <text x="248" y="262" text-anchor="middle" font-size="20" fill="#2f7ed8">δ⁺</text>
+  <text x="180" y="236" text-anchor="middle" font-size="13" fill="#666">104,5°</text>
+  <text x="180" y="305" text-anchor="middle" font-size="14" fill="#333">χO &gt; χH → cặp e⁻ dùng chung lệch về O</text>
+  <text x="180" y="327" text-anchor="middle" font-size="14" fill="#333">→ liên kết cộng hoá trị phân cực</text>
+
+  <line x1="370" y1="30" x2="370" y2="370" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- Panel 2: liên kết hiđro giữa các phân tử nước -->
+  <text x="595" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Liên kết hiđro giữa các phân tử nước</text>
+  <defs>
+    <g id="w">
+      <line x1="0" y1="0" x2="-38" y2="29" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="38" y2="29" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="24" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/>
+      <circle cx="-38" cy="29" r="14" fill="#f2f2f2" stroke="#888" stroke-width="1.5"/>
+      <circle cx="38" cy="29" r="14" fill="#f2f2f2" stroke="#888" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <g transform="translate(0,40)">
+    <!-- liên kết hiđro (vẽ trước để nằm dưới nguyên tử) -->
+    <g stroke="#2f7ed8" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round">
+      <line x1="562" y1="179" x2="520" y2="240"/>
+      <line x1="638" y1="179" x2="690" y2="240"/>
+      <line x1="573.4" y1="84.1" x2="600" y2="150"/>
+      <line x1="671.6" y1="114.1" x2="600" y2="150"/>
+    </g>
+    <use href="#w" transform="translate(600,150)"/>
+    <use href="#w" transform="translate(520,240) rotate(30)"/>
+    <use href="#w" transform="translate(690,240) rotate(-30)"/>
+    <use href="#w" transform="translate(555,40) rotate(30)"/>
+    <use href="#w" transform="translate(690,70) rotate(-30)"/>
+    <text x="600" y="156" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">O</text>
+  </g>
+  <!-- chú giải -->
+  <line x1="420" y1="372" x2="455" y2="372" stroke="#2f7ed8" stroke-width="3" stroke-dasharray="6 5"/>
+  <text x="462" y="377" font-size="13" fill="#333">liên kết hiđro (H δ⁺ ··· O δ⁻)</text>
+  <circle cx="660" cy="372" r="8" fill="#e05a47"/>
+  <text x="672" y="377" font-size="13" fill="#333">O</text>
+  <circle cx="700" cy="372" r="7" fill="#f2f2f2" stroke="#888"/>
+  <text x="712" y="377" font-size="13" fill="#333">H</text>
+</svg>

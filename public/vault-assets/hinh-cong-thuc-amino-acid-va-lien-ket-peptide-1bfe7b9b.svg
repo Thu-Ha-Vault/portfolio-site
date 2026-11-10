@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" rx="14" fill="#fbfaf7"/>
+
+  <!-- Panel 1: công thức tổng quát -->
+  <text x="190" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Công thức tổng quát amino acid</text>
+
+  <rect x="58" y="164" width="84" height="40" rx="10" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <rect x="246" y="164" width="88" height="40" rx="10" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <circle cx="190" cy="268" r="24" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+
+  <g stroke="#555" stroke-width="2.5" stroke-linecap="round">
+    <line x1="146" y1="184" x2="174" y2="184"/>
+    <line x1="207" y1="184" x2="242" y2="184"/>
+    <line x1="190" y1="138" x2="190" y2="166"/>
+    <line x1="190" y1="200" x2="190" y2="243"/>
+  </g>
+  <g font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="100" y="193" fill="#1d4f8f">H₂N</text>
+    <text x="190" y="193" fill="#333">C</text>
+    <text x="190" y="132" fill="#333">H</text>
+    <text x="290" y="193" fill="#9a5310">COOH</text>
+    <text x="190" y="277" fill="#246b30">R</text>
+  </g>
+  <text x="100" y="228" text-anchor="middle" font-size="14" fill="#2f7ed8">nhóm amino</text>
+  <text x="290" y="228" text-anchor="middle" font-size="14" fill="#c46f12">nhóm carboxyl</text>
+  <text x="248" y="124" font-size="13" fill="#666">C trung tâm (Cα)</text>
+  <line x1="246" y1="128" x2="204" y2="170" stroke="#999" stroke-width="1.2"/>
+  <text x="190" y="324" text-anchor="middle" font-size="14" fill="#3a9a4a">gốc R – khác nhau ở ~20 loại amino acid</text>
+  <text x="190" y="346" text-anchor="middle" font-size="13" fill="#666">(không phân cực / tính acid / tính base)</text>
+
+  <line x1="380" y1="30" x2="380" y2="370" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- Panel 2: hình thành liên kết peptide -->
+  <text x="670" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Hình thành liên kết peptide</text>
+
+  <!-- hàng 1: 2 amino acid -->
+  <rect x="580" y="108" width="114" height="36" rx="10" fill="#fdecea" stroke="#e05a47" stroke-width="2" stroke-dasharray="6 4"/>
+  <g stroke="#555" stroke-width="2" stroke-linecap="round">
+    <line x1="462" y1="124" x2="484" y2="124"/>
+    <line x1="518" y1="124" x2="542" y2="124"/>
+    <line x1="558" y1="124" x2="582" y2="124"/>
+    <line x1="546" y1="94" x2="546" y2="112"/>
+    <line x1="554" y1="94" x2="554" y2="112"/>
+    <line x1="500" y1="132" x2="500" y2="150"/>
+    <line x1="686" y1="124" x2="706" y2="124"/>
+    <line x1="716" y1="98" x2="716" y2="112"/>
+    <line x1="728" y1="124" x2="752" y2="124"/>
+    <line x1="786" y1="124" x2="806" y2="124"/>
+    <line x1="770" y1="132" x2="770" y2="150"/>
+  </g>
+  <g font-size="19" font-weight="bold" text-anchor="middle" fill="#333">
+    <text x="440" y="131">H₂N</text>
+    <text x="501" y="131">CH</text>
+    <text x="550" y="131">C</text>
+    <text x="550" y="90">O</text>
+    <text x="600" y="131" fill="#c0392b">OH</text>
+    <text x="640" y="131" font-weight="normal">+</text>
+    <text x="676" y="131" fill="#c0392b">H</text>
+    <text x="716" y="131">N</text>
+    <text x="716" y="94">H</text>
+    <text x="770" y="131">CH</text>
+    <text x="838" y="131">COOH</text>
+    <text x="500" y="170" fill="#246b30">R₁</text>
+    <text x="770" y="170" fill="#246b30">R₂</text>
+  </g>
+  <text x="440" y="200" text-anchor="middle" font-size="13" fill="#666">amino acid 1</text>
+  <text x="790" y="200" text-anchor="middle" font-size="13" fill="#666">amino acid 2</text>
+
+  <!-- mũi tên -->
+  <line x1="637" y1="180" x2="637" y2="236" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="650" y="214" font-size="14" fill="#c0392b">loại 1 phân tử H₂O</text>
+
+  <!-- hàng 2: dipeptide -->
+  <rect x="566" y="276" width="80" height="38" rx="10" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <g stroke="#555" stroke-width="2" stroke-linecap="round">
+    <line x1="472" y1="295" x2="496" y2="295"/>
+    <line x1="530" y1="295" x2="572" y2="295"/>
+    <line x1="590" y1="295" x2="618" y2="295"/>
+    <line x1="576" y1="262" x2="576" y2="282"/>
+    <line x1="584" y1="262" x2="584" y2="282"/>
+    <line x1="630" y1="266" x2="630" y2="282"/>
+    <line x1="642" y1="295" x2="666" y2="295"/>
+    <line x1="700" y1="295" x2="722" y2="295"/>
+    <line x1="513" y1="303" x2="513" y2="320"/>
+    <line x1="683" y1="303" x2="683" y2="320"/>
+  </g>
+  <g font-size="19" font-weight="bold" text-anchor="middle" fill="#333">
+    <text x="450" y="302">H₂N</text>
+    <text x="513" y="302">CH</text>
+    <text x="580" y="302" fill="#523282">C</text>
+    <text x="580" y="258" fill="#523282">O</text>
+    <text x="630" y="302" fill="#523282">N</text>
+    <text x="630" y="262" fill="#523282">H</text>
+    <text x="683" y="302">CH</text>
+    <text x="756" y="302">COOH</text>
+    <text x="513" y="340" fill="#246b30">R₁</text>
+    <text x="683" y="340" fill="#246b30">R₂</text>
+    <text x="830" y="302" font-weight="normal">+</text>
+    <text x="880" y="302" fill="#c0392b">H₂O</text>
+  </g>
+  <text x="606" y="376" text-anchor="middle" font-size="14" font-weight="bold" fill="#7d55b8">liên kết peptide (–CO–NH–)</text>
+  <text x="450" y="376" text-anchor="middle" font-size="12" fill="#666">đầu N</text>
+  <text x="770" y="376" text-anchor="middle" font-size="12" fill="#666">đầu C</text>
+</svg>

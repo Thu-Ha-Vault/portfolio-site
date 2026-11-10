@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/>
+    </marker>
+  </defs>
+  <rect width="940" height="420" rx="14" fill="#fbfaf7"/>
+
+  <!-- ===== Hệ dẫn truyền tim ===== -->
+  <text x="250" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Hệ dẫn truyền tim</text>
+
+  <path d="M 290 112 C 262 62 150 62 150 152 C 150 232 230 302 290 372 C 350 302 430 232 430 152 C 430 62 318 62 290 112 Z" fill="#fbe0dc" stroke="#e05a47" stroke-width="3"/>
+  <!-- vách -->
+  <path d="M 155 182 C 210 172 250 176 290 178 C 330 176 370 172 425 182" fill="none" stroke="#e05a47" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="290" y1="112" x2="290" y2="360" stroke="#e05a47" stroke-width="2" stroke-opacity="0.6"/>
+  <g font-size="12" fill="#a63a2b" text-anchor="middle">
+    <text x="214" y="166">tâm nhĩ</text>
+    <text x="362" y="150">tâm nhĩ</text>
+    <text x="250" y="270">tâm thất</text>
+    <text x="330" y="270">tâm thất</text>
+  </g>
+
+  <!-- đường dẫn truyền -->
+  <g fill="none" stroke="#7d55b8" stroke-linecap="round">
+    <path d="M 206 112 C 230 130 262 160 282 176" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#p)"/>
+    <path d="M 290 182 L 290 222" stroke-width="5"/>
+    <path d="M 287 222 C 282 270 280 310 286 340" stroke-width="3"/>
+    <path d="M 293 222 C 298 270 300 310 294 340" stroke-width="3"/>
+    <path d="M 286 340 C 240 332 208 296 200 230" stroke-width="2.5"/>
+    <path d="M 294 340 C 340 332 372 296 380 230" stroke-width="2.5"/>
+    <path d="M 214 292 L 230 284 M 205 260 L 220 254 M 366 292 L 350 284 M 375 260 L 360 254" stroke-width="2"/>
+  </g>
+  <circle cx="202" cy="108" r="10" fill="#e08a2e" stroke="#9a5310" stroke-width="2"/>
+  <circle cx="290" cy="180" r="9" fill="#e08a2e" stroke="#9a5310" stroke-width="2"/>
+
+  <!-- nhãn -->
+  <g stroke="#777" stroke-width="1.2">
+    <line x1="132" y1="96" x2="192" y2="106"/>
+    <line x1="132" y1="196" x2="280" y2="184"/>
+    <line x1="442" y1="206" x2="296" y2="206"/>
+    <line x1="442" y1="300" x2="372" y2="300"/>
+  </g>
+  <g font-size="13" fill="#333">
+    <text x="128" y="92" text-anchor="end" font-weight="bold">1. Nút xoang nhĩ</text>
+    <text x="128" y="108" text-anchor="end" font-size="12" fill="#666">tự phát xung</text>
+    <text x="128" y="192" text-anchor="end" font-weight="bold">2. Nút nhĩ thất</text>
+    <text x="128" y="208" text-anchor="end" font-size="12" fill="#666">(tâm nhĩ co trước)</text>
+    <text x="448" y="210" font-weight="bold">3. Bó His</text>
+    <text x="448" y="296" font-weight="bold">4. Mạng</text>
+    <text x="448" y="312" font-weight="bold">Purkinje</text>
+    <text x="448" y="328" font-size="12" fill="#666">(tâm thất co)</text>
+  </g>
+
+  <line x1="530" y1="30" x2="530" y2="395" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- ===== Chu kì tim ===== -->
+  <text x="730" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Chu kì tim ở người: 0,8 s</text>
+
+  <rect x="550" y="150" width="45" height="50" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <rect x="595" y="150" width="135" height="50" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <rect x="730" y="150" width="180" height="50" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <text x="572" y="180" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">0,1</text>
+  <text x="662" y="172" text-anchor="middle" font-size="14" font-weight="bold" fill="#a63a2b">Thất co</text>
+  <text x="662" y="190" text-anchor="middle" font-size="13" fill="#a63a2b">0,3 s</text>
+  <text x="820" y="172" text-anchor="middle" font-size="14" font-weight="bold" fill="#444">Giãn chung</text>
+  <text x="820" y="190" text-anchor="middle" font-size="13" fill="#444">0,4 s</text>
+
+  <line x1="572" y1="146" x2="572" y2="120" stroke="#777" stroke-width="1.2"/>
+  <text x="572" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a5310">Nhĩ co 0,1 s</text>
+
+  <g stroke="#555" stroke-width="1.5">
+    <line x1="550" y1="204" x2="550" y2="212"/><line x1="595" y1="204" x2="595" y2="212"/><line x1="730" y1="204" x2="730" y2="212"/><line x1="910" y1="204" x2="910" y2="212"/>
+  </g>
+  <g font-size="12" fill="#666" text-anchor="middle">
+    <text x="550" y="228">0</text><text x="595" y="228">0,1</text><text x="730" y="228">0,4</text><text x="910" y="228">0,8 s</text>
+  </g>
+
+  <g font-size="13" fill="#333">
+    <text x="550" y="274">• Tâm nhĩ: co 0,1 s, nghỉ 0,7 s</text>
+    <text x="550" y="298">• Tâm thất: co 0,3 s, nghỉ 0,5 s</text>
+    <text x="550" y="322">→ thời gian nghỉ đủ để tim phục hồi,</text>
+    <text x="562" y="342">hoạt động suốt đời không mỏi</text>
+  </g>
+</svg>

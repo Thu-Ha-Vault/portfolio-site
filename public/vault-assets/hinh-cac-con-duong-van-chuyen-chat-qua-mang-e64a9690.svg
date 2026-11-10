@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+</defs>
+<rect width="1000" height="470" rx="14" fill="#fbfaf7"/>
+<text x="500" y="30" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Các con đường vận chuyển chất qua màng</text>
+<path d="M60,66 L60,58 L470,58 L470,66" fill="none" stroke="#3a9a4a" stroke-width="1.8"/>
+<text x="265" y="52" text-anchor="middle" font-size="13" fill="#246b30" font-weight="bold">Vận chuyển thụ động: xuôi chiều nồng độ, không tốn ATP</text>
+<path d="M500,66 L500,58 L960,58 L960,66" fill="none" stroke="#e05a47" stroke-width="1.8"/>
+<text x="730" y="52" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">Tốn năng lượng ATP</text>
+<path d="M30,230 H842 C858,230 860,240 860,256 L860,266 A45,45 0 0 0 950,266 L950,256 C950,240 952,230 968,230 H970" fill="none" stroke="#2f7ed8" stroke-width="40"/>
+<path d="M30,230 H842 C858,230 860,240 860,256 L860,266 A45,45 0 0 0 950,266 L950,256 C950,240 952,230 968,230 H970" fill="none" stroke="#fde7d4" stroke-width="30"/>
+<path d="M30,230 H842 C858,230 860,240 860,256 L860,266 A45,45 0 0 0 950,266 L950,256 C950,240 952,230 968,230 H970" fill="none" stroke="#e0a43a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="40" y="200" text-anchor="start" font-size="13" fill="#666" font-style="italic">Bên ngoài</text>
+<text x="40" y="276" text-anchor="start" font-size="13" fill="#666" font-style="italic">Tế bào chất</text>
+<text x="160" y="90" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Khuếch tán qua</text>
+<text x="160" y="107" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">lớp kép phospholipid</text>
+<circle cx="136.9" cy="157.3" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="148.6" cy="160.4" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="171.1" cy="132.4" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="117.2" cy="172.5" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="138.8" cy="141.2" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="203.6" cy="153.5" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="189.6" cy="153.8" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="172.2" cy="136.8" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="171.9" cy="324.1" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<circle cx="162.0" cy="317.5" r="5" fill="#bbbbbb" stroke="#555" stroke-width="0.8"/>
+<line x1="190" y1="140" x2="190" y2="318" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="110" y="135" text-anchor="end" font-size="13" fill="#555">O₂, CO₂</text>
+<text x="160" y="370" text-anchor="middle" font-size="13" fill="#555">chất nhỏ, không phân cực,</text>
+<text x="160" y="387" text-anchor="middle" font-size="13" fill="#555">tan trong lipid (O₂, CO₂,</text>
+<text x="160" y="404" text-anchor="middle" font-size="13" fill="#555">ethanol...)</text>
+<text x="380" y="90" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Khuếch tán qua</text>
+<text x="380" y="107" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">kênh protein</text>
+<path d="M346,206 C344,186 374,186 372,206 L372,254 C374,274 344,274 346,254 Z" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<path d="M388,206 C386,186 416,186 414,206 L414,254 C416,274 386,274 388,254 Z" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<circle cx="395.1" cy="127.3" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="402.7" cy="154.7" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="362.5" cy="125.6" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="412.2" cy="148.6" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="399.3" cy="169.7" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="398.8" cy="171.9" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="370.8" cy="165.6" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="375.1" cy="172.7" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="413.3" cy="289.1" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<circle cx="348.0" cy="295.3" r="5" fill="#7fb2ec" stroke="#555" stroke-width="0.8"/>
+<line x1="380" y1="170" x2="380" y2="318" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="380" y="370" text-anchor="middle" font-size="13" fill="#555">ion (Na⁺, Cl⁻...), chất phân cực</text>
+<text x="380" y="387" text-anchor="middle" font-size="13" fill="#555">(glucose...); H₂O qua kênh</text>
+<text x="380" y="404" text-anchor="middle" font-size="13" fill="#555">aquaporin (thẩm thấu)</text>
+<text x="610" y="90" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Vận chuyển chủ động</text>
+<text x="610" y="107" text-anchor="middle" font-size="12" fill="#666">(protein vận chuyển đặc hiệu)</text>
+<rect x="580" y="194" width="60" height="72" rx="16" fill="#fde7d4" stroke="#e08a2e" stroke-width="2.2"/>
+<circle cx="641.0" cy="146.7" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="611.1" cy="139.7" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="610.6" cy="306.1" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="596.9" cy="316.4" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="617.4" cy="333.0" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="626.0" cy="334.3" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="641.4" cy="337.5" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="625.1" cy="294.5" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="641.7" cy="336.2" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<circle cx="645.6" cy="315.6" r="5" fill="#8fd19a" stroke="#555" stroke-width="0.8"/>
+<line x1="610" y1="140" x2="610" y2="318" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M668,288 C656,284 648,278 642,266" fill="none" stroke="#e05a47" stroke-width="2" marker-end="url(#r)"/>
+<text x="662" y="304" text-anchor="start" font-size="13" fill="#c0392b" font-weight="bold">ATP</text>
+<text x="662" y="320" text-anchor="start" font-size="12" fill="#c0392b">→ ADP + Pi</text>
+<text x="536" y="150" text-anchor="end" font-size="12" fill="#666">nồng độ thấp</text>
+<text x="536" y="320" text-anchor="end" font-size="12" fill="#666">nồng độ cao</text>
+<text x="610" y="370" text-anchor="middle" font-size="13" fill="#555">ngược chiều nồng độ;</text>
+<text x="610" y="387" text-anchor="middle" font-size="13" fill="#555">ion, chất nhỏ / mang điện</text>
+<text x="850" y="90" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Xuất bào – Nhập bào</text>
+<text x="850" y="107" text-anchor="middle" font-size="12" fill="#666">(biến dạng màng)</text>
+<circle cx="792" cy="322" r="24" fill="none" stroke="#2f7ed8" stroke-width="14"/>
+<circle cx="792" cy="322" r="24" fill="none" stroke="#fde7d4" stroke-width="7"/>
+<circle cx="786" cy="318" r="3.5" fill="#7d55b8"/>
+<circle cx="797" cy="325" r="3.5" fill="#7d55b8"/>
+<circle cx="790" cy="330" r="3.5" fill="#7d55b8"/>
+<circle cx="798" cy="315" r="3.5" fill="#7d55b8"/>
+<line x1="792" y1="292" x2="792" y2="258" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<circle cx="782" cy="161" r="3.5" fill="#7d55b8"/>
+<circle cx="798" cy="169" r="3.5" fill="#7d55b8"/>
+<circle cx="790" cy="177" r="3.5" fill="#7d55b8"/>
+<circle cx="802" cy="155" r="3.5" fill="#7d55b8"/>
+<line x1="792" y1="200" x2="792" y2="184" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<text x="792" y="140" text-anchor="middle" font-size="13" fill="#523282" font-weight="bold">xuất bào</text>
+<circle cx="905" cy="262" r="16" fill="#e05a47" opacity="0.85"/>
+<line x1="905" y1="150" x2="905" y2="236" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="905" y="140" text-anchor="middle" font-size="13" fill="#523282" font-weight="bold">nhập bào</text>
+<text x="850" y="370" text-anchor="middle" font-size="13" fill="#555">đại phân tử, chất kích thước</text>
+<text x="850" y="387" text-anchor="middle" font-size="13" fill="#555">lớn; màng lõm vào / túi</text>
+<text x="850" y="404" text-anchor="middle" font-size="13" fill="#555">dung hợp với màng</text>
+<rect x="300" y="432" width="26" height="14" rx="3" fill="#fde7d4" stroke="#2f7ed8" stroke-width="2"/>
+<text x="334" y="444" text-anchor="start" font-size="12" fill="#333">lớp kép phospholipid</text>
+<rect x="490" y="432" width="26" height="14" rx="5" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<text x="524" y="444" text-anchor="start" font-size="12" fill="#333">protein kênh</text>
+<rect x="630" y="432" width="26" height="14" rx="5" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+<text x="664" y="444" text-anchor="start" font-size="12" fill="#333">protein bơm (tốn ATP)</text>
+</svg>

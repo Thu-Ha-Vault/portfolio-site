@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+
+</defs>
+<rect width="960" height="440" rx="14" fill="#fbfaf7"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Cấu trúc lục lạp</text>
+<ellipse cx="480" cy="235" rx="300" ry="145" fill="#f4fbf2" stroke="#246b30" stroke-width="4"/>
+<ellipse cx="480" cy="235" rx="286" ry="131" fill="#dff2df" stroke="#3a9a4a" stroke-width="3.5"/>
+<path d="M300,200 C355.0,200 355.0,280 410,280" fill="none" stroke="#3a9a4a" stroke-width="4" opacity="0.8"/>
+<path d="M410,280 C465.0,280 465.0,190 520,190" fill="none" stroke="#3a9a4a" stroke-width="4" opacity="0.8"/>
+<path d="M520,190 C580.0,190 580.0,275 640,275" fill="none" stroke="#3a9a4a" stroke-width="4" opacity="0.8"/>
+<path d="M640,275 C670.0,275 670.0,175 700,175" fill="none" stroke="#3a9a4a" stroke-width="4" opacity="0.8"/>
+<path d="M300,200 C410.0,200 410.0,190 520,190" fill="none" stroke="#3a9a4a" stroke-width="4" opacity="0.8"/>
+<rect x="270" y="170.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="270" y="180.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="270" y="190.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="270" y="200.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="270" y="210.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="270" y="220.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="245.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="255.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="265.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="275.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="285.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="295.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="380" y="305.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="155.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="165.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="175.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="185.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="195.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="205.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="490" y="215.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="245.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="255.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="265.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="275.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="285.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="610" y="295.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="670" y="155.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="670" y="165.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="670" y="175.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<rect x="670" y="185.0" width="60" height="8.5" rx="4.5" fill="#3a9a4a" stroke="#1f5e2a" stroke-width="1.2"/>
+<ellipse cx="345" cy="148" rx="22" ry="13" fill="#ffffff" stroke="#999" stroke-width="1.5"/>
+<ellipse cx="590" cy="320" rx="20" ry="12" fill="#ffffff" stroke="#999" stroke-width="1.5"/>
+<polyline points="511.0,320.0 512.7,323.4 510.5,326.1 506.7,326.7 504.5,327.9 503.0,331.2 500.0,333.2 497.0,331.2 495.5,327.9 493.3,326.7 489.5,326.1 487.3,323.4 489.0,320.0 491.4,317.7 491.4,315.1 491.1,311.1 493.5,308.8 497.3,309.9 500.0,311.2 502.7,309.9 506.5,308.8 508.9,311.1 508.6,315.1 508.6,317.7 511.0,320.0" fill="none" stroke="#7d55b8" stroke-width="2.2"/>
+<polyline points="770.0,240.0 771.7,243.1 769.6,245.6 766.0,246.0 764.0,247.0 762.7,250.2 760.0,252.2 757.3,250.2 756.0,247.0 754.0,246.0 750.4,245.6 748.3,243.1 750.0,240.0 752.4,238.0 752.3,235.6 751.8,231.8 754.0,229.7 757.6,230.9 760.0,232.2 762.4,230.9 766.0,229.7 768.2,231.8 767.7,235.5 767.6,238.0 770.0,240.0" fill="none" stroke="#7d55b8" stroke-width="2.2"/>
+<circle cx="330" cy="290" r="4" fill="#555"/>
+<circle cx="340" cy="300" r="4" fill="#555"/>
+<circle cx="450" cy="150" r="4" fill="#555"/>
+<circle cx="460" cy="160" r="4" fill="#555"/>
+<circle cx="700" cy="320" r="4" fill="#555"/>
+<circle cx="710" cy="312" r="4" fill="#555"/>
+<circle cx="250" cy="250" r="4" fill="#555"/>
+<text x="150" y="110" text-anchor="end" font-size="14" fill="#246b30" font-weight="bold">Màng ngoài</text>
+<line x1="156" y1="106" x2="260" y2="136" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="260" cy="136" r="2.5" fill="#555"/>
+<text x="150" y="200" text-anchor="end" font-size="14" fill="#3a9a4a" font-weight="bold">Màng trong</text>
+<line x1="156" y1="196" x2="196" y2="218" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="196" cy="218" r="2.5" fill="#555"/>
+<text x="150" y="300" text-anchor="end" font-size="14" fill="#246b30" font-weight="bold">Chất nền (stroma)</text>
+<text x="150" y="316" text-anchor="end" font-size="12" fill="#666">enzyme chu trình Calvin</text>
+<line x1="156" y1="296" x2="256" y2="280" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="256" cy="280" r="2.5" fill="#555"/>
+<text x="150" y="170" text-anchor="end" font-size="14" fill="#666" font-weight="bold">Tinh bột</text>
+<line x1="156" y1="166" x2="324" y2="152" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="324" cy="152" r="2.5" fill="#555"/>
+<text x="800" y="92" text-anchor="start" font-size="14" fill="#246b30" font-weight="bold">Grana</text>
+<text x="800" y="108" text-anchor="start" font-size="12" fill="#666">chồng túi dẹp thylakoid</text>
+<line x1="796" y1="96" x2="722" y2="165" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="722" cy="165" r="2.5" fill="#555"/>
+<text x="800" y="160" text-anchor="start" font-size="14" fill="#246b30" font-weight="bold">Thylakoid</text>
+<text x="800" y="176" text-anchor="start" font-size="12" fill="#666">sắc tố quang hợp,</text>
+<text x="800" y="191" text-anchor="start" font-size="12" fill="#666">ATP synthase</text>
+<line x1="796" y1="164" x2="668" y2="262" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="668" cy="262" r="2.5" fill="#555"/>
+<text x="800" y="262" text-anchor="start" font-size="14" fill="#523282" font-weight="bold">DNA vòng, kép, trần</text>
+<line x1="796" y1="258" x2="771" y2="244" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="771" cy="244" r="2.5" fill="#555"/>
+<text x="800" y="330" text-anchor="start" font-size="14" fill="#333" font-weight="bold">Ribosome (70S)</text>
+<line x1="796" y1="326" x2="714" y2="314" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="714" cy="314" r="2.5" fill="#555"/>
+<text x="480" y="425" text-anchor="middle" font-size="13" fill="#666">Màng ngoài + màng trong = màng kép (trơn nhẵn, không gấp nếp)</text>
+</svg>

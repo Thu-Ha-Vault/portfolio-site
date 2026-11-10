@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect width="980" height="470" rx="14" fill="#fbfaf7"/>
+<text x="490.0" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Cơ chế phát sinh đột biến thay thế 1 cặp nucleotide qua các lần nhân đôi</text>
+<text x="30" y="92" font-size="16" font-weight="bold" fill="#333">a) Không có tác nhân: base nitơ dạng hiếm (G*)</text>
+<text x="30" y="112" font-size="13" fill="#666">G chuyển sang dạng hiếm G* → G* bắt cặp nhầm với T khi nhân đôi</text>
+<rect x="68" y="130.0" width="56" height="40" rx="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<text x="96.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#1d4f8f">G</text>
+<rect x="154" y="130.0" width="56" height="40" rx="9" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<text x="182.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#523282">C</text>
+<line x1="129" y1="142" x2="149" y2="142" stroke="#777" stroke-width="2.2"/>
+<line x1="129" y1="150" x2="149" y2="150" stroke="#777" stroke-width="2.2"/>
+<line x1="129" y1="158" x2="149" y2="158" stroke="#777" stroke-width="2.2"/>
+<rect x="302" y="130.0" width="56" height="40" rx="9" fill="#fbe3df" stroke="#e05a47" stroke-width="2"/>
+<text x="330.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#a63a2b">G*</text>
+<rect x="388" y="130.0" width="56" height="40" rx="9" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<text x="416.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#523282">C</text>
+<line x1="363" y1="142" x2="383" y2="142" stroke="#777" stroke-width="2.2"/>
+<line x1="363" y1="150" x2="383" y2="150" stroke="#777" stroke-width="2.2"/>
+<line x1="363" y1="158" x2="383" y2="158" stroke="#777" stroke-width="2.2"/>
+<rect x="536" y="130.0" width="56" height="40" rx="9" fill="#fbe3df" stroke="#e05a47" stroke-width="2"/>
+<text x="564.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#a63a2b">G*</text>
+<rect x="622" y="130.0" width="56" height="40" rx="9" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+<text x="650.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#9a5310">T</text>
+<line x1="597" y1="145.0" x2="617" y2="145.0" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<line x1="597" y1="155.0" x2="617" y2="155.0" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<rect x="770" y="130.0" width="56" height="40" rx="9" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+<text x="798.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#246b30">A</text>
+<rect x="856" y="130.0" width="56" height="40" rx="9" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+<text x="884.0" y="157" text-anchor="middle" font-size="19" font-weight="bold" fill="#9a5310">T</text>
+<line x1="831" y1="145.0" x2="851" y2="145.0" stroke="#777" stroke-width="2.2"/>
+<line x1="831" y1="155.0" x2="851" y2="155.0" stroke="#777" stroke-width="2.2"/>
+<line x1="218" y1="150" x2="294" y2="150" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="256.0" y="138" text-anchor="middle" font-size="13" fill="#333">G → G*</text>
+<line x1="452" y1="150" x2="528" y2="150" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="490.0" y="138" text-anchor="middle" font-size="13" fill="#333">nhân đôi 1</text>
+<line x1="686" y1="150" x2="762" y2="150" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="724.0" y="138" text-anchor="middle" font-size="13" fill="#333">nhân đôi 2</text>
+<text x="139.0" y="194" text-anchor="middle" font-size="13" fill="#666">cặp ban đầu</text>
+<text x="841.0" y="194" text-anchor="middle" font-size="14" font-weight="bold" fill="#e05a47">đột biến G–C → A–T</text>
+<text x="30" y="287" font-size="16" font-weight="bold" fill="#333">b) Tác nhân hoá học: 5-bromouracil (5-BU, đồng đẳng của T)</text>
+<text x="30" y="307" font-size="13" fill="#666">5-BU bắt cặp với A (như T), sau đó có thể bắt cặp với G</text>
+<rect x="68" y="325.0" width="56" height="40" rx="9" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+<text x="96.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#246b30">A</text>
+<rect x="154" y="325.0" width="56" height="40" rx="9" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+<text x="182.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#9a5310">T</text>
+<line x1="129" y1="340.0" x2="149" y2="340.0" stroke="#777" stroke-width="2.2"/>
+<line x1="129" y1="350.0" x2="149" y2="350.0" stroke="#777" stroke-width="2.2"/>
+<rect x="302" y="325.0" width="56" height="40" rx="9" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+<text x="330.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#246b30">A</text>
+<rect x="388" y="325.0" width="56" height="40" rx="9" fill="#fbe3df" stroke="#e05a47" stroke-width="2"/>
+<text x="416.0" y="352" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">5-BU</text>
+<line x1="363" y1="340.0" x2="383" y2="340.0" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<line x1="363" y1="350.0" x2="383" y2="350.0" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<rect x="536" y="325.0" width="56" height="40" rx="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<text x="564.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#1d4f8f">G</text>
+<rect x="622" y="325.0" width="56" height="40" rx="9" fill="#fbe3df" stroke="#e05a47" stroke-width="2"/>
+<text x="650.0" y="352" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">5-BU</text>
+<line x1="597" y1="337" x2="617" y2="337" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<line x1="597" y1="345" x2="617" y2="345" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<line x1="597" y1="353" x2="617" y2="353" stroke="#e05a47" stroke-width="2.2" stroke-dasharray="3 3"/>
+<rect x="770" y="325.0" width="56" height="40" rx="9" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<text x="798.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#1d4f8f">G</text>
+<rect x="856" y="325.0" width="56" height="40" rx="9" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+<text x="884.0" y="352" text-anchor="middle" font-size="19" font-weight="bold" fill="#523282">C</text>
+<line x1="831" y1="337" x2="851" y2="337" stroke="#777" stroke-width="2.2"/>
+<line x1="831" y1="345" x2="851" y2="345" stroke="#777" stroke-width="2.2"/>
+<line x1="831" y1="353" x2="851" y2="353" stroke="#777" stroke-width="2.2"/>
+<line x1="218" y1="345" x2="294" y2="345" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="256.0" y="333" text-anchor="middle" font-size="13" fill="#333">nhân đôi 1</text>
+<text x="256.0" y="367" text-anchor="middle" font-size="12" fill="#e05a47">(có 5-BU)</text>
+<line x1="452" y1="345" x2="528" y2="345" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="490.0" y="333" text-anchor="middle" font-size="13" fill="#333">nhân đôi 2</text>
+<line x1="686" y1="345" x2="762" y2="345" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="724.0" y="333" text-anchor="middle" font-size="13" fill="#333">nhân đôi 3</text>
+<text x="139.0" y="389" text-anchor="middle" font-size="13" fill="#666">cặp ban đầu</text>
+<text x="841.0" y="389" text-anchor="middle" font-size="14" font-weight="bold" fill="#e05a47">đột biến A–T → G–C</text>
+<line x1="30" y1="255.5" x2="950" y2="255.5" stroke="#ddd" stroke-width="1.5"/>
+<text x="490.0" y="450" text-anchor="middle" font-size="14" fill="#333">→ Đột biến gen phát sinh trong quá trình <tspan font-weight="bold">nhân đôi DNA</tspan>, cần ít nhất <tspan font-weight="bold">2 lần nhân đôi</tspan> (chỉ theo dõi cặp nucleotide mang đột biến)</text>
+</svg>

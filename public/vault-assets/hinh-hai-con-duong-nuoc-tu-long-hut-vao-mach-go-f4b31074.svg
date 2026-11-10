@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" rx="14" fill="#fbfaf7"/>
+  <text x="480" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Nước và ion khoáng đi từ lông hút vào mạch gỗ</text>
+
+  <!-- đất -->
+  <rect x="16" y="50" width="56" height="240" rx="8" fill="#f1e6d6"/>
+  <text x="44" y="276" text-anchor="middle" font-size="13" fill="#8b6b4a">Đất</text>
+
+  <!-- lông hút -->
+  <rect x="24" y="100" width="66" height="20" rx="10" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <!-- biểu bì -->
+  <rect x="80" y="60" width="70" height="100" rx="12" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <rect x="80" y="180" width="70" height="100" rx="12" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <rect x="76" y="102" width="10" height="16" fill="#fde7d4"/>
+
+  <!-- vỏ rễ -->
+  <g fill="#eeeeee" stroke="#777" stroke-width="2">
+    <rect x="165" y="60" width="80" height="100" rx="14"/><rect x="165" y="180" width="80" height="100" rx="14"/>
+    <rect x="260" y="60" width="80" height="100" rx="14"/><rect x="260" y="180" width="80" height="100" rx="14"/>
+    <rect x="355" y="60" width="80" height="100" rx="14"/><rect x="355" y="180" width="80" height="100" rx="14"/>
+  </g>
+  <!-- nội bì -->
+  <rect x="470" y="60" width="74" height="100" rx="10" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <rect x="470" y="180" width="74" height="100" rx="10" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <!-- đai Caspari -->
+  <rect x="470" y="159" width="74" height="22" rx="3" fill="#e05a47"/>
+
+  <!-- nhân tế bào -->
+  <g fill="#d6d6d6" stroke="#aaa" stroke-width="1">
+    <circle cx="128" cy="142" r="8"/><circle cx="128" cy="250" r="8"/>
+    <circle cx="222" cy="142" r="8"/><circle cx="222" cy="250" r="8"/>
+    <circle cx="317" cy="142" r="8"/><circle cx="317" cy="250" r="8"/>
+    <circle cx="412" cy="142" r="8"/><circle cx="412" cy="262" r="8"/>
+    <circle cx="522" cy="142" r="8"/><circle cx="522" cy="262" r="8"/>
+  </g>
+
+  <!-- mạch gỗ -->
+  <rect x="600" y="50" width="80" height="240" rx="6" fill="#eeeeee" stroke="#777" stroke-width="3"/>
+  <g stroke="#b5b5b5" stroke-width="2">
+    <line x1="602" y1="70" x2="678" y2="70"/><line x1="602" y1="90" x2="678" y2="90"/><line x1="602" y1="150" x2="678" y2="150"/>
+    <line x1="602" y1="170" x2="678" y2="170"/><line x1="602" y1="190" x2="678" y2="190"/><line x1="602" y1="270" x2="678" y2="270"/>
+  </g>
+  <line x1="640" y1="210" x2="640" y2="130" stroke="#2f7ed8" stroke-width="3.5" marker-end="url(#b)"/>
+  <text x="700" y="166" font-size="13" fill="#2f7ed8">↑ lên thân, lá</text>
+
+  <!-- cầu sinh chất -->
+  <g fill="#3a9a4a">
+    <circle cx="157" cy="110" r="3"/><circle cx="252" cy="110" r="3"/><circle cx="347" cy="110" r="3"/><circle cx="452" cy="110" r="3"/>
+  </g>
+
+  <!-- con đường chất nguyên sinh – không bào -->
+  <path d="M 30 110 L 596 110" fill="none" stroke="#3a9a4a" stroke-width="3.5" marker-end="url(#g)"/>
+  <!-- con đường thành tế bào – gian bào -->
+  <path d="M 30 170 L 452 170 C 470 170 466 230 486 230 L 596 230" fill="none" stroke="#2f7ed8" stroke-width="3.5" stroke-dasharray="9 5" marker-end="url(#b)"/>
+
+  <!-- nhãn cột -->
+  <g font-size="13" fill="#333" text-anchor="middle">
+    <text x="78" y="312">Lông hút</text>
+    <text x="78" y="328" font-size="12" fill="#666">(biểu bì)</text>
+    <text x="300" y="312">Vỏ rễ</text>
+    <text x="507" y="312">Nội bì</text>
+    <text x="640" y="312">Mạch gỗ</text>
+  </g>
+  <line x1="166" y1="296" x2="434" y2="296" stroke="#999" stroke-width="1.2"/>
+
+  <!-- chú thích đai Caspari -->
+  <line x1="548" y1="170" x2="748" y2="96" stroke="#777" stroke-width="1.2"/>
+  <text x="752" y="88" font-size="13" font-weight="bold" fill="#e05a47">Đai Caspari</text>
+  <text x="752" y="104" font-size="12" fill="#666">(Casparian strip)</text>
+  <text x="752" y="122" font-size="12" fill="#333">chặn đường gian bào</text>
+  <text x="752" y="138" font-size="12" fill="#333">→ nước phải đi vào tế bào</text>
+
+  <!-- chú giải -->
+  <line x1="40" y1="356" x2="90" y2="356" stroke="#2f7ed8" stroke-width="3.5" stroke-dasharray="9 5" marker-end="url(#b)"/>
+  <text x="100" y="361" font-size="13" fill="#333"><tspan font-weight="bold">Thành tế bào – gian bào</tspan>: theo vách và khoảng gian bào → nhanh</text>
+  <line x1="40" y1="382" x2="90" y2="382" stroke="#3a9a4a" stroke-width="3.5" marker-end="url(#g)"/>
+  <text x="100" y="387" font-size="13" fill="#333"><tspan font-weight="bold">Chất nguyên sinh – không bào</tspan>: xuyên qua tế bào chất → chậm</text>
+  <circle cx="740" cy="372" r="4" fill="#3a9a4a"/>
+  <text x="752" y="377" font-size="12" fill="#666">cầu sinh chất</text>
+</svg>

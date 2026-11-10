@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 400" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+
+</defs>
+<rect width="980" height="400" rx="14" fill="#fbfaf7"/>
+<text x="490.0" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Trao đổi chéo ở 1 tế bào sinh tinh có kiểu gen AB/ab → 4 loại giao tử</text>
+<text x="155.0" y="72" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Kì đầu I: tiếp hợp và trao đổi chéo</text>
+<clipPath id="c40_106"><rect x="40" y="97.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c40_106)"><rect x="40" y="97.0" width="230" height="18" fill="#e05a47"/></g>
+<rect x="122" y="97.0" width="6" height="18" fill="#a63a2b"/>
+<text x="133" y="111" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">A</text>
+<rect x="222" y="97.0" width="6" height="18" fill="#a63a2b"/>
+<text x="233" y="111" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">B</text>
+<clipPath id="c40_128"><rect x="40" y="119.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c40_128)"><rect x="40" y="119.0" width="230" height="18" fill="#e05a47"/></g>
+<rect x="122" y="119.0" width="6" height="18" fill="#a63a2b"/>
+<text x="133" y="133" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">A</text>
+<rect x="222" y="119.0" width="6" height="18" fill="#a63a2b"/>
+<text x="233" y="133" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">B</text>
+<clipPath id="c40_172"><rect x="40" y="163.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c40_172)"><rect x="40" y="163.0" width="230" height="18" fill="#2f7ed8"/></g>
+<rect x="122" y="163.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="133" y="177" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">a</text>
+<rect x="222" y="163.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="233" y="177" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">b</text>
+<clipPath id="c40_194"><rect x="40" y="185.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c40_194)"><rect x="40" y="185.0" width="230" height="18" fill="#2f7ed8"/></g>
+<rect x="122" y="185.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="133" y="199" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">a</text>
+<rect x="222" y="185.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="233" y="199" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">b</text>
+<path d="M 161 124 L 189 176 M 161 176 L 189 124" stroke="#7d55b8" stroke-width="3" stroke-linecap="round"/>
+<circle cx="175" cy="150.0" r="20" fill="none" stroke="#7d55b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="175" y="236" text-anchor="middle" font-size="12" fill="#523282">trao đổi chéo giữa 2 chromatid</text>
+<text x="175" y="251" text-anchor="middle" font-size="12" fill="#523282">không chị em (điểm bắt chéo)</text>
+<circle cx="62" cy="117.0" r="7" fill="#555"/>
+<circle cx="62" cy="183.0" r="7" fill="#555"/>
+<line x1="290" y1="152" x2="340" y2="152" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="475.0" y="72" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">4 chromatid sau trao đổi chéo</text>
+<clipPath id="c360_106"><rect x="360" y="97.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c360_106)"><rect x="360" y="97.0" width="230" height="18" fill="#e05a47"/></g>
+<rect x="442" y="97.0" width="6" height="18" fill="#a63a2b"/>
+<text x="453" y="111" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">A</text>
+<rect x="542" y="97.0" width="6" height="18" fill="#a63a2b"/>
+<text x="553" y="111" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">B</text>
+<clipPath id="c360_128"><rect x="360" y="119.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c360_128)"><rect x="360" y="119.0" width="135.5" height="18" fill="#e05a47"/><rect x="495" y="119.0" width="95" height="18" fill="#2f7ed8"/></g>
+<rect x="442" y="119.0" width="6" height="18" fill="#a63a2b"/>
+<text x="453" y="133" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">A</text>
+<rect x="542" y="119.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="553" y="133" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">b</text>
+<clipPath id="c360_172"><rect x="360" y="163.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c360_172)"><rect x="360" y="163.0" width="135.5" height="18" fill="#2f7ed8"/><rect x="495" y="163.0" width="95" height="18" fill="#e05a47"/></g>
+<rect x="442" y="163.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="453" y="177" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">a</text>
+<rect x="542" y="163.0" width="6" height="18" fill="#a63a2b"/>
+<text x="553" y="177" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">B</text>
+<clipPath id="c360_194"><rect x="360" y="185.0" width="230" height="18" rx="9.0"/></clipPath>
+<g clip-path="url(#c360_194)"><rect x="360" y="185.0" width="230" height="18" fill="#2f7ed8"/></g>
+<rect x="442" y="185.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="453" y="199" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">a</text>
+<rect x="542" y="185.0" width="6" height="18" fill="#1d4f8f"/>
+<text x="553" y="199" text-anchor="start" font-size="14" fill="#fff" font-weight="bold">b</text>
+<circle cx="382" cy="117.0" r="7" fill="#555"/>
+<circle cx="382" cy="183.0" r="7" fill="#555"/>
+<text x="475.0" y="236" text-anchor="middle" font-size="12" fill="#666">giảm phân I, II → mỗi chromatid</text>
+<text x="475.0" y="251" text-anchor="middle" font-size="12" fill="#666">vào 1 giao tử</text>
+<line x1="610" y1="152" x2="660" y2="152" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="800" y="72" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">4 loại giao tử</text>
+<circle cx="730" cy="115" r="36" fill="#dbe9fb" stroke="#999" stroke-width="1.5"/>
+<rect x="702.0" y="99" width="28.6" height="11" fill="#e05a47"/><rect x="730" y="99" width="28.0" height="11" fill="#e05a47"/>
+<text x="730" y="131" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">AB</text>
+<circle cx="730" cy="195" r="36" fill="#fde7d4" stroke="#999" stroke-width="1.5"/>
+<rect x="702.0" y="179" width="28.6" height="11" fill="#e05a47"/><rect x="730" y="179" width="28.0" height="11" fill="#2f7ed8"/>
+<text x="730" y="211" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">Ab</text>
+<circle cx="870" cy="195" r="36" fill="#fde7d4" stroke="#999" stroke-width="1.5"/>
+<rect x="842.0" y="179" width="28.6" height="11" fill="#2f7ed8"/><rect x="870" y="179" width="28.0" height="11" fill="#e05a47"/>
+<text x="870" y="211" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">aB</text>
+<circle cx="870" cy="115" r="36" fill="#dbe9fb" stroke="#999" stroke-width="1.5"/>
+<rect x="842.0" y="99" width="28.6" height="11" fill="#2f7ed8"/><rect x="870" y="99" width="28.0" height="11" fill="#2f7ed8"/>
+<text x="870" y="131" text-anchor="middle" font-size="17" fill="#333" font-weight="bold">ab</text>
+<rect x="680" y="250" width="16" height="16" rx="4" fill="#dbe9fb" stroke="#999"/>
+<text x="704" y="263" text-anchor="start" font-size="13" fill="#333">AB, ab: giao tử liên kết</text>
+<rect x="680" y="276" width="16" height="16" rx="4" fill="#fde7d4" stroke="#999"/>
+<text x="704" y="289" text-anchor="start" font-size="13" fill="#333">Ab, aB: giao tử hoán vị</text>
+<line x1="30" y1="314" x2="950" y2="314" stroke="#ddd" stroke-width="1.5"/>
+<text x="490.0" y="342" text-anchor="middle" font-size="14" fill="#333">1 tế bào sinh tinh AB/ab có hoán vị → 4 tinh trùng: AB : ab : Ab : aB = 1 : 1 : 1 : 1 (mỗi loại 25%)</text>
+<text x="490.0" y="366" text-anchor="middle" font-size="14" fill="#666">Không hoán vị → chỉ 2 loại giao tử liên kết: AB = ab = 50%</text>
+</svg>

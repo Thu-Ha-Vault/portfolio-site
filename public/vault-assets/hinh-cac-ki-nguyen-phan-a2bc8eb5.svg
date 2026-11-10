@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 385" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+
+</defs>
+<rect width="1000" height="385" rx="14" fill="#fbfaf7"/>
+<text x="105" y="40" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Kì trung gian</text>
+<text x="105" y="57" text-anchor="middle" font-size="12" fill="#666">(interphase)</text>
+<text x="300" y="40" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Kì đầu</text>
+<text x="300" y="57" text-anchor="middle" font-size="12" fill="#666">(prophase)</text>
+<text x="495" y="40" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Kì giữa</text>
+<text x="495" y="57" text-anchor="middle" font-size="12" fill="#666">(metaphase)</text>
+<text x="690" y="40" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Kì sau</text>
+<text x="690" y="57" text-anchor="middle" font-size="12" fill="#666">(anaphase)</text>
+<text x="890" y="40" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Kì cuối</text>
+<text x="890" y="57" text-anchor="middle" font-size="12" fill="#666">(telophase)</text>
+<ellipse cx="105" cy="205" rx="82" ry="78" fill="#fff" stroke="#999" stroke-width="2"/>
+<circle cx="109" cy="211" r="44" fill="#ece3f7" fill-opacity="0.6" stroke="#7d55b8" stroke-width="2"/>
+<path d="M 79 197 q 8 -10 16 0 t 16 0 t 16 0" fill="none" stroke="#e05a47" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 81 213 q 8 10 16 0 t 16 0 t 16 0 t 12 -6" fill="none" stroke="#2f7ed8" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 87 231 q 6 -8 12 0 t 12 0 t 10 2" fill="none" stroke="#e05a47" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 103 181 q 6 8 12 0 t 12 2" fill="none" stroke="#2f7ed8" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="129" cy="231" r="9" fill="#7d55b8"/>
+<rect x="52" y="163" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="55" y="160" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="43" y1="102" x2="57" y2="161" stroke="#888" stroke-width="1.2"/><circle cx="57" cy="161" r="2.2" fill="#888"/>
+<text x="43" y="98" text-anchor="middle" font-size="12" fill="#333">trung thể</text>
+<line x1="155" y1="102" x2="139" y2="179" stroke="#888" stroke-width="1.2"/><circle cx="139" cy="179" r="2.2" fill="#888"/>
+<text x="155" y="98" text-anchor="middle" font-size="12" fill="#333">nhân, màng nhân</text>
+<line x1="57" y1="304" x2="91" y2="215" stroke="#888" stroke-width="1.2"/><circle cx="91" cy="215" r="2.2" fill="#888"/>
+<text x="57" y="318" text-anchor="middle" font-size="12" fill="#333">chất nhiễm sắc</text>
+<line x1="153" y1="322" x2="129" y2="240" stroke="#888" stroke-width="1.2"/><circle cx="129" cy="240" r="2.2" fill="#888"/>
+<text x="153" y="336" text-anchor="middle" font-size="12" fill="#333">nhân con</text>
+<ellipse cx="300" cy="205" rx="82" ry="78" fill="#fff" stroke="#999" stroke-width="2"/>
+<path d="M 238 205 Q 300 144.2 362 205" fill="none" stroke="#bbb" stroke-width="1.2"/>
+<path d="M 238 205 Q 300 173.0 362 205" fill="none" stroke="#bbb" stroke-width="1.2"/>
+<path d="M 238 205 Q 300 237.0 362 205" fill="none" stroke="#bbb" stroke-width="1.2"/>
+<path d="M 238 205 Q 300 265.8 362 205" fill="none" stroke="#bbb" stroke-width="1.2"/>
+<circle cx="300" cy="205" r="42" fill="none" stroke="#7d55b8" stroke-width="2" stroke-dasharray="7 9"/>
+<g transform="rotate(25 284 191)"><polyline points="275.95,178 280.5,191 275.95,204" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="292.05,178 287.5,191 292.05,204" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="284" cy="191" r="3.6" fill="#a63a2b"/></g>
+<g transform="rotate(-30 314 187)"><polyline points="305.95,174 310.5,187 305.95,200" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="322.05,174 317.5,187 322.05,200" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="314" cy="187" r="3.6" fill="#1d4f8f"/></g>
+<g transform="rotate(-40 288 223)"><polyline points="281.7,215 284.5,223 281.7,231" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="294.3,215 291.5,223 294.3,231" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="288" cy="223" r="3.6" fill="#a63a2b"/></g>
+<g transform="rotate(20 316 219)"><polyline points="309.7,211 312.5,219 309.7,227" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="322.3,211 319.5,219 322.3,227" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="316" cy="219" r="3.6" fill="#1d4f8f"/></g>
+<line x1="245.0" y1="205.0" x2="253.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="242.9" y1="209.9" x2="248.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="238.0" y1="212.0" x2="238.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="233.1" y1="209.9" x2="227.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="231.0" y1="205.0" x2="223.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="233.1" y1="200.1" x2="227.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="238.0" y1="198.0" x2="238.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="242.9" y1="200.1" x2="248.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="233" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="236" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="369.0" y1="205.0" x2="377.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="366.9" y1="209.9" x2="372.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="362.0" y1="212.0" x2="362.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="357.1" y1="209.9" x2="351.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="355.0" y1="205.0" x2="347.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="357.1" y1="200.1" x2="351.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="362.0" y1="198.0" x2="362.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="366.9" y1="200.1" x2="372.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="357" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="360" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="250" y1="102" x2="264" y2="165" stroke="#888" stroke-width="1.2"/><circle cx="264" cy="165" r="2.2" fill="#888"/>
+<text x="250" y="98" text-anchor="middle" font-size="12" fill="#333">thoi vô sắc</text>
+<line x1="348" y1="102" x2="316" y2="177" stroke="#888" stroke-width="1.2"/><circle cx="316" cy="177" r="2.2" fill="#888"/>
+<text x="348" y="98" text-anchor="middle" font-size="12" fill="#333">NST kép</text>
+<line x1="310" y1="308" x2="314" y2="245" stroke="#888" stroke-width="1.2"/><circle cx="314" cy="245" r="2.2" fill="#888"/>
+<text x="310" y="322" text-anchor="middle" font-size="12" fill="#333">mảnh màng nhân</text>
+<ellipse cx="495" cy="205" rx="82" ry="78" fill="#fff" stroke="#999" stroke-width="2"/>
+<line x1="429" y1="205" x2="491" y2="155" stroke="#bbb" stroke-width="1.2"/>
+<line x1="561" y1="205" x2="499" y2="155" stroke="#bbb" stroke-width="1.2"/>
+<line x1="429" y1="205" x2="491" y2="189" stroke="#bbb" stroke-width="1.2"/>
+<line x1="561" y1="205" x2="499" y2="189" stroke="#bbb" stroke-width="1.2"/>
+<line x1="429" y1="205" x2="491" y2="220" stroke="#bbb" stroke-width="1.2"/>
+<line x1="561" y1="205" x2="499" y2="220" stroke="#bbb" stroke-width="1.2"/>
+<line x1="429" y1="205" x2="491" y2="246" stroke="#bbb" stroke-width="1.2"/>
+<line x1="561" y1="205" x2="499" y2="246" stroke="#bbb" stroke-width="1.2"/>
+<line x1="495" y1="131" x2="495" y2="279" stroke="#7d55b8" stroke-width="1.6" stroke-dasharray="5 4"/>
+<g><polyline points="486.95,142 491.5,155 486.95,168" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="503.05,142 498.5,155 503.05,168" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="495" cy="155" r="3.6" fill="#a63a2b"/></g>
+<g><polyline points="486.95,176 491.5,189 486.95,202" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="503.05,176 498.5,189 503.05,202" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="495" cy="189" r="3.6" fill="#1d4f8f"/></g>
+<g><polyline points="488.7,212 491.5,220 488.7,228" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="501.3,212 498.5,220 501.3,228" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="495" cy="220" r="3.6" fill="#a63a2b"/></g>
+<g><polyline points="488.7,238 491.5,246 488.7,254" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="501.3,238 498.5,246 501.3,254" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="495" cy="246" r="3.6" fill="#1d4f8f"/></g>
+<line x1="436.0" y1="205.0" x2="444.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="433.9" y1="209.9" x2="439.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="429.0" y1="212.0" x2="429.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="424.1" y1="209.9" x2="418.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="422.0" y1="205.0" x2="414.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="424.1" y1="200.1" x2="418.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="429.0" y1="198.0" x2="429.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="433.9" y1="200.1" x2="439.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="424" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="427" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="568.0" y1="205.0" x2="576.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="565.9" y1="209.9" x2="571.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="561.0" y1="212.0" x2="561.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="556.1" y1="209.9" x2="550.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="554.0" y1="205.0" x2="546.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="556.1" y1="200.1" x2="550.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="561.0" y1="198.0" x2="561.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="565.9" y1="200.1" x2="571.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="556" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="559" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="443" y1="102" x2="455" y2="190" stroke="#888" stroke-width="1.2"/><circle cx="455" cy="190" r="2.2" fill="#888"/>
+<text x="443" y="98" text-anchor="middle" font-size="12" fill="#333">tơ vô sắc</text>
+<line x1="537" y1="102" x2="497" y2="135" stroke="#888" stroke-width="1.2"/><circle cx="497" cy="135" r="2.2" fill="#888"/>
+<text x="537" y="98" text-anchor="middle" font-size="12" fill="#333">mặt phẳng xích đạo</text>
+<line x1="495" y1="326" x2="498" y2="257" stroke="#888" stroke-width="1.2"/><circle cx="498" cy="257" r="2.2" fill="#888"/>
+<text x="495" y="340" text-anchor="middle" font-size="12" fill="#333">NST kép xếp 1 hàng</text>
+<ellipse cx="690" cy="205" rx="86" ry="74" fill="#fff" stroke="#999" stroke-width="2"/>
+<line x1="620" y1="205" x2="654" y2="155" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="661,142 654,155 661,168" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="654" cy="155" r="3" fill="#a63a2b"/>
+<line x1="760" y1="205" x2="726" y2="155" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="719,142 726,155 719,168" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726" cy="155" r="3" fill="#a63a2b"/>
+<line x1="620" y1="205" x2="654" y2="189" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="661,176 654,189 661,202" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="654" cy="189" r="3" fill="#1d4f8f"/>
+<line x1="760" y1="205" x2="726" y2="189" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="719,176 726,189 719,202" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726" cy="189" r="3" fill="#1d4f8f"/>
+<line x1="620" y1="205" x2="654" y2="220" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="661,212 654,220 661,228" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="654" cy="220" r="3" fill="#a63a2b"/>
+<line x1="760" y1="205" x2="726" y2="220" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="719,212 726,220 719,228" fill="none" stroke="#e05a47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726" cy="220" r="3" fill="#a63a2b"/>
+<line x1="620" y1="205" x2="654" y2="246" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="661,238 654,246 661,254" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="654" cy="246" r="3" fill="#1d4f8f"/>
+<line x1="760" y1="205" x2="726" y2="246" stroke="#bbb" stroke-width="1.2"/>
+<polyline points="719,238 726,246 719,254" fill="none" stroke="#2f7ed8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726" cy="246" r="3" fill="#1d4f8f"/>
+<line x1="627.0" y1="205.0" x2="635.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="624.9" y1="209.9" x2="630.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="620.0" y1="212.0" x2="620.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="615.1" y1="209.9" x2="609.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="613.0" y1="205.0" x2="605.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="615.1" y1="200.1" x2="609.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="620.0" y1="198.0" x2="620.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="624.9" y1="200.1" x2="630.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="615" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="618" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="767.0" y1="205.0" x2="775.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="764.9" y1="209.9" x2="770.6" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="760.0" y1="212.0" x2="760.0" y2="220.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="755.1" y1="209.9" x2="749.4" y2="215.6" stroke="#e08a2e" stroke-width="1.2"/><line x1="753.0" y1="205.0" x2="745.0" y2="205.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="755.1" y1="200.1" x2="749.4" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><line x1="760.0" y1="198.0" x2="760.0" y2="190.0" stroke="#e08a2e" stroke-width="1.2"/><line x1="764.9" y1="200.1" x2="770.6" y2="194.4" stroke="#e08a2e" stroke-width="1.2"/><rect x="755" y="203" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="758" y="200" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="676" y1="269" x2="644" y2="269" stroke="#777" stroke-width="1.6" marker-end="url(#s)"/>
+<line x1="704" y1="269" x2="736" y2="269" stroke="#777" stroke-width="1.6" marker-end="url(#s)"/>
+<line x1="734" y1="102" x2="732" y2="149" stroke="#888" stroke-width="1.2"/><circle cx="732" cy="149" r="2.2" fill="#888"/>
+<text x="734" y="98" text-anchor="middle" font-size="12" fill="#333">NST đơn</text>
+<line x1="644" y1="102" x2="654" y2="189" stroke="#888" stroke-width="1.2"/><circle cx="654" cy="189" r="2.2" fill="#888"/>
+<text x="644" y="98" text-anchor="middle" font-size="12" fill="#333">tâm động tách</text>
+<line x1="690" y1="308" x2="690" y2="269" stroke="#888" stroke-width="1.2"/><circle cx="690" cy="269" r="2.2" fill="#888"/>
+<text x="690" y="322" text-anchor="middle" font-size="12" fill="#333">phân li về 2 cực</text>
+<path d="M 890 169 C 868 125, 806 129, 806 205 C 806 281, 868 285, 890 241 C 912 285, 974 281, 974 205 C 974 129, 912 125, 890 169 Z" fill="#fff" stroke="#999" stroke-width="2"/>
+<circle cx="846" cy="205" r="27" fill="#ece3f7" fill-opacity="0.6" stroke="#7d55b8" stroke-width="2"/>
+<path d="M 829 197 q 6 -8 12 0 t 12 0 t 10 0" fill="none" stroke="#e05a47" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 830 213 q 6 8 12 0 t 12 0 t 9 -3" fill="none" stroke="#2f7ed8" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="833" y="153" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="836" y="150" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<circle cx="934" cy="205" r="27" fill="#ece3f7" fill-opacity="0.6" stroke="#7d55b8" stroke-width="2"/>
+<path d="M 917 197 q 6 -8 12 0 t 12 0 t 10 0" fill="none" stroke="#e05a47" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 918 213 q 6 8 12 0 t 12 0 t 9 -3" fill="none" stroke="#2f7ed8" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="937" y="153" width="10" height="4" rx="1.5" fill="#e08a2e"/><rect x="940" y="150" width="4" height="10" rx="1.5" fill="#e08a2e"/>
+<line x1="860" y1="102" x2="840" y2="178" stroke="#888" stroke-width="1.2"/><circle cx="840" cy="178" r="2.2" fill="#888"/>
+<text x="860" y="98" text-anchor="middle" font-size="12" fill="#333">màng nhân hình thành</text>
+<line x1="930" y1="304" x2="891" y2="243" stroke="#888" stroke-width="1.2"/><circle cx="891" cy="243" r="2.2" fill="#888"/>
+<text x="930" y="318" text-anchor="middle" font-size="12" fill="#333">eo thắt</text>
+<line x1="850" y1="322" x2="852" y2="215" stroke="#888" stroke-width="1.2"/><circle cx="852" cy="215" r="2.2" fill="#888"/>
+<text x="850" y="336" text-anchor="middle" font-size="12" fill="#333">NST duỗi xoắn</text>
+<text x="500.0" y="373" text-anchor="middle" font-size="13" fill="#333">Kết quả: 1 tế bào mẹ (2n) → 2 tế bào con (2n) giống hệt nhau và giống tế bào mẹ.</text>
+</svg>

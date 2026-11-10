@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <rect width="900" height="320" rx="14" fill="#fbfaf7"/>
+  <text x="170" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">1 NST – 2 vị trí gen (locus)</text>
+  <rect x="150" y="70" width="40" height="220" rx="20" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <path d="M 150 176 Q 170 186 190 176" fill="none" stroke="#777" stroke-width="1.5"/>
+  <rect x="150" y="113" width="40" height="14" fill="#2f7ed8"/>
+  <line x1="194" y1="120" x2="230" y2="120" stroke="#2f7ed8" stroke-width="1.5"/>
+  <text x="236" y="116" font-size="15" font-weight="bold" fill="#1d4f8f">locus 1</text>
+  <text x="236" y="135" font-size="14" fill="#333">A hoặc a</text>
+  <rect x="150" y="228" width="40" height="14" fill="#3a9a4a"/>
+  <line x1="194" y1="235" x2="230" y2="235" stroke="#3a9a4a" stroke-width="1.5"/>
+  <text x="236" y="231" font-size="15" font-weight="bold" fill="#246b30">locus 2</text>
+  <text x="236" y="250" font-size="14" fill="#333">B hoặc b</text>
+  <line x1="350" y1="180" x2="420" y2="180" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="385" y="168" text-anchor="middle" font-size="13" fill="#666">tổ hợp</text>
+  <text x="660" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Số loại NST: 2 × 2 = 4</text>
+  <rect x="463" y="80" width="34" height="180" rx="17" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <path d="M 463 172 Q 480 181 497 172" fill="none" stroke="#777" stroke-width="1.5"/>
+  <rect x="463" y="114" width="34" height="12" fill="#2f7ed8"/>
+  <text x="506" y="127" font-size="19" font-weight="bold" font-style="italic" fill="#333">A</text>
+  <rect x="463" y="219" width="34" height="12" fill="#3a9a4a"/>
+  <text x="506" y="232" font-size="19" font-weight="bold" font-style="italic" fill="#333">B</text>
+  <text x="480" y="291" text-anchor="middle" font-size="18" font-weight="bold" font-style="italic" fill="#333">AB</text>
+  <rect x="583" y="80" width="34" height="180" rx="17" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <path d="M 583 172 Q 600 181 617 172" fill="none" stroke="#777" stroke-width="1.5"/>
+  <rect x="583" y="114" width="34" height="12" fill="#2f7ed8"/>
+  <text x="626" y="127" font-size="19" font-weight="bold" font-style="italic" fill="#333">A</text>
+  <rect x="583" y="219" width="34" height="12" fill="#3a9a4a"/>
+  <text x="626" y="232" font-size="19" font-weight="bold" font-style="italic" fill="#333">b</text>
+  <text x="600" y="291" text-anchor="middle" font-size="18" font-weight="bold" font-style="italic" fill="#333">Ab</text>
+  <rect x="703" y="80" width="34" height="180" rx="17" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <path d="M 703 172 Q 720 181 737 172" fill="none" stroke="#777" stroke-width="1.5"/>
+  <rect x="703" y="114" width="34" height="12" fill="#2f7ed8"/>
+  <text x="746" y="127" font-size="19" font-weight="bold" font-style="italic" fill="#333">a</text>
+  <rect x="703" y="219" width="34" height="12" fill="#3a9a4a"/>
+  <text x="746" y="232" font-size="19" font-weight="bold" font-style="italic" fill="#333">B</text>
+  <text x="720" y="291" text-anchor="middle" font-size="18" font-weight="bold" font-style="italic" fill="#333">aB</text>
+  <rect x="823" y="80" width="34" height="180" rx="17" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <path d="M 823 172 Q 840 181 857 172" fill="none" stroke="#777" stroke-width="1.5"/>
+  <rect x="823" y="114" width="34" height="12" fill="#2f7ed8"/>
+  <text x="866" y="127" font-size="19" font-weight="bold" font-style="italic" fill="#333">a</text>
+  <rect x="823" y="219" width="34" height="12" fill="#3a9a4a"/>
+  <text x="866" y="232" font-size="19" font-weight="bold" font-style="italic" fill="#333">b</text>
+  <text x="840" y="291" text-anchor="middle" font-size="18" font-weight="bold" font-style="italic" fill="#333">ab</text>
+</svg>

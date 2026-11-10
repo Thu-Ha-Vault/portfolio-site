@@ -1,0 +1,54 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import T from '../../components/T.astro';
+import { projectEntries, childrenOf, siblings, breadcrumbs, hasMermaid, statusKey } from '../../lib';
+
+export async function getStaticPaths() {
+  const all = await projectEntries();
+  return all.map((entry) => ({ params: { slug: entry.id }, props: { entry, all } }));
+}
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const kids = d.isIndex ? all.filter((e) => e.data.project === d.project && !e.data.isIndex) : childrenOf(all, entry.id);
+const { prev, next } = siblings(all, entry);
+const crumbs = breadcrumbs(all, entry.id);
+const s = statusKey(d.status);
+const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau Public', demo: 'Demo', slides: 'Slides' };
+---
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)}>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/projects/"><T k="projects" /></a>
+    {crumbs.map((c) => (<><span>/</span><a href={`/projects/${c.id}/`}>{c.title}</a></>))}
+  </nav>
+  <header class="article-head">
+    <h1>{d.title}</h1>
+    <div class="meta">
+      {s && <span class="badge"><T k={s} /></span>}
+      {d.date && <span>{d.date}</span>}
+      {d.deadline && <span>· <T k="deadline" />: {d.deadline}</span>}
+      {d.tags.filter((t) => t !== 'project').map((t) => <span class="tag">{t}</span>)}
+    </div>
+    {d.isIndex && Object.keys(d.links).length > 0 && (
+      <div class="hero"><div class="links" style="margin-top:12px">
+        {Object.entries(d.links).map(([k, v]) => <a class="btn" href={v} target="_blank" rel="noopener">{linkLabel[k] ?? k} ↗</a>)}
+      </div></div>
+    )}
+  </header>
+  <article class="prose"><Content /></article>
+  {kids.length > 0 && (
+    <section class="children">
+      <h2><T k="projectNotes" /></h2>
+      <ul class="note-list">
+        {kids.map((k) => <li><a href={`/projects/${k.id}/`}><span>{k.data.title}</span></a></li>)}
+      </ul>
+    </section>
+  )}
+  {(prev || next) && (
+    <nav class="pager">
+      {prev && <a href={`/projects/${prev.id}/`}><small><T k="prev" /></small>{prev.data.title}</a>}
+      {next && <a class="next" href={`/projects/${next.id}/`}><small><T k="next" /></small>{next.data.title}</a>}
+    </nav>
+  )}
+</Base>

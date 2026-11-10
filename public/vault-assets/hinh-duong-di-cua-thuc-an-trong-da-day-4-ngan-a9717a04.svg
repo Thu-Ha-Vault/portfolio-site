@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 330" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+  <rect width="940" height="330" rx="14" fill="#fbfaf7"/>
+
+  <text x="800" y="104" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Dạ dày 4 ngăn</text>
+  <text x="800" y="126" text-anchor="middle" font-size="13" fill="#666">trâu, bò, cừu, dê</text>
+
+  <!-- mũi tên -->
+  <path d="M 570 78 C 570 18 100 18 100 76" fill="none" stroke="#e08a2e" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#o)"/>
+  <text x="335" y="56" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">ợ lên miệng để nhai lại</text>
+  <line x1="172" y1="112" x2="246" y2="112" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="209" y="102" text-anchor="middle" font-size="12" fill="#333">nuốt</text>
+  <line x1="432" y1="115" x2="486" y2="115" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M 100 140 L 100 236 C 100 254 110 256 128 256 L 246 256" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="110" y="198" font-size="12" fill="#333">nuốt lại</text>
+  <text x="110" y="214" font-size="12" fill="#333">(sau khi nhai)</text>
+  <line x1="432" y1="256" x2="486" y2="256" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="672" y1="256" x2="726" y2="256" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- khối -->
+  <rect x="30" y="84" width="140" height="54" rx="14" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <text x="100" y="108" text-anchor="middle" font-size="15" font-weight="bold" fill="#444">Miệng</text>
+  <text x="100" y="127" text-anchor="middle" font-size="12" fill="#666">nhai, tiết nước bọt</text>
+
+  <rect x="250" y="70" width="180" height="92" rx="16" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+  <text x="340" y="98" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">1. Dạ cỏ</text>
+  <text x="340" y="120" text-anchor="middle" font-size="12" fill="#333">lưu trữ, làm mềm</text>
+  <text x="340" y="137" text-anchor="middle" font-size="12" fill="#333">thức ăn khô;</text>
+  <text x="340" y="154" text-anchor="middle" font-size="12" fill="#333">lên men (vi sinh vật)</text>
+
+  <rect x="490" y="80" width="160" height="72" rx="16" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <text x="570" y="106" text-anchor="middle" font-size="16" font-weight="bold" fill="#9a5310">2. Dạ tổ ong</text>
+  <text x="570" y="126" text-anchor="middle" font-size="12" fill="#333">đưa thức ăn lên</text>
+  <text x="570" y="142" text-anchor="middle" font-size="12" fill="#333">miệng nhai lại</text>
+
+  <rect x="250" y="220" width="180" height="72" rx="16" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="340" y="250" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4f8f">3. Dạ lá sách</text>
+  <text x="340" y="272" text-anchor="middle" font-size="12" fill="#333">hấp thụ lại nước</text>
+
+  <rect x="490" y="206" width="180" height="100" rx="16" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <text x="580" y="232" text-anchor="middle" font-size="16" font-weight="bold" fill="#523282">4. Dạ múi khế</text>
+  <text x="580" y="252" text-anchor="middle" font-size="12" fill="#333">tiết pepsin, HCl</text>
+  <text x="580" y="269" text-anchor="middle" font-size="12" fill="#333">tiêu hoá protein của cỏ</text>
+  <text x="580" y="286" text-anchor="middle" font-size="12" fill="#333">và vi sinh vật từ dạ cỏ</text>
+
+  <rect x="730" y="226" width="170" height="60" rx="14" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <text x="815" y="252" text-anchor="middle" font-size="15" font-weight="bold" fill="#444">Ruột non</text>
+  <text x="815" y="272" text-anchor="middle" font-size="12" fill="#666">tiêu hoá, hấp thụ</text>
+</svg>

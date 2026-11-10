@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="380" rx="14" fill="#fbfaf7"/>
+  <text x="500.0" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Thang thời gian địa chất <tspan font-size="13" font-weight="normal" fill="#666">(triệu năm trước)</tspan></text>
+<path d="M 851.6 90 L 960.0 90 L 970 152 L 30 152 Z" fill="#eeeeee" opacity="0.7"/>
+<rect x="40.0" y="50" width="220.0" height="40" fill="#eeeeee" stroke="#777" stroke-width="1.5"/>
+<text x="150.0" y="75" text-anchor="middle" font-size="12.5" fill="#444">tiến hoá hoá học, tiền sinh học</text>
+<rect x="260.0" y="50" width="200.0" height="40" fill="#f8d3cc" stroke="#e05a47" stroke-width="1.5"/>
+<text x="360.0" y="75" text-anchor="middle" font-size="12.5" fill="#a63a2b">Thái cổ: nhân sơ xuất hiện</text>
+<rect x="460.0" y="50" width="391.6" height="40" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="1.5"/>
+<text x="655.8" y="75" text-anchor="middle" font-size="12.5" fill="#1d4f8f">Nguyên sinh: nhân thực cổ nhất, tảo, ĐV không xương sống</text>
+<rect x="851.6" y="50" width="58.4" height="40" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.5"/>
+<rect x="910.0" y="50" width="37.0" height="40" fill="#fde7d4" stroke="#e08a2e" stroke-width="1.5"/>
+<rect x="947.0" y="50" width="13.0" height="40" fill="#ece3f7" stroke="#7d55b8" stroke-width="1.5"/>
+<line x1="40.0" y1="90" x2="40.0" y2="96" stroke="#777" stroke-width="1.5"/>
+<text x="38.0" y="110" text-anchor="start" font-size="12" fill="#666">4600 – Trái Đất hình thành</text>
+<line x1="260.0" y1="90" x2="260.0" y2="96" stroke="#777" stroke-width="1.5"/>
+<text x="260.0" y="110" text-anchor="middle" font-size="12" fill="#666">3500</text>
+<line x1="460.0" y1="90" x2="460.0" y2="96" stroke="#777" stroke-width="1.5"/>
+<text x="460.0" y="110" text-anchor="middle" font-size="12" fill="#666">2500</text>
+<line x1="851.6" y1="90" x2="851.6" y2="96" stroke="#777" stroke-width="1.5"/>
+<text x="851.6" y="110" text-anchor="middle" font-size="12" fill="#666">542</text>
+<line x1="960.0" y1="90" x2="960.0" y2="96" stroke="#777" stroke-width="1.5"/>
+<text x="962.0" y="110" text-anchor="end" font-size="12" fill="#666">0</text>
+<rect x="30.0" y="152" width="512.7" height="26" fill="#3a9a4a"/>
+<text x="286.4" y="170" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Đại Cổ sinh</text>
+<rect x="542.7" y="152" width="256.4" height="26" fill="#e08a2e"/>
+<text x="670.9" y="170" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Đại Trung sinh</text>
+<rect x="799.1" y="152" width="170.9" height="26" fill="#7d55b8"/>
+<text x="884.5" y="170" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Đại Tân sinh</text>
+<rect x="30.0" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="72.7" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Cambri</text>
+<text x="72.7" y="250" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="72.7" y="266" text-anchor="middle" font-size="12" fill="#333">các ngành</text>
+<text x="72.7" y="282" text-anchor="middle" font-size="12" fill="#333">động vật;</text>
+<text x="72.7" y="298" text-anchor="middle" font-size="12" fill="#333">phân hoá tảo</text>
+<rect x="115.5" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="158.2" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Ocđôvic</text>
+<text x="158.2" y="250" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="158.2" y="266" text-anchor="middle" font-size="12" fill="#333">thực vật;</text>
+<text x="158.2" y="282" text-anchor="middle" font-size="12" fill="#333">tảo biển</text>
+<text x="158.2" y="298" text-anchor="middle" font-size="12" fill="#333">ngự trị</text>
+<rect x="200.9" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="243.6" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Silua</text>
+<text x="243.6" y="250" text-anchor="middle" font-size="12" fill="#333">cây có mạch,</text>
+<text x="243.6" y="266" text-anchor="middle" font-size="12" fill="#333">động vật</text>
+<text x="243.6" y="282" text-anchor="middle" font-size="12" fill="#333">lên cạn</text>
+<rect x="286.4" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="329.1" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Đêvôn</text>
+<text x="329.1" y="250" text-anchor="middle" font-size="12" fill="#333">phân hoá</text>
+<text x="329.1" y="266" text-anchor="middle" font-size="12" fill="#333">cá xương;</text>
+<text x="329.1" y="282" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="329.1" y="298" text-anchor="middle" font-size="12" fill="#333">lưỡng cư,</text>
+<text x="329.1" y="314" text-anchor="middle" font-size="12" fill="#333">côn trùng</text>
+<rect x="371.8" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="414.5" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Than đá</text>
+<text x="414.5" y="250" text-anchor="middle" font-size="12" fill="#333">dương xỉ</text>
+<text x="414.5" y="266" text-anchor="middle" font-size="12" fill="#333">phát triển;</text>
+<text x="414.5" y="282" text-anchor="middle" font-size="12" fill="#333">lưỡng cư</text>
+<text x="414.5" y="298" text-anchor="middle" font-size="12" fill="#333">ngự trị;</text>
+<text x="414.5" y="314" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="414.5" y="330" text-anchor="middle" font-size="12" fill="#333">bò sát</text>
+<rect x="457.3" y="178" width="85.5" height="30" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.2"/>
+<text x="500.0" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#246b30">Pecmi</text>
+<text x="500.0" y="250" text-anchor="middle" font-size="12" fill="#333">phân hoá</text>
+<text x="500.0" y="266" text-anchor="middle" font-size="12" fill="#333">bò sát,</text>
+<text x="500.0" y="282" text-anchor="middle" font-size="12" fill="#333">côn trùng</text>
+<rect x="542.7" y="178" width="85.5" height="30" fill="#fde7d4" stroke="#e08a2e" stroke-width="1.2"/>
+<text x="585.5" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">Tam điệp</text>
+<text x="585.5" y="250" text-anchor="middle" font-size="12" fill="#333">hạt trần</text>
+<text x="585.5" y="266" text-anchor="middle" font-size="12" fill="#333">ngự trị;</text>
+<text x="585.5" y="282" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="585.5" y="298" text-anchor="middle" font-size="12" fill="#333">thú, chim</text>
+<rect x="628.2" y="178" width="85.5" height="30" fill="#fde7d4" stroke="#e08a2e" stroke-width="1.2"/>
+<text x="670.9" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">Jura</text>
+<text x="670.9" y="250" text-anchor="middle" font-size="12" fill="#333">bò sát cổ</text>
+<text x="670.9" y="266" text-anchor="middle" font-size="12" fill="#333">ngự trị;</text>
+<text x="670.9" y="282" text-anchor="middle" font-size="12" fill="#333">phân hoá chim</text>
+<rect x="713.6" y="178" width="85.5" height="30" fill="#fde7d4" stroke="#e08a2e" stroke-width="1.2"/>
+<text x="756.4" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">Phấn trắng</text>
+<text x="756.4" y="250" text-anchor="middle" font-size="12" fill="#333">xuất hiện</text>
+<text x="756.4" y="266" text-anchor="middle" font-size="12" fill="#333">thực vật</text>
+<text x="756.4" y="282" text-anchor="middle" font-size="12" fill="#333">có hoa</text>
+<rect x="799.1" y="178" width="85.5" height="30" fill="#ece3f7" stroke="#7d55b8" stroke-width="1.2"/>
+<text x="841.8" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#523282">Đệ tam</text>
+<text x="841.8" y="250" text-anchor="middle" font-size="12" fill="#333">phát sinh</text>
+<text x="841.8" y="266" text-anchor="middle" font-size="12" fill="#333">linh trưởng;</text>
+<text x="841.8" y="282" text-anchor="middle" font-size="12" fill="#333">cây có hoa</text>
+<text x="841.8" y="298" text-anchor="middle" font-size="12" fill="#333">ngự trị</text>
+<rect x="884.5" y="178" width="85.5" height="30" fill="#ece3f7" stroke="#7d55b8" stroke-width="1.2"/>
+<text x="927.3" y="198" text-anchor="middle" font-size="13" font-weight="bold" fill="#523282">Đệ tứ</text>
+<text x="927.3" y="250" text-anchor="middle" font-size="12" fill="#333">xuất hiện</text>
+<text x="927.3" y="266" text-anchor="middle" font-size="12" fill="#333">loài người</text>
+<line x1="30.0" y1="208" x2="30.0" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="32.0" y="228" text-anchor="start" font-size="12" fill="#666">542</text>
+<line x1="115.5" y1="208" x2="115.5" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="115.5" y="228" text-anchor="middle" font-size="12" fill="#666">488</text>
+<line x1="200.9" y1="208" x2="200.9" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="200.9" y="228" text-anchor="middle" font-size="12" fill="#666">444</text>
+<line x1="286.4" y1="208" x2="286.4" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="286.4" y="228" text-anchor="middle" font-size="12" fill="#666">416</text>
+<line x1="371.8" y1="208" x2="371.8" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="371.8" y="228" text-anchor="middle" font-size="12" fill="#666">359</text>
+<line x1="457.3" y1="208" x2="457.3" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="457.3" y="228" text-anchor="middle" font-size="12" fill="#666">299</text>
+<line x1="542.7" y1="208" x2="542.7" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="542.7" y="228" text-anchor="middle" font-size="12" fill="#666">250</text>
+<line x1="628.2" y1="208" x2="628.2" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="628.2" y="228" text-anchor="middle" font-size="12" fill="#666">200</text>
+<line x1="713.6" y1="208" x2="713.6" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="713.6" y="228" text-anchor="middle" font-size="12" fill="#666">145</text>
+<line x1="799.1" y1="208" x2="799.1" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="799.1" y="228" text-anchor="middle" font-size="12" fill="#666">65</text>
+<line x1="884.5" y1="208" x2="884.5" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="884.5" y="228" text-anchor="middle" font-size="12" fill="#666">1,8</text>
+<line x1="970.0" y1="208" x2="970.0" y2="214" stroke="#777" stroke-width="1.5"/>
+<text x="968.0" y="228" text-anchor="end" font-size="12" fill="#666">0</text>
+<text x="500.0" y="368" text-anchor="middle" font-size="12" fill="#666">Ba đại cuối (Cổ sinh → Tân sinh, ~12% lịch sử Trái Đất) được phóng to, các kỉ vẽ bằng nhau – không theo tỉ lệ thời gian.</text>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "sync": "node scripts/sync-vault.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "publish": "npm run sync && git add -A && git commit -m \"Sync from vault\" && git push"
+  },
+  "dependencies": {
+    "astro": "^6.4.8",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.47",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  }
+}

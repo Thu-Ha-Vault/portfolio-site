@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="900" height="430" rx="14" fill="#fbfaf7"/>
+  <text x="450" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Biến đổi trong hệ mạch: động mạch → mao mạch → tĩnh mạch</text>
+
+  <!-- vùng -->
+  <rect x="353" y="50" width="254" height="290" fill="#eeeeee" fill-opacity="0.6"/>
+  <g stroke="#bbb" stroke-width="1.2" stroke-dasharray="5 4">
+    <line x1="353" y1="50" x2="353" y2="340"/>
+    <line x1="607" y1="50" x2="607" y2="340"/>
+  </g>
+
+  <!-- trục -->
+  <line x1="100" y1="340" x2="100" y2="48" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="100" y1="340" x2="872" y2="340" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="62" y="195" text-anchor="middle" font-size="13" fill="#666" transform="rotate(-90 62 195)">giá trị (tương đối)</text>
+
+  <!-- a) tiết diện -->
+  <path d="M 100 312 C 266 310 314 90 409 80 L 551 80 C 646 90 670 250 860 262" fill="none" stroke="#2f7ed8" stroke-width="3.5"/>
+  <!-- b) vận tốc -->
+  <path d="M 100 90 C 266 95 314 305 409 315 L 551 315 C 646 305 694 180 860 170" fill="none" stroke="#e05a47" stroke-width="3.5"/>
+  <!-- c) huyết áp -->
+  <path d="M 100 72 Q 118 56 136 82 Q 154 62 171 92 Q 189 74 207 104 Q 225 90 243 118 Q 260 108 278 132 C 314 160 350 220 409 240 L 551 268 C 646 285 765 300 860 306" fill="none" stroke="#7d55b8" stroke-width="3" stroke-dasharray="9 6"/>
+
+  <g font-size="14" font-weight="bold">
+    <text x="866" y="267" fill="#2f7ed8">a</text>
+    <text x="866" y="175" fill="#e05a47">b</text>
+    <text x="866" y="311" fill="#7d55b8">c</text>
+  </g>
+  <text x="480" y="72" text-anchor="middle" font-size="13" fill="#2f7ed8">Σ tiết diện cực đại</text>
+  <text x="480" y="306" text-anchor="middle" font-size="13" fill="#e05a47">vận tốc thấp nhất</text>
+  <text x="200" y="62" font-size="12" fill="#7d55b8">huyết áp dao động (tim co / dãn)</text>
+
+  <!-- nhãn trục hoành -->
+  <g font-size="14" font-weight="bold" fill="#333" text-anchor="middle">
+    <text x="226" y="362">Động mạch (ĐM)</text>
+    <text x="480" y="362">Mao mạch (MM)</text>
+    <text x="733" y="362">Tĩnh mạch (TM)</text>
+  </g>
+
+  <!-- chú giải -->
+  <line x1="120" y1="400" x2="160" y2="400" stroke="#2f7ed8" stroke-width="3.5"/>
+  <text x="168" y="405" font-size="13" fill="#333">a) Σ tiết diện mạch</text>
+  <line x1="370" y1="400" x2="410" y2="400" stroke="#e05a47" stroke-width="3.5"/>
+  <text x="418" y="405" font-size="13" fill="#333">b) vận tốc máu</text>
+  <line x1="590" y1="400" x2="630" y2="400" stroke="#7d55b8" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="638" y="405" font-size="13" fill="#333">c) huyết áp</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/>
+    </marker>
+  </defs>
+  <rect width="960" height="290" rx="14" fill="#fbfaf7"/>
+  <text x="480" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Cơ chế duy trì huyết áp</text>
+
+  <!-- liên hệ ngược -->
+  <path d="M 855 122 C 855 262 325 262 325 128" fill="none" stroke="#3a9a4a" stroke-width="3" stroke-dasharray="9 6" marker-end="url(#g)"/>
+  <text x="590" y="244" text-anchor="middle" font-size="14" font-weight="bold" fill="#3a9a4a">liên hệ ngược</text>
+  <text x="590" y="262" text-anchor="middle" font-size="12" fill="#666">(huyết áp về bình thường → thụ thể ngừng phát tín hiệu)</text>
+
+  <!-- mũi tên chính -->
+  <g stroke="#555" stroke-width="2.5">
+    <line x1="162" y1="86" x2="186" y2="86" marker-end="url(#a)"/>
+    <line x1="362" y1="86" x2="386" y2="86" marker-end="url(#a)"/>
+    <line x1="572" y1="86" x2="596" y2="86" marker-end="url(#a)"/>
+    <line x1="742" y1="86" x2="766" y2="86" marker-end="url(#a)"/>
+  </g>
+
+  <!-- khối -->
+  <rect x="20" y="54" width="140" height="66" rx="14" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <text x="90" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#a63a2b">Huyết áp</text>
+  <text x="90" y="101" text-anchor="middle" font-size="14" font-weight="bold" fill="#a63a2b">tăng cao</text>
+
+  <rect x="190" y="54" width="170" height="66" rx="14" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <text x="275" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a5310">Thụ thể áp lực</text>
+  <text x="275" y="101" text-anchor="middle" font-size="13" fill="#9a5310">ở mạch máu</text>
+
+  <rect x="390" y="54" width="180" height="66" rx="14" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <text x="480" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#523282">Trung khu điều hoà</text>
+  <text x="480" y="101" text-anchor="middle" font-size="13" fill="#523282">tim mạch ở hành não</text>
+
+  <rect x="600" y="54" width="140" height="66" rx="14" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="670" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4f8f">Tim và</text>
+  <text x="670" y="101" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4f8f">mạch máu</text>
+
+  <rect x="770" y="54" width="170" height="66" rx="14" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+  <text x="855" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#246b30">Huyết áp</text>
+  <text x="855" y="101" text-anchor="middle" font-size="14" font-weight="bold" fill="#246b30">bình thường</text>
+
+  <!-- nhãn phụ -->
+  <g font-size="12" fill="#666" text-anchor="middle">
+    <text x="90" y="140">(kích thích)</text>
+    <text x="250" y="140">tiếp nhận</text>
+    <text x="480" y="140">điều khiển</text>
+    <text x="670" y="140">thực hiện</text>
+  </g>
+  <text x="670" y="164" text-anchor="middle" font-size="12" fill="#333">tim ↓ nhịp, ↓ lực co bóp;</text>
+  <text x="670" y="180" text-anchor="middle" font-size="12" fill="#333">mạch máu dãn</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/>
+    </marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/>
+    </marker>
+  </defs>
+  <rect width="940" height="420" rx="14" fill="#fbfaf7"/>
+  <text x="560" y="30" text-anchor="middle" font-size="13" fill="#666">Số trong ô: độ bão hoà O₂ (%), ví dụ minh hoạ</text>
+
+  <!-- ===== Hàng 1: ngược chiều ===== -->
+  <text x="96" y="114" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Ngược chiều</text>
+  <text x="96" y="134" text-anchor="middle" font-size="13" fill="#666">(ở mang cá)</text>
+
+  <rect x="190" y="52" width="720" height="42" rx="21" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="210" y="78" font-size="14" font-weight="bold" fill="#1d4f8f">Nước</text>
+  <line x1="252" y1="73" x2="282" y2="73" stroke="#2f7ed8" stroke-width="3" marker-end="url(#b)"/>
+  <rect x="190" y="146" width="720" height="42" rx="21" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <text x="890" y="172" text-anchor="end" font-size="14" font-weight="bold" fill="#a63a2b">Máu</text>
+  <line x1="848" y1="167" x2="818" y2="167" stroke="#e05a47" stroke-width="3" marker-end="url(#r)"/>
+
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <text x="360" y="79" fill="#1d4f8f">100</text><text x="510" y="79" fill="#1d4f8f">70</text><text x="660" y="79" fill="#1d4f8f">40</text><text x="790" y="79" fill="#1d4f8f">15</text>
+    <text x="360" y="173" fill="#a63a2b">85</text><text x="510" y="173" fill="#a63a2b">60</text><text x="660" y="173" fill="#a63a2b">30</text><text x="790" y="173" fill="#a63a2b">5</text>
+  </g>
+  <g stroke="#3a9a4a" stroke-width="2.5">
+    <line x1="360" y1="98" x2="360" y2="140" marker-end="url(#g)"/>
+    <line x1="510" y1="98" x2="510" y2="140" marker-end="url(#g)"/>
+    <line x1="660" y1="98" x2="660" y2="140" marker-end="url(#g)"/>
+    <line x1="790" y1="98" x2="790" y2="140" marker-end="url(#g)"/>
+  </g>
+  <text x="372" y="124" font-size="13" fill="#3a9a4a">O₂</text>
+  <text x="200" y="212" font-size="13" fill="#333">Nước luôn giàu O₂ hơn máu trên suốt chiều dài mang → O₂ khuếch tán liên tục; máu đi ra ≈ 85%.</text>
+
+  <line x1="30" y1="232" x2="910" y2="232" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- ===== Hàng 2: cùng chiều (giả sử) ===== -->
+  <text x="96" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Cùng chiều</text>
+  <text x="96" y="330" text-anchor="middle" font-size="13" fill="#666">(giả sử, để so sánh)</text>
+
+  <rect x="190" y="248" width="720" height="42" rx="21" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="210" y="274" font-size="14" font-weight="bold" fill="#1d4f8f">Nước</text>
+  <line x1="252" y1="269" x2="282" y2="269" stroke="#2f7ed8" stroke-width="3" marker-end="url(#b)"/>
+  <rect x="190" y="342" width="720" height="42" rx="21" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <text x="210" y="368" font-size="14" font-weight="bold" fill="#a63a2b">Máu</text>
+  <line x1="252" y1="363" x2="282" y2="363" stroke="#e05a47" stroke-width="3" marker-end="url(#r)"/>
+
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <text x="360" y="275" fill="#1d4f8f">100</text><text x="510" y="275" fill="#1d4f8f">65</text><text x="660" y="275" fill="#1d4f8f">53</text><text x="790" y="275" fill="#1d4f8f">50</text>
+    <text x="360" y="369" fill="#a63a2b">5</text><text x="510" y="369" fill="#a63a2b">40</text><text x="660" y="369" fill="#a63a2b">47</text><text x="790" y="369" fill="#a63a2b">50</text>
+  </g>
+  <g stroke="#3a9a4a" stroke-width="2.5">
+    <line x1="360" y1="294" x2="360" y2="336" marker-end="url(#g)"/>
+    <line x1="510" y1="294" x2="510" y2="336" marker-end="url(#g)"/>
+    <line x1="660" y1="300" x2="660" y2="330" stroke-width="1.5" marker-end="url(#g)"/>
+  </g>
+  <text x="790" y="322" text-anchor="middle" font-size="18" font-weight="bold" fill="#777">=</text>
+  <text x="200" y="406" font-size="13" fill="#333">Hai bên nhanh chóng cân bằng → ngừng khuếch tán; máu đi ra tối đa ≈ 50%.</text>
+</svg>

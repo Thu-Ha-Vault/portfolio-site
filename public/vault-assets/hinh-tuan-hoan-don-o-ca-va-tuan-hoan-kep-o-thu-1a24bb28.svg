@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/>
+    </marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/>
+    </marker>
+  </defs>
+  <rect width="940" height="470" rx="14" fill="#fbfaf7"/>
+  <line x1="470" y1="24" x2="470" y2="410" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- ===== Cá: tuần hoàn đơn ===== -->
+  <text x="245" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Tuần hoàn đơn (cá)</text>
+
+  <path d="M 120 206 C 120 140 140 105 176 105" fill="none" stroke="#2f7ed8" stroke-width="4" marker-end="url(#b)"/>
+  <path d="M 314 105 C 380 105 390 140 390 240 C 390 340 380 375 316 375" fill="none" stroke="#e05a47" stroke-width="4" marker-end="url(#r)"/>
+  <path d="M 184 375 C 140 375 120 340 120 278" fill="none" stroke="#2f7ed8" stroke-width="4" marker-end="url(#b)"/>
+
+  <rect x="180" y="78" width="130" height="54" rx="14" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="245" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4f8f">Mang</text>
+  <text x="245" y="120" text-anchor="middle" font-size="12" fill="#666">nhận O₂</text>
+
+  <rect x="70" y="210" width="100" height="64" rx="16" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2.5"/>
+  <text x="120" y="236" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4f8f">Tim</text>
+  <text x="120" y="256" text-anchor="middle" font-size="12" fill="#333">1 nhĩ, 1 thất</text>
+
+  <rect x="180" y="348" width="130" height="54" rx="14" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <text x="245" y="371" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">Cơ thể</text>
+  <text x="245" y="390" text-anchor="middle" font-size="12" fill="#666">nhả O₂</text>
+
+  <text x="280" y="226" text-anchor="middle" font-size="13" fill="#333">1 vòng tuần hoàn</text>
+  <text x="280" y="246" text-anchor="middle" font-size="13" fill="#333">tim → mang → cơ thể → tim</text>
+  <text x="280" y="270" text-anchor="middle" font-size="13" fill="#333">P máu yếu hơn</text>
+
+  <!-- ===== Thú: tuần hoàn kép ===== -->
+  <text x="705" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Tuần hoàn kép (thú, chim)</text>
+
+  <rect x="610" y="78" width="200" height="54" rx="14" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="710" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4f8f">Phổi</text>
+  <text x="710" y="120" text-anchor="middle" font-size="12" fill="#666">nhận O₂, thải CO₂</text>
+
+  <!-- tim 4 ngăn -->
+  <rect x="630" y="196" width="80" height="88" rx="14" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2.5"/>
+  <rect x="710" y="196" width="80" height="88" rx="14" fill="#fbe0dc" stroke="#e05a47" stroke-width="2.5"/>
+  <text x="670" y="234" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4f8f">Tim</text>
+  <text x="670" y="254" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4f8f">phải</text>
+  <text x="750" y="234" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">Tim</text>
+  <text x="750" y="254" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">trái</text>
+
+  <rect x="610" y="348" width="200" height="54" rx="14" fill="#fbe0dc" stroke="#e05a47" stroke-width="2"/>
+  <text x="710" y="371" text-anchor="middle" font-size="15" font-weight="bold" fill="#a63a2b">Cơ thể</text>
+  <text x="710" y="390" text-anchor="middle" font-size="12" fill="#666">nhả O₂, nhận CO₂</text>
+
+  <!-- vòng phổi -->
+  <path d="M 650 196 C 650 170 640 160 640 136" fill="none" stroke="#2f7ed8" stroke-width="4" marker-end="url(#b)"/>
+  <path d="M 780 134 C 780 160 770 170 770 192" fill="none" stroke="#e05a47" stroke-width="4" marker-end="url(#r)"/>
+  <!-- vòng cơ thể -->
+  <path d="M 770 286 C 770 310 780 320 780 344" fill="none" stroke="#e05a47" stroke-width="4" marker-end="url(#r)"/>
+  <path d="M 640 346 C 640 322 650 312 650 288" fill="none" stroke="#2f7ed8" stroke-width="4" marker-end="url(#b)"/>
+
+  <text x="560" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Vòng phổi</text>
+  <text x="560" y="177" text-anchor="middle" font-size="12" fill="#666">(vòng nhỏ)</text>
+  <text x="560" y="314" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Vòng cơ thể</text>
+  <text x="560" y="331" text-anchor="middle" font-size="12" fill="#666">(vòng lớn)</text>
+  <text x="870" y="214" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Tim 4 ngăn</text>
+  <text x="870" y="231" text-anchor="middle" font-size="12" fill="#666">(2 nhĩ, 2 thất)</text>
+  <text x="870" y="258" text-anchor="middle" font-size="13" fill="#333">2 vòng tuần hoàn</text>
+  <text x="870" y="276" text-anchor="middle" font-size="13" fill="#333">P máu mạnh hơn</text>
+
+  <!-- chú giải -->
+  <line x1="300" y1="440" x2="340" y2="440" stroke="#e05a47" stroke-width="4"/>
+  <text x="348" y="445" font-size="13" fill="#333">máu giàu O₂ (đỏ tươi)</text>
+  <line x1="530" y1="440" x2="570" y2="440" stroke="#2f7ed8" stroke-width="4"/>
+  <text x="578" y="445" font-size="13" fill="#333">máu nghèo O₂ (đỏ thẫm)</text>
+</svg>

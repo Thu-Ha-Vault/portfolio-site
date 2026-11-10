@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <!-- NST kép (2 chromatid) -->
+    <g id="LB"><rect x="-6" y="-17" width="5" height="34" rx="2.5" fill="#2f7ed8"/><rect x="1" y="-17" width="5" height="34" rx="2.5" fill="#2f7ed8"/><circle r="3" fill="#1d4f8f"/></g>
+    <g id="LR"><rect x="-6" y="-17" width="5" height="34" rx="2.5" fill="#e05a47"/><rect x="1" y="-17" width="5" height="34" rx="2.5" fill="#e05a47"/><circle r="3" fill="#a63a2b"/></g>
+    <g id="SB"><rect x="-6" y="-11" width="5" height="22" rx="2.5" fill="#2f7ed8"/><rect x="1" y="-11" width="5" height="22" rx="2.5" fill="#2f7ed8"/><circle r="3" fill="#1d4f8f"/></g>
+    <g id="SR"><rect x="-6" y="-11" width="5" height="22" rx="2.5" fill="#e05a47"/><rect x="1" y="-11" width="5" height="22" rx="2.5" fill="#e05a47"/><circle r="3" fill="#a63a2b"/></g>
+    <!-- NST đơn -->
+    <rect id="lb" x="-2.5" y="-17" width="5" height="34" rx="2.5" fill="#2f7ed8"/>
+    <rect id="lr" x="-2.5" y="-17" width="5" height="34" rx="2.5" fill="#e05a47"/>
+    <rect id="sb" x="-2.5" y="-11" width="5" height="22" rx="2.5" fill="#2f7ed8"/>
+    <rect id="sr" x="-2.5" y="-11" width="5" height="22" rx="2.5" fill="#e05a47"/>
+  </defs>
+  <rect width="900" height="450" rx="14" fill="#fbfaf7"/>
+
+  <!-- tiêu đề cột -->
+  <g font-size="14" font-weight="bold" fill="#333" text-anchor="middle">
+    <text x="80" y="34">Tế bào 2n</text>
+    <text x="270" y="34">Kì giữa I</text>
+    <text x="470" y="34">Sau giảm phân I</text>
+    <text x="680" y="34">Sau giảm phân II</text>
+  </g>
+  <g font-size="12" fill="#666" text-anchor="middle">
+    <text x="470" y="50">2 tế bào n kép</text>
+    <text x="680" y="50">4 tế bào n</text>
+  </g>
+
+  <!-- tế bào 2n -->
+  <circle cx="80" cy="235" r="46" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <use href="#lb" transform="translate(62,228)"/>
+  <use href="#lr" transform="translate(76,228)"/>
+  <use href="#sb" transform="translate(90,234)"/>
+  <use href="#sr" transform="translate(102,234)"/>
+  <text x="80" y="302" text-anchor="middle" font-size="16" font-weight="bold" fill="#333"><tspan fill="#2f7ed8">A</tspan><tspan fill="#e05a47">a</tspan><tspan fill="#2f7ed8">B</tspan><tspan fill="#e05a47">b</tspan></text>
+
+  <line x1="122" y1="212" x2="206" y2="160" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+  <line x1="122" y1="258" x2="206" y2="310" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+
+  <!-- ===== Cách 1 ===== -->
+  <text x="270" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#7d55b8">Cách 1 (C₁)</text>
+  <circle cx="270" cy="140" r="56" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <line x1="270" y1="90" x2="270" y2="190" stroke="#bbb" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <use href="#LB" transform="translate(256,122)"/>
+  <use href="#SR" transform="translate(256,162)"/>
+  <use href="#LR" transform="translate(284,122)"/>
+  <use href="#SB" transform="translate(284,162)"/>
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <text x="236" y="127" fill="#2f7ed8">A</text><text x="236" y="167" fill="#e05a47">b</text>
+    <text x="304" y="127" fill="#e05a47">a</text><text x="304" y="167" fill="#2f7ed8">B</text>
+  </g>
+
+  <line x1="328" y1="128" x2="430" y2="100" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+  <line x1="328" y1="152" x2="430" y2="180" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+
+  <circle cx="470" cy="98" r="36" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <use href="#LB" transform="translate(459,98)"/>
+  <use href="#SR" transform="translate(479,100)"/>
+  <text x="443" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#2f7ed8">A</text>
+  <text x="491" y="105" text-anchor="start" font-size="13" font-weight="bold" fill="#e05a47">b</text>
+  <circle cx="470" cy="182" r="36" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <use href="#LR" transform="translate(459,182)"/>
+  <use href="#SB" transform="translate(479,184)"/>
+  <text x="443" y="187" text-anchor="middle" font-size="13" font-weight="bold" fill="#e05a47">a</text>
+  <text x="491" y="189" text-anchor="start" font-size="13" font-weight="bold" fill="#2f7ed8">B</text>
+
+  <g stroke="#555" stroke-width="2" fill="none">
+    <line x1="508" y1="92" x2="656" y2="78" marker-end="url(#a)"/>
+    <line x1="508" y1="104" x2="656" y2="118" marker-end="url(#a)"/>
+    <line x1="508" y1="176" x2="656" y2="162" marker-end="url(#a)"/>
+    <line x1="508" y1="188" x2="656" y2="202" marker-end="url(#a)"/>
+  </g>
+  <g fill="#ffffff" stroke="#777" stroke-width="2">
+    <circle cx="680" cy="78" r="19"/><circle cx="680" cy="118" r="19"/><circle cx="680" cy="162" r="19"/><circle cx="680" cy="202" r="19"/>
+  </g>
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <text x="680" y="83"><tspan fill="#2f7ed8">A</tspan><tspan fill="#e05a47">b</tspan></text>
+    <text x="680" y="123"><tspan fill="#2f7ed8">A</tspan><tspan fill="#e05a47">b</tspan></text>
+    <text x="680" y="167"><tspan fill="#e05a47">a</tspan><tspan fill="#2f7ed8">B</tspan></text>
+    <text x="680" y="207"><tspan fill="#e05a47">a</tspan><tspan fill="#2f7ed8">B</tspan></text>
+  </g>
+  <text x="724" y="134" font-size="13" fill="#333">2 loại giao tử:</text>
+  <text x="724" y="154" font-size="15" font-weight="bold" fill="#333">2 Ab : 2 aB</text>
+
+
+  <!-- ===== Cách 2 ===== -->
+  <text x="270" y="262" text-anchor="middle" font-size="14" font-weight="bold" fill="#7d55b8">Cách 2 (C₂)</text>
+  <circle cx="270" cy="330" r="56" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <line x1="270" y1="280" x2="270" y2="380" stroke="#bbb" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <use href="#LB" transform="translate(256,312)"/>
+  <use href="#SB" transform="translate(256,352)"/>
+  <use href="#LR" transform="translate(284,312)"/>
+  <use href="#SR" transform="translate(284,352)"/>
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <text x="236" y="317" fill="#2f7ed8">A</text><text x="236" y="357" fill="#2f7ed8">B</text>
+    <text x="304" y="317" fill="#e05a47">a</text><text x="304" y="357" fill="#e05a47">b</text>
+  </g>
+
+  <line x1="328" y1="318" x2="430" y2="290" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+  <line x1="328" y1="342" x2="430" y2="370" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+
+  <circle cx="470" cy="288" r="36" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <use href="#LB" transform="translate(459,288)"/>
+  <use href="#SB" transform="translate(479,290)"/>
+  <text x="443" y="293" text-anchor="middle" font-size="13" font-weight="bold" fill="#2f7ed8">A</text>
+  <text x="491" y="295" text-anchor="start" font-size="13" font-weight="bold" fill="#2f7ed8">B</text>
+  <circle cx="470" cy="372" r="36" fill="#ffffff" stroke="#777" stroke-width="2"/>
+  <use href="#LR" transform="translate(459,372)"/>
+  <use href="#SR" transform="translate(479,374)"/>
+  <text x="443" y="377" text-anchor="middle" font-size="13" font-weight="bold" fill="#e05a47">a</text>
+  <text x="491" y="379" text-anchor="start" font-size="13" font-weight="bold" fill="#e05a47">b</text>
+
+  <g stroke="#555" stroke-width="2" fill="none">
+    <line x1="508" y1="282" x2="656" y2="268" marker-end="url(#a)"/>
+    <line x1="508" y1="294" x2="656" y2="308" marker-end="url(#a)"/>
+    <line x1="508" y1="366" x2="656" y2="352" marker-end="url(#a)"/>
+    <line x1="508" y1="378" x2="656" y2="392" marker-end="url(#a)"/>
+  </g>
+  <g fill="#ffffff" stroke="#777" stroke-width="2">
+    <circle cx="680" cy="268" r="19"/><circle cx="680" cy="308" r="19"/><circle cx="680" cy="352" r="19"/><circle cx="680" cy="392" r="19"/>
+  </g>
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <text x="680" y="273"><tspan fill="#2f7ed8">AB</tspan></text>
+    <text x="680" y="313"><tspan fill="#2f7ed8">AB</tspan></text>
+    <text x="680" y="357"><tspan fill="#e05a47">ab</tspan></text>
+    <text x="680" y="397"><tspan fill="#e05a47">ab</tspan></text>
+  </g>
+  <text x="724" y="324" font-size="13" fill="#333">2 loại giao tử:</text>
+  <text x="724" y="344" font-size="15" font-weight="bold" fill="#333">2 AB : 2 ab</text>
+
+  <!-- chú giải -->
+  <text x="450" y="436" text-anchor="middle" font-size="12" fill="#666">1 tế bào sinh tinh AaBb (không trao đổi chéo) chỉ theo 1 trong 2 cách → 4 tinh trùng, 2 loại. Xanh / đỏ: NST có nguồn gốc khác nhau.</text>
+</svg>

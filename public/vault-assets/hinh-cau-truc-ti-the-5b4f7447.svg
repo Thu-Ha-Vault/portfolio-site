@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+<clipPath id="inner"><ellipse cx="480" cy="235" rx="278" ry="128"/></clipPath>
+</defs>
+<rect width="960" height="440" rx="14" fill="#fbfaf7"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Cấu trúc ti thể</text>
+<ellipse cx="480" cy="235" rx="300" ry="150" fill="#fffaf2" stroke="#b5651d" stroke-width="4"/>
+<ellipse cx="480" cy="235" rx="278" ry="128" fill="#fbd9b5" stroke="#e08a2e" stroke-width="4"/>
+<path d="M300,131.45366639152724 C286,187.22683319576362 314,207.22683319576362 300,263" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M420,104.01676236814995 C406,173.50838118407498 434,193.50838118407498 420,263" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M540,104.01676236814995 C526,173.50838118407498 554,193.50838118407498 540,263" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M660,131.45366639152724 C646,187.22683319576362 674,207.22683319576362 660,263" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M360,356.4609836947442 C374,291.7304918473721 346,271.7304918473721 360,207" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M480,369.0 C494,298.0 466,278.0 480,207" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M600,356.4609836947442 C614,291.7304918473721 586,271.7304918473721 600,207" fill="none" stroke="#e08a2e" stroke-width="18" stroke-linecap="round" clip-path="url(#inner)"/>
+<path d="M300,131.45366639152724 C286,187.22683319576362 314,207.22683319576362 300,263" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M420,104.01676236814995 C406,173.50838118407498 434,193.50838118407498 420,263" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M540,104.01676236814995 C526,173.50838118407498 554,193.50838118407498 540,263" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M660,131.45366639152724 C646,187.22683319576362 674,207.22683319576362 660,263" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M360,356.4609836947442 C374,291.7304918473721 346,271.7304918473721 360,207" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M480,369.0 C494,298.0 466,278.0 480,207" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<path d="M600,356.4609836947442 C614,291.7304918473721 586,271.7304918473721 600,207" fill="none" stroke="#fffaf2" stroke-width="9" stroke-linecap="round"/>
+<line x1="669" y1="190" x2="680" y2="190" stroke="#7d55b8" stroke-width="2.5"/><circle cx="684" cy="190" r="4.5" fill="#7d55b8"/>
+<line x1="669" y1="215" x2="680" y2="215" stroke="#7d55b8" stroke-width="2.5"/><circle cx="684" cy="215" r="4.5" fill="#7d55b8"/>
+<line x1="669" y1="240" x2="680" y2="240" stroke="#7d55b8" stroke-width="2.5"/><circle cx="684" cy="240" r="4.5" fill="#7d55b8"/>
+<polyline points="342.0,300.0 343.6,303.7 341.3,306.6 337.4,307.4 335.0,308.7 333.3,312.1 330.0,314.2 326.7,312.1 325.0,308.7 322.6,307.4 318.7,306.6 316.4,303.7 318.0,300.0 320.5,297.4 320.6,294.6 320.4,290.4 323.0,288.0 327.0,289.0 330.0,290.2 333.0,289.0 337.0,288.0 339.6,290.4 339.4,294.6 339.5,297.4 342.0,300.0" fill="none" stroke="#7d55b8" stroke-width="2.2"/>
+<polyline points="732.0,272.0 733.7,275.1 731.6,277.6 728.0,278.0 726.0,279.0 724.7,282.2 722.0,284.2 719.3,282.2 718.0,279.0 716.0,278.0 712.4,277.6 710.3,275.1 712.0,272.0 714.4,270.0 714.3,267.6 713.8,263.8 716.0,261.7 719.6,262.9 722.0,264.2 724.4,262.9 728.0,261.7 730.2,263.8 729.7,267.6 729.6,270.0 732.0,272.0" fill="none" stroke="#7d55b8" stroke-width="2.2"/>
+<circle cx="390" cy="282" r="4" fill="#555"/>
+<circle cx="398" cy="292" r="4" fill="#555"/>
+<circle cx="636" cy="300" r="4" fill="#555"/>
+<circle cx="644" cy="310" r="4" fill="#555"/>
+<circle cx="630" cy="170" r="4" fill="#555"/>
+<circle cx="622" cy="180" r="4" fill="#555"/>
+<circle cx="452" cy="180" r="4" fill="#555"/>
+<circle cx="445" cy="190" r="4" fill="#555"/>
+<circle cx="270" cy="200" r="4" fill="#555"/>
+<text x="150" y="120" text-anchor="end" font-size="14" fill="#9a5310" font-weight="bold">Màng ngoài</text>
+<line x1="156" y1="116" x2="226" y2="140" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="226" cy="140" r="2.5" fill="#555"/>
+<text x="150" y="200" text-anchor="end" font-size="14" fill="#c46f12" font-weight="bold">Màng trong</text>
+<line x1="156" y1="196" x2="203" y2="215" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="203" cy="215" r="2.5" fill="#555"/>
+<text x="150" y="290" text-anchor="end" font-size="14" fill="#333" font-weight="bold">Xoang gian màng</text>
+<text x="150" y="306" text-anchor="end" font-size="12" fill="#666">(nhiều H⁺)</text>
+<line x1="156" y1="286" x2="199" y2="290" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="199" cy="290" r="2.5" fill="#555"/>
+<text x="150" y="375" text-anchor="end" font-size="14" fill="#9a5310" font-weight="bold">Chất nền (matrix)</text>
+<text x="150" y="391" text-anchor="end" font-size="12" fill="#666">Krebs, enzyme...</text>
+<line x1="156" y1="371" x2="282" y2="296" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="282" cy="296" r="2.5" fill="#555"/>
+<text x="800" y="90" text-anchor="start" font-size="14" fill="#c46f12" font-weight="bold">Mào (crista)</text>
+<text x="800" y="106" text-anchor="start" font-size="12" fill="#666">màng trong gấp nếp</text>
+<text x="800" y="121" text-anchor="start" font-size="12" fill="#666">→ ↑ diện tích</text>
+<line x1="796" y1="96" x2="664" y2="130" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="664" cy="130" r="2.5" fill="#555"/>
+<text x="800" y="180" text-anchor="start" font-size="14" fill="#523282" font-weight="bold">ATP synthase</text>
+<line x1="796" y1="176" x2="689" y2="190" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="689" cy="190" r="2.5" fill="#555"/>
+<text x="800" y="250" text-anchor="start" font-size="14" fill="#523282" font-weight="bold">DNA vòng, kép, trần</text>
+<line x1="796" y1="246" x2="733" y2="268" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="733" cy="268" r="2.5" fill="#555"/>
+<text x="800" y="330" text-anchor="start" font-size="14" fill="#333" font-weight="bold">Ribosome (70S)</text>
+<line x1="796" y1="326" x2="648" y2="312" stroke="#888" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="648" cy="312" r="2.5" fill="#555"/>
+<text x="480" y="425" text-anchor="middle" font-size="13" fill="#666">Màng ngoài + màng trong = màng kép</text>
+</svg>

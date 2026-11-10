@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <clipPath id="cx"><rect x="150" y="70" width="64" height="270" rx="32"/></clipPath>
+    <clipPath id="cy"><rect x="330" y="160" width="64" height="180" rx="32"/></clipPath>
+  </defs>
+  <rect width="860" height="420" rx="14" fill="#fbfaf7"/>
+
+  <text x="430" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Cặp NST giới tính X và Y</text>
+
+  <!-- NST X -->
+  <g clip-path="url(#cx)">
+    <rect x="150" y="70" width="64" height="170" fill="#dbe9fb"/>
+    <rect x="150" y="240" width="64" height="100" fill="#dff2df"/>
+  </g>
+  <rect x="150" y="70" width="64" height="270" rx="32" fill="none" stroke="#2f7ed8" stroke-width="2.5"/>
+  <line x1="150" y1="240" x2="214" y2="240" stroke="#555" stroke-width="1.5"/>
+  <text x="182" y="162" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4f8f">(2)</text>
+  <text x="182" y="297" text-anchor="middle" font-size="20" font-weight="bold" fill="#246b30">(1)</text>
+  <text x="182" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">X</text>
+
+  <!-- NST Y -->
+  <g clip-path="url(#cy)">
+    <rect x="330" y="160" width="64" height="80" fill="#fde7d4"/>
+    <rect x="330" y="240" width="64" height="100" fill="#dff2df"/>
+  </g>
+  <rect x="330" y="160" width="64" height="180" rx="32" fill="none" stroke="#e08a2e" stroke-width="2.5"/>
+  <line x1="330" y1="240" x2="394" y2="240" stroke="#555" stroke-width="1.5"/>
+  <text x="362" y="210" text-anchor="middle" font-size="20" font-weight="bold" fill="#9a5310">(3)</text>
+  <text x="362" y="297" text-anchor="middle" font-size="20" font-weight="bold" fill="#246b30">(1)</text>
+  <text x="362" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">Y</text>
+
+  <!-- nối vùng tương đồng -->
+  <path d="M 218 290 C 250 270, 294 270, 326 290" fill="none" stroke="#3a9a4a" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="272" y="262" text-anchor="middle" font-size="13" fill="#246b30">tương đồng</text>
+
+  <line x1="450" y1="70" x2="450" y2="380" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- chú giải -->
+  <rect x="475" y="80" width="26" height="26" rx="6" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+  <text x="512" y="92" font-size="15" font-weight="bold" fill="#333">(1) Vùng tương đồng</text>
+  <text x="512" y="112" font-size="13" fill="#666">gen có alen trên cả X và Y: X<tspan dy="-6" font-size="12">A</tspan><tspan dy="6">Y</tspan><tspan dy="-6" font-size="12">a</tspan><tspan dy="6">, X</tspan><tspan dy="-6" font-size="12">a</tspan><tspan dy="6">Y</tspan><tspan dy="-6" font-size="12">A</tspan><tspan dy="6">...</tspan></text>
+
+  <rect x="475" y="170" width="26" height="26" rx="6" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="512" y="182" font-size="15" font-weight="bold" fill="#333">(2) Vùng không tương đồng trên X</text>
+  <text x="512" y="202" font-size="13" fill="#666">gen chỉ có trên X, không có alen trên Y: X<tspan dy="-6" font-size="12">A</tspan><tspan dy="6">Y, X</tspan><tspan dy="-6" font-size="12">a</tspan><tspan dy="6">Y</tspan></text>
+  <text x="512" y="222" font-size="13" fill="#2f7ed8">→ di truyền chéo</text>
+
+  <rect x="475" y="260" width="26" height="26" rx="6" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <text x="512" y="272" font-size="15" font-weight="bold" fill="#333">(3) Vùng không tương đồng trên Y</text>
+  <text x="512" y="292" font-size="13" fill="#666">gen chỉ có trên Y, không có alen trên X: XY<tspan dy="-6" font-size="12">a</tspan></text>
+  <text x="512" y="312" font-size="13" fill="#e08a2e">→ di truyền thẳng (bố → con trai)</text>
+
+  <text x="640" y="372" text-anchor="middle" font-size="13" fill="#666">(2) và (3): vùng không tương đồng</text>
+</svg>

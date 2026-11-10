@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+
+</defs>
+<rect width="960" height="450" rx="14" fill="#fbfaf7"/>
+<text x="480.0" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Tương tác cộng gộp: số alen trội càng nhiều → tính trạng biểu hiện càng mạnh</text>
+<text x="225.0" y="72" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">P: AaBb × AaBb</text>
+<text x="225.0" y="90" text-anchor="middle" font-size="12" fill="#666">2 cặp gen → 5 kiểu hình (1 : 4 : 6 : 4 : 1)</text>
+<line x1="54" y1="330" x2="396" y2="330" stroke="#999" stroke-width="1.5"/>
+<rect x="66.0" y="296.6666666666667" width="54" height="33.333333333333336" rx="5" fill="#fbe3df" stroke="#a63a2b" stroke-width="1"/>
+<text x="93.0" y="289.6666666666667" text-anchor="middle" font-size="12" fill="#333">1/16</text>
+<text x="93.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">0</text>
+<rect x="132.0" y="196.66666666666666" width="54" height="133.33333333333334" rx="5" fill="#e6b9b2" stroke="#a63a2b" stroke-width="1"/>
+<text x="159.0" y="189.66666666666666" text-anchor="middle" font-size="12" fill="#333">4/16</text>
+<text x="159.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">1</text>
+<rect x="198.0" y="130.0" width="54" height="200.0" rx="5" fill="#d08e85" stroke="#a63a2b" stroke-width="1"/>
+<text x="225.0" y="123.0" text-anchor="middle" font-size="12" fill="#333">6/16</text>
+<text x="225.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">2</text>
+<rect x="264.0" y="196.66666666666666" width="54" height="133.33333333333334" rx="5" fill="#bb6458" stroke="#a63a2b" stroke-width="1"/>
+<text x="291.0" y="189.66666666666666" text-anchor="middle" font-size="12" fill="#333">4/16</text>
+<text x="291.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">3</text>
+<rect x="330.0" y="296.6666666666667" width="54" height="33.333333333333336" rx="5" fill="#a63a2b" stroke="#a63a2b" stroke-width="1"/>
+<text x="357.0" y="289.6666666666667" text-anchor="middle" font-size="12" fill="#333">1/16</text>
+<text x="357.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">4</text>
+<text x="225.0" y="370" text-anchor="middle" font-size="12" fill="#666">số alen trội trong kiểu gen</text>
+<text x="690.0" y="72" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">P: AaBbDd × AaBbDd</text>
+<text x="690.0" y="90" text-anchor="middle" font-size="12" fill="#666">3 cặp gen → 7 kiểu hình (1 : 6 : 15 : 20 : 15 : 6 : 1)</text>
+<line x1="464" y1="330" x2="916" y2="330" stroke="#999" stroke-width="1.5"/>
+<rect x="475.0" y="321.6666666666667" width="52.857142857142854" height="8.333333333333334" rx="5" fill="#fbe3df" stroke="#a63a2b" stroke-width="1"/>
+<text x="501.42857142857144" y="314.6666666666667" text-anchor="middle" font-size="12" fill="#333">1/64</text>
+<text x="501.42857142857144" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">0</text>
+<rect x="537.8571428571429" y="280.0" width="52.857142857142854" height="50.0" rx="5" fill="#edc7c1" stroke="#a63a2b" stroke-width="1"/>
+<text x="564.2857142857143" y="273.0" text-anchor="middle" font-size="12" fill="#333">6/64</text>
+<text x="564.2857142857143" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">1</text>
+<rect x="600.7142857142857" y="205.0" width="52.857142857142854" height="125.00000000000001" rx="5" fill="#dfaba3" stroke="#a63a2b" stroke-width="1"/>
+<text x="627.1428571428571" y="198.0" text-anchor="middle" font-size="12" fill="#333">15/64</text>
+<text x="627.1428571428571" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">2</text>
+<rect x="663.5714285714286" y="163.33333333333331" width="52.857142857142854" height="166.66666666666669" rx="5" fill="#d08e85" stroke="#a63a2b" stroke-width="1"/>
+<text x="690.0" y="156.33333333333331" text-anchor="middle" font-size="12" fill="#333">20/64</text>
+<text x="690.0" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">3</text>
+<rect x="726.4285714285714" y="205.0" width="52.857142857142854" height="125.00000000000001" rx="5" fill="#c27267" stroke="#a63a2b" stroke-width="1"/>
+<text x="752.8571428571429" y="198.0" text-anchor="middle" font-size="12" fill="#333">15/64</text>
+<text x="752.8571428571429" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">4</text>
+<rect x="789.2857142857142" y="280.0" width="52.857142857142854" height="50.0" rx="5" fill="#b45649" stroke="#a63a2b" stroke-width="1"/>
+<text x="815.7142857142857" y="273.0" text-anchor="middle" font-size="12" fill="#333">6/64</text>
+<text x="815.7142857142857" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">5</text>
+<rect x="852.1428571428571" y="321.6666666666667" width="52.857142857142854" height="8.333333333333334" rx="5" fill="#a63a2b" stroke="#a63a2b" stroke-width="1"/>
+<text x="878.5714285714286" y="314.6666666666667" text-anchor="middle" font-size="12" fill="#333">1/64</text>
+<text x="878.5714285714286" y="348" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">6</text>
+<text x="690.0" y="370" text-anchor="middle" font-size="12" fill="#666">số alen trội trong kiểu gen</text>
+<text x="480" y="404" text-anchor="middle" font-size="13" fill="#333">Tỉ lệ kiểu gen có m alen trội = C<tspan dy="5" font-size="12">n</tspan><tspan dy="-12" font-size="12">m</tspan><tspan dy="7"> / 2</tspan><tspan dy="-6" font-size="12">n</tspan><tspan dy="6">  (n: tổng số alen của các cặp gen dị hợp)</tspan></text>
+<text x="480.0" y="428" text-anchor="middle" font-size="13" fill="#333">Càng nhiều gen chi phối → càng nhiều kiểu hình, sai khác giữa các kiểu hình càng nhỏ (tính trạng số lượng).</text>
+</svg>

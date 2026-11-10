@@ -1,0 +1,7 @@
+---
+import { ui, type UiKey } from '../i18n';
+interface Props { k?: UiKey; vi?: string; en?: string }
+const { k, vi: viProp, en: enProp } = Astro.props;
+const [vi, en] = k ? ui[k] : [viProp ?? '', enProp ?? viProp ?? ''];
+---
+<span data-vi={vi} data-en={en}>{vi}</span>

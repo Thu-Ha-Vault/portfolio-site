@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+
+</defs>
+<rect width="1000" height="360" rx="14" fill="#fbfaf7"/>
+<text x="500" y="32" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Phiên mã: tổng hợp mRNA trên mạch gốc của gen</text>
+<line x1="70" y1="173" x2="70" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="80" y1="173" x2="80" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="90" y1="173" x2="90" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="100" y1="173" x2="100" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="110" y1="173" x2="110" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="120" y1="173" x2="120" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="130" y1="173" x2="130" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="140" y1="173" x2="140" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="150" y1="173" x2="150" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="160" y1="173" x2="160" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="170" y1="173" x2="170" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="180" y1="173" x2="180" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="190" y1="173" x2="190" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="200" y1="173" x2="200" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="210" y1="173" x2="210" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="220" y1="173" x2="220" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="230" y1="173" x2="230" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="240" y1="173" x2="240" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="250" y1="173" x2="250" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="260" y1="173" x2="260" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="270" y1="173" x2="270" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="280" y1="173" x2="280" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="290" y1="173" x2="290" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="300" y1="173" x2="300" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="310" y1="173" x2="310" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="320" y1="173" x2="320" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="640" y1="173" x2="640" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="650" y1="173" x2="650" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="660" y1="173" x2="660" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="670" y1="173" x2="670" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="680" y1="173" x2="680" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="690" y1="173" x2="690" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="700" y1="173" x2="700" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="710" y1="173" x2="710" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="720" y1="173" x2="720" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="730" y1="173" x2="730" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="740" y1="173" x2="740" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="750" y1="173" x2="750" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="760" y1="173" x2="760" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="770" y1="173" x2="770" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="780" y1="173" x2="780" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="790" y1="173" x2="790" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="800" y1="173" x2="800" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="810" y1="173" x2="810" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="820" y1="173" x2="820" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="830" y1="173" x2="830" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="840" y1="173" x2="840" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="850" y1="173" x2="850" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="860" y1="173" x2="860" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="870" y1="173" x2="870" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="880" y1="173" x2="880" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="890" y1="173" x2="890" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="900" y1="173" x2="900" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="910" y1="173" x2="910" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="920" y1="173" x2="920" y2="197" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="440" y1="239" x2="440" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="450" y1="239" x2="450" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="460" y1="239" x2="460" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="470" y1="239" x2="470" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="480" y1="239" x2="480" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="490" y1="239" x2="490" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="500" y1="239" x2="500" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="510" y1="239" x2="510" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="520" y1="239" x2="520" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="530" y1="239" x2="530" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="540" y1="239" x2="540" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="550" y1="239" x2="550" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="560" y1="239" x2="560" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="570" y1="239" x2="570" y2="247" stroke="#f2b77a" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M60,170 L330,170 C370,170 380,120 420,120 L540,120 C580,120 590,170 630,170 L940,170" fill="none" stroke="#2f7ed8" stroke-width="5" stroke-linecap="round"/>
+<path d="M60,200 L330,200 C370,200 380,250 420,250 L540,250 C580,250 590,200 630,200 L940,200" fill="none" stroke="#1d4f8f" stroke-width="5" stroke-linecap="round"/>
+<text x="50" y="175" text-anchor="end" font-size="14" fill="#2f7ed8" font-weight="bold">5'</text>
+<text x="950" y="175" text-anchor="start" font-size="14" fill="#2f7ed8" font-weight="bold">3'</text>
+<text x="50" y="205" text-anchor="end" font-size="14" fill="#1d4f8f" font-weight="bold">3'</text>
+<text x="950" y="205" text-anchor="start" font-size="14" fill="#1d4f8f" font-weight="bold">5'</text>
+<path d="M578,236 L450,236 C400,236 384,190 360,140 C340,96 290,80 230,80" fill="none" stroke="#e08a2e" stroke-width="5" stroke-linecap="round"/>
+<text x="222" y="85" text-anchor="end" font-size="14" fill="#c46f12" font-weight="bold">5'</text>
+<text x="592" y="232" text-anchor="start" font-size="13" fill="#c46f12" font-weight="bold">3'</text>
+<ellipse cx="490" cy="186" rx="150" ry="92" fill="#ece3f7" fill-opacity="0.38" stroke="#7d55b8" stroke-width="2.5"/>
+<text x="610" y="252" text-anchor="middle" font-size="12" fill="#c46f12" font-weight="bold">U</text>
+<text x="630" y="268" text-anchor="middle" font-size="12" fill="#c46f12" font-weight="bold">A</text>
+<text x="600" y="284" text-anchor="middle" font-size="12" fill="#c46f12" font-weight="bold">G</text>
+<text x="640" y="290" text-anchor="middle" font-size="12" fill="#c46f12" font-weight="bold">C</text>
+<text x="490" y="66" text-anchor="middle" font-size="15" fill="#523282" font-weight="bold">RNA polymerase</text>
+<text x="490" y="82" text-anchor="middle" font-size="12" fill="#666">tháo xoắn gen + tổng hợp RNA</text>
+<text x="230" y="60" text-anchor="middle" font-size="14" fill="#c46f12" font-weight="bold">mRNA (5' → 3')</text>
+<text x="150" y="150" text-anchor="middle" font-size="13" fill="#2f7ed8" font-weight="bold">Mạch bổ sung (5' → 3')</text>
+<text x="150" y="228" text-anchor="middle" font-size="13" fill="#1d4f8f" font-weight="bold">Mạch gốc (3' → 5') – khuôn</text>
+<text x="700" y="262" text-anchor="start" font-size="12" fill="#666">ribonucleotide tự do</text>
+<text x="700" y="278" text-anchor="start" font-size="12" fill="#666">(A, U, G, C)</text>
+<line x1="660" y1="140" x2="780" y2="140" stroke="#555" stroke-width="2.5" marker-end="url(#a)" stroke-linecap="round"/>
+<text x="720" y="128" text-anchor="middle" font-size="13" fill="#555">chiều phiên mã</text>
+<text x="500" y="322" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Nguyên tắc bổ sung (mạch gốc → mRNA):  A → U,  T → A,  G → C,  C → G</text>
+<text x="500" y="344" text-anchor="middle" font-size="13" fill="#666">mRNA có trình tự giống mạch bổ sung (thay T bằng U)</text>
+</svg>

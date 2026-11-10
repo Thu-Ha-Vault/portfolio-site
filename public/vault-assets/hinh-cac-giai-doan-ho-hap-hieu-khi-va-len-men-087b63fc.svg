@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/>
+    </marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/>
+    </marker>
+  </defs>
+  <rect width="960" height="450" rx="14" fill="#fbfaf7"/>
+
+  <!-- tế bào chất -->
+  <rect x="24" y="24" width="912" height="402" rx="18" fill="none" stroke="#bbb" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="44" y="50" font-size="14" font-weight="bold" fill="#666">Tế bào chất</text>
+
+  <!-- ti thể -->
+  <ellipse cx="650" cy="226" rx="262" ry="150" fill="#fde7d4" stroke="#e08a2e" stroke-width="3"/>
+  <path d="M 410 226 C 410 150 470 100 530 100 L 530 150 C 530 170 560 170 560 150 L 560 98 C 600 94 640 94 660 96 L 660 150 C 660 170 690 170 690 150 L 690 98 C 760 104 820 130 860 170 L 820 190 C 805 200 820 220 836 212 L 878 196 C 892 226 890 252 880 270 L 836 250 C 820 244 806 262 820 272 L 862 296 C 820 336 760 352 690 356 L 690 300 C 690 282 660 282 660 300 L 660 358 C 630 360 600 360 560 356 L 560 300 C 560 282 530 282 530 300 L 530 352 C 470 348 410 300 410 226 Z" fill="#fff7ee" stroke="#e08a2e" stroke-width="2"/>
+  <text x="650" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#9a5310">Ti thể</text>
+
+  <!-- glucose -->
+  <rect x="80" y="76" width="170" height="48" rx="12" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+  <text x="165" y="99" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">Glucose</text>
+  <text x="165" y="116" text-anchor="middle" font-size="12" fill="#666">C₆H₁₂O₆</text>
+
+  <line x1="165" y1="126" x2="165" y2="186" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="176" y="152" font-size="14" font-weight="bold" fill="#333">Đường phân</text>
+  <text x="176" y="170" font-size="13" fill="#e05a47">→ 2 ATP</text>
+
+  <rect x="70" y="190" width="190" height="44" rx="12" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <text x="165" y="218" text-anchor="middle" font-size="15" font-weight="bold" fill="#444">2 pyruvic acid</text>
+
+  <!-- nhánh kị khí -->
+  <line x1="165" y1="236" x2="165" y2="300" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="176" y="268" font-size="13" font-weight="bold" fill="#7d55b8">thiếu O₂</text>
+  <rect x="56" y="304" width="218" height="62" rx="12" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <text x="165" y="329" text-anchor="middle" font-size="15" font-weight="bold" fill="#523282">Lên men</text>
+  <text x="165" y="350" text-anchor="middle" font-size="12" fill="#444">ethanol + CO₂ hoặc lactic acid</text>
+  <text x="165" y="398" text-anchor="middle" font-size="14" font-weight="bold" fill="#7d55b8">Kị khí: 2 ATP / 1 glucose</text>
+
+  <!-- nhánh hiếu khí -->
+  <path d="M 262 212 C 340 212 420 232 492 232" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="330" y="200" font-size="13" font-weight="bold" fill="#2f7ed8">có O₂</text>
+
+  <!-- Krebs -->
+  <circle cx="550" cy="232" r="52" fill="#ffffff" stroke="#e08a2e" stroke-width="2"/>
+  <path d="M 550 189 A 43 43 0 1 1 507 232" fill="none" stroke="#e08a2e" stroke-width="2.5" marker-end="url(#o)"/>
+  <text x="550" y="230" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">Chu trình</text>
+  <text x="550" y="246" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a5310">Krebs</text>
+  <text x="550" y="306" text-anchor="middle" font-size="13" fill="#e05a47">→ 2 ATP</text>
+  <line x1="580" y1="190" x2="604" y2="140" stroke="#e05a47" stroke-width="2.2" marker-end="url(#r)"/>
+  <text x="610" y="140" font-size="13" font-weight="bold" fill="#e05a47">CO₂</text>
+
+  <!-- chuỗi chuyền e -->
+  <line x1="604" y1="232" x2="694" y2="232" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="648" y="222" text-anchor="middle" font-size="12" fill="#333">NADH, FADH₂</text>
+  <rect x="698" y="196" width="160" height="72" rx="12" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="778" y="220" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4f8f">Chuỗi chuyền</text>
+  <text x="778" y="238" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4f8f">electron</text>
+  <text x="778" y="258" text-anchor="middle" font-size="13" fill="#e05a47">→ 32 – 34 ATP</text>
+  <text x="778" y="296" text-anchor="middle" font-size="13" fill="#333">O₂ nhận e⁻ → H₂O</text>
+
+  <text x="650" y="406" text-anchor="middle" font-size="14" font-weight="bold" fill="#2f7ed8">Hiếu khí: 36 – 38 ATP / 1 glucose</text>
+</svg>

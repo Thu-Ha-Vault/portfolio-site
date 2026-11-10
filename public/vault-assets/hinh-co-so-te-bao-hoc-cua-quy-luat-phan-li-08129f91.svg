@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+
+</defs>
+<rect width="920" height="500" rx="14" fill="#fbfaf7"/>
+<text x="460.0" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Cơ sở tế bào học của quy luật phân li (lai 1 cặp tính trạng)</text>
+<text x="40" y="100" text-anchor="start" font-size="15" fill="#333" font-weight="bold">Pt/c:</text>
+<text x="40" y="220" text-anchor="start" font-size="15" fill="#333" font-weight="bold">GP:</text>
+<text x="40" y="320" text-anchor="start" font-size="15" fill="#333" font-weight="bold">F1:</text>
+<text x="40" y="425" text-anchor="start" font-size="15" fill="#333" font-weight="bold">GF1:</text>
+<circle cx="210" cy="95" r="38" fill="#fff" stroke="#999" stroke-width="2"/><rect x="181.0" y="75.0" width="12" height="40" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="181.0" y="92" width="12" height="6" fill="#a63a2b"/><text x="197.0" y="100" font-size="14" font-weight="bold" fill="#a63a2b">A</text><rect x="215.0" y="75.0" width="12" height="40" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="215.0" y="92" width="12" height="6" fill="#a63a2b"/><text x="231.0" y="100" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<circle cx="410" cy="95" r="38" fill="#fff" stroke="#999" stroke-width="2"/><rect x="381.0" y="75.0" width="12" height="40" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="381.0" y="92" width="12" height="6" fill="#999"/><text x="397.0" y="100" font-size="14" font-weight="bold" fill="#555">a</text><rect x="415.0" y="75.0" width="12" height="40" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="415.0" y="92" width="12" height="6" fill="#999"/><text x="431.0" y="100" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="310" y="101" text-anchor="middle" font-size="22" fill="#333" font-weight="bold">×</text>
+<text x="210" y="148" text-anchor="middle" font-size="13" fill="#a63a2b">AA (hoa đỏ)</text>
+<text x="410" y="150" text-anchor="middle" font-size="13" fill="#666">aa (hoa trắng)</text>
+<circle cx="210" cy="215" r="26" fill="#fff" stroke="#999" stroke-width="2"/><rect x="198.0" y="200.0" width="12" height="30" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="198.0" y="212" width="12" height="6" fill="#a63a2b"/><text x="214.0" y="220" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<circle cx="410" cy="215" r="26" fill="#fff" stroke="#999" stroke-width="2"/><rect x="398.0" y="200.0" width="12" height="30" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="398.0" y="212" width="12" height="6" fill="#999"/><text x="414.0" y="220" font-size="14" font-weight="bold" fill="#555">a</text>
+<line x1="238" y1="232" x2="282" y2="286" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="382" y1="232" x2="338" y2="286" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="310" y="250" text-anchor="middle" font-size="12" fill="#666">thụ tinh</text>
+<circle cx="310" cy="315" r="40" fill="#fff" stroke="#999" stroke-width="2"/><rect x="281.0" y="295.0" width="12" height="40" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="281.0" y="312" width="12" height="6" fill="#a63a2b"/><text x="297.0" y="320" font-size="14" font-weight="bold" fill="#a63a2b">A</text><rect x="315.0" y="295.0" width="12" height="40" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="315.0" y="312" width="12" height="6" fill="#999"/><text x="331.0" y="320" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="400" y="320" text-anchor="start" font-size="15" fill="#a63a2b" font-weight="bold">Aa</text>
+<text x="400" y="338" text-anchor="start" font-size="13" fill="#a63a2b">100% hoa đỏ</text>
+<line x1="284" y1="348" x2="232" y2="392" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="336" y1="348" x2="388" y2="392" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="250" y="372" text-anchor="end" font-size="12" fill="#666">giảm phân</text>
+<text x="370" y="372" text-anchor="start" font-size="12" fill="#666">giảm phân</text>
+<circle cx="210" cy="420" r="26" fill="#fff" stroke="#999" stroke-width="2"/><rect x="198.0" y="405.0" width="12" height="30" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="198.0" y="417" width="12" height="6" fill="#a63a2b"/><text x="214.0" y="425" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<circle cx="410" cy="420" r="26" fill="#fff" stroke="#999" stroke-width="2"/><rect x="398.0" y="405.0" width="12" height="30" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="398.0" y="417" width="12" height="6" fill="#999"/><text x="414.0" y="425" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="210" y="467" text-anchor="middle" font-size="14" fill="#a63a2b" font-weight="bold">½ A</text>
+<text x="410" y="467" text-anchor="middle" font-size="14" fill="#555" font-weight="bold">½ a</text>
+<text x="310" y="428" text-anchor="middle" font-size="12" fill="#666">cặp alen phân li</text>
+<text x="310" y="444" text-anchor="middle" font-size="12" fill="#666">đồng đều</text>
+<line x1="210" y1="156" x2="210" y2="185" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="410" y1="156" x2="410" y2="185" stroke="#555" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="520" y1="60" x2="520" y2="475" stroke="#ddd" stroke-width="1.5"/>
+<text x="720" y="78" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">F2 (F1 × F1)</text>
+<text x="601.0" y="122.0" text-anchor="middle" font-size="12" fill="#666">♀ \ ♂</text>
+<text x="669.0" y="123.0" text-anchor="middle" font-size="16" fill="#a63a2b" font-weight="bold">½ A</text>
+<text x="597.0" y="195.0" text-anchor="middle" font-size="16" fill="#a63a2b" font-weight="bold">½ A</text>
+<text x="769.0" y="123.0" text-anchor="middle" font-size="16" fill="#555" font-weight="bold">½ a</text>
+<text x="597.0" y="295.0" text-anchor="middle" font-size="16" fill="#555" font-weight="bold">½ a</text>
+<rect x="622" y="142" width="94" height="94" rx="10" fill="#fbe3df" stroke="#e05a47" stroke-width="1.5"/>
+<rect x="639.0" y="162.0" width="12" height="34" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="639.0" y="176.0" width="12" height="6" fill="#a63a2b"/><text x="655.0" y="184.0" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<rect x="673.0" y="162.0" width="12" height="34" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="673.0" y="176.0" width="12" height="6" fill="#a63a2b"/><text x="689.0" y="184.0" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<text x="669.0" y="226" text-anchor="middle" font-size="12" fill="#a63a2b" font-weight="bold">AA (đỏ)</text>
+<rect x="722" y="142" width="94" height="94" rx="10" fill="#fbe3df" stroke="#e05a47" stroke-width="1.5"/>
+<rect x="739.0" y="162.0" width="12" height="34" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="739.0" y="176.0" width="12" height="6" fill="#a63a2b"/><text x="755.0" y="184.0" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<rect x="773.0" y="162.0" width="12" height="34" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="773.0" y="176.0" width="12" height="6" fill="#999"/><text x="789.0" y="184.0" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="769.0" y="226" text-anchor="middle" font-size="12" fill="#a63a2b" font-weight="bold">Aa (đỏ)</text>
+<rect x="622" y="242" width="94" height="94" rx="10" fill="#fbe3df" stroke="#e05a47" stroke-width="1.5"/>
+<rect x="639.0" y="262.0" width="12" height="34" rx="6" fill="#e05a47" stroke="#a63a2b" stroke-width="1.5"/><rect x="639.0" y="276.0" width="12" height="6" fill="#a63a2b"/><text x="655.0" y="284.0" font-size="14" font-weight="bold" fill="#a63a2b">A</text>
+<rect x="673.0" y="262.0" width="12" height="34" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="673.0" y="276.0" width="12" height="6" fill="#999"/><text x="689.0" y="284.0" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="669.0" y="326" text-anchor="middle" font-size="12" fill="#a63a2b" font-weight="bold">Aa (đỏ)</text>
+<rect x="722" y="242" width="94" height="94" rx="10" fill="#eeeeee" stroke="#999" stroke-width="1.5"/>
+<rect x="739.0" y="262.0" width="12" height="34" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="739.0" y="276.0" width="12" height="6" fill="#999"/><text x="755.0" y="284.0" font-size="14" font-weight="bold" fill="#555">a</text>
+<rect x="773.0" y="262.0" width="12" height="34" rx="6" fill="#d6d6d6" stroke="#999" stroke-width="1.5"/><rect x="773.0" y="276.0" width="12" height="6" fill="#999"/><text x="789.0" y="284.0" font-size="14" font-weight="bold" fill="#555">a</text>
+<text x="769.0" y="326" text-anchor="middle" font-size="12" fill="#555" font-weight="bold">aa (trắng)</text>
+<text x="720" y="375" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">1 AA : 2 Aa : 1 aa</text>
+<text x="720" y="400" text-anchor="middle" font-size="15" fill="#333">→ 3 hoa đỏ : 1 hoa trắng</text>
+<text x="720" y="425" text-anchor="middle" font-size="12" fill="#666">(A trội hoàn toàn so với a)</text>
+</svg>

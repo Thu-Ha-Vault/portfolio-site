@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <clipPath id="c0"><rect x="20" y="56" width="215" height="160" rx="14"/></clipPath>
+    <clipPath id="c1"><rect x="265" y="56" width="215" height="160" rx="14"/></clipPath>
+    <clipPath id="c2"><rect x="510" y="56" width="215" height="160" rx="14"/></clipPath>
+    <clipPath id="c3"><rect x="755" y="56" width="215" height="160" rx="14"/></clipPath>
+  </defs>
+  <rect width="1000" height="340" rx="14" fill="#fbfaf7"/>
+  <text x="500.0" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Hình thành loài khác khu vực địa lí</text>
+<rect x="20" y="56" width="215" height="160" rx="14" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+<circle cx="95.3" cy="91.3" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="155.1" cy="81.3" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="134.1" cy="118.8" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="46.6" cy="137.0" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="48.8" cy="83.6" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="113.7" cy="177.8" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="150.8" cy="193.3" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="214.7" cy="78.0" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="193.1" cy="109.1" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="69.1" cy="146.4" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="160.5" cy="126.7" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="93.5" cy="147.0" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="181.4" cy="161.5" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="189.7" cy="192.9" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<rect x="265" y="56" width="215" height="160" rx="14" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+<g clip-path="url(#c1)"><path d="M 366.5 56 C 390.5 96, 346.5 136, 372.5 171 S 382.5 206, 368.5 216" fill="none" stroke="#9cc0ea" stroke-width="22" stroke-linecap="butt" opacity="1.0"/><path d="M 366.5 56 C 390.5 96, 346.5 136, 372.5 171 S 382.5 206, 368.5 216" fill="none" stroke="#2f7ed8" stroke-width="2" opacity="1.0"/></g>
+<circle cx="337.2" cy="133.2" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="302.8" cy="138.9" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="302.8" cy="162.3" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="350.3" cy="107.9" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="327.1" cy="170.6" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="284.1" cy="190.6" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="309.3" cy="101.5" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="461.6" cy="141.4" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="441.5" cy="129.1" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="408.0" cy="121.0" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="435.7" cy="79.1" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="461.9" cy="83.2" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="396.5" cy="144.7" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="417.3" cy="97.4" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<g clip-path="url(#c2)"><rect x="510" y="56" width="107.5" height="160" fill="#dff2df"/><rect x="617.5" y="56" width="107.5" height="160" fill="#fde7d4"/><path d="M 611.5 56 C 635.5 96, 591.5 136, 617.5 171 S 627.5 206, 613.5 216" fill="none" stroke="#9cc0ea" stroke-width="22" stroke-linecap="butt" opacity="1.0"/><path d="M 611.5 56 C 635.5 96, 591.5 136, 617.5 171 S 627.5 206, 613.5 216" fill="none" stroke="#2f7ed8" stroke-width="2" opacity="1.0"/></g>
+<rect x="510" y="56" width="215" height="160" rx="14" fill="none" stroke="#3a9a4a" stroke-width="2"/>
+<circle cx="573.6" cy="142.6" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="580.4" cy="91.9" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="585.8" cy="187.2" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="537.0" cy="164.5" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="555.1" cy="102.9" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="545.7" cy="75.4" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="526.4" cy="105.1" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="647.0" cy="87.6" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="656.4" cy="167.2" r="6.5" fill="#2f7ed8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="698.2" cy="88.7" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="678.4" cy="175.8" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="641.9" cy="184.5" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="693.2" cy="198.6" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="681.1" cy="120.7" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<g clip-path="url(#c3)"><rect x="755" y="56" width="107.5" height="160" fill="#dff2df"/><rect x="862.5" y="56" width="107.5" height="160" fill="#fde7d4"/><path d="M 856.5 56 C 880.5 96, 836.5 136, 862.5 171 S 872.5 206, 858.5 216" fill="none" stroke="#9cc0ea" stroke-width="3" stroke-dasharray="6 6"/></g>
+<rect x="755" y="56" width="215" height="160" rx="14" fill="none" stroke="#3a9a4a" stroke-width="2"/>
+<circle cx="797.5" cy="101.5" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="782.5" cy="189.0" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="809.4" cy="121.1" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="821.3" cy="93.4" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="779.7" cy="157.8" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="818.9" cy="197.4" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="774.7" cy="112.7" r="6.5" fill="#7d55b8" stroke="#fff" stroke-width="1.2"/>
+<circle cx="928.9" cy="75.2" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="903.6" cy="100.6" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="935.7" cy="158.6" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="951.0" cy="115.1" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="921.8" cy="196.6" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="928.7" cy="118.7" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<circle cx="900.4" cy="76.1" r="6.5" fill="#e08a2e" stroke="#fff" stroke-width="1.2"/>
+<rect x="826.5" y="120.0" width="72" height="32" rx="16" fill="#fbfaf7" stroke="#e05a47" stroke-width="1.5"/>
+<circle cx="842.5" cy="136.0" r="6.5" fill="#7d55b8"/><circle cx="882.5" cy="136.0" r="6.5" fill="#e08a2e"/>
+<path d="M 855.5 129.0 L 869.5 143.0 M 869.5 129.0 L 855.5 143.0" stroke="#e05a47" stroke-width="3" stroke-linecap="round"/>
+<line x1="239" y1="136.0" x2="261" y2="136.0" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="484" y1="136.0" x2="506" y2="136.0" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="729" y1="136.0" x2="751" y2="136.0" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="127.5" y="244" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">1. Quần thể ban đầu</text>
+<text x="127.5" y="264" text-anchor="middle" font-size="12" fill="#666">giao phối tự do,</text>
+<text x="127.5" y="281" text-anchor="middle" font-size="12" fill="#666">vốn gen chung</text>
+<text x="372.5" y="244" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">2. Trở ngại địa lí</text>
+<text x="372.5" y="264" text-anchor="middle" font-size="12" fill="#666">(sông, núi, biển…) chia cắt</text>
+<text x="372.5" y="281" text-anchor="middle" font-size="12" fill="#666">→ cách li địa lí</text>
+<text x="617.5" y="244" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">3. Nòi địa lí</text>
+<text x="617.5" y="264" text-anchor="middle" font-size="12" fill="#666">CLTN + nhân tố tiến hoá</text>
+<text x="617.5" y="281" text-anchor="middle" font-size="12" fill="#666">tích luỹ biến dị theo hướng ≠</text>
+<text x="862.5" y="244" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">4. Loài mới</text>
+<text x="862.5" y="264" text-anchor="middle" font-size="12" fill="#666">gặp lại nhưng không giao phối</text>
+<text x="862.5" y="281" text-anchor="middle" font-size="12" fill="#666">→ cách li sinh sản</text>
+<text x="500.0" y="326" text-anchor="middle" font-size="12" fill="#666">Diễn ra chậm, qua nhiều dạng trung gian; gặp ở thực vật và động vật có khả năng phát tán mạnh.</text>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "site": "https://portfolio.ceovanta.com",
+  "author": {
+    "name": "Your Name",
+    "headline_vi": "Data analyst · Sinh học · Ghi chép kiến thức",
+    "headline_en": "Data analyst · Biology · Learning in public",
+    "bio_vi": "Mình học data analytics, sinh học và business, và ghi lại mọi thứ đã học trong một Second Brain. Website này là nơi mình chia sẻ các dự án và kiến thức đó.",
+    "bio_en": "I study data analytics, biology and business, and keep everything I learn in a Second Brain. This site shares those projects and notes.",
+    "links": {
+      "github": "",
+      "kaggle": "",
+      "linkedin": "",
+      "tableau": "",
+      "email": ""
+    }
+  },
+  "blog": {
+    "root": "Resources",
+    "exclude": [
+      "Resources/Templates",
+      "Resources/AI và DEV/Khoá học AI của Tsing Hua University/Project Assignment"
+    ]
+  },
+  "projects": [
+    {
+      "folder": "Projects/Case Study - Cyclistic",
+      "featured": true,
+      "links": { "github": "", "kaggle": "", "tableau": "" }
+    },
+    {
+      "folder": "Projects/Case Study - Track B",
+      "featured": true,
+      "links": { "github": "", "kaggle": "", "tableau": "" }
+    },
+    {
+      "folder": "Projects/Virtual_Lab",
+      "featured": false,
+      "links": {}
+    }
+  ]
+}

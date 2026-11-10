@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/></marker>
+<marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7d55b8"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e08a2e"/></marker>
+
+</defs>
+<rect width="1000" height="470" rx="14" fill="#fbfaf7"/>
+<text x="500" y="30" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Dịch mã: tổng hợp chuỗi polypeptide trên mRNA</text>
+<text x="170" y="64" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">① Mở đầu</text>
+<path d="M88,224 C78,144 120,120 170,120 C220,120 262,144 252,224 Z" fill="#ece3f7" fill-opacity="0.2" stroke="#7d55b8" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="270" y1="150" x2="270" y2="196" stroke="#7d55b8" stroke-width="2.2" marker-end="url(#p)" stroke-linecap="round"/>
+<text x="266" y="124" text-anchor="middle" font-size="12" fill="#523282">tiểu phần lớn</text>
+<text x="266" y="138" text-anchor="middle" font-size="12" fill="#523282">gắn vào</text>
+<ellipse cx="170" cy="322" rx="78" ry="20" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<line x1="30" y1="300" x2="310" y2="300" stroke="#e08a2e" stroke-width="4" stroke-linecap="round"/>
+<text x="24" y="305" text-anchor="end" font-size="13" fill="#c46f12" font-weight="bold">5'</text>
+<text x="316" y="305" text-anchor="start" font-size="13" fill="#c46f12" font-weight="bold">3'</text>
+<text x="146" y="294" text-anchor="middle" font-size="13" fill="#3a9a4a" font-weight="bold">AUG</text>
+<text x="194" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">GCU</text>
+<text x="242" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">UUC</text>
+<text x="282" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">…</text>
+<path d="M126,278 L126,248 L116,248 C114,226 126,220 146,220 C166,220 178,226 176,248 L166,248 L166,278 Z" fill="#f6c08a" stroke="#9a5310" stroke-width="1.5"/>
+<text x="146" y="272" text-anchor="middle" font-size="12" fill="#7a3f05" font-weight="bold">UAC</text>
+<circle cx="146" cy="206" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="146" y="210" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">Met</text>
+<text x="146" y="360" text-anchor="middle" font-size="12" fill="#1d4f8f">tiểu phần bé</text>
+<line x1="340" y1="56" x2="340" y2="420" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="660" y1="56" x2="660" y2="420" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/>
+<text x="500" y="64" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">② Kéo dài</text>
+<line x1="370" y1="300" x2="630" y2="300" stroke="#e08a2e" stroke-width="4" stroke-linecap="round"/>
+<text x="364" y="305" text-anchor="end" font-size="13" fill="#c46f12" font-weight="bold">5'</text>
+<text x="636" y="305" text-anchor="start" font-size="13" fill="#c46f12" font-weight="bold">3'</text>
+<text x="428" y="294" text-anchor="middle" font-size="13" fill="#999" font-weight="bold">AUG</text>
+<text x="476" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">GCU</text>
+<text x="524" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">UUC</text>
+<text x="572" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">GGA</text>
+<text x="610" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">…</text>
+<ellipse cx="500" cy="322" rx="78" ry="20" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<path d="M418,270 C408,190 450,166 500,166 C550,166 592,190 582,270 Z" fill="#ece3f7" fill-opacity="0.45" stroke="#7d55b8" stroke-width="2"/>
+<path d="M456,278 L456,248 L446,248 C444,226 456,220 476,220 C496,220 508,226 506,248 L496,248 L496,278 Z" fill="#f6c08a" stroke="#9a5310" stroke-width="1.5"/>
+<text x="476" y="272" text-anchor="middle" font-size="12" fill="#7a3f05" font-weight="bold">CGA</text>
+<path d="M504,278 L504,248 L494,248 C492,226 504,220 524,220 C544,220 556,226 554,248 L544,248 L544,278 Z" fill="#f6c08a" stroke="#9a5310" stroke-width="1.5"/>
+<text x="524" y="272" text-anchor="middle" font-size="12" fill="#7a3f05" font-weight="bold">AAG</text>
+<circle cx="476" cy="206" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="476" y="210" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">aa₁</text>
+<circle cx="450" cy="184" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="450" y="188" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">Met</text>
+<line x1="461" y1="194" x2="465" y2="196" stroke="#246b30" stroke-width="2" stroke-linecap="round"/>
+<circle cx="524" cy="206" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="524" y="210" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">aa₂</text>
+<path d="M490,202 L510,202" stroke="#e05a47" stroke-width="3" stroke-dasharray="4 3"/>
+<text x="566" y="174" text-anchor="start" font-size="12" fill="#c0392b" font-weight="bold">liên kết</text>
+<text x="566" y="188" text-anchor="start" font-size="12" fill="#c0392b" font-weight="bold">peptide</text>
+<line x1="564" y1="184" x2="528" y2="198" stroke="#e05a47" stroke-width="1.2" stroke-linecap="round"/>
+<text x="476" y="158" text-anchor="middle" font-size="14" fill="#523282" font-weight="bold">P</text>
+<text x="524" y="158" text-anchor="middle" font-size="14" fill="#523282" font-weight="bold">A</text>
+<line x1="460" y1="358" x2="540" y2="358" stroke="#555" stroke-width="2.2" marker-end="url(#a)" stroke-linecap="round"/>
+<text x="500" y="376" text-anchor="middle" font-size="12" fill="#555">ribosome dịch 1 bộ ba</text>
+<text x="830" y="64" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">③ Kết thúc</text>
+<line x1="690" y1="300" x2="970" y2="300" stroke="#e08a2e" stroke-width="4" stroke-linecap="round"/>
+<text x="684" y="305" text-anchor="end" font-size="13" fill="#c46f12" font-weight="bold">5'</text>
+<text x="976" y="305" text-anchor="start" font-size="13" fill="#c46f12" font-weight="bold">3'</text>
+<text x="758" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">…</text>
+<text x="806" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">GGA</text>
+<text x="854" y="294" text-anchor="middle" font-size="13" fill="#e05a47" font-weight="bold">UAA</text>
+<text x="898" y="294" text-anchor="middle" font-size="13" fill="#555" font-weight="bold">…</text>
+<text x="822" y="328" text-anchor="end" font-size="12" fill="#e05a47" font-weight="bold">KT</text>
+<ellipse cx="870" cy="356" rx="62" ry="16" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+<path d="M810,240 C802,180 840,160 880,160 C920,160 958,180 950,240 Z" fill="#ece3f7" fill-opacity="0.45" stroke="#7d55b8" stroke-width="2"/>
+<line x1="880" y1="266" x2="880" y2="244" stroke="#7d55b8" stroke-width="2" marker-end="url(#p)" stroke-linecap="round"/>
+<line x1="870" y1="314" x2="870" y2="336" stroke="#2f7ed8" stroke-width="2" marker-end="url(#b)" stroke-linecap="round"/>
+<line x1="720" y1="120" x2="746" y2="108" stroke="#246b30" stroke-width="2" stroke-linecap="round"/>
+<line x1="746" y1="108" x2="772" y2="120" stroke="#246b30" stroke-width="2" stroke-linecap="round"/>
+<line x1="772" y1="120" x2="798" y2="108" stroke="#246b30" stroke-width="2" stroke-linecap="round"/>
+<line x1="798" y1="108" x2="824" y2="120" stroke="#246b30" stroke-width="2" stroke-linecap="round"/>
+<circle cx="720" cy="120" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="720" y="124" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">Met</text>
+<circle cx="746" cy="108" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="746" y="112" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">aa₁</text>
+<circle cx="772" cy="120" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="772" y="124" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">aa₂</text>
+<circle cx="798" cy="108" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="798" y="112" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">…</text>
+<circle cx="824" cy="120" r="15" fill="#8fd19a" stroke="#246b30" stroke-width="1.5"/>
+<text x="824" y="124" text-anchor="middle" font-size="12" fill="#1d4a24" font-weight="bold">aaₙ</text>
+<path d="M733,96 L733,134" stroke="#e05a47" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="770" y="156" text-anchor="middle" font-size="12" fill="#246b30" font-weight="bold">chuỗi polypeptide</text>
+<text x="770" y="172" text-anchor="middle" font-size="12" fill="#c0392b">(cắt aa mở đầu)</text>
+<text x="170" y="408" text-anchor="middle" font-size="12.5" fill="#444">Tiểu phần bé gắn mRNA tại mã mở đầu AUG;</text>
+<text x="170" y="425" text-anchor="middle" font-size="12.5" fill="#444">tRNA (đối mã UAC) mang aa mở đầu khớp AUG;</text>
+<text x="170" y="442" text-anchor="middle" font-size="12.5" fill="#444">tiểu phần lớn gắn vào → ribosome hoàn chỉnh</text>
+<text x="500" y="408" text-anchor="middle" font-size="12.5" fill="#444">tRNA mang aa vào vị trí A (đối mã khớp codon);</text>
+<text x="500" y="425" text-anchor="middle" font-size="12.5" fill="#444">liên kết peptide hình thành giữa aa ở P và A;</text>
+<text x="500" y="442" text-anchor="middle" font-size="12.5" fill="#444">ribosome dịch 1 bộ ba, lặp lại đến cuối mRNA</text>
+<text x="830" y="408" text-anchor="middle" font-size="12.5" fill="#444">Ribosome gặp bộ ba kết thúc (UAA/UAG/UGA)</text>
+<text x="830" y="425" text-anchor="middle" font-size="12.5" fill="#444">→ 2 tiểu phần tách ra, giải phóng polypeptide;</text>
+<text x="830" y="442" text-anchor="middle" font-size="12.5" fill="#444">enzyme cắt aa mở đầu → protein hoàn chỉnh</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a9a4a"/>
+    </marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e05a47"/>
+    </marker>
+    <marker id="k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="920" height="470" rx="14" fill="#fbfaf7"/>
+  <text x="460" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Chu trình carbon</text>
+
+  <!-- mũi tên (vẽ trước khối) -->
+  <!-- quang hợp -->
+  <path d="M 340 82 C 210 82 150 110 150 194" fill="none" stroke="#3a9a4a" stroke-width="3" marker-end="url(#g)"/>
+  <text x="138" y="140" text-anchor="end" font-size="14" font-weight="bold" fill="#3a9a4a">quang hợp</text>
+  <!-- hô hấp thực vật -->
+  <path d="M 200 194 C 215 150 270 118 338 112" fill="none" stroke="#e05a47" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="262" y="166" text-anchor="middle" font-size="13" fill="#e05a47">hô hấp</text>
+  <!-- chuỗi thức ăn -->
+  <line x1="242" y1="226" x2="384" y2="226" stroke="#555" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="313" y="216" text-anchor="middle" font-size="13" fill="#333">ăn (chất hữu cơ)</text>
+  <!-- hô hấp động vật -->
+  <line x1="470" y1="194" x2="470" y2="124" stroke="#e05a47" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="480" y="164" font-size="13" fill="#e05a47">hô hấp</text>
+  <!-- xác thực vật -->
+  <path d="M 150 258 C 150 340 230 390 350 392" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="236" y="342" font-size="13" fill="#333">xác, lá rụng</text>
+  <!-- xác động vật -->
+  <line x1="470" y1="258" x2="470" y2="358" stroke="#555" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="480" y="312" font-size="13" fill="#333">xác, chất thải</text>
+  <!-- phân giải -> CO2 -->
+  <path d="M 592 372 C 660 300 660 150 602 106" fill="none" stroke="#e05a47" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="662" y="236" font-size="13" fill="#e05a47">phân giải</text>
+  <text x="662" y="253" font-size="12" fill="#e05a47">(hô hấp)</text>
+  <!-- lắng đọng -->
+  <line x1="592" y1="404" x2="700" y2="404" stroke="#555" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="646" y="430" text-anchor="middle" font-size="12" fill="#666">lắng đọng</text>
+  <text x="646" y="445" text-anchor="middle" font-size="12" fill="#666">(hàng triệu năm)</text>
+  <!-- đốt cháy -->
+  <path d="M 790 370 C 790 180 740 82 604 76" fill="none" stroke="#e05a47" stroke-width="3" marker-end="url(#r)"/>
+  <text x="800" y="230" font-size="14" font-weight="bold" fill="#e05a47">đốt cháy</text>
+  <text x="800" y="248" font-size="12" fill="#666">(con người)</text>
+
+  <!-- khối -->
+  <rect x="340" y="56" width="260" height="66" rx="14" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2"/>
+  <text x="470" y="84" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4f8f">CO₂ khí quyển</text>
+  <text x="470" y="106" text-anchor="middle" font-size="12" fill="#666">(và CO₂ hoà tan trong nước)</text>
+
+  <rect x="60" y="196" width="180" height="60" rx="14" fill="#dff2df" stroke="#3a9a4a" stroke-width="2"/>
+  <text x="150" y="222" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">Thực vật</text>
+  <text x="150" y="242" text-anchor="middle" font-size="12" fill="#666">sinh vật sản xuất</text>
+
+  <rect x="386" y="196" width="168" height="60" rx="14" fill="#fde7d4" stroke="#e08a2e" stroke-width="2"/>
+  <text x="470" y="222" text-anchor="middle" font-size="16" font-weight="bold" fill="#9a5310">Động vật</text>
+  <text x="470" y="242" text-anchor="middle" font-size="12" fill="#666">sinh vật tiêu thụ</text>
+
+  <rect x="352" y="360" width="240" height="64" rx="14" fill="#ece3f7" stroke="#7d55b8" stroke-width="2"/>
+  <text x="472" y="387" text-anchor="middle" font-size="15" font-weight="bold" fill="#523282">Sinh vật phân giải</text>
+  <text x="472" y="408" text-anchor="middle" font-size="12" fill="#666">vi khuẩn, nấm…</text>
+
+  <rect x="702" y="372" width="180" height="64" rx="14" fill="#eeeeee" stroke="#777" stroke-width="2"/>
+  <text x="792" y="399" text-anchor="middle" font-size="15" font-weight="bold" fill="#444">Nhiên liệu hoá thạch</text>
+  <text x="792" y="420" text-anchor="middle" font-size="12" fill="#666">than đá, dầu mỏ, khí</text>
+
+  <!-- hiệu ứng nhà kính -->
+  <rect x="40" y="396" width="226" height="56" rx="10" fill="#fbe0dc" stroke="#e05a47" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="153" y="419" text-anchor="middle" font-size="13" font-weight="bold" fill="#a63a2b">[CO₂] ↑</text>
+  <text x="153" y="439" text-anchor="middle" font-size="13" fill="#a63a2b">→ hiệu ứng nhà kính</text>
+</svg>

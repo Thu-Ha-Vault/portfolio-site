@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="420" rx="14" fill="#fbfaf7"/>
+  <text x="450.0" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Ba dạng tháp tuổi của quần thể</text>
+<path d="M 45.0 300 L 275.0 300 L 245.0 236 L 75.0 236 Z" fill="#dff2df" stroke="#3a9a4a" stroke-width="2" stroke-linejoin="round"/>
+<text x="160" y="274.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">I</text>
+<path d="M 75.0 236 L 245.0 236 L 215.0 172 L 105.0 172 Z" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2" stroke-linejoin="round"/>
+<text x="160" y="210.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4f8f">II</text>
+<path d="M 105.0 172 L 215.0 172 L 182.0 108 L 138.0 108 Z" fill="#fde7d4" stroke="#e08a2e" stroke-width="2" stroke-linejoin="round"/>
+<text x="160" y="146.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#9a5310">III</text>
+<text x="160" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Tháp phát triển</text>
+<text x="160" y="350" text-anchor="middle" font-size="12.5" fill="#666">đáy rộng: I &gt; II &gt; III</text>
+<text x="160" y="367" text-anchor="middle" font-size="12.5" fill="#666">tỉ lệ sinh cao</text>
+<text x="160" y="384" text-anchor="middle" font-size="12.5" fill="#666">→ số lượng tăng</text>
+<path d="M 360.0 300 L 540.0 300 L 540.0 236 L 360.0 236 Z" fill="#dff2df" stroke="#3a9a4a" stroke-width="2" stroke-linejoin="round"/>
+<text x="450" y="274.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">I</text>
+<path d="M 360.0 236 L 540.0 236 L 536.0 172 L 364.0 172 Z" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2" stroke-linejoin="round"/>
+<text x="450" y="210.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4f8f">II</text>
+<path d="M 364.0 172 L 536.0 172 L 463.0 108 L 437.0 108 Z" fill="#fde7d4" stroke="#e08a2e" stroke-width="2" stroke-linejoin="round"/>
+<text x="450" y="146.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#9a5310">III</text>
+<text x="450" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Tháp ổn định</text>
+<text x="450" y="350" text-anchor="middle" font-size="12.5" fill="#666">I ≈ II &gt; III</text>
+<text x="450" y="367" text-anchor="middle" font-size="12.5" fill="#666">sinh sản bù đắp tử vong</text>
+<text x="450" y="384" text-anchor="middle" font-size="12.5" fill="#666">→ số lượng ổn định</text>
+<path d="M 692.0 300 L 788.0 300 L 833.0 236 L 647.0 236 Z" fill="#dff2df" stroke="#3a9a4a" stroke-width="2" stroke-linejoin="round"/>
+<text x="740" y="274.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#246b30">I</text>
+<path d="M 647.0 236 L 833.0 236 L 830.0 172 L 650.0 172 Z" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="2" stroke-linejoin="round"/>
+<text x="740" y="210.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4f8f">II</text>
+<path d="M 650.0 172 L 830.0 172 L 762.0 108 L 718.0 108 Z" fill="#fde7d4" stroke="#e08a2e" stroke-width="2" stroke-linejoin="round"/>
+<text x="740" y="146.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#9a5310">III</text>
+<text x="740" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Tháp suy thoái</text>
+<text x="740" y="350" text-anchor="middle" font-size="12.5" fill="#666">đáy hẹp: I &lt; II &gt; III</text>
+<text x="740" y="367" text-anchor="middle" font-size="12.5" fill="#666">nhóm trước sinh sản ít</text>
+<text x="740" y="384" text-anchor="middle" font-size="12.5" fill="#666">→ số lượng giảm dần</text>
+<rect x="250" y="51" width="16" height="13" rx="3" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.5"/>
+<text x="272" y="62" font-size="13" fill="#333">I: trước sinh sản</text>
+<rect x="410" y="51" width="16" height="13" rx="3" fill="#dbe9fb" stroke="#2f7ed8" stroke-width="1.5"/>
+<text x="432" y="62" font-size="13" fill="#333">II: sinh sản</text>
+<rect x="545" y="51" width="16" height="13" rx="3" fill="#fde7d4" stroke="#e08a2e" stroke-width="1.5"/>
+<text x="567" y="62" font-size="13" fill="#333">III: sau sinh sản</text>
+</svg>

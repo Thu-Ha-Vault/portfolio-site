@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import T from '../components/T.astro';
+import config from '../../site.config.json';
+import { blogEntries, projectEntries, statusKey } from '../lib';
+import { sectionNames } from '../i18n';
+
+const blog = await blogEntries();
+const projects = (await projectEntries()).filter((p) => p.data.isIndex);
+const featured = projects.filter((p) => p.data.featured);
+const sections = blog.filter((e) => e.data.isIndex && !e.id.includes('/'));
+const countIn = (id: string) => blog.filter((e) => e.id.startsWith(id + '/') && !e.data.isIndex).length;
+const links = Object.entries(config.author.links).filter(([, v]) => v);
+const label: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', linkedin: 'LinkedIn', tableau: 'Tableau Public', email: 'Email' };
+---
+<Base description={config.author.bio_en}>
+  <section class="hero">
+    <p class="eyebrow"><T vi={config.author.headline_vi} en={config.author.headline_en} /></p>
+    <h1>{config.author.name}</h1>
+    <p class="lead"><T vi={config.author.bio_vi} en={config.author.bio_en} /></p>
+    <div class="links">
+      <a class="btn primary" href="/projects/"><T k="projects" /> →</a>
+      <a class="btn" href="/blog/"><T k="browseBlog" /></a>
+      {links.map(([k, v]) => (
+        <a class="btn" href={k === 'email' ? `mailto:${v}` : v} rel="me noopener" target={k === 'email' ? undefined : '_blank'}>{label[k] ?? k}</a>
+      ))}
+    </div>
+  </section>
+
+  <h2 class="section-title"><T k="featured" /> <a href="/projects/"><T k="allProjects" /> →</a></h2>
+  <div class="grid">
+    {(featured.length ? featured : projects).map((p) => {
+      const s = statusKey(p.data.status);
+      return (
+        <a class="card" href={`/projects/${p.id}/`}>
+          <h3>{p.data.title}</h3>
+          {p.data.description && <p>{p.data.description}</p>}
+          <div class="meta">
+            {s && <span class="badge"><T k={s} /></span>}
+            {p.data.tags.filter((t) => t !== 'project').slice(0, 3).map((t) => <span class="tag">{t}</span>)}
+          </div>
+        </a>
+      );
+    })}
+  </div>
+
+  <h2 class="section-title"><T k="latestTopics" /> <a href="/blog/"><T k="blog" /> →</a></h2>
+  <div class="grid">
+    {sections.map((s) => {
+      const name = sectionNames[s.data.section ?? ''] ?? [s.data.title, s.data.title];
+      return (
+        <a class="card" href={`/blog/${s.id}/`}>
+          <h3><T vi={name[0]} en={name[1]} /></h3>
+          <div class="meta"><span class="count">{countIn(s.id)}</span> <T k="notes" /></div>
+        </a>
+      );
+    })}
+  </div>
+</Base>

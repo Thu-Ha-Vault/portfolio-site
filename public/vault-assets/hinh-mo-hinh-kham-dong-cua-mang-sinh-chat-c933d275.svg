@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7ed8"/></marker></defs>
+<rect width="1000" height="480" rx="14" fill="#fbfaf7"/>
+<text x="500" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Mô hình khảm – động của màng sinh chất</text>
+<text x="40" y="92" font-size="14" font-style="italic" fill="#666">Bên ngoài tế bào</text>
+<text x="40" y="456" font-size="14" font-style="italic" fill="#666">Tế bào chất (bên trong)</text>
+<path d="M167,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M173,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M167,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M173,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M189,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M195,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M189,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M195,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M211,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M217,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M211,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M217,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M233,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M239,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M233,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M239,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M255,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M261,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M255,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M261,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M277,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M283,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M277,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M283,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M387,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M393,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M387,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M393,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M409,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M415,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M409,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M415,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M431,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M437,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M453,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M459,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M453,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M459,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M475,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M481,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M497,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M503,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M497,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M503,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M519,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M525,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M519,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M525,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M541,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M547,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M563,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M569,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M563,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M569,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M585,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M591,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M585,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M591,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M717,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M723,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M717,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M723,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M739,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M745,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M739,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M745,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M761,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M767,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M783,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M789,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M783,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M789,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M805,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M811,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M805,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M811,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M827,204 l0,14 l0,24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M833,204 l0,12 l3,6 l0,20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M827,306 l0,-14 l0,-24" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M833,306 l0,-12 l3,-6 l0,-20" fill="none" stroke="#e0a43a" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="170" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="170" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="192" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="192" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="214" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="214" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="236" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="236" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="258" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="258" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="280" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="280" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="390" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="390" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="412" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="412" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="434" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="456" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="456" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="478" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="500" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="500" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="522" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="522" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="544" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="566" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="566" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="588" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="588" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="720" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="720" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="742" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="742" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="764" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="786" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="786" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="808" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="808" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="830" cy="196" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<circle cx="830" cy="314" r="9" fill="#2f7ed8" stroke="#1d4f8f" stroke-width="1.2"/>
+<rect x="429" y="202" width="10" height="34" rx="4" fill="#e08a2e" stroke="#a85f14" stroke-width="1.2"/>
+<circle cx="434" cy="197" r="4" fill="#e05a47"/>
+<rect x="759" y="202" width="10" height="34" rx="4" fill="#e08a2e" stroke="#a85f14" stroke-width="1.2"/>
+<circle cx="764" cy="197" r="4" fill="#e05a47"/>
+<rect x="473" y="274" width="10" height="34" rx="4" fill="#e08a2e" stroke="#a85f14" stroke-width="1.2"/>
+<circle cx="478" cy="313" r="4" fill="#e05a47"/>
+<rect x="539" y="274" width="10" height="34" rx="4" fill="#e08a2e" stroke="#a85f14" stroke-width="1.2"/>
+<circle cx="544" cy="313" r="4" fill="#e05a47"/>
+<path d="M300,200 C292,160 372,150 366,196 C374,230 360,250 368,300 C374,348 296,350 298,312 C290,270 306,240 300,200 Z" fill="#ece3f7" stroke="#7d55b8" stroke-width="2.2"/>
+<path d="M604,205 C598,168 640,166 638,200 L638,312 C640,346 598,346 604,308 C598,270 610,240 604,205 Z" fill="#ece3f7" stroke="#7d55b8" stroke-width="2.2"/>
+<path d="M652,200 C650,166 692,168 686,205 C680,240 692,270 686,308 C692,346 650,346 652,312 Z" fill="#ece3f7" stroke="#7d55b8" stroke-width="2.2"/>
+<line x1="645" y1="150" x2="645" y2="352" stroke="#2f7ed8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<ellipse cx="770" cy="340" rx="36" ry="17" fill="#d8c9ef" stroke="#7d55b8" stroke-width="2"/>
+<circle cx="792" cy="360" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="810" cy="367" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="828" cy="374" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="846" cy="381" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="864" cy="388" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="882" cy="395" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="900" cy="402" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="918" cy="409" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<circle cx="936" cy="416" r="6" fill="#ddd" stroke="#888" stroke-width="1"/>
+<line x1="334" y1="156" x2="334" y2="146" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="334" y1="146" x2="334" y2="130" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="334" y1="130" x2="322" y2="116" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="334" y1="130" x2="346" y2="116" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="322" y1="116" x2="314" y2="101" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="346" y1="116" x2="354" y2="101" stroke="#3a9a4a" stroke-width="2"/>
+<polygon points="328,146 331,140.8 337,140.8 340,146 337,151.2 331,151.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="328,130 331,124.8 337,124.8 340,130 337,135.2 331,135.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="316,116 319,110.8 325,110.8 328,116 325,121.2 319,121.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="340,116 343,110.8 349,110.8 352,116 349,121.2 343,121.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="308,101 311,95.8 317,95.8 320,101 317,106.2 311,106.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="348,101 351,95.8 357,95.8 360,101 357,106.2 351,106.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<line x1="500" y1="187" x2="500" y2="172" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="500" y1="172" x2="500" y2="156" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="500" y1="156" x2="488" y2="142" stroke="#3a9a4a" stroke-width="2"/>
+<line x1="500" y1="156" x2="512" y2="142" stroke="#3a9a4a" stroke-width="2"/>
+<polygon points="494,172 497,166.8 503,166.8 506,172 503,177.2 497,177.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="494,156 497,150.8 503,150.8 506,156 503,161.2 497,161.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="482,142 485,136.8 491,136.8 494,142 491,147.2 485,147.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<polygon points="506,142 509,136.8 515,136.8 518,142 515,147.2 509,147.2" fill="#dff2df" stroke="#3a9a4a" stroke-width="1.6"/>
+<line x1="262" y1="124" x2="310" y2="104" stroke="#999" stroke-width="1.2"/>
+<text x="206" y="122" text-anchor="middle" font-size="14" fill="#246b30" font-weight="bold">Glycoprotein</text>
+<text x="206" y="138" text-anchor="middle" font-size="12" fill="#666">(carbohydrate + protein)</text>
+<line x1="550" y1="80" x2="500" y2="136" stroke="#999" stroke-width="1.2"/>
+<text x="560" y="68" text-anchor="middle" font-size="14" fill="#246b30" font-weight="bold">Glycolipid</text>
+<text x="560" y="84" text-anchor="middle" font-size="12" fill="#666">(carbohydrate + lipid)</text>
+<text x="645" y="140" text-anchor="middle" font-size="14" fill="#523282" font-weight="bold">Kênh protein</text>
+<line x1="870" y1="196" x2="839" y2="196" stroke="#999" stroke-width="1.2"/>
+<text x="876" y="192" text-anchor="start" font-size="14" fill="#1d4f8f" font-weight="bold">Đầu ưa nước</text>
+<text x="876" y="208" text-anchor="start" font-size="12" fill="#666">(nhóm phosphate)</text>
+<line x1="870" y1="255" x2="836" y2="250" stroke="#999" stroke-width="1.2"/>
+<text x="876" y="252" text-anchor="start" font-size="14" fill="#9a5310" font-weight="bold">Đuôi kị nước</text>
+<text x="876" y="268" text-anchor="start" font-size="12" fill="#666">(2 acid béo)</text>
+<path d="M150,186 C140,186 140,196 140,206 L140,304 C140,314 140,324 150,324" fill="none" stroke="#777" stroke-width="1.8"/>
+<text x="126" y="250" text-anchor="end" font-size="14" fill="#333" font-weight="bold">Lớp kép</text>
+<text x="126" y="268" text-anchor="end" font-size="14" fill="#333" font-weight="bold">phospholipid</text>
+<line x1="332" y1="392" x2="332" y2="342" stroke="#999" stroke-width="1.2"/>
+<text x="332" y="410" text-anchor="middle" font-size="14" fill="#523282" font-weight="bold">Protein xuyên màng</text>
+<line x1="560" y1="392" x2="544" y2="312" stroke="#999" stroke-width="1.2"/>
+<text x="560" y="410" text-anchor="middle" font-size="14" fill="#c46f12" font-weight="bold">Cholesterol</text>
+<text x="560" y="426" text-anchor="middle" font-size="12" fill="#666">(ổn định màng)</text>
+<line x1="680" y1="392" x2="645" y2="350" stroke="#999" stroke-width="1.2"/>
+<text x="700" y="410" text-anchor="middle" font-size="12" fill="#666">(vận chuyển chất</text>
+<text x="700" y="426" text-anchor="middle" font-size="12" fill="#666">phân cực, ion)</text>
+<line x1="790" y1="442" x2="752" y2="356" stroke="#999" stroke-width="1.2"/>
+<text x="790" y="460" text-anchor="middle" font-size="14" fill="#523282" font-weight="bold">Protein bám màng</text>
+<text x="955" y="440" text-anchor="end" font-size="12" fill="#666">Sợi khung</text>
+<text x="955" y="456" text-anchor="end" font-size="12" fill="#666">xương tế bào</text>
+</svg>
