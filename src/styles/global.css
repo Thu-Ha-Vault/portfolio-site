@@ -110,28 +110,12 @@ main { min-height: 70vh; }
 
 /* ---------- home: hero ---------- */
 .hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 48px; padding-bottom: 56px; align-items: center; }
-@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); padding-top: 72px; padding-bottom: 80px; gap: 48px; } }
+@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); padding-top: 72px; padding-bottom: 80px; gap: 48px; } }
 .hero h1 { font-size: clamp(40px, 6.4vw, 72px); font-weight: 700; line-height: 1.02; letter-spacing: -0.035em; margin: 0 0 24px; max-width: 13ch; }
 .hero .intro { font: 400 20px/1.55 var(--serif); color: var(--ink-soft); max-width: 36em; margin: 0 0 32px; }
 .map-figure { margin: 0; }
 .map-figure svg { display: block; width: 100%; height: auto; overflow: visible; }
 .map-figure figcaption { font-size: 14px; color: var(--ink-soft); max-width: 44em; margin-top: 12px; }
-.brain-shape { fill: var(--slide); stroke: var(--ink-soft); stroke-width: 1.5; }
-.brain-stem { fill: var(--slide); stroke: var(--ink-soft); stroke-width: 1.5; opacity: 0.8; }
-.sulcus { fill: none; stroke: var(--ink-soft); stroke-width: 1.3; opacity: 0.22; stroke-linecap: round; }
-.axon { fill: none; stroke: var(--eosin); opacity: 0.45; stroke-linecap: round; }
-.region .hit { fill: transparent; }
-.region .dendrite { stroke: var(--hema); stroke-width: 0.8; opacity: 0.35; transition: stroke 0.2s, opacity 0.2s; }
-.region .neuron { fill: var(--hema); opacity: 0.75; transition: fill 0.2s; }
-.region .hub { fill: var(--ink); }
-.region .hub-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; opacity: 0.5; }
-.region .label { font: 650 14.5px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--slide); stroke-width: 4px; stroke-linejoin: round; }
-.region .count { font-weight: 500; fill: var(--ink-soft); }
-.region:hover .neuron, .region:focus-visible .neuron { fill: var(--eosin); }
-.region:hover .dendrite, .region:focus-visible .dendrite { stroke: var(--eosin); opacity: 0.6; }
-.region:hover .hub, .region:focus-visible .hub { fill: var(--eosin); }
-.region:focus-visible { outline: none; }
-.region:focus-visible .hit { stroke: var(--eosin); stroke-width: 2; stroke-dasharray: 4 3; }
 
 /* ---------- sections ---------- */
 .band { padding: 56px 0; border-top: 1px solid var(--rule); }
@@ -316,3 +300,47 @@ details.callout:not([open]) summary { margin: 0; }
 .brutal .track .name { white-space: normal; overflow: visible; font-size: 13px; line-height: 1.25; overflow-wrap: anywhere; }
 .brutal .track .name::before { content: counter(step) ' '; }
 .brutal .track li { padding: 10px 8px 8px; }
+
+/* ---------- 3D galaxy (home hero). The viewport is always deep space so the neon reads in both themes. ---------- */
+.galaxy-figure { margin: 0; min-width: 0; }
+.galaxy {
+  position: relative; overflow: hidden; border-radius: 18px; aspect-ratio: 1 / 0.92; min-height: 340px;
+  background: radial-gradient(ellipse at 50% 45%, #22134a 0%, #0d0a26 45%, #05040f 100%);
+  color: #ecebff; isolation: isolate; touch-action: none;
+}
+.galaxy canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.galaxy:fullscreen { aspect-ratio: auto; border-radius: 0; }
+.g-hint { position: absolute; left: 16px; top: 14px; margin: 0; font-size: 13.5px; color: rgba(236, 235, 255, 0.72); pointer-events: none; transition: opacity 0.6s; max-width: 70%; }
+.g-hint.is-gone { opacity: 0; }
+.g-labels { position: absolute; inset: 0; pointer-events: none; }
+.g-label {
+  position: absolute; left: 0; top: 0; pointer-events: auto; white-space: nowrap;
+  font: 700 14px var(--sans); letter-spacing: 0.01em; color: var(--c); text-decoration: none;
+  text-shadow: 0 0 8px var(--c), 0 0 18px var(--c), 0 0 2px #000; transition: opacity 0.3s;
+}
+.g-label:hover { color: #fff; }
+.g-tip {
+  position: absolute; left: 0; top: 0; z-index: 2; max-width: 260px; padding: 12px 14px; border-radius: 10px;
+  background: rgba(10, 8, 32, 0.92); border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: 0 0 24px rgba(122, 92, 255, 0.35);
+  display: grid; gap: 4px; font-size: 14px; line-height: 1.35;
+}
+.g-tip strong { font-weight: 650; color: #fff; }
+.g-tip span { color: rgba(236, 235, 255, 0.7); font-size: 13px; }
+.g-tip a { color: #2ef2ff; font-weight: 600; margin-top: 4px; }
+.g-controls { position: absolute; right: 12px; bottom: 12px; display: flex; gap: 6px; }
+.g-controls button {
+  width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #ecebff;
+  background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px; backdrop-filter: blur(6px);
+}
+.g-controls button:hover { background: rgba(255, 255, 255, 0.16); color: #fff; }
+.g-controls button[aria-pressed='true'] { color: #2ef2ff; border-color: rgba(46, 242, 255, 0.6); box-shadow: 0 0 12px rgba(46, 242, 255, 0.35); }
+.g-fallback { position: absolute; inset: auto 16px 16px; margin: 0; font-size: 15px; }
+.galaxy.is-fallback .g-controls, .galaxy.is-fallback .g-hint { display: none; }
+.g-legend { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14.5px; }
+.g-legend a { color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+.g-legend a:hover { color: var(--eosin); }
+.g-legend .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 6px var(--c); }
+.g-legend .n { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.galaxy-figure figcaption { font-size: 14px; color: var(--ink-soft); margin-top: 10px; max-width: 46em; }
+@media (max-width: 640px) { .galaxy { aspect-ratio: 1 / 1.05; } .g-hint { font-size: 12.5px; } }
+.g-tip[hidden] { display: none; }

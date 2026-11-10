@@ -228,9 +228,12 @@ const updatedOf = (abs) =>
 
 // ---------- topic graph (for the home page map) ----------
 const graph = { nodes: {}, edges: {} };
+const noteLinks = new Set(); // "absA\u0000absB" pairs between published blog notes (for the galaxy)
 const linkFrom = (fromAbs, toAbs) => {
   const a = published.get(fromAbs), b = published.get(toAbs);
-  if (!a || !b || a.collection !== 'blog' || b.collection !== 'blog' || a.topic === b.topic) return;
+  if (!a || !b || a.collection !== 'blog' || b.collection !== 'blog') return;
+  if (fromAbs !== toAbs) noteLinks.add([fromAbs, toAbs].sort().join('\u0000'));
+  if (a.topic === b.topic) return;
   const k = [a.topic, b.topic].sort().join('|');
   graph.edges[k] = (graph.edges[k] || 0) + 1;
 };
@@ -530,6 +533,37 @@ fs.writeFileSync(
     2
   )
 );
+
+// ---------- galaxy data (3D star map on the home page), loaded by the browser from /data/galaxy.json ----------
+{
+  const blog = [...published.entries()].filter(([, d]) => d.collection === 'blog');
+  const bySlug = new Map(blog.map(([abs, d]) => [d.slug, abs]));
+  const ids = new Map();
+  const nodes = blog
+    .sort(([, a], [, b]) => a.slug.localeCompare(b.slug, 'vi', { numeric: true }))
+    .map(([abs, d], i) => {
+      ids.set(abs, i);
+      return { t: titleOf(abs).replace(/^_MOC - /, ''), u: d.url, g: d.topic, k: d.isIndex ? (d.slug.includes('/') ? 1 : 2) : 0, slug: d.slug };
+    });
+  // parent = nearest published folder index above this entry
+  for (const n of nodes) {
+    let s = n.slug;
+    n.p = -1;
+    while (s.includes('/')) {
+      s = s.slice(0, s.lastIndexOf('/'));
+      const abs = bySlug.get(s);
+      if (abs && published.get(abs).isIndex && abs !== bySlug.get(n.slug)) { n.p = ids.get(abs); break; }
+    }
+  }
+  const links = [...noteLinks]
+    .map((k) => k.split('\u0000').map((a) => ids.get(a)))
+    .filter(([a, b]) => a !== undefined && b !== undefined);
+  fs.mkdirSync(path.join(ROOT, 'public/data'), { recursive: true });
+  fs.writeFileSync(
+    path.join(ROOT, 'public/data/galaxy.json'),
+    JSON.stringify({ nodes: nodes.map(({ slug, ...n }) => n), links })
+  );
+}
 
 console.log(
   `Synced ${stats.notes} notes (${[...published.values()].filter((d) => d.collection === 'blog').length} blog, ` +

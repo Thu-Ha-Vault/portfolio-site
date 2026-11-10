@@ -29,8 +29,10 @@ from this site show up separately in ceovanta.com analytics.
 ## Design
 
 Palette from H&E histology staining (hematoxylin blue-violet for structure, eosin pink for emphasis), Bricolage
-Grotesque for UI and headings, Source Serif 4 for reading. The home hero is a knowledge map: each topic is a "cell"
-sized by its number of notes, dots are notes, lines are links between topics (`src/data/graph.json`, written by the sync).
+Grotesque for UI and headings, Source Serif 4 for reading. The home hero is an interactive 3D galaxy (Three.js, loaded only when it scrolls into view): each topic is a neon spiral arm,
+each note a star, courses form constellations (lines to their course star) and wikilinks between notes are faint light trails.
+Drag to rotate, scroll or +/- to zoom, click a star to open the note. Data: `public/data/galaxy.json`, written by the sync.
+Project pages use brutalist accents (thick borders, hard shadows); reading, search, tables and errors stay minimal.
 Projects show an Ask → Act progress track read from the task list in the project's MOC.
 
 ## Everyday use

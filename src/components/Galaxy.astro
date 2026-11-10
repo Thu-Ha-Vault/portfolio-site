@@ -1,0 +1,359 @@
+---
+// 3D galaxy of the Second Brain. Each topic is a neon spiral arm, each note a star, courses form
+// constellations (lines to their course star) and wikilinks between notes are faint light trails.
+// Data comes from /data/galaxy.json (written by scripts/sync-vault.mjs) and is loaded lazily.
+import { topicNames, ui } from '../i18n';
+import graph from '../data/graph.json';
+
+const neon: Record<string, string> = {
+  biology: '#2ef2ff',
+  business: '#ff3db4',
+  'ai-development': '#a78bfa',
+  french: '#ffb627',
+  'university-courses': '#9dff5c',
+  english: '#ff6b5e',
+};
+const topics = graph.nodes
+  .filter((n) => n.notes > 0)
+  .map((n) => ({ id: n.topic, url: n.url, notes: n.notes, color: neon[n.topic] ?? '#ffffff', names: topicNames[n.topic] ?? [n.title, n.title] }));
+const config = { topics, ui: { open: ui.galaxyOpen, hint: ui.galaxyHint } };
+---
+<figure class="galaxy-figure">
+  <div class="galaxy" data-galaxy data-config={JSON.stringify(config)}>
+    <canvas aria-hidden="true"></canvas>
+    <p class="g-hint" data-vi={ui.galaxyHint[0]} data-en={ui.galaxyHint[1]}>{ui.galaxyHint[0]}</p>
+    <div class="g-labels"></div>
+    <div class="g-tip" hidden role="status"></div>
+    <div class="g-controls">
+      <button type="button" data-act="rotate" aria-pressed="true" aria-label="Auto-rotate">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16 10a6 6 0 1 1-2-4.5M16 3v3.5h-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" data-act="in" aria-label="Zoom in"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      <button type="button" data-act="out" aria-label="Zoom out"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      <button type="button" data-act="reset" aria-label="Reset view"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="2.5" fill="currentColor"/><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <button type="button" data-act="full" aria-label="Full screen"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <p class="g-fallback" hidden data-vi="Trình duyệt này không hiển thị được bản đồ 3D. Bạn vẫn có thể mở từng chủ đề ở danh sách bên dưới." data-en="This browser can't show the 3D map. You can still open each topic from the list below.">Trình duyệt này không hiển thị được bản đồ 3D. Bạn vẫn có thể mở từng chủ đề ở danh sách bên dưới.</p>
+  </div>
+  <ul class="g-legend">
+    {topics.map((t) => (
+      <li><a href={t.url}><span class="dot" style={`--c:${t.color}`}></span><span data-vi={t.names[0]} data-en={t.names[1]}>{t.names[0]}</span> <span class="n">{t.notes}</span></a></li>
+    ))}
+  </ul>
+  <figcaption><slot /></figcaption>
+</figure>
+
+<script>
+  type Topic = { id: string; url: string; notes: number; color: string; names: [string, string] };
+  type Node = { t: string; u: string; g: string; k: 0 | 1 | 2; p: number };
+
+  const root = document.querySelector<HTMLElement>('[data-galaxy]');
+  if (root) {
+    const start = () => init(root).catch(() => fail(root));
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((es) => {
+        if (es.some((e) => e.isIntersecting)) { io.disconnect(); start(); }
+      }, { rootMargin: '200px' });
+      io.observe(root);
+    } else start();
+  }
+
+  function fail(el: HTMLElement) {
+    el.classList.add('is-fallback');
+    el.querySelector<HTMLElement>('.g-fallback')!.hidden = false;
+  }
+
+  async function init(el: HTMLElement) {
+    const THREE = await import('three');
+    const { OrbitControls } = await import('three/examples/jsm/controls/OrbitControls.js');
+    const cfg = JSON.parse(el.dataset.config!) as { topics: Topic[] };
+    const data = (await (await fetch('/data/galaxy.json')).json()) as { nodes: Node[]; links: [number, number][] };
+    const canvas = el.querySelector('canvas')!;
+    const lang = () => (document.documentElement.lang === 'en' ? 1 : 0);
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let renderer: InstanceType<typeof THREE.WebGLRenderer>;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    } catch {
+      return fail(el);
+    }
+    THREE.ColorManagement.enabled = false;
+    renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+
+    const scene = new THREE.Scene();
+    // opaque deep-space backdrop drawn into the scene (a transparent canvas makes additive glow show dark halos)
+    const bg = document.createElement('canvas');
+    bg.width = bg.height = 512;
+    const g2 = bg.getContext('2d')!;
+    const grad = g2.createRadialGradient(256, 236, 10, 256, 256, 360);
+    grad.addColorStop(0, '#2a1758');
+    grad.addColorStop(0.45, '#110c30');
+    grad.addColorStop(1, '#04030c');
+    g2.fillStyle = grad;
+    g2.fillRect(0, 0, 512, 512);
+    scene.background = new THREE.CanvasTexture(bg);
+    const camera = new THREE.PerspectiveCamera(55, 1, 1, 4000);
+    const HOME = new THREE.Vector3(0, 230, 330);
+    camera.position.copy(HOME);
+    const controls = new OrbitControls(camera, canvas);
+    controls.enableDamping = true;
+    controls.enablePan = false;
+    controls.minDistance = 60;
+    controls.maxDistance = 900;
+    controls.autoRotate = !reduce;
+    controls.autoRotateSpeed = 0.5;
+
+    // ---------- layout: one logarithmic spiral arm per topic ----------
+    const seed = (s: number) => () => ((s = Math.imul(s ^ (s >>> 15), 2246822507) + 0x6d2b79f5), ((s ^= s >>> 13) >>> 0) / 4294967296);
+    const rand = seed(20261110);
+    const gauss = () => (rand() + rand() + rand() - 1.5) * 1.15;
+    const topicOrder = [...cfg.topics].sort((a, b) => b.notes - a.notes);
+    const tIndex = new Map(topicOrder.map((t, i) => [t.id, i]));
+    const color = new Map(cfg.topics.map((t) => [t.id, new THREE.Color(t.color)]));
+    const pos = data.nodes.map(() => new THREE.Vector3());
+    const depth = data.nodes.map((n) => { let d = 0, p = n.p; while (p >= 0 && d < 20) { d++; p = data.nodes[p].p; } return d; });
+    const arms = topicOrder.length;
+    const armAngle = (i: number) => (i / arms) * Math.PI * 2;
+    for (const t of topicOrder) {
+      const i = tIndex.get(t.id)!;
+      const notes = data.nodes.map((n, j) => [n, j] as const).filter(([n]) => n.g === t.id && n.k === 0);
+      const m = notes.length, Rmax = 70 + 9 * Math.sqrt(m);
+      notes.forEach(([, j], k) => {
+        const s = (k + 0.5) / m;
+        const r = 30 + s * (Rmax - 30);
+        const a = armAngle(i) + s * 2.4 + gauss() * 0.05;
+        pos[j].set(Math.cos(a) * r + gauss() * 5, gauss() * (7 * (1 - s) + 2), Math.sin(a) * r + gauss() * 5);
+      });
+      const top = data.nodes.findIndex((n) => n.g === t.id && n.k === 2);
+      if (top >= 0) {
+        const a = armAngle(i) + 0.8 * 2.4, r = 30 + 0.8 * (Rmax - 30) + 18;
+        pos[top].set(Math.cos(a) * r, 22 + (i % 2) * 22, Math.sin(a) * r);
+      }
+    }
+    // course stars sit at the centre of their notes, deepest first so nested courses resolve
+    const kids = data.nodes.map(() => [] as number[]);
+    data.nodes.forEach((n, j) => { if (n.p >= 0) kids[n.p].push(j); });
+    [...data.nodes.keys()].filter((j) => data.nodes[j].k === 1).sort((a, b) => depth[b] - depth[a]).forEach((j) => {
+      const c = kids[j];
+      if (!c.length) return;
+      pos[j].set(0, 0, 0);
+      c.forEach((x) => pos[j].add(pos[x]));
+      pos[j].divideScalar(c.length).add(new THREE.Vector3(0, 12, 0));
+    });
+
+    // ---------- glowing point sprites ----------
+    const starMat = new THREE.ShaderMaterial({
+      uniforms: { uScale: { value: 400 } },
+      vertexShader: `
+        attribute float size; attribute vec3 color; varying vec3 vColor;
+        uniform float uScale;
+        void main() {
+          vColor = color;
+          vec4 mv = modelViewMatrix * vec4(position, 1.0);
+          gl_PointSize = size * uScale / -mv.z;
+          gl_Position = projectionMatrix * mv;
+        }`,
+      fragmentShader: `
+        varying vec3 vColor;
+        void main() {
+          float d = length(gl_PointCoord - 0.5);
+          float glow = smoothstep(0.5, 0.0, d);
+          float halo = glow * glow * glow;
+          float core = smoothstep(0.09, 0.0, d);
+          gl_FragColor = vec4(vColor * (halo * 0.9 + core * 1.4) + vec3(core * 0.35), 1.0);
+        }`,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+    });
+    const baseSize = data.nodes.map((n) => (n.k === 2 ? 30 : n.k === 1 ? 14 : 7));
+    const sizeAttr = new THREE.Float32BufferAttribute(baseSize.slice(), 1);
+    const colArr: number[] = [];
+    data.nodes.forEach((n) => {
+      const c = color.get(n.g) ?? new THREE.Color('#fff');
+      const boost = n.k === 0 ? 0.55 : n.k === 1 ? 0.85 : 1;
+      colArr.push(c.r * boost, c.g * boost, c.b * boost);
+    });
+    const starGeo = new THREE.BufferGeometry();
+    starGeo.setAttribute('position', new THREE.Float32BufferAttribute(pos.flatMap((p) => [p.x, p.y, p.z]), 3));
+    starGeo.setAttribute('color', new THREE.Float32BufferAttribute(colArr, 3));
+    starGeo.setAttribute('size', sizeAttr);
+    scene.add(new THREE.Points(starGeo, starMat));
+
+    // galactic core + nebula haze along each arm + distant background stars
+    const extra = { p: [] as number[], c: [] as number[], s: [] as number[] };
+    const push = (v: InstanceType<typeof THREE.Vector3>, c: InstanceType<typeof THREE.Color>, s: number, k = 1) => {
+      extra.p.push(v.x, v.y, v.z); extra.c.push(c.r * k, c.g * k, c.b * k); extra.s.push(s);
+    };
+    push(new THREE.Vector3(0, 0, 0), new THREE.Color('#ffd6f5'), 60, 0.55);
+    push(new THREE.Vector3(0, 0, 0), new THREE.Color('#7a5cff'), 220, 0.22);
+    for (const t of topicOrder) {
+      const i = tIndex.get(t.id)!, c = color.get(t.id)!, Rmax = 70 + 9 * Math.sqrt(t.notes);
+      for (let k = 0; k < 26; k++) {
+        const s = rand(), r = 30 + s * (Rmax - 30), a = armAngle(i) + s * 2.4;
+        push(new THREE.Vector3(Math.cos(a) * r + gauss() * 14, gauss() * 6, Math.sin(a) * r + gauss() * 14), c, 70 + rand() * 80, 0.05);
+      }
+    }
+    for (let k = 0; k < 1400; k++) {
+      const u = rand() * 2 - 1, th = rand() * Math.PI * 2, r = 700 + rand() * 900, q = Math.sqrt(1 - u * u);
+      push(new THREE.Vector3(r * q * Math.cos(th), r * u, r * q * Math.sin(th)), new THREE.Color('#cfd8ff'), 3 + rand() * 4, 0.35 + rand() * 0.4);
+    }
+    const extraGeo = new THREE.BufferGeometry();
+    extraGeo.setAttribute('position', new THREE.Float32BufferAttribute(extra.p, 3));
+    extraGeo.setAttribute('color', new THREE.Float32BufferAttribute(extra.c, 3));
+    extraGeo.setAttribute('size', new THREE.Float32BufferAttribute(extra.s, 1));
+    scene.add(new THREE.Points(extraGeo, starMat));
+
+    // ---------- constellation lines ----------
+    const lineMat = (opacity: number) => new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity, depthWrite: false, blending: THREE.AdditiveBlending });
+    const segs = (pairs: [number, number][], tint?: InstanceType<typeof THREE.Color>) => {
+      const p: number[] = [], c: number[] = [];
+      for (const [a, b] of pairs) {
+        const A = a < 0 ? new THREE.Vector3() : pos[a], B = b < 0 ? new THREE.Vector3() : pos[b];
+        p.push(A.x, A.y, A.z, B.x, B.y, B.z);
+        const ca = tint ?? color.get(data.nodes[a < 0 ? b : a].g)!, cb = tint ?? color.get(data.nodes[b < 0 ? a : b].g)!;
+        c.push(ca.r, ca.g, ca.b, cb.r, cb.g, cb.b);
+      }
+      const g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
+      g.setAttribute('color', new THREE.Float32BufferAttribute(c, 3));
+      return g;
+    };
+    const tree: [number, number][] = data.nodes.map((n, j) => [j, n.k === 2 ? -1 : n.p] as [number, number]);
+    scene.add(new THREE.LineSegments(segs(tree), lineMat(0.2)));
+    scene.add(new THREE.LineSegments(segs(data.links), lineMat(0.07)));
+    const hiGeo = new THREE.BufferGeometry();
+    const hiLines = new THREE.LineSegments(hiGeo, lineMat(0.95));
+    scene.add(hiLines);
+
+    // ---------- labels for topic stars ----------
+    const labelBox = el.querySelector<HTMLElement>('.g-labels')!;
+    const labels = topicOrder.map((t) => {
+      const j = data.nodes.findIndex((n) => n.g === t.id && n.k === 2);
+      const a = document.createElement('a');
+      a.href = t.url;
+      a.className = 'g-label';
+      a.style.setProperty('--c', t.color);
+      a.dataset.vi = t.names[0];
+      a.dataset.en = t.names[1];
+      a.textContent = t.names[lang()];
+      labelBox.append(a);
+      return { a, j };
+    });
+
+    // ---------- hover, click, tooltip ----------
+    const tip = el.querySelector<HTMLElement>('.g-tip')!;
+    const nameOf = (g: string) => cfg.topics.find((t) => t.id === g)?.names[lang()] ?? g;
+    const neighbours = data.nodes.map(() => [] as number[]);
+    data.links.forEach(([a, b]) => { neighbours[a].push(b); neighbours[b].push(a); });
+    let hover = -1, downAt: { x: number; y: number } | null = null;
+    const screen = new THREE.Vector3();
+    const pick = (cx: number, cy: number) => {
+      const r = canvas.getBoundingClientRect();
+      let best = -1, bd = 16 * 16;
+      pos.forEach((p, j) => {
+        screen.copy(p).project(camera);
+        if (screen.z > 1) return;
+        const x = (screen.x * 0.5 + 0.5) * r.width, y = (-screen.y * 0.5 + 0.5) * r.height;
+        const d = (x - (cx - r.left)) ** 2 + (y - (cy - r.top)) ** 2;
+        if (d < bd) { bd = d; best = j; }
+      });
+      return best;
+    };
+    const setHover = (j: number, cx = 0, cy = 0) => {
+      if (j === hover) { if (j >= 0) placeTip(cx, cy); return; }
+      if (hover >= 0) sizeAttr.setX(hover, baseSize[hover]);
+      hover = j;
+      canvas.style.cursor = j >= 0 ? 'pointer' : '';
+      if (j < 0) { tip.hidden = true; hiLines.visible = false; sizeAttr.needsUpdate = true; return; }
+      sizeAttr.setX(j, baseSize[j] * 2.2);
+      sizeAttr.needsUpdate = true;
+      const n = data.nodes[j];
+      const pairs: [number, number][] = neighbours[j].map((b) => [j, b]);
+      if (n.p >= 0) pairs.push([j, n.p]);
+      kids[j].forEach((c) => pairs.push([j, c]));
+      hiLines.geometry.dispose();
+      hiLines.geometry = segs(pairs, new THREE.Color('#ffffff'));
+      hiLines.visible = true;
+      tip.innerHTML = '';
+      const strong = document.createElement('strong');
+      strong.textContent = n.t;
+      const meta = document.createElement('span');
+      meta.textContent = neighbours[j].length ? `${nameOf(n.g)}, ${neighbours[j].length} ${lang() ? 'links' : 'liên kết'}` : nameOf(n.g);
+      const go = document.createElement('a');
+      go.href = n.u;
+      go.textContent = lang() ? 'Open' : 'Mở bài';
+      tip.append(strong, meta, go);
+      tip.hidden = false;
+      placeTip(cx, cy);
+    };
+    const placeTip = (cx: number, cy: number) => {
+      const r = el.getBoundingClientRect();
+      const x = Math.min(cx - r.left + 14, r.width - tip.offsetWidth - 8);
+      const y = Math.min(cy - r.top + 14, r.height - tip.offsetHeight - 8);
+      tip.style.transform = `translate(${Math.max(8, x)}px, ${Math.max(8, y)}px)`;
+    };
+    canvas.addEventListener('pointermove', (e) => { if (!e.buttons) setHover(pick(e.clientX, e.clientY), e.clientX, e.clientY); });
+    canvas.addEventListener('pointerleave', () => setTimeout(() => { if (!tip.matches(':hover')) setHover(-1); }, 60));
+    tip.addEventListener('pointerleave', () => setHover(-1));
+    canvas.addEventListener('pointerdown', (e) => { downAt = { x: e.clientX, y: e.clientY }; });
+    canvas.addEventListener('pointerup', (e) => {
+      if (!downAt || Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y) > 5) return;
+      const j = pick(e.clientX, e.clientY);
+      if (j < 0) return setHover(-1);
+      if (e.pointerType === 'mouse') location.href = data.nodes[j].u;
+      else setHover(j, e.clientX, e.clientY); // touch: first tap shows the card with an open link
+    });
+
+    // ---------- controls ----------
+    const hint = el.querySelector<HTMLElement>('.g-hint')!;
+    const rotBtn = el.querySelector<HTMLButtonElement>('[data-act="rotate"]')!;
+    const setRotate = (on: boolean) => { controls.autoRotate = on; rotBtn.setAttribute('aria-pressed', String(on)); };
+    setRotate(!reduce);
+    controls.addEventListener('start', () => { setRotate(false); hint.classList.add('is-gone'); });
+    const zoom = (f: number) => {
+      const off = camera.position.clone().sub(controls.target).multiplyScalar(f);
+      const len = Math.min(controls.maxDistance, Math.max(controls.minDistance, off.length()));
+      camera.position.copy(controls.target).add(off.setLength(len));
+    };
+    el.querySelector('.g-controls')!.addEventListener('click', (e) => {
+      const act = (e.target as HTMLElement).closest('button')?.dataset.act;
+      if (act === 'rotate') setRotate(!controls.autoRotate);
+      if (act === 'in') zoom(0.75);
+      if (act === 'out') zoom(1.33);
+      if (act === 'reset') { controls.target.set(0, 0, 0); camera.position.copy(HOME); }
+      if (act === 'full') document.fullscreenElement ? document.exitFullscreen() : el.requestFullscreen?.();
+    });
+
+    // ---------- render loop ----------
+    const resize = () => {
+      const w = el.clientWidth, h = el.clientHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      starMat.uniforms.uScale.value = h * renderer.getPixelRatio() * 0.5;
+    };
+    new ResizeObserver(resize).observe(el);
+    resize();
+    let visible = true;
+    new IntersectionObserver((es) => { visible = es[0].isIntersecting; }).observe(el);
+    const v = new THREE.Vector3();
+    const tick = () => {
+      requestAnimationFrame(tick);
+      if (!visible || document.hidden) return;
+      controls.update();
+      renderer.render(scene, camera);
+      const w = el.clientWidth, h = el.clientHeight;
+      for (const { a, j } of labels) {
+        v.copy(pos[j]).project(camera);
+        const show = v.z < 1 && Math.abs(v.x) < 1.1 && Math.abs(v.y) < 1.1;
+        a.style.opacity = show ? '1' : '0';
+        a.style.transform = `translate(${((v.x * 0.5 + 0.5) * w).toFixed(1)}px, ${((-v.y * 0.5 + 0.5) * h).toFixed(1)}px) translate(-50%, -190%)`;
+      }
+    };
+    el.classList.add('is-ready');
+    tick();
+  }
+</script>
