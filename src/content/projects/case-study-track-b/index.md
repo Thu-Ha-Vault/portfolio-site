@@ -40,6 +40,7 @@ description: >-
 	7. Your top high-level insights
 - **Quy mô**: bài trình bày khoảng 30 phút, business task không quá đơn giản hay quá phức tạp
 - **Định hướng**: đề tài sinh học / sức khoẻ để tận dụng nền tảng chuyên môn
+- **Thư mục làm việc**: `~/Desktop/Sky/track-b-case-study`, phân tích bằng Python (pandas); chọn đề tài trong `docs/topic_selection.md`. Bài hoàn chỉnh đăng lên website cá nhân (→ Portfolio Website)
 
 ### Đề tài ứng viên
 

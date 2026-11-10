@@ -553,7 +553,78 @@ isIndex: false
 - Learn more: Add Business Details to Google
 - Establish your business details on Google: https://www.coursera.org/learn/attract-and-engage-customers/supplement/g7cPs
 ### Analyze search performance and user behavior
+#### Introduction to Google Search Console
+- **Google Search Console**: a no-cost tool to understand how a website performs on Google Search (how many people visit via Google, whether Google crawls your pages, technical errors)
+	- Examples use **Happy Clothes**, a fictional company for demonstrating SEO and SEM tools
+- First steps for a beginner:
+	1. **Add and verify website ownership** (prove you own the site) → Search Console starts collecting data, full access
+	2. After a few days: ensure Google can find and read your pages → **index coverage report** (all pages Google indexed or tried to index) → fix errors and warnings
+	3. **Mobile usability report**: issues affecting users on mobile devices (specific issues, sample affected pages, how to fix)
+	4. Consider **submitting a sitemap**: not required (Google likely still crawls), but best practice for larger sites (over **500 pages**) or if Google has difficulty discovering important pages; platforms like **WordPress, Wix, Blogger** create sitemaps automatically
+	5. **Monitor performance**: **search performance report** → traffic from Google Search by queries, pages, countries; trends for impressions, clicks, and other metrics
+- General usage: minimal day-to-day (emails on unusual events, e.g. hacking or crawling issues)
+	- Every month or so: review the dashboard for a quick health check (errors, unusual dips in clicks)
+	- When adding new content: submit a new sitemap if needed, confirm indexed pages rise a few hours later
+#### Google Search Console reports and metrics
+- **Overview page** (after logging in): summary of site health (security issues, metric graphs, enhancements like structured data) → check periodically for security issues, enhancement errors, dips in clicks
+- **Web Search Performance report**:
+	- **Impressions**: how many times your site has been seen by someone in Google Search
+	- **Clicks**: how many times a searcher clicked on your results in the SERPs
+	- **Click-through rate (CTR)**: the percentage of people who saw your listing and then clicked on it
+	- **Average position**: where your site ranks in the results (position one = top)
+	- Metrics are connected: many impressions but a low average position → few clicks → low CTR
+- **Links report**: which websites link to yours, the link text, your top-linked pages → why does a page get more links? Spammy linking sites can generally be ignored
+- **Coverage report**: index status of all pages (grouped by whether they are or can be indexed, with reasons) → scan for spikes in errors or drops in index counts (crawling problems)
+- **Manual Actions report**: a **manual action** is Google's way to demote or remove pages not compliant with its webmaster quality guidelines (e.g. attempts to manipulate the index, keyword stuffing)
+- **Security Issues report**: signs the site was hacked or harmful behavior (e.g. installing unwanted software on a visitor's computer) + details and how to fix
+#### Learn more about Google Search Console
+- Free tool to monitor, maintain, and troubleshoot a site's presence (analytics reports, HTML improvements, sitemaps, ...)
+- More: Google Search Central, Google Search Console Training video series
+- Learn more about Google Search Console: https://www.coursera.org/learn/attract-and-engage-customers/supplement/SCY7j
+#### More tools and reports in Google Search Console
+- **Sitemaps report**: submit or update a **sitemap** (file with information about pages, videos, files and their relationships) → helps Google find the most important pages and understand page relationships
+	- Not needed for small, already-crawled sites; helpful for sites with more than **500 pages**; WordPress, Wix, Blogger create one automatically
+	- Shows submitted sitemaps, statistics, and processing errors
+- **URL inspection tool**: detailed crawl, index, and serving information about a specific URL directly from the Google index; test a live page; reveals HTML or JavaScript errors → troubleshoot, fix, and retest
+- **Change of address**: tell Google when moving domains (e.g. `example.com` → `example.org`) → Google migrates search results
+- **Removals tool**: temporarily block pages from Google Search results (about **6 months**) and manage SafeSearch filtering
+	- Permanent removal: remove or update the page; block access (password or other restriction); add code telling search engines not to index it (less secure)
+- More: Google Search Console overview of tools and reports
+- More tools and reports in Google Search Console: https://www.coursera.org/learn/attract-and-engage-customers/supplement/iwvEN
+#### Bing Webmaster Tools
+- **Bing Webmaster Tools (Bing WMT)**: a free Microsoft service to add websites to the Bing index crawler and see site performance in Bing → Bing WMT is to Bing what Google Search Console is to Google Search
+- Why: Bing has more than **1 billion visits each month** → additional opportunities to drive traffic
+- Features similar to Search Console: site verification, crawl control, sitemaps reports, URL inspection tool, change of address tool, removals tool
+- Additional features:
+	- **Backlinks**: data about referring pages, domains, and anchor texts
+	- **Keyword Research**: phrases and keywords searchers query and their search volumes
+	- **SEO Report**: collects all errors found across a website
+	- **Site Scan**: on-demand site audit that crawls a site and checks common technical SEO issues
+- Bing Webmaster Tools: https://www.coursera.org/learn/attract-and-engage-customers/supplement/Qs1Nl
+#### Dave: My career path into SEO and SEM
+- Dave: shopping specialist at Google, helps retailers promote products on Google; best part: being a trusted advisor
+- Joined the **United States Marine Corps** after high school (North Carolina, London); still carries the "honor, courage, and commitment" card since leaving in 2002 → applies those values to decisions for retailers
+- Learned digital marketing mostly through the Internet: started a **golf blog** (professional tour, course reviews, products) → learned SEO and SEM → advertising, **affiliate marketing**, Google Ads for good quality traffic
+- Encouragement: push towards the end; the certificate will unlock opportunities
 ### Review: Apply search engine optimization (SEO)
+#### Wrap-up
+- Recap: optimize content and images, mobile-friendly websites, titles and meta descriptions, structured data markup, Google Search Console metrics and reports, Bing Webmaster Tools → even basics matter (e.g. several large photos slowing page load → lower visibility)
+#### Glossary terms from module 3
+- **Alt text**: A brief, written description of an image with the primary purpose of assisting individuals who are visually impaired
+- **Anchor text**: The visible text in a hyperlink
+- **Backlink**: A link that points to a website from another site
+- **External link**: A link on a website that leads to content on other sites
+- **Google Search Console**: A no-cost tool that helps users better understand how a website is performing on Google Search
+- **Internal link**: A link on a website that points to other pages on the site
+- **Manual action**: Google's way to demote or remove webpages that are not compliant with its webmaster quality guidelines
+- **Meta description**: Text that provides the search engines a summary of what the page is about
+- **Nofollow link**: A link that features HTML code that tells search engines to ignore that link
+- **Schema**: The type of code used for structured data markups
+- **Sitemap**: A file that provides information about the pages, videos, and other files on a site and the relationships between them
+- **Structured data**: Code used to describe a webpage's content to search engines
+- **Webpage title element**: Text that provides both the users and search engines with a page's topic
+- (Terms from previous modules repeated, omitted here)
+- Glossary terms from module 3: https://www.coursera.org/learn/attract-and-engage-customers/supplement/eZfqw
 ## Module 4: Search engine marketing (SEM) and display advertising
 ### Understand search engine marketing (SEM)
 ### Understand Google Ads

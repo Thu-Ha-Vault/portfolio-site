@@ -481,5 +481,38 @@ isIndex: false
 - Interview stakeholders and potential team members about the resources they think they'll need (materials not budgeted, people with expertise)
 - Managing resources to get the job done: https://www.coursera.org/learn/project-initiation-google/supplement/SzFm7
 ### Developing documentation for project kick-off
+#### The value of project documentation
+- A big part of project management is guiding decision-making → keep track of every decision (goals, deliverables, team members, ...) and use them to create a plan; too much to track mentally, and the team needs to know decisions that affect their tasks
+- The PM may be the only person communicating across all areas → clear, consistent **documentation** ensures transparency and clear communication
+- Documentation sets the stage by answering key questions: What problem are you solving? What are the goals? Scope and deliverables? Stakeholders? What resources does the team need?
+- Benefits: preserves early decisions, a reference for people joining later; uncovers tasks, timelines, or costs not previously considered; a **historical record** to review at the end (lessons learned)
+- Formats: email, presentation, digital document
+#### Project proposals and charters 101
+- **Project proposal**: documentation at the very beginning whose purpose is to **persuade stakeholders that a project should begin**; typically created by a senior organizational leader (the PM tracks its progress) → a formal document, presentation, or simple email; helps understand desired goals and impact
+- **Project charter**: a formal document that clearly defines the project and outlines the necessary details to reach its goals → get organized, set up a framework, communicate details
+- Differences: the proposal kicks off initiation (influence and persuade), only used early; the charter often comes at the **end of initiation**, defines key details more clearly, and serves as a reference throughout the project
+- The charter makes clear that the **benefits outweigh the costs** (cost-benefit questions: value created, money saved, time people will spend) → agreement on project value and details
+	- Approval by stakeholders and the project sponsor = management support, the project matches organizational needs → authority to move forward
+- Format and content vary by project, organization, and audience (e.g. a marketing executive → impact on the brand; a chief technology officer → cost of engineering resources to maintain the project)
+- Best practice before the planning phase; a **living document** → reviewed and refined throughout
+#### Project charters: Elements and formats
+- The charter formally captures the project's goals, values, benefits, and details → the **compass** of the project, used throughout the life cycle; stakeholders use it to check alignment with strategic goals → right amount of detail, omit miscellaneous elements
+- Develop it collaboratively with team and stakeholders early and often; use the **business case** (the reason for initiating the project) as the guiding direction
+- Usual key information: introduction/project summary; goals/objectives; business case/benefits and costs; project team; scope; success criteria; major requirements or key deliverables; budget; schedule/timeline or milestones; constraints and assumptions; risks; OKRs; approvals
+- Formats: a short, simple charter for smaller, less complex projects; for complex projects link to additional analysis or documents in an **appendix**; organizations may have their own template
+- A living document: expect revisions, review and revisit often
+- Project charters: Elements and formats: https://www.coursera.org/learn/project-initiation-google/supplement/wEGDz
+#### Developing a project charter
+- Filling in a charter template similar to the one program managers often use at Google, with Office Green details:
+	- **Project name**: Project Plant Pals; **summary**: offer high-volume customers small, low-maintenance plants that can thrive in an office environment
+	- **Project goals** (SMART): increase revenue by 5% by rolling out a new service that provides office plants to top clients by the end of the year
+	- **Deliverables** (tangible outcomes): send **1,000 plants to 100 customers**; launch a new website for orders and customer support
+	- **Business case** (the reasoning for initiating the project): a top requested service from customers; will improve customer satisfaction and retention
+	- **Cost-benefit analysis**: benefits = improved customer satisfaction, increased revenue; costs = sourcing products, developing a website and marketing materials → estimated budget **$250,000** (a real project needs a more detailed analysis; benefits should always outweigh costs)
+	- **Scope**: in scope = a service delivering small plants to last year's top clients; out of scope = plant care after delivery
+	- **Project team**: sponsor = Director of Product; project lead = you; team = marketing associates, website developers, external plant vendors, ...
+	- **Additional stakeholders**: VP of customer success (accountable for customer feedback and product requests), account manager (existing relationships with top clients), fulfillment manager (acquires the plants)
+	- **Measuring success**: 5% revenue increase by the end of the year; **95%** customer satisfaction rate three months after launch
+- The filled charter is then reviewed by stakeholders
 ### Evaluating tools to meet project needs
 ### Course review: Project Initiation: Starting a successful project

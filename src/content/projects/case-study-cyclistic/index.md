@@ -33,7 +33,11 @@ description: >-
 	5. Supporting visualizations and key findings
 	6. Your top three recommendations
 - **Công cụ dự kiến**: SQL (BigQuery) hoặc Python/pandas để làm sạch và phân tích, Tableau Public để làm dashboard
-- **Nơi đăng**: Kaggle Notebook (code) + GitHub repo portfolio (README, elevator pitch) + Tableau Public (dashboard)
+- **Nơi đăng**: Kaggle Notebook (code) + GitHub repo portfolio (README, elevator pitch) + Tableau Public (dashboard) + trang dự án trên website cá nhân (→ Portfolio Website)
+- **Thư mục làm việc**: `~/Desktop/Sky/cyclistic-case-study` (ngoài vault vì dữ liệu khoảng 1 GB), phân tích bằng Python (pandas)
+	- `notebooks/cyclistic_analysis.ipynb`: khung 6 bước Ask → Act, có sẵn code gộp file, tạo `ride_length`, `day_of_week`, lọc chuyến bất thường, bảng so sánh và biểu đồ
+	- `scripts/download_data.py`: tải 12 tháng dữ liệu Divvy, ví dụ `python scripts/download_data.py 2025-11 2026-10`
+	- `docs/data_sources.md` (nguồn, giấy phép, ROCCC) và `docs/changelog.md` (nhật ký làm sạch)
 - **Hướng đào sâu để khác biệt**: so sánh theo mùa, giờ trong ngày, ngày trong tuần, trạm (bản đồ), loại xe; xử lý ngoại lệ (`ride_length` âm hoặc > 24 giờ); ghi lại toàn bộ quá trình làm sạch
 
 ## Việc cần làm
