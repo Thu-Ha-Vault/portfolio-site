@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / G - Chuyển hoá vật chất và n�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/G - Chuyển hoá vật chất và năng lượng/25 -
   Tuần hoàn và cân bằng nội môi.md
+url: /blog/tuan-hoan-va-can-bang-noi-moi/
+topic: biology
+updated: '2026-10-16'
 order: 25
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (glucozơ → glucose,
@@ -45,11 +48,11 @@ isIndex: false
 - **Động vật đa bào bậc cao**:
 	- **Dịch tuần hoàn**: máu, hỗn hợp máu – dịch mô.
 	- **Tim**: bơm hút và đẩy máu chảy trong mạch.
-	- **Hệ thống mạch máu**: động mạch – mao mạch – tĩnh mạch. (→ [Phôi sớm ở chim](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/01-su-phat-trien-phoi-som-o-chim/))
+	- **Hệ thống mạch máu**: động mạch – mao mạch – tĩnh mạch. (→ [Phôi sớm ở chim](/blog/su-phat-trien-phoi-som-o-chim/))
 
 ### 1.2. Chức năng
 
-- Vận chuyển khí (− côn trùng) và các chất giữa các cơ quan. (→ [Tiêu hoá và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- Vận chuyển khí (− côn trùng) và các chất giữa các cơ quan. (→ [Tiêu hoá và hô hấp](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 
 ### 1.3. Các dạng hệ tuần hoàn
 
@@ -58,7 +61,7 @@ isIndex: false
 | Đại diện | Thân mềm (ốc, trai...), chân khớp (tôm, sâu (?)) | Động vật có xương sống, 1 số động vật không xương sống (mực ống, bạch tuộc...) |
 | Đặc điểm | – Hệ không khép kín, không có mao mạch<br>– Máu —động mạch→ khoang cơ thể + dịch mô<br>– P máu thấp, V chậm | – Hệ kín, có mao mạch<br>– Máu lưu thông trong hệ mạch —thành mạch→ trao đổi chất với tế bào<br>– P lớn, V nhanh |
 
-- Xem thêm: [Ốc](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/06-nganh-than-mem-oc/), [Gián](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/07-nganh-chan-khop-gian-va-phan-phu-mieng/) (hở); [Giun vòi](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/03-nganh-giun-voi/), [Giun đất](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/05-nganh-giun-dot-giun-dat/) (kín) – học phần Động vật không xương sống
+- Xem thêm: [Ốc](/blog/nganh-than-mem-mollusca-oc/), [Gián](/blog/nganh-chan-khop-arthropoda-gian-va-phan-phu-mieng-con-trung/) (hở); [Giun vòi](/blog/nganh-giun-voi-nemertea/), [Giun đất](/blog/nganh-giun-dot-annelida-giun-dat/) (kín) – học phần Động vật không xương sống
 
 - Hệ tuần hoàn kín chia thành:
 
@@ -73,10 +76,10 @@ isIndex: false
 
 #### a) Cấu tạo
 
-- **Tim cá**: 2 ngăn, máu nuôi cơ thể: đỏ tươi. (→ [Phôi cá ngựa vằn](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/02-doc-tinh-propylene-glycol-tren-phoi-ca-ngua-van/); [mổ cá chép ảo](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/); [báo cáo mổ cá chép](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
-- **Lưỡng cư**: 3 ngăn (1 thất, 2 nhĩ), máu nuôi cơ thể: máu pha. (→ [mổ ếch đồng ảo](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/); [báo cáo mổ ếch](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/02-giai-phau-ech-dong/))
+- **Tim cá**: 2 ngăn, máu nuôi cơ thể: đỏ tươi. (→ [Phôi cá ngựa vằn](/blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/); [mổ cá chép ảo](/projects/virtual-lab/thi-nghiem-giai-doan-5/); [báo cáo mổ cá chép](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
+- **Lưỡng cư**: 3 ngăn (1 thất, 2 nhĩ), máu nuôi cơ thể: máu pha. (→ [mổ ếch đồng ảo](/projects/virtual-lab/thi-nghiem-giai-doan-5/); [báo cáo mổ ếch](/blog/giai-phau-ech-dong/))
 - **Bò sát**: 3 ngăn (2 nhĩ, 1 thất), vách ngăn hụt, máu pha.
-- **Thú, chim**: 4 ngăn. (→ [Mổ chuột bạch](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/05-giai-phau-chuot-bach/))
+- **Thú, chim**: 4 ngăn. (→ [Mổ chuột bạch](/blog/giai-phau-chuot-bach/))
 
 #### b) Hoạt động
 
@@ -110,7 +113,7 @@ isIndex: false
 - P máu lên thành mạch.
 - P max = tim co, P min = tim dãn (không co).
 - p↓: động mạch → tĩnh mạch.
-- Phụ thuộc (∈): lực co tim, V máu và độ quánh máu, độ đàn hồi của thành mạch. (→ [Tổng ôn](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))
+- Phụ thuộc (∈): lực co tim, V máu và độ quánh máu, độ đàn hồi của thành mạch. (→ [Tổng ôn](/blog/tong-on-va-meo-lam-bai/))
 
 #### b) Vận tốc máu
 
@@ -150,7 +153,7 @@ isIndex: false
 #### Glucose
 
 - Các hormone tham gia: **insulin, adrenaline, glucagon, cortisol**.
-	- Đường trong máu cao, tuyến tuỵ tiết **insulin** → kích thích chuyển hoá glucose → glycogen dự trữ trong gan. (→ [Thành phần hoá học](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+	- Đường trong máu cao, tuyến tuỵ tiết **insulin** → kích thích chuyển hoá glucose → glycogen dự trữ trong gan. (→ [Thành phần hoá học](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 	- Đường trong máu thấp, tuyến tuỵ tiết **glucagon** → kích thích chuyển hoá glycogen → glucose.
 
 #### pH máu

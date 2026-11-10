@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / E - Tiến hoá
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/E - Tiến hoá/17 - Bằng chứng và cơ chế tiến
   hoá.md
+url: /blog/bang-chung-va-co-che-tien-hoa/
+topic: biology
+updated: '2026-10-16'
 order: 17
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, histon →
@@ -51,7 +54,7 @@ isIndex: false
 ### Gián tiếp
 
 #### Giải phẫu so sánh
-- **Cơ quan tương đồng**: (cùng nguồn) – vị trí tương ứng, cấu tạo giống nhau. (→ [Sơ đồ chi năm ngón](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/03-bo-xuong-ech-va-nguon-goc-luong-cu/))
+- **Cơ quan tương đồng**: (cùng nguồn) – vị trí tương ứng, cấu tạo giống nhau. (→ [Sơ đồ chi năm ngón](/blog/bo-xuong-ech-va-nguon-goc-luong-cu/))
 	- Ví dụ: Tay người ← chi trước → cánh dơi: bay
 		- Vây cá voi: bơi
 		- Chuột chũi: chân trước đào bới
@@ -87,7 +90,7 @@ isIndex: false
 	- → Các loài có chung nguồn gốc.
 
 #### Sinh học phân tử
-- ∀ sinh vật cấu tạo từ ~20 amino acid (→ protein), 4 loại nucleotide (→ DNA) (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- ∀ sinh vật cấu tạo từ ~20 amino acid (→ protein), 4 loại nucleotide (→ DNA) (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- → các loài có chung nguồn gốc.
 - Sự ≠ nhau của phân tử protein và DNA phản ánh mối quan hệ họ hàng giữa các loài.
 - Các loài có càng nhiều điểm giống nhau về cấu trúc (protein, DNA) thì quan hệ họ hàng càng gần.
@@ -126,11 +129,11 @@ isIndex: false
 	- Giữ tốt, bỏ xấu, thích đáng (?) ... loài (?).
 
 ### 1) Đột biến
-- **Đột biến gen**: nguyên liệu chủ yếu ($10^{-6} \to 10^{-4}$). (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
+- **Đột biến gen**: nguyên liệu chủ yếu ($10^{-6} \to 10^{-4}$). (→ [Đột biến gen](/blog/dot-bien-gen/))
 - Nhiễm sắc thể.
 - → Chậm.
 	- ↳ Thường xuyên.
-- Tạo nguyên liệu (+) → chủ yếu, phổ biến (?) ... đột biến (?). (→ [Di truyền ngoài nhân, biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+- Tạo nguyên liệu (+) → chủ yếu, phổ biến (?) ... đột biến (?). (→ [Di truyền ngoài nhân, biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 - Vô hướng.
 - Kiểu gen ⟷ môi trường.
 - Đột biến lặn không biểu hiện ngay ra kiểu hình (ở trạng thái dị hợp).
@@ -158,7 +161,7 @@ isIndex: false
 ### 4) Yếu tố ngẫu nhiên
 - Dịch bệnh, núi lửa, sóng thần, ... → giảm vốn gen của quần thể 1 cách đột ngột → biến động di truyền (**phiêu bạt**).
 - 1 alen hại – lợi bị loại bỏ hoặc phổ biến.
-- Kích thước nhỏ → chịu ảnh hưởng mạnh. (→ [Cá thể và quần thể](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
+- Kích thước nhỏ → chịu ảnh hưởng mạnh. (→ [Cá thể và quần thể](/blog/ca-the-va-quan-the-sinh-vat/))
 - Vô hướng.
 
 ### 5) Tự phối – giao phối gần, cận huyết → giao phối không ngẫu nhiên
@@ -180,14 +183,14 @@ isIndex: false
 - Các quần thể vật nuôi – cây trồng thường xuyên phát sinh biến dị:
 	- Có lợi cho con người → giữ lại, sinh sản, ↑.
 	- Có hại, không có lợi cho con người → đào thải.
-- Qua thời gian —(chọn lọc nhân tạo)→ giống vật nuôi, cây trồng. (→ [Ứng dụng di truyền vào chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+- Qua thời gian —(chọn lọc nhân tạo)→ giống vật nuôi, cây trồng. (→ [Ứng dụng di truyền vào chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 - Động lực: nhu cầu thị hiếu của con người.
 
 ## Tiến hoá nhỏ
 - Quá trình biến đổi p, q; d, h, r của quần thể → hình thành loài mới.
 - Đơn vị: quần thể.
 - Xuất phát: quần thể; kết quả: loài mới.
-- Chịu sự chi phối của nhân tố tiến hoá: ngược với điều kiện nghiệm đúng của định luật Hardy–Weinberg: (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- Chịu sự chi phối của nhân tố tiến hoá: ngược với điều kiện nghiệm đúng của định luật Hardy–Weinberg: (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 
 | 5 điều kiện nghiệm đúng Hardy–Weinberg | → Nhân tố tiến hoá |
 |---|---|
@@ -200,7 +203,7 @@ isIndex: false
 - Quy mô nhỏ (quần thể), thời gian lịch sử tương đối ngắn → có thể nghiên cứu bằng thực nghiệm.
 
 ## Tiến hoá lớn
-- Trục thời gian vẽ dọc mép trang, chia các đại: **Thái cổ | Nguyên sinh | Cổ sinh | Trung sinh | Tân sinh (Đệ tam, Đệ tứ)**. Chuỗi tiến hoá dọc trục: (→ [Sự phát sinh và phát triển sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/))
+- Trục thời gian vẽ dọc mép trang, chia các đại: **Thái cổ | Nguyên sinh | Cổ sinh | Trung sinh | Tân sinh (Đệ tam, Đệ tứ)**. Chuỗi tiến hoá dọc trục: (→ [Sự phát sinh và phát triển sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/))
 
 ```mermaid
 flowchart LR
@@ -260,12 +263,12 @@ flowchart LR
 - **Cùng khu**:
 	- Sinh thái: ít di cư ↳ đặc điểm thích nghi.
 	- Tập tính.
-	- Đột biến lớn: (→ [Đột biến nhiễm sắc thể](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+	- Đột biến lớn: (→ [Đột biến nhiễm sắc thể](/blog/dot-bien-nhiem-sac-the/))
 		- → **Tự đa bội**: 3n, 4n, ... → cách li sinh sản với 2n.
 		- → **Dị đa bội**: lai xa + đa bội hoá.
 		- → Nhanh → thực vật: chủ yếu (có hoa).
 	- → Thể (?) ngoài trên cơ thể sinh vật → không gặp gỡ và giao phối.
-- **Quần đảo**: các đảo ≠ nhau → ... (?) điển hình có sự hình thành loài = con đường địa lí. (→ [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/))
+- **Quần đảo**: các đảo ≠ nhau → ... (?) điển hình có sự hình thành loài = con đường địa lí. (→ [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/))
 	- → Vai trò: tăng cường sự phân hoá vốn gen.
 
 ### Quá trình hình thành quần thể thích nghi
@@ -274,4 +277,4 @@ flowchart LR
 	2. Áp lực chọn lọc tự nhiên.
 	3. Tốc độ sinh sản của loài.
 
-- Xem thêm: [Tổng ôn – 6. Di truyền quần thể, chọn lọc tự nhiên](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#6-di-truyền-quần-thể-chọn-lọc-tự-nhiên) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 6. Di truyền quần thể, chọn lọc tự nhiên](/blog/tong-on-va-meo-lam-bai/#6-di-truyền-quần-thể-chọn-lọc-tự-nhiên) – mẹo làm bài, ghi chú ôn tập

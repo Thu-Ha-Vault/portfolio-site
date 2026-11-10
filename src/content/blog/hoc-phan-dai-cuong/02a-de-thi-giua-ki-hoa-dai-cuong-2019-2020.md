@@ -9,6 +9,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/02a - Đề thi giữa kì Hoá đại cương 2019-2020.md
+url: /blog/de-thi-giua-ki-1-hoa-dai-cuong-2019-2020-3-de-kem-loi-giai/
+topic: university-courses
+updated: '2026-10-16'
 order: 2
 description: >-
   Môn Hoá học đại cương (sinh viên không thuộc ngành Hoá học). Gồm 3 đề. Đề gốc
@@ -16,7 +19,7 @@ description: >-
   (Chương 1–2, 4–7).
 isIndex: false
 ---
-> Môn **Hoá học đại cương** (sinh viên không thuộc ngành Hoá học). Gồm 3 đề. Đề gốc trên Drive: [Đề 1](https://drive.google.com/file/d/1bN55Otj79Yil3DbhNKAP-wTc3KKm7Q5x/view?usp=drivesdk) · [Đề 2](https://drive.google.com/file/d/163ODYWSDM7VfWtClHKExxu63CF5lBiY5/view?usp=drivesdk) · [Đề 3](https://drive.google.com/file/d/184VIPiBpsA0m0ZKaz5NHnIlp_UYUO8AK/view?usp=drivesdk). Kiến thức nền xem [Đề cương Hoá đại cương](/blog/hoc-phan-dai-cuong/02-hoa-hoc/) (Chương 1–2, 4–7).
+> Môn **Hoá học đại cương** (sinh viên không thuộc ngành Hoá học). Gồm 3 đề. Đề gốc trên Drive: [Đề 1](https://drive.google.com/file/d/1bN55Otj79Yil3DbhNKAP-wTc3KKm7Q5x/view?usp=drivesdk) · [Đề 2](https://drive.google.com/file/d/163ODYWSDM7VfWtClHKExxu63CF5lBiY5/view?usp=drivesdk) · [Đề 3](https://drive.google.com/file/d/184VIPiBpsA0m0ZKaz5NHnIlp_UYUO8AK/view?usp=drivesdk). Kiến thức nền xem [Đề cương Hoá đại cương](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/) (Chương 1–2, 4–7).
 
 <div class="callout callout-warning">
 <p class="callout-title">Lời giải do Claude soạn, cần kiểm tra</p>
@@ -57,7 +60,7 @@ isIndex: false
 - **Lời giải**:
 	- Thêm (5): $H_2 + Cl_2 \rightarrow 2HCl$, $\Delta H^\circ_5 = 2 \times (-92{,}30) = -184{,}6$ kJ; và (4): $H_2O_{(l)} \rightarrow H_2O_{(k)}$, $+44{,}01$ kJ.
 	- Phản ứng cần tính $= (1) + (4) - (2) - (3) + (5)$ (kiểm tra: CO, H₂O(k), H₂, Cl₂, COCl₂, HCl đều triệt tiêu).
-	- $\Delta H^\circ = -41{,}13 + 44{,}01 + 112{,}5 + 201{,}0 - 184{,}6 \approx$ **+131,8 kJ** (thu nhiệt). Đây chính là phản ứng thuỷ phân urea mà enzyme urease xúc tác (→ [Định tính urease](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/)).
+	- $\Delta H^\circ = -41{,}13 + 44{,}01 + 112{,}5 + 201{,}0 - 184{,}6 \approx$ **+131,8 kJ** (thu nhiệt). Đây chính là phản ứng thuỷ phân urea mà enzyme urease xúc tác (→ [Định tính urease](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/)).
 
 ### Câu 5 (2,0 điểm)
 - **Đề**: Cho phản ứng oxi hoá – khử $CH_6N_{2(l)} + N_2O_{5(r)} \rightarrow 2N_{2(k)} + CO_{2(k)} + 3H_2O_{(l)}$.

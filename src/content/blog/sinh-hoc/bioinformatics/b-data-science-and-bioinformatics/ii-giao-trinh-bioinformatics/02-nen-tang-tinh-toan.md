@@ -17,6 +17,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/02 - Nền tảng tính toán.md
+url: /blog/nen-tang-tinh-toan/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 2
 description: >-
@@ -69,7 +72,7 @@ for record in SeqIO.parse("genes.fasta", "fasta"):
 R mạnh về thống kê và có hệ sinh thái **Bioconductor** với hơn 2.000 gói cho dữ liệu omics.
 
 - Nền tảng: vector, data.frame, factor, hàm `apply`.
-- **tidyverse:** dplyr (lọc, nhóm, tóm tắt), ggplot2 (vẽ đồ thị). (→ [Introduction to tidyverse](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/08-introduction-to-tidyverse/), [Visualizations (R)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/09-visualizations/))
+- **tidyverse:** dplyr (lọc, nhóm, tóm tắt), ggplot2 (vẽ đồ thị). (→ [Introduction to tidyverse](/blog/introduction-to-tidyverse/), [Visualizations (R)](/blog/visualizations/))
 - Bioconductor: DESeq2, edgeR, limma, clusterProfiler, GenomicRanges.
 
 ```r

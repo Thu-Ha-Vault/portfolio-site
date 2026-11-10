@@ -10,6 +10,9 @@ folder: Sinh học / Biology Project and Lab Report / Developmental Biology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Developmental Biology/01 -
   Sự phát triển phôi sớm ở chim.md
+url: /blog/su-phat-trien-phoi-som-o-chim/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Bài trình bày nhóm (Nhóm 5) gồm 3 phần: I. Sự phân cắt trứng, II. Tạo phôi vị,
@@ -21,7 +24,7 @@ isIndex: false
 ## Khái niệm chính
 
 ### I. Sự phân cắt trứng
-- **Phân cắt trứng (phân cắt hợp tử)**: xảy ra ngay sau khi thụ tinh hoàn thành; đặc trưng cho mọi động vật đa bào nhưng diễn ra khác nhau ở từng nhóm, phụ thuộc lượng và vị trí **noãn hoàng (yolk)**. (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- **Phân cắt trứng (phân cắt hợp tử)**: xảy ra ngay sau khi thụ tinh hoàn thành; đặc trưng cho mọi động vật đa bào nhưng diễn ra khác nhau ở từng nhóm, phụ thuộc lượng và vị trí **noãn hoàng (yolk)**. (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 - Phân loại kiểu phân cắt:
 
 | Kiểu                              | Phân bố noãn hoàng | Hình thức phân cắt            | Ví dụ                        |
@@ -35,7 +38,7 @@ isIndex: false
 |                                   |                    | **Phân cắt đĩa (discoidal)**  | **Cá, chim**                 |
 |                                   | Tâm noãn hoàng     | Phân cắt bề mặt (superficial) | Phần lớn côn trùng           |
 
-- **Trứng chim**: phân cắt **không hoàn toàn, dạng đĩa**. (→ [Độc tính PG trên phôi cá](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/02-doc-tinh-propylene-glycol-tren-phoi-ca-ngua-van/))
+- **Trứng chim**: phân cắt **không hoàn toàn, dạng đĩa**. (→ [Độc tính PG trên phôi cá](/blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/))
 	- Chỉ có một **đĩa phôi** (đĩa tế bào chất nhỏ) nằm trên bề mặt khối noãn hoàng; phân cắt chỉ xảy ra trên đĩa này vì khối noãn hoàng không phân cắt được.
 	- Phân cắt bắt đầu từ **trung tâm đĩa phôi**:
 		- Lần 2 **vuông góc** với lần 1; lần 3 **song song** với rãnh phân cắt 1.
@@ -48,7 +51,7 @@ isIndex: false
 	- Các **đảo tế bào nguyên bào dưới (hypoblast)** và tế bào nguyên bào dưới quanh **liềm Koller (Koller's sickle)** tập hợp lại.
 	- Một lớp tế bào phát triển về phía trước từ liềm Koller, kết hợp với các đảo nguyên bào dưới → **lớp nguyên bào dưới hoàn chỉnh**.
 	- Phía trên, tế bào ngoại phôi bì tập trung về đường giữa theo chiều dọc → **dải nguyên thuỷ (primitive streak)**, tương đương phần kéo dài của phôi khẩu.
-	- **Nút Hensen (Hensen's node)**: tập hợp tế bào ở đầu trước dải nguyên thuỷ. (→ [Conditional specification](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/03-cell-commitment-va-dieu-hoa-bieu-hien-gene/))
+	- **Nút Hensen (Hensen's node)**: tập hợp tế bào ở đầu trước dải nguyên thuỷ. (→ [Conditional specification](/blog/cell-commitment-and-differential-gene-expression/))
 - **2. Phân chia ngoại bì và nội bì**
 	- Trứng nhiều noãn hoàng → chỉ còn đĩa tế bào chất nhỏ trên bề mặt → toàn bộ phân cắt diễn ra ở đĩa phôi.
 	- Lớp **ngoại phôi bì** và **nội phôi bì** được tạo ra bằng **sự phân tách (delamination) của đĩa phôi**.
@@ -74,8 +77,8 @@ isIndex: false
 | **Màng đệm** | Kết hợp từ các nếp ối và túi ối | Bao bọc phôi và các túi khác, trao đổi khí với môi trường ngoài |
 | **Túi niệu** | Hình thành từ thành ruột sau; mạng mạch máu dày đặc | Chứa sản phẩm bài tiết của phôi, vận chuyển chất dinh dưỡng |
 
-- Xem thêm: [Tuần hoàn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/) – mạng mạch máu ở túi niệu phôi chim, phát triển hệ tuần hoàn
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `dv-chick`: phôi gà HH4, HH10, HH20, HH24.
+- Xem thêm: [Tuần hoàn](/blog/tuan-hoan-va-can-bang-noi-moi/) – mạng mạch máu ở túi niệu phôi chim, phát triển hệ tuần hoàn
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `dv-chick`: phôi gà HH4, HH10, HH20, HH24.
 
 ## Tài liệu gốc
 *Nhóm 5_Sự phát triển phôi sớm ở chim.pdf*

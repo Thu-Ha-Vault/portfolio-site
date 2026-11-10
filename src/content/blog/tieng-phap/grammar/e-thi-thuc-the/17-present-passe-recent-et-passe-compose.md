@@ -13,6 +13,10 @@ folder: 'Tiếng Pháp / Grammar / E - Thì, thức, thể'
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/E - Thì, thức, thể/17 - Présent, passé récent
   et passé composé.md
+url: >-
+  /blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/
+topic: french
+updated: '2026-10-14'
 order: 17
 description: >-
   Memo 153: "drinkim" → "drinking"; "toujour" → "toujours". Memo 154:
@@ -48,7 +52,7 @@ isIndex: false
 
 <!-- Memo 152–153 -->
 ## 2. Present tense (le présent)
-- Thì hiện tại biểu thị một hành động đang thực sự đang xảy ra tại thời điểm nói, hoặc một sự thật chung chung, "chân lý vĩnh cửu". Thì hiện tại trong TP có thể được dịch theo 3 cách khác nhau trong TA tùy thuộc vào ý nghĩa mong muốn. (→ [Chia ĐT ở hiện tại](/blog/tieng-phap/grammar/c-dong-tu/07-les-verbes-introduction-et-verbes-reguliers-au-present/), [Indicatif trên ligne du temps](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/), [Depuis + présent](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/), [Le présent](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/))
+- Thì hiện tại biểu thị một hành động đang thực sự đang xảy ra tại thời điểm nói, hoặc một sự thật chung chung, "chân lý vĩnh cửu". Thì hiện tại trong TP có thể được dịch theo 3 cách khác nhau trong TA tùy thuộc vào ý nghĩa mong muốn. (→ [Chia ĐT ở hiện tại](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/), [Indicatif trên ligne du temps](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/), [Depuis + présent](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/), [Le présent](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/))
 - VD: **Tex boit du café.**
 	- Tex is drinking coffee (right now) → *progressive*: đang xảy ra
 	- Tex drinks coffee (in general) → *habitual*: thói quen
@@ -58,19 +62,19 @@ isIndex: false
 
 <!-- Memo 154–155 -->
 ## 3. Recent past: venir de + infinitive (le passé récent / immédiat)
-- Khi "venir" được chia ở thì hiện tại được theo sau bởi "de + infinitive", nó nghĩa là "to have just done something". Đây được gọi là **quá khứ gần**. (→ [Venir](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/), [Le passé récent](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/))
-- Khi "venir" chia ở thì imparfait theo sau bởi "de + infinitive", có nghĩa là "had just done something". (→ [Imparfait – idiomatic uses](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
+- Khi "venir" được chia ở thì hiện tại được theo sau bởi "de + infinitive", nó nghĩa là "to have just done something". Đây được gọi là **quá khứ gần**. (→ [Venir](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/), [Le passé récent](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/))
+- Khi "venir" chia ở thì imparfait theo sau bởi "de + infinitive", có nghĩa là "had just done something". (→ [Imparfait – idiomatic uses](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
 
 ## 4. Passé composé
 
 ### i) With "avoir"
-- **Sử dụng**: Thì passé composé là thì được sử dụng phổ biến nhất để chỉ những hành động đã hoàn thành trong quá khứ. Thì này có thể được dịch sang TA theo 3 cách khác nhau tùy thuộc vào ngữ cảnh. (→ [Aspect](/blog/tieng-phap/grammar/e-thi-thuc-the/16-temps-aspect-mode-et-voix/), [pendant + passé composé](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [Concordance des temps](/blog/tieng-phap/grammar/e-thi-thuc-the/24-le-discours-rapporte/))
+- **Sử dụng**: Thì passé composé là thì được sử dụng phổ biến nhất để chỉ những hành động đã hoàn thành trong quá khứ. Thì này có thể được dịch sang TA theo 3 cách khác nhau tùy thuộc vào ngữ cảnh. (→ [Aspect](/blog/temps-aspect-mode-et-voix-thi-the-thuc-va-dang/), [pendant + passé composé](/blog/les-prepositions-gioi-tu/), [Concordance des temps](/blog/le-discours-rapporte-cau-tuong-thuat/))
 	- VD: **Tex a mangé toute la viande!**
 		- Tex ate all the meat!
 		- Tex has eaten all the meat!
 		- Tex did eat all the meat.
-- **Cấu thành**: Thì này được gọi là passé composé vì nó được tạo nên bởi: "trợ" động từ (avoir hoặc être) ở thì hiện tại theo sau bởi quá khứ phân từ. (→ [Participles](/blog/tieng-phap/grammar/c-dong-tu/07-les-verbes-introduction-et-verbes-reguliers-au-present/), [Vị trí trạng từ với passé composé](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/), [Le passé composé](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/), [Auxiliaries](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
-	- **passé composé = present tense of auxiliary + past participle** (→ [Subjonctif passé](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
+- **Cấu thành**: Thì này được gọi là passé composé vì nó được tạo nên bởi: "trợ" động từ (avoir hoặc être) ở thì hiện tại theo sau bởi quá khứ phân từ. (→ [Participles](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/), [Vị trí trạng từ với passé composé](/blog/les-adverbes-trang-tu/), [Le passé composé](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/), [Auxiliaries](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
+	- **passé composé = present tense of auxiliary + past participle** (→ [Subjonctif passé](/blog/le-subjonctif-thuc-gia-dinh/))
 	- Lưu ý rằng trong hầu hết các trường hợp, trợ động từ là avoir, nhưng một số ĐT cần être làm trợ ĐT.
 	- Với các động từ có dạng nguyên thể có đuôi "-er", QKPT được hình thành bằng cách thay thế đuôi "er" bằng "é". QKPT được phát âm giống với dạng nguyên thể dù viết khác nhau.
 	- Với các ĐT có đuôi "-ir", QKPT được hình thành bằng cách bỏ "-r" khỏi ĐT nguyên thể.
@@ -87,17 +91,17 @@ isIndex: false
 | pouvoir  | pu     | vouloir | voulu | devoir    | dû    |
 | recevoir | reçu   |         |       |           |       |
 
-- Xem thêm: [Passé simple](/blog/tieng-phap/grammar/e-thi-thuc-the/19-le-passe-simple-et-le-passe-anterieur/) – gốc passé simple của nhiều ĐT BQT giống QKPT trong bảng này.
-- **Dạng phủ định**: được tạo thành bằng cách đặt cụm "ne… pas" quanh ĐT đã được chia, mà trong trường hợp này là trợ động từ "avoir". (→ [Négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
-- Xem thêm: [Inversion ở thì ghép](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/) – trong câu hỏi đảo ngữ, đại từ chủ ngữ đảo với trợ động từ.
+- Xem thêm: [Passé simple](/blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/) – gốc passé simple của nhiều ĐT BQT giống QKPT trong bảng này.
+- **Dạng phủ định**: được tạo thành bằng cách đặt cụm "ne… pas" quanh ĐT đã được chia, mà trong trường hợp này là trợ động từ "avoir". (→ [Négation](/blog/la-negation-phu-dinh/))
+- Xem thêm: [Inversion ở thì ghép](/blog/l-interrogation-cau-hoi/) – trong câu hỏi đảo ngữ, đại từ chủ ngữ đảo với trợ động từ.
 
 <!-- Memo 156–157 -->
 ### ii) With "être"
 - **Passé composé = present tense of auxiliary + past participle**
-	- Trong hầu hết trường hợp, trợ động từ là "avoir". Tuy nhiên, một số nội động từ như "aller" cần sử dụng trợ ĐT "être". Lưu ý rằng, phần quá khứ phân từ khớp với chủ ngữ về số lượng và giới tính. (→ [Être (trợ ĐT)](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/), [Conditionnel passé với être](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
+	- Trong hầu hết trường hợp, trợ động từ là "avoir". Tuy nhiên, một số nội động từ như "aller" cần sử dụng trợ ĐT "être". Lưu ý rằng, phần quá khứ phân từ khớp với chủ ngữ về số lượng và giới tính. (→ [Être (trợ ĐT)](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/), [Conditionnel passé với être](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
 	- Dạng phủ định tạo thành bằng cách đặt "ne… pas" xung quanh "être".
-	- **The Alamo of être**: Nhiều nội động từ, ĐT mà không theo sau bởi tân ngữ trực tiếp, sử dụng "être". Nhiều ĐT trong số này cũng biểu thị sự chuyển động. Chúng chỉ sự đến và đi. Cả "naître" (to be born) và "mourir" (to die) cũng có thể hiểu là đến và đi theo nghĩa ẩn dụ. "Alamo d'Être" minh họa nhóm động từ này. (→ [Alamo d'être](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
-	- Một số ĐT chuyển động (monter, descendre, sortir, passer, retourner) thỉnh thoảng có thể dùng tân ngữ trực tiếp, do đó trở thành ngoại động từ. Khi đó, trợ ĐT được sử dụng là "avoir" thay vì "être". (→ [Transitive vs intransitive (REDCAP)](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+	- **The Alamo of être**: Nhiều nội động từ, ĐT mà không theo sau bởi tân ngữ trực tiếp, sử dụng "être". Nhiều ĐT trong số này cũng biểu thị sự chuyển động. Chúng chỉ sự đến và đi. Cả "naître" (to be born) và "mourir" (to die) cũng có thể hiểu là đến và đi theo nghĩa ẩn dụ. "Alamo d'Être" minh họa nhóm động từ này. (→ [Alamo d'être](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
+	- Một số ĐT chuyển động (monter, descendre, sortir, passer, retourner) thỉnh thoảng có thể dùng tân ngữ trực tiếp, do đó trở thành ngoại động từ. Khi đó, trợ ĐT được sử dụng là "avoir" thay vì "être". (→ [Transitive vs intransitive (REDCAP)](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 	- **Lưu ý**: nhiều nội động từ chuyển động như "courir" và "marcher" không dùng "être" mà dùng "avoir".
 	- Dạng động từ phản thân là một nhóm ĐT quan trọng khác sử dụng "être" như trợ ĐT trong passé composé.
 - **Quá khứ phân từ bất qui tắc**: QKPT của các ĐT dùng "être" như trợ ĐT là theo qui tắc, ngoại trừ:
@@ -108,17 +112,17 @@ isIndex: false
 | devenir (to become)    | devenu | mourir (to die)     | mort |
 | revenir (to come back) | revenu |                     |      |
 
-- **Sự tương hợp của QKPT**: QKPT của ĐT sử dụng "être" khớp về giới tính và số lượng với chủ ngữ; có nghĩa là thêm "-e" vào QKPT với chủ ngữ giống cái và thêm "-s" với chủ ngữ số nhiều. Nếu là chủ ngữ giống cái số nhiều thì thêm "-es". (→ [Qui/que – tương hợp QKPT](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/), [Tương hợp QKPT trong câu bị động](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/))
+- **Sự tương hợp của QKPT**: QKPT của ĐT sử dụng "être" khớp về giới tính và số lượng với chủ ngữ; có nghĩa là thêm "-e" vào QKPT với chủ ngữ giống cái và thêm "-s" với chủ ngữ số nhiều. Nếu là chủ ngữ giống cái số nhiều thì thêm "-es". (→ [Qui/que – tương hợp QKPT](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/), [Tương hợp QKPT trong câu bị động](/blog/la-voix-passive-the-bi-dong/))
 
 *(sổ gạch bỏ: ~~5. Future: usage~~)*
 
 ### iii) Pronominal verb
-- **ĐT phản thân** là động từ có đại từ phản thân, một đại từ chỉ về chủ ngữ của nó. (→ [Verbes pronominaux](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- **ĐT phản thân** là động từ có đại từ phản thân, một đại từ chỉ về chủ ngữ của nó. (→ [Verbes pronominaux](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 
 <!-- Memo 158–159 -->
 - Những ĐT này dễ dàng được nhận biết bằng đại từ "se" trước ĐT nguyên thể: se lever, se promener.
-- Trong thì passé composé, ĐT phản thân được chia với "être". QKPT của ĐT phản thân được hình thành như QKPT không phản thân. Lưu ý rằng đại từ phản thân (me, te, se, nous, vous, se) đứng trước trợ động từ. (→ [Reflexive pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/), [Pronominal verbs – passé composé](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
-- **Sự tương hợp của QKPT**: Trong hầu hết trường hợp, QKPT của động từ phản thân khớp về giới tính và số lượng của đại từ phản thân. "-e" được thêm vào PII (QKPT) khớp với chủ ngữ giống cái và thêm "-s" vào chủ ngữ số nhiều. (→ [Elle s'est lavée / lavé les mains](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
+- Trong thì passé composé, ĐT phản thân được chia với "être". QKPT của ĐT phản thân được hình thành như QKPT không phản thân. Lưu ý rằng đại từ phản thân (me, te, se, nous, vous, se) đứng trước trợ động từ. (→ [Reflexive pronouns](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/), [Pronominal verbs – passé composé](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
+- **Sự tương hợp của QKPT**: Trong hầu hết trường hợp, QKPT của động từ phản thân khớp về giới tính và số lượng của đại từ phản thân. "-e" được thêm vào PII (QKPT) khớp với chủ ngữ giống cái và thêm "-s" vào chủ ngữ số nhiều. (→ [Elle s'est lavée / lavé les mains](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
 	- **Ngoại lệ**: PII không tương hợp nếu tân ngữ trực tiếp theo sau ĐT là một bộ phận cơ thể.
 	- Hơn nữa, trong TH (trường hợp) đại từ phản thân là tân ngữ gián tiếp, như ĐT "se parler" (parler à), thì không tương hợp.
 - **Dạng phủ định**: "ne" đứng trước đại từ phản thân và "pas" đứng sau trợ ĐT.

@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Developmental Biology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Developmental Biology/03 -
   Cell commitment và điều hoà biểu hiện gene.md
+url: /blog/cell-commitment-and-differential-gene-expression/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Slide bài giảng tiếng Anh (24 trang) trong Drive "Sinh". Nội dung giữ nguyên
@@ -32,14 +35,14 @@ isIndex: false
 	- Example: **trochoblast** (ciliated) cells of the mollusk *Patella* – isolated at the 16-cell stage, they still divide and become ciliated on schedule in culture.
 - **Conditional specification**
 	- Fate depends on **position** in the embryo and on interactions with neighbors (**paracrine factors**).
-	- If cells are removed, the remaining cells can **regulate** and compensate for the missing part. (→ [Phát triển phôi sớm ở chim](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/01-su-phat-trien-phoi-som-o-chim/))
+	- If cells are removed, the remaining cells can **regulate** and compensate for the missing part. (→ [Phát triển phôi sớm ở chim](/blog/su-phat-trien-phoi-som-o-chim/))
 - **Syncytial specification**
 	- Uses elements of both. In early insect embryos nuclei divide without cell division → a **syncytium** (many nuclei in one cytoplasm).
 	- Anterior and posterior nuclei are exposed to different cytoplasmic transcription factors.
 
 ## Developmental Genetics
 - **Genomic equivalence**: every somatic nucleus descends mitotically from the zygote → same chromosomes, same genes.
-- **Differential gene expression**: unused genes are neither destroyed nor mutated; only a small fraction of the genome is expressed in each cell type. (→ [Điều hoà hoạt động gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/05-dieu-hoa-hoat-dong-gen/))
+- **Differential gene expression**: unused genes are neither destroyed nor mutated; only a small fraction of the genome is expressed in each cell type. (→ [Điều hoà hoạt động gen](/blog/dieu-hoa-hoat-dong-gen/))
 - Levels of regulation:
 	1. **Differential gene transcription** – which genes are transcribed into nuclear RNA.
 	2. **Selective nuclear RNA processing** – which transcripts (or parts) reach the cytoplasm as mRNA.
@@ -68,7 +71,7 @@ isIndex: false
 - Promoters of inactive genes are methylated at **CpG** cytosines → **5-methylcytosine** (~5% of cytosines in mammals).
 	- Example: the β-globin gene is unmethylated (active) in red blood cell precursors but methylated in fibroblasts.
 - Mechanisms of repression: blocks transcription factor binding; recruits proteins that deacetylate or methylate histones.
-- Inheritance: **MeCP2** binds methylated C and recruits **Dnmt3** (de novo methylation); **Dnmt1** copies the pattern onto the new strand after replication (needs the C to be next to a G). (→ [Nhân đôi DNA](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- Inheritance: **MeCP2** binds methylated C and recruits **Dnmt3** (de novo methylation); **Dnmt1** copies the pattern onto the new strand after replication (needs the C to be next to a G). (→ [Nhân đôi DNA](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 
 ## Differential RNA Processing
 - **Nuclear RNA selection**: the same pool of nuclear transcripts gives different cytoplasmic mRNA populations in different cell types.

@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/05 -
   Statistic and Regression.md
+url: /blog/statistic-and-regression/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 5
 description: >-
@@ -18,7 +21,7 @@ isIndex: false
 ---
 ## Fundamental Ideas of Quantitative Research
 ### What does quantitative research do?
-- Quantitative research in social science: Systematic empirical investigation of social phenomena via statistical, mathematical, or computational techniques (→ [Qualitative Research](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/03-qualitative-research/))
+- Quantitative research in social science: Systematic empirical investigation of social phenomena via statistical, mathematical, or computational techniques (→ Qualitative Research)
 - Purpose:
 	- Describe phenomena based on statistics
 	- Reveal correlations between things
@@ -31,7 +34,7 @@ isIndex: false
 * **Hypothesis:** A testable prediction about the relationship between variables.
 * **Model:** A simplified mathematical representation used to describe relationships between variables.
 * **Sampling:** The process of selecting a subset of individuals from a larger population to represent the whole.
-* **Data collection methods:** Quantitative researchers use surveys, tests, and observations to collect data. (→ [Prepare Data for Exploration](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/03-prepare-data-for-exploration/))
+* **Data collection methods:** Quantitative researchers use surveys, tests, and observations to collect data. (→ [Prepare Data for Exploration](/blog/prepare-data-for-exploration/))
 ### Basic Types of Quantitative Data
 - Data and variable types
 * **Data**
@@ -231,7 +234,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
       * *Example 2:* Is the feedback your teacher provides on your assignments helpful?
   * If the purpose is to assess the effect of A on B, do not design a question like: **"How much do you think small-class teaching affects academic performance?"**
 #### Quality of Scales
-* **Validity**: the extent to which a specific instrument measures what it wants, attempts, or claims to measure. (→ [Application of SEM](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/06-application-of-structural-equation-modeling/))
+* **Validity**: the extent to which a specific instrument measures what it wants, attempts, or claims to measure. (→ [Application of SEM](/blog/application-of-structural-equation-modeling/))
 	* Indicates the degree to which a specific instrument measures what it intends, attempts, or claims to measure.
 * **Reliability**: consistency or stability of a set of test scores.
 	* Refers to the consistency or stability of a set of test scores. If a test or assessment procedure yields reliable scores, the scores are similar across all conditions.
@@ -449,7 +452,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 ## Data Cleaning and Common Stata Commands (Làm Sạch Dữ Liệu và Các Lệnh Thao Tác Cơ Bản Trong Stata)
 
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–33 & Transcript P1–P33)
-* **Phân loại nhiệm vụ:** **Tiền xử lý dữ liệu, Kiểm tra chất lượng & Thống kê mô tả (Data Preprocessing, Quality Inspection & Descriptive Statistics)**. (→ [Process data from Dirty to Clean](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/04-process-data-from-dirty-to-clean/))
+* **Phân loại nhiệm vụ:** **Tiền xử lý dữ liệu, Kiểm tra chất lượng & Thống kê mô tả (Data Preprocessing, Quality Inspection & Descriptive Statistics)**. (→ [Process data from Dirty to Clean](/blog/process-data-from-dirty-to-clean/))
 * **Bản chất kỹ thuật:** 
   * Chuẩn hóa và chuyển đổi dữ liệu thô sang dạng cấu trúc sạch phục vụ ước lượng mô hình thông qua quy trình 4 giai đoạn khép kín:
     $$\text{Kiểm tra tổng quan} \xrightarrow{\text{Thanh lọc}} \text{Mã hóa \& Chuẩn hóa} \xrightarrow{\text{Mô tả trực quan}} \text{Tổng hợp chỉ số (Index)}$$
@@ -500,13 +503,13 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 ## Fundamental Statistical Concepts
 - Basic Statistical Concepts:
 	- Variable: a construct that can be measured in a population (e.g., height, ability, self-esteem)
-	- Variance: measures how far a random variable deviates from its expected value, that is, its means (→ [Expectation](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/03-expectation/))
+	- Variance: measures how far a random variable deviates from its expected value, that is, its means (→ [Expectation](/blog/expectation/))
 	- Standard Deviation (SD)
 	- Standardization
 	- Covariance
 	- Correlation:
 ![Ảnh chụp Màn hình 2026-09-13 lúc 14.10.12](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-10-12-16bfa21a.png)
-- Linear Regression Analysis: a classic statistical method for analyzing relationships between variable (→ [Tương quan và hồi quy](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/03-tuong-quan-va-hoi-quy/))
+- Linear Regression Analysis: a classic statistical method for analyzing relationships between variable (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/))
 ![Ảnh chụp Màn hình 2026-09-13 lúc 14.11.28](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-14-11-28-977f4106.png)
 
 ## Sampling Theory
@@ -549,7 +552,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 	- A sample drawn by a procedure where every member of the population has an equal (or at least non-zero) probability of being selected
 	- The probability of one individual being selected is not affected by the selection of others - i.e., each selection is completely independent of the text
 	- Selection is based entirely on chance
-	- Strategies for Random Sampling: (→ [Monitoring ANR, part 1](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+	- Strategies for Random Sampling: (→ [Monitoring ANR, part 1](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 		- Simple Random Sampling: e.g., use random numbers to select 50 students from 1000
 		- Systematic sampling: Order the population, the select every k-th unit. e.g., Sort by student ID and select every 10th student
 		- Stratified sampling: e.g.,  Stratify the school by grade level
@@ -573,7 +576,7 @@ $$\text{Lý thuyết EMI (Lucas, 2001)} \implies \text{Hypotheses } \{H_1, H_2, 
 ### How to Determine Sample Size for Statistical Inference
 - What is the purpose of sampling: To make accurate inferences about the population
 - Use as large a sample as possible! Or more practically: What is the minimum acceptable sample size: ![Ảnh chụp Màn hình 2026-09-13 lúc 15.36.22](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-36-22-247d8f63.png)
-- Sample Size Formular (→ [Convergence of Random Variables](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/05-convergence-of-random-variables/))
+- Sample Size Formular (→ Convergence of Random Variables)
 	- Simple Random Sampling:
   ![Ảnh chụp Màn hình 2026-09-13 lúc 15.37.18](/vault-assets/anh-chup-man-hinh-2026-09-13-luc-15-37-18-76ee1e76.png)
 - Properities of Sampling Distributions: Sampling distributions are characterized by two fundamental properties, described by the 
@@ -718,7 +721,7 @@ $$\bar{x} = \frac{x_1 w_1 + x_2 w_2 + \dots + x_n w_n}{w_1 + w_2 + \dots + w_n}$
   * *Hành động can thiệp:* Cố định số lượng mẫu cụ thể trên từng đơn vị hành chính/trường học thay vì tỷ lệ phần trăm thả nổi, giúp đội ngũ khảo sát dễ dàng phân bổ nhân sự và lập kế hoạch phỏng vấn rõ ràng.
 ## Parameter Estimation (Cơ sở Ước lượng Tham số trong Suy luận Thống kê)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–9 & Transcript P1–P9)
-* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ước lượng Tham số (Statistical Inference / Parameter Estimation)**. (→ [Models, Statistical Inference and Learning](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/01-models-statistical-inference-and-learning/))
+* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ước lượng Tham số (Statistical Inference / Parameter Estimation)**. (→ [Models, Statistical Inference and Learning](/blog/models-statistical-inference-and-learning/))
 * **Bản chất kỹ thuật:** 
   * Quá trình sử dụng dữ liệu quan sát từ mẫu để suy diễn về các tham số chưa biết của tổng thể:
     $$\text{Population } (\mu, \sigma^2, \beta) \xrightarrow{\text{Sampling}} \text{Sample } (X) \xrightarrow{\text{Estimator } \hat{\theta}(X)} \text{Estimate } \hat{\theta} \pm \text{SE}(\hat{\theta})$$
@@ -758,7 +761,7 @@ $$\bar{x} = \frac{x_1 w_1 + x_2 w_2 + \dots + x_n w_n}{w_1 + w_2 + \dots + w_n}$
 # Hypothesis Testing
 ## Fundamental Principles of Hypothesis Testing (Các Nguyên Lý Cơ Bản của Kiểm Định Giả Thuyết)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 2–11 & Transcript P1–P14)
-* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ra quyết định có kiểm soát rủi ro (Statistical Inference & Hypothesis Testing Task)**. (→ [Hypothesis Testing and p-values](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/))
+* **Phân loại nhiệm vụ:** **Suy luận Thống kê & Ra quyết định có kiểm soát rủi ro (Statistical Inference & Hypothesis Testing Task)**. (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/))
 * **Bản chất kỹ thuật:** 
   * Xác định xem các kết quả quan sát được từ mẫu có phản ánh bản chất thực sự của tổng thể hay chỉ xuất hiện ngẫu nhiên do sai số lấy mẫu:
     $$H_0: \theta = \theta_0 \quad \text{vs.} \quad H_1: \theta \neq \theta_0 \quad (\text{hoặc } \theta > \theta_0, \; \theta < \theta_0)$$
@@ -919,7 +922,7 @@ $$\begin{cases}        \ge 3 \text{ nhóm} \land \text{Độc lập} \land \text
 # Linear Regression Analysis 
 ## Xây Dựng Mô Hình Hồi Quy Tuyến Tính (Building Linear Regression Models)
 ### 1. Bản chất & Định nghĩa cốt lõi (Slide 1–7 & Transcript P1–P7)
-* **Phân loại nhiệm vụ:** **Hồi quy & Dự báo có giám sát (Predictive & Causal Modeling / Supervised Learning)**. (→ [Linear and Logistic Regression](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/01-linear-and-logistic-regression/))
+* **Phân loại nhiệm vụ:** **Hồi quy & Dự báo có giám sát (Predictive & Causal Modeling / Supervised Learning)**. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
 * **Bản chất kỹ thuật:** 
   * Xác định quy luật biến thiên của biến phụ thuộc (biến được giải thích) $Y$ theo sự thay đổi của tập hợp các biến độc lập (biến giải thích) $X_1, X_2, \dots, X_k$:
     $$Y_i = \beta_0 + \sum_{j=1}^k \beta_j X_{ij} + u_i$$
@@ -1061,7 +1064,7 @@ $$\begin{cases}        \ge 3 \text{ nhóm} \land \text{Độc lập} \land \text
 ### 3. Ý nghĩa thực tiễn & Ứng dụng ra quyết định (Slide 22, 28, 29 & Transcript tương ứng)
 * **Theo góc nhìn Nhận diện & Xử lý Nội sinh (Causal Identification):**
   * *Mục tiêu:* Tách biệt mối quan hệ nhân quả thực sự khỏi tương quan giả tạo.
-  * *Hành động can thiệp:* Nhận diện 3 nguồn gốc nội sinh (yếu tố gây nhiễu - confounders, chệch chọn mẫu - selection bias, và quan hệ nhân quả đảo ngược - reverse causality). Giải pháp trực tiếp là kiểm soát tối đa các biến gây nhiễu (covariates); trong trường hợp biến bị bỏ sót không đo lường được, phải chuyển sang các thiết kế bán thực nghiệm (biến công cụ IV, sai biệt kép DiD, dữ liệu bảng Fixed Effects). (→ [Causal Inference (Tsing Hua)](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/10-causal-inference/))
+  * *Hành động can thiệp:* Nhận diện 3 nguồn gốc nội sinh (yếu tố gây nhiễu - confounders, chệch chọn mẫu - selection bias, và quan hệ nhân quả đảo ngược - reverse causality). Giải pháp trực tiếp là kiểm soát tối đa các biến gây nhiễu (covariates); trong trường hợp biến bị bỏ sót không đo lường được, phải chuyển sang các thiết kế bán thực nghiệm (biến công cụ IV, sai biệt kép DiD, dữ liệu bảng Fixed Effects). (→ [Causal Inference (Tsing Hua)](/blog/causal-inference/))
 * **Theo góc nhìn Đánh đổi Kỹ thuật: Nội sinh vs. Đa cộng tuyến (Trade-off):**
   * *Mục tiêu:* Tối ưu hóa sự đánh đổi giữa giảm độ chệch (Bias) và kiểm soát phương sai (Variance).
   * *Hành động can thiệp:* Đưa thêm biến kiểm soát giúp loại bỏ OVB nhưng có thể làm tăng đa cộng tuyến ($\text{VIF} > 10$). Nhà nghiên cứu cần dựa trên nền tảng lý thuyết nghiệp vụ vững chắc để chọn lọc tập biến kiểm soát cô đọng, tránh đưa biến bừa bãi dẫn đến mất hiệu quả ước lượng.

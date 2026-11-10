@@ -11,6 +11,9 @@ folder: AI và DEV / AI Cybersecurity and Governance (Columbia University)
 vaultPath: >-
   Resources/AI và DEV/AI Cybersecurity and Governance (Columbia University)/01 -
   Cybersecurity Primer.md
+url: /blog/cybersecurity-primer/
+topic: ai-development
+updated: '2026-10-14'
 order: 1
 description: >-
   mermaid timeline title Mega-breaches 2013 : Target 2014 : JPM Chase : Yahoo
@@ -82,7 +85,7 @@ timeline
 - **Incident**: đối thủ cấp quốc gia (Nga) cài **backdoor** vào phần mềm SolarWinds mà các cơ quan chính phủ Mỹ (và 18.000 tổ chức khác) đang dùng.
 - **Impact**:
 	- Điều trần trước Quốc hội
-	- Tổng thống ban hành **executive order** yêu cầu các cơ quan liên bang phải có **SBOM** (software bill of materials) cho mọi phần mềm mua về (→ [AI-BOM ở Module 6](/blog/ai-va-dev/ai-cybersecurity-and-governance-columbia-university/06-ai-governance-and-regulation/))
+	- Tổng thống ban hành **executive order** yêu cầu các cơ quan liên bang phải có **SBOM** (software bill of materials) cho mọi phần mềm mua về (→ [AI-BOM ở Module 6](/blog/ai-governance-and-regulation/))
 - **Key Takeaways**: tấn công qua bên thứ ba / **supply chain attack** chỉ cần xâm nhập một bên nhỏ để tấn công một lượng rất lớn khách hàng (khác với Target, chỉ một nạn nhân).
 
 ### Colonial Pipeline Data Breach (2021)
@@ -103,7 +106,7 @@ timeline
 - Các vụ breach lớn nhất đều đến từ một tập nguyên nhân gốc quản lý và kỹ thuật **khá ổn định**; phần lớn là vấn đề **"cybersecurity hygiene"**.
 - **Managerial root causes**: không ưu tiên, không đầu tư và không thực thi các sáng kiến an ninh mạng.
 - **Technical root causes**: account takeover, malware, lỗ hổng phần mềm và chuỗi cung ứng, dữ liệu không được mã hoá, lỗi vô ý của nhân viên, tấn công nội bộ (insider attacks).
-- Các pattern này được dùng để đánh giá breach trên và bằng AI (→ [Module 5](/blog/ai-va-dev/ai-cybersecurity-and-governance-columbia-university/05-breaches-on-and-with-ai/)).
+- Các pattern này được dùng để đánh giá breach trên và bằng AI (→ [Module 5](/blog/breaches-on-and-with-ai/)).
 
 <details class="callout callout-success">
 <summary>Đã sửa so với slide gốc</summary>

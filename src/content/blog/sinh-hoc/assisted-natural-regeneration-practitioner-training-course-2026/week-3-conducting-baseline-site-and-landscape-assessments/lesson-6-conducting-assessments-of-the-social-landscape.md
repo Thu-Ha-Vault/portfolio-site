@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 3 Conducting baseline site and landscape assessments/Lesson 6
   Conducting assessments of the social landscape.md
+url: /blog/conducting-assessments-of-the-social-landscape/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 isIndex: false
@@ -36,7 +39,7 @@ Landscape assessment expands beyond a single restoration site to understand the 
 ### 2. Ecological Connectivity
 - Wildlife corridors.
 - Seed dispersal pathways.
-- Connections between forest patches. (→ [L8 Case studies (enrichment)](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-8-case-studies-of-anr-part-2-with-enrichment-planting/))
+- Connections between forest patches. (→ [L8 Case studies (enrichment)](/blog/case-studies-of-anr-part-2-with-enrichment-planting/))
 - Habitat fragmentation levels.
 
 ### 3. Drivers of Degradation

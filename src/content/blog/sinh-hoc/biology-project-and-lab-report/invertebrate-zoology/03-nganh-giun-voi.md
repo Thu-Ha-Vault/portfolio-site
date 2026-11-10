@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Invertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Invertebrate Zoology/03 -
   Ngành Giun vòi.md
+url: /blog/nganh-giun-voi-nemertea/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Vòi nằm trong xoang vòi (rhynchocoel) ở mặt lưng, tách biệt với ống tiêu hoá.
@@ -19,7 +22,7 @@ description: >-
 isIndex: false
 ---
 ## 1. Những đặc điểm cơ bản của Nemertea
-- Cơ thể **dẹp theo hướng lưng bụng**, có hiện tượng **đầu hoá**, **đối xứng 2 bên** (giống [Giun dẹp](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/02-nganh-giun-dep/))
+- Cơ thể **dẹp theo hướng lưng bụng**, có hiện tượng **đầu hoá**, **đối xứng 2 bên** (giống [Giun dẹp](/blog/nganh-giun-dep-platyhelminthes/))
 
 ### 1.1. Hình thái ngoài
 - Cơ thể dẹp theo hướng lưng bụng, phủ đầy **lông bơi**
@@ -50,7 +53,7 @@ isIndex: false
 - Có các cơ quan cảm giác đơn giản
 
 ### 1.7. Hệ tuần hoàn
-- Hệ thống **mạch kín**, có đoạn mạch co bóp (tương ứng tim) (→ [Hệ tuần hoàn kín](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+- Hệ thống **mạch kín**, có đoạn mạch co bóp (tương ứng tim) (→ [Hệ tuần hoàn kín](/blog/tuan-hoan-va-can-bang-noi-moi/))
 
 ### 1.8. Hệ sinh dục
 - (vở ghi chỉ có tiêu đề)

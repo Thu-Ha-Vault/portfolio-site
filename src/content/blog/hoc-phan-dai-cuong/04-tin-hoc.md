@@ -7,6 +7,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/04 - Tin học.md
+url: /blog/tin-hoc-tin-hoc-dai-cuong-tin-hoc-co-so/
+topic: university-courses
+updated: '2026-10-16'
 order: 4
 description: >-
   Tài liệu Tin học năm 1 (HUS – ĐHQGHN) trên Google Drive, folder Tin học.
@@ -23,4 +26,4 @@ isIndex: false
 | Tin học cơ sở | Shortcut | [Mở](https://drive.google.com/file/d/19KXtGM8AiSfHIxudH8z7o-8lsVPmPvaq/view?usp=drivesdk) |
 | THCS_HUS_Sử dụng máy tính (Tin học cơ sở HUS – Sử dụng máy tính) | Shortcut | [Mở](https://drive.google.com/file/d/13Hkv2SzS7XPcZT6hrZMFO_MklfoHafTm/view?usp=drivesdk) |
 
-- Xem thêm: [AI và DEV](/blog/ai-va-dev/) – lập trình, AI và công cụ phát triển học tiếp sau Tin học đại cương (khoá AI của Tsing Hua University, GitHub, AI Cybersecurity and Governance của Columbia University).
+- Xem thêm: [AI và DEV](/topics/ai-development/) – lập trình, AI và công cụ phát triển học tiếp sau Tin học đại cương (khoá AI của Tsing Hua University, GitHub, AI Cybersecurity and Governance của Columbia University).

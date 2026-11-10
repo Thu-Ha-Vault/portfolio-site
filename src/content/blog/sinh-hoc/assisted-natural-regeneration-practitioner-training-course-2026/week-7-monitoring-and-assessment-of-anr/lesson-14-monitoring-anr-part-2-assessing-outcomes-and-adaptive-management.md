@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 7 Monitoring and assessment of ANR/Lesson 14 Monitoring ANR, part 2
   -  Assessing outcomes and adaptive management.md
+url: /blog/monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-14-monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/
 description: 'By the end of this lesson learners should be able to:'
@@ -138,7 +141,7 @@ Indicators help:
 
 ### Fauna
 
-- Species presence (→ [Côn trùng](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/04-dvkxs-tren-can-con-trung/))
+- Species presence (→ [Côn trùng](/blog/dong-vat-khong-xuong-song-tren-can-con-trung/))
 - Ecological interactions
 
 ### Disturbance
@@ -469,7 +472,7 @@ Counts native species present.
 
 Indicates:
 
-Recovery of biodiversity. (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
+Recovery of biodiversity. (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
 
 ---
 
@@ -503,7 +506,7 @@ Fauna return indicates:
 - Food web recovery
 - Ecological interactions
 
-Animals respond later than vegetation. (→ [Chim và thú](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/))
+Animals respond later than vegetation. (→ [Chim và thú](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/))
 
 ---
 
@@ -565,7 +568,7 @@ Increase weeding frequency.
 
 Rule 1
 
-Collect baseline before restoration. (→ [L13 Monitoring part 1](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+Collect baseline before restoration. (→ [L13 Monitoring part 1](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 
 Rule 2
 

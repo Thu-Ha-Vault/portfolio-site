@@ -9,6 +9,9 @@ tags:
 section: Tiếng Anh
 folder: Tiếng Anh
 vaultPath: Resources/Tiếng Anh/02 - Scientific English in Biology.md
+url: /blog/scientific-english-in-biology-homework/
+topic: english
+updated: '2026-10-16'
 order: 2
 description: >-
   Bài tập học phần Scientific English in Biology (HUS, 09/2023). Bài viết giữ
@@ -27,7 +30,7 @@ isIndex: false
 ### The Origin of Mitochondria
 Mitochondria, also known as "the powerhouse of the cell", play a crucial role in cellular respiration, which is a process that converts sugar into energy. They are essential for most eukaryotic organisms and can be found in the cytoplasm of nearly every cell. And the presence of DNA within the mitochondria has raised questions among scientists about its formation. One of the most well-known theories suggests that Mitochondria were once prokaryotes. Specifically, the α-proteobacteria, a bacteria phylum, show the closest identified relation to mitochondria. Multiple pieces of evidence support the idea that mitochondria originated from an endosymbiotic event. The inner membrane of mitochondria contains significant foldings called cristae, which resemble the outer surface of alpha-proteobacteria. These cristae are enriched with enzymes necessary for aerobic respiration. Mitochondria possess their own circular DNA chromosome, which is anchored to the inner membrane and contains genes similar to genes expressed by alpha-proteobacteria. Mitochondria do not freely arise within the eukaryotic cells; they replicate internally and are divided between two cells during cell division. Therefore, while mitochondria are highly integrated into the eukaryotic cell, they reproduce as if they were independent organisms within the cell. Additionally, Mitochondria have special ribosomes and transfer RNAs that resemble the components found in prokaryotes. These features all support the notion that mitochondria were once free-living prokaryotes.
 
-- Kiến thức liên quan: **thuyết nội cộng sinh (endosymbiotic theory)** – DNA vòng, ribosome 70S, nhân đôi độc lập (→ [Bào quan – ti thể](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/), [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+- Kiến thức liên quan: **thuyết nội cộng sinh (endosymbiotic theory)** – DNA vòng, ribosome 70S, nhân đôi độc lập (→ [Bào quan – ti thể](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/), [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 
 <div class="callout callout-info">
 <p class="callout-title">Nhận xét ngôn ngữ (Claude)</p>
@@ -54,8 +57,8 @@ Second, the person in the video marks the top of the eggs with an "X" before pla
 1. Top embryo eggs did not exhibit better survival rates compared to bottom embryo eggs. Hatchlings from both categories had similar survival rates. However, top embryo eggs experienced greater mass loss throughout the incubation period, hatched earlier, and produced lighter and shorter snakes at birth than bottom embryo eggs.
 2. The research does not support the common belief that egg turning in reptiles can kill or significantly affect the developing embryo, at least when the eggs are turned within 12 hours after being laid.
 
-- Bài báo nguồn: *Myth busting? Effects of embryo positioning and egg turning on hatching success in the water snake Natrix maura* – [Drive](https://drive.google.com/file/d/1H-yTqYPsmm96P86nqCXhBxBOzRAdLK-Y/view) (→ [Thư viện tài liệu Sinh học](/blog/sinh-hoc/thu-vien-tai-lieu-sinh-hoc/))
-- Kiến thức liên quan: phát triển phôi bò sát, màng ngoài phôi (→ [Phát triển phôi sớm ở chim](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/01-su-phat-trien-phoi-som-o-chim/))
+- Bài báo nguồn: *Myth busting? Effects of embryo positioning and egg turning on hatching success in the water snake Natrix maura* – [Drive](https://drive.google.com/file/d/1H-yTqYPsmm96P86nqCXhBxBOzRAdLK-Y/view) (→ [Thư viện tài liệu Sinh học](/blog/thu-vien-tai-lieu-sinh-hoc-google-drive/))
+- Kiến thức liên quan: phát triển phôi bò sát, màng ngoài phôi (→ [Phát triển phôi sớm ở chim](/blog/su-phat-trien-phoi-som-o-chim/))
 
 <div class="callout callout-info">
 <p class="callout-title">Nhận xét (Claude)</p>

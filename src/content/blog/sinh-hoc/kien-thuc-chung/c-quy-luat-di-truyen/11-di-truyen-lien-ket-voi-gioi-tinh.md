@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / C - Quy luật di truyền
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/C - Quy luật di truyền/11 - Di truyền liên
   kết với giới tính.md
+url: /blog/di-truyen-lien-ket-voi-gioi-tinh/
+topic: biology
+updated: '2026-10-15'
 order: 11
 description: >-
   Tên riêng phiên âm đổi sang tiếng Anh (Moocgan → Morgan). Ký hiệu NST X, Y giữ
@@ -61,10 +64,10 @@ isIndex: false
 - **♀ XY × ♂ XX:** bướm, chim, ếch nhái, bò sát, tằm, dâu tây.
 
 ## 3. Di truyền liên kết với giới tính (Morgan)
-- Là hiện tượng di truyền mà gen quy định tính trạng thường nằm trên NST giới tính. (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- Là hiện tượng di truyền mà gen quy định tính trạng thường nằm trên NST giới tính. (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 
 ### a. Di truyền liên kết với NST X
-- **Thí nghiệm:** (→ [Mô phỏng lai ruồi giấm – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [Protocol Morgan – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+- **Thí nghiệm:** (→ [Mô phỏng lai ruồi giấm – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [Protocol Morgan – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 
 | | | | |
 |---|---|---|---|
@@ -84,7 +87,7 @@ isIndex: false
 - F2: 1 đỏ (♀) $X^AX^a$ : 1 trắng (♀) $X^aX^a$ : 1 đỏ (♂) $X^AY$ : 1 trắng (♂) $X^aY$
 
 - **Phân tích thí nghiệm:**
-	- Lai thuận nghịch cho kết quả khác nhau. (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/), [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- Lai thuận nghịch cho kết quả khác nhau. (→ [Quy luật Mendel](/blog/quy-luat-mendel/), [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 	- Phép lai nghịch: Pt/c → F1 phân tính.
 	- Tính trạng phân bố không đều ở 2 giới.
 	- → gen quy định màu mắt / NST giới tính.
@@ -132,7 +135,7 @@ isIndex: false
 	- → $\Sigma = \dfrac{k(3k+1)}{2}$
 
 ### Trường hợp giao phối ngẫu nhiên
-- → Tính tần số alen của cả 2 giới. (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- → Tính tần số alen của cả 2 giới. (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 - Gen có k alen / X, y alen / Y
 	- → XX: $k + C^2_k$
 	- XY: $k \cdot y$
@@ -141,13 +144,13 @@ isIndex: false
 	- Đồng hợp: $k$
 	- Dị hợp: $C^2_k$
 	- → $\Sigma = k + C^2_k = \dfrac{k(k+1)}{2}$.
-- Tam bội: số kiểu gen max $= \dfrac{r(r+1)(r+2)}{1 \cdot 2 \cdot 3}$ (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- Tam bội: số kiểu gen max $= \dfrac{r(r+1)(r+2)}{1 \cdot 2 \cdot 3}$ (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 - Tứ bội: số kiểu gen max $= \dfrac{r(r+1)(r+2)(r+3)}{1 \cdot 2 \cdot 3 \cdot 4}$
 
 ## Liên kết gen trên NST giới tính – Hoán vị gen
 > Trong sổ: mục **III** của phần C (trang 028, trang phải).
 
-- 1 gen, 1 tính trạng, trội hoàn toàn: $f = 2x$ (→ [Liên kết gen và hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/))
+- 1 gen, 1 tính trạng, trội hoàn toàn: $f = 2x$ (→ [Liên kết gen và hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/))
 - P: T,T × T,T
 	- $X^A_B X^a_b$ × $X^A_B Y$
 - Gp: $X^A_B = X^a_b = 0{,}5 - x$ ; $X^A_b = X^a_B = x$ | ½ $X^A_B$ : ½ Y
@@ -156,4 +159,4 @@ isIndex: false
 	- XY (50%): $X^A_B Y$ ; $X^a_b Y$ ; $X^A_b Y$ ; $X^a_B Y$
 		- $= \dfrac{0{,}5 - x}{2} : \dfrac{0{,}5 - x}{2} : \dfrac{x}{2} : \dfrac{x}{2}$
 
-- Xem thêm: [Tổng ôn – 8. Mẹo bài tập phả hệ, bệnh di truyền ở người](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#8-mẹo-bài-tập-phả-hệ-bệnh-di-truyền-ở-người) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 8. Mẹo bài tập phả hệ, bệnh di truyền ở người](/blog/tong-on-va-meo-lam-bai/#8-mẹo-bài-tập-phả-hệ-bệnh-di-truyền-ở-người) – mẹo làm bài, ghi chú ôn tập

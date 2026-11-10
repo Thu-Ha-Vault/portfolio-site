@@ -8,6 +8,9 @@ folder: Sinh học / ISO IEC 17025 2017 Laboratory Management Systems
 vaultPath: >-
   Resources/Sinh học/ISO IEC 17025 2017 Laboratory Management Systems/Module 2
   Essential Requirements of Laboratory Process Management.md
+url: /blog/essential-requirements-of-laboratory-process-management/
+topic: biology
+updated: '2026-10-14'
 description: >-
   Having completed this module you will be able to: Separate the requirements of
   impartiality from the requirements of confidentiality in ISO/IEC 17025:2017
@@ -26,6 +29,6 @@ isIndex: false
 # 4. Contracts, Validation, Sampling & Handling
 
 # 5. Technical Records, Uncertainty, Results Validity & Reports
-- Xem thêm: [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/) – xác nhận (validation) dữ liệu và kết quả
+- Xem thêm: [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/) – xác nhận (validation) dữ liệu và kết quả
 
 # 6. Lesson Summary

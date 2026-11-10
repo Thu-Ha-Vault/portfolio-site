@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/01 - Phản ứng định tính monosaccharide.md
+url: /blog/cac-phan-ung-dinh-tinh-monosaccharide/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 6 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -24,10 +27,10 @@ isIndex: false
 - Phân biệt **monosaccharide / disaccharide** (Barfoed) và **aldose / ketose** (Xelivanop – Seliwanoff).
 
 ## Nguyên lý
-- **Đường khử (reducing sugar)**: còn nhóm **aldehyde (-CHO)** hoặc nhóm ketone tự do (ở carbon anomer) → khử Cu²⁺ (xanh) thành **Cu₂O** (kết tủa đỏ gạch) hoặc Ag⁺ thành Ag kim loại. (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
-	- **Maltose**: 2 gốc α-glucose nối bằng liên kết **α-1,4-glycoside** → vẫn còn nhóm khử. (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
-	- **Sucrose**: α-glucose + β-fructose nối **1,2-glycoside** tại cả hai carbon anomer → **không có tính khử**. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/10-do-ben-va-tinh-dac-hieu-cua-enzyme/))
-- **Thuốc thử dùng Cu²⁺**: (→ [Định tính amino acid và protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/03-phan-tich-dinh-tinh-amino-acid-va-protein/))
+- **Đường khử (reducing sugar)**: còn nhóm **aldehyde (-CHO)** hoặc nhóm ketone tự do (ở carbon anomer) → khử Cu²⁺ (xanh) thành **Cu₂O** (kết tủa đỏ gạch) hoặc Ag⁺ thành Ag kim loại. (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
+	- **Maltose**: 2 gốc α-glucose nối bằng liên kết **α-1,4-glycoside** → vẫn còn nhóm khử. (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
+	- **Sucrose**: α-glucose + β-fructose nối **1,2-glycoside** tại cả hai carbon anomer → **không có tính khử**. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/))
+- **Thuốc thử dùng Cu²⁺**: (→ [Định tính amino acid và protein](/blog/phan-tich-dinh-tinh-amino-acid-va-protein/))
 	- **Tromer**: Cu(OH)₂ trong NaOH; dư CuSO₄ dễ tạo CuO đen lấn át màu.
 	- **Fehling**: Tromer cải tiến, Cu²⁺ tạo phức với **kali natri tartrat**.
 	- **Benedict**: Cu²⁺ + Na₂CO₃ + natri citrat; rất nhạy, dùng **bán định lượng** glucose.
@@ -66,7 +69,7 @@ isIndex: false
 - **Xelivanop** đặc hiệu với ketose: fructose phản ứng nhanh hơn glucose nhiều → phân biệt aldose/ketose, còn dùng để định lượng fructose.
 - Phản ứng tráng gương chứng minh tính khử của đường; trong công nghiệp thường dùng sucrose (rẻ) vì sau thuỷ phân cho glucose + fructose (fructose chuyển thành glucose trong môi trường kiềm).
 - Lưu ý: trong bản gốc, ở TN4 và TN6 số thứ tự ống ở mục *Kết quả* không khớp với mục *Giải thích*; note này ghi theo kết luận (glucose dương tính Barfoed, fructose đổi màu trước).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-mono` làm lại bài này, màu từng ống khớp bảng kết quả.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-mono` làm lại bài này, màu từng ống khớp bảng kết quả.
 
 ## Tài liệu gốc
 *Định tính monosaccharide.pdf*

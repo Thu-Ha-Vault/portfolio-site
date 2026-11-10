@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/09 - Vocabulaire R.md
+url: /blog/vocabulaire-r-tu-vung-r/
+topic: french
+updated: '2026-10-14'
 order: 9
 description: >-
   Ramèner → Ramener Recueiller → Recueillir Régles → Règles Remèdier → Remédier

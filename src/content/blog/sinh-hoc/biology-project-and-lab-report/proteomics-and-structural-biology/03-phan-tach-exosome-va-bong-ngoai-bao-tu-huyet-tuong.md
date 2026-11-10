@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/03 - Phân tách exosome và bóng ngoại bào từ huyết tương.md
+url: /blog/phan-tach-exosome-va-cac-bong-ngoai-bao-tu-huyet-tuong-nguoi/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -34,7 +37,7 @@ isIndex: false
 | **Ectosome / microvesicle** | 100–500 nm | Màng sinh chất lồi ra, thắt lại | CD9, CD81 |
 
 - Phân loại mới theo kích thước (Théry 2018): **EV nhỏ** (< 200 nm) và **EV trung bình/lớn** (> 200 nm).
-- **Nguyên lý tách**: kết hợp **lọc màng 0,22 µm** (loại hạt > 220 nm) với **cột sắc ký lọc gel** Sepharose CL-4B: EV kích thước lớn đi ra trước, còn hạt < 30 nm và protein huyết tương bị giữ lại lâu hơn trong lỗ gel → ra sau. (→ [Tinh sạch protease nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/))
+- **Nguyên lý tách**: kết hợp **lọc màng 0,22 µm** (loại hạt > 220 nm) với **cột sắc ký lọc gel** Sepharose CL-4B: EV kích thước lớn đi ra trước, còn hạt < 30 nm và protein huyết tương bị giữ lại lâu hơn trong lỗ gel → ra sau. (→ [Tinh sạch protease nọc nhện](/blog/tinh-sach-enzyme/))
 
 ## Vật liệu & phương pháp
 - **Mẫu**: huyết tương người bình thường; PBS pH 7,4 lọc 0,22 µm; cột **Sepharose CL-4B**; ethanol 20% bảo quản cột.
@@ -51,9 +54,9 @@ isIndex: false
 	- Lượng protein tăng dần sau phân đoạn 11 (protein huyết tương tự do bắt đầu ra khỏi cột).
 
 ## Kết luận & thảo luận
-- Sắc ký lọc gel kết hợp lọc 0,22 µm tách được phân đoạn giàu EV (8–12) khỏi phần lớn protein huyết tương, làm cơ sở cho phân tích hệ protein exosome. (→ [Exosome ung thư gan (tiểu luận)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/), [Exosome ung thư gan (slide)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/09-he-protein-exosome-ung-thu-gan-slide/))
-- Để khẳng định EV cần thêm kiểm tra marker (CD63, CD81, TSG101; marker âm Calnexin), NTA, TEM – như trong nghiên cứu được trình bày ở [tiểu luận](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – protocol `exo-plasma-ev`: cột Sepharose CL-4B 20 phân đoạn, SDS-PAGE khớp giếng 8–12, NTA, Western blot.
+- Sắc ký lọc gel kết hợp lọc 0,22 µm tách được phân đoạn giàu EV (8–12) khỏi phần lớn protein huyết tương, làm cơ sở cho phân tích hệ protein exosome. (→ [Exosome ung thư gan (tiểu luận)](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/), [Exosome ung thư gan (slide)](/blog/slide-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan/))
+- Để khẳng định EV cần thêm kiểm tra marker (CD63, CD81, TSG101; marker âm Calnexin), NTA, TEM – như trong nghiên cứu được trình bày ở [tiểu luận](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/).
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – protocol `exo-plasma-ev`: cột Sepharose CL-4B 20 phân đoạn, SDS-PAGE khớp giếng 8–12, NTA, Western blot.
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 3.pdf*

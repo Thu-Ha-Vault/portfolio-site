@@ -8,6 +8,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/02 - Hoá học.md
+url: /blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/
+topic: university-courses
+updated: '2026-10-19'
 order: 2
 description: >-
   Tài liệu Hoá năm 1–2 (HUS – ĐHQGHN) lưu trên Google Drive, folder Hoá. Tài
@@ -15,7 +18,7 @@ description: >-
   Đề thi giữa kì Hoá đại cương 2019–2020.
 isIndex: false
 ---
-> Tài liệu Hoá năm 1–2 (HUS – ĐHQGHN) lưu trên Google Drive, folder [Hoá](https://drive.google.com/drive/folders/16Pdsc3qgxKBlIT0Hq_mgP9gj0QRLpchC). Tài liệu chỉ để link, không tải vào vault. Đề thi giữa kì đã chép kèm lời giải ở [Đề thi giữa kì Hoá đại cương 2019–2020](/blog/hoc-phan-dai-cuong/02a-de-thi-giua-ki-hoa-dai-cuong-2019-2020/).
+> Tài liệu Hoá năm 1–2 (HUS – ĐHQGHN) lưu trên Google Drive, folder [Hoá](https://drive.google.com/drive/folders/16Pdsc3qgxKBlIT0Hq_mgP9gj0QRLpchC). Tài liệu chỉ để link, không tải vào vault. Đề thi giữa kì đã chép kèm lời giải ở [Đề thi giữa kì Hoá đại cương 2019–2020](/blog/de-thi-giua-ki-1-hoa-dai-cuong-2019-2020-3-de-kem-loi-giai/).
 
 ## Danh mục tài liệu
 
@@ -49,7 +52,7 @@ Folder: [Hoá đại cương](https://drive.google.com/drive/folders/1-jZFjjlinC
 | Hoá đc | Shortcut | [Mở](https://drive.google.com/file/d/12d-nhejJcFD0saoBloApxizMf7A7BGF-/view?usp=drivesdk) |
 | HDC Thầy Bạch | Shortcut | [Mở](https://drive.google.com/file/d/10ySD7o3tVl6dZfsov2Q34j-cEa2K0cwZ/view?usp=drivesdk) |
 
-- Xem thêm: [Virtual Lab: Thực tập hoá đại cương Bài 1, 2, 4, 5A, 7, 9](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – cân, kết tủa, lọc, rửa; pha dung dịch chuẩn và chuẩn độ; định tính anion với mẫu ngẫu nhiên; nhiệt hoà tan bằng nhiệt lượng kế; tốc độ phản ứng theo nồng độ, nhiệt độ, xúc tác; chuyển dịch cân bằng Le Chatelier theo giáo trình này.
+- Xem thêm: [Virtual Lab: Thực tập hoá đại cương Bài 1, 2, 4, 5A, 7, 9](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – cân, kết tủa, lọc, rửa; pha dung dịch chuẩn và chuẩn độ; định tính anion với mẫu ngẫu nhiên; nhiệt hoà tan bằng nhiệt lượng kế; tốc độ phản ứng theo nồng độ, nhiệt độ, xúc tác; chuyển dịch cân bằng Le Chatelier theo giáo trình này.
 
 ### Hoá phân tích
 
@@ -67,7 +70,7 @@ Folder: [Hoá phân tích](https://drive.google.com/drive/folders/1OuM_zN92H8IiE
 
 - **Mã môn**: CHE 1080 · **3 tín chỉ** · bắt buộc · không có môn tiên quyết.
 - **Giờ học**: 33 giờ lý thuyết + 10 giờ bài tập + 2 giờ kiểm tra = 45 giờ. Thực hành là môn riêng (→ *Thực tập hoá đại cương* trong bảng trên).
-- **Môn kế tiếp**: Hoá vô cơ, Hoá phân tích, Hoá hữu cơ, Hoá lý, Hoá vật liệu, Hoá môi trường, **Hoá sinh** (→ [Biochemistry and Molecular Biology](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/)).
+- **Môn kế tiếp**: Hoá vô cơ, Hoá phân tích, Hoá hữu cơ, Hoá lý, Hoá vật liệu, Hoá môi trường, **Hoá sinh** (→ [Biochemistry and Molecular Biology](/topics/biochemistry-and-molecular-biology/)).
 - **Đánh giá**: thường xuyên 10% · 2 bài giữa kì × 15% (tuần 7 và tuần 15, mỗi bài 1 tiết) · thi cuối kì viết 90 phút 60%. Điều kiện dự thi: dự ≥ 80% giờ lý thuyết và đủ điểm thành phần.
 - **Học liệu bắt buộc**: Phạm Văn Nhiêu – *Hoá đại cương (Phần cấu tạo chất)*, NXB ĐHQGHN 2003; Vũ Đăng Độ – *Cơ sở lý thuyết các quá trình hoá học*, NXB Giáo dục 2010; Hoàng Nhâm – *Hoá vô cơ* tập 1, 1999.
 - **Tham khảo**: Lâm Ngọc Thiềm, Bùi Duy Cam – *Hoá đại cương* (2007); Vũ Đăng Độ và cs. – *Bài tập cơ sở lí thuyết các quá trình hoá học* (2010); Steven S. Zumdahl – *Chemistry*, 7th ed. (2007).
@@ -84,7 +87,7 @@ Folder: [Hoá phân tích](https://drive.google.com/drive/folders/1OuM_zN92H8IiE
 
 #### Chương 2. Cấu tạo phân tử và liên kết hoá học (6 LT + 2 BT)
 
-- Các loại liên kết: ion, cộng hoá trị, kim loại, tương tác Van der Waals, **liên kết hydrogen** (→ [Thành phần hoá học của tế bào – nước và liên kết hydrogen](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/)).
+- Các loại liên kết: ion, cộng hoá trị, kim loại, tương tác Van der Waals, **liên kết hydrogen** (→ [Thành phần hoá học của tế bào – nước và liên kết hydrogen](/blog/thanh-phan-hoa-hoc-cua-te-bao/)).
 - **Phương pháp VB** (liên kết hoá trị): bài toán H₂ của Heitler–London, liên kết σ và π, **lai hoá** sp, sp², sp³.
 - **Phương pháp MO** (orbital phân tử): ion H₂⁺, phân tử hai nguyên tử đồng hạch A₂ và dị hạch AB, **bậc liên kết** $= \dfrac{n_{\text{liên kết}} - n_{\text{phản liên kết}}}{2}$, từ tính; phương pháp **MO-Hückel** cho hệ electron π; liên kết trong phức chất.
 
@@ -112,14 +115,14 @@ Folder: [Hoá phân tích](https://drive.google.com/drive/folders/1OuM_zN92H8IiE
 
 - Tốc độ phản ứng, hằng số tốc độ, **bậc phản ứng**, phân tử số.
 - Ảnh hưởng của nhiệt độ: **phương trình Arrhenius** $k = A e^{-E_a/RT}$, $\ln\dfrac{k_2}{k_1} = \dfrac{E_a}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)$; năng lượng hoạt hoá; thuyết va chạm hoạt động, thuyết trạng thái chuyển tiếp.
-- Chất xúc tác, xúc tác đồng thể và dị thể; **xúc tác enzyme** trong hệ sinh học (→ [Nhiệt độ, pH và ion lên amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/09-anh-huong-cua-nhiet-do-ph-va-ion-len-amylase/)).
+- Chất xúc tác, xúc tác đồng thể và dị thể; **xúc tác enzyme** trong hệ sinh học (→ [Nhiệt độ, pH và ion lên amylase](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/)).
 - Phản ứng bậc 1: $\ln\dfrac{[A]_0}{[A]} = kt$, $t_{1/2} = \dfrac{\ln 2}{k}$.
 
 #### Chương 7. Dung dịch (5 LT + 1 BT)
 
 - Nồng độ $C_M$, $C_N$, %; sự điện li, độ điện li; tích số ion của nước, pH.
 - **Thuyết Brønsted** về acid – base, cặp acid – base liên hợp; $K_a$, $K_b$, $K_a K_b = K_w$.
-- Tính pH của dung dịch acid, base, muối; **hệ đệm** $\text{pH} = \text{p}K_a + \log\dfrac{[\text{base}]}{[\text{acid}]}$ (→ [Tính chất của protein – pI và đệm acetate](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/)); chất chỉ thị màu; sự thuỷ phân.
+- Tính pH của dung dịch acid, base, muối; **hệ đệm** $\text{pH} = \text{p}K_a + \log\dfrac{[\text{base}]}{[\text{acid}]}$ (→ [Tính chất của protein – pI và đệm acetate](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/)); chất chỉ thị màu; sự thuỷ phân.
 - Chất điện li ít tan, **tích số tan**; cân bằng tạo phức, hằng số bền và không bền; dung dịch keo.
 
 #### Chương 8. Phản ứng oxi hoá – khử. Điện hoá học (3 LT + 1 BT)

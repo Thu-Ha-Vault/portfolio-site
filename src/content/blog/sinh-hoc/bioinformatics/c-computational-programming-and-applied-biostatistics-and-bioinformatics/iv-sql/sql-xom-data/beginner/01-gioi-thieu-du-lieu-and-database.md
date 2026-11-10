@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Beginner/01 - Giới
   thiệu - Dữ liệu & Database.md
+url: /blog/gioi-thieu-du-lieu-and-database/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-beginner/lessons/1'
 order: 1
 description: >-
@@ -25,7 +28,7 @@ isIndex: false
 	- File nặng, mở chậm
 	- Nhiều người không thể cùng sửa
 	- Khó liên kết dữ liệu giữa các sheet
-- **Database** giải quyết tất cả các vấn đề trên. Nó lưu trữ dữ liệu có cấu trúc, cho phép truy vấn nhanh và hỗ trợ nhiều người dùng cùng lúc. (→ [Database (SQL Tutorial)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/02-database/))
+- **Database** giải quyết tất cả các vấn đề trên. Nó lưu trữ dữ liệu có cấu trúc, cho phép truy vấn nhanh và hỗ trợ nhiều người dùng cùng lúc. (→ [Database (SQL Tutorial)](/blog/database/))
 ## b. Database vs Excel
 | Tiêu chí         | Excel                  | Database                   |
 | ---------------- | ---------------------- | -------------------------- |
@@ -34,10 +37,10 @@ isIndex: false
 | Nhiều người dùng | Khó đồng bộ            | Hỗ trợ sẵn                 |
 | Liên kết dữ liệu | Dùng VLOOKUP           | Dùng JOIN (mạnh hơn nhiều) |
 
-- Xem thêm: [Ask questions to make Data-Driven decisions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/02-ask-questions-to-make-data-driven-decisions/), [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/) – spreadsheet so với database; Database/Criterion Range trong Excel
+- Xem thêm: [Ask questions to make Data-Driven decisions](/blog/ask-questions-to-make-data-driven-decisions/), [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/) – spreadsheet so với database; Database/Criterion Range trong Excel
 
 ## c. Bảng, dòng, cột
-- Database lưu dữ liệu trong các **bảng** (table). Mỗi bảng gồm: (→ [Prepare Data for Exploration](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/03-prepare-data-for-exploration/))
+- Database lưu dữ liệu trong các **bảng** (table). Mỗi bảng gồm: (→ [Prepare Data for Exploration](/blog/prepare-data-for-exploration/))
 	- **Cột** (column): Loại thông tin. VD: `full_name`, `salary`
 	- **Dòng** (row): Một bản ghi cụ thể. VD: thông tin của nhân viên Henry Iverson
 - Ví dụ bảng `employees`:

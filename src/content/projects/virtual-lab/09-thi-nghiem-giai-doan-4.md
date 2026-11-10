@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/09 - Thí nghiệm giai đoạn 4.md
+url: /projects/virtual-lab/thi-nghiem-giai-doan-4/
+updated: '2026-10-16'
 date: '2026-10-16'
 status: active
 order: 9
@@ -17,7 +19,7 @@ description: >-
   thiết bị thật, số liệu và nguồn, bài thực hành gốc, kết quả mô phỏng so với số
   liệu của bài, làm sai thì ra gì. Số minh hoạ là số chỉnh cho mô h
 ---
-Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm giai đoạn 3](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/): thiết bị thật, số liệu và nguồn, bài thực hành gốc, kết quả mô phỏng so với số liệu của bài, làm sai thì ra gì. Số *minh hoạ* là số chỉnh cho mô hình chạy hợp lý, không phải số đo.
+Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm giai đoạn 3](/projects/virtual-lab/thi-nghiem-giai-doan-3/): thiết bị thật, số liệu và nguồn, bài thực hành gốc, kết quả mô phỏng so với số liệu của bài, làm sai thì ra gì. Số *minh hoạ* là số chỉnh cho mô hình chạy hợp lý, không phải số đo.
 
 ## 0. Phát hành an toàn và chạy không cần mạng
 - **Công cụ kiểm tra**: REA (`rea-agents` 6.5.0, https://github.com/morluto/rea, MIT), dùng qua skill `rea-audit` của repo mã nguồn. Chỉ đọc file, không chạy app.
@@ -27,7 +29,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- Kiểm tra toàn vẹn `app.asar` chỉ bật trên macOS. Windows *chưa xác minh* electron-builder 25.1.8 nhúng mã băm; bật mà thiếu mã băm thì app không mở được.
 	- Mọi trang HTML trong bản cài có Content-Security-Policy và `nosniff`; trang không rời được `app://lab`, link `https` mở bằng trình duyệt, cửa sổ mới bị chặn.
 - **Sau khi sửa**, `rea-audit` trên bản Linux đã đóng gói: các fuse đúng như trên; cửa sổ có `contextIsolation`, `sandbox`, không preload, không IPC. Chạy thử bằng `xvfb-run`: app mở bình thường; đặt `ELECTRON_RUN_AS_NODE=1` thì vẫn mở app, không thành Node.
-- **2026-10-16, sau khi bản cài phục vụ thêm file `.jpg`** (ảnh vệ tinh của bản đồ Cát Bà, [note 10](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/)): `rea-audit` trên mã nguồn: cửa sổ vẫn có `contextIsolation`, `sandbox`, không preload, không IPC; yêu cầu mạng chỉ có hai chỗ trong `src/main.js`, đều tải file nội bộ trong `data/` (JSON và `data/catba/height.png`). Fuse đọc trên Electron chưa đóng gói nên còn mặc định; bản đóng gói được kiểm bằng `desktop/check-fuses.mjs` trong `desktop.yml`.
+- **2026-10-16, sau khi bản cài phục vụ thêm file `.jpg`** (ảnh vệ tinh của bản đồ Cát Bà, [note 10](/projects/virtual-lab/thi-nghiem-giai-doan-5/)): `rea-audit` trên mã nguồn: cửa sổ vẫn có `contextIsolation`, `sandbox`, không preload, không IPC; yêu cầu mạng chỉ có hai chỗ trong `src/main.js`, đều tải file nội bộ trong `data/` (JSON và `data/catba/height.png`). Fuse đọc trên Electron chưa đóng gói nên còn mặc định; bản đóng gói được kiểm bằng `desktop/check-fuses.mjs` trong `desktop.yml`.
 - **Bản web**:
 	- Three.js r170 chép vào `vendor/three/` ở gốc repo (kèm giấy phép MIT), dùng chung cho web và bản cài; không còn tải từ jsDelivr.
 	- CSP trong `index.html` chỉ cho chạy đúng import map (theo mã băm sha256) và script của chính app. `tests/csp-check.mjs` kiểm mã băm, chạy trong CI.
@@ -55,7 +57,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- [ ] Thêm secret `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` cho repo và gắn subdomain trong Cloudflare (README của repo, mục "Bản web công khai"). Workflow `pages.yml` đã chạy thử: dựng và kiểm CSP đạt, bỏ qua bước đẩy vì chưa có secret. ⏫
 
 ## 1. Tinh sạch enzyme
-- **Bài gốc**: [Enzymology bài 2: tinh sạch enzyme](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/) và bài báo nguồn [Langenegger et al. 2018](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/04-protease-pqm-tu-noc-nhen-cupiennius-salei/).
+- **Bài gốc**: [Enzymology bài 2: tinh sạch enzyme](/blog/tinh-sach-enzyme/) và bài báo nguồn [Langenegger et al. 2018](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/).
 - **Lõi** `src/core/purify.js`, số liệu `data/purify.json`:
 	- Quy trình như bài báo: nọc thô 3 mL → lọc gel Superdex 75 HR (pH 5,0) → trao đổi cation MiniS PE 4.6/50 (0–0,65 M NaCl) → RP-HPLC C4.
 	- Mỗi cột cho sắc ký đồ theo phân đoạn (A280, hoạt độ, muối). Người học đo hoạt độ FRET (DABCYL–EDANS, 340/485 nm) rồi gộp phân đoạn.
@@ -74,7 +76,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 - Protocol `pu-protease`.
 
 ## 2. Bóng ngoại bào và so sánh gel 2D
-- **Bài gốc**: [Proteomics bài 03](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/03-phan-tach-exosome-va-bong-ngoai-bao-tu-huyet-tuong/), [bài 04](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/04-phan-tich-anh-gel-2d-bang-phoretix/), [tiểu luận exosome ung thư gan](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/).
+- **Bài gốc**: [Proteomics bài 03](/blog/phan-tach-exosome-va-cac-bong-ngoai-bao-tu-huyet-tuong-nguoi/), [bài 04](/blog/phan-tich-hinh-anh-ban-gel-dien-di-hai-chieu-su-dung-phan-mem-phoretix/), [tiểu luận exosome ung thư gan](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/).
 - **Lõi** `src/core/exosome.js`, `data/exosome.json`:
 	- Huyết tương ly tâm 1500 × g rồi 10000 × g, pha 1:1 PBS, lọc 0,22 µm, cột Sepharose CL-4B 3 mL, 20 phân đoạn × 150 µL.
 	- Thể tích rửa giải theo đường kính thuỷ động (Kav, *minh hoạ*): EV ra ở thể tích rỗng, rồi LDL, IgM, α2-macroglobulin, IgG, HDL, transferrin, albumin.
@@ -88,7 +90,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 - Protocol `exo-plasma-ev`, `pt-phoretix`.
 
 ## 3. Phân tích số liệu
-- **Bài gốc**: [Biostatistics 01](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/), [02](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/), [03](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/03-tuong-quan-va-hoi-quy/).
+- **Bài gốc**: [Biostatistics 01](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), [02](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/), [03](/blog/tuong-quan-va-hoi-quy/).
 - **Lõi** `src/core/stats.js` dùng chung (`genetics.js`, `evolution.js`, `fieldeco.js` gọi lại) và `src/core/stats-lab.js`, số liệu `data/stats.json` lấy từ file Excel bài làm.
 - **Khớp Excel** (kiểm thử):
 	- Chiều cao 40 thanh niên: TB 162,775; KTC 95 % (161,206; 164,344); KTC phương sai (17,635; 43,331).
@@ -100,11 +102,11 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- Đa thức bậc 4 lệch Excel ở chữ số thứ 4 nhưng khớp numpy: Excel làm tròn khi ma trận gần suy biến.
 - Hệ số di truyền trong bài làm tính bằng h² = 1 − 1/F, app ghi đúng như vậy.
 - Bảng phân tích: nạp số liệu bài tập, sổ thí nghiệm của bất kỳ lõi nào, hoặc CSV dán vào; mỗi kết quả kèm mã R.
-- Không đưa bộ nhà ở Boston của [bài 04 Introduction to Data Analysis](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/04-phan-tich-du-lieu-nha-o-boston/): biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
+- Không đưa bộ nhà ở Boston của [bài 04 Introduction to Data Analysis](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/): biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
 - Protocol `st-biostat`.
 
 ## 4. Thực địa mở rộng
-- **Bài gốc**: [Field Study 02](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/), [03](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/03-dvcxs-duoi-nuoc-ca-luong-cu-bo-sat/), [05](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/05-dvkxs-duoi-nuoc-giap-xac/), [07](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/07-thuc-vat-bac-cao-ardisia/), [08](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/08-thuc-vat-bac-thap-nam-trametes/).
+- **Bài gốc**: [Field Study 02](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/), [03](/blog/dong-vat-co-xuong-song-duoi-nuoc-ca-luong-cu-bo-sat/), [05](/blog/dong-vat-khong-xuong-song-duoi-nuoc-giap-xac-cua/), [07](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/), [08](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/).
 - **Dơi**: máy ghi siêu âm ở Động Trung Trang tách hai đỉnh tần số 98,6 kHz (~100 con) và 78,1 kHz (~300 con) theo báo cáo; độ lệch chuẩn 1,2 kHz là *minh hoạ*. Không có máy thì không tách được hai loài.
 - **Chim**: chỉ gồm các taxon trong báo cáo. Tỉ lệ bắt gặp chỉnh để 4 giờ buổi sáng yên lặng có loa phát tiếng cho trung bình 4 Hút mật, 1 Bông lau họng vạch, 1 Quạ. Đi ồn ào thì giảm mạnh.
 - **Cá và cua** ở bãi triều Xuân Đám: cá bống, thòi lòi chỉ bắt được bằng ống hút bùn; cua phải thu lúc triều rút, cua bãi triều (Grapsidae) phải đào hố; không đeo găng thì cảnh báo. Số con mỗi lần là *minh hoạ* (báo cáo không ghi số lượng).

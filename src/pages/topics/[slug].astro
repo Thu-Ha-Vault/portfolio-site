@@ -1,0 +1,40 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import T from '../../components/T.astro';
+import { blogEntries, childrenOf, breadcrumbs, hasMermaid, param } from '../../lib';
+
+export async function getStaticPaths() {
+  const all = await blogEntries();
+  return all.filter((e) => e.data.isIndex).map((entry) => ({ params: { slug: param(entry.data.url) }, props: { entry, all } }));
+}
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const kids = childrenOf(all, entry.id);
+const crumbs = breadcrumbs(all, entry.id);
+const countIn = (id: string) => all.filter((e) => e.id.startsWith(id + '/') && !e.data.isIndex).length;
+---
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)}>
+  <div class="wrap article">
+    <ol class="crumbs">
+      <li><a href="/topics/"><T k="topics" /></a></li>
+      {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
+    </ol>
+    <header class="article-head">
+      <h1>{d.title}</h1>
+      <p class="byline">{countIn(entry.id)} <T k="notes" /></p>
+    </header>
+    {kids.length > 0 && (
+      <section class="children" style="max-width:46rem">
+        <h2><T k="inThisTopic" /></h2>
+        <ul class="rows">
+          {kids.map((k) => (
+            <li><a href={k.data.url}><span class={`t${k.data.isIndex ? ' is-topic' : ''}`}>{k.data.title}</span><span class="where">{k.data.isIndex ? countIn(k.id) : ''}</span></a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+    <article class="prose"><Content /></article>
+  </div>
+</Base>

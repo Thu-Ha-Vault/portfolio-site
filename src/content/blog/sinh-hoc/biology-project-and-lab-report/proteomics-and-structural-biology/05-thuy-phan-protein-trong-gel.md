@@ -10,6 +10,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/05 - Thuỷ phân protein trong gel.md
+url: /blog/thuy-phan-protein-trong-gel-dien-di/
+topic: biology
+updated: '2026-10-16'
 order: 5
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -25,8 +28,8 @@ isIndex: false
 ## Nguyên lý
 - Protein trong gel polyacrylamide đang gắn thuốc nhuộm **Coomassie** → phải **tẩy màu** và **phá cấu trúc không gian** để trypsin tiếp cận được.
 	- **Khử (reduction)** bằng **DTT**: cắt cầu disulfide.
-	- **Alkyl hoá** bằng **iodoacetamide (IAA)**: gắn nhóm carbamidomethyl lên cystein, ngăn cầu disulfide tái tạo. (→ [Exosome ung thư gan (tiểu luận)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/))
-- **Trypsin** cắt sau **Lysine (K)** và **Arginine (R)** (phía đầu C), **không cắt** nếu K/R đứng trước **Proline (P)**. (→ [Định tính amino acid và protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/03-phan-tich-dinh-tinh-amino-acid-va-protein/))
+	- **Alkyl hoá** bằng **iodoacetamide (IAA)**: gắn nhóm carbamidomethyl lên cystein, ngăn cầu disulfide tái tạo. (→ [Exosome ung thư gan (tiểu luận)](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/))
+- **Trypsin** cắt sau **Lysine (K)** và **Arginine (R)** (phía đầu C), **không cắt** nếu K/R đứng trước **Proline (P)**. (→ [Định tính amino acid và protein](/blog/phan-tich-dinh-tinh-amino-acid-va-protein/))
 	- Tạo các oligopeptide 6–20 acid amin – kích thước thích hợp cho khối phổ.
 - **Ziptip C18**: cột ái lực pha đảo nhỏ để **loại muối** và cô peptide trước khi nhỏ lên đĩa MS.
 
@@ -61,9 +64,9 @@ isIndex: false
 - Bản báo cáo chỉ trình bày nguyên lý và quy trình; không có số liệu kết quả (không rõ trong bản gốc).
 
 ## Kết luận & thảo luận
-- In-gel digestion là cầu nối giữa điện di (2D-PAGE/SDS-PAGE) và khối phổ: spot → peptide → [MALDI-TOF MS/PMF](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/07-khoi-pho-maldi-tof-ms-va-nhan-dang-protein/) hoặc [LC-MS/MS](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/06-sac-ky-long-khoi-pho-lc-ms-ms/). (→ [Protease PQM nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/04-protease-pqm-tu-noc-nhen-cupiennius-salei/))
+- In-gel digestion là cầu nối giữa điện di (2D-PAGE/SDS-PAGE) và khối phổ: spot → peptide → [MALDI-TOF MS/PMF](/blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/) hoặc [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/). (→ [Protease PQM nọc nhện](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/))
 - Do khử bằng DTT và alkyl hoá bằng IAA, khi tra cứu Mascot phải khai báo **Carbamidomethyl (C)** là cải biến cố định.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – bước thuỷ phân trypsin trong gel của protocol `pt-2dpage`.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – bước thuỷ phân trypsin trong gel của protocol `pt-2dpage`.
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 5.pdf*

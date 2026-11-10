@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/03 - Bộ
   xương ếch và nguồn gốc lưỡng cư.md
+url: /blog/bo-xuong-ech-va-nguon-goc-luong-cu/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Báo cáo thực hành viết tay "Quan sát bộ xương ếch" (3 trang) – Thực hành
@@ -36,7 +39,7 @@ isIndex: false
 	5. Đánh giá nguồn gốc tiến hoá của lưỡng cư dựa vào đặc điểm của bộ xương? (5)
 
 ## Nguyên lý
-- **Chi năm ngón** gồm 3 phần (cánh tay/đùi – ống tay/ống chân – bàn tay/bàn chân) là cơ quan **tương đồng** ở mọi động vật có xương sống bốn chân. (→ [Cơ quan tương đồng](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/))
+- **Chi năm ngón** gồm 3 phần (cánh tay/đùi – ống tay/ống chân – bàn tay/bàn chân) là cơ quan **tương đồng** ở mọi động vật có xương sống bốn chân. (→ [Cơ quan tương đồng](/blog/bang-chung-va-co-che-tien-hoa/))
 - Ếch là **lưỡng cư không đuôi**, chuyển vận bằng **nhảy** nên bộ xương chi biến đổi mạnh.
 
 ## Vật liệu & phương pháp
@@ -78,12 +81,12 @@ isIndex: false
 
 ### 3. Nguồn gốc tiến hoá của lưỡng cư dựa vào bộ xương
 - Để chuyển từ nước lên cạn, sinh vật phải đáp ứng yêu cầu về **cơ quan hô hấp trên cạn** (phổi), **cơ quan di chuyển trên cạn** và **môi trường sống phù hợp** trên cạn.
-	1. Ở **kỉ Devon** (cách đây khoảng 400(?) triệu năm), Trái Đất đã có thực vật ở cạn và động vật không xương sống ở cạn → môi trường sống và nguồn thức ăn lí tưởng. (→ [Kỉ Đêvôn: phát sinh lưỡng cư](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/))
+	1. Ở **kỉ Devon** (cách đây khoảng 400(?) triệu năm), Trái Đất đã có thực vật ở cạn và động vật không xương sống ở cạn → môi trường sống và nguồn thức ăn lí tưởng. (→ [Kỉ Đêvôn: phát sinh lưỡng cư](/blog/su-phat-sinh-va-phat-trien-cua-su-song/))
 	2. Cũng ở kỉ Devon, khí hậu ôn hoà xen kẽ thời kì **khô hạn và lụt lội**. Lụt lội làm cây thuỷ sinh lên men thối → nước nghèo O₂; khô hạn làm ao hồ cạn kiệt, chỉ còn lớp nước đục → thiếu O₂. ⟹ Áp lực chọn lọc giữ lại các loài cá **hô hấp O₂ từ không khí**, sống vùi mình trong bùn – những loài cá hô hấp bằng phổi.
 	3. Về sau, cá phải di chuyển qua các đầm lầy. **Cá vây tay** có **vây thuỳ** khoẻ, vây chẵn có hệ cơ gốc, các tia vây xếp như hệ thống đòn bẩy, dần thích ứng với việc bò trườn trên mặt đất. Đặc biệt **vây ngực** cá vây tay phát triển, có **xương đai – vây xếp tương ứng với chi năm ngón** của động vật có xương sống sau này → tạo ra cơ quan di chuyển trên cạn.
 - **Kết luận**: nhờ các điều kiện và tiến hoá thích nghi trên, một nhóm **cá vây tay cổ** đã tiến hoá thành động vật có xương sống bốn chân và chuyển lên cạn.
 	- Sự tiến hoá của xương vây thành **kiểu xương chi 5 ngón** là yếu tố quyết định khả năng lên cạn của cá vây tay. **Cá phổi** dù thoả mãn 2 điều kiện đầu nhưng vây chẵn là **kiểu vây hai dãy** đã chuyên hoá, không biến đổi được thành chi 5 ngón nên không hình thành được cơ quan di chuyển trên cạn.
-	- ⇒ Từ đặc điểm bộ xương có thể coi nguồn gốc của lưỡng cư là **cá vây tay cổ**. (→ [Phân lớp cá vây tay](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/07-lop-ca-xuong-tong-hop-ly-thuyet/))
+	- ⇒ Từ đặc điểm bộ xương có thể coi nguồn gốc của lưỡng cư là **cá vây tay cổ**. (→ [Phân lớp cá vây tay](/blog/lop-ca-xuong-tong-hop-ly-thuyet-osteichthyes/))
 
 <details class="callout callout-success">
 <summary>Đã sửa so với bản gốc</summary>

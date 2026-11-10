@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Intermediate/03 - Kết
   hợp tất cả kỹ năng.md
+url: /blog/ket-hop-tat-ca-ky-nang/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-intermediate'
 order: 3
 description: >-

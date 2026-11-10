@@ -8,6 +8,9 @@ tags:
 section: Tiếng Anh
 folder: Tiếng Anh
 vaultPath: Resources/Tiếng Anh/01 - Tài liệu IELTS.md
+url: /blog/tai-lieu-ielts-google-drive/
+topic: english
+updated: '2026-10-16'
 order: 1
 description: >-
   Danh mục folder Drive "IELTS" (nằm trong folder NCKH), phân theo kỹ năng. Đa
@@ -76,6 +79,6 @@ isIndex: false
 <div class="callout callout-tip">
 <p class="callout-title">Gợi ý dùng</p>
 
-Song song với IELTS, tiếng Anh học thuật chuyên ngành có ở [02 - Scientific English in Biology](/blog/tieng-anh/02-scientific-english-in-biology/); giáo trình sinh học tiếng Anh ở [Thư viện tài liệu Sinh học](/blog/sinh-hoc/thu-vien-tai-lieu-sinh-hoc/).
+Song song với IELTS, tiếng Anh học thuật chuyên ngành có ở [02 - Scientific English in Biology](/blog/scientific-english-in-biology-homework/); giáo trình sinh học tiếng Anh ở [Thư viện tài liệu Sinh học](/blog/thu-vien-tai-lieu-sinh-hoc-google-drive/).
 
 </div>

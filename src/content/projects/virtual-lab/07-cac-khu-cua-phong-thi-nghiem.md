@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/07 - Các khu của phòng thí nghiệm.md
+url: /projects/virtual-lab/cac-khu-cua-phong-thi-nghiem/
+updated: '2026-10-16'
 date: '2026-10-16'
 status: active
 order: 7
@@ -18,7 +20,7 @@ description: >-
   ấm từ −80 lên −50 °C sau 288 phút (khớp hằng số thời gian khoảng
 ---
 <div class="callout callout-info">
-<p class="callout-title">Giai đoạn 2: xây các khu của phòng thí nghiệm (kế hoạch ở mục 8 của CLAUDE.md). Mỗi khu: thiết bị thật được chọn, số liệu có nguồn dùng cho mô hình, chỗ chưa xác minh, tiến độ. Mặt bằng các khu ở [note 04](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/).</p>
+<p class="callout-title">Giai đoạn 2: xây các khu của phòng thí nghiệm (kế hoạch ở mục 8 của CLAUDE.md). Mỗi khu: thiết bị thật được chọn, số liệu có nguồn dùng cho mô hình, chỗ chưa xác minh, tiến độ. Mặt bằng các khu ở [note 04](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/).</p>
 
 </div>
 
@@ -664,7 +666,7 @@ description: >-
 	- Bệnh lá (phấn trắng, gỉ sắt) và mốc xám theo độ ẩm, nhiệt độ của loài; hệ số giảm quả: bệnh lá 0,7, mốc xám 0,6, khô hạn lúc ra hoa 0,6 (*minh hoạ*).
 - `pea-garden.js`: bao hoa; loài thụ phấn nhờ ong (hoa mõm chó, bí) không bao thì hạt mang phấn lạ của nhóm cây khác theo tỉ lệ giao phấn của loài. Thụ phấn tay khi chưa khử nhị dùng tỉ lệ giao phấn tự nhiên thay cho giả định 10 % cũ.
 - Bảng khí hậu đổi theo loài của protocol, có chọn tưới nhỏ giọt hoặc tự tưới; cảnh 3D: lá bệnh trắng xám, hoa đã bao màu giấy.
-- Protocol "Nhà kính: chăm đậu Hà Lan từ gieo tới thu hạt"; thêm bước bao hoa vào lai hoa mõm chó và bí. (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/): khử nhị và bao hoa giữ cho phép lai sạch)
+- Protocol "Nhà kính: chăm đậu Hà Lan từ gieo tới thu hạt"; thêm bước bao hoa vào lai hoa mõm chó và bí. (→ [Quy luật Mendel](/blog/quy-luat-mendel/): khử nhị và bao hoa giữ cho phép lai sạch)
 - [x] Ngưỡng khí hậu có nguồn, tưới nước, bệnh, bao hoa, cây đúng loài ✅ 2026-10-16
 - [x] Hình chi tiết buồng sinh trưởng ✅ 2026-10-16
 

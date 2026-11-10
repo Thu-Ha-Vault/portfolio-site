@@ -15,6 +15,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/05 - Phân tích trình tự.md
+url: /blog/phan-tich-trinh-tu/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 5
 description: >-
@@ -78,7 +81,7 @@ Công cụ nhanh hơn cho dữ liệu lớn: DIAMOND (protein), MMseqs2.
 
 - Phương pháp khoảng cách: UPGMA, Neighbor-Joining.
 - Dựa trên mô hình: Maximum Likelihood (IQ-TREE, RAxML), Bayesian (MrBayes).
-- Đánh giá độ tin cậy nhánh bằng bootstrap; hiển thị cây bằng iTOL hoặc FigTree. (→ [The Bootstrap](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/03-the-bootstrap/))
+- Đánh giá độ tin cậy nhánh bằng bootstrap; hiển thị cây bằng iTOL hoặc FigTree. (→ [The Bootstrap](/blog/the-bootstrap/))
 
 ```bash
 mafft --auto seqs.fa > aligned.fa

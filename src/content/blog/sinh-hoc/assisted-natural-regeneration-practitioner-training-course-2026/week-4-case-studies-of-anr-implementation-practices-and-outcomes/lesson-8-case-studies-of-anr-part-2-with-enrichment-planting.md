@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 4 Case studies of ANR implementation Practices and outcomes/Lesson 8
   Case studies of ANR, part 2 - With enrichment planting.md
+url: /blog/case-studies-of-anr-part-2-with-enrichment-planting/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -21,7 +24,7 @@ description: >-
 isIndex: false
 ---
 ## Learning Objectives
-- Understand the importance of landscape-level assessment in ANR. (→ [L6 Landscape assessment](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-3-conducting-baseline-site-and-landscape-assessments/lesson-6-conducting-assessments-of-the-social-landscape/))
+- Understand the importance of landscape-level assessment in ANR. (→ [L6 Landscape assessment](/blog/conducting-assessments-of-the-social-landscape/))
 - Identify key components of a landscape.
 - Explain ecological connectivity and fragmentation.
 - Assess opportunities and constraints across a landscape.
@@ -184,7 +187,7 @@ Examples:
 Repeated disturbances can undermine restoration efforts.
 ## 6. Stakeholder Assessment
 ### Why Stakeholders Matter
-Restoration outcomes depend heavily on human decisions. (→ [L4 Socio-economic barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-4-socio-economic-and-policy-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+Restoration outcomes depend heavily on human decisions. (→ [L4 Socio-economic barriers](/blog/socio-economic-and-policy-barriers-and-enabling-factors-for-assisted-natural-reg/))
 Stakeholders influence:
 - Land management.
 - Resource use.
@@ -223,7 +226,7 @@ Stakeholder assessments should identify:
 - Relationships.
 - Potential conflicts.
 - Opportunities for collaboration.
-The goal is to build support and reduce barriers to restoration. (→ [Ask questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/02-ask-questions-to-make-data-driven-decisions/))
+The goal is to build support and reduce barriers to restoration. (→ [Ask questions](/blog/ask-questions-to-make-data-driven-decisions/))
 ## 7. Prioritizing Restoration Areas
 ### Why Prioritize?
 Resources such as funding, labor, and time are limited.
@@ -237,7 +240,7 @@ Priority may be given to areas containing:
 - Important habitats.
 - High conservation value ecosystems.
 #### Connectivity Benefits
-Areas that connect fragmented habitats often provide landscape-scale benefits. (→ [L12 ANR & conservation](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+Areas that connect fragmented habitats often provide landscape-scale benefits. (→ [L12 ANR & conservation](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
 ### Social Criteria
 #### Community Support
 Projects with strong local support are more likely to succeed.

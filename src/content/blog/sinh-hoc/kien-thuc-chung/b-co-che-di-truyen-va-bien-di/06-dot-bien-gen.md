@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / B - Cơ chế di truyền và biến 
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/B - Cơ chế di truyền và biến dị/06 - Đột
   biến gen.md
+url: /blog/dot-bien-gen/
+topic: biology
+updated: '2026-10-19'
 order: 6
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (5-Brom Uraxin →
@@ -45,7 +48,7 @@ isIndex: false
 - **Tần số đột biến**: $10^{-6} \to 10^{-4}$, phụ thuộc:
 	- Tác nhân: loại, cường độ
 	- Đặc điểm cấu trúc của gen.
-- Đột biến gen xảy ra → Cấu trúc gen biến đổi → Tạo alen mới (→ [Điều hoà hoạt động gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/05-dieu-hoa-hoat-dong-gen/))
+- Đột biến gen xảy ra → Cấu trúc gen biến đổi → Tạo alen mới (→ [Điều hoà hoạt động gen](/blog/dieu-hoa-hoat-dong-gen/))
 - **Các dạng**:
 
 | Dạng | Chiều dài | Ghi chú trong sổ |
@@ -55,8 +58,8 @@ isIndex: false
 | Thêm 1 cặp | ↑ 3,4 Å | Liên kết hydrogen ↑ 2 (thêm A–T) hoặc ↑ 3 (thêm G–C) |
 
 - **Thể đột biến**: cơ thể mang đột biến gen đã biểu hiện ra kiểu hình
-- Xem thêm: [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/) – so sánh đột biến gen (cấp phân tử) với đột biến cấu trúc, số lượng NST (cấp tế bào)
-- Xem thêm: [Di truyền ngoài nhân, biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/) – vị trí của đột biến gen trong hệ thống phân loại biến dị di truyền
+- Xem thêm: [Đột biến NST](/blog/dot-bien-nhiem-sac-the/) – so sánh đột biến gen (cấp phân tử) với đột biến cấu trúc, số lượng NST (cấp tế bào)
+- Xem thêm: [Di truyền ngoài nhân, biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/) – vị trí của đột biến gen trong hệ thống phân loại biến dị di truyền
 
 ## II. Nguyên nhân – cơ chế phát sinh
 
@@ -84,7 +87,7 @@ isIndex: false
 	- [A – T] —nhân đôi 1 (5-BU)→ A – 5-BU ; A – T
 	- A – 5-BU —nhân đôi 2→ G – 5-BU —nhân đôi 3→ [G – C]
 - ⟹
-	- Đột biến gen phát sinh trong quá trình **nhân đôi**. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+	- Đột biến gen phát sinh trong quá trình **nhân đôi**. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- Phát sinh qua ít nhất **2 lần nhân đôi**.
 	- Dễ xảy ra nhất: **thay thế 1 cặp** phổ biến nhất
 
@@ -118,7 +121,7 @@ flowchart LR
 ```
 
 - **Đột biến trội**: a → A
-- **Đột biến lặn**: A → a (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- **Đột biến lặn**: A → a (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 - **Đột biến tiền phôi**: AA —đột biến lặn (A → a)→ Aa
 	- → Không biểu hiện kiểu hình ngay.
 	- 2 alen đột biến tổ hợp lại → Biểu hiện ra kiểu hình
@@ -144,12 +147,12 @@ flowchart LR
 		- (dấu hiệu (?)) **sai nghĩa**
 		- (xuất hiện mã kết thúc) **vô nghĩa**
 - **Mất, thêm**: **dịch khung** → hậu quả nghiêm trọng.
-- Xem thêm: [NGS và genomics](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/06-giai-trinh-tu-the-he-moi-ngs-va-genomics/) – khi chú giải biến thể, sai nghĩa = missense, vô nghĩa = nonsense; phân loại ý nghĩa lâm sàng theo ACMG
+- Xem thêm: [NGS và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/) – khi chú giải biến thể, sai nghĩa = missense, vô nghĩa = nonsense; phân loại ý nghĩa lâm sàng theo ACMG
 
 ![Hình - Hậu quả đột biến điểm trên khung đọc](/vault-assets/hinh-hau-qua-dot-bien-diem-tren-khung-doc-845181fa.svg)
 
 - **Ý nghĩa**:
-	- Nguồn nguyên liệu sơ cấp, chủ yếu cho tiến hoá, chọn giống. (→ [Tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/), [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+	- Nguồn nguyên liệu sơ cấp, chủ yếu cho tiến hoá, chọn giống. (→ [Tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/), [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 	- Giá trị của đột biến gen:
 		- ∈ môi trường sống
 		- ∈ tổ hợp gen
@@ -159,4 +162,4 @@ flowchart LR
 
 </div>
 
-- Xem thêm: [Tổng ôn – 5. Đột biến và biến dị](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#5-đột-biến-và-biến-dị) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 5. Đột biến và biến dị](/blog/tong-on-va-meo-lam-bai/#5-đột-biến-và-biến-dị) – mẹo làm bài, ghi chú ôn tập

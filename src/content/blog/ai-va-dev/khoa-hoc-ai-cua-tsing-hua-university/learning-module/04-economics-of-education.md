@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/04 -
   Economics of Education.md
+url: /blog/economics-of-education/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 4
 isIndex: false
@@ -54,7 +57,7 @@ $$\text{Nguồn lực khan hiếm (Tài chính, Thời gian, Nhân lực)} \xrig
     $$Y = A \cdot F(K, L) \implies \frac{\Delta Y}{Y} > \alpha \frac{\Delta K}{K} + \beta \frac{\Delta L}{L}$$
   * Phần thặng dư tăng trưởng chưa giải thích được (Solow Residual / Growth Residual) được chứng minh xuất phát từ sự tích lũy vốn nhân lực ($H$) thông qua giáo dục và đào tạo kỹ thuật:
     $$Y = A K^\alpha H^\beta L^{1 - \alpha - \beta}$$
-  * Cơ chế định lượng lợi tức cá nhân từ giáo dục được chuẩn hóa qua hàm thu nhập Mincer (Mincer Earnings Function): (→ [Causal Inference (Tsing Hua)](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/10-causal-inference/))
+  * Cơ chế định lượng lợi tức cá nhân từ giáo dục được chuẩn hóa qua hàm thu nhập Mincer (Mincer Earnings Function): (→ [Causal Inference (Tsing Hua)](/blog/causal-inference/))
     $$\ln(w_i) = \beta_0 + \beta_1 S_i + \beta_2 E_i + \beta_3 E_i^2 + u_i$$
     Trong đó $w_i$ là mức tiền lương, $S_i$ là số năm đi học tích lũy, $E_i$ là số năm kinh nghiệm làm việc thực tế, và $\beta_1$ đo lường tỷ suất lợi tức biên của mỗi năm học bổ sung ($\text{Rate of Return to Education}$).
   * Hệ thống vận động lý thuyết xoay quanh chuỗi tiến hóa 5 câu hỏi cốt lõi:
@@ -248,8 +251,8 @@ $$\text{Nguồn lực khan hiếm (Tài chính, Thời gian, Nhân lực)} \xrig
 	- Subject to the life cycle; depreciates over time
 ### Cost-Benefit Analysis Model for Education Decisions
 - Core Decision Logic: The present value of total educational benefits equals the present value of total costs -> trạng thái tối ưu
-- Cost Components: Direct cost (tuition, etc.) + Indirect costs (opportunity cost) (→ [Assessing the costs of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-9-assessing-the-costs-of-anr/))
-- Benefit Components: Present value of higher future income streams (→ [Assessing the benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-10-assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
+- Cost Components: Direct cost (tuition, etc.) + Indirect costs (opportunity cost) (→ [Assessing the costs of ANR](/blog/assessing-the-costs-of-anr/))
+- Benefit Components: Present value of higher future income streams (→ [Assessing the benefits of ANR](/blog/assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
 - Optimal Decision Point: Net Present Value (NPV) = Present Value of Benefits - Present Value of Costs = 0
 ### Marginal Rate of Returns vs. Marginal Cost Analysis
 - Decision Rule: Marginal Rate of Return (MRR) = Marginal Cost of Capital (MC)
@@ -308,7 +311,7 @@ Key Difference: The cost of acquiring a signal varies across individuals
 - Solution: A signaling mechanism is needed to address the problem
 ### Two Explanations of the Function of Education
 - Human Capital Theory: Education's core function is to enhance knowledge and skills, directly increasing labor productivity
-- Signaling Theory: Education does not directly boost productivity, but serves as a reliable "signal" of ability, helping employers screen talent (→ [Sociology of Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/09-sociology-of-education/))
+- Signaling Theory: Education does not directly boost productivity, but serves as a reliable "signal" of ability, helping employers screen talent (→ [Sociology of Education](/blog/sociology-of-education/))
 -> Core Debate: Does education "enhance" ability (HCT) or merely "certify" existing ability (ST)?
 ### The Dynamic Process of Signaling Equilibrium
 - Self-fulfilling Logic

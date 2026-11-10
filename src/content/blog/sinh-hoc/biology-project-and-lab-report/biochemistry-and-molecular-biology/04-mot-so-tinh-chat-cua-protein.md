@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/04 - Một số tính chất của protein.md
+url: /blog/xac-dinh-mot-so-tinh-chat-cua-protein/
+topic: biology
+updated: '2026-10-16'
 order: 4
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 2 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -22,14 +25,14 @@ isIndex: false
 ## Mục đích
 - Xác định **điểm đẳng điện (pI)** của casein.
 - Khảo sát **tính chất keo** của protein qua kết tủa bằng muối trung tính (**salting out**).
-- Khảo sát **sự biến tính / kết tủa protein** do nhiệt độ, acid hữu cơ và muối kim loại nặng. (→ [Nhiệt độ, pH và ion lên amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/09-anh-huong-cua-nhiet-do-ph-va-ion-len-amylase/), [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/), [Mô phỏng phản ứng hoá sinh – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/))
+- Khảo sát **sự biến tính / kết tủa protein** do nhiệt độ, acid hữu cơ và muối kim loại nặng. (→ [Nhiệt độ, pH và ion lên amylase](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/), [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/), [Mô phỏng phản ứng hoá sinh – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/))
 
 ## Nguyên lý
-- Protein và amino acid có nhóm **-COOH** và **-NH₂** tự do → **lưỡng tính**. **pI** là pH tại đó phân tử trung hoà điện, không di chuyển trong điện trường → protein kém bền, **dễ kết tủa nhất**. (→ [2D-PAGE](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/02-dien-di-hai-chieu-2d-page/), [Thực hành Sinh học phân tử](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/), [Acid – base và hệ đệm](/blog/hoc-phan-dai-cuong/02-hoa-hoc/))
+- Protein và amino acid có nhóm **-COOH** và **-NH₂** tự do → **lưỡng tính**. **pI** là pH tại đó phân tử trung hoà điện, không di chuyển trong điện trường → protein kém bền, **dễ kết tủa nhất**. (→ [2D-PAGE](/blog/dien-di-hai-chieu-2d-page/), [Thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/), [Acid – base và hệ đệm](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/))
 - Độ bền của dung dịch keo protein nhờ **điện tích bề mặt** và **lớp vỏ hydrat (áo nước)**; mất một trong hai yếu tố → kết tủa.
-- **(NH₄)₂SO₄** vừa trung hoà điện tích vừa lấy mất lớp vỏ hydrat; nồng độ muối khác nhau kết tủa các protein khác nhau → tách **globulin** (bán bão hoà) và **albumin** (bão hoà). Kết tủa bằng muối trung tính là **thuận nghịch**. (→ [L-methioninase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/05-thuyet-trinh-l-methioninase-tu-trichoderma-harzianum/))
+- **(NH₄)₂SO₄** vừa trung hoà điện tích vừa lấy mất lớp vỏ hydrat; nồng độ muối khác nhau kết tủa các protein khác nhau → tách **globulin** (bán bão hoà) và **albumin** (bão hoà). Kết tủa bằng muối trung tính là **thuận nghịch**. (→ [L-methioninase](/blog/phan-tach-va-xac-dinh-dac-tinh-l-methioninase-tu-trichoderma-harzianum/))
 - **Biến tính do nhiệt** mạnh nhất khi pH ≈ pI; ở pH xa pI (acid/kiềm mạnh) protein tích điện, giữ áo nước → khó kết tủa.
-- **Ion kim loại nặng** (Fe³⁺, Cu²⁺) hấp phụ lên protein → trung hoà điện → kết tủa; dư muối → protein tích điện dương, tan trở lại. (→ [Hoạt độ lipase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/01-hoat-do-lipase-bang-p-npp/))
+- **Ion kim loại nặng** (Fe³⁺, Cu²⁺) hấp phụ lên protein → trung hoà điện → kết tủa; dư muối → protein tích điện dương, tan trở lại. (→ [Hoạt độ lipase](/blog/hoat-do-enzyme/))
 
 ## Vật liệu & phương pháp
 - **TN1 – pI của casein**: 5 ống chứa CH₃COOH 0,1N + nước (tổng 9 ml) + 1 ml casein 0,4% trong natri acetat 0,1N, quan sát độ đục.
@@ -73,7 +76,7 @@ isIndex: false
 - Globulin và albumin trong lòng trắng trứng được **tách phân đoạn** nhờ nồng độ (NH₄)₂SO₄ khác nhau; kết tủa muối trung tính hoà tan lại được (không biến tính).
 - pH gần pI kết hợp nhiệt độ cao gây biến tính mạnh nhất; acid/kiềm mạnh giữ protein tan.
 - Fe³⁺ (hoá trị III) tạo và hoà tan kết tủa nhanh hơn Cu²⁺ (5 < 8 giọt).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-protprop`: pI casein, biến tính, salting out, kim loại nặng.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-protprop`: pI casein, biến tính, salting out, kim loại nặng.
 
 ## Tài liệu gốc
 *Tính chất protein.pdf*

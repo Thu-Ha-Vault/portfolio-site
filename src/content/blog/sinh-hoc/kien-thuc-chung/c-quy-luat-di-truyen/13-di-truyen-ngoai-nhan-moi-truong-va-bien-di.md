@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / C - Quy luật di truyền
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/C - Quy luật di truyền/13 - Di truyền ngoài
   nhân, môi trường và biến dị.md
+url: /blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/
+topic: biology
+updated: '2026-10-16'
 order: 13
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, ARN → RNA,
@@ -45,7 +48,7 @@ isIndex: false
 | F2 | 100% Lá xanh | 100% Lá đốm |
 
 - **Phân tích thí nghiệm:**
-	- Lai thuận nghịch → kết quả khác nhau (→ [Di truyền liên kết giới tính](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/11-di-truyen-lien-ket-voi-gioi-tinh/))
+	- Lai thuận nghịch → kết quả khác nhau (→ [Di truyền liên kết giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
 	- Con lai luôn giống mẹ.
 	- Tính trạng biểu hiện đều ở cả 2 giới
 	- → **Di truyền theo dòng mẹ**.
@@ -58,7 +61,7 @@ isIndex: false
 
 ### Đặc điểm của di truyền ngoài nhân (trang 030)
 - **Gen ngoài nhân**:
-	- Gen ở ty thể, lục lạp: DNA kép vòng tròn, không liên kết protein histone (→ [Bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/), [Thuyết nội cộng sinh](/blog/tieng-anh/02-scientific-english-in-biology/))
+	- Gen ở ty thể, lục lạp: DNA kép vòng tròn, không liên kết protein histone (→ [Bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/), [Thuyết nội cộng sinh](/blog/scientific-english-in-biology-homework/))
 	- Nhân đôi độc lập với gen ở nhân.
 - Kết quả lai thuận, nghịch khác nhau nhưng con sinh ra luôn giống mẹ.
 	- 2n: ♀, ♂ đóng góp ½ bộ nhiễm sắc thể cho con.
@@ -68,18 +71,18 @@ isIndex: false
 
 ## V. Ảnh hưởng của môi trường đến sự biểu hiện của gen
 - Mối quan hệ gen và tính trạng:
-	- Gen —phiên mã→ RNA —dịch mã→ Protein → Tính trạng. (→ [Phiên mã và dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+	- Gen —phiên mã→ RNA —dịch mã→ Protein → Tính trạng. (→ [Phiên mã và dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 - Ví dụ:
 	- **Thỏ Himalaya**: lông trắng, vùng đầu mút cơ thể có màu đen (vùng đầu mút: t° < thân).
 	- **Hoa cẩm tú cầu**: thay đổi màu sắc phụ thuộc pH đất
-	- **Người**: bệnh **phenylketonuria** (phenylketo niệu) do đột biến gen lặn (→ [Di truyền y học](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+	- **Người**: bệnh **phenylketonuria** (phenylketo niệu) do đột biến gen lặn (→ [Di truyền y học](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 		- Gen —đột biến→ ✗ enzyme
 		- Phenylalanine (amino acid không thay thế) —✗→ tyrosine
 - → Giải thích:
-	- Thỏ: t° vùng đầu mút < t° vùng thân (→ [Nhiệt độ, pH và amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/09-anh-huong-cua-nhiet-do-ph-va-ion-len-amylase/))
+	- Thỏ: t° vùng đầu mút < t° vùng thân (→ [Nhiệt độ, pH và amylase](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/))
 		- ↓ gen tổng hợp sắc tố Melanin hoạt động
 		- ↓ Sắc tố Melanin → Đen
-- → **Kết luận:** Sự biểu hiện của kiểu gen phụ thuộc môi trường sống. (→ [Điều hoà hoạt động gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/05-dieu-hoa-hoat-dong-gen/))
+- → **Kết luận:** Sự biểu hiện của kiểu gen phụ thuộc môi trường sống. (→ [Điều hoà hoạt động gen](/blog/dieu-hoa-hoat-dong-gen/))
 
 ## VI. Mức phản ứng
 
@@ -96,7 +99,7 @@ flowchart LR
 - Mức phản ứng do kiểu gen quy định
 - Môi trường quy định 1 kiểu hình cụ thể trong giới hạn (lim) mức phản ứng
 - Tính trạng khác nhau có mức phản ứng khác nhau
-	- **Tính trạng số lượng** thường có mức phản ứng rộng, do nhiều gen quy định và phụ thuộc nhiều vào điều kiện môi trường sống. (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+	- **Tính trạng số lượng** thường có mức phản ứng rộng, do nhiều gen quy định và phụ thuộc nhiều vào điều kiện môi trường sống. (→ [Tương tác gen](/blog/tuong-tac-gen/))
 	- **Tính trạng chất lượng** thường có mức phản ứng hẹp, do ít gen quy định, ít ảnh hưởng bởi điều kiện môi trường sống
 
 ![Hình - Mức phản ứng rộng và hẹp](/vault-assets/hinh-muc-phan-ung-rong-va-hep-df483a66.svg)
@@ -126,7 +129,7 @@ flowchart LR
 		- Y:
 			- Di truyền thẳng
 - **Gen ngoài nhân**: gen ở ty thể, lục lạp (đặc điểm: xem mục IV ở trên).
-- **Note:** Ruồi giấm: hoán vị chỉ xảy ra ở giới cái XX, ___ đực không hoán vị (xem [12 - Liên kết gen và hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/)).
+- **Note:** Ruồi giấm: hoán vị chỉ xảy ra ở giới cái XX, ___ đực không hoán vị (xem [12 - Liên kết gen và hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/)).
 
 ## Biến dị
 (đặc điểm sai khác con so với ♀♂)
@@ -154,12 +157,12 @@ flowchart LR
 	- Phương pháp: lai hữu tính
 	- Phép lai: phân li độc lập, hoán vị gen
 - **Đột biến**:
-	- Đột biến gen: (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
+	- Đột biến gen: (→ [Đột biến gen](/blog/dot-bien-gen/))
 		- Mất 1 cặp
 		- Thêm ___
 		- Thay ___
-	- Đột biến nhiễm sắc thể: (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+	- Đột biến nhiễm sắc thể: (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 		- Cấu trúc
 		- Số lượng
 - Đột biến riêng lẻ
-- Di truyền → Nguyên liệu chọn giống, tiến hoá. (→ [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/), [Cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/), [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/))
+- Di truyền → Nguyên liệu chọn giống, tiến hoá. (→ [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/), [Cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/), [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/))

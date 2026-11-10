@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/28 - Tableau récapitulatif
   des temps.md
+url: /blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/
+topic: french
+updated: '2026-10-14'
 order: 28
 description: >-
   Ô C2: "Le passé résent" → "Le passé récent". Ô B3: "một sự thật hoạt điều hiển
@@ -40,14 +43,14 @@ isIndex: false
 <details class="callout callout-question">
 <summary>Cần kiểm tra</summary>
 
-- Ô G5 (imparfait): sheet ghi "Động từ nguyên thể + đuôi". Sổ tay ghi gốc imparfait là dạng "nous" ở hiện tại bỏ "-ons" (→ [Imparfait – gốc từ](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/)). Giữ nguyên chữ của sheet.
+- Ô G5 (imparfait): sheet ghi "Động từ nguyên thể + đuôi". Sổ tay ghi gốc imparfait là dạng "nous" ở hiện tại bỏ "-ons" (→ [Imparfait – gốc từ](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/)). Giữ nguyên chữ của sheet.
 - Ô F7: "sans doute" được dịch là "(chắc chắn)". Trong tiếng Pháp hiện đại "sans doute" thường là "có lẽ", còn "sans aucun doute" mới là "chắc chắn".
 
 </details>
 
 
 **Les temps** được sử dụng để diễn đạt thời gian của một hành động, sự việc, hoặc tình huống. Đây là yếu tố quan trọng để xác định thời gian xảy ra của một sự việc trong câu.
-- Xem thêm: [Trục thời gian](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/) – vị trí các thì trên trục passé / présent / futur; [Bảng chia động từ đầy đủ các thì](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/) – chia theo nhóm -er / -ir.
+- Xem thêm: [Trục thời gian](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/) – vị trí các thì trên trục passé / présent / futur; [Bảng chia động từ đầy đủ các thì](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/) – chia theo nhóm -er / -ir.
 
 ## Le présent (Thì hiện tại)
 - **Cách sử dụng**:
@@ -56,11 +59,11 @@ isIndex: false
 	- Diễn tả một sự thật hoặc điều hiển nhiên
 	- Diễn tả một sự thay đổi, một trạng thái hiện tại
 	- Diễn tả một sự việc, hành động xảy ra trong tương lai gần
-- **Cấu trúc**: S + V (→ [Présent](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- **Cấu trúc**: S + V (→ [Présent](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - **Chia động từ**:
 	- **V(-er)**: Je + -e, Tu + -es, Il/Elle/On + -e, Nous + -ons, Vous + -ez, Ils/Elles + -ent
 	- **V(-ir)**: Je + -is, Tu + -is, Il/Elle/On + -it, Nous + -issons, Vous + -issez, Ils/Elles + -issent
-	- **V (bất quy tắc)**: Aller, Être, Avoir, Faire (→ [Verbes irréguliers au présent](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/))
+	- **V (bất quy tắc)**: Aller, Être, Avoir, Faire (→ [Verbes irréguliers au présent](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/))
 - **Ví dụ**:
 	- Je parle français.
 	- Le ciel est bleu.
@@ -70,7 +73,7 @@ isIndex: false
 - **Cách sử dụng**:
 	- Diễn tả hành động đã xảy ra gần đây hoặc vừa kết thúc.
 	- Thường được dùng để nói về những sự kiện đã xảy ra trong vài giờ, vài ngày hoặc vài tuần gần đây.
-- **Cấu trúc**: S + "venir de" + V (nguyên thể) (→ [Passé récent](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- **Cấu trúc**: S + "venir de" + V (nguyên thể) (→ [Passé récent](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - **Chia động từ**: "venir de" phải được chia theo chủ ngữ
 	- venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent
 - **Ví dụ**:
@@ -85,7 +88,7 @@ isIndex: false
 	- Thể hiện chuỗi hoạt động
 	- Biểu thị thay đổi trạng thái
 	- Kết quả hoặc tác động lên hiện tại
-- **Cấu trúc**: Trợ động từ (avoir / être chia ở thì hiện tại đơn) + động từ chính ở quá khứ phân từ (participe passé) (→ [Passé composé](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- **Cấu trúc**: Trợ động từ (avoir / être chia ở thì hiện tại đơn) + động từ chính ở quá khứ phân từ (participe passé) (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - **Chia động từ**:
 	- **V(-er)**: -er thành -é
 	- **V(-ir)**: -ir thành -i
@@ -98,11 +101,11 @@ isIndex: false
 - **Chú ý**:
 	- Thì quá khứ kép thường kết hợp với các từ chỉ thời gian như "hier" (hôm qua), "l'année dernière" (năm ngoái), "la semaine dernière" (tuần trước),… để xác định thời điểm xảy ra hành động/sự việc trong quá khứ.
 	- Trợ động từ "avoir" được sử dụng phổ biến hơn. Nó đi kèm với hầu hết các động từ, nhưng có một số động từ đặc biệt đi cùng với trợ động từ "être". Ngoài ra, "avoir" và "être" được chia ở thì hiện tại, động từ chính chuyển thành phân từ quá khứ và tương hợp giống số với chủ ngữ trong trường hợp đi cùng trợ động từ "être".
-	- On utilise **être** avec 11 verbes de "mouvement" (chuyển động có sự thay đổi vị trí): arriver, partir, aller, venir, descendre, monter, (r)entrer, sortir, passer, retourner, tomber, et les verbes d'état: devenir, naître, mourir, rester et décéder, se + verbe (động từ phản thân). Các từ này chia theo giới tính và số lượng. If some verbs represent a movement but no change of place, or an action, we use **avoir**. (→ [Alamo d'être, REDCAP](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+	- On utilise **être** avec 11 verbes de "mouvement" (chuyển động có sự thay đổi vị trí): arriver, partir, aller, venir, descendre, monter, (r)entrer, sortir, passer, retourner, tomber, et les verbes d'état: devenir, naître, mourir, rester et décéder, se + verbe (động từ phản thân). Các từ này chia theo giới tính và số lượng. If some verbs represent a movement but no change of place, or an action, we use **avoir**. (→ [Alamo d'être, REDCAP](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 
 ## Le futur proche (Thì tương lai gần)
 - **Cách sử dụng**: Thường được sử dụng để diễn tả các hành động sắp xảy ra, dự đoán dựa trên kế hoạch, ý định, dự báo hoặc những hành động chắc chắn sẽ xảy ra.
-- **Cấu trúc**: aller chia ở thì hiện tại + Động từ nguyên thể (→ [Futur proche](/blog/tieng-phap/grammar/e-thi-thuc-the/20-le-futur-proche-et-le-futur-simple/))
+- **Cấu trúc**: aller chia ở thì hiện tại + Động từ nguyên thể (→ [Futur proche](/blog/le-futur-proche-et-le-futur-simple-tuong-lai-gan-va-tuong-lai-don/))
 - **Ví dụ**:
 	- Je vais manger.
 	- Tu vas rencontrer mes amis.
@@ -113,7 +116,7 @@ isIndex: false
 	- **Diễn tả dự đoán**: Thì tương lai đơn được sử dụng để diễn tả những điều mà bạn dự đoán sẽ xảy ra trong tương lai dựa trên thông tin hoặc sự suy đoán.
 	- Diễn tả ý định hay quyết định nào đó
 	- Câu hỏi về tương lai
-- **Cấu trúc**: Động từ ở dạng nguyên thể + Các đuôi tương lai (đuôi avoir ở thì hiện tại) (→ [Futur simple](/blog/tieng-phap/grammar/e-thi-thuc-the/20-le-futur-proche-et-le-futur-simple/))
+- **Cấu trúc**: Động từ ở dạng nguyên thể + Các đuôi tương lai (đuôi avoir ở thì hiện tại) (→ [Futur simple](/blog/le-futur-proche-et-le-futur-simple-tuong-lai-gan-va-tuong-lai-don/))
 - **Chia động từ**:
 	- **Đuôi tương lai**: Je + -ai, Tu + -as, Il/Elle/On + -a, Nous + -ons, Vous + -ez, Ils/Elles + -ont
 	- **V(-er)**: Aimer (thích) → J'aimerai, tu aimeras, il/elle aimera, nous aimerons, vous aimerez, ils/elles aimeront
@@ -148,10 +151,10 @@ isIndex: false
 | falloir   | –                   | –                   | il **faudra**      | –                      | –                     | –                     |
 | pleuvoir  | –                   | –                   | il **pleuvra**     | –                      | –                     | –                     |
 
-- Xem thêm: [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/) – conditionnel dùng cùng gốc với futur (j'aurais, je serais, j'irais…).
+- Xem thêm: [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/) – conditionnel dùng cùng gốc với futur (j'aurais, je serais, j'irais…).
 
 ## L'imparfait (Thì quá khứ chưa hoàn thành)
-- **Cách sử dụng**: (→ [Imparfait](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
+- **Cách sử dụng**: (→ [Imparfait](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
 	- Diễn tả hành động thường xuyên xảy ra trong quá khứ
 	- Miêu tả bối cảnh hoặc tình huống trong quá khứ
 	- Diễn tả đặc điểm, tính chất của một người hoặc một sự vật trong quá khứ
@@ -191,4 +194,4 @@ isIndex: false
 - Les verbes en **-ger** comme manger : je man**ge**ais
 - Les verbes en **-cer** comme lancer : je lan**ç**ais
 - Les verbes en **-ier** ou **-yer** comme crier ou balayer : nous cri**i**ons, nous balay**i**ons
-- Xem thêm: [Imparfait – gốc từ và đuôi từ](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/) – cách lấy gốc từ dạng "nous" ở hiện tại.
+- Xem thêm: [Imparfait – gốc từ và đuôi từ](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/) – cách lấy gốc từ dạng "nous" ở hiện tại.

@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / B - Cơ chế di truyền và biến 
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/B - Cơ chế di truyền và biến dị/07 - Đột
   biến nhiễm sắc thể.md
+url: /blog/dot-bien-nhiem-sac-the/
+topic: biology
+updated: '2026-10-16'
 order: 7
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (cromatit → chromatid,
@@ -36,8 +39,8 @@ isIndex: false
 ## Phân loại
 > Sơ đồ phân nhánh trong sổ.
 
-- **Đột biến nhiễm sắc thể** (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/), [Di truyền ngoài nhân, biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
-	- **Cấu trúc** (→ [Băng NST và karyotype người](/blog/sinh-hoc/biology-project-and-lab-report/genetics/03-di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
+- **Đột biến nhiễm sắc thể** (→ [Đột biến gen](/blog/dot-bien-gen/), [Di truyền ngoài nhân, biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- **Cấu trúc** (→ [Băng NST và karyotype người](/blog/di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
 		- 1) Mất đoạn
 		- 2) Đảo đoạn
 		- 3) Lặp đoạn
@@ -47,7 +50,7 @@ isIndex: false
 			- 2n+1: thể 3
 			- 2n−1: thể 1
 			- 2n−2: thể 0 ...
-		- **Đa bội** (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/), [Di truyền liên kết giới tính](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/11-di-truyen-lien-ket-voi-gioi-tinh/))
+		- **Đa bội** (→ [Quy luật Mendel](/blog/quy-luat-mendel/), [Di truyền liên kết giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
 			- **Tự đa bội**
 				- Lẻ: 3n, 5n...
 				- Chẵn: 4n, 6n...
@@ -64,11 +67,11 @@ isIndex: false
 | Hậu quả | – Lớn: chết, không sinh sản<br>– Nhỏ: ít ảnh hưởng | – Gây chết, ↓ sức sống<br>– Nhỏ: không ảnh hưởng | – Tăng hoặc giảm cường độ biểu hiện của tính trạng | – Ảnh hưởng đến sức sống |
 | Ý nghĩa | – Hợp nhất NST → ↓ số lượng NST → loài mới<br>– Giảm khả năng sinh sản → phòng trừ sâu hại<br>– Thay đổi nhóm gen liên kết | – Loại bỏ nhiều gen không mong muốn khỏi NST (cây trồng) | – ↑ cường độ biểu hiện tính trạng | – Sắp xếp lại các gen → nguyên liệu cho tiến hoá<br>– Bất hoạt gen<br>– Phát sinh loài mới<br>– Thực vật + động vật<br>– ↓ sinh sản<br>– Thay đổi mức độ biểu hiện gen |
 
-- Xem thêm: [Liên kết gen, hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/) – chuyển đoạn làm thay đổi nhóm gen liên kết
+- Xem thêm: [Liên kết gen, hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/) – chuyển đoạn làm thay đổi nhóm gen liên kết
 
 ## Đột biến lệch bội
 - Là dạng đột biến làm thay đổi số lượng NST của 1 hoặc 1 số cặp NST tương đồng.
-- **Hậu quả**: mất cân bằng hệ gen, ↓ sức sống, ↓ sinh sản, gây chết. (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- **Hậu quả**: mất cân bằng hệ gen, ↓ sức sống, ↓ sinh sản, gây chết. (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 - **Ý nghĩa**:
 	- Nguyên liệu cho tiến hoá.
 	- Xác định vị trí gen trên NST (gen ∈ NST nào).
@@ -81,16 +84,16 @@ isIndex: false
 | Giảm phân I | n+1, n−1 |
 | Giảm phân II | n+1, n−1, n |
 
-- **Note**: Trong quá trình giảm phân bình thường, các cặp NST phân li đồng đều về giao tử (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- **Note**: Trong quá trình giảm phân bình thường, các cặp NST phân li đồng đều về giao tử (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 	- → Mỗi cặp NST bị đột biến cho ½ giao tử bình thường.
 - **Rối loạn nguyên phân**: ở kì sau:
 	- x NST không phân li: 2n + x, 2n − x.
-	- Toàn bộ NST không phân li: 4n, 0. (→ [Tế bào chất, bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+	- Toàn bộ NST không phân li: 4n, 0. (→ [Tế bào chất, bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 
 ## Đa bội
-- **Lai xa kèm đa bội hoá**: cơ thể thuần chủng. (→ [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/), [Tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/))
+- **Lai xa kèm đa bội hoá**: cơ thể thuần chủng. (→ [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/), [Tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/))
 
 ## Ghi chú chen trong trang
 - n aa → $2^n$ cách mã hoá. (dòng ghi chen, không rõ liên hệ với nội dung xung quanh)
 
-- Xem thêm: [Tổng ôn – 5. Đột biến và biến dị](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#5-đột-biến-và-biến-dị) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 5. Đột biến và biến dị](/blog/tong-on-va-meo-lam-bai/#5-đột-biến-và-biến-dị) – mẹo làm bài, ghi chú ôn tập

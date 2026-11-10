@@ -9,15 +9,29 @@ Built with [Astro](https://astro.build), hosted on Vercel, bilingual UI (Tiếng
 
 | Vault | Site | Notes |
 | --- | --- | --- |
-| `Resources/**` (minus `blog.exclude` in `site.config.json`) | `/blog/...` | each folder's `_MOC - X.md` becomes the folder index page |
-| folders listed in `projects` in `site.config.json` | `/projects/...` | the project's `_MOC` is the project page |
+| notes under `Resources/**` (minus `blog.exclude`) | `/blog/<post>/` | flat, short URLs from the note title (`Course 6:`, `01 -`… prefixes removed) |
+| each folder's `_MOC - X.md` under `Resources/` | `/topics/<topic>/` | top-level folders use English slugs from `blog.topicSlugs` |
+| folders listed in `projects` | `/projects/<slug>/`, `/projects/<slug>/<note>/` | project slug, showcase title and vi/en summary set in `site.config.json` |
 | embedded images (`![[x.png]]`) | `public/vault-assets/` | large images are shrunk with `sips` on macOS |
 
 Conversions: `[[wikilink|alias]]` → site link (or plain text when the target isn't published), callouts → boxes,
 `==highlight==`, LaTeX (KaTeX), mermaid, Dataview/Tasks query blocks removed, `%%comments%%` removed,
 email addresses replaced with `[email hidden]` (allow-list them in `allowEmails`).
 
-To keep a note off the site, add `publish: false` to its frontmatter.
+To keep a note off the site, add `publish: false` to its frontmatter. Notes that are still empty skeletons
+(headings only, under 200 characters of text) are skipped automatically until they have content.
+
+Also generated: `/rss.xml`, `/sitemap-index.xml`, Open Graph tags, JSON-LD (Person, BlogPosting),
+share buttons (Facebook, LinkedIn, X, Threads, copy link) and a CEOVANTA call-to-action with UTM tags
+(`utm_source=portfolio&utm_medium=referral&utm_campaign=<home|post_<topic>|project_<slug>|footer>`) so visits
+from this site show up separately in ceovanta.com analytics.
+
+## Design
+
+Palette from H&E histology staining (hematoxylin blue-violet for structure, eosin pink for emphasis), Bricolage
+Grotesque for UI and headings, Source Serif 4 for reading. The home hero is a knowledge map: each topic is a "cell"
+sized by its number of notes, dots are notes, lines are links between topics (`src/data/graph.json`, written by the sync).
+Projects show an Ask → Act progress track read from the task list in the project's MOC.
 
 ## Everyday use
 

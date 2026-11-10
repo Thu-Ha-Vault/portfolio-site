@@ -11,6 +11,9 @@ folder: AI và DEV / AI Cybersecurity and Governance (Columbia University)
 vaultPath: >-
   Resources/AI và DEV/AI Cybersecurity and Governance (Columbia University)/03 -
   Multimodal GenAI Risks.md
+url: /blog/multimodal-genai-risks/
+topic: ai-development
+updated: '2026-10-14'
 order: 3
 isIndex: false
 ---

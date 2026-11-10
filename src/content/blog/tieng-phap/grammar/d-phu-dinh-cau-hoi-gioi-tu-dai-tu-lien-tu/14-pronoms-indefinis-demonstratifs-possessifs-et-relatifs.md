@@ -13,6 +13,10 @@ folder: 'Tiếng Pháp / Grammar / D - Phủ định, câu hỏi, giới từ, �
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/D - Phủ định, câu hỏi, giới từ, đại từ, liên
   từ/14 - Pronoms indéfinis, démonstratifs, possessifs et relatifs.md
+url: >-
+  /blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/
+topic: french
+updated: '2026-10-14'
 order: 14
 description: >-
   Memo 135: "quelques-unes (a few, female)" → "(a few, feminine)"; "certains
@@ -51,15 +55,15 @@ isIndex: false
 <!-- Memo 134–135 -->
 ## l) Indefinite pronouns
 - Đại từ thế chỗ một danh từ đã được nhắc đến hoặc hiển nhiên trong ngữ cảnh.
-- **Đại từ không xác định** dùng để chỉ người hoặc vật mà không xác định chính xác. (→ [on thay câu bị động](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/), [Indefinite pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- **Đại từ không xác định** dùng để chỉ người hoặc vật mà không xác định chính xác. (→ [on thay câu bị động](/blog/la-voix-passive-the-bi-dong/), [Indefinite pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 
 ### i) quelqu'un, quelque chose
 - "**Quelqu'un**" (somebody) được dùng trong câu khẳng định hoặc nghi vấn để nhắc đến một người dù là nam hay nữ. "**Quelque chose**" (something) là đại từ tương đương dùng để chỉ một vật. Nếu "quelqu'un" hoặc "quelque chose" được theo sau bởi một tính từ, thì tính từ đó cần được đi trước bởi "de".
-- Dạng phủ định của "quelqu'un" là "**personne**" (no one, nobody) và dạng phủ định của "quelque chose" là "**rien**" (nothing). Nhớ rằng "ne" đứng trước ĐT khi "personne" và "rien" được dùng trong câu phủ định. (→ [Négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- Dạng phủ định của "quelqu'un" là "**personne**" (no one, nobody) và dạng phủ định của "quelque chose" là "**rien**" (nothing). Nhớ rằng "ne" đứng trước ĐT khi "personne" và "rien" được dùng trong câu phủ định. (→ [Négation](/blog/la-negation-phu-dinh/))
 - "**Quelques-uns**" (a few, masculine) và "**quelques-unes**" (a few, feminine) là các đại từ số nhiều để nói về người hoặc vật. Lưu ý là "s" ở cuối "quelques" được phát âm trước "uns" hoặc "unes".
 
 ### ii) chacun vs. aucun
-- "**Chacun**" (each one) là số ít và giống đực, "**chacune**" là số ít và giống cái. "**Chaque**" mặt khác là một từ hạn định không xác định được dùng để bổ nghĩa cho một danh từ. (→ [Déterminants – indefinite](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- "**Chacun**" (each one) là số ít và giống đực, "**chacune**" là số ít và giống cái. "**Chaque**" mặt khác là một từ hạn định không xác định được dùng để bổ nghĩa cho một danh từ. (→ [Déterminants – indefinite](/blog/les-determinants-tu-han-dinh/))
 - Dạng phủ định của "chacun" là "**aucun**". "Aucun" (none, not a one, not a single) là số ít và giống đực, "**aucune**" là số ít và giống cái. Chúng được dùng với "ne".
 
 ### iii) More indefinite pronouns
@@ -75,7 +79,7 @@ isIndex: false
 ## m) Demonstrative pronouns
 
 ### i) celui, celle, ceux, celles
-- Celui, celle, ceux, celles ("this one"/"that one" ở số ít, "those" hoặc "the ones" ở số nhiều) là các **đại từ chỉ định**. Chúng thay thế một danh từ nhất định đã được nhắc đến hoặc rõ ràng trong ngữ cảnh để tránh sự lặp lại. Chúng khớp giới tính và số lượng với DT. (→ [Demonstrative determiners](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/), [Demonstrative pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- Celui, celle, ceux, celles ("this one"/"that one" ở số ít, "those" hoặc "the ones" ở số nhiều) là các **đại từ chỉ định**. Chúng thay thế một danh từ nhất định đã được nhắc đến hoặc rõ ràng trong ngữ cảnh để tránh sự lặp lại. Chúng khớp giới tính và số lượng với DT. (→ [Demonstrative determiners](/blog/les-determinants-tu-han-dinh/), [Demonstrative pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 
 | Number   | Masculine | Feminine |
 | -------- | --------- | -------- |
@@ -97,7 +101,7 @@ isIndex: false
 ## n) Possessive pronouns
 
 ### i) Forms and uses
-- **Đại từ sở hữu** thế chỗ danh từ được đứng trước bởi từ hạn định sở hữu như "mon, ton, son, ...". (→ [Déterminants – possessifs](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/), [Possessive pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- **Đại từ sở hữu** thế chỗ danh từ được đứng trước bởi từ hạn định sở hữu như "mon, ton, son, ...". (→ [Déterminants – possessifs](/blog/les-determinants-tu-han-dinh/), [Possessive pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 - Trong tiếng Pháp, đại từ sở hữu cả người sở hữu và số lượng cũng như giới tính của tân ngữ bị sở hữu: "le mien" chỉ người sở hữu là "I" và vật sở hữu là số ít giống đực.
 - Trong bảng sau, sự lựa chọn giữa dạng số ít và số nhiều và giữa giống đực và giống cái dựa trên số lượng và giới tính của vật bị sở hữu. (Lưu ý rằng sự khác biệt ở cách đánh vần và phát âm giữa từ hạn định sở hữu "notre" và "votre" và đại từ sở hữu "nôtre" và "vôtre")
 
@@ -116,7 +120,7 @@ isIndex: false
 - **Lưu ý**: "à" + the definite articles "le" và "les" tạo thành dạng rút gọn "au" và "aux" theo thứ tự.
 
 ### ii) Other ways of expressing possession
-- Đại từ sở hữu là một cách để biểu đạt sự sở hữu của vật hoặc người. Tuy nhiên, có thể sử dụng cấu trúc như **[être + à + disjunctive pronoun]**, **từ hạn định sở hữu** hoặc **[de + noun]**. (→ [Disjunctive pronoun](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- Đại từ sở hữu là một cách để biểu đạt sự sở hữu của vật hoặc người. Tuy nhiên, có thể sử dụng cấu trúc như **[être + à + disjunctive pronoun]**, **từ hạn định sở hữu** hoặc **[de + noun]**. (→ [Disjunctive pronoun](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 
 ### iii) Idiomatic uses
 - Dạng số nhiều giống đực của đại từ sở hữu có thể được dùng một mình để nhắc đến bố mẹ, bạn bè, đồng minh,… "**Être des nôtres**", "**être des vôtres**" là các cụm phổ biến có ý nghĩa như đại từ sở hữu.
@@ -132,18 +136,18 @@ isIndex: false
 ## o) Relative pronouns: qui and que
 
 ### i) Forms and uses
-- Đại từ quan hệ mở đầu mệnh đề để giải thích hoặc mô tả một danh từ đã được nhắc đến trước đó, được gọi là **tiền ngữ (antecedent)**. (→ [Mệnh đề quan hệ + subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/), [Relative pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/), [Mise en relief: c'est … qui / que](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/))
+- Đại từ quan hệ mở đầu mệnh đề để giải thích hoặc mô tả một danh từ đã được nhắc đến trước đó, được gọi là **tiền ngữ (antecedent)**. (→ [Mệnh đề quan hệ + subjonctif](/blog/le-subjonctif-thuc-gia-dinh/), [Relative pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/), [Mise en relief: c'est … qui / que](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/))
 - Đại từ quan hệ được dùng để liên kết hai ý liên quan thành một câu duy nhất, do đó tránh sự lặp lại.
-- Trong TP (tiếng Pháp), có 2 đại từ quan hệ chính "qui" và "que". Sự lựa chọn giữa "qui" và "que" trong TP chỉ dựa trên vai trò ngữ pháp: chủ ngữ hay tân ngữ trực tiếp, mà đại từ quan hệ đóng trong mệnh đề phụ (subordinate). (→ [Qui/que nghi vấn](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
-	- **"qui"**: thực hiện chức năng như chủ ngữ của mệnh đề phụ. (→ [des associations qui soutiennent](/blog/tieng-phap/writing/02-si-vous-gagniez-au-loto/), [Participe thay mệnh đề qui](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
+- Trong TP (tiếng Pháp), có 2 đại từ quan hệ chính "qui" và "que". Sự lựa chọn giữa "qui" và "que" trong TP chỉ dựa trên vai trò ngữ pháp: chủ ngữ hay tân ngữ trực tiếp, mà đại từ quan hệ đóng trong mệnh đề phụ (subordinate). (→ [Qui/que nghi vấn](/blog/l-interrogation-cau-hoi/))
+	- **"qui"**: thực hiện chức năng như chủ ngữ của mệnh đề phụ. (→ [des associations qui soutiennent](/blog/si-vous-gagniez-au-loto-que-feriez-vous-de-cet-argent/), [Participe thay mệnh đề qui](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
 	- **"que"**: thực hiện chức năng như tân ngữ trực tiếp (COD) của mệnh đề phụ. Nhớ rằng "que" trở thành "qu'" trước từ bắt đầu bằng nguyên âm.
 
 ### ii) Agreement
 - Mặc dù "qui" và "que" là bất biến, chúng vẫn mang giống và số lượng của tiền ngữ.
 
 <!-- Memo 142–143 -->
-- **Que** đóng vai trò là tân ngữ trực tiếp trước động từ. Do đó, khi ĐT (động từ) của mệnh đề phụ ở thì passé composé, hoặc bất kỳ thì ghép nào khác, QKPT (quá khứ phân từ) sẽ đồng dạng về số và giống với "que". (→ [Agreement với COD đứng trước](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
-- QKPT cũng đồng dạng về số và giống với "qui" nếu ĐT tạo thành thì passé composé là "être". (→ [Passé composé với être](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- **Que** đóng vai trò là tân ngữ trực tiếp trước động từ. Do đó, khi ĐT (động từ) của mệnh đề phụ ở thì passé composé, hoặc bất kỳ thì ghép nào khác, QKPT (quá khứ phân từ) sẽ đồng dạng về số và giống với "que". (→ [Agreement với COD đứng trước](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
+- QKPT cũng đồng dạng về số và giống với "qui" nếu ĐT tạo thành thì passé composé là "être". (→ [Passé composé với être](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 
 ## p) Relative pronouns: ce qui, ce que
 - "**Ce qui**" và "**ce que**" là các đại từ quan hệ như "qui, que"; chúng mở đầu mệnh đề phụ. Tuy nhiên, "ce qui/que" được dùng trong các câu không có tiền ngữ được biểu thị rõ ràng. Chúng không đề cập đến một DT (danh từ) cụ thể, mà là một ý tưởng hoặc toàn bộ phát biểu, có thể đã được biểu đạt hoặc chưa; chúng đề cập đến một điều gì đó chưa được nêu rõ và chưa được xác định.
@@ -151,16 +155,16 @@ isIndex: false
 	- **Ce qui (what, that, which)**: thực hiện chức năng như chủ ngữ của mệnh đề phụ.
 		- "Ce qui" thường được dùng để nhấn mạnh, theo sau là "c'est".
 	- **Ce que (what, that, which)**: thực hiện chức năng như tân ngữ trực tiếp của mệnh đề phụ. "Ce que" trở thành "ce qu'" trước từ bắt đầu bởi nguyên âm.
-- "Ce qui" và "ce que" cũng được dùng trong câu gián tiếp (**indirect discourse / reported speech**). (→ [Discours rapporté](/blog/tieng-phap/grammar/e-thi-thuc-the/24-le-discours-rapporte/))
+- "Ce qui" và "ce que" cũng được dùng trong câu gián tiếp (**indirect discourse / reported speech**). (→ [Discours rapporté](/blog/le-discours-rapporte-cau-tuong-thuat/))
 
 ## q) Relative pronouns: dont, où, …: present tense
 - Trong trường hợp đại từ quan hệ là tân ngữ của giới từ, phải sử dụng các đại từ quan hệ khác ngoài "qui/que". "**De**" là giới từ phổ biến nhất trong số các giới từ này, và "**dont**" là đại từ quan hệ đại diện cho cả giới từ "de" + tân ngữ của nó.
 
 ### i) dont, où, lequel: relative pronoun with antecedent
-- **"dont"**: dùng "dont" nếu mệnh đề phụ cần một tân ngữ được mở đầu bởi "de/d'". Những mệnh đề như vậy có thể biểu thị sự sở hữu hoặc chúng có COI après "de" thể chứa các ĐT được theo sau bởi giới từ "de". Một số ĐT này bao gồm: "parler de, avoir besoin de, avoir peur de, tenir de"; s'occuper de, être fier/content de. (→ [Pronoun "en" – cùng nhóm ĐT + de](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **"dont"**: dùng "dont" nếu mệnh đề phụ cần một tân ngữ được mở đầu bởi "de/d'". Những mệnh đề như vậy có thể biểu thị sự sở hữu hoặc chúng có COI après "de" thể chứa các ĐT được theo sau bởi giới từ "de". Một số ĐT này bao gồm: "parler de, avoir besoin de, avoir peur de, tenir de"; s'occuper de, être fier/content de. (→ [Pronoun "en" – cùng nhóm ĐT + de](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 	<!-- Memo 144–145 -->
 	- "dont" thường biểu thị sở hữu, "whose" là nghĩa TA.
-- **"Où"**: nghĩa là "where, in which, on which". Dùng "où" nếu mệnh đề phụ cần một tân ngữ chỉ vị trí mở đầu bằng "dans, à, sur, sous". Khi dùng sau trạng từ thời gian, "où" nghĩa là "when". *(C. de temps/lieu)* (→ [Prépositions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- **"Où"**: nghĩa là "where, in which, on which". Dùng "où" nếu mệnh đề phụ cần một tân ngữ chỉ vị trí mở đầu bằng "dans, à, sur, sous". Khi dùng sau trạng từ thời gian, "où" nghĩa là "when". *(C. de temps/lieu)* (→ [Prépositions](/blog/les-prepositions-gioi-tu/))
 - **Preposition + lequel, laquelle, lesquels, lesquelles (which)**: các đại từ quan hệ này được dùng khi mệnh đề quan hệ được mở đầu bởi một giới từ không phải de/d'. Các đại từ này tạo thành dạng rút gọn thông thường với giới từ "à" và "de". Lưu ý rằng, giới từ trong TP phải được đặt ngay trước đại từ quan hệ.
 - **Lưu ý**: Dạng "dont" thường được dùng trong văn nói TP thay vì dạng duquel, de laquelle, desquels và desquelles; tuy nhiên các dạng này cũng có thể được tìm thấy, đặc biệt là trong văn viết. "Dont" chỉ có thể được thay thế cho giới từ de và tân ngữ của nó, nhưng phải sử dụng dạng lequel khi de là một phần của giới từ 2–3 từ, chẳng hạn như "à propos de", "près de", "loin de", "à côté de".
 

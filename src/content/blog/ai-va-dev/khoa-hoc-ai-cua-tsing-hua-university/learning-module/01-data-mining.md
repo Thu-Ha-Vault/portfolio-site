@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/01 -
   Data Mining.md
+url: /blog/data-mining/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 1
 description: >-
@@ -80,7 +83,7 @@ isIndex: false
 - **Veracity**: Data uncertainty; managing the reliability and predictability
 -> essentially describe what big data _is_. They define the nature of the data itself.However, simply possessing massive, diverse, fast-moving, and accurate datasets does not automatically generate value.
 - 5th V: data value
-- Big data: a revolution that will transfer how we live, work and think, the essence of big data lies not in its sheer size, but in the value we can extract from it. (→ [Foundations - Data, data, everywhere](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/01-foundations-data-data-everywhere/))
+- Big data: a revolution that will transfer how we live, work and think, the essence of big data lies not in its sheer size, but in the value we can extract from it. (→ [Foundations - Data, data, everywhere](/blog/foundations-data-data-everywhere/))
 - Smart data: First, it must "Make Sense to a human."This means the data should be meaningful, interpretable, and usable by us, rather than just being a string of incomprehensible numbers. Second, it must support "timely and better predictions or decision outcomes."In other words, smart data empowers us to make faster and more accurate decisions.
 - This is the core objective of our data mining work: we are not here to simply process data, but to make it truly "smart," turning it into a reliable foundation for decision-making. Next, we will explore how to achieve this goal within the actual knowledge discovery process.
 ## Data Mining framework: the step of process
@@ -100,7 +103,7 @@ isIndex: false
 		- Learning the application domain: relevant prior knowledge and goals of application
 		- Creating dataset: data collection
 	- Layer 2:
-		- Data cleaning and preprocessing: (more than 60% of effort) (→ [Process data from Dirty to Clean](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/04-process-data-from-dirty-to-clean/))
+		- Data cleaning and preprocessing: (more than 60% of effort) (→ [Process data from Dirty to Clean](/blog/process-data-from-dirty-to-clean/))
 		- Data reduction and transformation: Find useful features, dimensionality/variable reduction, invariant representation
 	- Layer 3:
 		- Choosing functions of data mining: summarization, classification, regression, association, clustering
@@ -135,9 +138,9 @@ isIndex: false
 		- The World-Wide Web: serves as a vast, dynamic, and ever-changing source of information.
 - This diversity means that there is no one-size-fits-all solution; instead, we must carefully select the appropriate mining methods and algorithms tailored to the specific characteristics of the data at hand.
 ### Data Mining Tasks
-- **Predictive tasks**: use some variables to predict unknown of future values of other variables. Use existing data to make informed forecasts about unknown or future outcomes. (→ [Phân tích dữ liệu nhà ở Boston](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/04-phan-tich-du-lieu-nha-o-boston/))
+- **Predictive tasks**: use some variables to predict unknown of future values of other variables. Use existing data to make informed forecasts about unknown or future outcomes. (→ [Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/))
 	- **Classification**: The goal here is to assign new data points to predefined categories based on their features.
-	- **Regression**: used to estimate continuous numerical values. (→ [Linear and Logistic Regression](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/01-linear-and-logistic-regression/))
+	- **Regression**: used to estimate continuous numerical values. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
 	- **Deviation/Outlier Detection**: This technique identifies data points that significantly differ from the normal pattern.
 - **Descriptive tasks**: Find human-interpretable patterns that describe the data. Help us uncover hidden patterns and structures within the data to improve our understanding.
 	- **Association Rule Discovery**: this technique reveals relationships between different items, such as identifying which products are frequently bought together in a supermarket.
@@ -197,7 +200,7 @@ $$(\text{Shoes}) \rightarrow (\text{Racket}, \text{Racketball}) \rightarrow (\te
 $$f(X_1, X_2, \dots, X_n) \rightarrow Y \quad \text{với } Y \in \{C_1, C_2, \dots, C_k\}$$
   * Dữ liệu đầu vào bao gồm các thuộc tính định danh/phân loại (categorical) và thuộc tính liên tục (continuous).
 * **Điểm đặc trưng & Quy trình:** 
-  * Gồm hai pha riêng biệt: (→ [Classification](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/10-classification/))
+  * Gồm hai pha riêng biệt: (→ [Classification](/blog/classification/))
     1. *Giai đoạn huấn luyện (Model Training):* Thuật toán phân tích **Tập huấn luyện (Training Set)** đã có nhãn để rút trích quy luật và tạo ra **Mô hình phân lớp (Classifier)**.
     2. *Giai đoạn kiểm thử/ứng dụng (Testing/Inference):* Dùng **Tập kiểm thử (Test Set)** và dữ liệu mới chưa gán nhãn để đánh giá độ chính xác cũng như thực hiện dự đoán.
   * Khác biệt cơ bản với gom cụm (Clustering): Classification yêu cầu nhãn mục tiêu xác định từ trước, trong khi Clustering không dùng nhãn sẵn có.
@@ -260,7 +263,7 @@ $$\mathcal{D} = \{x_1, x_2, \dots, x_N\} \rightarrow \{C_1, C_2, \dots, C_k\} \q
 * **Điểm khác biệt / Điểm đặc trưng:** 
   * Hoàn toàn thuộc dạng học không giám sát (unsupervised learning). Khác với Phân lớp (Classification) vốn dựa vào các nhãn danh mục xác định từ trước trong tập huấn luyện, gom cụm tự động nhóm các điểm dữ liệu mà không cần bất kỳ nhãn mục tiêu có sẵn nào.
 ##### 2. Phân tích các ví dụ minh họa (Slide 37 & Transcript P37)
-* **Phân khúc thị trường (Market Segmentation):** (→ [SQL – Ứng dụng thực chiến](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/advanced/03-ung-dung-thuc-chien/))
+* **Phân khúc thị trường (Market Segmentation):** (→ [SQL – Ứng dụng thực chiến](/blog/ung-dung-thuc-chien/))
   * *Biểu diễn logic:* 
 $$\{\text{Geographical\_Attributes}, \text{Lifestyle\_Attributes}\} \xrightarrow{\text{Clustering}} \text{Customer\_Segment}_k$$
   * *Cơ chế thực tế:* Doanh nghiệp thu thập dữ liệu về vị trí địa lý, lối sống, sở thích và thói quen sinh hoạt của tệp khách hàng lớn. Thuật toán gom các khách hàng có đặc điểm tương đồng vào cùng một phân khúc mà không cần định nghĩa trước danh sách nhóm.
@@ -400,7 +403,7 @@ $$\text{Instruction} + \text{Context} \xrightarrow{\text{Autoregressive Generati
 ### Mối quan hệ giữa Khai phá dữ liệu, Tri thức và Trí tuệ (Data Mining & Knowledge & Intelligence)
 
 #### 1. Bản chất & Định nghĩa cốt lõi (Slide 46 & Transcript P46)
-* **Phân loại nhiệm vụ:** **Mô hình hóa chuỗi giá trị tri thức (Knowledge Value Chain / Conceptual Framework)**. (→ [Towards AGI](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/02-towards-artificial-general-intelligence/))
+* **Phân loại nhiệm vụ:** **Mô hình hóa chuỗi giá trị tri thức (Knowledge Value Chain / Conceptual Framework)**. (→ Towards AGI)
 * **Bản chất kỹ thuật:** 
   * Quá trình chuyển hóa phân cấp lũy tiến từ dữ liệu thô sang khả năng ra quyết định thông minh:
     $$\text{Data} \xrightarrow{\text{Cấu trúc hóa / Xử lý}} \text{Information} \xrightarrow{\text{Khai phá quy luật}} \text{Knowledge} \xrightarrow{\text{Ra quyết định thực thi}} \text{Intelligence}$$
@@ -431,7 +434,7 @@ $$\text{Instruction} + \text{Context} \xrightarrow{\text{Autoregressive Generati
   * *Mục tiêu:* Xây dựng các hệ thống AI có khả năng tự động hóa chu trình từ dữ liệu đến hành động.
   * *Hành động can thiệp:* Tích hợp các mô hình học sâu và mô hình ngôn ngữ lớn (LLMs) vào chuỗi giá trị nhằm tăng tốc quá trình chuyển hóa từ dữ liệu đa phương thức sang các quyết định thông minh tức thì.
 ### Application Example: Recommendation System
-- Recommendation System: the systems that are designed to recommend things to the user based on many different factors. Why is it necessary? (→ [AI in Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/13-artificial-intelligence-in-education/))
+- Recommendation System: the systems that are designed to recommend things to the user based on many different factors. Why is it necessary? (→ [AI in Education](/blog/artificial-intelligence-in-education/))
 	- For users: help users discover items they might not have found by themselves
 	- For companies: attract more users and help companies to sell more products and services
 - Applications: videos, news, music, goods, social networks, books, queries, restaurants,...
@@ -472,7 +475,7 @@ $$\text{Instruction} + \text{Context} \xrightarrow{\text{Autoregressive Generati
 - Linear Regression
 - Logistic Regression
 - CART-Decision Tree
-- Naive Bayes (→ [Error Rates and the Bayes Classifier](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/11-error-rates-and-the-bayes-classifier/))
+- Naive Bayes (→ [Error Rates and the Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/))
 - KNN (K-Nearest Neighbors)
 - Apriori
 - K-means

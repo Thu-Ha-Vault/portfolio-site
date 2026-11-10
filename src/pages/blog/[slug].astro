@@ -1,0 +1,56 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import T from '../../components/T.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import Cta from '../../components/Cta.astro';
+import config from '../../../site.config.json';
+import { blogEntries, siblings, breadcrumbs, hasMermaid, fmtDate, param } from '../../lib';
+
+export async function getStaticPaths() {
+  const all = await blogEntries();
+  return all.filter((e) => !e.data.isIndex).map((entry) => ({ params: { slug: param(entry.data.url) }, props: { entry, all } }));
+}
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const { prev, next } = siblings(all, entry);
+const crumbs = breadcrumbs(all, entry.id);
+const url = new URL(d.url, Astro.site).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  dateModified: d.updated,
+  url,
+  author: { '@type': 'Person', name: config.author.name, url: config.site },
+  keywords: d.tags.join(', '),
+};
+---
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)} type="article" jsonLd={jsonLd}>
+  <div class="wrap article">
+    <ol class="crumbs">
+      <li><a href="/blog/"><T k="blog" /></a></li>
+      {crumbs.map((c) => <li><a href={c.url}>{c.title}</a></li>)}
+    </ol>
+    <header class="article-head">
+      <h1>{d.title}</h1>
+      <p class="byline">
+        {d.updated && <span><T k="updated" /> <time datetime={d.updated}>{fmtDate(d.updated)}</time></span>}
+        {d.source && <a href={d.source} rel="noopener"><T k="source" /></a>}
+      </p>
+    </header>
+    <article class="prose"><Content /></article>
+    <div class="after">
+      {(prev || next) && (
+        <nav class="pager" aria-label="Pagination">
+          {prev && <a href={prev.data.url}><small><T k="prev" /></small>{prev.data.title}</a>}
+          {next && <a class="next" href={next.data.url}><small><T k="next" /></small>{next.data.title}</a>}
+        </nav>
+      )}
+      <ShareBar url={url} title={d.title} />
+      <Cta campaign={`post_${d.topic ?? 'blog'}`} />
+    </div>
+  </div>
+</Base>

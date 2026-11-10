@@ -8,6 +8,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/06 - Phương pháp nghiên cứu khoa học.md
+url: /blog/phuong-phap-nghien-cuu-khoa-hoc-quy-trinh-7-buoc-va-cau-truc-bai-bao/
+topic: university-courses
+updated: '2026-10-16'
 order: 6
 description: >-
   Chép từ 3 ảnh chụp slide trong folder Drive "NCKH" (buổi học 11/12/2021). Phần
@@ -57,9 +60,9 @@ flowchart LR
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung</p>
 
-- Cấu trúc 5 mục ở trên là kiểu bài báo **kỹ thuật/tin học** (đề xuất phương pháp → đánh giá hiệu năng). Bài báo **sinh học thực nghiệm** thường theo **IMRaD**: Introduction – Materials and Methods – Results – Discussion (vd [báo cáo PG trên phôi cá ngựa vằn](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/02-doc-tinh-propylene-glycol-tren-phoi-ca-ngua-van/)).
+- Cấu trúc 5 mục ở trên là kiểu bài báo **kỹ thuật/tin học** (đề xuất phương pháp → đánh giá hiệu năng). Bài báo **sinh học thực nghiệm** thường theo **IMRaD**: Introduction – Materials and Methods – Results – Discussion (vd [báo cáo PG trên phôi cá ngựa vằn](/blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/)).
 - Ví dụ bài báo thật cùng folder NCKH: Salcedo et al. (2023), *Transient use of hemolymph for hydraulic wing expansion in cicadas*, Scientific Reports 13:6298 – [Drive](https://drive.google.com/file/d/1yhWzvurkQS_RF3vDbAcurUx_Wtch7BZt/view). Abstract của bài đi đúng trình tự: vai trò của cánh → câu hỏi (bao nhiêu hemolymph được bơm vào cánh) → phương pháp (200 nhộng ve sầu *Magicicada septendecim*) → kết quả.
-- Khi khảo sát tài liệu (bước 2), có thể dùng [Thư viện tài liệu Sinh học](/blog/sinh-hoc/thu-vien-tai-lieu-sinh-hoc/) làm điểm xuất phát.
+- Khi khảo sát tài liệu (bước 2), có thể dùng [Thư viện tài liệu Sinh học](/blog/thu-vien-tai-lieu-sinh-hoc-google-drive/) làm điểm xuất phát.
 
 </div>
 

@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / C - Động từ
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/C - Động từ/08 - Les verbes irréguliers au
   présent.md
+url: /blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/
+topic: french
+updated: '2026-10-14'
 order: 8
 description: >-
   Memo 67: bảng être thiếu động từ ở ngôi 3 số ít: "il/elle/on (he/she/one is)"
@@ -52,7 +55,7 @@ isIndex: false
 
 <!-- Memo 66–67 -->
 ## l) être "to be"
-- Động từ "être" là ĐT bất qui tắc trong thì hiện tại: (→ [Le présent](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/), [Chia être](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- Động từ "être" là ĐT bất qui tắc trong thì hiện tại: (→ [Le présent](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/), [Chia être](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 
 | Số ít                          | Số nhiều                  |
 | ------------------------------ | ------------------------- |
@@ -61,10 +64,10 @@ isIndex: false
 | il/elle/on est (he/she/one is) | ils/elles sont (they are) |
 
 - "**C'est**" (số nhiều: "**Ce sont**") là một cách biểu đạt phổ biến được dùng để miêu tả và giới thiệu người hoặc vật.
-- "Être" cũng được dùng như một **trợ động từ** trong **thì ghép (compound tenses)**. (→ [Passé composé avec être](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- "Être" cũng được dùng như một **trợ động từ** trong **thì ghép (compound tenses)**. (→ [Passé composé avec être](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 
 ## m) avoir "to have"
-- Động từ "avoir" là bất qui tắc trong thì hiện tại. (→ [a (avoir) ≠ à](/blog/tieng-phap/grammar/a-grammaire-essentielle/01-alphabet-accents-et-prononciation/), [Chia avoir](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- Động từ "avoir" là bất qui tắc trong thì hiện tại. (→ [a (avoir) ≠ à](/blog/alphabet-accents-et-prononciation-bang-chu-cai-dau-va-phat-am/), [Chia avoir](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 - Quy tắc **nối âm (liaison)** rất quan trọng để phân biệt "ils ont" (they have) và ngôi thứ 3 số nhiều của être là "ils sont" (they are).
 - Avoir:
 
@@ -79,8 +82,8 @@ isIndex: false
 
 ## n) Avoir expressions
 - Avoir được dùng trong **diễn đạt không ngôi (impersonal)** "**il y a**", nghĩa là "there is/are". "Il y a" được dùng để biểu đạt sự tồn tại của 1 người hoặc 1 vật, hoặc tạo một danh sách hoặc bản kê của người hoặc vật. Mạo từ không xác định (un, une, des) thường được dùng với "il y a".
-- Phủ định của "il y a" là "**il n'y a pas**". Mạo từ không xác định (un, une, des) trở thành **de/d'** sau sự phủ định này → tương đương với "any". (→ [de sau phủ định](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/), [La négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
-- Avoir được dùng trong nhiều cách biểu đạt có tính chất thành ngữ. Lưu ý là bản dịch TA thường dùng ĐT "to be" thay vì "to have": (→ [avoir + de + infinitive](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- Phủ định của "il y a" là "**il n'y a pas**". Mạo từ không xác định (un, une, des) trở thành **de/d'** sau sự phủ định này → tương đương với "any". (→ [de sau phủ định](/blog/les-determinants-tu-han-dinh/), [La négation](/blog/la-negation-phu-dinh/))
+- Avoir được dùng trong nhiều cách biểu đạt có tính chất thành ngữ. Lưu ý là bản dịch TA thường dùng ĐT "to be" thay vì "to have": (→ [avoir + de + infinitive](/blog/les-prepositions-gioi-tu/))
 	- **avoir besoin de**: to need
 	- **avoir envie de**: to want (to do sth), to feel like (doing sth)
 	- **avoir l'intention de**: to intend to (do sth)
@@ -89,13 +92,13 @@ isIndex: false
 	- **avoir chaud**: to be hot
 	- **avoir froid**: to be cold
 	- **avoir honte (de)**: to be ashamed (of)
-	- **avoir mal (à + definite article + partie du corps humain)**: to hurt (to have + bệnh) (→ [Mạo từ với bộ phận cơ thể](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+	- **avoir mal (à + definite article + partie du corps humain)**: to hurt (to have + bệnh) (→ [Mạo từ với bộ phận cơ thể](/blog/les-determinants-tu-han-dinh/))
 	- **avoir raison**: to be right
 	- **avoir tort**: to be wrong
 	- **avoir sommeil**: to be sleepy
 
 ## o) aller "to go"
-- Động từ aller là bất qui tắc ở thì hiện tại. "-s" được phát âm là /z/ để nối với nguyên âm trong dạng số nhiều allons và allez. (→ [Futur proche](/blog/tieng-phap/grammar/e-thi-thuc-the/20-le-futur-proche-et-le-futur-simple/))
+- Động từ aller là bất qui tắc ở thì hiện tại. "-s" được phát âm là /z/ để nối với nguyên âm trong dạng số nhiều allons và allez. (→ [Futur proche](/blog/le-futur-proche-et-le-futur-simple-tuong-lai-gan-va-tuong-lai-don/))
 
 | Số ít         | Số nhiều       |
 | ------------- | -------------- |
@@ -122,7 +125,7 @@ isIndex: false
 	- ils → **font** (they do/make)
 - Dù "faire" thường được dùng trong câu hỏi, nhưng không nhất thiết phải được dùng trong câu trả lời.
 - "Faire" được dùng trong nhiều cách biểu đạt, bao gồm thời tiết, thể thao, và h.đ gt (hoạt động giải trí?) (?).
-- Biểu đạt **thời tiết không ngôi**: (→ [Temps (weather)](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/))
+- Biểu đạt **thời tiết không ngôi**: (→ [Temps (weather)](/blog/les-noms-danh-tu/))
 	- **Quel temps fait-il ?**: What's the weather like?
 	- **Il fait beau**: It's beautiful.
 	- **Il fait chaud / du brouillard / du soleil / du vent / frais / froid**: It's hot / foggy / sunny / windy / cool / cold.
@@ -154,7 +157,7 @@ isIndex: false
 	- **faire la vaisselle**: to do the dishes
 
 ## q) Venir "to come"
-- ĐT "venir" là BQT trong thì hiện tại. Nguyên âm là **âm mũi** ở dạng số ít nhưng không ở dạng số nhiều: (→ [Venir de (passé récent)](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/), [Subjonctif – verbs with two stems](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
+- ĐT "venir" là BQT trong thì hiện tại. Nguyên âm là **âm mũi** ở dạng số ít nhưng không ở dạng số nhiều: (→ [Venir de (passé récent)](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/), [Subjonctif – verbs with two stems](/blog/le-subjonctif-thuc-gia-dinh/))
 
 | Số ít            | Số nhiều           |
 | ---------------- | ------------------ |
@@ -190,7 +193,7 @@ isIndex: false
 | vous       | savez                   | connaissez                                 |
 | ils/elles  | savent                  | connaissent                                |
 
-- Savoir và connaître được dùng trong ngữ cảnh khác nhau hoặc mô tả mức độ khác nhau của sự hiểu biết. **Savoir** được dùng cho sự việc, sự vật được ghi nhớ hoàn toàn hoặc các năng lực. Khi được theo sau bởi ĐT nguyên thể, savoir cho biết cách để làm gì đó. **Connaître** được dùng cho người và địa điểm và đại diện cho sự quen biết sơ sài hoặc biết rõ cá nhân. (→ [savoir vs. pouvoir](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- Savoir và connaître được dùng trong ngữ cảnh khác nhau hoặc mô tả mức độ khác nhau của sự hiểu biết. **Savoir** được dùng cho sự việc, sự vật được ghi nhớ hoàn toàn hoặc các năng lực. Khi được theo sau bởi ĐT nguyên thể, savoir cho biết cách để làm gì đó. **Connaître** được dùng cho người và địa điểm và đại diện cho sự quen biết sơ sài hoặc biết rõ cá nhân. (→ [savoir vs. pouvoir](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 
 | Savoir +           | Connaître +      |
 | ------------------ | ---------------- |
@@ -209,7 +212,7 @@ isIndex: false
 | tu dis         | vous dites       |
 | il/elle/on dit | ils/elles disent |
 
-- Ta có thể đã thấy ĐT "dire" trong cụm "**Comment dit-on … ?**" (How do you say …?) và "**Qu'est-ce que ça veut dire ?**" (What does that mean?). "Dire" có nghĩa là "to say" (to say sth or to tell someone sth) trong khi "**parler**" nghĩa là "to speak" (to speak to someone about sth, or to speak a language). "Dire" thường được dùng để bắt đầu 1 cụm hoặc thu hút sự chú ý của ai đó. (→ [Inversion, qu'est-ce que](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
+- Ta có thể đã thấy ĐT "dire" trong cụm "**Comment dit-on … ?**" (How do you say …?) và "**Qu'est-ce que ça veut dire ?**" (What does that mean?). "Dire" có nghĩa là "to say" (to say sth or to tell someone sth) trong khi "**parler**" nghĩa là "to speak" (to speak to someone about sth, or to speak a language). "Dire" thường được dùng để bắt đầu 1 cụm hoặc thu hút sự chú ý của ai đó. (→ [Inversion, qu'est-ce que](/blog/l-interrogation-cau-hoi/))
 - Chú ý dạng vous "dites" là bất thường do không kết thúc bằng đuôi "-ez". Dire là 1 trong 3 ĐT có dạng này.
 - Động từ "**conduire**" (to drive) được chia giống "dire" ngoại trừ dạng vous là "vous conduisez" (QKPT – quá khứ phân từ – là "conduit").
 - Chia (?) "**lire**":

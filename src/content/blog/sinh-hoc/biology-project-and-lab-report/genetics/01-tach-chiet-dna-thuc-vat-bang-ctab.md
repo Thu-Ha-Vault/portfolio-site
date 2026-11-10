@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Genetics
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Genetics/01 - Tách chiết DNA
   thực vật bằng CTAB.md
+url: /blog/tach-chiet-dna-thuc-vat-bang-ctab-va-dien-di-gel-agarose/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực hành Di truyền học – Bài 5–6 · K66 Sinh học (ca chiều thứ 3, tiết
@@ -25,11 +28,11 @@ isIndex: false
 - Kiểm tra sản phẩm tách chiết bằng **điện di gel agarose**, đánh giá độ nguyên vẹn và độ sạch của DNA.
 
 ## Nguyên lý
-- **Cấu trúc DNA**: đại phân tử sợi kép, hai mạch xoắn quanh một trục chung (xoắn kép). (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- **Cấu trúc DNA**: đại phân tử sợi kép, hai mạch xoắn quanh một trục chung (xoắn kép). (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- Đơn phân là **nucleotide**, gồm 4 loại base: **A, G, C, T**, nối với nhau bằng liên kết **phosphodiester**.
 	- Bổ sung giữa hai mạch: **A = T** (2 liên kết hydrogen), **G ≡ C** (3 liên kết hydrogen).
 	- Thông tin di truyền nằm ở **trình tự nucleotide**; đoạn DNA mã hoá protein là **gene**.
-- **Vị trí DNA trong tế bào thực vật**: chủ yếu trên **nhiễm sắc thể** trong nhân; một phần nằm ở **ti thể** và **lục lạp** (DNA ngoài nhân). (→ [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+- **Vị trí DNA trong tế bào thực vật**: chủ yếu trên **nhiễm sắc thể** trong nhân; một phần nằm ở **ti thể** và **lục lạp** (DNA ngoài nhân). (→ [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 - **CTAB** (hexadecyltrimethylammonium bromide): chất hoạt động bề mặt cation, phá màng tế bào và màng bào quan, giải phóng DNA; tạo phức với polysaccharide giúp loại chúng – rất hợp với mô thực vật nhiều polysaccharide.
 - **Chloroform : isoamyl alcohol (CI)** tách pha: protein biến tính tụ ở **mặt phân cách**, DNA ở **pha nước** phía trên.
 - **Isopropanol** lạnh kết tủa DNA; **ethanol 70%** rửa muối; DNA hoà tan lại trong nước.
@@ -75,7 +78,7 @@ flowchart LR
 - **Giếng 12** (của tác giả): chấp nhận được; DNA bị đứt gãy, còn **protein** bám ở miệng giếng và **RNA** ở cuối đường chạy.
 - **Giếng 13** (của tác giả): vạch DNA mờ, không sáng rõ; cuối đường chạy còn lẫn tạp chất.
 - Nhận xét chung: DNA bị đứt gãy, lượng thu được ít nên vạch mờ; còn lẫn protein và nhiều RNA.
-- Xem thêm: [Virtual Lab: tách DNA bằng CTAB](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – làm lại 13 bước của bài trong app; ảnh gel mô phỏng có DNA đứt gãy, protein ở giếng, vệt RNA như ảnh gel thật.
+- Xem thêm: [Virtual Lab: tách DNA bằng CTAB](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – làm lại 13 bước của bài trong app; ảnh gel mô phỏng có DNA đứt gãy, protein ở giếng, vệt RNA như ảnh gel thật.
 
 ## Kết luận
 ### Vai trò các thành phần – tách chiết
@@ -106,7 +109,7 @@ flowchart LR
 
 </div>
 
-- DNA tách chiết là nguyên liệu đầu vào cho **PCR** (→ [PCR](/blog/sinh-hoc/biology-project-and-lab-report/genetics/02-pcr-cac-van-de-co-ban/)) và các thí nghiệm sinh học phân tử khác (→ [Kết quả thực hành Sinh học phân tử](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/)).
+- DNA tách chiết là nguyên liệu đầu vào cho **PCR** (→ [PCR](/blog/cac-van-de-co-ban-polymerase-chain-reaction/)) và các thí nghiệm sinh học phân tử khác (→ [Kết quả thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/)).
 
 ## Tài liệu gốc
 *Báo cáo DTH bài 5+6.pdf*

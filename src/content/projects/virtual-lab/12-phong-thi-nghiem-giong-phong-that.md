@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/12 - Phòng thí nghiệm giống phòng thật.md
+url: /projects/virtual-lab/phong-thi-nghiem-giong-phong-that/
+updated: '2026-10-19'
 date: '2026-10-17'
 status: active
 order: 12
@@ -25,7 +27,7 @@ Kế hoạch rút gọn và tiêu chí "xong" nằm ở mục 8 của CLAUDE.md.
 	- Kiểu phác thảo: khối có viền nét, tên app ghi "bản phác thảo".
 	- Không bóng đổ, không phản chiếu môi trường, không tone mapping.
 	- Thuỷ tinh là khối trong suốt đơn giản, không khúc xạ; chất lỏng không có mặt khum.
-	- Vân bề mặt mới có ở mức sinh bằng mã (→ [note 10 mục 8](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/)).
+	- Vân bề mặt mới có ở mức sinh bằng mã (→ [note 10 mục 8](/projects/virtual-lab/thi-nghiem-giai-doan-5/)).
 - **Không gian**:
 	- Một phòng 44 × 28 m chứa mọi khu, lớn hơn nhiều so với một phòng thực hành thường gặp.
 	- Tường trước chỉ cao 1,1 m để nhìn vào; không trần, không đèn trần, không cửa ra vào, không cửa sổ.
@@ -35,7 +37,7 @@ Kế hoạch rút gọn và tiêu chí "xong" nằm ở mục 8 của CLAUDE.md.
 	- 16 máy trong khu máy móc là mô hình low-poly; 27 hình chi tiết của máy chỉ mở thành hình SVG riêng.
 	- 75 món có chú thích trong `data/apparatus.json`.
 	- Thiếu đồ tiêu hao (đầu tip, ống 1,5 mL, găng, giấy lau) và hệ thống kỹ thuật (ổ điện, vòi khí, vòi nước cất, bồn rửa tay, móc áo).
-- **Thao tác**: phần lớn bấm nút ở bảng bên phải. Rót theo thời gian giữ, nhỏ giọt, micropipet, mở nắp, cân bằng rotor chưa làm bằng tay trong 3D ([note 10](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/) mục 3, 4, 5 chưa xong).
+- **Thao tác**: phần lớn bấm nút ở bảng bên phải. Rót theo thời gian giữ, nhỏ giọt, micropipet, mở nắp, cân bằng rotor chưa làm bằng tay trong 3D ([note 10](/projects/virtual-lab/thi-nghiem-giai-doan-5/) mục 3, 4, 5 chưa xong).
 - **Quy trình**: chưa có thay đồ ở phòng đệm, sổ đặt máy, nhãn ống, dụng cụ bẩn phải rửa, hoá chất hết phải pha, dọn bàn cuối buổi.
 - **Thời gian, âm thanh**: mỗi thí nghiệm tua nhanh theo cách riêng; chưa có âm thanh.
 
@@ -68,7 +70,7 @@ Mọi ngưỡng nằm trong `data/facility.json` (khoá `rules`, nguồn ở `_s
 
 Chưa tra hoặc chưa dùng:
 - **NFPA 45** (lượng hoá chất dễ cháy tối đa ngoài tủ): bản đầy đủ không đọc miễn phí được, chưa đưa số nào vào app.
-- **EN 14175**: vị trí tủ hút dùng số của UW ở trên; vận tốc mặt cửa vẫn dùng số của hãng từ giai đoạn 2 (→ [07 - Các khu của phòng thí nghiệm](/projects/virtual-lab/07-cac-khu-cua-phong-thi-nghiem/)).
+- **EN 14175**: vị trí tủ hút dùng số của UW ở trên; vận tốc mặt cửa vẫn dùng số của hãng từ giai đoạn 2 (→ [07 - Các khu của phòng thí nghiệm](/projects/virtual-lab/cac-khu-cua-phong-thi-nghiem/)).
 - **Tiêu chuẩn Việt Nam cho phòng thí nghiệm trường học**: *chưa xác định có tiêu chuẩn nào phù hợp*.
 
 ## 4. Mặt bằng đã dựng (`BUILDING` trong `src/scene/layout.js`)

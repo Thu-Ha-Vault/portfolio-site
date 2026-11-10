@@ -11,18 +11,21 @@ folder: Sinh học / Biology Project and Lab Report / Botany
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Botany/Ảnh tiêu bản giải
   phẫu thực vật.md
+url: /blog/anh-tieu-ban-giai-phau-thuc-vat/
+topic: biology
+updated: '2026-10-16'
 description: >-
   Ảnh chụp qua thị kính kính hiển vi trong buổi thực tập Giải phẫu Thực vật
   (IMG4147–IMG4184), dùng cho báo cáo. Tên mẫu xác định theo ảnh đã chú thích
   trong báo cáo và khay mẫu; ảnh không có trong báo cáo được ghi (?). Mỗ
 isIndex: false
 ---
-> Ảnh chụp qua thị kính kính hiển vi trong buổi thực tập Giải phẫu Thực vật (`IMG_4147`–`IMG_4184`), dùng cho [báo cáo](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/). Tên mẫu xác định theo ảnh đã chú thích trong báo cáo và khay mẫu; ảnh không có trong báo cáo được ghi `(?)`. Mỗi cảnh chỉ giữ 1 ảnh rõ nhất; bản trùng và ảnh mờ xem trên [Drive](https://drive.google.com/drive/folders/1-0xFcmG10pAwRmsOOQphm7RH60JEHijh). Tiêu bản tảo xem ở [Tảo](/blog/sinh-hoc/biology-project-and-lab-report/botany/02-tao-va-vong-doi-xen-ke-the-he/).
+> Ảnh chụp qua thị kính kính hiển vi trong buổi thực tập Giải phẫu Thực vật (`IMG_4147`–`IMG_4184`), dùng cho [báo cáo](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/). Tên mẫu xác định theo ảnh đã chú thích trong báo cáo và khay mẫu; ảnh không có trong báo cáo được ghi `(?)`. Mỗi cảnh chỉ giữ 1 ảnh rõ nhất; bản trùng và ảnh mờ xem trên [Drive](https://drive.google.com/drive/folders/1-0xFcmG10pAwRmsOOQphm7RH60JEHijh). Tiêu bản tảo xem ở [Tảo](/blog/thuc-vat-bac-thap-tao-va-vong-doi-xen-ke-the-he/).
 
 ## Khay mẫu
 - **Khay 24 giếng** đựng lát cắt, mỗi giếng ghi tên mẫu: Thân bí ngô, Lá trúc đào, Rễ ngô, Lá lúa (?), Lá ngô, Thân mao lương (?), Thân hướng dương (?), Dâm bụt già, Rễ bí ngô…
 	- ![IMG_4180](/vault-assets/img-4180-576a2c66.jpg)
-- Xem thêm: [Virtual Lab: tiêu bản hiển vi ảo](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – 8 lát cắt trong ảnh được vẽ lại thành tiêu bản ảo, kèm các lỗi bọt khí, lát cắt dày.
+- Xem thêm: [Virtual Lab: tiêu bản hiển vi ảo](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – 8 lát cắt trong ảnh được vẽ lại thành tiêu bản ảo, kèm các lỗi bọt khí, lát cắt dày.
 
 ## Lá
 - **Lá Ngô**: phiến lá mỏng, các bó mạch nhỏ (xylem bắt màu xanh) nối với nhau bằng dải mô mềm, giữa là khoang lớn. Cùng tiêu bản với ảnh "Lá Ngô" trong báo cáo. (`IMG_4177` tương tự)
@@ -37,7 +40,7 @@ isIndex: false
 	- ![IMG_4178](/vault-assets/img-4178-cc9d4e1e.jpg)
 
 ## Thân
-- **Ảnh "Thân Ngô" trong báo cáo**: ruột rỗng, biểu bì có lông, bó mạch lớn xếp vòng, mô mềm vỏ. Theo đặc điểm thì giống **Thân Bí Ngô** hơn (?) (→ xem mục Cần kiểm tra của [báo cáo](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/)).
+- **Ảnh "Thân Ngô" trong báo cáo**: ruột rỗng, biểu bì có lông, bó mạch lớn xếp vòng, mô mềm vỏ. Theo đặc điểm thì giống **Thân Bí Ngô** hơn (?) (→ xem mục Cần kiểm tra của [báo cáo](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/)).
 	- ![IMG_4169](/vault-assets/img-4169-e1c1579f.jpg)
 - **Bó mạch trong mô mềm, có vài mạch xylem rất lớn** – Thân Bí Ngô hoặc Thân Ngô (?)
 	- ![IMG_4184](/vault-assets/img-4184-a115e675.jpg)
@@ -66,5 +69,5 @@ isIndex: false
 
 ## Ảnh không giữ
 - `IMG_4183`: mờ, không đọc được.
-- `IMG_4164`: ảnh bảng, nội dung (vách sơ cấp nhuộm hồng, vách thứ cấp nhuộm xanh) đã chép vào mục Nguyên lý của [báo cáo](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/).
+- `IMG_4164`: ảnh bảng, nội dung (vách sơ cấp nhuộm hồng, vách thứ cấp nhuộm xanh) đã chép vào mục Nguyên lý của [báo cáo](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/).
 - `IMG_3991.MOV`: video, bỏ qua.

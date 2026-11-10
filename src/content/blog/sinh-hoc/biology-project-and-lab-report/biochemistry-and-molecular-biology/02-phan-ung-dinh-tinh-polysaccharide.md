@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/02 - Phản ứng định tính polysaccharide.md
+url: /blog/cac-phan-ung-dinh-tinh-polysaccharide/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 7 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -20,14 +23,14 @@ isIndex: false
 > Báo cáo thực hành Hoá sinh học – Bài 7 · Nhóm 3, K66 Sinh học (ca tiết 1–2 sáng thứ 4) · 4 thí nghiệm.
 
 ## Mục đích
-- Khảo sát phản ứng màu của **tinh bột với iod** và tính khử của tinh bột trước/sau thuỷ phân. (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+- Khảo sát phản ứng màu của **tinh bột với iod** và tính khử của tinh bột trước/sau thuỷ phân. (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 - Theo dõi các giai đoạn **thuỷ phân tinh bột bằng acid** qua phản ứng Lugol và Fehling.
 - Vận dụng các phản ứng đã học để **nhận biết 5 dung dịch đường mất nhãn**.
 
 ## Nguyên lý
-- **Phức iod – tinh bột**: iod chui vào lòng xoắn amylose → màu **xanh tím**. Đun nóng: iod rời khỏi xoắn → mất màu; để nguội: iod hấp phụ lại → xanh trở lại. Đun lâu: xoắn bị phá (hoặc iod thăng hoa) → mất màu hoàn toàn. (→ [Vitamin](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/07-phan-ung-nhan-biet-va-dinh-luong-vitamin/))
-- **Tinh bột không có tính khử**; thuỷ phân bằng acid mạnh tạo dextrin/đường có đầu khử → dương tính Fehling. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/10-do-ben-va-tinh-dac-hieu-cua-enzyme/))
-- **Dãy thuỷ phân tinh bột**: tinh bột → **amylodextrin** (Lugol tím đen, không khử) → **erythrodextrin** (Lugol nâu đỏ, có tính khử) → **maltodextrin** (không màu với Lugol, tính khử mạnh hơn) → maltose/glucose. (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- **Phức iod – tinh bột**: iod chui vào lòng xoắn amylose → màu **xanh tím**. Đun nóng: iod rời khỏi xoắn → mất màu; để nguội: iod hấp phụ lại → xanh trở lại. Đun lâu: xoắn bị phá (hoặc iod thăng hoa) → mất màu hoàn toàn. (→ [Vitamin](/blog/vitamin-nhan-biet-vitamin-d-b2-va-dinh-luong-vitamin-c/))
+- **Tinh bột không có tính khử**; thuỷ phân bằng acid mạnh tạo dextrin/đường có đầu khử → dương tính Fehling. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/))
+- **Dãy thuỷ phân tinh bột**: tinh bột → **amylodextrin** (Lugol tím đen, không khử) → **erythrodextrin** (Lugol nâu đỏ, có tính khử) → **maltodextrin** (không màu với Lugol, tính khử mạnh hơn) → maltose/glucose. (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 
 ## Vật liệu & phương pháp
 - **TN1 – Tinh bột + iod**: 2–3 ml tinh bột + vài giọt Lugol → đun đến mất màu → làm lạnh → đun kỹ đến mất màu hoàn toàn.
@@ -60,7 +63,7 @@ isIndex: false
 - Tinh bột tạo phức màu đặc trưng với iod; màu phụ thuộc cấu trúc xoắn và nhiệt độ.
 - Tinh bột bị **thuỷ phân trong acid đặc**; thời gian thuỷ phân càng dài, dextrin càng ngắn, màu với iod chuyển tím đen → nâu đỏ → vàng, còn tính khử tăng dần.
 - Kết hợp Fehling – Lugol – Barfoed – Xelivanop cho phép phân biệt hoàn toàn 5 loại đường.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-poly` (thuỷ phân tinh bột) và `bc-unknown` (5 lọ mất nhãn).
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-poly` (thuỷ phân tinh bột) và `bc-unknown` (5 lọ mất nhãn).
 
 ## Tài liệu gốc
 *Định tính polysaccharide.pdf*

@@ -14,6 +14,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/12 - Dự án tổng hợp và portfolio.md
+url: /blog/du-an-tong-hop-va-portfolio/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 12
 description: >-

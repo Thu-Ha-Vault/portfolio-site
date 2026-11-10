@@ -11,6 +11,10 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/32 - Parties du discours -
   pronoms et déterminants.md
+url: >-
+  /blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/
+topic: french
+updated: '2026-10-14'
 order: 32
 description: >-
   Ô B64: "We used stressed pronouns" → "We use"; "after que in a comparison
@@ -42,7 +46,7 @@ isIndex: false
 <summary>Cần kiểm tra</summary>
 
 - Ô C151: phần sau "J'en" bị thiếu trong sheet; đã điền "cherche" theo câu trước.
-- Bảng interrogative pronouns: sheet ghi chủ ngữ chỉ vật là "que?/quoi?". Sổ tay ghi chủ ngữ chỉ vật là "qu'est-ce qui" (→ [Interrogative pronoun – questions about things](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/)).
+- Bảng interrogative pronouns: sheet ghi chủ ngữ chỉ vật là "que?/quoi?". Sổ tay ghi chủ ngữ chỉ vật là "qu'est-ce qui" (→ [Interrogative pronoun – questions about things](/blog/l-interrogation-cau-hoi/)).
 
 </details>
 
@@ -53,13 +57,13 @@ isIndex: false
 ## Personal pronouns (les pronoms personnels)
 - **Les pronoms sujets (subject pronouns)**: As its name suggests, the subject pronoun takes the position of the subject in the sentence (who/what is performing the action).
 	- Ví dụ: J'ai une copine. / Elle est très gentille.
-- **Les pronoms toniques sujets (stressed pronouns)**: French differentiates between weak forms and strong or stressed forms of subject pronouns. The weak form is used when the subject pronoun is associated with a verb. Strong or stressed pronouns are also known as emphatic pronouns. They allow us to emphasise the subject they refer to without using its name. We use stressed pronouns in the following cases: (→ [Disjunctive pronoun](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **Les pronoms toniques sujets (stressed pronouns)**: French differentiates between weak forms and strong or stressed forms of subject pronouns. The weak form is used when the subject pronoun is associated with a verb. Strong or stressed pronouns are also known as emphatic pronouns. They allow us to emphasise the subject they refer to without using its name. We use stressed pronouns in the following cases: (→ [Disjunctive pronoun](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 	- when the pronoun is used alone (without a verb): Qui chante des chansons ? – Moi.
-	- for emphasis (often after c'est): Lui, il est très gentil. / C'est lui qui est très gentil. (→ [Mise en relief](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/))
+	- for emphasis (often after c'est): Lui, il est très gentil. / C'est lui qui est très gentil. (→ [Mise en relief](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/))
 	- when the pronoun comes after que in a comparison: Ma copine est plus jeune que moi.
 	- when the pronoun is separated from the verb by the words seul, même, an adjective or a clause: Lui seul n'oublie pas mes chansons.
 - **Les pronoms compléments (object pronouns)**: The object pronoun takes the position of the object in the sentence (who/what is the direct receiver of the action). We differentiate between direct, indirect, and stressed object-pronouns.
-	- The **direct object-pronoun (le pronom complément d'objet direct)** replaces a noun that comes directly after a verb without a preposition. (→ [Direct object pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+	- The **direct object-pronoun (le pronom complément d'objet direct)** replaces a noun that comes directly after a verb without a preposition. (→ [Direct object pronouns](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 	- The **indirect object-pronoun (le pronom complément d'objet indirect)** replaces a noun as well as the preposition à, which introduces the indirect object.
 	- The **stressed object-pronouns** are identical to the stressed subject-pronouns. The difference is that we use the stressed object-pronouns after a preposition.
 	- The preposition à is an exception. Some verbs that are followed by à are used with the stressed object-pronoun, but only if the preposition introduces a person and not a thing (xem bảng *Verb + à qn* bên dưới).
@@ -97,10 +101,10 @@ isIndex: false
 
 ## Possessive pronouns and determiners
 - **Possessive pronouns and determiners (les déterminants et pronoms possessifs)** indicate possession or belonging. They agree in gender and number with the noun that they describe (determiners) or replace (pronouns).
-- **Possessive determiners**, also known as possessive adjectives (les adjectifs possessifs), always come before a noun and agree with it in terms of gender and number. (→ [Possessive determiners](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- **Possessive determiners**, also known as possessive adjectives (les adjectifs possessifs), always come before a noun and agree with it in terms of gender and number. (→ [Possessive determiners](/blog/les-determinants-tu-han-dinh/))
 	- The plural forms are the same for both masculine and feminine. Possessive determiners correspond to the English words my, your, his, hers etc.
 	- Before a vowel or a silent h, the determiners ma, ta, and sa become mon, ton, and son.
-- **Possessive pronouns (les pronoms possessifs)** stand alone, without an accompanying noun. (→ [Possessive pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **Possessive pronouns (les pronoms possessifs)** stand alone, without an accompanying noun. (→ [Possessive pronouns](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 	- The possessive pronoun replaces a previously mentioned noun, and agrees with it in terms of number and gender.
 	- The French possessive pronouns correspond to the English words mine, yours, his, hers etc.
 
@@ -127,7 +131,7 @@ isIndex: false
 | Plural   | 3rd person | le leur              | la leur             | les leurs          | les leurs         |
 
 ## Reflexive pronouns
-- We use **reflexive pronouns (les pronoms réfléchis)** with pronominal verbs. The French reflexive pronouns are me, te, se, nous, vous, and se. They always agree with the subject they refer to and correspond to the English words myself, yourself etc. There are also stressed reflexive pronouns (moi, toi, soi, lui, elle, nous, vous, eux, elles) that are used to form the imperative with pronominal verbs. We use reflexive pronouns with reflexive verbs in the sense of oneself. They come after the subject pronoun and before the verb, and they always agree with the subject they refer to in number and gender. (→ [Les verbes pronominaux](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- We use **reflexive pronouns (les pronoms réfléchis)** with pronominal verbs. The French reflexive pronouns are me, te, se, nous, vous, and se. They always agree with the subject they refer to and correspond to the English words myself, yourself etc. There are also stressed reflexive pronouns (moi, toi, soi, lui, elle, nous, vous, eux, elles) that are used to form the imperative with pronominal verbs. We use reflexive pronouns with reflexive verbs in the sense of oneself. They come after the subject pronoun and before the verb, and they always agree with the subject they refer to in number and gender. (→ [Les verbes pronominaux](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 
 |                    | je    | tu    | il/elle/on   | nous | vous | ils/elles     |
 | ------------------ | ----- | ----- | ------------ | ---- | ---- | ------------- |
@@ -135,7 +139,7 @@ isIndex: false
 | Stressed Reflexive | moi   | toi   | soi/lui/elle | nous | vous | eux/elles/soi |
 
 - **Normal reflexive pronouns** always appear together with a verb; they cannot stand alone.
-- **Stressed/strong reflexive pronouns** are used in the positive imperative of reflexive verbs. In this case, the reflexive pronouns moi, toi and lui come after the verb and are connected with a hyphen. Remember: when we use the negative imperative we place normal reflexive pronouns (me, te, se…) before the verb without a hyphen. (→ [Impératif – pronominal verbs](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/))
+- **Stressed/strong reflexive pronouns** are used in the positive imperative of reflexive verbs. In this case, the reflexive pronouns moi, toi and lui come after the verb and are connected with a hyphen. Remember: when we use the negative imperative we place normal reflexive pronouns (me, te, se…) before the verb without a hyphen. (→ [Impératif – pronominal verbs](/blog/l-imperatif-thuc-menh-lenh/))
 	- Ví dụ: Prépare-toi. / Ne te prépare pas.
 - We use the stressed reflexive pronoun **soi**:
 	- when the subject is undefined or neutral.
@@ -143,7 +147,7 @@ isIndex: false
 	- Ví dụ: Il est important de prendre du temps pour soi. / Chacun reste chez soi.
 
 ## Relative pronouns
-- **Relative pronouns (les pronoms relatifs)** introduce relative clauses. They replace a noun or pronoun from the previous sentence to avoid repetition. (→ [Relative pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **Relative pronouns (les pronoms relatifs)** introduce relative clauses. They replace a noun or pronoun from the previous sentence to avoid repetition. (→ [Relative pronouns](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 
 ### qui, que, qu', dont
 - The relative pronouns qui, que and dont can refer to people, animals, concepts or things. They are invariable, which means that we don't have to worry about the number or gender of the noun that the pronoun is replacing in the sentence.
@@ -207,7 +211,7 @@ isIndex: false
 	- Il avait un petit appartement sur les murs duquel il y avait des moisissures.
 
 ## Interrogative pronouns and determiners
-- **Interrogative pronouns (les pronoms interrogatifs)** are qui, que, quoi and lequel. We use them in questions and sentences to replace the name of the person or thing about which we're asking a question. The **interrogative determiner (le déterminant interrogatif)** quel always comes before a noun. (→ [Interrogative pronoun](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
+- **Interrogative pronouns (les pronoms interrogatifs)** are qui, que, quoi and lequel. We use them in questions and sentences to replace the name of the person or thing about which we're asking a question. The **interrogative determiner (le déterminant interrogatif)** quel always comes before a noun. (→ [Interrogative pronoun](/blog/l-interrogation-cau-hoi/))
 - **qui, que and quoi**: The interrogative pronouns qui, que, quoi are invariable in French. This means that they stay the same regardless of the gender and number of the noun they refer to. They can refer to people (qui) or things (que/quoi). Their usage depends on their function in the question.
 	- Ví dụ: Qui est cette femme ? / Que fait-elle ?
 
@@ -228,7 +232,7 @@ isIndex: false
 | à           | auquel    | à laquelle  | auxquels     | auxquelles  |
 | de          | duquel    | de laquelle | desquels     | desquelles  |
 
-- **quel**: Quel is an interrogative determiner (déterminant interrogatif or adjectif interrogatif), meaning that it always comes directly before a noun. Quel functions as an adjective; it modifies the noun and agrees with its number and gender. (→ [Interrogative quel](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
+- **quel**: Quel is an interrogative determiner (déterminant interrogatif or adjectif interrogatif), meaning that it always comes directly before a noun. Quel functions as an adjective; it modifies the noun and agrees with its number and gender. (→ [Interrogative quel](/blog/l-interrogation-cau-hoi/))
 	- Ví dụ: Quel livre préfère-t-elle ? / Quelle langue parle-t-elle ?
 
 ## Demonstrative pronouns and determiners
@@ -253,7 +257,7 @@ isIndex: false
 
 - **Demonstrative determiners** always come directly before a noun. We only use the masculine singular form cet when the noun begins with a vowel or a silent h. If we're using the compound form in this situation, the -ci/-là is attached directly to the noun.
 	- Ví dụ: Ces boucles d'oreilles vous iraient à ravir. / Cet endroit est super pour faire du shopping.
-- **Demonstrative pronouns (les pronoms démonstratifs)** stand alone — they do not accompany a noun, they stand in its place. The simple form is used when the demonstrative pronoun is followed by: de, by a relative pronoun. In all other situations, we use the compound form of the demonstrative pronoun. (→ [Demonstrative pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **Demonstrative pronouns (les pronoms démonstratifs)** stand alone — they do not accompany a noun, they stand in its place. The simple form is used when the demonstrative pronoun is followed by: de, by a relative pronoun. In all other situations, we use the compound form of the demonstrative pronoun. (→ [Demonstrative pronouns](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 	- Ví dụ: Ces boucles d'oreilles sont celles du présentoir de gauche.
 - **Indefinite demonstrative pronouns**: The indefinite demonstrative pronoun ce (c' before a vowel) is used with the verb être to refer to part of a sentence or an entire clause. It is similar to this/that is in English. They can refer to a part of a sentence or to an entire clause. We express this similarly in English with this/that.
 	- Note: ce is always used in the singular, regardless of whether the verb is in the singular or the plural.
@@ -263,17 +267,17 @@ isIndex: false
 
 ## Indefinite pronouns and determiners
 - **Indefinite pronouns and determiners (les pronoms et déterminants indéfinis)** are words like tout, personne, rien, chaque, chacun, and quelque chose. We use these words to speak generally about something or someone rather than mentioning a specific place, person or thing. They correspond to the English words everyone, no one, nothing, something, everything, etc.
-- **Indefinite determiners (les déterminants indéfinis or les adjectifs indéfinis)** always come directly before a noun; they function as adjectives that modify the noun they accompany. (→ [Indefinite determiners](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- **Indefinite determiners (les déterminants indéfinis or les adjectifs indéfinis)** always come directly before a noun; they function as adjectives that modify the noun they accompany. (→ [Indefinite determiners](/blog/les-determinants-tu-han-dinh/))
 	- Some indefinite determiners are variable: they agree in number and gender with the noun they are modifying. Such examples include: aucun, tout, quelque, quelconque, différent, divers, certain, n'importe quel.
 	- Some indefinite determiners are invariable, such as chaque, plusieurs.
 	- Ví dụ: Il n'y a aucun passant, aucune passante ici qui pourrait m'aider. / Toutes ces rues vont dans différentes directions. / Chaque rue se ressemble.
-- **Indefinite pronouns (les pronoms indéfinis)** stand alone — they do not accompany a noun; they stand in place of one. (→ [Indefinite pronouns](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **Indefinite pronouns (les pronoms indéfinis)** stand alone — they do not accompany a noun; they stand in place of one. (→ [Indefinite pronouns](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 	- Some indefinite pronouns are variable: they agree in number and gender with the thing or person they are referring to. The variable indefinite pronouns include, for example: chacun, quelqu'un.
 	- Some indefinite pronouns are invariable, such as personne, rien, quelque chose, n'importe qui/n'importe quoi.
 	- Ví dụ: Toutes ces rues se ressemblent mais chacune conduit dans une direction différente. / Il n'y a personne dans la rue.
 
 ### Tout as an adjective, pronoun or adverb
-- Tout is used very often in French. It can be used as an indefinite determiner, an indefinite pronoun, or as an indefinite adverb. (→ [tout](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- Tout is used very often in French. It can be used as an indefinite determiner, an indefinite pronoun, or as an indefinite adverb. (→ [tout](/blog/les-determinants-tu-han-dinh/))
 - As an indefinite determiner, tout always comes directly before a noun and agrees in number and gender with the noun it is modifying.
 	- If tout is not placed directly before the noun (but is separated from it by an article, a demonstrative determiner, or a possessive determiner), it means "all" or "completely".
 	- If tout comes directly before the noun, it means every/each/any.
@@ -293,15 +297,15 @@ isIndex: false
 
 ## Y and En: adverbial pronouns
 - There are two **adverbial pronouns (les pronoms adverbiaux)** in French: y and en. They are technically adverbs that are used as pronouns; they replace a noun or a clause in a sentence.
-- **Y**: The adverbial pronoun y replaces: (→ [Pronoun "y"](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **Y**: The adverbial pronoun y replaces: (→ [Pronoun "y"](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 	- places and nouns that are introduced by the prepositions à or en
 	- places and nouns that are introduced with the prepositions dans, devant, sous or sur
 	- Ví dụ: Demain, ils iront à Lyon. Ils s'y rendront en bus. / Le bus dépose les touristes sur le parking de l'hôtel. Il y est garé pour la nuit.
-- **En**: The adverbial pronoun en: (→ [Pronoun "en"](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **En**: The adverbial pronoun en: (→ [Pronoun "en"](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 	- usually replaces de + noun
 	- has a partitive function; it divides elements within a group (of them, of which etc.)
 	- replaces a noun introduced by a number or another quantity
 	- Ví dụ: Ils se retrouvent le soir dans la salle à manger pour parler de leur visite. Ils en parlent jusque tard le soir. / Je cherche des cartes postales. J'en cherche.
 - De can introduce either a place or an object. However, when it refers to a person, de cannot be replaced with en; instead we have to use the personal pronoun.
 	- Ví dụ: Les touristes parlent de Pierre. → Ils parlent de lui.
-- Xem thêm: [Thứ tự đại từ tân ngữ](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/) – y và en đứng ở vị trí 4 và 5 trước động từ.
+- Xem thêm: [Thứ tự đại từ tân ngữ](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/) – y và en đứng ở vị trí 4 và 5 trước động từ.

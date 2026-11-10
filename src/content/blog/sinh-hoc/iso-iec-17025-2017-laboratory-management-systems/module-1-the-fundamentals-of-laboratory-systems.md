@@ -8,6 +8,9 @@ folder: Sinh học / ISO IEC 17025 2017 Laboratory Management Systems
 vaultPath: >-
   Resources/Sinh học/ISO IEC 17025 2017 Laboratory Management Systems/Module 1
   The Fundamentals of Laboratory Systems.md
+url: /blog/the-fundamentals-of-laboratory-systems/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -91,7 +94,7 @@ Structurally, ISO/IEC 17025 is divided into five main sections containing requir
 - Section 4 of ISO/IEC 17025 covers the two main requirements, i.e.
 	- **Impartiality**: Impartiality implies that the laboratory will not permit any commercial, financial, or other pressures to put the quality of its results at stake. It also means that any internal issues, personal relationships, and conflicts of interest are thoroughly addressed and resolved.
 	- **Confidentiality**: It requires the laboratories to keep all of their results and information private.
-- Both of these requirements are important for maintaining trust and confidence in the users of tests and calibrations of the laboratories. (→ [Prepare Data for Exploration](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/03-prepare-data-for-exploration/))
+- Both of these requirements are important for maintaining trust and confidence in the users of tests and calibrations of the laboratories. (→ [Prepare Data for Exploration](/blog/prepare-data-for-exploration/))
 ## Section 5: Structural Requirements
 - Points Defined for a Laboratory in Section 5 of ISO/IEC 17025:2017
 	- Basic organizational components

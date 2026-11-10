@@ -15,6 +15,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/04 - Định dạng dữ liệu và cơ sở dữ liệu sinh học.md
+url: /blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 4
 description: >-

@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/09 -
   Sociology of Education.md
+url: /blog/sociology-of-education/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 9
 description: >-
@@ -35,10 +38,10 @@ isIndex: false
 		- Rèn luyện tư duy: Rèn luyện các phương pháp tư duy kỷ luật
 		- Quỹ tương lai: Đặt nền tảng vững chắc cho việc học tập chuyên nghiệp trong tương lai.
 - Đề cương khoá học: 12 bài giảng (bao gồm intro), 3 chủ đề chính:
-	- Chủ đề thứ nhất: Lý thuyết và Quan điểm (→ [Major Schools of Educational Theory](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/11-the-major-schools-of-educational-theory/))
+	- Chủ đề thứ nhất: Lý thuyết và Quan điểm (→ [Major Schools of Educational Theory](/blog/the-major-schools-of-educational-theory/))
 		- Chủ nghĩa chức năng cấu trúc (Structural Functionalism): views education as serving important functions for society's stability and continuity.
 		- Lý thuyết xung đột (Conflict Theory): examines how education reflects and perpetuates social inequalities and power struggles.
-		- Thuyết tương tác biểu tượng (Symbolic Interactionism): focuses on how meaning is created through social interactions in educational settings. (→ [Social Psychology](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/08-social-psychology/))
+		- Thuyết tương tác biểu tượng (Symbolic Interactionism): focuses on how meaning is created through social interactions in educational settings. (→ Social Psychology)
 	- Chủ đề thứ 2: Phương pháp luận và Các phương pháp tiếp cận
 		- Phân tích "Cấu trúc - Cơ chế" Giáo dục (Educational Structure-Mechanism Analysis): helps us understand how educational structures create particular outcomes through specific mechanisms.
 		- Phân tích thể chế giáo dục (Educational Institutional Analysis): examines how formal and informal rules, norms, and practices shape educational processes and outcomes.
@@ -191,7 +194,7 @@ isIndex: false
 	- Question: Beyond personal success, what role does this examination play for the entire society?
 	- Perspective: How does society decide who becomes a doctor, an engineer, or a worker?
 - Breaking Hereditary Patterns: education's second social function. Three interconnected dimensions: 
-	- Social Differentiation: Matching individual talent and ability to specific roles in the social division of labor (→ [Economics of Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/04-economics-of-education/))
+	- Social Differentiation: Matching individual talent and ability to specific roles in the social division of labor (→ [Economics of Education](/blog/economics-of-education/))
 	- Social Mobility: Moving from "Ascribed Status" (inheritance) to "Achieved Status" (merit)
 	- Key Outcome: Allowing individuals to escape the constraints of their family background through education
 - Transmission of Knowledge & Culture: Cultural Continuity: Education's third crucial social function

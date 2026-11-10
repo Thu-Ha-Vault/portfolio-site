@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 3 Conducting baseline site and landscape assessments/Lesson 5
   Conducting biophysical assessments at site and landscape scale.md
+url: /blog/conducting-biophysical-assessments-at-site-and-landscape-scale/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 isIndex: false
@@ -30,11 +33,11 @@ A baseline site assessment establishes the starting condition of a restoration s
 ### 1. Vegetation Assessment
 - Identify existing trees, shrubs, seedlings, and ground cover.
 - Determine species diversity and abundance.
-- Assess the health and density of natural regeneration. (→ [L7 Case studies (no enrichment)](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-7-case-studies-of-anr-part-1-without-enrichment-planting/))
+- Assess the health and density of natural regeneration. (→ [L7 Case studies (no enrichment)](/blog/case-studies-of-anr-part-1-without-enrichment-planting/))
 
 ### 2. Site Conditions
 - Soil type and condition.
-- Slope and topography. (→ [Thực tập Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/01-tong-quan-thuc-tap-cat-ba/))
+- Slope and topography. (→ [Thực tập Cát Bà](/blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/))
 - Water availability and drainage.
 - Fire risk and erosion levels.
 
@@ -54,15 +57,15 @@ A baseline site assessment establishes the starting condition of a restoration s
 ## Data Collection Methods
 - Field observations.
 - Transects and sample plots.
-- Vegetation surveys. (→ [Ardisia](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/07-thuc-vat-bac-cao-ardisia/))
+- Vegetation surveys. (→ [Ardisia](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/))
 - Community interviews and local knowledge gathering.
 - Mapping and GPS data collection.
 
 ## Outputs
-- Baseline description of site conditions. (→ [TLTK Thực tập thiên nhiên](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/tai-lieu-tham-khao-thuc-tap-thien-nhien/))
+- Baseline description of site conditions. (→ [TLTK Thực tập thiên nhiên](/blog/tai-lieu-tham-khao-thuc-tap-thien-nhien-cat-ba/))
 - Identification of regeneration barriers.
 - Prioritization of ANR interventions.
-- Monitoring indicators for future evaluation. (→ [L13 Monitoring part 1](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+- Monitoring indicators for future evaluation. (→ [L13 Monitoring part 1](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 
 ## Key Takeaway
 A thorough baseline assessment ensures ANR interventions are targeted to the actual ecological and social conditions of the site, improving restoration effectiveness and long-term success.

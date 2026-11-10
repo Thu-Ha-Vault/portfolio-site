@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / E - Tiến hoá
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/E - Tiến hoá/18 - Sự phát sinh và phát
   triển của sự sống.md
+url: /blog/su-phat-sinh-va-phat-trien-cua-su-song/
+topic: biology
+updated: '2026-10-16'
 order: 18
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (aa → amino acid,
@@ -49,12 +52,12 @@ flowchart LR
 	A["Hình thành hợp chất<br>hữu cơ đơn giản"] --> B["Hình thành đại phân tử<br>hữu cơ"] --> C["Đại phân tử<br>tự nhân đôi"]
 ```
 
-- Chất vô cơ (CO₂, NH₃, H₂O, H₂) —(năng lượng tự nhiên)→ hợp chất hữu cơ đơn giản (amino acid, nucleotide) —(trùng hợp)→ protein, nucleic acid → vật chất di truyền (đầu tiên: RNA). (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/), [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- Chất vô cơ (CO₂, NH₃, H₂O, H₂) —(năng lượng tự nhiên)→ hợp chất hữu cơ đơn giản (amino acid, nucleotide) —(trùng hợp)→ protein, nucleic acid → vật chất di truyền (đầu tiên: RNA). (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/), [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- (thông qua carbohydrate, lipid, saccharide)
 
 ### b) Tiền sinh học: hình thành tế bào sơ khai
 - Đại phân tử hữu cơ —(H₂O)→ giọt keo (**coacervate**) → trao đổi chất.
-- Lipid → màng (kị nước) (bao lấy đại phân tử hữu cơ) → trao đổi chất. (→ [Màng tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/02-mang-te-bao-va-trao-doi-chat-qua-mang/))
+- Lipid → màng (kị nước) (bao lấy đại phân tử hữu cơ) → trao đổi chất. (→ [Màng tế bào](/blog/mang-te-bao-va-trao-doi-chat-qua-mang/))
 - —(chọn lọc tự nhiên)→ hoàn thiện
 	- ↓ **Tế bào sơ khai** nguyên thuỷ.
 
@@ -62,14 +65,14 @@ flowchart LR
 
 ### c) Sinh học
 - Tế bào sơ khai —(nhân tố tiến hoá)→ cơ thể đơn bào – tế bào nhân sơ
-	- ↓ Đơn bào nhân thực, đa bào nhân thực. (→ [Tế bào chất, bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+	- ↓ Đơn bào nhân thực, đa bào nhân thực. (→ [Tế bào chất, bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 	- → Ngày nay.
 
 ## II. Sự phát triển sự sống qua các đại địa chất
 
 ![Hình - Thang thời gian địa chất](/vault-assets/hinh-thang-thoi-gian-dia-chat-765e6d34.svg)
 
-- Bảng trong sổ (đọc từ dưới lên theo thời gian; chép theo thứ tự trên → dưới như sổ): (→ [Bằng chứng và cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/), [Hệ sinh thái và sinh quyển](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+- Bảng trong sổ (đọc từ dưới lên theo thời gian; chép theo thứ tự trên → dưới như sổ): (→ [Bằng chứng và cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/), [Hệ sinh thái và sinh quyển](/blog/he-sinh-thai-va-sinh-quyen/))
 
 | Đại | Kỉ | Đặc điểm địa chất | Sinh vật điển hình |
 |---|---|---|---|
@@ -88,4 +91,4 @@ flowchart LR
 | Thái cổ | | | Sinh vật nhân sơ xuất hiện. |
 | | | Trái Đất hình thành. | |
 
-- Xem thêm: [Bộ xương ếch và nguồn gốc lưỡng cư](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/03-bo-xuong-ech-va-nguon-goc-luong-cu/) – kỉ Đêvôn: cá vây tay lên cạn thành lưỡng cư
+- Xem thêm: [Bộ xương ếch và nguồn gốc lưỡng cư](/blog/bo-xuong-ech-va-nguon-goc-luong-cu/) – kỉ Đêvôn: cá vây tay lên cạn thành lưỡng cư

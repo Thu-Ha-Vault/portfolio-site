@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Writing
 vaultPath: Resources/Tiếng Pháp/Writing/01 - Expressions pour l'expression écrite.md
+url: /blog/expressions-pour-l-expression-ecrite/
+topic: french
+updated: '2026-10-14'
 order: 1
 description: 'Xem thêm: Les conjonctions – liên từ kết hợp và phụ thuộc dùng để nối ý'
 isIndex: false
@@ -39,14 +42,14 @@ isIndex: false
 - **Idée essentielle**: pour / contre
 - Mỗi đoạn: **un argument et son développement** → justification / explication → exemple → conclusion partielle
 - **Số luận điểm theo trình độ**: B1: 2 arguments; B2, C1: 3 arguments
-	- Ví dụ bài 3 luận điểm: [Pour ou contre l'interdiction des motos](/blog/tieng-phap/writing/03-pour-ou-contre-l-interdiction-des-motos-et-des-voitures-a-hanoi/)
-- Xem thêm: [Un plan](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – plan analytique, thématique, dialectique
+	- Ví dụ bài 3 luận điểm: [Pour ou contre l'interdiction des motos](/blog/etes-vous-pour-ou-contre-l-interdiction-des-motos-et-des-voitures-a-hanoi/)
+- Xem thêm: [Un plan](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – plan analytique, thématique, dialectique
 
 ### La lettre au courrier des lecteurs
 - **Exprimer son opinion**
 - **Raconter son expérience**: dùng passé composé / imparfait
 - **Donner des conseils**
-	- Ví dụ: [Conseils pour trouver un logement](/blog/tieng-phap/writing/04-conseils-pour-trouver-un-logement-au-vietnam/)
+	- Ví dụ: [Conseils pour trouver un logement](/blog/conseils-pour-trouver-un-logement-au-vietnam/)
 - **Formules de politesse**
 	- En début de lettre: *Bonjour*, *Madame*, *Monsieur*
 	- En fin de lettre: *Bien cordialement*; không dùng tên thật
@@ -122,7 +125,7 @@ isIndex: false
 | **D'ailleurs** |  |  |  |
 | **Du reste** |  |  |  |
 
-- Xem thêm: [Les conjonctions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/15-les-conjonctions/) – liên từ kết hợp và phụ thuộc dùng để nối ý
+- Xem thêm: [Les conjonctions](/blog/les-conjonctions-lien-tu/) – liên từ kết hợp và phụ thuộc dùng để nối ý
 
 ### Connecteur logique (Contradictoire)
 
@@ -132,7 +135,7 @@ isIndex: false
 | **Pourtant** |  |  |  |
 | **Mais (en fait)** |  |  |  |
 
-- Xem thêm: [L'opposition](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – mais, pourtant, cependant, par contre, néanmoins
+- Xem thêm: [L'opposition](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – mais, pourtant, cependant, par contre, néanmoins
 
 ### Connecteur logique (Conséquence)
 
@@ -142,7 +145,7 @@ isIndex: false
 | **C'est pourquoi** | Đó là lý do tại sao |  |  |
 | **Donc** |  |  |  |
 
-- Xem thêm: [La conséquence](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – donc, alors, c'est pourquoi, du coup
+- Xem thêm: [La conséquence](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – donc, alors, c'est pourquoi, du coup
 
 ### Tournure de présentation (Présenter un fait)
 
@@ -192,7 +195,7 @@ isIndex: false
 | **Faute de** | Vì thiếu | B2 |  |
 | **Cela s'explique par** | Điều này được giải thích bởi | B2 |  |
 
-- Xem thêm: [À cause de](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [La cause](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – à cause de + danh từ ≠ parce que + mệnh đề; fiche tổng hợp cách nói nguyên nhân
+- Xem thêm: [À cause de](/blog/les-prepositions-gioi-tu/), [La cause](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – à cause de + danh từ ≠ parce que + mệnh đề; fiche tổng hợp cách nói nguyên nhân
 
 ### Concession / opposition *(nhóm do Claude đặt)*
 
@@ -208,7 +211,7 @@ isIndex: false
 | **Or** |  |  |  |
 | **Malgré** |  |  |  |
 
-- Xem thêm: [L'opposition, la concession](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – fiche tổng hợp opposition và concession
+- Xem thêm: [L'opposition, la concession](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – fiche tổng hợp opposition và concession
 
 ### Perspective *(nhóm do Claude đặt)*
 
@@ -245,7 +248,7 @@ isIndex: false
 | **Auparavant** |  |  |  |
 | **Autrefois** |  |  |  |
 
-- Xem thêm: [Les indicateurs de temps](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – en, il y a, depuis, pendant, en + durée và thì đi kèm
+- Xem thêm: [Les indicateurs de temps](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – en, il y a, depuis, pendant, en + durée và thì đi kèm
 
 ### Indicateur de temps (Présent)
 
@@ -308,7 +311,7 @@ isIndex: false
 | **Vous devriez (+infinitif)** |  |  |  |
 | **Pensez à (+infinitif)** |  |  |  |
 
-- Xem thêm: [Pour conseiller et proposer](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/) – devoir / pouvoir au conditionnel, si + présent, impératif
+- Xem thêm: [Pour conseiller et proposer](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/) – devoir / pouvoir au conditionnel, si + présent, impératif
 
 ### Conseiller de ne pas faire
 

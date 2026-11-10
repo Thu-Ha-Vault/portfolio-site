@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Beginner/02 - SELECT
   & WHERE - Truy vấn cơ bản.md
+url: /blog/select-and-where-truy-van-co-ban/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-beginner/lessons/1'
 order: 2
 description: >-
@@ -22,7 +25,7 @@ description: >-
 isIndex: false
 ---
 ## a. SELECT * - Lấy tất cả
-- Câu lệnh cơ bản nhất trong SQL: (→ [SQL Tutorial](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/01-tutorial/))
+- Câu lệnh cơ bản nhất trong SQL: (→ [SQL Tutorial](/blog/tutorial-biology-2/))
 ``` sql
 SELECT * FROM employees;
 ```
@@ -113,7 +116,7 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 ```
 - Không có ngoặc, `AND` sẽ ưu tiên hơn `OR` — dễ gây nhầm lẫn!
 ## Lưu ý quan trọng
-- `AND` ưu tiên hơn `OR` — luôn **dùng ngoặc** khi kết hợp (→ [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/))
+- `AND` ưu tiên hơn `OR` — luôn **dùng ngoặc** khi kết hợp (→ [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/))
 - Có thể dùng nhiều `AND`/`OR` liên tiếp: `WHERE a = 1 AND b = 2 AND c = 3`
 # 4. Toán tử nâng cao
 ## a. IN - Thuộc danh sách

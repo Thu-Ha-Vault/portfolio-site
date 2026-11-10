@@ -10,6 +10,9 @@ folder: Học phần đại cương
 vaultPath: >-
   Resources/Học phần đại cương/05 - Lịch sử Đảng - Cách tiếp cận một số vấn đề
   khó.md
+url: /blog/lich-su-dang-cong-san-viet-nam-cach-tiep-can-mot-so-van-de-kho/
+topic: university-courses
+updated: '2026-10-16'
 order: 5
 description: >-
   Đề cương ôn tập học phần Lịch sử Đảng Cộng sản Việt Nam (file 1 sô vấn đề
@@ -118,4 +121,4 @@ isIndex: false
 
 ## Tài liệu gốc
 - [1 sô vấn đề khó.docx (Drive)](https://drive.google.com/file/d/1qR4Uslp7Yl7DH_T_fbtY4DzYjoGa7vOx/view)
-- Tài liệu liên quan: "Tài liệu đường lối.rar", "CNXHKH", "SÁCH – SƠ ĐỒ KINH TẾ CHÍNH TRỊ MÁC LÊNIN" → xem [07 - Tài liệu tổng hợp](/blog/hoc-phan-dai-cuong/07-tai-lieu-tong-hop/).
+- Tài liệu liên quan: "Tài liệu đường lối.rar", "CNXHKH", "SÁCH – SƠ ĐỒ KINH TẾ CHÍNH TRỊ MÁC LÊNIN" → xem [07 - Tài liệu tổng hợp](/blog/tai-lieu-tong-hop-google-drive/).

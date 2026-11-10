@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 1 Introduction to ANR, key elements and practices/Lesson 1
   Introduction to ANR.md
+url: /blog/introduction-to-anr/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 isIndex: false
@@ -44,7 +47,7 @@ Assisted Natural Regeneration (ANR) is a forest restoration approach that accele
 - Restores native biodiversity.
 - Improves soil fertility and structure.
 - Enhances watershed protection.
-- Increases carbon storage. (→ [Hệ sinh thái và sinh quyển](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+- Increases carbon storage. (→ [Hệ sinh thái và sinh quyển](/blog/he-sinh-thai-va-sinh-quyen/))
 
 ### Economic Benefits
 - Lower cost than conventional tree planting.
@@ -55,7 +58,7 @@ Assisted Natural Regeneration (ANR) is a forest restoration approach that accele
 - Encourages community participation.
 - Builds local stewardship of natural resources.
 - Supports long-term sustainable land management.
-- Xem thêm: [L10 Benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-10-assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/) – đánh giá lợi ích của ANR và mô hình hoá dòng tài chính
+- Xem thêm: [L10 Benefits of ANR](/blog/assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/) – đánh giá lợi ích của ANR và mô hình hoá dòng tài chính
 
 ## Key Takeaways
 - ANR accelerates natural forest recovery through targeted management.

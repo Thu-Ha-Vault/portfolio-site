@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / B - Cơ chế di truyền và biến 
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/B - Cơ chế di truyền và biến dị/05 - Điều
   hoà hoạt động gen.md
+url: /blog/dieu-hoa-hoat-dong-gen/
+topic: biology
+updated: '2026-10-16'
 order: 5
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, ARN → RNA,
@@ -42,7 +45,7 @@ isIndex: false
 - Sự hoạt động của gen phụ thuộc:
 	- Loại tế bào, mô.
 	- Giai đoạn phát triển của cơ thể
-	- Điều kiện môi trường sống. (→ [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- Điều kiện môi trường sống. (→ [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 
 ## Mức độ điều hoà
 - Nhiễm sắc thể
@@ -50,16 +53,16 @@ isIndex: false
 - Sau phiên mã
 - Dịch mã
 - Sau dịch mã
-- → **Nhân thực**: tất cả các cấp độ, phức tạp — (các cấp độ) cơ bản giống (nhau) (→ [Histone, methyl hoá DNA, splicing](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/03-cell-commitment-va-dieu-hoa-bieu-hien-gene/))
+- → **Nhân thực**: tất cả các cấp độ, phức tạp — (các cấp độ) cơ bản giống (nhau) (→ [Histone, methyl hoá DNA, splicing](/blog/cell-commitment-and-differential-gene-expression/))
 - → **Nhân sơ**: chủ yếu ở mức phiên mã
 
 ## Nhân sơ: Operon-Lac
 > Ghi bằng bút chì trong sổ: "\* Operon-Lac".
 
 - **Operon-Lac**: (Monod – Jacob), trên DNA
-- **Gen cấu trúc**: Z, Y, A → mang thông tin cấu trúc protein → tính trạng (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
+- **Gen cấu trúc**: Z, Y, A → mang thông tin cấu trúc protein → tính trạng (→ [Đột biến gen](/blog/dot-bien-gen/))
 - **Gen điều hoà (R)**: mang thông tin → protein ức chế → điều hoà hoạt động operon
-- **Vùng khởi động (P)**: RNA polymerase nhận biết, gắn vào → khởi đầu phiên mã (→ [Nhân đôi, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- **Vùng khởi động (P)**: RNA polymerase nhận biết, gắn vào → khởi đầu phiên mã (→ [Nhân đôi, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 - **Vùng vận hành (O)**: tương tác với protein ức chế.
 
 ### Không có lactose

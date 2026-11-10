@@ -8,6 +8,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/07 - Tài liệu tổng hợp.md
+url: /blog/tai-lieu-tong-hop-google-drive/
+topic: university-courses
+updated: '2026-10-16'
 order: 7
 description: >-
   Danh mục folder Drive "Học tập/Tổng hợp" và các shortcut lẻ ở gốc folder "Học
@@ -18,7 +21,7 @@ isIndex: false
 > Danh mục folder Drive "Học tập/Tổng hợp" và các shortcut lẻ ở gốc folder "Học tập". Phần lớn là kho tài liệu được chia sẻ (từ trường, câu lạc bộ, khoá trên), chỉ để link.
 
 ## Lý luận chính trị
-Ghi chú chi tiết: [05 - Lịch sử Đảng - Cách tiếp cận một số vấn đề khó](/blog/hoc-phan-dai-cuong/05-lich-su-dang-cach-tiep-can-mot-so-van-de-kho/).
+Ghi chú chi tiết: [05 - Lịch sử Đảng - Cách tiếp cận một số vấn đề khó](/blog/lich-su-dang-cong-san-viet-nam-cach-tiep-can-mot-so-van-de-kho/).
 
 | Tài liệu                                 | Nội dung                                 | Link                                                                            |
 | ---------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
@@ -29,7 +32,7 @@ Ghi chú chi tiết: [05 - Lịch sử Đảng - Cách tiếp cận một số v
 | Share LSD                                | Lịch sử Đảng                             | [Drive](https://drive.google.com/file/d/17YbJd7HvVF8G1kzPUXMk2ioCEzz_Mx5r/view) |
 
 ## Ôn tập khoa học tự nhiên (GCSE Revision Booklets)
-Folder "Summary" – sách tóm tắt kiến thức bậc GCSE (Higher), tiếng Anh. Phù hợp ôn lại nền tảng trước khi học [Toán](/blog/hoc-phan-dai-cuong/01-toan-hoc/), [Hoá](/blog/hoc-phan-dai-cuong/02-hoa-hoc/), [Vật lý](/blog/hoc-phan-dai-cuong/03-vat-ly/) và [Sinh học](/blog/sinh-hoc/kien-thuc-chung/).
+Folder "Summary" – sách tóm tắt kiến thức bậc GCSE (Higher), tiếng Anh. Phù hợp ôn lại nền tảng trước khi học [Toán](/blog/toan-hoc-dai-so-tuyen-tinh-giai-tich-xac-suat-thong-ke/), [Hoá](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/), [Vật lý](/blog/vat-ly-dai-cuong-co-nhiet-dien-quang/) và [Sinh học](/topics/kien-thuc-chung/).
 
 | Tài liệu                            | Nội dung        | Link                                                                            |
 | ----------------------------------- | --------------- | ------------------------------------------------------------------------------- |

@@ -11,14 +11,17 @@ folder: AI và DEV / AI Cybersecurity and Governance (Columbia University)
 vaultPath: >-
   Resources/AI và DEV/AI Cybersecurity and Governance (Columbia University)/06 -
   AI Governance and Regulation.md
+url: /blog/ai-governance-and-regulation/
+topic: ai-development
+updated: '2026-10-14'
 order: 6
 isIndex: false
 ---
 ## Mục tiêu liên quan
 - Objective 3: chọn framework **ISO 42001**, **SAIF**, **AIUC-1** và ánh xạ sang kiểm soát vận hành trong vòng đời AI.
 - Objective 4: **EU AI Act**, **CA SB 53**, **Executive Order 14365**; trách nhiệm cá nhân và doanh nghiệp.
-- Objective 5: checklist quản trị **AI-BOM**, **HITL**, regulatory mapping. (→ [SBOM sau vụ SolarWinds, Module 1](/blog/ai-va-dev/ai-cybersecurity-and-governance-columbia-university/01-cybersecurity-primer/))
-- Xem thêm: [AI in Education – Global Governance](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/13-artificial-intelligence-in-education/) – góc nhìn quản trị AI trong giáo dục (khoá Tsing Hua)
+- Objective 5: checklist quản trị **AI-BOM**, **HITL**, regulatory mapping. (→ [SBOM sau vụ SolarWinds, Module 1](/blog/cybersecurity-primer/))
+- Xem thêm: [AI in Education – Global Governance](/blog/artificial-intelligence-in-education/) – góc nhìn quản trị AI trong giáo dục (khoá Tsing Hua)
 
 ## Video lectures
 - 

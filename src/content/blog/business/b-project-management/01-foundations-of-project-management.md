@@ -10,6 +10,9 @@ folder: Business / B - Project Management
 vaultPath: >-
   Resources/Business/B - Project Management/01 - Foundations of Project
   Management.md
+url: /blog/foundations-of-project-management/
+topic: business
+updated: '2026-11-10'
 source: 'https://www.coursera.org/learn/project-management-foundations'
 order: 1
 description: >-

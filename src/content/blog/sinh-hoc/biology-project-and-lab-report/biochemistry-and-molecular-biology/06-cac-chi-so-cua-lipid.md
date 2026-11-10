@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/06 - Các chỉ số của lipid.md
+url: /blog/xac-dinh-mot-so-chi-so-cua-lipid/
+topic: biology
+updated: '2026-10-16'
 order: 6
 description: >-
   Báo cáo thực tập Hoá sinh học – Bài 9 · Nhóm 3, K66 Sinh học (ca tiết 1–2 sáng
@@ -20,7 +23,7 @@ isIndex: false
 > Báo cáo thực tập Hoá sinh học – Bài 9 · Nhóm 3, K66 Sinh học (ca tiết 1–2 sáng thứ 4) · Mẫu: **dầu lạc** · Phương pháp: **chuẩn độ**.
 
 ## Mục đích
-- Xác định **chỉ số acid**, **chỉ số xà phòng hoá** và **chỉ số iod** của dầu lạc; so sánh kết quả giữa các nhóm trong ca. (→ [Mỡ trung tính](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/05-tinh-chat-ly-hoa-cua-mo-trung-tinh/))
+- Xác định **chỉ số acid**, **chỉ số xà phòng hoá** và **chỉ số iod** của dầu lạc; so sánh kết quả giữa các nhóm trong ca. (→ [Mỡ trung tính](/blog/cac-tinh-chat-ly-hoa-cua-mo-trung-tinh-triacylglycerol/))
 
 ## Nguyên lý
 - **Chỉ số acid (acid value)**: số **mg KOH** cần để trung hoà lượng **acid béo tự do** trong **1 g** chất béo → phản ánh mức độ thuỷ phân/ôi hoá của dầu.
@@ -33,7 +36,7 @@ isIndex: false
 ## Vật liệu & phương pháp
 - **Chỉ số acid**: 15 giọt dầu lạc + 20 ml ethanol 96%, đun nhẹ đến tan, thêm phenolphthalein 0,1%, chuẩn độ bằng **KOH 0,02N** đến hồng nhạt bền 30 giây.
 - **Chỉ số xà phòng hoá**: bình I 10 giọt dầu lạc, bình II 10 giọt nước (đối chứng) + 20 ml KOH/ethanol, đun sôi lâu đến trong suốt, nguội, thêm phenolphthalein, chuẩn độ bằng **HCl 0,5N**.
-- **Chỉ số iod**: bình I 5 giọt dầu lạc, bình II 5 giọt nước + 5 ml ethanol + 5 ml iod, đậy parafilm, để tối ~15 phút, chuẩn độ bằng **Na₂S₂O₃** với chỉ thị tinh bột đến mất màu xanh. (→ [Vitamin](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/07-phan-ung-nhan-biet-va-dinh-luong-vitamin/))
+- **Chỉ số iod**: bình I 5 giọt dầu lạc, bình II 5 giọt nước + 5 ml ethanol + 5 ml iod, đậy parafilm, để tối ~15 phút, chuẩn độ bằng **Na₂S₂O₃** với chỉ thị tinh bột đến mất màu xanh. (→ [Vitamin](/blog/vitamin-nhan-biet-vitamin-d-b2-va-dinh-luong-vitamin-c/))
 
 ## Kết quả chính
 - **Chỉ số acid** (nhóm 3 dùng 0,5 ml KOH → $X = 0{,}5 \cdot 0{,}02 \cdot 5{,}6 = 0{,}56$):
@@ -74,8 +77,8 @@ isIndex: false
 - Chỉ số xà phòng hoá lệch xa giá trị chuẩn và khác nhau giữa các nhóm. Nguyên nhân nhóm nêu:
 	- Lấy sai lượng hoá chất (mẫu lấy theo giọt).
 	- Không có **ống sinh hàn hồi lưu**, dung dịch bay hơi khi đun cách thuỷ → chuẩn độ sai.
-- Chỉ số iod cho biết mức độ không no: càng cao → TAG càng nhiều nối đôi. (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-index`: có ống sinh hàn hồi lưu thì chỉ số xà phòng hoá vào 187–196.
+- Chỉ số iod cho biết mức độ không no: càng cao → TAG càng nhiều nối đôi. (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-index`: có ống sinh hàn hồi lưu thì chỉ số xà phòng hoá vào 187–196.
 
 ## Tài liệu gốc
 *Chỉ số của lipid.pdf*

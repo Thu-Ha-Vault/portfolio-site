@@ -12,6 +12,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/A - Statistics and Biostatistics/II -
   Statistical Inference/01 - Models, Statistical Inference and Learning.md
+url: /blog/models-statistical-inference-and-learning/
+topic: biology
+updated: '2026-10-14'
 order: 1
 description: >-
   Xem thêm: Statistic and Regression – tổng thể, mẫu, ước lượng điểm và khoảng
@@ -24,14 +27,14 @@ isIndex: false
 
 ## Fundamental Concepts in Inference
 
-- Xem thêm: [Statistic and Regression](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/05-statistic-and-regression/) – tổng thể, mẫu, ước lượng điểm và khoảng tin cậy
+- Xem thêm: [Statistic and Regression](/blog/statistic-and-regression/) – tổng thể, mẫu, ước lượng điểm và khoảng tin cậy
 
 ## Point Estimation
 
-- Xem thêm: [Đặc trưng thống kê mẫu và ước lượng tham số](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/) – lý thuyết ước lượng điểm và tập tin cậy (confidence sets) đứng sau các KTC tính trong Excel
+- Xem thêm: [Đặc trưng thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/) – lý thuyết ước lượng điểm và tập tin cậy (confidence sets) đứng sau các KTC tính trong Excel
 
 ## Confidence Sets
 
-- Xem thêm: [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/) – ước lượng điểm và khoảng tin cậy (confidence sets) dùng cho Mean, SEM, 95% CI
+- Xem thêm: [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/) – ước lượng điểm và khoảng tin cậy (confidence sets) dùng cho Mean, SEM, 95% CI
 
 ## Hypothesis Testing

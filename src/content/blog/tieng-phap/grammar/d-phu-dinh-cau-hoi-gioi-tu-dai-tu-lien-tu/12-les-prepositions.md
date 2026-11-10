@@ -10,6 +10,9 @@ folder: 'Tiếng Pháp / Grammar / D - Phủ định, câu hỏi, giới từ, �
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/D - Phủ định, câu hỏi, giới từ, đại từ, liên
   từ/12 - Les prépositions.md
+url: /blog/les-prepositions-gioi-tu/
+topic: french
+updated: '2026-10-14'
 order: 12
 description: >-
   Memo 104: "rút gọn với mạo từ xác định (le, la, les)" → "(le, les)" (la không
@@ -54,16 +57,16 @@ isIndex: false
 
 <!-- Memo 102–103 -->
 ## a) Introduction
-- **Giới từ** là từ dùng để thiết lập mối quan hệ giữa các danh từ, giữa ĐT và ĐT (?), và giữa các phần khác nhau của một câu. Giới từ thường có ý nghĩa về không gian hoặc thời gian (VD: beneath, between, in front of, before, after, during,...). (→ [Prépositions – sheet](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- **Giới từ** là từ dùng để thiết lập mối quan hệ giữa các danh từ, giữa ĐT và ĐT (?), và giữa các phần khác nhau của một câu. Giới từ thường có ý nghĩa về không gian hoặc thời gian (VD: beneath, between, in front of, before, after, during,...). (→ [Prépositions – sheet](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 - Giới từ là không thay đổi, nghĩa là chúng có <!-- Memo 104–105 --> một dạng thức duy nhất, ngoại trừ "à" và "de" được rút gọn với mạo từ xác định (le, les).
 - Việc dịch giới từ vốn dĩ rất khó khăn. Đừng bao giờ cho rằng tiếng Pháp sẽ sử dụng cùng một giới từ như TA để diễn đạt một ý nghĩa cụ thể. Trên thực tế, có nhiều TH một ngôn ngữ yêu cầu giới từ trong khi ngôn ngữ kia thì không. Điều này đặc biệt khó khăn với ĐT nguyên thể theo sau giới từ. Nhìn chung, tốt nhất nên coi giới từ như những mục từ vựng cần ghi nhớ.
 - Dịch theo nghĩa đen khá khó hiểu trong những TH giới từ không được sd trong TP nhưng bắt buộc trong TA.
 
 ## b) Common preposition
 - "**À**" (to) và "**de**" (from, about) là các giới từ thường thấy nhất trong tiếng Pháp. Chúng tạo thành dạng rút gọn với mạo từ xác định.
-- Khi giới từ có nghĩa đen, nghĩa về không gian, việc sử dụng chúng rất đơn giản: "**sur**" (on), "**sous**" (under), "**avec**" (with), "**sans**" (without). Ngoài ra, còn có nhiều cách sử dụng giới từ theo nghĩa thành ngữ (**idiomatic**), đặc biệt là "à" và "de". (→ [y thay giới từ chỉ vị trí](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/), [où + dans/à/sur/sous](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- Khi giới từ có nghĩa đen, nghĩa về không gian, việc sử dụng chúng rất đơn giản: "**sur**" (on), "**sous**" (under), "**avec**" (with), "**sans**" (without). Ngoài ra, còn có nhiều cách sử dụng giới từ theo nghĩa thành ngữ (**idiomatic**), đặc biệt là "à" và "de". (→ [y thay giới từ chỉ vị trí](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/), [où + dans/à/sur/sous](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 - Ngoài "preposition + tân ngữ DT (đại từ)" được thảo luận, còn có những hướng dẫn về cách sd giới từ với tên địa danh. Cuối cùng, nhiều giới từ, bao gồm một số giới từ sau có thể được theo sau bởi ĐT nguyên thể.
-- **"à" = to, at**: dùng để chỉ: [à + infinitive] (→ [à ≠ a](/blog/tieng-phap/grammar/a-grammaire-essentielle/01-alphabet-accents-et-prononciation/))
+- **"à" = to, at**: dùng để chỉ: [à + infinitive] (→ [à ≠ a](/blog/alphabet-accents-et-prononciation-bang-chu-cai-dau-va-phat-am/))
 	- **Nơi chốn**: ở, tại, bên (trái, phải,...), về phía (đông, tây,...), cách (bao nhiêu km), đến, tới (đâu)
 	- **Chỉ thời gian**: hồi, khi, lúc, đến lượt (ai đó)
 	- **Chỉ hướng**: cho, đối với, theo
@@ -80,7 +83,7 @@ isIndex: false
 		- Thay "à la banlieue" → **en banlieue**
 		- Thay "à la rue" → **dans la rue**
 		- Sống ở số nhà: không sd mạo từ hoặc au + số nhà
-- **"à cause de"** = because of, due to: thường được theo sau bởi DT, trong khi liên từ "**parce que**" (because) được theo sau bởi một mệnh đề phụ. (→ [Les conjonctions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/15-les-conjonctions/), [Expressions écrites](/blog/tieng-phap/writing/01-expressions-pour-l-expression-ecrite/): à cause de, grâce à, malgré)
+- **"à cause de"** = because of, due to: thường được theo sau bởi DT, trong khi liên từ "**parce que**" (because) được theo sau bởi một mệnh đề phụ. (→ [Les conjonctions](/blog/les-conjonctions-lien-tu/), [Expressions écrites](/blog/expressions-pour-l-expression-ecrite/): à cause de, grâce à, malgré)
 - **"au centre de"** = at the center of
 - **"à côté de"** = beside
 - **"à droite de"** = to/on the right of
@@ -109,7 +112,7 @@ isIndex: false
 - **"de l'autre côté de"** = on the other side of
 - **"derrière"** = in back of, behind [không gian]
 - **"devant"** = in front of, before (cảm giác không gian).
-- **"en"** = in: đứng ngay trước DT (không cần từ hạn định, nó được theo sau trực tiếp bởi tân ngữ của nó). Còn được dùng trong nhiều thành ngữ. (→ [en + năm / tháng + năm](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/))
+- **"en"** = in: đứng ngay trước DT (không cần từ hạn định, nó được theo sau trực tiếp bởi tân ngữ của nó). Còn được dùng trong nhiều thành ngữ. (→ [en + năm / tháng + năm](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/))
 	- \+ tên địa điểm
 	- \+ present participle.
 - **"en bas de"** = at the bottom of, at the end of
@@ -122,11 +125,11 @@ isIndex: false
 	- Trái nghĩa với "vers": toward trong nghĩa không/thời gian.
 - **"grâce à"** = thanks to
 - **"hors de"** = outside of, out of (thành ngữ)
-- **"jusqu'à"** = until: phân rõ giới từ jusqu'à và liên từ "jusqu'à ce que" (→ [jusqu'à ce que + subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
+- **"jusqu'à"** = until: phân rõ giới từ jusqu'à và liên từ "jusqu'à ce que" (→ [jusqu'à ce que + subjonctif](/blog/le-subjonctif-thuc-gia-dinh/))
 - **"loin de"** = far from.
 - **"malgré"** = in spite of
 - **"par"** = by, through, per: có nhiều nghĩa thành ngữ
-	- Có nghĩa là "by" khi dùng với "câu bị động" (→ [La voix passive](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/))
+	- Có nghĩa là "by" khi dùng với "câu bị động" (→ [La voix passive](/blog/la-voix-passive-the-bi-dong/))
 	- "par + infinitive"
 - **"parmi"** = among: được dùng khi nhắc đến 3 hoặc nhiều hơn 3 người hoặc vật (hoặc nhóm ng, vật). Trái ngược với "entre" (between)
 - **"pendant"** = during
@@ -144,14 +147,14 @@ isIndex: false
 - **"vers"** = toward(s): "vers" có nghĩa là "toward, around" trong cả nghĩa không gian và thời gian. Trái ngược với "envers" có nghĩa bóng.
 
 ## c) Contractions of "à" and "de" with definite article
-- Giới từ "à" hoặc "de" rút gọn với các mạo từ xác định "**le**" và "**les**" để tạo thành các dạng sau: (→ [Definite articles](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/), [Contract articles](/blog/tieng-phap/grammar/g-tu-spreadsheet/31-parties-du-discours-noms-et-articles/), [à, de et en](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- Giới từ "à" hoặc "de" rút gọn với các mạo từ xác định "**le**" và "**les**" để tạo thành các dạng sau: (→ [Definite articles](/blog/les-determinants-tu-han-dinh/), [Contract articles](/blog/parties-du-discours-noms-et-articles-tu-loai-danh-tu-va-mao-tu/), [à, de et en](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 
 | Rút gọn  | Kết quả | Rút gọn | Kết quả |
 | -------- | ------- | ------- | ------- |
 | de + le  | du      | à + le  | au      |
 | de + les | des     | à + les | aux     |
 
-- "**la**" và "**l'**" thì không rút gọn sau "à" và "de". Lưu ý rằng, những cách rút gọn này cũng xảy ra với giới từ 2 hoặc 3 từ kết thúc bằng "à" hoặc "de" (jusqu'à, près de, loin de, à côté de,...) (→ [lequel: auquel, duquel](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
+- "**la**" và "**l'**" thì không rút gọn sau "à" và "de". Lưu ý rằng, những cách rút gọn này cũng xảy ra với giới từ 2 hoặc 3 từ kết thúc bằng "à" hoặc "de" (jusqu'à, près de, loin de, à côté de,...) (→ [lequel: auquel, duquel](/blog/l-interrogation-cau-hoi/))
 
 ## d) "depuis" vs. "il y a...que", "ça fait...que", và "voilà...que"
 
@@ -170,11 +173,11 @@ isIndex: false
 - Trong câu phủ định, tùy thuộc vào nghĩa, "depuis" có thể được dùng với thì hiện tại (hành động vẫn đang diễn ra) hoặc thì passé composé để chỉ khoảng thời gian mà một hành động nào đó đã không diễn ra (non-action).
 
 ### iii) "il y a... que, ça fait... que, voilà... que"
-- "**il y a... que**", "**ça fait... que**", và nhấn mạnh hơn "**voilà... que**" chỉ biểu đạt khoảng thời gian. Khác với "depuis", các cách biểu đạt này luôn dùng ở đầu câu. (→ [Il y a ... que = Depuis](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
+- "**il y a... que**", "**ça fait... que**", và nhấn mạnh hơn "**voilà... que**" chỉ biểu đạt khoảng thời gian. Khác với "depuis", các cách biểu đạt này luôn dùng ở đầu câu. (→ [Il y a ... que = Depuis](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
 - Mặc dù "il y a... que" và "ça fait... que" đôi khi có thể được tìm thấy (?) ở thì tương lai (il y aura... que, ça fera... que), mệnh đề phụ được đưa vào sau "que" không bao giờ ở thì tương lai mà vẫn ở thì hiện tại.
 
 ## e) depuis with imperfect
-- Giới từ **depuis** với thì **imperfect** chỉ khoảng thời gian một sự việc đã diễn ra liên quan đến một sự kiện trong quá khứ. Ý nghĩa và cấu trúc cơ bản của câu tương tự như depuis với thì hiện tại. Depuis với thì imperfect có thể chỉ khoảng thời gian hoặc điểm bắt đầu về mặt thời gian. (→ [L'imparfait](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
+- Giới từ **depuis** với thì **imperfect** chỉ khoảng thời gian một sự việc đã diễn ra liên quan đến một sự kiện trong quá khứ. Ý nghĩa và cấu trúc cơ bản của câu tương tự như depuis với thì hiện tại. Depuis với thì imperfect có thể chỉ khoảng thời gian hoặc điểm bắt đầu về mặt thời gian. (→ [L'imparfait](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
 - what had been going on + past event
 
 | S + imperfect + depuis |                             |     |
@@ -191,14 +194,14 @@ isIndex: false
 | Il y avait / Cela faisait / Voilà | + duration + que + imperfect clause |
 
 ## f) depuis, pendant, pour: "for"
-- Có 3 giới từ tiếng Pháp "**pendant, pour, depuis**" được dịch là "for" được dùng để chỉ khoảng thời gian của một sự kiện. (→ [Time](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- Có 3 giới từ tiếng Pháp "**pendant, pour, depuis**" được dịch là "for" được dùng để chỉ khoảng thời gian của một sự kiện. (→ [Time](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 - "**depuis**": nếu một sự kiện bắt đầu trong quá khứ và đang tiếp diễn trong hiện tại, dùng "depuis" với thì <!-- Memo 114–115 --> hiện tại.
 - "**Pendant**": dịch nghĩa đen là "during", nhưng thường được diễn đạt tốt nhất là "for" + một khoảng thời gian nhất định. Có thể được dùng với tất cả các thì.
-	- "Pendant" được dùng với thì passé composé để chỉ khoảng thời gian một hành động đã hoàn thành kéo dài bao lâu. Cẩn thận: không dùng depuis với passé composé trong ngữ cảnh này. (→ [Passé composé](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+	- "Pendant" được dùng với thì passé composé để chỉ khoảng thời gian một hành động đã hoàn thành kéo dài bao lâu. Cẩn thận: không dùng depuis với passé composé trong ngữ cảnh này. (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - "**Pour**": Giới từ này được dùng trong đa dạng ngữ cảnh. Khi được dịch là "for" trong TA (tiếng Anh), nó có thể định rõ khoảng thời gian của một sự kiện trong tương lai với ĐT (động từ) "aller", "partir". Lưu ý là ĐT có thể được chia theo thì hiện tại hoặc thì tương lai.
 
 ## g) Prepositions with Places
-- Giới từ được sử dụng trong các cụm từ chỉ nơi bạn đang ở, sẽ đến và nơi bạn đến từ. Giới từ được dùng trong các cụm từ như vậy phụ thuộc vào vị trí địa lý. (→ [Giới từ trước tên thành phố và nước](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/), [Place](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- Giới từ được sử dụng trong các cụm từ chỉ nơi bạn đang ở, sẽ đến và nơi bạn đến từ. Giới từ được dùng trong các cụm từ như vậy phụ thuộc vào vị trí địa lý. (→ [Giới từ trước tên thành phố và nước](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/), [Place](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 
 | Geographic location                | to / in       | from          |
 | ---------------------------------- | ------------- | ------------- |
@@ -219,7 +222,7 @@ isIndex: false
 - ĐT nguyên thể là dạng động từ thường được dùng sau một giới từ trong TP (tiếng Pháp). "**À**" (to) và "**de**" (from, about) là các giới từ phổ biến nhất. Trong nhiều cách biểu đạt, sự chọn lựa giữa "à" hoặc "de" trước ĐT nguyên thể hoàn toàn mang tính thành ngữ, nghĩa là, nó không <!-- Memo 116–117 --> liên quan đến nghĩa. Trong những TH (trường hợp) như vậy, ta phải ghi nhớ giới từ nào được sd (sử dụng).
 
 ### i) "à + infinitive"
-- Khi các ĐT sau được theo sau bởi ĐT nguyên thể thì giới từ "à" là bắt buộc: (→ [Infinitive constructions](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- Khi các ĐT sau được theo sau bởi ĐT nguyên thể thì giới từ "à" là bắt buộc: (→ [Infinitive constructions](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 	- **aider à**: to help to
 	- **s'amuser à**: to have fun at
 	- **encourager à**: to encourage to
@@ -261,7 +264,7 @@ isIndex: false
 	- **se soucier de**: to care about
 	- **refuser de**: to refuse to
 	- **se souvenir de**: to remember to
-- Hầu hết cách biểu đạt thành ngữ với "**avoir**" cũng cần "de + infinitive": (→ [Avoir expressions](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/))
+- Hầu hết cách biểu đạt thành ngữ với "**avoir**" cũng cần "de + infinitive": (→ [Avoir expressions](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/))
 	- avoir l'air de
 	- avoir honte de
 	- avoir peur de
@@ -273,7 +276,7 @@ isIndex: false
 
 <!-- Memo 118–119 -->
 ### iii) "pour, afin de, avant de, sans, par" + infinitive
-- ĐT nguyên thể biểu đạt mục đích khi được sd sau "**pour**" hoặc "**afin de**". (→ [Other: pour, sans, par](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- ĐT nguyên thể biểu đạt mục đích khi được sd sau "**pour**" hoặc "**afin de**". (→ [Other: pour, sans, par](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 - Trong TH "**avant de**" (before) và "**sans**" (without), bản dịch TA thường là một ĐT đã chia hoặc hiện tại phân từ hơn là dạng nguyên thể TA.
 - ĐT nguyên thể theo sau giới từ "**par**" (by) sau ĐT "commencer" (to start) và "finir" (to finish).
 

@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/11 - Vocabulaire V–Z.md
+url: /blog/vocabulaire-v-z-tu-vung-v-z/
+topic: french
+updated: '2026-10-14'
 order: 11
 description: Vegetarien → Végétarien
 isIndex: false

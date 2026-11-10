@@ -12,6 +12,10 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 7 Monitoring and assessment of ANR/Lesson 13 Monitoring ANR, part 1
   -  Establishing baseline, control and reference sites and data management.md
+url: >-
+  /blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/
 description: '---'
@@ -53,7 +57,7 @@ Site selection may be delayed if natural regeneration must first be observed.
 
 ### Step 3. Baseline Inventory
 
-Collect detailed ecological and social information before any intervention. (→ [L5 Biophysical assessments](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-3-conducting-baseline-site-and-landscape-assessments/lesson-5-conducting-biophysical-assessments-at-site-and-landscape-scale/))
+Collect detailed ecological and social information before any intervention. (→ [L5 Biophysical assessments](/blog/conducting-biophysical-assessments-at-site-and-landscape-scale/))
 
 This dataset becomes the benchmark for future comparison.
 
@@ -110,7 +114,7 @@ Without baseline:
 - Impossible to measure restoration success
 - Cannot attribute improvements to ANR
 
-Baseline acts as the project's benchmark. (→ [TLTK Thực tập thiên nhiên](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/tai-lieu-tham-khao-thuc-tap-thien-nhien/))
+Baseline acts as the project's benchmark. (→ [TLTK Thực tập thiên nhiên](/blog/tai-lieu-tham-khao-thuc-tap-thien-nhien-cat-ba/))
 
 ---
 
@@ -145,7 +149,7 @@ Important principles:
 
 ## Definition
 
-Control areas are untreated sites located near ANR sites. (→ [Causal Inference](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/04-causal-inference/))
+Control areas are untreated sites located near ANR sites. (→ [Causal Inference](/blog/causal-inference-biology/))
 
 Purpose:
 Provide comparison to distinguish:
@@ -246,7 +250,7 @@ Sampling design determines:
 - When to sample
 
 Goal:
-Reliable and statistically representative monitoring. (→ [Statistic and Regression](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/05-statistic-and-regression/))
+Reliable and statistically representative monitoring. (→ [Statistic and Regression](/blog/statistic-and-regression/))
 
 ---
 
@@ -292,7 +296,7 @@ Best for:
 
 ### Nested Sampling
 
-Large plots contain smaller subplots. (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
+Large plots contain smaller subplots. (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
 
 Best for forests.
 
@@ -312,7 +316,7 @@ Common plot designs include:
 
 - Square quadrats
 - Circular plots
-- Transects (→ [Giáp xác](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/05-dvkxs-duoi-nuoc-giap-xac/))
+- Transects (→ [Giáp xác](/blog/dong-vat-khong-xuong-song-duoi-nuoc-giap-xac-cua/))
 - Stratified plots
 
 ---
@@ -362,7 +366,7 @@ Must have similar:
 
 # 7. Sampling for Site Variability
 
-One baseline survey may include many sampling units. (→ [Cá, lưỡng cư, bò sát](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/03-dvcxs-duoi-nuoc-ca-luong-cu-bo-sat/))
+One baseline survey may include many sampling units. (→ [Cá, lưỡng cư, bò sát](/blog/dong-vat-co-xuong-song-duoi-nuoc-ca-luong-cu-bo-sat/))
 
 Sampling should represent:
 
@@ -550,7 +554,7 @@ Monitoring consists of six stages:
 1. Planning
 2. Preparation
 3. Data collection
-4. Data management (→ [Prepare Data for Exploration](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/03-prepare-data-for-exploration/))
+4. Data management (→ [Prepare Data for Exploration](/blog/prepare-data-for-exploration/))
 5. Analysis and reporting
 6. Adaptive monitoring
 
@@ -584,7 +588,7 @@ Analysis
 Adaptive Monitoring
 - Improve methods
 - Retrain teams
-- Continue long-term monitoring (→ [L14 Monitoring part 2](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-14-monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
+- Continue long-term monitoring (→ [L14 Monitoring part 2](/blog/monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
 
 ---
 

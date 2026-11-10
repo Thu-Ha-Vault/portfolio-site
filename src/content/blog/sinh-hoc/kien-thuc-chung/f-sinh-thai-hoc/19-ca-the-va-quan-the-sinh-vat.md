@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / F - Sinh thái học
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/F - Sinh thái học/19 - Cá thể và quần thể
   sinh vật.md
+url: /blog/ca-the-va-quan-the-sinh-vat/
+topic: biology
+updated: '2026-10-16'
 order: 19
 description: >-
   Ghi chú này hầu như không có tên chất phiên âm cần đổi. Tuổi sinh lí: "sinh ra
@@ -50,8 +53,8 @@ isIndex: false
 
 ### 2. Nhân tố sinh thái
 - Là nhân tố môi trường ảnh hưởng trực tiếp – gián tiếp đến đời sống sinh vật.
-- 2 nhóm: (→ [ANR Lesson 3: Biophysical barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
-	- **Vô sinh**: vật lí, hoá học (→ [Ecology Bài 1: tác động đồng thời của nhiều yếu tố](/blog/sinh-hoc/biology-project-and-lab-report/ecology/01-o-nhiem-moi-truong-lao-dong-do-nhieu-yeu-to/))
+- 2 nhóm: (→ [ANR Lesson 3: Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+	- **Vô sinh**: vật lí, hoá học (→ [Ecology Bài 1: tác động đồng thời của nhiều yếu tố](/blog/xac-dinh-muc-do-o-nhiem-moi-truong-lao-dong-do-tac-dong-dong-thoi-cua-nhieu-yeu/))
 	- **Hữu sinh**: thế giới hữu cơ của môi trường và mối quan hệ giữa sinh vật với sinh vật
 
 ### 3. Giới hạn sinh thái
@@ -80,7 +83,7 @@ isIndex: false
 ## Quần thể sinh vật
 
 ### I. Quần thể
-- Tập hợp các cá thể: (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- Tập hợp các cá thể: (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 	- cùng loài
 	- cùng sinh sống trong 1 khoảng không gian xác định, vào 1 thời điểm nhất định
 	- có khả năng sinh sản → thế hệ mới
@@ -136,7 +139,7 @@ isIndex: false
 | Ngẫu nhiên | Các chấm rải rác | Trung gian. Điều kiện sống đều, không cạnh tranh gay gắt | Tận dụng nguồn sống tiềm tàng trong môi trường |
 
 #### 4. Mật độ cá thể
-- $\text{Mật độ} = \dfrac{\text{Số lượng cá thể}}{\text{1 đơn vị diện tích } S \text{ (thể tích } V)}$ (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
+- $\text{Mật độ} = \dfrac{\text{Số lượng cá thể}}{\text{1 đơn vị diện tích } S \text{ (thể tích } V)}$ (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
 - **Quan trọng nhất**, ảnh hưởng:
 	- mức độ sử dụng nguồn sống
 	- sinh sản, tử vong
@@ -146,9 +149,9 @@ isIndex: false
 
 #### 5. Kích thước
 - Gồm:
-	- Số lượng cá thể phân bố trong khoảng không gian sống của quần thể (→ [Ecology Bài 2: ước lượng bằng lấy mẫu](/blog/sinh-hoc/biology-project-and-lab-report/ecology/02-phuong-phap-lay-mau/))
+	- Số lượng cá thể phân bố trong khoảng không gian sống của quần thể (→ [Ecology Bài 2: ước lượng bằng lấy mẫu](/blog/phuong-phap-lay-mau/))
 	- Khối lượng, năng lượng tích luỹ trong quần thể của các cá thể
-- **Kích thước tối thiểu**: (→ [Bằng chứng và cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/))
+- **Kích thước tối thiểu**: (→ [Bằng chứng và cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/))
 	- min: duy trì, phát triển
 	- dưới min → suy giảm, diệt vong
 - **Kích thước tối đa**:
@@ -180,7 +183,7 @@ isIndex: false
 		- đông: điều kiện sống khó khăn → sinh sản ↓, tử vong cao → số lượng ↓
 	- năm
 	- tuần trăng, hoạt động thuỷ triều
-- **Không theo chu kì**: đột ngột, do: thời tiết: bão, lũ…; hoạt động khai thác tài nguyên quá mức của người. (→ [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/))
+- **Không theo chu kì**: đột ngột, do: thời tiết: bão, lũ…; hoạt động khai thác tài nguyên quá mức của người. (→ [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/))
 
 ##### b) Nguyên nhân
 - Nhân tố sinh thái **vô sinh** (không phụ thuộc mật độ): (?), giá rét (?)
@@ -196,8 +199,8 @@ isIndex: false
 - Tập hợp cá thể cùng loài, cùng sống trong 1 sinh cảnh.
 - Đơn vị cấu trúc: cá thể.
 - Độ đa dạng: thấp.
-- Phạm vi phân bố: hẹp hơn quần xã (chiếm 1 mắt xích trong chuỗi thức ăn). (→ [Quần xã sinh vật](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/20-quan-xa-sinh-vat/))
+- Phạm vi phân bố: hẹp hơn quần xã (chiếm 1 mắt xích trong chuỗi thức ăn). (→ [Quần xã sinh vật](/blog/quan-xa-sinh-vat/))
 
 </div>
 
-- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập

@@ -10,6 +10,9 @@ folder: Sinh học / Bioinformatics / A - Statistics and Biostatistics / I - Pro
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/A - Statistics and Biostatistics/I -
   Probability/01 - Probability.md
+url: /blog/probability-biology/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Xác suất là ngôn ngữ toán (mathematics language) định lượng sự không chắc chắn
@@ -19,7 +22,7 @@ isIndex: false
 ---
 ## Introduction
 
-- Xác suất là ngôn ngữ toán (mathematics language) định lượng sự không chắc chắn (quantifying uncertainty). (→ [Tổng ôn và mẹo làm bài](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/), [Xác suất thống kê đại cương](/blog/hoc-phan-dai-cuong/01-toan-hoc/))
+- Xác suất là ngôn ngữ toán (mathematics language) định lượng sự không chắc chắn (quantifying uncertainty). (→ [Tổng ôn và mẹo làm bài](/blog/tong-on-va-meo-lam-bai/), [Xác suất thống kê đại cương](/blog/toan-hoc-dai-so-tuyen-tinh-giai-tich-xac-suat-thong-ke/))
 
 ## Sample Spaces and Events (Không gian mẫu và Biến cố)
 
@@ -83,7 +86,7 @@ isIndex: false
 
 - Để tính toán xác suất, ta cần đếm số lượng các điểm trong một biến cố A. Phương pháp để đếm các điểm gọi là phương pháp tổ hợp.
 
-- Cho n đối tượng, số cách sắp xếp các đối tượng là , để thuận tiện, ta định nghĩa 0!=1. Ta cũng định nghĩa:  “n choose k”, số cách phân biệt để chọn k đối tượng từ n. (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/), [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- Cho n đối tượng, số cách sắp xếp các đối tượng là , để thuận tiện, ta định nghĩa 0!=1. Ta cũng định nghĩa:  “n choose k”, số cách phân biệt để chọn k đối tượng từ n. (→ [Tương tác gen](/blog/tuong-tac-gen/), [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 
 ![image_011](/vault-assets/image-011-f882d24f.png)
 
@@ -93,7 +96,7 @@ isIndex: false
 
 ## Independent Events (Biến cố độc lập)
 
-- Nếu ta tung đồng xu hai lần thì xác suất để hai lần ngửa là 0.5*0.5. Ta nhân xác suất bởi ta cho hai lần tung là độc lập. (→ [Liên kết gen và hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/), [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/), [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- Nếu ta tung đồng xu hai lần thì xác suất để hai lần ngửa là 0.5*0.5. Ta nhân xác suất bởi ta cho hai lần tung là độc lập. (→ [Liên kết gen và hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/), [Quy luật Mendel](/blog/quy-luat-mendel/), [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 
 - Định nghĩa:
 
@@ -109,11 +112,11 @@ isIndex: false
 
 ## Conditional Probability (Xác suất có điều kiện)
 
-- Cho răng P(B) > 0, ta định nghĩa xác suất có điều kiện của A theo B là (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- Cho răng P(B) > 0, ta định nghĩa xác suất có điều kiện của A theo B là (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 
 ![image_015](/vault-assets/image-015-aea1265c.png)
 
 ## Bayes’ Theorem
 
-- Xem thêm: [Bayesian Inference](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/06-bayesian-inference/) – định lý Bayes là nền tảng của suy luận Bayes
-- Xem thêm: [Bayes Classifier](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/11-error-rates-and-the-bayes-classifier/) – Bayes classifier / Naive Bayes dựa trên định lý Bayes
+- Xem thêm: Bayesian Inference – định lý Bayes là nền tảng của suy luận Bayes
+- Xem thêm: [Bayes Classifier](/blog/error-rates-and-the-bayes-classifier/) – Bayes classifier / Naive Bayes dựa trên định lý Bayes

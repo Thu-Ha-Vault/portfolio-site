@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / A - Sinh học tế bào
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/A - Sinh học tế bào/02 - Màng tế bào và
   trao đổi chất qua màng.md
+url: /blog/mang-te-bao-va-trao-doi-chat-qua-mang/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (photpholipit →
@@ -44,7 +47,7 @@ isIndex: false
 
 ### 1. Màng sinh học
 - **Màng sinh chất** bao quanh khối tế bào chất.
-- (đối với tế bào nhân thực) Tế bào chất: hệ thống **màng nội bào** → **xoang hoá**: chia tế bào chất thành nhiều ô, xoang (→ [Tế bào chất và bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+- (đối với tế bào nhân thực) Tế bào chất: hệ thống **màng nội bào** → **xoang hoá**: chia tế bào chất thành nhiều ô, xoang (→ [Tế bào chất và bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 	- → Thực hiện chức năng sống 1 cách có trật tự, hiệu quả
 - → Gồm:
 	- Màng tế bào
@@ -82,8 +85,8 @@ isIndex: false
 ### 2. Chức năng đại phân tử trong cấu trúc màng tế bào
 
 #### a. Phospholipid
-- Tạo nên cấu trúc màng. (Chỉ cần phospholipid cũng có thể tạo màng) (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
-- Phospholipid kép: kị nước → lớp ngăn cách: (→ [Phát sinh sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/))
+- Tạo nên cấu trúc màng. (Chỉ cần phospholipid cũng có thể tạo màng) (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
+- Phospholipid kép: kị nước → lớp ngăn cách: (→ [Phát sinh sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/))
 	- khối chất nguyên sinh
 	- môi trường ngoài
 	- ⇒ Thực hiện hoạt động sống.
@@ -104,7 +107,7 @@ isIndex: false
 	- **Bám màng**
 - Chức năng:
 	- **Enzyme**: xúc tác cho phản ứng sinh hoá trên màng.
-		- Vi khuẩn: các hoạt động sống diễn ra trên màng → protein > tế bào nhân thực. (→ [Nhuộm Gram](/blog/sinh-hoc/biology-project-and-lab-report/microbiology/01-thi-nghiem-vi-sinh-vat-hoc/))
+		- Vi khuẩn: các hoạt động sống diễn ra trên màng → protein > tế bào nhân thực. (→ [Nhuộm Gram](/blog/thi-nghiem-vi-sinh-vat-hoc-microbiology-laboratory-methods/))
 	- **Vận chuyển các chất**: các chất có tính phân cực, mang điện không thể đi qua phospholipid → đi qua kênh protein xuyên màng:
 		- Khuếch tán
 		- Vận chuyển chủ động ngược chiều nồng độ.
@@ -148,7 +151,7 @@ isIndex: false
 	- **Qua protein xuyên màng**: phân cực (glucose, fructose...), mang điện (Na⁺, Cl⁻...) → protein (?) trạng thái kênh đặc hiệu
 		- → Điều chỉnh tính thấm
 - **H₂O**:
-	- Qua kênh **aquaporin** (luôn mở) → **thẩm thấu** (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+	- Qua kênh **aquaporin** (luôn mở) → **thẩm thấu** (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 	- Trực tiếp qua phospholipid → khuếch tán
 
 #### b. Vận chuyển chủ động

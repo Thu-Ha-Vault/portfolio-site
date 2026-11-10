@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/02 - Ask questions to make Data-Driven decisions.md
+url: /blog/ask-questions-to-make-data-driven-decisions/
+topic: biology
+updated: '2026-10-14'
 order: 2
 description: >-
   [Tableau]: There are many different visualization tools available. One of the
@@ -123,7 +126,7 @@ isIndex: false
 | Simple to collect, store, manage, sort, and visually represent | Takes a lot of effort to collect, store, manage, sort, and visually represent |
 | Usually already a manageable size for analysis | Usually needs to be broken into smaller pieces in order to be organized and analyzed effectively for decision-making |
 
-- Xem thêm: [Dữ liệu & Database](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/01-gioi-thieu-du-lieu-and-database/) – spreadsheet so với database
+- Xem thêm: [Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/) – spreadsheet so với database
 
 - Challenges and benefits:
 	- Challenges you might face when working with big data:
@@ -293,7 +296,7 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 
 ![image_024](/vault-assets/image-024-6eb7f368.png)
 
-- Working effectively with stakeholders: (→ [ANR case studies, part 2](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-8-case-studies-of-anr-part-2-with-enrichment-planting/))
+- Working effectively with stakeholders: (→ [ANR case studies, part 2](/blog/case-studies-of-anr-part-2-with-enrichment-planting/))
 	- Discuss goals. Stakeholder requests are often tied to a bigger project or goal. When they ask you for something, take the opportunity to learn more. Start a discussion. Ask about the kind of results the stakeholder wants. Sometimes, a quick chat about goals can help set expectations and plan the next steps.
 	- Feel empowered to say “no.” Let’s say you are approached by a marketing director who has a “high-priority” project and needs data to back up their hypothesis. They ask you to produce the analysis and charts for a presentation by tomorrow morning. Maybe you realize their hypothesis isn’t fully formed and you have helpful ideas about a better way to approach the analysis. Or maybe you realize it will take more time and effort to perform the analysis than estimated. Whatever the case may be, don’t be afraid to push back when you need to.
 	- Plan for the unexpected. Before you start a project, make a list of potential roadblocks. Then, when you discuss project expectations and timelines with your stakeholders, give yourself some extra time for problem-solving at each stage of the process.
@@ -306,7 +309,7 @@ Schedule Overview / Major Milestones: The expected schedule for the project. Thi
 	- Who is managing the data?
 	- Where can you go for help?
 ### Clear communication is key
-- Before you communicate, think about: (→ [Communicating the benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-16-communicating-the-benefits-of-anr/))
+- Before you communicate, think about: (→ [Communicating the benefits of ANR](/blog/communicating-the-benefits-of-anr/))
 	- Who your audience is?
 	- What they already know
 	- What they need to know?

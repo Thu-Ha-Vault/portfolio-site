@@ -14,6 +14,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/01 - Nhập môn Bioinformatics.md
+url: /blog/nhap-mon-bioinformatics/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 1
 description: >-
@@ -34,7 +37,7 @@ Bioinformatics là ngành dùng máy tính, thống kê và thuật toán để 
 
 ## 1.2 Học thuyết trung tâm và các tầng omics
 
-Mỗi bước trong dòng thông tin DNA → RNA → protein → chất chuyển hóa tương ứng với một loại dữ liệu "omics" (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/)):
+Mỗi bước trong dòng thông tin DNA → RNA → protein → chất chuyển hóa tương ứng với một loại dữ liệu "omics" (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/)):
 
 | Tầng            | Đo cái gì                     | Công nghệ chính                   | Định dạng điển hình |
 | --------------- | ----------------------------- | --------------------------------- | ------------------- |

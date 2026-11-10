@@ -9,6 +9,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/03a - Điện và Quang.md
+url: /blog/dien-va-quang-chep-tu-anh-chup-bang-lop-vat-ly-dai-cuong/
+topic: university-courses
+updated: '2026-10-16'
 order: 3
 description: >-
   Chép lại ý chính từ 15 ảnh chụp bảng trong folder Drive Điện Quang (bài chữa
@@ -16,7 +19,7 @@ description: >-
   không lưu vào vault; xem ảnh gốc trên Drive. Danh mục tài liệu Vật
 isIndex: false
 ---
-> Chép lại ý chính từ 15 ảnh chụp bảng trong folder Drive [Điện Quang](https://drive.google.com/drive/folders/1-zgvhjKQ9M4RSJ1cZhnZcG_OxPzllZ2Y) (bài chữa trên lớp Vật lý đại cương, khoảng tháng 5/2022). Theo quy ước của vault, ảnh không lưu vào vault; xem ảnh gốc trên Drive. Danh mục tài liệu Vật lý ở [Vật lý đại cương](/blog/hoc-phan-dai-cuong/03-vat-ly/).
+> Chép lại ý chính từ 15 ảnh chụp bảng trong folder Drive [Điện Quang](https://drive.google.com/drive/folders/1-zgvhjKQ9M4RSJ1cZhnZcG_OxPzllZ2Y) (bài chữa trên lớp Vật lý đại cương, khoảng tháng 5/2022). Theo quy ước của vault, ảnh không lưu vào vault; xem ảnh gốc trên Drive. Danh mục tài liệu Vật lý ở [Vật lý đại cương](/blog/vat-ly-dai-cuong-co-nhiet-dien-quang/).
 
 <details class="callout callout-question">
 <summary>Cần kiểm tra</summary>

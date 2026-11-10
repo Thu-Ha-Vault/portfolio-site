@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Genetics
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Genetics/02 - PCR - Các vấn
   đề cơ bản.md
+url: /blog/cac-van-de-co-ban-polymerase-chain-reaction/
+topic: biology
+updated: '2026-10-19'
 order: 2
 description: >-
   Tóm tắt chương "Polymerase Chain Reaction – Các vấn đề cơ bản" (tài liệu tham
@@ -23,7 +26,7 @@ isIndex: false
 ## PCR là gì
 - **PCR** là kỹ thuật nhân bản một đoạn DNA trong ống nghiệm dựa vào **các chu kỳ nhiệt**, chạy trong **máy luân nhiệt (thermal cycler)**.
 - **PCR mix** (10–50 µl) gồm:
-	- **Taq polymerase** – DNA polymerase chịu nhiệt, hoạt tính tối đa ở **72 °C**. (→ [DNA polymerase trong nhân đôi DNA](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+	- **Taq polymerase** – DNA polymerase chịu nhiệt, hoạt tính tối đa ở **72 °C**. (→ [DNA polymerase trong nhân đôi DNA](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- 4 loại **dNTP** (dATP, dTTP, dGTP, dCTP).
 	- **DNA khuôn** chứa đoạn đích.
 	- **Mồi xuôi và mồi ngược** – oligonucleotide 20–30 nucleotide bổ sung đặc hiệu với hai đầu đoạn đích.
@@ -71,14 +74,14 @@ flowchart LR
 | dUTP           | 100 mM      | 200 µM           |
 | UNG            | 1 U/µl      | 1 U              |
 | Nước khử ion   | –           | đủ 20 µl         |
-- Thêm **5 µl mẫu** DNA → tổng 25 µl. (→ [Virtual Lab: pha master mix 100 phản ứng theo bảng](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/), protocol `pm-touchdown`)
+- Thêm **5 µl mẫu** DNA → tổng 25 µl. (→ [Virtual Lab: pha master mix 100 phản ứng theo bảng](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/), protocol `pm-touchdown`)
 
 ## Các biến thể PCR
-- **Multiplex PCR (PCR đa mồi)**: nhiều cặp mồi trong một ống để phát hiện đồng thời nhiều đích. Các mồi phải có **cùng Ta**, không bắt cặp với nhau, độ nhạy không giảm so với PCR đơn mồi. (→ [Kết quả multiplex PCR trong thực hành](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/))
+- **Multiplex PCR (PCR đa mồi)**: nhiều cặp mồi trong một ống để phát hiện đồng thời nhiều đích. Các mồi phải có **cùng Ta**, không bắt cặp với nhau, độ nhạy không giảm so với PCR đơn mồi. (→ [Kết quả multiplex PCR trong thực hành](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/))
 - **Nested PCR (PCR lồng)**: PCR vòng ngoài với cặp mồi ngoài (Fout/Rout), sản phẩm làm khuôn cho PCR vòng trong với cặp mồi trong (Fin/Rin) → **tăng độ nhạy và độ đặc hiệu**; nhược điểm: phải mở ống → **dễ ngoại nhiễm**.
 	- **Semi-/hemi-nested**: dùng lại một mồi vòng ngoài làm mồi vòng trong.
 	- **Non-stop nested**: cả hai vòng trong cùng ống; mồi ngoài có Ta cao hơn mồi trong 8–10 °C, hàm lượng mồi ngoài thấp.
-- **Touch-down PCR**: bắt đầu ở Ta cao rồi giảm dần (vd 65 °C, giảm 0,5 °C mỗi chu kỳ) → hạn chế sản phẩm không đặc hiệu. (→ [Virtual Lab: so sánh touch-down với PCR thường](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/))
+- **Touch-down PCR**: bắt đầu ở Ta cao rồi giảm dần (vd 65 °C, giảm 0,5 °C mỗi chu kỳ) → hạn chế sản phẩm không đặc hiệu. (→ [Virtual Lab: so sánh touch-down với PCR thường](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/))
 - **RT-PCR**: đích là **RNA** → phiên mã ngược thành **cDNA** bằng **reverse transcriptase** (M-MLV hoặc AMV) rồi mới PCR.
 	- Mồi cho bước RT: mồi đặc hiệu, **mồi ngẫu nhiên (random hexamer)** cho cDNA < 600 base, hoặc **oligo(dT)** bắt vào đuôi poly(A) của mRNA.
 	- RNA rất dễ bị phân huỷ → phải chống RNase trong suốt quy trình.
@@ -86,12 +89,12 @@ flowchart LR
 
 ## Ứng dụng
 - Chẩn đoán tác nhân gây bệnh (vd thiết kế mồi đặc hiệu cho DNA vi khuẩn lao).
-- **PCR + giải trình tự**: biến phương pháp Sanger thành phản ứng chu kỳ nhiệt, nhạy hơn nhiều; cho phép giải trình tự bộ gene virus trực tiếp từ bệnh phẩm bằng các đoạn PCR chồng lấp nhau → góp phần hoàn tất dự án giải mã bộ gene người sớm hơn dự định. (→ [Bioinformatics](/blog/sinh-hoc/bioinformatics/))
+- **PCR + giải trình tự**: biến phương pháp Sanger thành phản ứng chu kỳ nhiệt, nhạy hơn nhiều; cho phép giải trình tự bộ gene virus trực tiếp từ bệnh phẩm bằng các đoạn PCR chồng lấp nhau → góp phần hoàn tất dự án giải mã bộ gene người sớm hơn dự định. (→ [Bioinformatics](/topics/bioinformatics/))
 
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung</p>
 
-- Chuẩn bị khuôn DNA cho PCR: xem [Tách chiết DNA thực vật](/blog/sinh-hoc/biology-project-and-lab-report/genetics/01-tach-chiet-dna-thuc-vat-bang-ctab/). DNA còn lẫn polysaccharide, polyphenol hoặc ethanol có thể **ức chế Taq polymerase**.
+- Chuẩn bị khuôn DNA cho PCR: xem [Tách chiết DNA thực vật](/blog/tach-chiet-dna-thuc-vat-bang-ctab-va-dien-di-gel-agarose/). DNA còn lẫn polysaccharide, polyphenol hoặc ethanol có thể **ức chế Taq polymerase**.
 - Luôn chạy **đối chứng âm** (không có khuôn) để phát hiện ngoại nhiễm, và **đối chứng dương** để kiểm tra phản ứng.
 - **Hot-start PCR**: polymerase bị khoá (kháng thể hoặc hoá chất) cho đến bước biến tính đầu tiên → giảm mồi bắt cặp sai và dimer mồi ở nhiệt độ phòng.
 - Thời gian kéo dài thường tính **~1 phút cho 1 kb** sản phẩm với Taq.

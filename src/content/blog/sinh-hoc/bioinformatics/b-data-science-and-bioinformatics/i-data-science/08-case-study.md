@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/08 - Case Study.md
+url: /blog/case-study/
+topic: biology
+updated: '2026-11-10'
 order: 8
 description: >-
   Coursera: Google Data Analytics Capstone: Complete a Case Study –
@@ -24,7 +27,7 @@ isIndex: false
 ## Module 1: Learn about capstone basics
 ### Introduction to the capstone
 #### Course 8 overview
-- Recap of the program: data analysis and data ecosystems → SMART questions, stakeholders → analytical thinking, spreadsheets, SQL, data visualizations → cleaning data (verify, document, report) → organize, sort, filter, aggregate → design thinking, Tableau dashboards, data stories → Python (→ [Course 7: Python](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/07-introduction-to-data-analysis-using-python/))
+- Recap of the program: data analysis and data ecosystems → SMART questions, stakeholders → analytical thinking, spreadsheets, SQL, data visualizations → cleaning data (verify, document, report) → organize, sort, filter, aggregate → design thinking, Tableau dashboards, data stories → Python (→ [Course 7: Python](/blog/introduction-to-data-analysis-using-python/))
 - **Capstone project**: a final project at the end of a study program; in the real world usually called a **case study** → optional for the certificate but highly recommended
 	- Go through the six steps of the data analysis process from start to finish: **Ask, Prepare, Process, Analyze, Share, Act**
 - Course content:
@@ -108,7 +111,7 @@ isIndex: false
 | Other relevant skills | Database queries, data visualization, dashboards, reports, spreadsheets | Advanced statistics, machine learning, deep learning, data optimization, programming | Data manipulation, information security, data models, scalability, disaster recovery |
 
 - Map certificate skills to job description phrases (customize your resume for each job):
-	- **Database queries** ("collect data by using SQL") → perform SQL queries, sort and filter, convert data types (→ [SQL](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/))
+	- **Database queries** ("collect data by using SQL") → perform SQL queries, sort and filter, convert data types (→ [SQL](/topics/sql/))
 	- **Data visualization** → Tableau, visuals in spreadsheets, presentations
 	- **Dashboards** → identify data needs of users, Tableau dashboards, design thinking
 	- **Reports** → data cleaning reports, change logs
@@ -152,7 +155,7 @@ isIndex: false
 #### Track A details
 - Similar to a case study in a job interview: a **business task**, a **dataset**, and a list of **deliverables** to present to stakeholders; the downloadable case study packet has everything needed
 #### Case Study 1: How does a bike-share navigate speedy success?
-- **Scenario**: junior data analyst on the marketing analyst team at **Cyclistic**, a bike-share company in Chicago; the director of marketing believes future success depends on maximizing the number of **annual memberships** → understand how **casual riders** and **annual members** use bikes differently → new marketing strategy to convert casual riders into members (executives must approve, so recommendations need compelling data insights and professional visualizations) (→ [Dự án Case Study - Cyclistic](/projects/case-study-cyclistic/))
+- **Scenario**: junior data analyst on the marketing analyst team at **Cyclistic**, a bike-share company in Chicago; the director of marketing believes future success depends on maximizing the number of **annual memberships** → understand how **casual riders** and **annual members** use bikes differently → new marketing strategy to convert casual riders into members (executives must approve, so recommendations need compelling data insights and professional visualizations) (→ [Dự án Case Study - Cyclistic](/projects/cyclistic-bike-share/))
 - Characters and teams:
 	- **Cyclistic**: 5,824 geotracked bicycles, 692 stations across Chicago (launched 2016); also reclining bikes, hand tricycles, cargo bikes (about 8% of riders use assistive options); about 30% use the bikes to commute to work
 	- **Lily Moreno**: director of marketing and your manager
@@ -173,7 +176,7 @@ isIndex: false
 	- Spreadsheets: combine into one worksheet → clean → descriptive analysis (mean and max of `ride_length`, mode of `day_of_week`) → pivot tables (average `ride_length` by `member_casual`, by `day_of_week`; count of `trip_id`) → compare seasons → merge into a full-year view → export a summary file
 	- SQL: import → explore (rows, distinct values, max, min, mean) → `JOIN` into one table → summary statistics → save trends to a table
 	- Python: import Divvy 2019 Q1 and 2020 Q1 → make columns consistent and merge → clean → descriptive analysis → export summary
-- **Share**: sophisticated, polished visualizations for executives; sketch on paper first → PowerPoint/Google Slides, spreadsheets, or Tableau; use contrast, size, color, shape; headlines, subtitles, labels (→ [Course 6: Visualization](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/))
+- **Share**: sophisticated, polished visualizations for executives; sketch on paper first → PowerPoint/Google Slides, spreadsheets, or Tableau; use contrast, size, color, shape; headlines, subtitles, labels (→ [Course 6: Visualization](/blog/share-data-through-the-art-of-visualization/))
 - **Act**: top three recommendations; create a portfolio, add the case study, practice presenting it, write a brief paragraph describing the case study, process, and discoveries
 #### Case Study 2: How can a wellness company play it smart?
 - **Scenario**: junior data analyst on the marketing analyst team at **Bellabeat**, a high-tech manufacturer of health-focused products for women; **Urška Sršen** (cofounder, Chief Creative Officer) believes analyzing smart device fitness data could unlock new growth → focus on **one Bellabeat product**, analyze how consumers use smart devices → high-level marketing recommendations to the executive team
@@ -198,7 +201,7 @@ isIndex: false
 #### Track B details
 - Find a public dataset about something that interests you (public bike use in your neighborhood, local wildlife migration, video game console sales, ...) → most flexible but more challenging
 #### Case Study 3: Follow your own case study path
-- Recommended to complete one of the structured case studies first (→ [Dự án Case Study - Track B](/projects/case-study-track-b/))
+- Recommended to complete one of the structured case studies first (→ [Dự án Case Study - Track B](/projects/capstone-track-b/))
 - **Scenario**: junior data analyst for a **business intelligence consultant**, leading a project for a new client: define the business task, choose the topic, find a fresh dataset, ensure integrity, analyze, visualize, present
 - **Ask** – five questions:
 	1. What type of company does your client represent, and what are they asking you to accomplish?
@@ -339,11 +342,11 @@ isIndex: false
 - Example prompt: online retailer dataset (customer demographics, purchase history, website interaction logs) → "What are the key questions I should formulate to improve customer experience and increase sales? Describe the steps to define and prioritize these questions."
 - Pro tip: ask the AI to **rate itself** or **stack rank** the questions; advanced tools can connect data sources directly and highlight major trends
 #### Create engaging data visualizations with AI
-- Prompt: set the context (marketing campaign data: click-through rates, conversion rates, ROI) → task ("identify potential visualizations that will effectively communicate the performance trends") (→ [Course 6: Visualization](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/))
+- Prompt: set the context (marketing campaign data: click-through rates, conversion rates, ROI) → task ("identify potential visualizations that will effectively communicate the performance trends") (→ [Course 6: Visualization](/blog/share-data-through-the-art-of-visualization/))
 - Iterate: ask for YouTube videos or Google search links about the suggested chart types; enterprise tools can generate the visualizations from uploaded data
 - Use the **microphone** feature to prompt by voice
 #### Use AI to improve your Python code
-- **Generate code**: e.g. read a CSV into a pandas DataFrame, remove null values, correct data types, with explanatory comments → always **test and validate** AI-generated code (→ [Course 7: Python](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/07-introduction-to-data-analysis-using-python/))
+- **Generate code**: e.g. read a CSV into a pandas DataFrame, remove null values, correct data types, with explanatory comments → always **test and validate** AI-generated code (→ [Course 7: Python](/blog/introduction-to-data-analysis-using-python/))
 - **Handle multiple data sources**: CSV files, SQL databases, web APIs, PDFs, Google Sheets → one clean DataFrame without duplicates
 - **Debug code**: give the error message and the relevant code → plain-language explanation and fix (e.g. a misspelled column name or wrong join type)
 - **Optimize code**: refactor (list comprehensions, simpler conditionals), improve style (**PEP 8**), enhance performance, generate **docstrings**, generate **unit tests** (success cases, edge cases, error handling)
@@ -397,4 +400,4 @@ isIndex: false
 - Optional next course: **Accelerate Your Job Search with AI** (job search plan, professional pitch, resume)
 - Resources for graduates: https://www.coursera.org/learn/google-data-analytics-capstone/supplement/Rfx9E
 
-- Xem thêm: [Phân tích dữ liệu nhà ở Boston](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/04-phan-tich-du-lieu-nha-o-boston/) – case study phân tích dữ liệu
+- Xem thêm: [Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/) – case study phân tích dữ liệu

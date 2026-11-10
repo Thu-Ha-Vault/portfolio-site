@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/03 - Kiến trúc mô phỏng.md
+url: /projects/virtual-lab/kien-truc-mo-phong/
+updated: '2026-10-15'
 order: 3
 project: virtual-lab
 isIndex: false

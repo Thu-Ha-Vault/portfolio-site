@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / G - Chuyển hoá vật chất và n�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/G - Chuyển hoá vật chất và năng lượng/22 -
   Trao đổi nước và khoáng ở thực vật.md
+url: /blog/trao-doi-nuoc-va-khoang-o-thuc-vat/
+topic: biology
+updated: '2026-10-16'
 order: 22
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (axit amin → amino
@@ -37,7 +40,7 @@ isIndex: false
 
 ## 1. Thoát hơi nước qua lá
 
-- **Qua khí khổng**: thoát hơi nước chủ yếu; được điều chỉnh, V lớn. (→ [Quang hợp và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+- **Qua khí khổng**: thoát hơi nước chủ yếu; được điều chỉnh, V lớn. (→ [Quang hợp và hô hấp](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 	- → No nước: mở; mất nước: đóng.
 	- ↓ Các yếu tố ảnh hưởng: ánh sáng, H₂O, t°, độ ẩm, gió, ion khoáng, abscisic acid (ABA).
 - **Qua cutin**: chậm, không được điều chỉnh; H₂O khuếch tán trực tiếp qua bề mặt lá.
@@ -52,11 +55,11 @@ isIndex: false
 | Thành phần dịch | Nước, ion khoáng, chất hữu cơ (amino acid, vitamin, hormone) được tổng hợp ở rễ | – Các sản phẩm đồng hoá ở lá: amino acid, sucrose, ... 1 số ion khoáng |
 | Động lực | + Lực đẩy (áp suất rễ)<br>+ <u>Lực hút</u> (thoát hơi nước)<br>+ Lực liên kết giữa H₂O, vách tế bào | Chênh lệch ASTT giữa cơ quan nguồn (lá) và cơ quan chứa (rễ, củ, quả...) |
 
-- Xem thêm: [Giải phẫu lá, thân, rễ](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/) – tiêu bản xylem và phloem trên lát cắt thân, lá, rễ.
+- Xem thêm: [Giải phẫu lá, thân, rễ](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/) – tiêu bản xylem và phloem trên lát cắt thân, lá, rễ.
 
 ## 3. Hấp thụ nước và ion khoáng ở rễ
 
-- **Rễ**: đâm sâu, lan rộng; chủ yếu: hấp thụ H₂O và muối khoáng. (→ [Rào cản tự nhiên với ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+- **Rễ**: đâm sâu, lan rộng; chủ yếu: hấp thụ H₂O và muối khoáng. (→ [Rào cản tự nhiên với ANR](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 - **Lông hút** → ↑ S bề mặt → ↑ hút nước.
 
 ### Hấp thụ nước
@@ -64,17 +67,17 @@ isIndex: false
 - **Thụ động**: thẩm thấu.
 - **Điều kiện**: chênh lệch thế nước giữa tế bào lông hút và môi trường:
 	- Thoát hơi nước: ↓ nước ở tế bào lông hút.
-	- [chất tan] trong rễ cao. (→ [Bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+	- [chất tan] trong rễ cao. (→ [Bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 
 ### Hấp thụ ion khoáng
 
-- **Có chọn lọc**: chủ động và thụ động. (→ [Màng tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/02-mang-te-bao-va-trao-doi-chat-qua-mang/))
+- **Có chọn lọc**: chủ động và thụ động. (→ [Màng tế bào](/blog/mang-te-bao-va-trao-doi-chat-qua-mang/))
 - **Điều kiện**: chênh lệch [ion khoáng]: đất – lông hút (→ thụ động).
 	- Tiêu tốn ATP (chủ động).
 
 ### Vận chuyển nước, ion khoáng từ lông hút → mạch gỗ
 
-- **Con đường thành tế bào – gian bào**: đi theo không gian giữa các tế bào, bó sợi cellulose → đai Caspari (Casparian strip) → con đường tế bào. (→ [Nội bì, đai Caspary ở rễ Ngô](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/))
+- **Con đường thành tế bào – gian bào**: đi theo không gian giữa các tế bào, bó sợi cellulose → đai Caspari (Casparian strip) → con đường tế bào. (→ [Nội bì, đai Caspary ở rễ Ngô](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/))
 	- V nhanh.
 - **Con đường chất nguyên sinh – không bào**: đi xuyên qua tế bào chất của tế bào.
 	- V chậm (sức cản của nội chất).
@@ -83,11 +86,11 @@ isIndex: false
 
 ## 4. Vai trò các nguyên tố khoáng thiết yếu
 
-Từ bảng tổng hợp ví dụ – nhóm (trang 072): (→ [Thành phần hoá học](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/), [Tiêu hoá và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+Từ bảng tổng hợp ví dụ – nhóm (trang 072): (→ [Thành phần hoá học](/blog/thanh-phan-hoa-hoc-cua-te-bao/), [Tiêu hoá và hô hấp](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 
 | Nhóm | Nguyên tố |
 |---|---|
 | **Đại lượng** | Mg, K, Ca, C, H, O, N, S, P |
 | **Vi lượng** | Fe, Mn, B, Cl, Zn, Cu, Mo, Ni |
 
-- Xem thêm: [Hệ sinh thái](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/) – thực vật hấp thụ nitrogen dạng NH₄⁺, NO₃⁻ trong chu trình nitrogen
+- Xem thêm: [Hệ sinh thái](/blog/he-sinh-thai-va-sinh-quyen/) – thực vật hấp thụ nitrogen dạng NH₄⁺, NO₃⁻ trong chu trình nitrogen

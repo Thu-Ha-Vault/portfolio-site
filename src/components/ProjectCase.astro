@@ -1,0 +1,29 @@
+---
+import T from './T.astro';
+import PhaseTrack from './PhaseTrack.astro';
+import { statusKey, fmtDate, type Project } from '../lib';
+interface Props { project: Project; heading?: 'h2' | 'h3' }
+const { project, heading = 'h3' } = Astro.props;
+const d = project.data;
+const s = statusKey(d.status);
+const H = heading;
+const tags = d.tags.filter((t) => !['project', 'case-study'].includes(t)).slice(0, 4);
+---
+<article class="case">
+  <div>
+    <H><a href={d.url}>{d.title}</a></H>
+    {d.summary_vi ? <p class="summary"><T vi={d.summary_vi} en={d.summary_en ?? d.summary_vi} /></p> : d.description && <p class="summary">{d.description}</p>}
+    <ul class="facts">
+      {s && <li><span class="status"><T k={s} /></span></li>}
+      {d.deadline && <li><T k="due" /> <strong>{fmtDate(d.deadline)}</strong></li>}
+    </ul>
+    {tags.length > 0 && <ul class="tags">{tags.map((t) => <li>{t}</li>)}</ul>}
+  </div>
+  <div>
+    <PhaseTrack phases={d.phases} />
+    <div class="actions" style="margin-top:24px">
+      <a class="button" href={d.url}><T k="viewProject" /></a>
+      {Object.entries(d.links).map(([k, v]) => <a class="button" href={v} rel="noopener">{k === 'github' ? 'GitHub' : k === 'kaggle' ? 'Kaggle' : k === 'tableau' ? 'Tableau' : k}</a>)}
+    </div>
+  </div>
+</article>

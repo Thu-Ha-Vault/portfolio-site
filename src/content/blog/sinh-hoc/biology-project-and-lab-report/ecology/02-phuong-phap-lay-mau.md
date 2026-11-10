@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Ecology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Ecology/02 - Phương pháp lấy
   mẫu.md
+url: /blog/phuong-phap-lay-mau/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Báo cáo thực hành Cơ sở sinh thái học (viết tay, 3 trang) · Nguyễn Thị Thu Hà
@@ -22,14 +25,14 @@ isIndex: false
 > Báo cáo thực hành Cơ sở sinh thái học (viết tay, 3 trang) · Nguyễn Thị Thu Hà + Hoàng Thuỳ Linh, K66 Sinh học · ca tiết 6–7 chiều thứ 2. Ước lượng số lượng **con mọt** trong 26 cốc bằng cách đếm mẫu.
 
 ## Mục đích
-- Ước lượng **số lượng cá thể của một quần thể**. (→ [Kích thước quần thể](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
+- Ước lượng **số lượng cá thể của một quần thể**. (→ [Kích thước quần thể](/blog/ca-the-va-quan-the-sinh-vat/))
 
 ## Nguyên lý
 - Thủ tục lấy mẫu phải đúng.
 - Tuỳ theo đối tượng nghiên cứu mà có phương pháp phù hợp.
 - Mẫu phải cung cấp lượng thông tin tối đa, trong giới hạn thời gian quy định và trong phạm vi tài chính nhất định.
 - Xác định số lượng mẫu cần lấy.
-- **Ước lượng số lượng mẫu**: (→ [Thống kê mẫu và ước lượng tham số](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/))
+- **Ước lượng số lượng mẫu**: (→ [Thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/))
 	- **Giá trị trung bình**: $\bar{x} = \dfrac{\sum_{i=1}^{n} x_i}{n}$
 	- **Phương sai**: $s^2 = \dfrac{1}{n-1}\left[\sum_{i=1}^{n} x_i^2 - \dfrac{\left(\sum_{i=1}^{n} x_i\right)^2}{n}\right]$ ($n \le 30$ (?))
 	- **Giá trị trung bình thực của quần thể** ($\mu$) là hằng số.
@@ -92,8 +95,8 @@ isIndex: false
 ## Kết luận
 - Giá trị trung bình thực $\mu$ có giá trị **không đổi**.
 - Giá trị trung bình mẫu $x_{tb}$ (lần 2, 10,75) **gần với $\mu$ hơn** lần 1 (12,2).
-- $P$ (279,5) có giá trị **gần với số lượng con mọt thật hơn** (275 so với 317,2), sai số giảm từ 15% xuống khoảng 1,6%. (→ [Ô tiêu chuẩn ở Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
-- Xem thêm: [Virtual Lab: lấy mẫu đếm mọt](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – bốc thăm cốc, tính khoảng tin cậy, đối chiếu số liệu của bài (cộng lại cột xᵢ² được 1554).
+- $P$ (279,5) có giá trị **gần với số lượng con mọt thật hơn** (275 so với 317,2), sai số giảm từ 15% xuống khoảng 1,6%. (→ [Ô tiêu chuẩn ở Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
+- Xem thêm: [Virtual Lab: lấy mẫu đếm mọt](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – bốc thăm cốc, tính khoảng tin cậy, đối chiếu số liệu của bài (cộng lại cột xᵢ² được 1554).
 
 ## Tài liệu gốc
 ![IMG_4530](/vault-assets/img-4530-0700f867.jpg)

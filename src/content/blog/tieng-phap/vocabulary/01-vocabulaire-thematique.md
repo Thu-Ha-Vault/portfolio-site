@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/01 - Vocabulaire thématique.md
+url: /blog/vocabulaire-thematique-tu-vung-theo-chu-de/
+topic: french
+updated: '2026-10-14'
 order: 1
 description: Ça va trés bien → Ça va très bien
 isIndex: false
@@ -85,7 +88,7 @@ isIndex: false
 | à | auquel | à laquelle | auxquels | auxquelles | to which |
 | de | duquel | de laquelle | desquels | desquelles | of which |
 
-- Xem thêm: [L'interrogation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/) – cách đặt câu hỏi, lequel
+- Xem thêm: [L'interrogation](/blog/l-interrogation-cau-hoi/) – cách đặt câu hỏi, lequel
 
 ## Pronom Sujet
 
@@ -101,7 +104,7 @@ isIndex: false
 | **Vous** | [vu] | Người đối diện (nhiều tuổi hơn, lịch sự) | You (formal), to you, yourself, each other, one another | Pronoun | Singular/Plural | Formal | Vous aimez la pizza ? |  |
 | **On** | [ɔ̃] |  | We, one, they, someone, you | Pronoun |  | Văn nói | On peut visiter le château en été. |  |
 
-- Xem thêm: [Pronoms personnels](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/) – đại từ chủ ngữ và các loại đại từ khác
+- Xem thêm: [Pronoms personnels](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/) – đại từ chủ ngữ và các loại đại từ khác
 
 ## Nombre
 
@@ -145,7 +148,7 @@ isIndex: false
 | ↳ |  | Tâm điểm, dặm (hải dương) | Bull's eye, nautical mile | Noun | Masculine |  | mettre dans le mille |  |
 | **Million** | [miljɔ̃] | Triệu | million | Noun | Masculine |  | Près de 16 millions de personnes concernées. |  |
 
-- Xem thêm: [Nombres](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – cách viết số, số thứ tự trong sổ ngữ pháp
+- Xem thêm: [Nombres](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – cách viết số, số thứ tự trong sổ ngữ pháp
 
 ## Les mois de l'année
 
@@ -164,7 +167,7 @@ isIndex: false
 | **Novembre** | [novɑ̃bʁ] | Tháng 11 | November | Noun | Masculine |  | Aujourd'hui, vingt-trois novembre dit l'annonceur à la radio. |  |
 | **Décembre** | [desɑ̃bʁ] | Tháng 12 | December | Noun | Masculine |  | A découvrir en salles le 2 décembre. |  |
 
-- Xem thêm: [Dates](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – cách nói ngày tháng
+- Xem thêm: [Dates](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – cách nói ngày tháng
 
 ## Les jours de la semaine
 
@@ -178,7 +181,7 @@ isIndex: false
 | **Samedi** | [samədi] | Thứ 7 | Saturday | Noun | Masculine |  | Le magasin ferme à dix-huit heures le samedi. |  |
 | **Dimanche** | [dimɑ̃ʃ] | Chủ nhật | Sunday | Noun | Masculine |  | Le dimanche, je fais la grasse matinée. |  |
 
-- Xem thêm: [Dates](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – les jours de la semaine
+- Xem thêm: [Dates](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – les jours de la semaine
 
 ## Les professions
 
@@ -194,7 +197,7 @@ isIndex: false
 | ↳ |  | Nhân tố | Factor | Noun | Masculine |  | La cohabitation a été rejetée comme un facteur d'insécurité. |  |
 | **Informaticien** | [ɛ̃fɔʁmatisjɛ̃] | Nhà khoa học máy tính | Computer scientist | Noun | Mas/Fem | Informaticienne | Une jeune informaticienne perd son boyfriend employé par une grosse boîte. |  |
 
-- Xem thêm: [Les noms](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/) – giống của danh từ chỉ nghề nghiệp
+- Xem thêm: [Les noms](/blog/les-noms-danh-tu/) – giống của danh từ chỉ nghề nghiệp
 
 ## Les métiers
 
@@ -214,7 +217,7 @@ isIndex: false
 | **Secrétaire** | [səkʁetɛʁ] | Thư ký | Secretary | Noun | Mas/Fem | Secrétaire de rédaction: sub-editor - biên tập phụ, phó tổng biên tập, thư ký biên tập | Jean Voirin est secrétaire général de la fédération des syndicats CGT du spectacle. |  |
 | ↳ |  | Bàn viết | Writing desk, secrataire |  | Masculine |  |  |  |
 
-- Xem thêm: [Les noms](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/) – giống của danh từ chỉ nghề nghiệp
+- Xem thêm: [Les noms](/blog/les-noms-danh-tu/) – giống của danh từ chỉ nghề nghiệp
 
 ## Les lieux, les monuments
 
@@ -319,7 +322,7 @@ isIndex: false
 | **Tunisie** |  |  |  | Noun | Feminine |  |  |  |
 | **Vietnam** |  | Việt Nam | Vietnam | Noun | Masculine |  |  |  |
 
-- Xem thêm: [Prépositions devant les pays](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – en / au / aux trước tên nước
+- Xem thêm: [Prépositions devant les pays](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – en / au / aux trước tên nước
 
 ## Les nationalités
 

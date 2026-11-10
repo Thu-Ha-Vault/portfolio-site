@@ -11,16 +11,19 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/Ảnh
   thực địa.md
+url: /blog/anh-thuc-dia-thuc-tap-thien-nhien-cat-ba-2023/
+topic: biology
+updated: '2026-10-14'
 description: >-
   32 ảnh chụp trong đợt thực tập (26/06–04/07/2023), nhóm theo nội dung. Ảnh mẫu
   vật đã dùng trong báo cáo cũng được nhúng ở note bài tương ứng (IMG4985–4992
   trùng với thư mục Thực vật bậc cao, IMG5006/5009/5010/5011 trùng
 isIndex: false
 ---
-> 32 ảnh chụp trong đợt thực tập (26/06–04/07/2023), nhóm theo nội dung. Ảnh mẫu vật đã dùng trong báo cáo cũng được nhúng ở note bài tương ứng (IMG_4985–4992 trùng với thư mục *Thực vật bậc cao*, IMG_5006/5009/5010/5011 trùng với thư mục *Thực vật bậc thấp*). (→ [Tổng quan thực tập Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/01-tong-quan-thuc-tap-cat-ba/))
+> 32 ảnh chụp trong đợt thực tập (26/06–04/07/2023), nhóm theo nội dung. Ảnh mẫu vật đã dùng trong báo cáo cũng được nhúng ở note bài tương ứng (IMG_4985–4992 trùng với thư mục *Thực vật bậc cao*, IMG_5006/5009/5010/5011 trùng với thư mục *Thực vật bậc thấp*). (→ [Tổng quan thực tập Cát Bà](/blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/))
 
 ## Phiếu báo cáo ĐVKXS dưới nước (30/06)
-- Phiếu viết tay của nhóm 4: phương pháp điều tra rừng ngập mặn – bãi triều Xuân Đám và 5 họ cua thu được → [05 - ĐVKXS dưới nước - Giáp xác](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/05-dvkxs-duoi-nuoc-giap-xac/).
+- Phiếu viết tay của nhóm 4: phương pháp điều tra rừng ngập mặn – bãi triều Xuân Đám và 5 họ cua thu được → [05 - ĐVKXS dưới nước - Giáp xác](/blog/dong-vat-khong-xuong-song-duoi-nuoc-giap-xac-cua/).
 ![IMG_4917](/vault-assets/img-4917-894c76e2.jpg)
 ![IMG_4918](/vault-assets/img-4918-427e4c2c.jpg)
 
@@ -29,7 +32,7 @@ isIndex: false
 ![IMG_4983](/vault-assets/img-4983-5c8764bc.jpg)
 
 ## Thực vật bậc cao – *Ardisia* sp. (02/07)
-- Cành mang hoa, quả mọng đỏ, lá; trải trên giấy báo để chụp và ép mẫu → [07 - Thực vật bậc cao - Ardisia](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/07-thuc-vat-bac-cao-ardisia/).
+- Cành mang hoa, quả mọng đỏ, lá; trải trên giấy báo để chụp và ép mẫu → [07 - Thực vật bậc cao - Ardisia](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/).
 ![IMG_4985](/vault-assets/img-4985-0facdc0f.jpg)
 ![IMG_4987](/vault-assets/img-4987-38846a6d.jpg)
 ![IMG_4988](/vault-assets/img-4988-733356c6.jpg)
@@ -51,7 +54,7 @@ isIndex: false
 ![IMG_5007](/vault-assets/img-5007-2e032504.jpg)
 
 ## Nấm lỗ dạng quạt trên gỗ mục (03/07)
-- Nấm không cuống, mũ hình quạt có vân đồng tâm, mọc thành tầng trên cành/gỗ mục; một số mẫu mặt trên nâu đỏ viền trắng. Chụp mặt trên, mặt dưới với thước tỉ lệ → [08 - Thực vật bậc thấp - Nấm Trametes](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/08-thuc-vat-bac-thap-nam-trametes/).
+- Nấm không cuống, mũ hình quạt có vân đồng tâm, mọc thành tầng trên cành/gỗ mục; một số mẫu mặt trên nâu đỏ viền trắng. Chụp mặt trên, mặt dưới với thước tỉ lệ → [08 - Thực vật bậc thấp - Nấm Trametes](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/).
 ![IMG_5003](/vault-assets/img-5003-5cb82efb.jpg)
 ![IMG_5004](/vault-assets/img-5004-a003a482.jpg)
 ![IMG_5005](/vault-assets/img-5005-b203325e.jpg)

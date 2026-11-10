@@ -10,6 +10,9 @@ tags:
 section: Sinh học
 folder: Sinh học / Kiến thức chung / F - Sinh thái học
 vaultPath: Resources/Sinh học/Kiến thức chung/F - Sinh thái học/20 - Quần xã sinh vật.md
+url: /blog/quan-xa-sinh-vat/
+topic: biology
+updated: '2026-10-14'
 order: 20
 description: >-
   Ghi chú này hầu như không có tên chất phiên âm cần đổi. Loài đặc trưng: "chỉ
@@ -42,8 +45,8 @@ isIndex: false
 	- → tương đối ổn định.
 
 ## II. Đặc trưng
-- **Thành phần loài**: biểu thị: (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
-	- Số lượng loài, cá thể mỗi loài: mức đa dạng. (→ [Thực tập Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/01-tong-quan-thuc-tap-cat-ba/))
+- **Thành phần loài**: biểu thị: (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
+	- Số lượng loài, cá thể mỗi loài: mức đa dạng. (→ [Thực tập Cát Bà](/blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/))
 	- **Loài ưu thế**: vai trò quan trọng: số lượng nhiều, sinh khối lớn hoặc hoạt động mạnh.
 	- **Loài đặc trưng**: chỉ có ở 1 quần xã **hoặc** có số lượng nhiều hơn hẳn, vai trò quan trọng hơn loài khác.
 	- → Càng đa dạng càng ổn định.
@@ -71,7 +74,7 @@ isIndex: false
 | Đối kháng | Ức chế – cảm nhiễm (0 ↔ −) | Sống chung: 1 loài trong quá trình sống vô tình gây hại cho loài khác | Tảo giáp nở hoa độc cá, tôm; tỏi (tiết) chất ức chế vi sinh vật; trồng xen kẽ rau màu (?) |
 | Đối kháng | Cạnh tranh (− ↔ −) | Sống chung trong 1 môi trường: sự có mặt của loài này → ảnh hưởng bất lợi đến loài kia | Cú – chồn ăn chuột; cây: (tranh) nước, muối khoáng, ánh sáng |
 
-- Xem thêm: [ANR Lesson 11: crop, timber, livestock](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/) – cạnh tranh và hỗ trợ giữa cây gỗ với cây trồng, vật nuôi (cây cố định đạm)
+- Xem thêm: [ANR Lesson 11: crop, timber, livestock](/blog/integrating-anr-with-crop-timber-or-livestock-production/) – cạnh tranh và hỗ trợ giữa cây gỗ với cây trồng, vật nuôi (cây cố định đạm)
 
 ### 2. Dinh dưỡng
 
@@ -93,7 +96,7 @@ isIndex: false
 - Cấp 2: sinh vật tiêu thụ bậc 1
 - Cấp 3: sinh vật tiêu thụ bậc 2
 - ⋮
-- Bậc dinh dưỡng = Bậc tiêu thụ + 1 (vd sinh vật tiêu thụ bậc 1 thuộc bậc dinh dưỡng cấp 2). (→ [Hệ sinh thái và sinh quyển](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+- Bậc dinh dưỡng = Bậc tiêu thụ + 1 (vd sinh vật tiêu thụ bậc 1 thuộc bậc dinh dưỡng cấp 2). (→ [Hệ sinh thái và sinh quyển](/blog/he-sinh-thai-va-sinh-quyen/))
 - Mức độ phức tạp lưới tăng dần:
 	- từ vĩ độ cao ↘ vĩ độ thấp
 	- từ khơi đại dương → bờ
@@ -102,7 +105,7 @@ isIndex: false
 ![Hình - Lưới thức ăn và bậc dinh dưỡng](/vault-assets/hinh-luoi-thuc-an-va-bac-dinh-duong-bf300a9e.svg)
 
 ## IV. Diễn thế sinh thái
-- Quá trình biến đổi tuần tự của quần xã qua các giai đoạn, tương ứng với sự biến đổi của môi trường. (→ [ANR Lesson 12: ecosystem restoration](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+- Quá trình biến đổi tuần tự của quần xã qua các giai đoạn, tương ứng với sự biến đổi của môi trường. (→ [ANR Lesson 12: ecosystem restoration](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
 
 | | Nguyên sinh | Thứ sinh |
 |---|---|---|
@@ -113,7 +116,7 @@ isIndex: false
 
 ![Hình - Diễn thế nguyên sinh và thứ sinh](/vault-assets/hinh-dien-the-nguyen-sinh-va-thu-sinh-9030919b.svg)
 
-- **Nguyên nhân**: (→ [ANR Lesson 3: Biophysical barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+- **Nguyên nhân**: (→ [ANR Lesson 3: Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 	- **Bên ngoài**: tác động của ngoại cảnh lên quần xã: khí hậu, thổ nhưỡng (?)…
 	- **Bên trong**: cạnh tranh gay gắt giữa các loài trong quần xã, hoạt động của loài ưu thế. Ngoài ra: hoạt động của con người.
 	- →
@@ -128,9 +131,9 @@ isIndex: false
 <p class="callout-title">→ Quần xã sinh vật</p>
 
 - Tập hợp các quần thể khác loài sống trong 1 sinh cảnh.
-- Đơn vị cấu trúc: quần thể. Phạm vi phân bố: rộng hơn quần thể. (→ [Cá thể và quần thể](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
+- Đơn vị cấu trúc: quần thể. Phạm vi phân bố: rộng hơn quần thể. (→ [Cá thể và quần thể](/blog/ca-the-va-quan-the-sinh-vat/))
 - Độ đa dạng: cao (chiếm nhiều mắt xích trong chuỗi thức ăn).
 
 </div>
 
-- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập

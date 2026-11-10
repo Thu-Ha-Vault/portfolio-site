@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Xóm Data/R Beginner/01 - Làm quen
   với R.md
+url: /blog/lam-quen-voi-r/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/r-beginner/lessons/1'
 order: 1
 description: >-
@@ -87,7 +90,7 @@ cat(class(result), "\n")
 ![Ảnh chụp Màn hình 2026-07-22 lúc 22.55.16](/vault-assets/anh-chup-man-hinh-2026-07-22-luc-22-55-16-914e1de0.png)
 - Lưu ý: `42` mặc định là `numeric` (số thực), không phải integer — R không phân biệt gắt như Python. Muốn integer thật sự phải viết `42L`.
 ## e. Chuyển đổi kiểu
-- Họ hàm `as.*()` chuyển giá trị sang kiểu khác — cần thiết khi dữ liệu đọc vào ở dạng chuỗi nhưng muốn tính toán: (→ [Basic data types](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/05-basic-data-types/))
+- Họ hàm `as.*()` chuyển giá trị sang kiểu khác — cần thiết khi dữ liệu đọc vào ở dạng chuỗi nhưng muốn tính toán: (→ [Basic data types](/blog/basic-data-types/))
 ```r
 x <- "123"
 y <- as.numeric(x)
@@ -223,4 +226,4 @@ Top-down: 10 9 8 7 6
 - `sum(x > 5)` đếm số phần tử thỏa điều kiện — mẹo dùng rất thường xuyên
 - Recycling tự lặp vector ngắn — tiện nhưng dễ giấu bug, để ý warning
 - Hầu hết hàm R đều vectorized — nghĩ bằng vector trước khi nghĩ bằng vòng lặp
-- Xem thêm: [Bài tập R cơ bản](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/03-bai-tap-r-co-ban-va-phan-tich-du-lieu/) – bài tập phép tính, biến, vector cơ bản (Homework)
+- Xem thêm: [Bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/) – bài tập phép tính, biến, vector cơ bản (Homework)

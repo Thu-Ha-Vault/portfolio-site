@@ -16,6 +16,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/06 - Giải trình tự thế hệ mới (NGS) và genomics.md
+url: /blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 6
 description: >-
@@ -88,7 +91,7 @@ bcftools filter -i 'QUAL>30 && DP>10' sample1.vcf.gz -Oz -o sample1.filt.vcf.gz
 ## 6.5 Chú giải biến thể
 
 - Công cụ: Ensembl VEP, ANNOVAR, SnpEff.
-- Thông tin cần đọc: gen bị ảnh hưởng, hậu quả (missense, nonsense, splice) (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/)), tần số trong gnomAD, ý nghĩa trong ClinVar, điểm dự đoán (CADD, AlphaMissense).
+- Thông tin cần đọc: gen bị ảnh hưởng, hậu quả (missense, nonsense, splice) (→ [Đột biến gen](/blog/dot-bien-gen/)), tần số trong gnomAD, ý nghĩa trong ClinVar, điểm dự đoán (CADD, AlphaMissense).
 - Diễn giải lâm sàng theo hướng dẫn ACMG/AMP gồm 5 mức: gây bệnh, có thể gây bệnh, chưa rõ ý nghĩa (VUS), có thể lành tính, lành tính.
 
 ## 6.6 Lắp ráp genome (de novo assembly)

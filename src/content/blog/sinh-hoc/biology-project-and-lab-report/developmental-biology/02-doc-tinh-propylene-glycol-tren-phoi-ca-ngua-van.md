@@ -12,6 +12,10 @@ folder: Sinh học / Biology Project and Lab Report / Developmental Biology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Developmental Biology/02 -
   Độc tính Propylene Glycol trên phôi cá ngựa vằn.md
+url: >-
+  /blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Báo cáo thực hành Nhóm 5 (Thứ 4 tiết 1-2), Khoa Sinh học, ĐH KHTN – ĐHQGHN.
@@ -29,7 +33,7 @@ isIndex: false
 - **Bối cảnh**:
 	- 1994: thử nghiệm trên 1556 bệnh nhân, 194 người dương tính với miếng dán chứa 100% PG (kích ứng da).
 	- Nghiên cứu độc tính phát triển trên chuột cống, chuột nhắt, thỏ, chuột đồng: **NOAEL** 1,2–1,6 g/kg thể trọng/ngày, PG không gây độc cho thai → nhưng dữ liệu về phôi còn hạn chế.
-- **Cá ngựa vằn – mô hình độc học phôi**: (→ [Mô phỏng nuôi phôi – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [Protocol phôi cá ngựa vằn – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+- **Cá ngựa vằn – mô hình độc học phôi**: (→ [Mô phỏng nuôi phôi – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [Protocol phôi cá ngựa vằn – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 	- Mỗi kỳ sinh sản cá cái đẻ ~200 trứng; vỏ phôi trong suốt → dễ quan sát hình thái.
 	- Hệ gen đã giải mã, ~**85% tương đồng** với hệ gen người; phát triển phôi tương tự động vật bậc cao.
 	- Tránh hạn chế về đạo đức, chi phí, thời gian của thí nghiệm trên động vật bậc cao.
@@ -59,15 +63,15 @@ isIndex: false
 
 - **Quy trình**:
 	1. Thu phôi đã thụ tinh bằng vợt lưới, rửa nhiều lần để loại chất thải, chuyển sang đĩa petri.
-	2. Soi dưới kính hiển vi soi nổi (≥ 20x), hút phôi sạch sang đĩa khác (phôi ở giai đoạn ~4–8 tế bào). (→ [Tổng ôn](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))
+	2. Soi dưới kính hiển vi soi nổi (≥ 20x), hút phôi sạch sang đĩa khác (phôi ở giai đoạn ~4–8 tế bào). (→ [Tổng ôn](/blog/tong-on-va-meo-lam-bai/))
 	3. Hút ngẫu nhiên **15 phôi/giếng** vào 6 giếng hoá chất.
 	4. Quan sát và ghi nhận sống/chết, dị dạng tại **24, 48, 72, 96 giờ** sau thụ tinh.
-- **Xử lý số liệu**: Microsoft Excel – tính tỷ lệ chết, LC50, **ANOVA hai yếu tố không lặp (Two-Factor Without Replication)** với 2 yếu tố: nồng độ PG và thời gian phơi nhiễm. (→ [Kiểm định giả thiết](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/))
+- **Xử lý số liệu**: Microsoft Excel – tính tỷ lệ chết, LC50, **ANOVA hai yếu tố không lặp (Two-Factor Without Replication)** với 2 yếu tố: nồng độ PG và thời gian phơi nhiễm. (→ [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 
 ## Kết quả chính
-- **Hình thái phôi đối chứng (0 mg/L)**: (→ [Phôi sớm ở chim](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/01-su-phat-trien-phoi-som-o-chim/))
+- **Hình thái phôi đối chứng (0 mg/L)**: (→ [Phôi sớm ở chim](/blog/su-phat-trien-phoi-som-o-chim/))
 	- 24 h: chuyển động tự phát; mắt, đá tai đã hình thành; đuôi dài và tách khỏi khối noãn hoàng.
-	- 48 h: thấy nhịp tim, dòng máu chảy dọc trục cơ thể tới cuối đuôi; sắc tố ở mắt và dọc thân; noãn hoàng giảm rõ. (→ [Tuần hoàn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+	- 48 h: thấy nhịp tim, dòng máu chảy dọc trục cơ thể tới cuối đuôi; sắc tố ở mắt và dọc thân; noãn hoàng giảm rõ. (→ [Tuần hoàn](/blog/tuan-hoan-va-can-bang-noi-moi/))
 	- 96 h: ấu thể thoát màng phôi, bơi tự do; trục thẳng, có vây bơi, noãn hoàng thon gọn, vùng bóng bơi sậm màu.
 - **Quan sát theo ngày (slide trình bày)**:
 	- Ngày 1 (24 h): 350 và 500 mg/L phôi chết; 150 mg/L phôi chết nhiều; 10 mg/L vài phôi chết; 50 mg/L và đối chứng phát triển bình thường (mắt xuất hiện, đốt sống đang hình thành).
@@ -107,7 +111,7 @@ isIndex: false
 | Sai số (Error) | 131,48 | 15 | 8,77 | | | |
 | Tổng | 53272,22 | 23 | | | | |
 
-- Nồng độ PG ảnh hưởng **có ý nghĩa thống kê** tới tỷ lệ chết (p < 0,01, độ tin cậy 99%); thời gian phơi nhiễm **không** có ảnh hưởng có ý nghĩa. (→ [Hypothesis Testing](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/))
+- Nồng độ PG ảnh hưởng **có ý nghĩa thống kê** tới tỷ lệ chết (p < 0,01, độ tin cậy 99%); thời gian phơi nhiễm **không** có ảnh hưởng có ý nghĩa. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/))
 
 ## Kết luận & thảo luận
 - PG **không gây dị dạng hình thái** ở ấu thể cá ngựa vằn sống sót, nhưng **gây chết phôi**, đặc biệt ở nồng độ **≥ 150 mg/L**; 350 và 500 mg/L gây chết 100%.

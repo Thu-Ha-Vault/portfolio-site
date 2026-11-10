@@ -13,6 +13,8 @@
     "publish": "npm run sync && git add -A && git commit -m \"Sync from vault\" && git push"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
     "astro": "^6.4.8",
     "gray-matter": "^4.0.3",
     "katex": "^0.16.47",

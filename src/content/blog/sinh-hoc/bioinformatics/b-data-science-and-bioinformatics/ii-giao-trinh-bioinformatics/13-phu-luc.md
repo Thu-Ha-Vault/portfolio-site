@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/13 - Phụ lục.md
+url: /blog/phu-luc-giao-trinh-bioinformatics/
+topic: biology
+updated: '2026-10-19'
 order: 13
 description: Khóa học miễn phí hoặc có thể học dự thính
 isIndex: false
@@ -39,7 +42,7 @@ isIndex: false
 
 **Sách**
 
-- "Bioinformatics Data Skills" (Vince Buffalo): kỹ năng dòng lệnh và dữ liệu. (→ [Thư viện tài liệu – có bản PDF](/blog/sinh-hoc/thu-vien-tai-lieu-sinh-hoc/#6-tin-sinh-học-và-thống-kê))
+- "Bioinformatics Data Skills" (Vince Buffalo): kỹ năng dòng lệnh và dữ liệu. (→ [Thư viện tài liệu – có bản PDF](/blog/thu-vien-tai-lieu-sinh-hoc-google-drive/#6-tin-sinh-học-và-thống-kê))
 - "Bioinformatics Algorithms" (Compeau và Pevzner): thuật toán.
 - "Modern Statistics for Modern Biology" (Holmes và Huber): thống kê, miễn phí trực tuyến.
 - "Deep Learning for the Life Sciences" (Ramsundar và cộng sự): AI trong sinh học.

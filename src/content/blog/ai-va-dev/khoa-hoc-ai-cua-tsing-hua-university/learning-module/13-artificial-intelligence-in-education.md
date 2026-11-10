@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/13 -
   Artificial Intelligence in Education.md
+url: /blog/artificial-intelligence-in-education/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 13
 isIndex: false
@@ -18,7 +21,7 @@ isIndex: false
 ## 1.2. Artificial Intelligence (II) - Frontier Technologies
 
 ## 1.3. Large Models (I) - Core Concepts and Fundamentals
-- Xem thêm: [Towards AGI](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/02-towards-artificial-general-intelligence/) – AI và mô hình lớn
+- Xem thêm: Towards AGI – AI và mô hình lớn
 
 ## 1.4. Large Models (II) - Frontier Technologies
 
@@ -67,10 +70,10 @@ isIndex: false
 ## 2.3. From Large Models to Agents
 
 ## 2.4. Memory and Planing in Agents
-- Xem thêm: [Foundations of Agentic AI in GitHub](/blog/ai-va-dev/github/developing-in-agentic-ai-systems/2-foundations-of-agentic-ai-in-github/) – AI agent: lập kế hoạch, bộ nhớ, dùng công cụ, đa tác tử
+- Xem thêm: [Foundations of Agentic AI in GitHub](/blog/foundations-of-agentic-ai-in-github/) – AI agent: lập kế hoạch, bộ nhớ, dùng công cụ, đa tác tử
 
 ## 2.5. Tool Use and Workflows in Agents
-- Xem thêm: [Tooling, MCP, and Agent Execution](/blog/ai-va-dev/github/developing-in-agentic-ai-systems/4-tooling-mcp-and-agent-execution-environments/) – tool use và workflow của agent
+- Xem thêm: Tooling, MCP, and Agent Execution – tool use và workflow của agent
 
 ## 2.6. Multi-Agent Collaboration
 
@@ -78,7 +81,7 @@ isIndex: false
 
 # Unit 3: Teaching Students in Accordance with Their Aptitude - Personalized Learning and Assessment Analysis
 ## 3.1. Personalized Learning/Educational Theories
-- Xem thêm: [Educational Psychology](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/12-educational-psychology/) – học tập cá nhân hoá dựa trên học tập tự điều chỉnh và thuyết kiến tạo
+- Xem thêm: [Educational Psychology](/blog/educational-psychology/) – học tập cá nhân hoá dựa trên học tập tự điều chỉnh và thuyết kiến tạo
 
 ## 3.2. Personalized Learning/Intelligent Frameworks and Technologies: Content, Learning Evidence, and Instructional Decisions
 ### From Education Goals to a Runnable Support Loop
@@ -134,7 +137,7 @@ isIndex: false
 			*Input: encode (knowledge point, response result) pairs as a vector sequence* - Input layer $x_t$
 ### Instructional Model: Turning Evidence into Next-Step Support Suggestions
 - *Goal: combine course goals with learning evidence to propose next-step activities teachers can review.*
-- **Content recommendation**: Provide resources, examples, or practice relevant to current goals. (→ [Data Mining](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/01-data-mining/))
+- **Content recommendation**: Provide resources, examples, or practice relevant to current goals. (→ [Data Mining](/blog/data-mining/))
 - **Sequence suggestion**: Propose possible learning sequences based on prerequisites and evidence.
 - **Instructional intervention**: Offer hints, feedback, supplementary explanations, or extension tasks.
 - **Key principle: suggestions must be explainable and rejectable, preserving teachers' final judgment over teaching arrangements.**
@@ -321,6 +324,6 @@ isIndex: false
 ## 6.4. Sociological Reflections on AI and Education
 
 ## 6.5. Global Governance of AI in Education and China's Policy Practice
-- Xem thêm: [AI Governance and Regulation (Columbia)](/blog/ai-va-dev/ai-cybersecurity-and-governance-columbia-university/06-ai-governance-and-regulation/) – Module 6 về governance framework (ISO 42001, SAIF) và quy định AI (EU AI Act)
+- Xem thêm: [AI Governance and Regulation (Columbia)](/blog/ai-governance-and-regulation/) – Module 6 về governance framework (ISO 42001, SAIF) và quy định AI (EU AI Act)
 
 ## 6.6. Neural and Cognitive Mechanism of AI-Provided Learning Support

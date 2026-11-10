@@ -12,16 +12,19 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/09 - Visualizations.md
+url: /blog/visualizations/
+topic: biology
+updated: '2026-10-19'
 order: 9
 description: 'Xem thêm: Share Data through Visualization – nguyên tắc trực quan hoá dữ liệu'
 isIndex: false
 ---
-- Xem thêm: [Share Data through Visualization](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/) – nguyên tắc trực quan hoá dữ liệu
+- Xem thêm: [Share Data through Visualization](/blog/share-data-through-the-art-of-visualization/) – nguyên tắc trực quan hoá dữ liệu
 
 ## The ggplot() function
 
-- Xem thêm: [Trình bày và mô tả dữ liệu bằng R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/01-trinh-bay-va-mo-ta-du-lieu-bang-r/) – vẽ biểu đồ trong R
-- Xem thêm: [Nền tảng tính toán (Giáo trình Bioinformatics)](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/02-nen-tang-tinh-toan/) – ví dụ boxplot biểu hiện gen TP53 theo nhóm bằng ggplot2
+- Xem thêm: [Trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/) – vẽ biểu đồ trong R
+- Xem thêm: [Nền tảng tính toán (Giáo trình Bioinformatics)](/blog/nen-tang-tinh-toan/) – ví dụ boxplot biểu hiện gen TP53 theo nhóm bằng ggplot2
 
 ## The geom
 

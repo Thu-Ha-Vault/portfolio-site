@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Advanced/01 - Window
   Functions.md
+url: /blog/window-functions/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-advanced/lessons/1'
 order: 1
 isIndex: false

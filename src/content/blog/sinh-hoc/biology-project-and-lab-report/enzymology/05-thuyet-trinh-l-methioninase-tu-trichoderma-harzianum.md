@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Enzymology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Enzymology/05 - Thuyết trình
   L-methioninase từ Trichoderma harzianum.md
+url: /blog/phan-tach-va-xac-dinh-dac-tinh-l-methioninase-tu-trichoderma-harzianum/
+topic: biology
+updated: '2026-10-14'
 order: 5
 description: >-
   Slide thuyết trình (28 trang, dạng ảnh) của Nhóm 3 – Vũ Đức Hiệp, Trần Minh
@@ -19,7 +22,7 @@ description: >-
   Ashkan M.F., Younis S.A., Elazab N.T. (2023). Isolation and charact
 isIndex: false
 ---
-> Slide thuyết trình (28 trang, dạng ảnh) của **Nhóm 3** – Vũ Đức Hiệp, Trần Minh Anh, Hoàng Minh Hiếu, Nguyễn Thị Thu Hà, Nguyễn Lê Nhung – phân tích bài báo Ashkan M.F., Younis S.A., Elazab N.T. (2023). *Isolation and characterization of Trichoderma harzianum L-methioninase with promising a powerful anticancer*. **Saudi Journal of Biological Sciences** 30(12): 103870. https://doi.org/10.1016/j.sjbs.2023.103870. Phần Thảo luận trả lời 4 câu hỏi về tinh sạch enzyme giống [Bài 2](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/).
+> Slide thuyết trình (28 trang, dạng ảnh) của **Nhóm 3** – Vũ Đức Hiệp, Trần Minh Anh, Hoàng Minh Hiếu, Nguyễn Thị Thu Hà, Nguyễn Lê Nhung – phân tích bài báo Ashkan M.F., Younis S.A., Elazab N.T. (2023). *Isolation and characterization of Trichoderma harzianum L-methioninase with promising a powerful anticancer*. **Saudi Journal of Biological Sciences** 30(12): 103870. https://doi.org/10.1016/j.sjbs.2023.103870. Phần Thảo luận trả lời 4 câu hỏi về tinh sạch enzyme giống [Bài 2](/blog/tinh-sach-enzyme/).
 
 ## Bối cảnh
 - **Liệu pháp enzyme** ngày càng phổ biến: enzyme gắn cơ chất với **độ đặc hiệu và ái lực cao**, có tính xúc tác nên chuyển hoá hàng loạt phân tử đích.
@@ -33,12 +36,12 @@ isIndex: false
 	- Cấy 6–8 đoạn/loài trên **PDA** + kháng khuẩn, 28 °C; làm thuần trên PDA không kháng sinh 14 ngày; bảo quản glycerol 20% ở −70 °C.
 - **Môi trường chọn lọc nấm sinh L-methioninase** (/l): methionine 5 g, glucose 10 g, K₂HPO₄ và KH₂PO₄ mỗi loại 1 g, CaCl₂ 0,1 g, MgCl₂ 0,5 g, FeCl₃ và ZnCl₂ mỗi loại 0,02 g, agar 20 g; 28 °C, 7 ngày.
 - **Sàng lọc định tính – đĩa nhanh**: bổ sung **phenol đỏ 0,07%** làm chỉ thị pH (NH₃ sinh ra → màu hồng), 28 °C, 7 ngày.
-- **Định lượng hoạt độ**: (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- **Định lượng hoạt độ**: (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 	- Sản phẩm **methanethiol (MTL)** phản ứng với **DTNB** (5,5′-dithio-bis-2-nitrobenzoic acid) → **thio-nitrobenzoic acid** màu vàng, đo ở **420 nm**.
 	- Hỗn hợp 1 ml: L-methionine 20 mM, đệm phosphate 0,05 M pH 7,0, pyridoxal phosphate 0,01 mM, DTNB 0,25 mM, dịch enzyme; ủ **37 °C, 30 phút**.
 	- **Đối chứng âm**: enzyme đã ủ 90 °C/30 phút (bất hoạt).
 	- **1 U** = lượng enzyme giải phóng **1 mol MTL/phút** ở điều kiện tối ưu (theo slide; quy ước thường dùng là µmol); dựng đường chuẩn để quy đổi.
-- **Tinh sạch**: nuôi cấy → kết tủa **ammonium sulfate 70%** → **sắc ký lọc gel Sephadex G-200** → đo protein (**Biuret**, 540 nm) → **SDS-PAGE**. (→ [Định tính amino acid và protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/03-phan-tich-dinh-tinh-amino-acid-va-protein/))
+- **Tinh sạch**: nuôi cấy → kết tủa **ammonium sulfate 70%** → **sắc ký lọc gel Sephadex G-200** → đo protein (**Biuret**, 540 nm) → **SDS-PAGE**. (→ [Định tính amino acid và protein](/blog/phan-tich-dinh-tinh-amino-acid-va-protein/))
 
 ## Kết quả chính
 - **Phân lập**: 2 cây thuốc chứa **78 chủng nấm nội sinh** (11 loài, 8 chi): *Aspergillus* (23), *Trichoderma* (15), *Penicillium* (11), *Alternaria* (9), *Rhizopus* (6), *Curvularia* (6), *Fusarium* (5), *Mucor* (3).
@@ -66,12 +69,12 @@ isIndex: false
 | Ammonium sulfate | 3100 / 3163 | 13,5 / 14,1 | 1,33 / 1,30 | 95,8 / 95,7 |
 | Sephadex G-200 | 1551 / 1594 | 70,6 / 71,3 | 6,9 / 6,6 | 47,9 / 48,2 |
 
-- **SDS-PAGE**: enzyme tinh sạch cho **1 băng ~48 kDa** (phần mềm Bio-Rad). (→ [2D-PAGE](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/02-dien-di-hai-chieu-2d-page/))
+- **SDS-PAGE**: enzyme tinh sạch cho **1 băng ~48 kDa** (phần mềm Bio-Rad). (→ [2D-PAGE](/blog/dien-di-hai-chieu-2d-page/))
 
 ## Thảo luận (4 câu hỏi tinh sạch)
 - **Phương pháp đo hoạt độ có đặc hiệu không?** Có – đo sản phẩm đặc trưng **methanethiol** qua phản ứng DTNB (theo Laakso & Nurmikko); đối chứng enzyme bất hoạt nhiệt loại trừ phản ứng hoá học tự phát.
 - **Vì sao chọn các bước tinh sạch?**
-	- **Kết tủa ammonium sulfate**: loại tạp dựa trên độ hoà tan khác nhau của protein. (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/))
+	- **Kết tủa ammonium sulfate**: loại tạp dựa trên độ hoà tan khác nhau của protein. (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/))
 	- **Lọc gel Sephadex G-200**: tách theo kích thước, không dùng hoá chất mạnh → giữ hoạt tính, hiệu suất cao.
 	- (Ở nghiên cứu khác cùng đối tượng, sắc ký trao đổi ion cho hoạt độ riêng và độ sạch thấp hơn nhưng hiệu suất cao hơn lọc gel.)
 - **Làm sao biết đã sạch?** SDS-PAGE cho **1 băng duy nhất ~48 kDa**; hoạt độ riêng tăng **14,1 → 71,3 U/mg**.

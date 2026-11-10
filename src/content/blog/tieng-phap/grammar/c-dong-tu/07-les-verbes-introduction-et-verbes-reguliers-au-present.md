@@ -13,6 +13,10 @@ folder: Tiếng Pháp / Grammar / C - Động từ
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/C - Động từ/07 - Les verbes - introduction et
   verbes réguliers au présent.md
+url: >-
+  /blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/
+topic: french
+updated: '2026-10-14'
 order: 7
 description: >-
   Memo 53: "Mất lớp có một kiểu chia động từ" → "Mỗi lớp" (lỗi gõ tiếng Việt).
@@ -52,7 +56,7 @@ isIndex: false
 
 <!-- Memo 52–53 -->
 ## a) Introduction
-- Một **động từ** có thể được định nghĩa là "từ hành động của câu". Để xác định một từ là động từ hay không, xét đến vai trò của nó trong câu. (→ [Les verbes (sheet)](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- Một **động từ** có thể được định nghĩa là "từ hành động của câu". Để xác định một từ là động từ hay không, xét đến vai trò của nó trong câu. (→ [Les verbes (sheet)](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 - **Infinitives (dạng nguyên thể)** và **conjugations (chia động từ)**: Khi nghiên cứu động từ, cần biết sự khác biệt giữa dạng nguyên thể và có ngôi (finite) hay dạng chia ĐT. Nguyên thể TA được đứng trước bởi "to". Các ĐT được gọi là nguyên thể bởi vì, giống như khái niệm "vô tận" (infinity), chúng không bị giới hạn bởi thời gian. Từ dạng nguyên thể, ta suy ra dạng chia ĐT, còn được biết đến là dạng có ngôi của ĐT. Chúng được gọi là finite vì chúng nhắc đến cái sự kiện được neo bởi thời gian, đến các sự kiện có thì cụ thể: quá khứ, hiện tại, tương lai.
 - Chia động từ được giới thiệu một cách truyền thống trong sách là **"hệ biến hoá" (paradigms)**, một thuật ngữ ngữ pháp cho pattern. Một hệ biến hoá luôn bao gồm dạng nguyên thể theo sau là dạng chia ĐT tùy theo ngôi – thứ nhất, thứ hai, thứ ba – số ít và số nhiều.
 - Ví dụ: hệ biến hoá cho thì hiện tại của động từ "parler" (to speak) trong tiếng Pháp:
@@ -64,9 +68,9 @@ isIndex: false
 | 3rd person | il/elle/on parle | ils/elles parlent |
 
 - Động từ tiếng Pháp theo quy tắc rơi vào 1 trong 3 lớp dựa trên hai chữ cái cuối cùng của động từ. Mỗi lớp có một kiểu chia động <!-- Memo 54–55 --> từ cụ thể. Các lớp động từ thường được nhắc đến là 1st conjugation, 2nd, 3rd.
-- **Participles**: Phân từ (động tính từ) là một dạng động từ đặc biệt được suy ra từ dạng nguyên thể nhưng không được chia. Nói cách khác, khi chia ĐT có hệ biến hoá gồm 6 dạng theo ngôi, thì phân từ chỉ gồm 2 dạng, đặt tên dựa theo cách sử dụng: phân từ hiện tại và quá khứ. (→ [Participles as adjectives](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- **Participles**: Phân từ (động tính từ) là một dạng động từ đặc biệt được suy ra từ dạng nguyên thể nhưng không được chia. Nói cách khác, khi chia ĐT có hệ biến hoá gồm 6 dạng theo ngôi, thì phân từ chỉ gồm 2 dạng, đặt tên dựa theo cách sử dụng: phân từ hiện tại và quá khứ. (→ [Participles as adjectives](/blog/les-adjectifs-tinh-tu/))
 	- **Phân từ hiện tại** trong tiếng Pháp kết thúc bằng **"-ant"** và thường được dùng như tính từ, thường được dịch ra là dạng "-ing" trong TA. Lưu ý: dạng tính từ của hiện tại phân từ phải khớp về số lượng và giới tính của danh từ mà nó bổ nghĩa.
-	- **Phân từ quá khứ** trong tiếng Pháp được dùng để tạo thành thì ghép, như "passé composé". QKPT (quá khứ phân từ) cũng có thể được dùng như tính từ trong ngữ cảnh nhất định. Khi dùng như tính từ, phân từ phải khớp với số lượng và giới tính của danh từ nó bổ nghĩa. (→ [Passé composé](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+	- **Phân từ quá khứ** trong tiếng Pháp được dùng để tạo thành thì ghép, như "passé composé". QKPT (quá khứ phân từ) cũng có thể được dùng như tính từ trong ngữ cảnh nhất định. Khi dùng như tính từ, phân từ phải khớp với số lượng và giới tính của danh từ nó bổ nghĩa. (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - **Common auxiliaries and modals**:
 	- **Auxiliaries**, thường được gọi là trợ động từ, là các động từ kết hợp với động từ chính để tạo thành cụm động từ. Có 2 nhóm trợ động từ: trợ động từ (common auxiliaries) và trợ động từ khuyết thiếu (modals).
 	- Hai trợ động từ phổ biến trong tiếng Pháp: **"avoir"** (to have) và **"être"** (to be) được dùng để tạo thành nhiều thì. Một thì chỉ có động từ chính và không có trợ động từ được gọi là **thì đơn (simple tense)**. Một thì động từ gồm một động từ chính và trợ động từ của nó được gọi là **thì ghép**.
@@ -74,7 +78,7 @@ isIndex: false
 		- Tex peut quitter la France. → Tex can leave France.
 		- Tex devrait quitter la France! → Tex should leave France!
 		- <!-- Memo 56–57 --> Tex doit quitter la France !! → Tex must leave France !!
-- **Transitive vs. intransitive verbs**: **Ngoại động từ (transitive)** cần một bổ ngữ trực tiếp trong khi **nội động từ (intransitive)** không cho phép một bổ ngữ. Một bổ ngữ trực tiếp thường được định nghĩa là bên trực tiếp nhận hành động được động từ chỉ định. Các thuật ngữ "transitive" và "intransitive" bắt nguồn từ thuật ngữ ngữ pháp "**transitivity**", chỉ sự chuyển một hành động từ chủ ngữ (S) sang tân ngữ trực tiếp (DO). (→ [Transitive vs. intransitive](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- **Transitive vs. intransitive verbs**: **Ngoại động từ (transitive)** cần một bổ ngữ trực tiếp trong khi **nội động từ (intransitive)** không cho phép một bổ ngữ. Một bổ ngữ trực tiếp thường được định nghĩa là bên trực tiếp nhận hành động được động từ chỉ định. Các thuật ngữ "transitive" và "intransitive" bắt nguồn từ thuật ngữ ngữ pháp "**transitivity**", chỉ sự chuyển một hành động từ chủ ngữ (S) sang tân ngữ trực tiếp (DO). (→ [Transitive vs. intransitive](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 	- **Transitive**: S + V + DO.
 	- **Intransitive**: S + V.
 - **French vs. English verbs**: Có một sự khác biệt quan trọng giữa tiếng Pháp và TA (tiếng Anh) thường gây rắc rối cho người bắt đầu học ngôn ngữ. Có rất nhiều động từ TA kết hợp với một **tiểu từ (particle** – thường là giới từ) để diễn đạt ý nghĩa thành ngữ. Người nói TA có thể thay đổi hoàn toàn ý nghĩa của ĐT (động từ) bằng cách thay đổi tiểu từ.
@@ -91,7 +95,7 @@ isIndex: false
 
 ## b) -er verbs (regular) present tense
 - Có 3 nhóm động từ theo qui tắc chính trong tiếng Pháp: Động từ nguyên thể kết thúc với **-er**, **-ir** và **-re**. Vì động từ -er nhiều nhất nên được coi là **1st conjugation**. Để chia động từ, loại bỏ -er từ dạng nguyên thể tạo thành <!-- Memo 58–59 --> gốc từ (**stem**). Các thì khác nhau sẽ có đuôi khác nhau.
-- Các đuôi **-e, -es, -e, -ons, -ez, -ent** tạo thành thì hiện tại. Các đuôi (-e, -es, -e và -ent) đều là âm câm. Chỉ có đuôi của "nous" (-ons) và vous (-ez) được phát âm. 4 âm câm tạo thành **hình chiếc ủng** trong chia động từ. (→ [Gốc imparfait từ nous](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/), [Subjonctif của ĐT -er](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
+- Các đuôi **-e, -es, -e, -ons, -ez, -ent** tạo thành thì hiện tại. Các đuôi (-e, -es, -e và -ent) đều là âm câm. Chỉ có đuôi của "nous" (-ons) và vous (-ez) được phát âm. 4 âm câm tạo thành **hình chiếc ủng** trong chia động từ. (→ [Gốc imparfait từ nous](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/), [Subjonctif của ĐT -er](/blog/le-subjonctif-thuc-gia-dinh/))
 
 | Số ít        | Số nhiều         |
 | ------------ | ---------------- |
@@ -124,10 +128,10 @@ isIndex: false
 	- **travailler**: to work
 	- **trouver**: to find
 - "Je" sẽ chuyển thành **J'** trước động từ bắt đầu bằng nguyên âm hoặc âm "h" câm. Hiện tượng này được gọi là **lược nguyên âm cuối (élision)**.
-- Lưu ý rằng âm s trong đại từ số nhiều (nous, vous và ils/elles) cũng thường câm ngoại trừ khi nó được theo sau bởi động từ bắt đầu bằng nguyên âm. Trong trường hợp này, âm câm "s" được phát âm là /z/ và nối đại từ với động từ. Hiện tượng này được gọi là **sự nối vần (liaison)** và là nét rất đặc trưng của tiếng Pháp. (→ [Élision và liaison với mạo từ](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- Lưu ý rằng âm s trong đại từ số nhiều (nous, vous và ils/elles) cũng thường câm ngoại trừ khi nó được theo sau bởi động từ bắt đầu bằng nguyên âm. Trong trường hợp này, âm câm "s" được phát âm là /z/ và nối đại từ với động từ. Hiện tượng này được gọi là **sự nối vần (liaison)** và là nét rất đặc trưng của tiếng Pháp. (→ [Élision và liaison với mạo từ](/blog/les-determinants-tu-han-dinh/))
 
 ## c) -er verbs (stem changing) present tense
-- Sự thay đổi cách đánh vần xuất hiện trong gốc từ của nhiều nhóm ĐT -er trong thì hiện tại. Sự thay đổi này phản ánh cách phát âm của dạng thì hiện tại. (→ [Futur của ĐT -er đổi cách viết](/blog/tieng-phap/grammar/e-thi-thuc-the/20-le-futur-proche-et-le-futur-simple/))
+- Sự thay đổi cách đánh vần xuất hiện trong gốc từ của nhiều nhóm ĐT -er trong thì hiện tại. Sự thay đổi này phản ánh cách phát âm của dạng thì hiện tại. (→ [Futur của ĐT -er đổi cách viết](/blog/le-futur-proche-et-le-futur-simple-tuong-lai-gan-va-tuong-lai-don/))
 - Các động từ như **appeler** (to call), **rappeler** <!-- Memo 60–61 --> (to call back), và **jeter** (to throw away) thì phụ âm -l hoặc -t ở gốc từ nhân đôi trong tất cả các dạng ở thì hiện tại, ngoại trừ ngôi thứ 1 và 2 số nhiều (nous và vous). Đi theo **kiểu chiếc ủng (boot pattern)** của động từ -er chia ở thì hiện tại.
 - Boot pattern được lặp lại ở các động từ thay đổi cách đánh vần như **préférer** (to prefer). Trong loại động từ này, âm "é" trong âm tiết cuối của gốc từ chuyển thành "è", ngoại trừ ngôi 1 và 2 số nhiều (nous, vous).
 	- Các động từ chia giống préférer bao gồm: **considérer** (to consider), **espérer** (to hope), **régler** (to regulate, pay, settle, adjust), **répéter** (to repeat), **sécher** (to dry, skip).
@@ -157,10 +161,10 @@ isIndex: false
 ## e) -ir verbs (irregular) present tense: ouvrir
 - Ít nhóm động từ có dạng nguyên thể đuôi -ir là bất qui tắc, chúng sẽ không theo khuôn mẫu của ĐT -ir bình thường như finir. Động từ như **ouvrir** được chia như ĐT -er theo qui tắc: j'ouvre, tu ouvres, il/elle/on ouvre, nous ouvrons, vous ouvrez, ils/elles ouvrent.
 	- Các động từ giống ouvrir gồm: **couvrir** (to cover), **découvrir** (to discover), **offrir** (to offer, to give), **souffrir** (to suffer).
-	- Lưu ý: không có "s" trong dạng mệnh lệnh của "tu" vì nó được chia giống với -er ở **dạng mệnh lệnh (imperative)**. (→ [L'impératif](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/))
+	- Lưu ý: không có "s" trong dạng mệnh lệnh của "tu" vì nó được chia giống với -er ở **dạng mệnh lệnh (imperative)**. (→ [L'impératif](/blog/l-imperatif-thuc-menh-lenh/))
 
 ## f) -ir verbs (irregular): partir, sortir, và dormir
-- Các động từ partir, sortir, và dormir là bất qui tắc ở thì hiện tại, không được chia giống ĐT -ir: (→ [partir, sortir, quitter, laisser](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- Các động từ partir, sortir, và dormir là bất qui tắc ở thì hiện tại, không được chia giống ĐT -ir: (→ [partir, sortir, quitter, laisser](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 	- **partir** (to leave): je pars, tu pars, il/elle/on part, nous partons, vous partez, ils/elles partent.
 	- **sortir** (to exit, to go out): je sors, tu sors, il/elle <!-- Memo 64–65 --> sort, nous sortons, vous sortez, ils/elles sortent.
 	- **dormir** (to sleep): je dors, tu dors, il/elle/on dort, nous dormons, vous dormez, ils/elles dorment.

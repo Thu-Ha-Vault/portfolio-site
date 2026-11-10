@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Invertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Invertebrate Zoology/02 -
   Ngành Giun dẹp.md
+url: /blog/nganh-giun-dep-platyhelminthes/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Đại diện: sán lông nước ngọt (Dugesia, planaria) – có 2 điểm mắt, hầu
@@ -29,13 +32,13 @@ isIndex: false
 - Cơ thể **dẹp theo hướng lưng bụng**, có hiện tượng **đầu hoá**, **đối xứng 2 bên**
 - **ĐV không có xoang**: không có khoảng trống (giữa thành cơ thể và ruột lấp đầy nhu mô)
 - **Nguyên đơn thận (protonephridia)**: **tế bào ngọn lửa** lọc các chất bài tiết
-- **Hệ tiêu hoá**: tuỳ từng nhóm, có nhóm đã phân hoá thành ruột trước, ruột giữa, nhưng chưa có ruột non (?) (→ [Túi tiêu hoá](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- **Hệ tiêu hoá**: tuỳ từng nhóm, có nhóm đã phân hoá thành ruột trước, ruột giữa, nhưng chưa có ruột non (?) (→ [Túi tiêu hoá](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 	- Có thể ý là **chưa có ruột sau và hậu môn** – thức ăn vào và bã ra cùng một lỗ.
 - **Hệ thần kinh**: tập trung thành **não** phía trước với các đôi dây thần kinh chạy dọc cơ thể
 - Vận động nhờ **lông bơi** (Sán lông) hoặc **uốn sóng** nhờ tế bào cơ
 - Chưa có **hệ tuần hoàn** và **hô hấp**
 - Đa số **lưỡng tính**
-- Cơ thể dẹp → tế bào dễ dàng **trao đổi khí qua bề mặt cơ thể** (→ [Hô hấp qua bề mặt cơ thể](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- Cơ thể dẹp → tế bào dễ dàng **trao đổi khí qua bề mặt cơ thể** (→ [Hô hấp qua bề mặt cơ thể](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 - **Hệ thống phân loại**: khoảng 20000 loài, một số sống tự do, hầu hết kí sinh trên ĐV.
 - **4 lớp**: Sán lông, Sán lá song chủ, Sán lá đơn chủ, Sán dây
 
@@ -65,7 +68,7 @@ isIndex: false
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung – vòng đời sán lá gan (*Fasciola*)</p>
 
-- Trưởng thành (ống mật trâu bò, người) → **trứng** theo phân ra nước → **miracidium** (ấu trùng lông) chui vào **ốc** (vật chủ trung gian) → **sporocyst** → **redia** → **cercaria** (có đuôi) rời ốc → bám lên cây thuỷ sinh thành **metacercaria** (kén) → vật chủ chính ăn phải → sán non lên gan, vào ống mật. (→ [Ốc – vật chủ trung gian](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/06-nganh-than-mem-oc/))
+- Trưởng thành (ống mật trâu bò, người) → **trứng** theo phân ra nước → **miracidium** (ấu trùng lông) chui vào **ốc** (vật chủ trung gian) → **sporocyst** → **redia** → **cercaria** (có đuôi) rời ốc → bám lên cây thuỷ sinh thành **metacercaria** (kén) → vật chủ chính ăn phải → sán non lên gan, vào ống mật. (→ [Ốc – vật chủ trung gian](/blog/nganh-than-mem-mollusca-oc/))
 
 </div>
 

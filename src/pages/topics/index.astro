@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import T from '../../components/T.astro';
+import { blogEntries, childrenOf } from '../../lib';
+import { topicNames } from '../../i18n';
+
+const blog = await blogEntries();
+const top = blog.filter((e) => e.data.isIndex && !e.id.includes('/'));
+const countIn = (id: string) => blog.filter((e) => e.id.startsWith(id + '/') && !e.data.isIndex).length;
+const sorted = top.sort((a, b) => countIn(b.id) - countIn(a.id));
+---
+<Base title="Topics" description="All notes organized by course and subject.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1><T k="topics" /></h1>
+      <p><T k="topicsIntro" /></p>
+    </header>
+    <div class="topic-tree">
+      {sorted.map((t) => {
+        const [vi, en] = topicNames[t.data.topic ?? ''] ?? [t.data.title, t.data.title];
+        const subs = childrenOf(blog, t.id).filter((c) => c.data.isIndex);
+        return (
+          <section class="topic-group">
+            <h2><a href={t.data.url}><span data-vi={vi} data-en={en}>{vi}</span></a></h2>
+            <p class="muted">{countIn(t.id)} <T k="notes" /></p>
+            {subs.length > 0 && (
+              <ul>{subs.map((s) => <li><a href={s.data.url}>{s.data.title}</a><span>{countIn(s.id)}</span></li>)}</ul>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  </div>
+</Base>

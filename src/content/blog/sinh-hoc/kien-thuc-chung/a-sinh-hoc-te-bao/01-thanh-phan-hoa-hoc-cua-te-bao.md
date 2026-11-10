@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / A - Sinh học tế bào
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/A - Sinh học tế bào/01 - Thành phần hoá học
   của tế bào.md
+url: /blog/thanh-phan-hoa-hoc-cua-te-bao/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (glucozơ → glucose,
@@ -48,7 +51,7 @@ isIndex: false
 		- C (khoanh tròn trong sổ) → bộ khung của các hợp chất hữu cơ
 	- **Nguyên tố vi lượng**: < 0,01%: Fe, Cu, Zn, Mn, Mo, B...
 		- → thành phần của enzyme, hoạt hoá enzyme → tham gia hoạt động sống của tế bào
-		- Ghi chú: cần cho sinh trưởng, phát triển tối ưu của cây; không thể thay thế. (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+		- Ghi chú: cần cho sinh trưởng, phát triển tối ưu của cây; không thể thay thế. (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 - Các nguyên tố không tồn tại riêng rẽ mà liên kết với nhau tạo thành:
 	- **Phân tử hữu cơ**: liên kết cộng hoá trị
 	- **Phân tử vô cơ**
@@ -58,7 +61,7 @@ isIndex: false
 ### 1. H₂O
 ![Hình - Phân tử nước và liên kết hiđro](/vault-assets/hinh-phan-tu-nuoc-va-lien-ket-hidro-dd9ab524.svg)
 - χO > χH → cặp electron dùng chung lệch về phía O → phân tử **phân cực**.
-- → Dễ hình thành **liên kết hydrogen** với: (→ [Liên kết hoá học – Hoá đại cương](/blog/hoc-phan-dai-cuong/02-hoa-hoc/))
+- → Dễ hình thành **liên kết hydrogen** với: (→ [Liên kết hoá học – Hoá đại cương](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/))
 	- Các phân tử H₂O khác → giữ nhiệt, ổn định nhiệt độ (điều hoà nhiệt độ)
 	- Các phân tử phân cực khác
 - → Là dung môi hoà tan các chất (hoà tan bằng cách hình thành liên kết hydrogen) → **nước tự do**
@@ -70,12 +73,12 @@ isIndex: false
 - **Các ion**:
 	- Tạo áp suất thẩm thấu → duy trì trạng thái no nước của tế bào
 	- Tham gia vào các phản ứng sinh hoá
-	- Duy trì cân bằng giữa tế bào và môi trường (→ [Tuần hoàn và cân bằng nội môi](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+	- Duy trì cân bằng giữa tế bào và môi trường (→ [Tuần hoàn và cân bằng nội môi](/blog/tuan-hoan-va-can-bang-noi-moi/))
 	- Quy định điện thế màng tế bào
 ### 3. Phân tử khí
 - **O₂**:
 	- Tham gia hô hấp tế bào
-	- Chất nhận electron cuối cùng của chuỗi truyền electron trên màng trong ti thể (→ [Quang hợp và hô hấp ở thực vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+	- Chất nhận electron cuối cùng của chuỗi truyền electron trên màng trong ti thể (→ [Quang hợp và hô hấp ở thực vật](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 - **CO₂** —(trong tế bào chất)→ H₂CO₃ → H⁺ + HCO₃⁻
 	- → làm giảm pH tế bào
 ## C. Chất hữu cơ
@@ -83,7 +86,7 @@ isIndex: false
 - Lipid
 - Protein (⊛, gạch chân)
 - Nucleic acid (*, gạch chân)
-- → Đều là **đại phân tử** (→ [Phát sinh sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/), [Tiêu hoá và hô hấp ở động vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- → Đều là **đại phân tử** (→ [Phát sinh sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/), [Tiêu hoá và hô hấp ở động vật](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 - Chú thích của sổ:
 	- Gạch chân (—): **polymer tự nhiên**
 	- \*: Đa dạng cao, đặc trưng cho từng loài
@@ -100,7 +103,7 @@ isIndex: false
 - Chất kết tinh, vị ngọt, tan trong nước.
 - Có tính khử (đường khử) → phản ứng **Fehling**:
 	- $C_6H_{12}O_6 + 2Cu(OH)_2 + NaOH \rightarrow C_6H_{11}O_7Na + Cu_2O\downarrow + 3H_2O$
-	- Glucose bị oxi hoá thành sodium gluconate, tạo kết tủa Cu₂O màu đỏ gạch. (→ [Phản ứng định tính monosaccharide](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/01-phan-ung-dinh-tinh-monosaccharide/))
+	- Glucose bị oxi hoá thành sodium gluconate, tạo kết tủa Cu₂O màu đỏ gạch. (→ [Phản ứng định tính monosaccharide](/blog/cac-phan-ung-dinh-tinh-monosaccharide/))
 - Vai trò:
 	- Cung cấp năng lượng cho tế bào (glucose)
 	- Nguyên liệu tạo đường đôi, đường đa
@@ -112,7 +115,7 @@ isIndex: false
 - Vị ngọt, tan trong nước
 - → Dự trữ carbon, năng lượng; là dạng vận chuyển đường (sucrose ở thực vật)
 #### c. Đường đa
-- Nhiều đường đơn liên kết với nhau → chất đa phân, không tan trong nước. (→ [Phản ứng định tính polysaccharide](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/02-phan-ung-dinh-tinh-polysaccharide/))
+- Nhiều đường đơn liên kết với nhau → chất đa phân, không tan trong nước. (→ [Phản ứng định tính polysaccharide](/blog/cac-phan-ung-dinh-tinh-polysaccharide/))
 - **Tinh bột (starch)**: dự trữ năng lượng, carbon ở thực vật; nhiều ở củ, hạt → nguồn lương thực
 	- Amylose: liên kết α-1,4-glycosidic → không phân nhánh
 	- Amylopectin: liên kết α-1,4 và α-1,6-glycosidic → phân nhánh
@@ -132,15 +135,15 @@ isIndex: false
 - **Không phải polymer**
 - Phân loại:
 	- **Lipid đơn giản**:
-		- **Chất béo (triglyceride)**: 1 glycerol + 3 acid béo (fatty acid) (→ [Tính chất mỡ trung tính](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/05-tinh-chat-ly-hoa-cua-mo-trung-tinh/))
+		- **Chất béo (triglyceride)**: 1 glycerol + 3 acid béo (fatty acid) (→ [Tính chất mỡ trung tính](/blog/cac-tinh-chat-ly-hoa-cua-mo-trung-tinh-triacylglycerol/))
 			- Mỡ: acid béo no (saturated)
-			- Dầu: acid béo không no (unsaturated) (→ [Các chỉ số của lipid](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/06-cac-chi-so-cua-lipid/))
+			- Dầu: acid béo không no (unsaturated) (→ [Các chỉ số của lipid](/blog/xac-dinh-mot-so-chi-so-cua-lipid/))
 			- → Nguồn dự trữ năng lượng chủ yếu của tế bào
 		- **Sáp (wax)**: 1 acid béo + 1 alcohol mạch dài (≥ C₁₆)
 	- **Lipid phức tạp**:
 		- **Phospholipid**: 1 glycerol + 2 acid béo + 1 nhóm phosphate
 			- 2 acid béo: đuôi **kị nước**; nhóm phosphate (gắn glycerol): đầu **ưa nước**
-			- → Cấu tạo màng sinh chất (→ [Màng tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/02-mang-te-bao-va-trao-doi-chat-qua-mang/))
+			- → Cấu tạo màng sinh chất (→ [Màng tế bào](/blog/mang-te-bao-va-trao-doi-chat-qua-mang/))
 		- **Steroid**: 4 vòng carbon dính nhau, có chuỗi bên
 			- Sterol (steroid có nhóm –OH): cholesterol → thành phần màng tế bào động vật
 			- Hormone sinh dục: testosterone (nam), estrogen (nữ)
@@ -155,7 +158,7 @@ isIndex: false
 	- Hydrocarbon: không phân cực
 	- Có –COOH: tính acid
 	- Có –NH₂: tính base
-- **Liên kết peptide**: –CO–NH– (→ [Định tính amino acid và protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/03-phan-tich-dinh-tinh-amino-acid-va-protein/))
+- **Liên kết peptide**: –CO–NH– (→ [Định tính amino acid và protein](/blog/phan-tich-dinh-tinh-amino-acid-va-protein/))
 - 1 phân tử protein:
 	- Gồm 1 hoặc nhiều chuỗi polypeptide cùng hoặc khác loại
 	- Đặc trưng bởi số lượng, thành phần, trật tự sắp xếp các amino acid trong chuỗi polypeptide
@@ -171,7 +174,7 @@ isIndex: false
 - **Bậc 3**: cấu trúc bậc 2 tiếp tục cuộn xếp thành hình dạng 3D đặc trưng (thường dạng khối cầu)
 	- Giữ bởi liên kết hydrogen, liên kết ion, **cầu disulfide** (–S–S–), tương tác kị nước
 - **Bậc 4**: nhiều chuỗi polypeptide (đã có cấu trúc bậc 3) phối hợp với nhau
-- **Biến tính protein**: nhiệt độ cao, pH bất lợi, ion kim loại nặng... phá vỡ cấu trúc không gian (chỉ còn bậc 1) (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/))
+- **Biến tính protein**: nhiệt độ cao, pH bất lợi, ion kim loại nặng... phá vỡ cấu trúc không gian (chỉ còn bậc 1) (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/))
 	- → Protein mất chức năng
 	- Một số protein có thể **hồi tính** (khôi phục cấu trúc không gian)
 - Sai khác về số lượng, thành phần, trật tự amino acid → biến đổi cấu trúc và hoạt tính protein → có thể gây bệnh
@@ -250,7 +253,7 @@ Ký hiệu: N = tổng số nucleotide của gen (2 mạch); L = chiều dài; A
 	- Sinh vật nhân thực: **nhiễm sắc thể = DNA + protein histone**
 	- Sinh vật nhân sơ: DNA mạch kép, dạng vòng, trần (không liên kết histone)
 	- Virus: DNA hoặc RNA
-- RNA và protein: (→ [Nhân đôi, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- RNA và protein: (→ [Nhân đôi, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 	- Số ribonucleotide: $rN = \frac{N}{2}$
 	- Số bộ ba trên mRNA = $\frac{N}{2 \times 3} = \frac{N}{6}$
 	- Số bộ ba mã hoá amino acid = $\frac{N}{6} - 1$ (trừ bộ ba kết thúc)

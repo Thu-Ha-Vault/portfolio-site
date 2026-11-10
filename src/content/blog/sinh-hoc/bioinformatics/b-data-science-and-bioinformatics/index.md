@@ -9,6 +9,9 @@ folder: Sinh học / Bioinformatics / B - Data Science and Bioinformatics
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/_MOC - B
   - Data Science and Bioinformatics.md
+url: /topics/data-science-and-bioinformatics/
+topic: biology
+updated: '2026-10-19'
 description: >-
   Data Science: Bioinformatics Giáo trình Bioinformatics: Từ nhập môn đến nâng
   cao
@@ -16,6 +19,6 @@ isIndex: true
 ---
 ## Map of Content
 
-- [Data Science:](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/)
-- [Bioinformatics](/blog/sinh-hoc/bioinformatics/)
-- [Giáo trình Bioinformatics: Từ nhập môn đến nâng cao](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/)
+- [Data Science:](/topics/data-science/)
+- [Bioinformatics](/topics/bioinformatics/)
+- [Giáo trình Bioinformatics: Từ nhập môn đến nâng cao](/topics/giao-trinh-bioinformatics/)

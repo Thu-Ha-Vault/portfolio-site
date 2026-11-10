@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Biostatistics and Bioinfor
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biostatistics and
   Bioinformatics/04 - Phân tích cơ sở dữ liệu trên Excel.md
+url: /blog/phan-tich-co-so-du-lieu/
+topic: biology
+updated: '2026-10-14'
 order: 4
 description: >-
   Thực hành thao tác với cơ sở dữ liệu (CSDL) dạng bảng trong Excel: lọc bản ghi
@@ -22,7 +25,7 @@ isIndex: false
 > Thực hành thao tác với **cơ sở dữ liệu (CSDL) dạng bảng** trong Excel: lọc bản ghi theo điều kiện (*Advanced Filter*), hàm CSDL (`DMAX`, `DAVERAGE`), sắp xếp nhiều khoá và lập **bảng phân bố tần số**. Gồm 3 sheet số liệu sinh học. Ô đầu sheet có link DataCamp Workspace (làm song song trên DataCamp).
 
 ## Khái niệm chính
-- **Database Range**: vùng dữ liệu gồm hàng tiêu đề (tên trường – *field*) và các bản ghi (*record*) bên dưới. (→ [Giới thiệu Dữ liệu & Database](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/01-gioi-thieu-du-lieu-and-database/))
+- **Database Range**: vùng dữ liệu gồm hàng tiêu đề (tên trường – *field*) và các bản ghi (*record*) bên dưới. (→ [Giới thiệu Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/))
 - **Criterion Range**: vùng điều kiện, gồm tên trường (chép đúng tiêu đề) và điều kiện bên dưới:
 	- Các điều kiện **cùng hàng** → phép **AND**.
 	- Các điều kiện **khác hàng** → phép **OR**.
@@ -30,12 +33,12 @@ isIndex: false
 - **Output range**: hàng tiêu đề chỉ chứa các trường muốn trích ra (vd Fish, Sex, Msex, L(cm), Age).
 
 ## Công thức / phương pháp
-- **Trích lọc bản ghi** – *Data → Advanced Filter*: khai báo List range (Database Range), Criteria range và *Copy to another location* (vùng output). (→ [SELECT & WHERE](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/02-select-and-where-truy-van-co-ban/), [Thao tác dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/))
-- **Hàm CSDL** – cú pháp chung `Dxxx(database; field; criteria)`: (→ [Hàm tổng hợp](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/04-ham-tong-hop-aggregate/))
+- **Trích lọc bản ghi** – *Data → Advanced Filter*: khai báo List range (Database Range), Criteria range và *Copy to another location* (vùng output). (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/), [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
+- **Hàm CSDL** – cú pháp chung `Dxxx(database; field; criteria)`: (→ [Hàm tổng hợp](/blog/ham-tong-hop-aggregate/))
 	- `DMAX(...)`: giá trị lớn nhất của trường thoả điều kiện.
 	- `DAVERAGE(...)`: trung bình của trường thoả điều kiện.
 	- Tương tự: `DMIN`, `DSUM`, `DCOUNT`.
-- **Sắp xếp nhiều khoá** – *Data → Sort*: khoá chính + các khoá phụ. (→ [Sắp xếp & Tìm kiếm](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/03-sap-xep-and-tim-kiem/), [Analyze Data](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- **Sắp xếp nhiều khoá** – *Data → Sort*: khoá chính + các khoá phụ. (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/), [Analyze Data](/blog/analyze-data-to-answer-questions/))
 - **Phân bố tần số theo khoảng**:
 	- Tính `MIN`, `MAX` của trường, chọn độ rộng khoảng $a$.
 	- Tạo cột **Bin**: $Bin_1 = \min$, $Bin_{k+1} = Bin_k + a$ (cố định ô $a$ bằng `$`), dòng cuối = max.

@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/08 - Introduction to
   tidyverse.md
+url: /blog/introduction-to-tidyverse/
+topic: biology
+updated: '2026-10-19'
 order: 8
 description: >-
   Xem thêm: GROUP BY & HAVING – groupby/summarise tương đương GROUP BY trong SQL
@@ -28,5 +31,5 @@ isIndex: false
 
 ## Summarizing data
 
-- Xem thêm: [GROUP BY & HAVING](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/05-group-by-and-having-tong-hop-du-lieu/) – group_by/summarise tương đương GROUP BY trong SQL
-- Xem thêm: [Nền tảng tính toán (Giáo trình Bioinformatics)](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/02-nen-tang-tinh-toan/) – dplyr, ggplot2 và Bioconductor trong lộ trình bioinformatics
+- Xem thêm: [GROUP BY & HAVING](/blog/group-by-and-having-tong-hop-du-lieu/) – group_by/summarise tương đương GROUP BY trong SQL
+- Xem thêm: [Nền tảng tính toán (Giáo trình Bioinformatics)](/blog/nen-tang-tinh-toan/) – dplyr, ggplot2 và Bioconductor trong lộ trình bioinformatics

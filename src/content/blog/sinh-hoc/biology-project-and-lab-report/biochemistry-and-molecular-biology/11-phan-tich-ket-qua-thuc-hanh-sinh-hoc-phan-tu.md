@@ -10,6 +10,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/11 - Phân tích kết quả thực hành Sinh học phân tử.md
+url: /blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/
+topic: biology
+updated: '2026-10-16'
 order: 11
 description: >-
   Môn Sinh học Phân tử – Bài 10 (báo cáo tổng kết) · ĐH Khoa học Tự nhiên, ĐHQG
@@ -19,17 +22,17 @@ isIndex: false
 > Môn Sinh học Phân tử – Bài 10 (báo cáo tổng kết) · ĐH Khoa học Tự nhiên, ĐHQG Hà Nội · K66 Sinh học chuẩn, nhóm 7.1 (chiều thứ 3, tiết 9–10).
 
 ## Mục đích
-- Phân tích và biện luận kết quả của chuỗi bài thực hành: **biến nạp (Bài 3)**, **tách plasmid (Bài 4)**, **cắt plasmid bằng enzyme giới hạn (Bài 5)**, **PCR (Bài 7)**, **multiplex PCR (Bài 8)** và **điện di gel agarose (Bài 9)**. (→ [Tổng ôn](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))
+- Phân tích và biện luận kết quả của chuỗi bài thực hành: **biến nạp (Bài 3)**, **tách plasmid (Bài 4)**, **cắt plasmid bằng enzyme giới hạn (Bài 5)**, **PCR (Bài 7)**, **multiplex PCR (Bài 8)** và **điện di gel agarose (Bài 9)**. (→ [Tổng ôn](/blog/tong-on-va-meo-lam-bai/))
 
 ## Nguyên lý
-- **Biến nạp (transformation)**: đưa plasmid mang gen kháng **ampicillin** vào tế bào khả biến bằng **sốc nhiệt**; chỉ tế bào nhận plasmid mọc được trên **LB + ampicillin (LB+)**; đĩa **LB không kháng sinh (LB−)** là đối chứng sống sót. (→ [Ứng dụng di truyền vào chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
-- **Điện di gel agarose**: DNA tích điện âm chạy về cực dương; phân tách theo **kích thước và cấu hình**. Plasmid **siêu xoắn (supercoiled)** gọn nhất → chạy nhanh hơn dạng vòng hở (nicked) và dạng thẳng (linear). (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/), [2D-PAGE](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/02-dien-di-hai-chieu-2d-page/), [Tách DNA thực vật và điện di](/blog/sinh-hoc/biology-project-and-lab-report/genetics/01-tach-chiet-dna-thuc-vat-bang-ctab/))
+- **Biến nạp (transformation)**: đưa plasmid mang gen kháng **ampicillin** vào tế bào khả biến bằng **sốc nhiệt**; chỉ tế bào nhận plasmid mọc được trên **LB + ampicillin (LB+)**; đĩa **LB không kháng sinh (LB−)** là đối chứng sống sót. (→ [Ứng dụng di truyền vào chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
+- **Điện di gel agarose**: DNA tích điện âm chạy về cực dương; phân tách theo **kích thước và cấu hình**. Plasmid **siêu xoắn (supercoiled)** gọn nhất → chạy nhanh hơn dạng vòng hở (nicked) và dạng thẳng (linear). (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/), [2D-PAGE](/blog/dien-di-hai-chieu-2d-page/), [Tách DNA thực vật và điện di](/blog/tach-chiet-dna-thuc-vat-bang-ctab-va-dien-di-gel-agarose/))
 	- Dạng **vòng hở (nick)**: topoisomerase cắt một sợi để tháo xoắn khi sao chép.
 	- Dạng **thẳng**: nhiễm nuclease hoặc xử lý quá mạnh khi tinh sạch.
 	- Dạng **vòng sợi đơn** (chạy nhanh nhất): DNA biến tính không hồi phục do bước **ly giải kiềm** quá mạnh.
 	- Hiệu quả tách plasmid đánh giá qua tỉ lệ **dạng siêu xoắn** (dạng dùng tốt cho tách dòng, biến nạp).
-- **Enzyme giới hạn (restriction enzyme)** cắt plasmid tại vị trí nhận biết → các đoạn thẳng có kích thước xác định. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/10-do-ben-va-tinh-dac-hieu-cua-enzyme/))
-- **PCR / Multiplex PCR**: khuếch đại đoạn gen đặc hiệu bằng cặp mồi; multiplex dùng nhiều cặp mồi trong một phản ứng → nhiều băng. Đối chứng âm (không khuôn) phải không có băng. (→ [PCR – các vấn đề cơ bản](/blog/sinh-hoc/biology-project-and-lab-report/genetics/02-pcr-cac-van-de-co-ban/), [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/), [Mô phỏng PCR và điện di – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [Protocol PCR trọn vẹn và qPCR – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+- **Enzyme giới hạn (restriction enzyme)** cắt plasmid tại vị trí nhận biết → các đoạn thẳng có kích thước xác định. (→ [Độ bền và tính đặc hiệu của enzyme](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/))
+- **PCR / Multiplex PCR**: khuếch đại đoạn gen đặc hiệu bằng cặp mồi; multiplex dùng nhiều cặp mồi trong một phản ứng → nhiều băng. Đối chứng âm (không khuôn) phải không có băng. (→ [PCR – các vấn đề cơ bản](/blog/cac-van-de-co-ban-polymerase-chain-reaction/), [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/), [Mô phỏng PCR và điện di – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [Protocol PCR trọn vẹn và qPCR – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 
 ## Vật liệu & phương pháp
 - Vector: plasmid **pGEM**.
@@ -63,7 +66,7 @@ isIndex: false
 - **PCR**: trừ nhóm 7.4 (một băng đậm sai kích thước ~5 kb), các nhóm đều có băng đúng 1,25 kb.
 - **Multiplex PCR**: các nhóm đều có băng 1,25 kb; **chỉ nhóm 7.1** có thêm băng 500 bp đúng kích thước; tất cả có băng nhạt sai kích thước (~3 kb).
 - Mẫu S+, M+ của nhóm 7.4 và M+ của nhóm 6.4 có **băng sáng ở miệng giếng** (DNA kẹt lại ở giếng).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `mb-transform` (biến nạp, sốc nhiệt 44 °C) và `mo-plasmid` (tách, cắt plasmid).
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `mb-transform` (biến nạp, sốc nhiệt 44 °C) và `mo-plasmid` (tách, cắt plasmid).
 
 ## Tài liệu gốc
 - Báo cáo thực hành Sinh học phân tử.docx (có ảnh đĩa biến nạp, ảnh điện di, bản đồ pGEM, ladder)

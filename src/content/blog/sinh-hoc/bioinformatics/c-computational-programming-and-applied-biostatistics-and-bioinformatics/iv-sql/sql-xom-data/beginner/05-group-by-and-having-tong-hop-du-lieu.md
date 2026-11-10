@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Beginner/05 - GROUP
   BY & HAVING - Tổng hợp dữ liệu.md
+url: /blog/group-by-and-having-tong-hop-du-lieu/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-beginner/lessons/1'
 order: 5
 description: >-
@@ -23,7 +26,7 @@ isIndex: false
 ---
 ## a. Tại sao cần GROUP BY
 - Bạn muốn biết **tổng lương mỗi phòng ban**. Không thể dùng `SUM` đơn giản vì nó tính cho toàn bộ bảng.
-- `GROUP BY` chia dữ liệu thành **nhóm** và áp dụng hàm aggregate cho **từng nhóm**. (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/), [Introduction to tidyverse](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/08-introduction-to-tidyverse/), [Tổng hợp dữ liệu (R)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/05-tong-hop-du-lieu/))
+- `GROUP BY` chia dữ liệu thành **nhóm** và áp dụng hàm aggregate cho **từng nhóm**. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), [Introduction to tidyverse](/blog/introduction-to-tidyverse/), [Tổng hợp dữ liệu (R)](/blog/tong-hop-du-lieu/))
 ## b. GROUP BY cơ bản
 ```sql
 SELECT department, SUM(salary) AS total_salary

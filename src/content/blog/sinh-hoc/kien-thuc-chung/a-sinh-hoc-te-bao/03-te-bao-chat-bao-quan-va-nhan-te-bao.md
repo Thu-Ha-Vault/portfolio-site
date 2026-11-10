@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / A - Sinh học tế bào
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/A - Sinh học tế bào/03 - Tế bào chất, bào
   quan và nhân tế bào.md
+url: /blog/te-bao-chat-bao-quan-va-nhan-te-bao/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, riboxom →
@@ -38,7 +41,7 @@ isIndex: false
 
 
 ## II. Tế bào chất và bào quan
-- Xem thêm: [Mô hình tế bào tương tác](/blog/sinh-hoc/kien-thuc-chung/mo-hinh-te-bao-tuong-tac/) – bấm vào từng bào quan để xem mặt cắt và chú thích
+- Xem thêm: [Mô hình tế bào tương tác](/blog/mo-hinh-te-bao-tuong-tac/) – bấm vào từng bào quan để xem mặt cắt và chú thích
 
 ### 1. Tế bào chất
 - Khối chất, dạng keo, nằm phía trong màng tế bào, chứa bào quan, ..., khối chất nguyên sinh (**bào tương**)
@@ -83,13 +86,13 @@ isIndex: false
 	- Cytochrome c hoạt hoá enzyme caspase và enzyme endonuclease → gây tự chết theo chương trình của tế bào (**Apoptosis**)
 - Tự tổng hợp protein: có DNA, RNA, ribosome, enzyme
 	- → Nhân đôi, phiên mã, dịch mã
-	- ⇒ **Bán tự chủ** (độc lập tương đối) với tế bào: phần lớn protein của ti thể vẫn do gen trong nhân mã hoá. (→ [Bài viết The Origin of Mitochondria](/blog/tieng-anh/02-scientific-english-in-biology/))
+	- ⇒ **Bán tự chủ** (độc lập tương đối) với tế bào: phần lớn protein của ti thể vẫn do gen trong nhân mã hoá. (→ [Bài viết The Origin of Mitochondria](/blog/scientific-english-in-biology-homework/))
 
 #### Nguồn gốc
-- **Nội cộng sinh** của 1 vi khuẩn hiếu khí với tế bào. (→ [Phát sinh sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/))
+- **Nội cộng sinh** của 1 vi khuẩn hiếu khí với tế bào. (→ [Phát sinh sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/))
 - Bằng chứng:
 	- Ribosome: 70S, rRNA giống vi khuẩn
-	- DNA kép, vòng, trần. (→ [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- DNA kép, vòng, trần. (→ [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 	- Tổng hợp protein:
 		- Amino acid mở đầu: f-Met.
 		- Bị ức chế bởi chloramphenicol.
@@ -113,7 +116,7 @@ isIndex: false
 	- DNA kép vòng trần, RNA, ribosome, enzyme tổng hợp glucose của chu trình Calvin.
 
 #### Chức năng
-- Thực hiện **quang hợp** (→ [Quang hợp và hô hấp ở thực vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+- Thực hiện **quang hợp** (→ [Quang hợp và hô hấp ở thực vật](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 
 #### Nguồn gốc
 - Nội cộng sinh của 1 **vi khuẩn lam** vào trong tế bào
@@ -174,7 +177,7 @@ isIndex: false
 
 #### Đặc tính
 - Cơ chế "**hoạt – nghỉ**" → hoạt động liên tục trong thời gian dài.
-- Hoạt động theo nhóm (**polyribosome**) (→ [Nhân đôi, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+- Hoạt động theo nhóm (**polyribosome**) (→ [Nhân đôi, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 - Không có tính đặc trưng cho tế bào.
 	- (Virus sử dụng ribosome của tế bào chủ → tổng hợp protein cho mình)
 
@@ -195,7 +198,7 @@ isIndex: false
 	- Phân xưởng tập trung, đóng gói:
 		- Đưa sản phẩm ra ngoài tế bào
 		- Phân phối đến bào quan, bộ phận khác
-	- VD: Protein tổng hợp trên lưới nội chất hạt → bóng nội bào (túi tiết) → Golgi: gắn thêm carbohydrate → glycoprotein → đóng gói vào túi tiết → xuất bào (→ [Màng tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/02-mang-te-bao-va-trao-doi-chat-qua-mang/))
+	- VD: Protein tổng hợp trên lưới nội chất hạt → bóng nội bào (túi tiết) → Golgi: gắn thêm carbohydrate → glycoprotein → đóng gói vào túi tiết → xuất bào (→ [Màng tế bào](/blog/mang-te-bao-va-trao-doi-chat-qua-mang/))
 - Tham gia tổng hợp polysaccharide, glycoprotein.
 - Hoàn thiện, đóng gói enzyme thuỷ phân (tổng hợp ở lưới nội chất hạt) → tạo lysosome; tạo ra glycoprotein.
 - ⇒ Tế bào nào (?) có chức năng tiết protein (tuyến nội tiết, tế bào bạch cầu) có bộ máy Golgi phát triển.
@@ -223,7 +226,7 @@ flowchart LR
 #### Chức năng
 - Lysosome cấp 1: tích enzyme thuỷ phân, cần thiết + bóng
 	- → Lysosome cấp 2:
-		- Heterolysosome: tiêu hoá nội bào, bảo vệ chống lại tác nhân gây bệnh bên ngoài vào (vi khuẩn, virus, độc tố, dược phẩm). (→ [Tiêu hoá và hô hấp ở động vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+		- Heterolysosome: tiêu hoá nội bào, bảo vệ chống lại tác nhân gây bệnh bên ngoài vào (vi khuẩn, virus, độc tố, dược phẩm). (→ [Tiêu hoá và hô hấp ở động vật](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 		- Autolysosome: tự tiêu của tế bào (phân huỷ tế bào già, bị tổn thương).
 - Quá trình:
 	- Phân huỷ cấu trúc nhờ hệ thống enzyme thuỷ phân được giải phóng từ lysosome
@@ -307,9 +310,9 @@ flowchart LR
 - Gồm thể kèm: hình cầu có cuống đính với vi ống → (?) hệ thống vi ống đi ra xếp phóng xạ xung quanh
 
 #### Vai trò
-- Tế bào động vật: vai trò quan trọng trong phân bào (**có sao**). (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- Tế bào động vật: vai trò quan trọng trong phân bào (**có sao**). (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 - Tế bào thực vật: không có trung thể (phân bào **không sao**), thoi phân bào hình thành từ tế bào chất đặc biệt tương ứng với chất quanh trung thể.
-	- → Nguyên phân không hình thành thoi phân bào → đột biến đa bội thể. (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+	- → Nguyên phân không hình thành thoi phân bào → đột biến đa bội thể. (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 - Tạo **thể nền**: cấu trúc nằm ở gốc lông, roi.
 
 ### 12. Không bào
@@ -321,7 +324,7 @@ flowchart LR
 	- Vai trò (?) quan trọng (?) cho (?) hoạt động sinh lý (?): sinh trưởng, hấp thụ, vận chuyển nước, muối khoáng.
 	- Tế bào thực vật: đa năng:
 		- chứa chất độc.
-		- [chất tan] cao → áp suất thẩm thấu → lông hút. (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+		- [chất tan] cao → áp suất thẩm thấu → lông hút. (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 		- sắc tố (tế bào cánh hoa).
 	- Động vật nguyên sinh:
 		- tích nước, bơm nước ra ngoài cơ thể
@@ -350,11 +353,11 @@ flowchart LR
 #### b. Chất nhiễm sắc và NST
 - **Chất nhiễm sắc**: DNA (vật chất di truyền) + protein histone (bảo vệ).
 - Kì đầu phân bào, chất nhiễm sắc xoắn, co ngắn, tách thành các thể có kích thước vài – chục micro → **NST** (chromatid).
-- Xem thêm: [Ứng dụng di truyền vào chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/) – thành tế bào, nhân tế bào là nền cho kĩ thuật tế bào trần, nhân bản vô tính
+- Xem thêm: [Ứng dụng di truyền vào chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/) – thành tế bào, nhân tế bào là nền cho kĩ thuật tế bào trần, nhân bản vô tính
 
 <div class="callout callout-warning">
 <p class="callout-title">Phần cuối mục Nhân tế bào có thể dở dang: ảnh IMG_3355 (giữa trang 013 và 014) bị thiếu, nên phần tiếp theo của "b. Chất nhiễm sắc và NST" (và có thể các mục nhân con, chức năng của nhân) không có trong bản chép. Trang 014 đã chuyển sang Quy luật Mendel.</p>
 
 </div>
 
-- Xem thêm: [Tổng ôn – 4. Cấu trúc nhiễm sắc thể](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#4-cấu-trúc-nhiễm-sắc-thể) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 4. Cấu trúc nhiễm sắc thể](/blog/tong-on-va-meo-lam-bai/#4-cấu-trúc-nhiễm-sắc-thể) – mẹo làm bài, ghi chú ôn tập

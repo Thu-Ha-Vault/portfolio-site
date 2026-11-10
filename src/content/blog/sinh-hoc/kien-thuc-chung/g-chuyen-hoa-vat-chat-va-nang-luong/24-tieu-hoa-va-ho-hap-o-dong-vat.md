@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / G - Chuyển hoá vật chất và n�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/G - Chuyển hoá vật chất và năng lượng/24 -
   Tiêu hoá và hô hấp ở động vật.md
+url: /blog/tieu-hoa-va-ho-hap-o-dong-vat/
+topic: biology
+updated: '2026-10-16'
 order: 24
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (lizôxôm → lysosome,
@@ -40,7 +43,7 @@ isIndex: false
 
 ### 1.1. Khái niệm
 
-- Quá trình biến đổi chất hữu cơ phức tạp → chất dinh dưỡng đơn giản cơ thể có thể hấp thụ. (→ [Thành phần hoá học](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+- Quá trình biến đổi chất hữu cơ phức tạp → chất dinh dưỡng đơn giản cơ thể có thể hấp thụ. (→ [Thành phần hoá học](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 - **Bản chất**: biến đổi hoá học. (Cơ học: ↑ hiệu quả)
 
 ### 1.2. Tiêu hoá ở các nhóm động vật
@@ -52,8 +55,8 @@ isIndex: false
 | Hình thức tiêu hoá | Nội bào (lysosome) (→ Bào quan) | + Ngoại bào (trong lòng túi nhờ enzyme tiết ra trên thành túi)<br>+ Nội bào (ở tế bào trên thành túi) | Ngoại bào, gồm:<br>+ Ống tiêu hoá: khoang miệng, thực quản, dạ dày, ruột, hậu môn<br>+ Tuyến tiêu hoá: tuyến nước bọt, tuyến vị (dạ dày), tuyến gan, tuỵ, ruột |
 | Đặc điểm | Chỉ tiêu hoá được thức ăn có kích thước nhỏ, đơn giản | Thức ăn lẫn phần tạp chất; enzyme tiêu hoá bị hoà loãng với nước → hiệu quả thấp | Thức ăn không lẫn phần tạp chất (1 chiều); enzyme tiêu hoá không bị pha loãng |
 
-- Xem thêm: [Virtual Lab: mổ giun đất, tôm, cá, ếch](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/) – quan sát ống tiêu hoá (giun: hầu, diều, dạ dày cơ, ruột, ruột tịt) và mang trên mẫu mổ ảo
-- Xem thêm: [Thủy tức](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/01-nganh-ruot-khoang-thuy-tuc/), [Sán lá gan](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/02-nganh-giun-dep/) (túi tiêu hoá), [Giun đất](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/05-nganh-giun-dot-giun-dat/) (ống tiêu hoá) – tiêu bản và ảnh mổ thật ở học phần Động vật không xương sống
+- Xem thêm: [Virtual Lab: mổ giun đất, tôm, cá, ếch](/projects/virtual-lab/thi-nghiem-giai-doan-5/) – quan sát ống tiêu hoá (giun: hầu, diều, dạ dày cơ, ruột, ruột tịt) và mang trên mẫu mổ ảo
+- Xem thêm: [Thủy tức](/blog/nganh-ruot-khoang-cnidaria-thuy-tuc/), [Sán lá gan](/blog/nganh-giun-dep-platyhelminthes/) (túi tiêu hoá), [Giun đất](/blog/nganh-giun-dot-annelida-giun-dat/) (ống tiêu hoá) – tiêu bản và ảnh mổ thật ở học phần Động vật không xương sống
 
 ### 1.3. Ống tiêu hoá
 
@@ -74,7 +77,7 @@ isIndex: false
 | Ruột non | – Ngắn hơn nhiều động vật ăn cỏ<br>– Các chất dinh dưỡng được tiêu hoá hoá học và hấp thụ giống người | – Có thể dài vài chục mét, dài hơn nhiều so với động vật ăn thịt |
 | Manh tràng | Không phát triển, không có chức năng tiêu hoá thức ăn | – Phát triển, nhiều vi sinh vật cộng sinh tiêu hoá cellulose và các chất dinh dưỡng có trong tế bào thực vật<br>– Chất dinh dưỡng đơn giản được hấp thụ qua manh tràng |
 
-- Ví dụ (bảng tổng hợp trang 072): (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+- Ví dụ (bảng tổng hợp trang 072): (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 	- **Thú ăn thực vật (dạ dày 4 ngăn)**: trâu, bò, cừu, dê.
 	- **Thú ăn thực vật (1 ngăn)**: ngựa, thỏ.
 
@@ -84,7 +87,7 @@ isIndex: false
 
 ### 2.1. Khái niệm
 
-- Tập hợp những quá trình cơ thể lấy O₂ từ bên ngoài vào để cung cấp cho quá trình oxi hoá các chất trong tế bào, tạo năng lượng cho các hoạt động sống, thải CO₂ khỏi cơ thể. (→ [Quang hợp và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+- Tập hợp những quá trình cơ thể lấy O₂ từ bên ngoài vào để cung cấp cho quá trình oxi hoá các chất trong tế bào, tạo năng lượng cho các hoạt động sống, thải CO₂ khỏi cơ thể. (→ [Quang hợp và hô hấp](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 
 ### 2.2. Các quá trình
 
@@ -97,19 +100,19 @@ isIndex: false
 - Nơi thực hiện quá trình trao đổi khí giữa cơ thể – môi trường.
 	- **Tỉ lệ S/V lớn**: ↑ S bề mặt trao đổi khí.
 	- **Bề mặt mỏng, ẩm ướt**: giúp CO₂, O₂ dễ dàng khuếch tán qua.
-	- **Bề mặt có nhiều mao mạch**: chứa sắc tố hô hấp vận chuyển khí. (→ [Tuần hoàn và cân bằng nội môi](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+	- **Bề mặt có nhiều mao mạch**: chứa sắc tố hô hấp vận chuyển khí. (→ [Tuần hoàn và cân bằng nội môi](/blog/tuan-hoan-va-can-bang-noi-moi/))
 	- **Có sự lưu thông khí**: tạo sự chênh lệch nồng độ CO₂, O₂.
 
 ### 2.4. Các hình thức
 
 #### a) Qua bề mặt cơ thể
 
-- **Đại diện**: động vật đơn bào, đa bào bậc thấp (giun tròn, giun dẹp, giun đốt, ruột khoang). (→ [Giun dẹp](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/02-nganh-giun-dep/), [Giun đũa](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/04-nganh-giun-tron-giun-dua/))
+- **Đại diện**: động vật đơn bào, đa bào bậc thấp (giun tròn, giun dẹp, giun đốt, ruột khoang). (→ [Giun dẹp](/blog/nganh-giun-dep-platyhelminthes/), [Giun đũa](/blog/nganh-giun-tron-nematoda-giun-dua/))
 - **Cơ chế**: O₂, CO₂ khuếch tán qua da → do chênh lệch phân áp (p) O₂, CO₂ trong và ngoài cơ thể.
 
 #### b) Bằng ống khí
 
-- **Đại diện**: côn trùng. (→ [Gián](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/07-nganh-chan-khop-gian-va-phan-phu-mieng/))
+- **Đại diện**: côn trùng. (→ [Gián](/blog/nganh-chan-khop-arthropoda-gian-va-phan-phu-mieng-con-trung/))
 - **Cơ chế**:
 	- Sự thông khí giữa các ống khí thực hiện được nhờ sự co dãn của phần bụng thông qua các lỗ khí.
 	- Ống khí → ống khí nhỏ nhất → tiếp xúc trực tiếp tế bào của cơ thể → trao đổi khí.
@@ -122,7 +125,7 @@ isIndex: false
 	- Bề mặt trao đổi khí mỏng, ẩm ướt; nhiều mao mạch, sắc tố hô hấp.
 	- Có sự lưu thông khí nhờ miệng và nắp mang đóng mở nhịp nhàng
 		- → dòng nước chảy liên tục, nhịp nhàng qua mang.
-	- Máu chảy trong mao mạch song song, ngược chiều (↑↓) dòng nước chảy. (→ [Báo cáo mổ cá chép](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/); [cơ chế thở bằng nắp mang](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/07-lop-ca-xuong-tong-hop-ly-thuyet/))
+	- Máu chảy trong mao mạch song song, ngược chiều (↑↓) dòng nước chảy. (→ [Báo cáo mổ cá chép](/blog/giai-phau-ca-chep-va-ca-ro-phi/); [cơ chế thở bằng nắp mang](/blog/lop-ca-xuong-tong-hop-ly-thuyet-osteichthyes/))
 - \* **Cá** (chữ đỏ trong sổ): dòng máu ngược chiều (↑↓) dòng nước → ↑ hiệu quả trao đổi khí:
 	- Thở vào: V↑, p↓, nước → khoang miệng.
 	- Thở ra: V↓, p↑, nước → ngoài.
@@ -133,7 +136,7 @@ isIndex: false
 
 - **Đại diện**: động vật có xương sống trên cạn: lưỡng cư, bò sát, thú, người.
 - **Sự lưu thông khí**: nhờ các cử động hô hấp:
-	- Lưỡng cư: sự nâng, hạ của thềm miệng. (→ [Báo cáo mổ ếch: hô hấp qua da](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/02-giai-phau-ech-dong/))
+	- Lưỡng cư: sự nâng, hạ của thềm miệng. (→ [Báo cáo mổ ếch: hô hấp qua da](/blog/giai-phau-ech-dong/))
 	- Bò sát: sự co dãn của các cơ hô hấp → thay đổi thể tích khoang thân.
 	- Thú và người: sự hoạt động của cơ hoành, cơ liên sườn → thay đổi V lồng ngực.
 - **Cơ chế**:

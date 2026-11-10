@@ -1,5 +1,5 @@
 ---
-title: Case Study - Track B
+title: 'Capstone Track B: a health data case study'
 type: MOC
 tags:
   - project
@@ -8,19 +8,48 @@ tags:
   - google-data-analytics
 folder: Projects / Case Study - Track B
 vaultPath: Projects/Case Study - Track B/_MOC - Case Study - Track B.md
+url: /projects/capstone-track-b/
+updated: '2026-11-10'
 date: '2026-11-10'
 status: active
 deadline: '2026-12-01'
-project: case-study-track-b
+project: capstone-track-b
 isIndex: true
 featured: true
+summary_vi: >-
+  Case study tự chọn đề tài và tự tìm dữ liệu, hướng tới sức khoẻ cộng đồng: sốt
+  xuất huyết theo mùa, chất lượng không khí Hà Nội hoặc dữ liệu sàng lọc bệnh.
+  Trình bày khoảng 30 phút cho khách hàng giả định.
+summary_en: >-
+  A self-directed case study with my own question and public data, focused on
+  public health: seasonal dengue, Hanoi air quality or disease screening data.
+  Ends in a 30-minute client presentation.
 links: {}
+phases:
+  - name: Ask
+    done: 0
+    total: 2
+  - name: Prepare
+    done: 0
+    total: 1
+  - name: Process
+    done: 0
+    total: 1
+  - name: Analyze
+    done: 0
+    total: 1
+  - name: Share
+    done: 0
+    total: 1
+  - name: Act
+    done: 0
+    total: 2
 description: >-
   Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề
   bài và roadmap nằm ở Course 8: Case Study (mục Case Study 3). Làm sau khi xong
   Case Study - Cyclistic.
 ---
-> Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề bài và roadmap nằm ở [Course 8: Case Study](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/08-case-study/) (mục *Case Study 3*). Làm sau khi xong [Case Study - Cyclistic](/projects/case-study-cyclistic/).
+> Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề bài và roadmap nằm ở [Course 8: Case Study](/blog/case-study/) (mục *Case Study 3*). Làm sau khi xong [Case Study - Cyclistic](/projects/cyclistic-bike-share/).
 
 ## Mục tiêu & sản phẩm
 - **Kịch bản**: junior data analyst cho một công ty tư vấn business intelligence, dẫn dắt dự án cho khách hàng mới, từ định nghĩa business task đến trình bày khuyến nghị

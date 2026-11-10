@@ -4,15 +4,25 @@ import '../styles/global.css';
 import T from '../components/T.astro';
 import config from '../../site.config.json';
 
-interface Props { title?: string; description?: string; mermaid?: boolean }
-const { title, description, mermaid = false } = Astro.props;
-const fullTitle = title ? `${title} · ${config.author.name}` : config.author.name;
+interface Props {
+  title?: string;
+  description?: string;
+  mermaid?: boolean;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
+}
+const { title, description, mermaid = false, type = 'website', jsonLd } = Astro.props;
+const fullTitle = title ? `${title} | ${config.author.name}` : `${config.author.name} | ${config.author.headline_en}`;
+const desc = description || config.author.bio_en;
 const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site);
 const nav = [
-  { href: '/', k: 'home' as const },
   { href: '/projects/', k: 'projects' as const },
   { href: '/blog/', k: 'blog' as const },
+  { href: '/topics/', k: 'topics' as const },
 ];
+const links = Object.entries(config.author.links).filter(([, v]) => v);
+const label: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', linkedin: 'LinkedIn', tableau: 'Tableau Public', email: 'Email' };
 ---
 <!doctype html>
 <html lang="vi">
@@ -20,14 +30,21 @@ const nav = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
-    {description && <meta name="description" content={description} />}
-    <meta property="og:title" content={fullTitle} />
-    {description && <meta property="og:description" content={description} />}
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title ?? config.author.name} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={config.author.name} />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="alternate" type="application/rss+xml" title={`${config.author.name} blog`} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&display=swap" rel="stylesheet" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script is:inline>
       (function () {
         try {
@@ -41,29 +58,37 @@ const nav = [
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="brand" href="/">{config.author.name}</a>
+    <header class="masthead">
+      <div class="wrap masthead-inner">
+        <a class="wordmark" href="/" aria-label="Home">{config.author.name}</a>
         <nav class="nav" aria-label="Main">
           {nav.map((n) => (
-            <a href={n.href} aria-current={(n.href === '/' ? path === '/' : path.startsWith(n.href)) ? 'page' : undefined}>
-              <T k={n.k} />
-            </a>
+            <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}><T k={n.k} /></a>
           ))}
         </nav>
         <div class="toggles">
-          <button class="icon-btn" id="lang-toggle" type="button" aria-label="Switch language / Đổi ngôn ngữ">
-            <span data-vi="EN" data-en="VI">EN</span>
+          <button class="toggle" id="lang-toggle" type="button" aria-label="Switch language / Đổi ngôn ngữ">
+            <span data-vi="English" data-en="Tiếng Việt">English</span>
           </button>
-          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+          <button class="toggle toggle-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.5a7.5 7.5 0 0 1 0 15z" fill="currentColor"/></svg>
+          </button>
         </div>
       </div>
     </header>
-    <main id="main" class="wrap">
+    <main id="main">
       <slot />
     </main>
-    <footer class="site-footer wrap">
-      <p><T k="footer" /> © {new Date().getFullYear()} {config.author.name}</p>
+    <footer class="colophon">
+      <div class="wrap colophon-inner">
+        <p class="colophon-name">{config.author.name}</p>
+        <p class="muted"><T k="footer" /></p>
+        <ul class="colophon-links">
+          {links.map(([k, v]) => <li><a href={k === 'email' ? `mailto:${v}` : v} rel="me noopener">{label[k] ?? k}</a></li>)}
+          <li><a href="/rss.xml">RSS</a></li>
+          <li><a href={`${config.cta.url}?${config.cta.utm}&utm_campaign=footer`}>CEOVANTA</a></li>
+        </ul>
+      </div>
     </footer>
     <script is:inline>
       (function () {
@@ -85,9 +110,7 @@ const nav = [
         });
         document.getElementById('theme-toggle').addEventListener('click', function () {
           var root = document.documentElement;
-          var dark = root.dataset.theme
-            ? root.dataset.theme === 'dark'
-            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
           root.dataset.theme = dark ? 'light' : 'dark';
           try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
         });
@@ -96,8 +119,7 @@ const nav = [
     {mermaid && (
       <script type="module" is:inline>
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
-        document.querySelectorAll('pre[data-language="mermaid"], pre > code.language-mermaid').forEach((el) => {
-          const pre = el.tagName === 'PRE' ? el : el.parentElement;
+        document.querySelectorAll('pre[data-language="mermaid"]').forEach((pre) => {
           const div = document.createElement('div');
           div.className = 'mermaid';
           div.textContent = pre.textContent;

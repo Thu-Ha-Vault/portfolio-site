@@ -7,6 +7,9 @@ folder: AI và DEV / GitHub / Developing in Agentic AI Systems
 vaultPath: >-
   Resources/AI và DEV/GitHub/Developing in Agentic AI Systems/2. Foundations of
   Agentic AI in GitHub.md
+url: /blog/foundations-of-agentic-ai-in-github/
+topic: ai-development
+updated: '2026-10-14'
 order: 2
 description: >-
   Trước kia: AI gợi ý code, người dùng copy lại paste vào IDE Bây giờ: Hệ thống
@@ -18,7 +21,7 @@ isIndex: false
 - Bây giờ: Hệ thống có hành động trong suốt vòng đời phát triển phần mềm [SDLC] - software development lifecycle.
 	- Giống như trong Github, ta có Copilot: khám phá kho lưu trữ [repository], đề xuất kế hoạch [plan], thực hiện thay đổi trên một nhánh [nhánh] và mở pull request [PR] để bạn xem xét.
 	- Bạn không chỉ còn viết mã nữa. Bạn còn hướng dẫn, giám sát và xác nhận các hệ thống có thể lập kế hoạch, hành động và cải thiện theo thời gian trong quy trình làm việc của bạn.
-- Quy trình làm việc của Agent (Agent Workflow): plan → act → evaluate (→ [AI in Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/13-artificial-intelligence-in-education/))
+- Quy trình làm việc của Agent (Agent Workflow): plan → act → evaluate (→ [AI in Education](/blog/artificial-intelligence-in-education/))
 # 2.2. Xác định AI Agent trong SDLC
 |          | Assistant-Based                                                                                                                                                                                                           | Agent-Based                                                                                                                                                                                                                                                                                                                                       |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

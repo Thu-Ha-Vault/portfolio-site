@@ -5,6 +5,9 @@ tags: []
 section: AI và DEV
 folder: AI và DEV / GitHub / Developing in Agentic AI Systems
 vaultPath: Resources/AI và DEV/GitHub/Developing in Agentic AI Systems/1. Introduction.md
+url: /blog/introduction/
+topic: ai-development
+updated: '2026-10-14'
 order: 1
 isIndex: false
 ---

@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/10 - Vocabulaire S–U.md
+url: /blog/vocabulaire-s-u-tu-vung-s-u/
+topic: french
+updated: '2026-10-14'
 order: 10
 description: >-
   Sensationelle → Sensationnelle Sonhaiter → Souhaiter Synthése → Synthèse

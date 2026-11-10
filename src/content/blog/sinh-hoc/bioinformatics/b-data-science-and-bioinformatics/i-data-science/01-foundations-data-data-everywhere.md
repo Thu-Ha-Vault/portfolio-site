@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/01 - Foundations - Data, data, everywhere.md
+url: /blog/foundations-data-data-everywhere/
+topic: biology
+updated: '2026-10-14'
 order: 1
 description: >-
   An [ecosystem] is a group of elements that interact with one another.
@@ -103,7 +106,7 @@ isIndex: false
 
 - [Database]: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy.
 ### Outline the data analysis process
-- Steps of data analysis: ask - prepare - process - analyze - share - act (→ [Data Mining](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/01-data-mining/))
+- Steps of data analysis: ask - prepare - process - analyze - share - act (→ [Data Mining](/blog/data-mining/))
 	- [Ask]: in this stage, we do two things. We define the problem to be solved and we make sure that we fully understand stakeholder expectations.
 		- [Defining a problem]: look at the current state and identity how it’s different from the ideal state
 		- Understanding stakeholders expectations:

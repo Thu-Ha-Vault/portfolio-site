@@ -12,13 +12,16 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Advanced/02 - CTE &
   Set Operations.md
+url: /blog/cte-and-set-operations/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-advanced/lessons/1'
 order: 2
 description: UNION ALL
 isIndex: false
 ---
 ## a. CTE là gì?
-- CTE (Common Table Expression) là **bảng tạm** chỉ tồn tại trong query. Giống subquery nhưng **dễ đọc hơn nhiều**. (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- CTE (Common Table Expression) là **bảng tạm** chỉ tồn tại trong query. Giống subquery nhưng **dễ đọc hơn nhiều**. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/))
 ## b. CTE cơ bản 
 ```sql
 WITH doanh_thu_thang AS (

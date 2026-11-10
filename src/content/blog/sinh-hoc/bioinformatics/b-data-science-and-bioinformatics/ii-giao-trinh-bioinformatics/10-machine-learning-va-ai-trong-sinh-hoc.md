@@ -15,6 +15,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/10 - Machine learning và AI trong sinh học.md
+url: /blog/machine-learning-va-ai-trong-sinh-hoc/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 10
 description: >-
@@ -29,7 +32,7 @@ Machine learning giúp dự đoán từ dữ liệu omics (phân loại khối u
 
 ## 10.1 Machine learning cổ điển với scikit-learn
 
-- **Có giám sát:** hồi quy logistic có điều chuẩn (L1/L2), random forest, gradient boosting (XGBoost), SVM. (→ [Classification](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/10-classification/))
+- **Có giám sát:** hồi quy logistic có điều chuẩn (L1/L2), random forest, gradient boosting (XGBoost), SVM. (→ [Classification](/blog/classification/))
 - **Không giám sát:** PCA, phân cụm, UMAP (đã học ở Phần 3).
 - **Đặc thù omics:** số đặc trưng (p, hàng chục nghìn gen) lớn hơn nhiều số mẫu (n, vài trăm), nên dễ quá khớp (overfitting).
 

@@ -11,6 +11,9 @@ folder: AI và DEV / AI Cybersecurity and Governance (Columbia University)
 vaultPath: >-
   Resources/AI và DEV/AI Cybersecurity and Governance (Columbia University)/04 -
   Agentic AI Risks.md
+url: /blog/agentic-ai-risks/
+topic: ai-development
+updated: '2026-10-14'
 order: 4
 isIndex: false
 ---

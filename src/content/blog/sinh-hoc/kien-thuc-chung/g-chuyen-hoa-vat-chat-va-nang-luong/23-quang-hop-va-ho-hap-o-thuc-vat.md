@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / G - Chuyển hoá vật chất và n�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/G - Chuyển hoá vật chất và năng lượng/23 -
   Quang hợp và hô hấp ở thực vật.md
+url: /blog/quang-hop-va-ho-hap-o-thuc-vat/
+topic: biology
+updated: '2026-10-16'
 order: 23
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (glucôzơ → glucose,
@@ -41,9 +44,9 @@ isIndex: false
 
 $$C_6H_{12}O_6 + 6O_2 + 6H_2O \longrightarrow 6CO_2 + 12H_2O + Q\ (t^\circ + ATP)$$
 
-- **C₆H₁₂O₆**: phân giải. (→ [Thành phần hoá học](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
-- **6CO₂**: sản phẩm cuối, thải ra ngoài. (→ [Tiêu hoá và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
-- **12H₂O**: dung môi, môi trường phản ứng hoá sinh. (→ [Tổng ôn](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))
+- **C₆H₁₂O₆**: phân giải. (→ [Thành phần hoá học](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
+- **6CO₂**: sản phẩm cuối, thải ra ngoài. (→ [Tiêu hoá và hô hấp](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
+- **12H₂O**: dung môi, môi trường phản ứng hoá sinh. (→ [Tổng ôn](/blog/tong-on-va-meo-lam-bai/))
 - **Q (t° + ATP)**:
 	- Trao đổi chất cơ thể.
 	- Duy trì thân nhiệt (t°).
@@ -63,16 +66,16 @@ $$C_6H_{12}O_6 + 6O_2 + 6H_2O \longrightarrow 6CO_2 + 12H_2O + Q\ (t^\circ + ATP
 
 ![Hình - Các giai đoạn hô hấp hiếu khí và lên men](/vault-assets/hinh-cac-giai-doan-ho-hap-hieu-khi-va-len-men-087b63fc.svg)
 
-- Xem thêm: [Thí nghiệm vi sinh vật học](/blog/sinh-hoc/biology-project-and-lab-report/microbiology/01-thi-nghiem-vi-sinh-vat-hoc/) – thực hành lên men ethanol, lactic, acetic ở vi sinh vật
+- Xem thêm: [Thí nghiệm vi sinh vật học](/blog/thi-nghiem-vi-sinh-vat-hoc-microbiology-laboratory-methods/) – thực hành lên men ethanol, lactic, acetic ở vi sinh vật
 
 ## 2. Quang hợp
 
 $$6CO_2 + 12H_2O \xrightarrow{\text{ánh sáng, diệp lục}} C_6H_{12}O_6 + 6O_2 + 6H_2O$$
 
-- **Quang năng** (ánh sáng) → **hoá năng** → năng lượng sự sống. (→ [Hệ sinh thái](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+- **Quang năng** (ánh sáng) → **hoá năng** → năng lượng sự sống. (→ [Hệ sinh thái](/blog/he-sinh-thai-va-sinh-quyen/))
 - **Ánh sáng**: mạnh: **đỏ** (khoanh tròn trong sổ), xanh tím.
 - C₆H₁₂O₆ → (90 – 95% tổng chất khô / năng suất thực vật).
-- → Diễn ra ở chất nền lục lạp. (→ [Bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+- → Diễn ra ở chất nền lục lạp. (→ [Bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 - → Quá trình đồng hoá CO₂ (khử C).
 
 ### Pha sáng – pha tối
@@ -87,7 +90,7 @@ flowchart LR
 	PT --> CH2O["(CH₂O)n"]
 ```
 
-- **O₂ ← quang phân li nước**: $2H_2O \xrightarrow{\text{ánh sáng, diệp lục}} 4H^+ + 4e^- + O_2$ (O₂ có nguồn gốc từ H₂O). (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+- **O₂ ← quang phân li nước**: $2H_2O \xrightarrow{\text{ánh sáng, diệp lục}} 4H^+ + 4e^- + O_2$ (O₂ có nguồn gốc từ H₂O). (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 - **Sắc tố**: carotenoid → diệp lục b → diệp lục a → diệp lục a ở trung tâm phản ứng.
 	- → Tất cả bộ phận chứa sắc tố lục đều có khả năng quang hợp. Lá – chủ yếu.
 - **↑ Năng suất**:
@@ -110,8 +113,8 @@ flowchart LR
 | H₂O | Cao | Thấp | Thấp |
 | 8) Năng suất | Bình thường | Cao | Thấp – bình thường |
 
-- Xem thêm: [Giải phẫu lá Ngô, Lúa, Trúc Đào](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/) – tiêu bản lá cây C₄ (Ngô) có bao bó mạch.
+- Xem thêm: [Giải phẫu lá Ngô, Lúa, Trúc Đào](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/) – tiêu bản lá cây C₄ (Ngô) có bao bó mạch.
 
-- **Điểm bù CO₂**: C₃ > C₄. (→ [Kiểm định giả thiết thống kê](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/))
+- **Điểm bù CO₂**: C₃ > C₄. (→ [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 
 ![Hình - Cố định CO₂ ở thực vật C3, C4 và CAM](/vault-assets/hinh-co-dinh-co-o-thuc-vat-c3-c4-va-cam-7e903e1e.svg)

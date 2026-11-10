@@ -11,11 +11,14 @@ folder: AI và DEV / AI Cybersecurity and Governance (Columbia University)
 vaultPath: >-
   Resources/AI và DEV/AI Cybersecurity and Governance (Columbia University)/05 -
   Breaches on and with AI.md
+url: /blog/breaches-on-and-with-ai/
+topic: ai-development
+updated: '2026-10-14'
 order: 5
 isIndex: false
 ---
 ## Mục tiêu liên quan
-- Objective 1–2: các vụ breach **nhắm vào** hệ thống AI và breach **dùng** AI làm công cụ tấn công; đối chiếu với pattern của mega-breach ở [Module 1](/blog/ai-va-dev/ai-cybersecurity-and-governance-columbia-university/01-cybersecurity-primer/).
+- Objective 1–2: các vụ breach **nhắm vào** hệ thống AI và breach **dùng** AI làm công cụ tấn công; đối chiếu với pattern của mega-breach ở [Module 1](/blog/cybersecurity-primer/).
 
 ## Video lectures
 - 

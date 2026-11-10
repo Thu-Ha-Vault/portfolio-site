@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biostatistics and Bioinfor
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biostatistics and
   Bioinformatics/01 - Đặc trưng thống kê mẫu và ước lượng tham số.md
+url: /blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   File Excel gồm sheet Lý thuyết (bảng tóm tắt khái niệm, công thức và hàm
@@ -32,12 +35,12 @@ isIndex: false
 	- Kích thước mẫu quá nhỏ so với tổng thể.
 	- Phương pháp chọn mẫu không khách quan.
 - **Đặc trưng của tổng thể**: kích thước $N$, trung bình $\mu$, độ lệch chuẩn $\sigma$, luật phân phối $F(x)$.
-- **Bản chất của Chương 3**: ước lượng các tham số của tổng thể ($\mu$, $\sigma^2$, $p$) từ mẫu thu được. (→ [Models, Statistical Inference and Learning](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/01-models-statistical-inference-and-learning/))
+- **Bản chất của Chương 3**: ước lượng các tham số của tổng thể ($\mu$, $\sigma^2$, $p$) từ mẫu thu được. (→ [Models, Statistical Inference and Learning](/blog/models-statistical-inference-and-learning/))
 
 ## Công thức / phương pháp
 
 ### Đặc trưng của mẫu (Chương 2)
-- Hai dạng dữ liệu: **dãy số liệu** (dùng hàm Excel) và **bảng tần số** theo khoảng ($x_i$: trị số giữa khoảng, $m_i$: tần số mỗi khoảng, $m_j$: tần số cộng dồn). Với bảng tần số, tạo thêm cột $x_i m_i$ và $(x_i - \bar{x})^2 m_i$. (→ [Data Exploration Using Descriptive Statistics](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/05-data-exploration-using-descriptive-statistics/), [Mô tả dữ liệu bằng R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/01-trinh-bay-va-mo-ta-du-lieu-bang-r/))
+- Hai dạng dữ liệu: **dãy số liệu** (dùng hàm Excel) và **bảng tần số** theo khoảng ($x_i$: trị số giữa khoảng, $m_i$: tần số mỗi khoảng, $m_j$: tần số cộng dồn). Với bảng tần số, tạo thêm cột $x_i m_i$ và $(x_i - \bar{x})^2 m_i$. (→ [Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/), [Mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/))
 
 | Đặc trưng | Dãy số liệu (Excel) | Bảng tần số |
 |---|---|---|
@@ -51,7 +54,7 @@ isIndex: false
 | Hệ số biến thiên | $C_v = \dfrac{s}{\bar{x}} \cdot 100\%$ | |
 | Độ nhọn / độ lệch | `KURT()`, `SKEW()` | |
 
-- Trong công thức trung vị/bách phân vị: $b$ là giới hạn dưới của lớp chứa Me (hoặc $P_i$), $d$ là độ dài lớp, $m_j$ là tần số cộng dồn của lớp ngay dưới. Với Mode: $a_i$ là giới hạn dưới, $d_i$ là độ dài lớp chứa Mode. (→ [Estimating the CDF](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/02-estimating-the-cdf-and-statistical-functionals/))
+- Trong công thức trung vị/bách phân vị: $b$ là giới hạn dưới của lớp chứa Me (hoặc $P_i$), $d$ là độ dài lớp, $m_j$ là tần số cộng dồn của lớp ngay dưới. Với Mode: $a_i$ là giới hạn dưới, $d_i$ là độ dài lớp chứa Mode. (→ [Estimating the CDF](/blog/estimating-the-cdf-and-statistical-functionals/))
 - **Đọc độ nhọn và độ lệch** (cách ghi trong bài):
 	- **Kurtosis** > 0: phân phối nhọn (*leptokurtic*); < 0: phân phối bẹt (*platykurtic*).
 	- **Skewness** < 0: phân phối lệch trái; > 0: lệch phải.
@@ -65,8 +68,8 @@ isIndex: false
 | Xác suất $p$ | $p = f$ | $f \pm U_{\alpha/2}\sqrt{\dfrac{f(1-f)}{n}}$ | |
 
 - Khi $n > 30$: công thức chỉ còn $n$ (thay cho $n-1$); với phương sai, bậc tự do của $\chi^2$ không đổi.
-- Hệ số $U_{\alpha/2}$ của phân phối chuẩn: **95% → 1,96**; **99% → 2,58**; **99,9% → 3,3**. (→ [Random Variables](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/02-random-variables/))
-- **Kích thước mẫu tối thiểu** (rút từ công thức sai số): (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/), [Ecology Bài 2: cỡ mẫu N = 25s²/x̄²](/blog/sinh-hoc/biology-project-and-lab-report/ecology/02-phuong-phap-lay-mau/))
+- Hệ số $U_{\alpha/2}$ của phân phối chuẩn: **95% → 1,96**; **99% → 2,58**; **99,9% → 3,3**. (→ [Random Variables](/blog/random-variables/))
+- **Kích thước mẫu tối thiểu** (rút từ công thức sai số): (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/), [Ecology Bài 2: cỡ mẫu N = 25s²/x̄²](/blog/phuong-phap-lay-mau/))
 	- Cho tỷ lệ: $n = \left(\dfrac{U_{\alpha/2}}{\varepsilon}\right)^2 f(1-f)$.
 	- Cho trung bình (khi $n$ lớn, $t_{(n-1,\ \alpha/2)} \approx U_{\alpha/2}$): $n = \left(\dfrac{U_{\alpha/2}\,\sigma}{\varepsilon}\right)^2$.
 	- Nếu đề cho **độ lớn khoảng tin cậy** thì $\varepsilon$ = độ lớn / 2; nếu cho **sai số không vượt quá x%** thì $\varepsilon = x\%$.
@@ -87,8 +90,8 @@ isIndex: false
 
 - **Nhận xét Bài 1**: dãy số liệu có một giá trị **6,0** (các giá trị khác khoảng 80–130), nhiều khả năng là lỗi nhập liệu/outlier; chính giá trị này kéo min xuống 6, làm kurtosis rất lớn (19,1) và phân phối lệch trái mạnh.
 - Trong Bài 1–2, độ lệch chuẩn và phương sai được tính bằng `STDEVP`/`VARP` (chia $n$); KTC phương sai Bài 2 dùng $n = 40$ (vì $n > 30$).
-- Xem thêm: [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/) – áp dụng thống kê mô tả và KTC 95% trên số liệu chim sẻ thật
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – bảng Phân tích số liệu tính lại bài 2 (chiều cao 40 thanh niên) khớp Excel, kèm mã R.
+- Xem thêm: [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/) – áp dụng thống kê mô tả và KTC 95% trên số liệu chim sẻ thật
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – bảng Phân tích số liệu tính lại bài 2 (chiều cao 40 thanh niên) khớp Excel, kèm mã R.
 
 ## Tài liệu gốc
 - Chương 2 + Chương 3_ Đặc trưng thống kê của một mẫu và Ước lượng các tham số của tổng thể.xlsx

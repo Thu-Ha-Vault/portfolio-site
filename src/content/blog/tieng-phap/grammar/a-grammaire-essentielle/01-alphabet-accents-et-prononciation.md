@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / A - Grammaire essentielle
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/A - Grammaire essentielle/01 - Alphabet,
   accents et prononciation.md
+url: /blog/alphabet-accents-et-prononciation-bang-chu-cai-dau-va-phat-am/
+topic: french
+updated: '2026-10-14'
 order: 1
 description: >-
   Memo 1: "C /ce/" → "C /se/"; "M /em/" → "M /ɛm/"; "ee-gree" → "ee-grek";
@@ -100,9 +103,9 @@ isIndex: false
 ## 4. Pronunciation
 - **The grave accent (`)**: à, è, ù: 2 cách dùng:
 	- Với chữ cái "e": đánh dấu đặc điểm riêng của nguyên âm: è [ɛ] và e [ə].
-	- Với chữ cái "a" và "u": được dùng như một dấu ngữ pháp, không ảnh hưởng đến phát âm. Ví dụ: à (to) và a (HTĐ của avoir); hoặc où (where) và ou (or). (→ [avoir](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/), [à](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [où](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/), [ou](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/15-les-conjonctions/))
+	- Với chữ cái "a" và "u": được dùng như một dấu ngữ pháp, không ảnh hưởng đến phát âm. Ví dụ: à (to) và a (HTĐ của avoir); hoặc où (where) và ou (or). (→ [avoir](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/), [à](/blog/les-prepositions-gioi-tu/), [où](/blog/l-interrogation-cau-hoi/), [ou](/blog/les-conjonctions-lien-tu/))
 - **The acute accent (´)**: é - chỉ dùng với chữ cái "e", làm thay đổi nguyên âm: é [e] và e [ə]. Thường biểu thị sự mất đi phụ âm theo sau (thường là "s"): écouter ← escouter (to listen: từ cổ).
-- **The circumflex (^)**: â, ê, î, ô, û - dấu mũ ở "e" hoặc "o" lần lượt biểu thị âm /ɛ/, /o/. Thường biểu thị sự mất đi 1 chữ cái liền kề (thường là chữ "s" hoặc nguyên âm). Mở rộng: nó cũng được dùng để phân biệt từ đồng âm: du (of the) và dû (PII của devoir) - dû được viết như vậy vì chữ "e" bị lược bỏ: "deu". (→ [devoir](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- **The circumflex (^)**: â, ê, î, ô, û - dấu mũ ở "e" hoặc "o" lần lượt biểu thị âm /ɛ/, /o/. Thường biểu thị sự mất đi 1 chữ cái liền kề (thường là chữ "s" hoặc nguyên âm). Mở rộng: nó cũng được dùng để phân biệt từ đồng âm: du (of the) và dû (PII của devoir) - dû được viết như vậy vì chữ "e" bị lược bỏ: "deu". (→ [devoir](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 - **The diaeresis/dieresis/tréma (¨)**: ä, ë, ï, ö, ü, ÿ - dấu tách đôi dùng để chỉ nguyên âm thứ 2 của 1 cặp nguyên âm được phát âm như 1 nguyên âm riêng biệt thay vì bị coi là âm câm hoặc 1 phần của nguyên âm đôi (naïve, Noël). 1 số cách dùng khác:
 	- Chia từ thành âm tiết (**Syllabication**)
 	- **ÿ**: xuất hiện trong 1 số tên riêng (Louÿs) hoặc tên địa danh (L'Haÿ-les-Roses) và phiên bản hiện đại của văn bản tiếng Pháp cổ.
@@ -137,7 +140,7 @@ isIndex: false
 | --- | ----- | --- | --- | ----- | ---- | ----- | --- |
 | [ʁ] | [s~z] | [t] | [v] | [v/w] | [ks] | [i/j] | [z] |
 
-- Xem thêm: [Les déterminants](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/) – h câm [∅] và h aspiré quyết định élision (l') và liaison (les).
+- Xem thêm: [Les déterminants](/blog/les-determinants-tu-han-dinh/) – h câm [∅] và h aspiré quyết định élision (l') và liaison (les).
 
 |     | ở trước               | chỗ khác |
 | --- | --------------------- | -------- |

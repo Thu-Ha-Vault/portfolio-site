@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/02 - Vocabulaire A.md
+url: /blog/vocabulaire-a-tu-vung-a/
+topic: french
+updated: '2026-10-14'
 order: 2
 description: Amélioer → Améliorer Annouce → Annonce Atterir → Atterrir
 isIndex: false

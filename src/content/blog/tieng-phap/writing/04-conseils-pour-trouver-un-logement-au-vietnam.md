@@ -9,6 +9,9 @@ folder: Tiếng Pháp / Writing
 vaultPath: >-
   Resources/Tiếng Pháp/Writing/04 - Conseils pour trouver un logement au
   Vietnam.md
+url: /blog/conseils-pour-trouver-un-logement-au-vietnam/
+topic: french
+updated: '2026-10-14'
 order: 4
 description: >-
   Si c'est la première fois que vous allez au Vietnam, pour le logement, je vous
@@ -26,11 +29,11 @@ isIndex: false
 Si c'est la première fois que vous allez au Vietnam, pour le logement, je vous conseille de passer par une agence immobilière, parce qu'elle peut vous aider à faire tout ce qui est nécessaire. **Toutefois**, vous devriez aussi visiter plusieurs options qu'elle vous propose avant de signer le contrat. **Par exemple**, il vaut mieux vérifier les conditions du logement, comme les meubles et le système électrique. N'hésitez pas à poser des questions à l'agence ou au propriétaire.
 
 ## Cấu trúc khuyên bảo dùng trong bài
-- **Je vous conseille de** + infinitif (→ [Conseiller de faire](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
-- **Vous devriez** + infinitif (conditionnel của *devoir*) (→ [Devoir](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/), [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
-- **Il vaut mieux** + infinitif (→ [Il vaut mieux](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
-- **N'hésitez pas à** + infinitif (impératif phủ định) (→ [Impératif phủ định](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/))
-- Xem thêm nhóm *Conseiller de faire* trong [Expressions pour l'expression écrite](/blog/tieng-phap/writing/01-expressions-pour-l-expression-ecrite/)
+- **Je vous conseille de** + infinitif (→ [Conseiller de faire](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
+- **Vous devriez** + infinitif (conditionnel của *devoir*) (→ [Devoir](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/), [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
+- **Il vaut mieux** + infinitif (→ [Il vaut mieux](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
+- **N'hésitez pas à** + infinitif (impératif phủ định) (→ [Impératif phủ định](/blog/l-imperatif-thuc-menh-lenh/))
+- Xem thêm nhóm *Conseiller de faire* trong [Expressions pour l'expression écrite](/blog/expressions-pour-l-expression-ecrite/)
 
 <details class="callout callout-success">
 <summary>Đã sửa so với bản gốc</summary>

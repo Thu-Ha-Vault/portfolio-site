@@ -9,6 +9,8 @@ tags:
   - electrophoresis
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/05 - Tài liệu tham khảo máy móc.md
+url: /projects/virtual-lab/tai-lieu-tham-khao-may-moc-dot-1-chuoi-pcr/
+updated: '2026-10-15'
 date: '2026-10-16'
 status: active
 order: 5
@@ -72,7 +74,7 @@ Mỗi máy trong Khu máy móc được vẽ chi tiết theo **một model thậ
 | Kéo dài cuối | 72 °C | 5 phút |
 | Giữ | 4 °C (thông lệ; T100 giữ vô hạn) | ∞ |
 
-- Nắp nóng 105 °C để hơi nước không ngưng trên nắp tube; lực ép giữ kín tube (manual T100, tr. 3, 11). (→ [Danh mục thí nghiệm ảo](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), mục C1)
+- Nắp nóng 105 °C để hơi nước không ngưng trên nắp tube; lực ép giữ kín tube (manual T100, tr. 3, 11). (→ [Danh mục thí nghiệm ảo](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), mục C1)
 
 ## 2. Bể điện di: Bio-Rad Mini-Sub Cell GT
 
@@ -169,7 +171,7 @@ Mỗi máy trong Khu máy móc được vẽ chi tiết theo **một model thậ
 	- Phần bên trong (vị trí bo mạch, cách đi dây, số ống UV) vẽ theo cấu tạo máy soi UV điển hình, không theo sơ đồ của hãng.
 
 ### Gắn vào thí nghiệm của người dùng (2026-10-16)
-- Ba hình đọc dữ liệu người dùng từ địa chỉ trang (`#run=<JSON>`), do app tạo sau mỗi thao tác máy trong protocol "PCR trọn vẹn" (→ [Bộ khung phòng thí nghiệm 3D](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/)).
+- Ba hình đọc dữ liệu người dùng từ địa chỉ trang (`#run=<JSON>`), do app tạo sau mỗi thao tác máy trong protocol "PCR trọn vẹn" (→ [Bộ khung phòng thí nghiệm 3D](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/)).
 	- Máy PCR: đếm bản sao theo số bản khuôn và hiệu suất thật của ống mẫu.
 	- Bộ điện di: vẽ đúng các làn đã nạp (ladder, ống mẫu, ống ĐC−), nguồn đặt 100 V như trong app, gel đã chạy xong thì dừng ở cuối lượt.
 	- Máy chụp gel: vẽ lại băng trên gel và ảnh xám trên laptop theo đúng vị trí băng trong ảnh gel của app.

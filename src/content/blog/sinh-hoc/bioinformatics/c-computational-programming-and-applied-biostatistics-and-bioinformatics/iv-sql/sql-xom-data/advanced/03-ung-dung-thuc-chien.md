@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Advanced/03 - Ứng
   dụng thực chiến.md
+url: /blog/ung-dung-thuc-chien/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-advanced/lessons/1'
 order: 3
 isIndex: false
@@ -75,7 +78,7 @@ ORDER BY cohort_month, order_month;
 ```
 Kết quả đọc như một **ma trận retention**: mỗi cohort là một hàng, đi ngang theo `order_month` sẽ thấy số khách còn quay lại. Chia `active_customers` cho số khách ở tháng đầu của chính cohort đó là ra **retention rate** — một trong những chỉ số sức khỏe quan trọng nhất của sản phẩm.
 ## Lưu ý quan trọng
-- RFM là nền tảng của Customer Segmentation (→ [Data Mining](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/01-data-mining/))
+- RFM là nền tảng của Customer Segmentation (→ [Data Mining](/blog/data-mining/))
 - Gap Analysis giúp đánh giá hiệu quả kinh doanh
 - Cohort Analysis đo retention theo thời gian: RFM cho biết khách _đang_ thế nào, cohort cho biết khách _ở lại_ bao lâu
 - Kết hợp CTE + Window Functions cho phân tích mạnh mẽ

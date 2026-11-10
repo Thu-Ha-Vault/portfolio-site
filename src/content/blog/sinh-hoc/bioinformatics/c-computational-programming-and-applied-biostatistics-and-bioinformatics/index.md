@@ -14,12 +14,16 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/_MOC - C - Computational Programming and
   Applied Biostatistics and Bioinformatics.md
+url: >-
+  /topics/computational-programming-and-applied-biostatistics-and-bioinformatics/
+topic: biology
+updated: '2026-10-14'
 description: Programming R Python SQL
 isIndex: true
 ---
 ## Map of Content
 
 - Programming
-- [R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/)
+- [R](/topics/tutorial/)
 - Python
-- [SQL](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/)
+- [SQL](/topics/sql/)

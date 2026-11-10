@@ -12,6 +12,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/04 - Data frames.md
+url: /blog/data-frames/
+topic: biology
+updated: '2026-10-14'
 order: 4
 description: >-
   Đối tượng birthweight là gì? Trong khung enviroment, ta có thể thấy nó là ‘42
@@ -27,13 +30,13 @@ isIndex: false
 
 - Chạy dim(birthweight) hỏi R kích thước của đối tượng birthweight, đáp án là 42 (hàng) và 21 (cột). [1] không phải một phần của output: Đây là một chỉ mục của R để giúp ta theo dõi giá trị khi output là một giá trị lớn.
 
-- Data frame sắp xếp dữ liệu thành hàng và cột. Đối tượng phải là một hình chữ nhật với mỗi hàng có cùng số lượng trường, và tất cả giá trị trong một cột phải cùng dạng (type). (→ [Cấu trúc dữ liệu](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/02-cau-truc-du-lieu/))
+- Data frame sắp xếp dữ liệu thành hàng và cột. Đối tượng phải là một hình chữ nhật với mỗi hàng có cùng số lượng trường, và tất cả giá trị trong một cột phải cùng dạng (type). (→ Cấu trúc dữ liệu)
 
 - Mỗi cột của data frame là một vector. Một vector là tập hợp có thứ tự các giá trị cùng loại.
 
 - Thông thường, ta không muốn làm việc trên cả data frame. Ví dụ, để tính trung bình cần nặng khi sinh, ta không cần thông tin về cột “paternal.education”.
 
-- Có 3 cách để lấy tập con từ data frame: `$`, `[[`, và `[` (→ [Thao tác dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/))
+- Có 3 cách để lấy tập con từ data frame: `$`, `[[`, và `[` (→ [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
 
 ## Selecting a single column using the `$` and `[[`
 

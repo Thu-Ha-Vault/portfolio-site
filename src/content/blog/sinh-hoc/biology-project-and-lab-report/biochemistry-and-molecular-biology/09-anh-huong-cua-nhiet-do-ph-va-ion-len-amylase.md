@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/09 - Ảnh hưởng của nhiệt độ, pH và ion lên amylase.md
+url: /blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/
+topic: biology
+updated: '2026-10-16'
 order: 9
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 4 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -22,12 +25,12 @@ isIndex: false
 
 ## Mục đích
 - Xác định **nhiệt độ tối thích** và **pH tối thích** của amylase.
-- Khảo sát ảnh hưởng của **NaCl (chất hoạt hoá)** và **CuSO₄ (chất kìm hãm)** lên hoạt độ amylase. (→ [Hoạt độ lipase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/01-hoat-do-lipase-bang-p-npp/))
+- Khảo sát ảnh hưởng của **NaCl (chất hoạt hoá)** và **CuSO₄ (chất kìm hãm)** lên hoạt độ amylase. (→ [Hoạt độ lipase](/blog/hoat-do-enzyme/))
 
 ## Nguyên lý
-- Mỗi enzyme có **nhiệt độ tối ưu (optimum temperature)**: tăng nhiệt làm phản ứng nhanh hơn, nhưng quá cao gây **biến tính** enzyme; nhiệt độ thấp làm hoạt tính giảm (không phá huỷ enzyme). (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/), [Môi trường và biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/), [Động hoá học – Arrhenius](/blog/hoc-phan-dai-cuong/02-hoa-hoc/))
-- Mỗi enzyme có **pH tối ưu**; lệch khỏi pH này, trạng thái ion hoá của trung tâm hoạt động và cơ chất thay đổi → hoạt độ giảm; pH quá xa có thể làm mất hoạt tính. Amylase nước bọt có pH tối ưu gần trung tính (~7,0 theo lý thuyết). (→ [Tiêu hoá ở động vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
-- **Cl⁻** là **chất hoạt hoá (activator)** của amylase; **Cu²⁺** (kim loại nặng) là **chất kìm hãm (inhibitor)**. (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- Mỗi enzyme có **nhiệt độ tối ưu (optimum temperature)**: tăng nhiệt làm phản ứng nhanh hơn, nhưng quá cao gây **biến tính** enzyme; nhiệt độ thấp làm hoạt tính giảm (không phá huỷ enzyme). (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/), [Môi trường và biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/), [Động hoá học – Arrhenius](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/))
+- Mỗi enzyme có **pH tối ưu**; lệch khỏi pH này, trạng thái ion hoá của trung tâm hoạt động và cơ chất thay đổi → hoạt độ giảm; pH quá xa có thể làm mất hoạt tính. Amylase nước bọt có pH tối ưu gần trung tính (~7,0 theo lý thuyết). (→ [Tiêu hoá ở động vật](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
+- **Cl⁻** là **chất hoạt hoá (activator)** của amylase; **Cu²⁺** (kim loại nặng) là **chất kìm hãm (inhibitor)**. (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 - Mức thuỷ phân tinh bột đánh giá qua màu với Lugol: xanh đen (còn tinh bột) → nâu → vàng (thuỷ phân hết).
 
 ## Vật liệu & phương pháp
@@ -68,7 +71,7 @@ isIndex: false
 - **Nhiệt độ tối thích ≈ 55 °C** (chuyển vàng sớm nhất). Ở 4 °C hoạt tính giảm mạnh. Ống 100 °C vẫn còn hoạt tính – có thể do enzyme bền nhiệt hoặc ống chưa đạt 100 °C (mực nước trong nồi thấp hơn mực hoá chất).
 - **pH tối thích = 6,8**; vùng 6,2–6,8 hoạt độ cao nhất. pH 5,6 và 7,2 hoạt độ kém; pH 5,3 và 7,7–8,4 gần như bất hoạt.
 - **CuSO₄ kìm hãm** rõ rệt amylase. Tác dụng **hoạt hoá của NaCl chưa thể hiện** – ống NaCl lại chậm hơn ống nước, có thể do lẫn NaCl vào ống nước hoặc đánh dấu nhầm ống.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `ez-factors`: nhiệt độ, pH, NaCl và CuSO₄.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `ez-factors`: nhiệt độ, pH, NaCl và CuSO₄.
 
 ## Tài liệu gốc
 *Tính chất enzyme.pdf*

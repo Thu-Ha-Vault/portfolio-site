@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biostatistics and Bioinfor
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biostatistics and
   Bioinformatics/05 - Bảng tra cứu lập trình và công cụ tin sinh.md
+url: /blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/
+topic: biology
+updated: '2026-10-14'
 order: 5
 description: >-
   File Excel tự tổng hợp dạng cheat sheet gồm 4 sheet: Programming (~320 dòng
@@ -29,8 +32,8 @@ isIndex: false
 - `read.csv()` / `write.csv()`: nhập/xuất CSV (phân cách dấu phẩy); `read.delim()`: file phân cách tab; `fread()` (gói data.table): đọc nhanh file lớn.
 - `class()`, `typeof()`: kiểu dữ liệu / kiểu lưu trữ nội bộ; `str()`: cấu trúc đầy đủ của object; `dim()`: số hàng × số cột; `colnames()`.
 - Chọn cột: `df$column_name`, `df[["column_name"]]`; chọn tập con cột: `df[c(...)]`; `number1:number2`: dãy số liên tiếp; `c()`: tạo vector.
-- **Quy tắc ép kiểu (coercion)**: `logical > integer > numeric > complex > character` – không phải lúc nào cũng đảo ngược được mà không mất dữ liệu; `is.<type>()` kiểm tra, `as.<type>()` chuyển kiểu. (→ [Basic data types](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/05-basic-data-types/))
-- `factor()`, `subset()`, `merge()`, `na.omit()`, `data()`, `cbind()`; `rm()`/`remove()` xoá object. (→ [Thao tác dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/))
+- **Quy tắc ép kiểu (coercion)**: `logical > integer > numeric > complex > character` – không phải lúc nào cũng đảo ngược được mà không mất dữ liệu; `is.<type>()` kiểm tra, `as.<type>()` chuyển kiểu. (→ [Basic data types](/blog/basic-data-types/))
+- `factor()`, `subset()`, `merge()`, `na.omit()`, `data()`, `cbind()`; `rm()`/`remove()` xoá object. (→ [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
 - `library("pkg")` (báo lỗi nếu gói không tồn tại) vs `require("pkg")` (trả về `FALSE` + cảnh báo – dùng trong hàm).
 
 ### Toán tử
@@ -46,13 +49,13 @@ isIndex: false
 	- `norm` (chuẩn), `binom` (nhị thức), `pois` (Poisson), `unif` (đều), `nbinom` (nhị thức âm), `beta`, `chisq` ($\chi^2$), `geom` (hình học), `exp` (mũ), `t` (Student), `f` (Fisher).
 
 ### Lập trình
-- Họ `apply`: `apply()` (ma trận theo hàng/cột → vector), `lapply()` (list → list), `sapply()` (list → kết quả đơn giản hoá), `mapply()` (nhiều vector), `tapply()` (áp hàm theo nhóm → bảng). (→ [Functions](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/06-functions/))
+- Họ `apply`: `apply()` (ma trận theo hàng/cột → vector), `lapply()` (list → list), `sapply()` (list → kết quả đơn giản hoá), `mapply()` (nhiều vector), `tapply()` (áp hàm theo nhóm → bảng). (→ [Functions](/blog/functions/))
 - `strsplit()`, `unlist()`; `if (...) {...} else {...}`; `for (i in vector) {...}`.
 - `R.version.string`: xem phiên bản R; `update.packages(ask = FALSE, checkBuilt = TRUE)`: cập nhật gói (2–3 tháng/lần).
-- Xem thêm: [R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/) – các khoá R trong vault (R Tutorial, R Xóm Data) để học có hệ thống những lệnh tra cứu ở đây
+- Xem thêm: [R](/topics/tutorial/) – các khoá R trong vault (R Tutorial, R Xóm Data) để học có hệ thống những lệnh tra cứu ở đây
 
 ## Lệnh SQL và MySQL
-- **SQL** (79 từ khoá): DDL (`CREATE DATABASE/TABLE/INDEX/VIEW/PROCEDURE`, `ALTER TABLE`, `ADD CONSTRAINT`, `DROP …`, `BACKUP DATABASE`), ràng buộc (`PRIMARY KEY`, `FOREIGN KEY`, `CHECK`, `DEFAULT`, `UNIQUE`, `NOT NULL`), thao tác dữ liệu (`INSERT INTO`, `UPDATE`, `DELETE`, `TRUNCATE TABLE`), truy vấn (`SELECT`, `FROM`, `WHERE`, `AND/OR`, `IN`, `BETWEEN`, `LIKE`, `DISTINCT`, `ORDER BY ASC/DESC`, `GROUP BY`, `HAVING`, `CASE`, `EXISTS`, `ANY/ALL`, `LIMIT`/`TOP`), các loại `JOIN` (INNER, LEFT, RIGHT, FULL OUTER), `UNION`/`UNION ALL`. (→ [SQL](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/), [SQL Tutorial](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/01-tutorial/))
+- **SQL** (79 từ khoá): DDL (`CREATE DATABASE/TABLE/INDEX/VIEW/PROCEDURE`, `ALTER TABLE`, `ADD CONSTRAINT`, `DROP …`, `BACKUP DATABASE`), ràng buộc (`PRIMARY KEY`, `FOREIGN KEY`, `CHECK`, `DEFAULT`, `UNIQUE`, `NOT NULL`), thao tác dữ liệu (`INSERT INTO`, `UPDATE`, `DELETE`, `TRUNCATE TABLE`), truy vấn (`SELECT`, `FROM`, `WHERE`, `AND/OR`, `IN`, `BETWEEN`, `LIKE`, `DISTINCT`, `ORDER BY ASC/DESC`, `GROUP BY`, `HAVING`, `CASE`, `EXISTS`, `ANY/ALL`, `LIMIT`/`TOP`), các loại `JOIN` (INNER, LEFT, RIGHT, FULL OUTER), `UNION`/`UNION ALL`. (→ [SQL](/topics/sql/), [SQL Tutorial](/blog/tutorial-biology-2/))
 - **MySQL functions**:
 	- *String* (33): `CONCAT`, `CONCAT_WS`, `LENGTH` vs `CHAR_LENGTH`, `SUBSTRING`, `SUBSTRING_INDEX`, `LOCATE`, `REPLACE`, `TRIM`, `LPAD/RPAD`, `UPPER/LOWER`…
 	- *Numeric* (36): `ABS`, `CEIL/FLOOR`, `ROUND`, `TRUNCATE`, `POW`, `SQRT`, `LN/LOG/LOG10/LOG2`, `MOD`, `RAND`, các hàm tổng hợp `AVG`, `COUNT`, `SUM`, `MAX`, `MIN`…
@@ -70,7 +73,7 @@ isIndex: false
 | Chạy code trong chunk | `Cmd+Shift+Enter` | `Ctrl+Shift+Enter` |
 | Chạy một dòng | `Cmd+Enter` | `Ctrl+Enter` |
 
-- Tạo R Notebook: *File → New File → R Notebook*; chọn thư mục làm việc: *Session → Set Working Directory → Choose Directory*. (→ [RStudio and R notebooks](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/02-rstudio-and-r-notebooks/))
+- Tạo R Notebook: *File → New File → R Notebook*; chọn thư mục làm việc: *Session → Set Working Directory → Choose Directory*. (→ [RStudio and R notebooks](/blog/rstudio-and-r-notebooks/))
 
 ## Công cụ tin sinh học (sheet Tools)
 - **Đang dùng được (O)**:
@@ -96,7 +99,7 @@ isIndex: false
 	- **Sodium acetate** (stock 3 M), **Ammonium acetate** (stock 10 M): trung hoà điện tích âm của acid nucleic để tủa bằng ethanol.
 	- **TAE** (stock 50×): điện di acid nucleic, rẻ hơn, tách đoạn DNA dài tốt và chạy nhanh hơn. **TBE** (stock 10×): tách đoạn DNA ngắn tốt hơn, phù hợp điện di thời gian dài.
 	- **MOPS** (Good's buffer), **SSC** (sodium citrate + NaCl, stock 20×, dùng khi chuyển màng và lai).
-- Các hoá chất khác mới liệt kê tên (chưa ghi chi tiết): ethidium bromide, DNA ladder, SYBR Safe, bromophenol blue, Coomassie stain, TSS, PBS, IPTG, Tween 20, SDS, Triton X-100, CMC, các protein huỳnh quang GFP/CFP/YFP/mRFP1, acridine orange, 7-AAD, Annexin-V, carboxyfluorescein diacetate, ONPG. (→ [Điện di 2D-PAGE](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/02-dien-di-hai-chieu-2d-page/))
+- Các hoá chất khác mới liệt kê tên (chưa ghi chi tiết): ethidium bromide, DNA ladder, SYBR Safe, bromophenol blue, Coomassie stain, TSS, PBS, IPTG, Tween 20, SDS, Triton X-100, CMC, các protein huỳnh quang GFP/CFP/YFP/mRFP1, acridine orange, 7-AAD, Annexin-V, carboxyfluorescein diacetate, ONPG. (→ [Điện di 2D-PAGE](/blog/dien-di-hai-chieu-2d-page/))
 
 ## Tài liệu gốc
 - Programming.xlsx

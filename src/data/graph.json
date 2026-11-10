@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "topic": "biology",
+      "notes": 179,
+      "url": "/topics/biology/",
+      "title": "Sinh học"
+    },
+    {
+      "topic": "french",
+      "notes": 50,
+      "url": "/topics/french/",
+      "title": "Tiếng Pháp (French)"
+    },
+    {
+      "topic": "ai-development",
+      "notes": 16,
+      "url": "/topics/ai-development/",
+      "title": "AI và DEV"
+    },
+    {
+      "topic": "university-courses",
+      "notes": 9,
+      "url": "/topics/university-courses/",
+      "title": "Học phần đại cương (General Education Courses)"
+    },
+    {
+      "topic": "business",
+      "notes": 6,
+      "url": "/topics/business/",
+      "title": "Business (Kinh doanh)"
+    },
+    {
+      "topic": "english",
+      "notes": 2,
+      "url": "/topics/english/",
+      "title": "Tiếng Anh (English)"
+    }
+  ],
+  "edges": [
+    {
+      "a": "ai-development",
+      "b": "biology",
+      "weight": 48
+    },
+    {
+      "a": "ai-development",
+      "b": "university-courses",
+      "weight": 2
+    },
+    {
+      "a": "biology",
+      "b": "university-courses",
+      "weight": 20
+    },
+    {
+      "a": "english",
+      "b": "university-courses",
+      "weight": 1
+    },
+    {
+      "a": "biology",
+      "b": "english",
+      "weight": 10
+    },
+    {
+      "a": "english",
+      "b": "french",
+      "weight": 1
+    }
+  ]
+}

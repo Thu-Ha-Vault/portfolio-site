@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 1 Introduction to ANR, key elements and practices/Lesson 2
   Modalities and practices of ANR in the context.md
+url: /blog/modalities-and-practices-of-anr-in-the-context/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -44,7 +47,7 @@ Before implementation:
 - Define restoration objectives.
 
 ### 2. Fire Prevention and Control
-Fire is one of the greatest threats to regeneration. (→ [L3 Biophysical barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+Fire is one of the greatest threats to regeneration. (→ [L3 Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 
 Common measures:
 - Establish firebreaks.
@@ -67,7 +70,7 @@ Measures include:
 - Reducing human disturbances.
 
 ### 5. Enrichment Planting
-Used only when natural regeneration is insufficient. (→ [L11 ANR & production](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/), [L9 Costs of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-9-assessing-the-costs-of-anr/))
+Used only when natural regeneration is insufficient. (→ [L11 ANR & production](/blog/integrating-anr-with-crop-timber-or-livestock-production/), [L9 Costs of ANR](/blog/assessing-the-costs-of-anr/))
 
 Goals:
 - Introduce missing native species.
@@ -84,7 +87,7 @@ Goals:
 | Biodiversity Outcomes | Often Higher | Variable |
 | Scalability | High | Moderate |
 
-- Xem thêm: [L12 ANR & conservation](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/) – so sánh ANR với trồng cây thông thường
+- Xem thêm: [L12 ANR & conservation](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/) – so sánh ANR với trồng cây thông thường
 
 ## Key Takeaways
 - Site assessment is essential before implementation.

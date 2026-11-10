@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/05 - Giải
   phẫu chuột bạch.md
+url: /blog/giai-phau-chuot-bach/
+topic: biology
+updated: '2026-10-16'
 order: 5
 description: >-
   Không có báo cáo viết tay trong folder Drive – note này tổng hợp từ ảnh mẫu mổ
@@ -23,10 +26,10 @@ isIndex: false
 
 ## Mục đích
 - Quan sát vị trí, hình thái nội quan của thú (chuột) – đại diện lớp Thú.
-- So sánh với cá và lưỡng cư theo nội dung thảo luận nhóm: *cấu tạo thích nghi với chức năng – so sánh giữa cá, lưỡng cư và thú*. (→ [Giải phẫu ếch đồng](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/02-giai-phau-ech-dong/))
+- So sánh với cá và lưỡng cư theo nội dung thảo luận nhóm: *cấu tạo thích nghi với chức năng – so sánh giữa cá, lưỡng cư và thú*. (→ [Giải phẫu ếch đồng](/blog/giai-phau-ech-dong/))
 
 ## Nguyên lý
-- Thú có **cơ hoành** ngăn khoang ngực và khoang bụng; tim **4 ngăn**, máu nuôi cơ thể là máu đỏ tươi; ống tiêu hoá phân hoá cao (có manh tràng phát triển ở loài gặm nhấm). (→ [Các dạng hệ tuần hoàn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+- Thú có **cơ hoành** ngăn khoang ngực và khoang bụng; tim **4 ngăn**, máu nuôi cơ thể là máu đỏ tươi; ống tiêu hoá phân hoá cao (có manh tràng phát triển ở loài gặm nhấm). (→ [Các dạng hệ tuần hoàn](/blog/tuan-hoan-va-can-bang-noi-moi/))
 
 ## Vật liệu & phương pháp
 - Chuột bạch ghim nằm ngửa trên khay sáp; cắt da và cơ bụng theo đường giữa từ bụng dưới lên cổ, mở lồng ngực.
@@ -65,7 +68,7 @@ isIndex: false
 
 ## Kết luận
 - Nội quan chuột cho thấy cấu trúc điển hình của thú: khoang ngực tách khoang bụng bởi cơ hoành, gan nhiều thuỳ, ruột dài với manh tràng lớn thích nghi với thức ăn thực vật – hạt.
-- Xem thêm: [Virtual Lab: mổ chuột nhắt trắng](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – mổ ảo theo ảnh mẫu mổ của bài: cơ hoành, tim 4 ngăn, manh tràng.
+- Xem thêm: [Virtual Lab: mổ chuột nhắt trắng](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – mổ ảo theo ảnh mẫu mổ của bài: cơ hoành, tim 4 ngăn, manh tràng.
 
 ## Tài liệu gốc
 

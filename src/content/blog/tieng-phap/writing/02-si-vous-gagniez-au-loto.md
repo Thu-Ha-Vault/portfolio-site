@@ -7,6 +7,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Writing
 vaultPath: Resources/Tiếng Pháp/Writing/02 - Si vous gagniez au loto.md
+url: /blog/si-vous-gagniez-au-loto-que-feriez-vous-de-cet-argent/
+topic: french
+updated: '2026-10-14'
 order: 2
 description: >-
   Si je gagnais au loto, je serais très heureuse parce que je pourrais réaliser
@@ -35,10 +38,10 @@ Si je gagnais au loto, je serais très heureuse parce que je pourrais réaliser 
 **Et enfin**, j'investirais une partie de cet argent pour préparer mon avenir et éviter de tout dépenser trop rapidement.
 
 ## Điểm ngữ pháp và từ nối dùng trong bài
-- **Si + imparfait, conditionnel présent**: *Si je gagnais…, je serais…* (→ [Phrases avec si](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/), [Imparfait](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
-- **Conditionnel présent**: j'utiliserais, j'aimerais, je donnerais, je ferais, j'investirais (→ [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
-- **Từ nối sắp xếp ý**: Tout d'abord → Ensuite → De plus → Enfin (→ [Expressions pour l'expression écrite](/blog/tieng-phap/writing/01-expressions-pour-l-expression-ecrite/))
-- **Mệnh đề quan hệ qui**: *des associations **qui** soutiennent l'éducation* (→ [Pronoms relatifs](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **Si + imparfait, conditionnel présent**: *Si je gagnais…, je serais…* (→ [Phrases avec si](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/), [Imparfait](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
+- **Conditionnel présent**: j'utiliserais, j'aimerais, je donnerais, je ferais, j'investirais (→ [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
+- **Từ nối sắp xếp ý**: Tout d'abord → Ensuite → De plus → Enfin (→ [Expressions pour l'expression écrite](/blog/expressions-pour-l-expression-ecrite/))
+- **Mệnh đề quan hệ qui**: *des associations **qui** soutiennent l'éducation* (→ [Pronoms relatifs](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 
 <details class="callout callout-success">
 <summary>Đã sửa so với bản gốc</summary>

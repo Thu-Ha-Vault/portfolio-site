@@ -14,6 +14,10 @@ folder: Tiếng Pháp / Grammar / C - Động từ
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/C - Động từ/09 - Verbes pronominaux, modaux,
   impersonnels et infinitif.md
+url: >-
+  /blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/
+topic: french
+updated: '2026-10-14'
 order: 9
 description: >-
   Memo 77: "Reftexive verbs" → "Reflexive verbs"; "se brosser: to bruch" → "to
@@ -58,7 +62,7 @@ isIndex: false
 
 <!-- Memo 76–77 -->
 ## u) Pronominal verbs
-- **Động từ phản thân** là một động từ được đi cùng với một **đại từ phản thân**. Động từ phản thân rơi vào 1 trong 3 nhóm dựa trên nghĩa của chúng: **phản thân, thành ngữ** và **tương hỗ (reciprocal)**. Để chia ĐT phản thân ở thì hiện tại, phải chú ý đến cả đại từ và động từ. Động từ được chia bình thường với sự thêm vào của đại từ phản thân **me, te, se, nous, vous, se**. (→ [Passé composé của ĐT phản thân](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/), [Impératif của ĐT phản thân](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/), [Bị động bằng ĐT phản thân](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/), [Les verbes pronominaux](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- **Động từ phản thân** là một động từ được đi cùng với một **đại từ phản thân**. Động từ phản thân rơi vào 1 trong 3 nhóm dựa trên nghĩa của chúng: **phản thân, thành ngữ** và **tương hỗ (reciprocal)**. Để chia ĐT phản thân ở thì hiện tại, phải chú ý đến cả đại từ và động từ. Động từ được chia bình thường với sự thêm vào của đại từ phản thân **me, te, se, nous, vous, se**. (→ [Passé composé của ĐT phản thân](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/), [Impératif của ĐT phản thân](/blog/l-imperatif-thuc-menh-lenh/), [Bị động bằng ĐT phản thân](/blog/la-voix-passive-the-bi-dong/), [Les verbes pronominaux](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 - Ví dụ: **se raser** "to shave oneself":
 
 | Số ít              | Số nhiều            |
@@ -79,7 +83,7 @@ isIndex: false
 	- **se promener**: to take a walk
 	- **se réveiller**: to wake up
 	- Lưu ý: TA thường không chỉ ra nghĩa phản thân một cách rõ ràng do có thể được suy ra từ ngữ cảnh. Tuy nhiên, nếu nghĩa phản thân là có chủ đích trong tiếng Pháp, nó phải được nêu rõ bằng đại từ phản thân.
-- Để phủ định ĐT phản thân, đặt "**ne**" trước <!-- Memo 78–79 --> đại từ phản thân và "**pas**" sau động từ. Khi được dùng cùng với một trợ động từ như "aimer" dạng nguyên thể của ĐT phản thân khớp với chủ ngữ. Khi ĐT phản thân được dùng với bộ phận cơ thể, dùng **mạo từ xác định (le, la, les)** thay vì mạo từ sở hữu như TA. (→ [ne...pas](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- Để phủ định ĐT phản thân, đặt "**ne**" trước <!-- Memo 78–79 --> đại từ phản thân và "**pas**" sau động từ. Khi được dùng cùng với một trợ động từ như "aimer" dạng nguyên thể của ĐT phản thân khớp với chủ ngữ. Khi ĐT phản thân được dùng với bộ phận cơ thể, dùng **mạo từ xác định (le, la, les)** thay vì mạo từ sở hữu như TA. (→ [ne...pas](/blog/la-negation-phu-dinh/))
 
 ## v) Modal verbs – vouloir, pouvoir, và devoir
 - Vouloir, pouvoir và devoir được gọi là **ĐT khuyết thiếu**. Khi được dùng với ĐT nguyên thể, chúng đóng vai như trợ động từ hay động từ bán khuyết thiếu.
@@ -102,8 +106,8 @@ isIndex: false
 
 - Pouvoir có thể được theo sau bởi dạng nguyên thể hoặc đứng 1 mình.
 - Giống như TA, pouvoir được dùng để cho phép hoặc hỏi sự cho phép, được dịch trong TA là "may".
-- Rất quan trọng để không nhầm lẫn vai trò của "pouvoir" và "savoir": "Savoir" biểu thị "to know how" khi mà pouvoir biểu thị "to be able to". (→ [savoir vs. connaître](/blog/tieng-phap/grammar/c-dong-tu/08-les-verbes-irreguliers-au-present/))
-- **Devoir**: biểu thị nghĩa vụ, sự kiện có thể xảy ra và sự giả định như khi được theo sau bởi danh từ, nó biểu thị "to owe". Đây là 1 ĐT bất qui tắc, tuân theo "boot pattern". (→ [dû (dấu mũ)](/blog/tieng-phap/grammar/a-grammaire-essentielle/01-alphabet-accents-et-prononciation/), [Pour exprimer une obligation](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/), [Vous devriez](/blog/tieng-phap/writing/04-conseils-pour-trouver-un-logement-au-vietnam/))
+- Rất quan trọng để không nhầm lẫn vai trò của "pouvoir" và "savoir": "Savoir" biểu thị "to know how" khi mà pouvoir biểu thị "to be able to". (→ [savoir vs. connaître](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/))
+- **Devoir**: biểu thị nghĩa vụ, sự kiện có thể xảy ra và sự giả định như khi được theo sau bởi danh từ, nó biểu thị "to owe". Đây là 1 ĐT bất qui tắc, tuân theo "boot pattern". (→ [dû (dấu mũ)](/blog/alphabet-accents-et-prononciation-bang-chu-cai-dau-va-phat-am/), [Pour exprimer une obligation](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/), [Vous devriez](/blog/conseils-pour-trouver-un-logement-au-vietnam/))
 
 <!-- Memo 80–81 -->
 
@@ -129,7 +133,7 @@ isIndex: false
 		- **noun**: "Il faut une enquête."
 		- **infinitive**: "Il faut te calmer."
 	- **Indirect object + falloir**: "Il nous faut des preuves."
-	- Lưu ý: ĐT ở **mệnh đề phụ thuộc (subordinate clause)** cần **thể cầu khẩn (subjunctive mood)**. Có thể sử dụng **bổ ngữ gián tiếp (indirect object)** để tránh subjunctive. (→ [Le subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
+	- Lưu ý: ĐT ở **mệnh đề phụ thuộc (subordinate clause)** cần **thể cầu khẩn (subjunctive mood)**. Có thể sử dụng **bổ ngữ gián tiếp (indirect object)** để tránh subjunctive. (→ [Le subjonctif](/blog/le-subjonctif-thuc-gia-dinh/))
 
 <!-- Memo 82–83 -->
 - Sự diễn đạt không ngôi với "**être**" + adjective:
@@ -139,17 +143,17 @@ isIndex: false
 	- "**Il y a**": there is/are
 	- "**il est**" + clock time
 	- **Il s'agit de**: to be about, to be a matter of, to be a question of.
-	- **Il vaut mieux**: to be better, to be advisable. (→ [Conseils logement](/blog/tieng-phap/writing/04-conseils-pour-trouver-un-logement-au-vietnam/): il vaut mieux + infinitif)
+	- **Il vaut mieux**: to be better, to be advisable. (→ [Conseils logement](/blog/conseils-pour-trouver-un-logement-au-vietnam/): il vaut mieux + infinitif)
 
 ## x) partir, sortir, quitter, laisser
 - Các động từ này đều có nghĩa là "to leave" trong TA, nhưng chúng có sắc thái và cách sử dụng khác biệt trong tiếng Pháp. Một cách phân biệt trọng yếu giữa các ĐT này là khái niệm "tính tiến" (ghi bên lề: "chuyển động") (?) (**transitivity**). Trong ngữ cảnh này, "partir" và "sortir" là **nội động (intransitive)**, chúng không chấp nhận một tân ngữ trực tiếp (DO) (nhưng có thể được theo sau bởi một cụm giới từ). Mặt khác, "quitter" và "laisser" là **ngoại động (transitive)**, chúng chấp nhận một tân ngữ trực tiếp trong câu.
-- "**Partir**": ĐT "-ir" BQT truyền đạt ý nghĩa cụ thể của "leaving with the intention of going somewhere". Thường được theo sau bởi giới từ "**pour**". (→ [Chia partir, sortir](/blog/tieng-phap/grammar/c-dong-tu/07-les-verbes-introduction-et-verbes-reguliers-au-present/))
+- "**Partir**": ĐT "-ir" BQT truyền đạt ý nghĩa cụ thể của "leaving with the intention of going somewhere". Thường được theo sau bởi giới từ "**pour**". (→ [Chia partir, sortir](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/))
 - "**Sortir**": là ĐT "-ir" BQT truyền đạt ý nghĩa cụ thể là "going out or to exit from an enclosed space". Thường được theo sau bởi giới từ "**de**".
 - "**Quitter**": ĐT "-er" theo qui tắc được sử dụng khi "leaving someone or someplace".
 - "**Laisser**": ĐT "-er" theo QT (qui tắc) nghĩa là "to leave someone or something behind".
 
 ## y) Infinitive constructions
-- Nguyên thể biểu đạt ý tưởng hoặc khái niệm về nghĩa của động từ mà không chỉ rõ chủ ngữ hoặc thời gian cụ thể (thì). Trong hầu hết các trường hợp, <!-- Memo 84–85 --> cách sử dụng ĐT (động từ) nguyên thể trong tiếng Pháp tương ứng với TA (tiếng Anh). Các cấu trúc ĐT nguyên thể có thể được phân loại theo các cách sử dụng sau: (→ [Infinitive (mode)](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/), [Một chủ ngữ → nguyên thể thay subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/), [L'infinitif](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- Nguyên thể biểu đạt ý tưởng hoặc khái niệm về nghĩa của động từ mà không chỉ rõ chủ ngữ hoặc thời gian cụ thể (thì). Trong hầu hết các trường hợp, <!-- Memo 84–85 --> cách sử dụng ĐT (động từ) nguyên thể trong tiếng Pháp tương ứng với TA (tiếng Anh). Các cấu trúc ĐT nguyên thể có thể được phân loại theo các cách sử dụng sau: (→ [Infinitive (mode)](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/), [Một chủ ngữ → nguyên thể thay subjonctif](/blog/le-subjonctif-thuc-gia-dinh/), [L'infinitif](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 - **As a noun** (như một DT (danh từ)): Dạng nguyên thể thỉnh thoảng có chức năng như 1 DT. VD, nó có thể là chủ ngữ của câu, thường được dịch sang TA ở dạng danh động từ (**gerund -ing**).
 - **As an imperative (command)**: có thể được dùng để ra lệnh bằng văn bản khi không có người nhận cụ thể. Thường thấy dạng này trên biển báo. Nếu ở dạng phủ định thì phải đứng sau cụm phủ định (**ne pas + verb**).
 - **After verb**: thường đứng sau các ĐT đã chia như:
@@ -158,7 +162,7 @@ isIndex: false
 	- **Verbs of opinion**: compter, croire, espérer, valoir mieux, etc.
 	- **Verbs of perception**: écouter, entendre, regarder, sentir, voir
 	- **Verbs of ability, obligation and necessity**: avoir beau, devoir, faillir, falloir, pouvoir, savoir.
-- **After prepositions**: Nguyên thể là ĐT thường được dùng sau giới từ trong tiếng Pháp. Biểu lộ mục đích khi được dùng sau "**pour**" hoặc "**afin de**". Trong trường hợp dùng sau "**avant de**" và "**sans**", bản dịch TA thường là một ĐT đã chia hoặc hiện tại phân từ (-ing) thay vì ĐT nguyên thể TA (to V). Dạng nguyên thể theo sau giới từ "**par**" sau ĐT "commencer" và "finir". (→ [Prepositions with infinitives](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- **After prepositions**: Nguyên thể là ĐT thường được dùng sau giới từ trong tiếng Pháp. Biểu lộ mục đích khi được dùng sau "**pour**" hoặc "**afin de**". Trong trường hợp dùng sau "**avant de**" và "**sans**", bản dịch TA thường là một ĐT đã chia hoặc hiện tại phân từ (-ing) thay vì ĐT nguyên thể TA (to V). Dạng nguyên thể theo sau giới từ "**par**" sau ĐT "commencer" và "finir". (→ [Prepositions with infinitives](/blog/les-prepositions-gioi-tu/))
 	- Lưu ý: giới từ "**en**" được theo sau bởi hiện tại phân từ (**-ant**) không phải dạng nguyên thể.
 	- ĐT nguyên thể có thể được dùng để hoàn thiện nghĩa của tính từ hoặc danh từ. Thông thường, ĐT nguyên thể đi theo sau DT hoặc TT (tính từ) được đặt trước bởi giới từ "**de**". Tuy nhiên, các TT và DT được theo sau bởi giới từ "**à**" + ĐT nguyên thể để chỉ nghĩa bị động hoặc chức năng.
 - **Verbs followed by "à" before an infinitive**:
@@ -182,13 +186,13 @@ isIndex: false
 - **Cấu trúc faire nguyên nhân (faire + infinitive)** chỉ ra rằng chủ ngữ "khiến" một hành động được thực hiện bởi người hoặc vật khác.
 - Trong cấu trúc này, ĐT faire có thể được chia ở bất cứ thì nào.
 - **Tân ngữ trong cấu trúc faire nguyên nhân**: cấu trúc này thường được theo sau bởi danh từ hoặc đại từ là tân ngữ. Nếu có 1 tân ngữ thì là tân ngữ trực tiếp (**DO**). Nếu có hai tân ngữ, một sẽ là tân ngữ trực tiếp và tân ngữ còn lại là gián tiếp.
-- **Đại từ**: Đại từ tân ngữ đứng trước faire, ngoại trừ trong câu mệnh lệnh khẳng định. (→ [Pronoms COD/COI](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **Đại từ**: Đại từ tân ngữ đứng trước faire, ngoại trừ trong câu mệnh lệnh khẳng định. (→ [Pronoms COD/COI](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 - **"se faire" + infinitive**: Một cấu trúc nguyên nhân khác liên quan đến việc sử dụng "se faire" + infinitive để chỉ điều gì đó mà một người hoặc một vật đã làm với chính mình.
 	- Tuy nhiên, thỉnh thoảng cấu trúc này có thể được dùng để miêu tả các hành động xảy ra tình cờ, bất chấp mong muốn của chủ thể.
 	- Chú ý: Dạng QKPT (quá khứ phân từ) "**fait**" luôn không đổi ở cấu trúc nguyên nhân (không đổi theo giới tính, số lượng).
 
 ## a₁) Transitive vs. intransitive
-- **Định nghĩa**: Ngoại ĐT trực/gián tiếp, nội ĐT. (→ [Transitive vs. intransitive verbs](/blog/tieng-phap/grammar/c-dong-tu/07-les-verbes-introduction-et-verbes-reguliers-au-present/))
+- **Định nghĩa**: Ngoại ĐT trực/gián tiếp, nội ĐT. (→ [Transitive vs. intransitive verbs](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/))
 	- Theo định nghĩa, **ngoại ĐT** có một tân ngữ, hoặc là tân ngữ trực tiếp hoặc là tân ngữ gián tiếp. Và **nội động từ** không bao giờ có tân ngữ.
 	- **Ngoại động từ trực tiếp** tác động trực <!-- Memo 88–89 --> tiếp lên tân ngữ của nó. VD: động từ "**entendre**" (to hear) luôn có tân ngữ, một người nghe thấy ai đó (someone) hoặc cái gì đó (sth).
 	- **Ngoại động từ gián tiếp** tác động đến (to) hoặc cho (for) tân ngữ của nó.
@@ -208,7 +212,7 @@ isIndex: false
 | répondre à      | to answer             |              |              |
 
 - **Stated and implied object**: Đối với nhiều ngoại ĐT, cả trong TP và TA, tân ngữ đôi khi được ngầm hiểu. Không cần bận tâm đến việc gán nhãn cho những ĐT <!-- Memo 90–91 --> này vì nghĩa sẽ rõ ràng từ ngữ cảnh; và giống như hầu hết các ĐT khác, chúng tạo thành passé composé với "**avoir**".
-- **Nội động từ**: Có lẽ ta đã thấy các ĐT dùng "**être**" để tạo thành passé composé. Những ĐT "être" này (aller, partir, arriver...) là những nội ĐT phổ biến và chúng được tóm tắt trong **Alamo d'être**. ĐT être thường được mô tả là ĐT chuyển động nhưng cần lưu ý là có nhiều nội ĐT chuyển động khác sử dụng "avoir" như "marcher, courir". (→ [Passé composé avec être](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/), [en avance / en retard](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/), [Passé antérieur](/blog/tieng-phap/grammar/e-thi-thuc-the/19-le-passe-simple-et-le-passe-anterieur/), [Conditionnel passé](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/), [Verbes avec être](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/))
+- **Nội động từ**: Có lẽ ta đã thấy các ĐT dùng "**être**" để tạo thành passé composé. Những ĐT "être" này (aller, partir, arriver...) là những nội ĐT phổ biến và chúng được tóm tắt trong **Alamo d'être**. ĐT être thường được mô tả là ĐT chuyển động nhưng cần lưu ý là có nhiều nội ĐT chuyển động khác sử dụng "avoir" như "marcher, courir". (→ [Passé composé avec être](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/), [en avance / en retard](/blog/les-adverbes-trang-tu/), [Passé antérieur](/blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/), [Conditionnel passé](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/), [Verbes avec être](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/))
 
 *(Sơ đồ trong sổ: hình ngôi nhà "Alamo d'être" vẽ người que; các ĐT gắn với từng vị trí trong nhà như sau.)*
 
@@ -227,7 +231,7 @@ isIndex: false
 | Hai người, mũi tên qua lại; một người đi vào ngôi nhà nhỏ | rentrer, retourner    |
 | Người đi theo đường vòng cung bên trên ngôi nhà nhỏ       | passer                |
 
-- **Transitive hoặc intransitive**: Một số ĐT có thể là ngoại ĐT hoặc nội ĐT. VD: động từ "**sortir**" sử dụng "être" trong passé composé như một nội ĐT, nhưng lại dùng avoir trong passé composé khi được sd (sử dụng) như ngoại ĐT. (→ [Monter, descendre… + avoir](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- **Transitive hoặc intransitive**: Một số ĐT có thể là ngoại ĐT hoặc nội ĐT. VD: động từ "**sortir**" sử dụng "être" trong passé composé như một nội ĐT, nhưng lại dùng avoir trong passé composé khi được sd (sử dụng) như ngoại ĐT. (→ [Monter, descendre… + avoir](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 	- **intransitive**: no object.
 	- **transitive**: with object
 	- ⊕ Có nhiều TH mà một ĐT có thể là nội/ngoại từ trong TA lại phải bị dịch bằng 2 động từ khác nhau trong TP: "to return" (retourner, rendre), "to leave" (partir, laisser, quitter).
@@ -265,7 +269,7 @@ isIndex: false
 	- **être**: étant
 	- **savoir**: sachant
 	- **avoir**: ayant
-- HTPT có thể được dùng để bổ nghĩa cho 1 danh từ, tương tự về mặt nghĩa của mệnh đề quan hệ (**relative clause**) "qui + conjugated verb" hoặc "puisque". (→ [Participles as adjectives](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
-- **"En + present participle"**: thường được biết đến là dạng danh động từ (**gerund**), được dùng để chỉ hai hành động được đồng thời thực hiện bởi cùng 1 chủ thể. Tương ứng với "while, upon, by" trong TA. (→ [Test 2](/blog/tieng-phap/writing/05-test-2-proposer-un-projet-pour-ameliorer-la-vie-a-hanoi/): en construisant, en séparant; [Gérondif (mode)](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/), [Le gérondif](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
-- **"Tout en + present participle"** được dùng để nhấn mạnh rằng 2 hành động là xảy ra cùng lúc (và đôi lúc trái ngược nhau). Nhớ nối âm giữa "tout" và "en". (→ [tout](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- HTPT có thể được dùng để bổ nghĩa cho 1 danh từ, tương tự về mặt nghĩa của mệnh đề quan hệ (**relative clause**) "qui + conjugated verb" hoặc "puisque". (→ [Participles as adjectives](/blog/les-adjectifs-tinh-tu/))
+- **"En + present participle"**: thường được biết đến là dạng danh động từ (**gerund**), được dùng để chỉ hai hành động được đồng thời thực hiện bởi cùng 1 chủ thể. Tương ứng với "while, upon, by" trong TA. (→ [Test 2](/blog/test-2-proposer-un-projet-pour-ameliorer-la-vie-des-habitants-a-hanoi/): en construisant, en séparant; [Gérondif (mode)](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/), [Le gérondif](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
+- **"Tout en + present participle"** được dùng để nhấn mạnh rằng 2 hành động là xảy ra cùng lúc (và đôi lúc trái ngược nhau). Nhớ nối âm giữa "tout" và "en". (→ [tout](/blog/les-determinants-tu-han-dinh/))
 - Lưu ý rằng dạng "-ing" trong TA thường được dịch sang cấu trúc nguyên thể trong TP hơn là HTPT.

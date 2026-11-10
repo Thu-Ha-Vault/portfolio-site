@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 8 Communicating the benefits and outcomes of ANR/Lesson 16
   Communicating the benefits of ANR.md
+url: /blog/communicating-the-benefits-of-anr/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-16-communicating-the-benefits-of-anr/
 description: 'By the end of this lesson learners should be able to:'
@@ -84,7 +87,7 @@ Objectives include:
 
 ## WHO?
 
-Who is the intended audience? (→ [Ask questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/02-ask-questions-to-make-data-driven-decisions/))
+Who is the intended audience? (→ [Ask questions](/blog/ask-questions-to-make-data-driven-decisions/))
 
 Different audiences require different messages.
 
@@ -143,7 +146,7 @@ Provide proof through:
 
 - ecological outcomes,
 - social benefits,
-- economic advantages, (→ [L10 Benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-10-assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
+- economic advantages, (→ [L10 Benefits of ANR](/blog/assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
 - real-world case studies.
 
 ---
@@ -409,7 +412,7 @@ The project emphasized:
 - high-quality information,
 - open access,
 - audience-focused communication,
-- knowledge sharing, (→ [L15 Practitioner perspectives](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-15-practitioner-perspectives-on-anr-implementation/))
+- knowledge sharing, (→ [L15 Practitioner perspectives](/blog/practitioner-perspectives-on-anr-implementation/))
 - selecting the right message, channel, audience, and timing.
 
 ---
@@ -453,7 +456,7 @@ Useful materials include:
 - Different audiences require different messages.
 - Communication should focus on evidence rather than claims.
 - Demonstration sites are among the most persuasive communication tools.
-- Storytelling combined with scientific evidence increases adoption. (→ [Share Data through Visualization](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/))
+- Storytelling combined with scientific evidence increases adoption. (→ [Share Data through Visualization](/blog/share-data-through-the-art-of-visualization/))
 - Strategic communication is essential for scaling ANR globally.
 
 ---

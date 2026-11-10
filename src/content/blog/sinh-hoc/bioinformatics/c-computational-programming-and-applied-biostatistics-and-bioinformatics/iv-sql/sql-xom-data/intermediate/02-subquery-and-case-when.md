@@ -13,13 +13,16 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Intermediate/02 -
   Subquery & CASE WHEN.md
+url: /blog/subquery-and-case-when/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-intermediate'
 order: 2
 description: '-- Get the month strftime(''%m'', orderdate) -- ''06'''
 isIndex: false
 ---
 ## a. Subquery là gì?
-- Subquery là **query nằm trong query khác**. Query bên trong chạy trước, kết quả được dùng cho query bên ngoài. (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- Subquery là **query nằm trong query khác**. Query bên trong chạy trước, kết quả được dùng cho query bên ngoài. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/))
 ## b. Subquery trong WHERE
 - Tìm nhân viên có lương **cao hơn trung bình**:
 ```sql
@@ -111,7 +114,7 @@ SELECT full_name,
        COALESCE(email, 'No email') AS email
 FROM employees;
 ```
-- `COALESCE(a, b)` trả về `a` nếu `a` khác NULL, ngược lại trả về `b`. (→ [Process data from Dirty to Clean](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/04-process-data-from-dirty-to-clean/))
+- `COALESCE(a, b)` trả về `a` nếu `a` khác NULL, ngược lại trả về `b`. (→ [Process data from Dirty to Clean](/blog/process-data-from-dirty-to-clean/))
 ## Lưu ý quan trọng
 - Nối chuỗi SQLite dùng `||`, **không phải** `CONCAT()`
 - `strftime` trả về **TEXT** — có thể dùng GROUP BY

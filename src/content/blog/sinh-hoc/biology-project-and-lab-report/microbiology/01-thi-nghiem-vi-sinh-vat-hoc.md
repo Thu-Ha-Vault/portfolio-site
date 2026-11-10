@@ -10,6 +10,9 @@ folder: Sinh học / Biology Project and Lab Report / Microbiology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Microbiology/01 - Thí nghiệm
   vi sinh vật học.md
+url: /blog/thi-nghiem-vi-sinh-vat-hoc-microbiology-laboratory-methods/
+topic: biology
+updated: '2026-10-19'
 order: 1
 description: >-
   Tóm tắt "Phần II: Thí nghiệm vi sinh vật học" (ThS. Lê Xuân Phương, 73 trang,
@@ -48,18 +51,18 @@ isIndex: false
 	- Nguyên tắc: phức **tím kết tinh – iodine** được giữ lại ở thành tế bào Gram dương khi tẩy cồn; Gram âm mất màu và bắt màu thuốc nhuộm bổ sung.
 	- Quy trình: tím kết tinh 1 phút → lugol 1 phút → rửa nước → **tẩy cồn ~30 giây** → rửa → nhuộm bổ sung **fuchsin/safranin** 10–30 giây → soi vật kính dầu.
 	- Kết quả: *B. subtilis* **tím – Gram dương**; *E. coli* **hồng – Gram âm**; vết bôi trộn có cả hai màu.
-- **Nhuộm bào tử (phương pháp Ozheshko)**: HCl 0,5% hơ nóng 2 phút → fuchsin Ziehl hơ nóng 5 phút → tẩy H₂SO₄ 1% 2 phút → xanh methylene Loeffler 5–15 phút. Kết quả: **bào tử đỏ, tế bào chất xanh**. (→ [Virtual Lab: nhuộm bào tử ảo](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/), protocol `vs-spore`)
+- **Nhuộm bào tử (phương pháp Ozheshko)**: HCl 0,5% hơ nóng 2 phút → fuchsin Ziehl hơ nóng 5 phút → tẩy H₂SO₄ 1% 2 phút → xanh methylene Loeffler 5–15 phút. Kết quả: **bào tử đỏ, tế bào chất xanh**. (→ [Virtual Lab: nhuộm bào tử ảo](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/), protocol `vs-spore`)
 - Quan sát hình thái vi khuẩn, nấm mốc, nấm men.
 
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung</p>
 
-- Gram dương có lớp **peptidoglycan dày** → cồn làm mất nước, co lỗ, giữ phức tím–iodine. Gram âm có peptidoglycan mỏng và **màng ngoài lipid** bị cồn hoà tan → mất màu. (→ [Màng tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/02-mang-te-bao-va-trao-doi-chat-qua-mang/))
+- Gram dương có lớp **peptidoglycan dày** → cồn làm mất nước, co lỗ, giữ phức tím–iodine. Gram âm có peptidoglycan mỏng và **màng ngoài lipid** bị cồn hoà tan → mất màu. (→ [Màng tế bào](/blog/mang-te-bao-va-trao-doi-chat-qua-mang/))
 - Tẩy cồn quá lâu làm Gram dương bị nhầm thành Gram âm; nên dùng khuẩn lạc trẻ (18–24 giờ).
 
 </div>
 
-- Xem thêm: [Virtual Lab: nhuộm Gram ảo](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-gram`, làm sai (quên Lugol, tẩy quá lâu, canh trường già) thì đọc sai Gram.
+- Xem thêm: [Virtual Lab: nhuộm Gram ảo](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-gram`, làm sai (quên Lugol, tẩy quá lâu, canh trường già) thì đọc sai Gram.
 
 ## Bài 5 – Xác định số lượng tế bào
 - **Pha loãng thập phân**: 1 ml (hoặc 1 g mẫu rắn nghiền trong 90 ml nước vô trùng) → các ống 9 ml.
@@ -67,25 +70,25 @@ isIndex: false
 - **Đếm khuẩn lạc (cấy gạt)** – gián tiếp, chỉ đếm tế bào sống:
 	- $\text{CFU/ml} = \dfrac{\text{số khuẩn lạc trung bình}}{V_{\text{cấy (ml)}}} \times \text{hệ số pha loãng}$
 - **Pha loãng tới hạn (MPN)**: định lượng thống kê theo số ống dương tính.
-- Xem thêm: [Virtual Lab: buồng đếm nấm men](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-yeast` đếm 5 ô lớn, N/mL = 0,25 · a · 10⁶.
+- Xem thêm: [Virtual Lab: buồng đếm nấm men](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-yeast` đếm 5 ô lớn, N/mL = 0,25 · a · 10⁶.
 
 ## Bài 6–7 – Phân giải chất hữu cơ
-- Không chứa nitrogen: **lên men ethanol** (nấm men), **lên men lactic** (vi khuẩn lactic), **lên men acetic**, **phân giải cellulose** hiếu khí. (→ [Hô hấp và lên men](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/); [Virtual Lab: lên men rượu ảo](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/), protocol `vs-ferment`)
+- Không chứa nitrogen: **lên men ethanol** (nấm men), **lên men lactic** (vi khuẩn lactic), **lên men acetic**, **phân giải cellulose** hiếu khí. (→ [Hô hấp và lên men](/blog/quang-hop-va-ho-hap-o-thuc-vat/); [Virtual Lab: lên men rượu ảo](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/), protocol `vs-ferment`)
 - Chứa nitrogen: **amon hoá protein**.
 
 ## Bài 8 – Sản phẩm bậc hai
-- Xác định khả năng **sinh kháng sinh** của vi sinh vật (phân lập giống, thử vòng kháng khuẩn). (→ [Virtual Lab: kháng sinh đồ khoanh giấy](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/), protocol `vs-disk`)
+- Xác định khả năng **sinh kháng sinh** của vi sinh vật (phân lập giống, thử vòng kháng khuẩn). (→ [Virtual Lab: kháng sinh đồ khoanh giấy](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/), protocol `vs-disk`)
 
 ## Bài 9 – Thu nhận và xác định hoạt tính enzyme vi sinh vật
 - Chế phẩm enzyme thô từ **nuôi cấy bề mặt** (môi trường bán rắn: cám 70%, độ ẩm 60–65%, tiệt trùng 121 °C/30 phút, cấy bào tử *Aspergillus*) và **nuôi cấy chìm**.
-- Kiểm tra hoạt tính **amylase**, **protease** (phương pháp Anson cải tiến), **cellulase** (đo vòng phân giải). (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- Kiểm tra hoạt tính **amylase**, **protease** (phương pháp Anson cải tiến), **cellulase** (đo vòng phân giải). (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 - Thu sinh khối **nấm men bánh mì**.
 
 ## Bài 10 – Chỉ tiêu vi sinh
 - **Tổng vi khuẩn hiếu khí** (đếm khuẩn lạc).
 - **Coliforms, coliforms chịu nhiệt, coliforms phân, *E. coli***: phương pháp **MPN** và đếm khuẩn lạc.
 - **Tổng nấm men, nấm mốc**.
-- Xem thêm: [Virtual Lab: tổng vi khuẩn hiếu khí và MPN coliform](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-tpc` (ví dụ 2,4 · 10⁵ CFU/g ra đúng), `vs-mpn` (MPN 3 × 3 bằng hợp lý cực đại).
+- Xem thêm: [Virtual Lab: tổng vi khuẩn hiếu khí và MPN coliform](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – protocol `vs-tpc` (ví dụ 2,4 · 10⁵ CFU/g ra đúng), `vs-mpn` (MPN 3 × 3 bằng hợp lý cực đại).
 
 ## Tài liệu gốc
 *ThinghiemVisinh_lazk0.pdf*

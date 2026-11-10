@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / F - Sinh thái học
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/F - Sinh thái học/21 - Hệ sinh thái và sinh
   quyển.md
+url: /blog/he-sinh-thai-va-sinh-quyen/
+topic: biology
+updated: '2026-10-14'
 order: 21
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (cacbon → carbon, nitơ
@@ -44,7 +47,7 @@ isIndex: false
 ## 2. Thành phần
 - **Vô sinh**: khí hậu, đất đai…
 - **Hữu sinh**: 3 nhóm loài:
-	- **Sinh vật sản xuất**: sử dụng năng lượng mặt trời → chất hữu cơ: thực vật, vi sinh vật quang hợp (→ [Quang hợp và hô hấp](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+	- **Sinh vật sản xuất**: sử dụng năng lượng mặt trời → chất hữu cơ: thực vật, vi sinh vật quang hợp (→ [Quang hợp và hô hấp](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 	- **Sinh vật tiêu thụ**: sinh vật ở mắt xích phía sau: sinh vật ăn sinh vật, động vật
 	- **Sinh vật phân giải**: xác sinh vật → chất vô cơ: vi khuẩn, nấm, một số động vật không xương sống
 
@@ -53,8 +56,8 @@ isIndex: false
 	- Trên cạn: rừng mưa nhiệt đới, sa mạc, hoang mạc, savan, thảo nguyên, rừng lá rộng…
 	- Dưới nước:
 		- Nước ngọt: sông, hồ, suối, ao…
-		- Nước mặn (gồm lợ): ven biển, rừng ngập mặn (→ [Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/))
-- **Nhân tạo**: đồng ruộng, bể cá cảnh, thành phố… (→ [ANR và nông lâm kết hợp](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/))
+		- Nước mặn (gồm lợ): ven biển, rừng ngập mặn (→ [Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/))
+- **Nhân tạo**: đồng ruộng, bể cá cảnh, thành phố… (→ [ANR và nông lâm kết hợp](/blog/integrating-anr-with-crop-timber-or-livestock-production/))
 
 ## 4. Tháp sinh thái
 - Hình xếp chồng.
@@ -70,15 +73,15 @@ isIndex: false
 	- chất khí
 	- lắng đọng
 - Chu trình:
-	- **Carbon**: CO₂ (quang hợp). [CO₂] ↑ → hiệu ứng nhà kính. (→ [Phát sinh sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/), [Introduction to ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-1-introduction-to-anr-key-elements-and-practices/lesson-1-introduction-to-anr/))
-	- **Nitrogen**: NH₄⁺, NO₃⁻ (thực vật) (→ [Trao đổi nước và khoáng](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+	- **Carbon**: CO₂ (quang hợp). [CO₂] ↑ → hiệu ứng nhà kính. (→ [Phát sinh sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/), [Introduction to ANR](/blog/introduction-to-anr/))
+	- **Nitrogen**: NH₄⁺, NO₃⁻ (thực vật) (→ [Trao đổi nước và khoáng](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 	- **H₂O**
 
 ![Hình - Chu trình carbon trong sinh quyển](/vault-assets/hinh-chu-trinh-carbon-trong-sinh-quyen-2dbe5881.svg)
 
 ## 6. Dòng năng lượng
 - Năng lượng: thấp → cao: giảm do bị thất thoát.
-- **1 chiều**: sinh vật sản xuất —(bậc dinh dưỡng)→ môi trường. (→ [Quần xã sinh vật](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/20-quan-xa-sinh-vat/))
+- **1 chiều**: sinh vật sản xuất —(bậc dinh dưỡng)→ môi trường. (→ [Quần xã sinh vật](/blog/quan-xa-sinh-vat/))
 - 100% năng lượng ở 1 bậc dinh dưỡng = 70% + 10% + 10% + 10%:
 	- 70%: hô hấp
 	- 10%: bài tiết
@@ -94,6 +97,6 @@ isIndex: false
 | Tái sinh | Nước sạch, đất, sinh vật… | Khai thác hợp lí, có thời gian phục hồi |
 | Vĩnh cửu | Năng lượng mặt trời, gió, thuỷ triều | Tăng cường khai thác |
 
-- Xem thêm: [ANR và phục hồi hệ sinh thái](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/) – phục hồi cấu trúc, chức năng hệ sinh thái và đa dạng sinh học ở quy mô cảnh quan
+- Xem thêm: [ANR và phục hồi hệ sinh thái](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/) – phục hồi cấu trúc, chức năng hệ sinh thái và đa dạng sinh học ở quy mô cảnh quan
 
-- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 10. Sinh thái học](/blog/tong-on-va-meo-lam-bai/#10-sinh-thái-học) – mẹo làm bài, ghi chú ôn tập

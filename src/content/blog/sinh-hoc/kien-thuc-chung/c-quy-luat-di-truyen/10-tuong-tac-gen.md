@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / C - Quy luật di truyền
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/C - Quy luật di truyền/10 - Tương tác
   gen.md
+url: /blog/tuong-tac-gen/
+topic: biology
+updated: '2026-10-14'
 order: 10
 description: >-
   Tên các chất/thuật ngữ đổi từ phiên âm tiếng Việt sang tiếng Anh (enzim →
@@ -33,7 +36,7 @@ isIndex: false
 </details>
 
 
-> Trong sổ: **II. Tương tác gen** (sau phần Quy luật Mendel). Các dạng bài kết hợp tương tác gen với liên kết gen / hoán vị gen nằm ở [12 - Liên kết gen và hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/). (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+> Trong sổ: **II. Tương tác gen** (sau phần Quy luật Mendel). Các dạng bài kết hợp tương tác gen với liên kết gen / hoán vị gen nằm ở [12 - Liên kết gen và hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/). (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 
 ## 1. Tương tác bổ trợ
 
@@ -72,11 +75,11 @@ flowchart LR
 - A–B–: màu đỏ.
 - A–bb, aaB–, aabb: màu trắng.
 - **Tương tác bổ trợ** là kiểu tương tác mà các gen không alen cùng tương tác để hình thành kiểu hình mới so với khi chúng đứng độc lập.
-- **Bản chất**: sự tương tác giữa các sản phẩm do gen tạo ra. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/), [Tính đặc hiệu của enzyme](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/10-do-ben-va-tinh-dac-hieu-cua-enzyme/))
+- **Bản chất**: sự tương tác giữa các sản phẩm do gen tạo ra. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/), [Tính đặc hiệu của enzyme](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/))
 
 ### c. Các kiểu tương tác bổ trợ
 - P: AaBb × AaBb.
-- F1: 9 A–B– : 3 A–bb : 3 aaB– : 1 aabb (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/))
+- F1: 9 A–B– : 3 A–bb : 3 aaB– : 1 aabb (→ [Quy luật Mendel](/blog/quy-luat-mendel/))
 
 | 9 A–B– | 3 A–bb | 3 aaB– | 1 aabb |
 |---|---|---|---|
@@ -89,7 +92,7 @@ flowchart LR
 ### a. Khái niệm
 - Là kiểu tương tác gen mà 2 hay nhiều **alen trội** thuộc các locus gen khác nhau cùng tương tác để hình thành tính trạng.
 - Trong đó, mỗi alen trội có vai trò như nhau trong biểu hiện tính trạng.
-- Tỉ lệ tổ hợp (có) m alen trội: $\dfrac{C_n^m}{2^n}$ (n: tổng số alen của các cặp gen dị hợp, vd AaBb × AaBb → n = 4; số tổ hợp = $C_n^m$). (→ [Probability](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/))
+- Tỉ lệ tổ hợp (có) m alen trội: $\dfrac{C_n^m}{2^n}$ (n: tổng số alen của các cặp gen dị hợp, vd AaBb × AaBb → n = 4; số tổ hợp = $C_n^m$). (→ [Probability](/blog/probability-biology/))
 
 ### b. Các kiểu tương tác cộng gộp
 - Tính trạng di truyền theo tương tác cộng gộp
@@ -112,8 +115,8 @@ flowchart LR
 	- Tính trạng do càng nhiều gen chi phối
 		- → Số kiểu hình tạo ra càng nhiều
 		- → Sự sai khác giữa các kiểu hình càng ít.
-	- **Tính trạng số lượng** thường do nhiều gen quy định, phụ thuộc nhiều vào điều kiện môi trường sống. (→ [Di truyền ngoài nhân, biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
-- Tương tác cộng gộp mở ra khả năng tìm kiếm những trạng thái tính trạng mới → Có ý nghĩa cho chọn giống. (→ [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+	- **Tính trạng số lượng** thường do nhiều gen quy định, phụ thuộc nhiều vào điều kiện môi trường sống. (→ [Di truyền ngoài nhân, biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+- Tương tác cộng gộp mở ra khả năng tìm kiếm những trạng thái tính trạng mới → Có ý nghĩa cho chọn giống. (→ [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 
 ## Bảng tổng hợp tỉ lệ tương tác gen
 

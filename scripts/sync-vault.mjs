@@ -94,7 +94,7 @@ for (const p of config.projects) {
     console.warn(`Project folder missing: ${p.folder}`);
     continue;
   }
-  const projectSlug = slugify(path.basename(p.folder));
+  const projectSlug = p.slug || slugify(path.basename(p.folder));
   for (const f of walk(dir)) {
     if (!f.endsWith('.md') || SKIP_FILES.has(path.basename(f))) continue;
     const inner = path.relative(dir, f).split(path.sep).join('/');
@@ -105,6 +105,7 @@ for (const p of config.projects) {
 }
 
 // Respect `publish: false` in frontmatter.
+const stats0 = { skeletons: 0 };
 const parsed = new Map();
 for (const f of [...published.keys()]) {
   const src = fs.readFileSync(f, 'utf8');
@@ -118,8 +119,99 @@ for (const f of [...published.keys()]) {
     published.delete(f);
     continue;
   }
+  // skip note skeletons (only headings / nav line, no written content yet)
+  const text = fm.content
+    .replace(/^#+ .*$/gm, '')
+    .replace(/^\*\*Links:\*\*.*$/gm, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!published.get(f).isIndex && text.length < 200) {
+    published.delete(f);
+    stats0.skeletons++;
+    continue;
+  }
   parsed.set(f, fm);
 }
+
+// ---------- public URLs ----------
+// Files keep their folder structure internally (for the topic tree); public URLs are short and flat:
+//   /blog/<post>/   /topics/<topic>/   /projects/<project>/   /projects/<project>/<note>/
+const topicSlugs = config.blog.topicSlugs || {};
+const stripPrefix = (s) =>
+  s
+    .normalize('NFC')
+    .replace(/^_MOC - /, '')
+    .replace(/^(?:[A-Z]{1,4}|\d{1,3}[a-z]?)\s*[-.–)]\s+/, '')
+    .replace(/^(?:course|module|week|lesson|part|bài|chương|phần)\s*\d+\s*[:.\-–]?\s+/i, '');
+const titleOf = (abs) => {
+  const d = parsed.get(abs)?.data || {};
+  return String(d.title || path.basename(abs, '.md')).normalize('NFC');
+};
+const titleCount = new Map();
+for (const abs of published.keys()) titleCount.set(titleOf(abs), (titleCount.get(titleOf(abs)) || 0) + 1);
+// notes that share a title (e.g. every lesson titled after the course) are named by their file instead
+const nameOf = (abs) => (titleCount.get(titleOf(abs)) > 1 ? path.basename(abs, '.md').normalize('NFC') : titleOf(abs));
+const used = new Set();
+const claim = (base, extra) => {
+  let s = base || 'note';
+  if (used.has(s) && extra) s = `${base}-${extra}`;
+  let n = 2;
+  const root = s;
+  while (used.has(s)) s = `${root}-${n++}`;
+  used.add(s);
+  return s;
+};
+// topics first so they keep the clean names
+const entries = [...published.entries()].sort(
+  ([a, da], [b, db]) => Number(!!db.isIndex) - Number(!!da.isIndex) || a.split('/').length - b.split('/').length
+);
+for (const [abs, dest] of entries) {
+  if (dest.collection === 'blog') {
+    const inner = rel(abs).slice(config.blog.root.length + 1);
+    const top = inner.split('/')[0].normalize('NFC');
+    dest.topic = topicSlugs[top] || slugify(top);
+    if (dest.isIndex) {
+      const folder = path.basename(path.dirname(abs)).normalize('NFC');
+      const isTop = !path.dirname(inner).includes('/');
+      dest.publicSlug = claim(isTop ? dest.topic : slugify(stripPrefix(folder)), dest.topic);
+      dest.url = `/topics/${dest.publicSlug}/`;
+    } else {
+      dest.publicSlug = claim(slugify(stripPrefix(nameOf(abs))).slice(0, 80).replace(/-+$/, ''), dest.topic);
+      dest.url = `/blog/${dest.publicSlug}/`;
+    }
+  } else {
+    if (dest.isIndex) dest.url = `/projects/${dest.project}/`;
+    else {
+      const s = claim(`${dest.project}/${slugify(stripPrefix(nameOf(abs))).slice(0, 80).replace(/-+$/, '')}`);
+      dest.url = `/projects/${s}/`;
+    }
+  }
+}
+
+// ---------- last-updated dates from the vault's git history ----------
+const updated = new Map();
+try {
+  const log = execFileSync('git', ['-C', VAULT, '-c', 'core.quotePath=false', 'log', '--format=@%cs', '--name-only'], {
+    maxBuffer: 256 * 1024 * 1024,
+    encoding: 'utf8',
+  });
+  let day = null;
+  for (const line of log.split('\n')) {
+    if (line.startsWith('@')) day = line.slice(1);
+    else if (line && !updated.has(line.normalize('NFC'))) updated.set(line.normalize('NFC'), day);
+  }
+} catch {}
+const updatedOf = (abs) =>
+  updated.get(rel(abs).normalize('NFC')) || fs.statSync(abs).mtime.toISOString().slice(0, 10);
+
+// ---------- topic graph (for the home page map) ----------
+const graph = { nodes: {}, edges: {} };
+const linkFrom = (fromAbs, toAbs) => {
+  const a = published.get(fromAbs), b = published.get(toAbs);
+  if (!a || !b || a.collection !== 'blog' || b.collection !== 'blog' || a.topic === b.topic) return;
+  const k = [a.topic, b.topic].sort().join('|');
+  graph.edges[k] = (graph.edges[k] || 0) + 1;
+};
 
 // ---------- link resolution ----------
 function resolveNote(target, fromAbs) {
@@ -225,6 +317,7 @@ function linkFor(target, alias, fromAbs, stats) {
     stats.unresolved++;
     return mdText(label);
   }
+  linkFrom(fromAbs, abs);
   return `[${mdText(label)}](${dest.url}${heading ? '#' + headingAnchor(heading) : ''})`;
 }
 
@@ -320,6 +413,9 @@ for (const [abs, dest] of published) {
     section: dest.collection === 'blog' ? (folderParts[1] || 'Resources').normalize('NFC') : undefined,
     folder: folderParts.slice(dest.collection === 'blog' ? 1 : 0).join(' / ').normalize('NFC'),
     vaultPath: r,
+    url: dest.url,
+    topic: dest.topic,
+    updated: updatedOf(abs),
     source: data.source && /^https?:/.test(String(data.source)) ? String(data.source) : undefined,
     date: toDate(data.date),
     status: data.status ? String(data.status) : undefined,
@@ -331,10 +427,29 @@ for (const [abs, dest] of published) {
     fm.isIndex = dest.isIndex;
     if (dest.isIndex) {
       fm.featured = !!dest.cfg.featured;
+      if (dest.cfg.title) fm.title = dest.cfg.title;
+      if (dest.cfg.summary_vi) fm.summary_vi = dest.cfg.summary_vi;
+      if (dest.cfg.summary_en) fm.summary_en = dest.cfg.summary_en;
       fm.links = Object.fromEntries(Object.entries(dest.cfg.links || {}).filter(([, v]) => v));
     }
   }
   let body = convertBody(content, abs, stats);
+  if (dest.collection === 'projects' && dest.isIndex) {
+    const todo = content.split(/^## /m).find((sec) => /^(Việc cần làm|Tasks|To do)/i.test(sec));
+    if (todo) {
+      const phases = todo
+        .split(/^### /m)
+        .slice(1)
+        .map((sec) => {
+          const name = sec.split('\n')[0].trim();
+          const done = (sec.match(/^\s*- \[[xX]\]/gm) || []).length;
+          const total = done + (sec.match(/^\s*- \[ \]/gm) || []).length;
+          return { name, done, total };
+        })
+        .filter((ph) => ph.total > 0);
+      if (phases.length) fm.phases = phases;
+    }
+  }
   // drop the "**Links:** …" navigation line copied from the vault; the site renders its own nav
   body = body.replace(/^\*\*Links:\*\*.*\n/m, '');
   // the page renders the title itself
@@ -374,8 +489,27 @@ for (const [abs, dest] of published) {
   stats.notes++;
 }
 
+for (const [abs, dest] of published) {
+  if (dest.collection !== 'blog') continue;
+  const n = (graph.nodes[dest.topic] ||= { topic: dest.topic, notes: 0, url: `/topics/${dest.topic}/`, title: '' });
+  if (dest.isIndex && dest.publicSlug === dest.topic) n.title = titleOf(abs).replace(/^_MOC - /, '');
+  else if (!dest.isIndex) n.notes++;
+}
+fs.mkdirSync(path.join(ROOT, 'src/data'), { recursive: true });
+fs.writeFileSync(
+  path.join(ROOT, 'src/data/graph.json'),
+  JSON.stringify(
+    {
+      nodes: Object.values(graph.nodes).sort((a, b) => b.notes - a.notes),
+      edges: Object.entries(graph.edges).map(([k, w]) => ({ a: k.split('|')[0], b: k.split('|')[1], weight: w })),
+    },
+    null,
+    2
+  )
+);
+
 console.log(
   `Synced ${stats.notes} notes (${[...published.values()].filter((d) => d.collection === 'blog').length} blog, ` +
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
-    `${copiedAssets.size} images. Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}.`
+    `${copiedAssets.size} images. Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Skipped empty skeletons: ${stats0.skeletons}.`
 );

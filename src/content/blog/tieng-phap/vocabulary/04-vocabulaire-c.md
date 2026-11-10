@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/04 - Vocabulaire C.md
+url: /blog/vocabulaire-c-tu-vung-c/
+topic: french
+updated: '2026-10-14'
 order: 4
 description: >-
   Cailou → Caillou Championnant → Championnat Chemie → Chimie Christiannism →

@@ -16,6 +16,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/07 - Transcriptomics - RNA-seq và single-cell.md
+url: /blog/transcriptomics-rna-seq-va-single-cell/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 7
 description: >-
@@ -59,7 +62,7 @@ sig <- subset(res, padj < 0.05 & abs(log2FoldChange) > 1)
 plotPCA(vst(dds), intgroup = "condition")
 ```
 
-Biểu đồ chuẩn cần vẽ (→ [Share Data through Visualization](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/)):
+Biểu đồ chuẩn cần vẽ (→ [Share Data through Visualization](/blog/share-data-through-the-art-of-visualization/)):
 
 - **PCA:** mẫu có tách theo điều kiện không, có mẫu ngoại lai hay lô không.
 - **Volcano plot:** trục x là log2 FC, trục y là −log10(padj); gen ở hai góc trên là gen quan trọng.
@@ -67,7 +70,7 @@ Biểu đồ chuẩn cần vẽ (→ [Share Data through Visualization](/blog/si
 
 ## 7.4 Phân tích làm giàu chức năng
 
-- **ORA (over-representation):** danh sách gen có ý nghĩa có làm giàu nhóm GO/KEGG nào không (kiểm định siêu bội). (→ [Exosome ung thư gan (tiểu luận)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/))
+- **ORA (over-representation):** danh sách gen có ý nghĩa có làm giàu nhóm GO/KEGG nào không (kiểm định siêu bội). (→ [Exosome ung thư gan (tiểu luận)](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/))
 - **GSEA:** xếp hạng toàn bộ gen theo thống kê, không cần ngưỡng; dùng bộ gen MSigDB (Hallmark).
 - Công cụ: clusterProfiler, fgsea (R); g:Profiler, Enrichr (web).
 

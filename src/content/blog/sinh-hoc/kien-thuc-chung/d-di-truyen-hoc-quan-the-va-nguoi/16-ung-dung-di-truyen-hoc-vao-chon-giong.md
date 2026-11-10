@@ -13,6 +13,9 @@ folder: Sinh học / Kiến thức chung / D - Di truyền học quần thể v�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/D - Di truyền học quần thể và người/16 -
   Ứng dụng di truyền học vào chọn giống.md
+url: /blog/ung-dung-di-truyen-hoc-vao-chon-giong/
+topic: biology
+updated: '2026-10-14'
 order: 16
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, plasmit →
@@ -38,8 +41,8 @@ isIndex: false
 ## I. Giống và các phương pháp tạo giống mới
 - **Giống**:
 	- Tập hợp cá thể sinh vật do con người tạo ra.
-	- Phản ứng như nhau trước 1 điều kiện môi trường, có nhiều đặc điểm di truyền đặc trưng. (→ [Di truyền ngoài nhân, biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
-	- Chất lượng tốt, năng suất cao và ổn định. (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+	- Phản ứng như nhau trước 1 điều kiện môi trường, có nhiều đặc điểm di truyền đặc trưng. (→ [Di truyền ngoài nhân, biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- Chất lượng tốt, năng suất cao và ổn định. (→ [Tương tác gen](/blog/tuong-tac-gen/))
 	- Thích hợp với điều kiện khí hậu, đất đai, kĩ thuật sản xuất nhất định.
 - **Quy trình**:
 	- Tạo nguồn nguyên liệu: biến dị di truyền (biến dị tổ hợp, đột biến, DNA tái tổ hợp).
@@ -48,7 +51,7 @@ isIndex: false
 	- Đưa giống tốt ra sản xuất đại trà.
 - **Phương pháp tạo nguồn nguyên liệu**:
 	- Lai hữu tính: tạo ra vô số biến dị tổ hợp.
-	- Gây đột biến: tạo ra các đột biến di truyền. (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
+	- Gây đột biến: tạo ra các đột biến di truyền. (→ [Đột biến gen](/blog/dot-bien-gen/))
 	- Công nghệ gen: tạo ra DNA tái tổ hợp.
 - **Nguồn nguyên liệu**:
 	- **Nguồn gen tự nhiên**:
@@ -68,16 +71,16 @@ isIndex: false
 ### 1. Chọn giống dựa vào nguồn biến dị tổ hợp
 
 #### a. Biến dị tổ hợp: nguồn nguyên liệu phong phú cho chọn giống, tiến hoá
-- Là biến dị xuất hiện do sự tổ hợp vật chất di truyền của bố mẹ trong sinh sản hữu tính. (→ [Bằng chứng và cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/))
+- Là biến dị xuất hiện do sự tổ hợp vật chất di truyền của bố mẹ trong sinh sản hữu tính. (→ [Bằng chứng và cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/))
 - Nguyên nhân: quá trình giao phối.
-- Cơ sở tế bào học: (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
-	- **Phát sinh giao tử**: phân li và tổ hợp của các cặp nhiễm sắc thể tương đồng trong giảm phân → nhiều giao tử với tổ hợp gen ≠ nhau. (→ [Liên kết gen, hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/))
+- Cơ sở tế bào học: (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+	- **Phát sinh giao tử**: phân li và tổ hợp của các cặp nhiễm sắc thể tương đồng trong giảm phân → nhiều giao tử với tổ hợp gen ≠ nhau. (→ [Liên kết gen, hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/))
 	- **Quá trình thụ tinh**: sự kết hợp ngẫu nhiên của giao tử ♂, ♀ trong thụ tinh → tổ hợp gen ≠ nhau ở con cái.
 
 #### b. Tạo giống thuần
 - B1: Tạo các dòng thuần chủng ≠ nhau → lai giống.
 - B2: Chọn lọc cá thể có tổ hợp gen mong muốn.
-- B3: Cho các cá thể trên tự thụ hoặc giao phối gần qua nhiều thế hệ + chọn lọc → giống thuần. (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- B3: Cho các cá thể trên tự thụ hoặc giao phối gần qua nhiều thế hệ + chọn lọc → giống thuần. (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 
 #### c. Ưu thế lai
 - Con lai có năng suất, phẩm chất, sức chống chịu, khả năng sinh trưởng – phát triển cao vượt trội so với bố mẹ.
@@ -101,7 +104,7 @@ isIndex: false
 
 #### c. Thành tựu
 - **Vi sinh vật**: tia phóng xạ, hoá chất, ...
-- **Thực vật**: Colchicine: đa bội hoá thân, lá, lấy gỗ, sợi, ... (→ [Đột biến nhiễm sắc thể](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- **Thực vật**: Colchicine: đa bội hoá thân, lá, lấy gỗ, sợi, ... (→ [Đột biến nhiễm sắc thể](/blog/dot-bien-nhiem-sac-the/))
 - **Vật nuôi**: hạn chế, nguyên liệu để chọn lọc (chủ yếu: lai).
 
 ### 3. Tạo giống bằng công nghệ tế bào
@@ -125,7 +128,7 @@ isIndex: false
 		- Tạo giống cây thuần chủng về tất cả các cặp gen.
 		- Cây có khả năng sinh sản bình thường.
 - **Lai tế bào sinh dưỡng xôma / Dung hợp tế bào trần**:
-	- B1: Loại bỏ thành tế bào → tế bào trần. (→ [Tế bào chất, bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+	- B1: Loại bỏ thành tế bào → tế bào trần. (→ [Tế bào chất, bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 	- B2: Cho tế bào trần của 2 loài vào môi trường đặc biệt —(dung hợp)→ tế bào lai.
 	- B3: Nuôi cấy tế bào lai trong môi trường đặc biệt để chúng tái sinh thành cây lai khác loài.
 	- → Ý nghĩa: Tạo giống mới mang đặc điểm của cả hai loài mà các cách tạo giống thông thường không thể tạo ra.
@@ -154,12 +157,12 @@ isIndex: false
 		- Cung cấp nguyên liệu cho chọn giống.
 
 ### 4. Tạo giống bằng công nghệ gen
-- Tạo ra nhiều tế bào hoặc sinh vật có gen bị biến đổi hoặc thêm gen mới → cơ thể với nhiều đặc điểm mới. (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- Tạo ra nhiều tế bào hoặc sinh vật có gen bị biến đổi hoặc thêm gen mới → cơ thể với nhiều đặc điểm mới. (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 - **Kĩ thuật chuyển gen**: DNA (tế bào cho) → tế bào nhận, nhờ cái thể truyền (thường có ở tế bào chất (?)).
 	- **Thể truyền**: plasmid, virus, nhiễm sắc thể nhân tạo, ... (chữ bị cắt ở mép trang (?)).
-		- **Plasmid**: DNA nhỏ, vòng, nhân đôi độc lập, gắn ... (?) tế bào. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/04-nhan-doi-dna-phien-ma-va-dich-ma/))
+		- **Plasmid**: DNA nhỏ, vòng, nhân đôi độc lập, gắn ... (?) tế bào. (→ [Nhân đôi DNA, phiên mã, dịch mã](/blog/nhan-doi-dna-phien-ma-va-dich-ma/))
 - **Quy trình**:
-	- Tạo **DNA tái tổ hợp** (sử dụng **restriction enzyme** (enzyme cắt giới hạn), **ligase**) (→ [Thực hành Sinh học phân tử](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/))
+	- Tạo **DNA tái tổ hợp** (sử dụng **restriction enzyme** (enzyme cắt giới hạn), **ligase**) (→ [Thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/))
 		- ↳ Thể truyền (plasmid, thể thực khuẩn) + gen cần chuyển.
 	- —(dẫn nhập (?); CaCl₂, xung điện cao áp)→ tế bào nhận
 	- → phân lập dòng tế bào chứa DNA tái tổ hợp (có gen đánh dấu)
@@ -189,4 +192,4 @@ flowchart LR
 	- Lai xa + đa bội hoá.
 	- Lai tế bào sinh dưỡng.
 
-- Xem thêm: [Tổng ôn – 7. Chọn giống](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#7-chọn-giống) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 7. Chọn giống](/blog/tong-on-va-meo-lam-bai/#7-chọn-giống) – mẹo làm bài, ghi chú ôn tập

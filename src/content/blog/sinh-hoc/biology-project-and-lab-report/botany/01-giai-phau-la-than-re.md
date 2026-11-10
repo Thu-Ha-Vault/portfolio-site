@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Botany
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Botany/01 - Giải phẫu lá,
   thân, rễ.md
+url: /blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực tập Giải phẫu Thực vật · Nguyễn Thị Thu Hà, K66 Sinh học, ca thực
@@ -18,7 +21,7 @@ description: >-
   Thực vật bậc cao). Ảnh hiển vi gốc chụp qua thị kính xem ở Ảnh t
 isIndex: false
 ---
-> Báo cáo thực tập Giải phẫu Thực vật · Nguyễn Thị Thu Hà, K66 Sinh học, ca thực hành thứ 3 tiết 4–5. Bản gốc là slide 17 trang (tên file trên Drive: *Báo cáo Thực vật bậc cao*). Ảnh hiển vi gốc chụp qua thị kính xem ở [Ảnh tiêu bản giải phẫu thực vật](/blog/sinh-hoc/biology-project-and-lab-report/botany/anh-tieu-ban-giai-phau-thuc-vat/).
+> Báo cáo thực tập Giải phẫu Thực vật · Nguyễn Thị Thu Hà, K66 Sinh học, ca thực hành thứ 3 tiết 4–5. Bản gốc là slide 17 trang (tên file trên Drive: *Báo cáo Thực vật bậc cao*). Ảnh hiển vi gốc chụp qua thị kính xem ở [Ảnh tiêu bản giải phẫu thực vật](/blog/anh-tieu-ban-giai-phau-thuc-vat/).
 
 ## Mục đích
 - Quan sát và chú thích cấu tạo giải phẫu **lá, thân, rễ** trên tiêu bản cắt ngang.
@@ -26,7 +29,7 @@ isIndex: false
 - Phân biệt **sinh trưởng sơ cấp / thứ cấp** của thân và rễ.
 
 ## Nguyên lý
-- Ba hệ mô trên lát cắt ngang: **mô bì** (biểu bì, chu bì), **mô cơ bản** (mô mềm, mô dày, mô cứng) và **mô dẫn** (**xylem**, **phloem**). (→ [Vận chuyển trong mạch gỗ, mạch rây](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+- Ba hệ mô trên lát cắt ngang: **mô bì** (biểu bì, chu bì), **mô cơ bản** (mô mềm, mô dày, mô cứng) và **mô dẫn** (**xylem**, **phloem**). (→ [Vận chuyển trong mạch gỗ, mạch rây](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 - Cây Một lá mầm và Hai lá mầm khác nhau ở cách sắp xếp bó mạch và khả năng sinh trưởng thứ cấp (do có hay không có **cambium**).
 - Nhuộm kép (theo ghi chú trên bảng của giảng viên):
 	- **Vách tế bào sơ cấp** (cellulose) → bắt màu **hồng**.
@@ -36,7 +39,7 @@ isIndex: false
 - Mẫu lá: **Lá Ngô**, **Lá Lúa**, **Lá Trúc Đào**.
 - Mẫu thân: **Thân Bí Ngô**, **Thân Ngô**, **Thân Dâm Bụt già**, **Thân Mao Lương**, **Thân Hướng Dương**.
 - Mẫu rễ: **Rễ Bí Ngô**, **Rễ Ngô**.
-- Lát cắt ngang được ngâm trong khay giếng có ghi tên từng mẫu (→ ảnh khay mẫu `IMG_4180` trong [Ảnh tiêu bản giải phẫu thực vật](/blog/sinh-hoc/biology-project-and-lab-report/botany/anh-tieu-ban-giai-phau-thuc-vat/)), nhuộm, lên tiêu bản và chụp ảnh qua thị kính kính hiển vi.
+- Lát cắt ngang được ngâm trong khay giếng có ghi tên từng mẫu (→ ảnh khay mẫu `IMG_4180` trong [Ảnh tiêu bản giải phẫu thực vật](/blog/anh-tieu-ban-giai-phau-thuc-vat/)), nhuộm, lên tiêu bản và chụp ảnh qua thị kính kính hiển vi.
 
 ## Kết quả chính
 
@@ -65,7 +68,7 @@ isIndex: false
 <p class="callout-title">Bổ sung</p>
 
 - Ở mức **giải phẫu**, điểm phân biệt rõ nhất: lá Hai lá mầm thường có thịt lá phân hoá **mô giậu – mô xốp** (lá lưng bụng, như Trúc Đào), gân hình mạng; lá Một lá mầm (Ngô, Lúa) thường có thịt lá đồng nhất, gân song song, có **tế bào bọt** (tế bào hình bọt) ở biểu bì trên.
-- Ngô là cây **C₄**: bó mạch có **bao bó mạch** lớn chứa lục lạp, xếp kiểu vòng hoa (Kranz). (→ [Thực vật C₃, C₄, CAM](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/))
+- Ngô là cây **C₄**: bó mạch có **bao bó mạch** lớn chứa lục lạp, xếp kiểu vòng hoa (Kranz). (→ [Thực vật C₃, C₄, CAM](/blog/quang-hop-va-ho-hap-o-thuc-vat/))
 - Trúc Đào là cây chịu hạn: biểu bì nhiều lớp, cutin dày, khí khổng nằm trong **hốc lỗ khí** ở mặt dưới.
 
 </div>
@@ -108,7 +111,7 @@ isIndex: false
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung</p>
 
-- **Bí Ngô** (Cucurbitaceae) có **bó mạch chồng kép** (*bicollateral*): phloem ở cả hai phía của xylem, xếp thành hai vòng. Cùng kiểu bó mạch với gân lá *Bidens pilosa* (→ [Bidens pilosa](/blog/sinh-hoc/biology-project-and-lab-report/botany/03-bidens-pilosa-hinh-thai-va-giai-phau/)).
+- **Bí Ngô** (Cucurbitaceae) có **bó mạch chồng kép** (*bicollateral*): phloem ở cả hai phía của xylem, xếp thành hai vòng. Cùng kiểu bó mạch với gân lá *Bidens pilosa* (→ [Bidens pilosa](/blog/morphological-and-anatomical-study-of-bidens-pilosa-var-minor-blume-sher-from-tr/)).
 - **Hướng Dương** (Asteraceae) có thân sơ cấp điển hình của Hai lá mầm: một vòng bó mạch chồng (*collateral*) hở. Cùng họ với *Bidens pilosa*, bài báo ghi thân *Bidens* có 16–23 bó mạch xếp vòng.
 
 </div>
@@ -116,7 +119,7 @@ isIndex: false
 ### C. Cấu tạo giải phẫu rễ
 - Chú thích trên ảnh:
 	- **Rễ Bí Ngô**: mô mềm vỏ, phloem, xylem, mô bì.
-	- **Rễ Ngô**: phloem, mô mềm vỏ, đai Caspary, nội bì, mô mềm tuỷ hoá mô cứng, xylem, mô bì. (→ [Đai Caspari và con đường nước vào mạch gỗ](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/22-trao-doi-nuoc-va-khoang-o-thuc-vat/))
+	- **Rễ Ngô**: phloem, mô mềm vỏ, đai Caspary, nội bì, mô mềm tuỷ hoá mô cứng, xylem, mô bì. (→ [Đai Caspari và con đường nước vào mạch gỗ](/blog/trao-doi-nuoc-va-khoang-o-thuc-vat/))
 - Phân biệt rễ 1 lá mầm và 2 lá mầm (nguyên văn): trụ dẫn của rễ là đặc điểm quan trọng phân biệt rễ cây Hai lá mầm và cây Một lá mầm. Xylem trong rễ thường được tạo nên một lõi rắn đặc có gợn hình chóp hướng về phía vỏ trụ khi nhìn trên bản cắt ngang – **cực xylem**.
 	- **Rễ 1 lá mầm**: thường có số cực xylem không giới hạn. Phloem xếp xen kẽ với các cực xylem.
 	- **Rễ 2 lá mầm**: thường có số cực giới hạn 2–5.
@@ -148,7 +151,7 @@ isIndex: false
 - Bảng sinh trưởng rễ xếp **Rễ Bí Ngô** vào sinh trưởng thứ cấp, nhưng phần chú thích ảnh rễ không có cambium, chu bì hay xylem thứ cấp (?).
 
 </details>
-- Xem thêm: [Virtual Lab: tiêu bản hiển vi ảo](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – lát cắt rễ ngô, thân bí ngô, thân lúa, lá trúc đào… xem ở 4×–40×, nhận dạng Một lá mầm và Hai lá mầm.
+- Xem thêm: [Virtual Lab: tiêu bản hiển vi ảo](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – lát cắt rễ ngô, thân bí ngô, thân lúa, lá trúc đào… xem ở 4×–40×, nhận dạng Một lá mầm và Hai lá mầm.
 
 ## Tài liệu gốc
 *Báo cáo Thực vật bậc cao.pdf*

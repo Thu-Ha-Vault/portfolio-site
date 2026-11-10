@@ -1,31 +1,19 @@
 ---
 import Base from '../../layouts/Base.astro';
 import T from '../../components/T.astro';
-import { projectEntries, statusKey } from '../../lib';
+import ProjectCase from '../../components/ProjectCase.astro';
+import { projectEntries } from '../../lib';
 
-const all = await projectEntries();
-const projects = all
+const projects = (await projectEntries())
   .filter((p) => p.data.isIndex)
-  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || (b.data.date ?? '').localeCompare(a.data.date ?? ''));
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || (a.data.deadline ?? '9999').localeCompare(b.data.deadline ?? '9999'));
 ---
-<Base title="Projects">
-  <p class="eyebrow"><T k="projects" /></p>
-  <h1><T k="allProjects" /></h1>
-  <div class="grid" style="margin-top:24px">
-    {projects.map((p) => {
-      const s = statusKey(p.data.status);
-      const n = all.filter((e) => e.data.project === p.data.project && !e.data.isIndex).length;
-      return (
-        <a class="card" href={`/projects/${p.id}/`}>
-          <h3>{p.data.title}</h3>
-          {p.data.description && <p>{p.data.description}</p>}
-          <div class="meta">
-            {s && <span class="badge"><T k={s} /></span>}
-            {p.data.date && <span>{p.data.date}</span>}
-            {n > 0 && <span>· {n} <T k="notes" /></span>}
-          </div>
-        </a>
-      );
-    })}
+<Base title="Projects" description="Data analysis case studies and learning projects, tracked from Ask to Act.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1><T k="projects" /></h1>
+      <p><T k="projectsIntro" /></p>
+    </header>
+    {projects.map((p) => <ProjectCase project={p} heading="h2" />)}
   </div>
 </Base>

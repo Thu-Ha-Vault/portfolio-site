@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Beginner/04 - Hàm
   tổng hợp (Aggregate).md
+url: /blog/ham-tong-hop-aggregate/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-beginner/lessons/1'
 order: 4
 description: >-
@@ -64,11 +67,11 @@ SELECT SUM(total_amount) AS revenue,
 FROM orders
 WHERE status = 'Completed';
 ```
-- Tính doanh thu **chỉ** từ đơn hàng đã hoàn thành. (→ [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/))
+- Tính doanh thu **chỉ** từ đơn hàng đã hoàn thành. (→ [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/))
 ## Lưu ý quan trọng
 - `SUM` và `AVG` chỉ dùng cho cột **số** (INTEGER, REAL)
 - Cả hai đều **bỏ qua NULL** tự động
-- Có thể dùng nhiều hàm trong cùng 1 SELECT (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- Có thể dùng nhiều hàm trong cùng 1 SELECT (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/))
 # 3. MIN & MAX - Giá trị cực trị
 ## a. MIN - Giá trị nhỏ nhất
 ```sql 

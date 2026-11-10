@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/03 - Vocabulaire B.md
+url: /blog/vocabulaire-b-tu-vung-b/
+topic: french
+updated: '2026-10-14'
 order: 3
 isIndex: false
 ---

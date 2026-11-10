@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Introduction to Data Analy
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Introduction to Data
   Analysis/02 - Các thao tác với dữ liệu trong R.md
+url: /blog/cac-thao-tac-voi-du-lieu-trong-r/
+topic: biology
+updated: '2026-10-14'
 order: 2
 description: >-
   R Markdown thực hành (Nguyễn Thị Thu Hà, 3/6/2022): nhập – xuất dữ liệu, mã
@@ -24,8 +27,8 @@ isIndex: false
 ## Nhập – xuất dữ liệu
 - Tạo data frame từ vector: `data.frame(age, insulin)`.
 - Lưu object: `save(data, file = "Tuan4.rda")` (sau khi `setwd()`).
-- Đọc file: `read.csv("dulieu2.csv")`, `read.table("chol1.csv", header = TRUE)`; xem bằng `View()`. (→ [Importing and exporting data](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/03-importing-and-exporting-data/))
-- Lấy dataset từ package: `library(MASS); data(Boston); dim(Boston)` – chính là dữ liệu của [04 - Phân tích dữ liệu nhà ở Boston](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/04-phan-tich-du-lieu-nha-o-boston/).
+- Đọc file: `read.csv("dulieu2.csv")`, `read.table("chol1.csv", header = TRUE)`; xem bằng `View()`. (→ [Importing and exporting data](/blog/importing-and-exporting-data/))
+- Lấy dataset từ package: `library(MASS); data(Boston); dim(Boston)` – chính là dữ liệu của [04 - Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/).
 
 ## Mã hoá lại biến (recode)
 - Ví dụ trên `mtcars`: biến `am` (0/1) → `"Automatic"`/`"Manual"`; biến `hp` → nhóm công suất L/M/H.
@@ -47,22 +50,22 @@ df$power2 <- cut(df$hp, breaks = c(-Inf, 96.5, 180, Inf), labels = c("L", "M", "
 ```
 
 ## Chuyển đổi kiểu dữ liệu
-- Số → factor: `factor(x)`; chỉ định thứ tự mức: `factor(x, levels = c("1", "0"))`. (→ [Basic data types](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/05-basic-data-types/))
+- Số → factor: `factor(x)`; chỉ định thứ tự mức: `factor(x, levels = c("1", "0"))`. (→ [Basic data types](/blog/basic-data-types/))
 - Số → character: `as.character()`; character → số: `as.numeric()`.
 - **Factor → số phải qua character**: `as.numeric(as.character(f))` (nếu `as.numeric(f)` trực tiếp sẽ nhận mã thứ tự mức, không phải giá trị).
 - Kiểm tra cấu trúc: `str(df)`. Sắp xếp vector: `sort(v, decreasing = TRUE)`.
 
 ## Trích dữ liệu con
-- `subset(df, df$am == 1 & df$wt > 2)`. (→ [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/))
-- Chỉ số hàng/cột: `df[3, ]` (hàng 3), `df[, 3]` (cột 3), `df[c(1, 2, 3), c(4, 5, 6)]`, `df[df$am == 1, ]`. (→ [Data frames](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/04-data-frames/))
+- `subset(df, df$am == 1 & df$wt > 2)`. (→ [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/))
+- Chỉ số hàng/cột: `df[3, ]` (hàng 3), `df[, 3]` (cột 3), `df[c(1, 2, 3), c(4, 5, 6)]`, `df[df$am == 1, ]`. (→ [Data frames](/blog/data-frames/))
 
 ## Sinh dữ liệu
 - `1:200`; `sample(c(2, 3, 4), size = 200, replace = TRUE)`; `sample(seq(1, 10, 0.5), 200, replace = TRUE)`; dữ liệu định tính `sample(c("Nam", "Nu"), 200, replace = TRUE)`.
 - Theo phân phối: `rnorm(200)` rồi `hist()`.
 
 ## Xử lý dữ liệu thiếu (missing data)
-- Dữ liệu bán hàng siêu thị `Train_UWu5bXk.csv` / `Test_u94Q5KV.csv`, đọc bằng `fread()` (gói *data.table*). (→ [Bảng tra cứu lập trình](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
-- **Xoá hàng thiếu**: `na.omit(train)` (so sánh `dim()` trước – sau). (→ [Process data from Dirty to Clean](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/04-process-data-from-dirty-to-clean/))
+- Dữ liệu bán hàng siêu thị `Train_UWu5bXk.csv` / `Test_u94Q5KV.csv`, đọc bằng `fread()` (gói *data.table*). (→ [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
+- **Xoá hàng thiếu**: `na.omit(train)` (so sánh `dim()` trước – sau). (→ [Process data from Dirty to Clean](/blog/process-data-from-dirty-to-clean/))
 - **Đếm giá trị thiếu theo cột**: `colSums(is.na(combi))` sau khi gộp train + test bằng `rbind` (thêm cột `Item_Outlet_Sales := NA` cho test).
 - **Thay giá trị thiếu bằng trung bình theo nhóm** (cùng `Item_Identifier`):
 
@@ -77,7 +80,7 @@ colSums(is.na(combi))
 ```
 
 ## Lập trình cơ bản
-- `if (a >= b) {...} else {...}`: so sánh trung bình hai vector. (→ [Rẽ nhánh & Vòng lặp](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/03-re-nhanh-and-vong-lap/))
+- `if (a >= b) {...} else {...}`: so sánh trung bình hai vector. (→ [Rẽ nhánh & Vòng lặp](/blog/re-nhanh-and-vong-lap/))
 - Vòng `for` tính $\sum (x_i^2 + y_i)$ và đối chiếu với cách **vector hoá** `sum(x^2 + y)` (cùng kết quả, gọn hơn).
 - Viết hàm: tính $\sum x_i^{\,i}$.
 

@@ -10,6 +10,9 @@ folder: Business / A - Digital Marketing and E-commerce
 vaultPath: >-
   Resources/Business/A - Digital Marketing and E-commerce/01 - Foundations of
   Digital Marketing and E-commerce.md
+url: /blog/foundations-of-digital-marketing-and-e-commerce/
+topic: business
+updated: '2026-11-10'
 source: 'https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce'
 order: 1
 description: >-

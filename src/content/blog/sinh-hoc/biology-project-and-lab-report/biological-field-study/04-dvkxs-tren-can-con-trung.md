@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/04 -
   ĐVKXS trên cạn - Côn trùng.md
+url: /blog/dong-vat-khong-xuong-song-tren-can-con-trung/
+topic: biology
+updated: '2026-10-16'
 order: 4
 description: >-
   Ngày 29/06/2023. Giảng viên: PGS.TS Trần Đức Anh, ThS. Nguyễn Thị Ánh Nguyệt.
@@ -34,7 +37,7 @@ isIndex: false
 	- **Bẫy đĩa màu vàng (yellow pan trap)**: màu vàng hấp dẫn côn trùng bay (ong, ruồi...).
 	- **Lưới cản đường bay (flight interception trap)**.
 	- **Bẫy màn (Malaise trap)**: lều lưới dẫn côn trùng bay lên lọ thu.
-- **Định loại bướm**: so mẫu với hình vẽ và mô tả trong sách **"Các loài bướm phổ biến ở Việt Nam"**, kết hợp tra cứu Wikipedia. (→ [Phần phụ miệng côn trùng, vòi hút của bướm](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/07-nganh-chan-khop-gian-va-phan-phu-mieng/))
+- **Định loại bướm**: so mẫu với hình vẽ và mô tả trong sách **"Các loài bướm phổ biến ở Việt Nam"**, kết hợp tra cứu Wikipedia. (→ [Phần phụ miệng côn trùng, vòi hút của bướm](/blog/nganh-chan-khop-arthropoda-gian-va-phan-phu-mieng-con-trung/))
 
 ## Kết quả chính
 ### Côn trùng thu bằng phương pháp chủ động
@@ -62,10 +65,10 @@ isIndex: false
 - Chú thích họ dưới một số ảnh trong file (vd "Họ bướm phấn", "Bướm mắt rắn", "Bướm giáp (bướm bản đồ)") có vẻ lệch so với ảnh liền kề – nên đối chiếu lại với Hình 9.x trong báo cáo chính.
 
 ## Kết luận & thảo luận
-- Bướm là nhóm dễ thu và định loại nhất trên tuyến: **Pieridae** chiếm nhiều mẫu nhất (3/12), tiếp đến Nymphalidae, Lycaenidae, Satyridae (mỗi họ 2). (→ [ANR Lesson 14: assessing outcomes](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-14-monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
+- Bướm là nhóm dễ thu và định loại nhất trên tuyến: **Pieridae** chiếm nhiều mẫu nhất (3/12), tiếp đến Nymphalidae, Lycaenidae, Satyridae (mỗi họ 2). (→ [ANR Lesson 14: assessing outcomes](/blog/monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
 - Kết hợp **thu chủ động** (bướm, côn trùng bay ban ngày) với **bẫy thụ động** (bẫy hố, đĩa vàng, Malaise) giúp bao quát côn trùng ở các tầng sống khác nhau.
 - Báo cáo chưa có số liệu từ các bẫy gián tiếp (không rõ trong bản gốc).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `fe-catba`: bẫy côn trùng tuyến Ao Ếch, đường tích luỹ loài.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `fe-catba`: bẫy côn trùng tuyến Ao Ếch, đường tích luỹ loài.
 
 ## Tài liệu gốc
 *Ảnh mẫu và định loại bướm - ĐVKXS trên cạn.pdf*

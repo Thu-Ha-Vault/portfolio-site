@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 8 Communicating the benefits and outcomes of ANR/Lesson 15
   Practitioner perspectives on ANR implementation.md
+url: /blog/practitioner-perspectives-on-anr-implementation/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-15-practitioner-perspectives-on-anr-implementation/
 description: 'After completing this lesson, learners should be able to:'
@@ -71,7 +74,7 @@ Main lessons
 
 Known for
 
-- Farmer Managed Natural Regeneration (FMNR) (→ [L11 ANR & production](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/))
+- Farmer Managed Natural Regeneration (FMNR) (→ [L11 ANR & production](/blog/integrating-anr-with-crop-timber-or-livestock-production/))
 
 Experience
 
@@ -224,7 +227,7 @@ Integrating this knowledge improves restoration outcomes.
 
 # Section 4. Sharing Practitioner Knowledge
 
-The course encourages practitioners to document and share their own experiences. (→ [L16 Communicating benefits](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-16-communicating-the-benefits-of-anr/))
+The course encourages practitioners to document and share their own experiences. (→ [L16 Communicating benefits](/blog/communicating-the-benefits-of-anr/))
 
 Benefits include:
 

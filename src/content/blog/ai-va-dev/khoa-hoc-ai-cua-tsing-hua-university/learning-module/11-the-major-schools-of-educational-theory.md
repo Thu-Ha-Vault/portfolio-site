@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/11 -
   The Major Schools of Educational Theory.md
+url: /blog/the-major-schools-of-educational-theory/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 11
 description: >-
@@ -77,7 +80,7 @@ Case study về **“Ý kiến của Bộ Giáo dục về việc thực hiện 
 ## Understanding Educational Theory
 1. What is "Educational Theory"?
 	- (1) The relationship between “educational theory,” “educational experience,” “educational slogans,” and “educational viewpoints”; individual educational theoretical propositions and educational theoretical systems: Experience refers to what practitioners learn from doing; slogans are catchy phrases that may or may not have theoretical grounding; viewpoints are individual opinions or perspectives.Theory, by contrast, involves systematic, evidence-based, logically coherent propositions about education. We should also distinguish between individual theoretical propositions — specific claims about how education works — and full educational theoretical systems, which organize multiple propositions into a coherent whole.
-	- (2) The distinction between “Theory of Education” and “Theories about Education.”: A Theory of Education is a comprehensive, systematic account of education as a whole, while theories about education may be partial accounts drawn from other disciplines — psychology, sociology, philosophy — that shed light on specific aspects of educational phenomena. (→ [Sociology of Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/09-sociology-of-education/), [Educational Psychology](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/12-educational-psychology/))
+	- (2) The distinction between “Theory of Education” and “Theories about Education.”: A Theory of Education is a comprehensive, systematic account of education as a whole, while theories about education may be partial accounts drawn from other disciplines — psychology, sociology, philosophy — that shed light on specific aspects of educational phenomena. (→ [Sociology of Education](/blog/sociology-of-education/), [Educational Psychology](/blog/educational-psychology/))
 	- (3) Foreign educational theories and indigenous educational theories.
 2. Criteria for a "Better" Educational Theory
 	- (1) Sufficient evidence: it cannot simply be speculation or wishful thinking.

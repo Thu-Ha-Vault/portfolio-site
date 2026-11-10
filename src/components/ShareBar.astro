@@ -1,0 +1,28 @@
+---
+import T from './T.astro';
+interface Props { url: string; title: string }
+const { url, title } = Astro.props;
+const u = encodeURIComponent(url), t = encodeURIComponent(title);
+---
+<section class="share">
+  <h2><T k="share" /></h2>
+  <ul>
+    <li><a href={`https://www.facebook.com/sharer/sharer.php?u=${u}`} target="_blank" rel="noopener">Facebook</a></li>
+    <li><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${u}`} target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href={`https://x.com/intent/post?url=${u}&text=${t}`} target="_blank" rel="noopener">X</a></li>
+    <li><a href={`https://www.threads.net/intent/post?text=${t}%20${u}`} target="_blank" rel="noopener">Threads</a></li>
+    <li><button type="button" data-copy={url}><T k="copyLink" /></button></li>
+  </ul>
+  <script is:inline>
+    document.querySelectorAll('[data-copy]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var done = function () {
+          var s = b.querySelector('span');
+          var lang = document.documentElement.lang === 'en' ? 'en' : 'vi';
+          s.textContent = lang === 'en' ? 'Link copied' : 'Đã chép link';
+        };
+        if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, function () {});
+      });
+    });
+  </script>
+</section>

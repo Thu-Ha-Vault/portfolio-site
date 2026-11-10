@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/07 - Lớp
   Cá xương - Tổng hợp lý thuyết.md
+url: /blog/lop-ca-xuong-tong-hop-ly-thuyet-osteichthyes/
+topic: biology
+updated: '2026-10-16'
 order: 7
 description: >-
   Chép từ 3 ảnh chụp màn hình file "tổng hợp tài liệu.pdf" (tài liệu đánh máy
@@ -26,12 +29,12 @@ isIndex: false
 2. **Dây sống với bao mô liên kết** làm thành vỏ bảo vệ thần kinh trung ương, có nhiều mầm sụn (cá miệng tròn và phôi động vật có xương sống bậc cao).
 3. **Bộ xương sụn** (cá sụn, phôi các nhóm có xương sống bậc cao).
 4. **Thành hình giáp xương** (cá láng sụn và cá sụn cổ).
-5. **Bộ xương sụn biến hoàn toàn thành xương** (cá xương và các lớp có xương sống khác). (→ [Bộ xương cá chép – xương dăm](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
+5. **Bộ xương sụn biến hoàn toàn thành xương** (cá xương và các lớp có xương sống khác). (→ [Bộ xương cá chép – xương dăm](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
 
 ## 2. Vảy
 - **Vảy xương** phổ biến ở cá xương hiện đại: riêng lẻ, xếp chồng lên nhau như mái ngói. Ngoài cùng là tầng ganoin mỏng, trong là tầng sợi đồng tâm và phóng xạ xen kẽ, thấm calcium. Khi cá lớn thì vảy cũng lớn dần lên thành **vòng năm**.
 	- **Vảy tròn**: bờ ngoài nhẵn – cá trích, cá chép…
-	- **Vảy lược**: bờ ngoài có nhiều răng cưa nhỏ – cá xương tiến hoá như cá bơn, cá vược… (→ [Cá chép vảy tròn, cá rô phi vảy lược](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
+	- **Vảy lược**: bờ ngoài có nhiều răng cưa nhỏ – cá xương tiến hoá như cá bơn, cá vược… (→ [Cá chép vảy tròn, cá rô phi vảy lược](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
 
 ## 3. Hệ nâng đỡ (xương)
 ### 3.1. Xương sọ
@@ -54,7 +57,7 @@ isIndex: false
 - Các nhóm còn lại có **đốt sống rõ ràng**: thân đốt **lõm 2 mặt**, cung trên tạo ống tuỷ, cung dưới mang xương sườn và tạo **ống huyết** ở phần đuôi. Xương sườn gắn vào các đốt phần thân; ngoài ra có **xương dăm** là các que xương nằm rải rác ở phần thân.
 
 ### 3.3. Xương chi và vây
-- **Đai vai và đai hông không khớp với cột sống** mà nằm tự do trong cơ. (→ [Đai – chi ở ếch](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/03-bo-xuong-ech-va-nguon-goc-luong-cu/))
+- **Đai vai và đai hông không khớp với cột sống** mà nằm tự do trong cơ. (→ [Đai – chi ở ếch](/blog/bo-xuong-ech-va-nguon-goc-luong-cu/))
 - Vây lưng, vây hậu môn: nhiều trường hợp làm bánh lái, giữ thăng bằng.
 - Vây ngực, vây bụng: giúp cá lặn sâu, lượn sang trái, phải.
 - **Vây đuôi** – 3 kiểu, đều phát sinh từ kiểu **đuôi nguyên vĩ** (protocercal) của cá miệng tròn:
@@ -73,7 +76,7 @@ isIndex: false
 
 ## 5. Hệ thần kinh và giác quan
 - **Não bộ** phát triển theo 2 hướng từ não nguyên thuỷ:
-	- **Cá vây tia** (cá láng sụn, cá láng xương, cá xương): não trước không lớn, không chia 2 bán cầu, nóc não còn màng bao phủ, không có chất thần kinh; não trung gian phát triển, **não giữa có thuỳ thị giác lớn**, tiểu não phát triển thành thuỳ trên hố trám; hành tuỷ phát triển. (→ [Quan sát não cá chép](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
+	- **Cá vây tia** (cá láng sụn, cá láng xương, cá xương): não trước không lớn, không chia 2 bán cầu, nóc não còn màng bao phủ, không có chất thần kinh; não trung gian phát triển, **não giữa có thuỳ thị giác lớn**, tiểu não phát triển thành thuỳ trên hố trám; hành tuỷ phát triển. (→ [Quan sát não cá chép](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
 	- **Cá phổi, cá vây tay** (sống đáy): não trước phát triển, bán cầu lớn, phân chia rõ; não giữa và tiểu não phát triển yếu.
 - **Tuỷ sống**: có rãnh giữa lưng, chưa có rãnh giữa bụng; **10 đôi dây thần kinh não**. Dây thần kinh tuỷ ra khỏi cột sống chia 3 nhánh: **nhánh lưng** (cơ, da lưng), **nhánh bụng** (cơ, da bụng), **nhánh nội tạng** (giao cảm – ống tiêu hoá, mạch máu…).
 - **Thần kinh thực vật** phát triển; nhánh của **dây phế vị (dây X)** điều hoà nhu động dạ dày, ruột, tim và hệ mạch.
@@ -89,7 +92,7 @@ isIndex: false
 - Hầu thủng mỗi bên 5 khe mang.
 - **Thực quản ngắn**, mặt trong có tiêm mao giúp vận chuyển thức ăn; thành thực quản có tuyến nhầy tiết enzyme tiêu hoá (pepsin)(?).
 - **Dạ dày chưa phân hoá**; cá ăn thịt có dạ dày phát triển.
-- Ruột dài hay ngắn tuỳ thức ăn, **không có van xoắn** như cá sụn; nhóm ăn thực vật và mùn bã ruột rất dài, nhóm ăn động vật ruột ngắn hơn. (→ [Ruột cá chép và cá rô phi](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
+- Ruột dài hay ngắn tuỳ thức ăn, **không có van xoắn** như cá sụn; nhóm ăn thực vật và mùn bã ruột rất dài, nhóm ăn động vật ruột ngắn hơn. (→ [Ruột cá chép và cá rô phi](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
 - Gan lớn, chia 3 thuỳ, có túi mật; lá lách (tì) khá lớn; **tuyến tuỵ** nằm sau dạ dày, màu trắng, dạng lá.
 
 ## 7. Hệ hô hấp
@@ -102,7 +105,7 @@ isIndex: false
 	- Nâng nắp mang: màng da mỏng ở mép sau nắp mang bị áp suất nước ép sát khe mang → áp suất trong khoang mang giảm → nước qua khoang miệng – hầu vào xoang mang.
 	- Hạ nắp mang, miệng đóng chặt: áp suất trong xoang mang tăng → nước thoát ra sau qua khe mang.
 	- Nhờ thay đổi áp suất theo nhịp nâng – hạ nắp mang và đóng – mở miệng, mang được thông khí liên tục bằng dòng nước một chiều.
-- **Trao đổi ngược dòng**: máu trong mao mạch mang chảy **ngược chiều** dòng nước → dọc toàn bộ mao mạch luôn có gradient khuếch tán O₂ từ nước vào máu → hiệu quả rất cao. (→ [Hô hấp bằng mang](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- **Trao đổi ngược dòng**: máu trong mao mạch mang chảy **ngược chiều** dòng nước → dọc toàn bộ mao mạch luôn có gradient khuếch tán O₂ từ nước vào máu → hiệu quả rất cao. (→ [Hô hấp bằng mang](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 - (Phần "các kiểu hô hấp phụ" bị cắt khỏi ảnh chụp.)
 
 ## 8. Hệ thống phân loại (slide)
@@ -120,7 +123,7 @@ isIndex: false
 
 ### 8.4. Phân lớp Cá vây tay (Crossopterygii)
 - Hai nhóm:
-	1. **Rhipidistia** – xuất hiện ở kỉ Devon, là **nguồn gốc của lưỡng cư**. (→ [Nguồn gốc lưỡng cư](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/03-bo-xuong-ech-va-nguon-goc-luong-cu/))
+	1. **Rhipidistia** – xuất hiện ở kỉ Devon, là **nguồn gốc của lưỡng cư**. (→ [Nguồn gốc lưỡng cư](/blog/bo-xuong-ech-va-nguon-goc-luong-cu/))
 	2. **Coelacanth** – cũng xuất hiện ở kỉ Devon; còn **2 loài** đang sống.
 - **Lớp Cá vây tay** (Coelacanthi): 1 bộ Coelacanthiformes, 1 họ Latimeriidae, 2 loài cá latimeria.
 	- Từng được cho là đã tuyệt chủng 70 triệu năm; năm **1938** tìm thấy mẫu ngoài khơi Nam Phi; năm **1998** phát hiện loài mới ở Sulawesi (Indonesia), cách quần đảo Comoros 10.000 km.
@@ -152,5 +155,5 @@ isIndex: false
 </details>
 
 ## Tài liệu tham khảo
-- Giáo trình: [Hickman – Integrated Principles of Zoology](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/#tài-liệu-tham-khảo).
+- Giáo trình: [Hickman – Integrated Principles of Zoology](/topics/vertebrate-zoology/#tài-liệu-tham-khảo).
 - Folder Drive gốc: https://drive.google.com/drive/folders/1Gnyyx1zGhuVXu45zWvzgTKVm6dZq6CSw

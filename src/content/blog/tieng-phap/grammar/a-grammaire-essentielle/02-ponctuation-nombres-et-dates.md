@@ -12,6 +12,9 @@ folder: Tiếng Pháp / Grammar / A - Grammaire essentielle
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/A - Grammaire essentielle/02 - Ponctuation,
   nombres et dates.md
+url: /blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/
+topic: french
+updated: '2026-10-14'
 order: 2
 description: >-
   Memo 6: "arrowbase" → "arrobase"; "pour-cent" → "pour cent"; "la dièse" → "le
@@ -85,14 +88,14 @@ isIndex: false
 	- **Số có hàng đơn vị là 1**: dùng thêm "et" (và) trước hàng đơn vị.
 	- **Mille**: luôn không đổi, không thêm "s" ở cuối
 	- <!-- Memo 8–9 --> **"Vingt" và "cent"** thêm "s" ở cuối khi là số nhiều và khi không có số nào đứng sau nó.
-	- **"Million" và "milliard"**: thêm "s" khi là số nhiều giống như danh từ. (→ [Les noms](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/))
-- Xem thêm: [Từ vựng theo chủ đề](/blog/tieng-phap/vocabulary/01-vocabulaire-thematique/) – bảng số đếm (Nombre) trong phần từ vựng
+	- **"Million" và "milliard"**: thêm "s" khi là số nhiều giống như danh từ. (→ [Les noms](/blog/les-noms-danh-tu/))
+- Xem thêm: [Từ vựng theo chủ đề](/blog/vocabulaire-thematique-tu-vung-theo-chu-de/) – bảng số đếm (Nombre) trong phần từ vựng
 
 ## 7. Les nombres ordinaux
 - **Nombre cardinal + ième = Nombre ordinal**
 	- Số đếm + ième = số thứ tự.
 - Nếu tận cùng là e thì bỏ "e" rồi + ième.
-- **Premier / Première** (1er / 1re): số thứ tự 1 chia theo giới tính. (→ [Les adjectifs](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- **Premier / Première** (1er / 1re): số thứ tự 1 chia theo giới tính. (→ [Les adjectifs](/blog/les-adjectifs-tinh-tu/))
 - **Deuxième** còn cách viết khác là **second**.
 
 ## 8. Les jours de la semaine
@@ -104,8 +107,8 @@ isIndex: false
 | Mercredi | Wednesday | Dimanche | Sunday   |
 | Jeudi    | Thursday  |          |          |
 
-- Xem thêm: [Les déterminants](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/) – dùng mạo từ xác định với ngày trong tuần khi chỉ sự lặp lại định kỳ.
-- Xem thêm: [Từ vựng theo chủ đề](/blog/tieng-phap/vocabulary/01-vocabulaire-thematique/) – Les jours de la semaine trong phần từ vựng
+- Xem thêm: [Les déterminants](/blog/les-determinants-tu-han-dinh/) – dùng mạo từ xác định với ngày trong tuần khi chỉ sự lặp lại định kỳ.
+- Xem thêm: [Từ vựng theo chủ đề](/blog/vocabulaire-thematique-tu-vung-theo-chu-de/) – Les jours de la semaine trong phần từ vựng
 
 *(Sơ đồ trong sổ: trục thời gian có mũi tên sang phải, ba mốc theo thứ tự.)*
 
@@ -113,7 +116,7 @@ isIndex: false
 | --------- | ----------- | -------- |
 | Yesterday | Today       | Tomorrow |
 
-- Xem thêm: [Les adverbes](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/) – hier, aujourd'hui, demain là trạng từ chỉ thời gian.
+- Xem thêm: [Les adverbes](/blog/les-adverbes-trang-tu/) – hier, aujourd'hui, demain là trạng từ chỉ thời gian.
 
 ## 9. Les mois de l'année
 
@@ -126,20 +129,20 @@ isIndex: false
 | Mai      | May      | Novembre  | November  |
 | Juin     | June     | Décembre  | December  |
 
-- **Khi nói về ngày tháng**: (→ [No article](/blog/tieng-phap/grammar/g-tu-spreadsheet/31-parties-du-discours-noms-et-articles/), [Time: en + tháng / mùa](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
-	- **en** + năm / tháng + năm. (→ [Prépositions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- **Khi nói về ngày tháng**: (→ [No article](/blog/parties-du-discours-noms-et-articles-tu-loai-danh-tu-va-mao-tu/), [Time: en + tháng / mùa](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
+	- **en** + năm / tháng + năm. (→ [Prépositions](/blog/les-prepositions-gioi-tu/))
 	- **le** + ngày + tháng + năm.
-- Xem thêm: [Từ vựng theo chủ đề](/blog/tieng-phap/vocabulary/01-vocabulaire-thematique/) – Les mois trong phần từ vựng
+- Xem thêm: [Từ vựng theo chủ đề](/blog/vocabulaire-thematique-tu-vung-theo-chu-de/) – Les mois trong phần từ vựng
 
 ## 10. Les saisons
-- **Le printemps**: Spring (→ [au printemps](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/))
+- **Le printemps**: Spring (→ [au printemps](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/))
 - **L'été**: Summer
 - **L'automne**: Autumn
 - **L'hiver**: Winter
 
 ## 11. Les prépositions devant les noms de villes et de pays
-- Khi dùng với các động từ habiter, naître, vivre: (→ [Prépositions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [Từ vựng theo chủ đề](/blog/tieng-phap/vocabulary/01-vocabulaire-thematique/), [Francophone](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/))
-	- "**à**": trước tên thành phố. (→ [Les déterminants](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/): thành phố thường không cần mạo từ)
+- Khi dùng với các động từ habiter, naître, vivre: (→ [Prépositions](/blog/les-prepositions-gioi-tu/), [Từ vựng theo chủ đề](/blog/vocabulaire-thematique-tu-vung-theo-chu-de/), [Francophone](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/))
+	- "**à**": trước tên thành phố. (→ [Les déterminants](/blog/les-determinants-tu-han-dinh/): thành phố thường không cần mạo từ)
 	- "**au**": trước tên quốc gia giống đực.
 	- "**en**": trước tên quốc gia giống cái.
 	- <!-- Memo 10–11 --> "**aux**": trước tên quốc gia ở số nhiều.

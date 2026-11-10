@@ -13,6 +13,9 @@ folder: Sinh học / Kiến thức chung / D - Di truyền học quần thể v�
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/D - Di truyền học quần thể và người/15 - Di
   truyền học người và di truyền y học.md
+url: /blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/
+topic: biology
+updated: '2026-10-16'
 order: 15
 description: >-
   Tên các chất, bệnh, hội chứng đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN →
@@ -48,7 +51,7 @@ isIndex: false
 		- ◇: chưa xác định giới tính.
 		- ☒ (□ gạch chéo): chết.
 		- Một nhánh tách đôi từ cùng một điểm xuống □ và ○: **đồng sinh**.
-	- Sơ đồ mẫu trong sổ: thế hệ I: □ (Aa) × ○ (Aa) → thế hệ II: □ bình thường (1/3 AA, 2/3 Aa) và ○ bị bệnh. (→ [Probability](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/))
+	- Sơ đồ mẫu trong sổ: thế hệ I: □ (Aa) × ○ (Aa) → thế hệ II: □ bình thường (1/3 AA, 2/3 Aa) và ○ bị bệnh. (→ [Probability](/blog/probability-biology/))
 
 ![Hình - Ký hiệu và sơ đồ phả hệ mẫu](/vault-assets/hinh-ky-hieu-va-so-do-pha-he-mau-69e3f9bf.svg)
 
@@ -58,7 +61,7 @@ isIndex: false
 	- Gen / nhiễm sắc thể thường hay giới tính.
 - **Kết quả**: Ở người:
 	- Bệnh **phenylketonuria** (phenylketo niệu; thiếu enzyme chuyển Phe → Tyr → Phe ứ đọng trong máu, lên não) và bệnh **bạch tạng** → do gen lặn / nhiễm sắc thể thường.
-	- Bệnh **mù màu**, **máu khó đông** → gen lặn / nhiễm sắc thể X. (→ [Di truyền liên kết giới tính](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/11-di-truyen-lien-ket-voi-gioi-tinh/))
+	- Bệnh **mù màu**, **máu khó đông** → gen lặn / nhiễm sắc thể X. (→ [Di truyền liên kết giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
 		- (Di truyền chéo, thường gặp ở XY.)
 	- **Tật dính ngón 2, 3**, **có túm lông ở vành tai** → gen / NST Y.
 	- Tóc xoăn > thẳng; nâu > đen > xanh (mắt).
@@ -78,19 +81,19 @@ isIndex: false
 
 - **Mục đích**:
 	- Kiểu gen + môi trường → kiểu hình.
-	- Xác định vai trò của kiểu gen và môi trường trong việc hình thành kiểu hình. (→ [Môi trường và biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- Xác định vai trò của kiểu gen và môi trường trong việc hình thành kiểu hình. (→ [Môi trường và biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 - **Kết quả**:
 	- Tính trạng ∈ kiểu gen: nhóm máu, màu mắt, da.
 	- Tính trạng ∈ môi trường: tâm sinh lí, tuổi thọ, chiều cao.
 
 ### III. Nghiên cứu tế bào và sinh học phân tử
-- **Tế bào**: vật chất di truyền là nhiễm sắc thể. (→ [Băng NST và karyotype](/blog/sinh-hoc/biology-project-and-lab-report/genetics/03-di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
+- **Tế bào**: vật chất di truyền là nhiễm sắc thể. (→ [Băng NST và karyotype](/blog/di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
 - **Phân tử**: DNA, protein, sinh lí, sinh hoá.
 
 ## Phương pháp giải bài tập phả hệ
 
 ### Các bước giải
-- **B1:** Xác định tính trạng trội – lặn. (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/))
+- **B1:** Xác định tính trạng trội – lặn. (→ [Quy luật Mendel](/blog/quy-luat-mendel/))
 	- Bằng cách tìm cặp bố – mẹ cùng màu → con màu khác:
 		- Bố mẹ: tính trạng trội
 		- Con: tính trạng lặn.
@@ -145,9 +148,9 @@ isIndex: false
 	- Chậm phát triển trí tuệ bẩm sinh.
 - Phân loại:
 	- **Di truyền phân tử**:
-		- Cơ chế: đột biến gen (phần lớn). (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
-		- 1 số bệnh: thiếu máu hồng cầu hình lưỡi liềm, phenylketonuria, ... (→ [HbS và thalassemia](/blog/sinh-hoc/biology-project-and-lab-report/genetics/03-di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
-	- **Liên quan đến đột biến nhiễm sắc thể**: (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+		- Cơ chế: đột biến gen (phần lớn). (→ [Đột biến gen](/blog/dot-bien-gen/))
+		- 1 số bệnh: thiếu máu hồng cầu hình lưỡi liềm, phenylketonuria, ... (→ [HbS và thalassemia](/blog/di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/))
+	- **Liên quan đến đột biến nhiễm sắc thể**: (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 		- Cơ chế: do đột biến nhiễm sắc thể.
 		- Đột biến cấu trúc: mất đoạn 21 hoặc 22 → ung thư máu; (mất đoạn) 5 → hội chứng tiếng mèo kêu.
 		- Đột biến số lượng: hội chứng Down (3 nhiễm sắc thể 21), Patau (3 nhiễm sắc thể 13), ...
@@ -164,9 +167,9 @@ isIndex: false
 - Vấn đề di truyền khả năng trí tuệ.
 
 ### 5. Một số vấn đề xã hội của loài người
-- **Gánh nặng di truyền**: sự tồn tại trong vốn gen của quần thể người nhiều đột biến gây hại → ↓ sức sống của cá thể (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- **Gánh nặng di truyền**: sự tồn tại trong vốn gen của quần thể người nhiều đột biến gây hại → ↓ sức sống của cá thể (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 	- → gánh nặng kinh tế – xã hội.
-- **Bệnh ung thư**: (→ [Exosome ung thư gan](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/))
+- **Bệnh ung thư**: (→ [Exosome ung thư gan](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/))
 	- Đặc trưng bởi sự tăng sinh không kiểm soát được của 1 số loại tế bào trong cơ thể → khối u chèn ép các cơ quan trong cơ thể (u lành – ác tính).
 	- → Đột biến: gen tiền ung thư → gen ung thư → trội.
 	- → Không được di truyền vì xuất hiện ở tế bào sinh dưỡng.
@@ -180,7 +183,7 @@ isIndex: false
 - Tư vấn di truyền, sàng lọc trước sinh:
 	- Chọc dò dịch ối.
 	- Sinh thiết tua nhau thai.
-- **Liệu pháp gen** – kĩ thuật của tương lai: (→ [Công nghệ gen, tế bào](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+- **Liệu pháp gen** – kĩ thuật của tương lai: (→ [Công nghệ gen, tế bào](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 	- Chữa trị bệnh di truyền = phục hồi chức năng gen đột biến.
 	- 2 phương pháp:
 		- Bổ sung gen lành vào cơ thể bệnh.
@@ -223,4 +226,4 @@ isIndex: false
 | Xương chi ngắn, tay 6 ngón, ngón tay ngắn | Đột biến gen trội / NST thường | |
 | Galactosemia (galactose huyết) | Đột biến lặn / NST thường | |
 
-- Xem thêm: [Tổng ôn – 8. Mẹo bài tập phả hệ, bệnh di truyền ở người](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#8-mẹo-bài-tập-phả-hệ-bệnh-di-truyền-ở-người) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 8. Mẹo bài tập phả hệ, bệnh di truyền ở người](/blog/tong-on-va-meo-lam-bai/#8-mẹo-bài-tập-phả-hệ-bệnh-di-truyền-ở-người) – mẹo làm bài, ghi chú ôn tập

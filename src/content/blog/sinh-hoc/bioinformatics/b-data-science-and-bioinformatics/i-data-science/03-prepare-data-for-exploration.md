@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/03 - Prepare Data for Exploration.md
+url: /blog/prepare-data-for-exploration/
+topic: biology
+updated: '2026-10-14'
 order: 3
 description: >-
   The fairness issue: The lack of structure makes unstructured data difficult to
@@ -27,7 +30,7 @@ isIndex: false
 - What type of data is right for the question you’re answering.
 - Practical skills about how to extract, use, organize and protect your data.
 - How data is generated.
-- Different formats, types, and structures of data. (→ [Data Exploration Using Descriptive Statistics](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/05-data-exploration-using-descriptive-statistics/))
+- Different formats, types, and structures of data. (→ [Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/))
 - Analyze data for bias and credibility.
 - What “clean data” .
 - Databases.
@@ -132,7 +135,7 @@ Population, Latin and Caribbean Countries, 2010-2019, long format
 - Bias: A preference in favor of or against a person, group of people, or thing.
 - Data bias: A type of error that systematically skews results in a certain direction.
 - Sampling bias: When a sample isn’t representative of the population as a whole.
-- Unbiased sampling: When a sample is representative of the population being measured. (→ [Statistic and Regression](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/05-statistic-and-regression/))
+- Unbiased sampling: When a sample is representative of the population being measured. (→ [Statistic and Regression](/blog/statistic-and-regression/))
 - More types of data bias: (4 types of bias)
 	- Sampling bias.
 	- Observer bias (experimenter/research bias): The tendency for different people to observe things differently.
@@ -235,11 +238,11 @@ Below each column header is a box that contains a summary of the data. This lets
 
 #### Work with database
 
-- Database: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy. (→ [Database](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/02-database/))
+- Database: A collection of data stored in a computer system. When you maintain a database of customer information, ensuring data integrity, credibility, and privacy. (→ [Database](/blog/database/))
 
 - Metadata: Data about data.
 
-- Relational database: A database that contains a series of related tables that can be connected via their relationships. For two tables to have a relationship, one or more of the same fields (key) must exist inside both tables. (→ [Dữ liệu & Database](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/01-gioi-thieu-du-lieu-and-database/))
+- Relational database: A database that contains a series of related tables that can be connected via their relationships. For two tables to have a relationship, one or more of the same fields (key) must exist inside both tables. (→ [Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/))
 In a non-relational table, you will find all of the possible variables you might be interested in analyzing all grouped together. This can make it really hard to sort through. This is one reason why relational databases are so common in data analysis: they simplify a lot of analysis processes and make data easier to find and use across an entire database.
 
 - Primary key: An identifier that references a column in which each value is unique (no two rows can have the same primary key, it can’t not be null or blank).
@@ -458,7 +461,7 @@ Together, these benefits empower data analysts to effectively analyze and interp
 
 - Helps to protect your data
 
-- Best practices when organizing data: (→ [Monitoring ANR – quản lý dữ liệu](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+- Best practices when organizing data: (→ [Monitoring ANR – quản lý dữ liệu](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 
 - Naming conventions: Consistent guidelines that describe the content, date, or version of a file in its name. Use logical and descriptive names for your files to make them easier to find and use
 
@@ -484,7 +487,7 @@ Further, file-naming conventions should act as quick reference points to identif
 
 ### Secure data
 
-- Data security: Protecting data from unauthorized access or corruption by adopting safety measures. (→ [Fundamentals of Laboratory Systems](/blog/sinh-hoc/iso-iec-17025-2017-laboratory-management-systems/module-1-the-fundamentals-of-laboratory-systems/))
+- Data security: Protecting data from unauthorized access or corruption by adopting safety measures. (→ [Fundamentals of Laboratory Systems](/blog/the-fundamentals-of-laboratory-systems/))
 
 - Usually the purpose of data security is to keep unauthorized users from accessing or viewing sensitive data. Data analysts have to find a way to balance data security with their actual analysis needs. This can be tricky-- we want to keep our data safe and secure, but we also want to use it as soon as possible so that we can make meaningful and timely observations. In order to do this, companies need to find ways to balance their data security measures with their data access needs.
 

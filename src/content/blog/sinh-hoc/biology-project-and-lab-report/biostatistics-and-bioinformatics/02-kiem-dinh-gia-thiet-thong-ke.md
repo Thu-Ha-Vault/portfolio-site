@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biostatistics and Bioinfor
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biostatistics and
   Bioinformatics/02 - Kiểm định giả thiết thống kê.md
+url: /blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   File Excel gồm sheet Lý thuyết (4 dạng bài, cách làm bằng Excel Data Analysis,
@@ -24,7 +27,7 @@ isIndex: false
 
 ## Khái niệm chính
 - **Mức ý nghĩa $\alpha$**: ngưỡng xác suất tối đa cho phép mắc **sai lầm loại I** (bác bỏ $H_0$ khi $H_0$ đúng).
-- **Các bước kiểm định**: (→ [Hypothesis Testing and p-values](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/))
+- **Các bước kiểm định**: (→ [Hypothesis Testing and p-values](/blog/hypothesis-testing-and-p-values/))
 	1. Xác định giả thiết $H_0$.
 	2. Định rõ mức ý nghĩa $\alpha$.
 	3. Chọn test thống kê.
@@ -33,7 +36,7 @@ isIndex: false
 	6. Kết luận bác bỏ hay chấp nhận $H_0$.
 - **Mẫu độc lập (independent samples)**: thu từ các nhóm khác nhau (vd nhóm thí nghiệm và nhóm chứng), mỗi mẫu đại diện cho 1 nhóm.
 - **Mẫu liên hệ / phụ thuộc (dependent, paired samples)**: thu từ cùng một nhóm đối tượng ở 2 điều kiện (trước – sau can thiệp).
-- **Căn cứ chọn test**: (→ [Parametric Inference](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/04-parametric-inference/))
+- **Căn cứ chọn test**: (→ Parametric Inference)
 	- **Cỡ mẫu**: $n < 30$ → t-Test; $n > 30$ → z-Test.
 	- **Số nhóm**: 2 nhóm → t-Test độc lập / ghép cặp; ≥ 3 nhóm → ANOVA hoặc Kruskal-Wallis.
 	- **Loại dữ liệu**: liên tục và chuẩn → test tham số; không chuẩn → phi tham số (Mann-Whitney U, Kruskal-Wallis).
@@ -48,15 +51,15 @@ isIndex: false
 | ≥ 3 mẫu liên hệ | $\mu_1 = \dots = \mu_m$ | **Friedman** (phi tham số) |
 | 2 biến phân loại (bảng tần số) | 2 biến không liên hệ | $\chi^2$ (Chi-square) |
 
-- Ngoài ra sheet tóm tắt liệt kê **Pearson's r** (tương quan 2 biến định lượng) và **Spearman's rank** (khi biến không chuẩn) → xem [03 - Tương quan và hồi quy](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/03-tuong-quan-va-hoi-quy/).
+- Ngoài ra sheet tóm tắt liệt kê **Pearson's r** (tương quan 2 biến định lượng) và **Spearman's rank** (khi biến không chuẩn) → xem [03 - Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/).
 
 ## Công thức / phương pháp
 
 ### Dạng 1: Kiểm định $\chi^2$ cho kết quả định tính
-- Dùng khi kết quả quan sát chia thành nhiều cấp chất lượng (màu sắc; tác dụng tốt/trung bình/xấu; nhiễm khuẩn hay không…), bảng $k \times r$ ($k$ mẫu, $r$ cấp). $H_0$: không có mối liên hệ giữa hai biến. (→ [Inference About Independence](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/03-inference-about-independence/), [Bảng tần số chéo bằng R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/03-bai-tap-r-co-ban-va-phan-tich-du-lieu/))
+- Dùng khi kết quả quan sát chia thành nhiều cấp chất lượng (màu sắc; tác dụng tốt/trung bình/xấu; nhiễm khuẩn hay không…), bảng $k \times r$ ($k$ mẫu, $r$ cấp). $H_0$: không có mối liên hệ giữa hai biến. (→ Inference About Independence, [Bảng tần số chéo bằng R](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/))
 - Lập bảng 5 cột: $T_a$ (tổng hàng), $T_b$ (tổng cột), $O_{ij}$ (quan sát), $C_{ij}$ (kỳ vọng), $\chi^2$ thành phần:
 	- $C_{ij} = \dfrac{T_{a_i} \cdot T_{b_j}}{T}$ (nếu $H_0$ đúng thì $O_{ij} \approx C_{ij}$); nên cố định ô $T_{a_i}, T_{b_j}$ khi kéo công thức.
-	- $\chi^2 = \sum \dfrac{(O_{ij} - C_{ij})^2}{C_{ij}}$, bậc tự do $df = (k-1)(r-1)$. (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/), [Kiểm định số liệu lai ảo – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [χ² trong protocol Mendel – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+	- $\chi^2 = \sum \dfrac{(O_{ij} - C_{ij})^2}{C_{ij}}$, bậc tự do $df = (k-1)(r-1)$. (→ [Quy luật Mendel](/blog/quy-luat-mendel/), [Kiểm định số liệu lai ảo – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [χ² trong protocol Mendel – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 - So sánh với $\chi^2_\alpha$ = `CHIINV(α; df)` cho $\alpha$ = 0,1; 0,05; 0,01 (nếu đề không hỏi thì xét cả 90%, 95%, 99%). Kết luận bằng `IF(tổng χ² > χ²α; "Ho bị bác bỏ"; "Ho được chấp nhận")`.
 
 ### Dạng 2: Hai mẫu liên hệ (ghép đôi)
@@ -65,7 +68,7 @@ isIndex: false
 - Kết luận: $\lvert t\ Stat \rvert < t\ Critical\ two\text{-}tail$ → chấp nhận $H_0$ (khác nhau ngẫu nhiên); ngược lại bác bỏ $H_0$.
 
 ### Dạng 3: Hai mẫu độc lập
-- **Mẫu bé ($n < 30$)** – t-Test: (→ [Chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/), [Hoạt độ lipase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/01-hoat-do-lipase-bang-p-npp/))
+- **Mẫu bé ($n < 30$)** – t-Test: (→ [Chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/), [Hoạt độ lipase](/blog/hoat-do-enzyme/))
 	- **Bước 1 – F-Test** (`FTEST(mảng1; mảng2)`), $H_0'$: $\sigma_1^2 = \sigma_2^2$. Nếu $p > 0{,}05$ → phương sai bằng nhau → **t-Test: Two-Sample Assuming Equal Variances**; nếu $p < 0{,}05$ → **Unequal Variances**.
 	- Phương sai chung: $s^2 = \dfrac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}$; $t = \dfrac{\bar{x}_1 - \bar{x}_2}{s\sqrt{1/n_1 + 1/n_2}}$, $df = n_1 + n_2 - 2$, ngưỡng `TINV()`.
 	- $\lvert t \rvert \ge t_{(n_1+n_2-2,\ \alpha/2)}$ → bác bỏ $H_0$; nếu $t$ dương thì $\mu_1 > \mu_2$, âm thì $\mu_1 < \mu_2$.
@@ -84,7 +87,7 @@ isIndex: false
 | Chung | $V_T$ | $n - 1$ | | | |
 
 - $F_{STAT} > F_{crit}$ (bậc tự do $k_1 = a-1$, $k_2 = n-a$) → bác bỏ $H_0$: nhân tố có tác động thật.
-- **ANOVA hai nhân tố không lặp (Two-Factor Without Replication)**: bố trí **khối ngẫu nhiên đầy đủ (RCB)** – nhân tố A có $a$ cấp, lặp theo khối B ($b$ khối: nền đất, thủy vực…). $f_A = s^2_A / s^2_N$ ($df$: $a-1$; $(a-1)(b-1)$), $f_B = s^2_B / s^2_N$ ($df$: $b-1$; $(a-1)(b-1)$). Trong output: *Rows* = nhân tố A, *Columns* = khối B, *Error* = biến sai ngẫu nhiên. (→ [Độc tính Propylene Glycol](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/02-doc-tinh-propylene-glycol-tren-phoi-ca-ngua-van/))
+- **ANOVA hai nhân tố không lặp (Two-Factor Without Replication)**: bố trí **khối ngẫu nhiên đầy đủ (RCB)** – nhân tố A có $a$ cấp, lặp theo khối B ($b$ khối: nền đất, thủy vực…). $f_A = s^2_A / s^2_N$ ($df$: $a-1$; $(a-1)(b-1)$), $f_B = s^2_B / s^2_N$ ($df$: $b-1$; $(a-1)(b-1)$). Trong output: *Rows* = nhân tố A, *Columns* = khối B, *Error* = biến sai ngẫu nhiên. (→ [Độc tính Propylene Glycol](/blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/))
 - **ANOVA hai nhân tố có lặp (With Replication, $m$ lần)**: thêm biến sai tương tác $V_{AB}$ ($df = (a-1)(b-1)$), biến sai ngẫu nhiên $df = ab(m-1)$; khai báo số lần lặp ở *Rows per Sample*. Output: *Sample* (nhân tố B), *Columns* (nhân tố A), *Interaction*, *Within*.
 - **Hệ số di truyền** $h^2$ (khi so sánh giống cây/con và $H_0$ bị bác bỏ): $0 \le h^2 \le 1$; gần 0 → đặc trưng do môi trường quyết định, gần 1 → do di truyền.
 	- Ước lượng tác động của nhân tố giống $\hat{\sigma}^2_A$ từ hiệu $s^2_A - s^2_E$, rồi $h^2 = \dfrac{\hat{\sigma}^2_A}{\hat{\sigma}^2_A + \sigma^2_E}$. Trong file (Bài 6, 13), $\hat{\sigma}^2_A = (s^2_A - s^2_E)/a$ và mẫu số dùng $s^2_E / a$ ($a$ = số giống).
@@ -114,8 +117,8 @@ isIndex: false
 | Bài tập thêm | IgA và protein huyết thanh: người bình thường vs viêm gan siêu vi, 99% | F-Test → t | Cả 2 chỉ tiêu khác nhau có ý nghĩa (99%) |
 
 - Bài 17 và Ví dụ tr.119 (6 chủng nấm men × 5 môi trường) chỉ có đề, chưa làm.
-- Xem thêm: [Quang hợp và hô hấp ở thực vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/23-quang-hop-va-ho-hap-o-thuc-vat/) – bài t-test C3/C4 và ANOVA quang hợp lá cà phê (Bài 16, 18, 21)
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – bài 1, 3, 6, 13, 19 tính lại bằng bảng Phân tích số liệu, khớp kết quả Excel.
+- Xem thêm: [Quang hợp và hô hấp ở thực vật](/blog/quang-hop-va-ho-hap-o-thuc-vat/) – bài t-test C3/C4 và ANOVA quang hợp lá cà phê (Bài 16, 18, 21)
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – bài 1, 3, 6, 13, 19 tính lại bằng bảng Phân tích số liệu, khớp kết quả Excel.
 
 ## Tài liệu gốc
 - Chương 4_ Kiểm định giả thiết thống kê trong nghiên cứu sinh học.xlsx

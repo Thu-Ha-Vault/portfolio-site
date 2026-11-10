@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 5 Assessing the costs and benefits of ANR implementation/Lesson 9
   Assessing the costs of ANR.md
+url: /blog/assessing-the-costs-of-anr/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -82,7 +85,7 @@ Unlike establishment costs, these continue throughout the project.
 
 ## C. Opportunity Costs
 
-Opportunity cost represents income that landowners give up by choosing restoration instead of another profitable land use. (→ [Economics of Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/04-economics-of-education/))
+Opportunity cost represents income that landowners give up by choosing restoration instead of another profitable land use. (→ [Economics of Education](/blog/economics-of-education/))
 
 Examples:
 
@@ -410,13 +413,13 @@ Activities include:
 - Compost application
 - Watering seedlings
 
-Enrichment planting substantially increases restoration costs. (→ [L2 Modalities & practices](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-1-introduction-to-anr-key-elements-and-practices/lesson-2-modalities-and-practices-of-anr-in-the-context/))
+Enrichment planting substantially increases restoration costs. (→ [L2 Modalities & practices](/blog/modalities-and-practices-of-anr-in-the-context/))
 
 ---
 
 # 4. Cost Depends on Site Degradation
 
-Implementation intensity is directly related to degradation. (→ [L7 Case studies (no enrichment)](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-7-case-studies-of-anr-part-1-without-enrichment-planting/))
+Implementation intensity is directly related to degradation. (→ [L7 Case studies (no enrichment)](/blog/case-studies-of-anr-part-1-without-enrichment-planting/))
 
 Highly degraded sites require:
 

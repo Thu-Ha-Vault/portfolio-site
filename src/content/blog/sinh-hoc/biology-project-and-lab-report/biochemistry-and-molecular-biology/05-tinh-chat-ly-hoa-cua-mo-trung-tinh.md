@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/05 - Tính chất lý hoá của mỡ trung tính.md
+url: /blog/cac-tinh-chat-ly-hoa-cua-mo-trung-tinh-triacylglycerol/
+topic: biology
+updated: '2026-10-16'
 order: 5
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 8 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -21,10 +24,10 @@ isIndex: false
 
 ## Mục đích
 - Khảo sát **tính tan** và khả năng **tạo nhũ tương** của triacylglycerol (TAG).
-- Chứng minh các thành phần cấu tạo của mỡ: **glycerol** (phản ứng acrolein) và **acid béo** (xà phòng hoá, giải phóng acid béo tự do). (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+- Chứng minh các thành phần cấu tạo của mỡ: **glycerol** (phản ứng acrolein) và **acid béo** (xà phòng hoá, giải phóng acid béo tự do). (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 
 ## Nguyên lý
-- **Triacylglycerol (mỡ trung tính)**: ester của **glycerol** và 3 **acid béo** bậc cao → **không phân cực**, không tan trong nước, tan trong dung môi hữu cơ. (→ [Hoạt độ lipase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/01-hoat-do-lipase-bang-p-npp/), [Lipase P. brenneri](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/02-thuyet-trinh-lipase-tu-pseudomonas-brenneri/))
+- **Triacylglycerol (mỡ trung tính)**: ester của **glycerol** và 3 **acid béo** bậc cao → **không phân cực**, không tan trong nước, tan trong dung môi hữu cơ. (→ [Hoạt độ lipase](/blog/hoat-do-enzyme/), [Lipase P. brenneri](/blog/danh-gia-hoat-tinh-cua-enzyme-lipase-tu-pseudomonas-brenneri-va-ung-dung-trong-t/))
 - **Nhũ tương (emulsion)**: hệ phân tán của hai chất lỏng không hoà tan; **xà phòng** là chất nhũ hoá, bao các giọt dầu → nhũ tương bền, trắng đục.
 - **Phản ứng acrolein**: đun mỡ với **KHSO₄** (chất hút nước) → glycerol mất nước tạo **acrolein** (aldehyde không no, mùi khét) → khử AgNO₃/NH₃ thành Ag đen.
 - **Xà phòng hoá (saponification)**: TAG + kiềm, đun nóng → glycerol + **muối kali/natri của acid béo (xà phòng)**. Xà phòng + Ca²⁺/Mg²⁺ → muối acid béo **không tan**.
@@ -53,9 +56,9 @@ isIndex: false
 ## Kết luận & thảo luận
 - Lipid tan trong dung môi không phân cực, tốc độ tan phụ thuộc độ phân cực của dung môi; không tan trong nước.
 - Chất nhũ hoá (xà phòng, ngoài cơ thể; muối mật, trong cơ thể) giúp phân tán lipid trong nước.
-- Dầu lạc chứa gốc **glyceryl** (acrolein dương tính) và **acid béo** (xà phòng hoá được; acid béo giải phóng trong môi trường acid). (→ [Chỉ số của lipid](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/06-cac-chi-so-cua-lipid/))
+- Dầu lạc chứa gốc **glyceryl** (acrolein dương tính) và **acid béo** (xà phòng hoá được; acid béo giải phóng trong môi trường acid). (→ [Chỉ số của lipid](/blog/xac-dinh-mot-so-chi-so-cua-lipid/))
 - Nước cứng (Ca²⁺, Mg²⁺) làm xà phòng mất tác dụng do tạo muối không tan.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-lipid` làm lại năm thí nghiệm với dầu lạc.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-lipid` làm lại năm thí nghiệm với dầu lạc.
 
 ## Tài liệu gốc
 *Tính chất lý hoá của triacylglycerol.pdf*

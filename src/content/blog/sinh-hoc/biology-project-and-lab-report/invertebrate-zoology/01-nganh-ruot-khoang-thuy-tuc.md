@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Invertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Invertebrate Zoology/01 -
   Ngành Ruột khoang - Thủy tức.md
+url: /blog/nganh-ruot-khoang-cnidaria-thuy-tuc/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Folder Drive không có vở ghi cho ngành này, chỉ có ảnh tiêu bản thủy tức
@@ -23,7 +26,7 @@ isIndex: false
 <div class="callout callout-info">
 <p class="callout-title">Bổ sung</p>
 
-- **Đối xứng toả tròn**, cơ thể hình túi, chỉ có **một lỗ** (vừa là miệng vừa là hậu môn) thông với **khoang vị (ruột túi)**. (→ [Tiêu hoá ở động vật có túi tiêu hoá](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- **Đối xứng toả tròn**, cơ thể hình túi, chỉ có **một lỗ** (vừa là miệng vừa là hậu môn) thông với **khoang vị (ruột túi)**. (→ [Tiêu hoá ở động vật có túi tiêu hoá](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 - **Hai lá phôi**: lớp ngoài (ngoại bì) và lớp trong (nội bì), giữa là **tầng keo (mesoglea)**.
 - **Tế bào gai (cnidocyte)** chứa **nematocyst**, tập trung thành "pin" trên tua miệng → bắt mồi, tự vệ. Đây là đặc điểm riêng của ngành.
 - **Hệ thần kinh mạng lưới**, chưa có hạch não.

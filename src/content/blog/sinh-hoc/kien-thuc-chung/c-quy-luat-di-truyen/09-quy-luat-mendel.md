@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / C - Quy luật di truyền
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/C - Quy luật di truyền/09 - Quy luật
   Mendel.md
+url: /blog/quy-luat-mendel/
+topic: biology
+updated: '2026-10-16'
 order: 9
 description: >-
   Tên riêng/thuật ngữ phiên âm đổi sang tiếng Anh (Menđen → Mendel). Sơ đồ tự
@@ -45,7 +48,7 @@ isIndex: false
 ### (Giải thích kết quả thí nghiệm lai một cặp tính trạng)
 - P thuần chủng tương phản mà F1 chỉ tạo ra hoa đỏ
 	- → **Hoa đỏ trội** so với hoa trắng.
-- F2: 3 : 1 = 4 tổ hợp = 2 × 2 (2 loại giao tử của F1 × 2 loại giao tử của F1) (→ [Mô phỏng lai đậu Hà Lan – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [Protocol Mendel – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/), [Khu trồng trọt, khí hậu và bao hoa – Virtual Lab](/projects/virtual-lab/07-cac-khu-cua-phong-thi-nghiem/))
+- F2: 3 : 1 = 4 tổ hợp = 2 × 2 (2 loại giao tử của F1 × 2 loại giao tử của F1) (→ [Mô phỏng lai đậu Hà Lan – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [Protocol Mendel – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/), [Khu trồng trọt, khí hậu và bao hoa – Virtual Lab](/projects/virtual-lab/cac-khu-cua-phong-thi-nghiem/))
 	- → F1 phải tạo ra 2 loại giao tử.
 
 ### 3. Giả thuyết về quy luật phân li
@@ -94,9 +97,9 @@ isIndex: false
 | GF1: | 1/2 A, 1/2 a | 1/2 A ; 1/2 a |
 
 - F2: 1/4 AA (đỏ) : 2/4 Aa (đỏ) : 1/4 aa (trắng)
-	- = **3 đỏ : 1 trắng**. (→ [Kiểm định giả thiết thống kê](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/))
+	- = **3 đỏ : 1 trắng**. (→ [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 - Tự thụ (F2 → F3):
-	- F3: 1/3 đỏ F2 (AA) → 100% AA (đỏ) (→ [Di truyền học người](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+	- F3: 1/3 đỏ F2 (AA) → 100% AA (đỏ) (→ [Di truyền học người](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 	- 2/3 đỏ F2 (Aa) → 3 A– : 1 aa (3 đỏ : 1 trắng)
 	- Trắng F2 (aa) → 100% aa (trắng)
 
@@ -122,10 +125,10 @@ isIndex: false
 - **Bổ sung:** **Locus**: vị trí của gen trên NST.
 
 ### Một số công thức, bài toán
-- **n alen**: số kiểu gen = $\dfrac{n(n+1)}{2} = n + C^2_n$ (→ [Di truyền liên kết giới tính](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/11-di-truyen-lien-ket-voi-gioi-tinh/))
+- **n alen**: số kiểu gen = $\dfrac{n(n+1)}{2} = n + C^2_n$ (→ [Di truyền liên kết giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
 	- Đồng hợp: $n$
 	- Dị hợp: $\dfrac{n(n-1)}{2}$ ($C^2_n$).
-- **Lai ngẫu nhiên**: Tổ hợp giao tử. (→ [Di truyền học quần thể](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/14-di-truyen-hoc-quan-the/))
+- **Lai ngẫu nhiên**: Tổ hợp giao tử. (→ [Di truyền học quần thể](/blog/di-truyen-hoc-quan-the/))
 	- Ví dụ: P: Hoa đỏ × hoa đỏ (F2).
 
 | | Hoa đỏ (F2) | × Hoa đỏ (F2) |
@@ -135,7 +138,7 @@ isIndex: false
 | GP: | 2A : 1a | 2A : 1a |
 | F: | 4AA : 4Aa : 1aa | |
 
-- **Thể đa bội**: (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- **Thể đa bội**: (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 	- Dùng sơ đồ hình chữ nhật có 2 đường chéo (tứ bội) hoặc tam giác Δ (tam bội) để liệt kê giao tử.
 	- Tổ hợp. Ví dụ: 6n → 3n
 		- AAAAaa → 4 AAA : 12 AAa : 4 Aaa
@@ -170,12 +173,12 @@ isIndex: false
 - Xét sự di truyền đồng thời 2 cặp tính trạng:
 	- Tính trạng màu sắc F2: (3 vàng : 1 xanh) × tính trạng hình dạng F2: (3 trơn : 1 nhăn)
 	- F2: 9 V,T : 3 V,N : 3 X,T : 1 X,N
-	- → **Tỉ lệ phân li chung = tích tỉ lệ phân li riêng** (→ [Probability](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/))
+	- → **Tỉ lệ phân li chung = tích tỉ lệ phân li riêng** (→ [Probability](/blog/probability-biology/))
 - → **Kết luận:** Sự di truyền của các cặp tính trạng không phụ thuộc vào nhau.
 
 ### 8. Cơ sở tế bào học của quy luật phân li độc lập
-- Các gen quy định tính trạng nằm trên NST khác nhau. (→ [Liên kết gen, hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/))
-- Khi giảm phân, sự phân li độc lập của các NST (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- Các gen quy định tính trạng nằm trên NST khác nhau. (→ [Liên kết gen, hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/))
+- Khi giảm phân, sự phân li độc lập của các NST (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 	- → sự phân li độc lập của các gen trên đó
 	- → tạo ra 4 loại giao tử với tỉ lệ ngang nhau.
 - Khi thụ tinh: các giao tử kết hợp lại với nhau
@@ -205,7 +208,7 @@ isIndex: false
 
 - = (1AA : 2Aa : 1aa)(1BB : 2Bb : 1bb)
 - = (3A– : 1aa) × (3B– : 1bb)
-- = 9 A–B– (V,T) : 3 A–bb (V,N) : 3 aaB– (X,T) : 1 aabb (X,N) (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+- = 9 A–B– (V,T) : 3 A–bb (V,N) : 3 aaB– (X,T) : 1 aabb (X,N) (→ [Tương tác gen](/blog/tuong-tac-gen/))
 - Tỉ lệ phân li chung = tích tỉ lệ phân li riêng
 	- ⟺ các gen phân li độc lập với nhau.
 
@@ -260,4 +263,4 @@ flowchart LR
 
 > (Sơ đồ khung đỏ trong sổ: [nhiều gen → 1 tính trạng] ← [1 gen → 1 tính trạng] ⇒ [1 gen → nhiều tính trạng]; mỗi khung có mũi tên xuống tên quy luật tương ứng.)
 
-- Xem thêm: [Tổng ôn – 1. Kiểu gen – kiểu hình (bảng số kiểu gen, kiểu hình F1)](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#1-kiểu-gen--kiểu-hình-bảng-số-kiểu-gen-kiểu-hình-f1) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 1. Kiểu gen – kiểu hình (bảng số kiểu gen, kiểu hình F1)](/blog/tong-on-va-meo-lam-bai/#1-kiểu-gen--kiểu-hình-bảng-số-kiểu-gen-kiểu-hình-f1) – mẹo làm bài, ghi chú ôn tập

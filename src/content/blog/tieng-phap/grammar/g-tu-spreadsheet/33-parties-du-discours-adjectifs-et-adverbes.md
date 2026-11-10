@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/33 - Parties du discours -
   adjectifs et adverbes.md
+url: /blog/parties-du-discours-adjectifs-et-adverbes-tu-loai-tinh-tu-va-trang-tu/
+topic: french
+updated: '2026-10-14'
 order: 33
 description: >-
   Ô I165: "un vieux fauteil" → "un vieux fauteuil". Ô J190: "True" (sheet tự đổi
@@ -44,12 +47,12 @@ isIndex: false
 - **Adjectives (les adjectifs)** describe the qualities and characteristics of a noun; they describe how someone or something is. They always accompany the noun they describe, and the endings of an adjective always agree with the noun in terms of gender (masculine or feminine) and number (singular or plural).
 - **L'adjectif épithète** is an adjective that refers directly to a noun and usually comes after the noun it describes (although sometimes they come before). These adjectives cannot be separated by another word.
 	- Ví dụ: Il faut aérer les pièces humides. / Regarde ce petit chat !
-- **L'adjectif attribut** also describes the qualities and characteristics of a noun, however it always appears together with a stative verb. The noun being described is the subject of the sentence and the adjective comes after the verb. The French stative verbs are: être, paraître, sembler, devenir, demeurer, rester, avoir l'air, passer pour. (→ [Stative verbs](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
+- **L'adjectif attribut** also describes the qualities and characteristics of a noun, however it always appears together with a stative verb. The noun being described is the subject of the sentence and the adjective comes after the verb. The French stative verbs are: être, paraître, sembler, devenir, demeurer, rester, avoir l'air, passer pour. (→ [Stative verbs](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
 	- Ví dụ: Les élèves sont silencieux aujourd'hui. / Ce fauteuil a l'air confortable.
 
 ### Adjective endings
 - In French, the adjective ending (la terminaison de l'adjectif) agrees in gender (masculine or feminine) and number (singular or plural) with the noun it is describing.
-- **Adjective endings in the singular**: French changes the ending of adjectives to reflect the gender of the noun being described: (→ [Irregular adjectives – Gender](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- **Adjective endings in the singular**: French changes the ending of adjectives to reflect the gender of the noun being described: (→ [Irregular adjectives – Gender](/blog/les-adjectifs-tinh-tu/))
 	- for masculine singular nouns, use the base form of the adjective (i.e. without an additional ending)
 	- for feminine singular nouns, we usually add the ending -e to the base form of the adjective
 	- if the base form of the adjective already ends in an -e, it remains the same in the feminine form
@@ -106,7 +109,7 @@ isIndex: false
 | un voisin fou                     | un fol artiste / un fol homme               | une voisine folle  |
 
 ### Comparatives and superlatives
-- **The comparative (le comparatif)** allows us to compare two nouns. There are three types of comparison: moins … que (less … than), aussi … que (as … as) and plus … que (more … than). **The superlative (le superlatif)** compares one thing against a whole group and expresses the idea of the most (le plus …) or the least (le moins …). (→ [Comparisons with adjectives](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- **The comparative (le comparatif)** allows us to compare two nouns. There are three types of comparison: moins … que (less … than), aussi … que (as … as) and plus … que (more … than). **The superlative (le superlatif)** compares one thing against a whole group and expresses the idea of the most (le plus …) or the least (le moins …). (→ [Comparisons with adjectives](/blog/les-adjectifs-tinh-tu/))
 - **Comparatives**: The comparative is constructed with aussi … que (= as … as), plus … que (= more … than) or moins … que (= less … than). The adjective ending agrees with the gender and number of the noun it is describing.
 	- Ví dụ: Marc est aussi rapide que Chloé. / Amir est plus rapide que Marc.
 - **Superlatives**: Le superlatif expresses the highest degree of a quality. We construct the superlative by using le/la/les plus + adjective or le/la/les moins + adjective. The adjective's ending agrees with the noun it is describing.
@@ -123,7 +126,7 @@ isIndex: false
 | mauvais            | pire                 | le pire                    |
 | petit / but: petit | moindre / plus petit | le moindre / le plus petit |
 
-- Xem thêm: [So sánh của trạng từ](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/) – so sánh với trạng từ (bien → mieux) đối chiếu với bon → meilleur.
+- Xem thêm: [So sánh của trạng từ](/blog/les-adverbes-trang-tu/) – so sánh với trạng từ (bien → mieux) đối chiếu với bon → meilleur.
 
 ### Position of adjectives
 - Generally speaking, most French adjectives come after the noun they are describing. However there are exceptions: some adjectives come before the noun, while there are others that change their meaning depending on whether they come before or after.
@@ -132,7 +135,7 @@ isIndex: false
 	- Short, often-used adjectives generally come before the noun (beau, bon, bref, grand, gros, faux, haut, jeune, joli, mauvais, meilleur, nouveau, petit, vieux).
 	- If a noun is accompanied by two or more adjectives, they are placed after the noun if they are connected by a conjunction such as mais, donc, or, car, et, ou, ni … ni etc.
 	- If they are not connected, they frame the noun.
-	- Some adjectives can come either before or after the noun, but their placement changes their meaning (see the table). (→ [Meaning varies with placement](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+	- Some adjectives can come either before or after the noun, but their placement changes their meaning (see the table). (→ [Meaning varies with placement](/blog/les-adjectifs-tinh-tu/))
 
 | Adjective               | Meaning Before a Noun        | Meaning After a Noun                  |
 | ----------------------- | ---------------------------- | ------------------------------------- |
@@ -155,16 +158,16 @@ isIndex: false
 | vrai                    | real, actual                 | true                                  |
 
 ## Les adverbes
-- **Adverbs (les adverbes)** are describing words: they can describe a verb, an adjective, a sentence or another adverb. They give us more information about time, place, frequency, reason or manner. French adverbs can consist of one word (demain, très, vite…), groups of words (tout à coup, jusque-là…) or words ending in -ment (simplement, heureusement…). (→ [Les adverbes](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/))
+- **Adverbs (les adverbes)** are describing words: they can describe a verb, an adjective, a sentence or another adverb. They give us more information about time, place, frequency, reason or manner. French adverbs can consist of one word (demain, très, vite…), groups of words (tout à coup, jusque-là…) or words ending in -ment (simplement, heureusement…). (→ [Les adverbes](/blog/les-adverbes-trang-tu/))
 
 ### Difference between adjectives and adverbs
-- Although adjectives and adverbs are both types of describing words, they have different grammatical functions, meaning that they are not used in the same situations. (→ [Adjective vs. adverb](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- Although adjectives and adverbs are both types of describing words, they have different grammatical functions, meaning that they are not used in the same situations. (→ [Adjective vs. adverb](/blog/les-adjectifs-tinh-tu/))
 	- **Adjectives** describe nouns. They agree with the number and gender of the noun they modify.
 	- **Adverbs** describe an adjective, a verb, another adverb or even an entire sentence. In contrast to adjectives, adverbs are invariable: they do not change their form to match the number and gender of the noun they are describing.
 - Ví dụ: Les souris sont heureuses et nous regardent en riant. / Elles ont fait un très bon travail. Elles ont bien travaillé.
 
 ### Bon vs. bien
-- Bon and bien are tricky words for learners of French to understand. Generally speaking, bon is mostly used as an adjective (similar to the English good) while bien is most commonly used as an adverb (similar to the English well). However, there are exceptions. Take a look at the following situations to learn when to use bon and when to use bien. (→ [Bon/meilleur vs. bien/mieux](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+- Bon and bien are tricky words for learners of French to understand. Generally speaking, bon is mostly used as an adjective (similar to the English good) while bien is most commonly used as an adverb (similar to the English well). However, there are exceptions. Take a look at the following situations to learn when to use bon and when to use bien. (→ [Bon/meilleur vs. bien/mieux](/blog/les-adjectifs-tinh-tu/))
 	- We use **bon** as an adjective to describe nouns (une bonne amie, un bon dessert…)
 	- Bon is only used as an adverb after specific verbs such as sentir bon, faire bon…
 	- In contrast, **bien** is mostly used as an adverb with verbs in the sense of "well" (j'ai bien travaillé…) or with adjectives in the sense of "very" or "really" (il est bien fatigué, cette maison est bien belle…).

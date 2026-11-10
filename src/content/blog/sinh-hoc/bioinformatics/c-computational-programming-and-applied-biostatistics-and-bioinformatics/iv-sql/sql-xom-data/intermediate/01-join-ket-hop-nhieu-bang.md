@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Intermediate/01 -
   JOIN - Kết hợp nhiều bảng.md
+url: /blog/join-ket-hop-nhieu-bang/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-intermediate'
 order: 1
 isIndex: false
@@ -21,7 +24,7 @@ isIndex: false
 - Dữ liệu được chia thành nhiều bảng để tránh trùng lặp. Ví dụ:
 	- Bảng `orders` có `customer_id` — nhưng không có tên khách hàng
 	- Bảng `customers` có `full_name` — nhưng không có thông tin đơn hàng
-**JOIN** kết hợp 2 bảng dựa trên cột chung. (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/), [Tổng hợp dữ liệu (R)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/05-tong-hop-du-lieu/))
+**JOIN** kết hợp 2 bảng dựa trên cột chung. (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/), [Tổng hợp dữ liệu (R)](/blog/tong-hop-du-lieu/))
 ## b. INNER JOIN cơ bản
 ```sql
 SELECT orders.id, customers.full_name, orders.total_amount

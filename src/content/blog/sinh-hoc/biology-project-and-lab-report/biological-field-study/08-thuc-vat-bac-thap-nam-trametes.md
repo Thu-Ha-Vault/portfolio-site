@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/08 -
   Thực vật bậc thấp - Nấm Trametes.md
+url: /blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/
+topic: biology
+updated: '2026-10-16'
 order: 8
 description: >-
   Ngày 03/07/2023. Giảng viên: TS. Đỗ Thị Xuyến, TS. Nguyễn Hoài An. Báo cáo mô
@@ -48,14 +51,14 @@ isIndex: false
 | Bào tử | Không đủ dữ kiện |
 | Độ nhiều | Rất nhiều trên một cành |
 
-- Xem thêm: [Bản đồ vệ tinh Cát Bà](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/) – điểm thu mẫu trên ảnh Sentinel-2, độ cao bề mặt khoảng 107 m so với 80 m ghi ở phiếu
+- Xem thêm: [Bản đồ vệ tinh Cát Bà](/projects/virtual-lab/thi-nghiem-giai-doan-5/) – điểm thu mẫu trên ảnh Sentinel-2, độ cao bề mặt khoảng 107 m so với 80 m ghi ở phiếu
 
 - Người chụp ảnh và phân loại: Nguyễn Thị Thu Hà.
-- Ảnh thực địa cho thấy mẫu được đối chiếu với ***Trametes versicolor*** (nấm vân chi) trong tài liệu tra cứu (xem [Ảnh thực địa](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/anh-thuc-dia/)).
-- Phần **tảo** không có nội dung trong báo cáo (không rõ trong bản gốc). (→ [Tảo trong học phần Botany](/blog/sinh-hoc/biology-project-and-lab-report/botany/02-tao-va-vong-doi-xen-ke-the-he/))
+- Ảnh thực địa cho thấy mẫu được đối chiếu với ***Trametes versicolor*** (nấm vân chi) trong tài liệu tra cứu (xem [Ảnh thực địa](/blog/anh-thuc-dia-thuc-tap-thien-nhien-cat-ba-2023/)).
+- Phần **tảo** không có nội dung trong báo cáo (không rõ trong bản gốc). (→ [Tảo trong học phần Botany](/blog/thuc-vat-bac-thap-tao-va-vong-doi-xen-ke-the-he/))
 
 ## Kết luận & thảo luận
-- *Trametes* là **nấm lỗ phân huỷ gỗ (nấm mục trắng)**: mũ mỏng, hình quạt, không cuống, mặt trên có vân đồng tâm, mặt dưới có lỗ – đặc điểm then chốt để phân biệt với nấm mũ có phiến. (→ [ANR Lesson 3: Biophysical barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+- *Trametes* là **nấm lỗ phân huỷ gỗ (nấm mục trắng)**: mũ mỏng, hình quạt, không cuống, mặt trên có vân đồng tâm, mặt dưới có lỗ – đặc điểm then chốt để phân biệt với nấm mũ có phiến. (→ [ANR Lesson 3: Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 - Ngoài mẫu được mô tả, trên tuyến còn gặp nhiều **nấm mũ có phiến** mọc trên đất rừng và nấm lỗ khác (xem ảnh thực địa) nhưng chưa được định loại trong báo cáo.
 
 ## Ảnh mẫu vật (Hình 13.1–13.3)
@@ -63,7 +66,7 @@ isIndex: false
 ![IMG_5009](/vault-assets/img-5009-c2639ed2.jpg)
 ![IMG_5010](/vault-assets/img-5010-8e5c01ed.jpg)
 ![IMG_5011](/vault-assets/img-5011-784a83f9.jpg)
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – khoá lưỡng phân rút gọn dẫn tới Trametes.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – khoá lưỡng phân rút gọn dẫn tới Trametes.
 
 ## Tài liệu gốc
 - Báo cáo thực tập thiên nhiên.docx – Phần II, Bài 7 và Hình 13.1–13.3.

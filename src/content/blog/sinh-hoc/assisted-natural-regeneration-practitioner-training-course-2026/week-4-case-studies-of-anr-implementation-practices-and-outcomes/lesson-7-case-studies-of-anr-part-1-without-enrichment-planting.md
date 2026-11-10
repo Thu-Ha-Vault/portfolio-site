@@ -12,15 +12,18 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 4 Case studies of ANR implementation Practices and outcomes/Lesson 7
   Case studies of ANR, part 1 - Without enrichment planting.md
+url: /blog/case-studies-of-anr-part-1-without-enrichment-planting/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 isIndex: false
 ---
 ## Learning Objectives
-- Explain the purpose of a site assessment in ANR. (→ [L5 Biophysical assessments](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-3-conducting-baseline-site-and-landscape-assessments/lesson-5-conducting-biophysical-assessments-at-site-and-landscape-scale/))
-- Identify indicators of natural regeneration. (→ [TLTK Thực tập thiên nhiên](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/tai-lieu-tham-khao-thuc-tap-thien-nhien/))
+- Explain the purpose of a site assessment in ANR. (→ [L5 Biophysical assessments](/blog/conducting-biophysical-assessments-at-site-and-landscape-scale/))
+- Identify indicators of natural regeneration. (→ [TLTK Thực tập thiên nhiên](/blog/tai-lieu-tham-khao-thuc-tap-thien-nhien-cat-ba/))
 - Assess seed sources and regeneration potential.
-- Recognize barriers to forest recovery. (→ [L3 Biophysical barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-3-biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+- Recognize barriers to forest recovery. (→ [L3 Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 - Evaluate soil, topography, and water conditions.
 - Determine appropriate ANR interventions.
 ## 1. Introduction
@@ -40,7 +43,7 @@ The assessment provides a baseline for monitoring restoration progress.
 ### Seedlings
 Seedlings are young trees that have recently germinated from seeds.
 Assessors should record:
-- Species present. (→ [Ardisia](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/07-thuc-vat-bac-cao-ardisia/))
+- Species present. (→ [Ardisia](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/))
 - Number of seedlings.
 - Distribution across the site.
 - Health and survival rates.
@@ -194,7 +197,7 @@ Actions:
 Characteristics:
 - Few seedlings.
 - Limited seed sources.
-- Severe degradation. (→ [L9 Costs of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-9-assessing-the-costs-of-anr/))
+- Severe degradation. (→ [L9 Costs of ANR](/blog/assessing-the-costs-of-anr/))
 Actions:
 - Enrichment planting.
 - Seed introduction.

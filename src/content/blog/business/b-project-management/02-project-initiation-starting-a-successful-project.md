@@ -10,6 +10,9 @@ folder: Business / B - Project Management
 vaultPath: >-
   Resources/Business/B - Project Management/02 - Project Initiation - Starting a
   Successful Project.md
+url: /blog/project-initiation-starting-a-successful-project/
+topic: business
+updated: '2026-11-10'
 source: 'https://www.coursera.org/learn/project-initiation-google'
 order: 2
 description: >-
@@ -515,4 +518,88 @@ isIndex: false
 	- **Measuring success**: 5% revenue increase by the end of the year; **95%** customer satisfaction rate three months after launch
 - The filled charter is then reviewed by stakeholders
 ### Evaluating tools to meet project needs
+#### Utilizing tools for effective project management
+- **Tools**: aids that make it easier for a PM or team to manage resources and organize work → track detailed task information, communicate with many people (e.g. email, Google Docs, Microsoft Word)
+	- Office Green: writing every detail on a whiteboard → everyone must stop by your desk; easily-accessible online documents save time and energy
+	- Information sharing goes both ways: team members update you on progress without extra meetings or calls → quickly see whether tasks are on schedule or delayed and how changes affect the project → visibility and transparency for everyone, including stakeholders
+- Uses: track progress on tasks, deliverables, and milestones; manage a budget; build charts and diagrams; manage contracts and licenses; keep stakeholders informed
+- **Straightforward** tools (digital spreadsheets, documents) vs **sophisticated** tools (scheduling and work management software)
+	- Sophisticated tools need learning time → for small projects a straightforward tool may be more effective; for a big scope it may be worth learning a sophisticated tool
+	- Sometimes the organization has already chosen a tool → remain flexible
+#### Introducing new tools to a team
+- Be open to new tools, but a tool the team is unfamiliar with (especially rolled out midway) may meet **resistance** → make sure the change truly benefits the project and that people understand the benefits; show you understand and evaluated the tool → builds trust, shows you care about the team, not just the project
+- Keys to successfully introducing new tools:
+	- **Discuss the tool early and often** → no one feels blindsided; time to prepare for the migration
+	- **Ask for feedback from key stakeholders** (input on functionality, list features by priority) → incorporate into next steps
+	- **Involve key stakeholders in demonstrations** before the final decision (test the product, trial run); have key users test it first → raise concerns early, identify in-house experts for future training
+	- **Ensure the tool is fully functional** and accessible for all users before introducing it → a tool that doesn't work as promised will be resisted
+	- **Set up training** before asking the team to use it → address different comfort levels, positive first impressions, quicker acceptance
+- Some pushback is normal → prepare and mitigate friction
+- Pro tip: plan a **transition period** when replacing a tool (both tools operate), then **sunset** (retire) the old tool; expect productivity to be impacted during the transition
+- Introducing new tools to a team: https://www.coursera.org/learn/project-initiation-google/supplement/kTIj2
+#### Exploring types of project management tools
+- **Scheduling and work management software**: choice depends on the project methodology and the number of tasks and people
+	- Assign tasks to multiple teammates, track progress, visualize the team's progress (e.g. 50 tasks done one week, only 3 the next → check in for blockers) → an overview of how the project is going
+- **Productivity tools**:
+	- Word processing (**Microsoft Word**, **Google Docs**): shared documents like the project charter, meeting agendas, status updates
+	- **Spreadsheets**: versatile → RACI charts, project plans, other charts
+	- Presentations (**Microsoft PowerPoint**, **Keynote**, **Google Slides**): package the project in a visual, easily-digestible way
+- **Collaboration tools**: email and chat → quick check-ins on questions and comments
+- Productivity and collaboration tools are simple → great for smaller projects; scheduling and work management software is better for bigger projects with many tasks and people
+#### Common project management tools
+- Work management software makes planning and tracking much more efficient than manual tracking
+- **Asana**: a work management platform that helps teams plan and coordinate work from daily tasks to strategic initiatives → a living system and **source of truth**; everyone sees, discusses, and manages priorities (who is doing what by when)
+	- Build project plans, assign tasks, automate workflows, track progress, communicate with stakeholders (e.g. a task to gather cost estimates from external vendors)
+	- Views of the PM's choice (list, calendar); share status updates with people outside the company
+- **Spreadsheets**: extremely versatile → timelines, billing charts, budgets, task tracking
+	- E.g. a list of tasks, due dates, completion statuses, task owners → **sort** by due date, **filter** by task owner, **highlight** rows in colors to show tasks with the least progress
+- Get a basic understanding of the variety of software → recommend the right tool when there's no company standard (adds value at the start of a project)
+- Software changes constantly; no one knows every tool → many share functionality (task tracking, assignment), so understanding one deeply makes it easy to adapt
+#### Using Google Sheets for project management
+- **Collaborate with your team**: share permissions → **editing** (direct changes), **commenting** (comments and suggestions), **view only** (no changes); collaborate and assign tasks or action items through comments
+- **Format your spreadsheet**:
+	- **Create lists**: label each list in the **header row** (top row), one list item per cell below; usually vertical
+	- **Freeze rows or columns**: keep the header row in place when scrolling; format headers (font, style, size, color)
+	- **Group and hide** related rows and columns → expand and collapse categories with one click
+	- **Checkboxes**: quick, visual way to track task progress or criteria met
+- **Organize data**:
+	- **Dropdown lists** (**data validation**): ensure consistent entries (e.g. "done" vs "complete"), faster data entry
+	- **Color coding** via **conditional formatting**: format cells based on content (e.g. "Not started" red, "In progress" orange, "Complete" green)
+	- **Sort** (alphabetical, by date, progress level) and **filter** (only tasks not started, budget items in a value range)
+	- **Links** to other project documentation or websites (e.g. link the project charter from the project plan)
+- **Visualize data**: **pivot table** (summarizes data, shows relationships between data points); **charts and graphs** for stakeholder reports and presentations
+- **Perform calculations**: built-in **functions** (sums, averages, start or end dates, financial reports)
+- **Gemini for Google Sheets**: create tables (organize data, plan schedules, track a project), generate formulas, make edits and format (pivot tables, find and replace, conditional formatting), reduce data entry errors (pattern recognition, autofill)
+- **Templates** (Google Sheets template gallery):
+	- **Project Timeline**: track a project from conception to close with a visual timeline of phases and major activities
+	- **Project Tracking**: budget, deliverables, costs and time, dropdowns for priority levels, formulas for hours, costs, % of deliverables completed
+	- **Gantt Chart**: organizes tasks by day, shows relationships between moving parts, good with multiple collaborators; conditional formatting shows progress
+	- **Event Marketing Timeline**: schedule, events, tasks, milestones for marketing or public-facing projects (social media posts, market research, content across platforms)
+- Using Google Sheets for project management: https://www.coursera.org/learn/project-initiation-google/supplement/q941t
+#### Demonstrating your knowledge of project management tools
+- In interviews you may be asked which project management tools you know or have used → being able to talk about them is crucial
+- "How do you know if a project is off track?" → tie the answer to scheduling tools; without experience with tools like **Smartsheet** or spreadsheets, use real-life experience (e.g. planning a move: timeline, scheduling vendors, a spreadsheet for budget, schedule, belongings) → shows you can create, monitor, and manage a schedule
+- "How do you execute tasks within your timeline?" → share experience with digital documents and spreadsheets (create project artifacts, track tasks, store details in one place, share for real-time collaboration)
+- **Work management tools** combine all these benefits: **Asana**, **Monday.com**, **Basecamp**, **Trello** (plan, track, complete work across phases; visual layouts, automation)
+- Pro tip: try free tutorials or trials: Asana, Basecamp, Trello, **Jira**, **ClickUp**, Monday.com, **Microsoft Project** or **Project Libre** (open source), Smartsheet
+- Demonstrating your knowledge of project management tools: https://www.coursera.org/learn/project-initiation-google/supplement/6tBKc
+#### Build a project management tool tracker
+- Tools include software applications (Adobe, Google, Microsoft), work management tools (Jira, Asana), methodologies, techniques, formulas, concepts, technologies → a **tracker** lists tools, descriptions, links, features and benefits, your experience level → identify tools required for roles, focus professional development
+- Steps:
+	1. **Create a new spreadsheet** (Project Management Tool Tracker Template)
+	2. **Add column headers**: Tool Name, Description/Benefits, Link to product website, Link to course content in Coursera, Cost to use, Requirements (training/equipment), Your current experience with the tool, Notes
+	3. **Add tools and relevant information**: start with 3–4 tools from the course, do your own research (e.g. Asana features, pricing, system requirements)
+	4. **Format your sheet**: bold headers, dropdown lists, conditional formatting, web links, highlighting, colors
+	5. **Continue adding tools** relevant to your career goals (search job listings)
+- Knowing available tools, their benefits, and your skills builds confidence and shows employers you understand the industry
+- Build a project management tool tracker: https://www.coursera.org/learn/project-initiation-google/supplement/jYYLk
+#### Amar: Tools are our best friends
+- Amar: Senior Engineering Program Manager at Google Shopping, drives programs spanning multiple products → "tools are our best friends"
+- Tools to create the **body of work** (what needs to be delivered and when): free tools like Google Sheets and Google Docs; supporting tools like **JIRA** and **ALM**; timeline tools like **Gantt charts**; tools that drive visibility across the dependent ecosystem
+- At project start, look at the available toolset (don't add complexity with too many new tools): Are they supported? What's the current adoption rate? What are the gaps? → if gaps, propose new tools to improve productivity; otherwise learn the team's existing tools (quick adoption)
 ### Course review: Project Initiation: Starting a successful project
+#### Course 2 glossary
+- Course 2 glossary (PM terms and definitions, template / DOCX): https://www.coursera.org/learn/project-initiation-google/supplement/tpM6n
+#### Get started on Course 3
+- Next: **Course 3: Project Planning: Putting It All Together** → setting and reaching milestones, identifying tasks; the budgeting process; identifying and planning for risks; key project documentation
+- Get started on Course 3: https://www.coursera.org/learn/project-initiation-google/supplement/YywoM

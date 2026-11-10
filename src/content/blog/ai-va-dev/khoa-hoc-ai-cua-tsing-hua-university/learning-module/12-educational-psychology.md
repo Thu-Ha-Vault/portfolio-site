@@ -9,6 +9,9 @@ folder: AI và DEV / Khoá học AI của Tsing Hua University / Learning Module
 vaultPath: >-
   Resources/AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/12 -
   Educational Psychology.md
+url: /blog/educational-psychology/
+topic: ai-development
+updated: '2026-10-14'
 source: 'https://maic.chat/my_study'
 order: 12
 description: >-
@@ -23,7 +26,7 @@ isIndex: false
 ## Personality and Social Development - Development of the Self
 
 ## Personality and Social Development - Social-Ecological Contexts
-- Xem thêm: [Social Psychology](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/08-social-psychology/) – phát triển cá nhân và xã hội
+- Xem thêm: Social Psychology – phát triển cá nhân và xã hội
 
 ## Personality and Social Development - Moral Development
 
@@ -129,7 +132,7 @@ isIndex: false
 			* **Specific Methods:** Seeking teacher help, discussing with peers, utilizing teaching assistants or tutoring resources.
 ![Ảnh chụp Màn hình 2026-09-14 lúc 22.34.23](/vault-assets/anh-chup-man-hinh-2026-09-14-luc-22-34-23-0fc4fced.png)
 ### Integration: What is Self-Regulated Learning (SRL)? 
-- **Definition of Self-Regulated Learning:** A dynamic learning process in which learners actively motivate themselves and actively, systematically use learning strategies (including cognitive, metacognitive, and resource management strategies) to achieve personal goals. (→ [AI in Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/13-artificial-intelligence-in-education/))
+- **Definition of Self-Regulated Learning:** A dynamic learning process in which learners actively motivate themselves and actively, systematically use learning strategies (including cognitive, metacognitive, and resource management strategies) to achieve personal goals. (→ [AI in Education](/blog/artificial-intelligence-in-education/))
 - **Core Distinction:** Not only possessing strategy knowledge, but also having the willingness and ability to actively apply strategies in appropriate contexts.
 * **Proactivity:** Masters of learning, not passive recipients.
 * **Goal-oriented:** Setting clear, specific goals for themselves.
@@ -158,7 +161,7 @@ isIndex: false
 ## Constructivist Learning Theory - Classical Theory 
 ### **The "Inertness" of Learning and the Emergence of Constructivism**
 - *Core Reflection* : Why is it difficult for school knowledge to be flexibly applied in reality? Knowledge from traditional teaching has problems such as "incompleteness", "inertness", and "inflexibility".
-- **Constructivist Answer** : *Learning is not the passive reception of information, but an active process of meaning construction by learners.* (→ [Major Schools of Educational Theory](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/11-the-major-schools-of-educational-theory/))
+- **Constructivist Answer** : *Learning is not the passive reception of information, but an active process of meaning construction by learners.* (→ [Major Schools of Educational Theory](/blog/the-major-schools-of-educational-theory/))
 - **Two Core Viewpoints:**
 	* Learners can actively construct their own knowledge.
 	* Social interaction is important in the knowledge construction process.

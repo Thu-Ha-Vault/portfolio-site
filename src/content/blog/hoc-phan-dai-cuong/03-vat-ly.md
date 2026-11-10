@@ -9,6 +9,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/03 - Vật lý.md
+url: /blog/vat-ly-dai-cuong-co-nhiet-dien-quang/
+topic: university-courses
+updated: '2026-10-16'
 order: 3
 description: >-
   Tài liệu Vật lý năm 1 (HUS – ĐHQGHN) lưu trên Google Drive, folder Vật lý. Tài
@@ -16,7 +19,7 @@ description: >-
   chép thành note riêng Điện và Quang.
 isIndex: false
 ---
-> Tài liệu Vật lý năm 1 (HUS – ĐHQGHN) lưu trên Google Drive, folder [Vật lý](https://drive.google.com/drive/folders/1-romdI11etsV7WYXvKq9Tu7-SbnLJFoo). Tài liệu chỉ để link, không tải vào vault. Phần Điện – Quang (ảnh chụp bảng) đã chép thành note riêng [Điện và Quang](/blog/hoc-phan-dai-cuong/03a-dien-va-quang/).
+> Tài liệu Vật lý năm 1 (HUS – ĐHQGHN) lưu trên Google Drive, folder [Vật lý](https://drive.google.com/drive/folders/1-romdI11etsV7WYXvKq9Tu7-SbnLJFoo). Tài liệu chỉ để link, không tải vào vault. Phần Điện – Quang (ảnh chụp bảng) đã chép thành note riêng [Điện và Quang](/blog/dien-va-quang-chep-tu-anh-chup-bang-lop-vat-ly-dai-cuong/).
 
 ## Danh mục tài liệu
 
@@ -125,7 +128,7 @@ Folder: [Điện Quang](https://drive.google.com/drive/folders/1-zgvhjKQ9M4RSJ1c
 | 1 torr | 133,322 | $1{,}3332\times10^{-3}$ | $1{,}3595\times10^{-3}$ | $1{,}3158\times10^{-3}$ | 1 (= 1 mmHg) | $19{,}337\times10^{-3}$ |
 | 1 psi | 6 894,76 | $68{,}948\times10^{-3}$ | $70{,}307\times10^{-3}$ | $68{,}046\times10^{-3}$ | 51,715 | 1 (= 1 lbf/in²) |
 
-- Ảnh gốc khoanh đỏ hai dòng **1 Pa = 1 N/m²** và **1 atm = 101 325 Pa = 760 torr** – hai giá trị hay dùng nhất (cũng dùng trong $K_p$ ở [đề Hoá đại cương](/blog/hoc-phan-dai-cuong/02a-de-thi-giua-ki-hoa-dai-cuong-2019-2020/)).
+- Ảnh gốc khoanh đỏ hai dòng **1 Pa = 1 N/m²** và **1 atm = 101 325 Pa = 760 torr** – hai giá trị hay dùng nhất (cũng dùng trong $K_p$ ở [đề Hoá đại cương](/blog/de-thi-giua-ki-1-hoa-dai-cuong-2019-2020-3-de-kem-loi-giai/)).
 
 ### Chu trình nhiệt động trên đồ thị P–V (Ảnh chụp Màn hình 2021-12-16 16.21)
 

@@ -16,6 +16,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/09 - Epigenomics, metagenomics và đa omics.md
+url: /blog/epigenomics-metagenomics-va-da-omics/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 9
 description: >-

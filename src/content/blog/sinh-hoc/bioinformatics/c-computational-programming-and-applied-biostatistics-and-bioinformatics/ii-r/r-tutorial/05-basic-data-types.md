@@ -12,6 +12,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/05 - Basic data types.md
+url: /blog/basic-data-types/
+topic: biology
+updated: '2026-10-14'
 order: 5
 description: >-
   Chúng ta đã nói rằng giá trị logical có thể dùng để subset 1 data frame, và
@@ -51,7 +54,7 @@ Chúng ta đã nói rằng giá trị logical có thể dùng để subset 1 dat
 
 - Thông thường trong tin sinh, các giá trị thường thuộc 3 loại đầu.
 
-- Có nhiều các để kiểm tra loại dữ liệu: typeof, storage.mode, mode, str, class (→ [Bảng tra cứu lập trình](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
+- Có nhiều các để kiểm tra loại dữ liệu: typeof, storage.mode, mode, str, class (→ [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
 ![image_044](/vault-assets/image-044-5516caab.png)
 
@@ -59,13 +62,13 @@ Chúng ta đã nói rằng giá trị logical có thể dùng để subset 1 dat
 
 - Birthweight data frame có 3 cột nên là giá trị logical: smoker, low.birthweight, và geriatric.pregnancy. Các câu hỏi này có thể được trả lời bằng TRUE/FALSE. Nhưng chỉ có geriatric.pregnancy được lưu trữ dưới dạng logical. Lưu trữ smoker và low.birthweight là giá trị logical sẽ dễ dàng sử dụng hơn, do chúng giúp subset dữ liệu dễ hơn.
 
-- Chuyển đổi class của data được biết đến là coercion (cưỡng ép kiểu dữ liệu). (→ [Làm quen với R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/01-lam-quen-voi-r/))
+- Chuyển đổi class của data được biết đến là coercion (cưỡng ép kiểu dữ liệu). (→ [Làm quen với R](/blog/lam-quen-voi-r/))
 
 ![image_045](/vault-assets/image-045-b4010a37.png)
 
 - Lệnh as.logical() chuyển đổi low.birthweight thành một logical vector nhưng không thể chuyển đổi smoker và trả về một vector chứa các missing data biểu diễn bằng NA, tại sao?
 
-- Luật coercion trong R tuân theo: logical > integer > numeric > complex > character (→ [Thao tác dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/))
+- Luật coercion trong R tuân theo: logical > integer > numeric > complex > character (→ [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
 
 - R có thể chuyển giá trị logical thành integer, lưu integer thành dạng numeric chung, hoặc biểu diễn dữ liệu numeric thành character, nhưng các coercion này không thể luôn đảo ngược mà không làm mất dữ liệu.
 

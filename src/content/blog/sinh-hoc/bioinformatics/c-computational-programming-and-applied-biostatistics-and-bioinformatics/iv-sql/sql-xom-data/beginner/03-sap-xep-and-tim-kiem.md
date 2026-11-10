@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Xóm Data/Beginner/03 - Sắp xếp
   & Tìm kiếm.md
+url: /blog/sap-xep-and-tim-kiem/
+topic: biology
+updated: '2026-10-14'
 source: 'https://xomdata.com/courses/sql-beginner/lessons/1'
 order: 3
 description: >-
@@ -22,7 +25,7 @@ description: >-
 isIndex: false
 ---
 ## a. ORDER BY cơ bản
-- Mặc định, SQL **không đảm bảo** thứ tự kết quả. Dùng `ORDER BY` để sắp xếp: (→ [Analyze Data to Answer Questions](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- Mặc định, SQL **không đảm bảo** thứ tự kết quả. Dùng `ORDER BY` để sắp xếp: (→ [Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/))
 ```sql
 SELECT full_name, salary
 FROM employees
@@ -45,7 +48,7 @@ SELECT full_name, department, salary
 FROM employees
 ORDER BY department ASC, salary DESC;
 ```
-- Sắp xếp theo phòng ban A→Z, trong cùng phòng ban thì lương cao trước. (→ [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/))
+- Sắp xếp theo phòng ban A→Z, trong cùng phòng ban thì lương cao trước. (→ [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/))
 ## Lưu ý quan trọng
 - `ORDER BY` luôn đặt **cuối** câu query
 - NULL được coi là nhỏ nhất: xếp **đầu tiên** khi ASC, **cuối cùng** khi DESC (SQLite/MySQL)
@@ -95,7 +98,7 @@ SELECT department FROM employees;
 - Kết quả có 30 dòng — mỗi phòng ban lặp lại nhiều lần!
 ![Ảnh chụp Màn hình 2026-07-15 lúc 21.59.16](/vault-assets/anh-chup-man-hinh-2026-07-15-luc-21-59-16-1ab2da09.png)
 ## b. DISTINCT cơ bản
-- Thêm `DISTINCT` để chỉ lấy giá trị **duy nhất**: (→ [SQL Tutorial](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/01-tutorial/))
+- Thêm `DISTINCT` để chỉ lấy giá trị **duy nhất**: (→ [SQL Tutorial](/blog/tutorial-biology-2/))
 ```sql
 SELECT DISTINCT department FROM employees;
 ```

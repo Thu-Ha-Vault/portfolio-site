@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/06 - Sắc ký lỏng - khối phổ LC-MS-MS.md
+url: /blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/
+topic: biology
+updated: '2026-10-19'
 order: 6
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -24,12 +27,12 @@ isIndex: false
 - Hiểu nguyên tắc **sắc ký lỏng hai chiều (2D-LC)** để tách hỗn hợp peptide trước khối phổ.
 
 ## Nguyên lý
-- **LC-MS/MS** kết hợp khả năng tách của **sắc ký lỏng (HPLC)** với khả năng nhận danh, định lượng của **khối phổ (MS)** – độ đặc hiệu và độ nhạy cao. (→ [Exosome ung thư gan (tiểu luận)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/), [Tinh sạch protease nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/))
+- **LC-MS/MS** kết hợp khả năng tách của **sắc ký lỏng (HPLC)** với khả năng nhận danh, định lượng của **khối phổ (MS)** – độ đặc hiệu và độ nhạy cao. (→ [Exosome ung thư gan (tiểu luận)](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/), [Tinh sạch protease nọc nhện](/blog/tinh-sach-enzyme/))
 	- **LC**: tách các cấu tử theo tương tác với pha tĩnh – pha động.
 	- **Ion hoá**: cấu tử được ion hoá tại nguồn ion.
 	- **MS**: phân tích ion theo tỷ số **khối lượng/điện tích (m/z)**.
-	- **MS/MS**: chọn **ion mẹ (precursor)** → phân mảnh → **ion con (fragment)** → tăng độ chính xác nhận dạng. (→ [Protease PQM nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/04-protease-pqm-tu-noc-nhen-cupiennius-salei/))
-- Xem thêm: [Proteomics và cấu trúc protein](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/08-proteomics-va-cau-truc-protein/) – phân tích dữ liệu LC-MS/MS: DDA/DIA, MaxQuant, FragPipe, FDR target-decoy
+	- **MS/MS**: chọn **ion mẹ (precursor)** → phân mảnh → **ion con (fragment)** → tăng độ chính xác nhận dạng. (→ [Protease PQM nọc nhện](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/))
+- Xem thêm: [Proteomics và cấu trúc protein](/blog/proteomics-va-cau-truc-protein/) – phân tích dữ liệu LC-MS/MS: DDA/DIA, MaxQuant, FragPipe, FDR target-decoy
 - **2D-LC trong bài**:
 	- **Chiều 1 – trao đổi cation mạnh (SCX)**: tách peptide theo điện tích, rửa giải từng bậc nồng độ muối (ammonium sulfate) → đưa từng phân đoạn sang 6 **cột loại muối** (CapTrap).
 	- **Chiều 2 – pha đảo (RP, C18)**: tách peptide theo độ kỵ nước bằng gradient acetonitrile → phân đoạn nhỏ lên đĩa thép MS cho **MALDI-TOF MS/MS**.
@@ -43,7 +46,7 @@ isIndex: false
 	- A: ammonium formate (AmF) 10 mM, pH ~3,8; B: A + ammonium sulfate 100 mM (SCX).
 	- C: formic acid (FA) 0,1%, ACN 5%; D: FA 0,1%, ACN 80% (RP); CD: FA 0,1% (loại muối).
 	- E: SPM 0,2 M / SA 0,3 M (hoạt hoá cột SCX); F: methanol 100% (hoạt hoá cột RP).
-- **Thiết bị**: hệ 2D micro HPLC (Shimadzu), phần mềm LabSolution; máy khối phổ Kratos (Shimadzu). (→ [Mô phỏng HPLC – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/) · [Hình HPLC Agilent 1260 và LC-MS/MS Shimadzu LCMS-8060](/projects/virtual-lab/06-tai-lieu-tham-khao-may-moc-dot-2/) · [Protocol LC-MS/MS định lượng caffeine](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+- **Thiết bị**: hệ 2D micro HPLC (Shimadzu), phần mềm LabSolution; máy khối phổ Kratos (Shimadzu). (→ [Mô phỏng HPLC – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/) · [Hình HPLC Agilent 1260 và LC-MS/MS Shimadzu LCMS-8060](/projects/virtual-lab/tai-lieu-tham-khao-may-moc-dot-2/) · [Protocol LC-MS/MS định lượng caffeine](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 - **Chuẩn bị hệ thống**: đường ống bảo quản trong AcCN 50% → chuyển qua nước loại ion trước khi vào đệm khác; loại bọt khí; hoạt hoá và cân bằng cột SCX, RP. Mở chương trình 2 trước chương trình 1 để hai chương trình kết nối.
 - **Chương trình chạy**:
 
@@ -65,7 +68,7 @@ isIndex: false
 
 ## Kết luận & thảo luận
 - 2D-LC (SCX + RP) tăng khả năng tách hỗn hợp peptide phức tạp (shotgun proteomics) trước MS/MS, bổ sung cho cách tiếp cận dựa trên gel (2D-PAGE → cắt spot).
-- Dữ liệu ion mẹ/ion con dùng để tra cứu CSDL (Mascot) nhận dạng protein – xem [bài 7](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/07-khoi-pho-maldi-tof-ms-va-nhan-dang-protein/).
+- Dữ liệu ion mẹ/ion con dùng để tra cứu CSDL (Mascot) nhận dạng protein – xem [bài 7](/blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/).
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 6.pdf*

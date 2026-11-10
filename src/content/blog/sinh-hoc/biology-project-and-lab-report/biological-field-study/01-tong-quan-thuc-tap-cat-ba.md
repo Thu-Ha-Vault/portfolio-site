@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/01 -
   Tổng quan thực tập Cát Bà.md
+url: /blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực tập thiên nhiên – Vườn Quốc gia (VQG) Cát Bà, huyện Cát Hải, TP.
@@ -39,12 +42,12 @@ isIndex: false
 | T2 3/7 | Thực vật bậc thấp (nấm – tảo) | TS. Đỗ Thị Xuyến, TS. Nguyễn Hoài An | VQG – đường lên đỉnh Ngự Lâm |
 
 - Kế hoạch gửi trước của phần ĐVCXS ở cạn (27/6) dự kiến tuyến **Trung tâm VQG – Ao Ếch** (6h30–12h) và buổi chiều tự khảo sát tuyến **Trung tâm VQG – Núi Ngự Lâm**; thực tế báo cáo ghi tuyến Động Trung Trang (sáng, trời mưa).
-- Xem thêm: [Ảnh thực địa](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/anh-thuc-dia/) – ảnh chụp theo lịch trình và tuyến khảo sát
+- Xem thêm: [Ảnh thực địa](/blog/anh-thuc-dia-thuc-tap-thien-nhien-cat-ba-2023/) – ảnh chụp theo lịch trình và tuyến khảo sát
 
 ## Đặc điểm khu vực
 ### Vị trí địa lý
 - VQG Cát Bà nằm trên **đảo lớn nhất của quần đảo Cát Bà**: cách TP. Hải Phòng 45 km về phía Đông, cách TP. Hạ Long 25 km về phía Nam, cách Hà Nội ~150 km về phía Đông Nam.
-- Toạ độ: **20°44'–20°52' vĩ Bắc**, **106°59'–107°06' kinh Đông**. (→ [Bản đồ vệ tinh Cát Bà trong Virtual Lab](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/))
+- Toạ độ: **20°44'–20°52' vĩ Bắc**, **106°59'–107°06' kinh Đông**. (→ [Bản đồ vệ tinh Cát Bà trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-5/))
 - Giáp ranh:
 	- Đông và Đông Bắc: **vịnh Hạ Long** (ngăn cách bởi lạch Ngăn, lạch Đầu Xuôi – Quảng Ninh).
 	- Tây và Tây Nam: cửa sông Bạch Đằng, sông Cấm, biển Hải Phòng – Đồ Sơn.
@@ -61,10 +64,10 @@ isIndex: false
 ### Khí hậu
 - **Nhiệt đới gió mùa**, chịu ảnh hưởng trực tiếp của khí hậu đại dương; 2 mùa rõ rệt (mưa, khô).
 - Lượng mưa **1500–2000 mm/năm**, độ ẩm **86%**, nhiệt độ trung bình năm **23,6 °C**.
-- Xem thêm: [ANR Lesson 5: biophysical assessments](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-3-conducting-baseline-site-and-landscape-assessments/lesson-5-conducting-biophysical-assessments-at-site-and-landscape-scale/) – đánh giá hiện trường (địa hình, đất, khí hậu, thảm thực vật) tương tự phần "Đặc điểm khu vực"
+- Xem thêm: [ANR Lesson 5: biophysical assessments](/blog/conducting-biophysical-assessments-at-site-and-landscape-scale/) – đánh giá hiện trường (địa hình, đất, khí hậu, thảm thực vật) tương tự phần "Đặc điểm khu vực"
 
 ## Đa dạng sinh học VQG Cát Bà
-**Bảng 1. Thành phần loài động vật** (→ [Quần xã sinh vật](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/20-quan-xa-sinh-vat/))
+**Bảng 1. Thành phần loài động vật** (→ [Quần xã sinh vật](/blog/quan-xa-sinh-vat/))
 
 | Lớp | Số họ | Số giống | Số loài |
 | --- | ---: | ---: | ---: |
@@ -91,7 +94,7 @@ isIndex: false
 	- **16 loài thú** (25,4% số loài thú của VQG), **26 loài chim**, **13 loài bò sát** bị đe doạ, được pháp luật Việt Nam và quốc tế bảo vệ.
 	- Nơi sống của **Voọc Cát Bà** (*Trachypithecus poliocephalus*) và **Thạch sùng mí Cát Bà** (*Goniurosaurus catbaensis*) – linh trưởng và bò sát đặc hữu của Việt Nam.
 	- Ghi nhận **401 loài côn trùng** thuộc 261 giống, 68 họ, 12 bộ.
-- **Giá trị bảo tồn thực vật**: **70 loài** (4,2% tổng số loài) được bảo vệ; **54 loài** xếp hạng từ VU đến CR trong Sách Đỏ Việt Nam. (→ [ANR Lesson 12: ecosystem restoration](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+- **Giá trị bảo tồn thực vật**: **70 loài** (4,2% tổng số loài) được bảo vệ; **54 loài** xếp hạng từ VU đến CR trong Sách Đỏ Việt Nam. (→ [ANR Lesson 12: ecosystem restoration](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
 
 ## Mục đích môn học
 - Củng cố, mở rộng kiến thức đã học; chuẩn bị cho các năm học sau.

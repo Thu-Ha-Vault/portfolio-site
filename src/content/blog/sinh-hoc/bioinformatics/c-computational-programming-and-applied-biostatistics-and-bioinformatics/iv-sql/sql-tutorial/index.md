@@ -13,11 +13,14 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Tutorial/_MOC - SQL -
   Tutorial.md
+url: /topics/tutorial-biology/
+topic: biology
+updated: '2026-10-14'
 description: Tutorial Database References
 isIndex: true
 ---
 ## Map of Content
 
-- [Tutorial](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/01-tutorial/)
-- [Database](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/02-database/)
-- [References](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-tutorial/03-references/)
+- [Tutorial](/blog/tutorial-biology-2/)
+- [Database](/blog/database/)
+- References

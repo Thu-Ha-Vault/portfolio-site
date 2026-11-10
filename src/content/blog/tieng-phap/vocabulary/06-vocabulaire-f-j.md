@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/06 - Vocabulaire F–J.md
+url: /blog/vocabulaire-f-j-tu-vung-f-j/
+topic: french
+updated: '2026-10-14'
 order: 6
 description: >-
   Gragile → Fragile Gonfable → Gonflable Hiérachiser → Hiérarchiser Immgré →

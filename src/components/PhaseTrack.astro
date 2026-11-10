@@ -1,0 +1,21 @@
+---
+import T from './T.astro';
+interface Props { phases: { name: string; done: number; total: number }[] }
+const { phases } = Astro.props;
+const done = phases.reduce((s, p) => s + p.done, 0);
+const total = phases.reduce((s, p) => s + p.total, 0);
+---
+{phases.length > 0 && (
+  <div>
+    <p class="track-label"><T k="progress" />: {done}/{total}</p>
+    <ol class="track" style={`--steps:${phases.length}`}>
+      {phases.map((p) => (
+        <li title={`${p.name}: ${p.done}/${p.total}`}>
+          <div class="bar"><span style={`width:${p.total ? Math.round((p.done / p.total) * 100) : 0}%`}></span></div>
+          <span class="name">{p.name}</span>
+          {p.done}/{p.total}
+        </li>
+      ))}
+    </ol>
+  </div>
+)}

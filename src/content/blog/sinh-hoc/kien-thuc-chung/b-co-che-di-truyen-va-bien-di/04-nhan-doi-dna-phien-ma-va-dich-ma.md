@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / B - Cơ chế di truyền và biến 
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/B - Cơ chế di truyền và biến dị/04 - Nhân
   đôi DNA, phiên mã và dịch mã.md
+url: /blog/nhan-doi-dna-phien-ma-va-dich-ma/
+topic: biology
+updated: '2026-10-19'
 order: 4
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (ADN → DNA, mARN →
@@ -48,14 +51,14 @@ flowchart LR
     P --> Pr[Protein] --> T[Tính trạng]
 ```
 
-- DNA: **Triplet** (mã gốc); mRNA: **Codon** (mã sao) ↔ **anticodon** (đối mã) (ở tRNA). (→ [Di truyền ngoài nhân](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
-- Xem thêm: [Nhập môn Bioinformatics](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/01-nhap-mon-bioinformatics/) – mỗi bước DNA → RNA → protein tương ứng một tầng dữ liệu omics (genomics, transcriptomics, proteomics)
+- DNA: **Triplet** (mã gốc); mRNA: **Codon** (mã sao) ↔ **anticodon** (đối mã) (ở tRNA). (→ [Di truyền ngoài nhân](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+- Xem thêm: [Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/) – mỗi bước DNA → RNA → protein tương ứng một tầng dữ liệu omics (genomics, transcriptomics, proteomics)
 
 ## Nhân đôi DNA
 
 ### I. Nơi xảy ra và nguyên liệu
 - **Nơi xảy ra**:
-	- Tế bào nhân sơ: nơi có DNA, plasmid (→ [Ứng dụng di truyền vào chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+	- Tế bào nhân sơ: nơi có DNA, plasmid (→ [Ứng dụng di truyền vào chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 	- Tế bào nhân thực:
 		- Trong nhân: chủ yếu
 		- Ti thể, lục lạp (nguồn gốc plasmid)
@@ -65,17 +68,17 @@ flowchart LR
 	- Enzyme:
 		- **Helicase**: tháo xoắn → Replication fork (**chạc sao chép**) – 2 chạc.
 		- **RNA polymerase**: tổng hợp đoạn mồi → cả 2 mạch → khởi đầu
-		- **DNA polymerase**: tổng hợp chuỗi polynucleotide (→ [Taq polymerase trong PCR](/blog/sinh-hoc/biology-project-and-lab-report/genetics/02-pcr-cac-van-de-co-ban/))
-		- **Ligase**: Nối các đoạn polynucleotide (**Okazaki**) → hoàn thiện 2 mạch (→ [Thực hành Sinh học phân tử](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/))
+		- **DNA polymerase**: tổng hợp chuỗi polynucleotide (→ [Taq polymerase trong PCR](/blog/cac-van-de-co-ban-polymerase-chain-reaction/))
+		- **Ligase**: Nối các đoạn polynucleotide (**Okazaki**) → hoàn thiện 2 mạch (→ [Thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/))
 	- ATP.
 
 ### II. Diễn biến
 ![Hình - Chạc sao chép trong nhân đôi DNA](/vault-assets/hinh-chac-sao-chep-trong-nhan-doi-dna-f89df5b1.svg)
 
-- DNA polymerase tổng hợp **5' → 3'** của mạch mới (**NTBS** – nguyên tắc bổ sung) (→ [Đột biến gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/06-dot-bien-gen/))
+- DNA polymerase tổng hợp **5' → 3'** của mạch mới (**NTBS** – nguyên tắc bổ sung) (→ [Đột biến gen](/blog/dot-bien-gen/))
 - Nhiều đơn vị tái bản (ở nhân thực)
 - → **Nguyên tắc bán bảo tồn**
-- 1 DNA mẹ → 2 DNA con: (→ [Phát sinh sự sống](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/18-su-phat-sinh-va-phat-trien-cua-su-song/))
+- 1 DNA mẹ → 2 DNA con: (→ [Phát sinh sự sống](/blog/su-phat-sinh-va-phat-trien-cua-su-song/))
 	- giống nhau
 	- giống mẹ
 
@@ -106,7 +109,7 @@ flowchart LR
 | RNA polymerase → khởi động phiên mã | thông tin mã hoá amino acid | → Tín hiệu kết thúc phiên mã |
 
 ## Phiên mã
-- Tổng hợp RNA dựa trên khuôn mẫu của gen (→ [Điều hoà hoạt động gen](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/05-dieu-hoa-hoat-dong-gen/))
+- Tổng hợp RNA dựa trên khuôn mẫu của gen (→ [Điều hoà hoạt động gen](/blog/dieu-hoa-hoat-dong-gen/))
 - **Có ở**:
 	- Virus có vật chất di truyền: DNA.
 	- Tế bào nhân sơ, tế bào nhân thực
@@ -123,7 +126,7 @@ flowchart LR
 ![Hình - Phiên mã tổng hợp mRNA](/vault-assets/hinh-phien-ma-tong-hop-mrna-4d5e65ef.svg)
 
 ### Công thức
-- $L_{gen} = L_{RNA}$ ; $N_{gen} = N_{RNA} \times 2$. (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+- $L_{gen} = L_{RNA}$ ; $N_{gen} = N_{RNA} \times 2$. (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 - Gen: mạch 1 (m₁), mạch 2 (m₂) – mạch 2 là mạch gốc
 	- A(m) = A₁ = T₂
 	- U(m) = T₁ = A₂
@@ -135,7 +138,7 @@ flowchart LR
 - $\%G = \%C = \dfrac{\%G_1 + \%G_2}{2}$
 
 ## Dịch mã
-- Là quá trình thông tin di truyền chứa trong mRNA được chuyển thành trình tự sắp xếp amino acid ở chuỗi polypeptide của protein. (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+- Là quá trình thông tin di truyền chứa trong mRNA được chuyển thành trình tự sắp xếp amino acid ở chuỗi polypeptide của protein. (→ [Tương tác gen](/blog/tuong-tac-gen/))
 - **Diễn ra ở**: tế bào chất (lưới nội chất hạt).
 - **Nguyên liệu**:
 	- 20 loại amino acid
@@ -156,7 +159,7 @@ flowchart LR
 - aa(mở đầu) – aa₁ – aa₂ … aaₙ (Bước 1, 2)
 	- ↓ hoàn chỉnh (9)
 	- aa₁ – aa₂ … aaₙ (Bước 3, 4)
-- (Polysome) – **Polyribosome**: nhiều ribosome cùng trượt → dịch mã (→ [Tế bào chất và bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+- (Polysome) – **Polyribosome**: nhiều ribosome cùng trượt → dịch mã (→ [Tế bào chất và bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 	- Tăng hiệu quả tổng hợp protein.
 	- Các chuỗi polypeptide được tổng hợp từ 1 mRNA → cấu trúc giống nhau.
 - **Triplet**: bộ 3 mã gốc (mã hoá) (DNA)
@@ -166,7 +169,7 @@ flowchart LR
 ## Mã di truyền
 - **Mã di truyền**: trình tự nucleotide trong gen sẽ quy định trình tự các amino acid trong chuỗi polypeptide.
 	- Mã di truyền được đọc từ 1 điểm xác định theo từng bộ 3, không gối lên nhau.
-	- **Tính phổ biến** (tất cả các loài). (→ [Bằng chứng và cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/))
+	- **Tính phổ biến** (tất cả các loài). (→ [Bằng chứng và cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/))
 	- **Tính đặc hiệu** (1 bộ ba → 1 amino acid).
 	- **Tính thoái hoá** (− AUG, UGG) (nhiều bộ ba → 1 amino acid).
 
@@ -178,4 +181,4 @@ flowchart LR
 | **A** | AUU, AUC, AUA → Ile<br>AUG → Met (MĐ – mở đầu) | ACU, ACC, ACA, ACG → Thr | AAU, AAC → Asn<br>AAA, AAG → Lys | AGU, AGC → Ser<br>AGA, AGG → Arg |
 | **G** | GUU, GUC, GUA, GUG → Val | GCU, GCC, GCA, GCG → Ala | GAU, GAC → Asp<br>GAA, GAG → Glu | GGU, GGC, GGA, GGG → Gly |
 
-- Xem thêm: [Tổng ôn – 3. Nhân đôi DNA, phiên mã, dịch mã, mã di truyền](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#3-nhân-đôi-dna-phiên-mã-dịch-mã-mã-di-truyền) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 3. Nhân đôi DNA, phiên mã, dịch mã, mã di truyền](/blog/tong-on-va-meo-lam-bai/#3-nhân-đôi-dna-phiên-mã-dịch-mã-mã-di-truyền) – mẹo làm bài, ghi chú ôn tập

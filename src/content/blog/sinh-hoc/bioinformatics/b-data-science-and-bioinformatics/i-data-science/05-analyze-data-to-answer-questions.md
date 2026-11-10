@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/05 - Analyze Data to Answer Questions.md
+url: /blog/analyze-data-to-answer-questions/
+topic: biology
+updated: '2026-10-17'
 order: 5
 description: >-
   Get support during analysis Asking peers or members Note: If the units of
@@ -24,13 +27,13 @@ isIndex: false
 ### Organize data for analysis
 - [Analysis]: The process used to make sense of the data collected.
 - The goal of analysis is to identify trends and relationships within data so you can accurately answer the question you’re asking
-- The 4 phases of analysis: (→ [Data Exploration Using Descriptive Statistics](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/05-data-exploration-using-descriptive-statistics/))
+- The 4 phases of analysis: (→ [Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/))
 	- Organize data
 	- Format and adjust data
 	- Get input from others
 	- Transform data
 - The first two phases of data analysis, Organize data and Format and adjust data, are important for data analysts because they can use these phases to manipulate their data in ways that make important patterns and trends more obvious. Most of the datasets you’ll use as a data analyst will be organized as tables. Tables are helpful because they let you manipulate and categorize your data. Having distinct categories and classifications lets you focus on, and differentiate between, the groups in your data quickly and easily.
-- Sorting and filtering are two methods you can use to organize, format, and adjust data. (→ [Phân tích CSDL trên Excel](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/04-phan-tich-co-so-du-lieu-tren-excel/))
+- Sorting and filtering are two methods you can use to organize, format, and adjust data. (→ [Phân tích CSDL trên Excel](/blog/phan-tich-co-so-du-lieu/))
 	- [Sort data]:
 		- Sorting is the process of arranging data into a meaningful order to make it easier to understand, analyze, and visualize. It ranks your data based on a specific metric you choose. You can sort data in spreadsheets, SQL databases (when your dataset is too large for spreadsheets), and tables in documents.
 		- To rank items or create chronological lists, you can sort by ascending or descending order. Sorting arranges the data in a meaningful way and gives you immediate insights. Sorting also helps you to group similar data together by a classification. For example, if a ski resort design company wants to evaluate the resorts designed by a competitor, a data analyst can sort competitive resorts by locations, runs, acreage, and other factors. This way, the firm’s designers can visit the types of resorts they also design and gather information that could be used in its own future designs.
@@ -43,7 +46,7 @@ isIndex: false
 ### Sort data using SQL
 - [WHERE]: Filtering
 - [AND]: Adding conditions to filter
-- [ORDER BY] (ASC/DESC): sorting (Always the last clause) (→ [Sắp xếp & Tìm kiếm](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/03-sap-xep-and-tim-kiem/))
+- [ORDER BY] (ASC/DESC): sorting (Always the last clause) (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/))
 - Organize and analyze your data in a meaningful way
 - Find highest or lowest values in a dataset
 - Compare data across different dimensions
@@ -149,7 +152,7 @@ FROM [table_name]
 	- Minimums
 	- Maximums
 	- Sums
-- Functions help make data aggregation possible (→ [Hàm tổng hợp (Aggregate)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/04-ham-tong-hop-aggregate/))
+- Functions help make data aggregation possible (→ [Hàm tổng hợp (Aggregate)](/blog/ham-tong-hop-aggregate/))
 - [Subquery]: A query within another query
 - [VLOOKUP] ([Vertical Lookup](https://www.coursera.org/learn/analyze-data/supplement/SNmqP/vlookup-core-concepts)): A function that searches for a certain value in a column to return a corresponding piece of information.
 	- [Duplicates]: If there are duplicates row, it will only return the first match it finds
@@ -162,7 +165,7 @@ FROM [table_name]
 - [VALUE]: A function that converts a text string that represents a number to a numerical value
 - [Remove duplicates]: A tool that automatically searches for and eliminates duplicate entries from a spreadsheet.
 ### Use JOINS to agregate data in SQL
-- [JOIN]: A SQL clause that is used to combine rows from two or more tables based on a related column (→ [JOIN](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/intermediate/01-join-ket-hop-nhieu-bang/))
+- [JOIN]: A SQL clause that is used to combine rows from two or more tables based on a related column (→ [JOIN](/blog/join-ket-hop-nhieu-bang/))
 - Common JOINs: 4
 	- Inner: A function that returns records with matching values in both tables
 	- Left: A function that will return all the records from the left table and only the matching records from the right table
@@ -176,7 +179,7 @@ FROM [table_name]
 - [Aliases]: https://www.coursera.org/learn/analyze-data/supplement/qURXP/secret-identities-the-importance-of-aliases
 	- [AS]: is the SQL keyword used to create an **alias** (temporary name) for a table or column.
 ### Work with subqueries
-- [Subquery]: A SQL query that is nested inside a larger query (→ [Subquery & CASE WHEN](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/intermediate/02-subquery-and-case-when/))
+- [Subquery]: A SQL query that is nested inside a larger query (→ [Subquery & CASE WHEN](/blog/subquery-and-case-when/))
 	- The statement containning the subquery can also be called the [Outer query] or the [Outer select]
 	- The subquery be the [Inner query] or the [Inner select] - executes first so that the result can be passed on to the outer query to use
 	- Usually be seen in [SELECT] and [WHERE]
@@ -220,7 +223,7 @@ FROM [table_name]
 	- **AVG**
 - The syntax of a query is its structure.
 - **Underscores**: Lines used to underline words and connect text characters
-- **GROUP BY:** A command that groups row that have the same values from a table into summary rows. (→ [GROUP BY & HAVING](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/05-group-by-and-having-tong-hop-du-lieu/))
+- **GROUP BY:** A command that groups row that have the same values from a table into summary rows. (→ [GROUP BY & HAVING](/blog/group-by-and-having-tong-hop-du-lieu/))
 ``` sql
 	SELECT
 	FROM
@@ -231,7 +234,7 @@ FROM [table_name]
 - Data Validation Overview: 
 	- Data validation in spreadsheets adds drop-down lists to control data entry and protect structured data and formulas.
 	- It is part of a larger process that involves checking data completeness, accuracy, security, and consistency throughout analysis.
-- **Data validation process**: Checking and rechecking the quality of your data so that is complete, accurate, secure and consistent. (→ [Laboratory Process Management](/blog/sinh-hoc/iso-iec-17025-2017-laboratory-management-systems/module-2-essential-requirements-of-laboratory-process-management/))
+- **Data validation process**: Checking and rechecking the quality of your data so that is complete, accurate, secure and consistent. (→ [Laboratory Process Management](/blog/essential-requirements-of-laboratory-process-management/))
 - Using Tools for Validation
 	- Data validation should be applied regardless of the analysis tool, including spreadsheets and SQL.
 	- SQL queries can be used to verify data accuracy, such as confirming totals match sums of components and handling errors like division by zero.
@@ -267,7 +270,7 @@ FROM [table_name]
 - Benefits and Use Cases
 	- Temporary tables simplify complex queries by storing intermediate results, such as joining smaller tables first before joining larger ones.
 	- They enable combining results from multiple databases or repeatedly working with a filtered subset of data without re-running filters.
-- Creating and Using Temporary Tables in BigQuery: The WITH clause in SQL acts like a temporary table, allowing multiple queries on the same subset of data without creating a permanent table. (→ [CTE & Set Operations](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/advanced/02-cte-and-set-operations/), [Glossary \[WITH](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/06-share-data-through-the-art-of-visualization/)])
+- Creating and Using Temporary Tables in BigQuery: The WITH clause in SQL acts like a temporary table, allowing multiple queries on the same subset of data without creating a permanent table. (→ [CTE & Set Operations](/blog/cte-and-set-operations/), [Glossary \[WITH](/blog/share-data-through-the-art-of-visualization/)])
 - Advantages for Analysts and Teams
 	- Using temporary tables makes analysis more efficient by reducing repetitive code and query complexity.
 	- It also improves code readability, which benefits team collaboration and review.

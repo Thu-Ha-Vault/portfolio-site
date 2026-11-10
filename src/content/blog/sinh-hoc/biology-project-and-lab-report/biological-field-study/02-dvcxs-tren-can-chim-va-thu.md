@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/02 -
   ĐVCXS trên cạn - Chim và thú.md
+url: /blog/dong-vat-co-xuong-song-tren-can-chim-thu/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Ngày 27/06/2023 – VQG Cát Bà. Giảng viên: TS. Hoàng Trung Thành, TS. Nguyễn
@@ -47,12 +50,12 @@ isIndex: false
 | 4 | **Bông lau họng vạch** *Pycnonotus finlaysoni* (họ Chào mào – Pycnonotidae) | – | 20–30 m | 1 | Trán, má, lông tai, cằm màu ô liu đậm với sọc vàng; xám đen từ đỉnh đầu đến gáy |
 | 5 | **Chi Quạ** *Corvus* (họ Corvidae) | 20°47'40" B – 106°59'26" Đ | 20–30 m | 1 | Tiếng kêu "quạ quạ" rõ, bộ lông đen |
 
-- **Dơi**: hai loài dơi nếp mũi sống cùng hang (Động Trung Trang), phân biệt bằng **tần số sóng siêu âm định vị (echolocation)** đo bằng máy phân tích – cách định loại không cần bắt mẫu. (→ [toạ độ GPS trên bản đồ vệ tinh](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/))
+- **Dơi**: hai loài dơi nếp mũi sống cùng hang (Động Trung Trang), phân biệt bằng **tần số sóng siêu âm định vị (echolocation)** đo bằng máy phân tích – cách định loại không cần bắt mẫu. (→ [toạ độ GPS trên bản đồ vệ tinh](/projects/virtual-lab/thi-nghiem-giai-doan-5/))
 	- Tần số cao hơn (98,6 kHz) → *H. larvatus*; thấp hơn (78,1 kHz) → *H. alongensis* (loài mang tên vịnh Hạ Long).
-- **Chim**: định loại đến họ/chi/loài qua hình thái mỏ, màu lông, dị hình giới tính và tiếng kêu. (→ [Chọn lọc tự nhiên ở chim sẻ Darwin](/blog/sinh-hoc/biology-project-and-lab-report/evolutionary-biology/03-chon-loc-tu-nhien-o-chim-se-darwin/); [mẫu chim, thú ở Bảo tàng Sinh học](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/06-tham-quan-bao-tang-dong-vat/); [bộ xương chim, thú](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/04-bo-xuong-bo-sat-thu-va-chim/))
+- **Chim**: định loại đến họ/chi/loài qua hình thái mỏ, màu lông, dị hình giới tính và tiếng kêu. (→ [Chọn lọc tự nhiên ở chim sẻ Darwin](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/); [mẫu chim, thú ở Bảo tàng Sinh học](/blog/tham-quan-bao-tang-sinh-hoc-dong-vat-co-xuong-song/); [bộ xương chim, thú](/blog/bo-xuong-dong-vat-co-xuong-song-o-can-bo-sat-thu-va-chim/))
 
 ## Kết luận & thảo luận
-- Ghi nhận **2 loài dơi** (chi *Hipposideros*) với số lượng lớn (~400 cá thể) và **3 taxon chim** (Hút mật, Bông lau họng vạch, Quạ). (→ [ANR Lesson 14: assessing outcomes](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-14-monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
+- Ghi nhận **2 loài dơi** (chi *Hipposideros*) với số lượng lớn (~400 cá thể) và **3 taxon chim** (Hút mật, Bông lau họng vạch, Quạ). (→ [ANR Lesson 14: assessing outcomes](/blog/monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/))
 - Phương pháp kết hợp **quan sát trực tiếp + playback + phân tích siêu âm** giúp điều tra nhanh mà không làm hại động vật; thời tiết mưa buổi sáng làm giảm khả năng quan sát chim.
 - Ảnh "Bird 4" (chim săn mồi bay lượn) không được mô tả/định loại trong báo cáo.
 
@@ -74,7 +77,7 @@ isIndex: false
 ![Bird 3](/vault-assets/bird-3-6890ec92.jpg)
 ### Chim săn mồi bay lượn (chưa định loại)
 ![Bird 4](/vault-assets/bird-4-5e85a8c6.jpg)
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – ghi siêu âm dơi (98,6 và 78,1 kHz) và điều tra chim theo tuyến trong protocol `fe-groups`.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – ghi siêu âm dơi (98,6 và 78,1 kHz) và điều tra chim theo tuyến trong protocol `fe-groups`.
 
 ## Tài liệu gốc
 - Báo cáo thực tập thiên nhiên.docx – Phần II, Bài 1.

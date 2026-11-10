@@ -12,6 +12,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/06 - Functions.md
+url: /blog/functions/
+topic: biology
+updated: '2026-10-14'
 order: 6
 description: >-
   Ở phần trước, ta được hỏi là làm thế nào để chuyển cột smoker thành giá trị
@@ -24,7 +27,7 @@ isIndex: false
 
 - Chuyển ngày tháng (đang được lưu dưới dạng character) thành một dạng dễ sử dụng hơn không dễ và cần nhiều function hơn.
 
-- R có rất nhiều function. Ta đã dùng một số read.csv(), class(), dim(), mean(), … Để tìm tài liệu về một function, dùng kí tự ? (→ [Hàm & Xử lý chuỗi](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/04-ham-and-xu-ly-chuoi/), [Bài tập R cơ bản](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/03-bai-tap-r-co-ban-va-phan-tich-du-lieu/))
+- R có rất nhiều function. Ta đã dùng một số read.csv(), class(), dim(), mean(), … Để tìm tài liệu về một function, dùng kí tự ? (→ Hàm & Xử lý chuỗi, [Bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/))
 
 - Các function được gợi nhớ bằng tên, với các argument được cung cấp trong dấu ngoặc.
 
@@ -44,7 +47,7 @@ isIndex: false
 
 ## The apply() family of functions
 
-- Đây là một trong các nhóm function hữu dụng nhất trong R. Nhóm lệnh này thực hiện một lệnh lên mỗi một phần tử trong cấu trúc dữ (→ [Rẽ nhánh & Vòng lặp](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/03-re-nhanh-and-vong-lap/), [Bảng tra cứu lập trình](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
+- Đây là một trong các nhóm function hữu dụng nhất trong R. Nhóm lệnh này thực hiện một lệnh lên mỗi một phần tử trong cấu trúc dữ (→ [Rẽ nhánh & Vòng lặp](/blog/re-nhanh-and-vong-lap/), [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
 - Lệnh apply(): lấy một matrix, áp dụng một lệnh lên cột hoặc hàng và trả về 1 vector.
 
@@ -76,4 +79,4 @@ isIndex: false
 
 ## Merging data frames
 
-- Xem thêm: [Tổng hợp dữ liệu](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/05-tong-hop-du-lieu/) – merge data frame
+- Xem thêm: [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/) – merge data frame

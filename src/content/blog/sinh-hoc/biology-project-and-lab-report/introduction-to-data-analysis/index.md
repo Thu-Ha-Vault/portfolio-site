@@ -9,6 +9,9 @@ folder: Sinh học / Biology Project and Lab Report / Introduction to Data Analy
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Introduction to Data
   Analysis/_MOC - Introduction to Data Analysis.md
+url: /topics/introduction-to-data-analysis/
+topic: biology
+updated: '2026-10-14'
 description: >-
   Học phần Nhập môn phân tích dữ liệu (MAT1060, ĐH KHTN – ĐHQGHN, giảng viên Vũ
   Ngọc Bình) thực hành bằng R / R Markdown năm 2022: trình bày và mô tả dữ liệu,
@@ -18,13 +21,13 @@ isIndex: true
 > Học phần Nhập môn phân tích dữ liệu (MAT1060, ĐH KHTN – ĐHQGHN, giảng viên Vũ Ngọc Bình) thực hành bằng **R / R Markdown** năm 2022: trình bày và mô tả dữ liệu, thao tác – làm sạch dữ liệu, lập trình hàm, phân tích các datasets có sẵn; kết thúc bằng tiểu luận nhóm phân tích dữ liệu nhà ở Boston (hồi quy, Random Forest).
 
 ## Map of Content
-- [01 - Trình bày và mô tả dữ liệu bằng R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/01-trinh-bay-va-mo-ta-du-lieu-bang-r/): Chương 2 – barplot, histogram, pie, scatter, tuỳ chỉnh biểu đồ, boxplot và loại outlier theo IQR, `summary()`
-- [02 - Các thao tác với dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/): nhập/xuất, recode bằng factor/match/replace/cut, chuyển kiểu, `subset`, sinh dữ liệu, xử lý dữ liệu thiếu, if/for/function
-- [03 - Bài tập R cơ bản và phân tích dữ liệu](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/03-bai-tap-r-co-ban-va-phan-tich-du-lieu/): Homework + bài tập buổi 5 (WHO1), buổi 6 (AirPassengers, ChickWeight, chickwts, iris, sleep), buổi 7 (hàm while, Stat2Data)
-- [04 - Phân tích dữ liệu nhà ở Boston](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/04-phan-tich-du-lieu-nha-o-boston/): lab report – tiểu luận Nhóm 4: EDA, hồi quy tuyến tính/đa thức/tương tác ($R^2$ 0,86), chẩn đoán phần dư, Random Forest (RMSE 2,93)
+- [01 - Trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/): Chương 2 – barplot, histogram, pie, scatter, tuỳ chỉnh biểu đồ, boxplot và loại outlier theo IQR, `summary()`
+- [02 - Các thao tác với dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/): nhập/xuất, recode bằng factor/match/replace/cut, chuyển kiểu, `subset`, sinh dữ liệu, xử lý dữ liệu thiếu, if/for/function
+- [03 - Bài tập R cơ bản và phân tích dữ liệu](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/): Homework + bài tập buổi 5 (WHO1), buổi 6 (AirPassengers, ChickWeight, chickwts, iris, sleep), buổi 7 (hàm while, Stat2Data)
+- [04 - Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/): lab report – tiểu luận Nhóm 4: EDA, hồi quy tuyến tính/đa thức/tương tác ($R^2$ 0,86), chẩn đoán phần dư, Random Forest (RMSE 2,93)
 
 ## Tài liệu tham khảo
-- [05 - Data Exploration Using Descriptive Statistics](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/05-data-exploration-using-descriptive-statistics/): bài đọc eDA-2026 (AI Việt Nam) – loại dữ liệu, central tendency, dispersion, boxplot/outlier, z-score, tương quan và nghịch lý Simpson
+- [05 - Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/): bài đọc eDA-2026 (AI Việt Nam) – loại dữ liệu, central tendency, dispersion, boxplot/outlier, z-score, tương quan và nghịch lý Simpson
 
 ## Dữ liệu
 File nằm trong `assets/Dữ liệu trong bài giảng/`:
@@ -36,6 +39,6 @@ File nằm trong `assets/Dữ liệu trong bài giảng/`:
 - dulieu.xls: bảng nhỏ 5 dòng × 2 cột Age – Insulin (ví dụ nhập dữ liệu từ Excel)
 
 ## Liên quan
-- [Biostatistics and Bioinformatics (Thống kê sinh học)](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/): học phần song song – cùng nội dung thống kê, làm bằng Excel
-- [R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/): các khoá học R trong vault (R Tutorial, R Xóm Data)
-- [Data Science](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/): khoá Google Data Analytics (có course R programming và Case Study)
+- [Biostatistics and Bioinformatics (Thống kê sinh học)](/topics/biostatistics-and-bioinformatics/): học phần song song – cùng nội dung thống kê, làm bằng Excel
+- [R](/topics/tutorial/): các khoá học R trong vault (R Tutorial, R Xóm Data)
+- [Data Science](/topics/data-science/): khoá Google Data Analytics (có course R programming và Case Study)

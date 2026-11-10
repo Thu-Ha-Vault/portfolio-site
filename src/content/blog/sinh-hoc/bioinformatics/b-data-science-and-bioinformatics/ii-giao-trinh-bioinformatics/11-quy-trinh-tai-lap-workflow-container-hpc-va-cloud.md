@@ -16,6 +16,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/11 - Quy trình tái lập - workflow, container, HPC và
   cloud.md
+url: /blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 11
 description: >-

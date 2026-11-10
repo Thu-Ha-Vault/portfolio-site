@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Biochemistry and Molecular
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular
   Biology/03 - Phân tích định tính amino acid và protein.md
+url: /blog/phan-tich-dinh-tinh-amino-acid-va-protein/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Báo cáo thực hành Hoá sinh học – Bài 1 · Nhóm 3, K66 Sinh học (ca tiết 1–2
@@ -20,16 +23,16 @@ isIndex: false
 > Báo cáo thực hành Hoá sinh học – Bài 1 · Nhóm 3, K66 Sinh học (ca tiết 1–2 sáng thứ 4) · 6 phản ứng màu.
 
 ## Mục đích
-- Nhận biết **liên kết peptide**, **amino acid tự do** và các **amino acid đặc biệt** (vòng thơm, tryptophan, chứa lưu huỳnh) bằng phản ứng màu. (→ [Thành phần hoá học của tế bào](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/01-thanh-phan-hoa-hoc-cua-te-bao/))
+- Nhận biết **liên kết peptide**, **amino acid tự do** và các **amino acid đặc biệt** (vòng thơm, tryptophan, chứa lưu huỳnh) bằng phản ứng màu. (→ [Thành phần hoá học của tế bào](/blog/thanh-phan-hoa-hoc-cua-te-bao/))
 
 ## Nguyên lý
-- **Phản ứng biure (biuret)**: trong kiềm, hợp chất có ≥ 2 liên kết peptide tạo **phức phối trí với Cu²⁺**; màu xanh tím → tím → tím đỏ tuỳ số liên kết peptide/số N phối trí. Đặc trưng cho liên kết peptide → dùng **định lượng protein**. (→ [Định tính monosaccharide](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/01-phan-ung-dinh-tinh-monosaccharide/), [L-methioninase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/05-thuyet-trinh-l-methioninase-tu-trichoderma-harzianum/))
+- **Phản ứng biure (biuret)**: trong kiềm, hợp chất có ≥ 2 liên kết peptide tạo **phức phối trí với Cu²⁺**; màu xanh tím → tím → tím đỏ tuỳ số liên kết peptide/số N phối trí. Đặc trưng cho liên kết peptide → dùng **định lượng protein**. (→ [Định tính monosaccharide](/blog/cac-phan-ung-dinh-tinh-monosaccharide/), [L-methioninase](/blog/phan-tach-va-xac-dinh-dac-tinh-l-methioninase-tu-trichoderma-harzianum/))
 	- Biure tạo 4 liên kết phối trí với Cu²⁺ (màu hồng/đỏ); polypeptide lòng trắng trứng 2–3 liên kết (xanh tím).
 - **Ninhydrin**: amino acid có **N bậc 1** → màu **tím**; **prolin** (N bậc 2, vòng) → màu **vàng**. Độ nhạy cao → định tính/định lượng amino acid.
 - **Acid nitrơ (HNO₂)**: **khử amin (deamination)** nhóm α-NH₂ giải phóng **N₂** → định lượng α-amino acid (phương pháp Van Slyke).
 - **Xanthoprotein**: HNO₃ đặc **nitro hoá vòng thơm** (Phe, Tyr, Trp) → dẫn xuất màu vàng; thêm kiềm → muối vòng quinoid **màu cam**.
 - **Adamkiewicz**: **tryptophan** + aldehyde (từ acid glyoxylic, hoặc **oxymethylfurfural** từ sucrose + H₂SO₄) → **vòng đỏ tím** ở mặt phân cách hai lớp lỏng.
-- **Folia (Fohl)**: amino acid chứa S (cystine, cysteine, methionine) bị kiềm phân huỷ → Na₂S → + chì acetat → **PbS đen**. (→ [Thuỷ phân protein trong gel](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/05-thuy-phan-protein-trong-gel/))
+- **Folia (Fohl)**: amino acid chứa S (cystine, cysteine, methionine) bị kiềm phân huỷ → Na₂S → + chì acetat → **PbS đen**. (→ [Thuỷ phân protein trong gel](/blog/thuy-phan-protein-trong-gel-dien-di/))
 	- $RSH + 2NaOH \rightarrow Na_2S + ROH + H_2O$
 	- $Na_2S + Pb(CH_3COO)_2 \rightarrow 2CH_3COONa + PbS\downarrow$
 
@@ -61,7 +64,7 @@ isIndex: false
 - **Gelatin** âm tính với xanthoprotein và Adamkiewicz → không có (hoặc rất ít) amino acid vòng thơm, tryptophan.
 - Ninhydrin phân biệt được **prolin** (vàng) với amino acid khác (tím).
 - Biure và ninhydrin là cơ sở cho các phương pháp **định lượng protein / amino acid**.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `bc-protein` làm lại sáu phản ứng màu.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `bc-protein` làm lại sáu phản ứng màu.
 
 ## Tài liệu gốc
 *Định tính amino acid và protein.pdf*

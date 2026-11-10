@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 6 Integrating ANR with production and conservation activities/Lesson
   11 Integrating ANR with crop, timber or livestock production.md
+url: /blog/integrating-anr-with-crop-timber-or-livestock-production/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/
 description: '---'
@@ -64,7 +67,7 @@ After completing this lesson, learners should be able to:
 
 Agriculture occupies a large proportion of the world's land surface. Because farms cover such extensive areas, ecological restoration cannot rely solely on protected forests. Restoring trees within agricultural landscapes provides an opportunity to improve both ecosystem health and farmer livelihoods.
 
-Instead of viewing trees as competitors with crops, modern agroforestry recognizes them as productive assets when carefully selected and managed. (→ [Quần xã sinh vật](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/20-quan-xa-sinh-vat/))
+Instead of viewing trees as competitors with crops, modern agroforestry recognizes them as productive assets when carefully selected and managed. (→ [Quần xã sinh vật](/blog/quan-xa-sinh-vat/))
 
 ---
 
@@ -72,7 +75,7 @@ Instead of viewing trees as competitors with crops, modern agroforestry recogniz
 
 ### Agroforestry
 
-Agroforestry is the intentional integration of trees and shrubs into crop fields or livestock systems. (→ [Hệ sinh thái và sinh quyển](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+Agroforestry is the intentional integration of trees and shrubs into crop fields or livestock systems. (→ [Hệ sinh thái và sinh quyển](/blog/he-sinh-thai-va-sinh-quyen/))
 
 The objective is to improve:
 
@@ -108,7 +111,7 @@ Rather than planting seedlings, farmers work with seedlings, root suckers, or tr
 
 This greatly reduces restoration costs because nature has already provided the planting material.
 
-FMNR therefore represents a specific form of agroforestry built upon natural regeneration rather than artificial planting. (→ [L15 Practitioner perspectives](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-15-practitioner-perspectives-on-anr-implementation/))
+FMNR therefore represents a specific form of agroforestry built upon natural regeneration rather than artificial planting. (→ [L15 Practitioner perspectives](/blog/practitioner-perspectives-on-anr-implementation/))
 
 ---
 
@@ -175,9 +178,9 @@ Social benefits
 
 A major message of this lesson is that restoration should not depend entirely on governments or NGOs.
 
-Farmers themselves become restoration practitioners. (→ [L4 Socio-economic barriers](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-2-biophysical-and-socioeconomic-barriers-and-enabling-factors/lesson-4-socio-economic-and-policy-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
+Farmers themselves become restoration practitioners. (→ [L4 Socio-economic barriers](/blog/socio-economic-and-policy-barriers-and-enabling-factors-for-assisted-natural-reg/))
 
-FMNR empowers local communities because it builds upon two important resources. (→ [L10 Benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-5-assessing-the-costs-and-benefits-of-anr-implementation/lesson-10-assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
+FMNR empowers local communities because it builds upon two important resources. (→ [L10 Benefits of ANR](/blog/assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/))
 
 ## 1. Natural Capital
 
@@ -789,7 +792,7 @@ Secondary forests naturally regenerate after disturbance.
 
 However, commercially valuable tree species are often scarce.
 
-ANR can be combined with **enrichment planting** to increase economic value while maintaining ecological recovery. (→ [L2 Modalities & practices](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-1-introduction-to-anr-key-elements-and-practices/lesson-2-modalities-and-practices-of-anr-in-the-context/))
+ANR can be combined with **enrichment planting** to increase economic value while maintaining ecological recovery. (→ [L2 Modalities & practices](/blog/modalities-and-practices-of-anr-in-the-context/))
 
 ---
 

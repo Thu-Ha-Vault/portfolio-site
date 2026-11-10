@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/06 - Tham
   quan Bảo tàng Động vật.md
+url: /blog/tham-quan-bao-tang-sinh-hoc-dong-vat-co-xuong-song/
+topic: biology
+updated: '2026-10-16'
 order: 6
 description: >-
   Báo cáo tham quan viết tay (2 trang ảnh) – lớp K66 Sinh học, ca thực hành thứ
@@ -95,7 +98,7 @@ isIndex: false
 
 ## Kết luận
 - Bảo tàng cho thấy sự đa dạng hình thái thích nghi của động vật có xương sống: giác bám ở cá suối nước xiết, gai và cơ chế bơm phồng ở cá nóc nhím, thân dẹp và cơ quan điện ở cá sống đáy.
-- Xem thêm: [Thực tập thiên nhiên – chim và thú ở Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/) – quan sát chim, thú ngoài tự nhiên.
+- Xem thêm: [Thực tập thiên nhiên – chim và thú ở Cát Bà](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/) – quan sát chim, thú ngoài tự nhiên.
 
 ## Tài liệu gốc
 - Ảnh báo cáo:

@@ -10,6 +10,9 @@ tags:
 section: Học phần đại cương
 folder: Học phần đại cương
 vaultPath: Resources/Học phần đại cương/01 - Toán học.md
+url: /blog/toan-hoc-dai-so-tuyen-tinh-giai-tich-xac-suat-thong-ke/
+topic: university-courses
+updated: '2026-10-16'
 order: 1
 description: >-
   Tài liệu Toán năm 1–2 (HUS – ĐHQGHN) lưu trên Google Drive, folder Toán. Tài
@@ -59,7 +62,7 @@ Folder: [Giải tích](https://drive.google.com/drive/folders/1-ZhQOB9o8k8YVHUTB
 
 Folder: [Xác suất thống kê](https://drive.google.com/drive/folders/1-Kjts42wOejA5IngBpSVSMM96NGP_rBp)
 
-- Lý thuyết xác suất trong vault: [Probability (Bioinformatics)](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/) – không gian mẫu, xác suất có điều kiện, định lý Bayes; các bài tiếp theo (biến ngẫu nhiên, kỳ vọng, suy luận thống kê) nằm trong cùng khoá [Statistics and Biostatistics](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/).
+- Lý thuyết xác suất trong vault: [Probability (Bioinformatics)](/blog/probability-biology/) – không gian mẫu, xác suất có điều kiện, định lý Bayes; các bài tiếp theo (biến ngẫu nhiên, kỳ vọng, suy luận thống kê) nằm trong cùng khoá [Statistics and Biostatistics](/topics/statistics-and-biostatistics/).
 
 | Tài liệu | Loại | Link |
 | --- | --- | --- |
@@ -126,7 +129,7 @@ Folder: [Xác suất thống kê](https://drive.google.com/drive/folders/1-Kjts4
 - **Bốn không gian con cơ bản** của $A$: không gian null $\operatorname{Null}(A)$, không gian cột, không gian hàng, không gian null trái.
 - **Đổi cơ sở**: $P$ là ma trận chuyển từ cơ sở $B$ sang $B'$ thì $[x]_B = P\,[x]_{B'}$.
 - **Quá trình Gram–Schmidt**: từ cơ sở $v_1, \dots, v_n$ dựng cơ sở trực giao $u_1 = v_1$, $u_k = v_k - \sum_{j<k} \dfrac{u_j^T v_k}{u_j^T u_j} u_j$, rồi chuẩn hoá.
-- **Bình phương tối thiểu** (least squares): khi $Ax = b$ vô nghiệm, tìm $\hat x$ giải $A^TA\hat x = A^Tb$ (hình chiếu trực giao của $b$ lên không gian cột). Đây là cơ sở của hồi quy tuyến tính (→ [Linear and Logistic Regression](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/01-linear-and-logistic-regression/)).
+- **Bình phương tối thiểu** (least squares): khi $Ax = b$ vô nghiệm, tìm $\hat x$ giải $A^TA\hat x = A^Tb$ (hình chiếu trực giao của $b$ lên không gian cột). Đây là cơ sở của hồi quy tuyến tính (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/)).
 
 ### 6. Ánh xạ tuyến tính, trị riêng
 

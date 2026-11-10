@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Introduction to Data Analy
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Introduction to Data
   Analysis/03 - Bài tập R cơ bản và phân tích dữ liệu.md
+url: /blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/
+topic: biology
+updated: '2026-11-09'
 order: 3
 description: >-
   Gộp 4 file R Markdown bài tập ngắn: Homework (2/22/2022 – phép tính cơ bản),
@@ -22,7 +25,7 @@ isIndex: false
 
 ## Homework: Bài tập cơ bản về R
 - **Bài 1** – R như máy tính: `24^4`, `sqrt(321)`, `pi^2/32`, `exp(3)`, `log10(543)`, `log(123)` (log tự nhiên).
-- **Bài 2** – hàm trên vector `x <- c(31, 52, 37, 21, 24, 19, 23, 43, 21)`: `sum(x)`, `sum(x^2)`, `mean(x)`, `length(x)`, `sort(x, decreasing = TRUE/FALSE)`, `max()`, `min()`. (→ [Làm quen với R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/01-lam-quen-voi-r/))
+- **Bài 2** – hàm trên vector `x <- c(31, 52, 37, 21, 24, 19, 23, 43, 21)`: `sum(x)`, `sum(x^2)`, `mean(x)`, `length(x)`, `sort(x, decreasing = TRUE/FALSE)`, `max()`, `min()`. (→ [Làm quen với R](/blog/lam-quen-voi-r/))
 
 ## Buổi 5: Dữ liệu WHO1
 - Dữ liệu 194 quốc gia (đề ghi 195): dân số, tỷ lệ < 15 và > 60 tuổi, tỷ lệ sinh sản, tuổi thọ, tử vong trẻ em, tỷ lệ biết đọc viết, **GNI**. Phân nhóm: GNI > 20 nghìn → phát triển; 10–20 nghìn → đang phát triển; < 10 nghìn → chưa phát triển.
@@ -38,7 +41,7 @@ print(colSums(is.na(who1)))
 
 - **b–c.** Trích theo tên nước: `who1[who1$Country == "Bahrain", ]$LifeExpectancy..Tuoitho.` (so sánh tuổi thọ Bahrain – Mexico; tỷ lệ sinh của Canada).
 - **d.** Thêm cột nhóm bằng `cut(GNI, breaks = c(0, 10000, 20000, 90000), labels = c("Chưa phát triển", "Đang phát triển", "Phát triển"))` → tra nhóm của China.
-- **e–f.** Viết hàm tìm nước có dân số lớn nhất (`max()` rồi lọc) và hàm trả về nhóm của một nước (`nhom("Viet Nam")`). (→ [Hàm & Xử lý chuỗi](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/04-ham-and-xu-ly-chuoi/), [Functions](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/06-functions/))
+- **e–f.** Viết hàm tìm nước có dân số lớn nhất (`max()` rồi lọc) và hàm trả về nhóm của một nước (`nhom("Viet Nam")`). (→ Hàm & Xử lý chuỗi, [Functions](/blog/functions/))
 - **g.** Hàm tính tuổi thọ trung bình của từng nhóm nước.
 - Lưu ý: `read.csv` tự đổi tên cột có dấu cách/ngoặc thành dạng `GNI..Thunhapquocdan.`.
 
@@ -58,7 +61,7 @@ chick_weight_21 <- function(diet_number) {
 for (d in 1:4) chick_weight_21(d)
 ```
 
-- Gợi ý: các phép "tính theo nhóm" này có thể viết gọn bằng `tapply(chickwts$weight, chickwts$feed, mean)` hoặc `aggregate()`. (→ [Tổng hợp dữ liệu](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-xom-data/r-beginner/05-tong-hop-du-lieu/))
+- Gợi ý: các phép "tính theo nhóm" này có thể viết gọn bằng `tapply(chickwts$weight, chickwts$feed, mean)` hoặc `aggregate()`. (→ [Tổng hợp dữ liệu](/blog/tong-hop-du-lieu/))
 
 ## Buổi 7: Lập trình hàm và phân tích dữ liệu Stat2Data
 ### Bài tập lập trình (vòng `while`, ` 10   # lấy chữ số cuối

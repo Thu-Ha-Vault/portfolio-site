@@ -13,6 +13,10 @@ folder: 'Tiếng Pháp / Grammar / E - Thì, thức, thể'
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/E - Thì, thức, thể/18 - L'imparfait et le
   plus-que-parfait.md
+url: >-
+  /blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/
+topic: french
+updated: '2026-10-14'
 order: 18
 description: >-
   Memo 159: "Nó cũng có một có cách sử dụng thành ngữ" → "có một cách" (thừa chữ
@@ -48,10 +52,10 @@ isIndex: false
 
 <!-- Memo 158–159 -->
 ## 5. L'imparfait
-- **Thì quá khứ chưa hoàn thành (imperfect tense)** là một trong các thì QK (quá khứ) tiếng Pháp, được dùng để miêu tả trạng thái hiện hữu (**state of being**) và hành động thói quen (**habitual action**) trong quá khứ. Nó cũng có một cách sử dụng thành ngữ. (→ [Concordance des temps](/blog/tieng-phap/grammar/e-thi-thuc-the/24-le-discours-rapporte/), [Ligne du temps](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/))
+- **Thì quá khứ chưa hoàn thành (imperfect tense)** là một trong các thì QK (quá khứ) tiếng Pháp, được dùng để miêu tả trạng thái hiện hữu (**state of being**) và hành động thói quen (**habitual action**) trong quá khứ. Nó cũng có một cách sử dụng thành ngữ. (→ [Concordance des temps](/blog/le-discours-rapporte-cau-tuong-thuat/), [Ligne du temps](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/))
 
 ### i) Gốc từ (stem)
-- Gốc từ của thì imparfait là dạng ngôi thứ nhất số nhiều trong thì hiện tại, trừ "-ons". Gốc từ imparfait theo qui tắc với tất cả ĐT ngoại trừ "être". (→ [Chia ĐT ở hiện tại](/blog/tieng-phap/grammar/c-dong-tu/07-les-verbes-introduction-et-verbes-reguliers-au-present/), [L'imparfait – bảng chia](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/))
+- Gốc từ của thì imparfait là dạng ngôi thứ nhất số nhiều trong thì hiện tại, trừ "-ons". Gốc từ imparfait theo qui tắc với tất cả ĐT ngoại trừ "être". (→ [Chia ĐT ở hiện tại](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/), [L'imparfait – bảng chia](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/))
 
 | Verb                | Present tense "nous" form | Imparfait stem |
 | ------------------- | ------------------------- | -------------- |
@@ -64,7 +68,7 @@ isIndex: false
 | être                | nous sommes               | ét-            |
 
 ### ii) Đuôi từ (endings)
-- Thêm đuôi "-ais, -ais, -ait, -ions, -iez, -aient" vào gốc từ. Lưu ý rằng: "-ais, -ait, -aient" đều phát âm như nhau. Có nghĩa là dạng số ít và ngôi 3 số nhiều phát âm như nhau. (→ [Đuôi conditionnel = đuôi imparfait](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
+- Thêm đuôi "-ais, -ais, -ait, -ions, -iez, -aient" vào gốc từ. Lưu ý rằng: "-ais, -ait, -aient" đều phát âm như nhau. Có nghĩa là dạng số ít và ngôi 3 số nhiều phát âm như nhau. (→ [Đuôi conditionnel = đuôi imparfait](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
 
 <!-- Memo 160–161 -->
 - Các động từ đổi gốc như "voyager" và "commencer" thêm "e" hoặc "ç" để giữ âm "g" hoặc "s" nhẹ (?) trước các đuôi imparfait bắt đầu bằng "a", nói cách khác là ngoại trừ "nous và vous".
@@ -73,9 +77,9 @@ isIndex: false
 
 ### iii) State of being, habitual action
 - Thì imperfect có 2 cách sử dụng chính: mô tả hành động và trạng thái của sinh vật (being) trong quá khứ; và để nêu ra những hành động thường xuyên xảy ra trong quá khứ. Imparfait cũng có nhiều cách sử dụng idiomatic. Passé composé và imparfait được dùng khá khác nhau trong tường thuật (**narration**).
-	- **States of being or past description**: Thì imparfait được dùng để mô tả người, nơi chốn, tình cảnh hoặc tình huống trong quá khứ. Một số ĐT xuất hiện thường xuyên hơn trong imparfait khi ở thì QK vì chúng thường mô tả trạng thái của sự vật: être, avoir, vouloir, pouvoir. Tuy nhiên, những động từ này đôi khi cũng xuất hiện trong passé composé. (→ [il y avait](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/))
+	- **States of being or past description**: Thì imparfait được dùng để mô tả người, nơi chốn, tình cảnh hoặc tình huống trong quá khứ. Một số ĐT xuất hiện thường xuyên hơn trong imparfait khi ở thì QK vì chúng thường mô tả trạng thái của sự vật: être, avoir, vouloir, pouvoir. Tuy nhiên, những động từ này đôi khi cũng xuất hiện trong passé composé. (→ [il y avait](/blog/les-noms-danh-tu/))
 	- **Habitual actions in the past**: Imparfait cũng được dùng để diễn tả những hành động thường xuyên trong quá khứ. Những thói quen trong QK này thường được dịch là "used to" (đã từng) hoặc "would" (sẽ).
-		- Phân biệt giữa việc sử dụng "would" cho những hành động thường xuyên trong QK và dùng cho câu điều kiện. (→ [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
+		- Phân biệt giữa việc sử dụng "would" cho những hành động thường xuyên trong QK và dùng cho câu điều kiện. (→ [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
 		- **Lưu ý**: Imparfait cũng có thể được dịch là QK đơn trong TA; tuy nhiên, ngữ cảnh, và thường là trạng từ cho biết hành động này là 1 thói quen trong QK.
 
 ### iv) Idiomatic uses
@@ -84,12 +88,12 @@ isIndex: false
 <!-- Memo 162–163 -->
 - **Wishes**: được dùng để diễn đạt những mong muốn "If only…". Cấu trúc tương đương: "si + imparfait" và có thể chứa hoặc không chứa "seulement" (sau "si").
 - **Lưu ý**: dấu "?" và "!" cuối câu cho biết đó là một đề nghị hoặc mong muốn. Trong văn nói TF (tiếng Pháp), ta phải dựa trên ngữ cảnh và ngữ điệu để phân biệt "wish" và "suggestion".
-- Imparfait cũng xuất hiện trong cách idiomatic với "depuis" và "venir de". Ngoài ra còn có "si clauses + conditional". (→ [Depuis](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [Venir de](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/), [Si + conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/), [Aller à l'imparfait + inf](/blog/tieng-phap/grammar/e-thi-thuc-the/20-le-futur-proche-et-le-futur-simple/), bài [Si vous gagniez au loto](/blog/tieng-phap/writing/02-si-vous-gagniez-au-loto/))
+- Imparfait cũng xuất hiện trong cách idiomatic với "depuis" và "venir de". Ngoài ra còn có "si clauses + conditional". (→ [Depuis](/blog/les-prepositions-gioi-tu/), [Venir de](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/), [Si + conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/), [Aller à l'imparfait + inf](/blog/le-futur-proche-et-le-futur-simple-tuong-lai-gan-va-tuong-lai-don/), bài [Si vous gagniez au loto](/blog/si-vous-gagniez-au-loto-que-feriez-vous-de-cet-argent/))
 
 ### v) Narration: passé composé vs. imparfait
 - Passé composé được dùng trong TF để trả lời câu hỏi "What happened?"
 - Mặt khác, ta thường dùng ĐT trong thì imparfait nếu nó trả lời câu hỏi "What was going on when something else happened?"
-- → Nhìn chung, passé composé được dùng để kể lại các sự kiện, trong khi imparfait được dùng để mô tả những gì đã diễn ra trong QK, trạng thái sự vật hoặc thói quen trong QK. (→ [Aspect](/blog/tieng-phap/grammar/e-thi-thuc-the/16-temps-aspect-mode-et-voix/))
+- → Nhìn chung, passé composé được dùng để kể lại các sự kiện, trong khi imparfait được dùng để mô tả những gì đã diễn ra trong QK, trạng thái sự vật hoặc thói quen trong QK. (→ [Aspect](/blog/temps-aspect-mode-et-voix-thi-the-thuc-va-dang/))
 - Tất cả những điều này đặc biệt quan trọng khi kể chuyện về các hành động trong QK, khi cả hai thường xuất hiện trong cùng 1 câu chuyện. Kể chuyện bao gồm việc vừa mô tả bối cảnh (hành động, bầu KK (không khí), thời điểm và con người theo thói quen) vừa kể lại cốt chuyện hoặc một chuỗi sự kiện, hành động, những thay đổi về cảm xúc hoặc suy nghĩ. Nhìn chung, tất cả câu chuyện đều có một cốt chuyện rõ ràng về các sự kiện, tiền cảnh và hậu cảnh với các chi tiết hỗ trợ và mô tả. Một số vb (văn bản) văn học có thể phá vỡ quy tắc này, nhưng điều này xuất phát từ nỗ lực có chủ ý nhằm gây bất ngờ hoặc hoang mang cho người đọc.
 - Các trạng từ sau thường được dùng với mỗi thì:
 	- **Imparfait**: tous les jours/matins…; chaque jour/matin/mois…; en général, généralement, d'habitude; autrefois, à l'époque…; toujours, souvent…; rarement.
@@ -104,7 +108,7 @@ isIndex: false
 
 ### i) Formation
 - Thì QKHT (quá khứ hoàn thành, **pluperfect**) được hình thành bởi trợ ĐT ở imparfait theo sau bởi QKPT.
-- Việc lựa chọn trợ động từ "être hoặc avoir" giống như trong passé composé (áp dụng "Alamo of être"). (→ [Passé composé với être](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- Việc lựa chọn trợ động từ "être hoặc avoir" giống như trong passé composé (áp dụng "Alamo of être"). (→ [Passé composé với être](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 - **Plus-que-parfait = auxiliary in the imparfait + PII**
 
 |                  | "Avoir"           |                  | "Être"            |
@@ -116,11 +120,11 @@ isIndex: false
 - Dạng phủ định được tạo thành bằng cách đặt "ne… pas" quanh ĐT đã được chia, trong TH này là trợ ĐT.
 
 ### ii) Uses: l'antériorité au passé
-- Trong câu tường thuật QK, plus-que-parfait được dùng để diễn tả một hành động xảy ra trước 1 hành động hoặc thời điểm khác trong QK (**action which precedes another past action or moment**). Nói cách khác, hành động trong plus-que-parfait diễn ra trước một hành động hoặc thời điểm khác trong QK. (→ [Passé antérieur – dạng văn học](/blog/tieng-phap/grammar/e-thi-thuc-the/19-le-passe-simple-et-le-passe-anterieur/))
+- Trong câu tường thuật QK, plus-que-parfait được dùng để diễn tả một hành động xảy ra trước 1 hành động hoặc thời điểm khác trong QK (**action which precedes another past action or moment**). Nói cách khác, hành động trong plus-que-parfait diễn ra trước một hành động hoặc thời điểm khác trong QK. (→ [Passé antérieur – dạng văn học](/blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/))
 
 <!-- Memo 166–167 -->
 - Trong TA, plus-que-parfait được biểu thị bằng had + PII. Trong câu khẳng định TF, nó thường, nhưng không phải luôn luôn, đi kèm với trạng từ "déjà" (already – đã).
 - Không phải tất cả TH "had + PII" trong TA đều được dịch thành plus-que-parfait trong TF. VD, trong TF, "depuis" thường được dùng với imparfait (ko phải QKHT) và "had just done something" thường được dịch là "venir de" trong imparfait.
-- **Lưu ý**: trái nghĩa của "déjà" là từ phủ định "pas encore", giống như "already" trái ngược với "yet" trong TA. (→ [Négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- **Lưu ý**: trái nghĩa của "déjà" là từ phủ định "pas encore", giống như "already" trái ngược với "yet" trong TA. (→ [Négation](/blog/la-negation-phu-dinh/))
 - Trong TF và TA, plus-que-parfait cũng được dùng để diễn tả những mong muốn về QK (**wishes about the past**).
-- Plus-que-parfait cũng thường được sd (sử dụng) trong mệnh đề "si + past conditional". (→ [Si + past conditional](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
+- Plus-que-parfait cũng thường được sd (sử dụng) trong mệnh đề "si + past conditional". (→ [Si + past conditional](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))

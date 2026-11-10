@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/04 - Process data from Dirty to Clean.md
+url: /blog/process-data-from-dirty-to-clean/
+topic: biology
+updated: '2026-10-14'
 order: 4
 description: >-
   Data integrity: The accuracy, completeness, consistency, and trustworthiness
@@ -225,7 +228,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 - #1 cause of poor quality data = human error
 
-- Dirty data: Data that is incomplete, incorrect, or irrelevant to the problem you’re trying to solve (→ [Data Mining](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/01-data-mining/))
+- Dirty data: Data that is incomplete, incorrect, or irrelevant to the problem you’re trying to solve (→ [Data Mining](/blog/data-mining/))
 
 | Types of dirty data | Description | Possible cause | Potential harm to businesses |
 | --- | --- | --- | --- |
@@ -245,7 +248,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 - Healthcare: Duplicate records can be 10% and even up to 20% of a hospital’s electronic health records (source).
 
-- Clean data: Data that is complete, correct, and relevant to the problem you’re trying to solve (→ [Statistic and Regression](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/05-statistic-and-regression/))
+- Clean data: Data that is complete, correct, and relevant to the problem you’re trying to solve (→ [Statistic and Regression](/blog/statistic-and-regression/))
 
 - Data engineers: Transform data into a useful format for analysis and give it a reliable infrastructure
 
@@ -299,7 +302,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 - Not checking for misfielded values: A misfielded value happens when the values are entered into the wrong field. These values might still be formatted correctly, which makes them harder to catch if you aren’t careful. For example, you might have a dataset with columns for cities and countries. These are the same type of data, so they are easy to mix up. But if you were trying to find all of the instances of Spain in the country column, and Spain had mistakenly been entered into the city column, you would miss key data points. Making sure your data has been entered correctly is key to accurate, complete analysis.
 
-- Overlooking missing values: Missing values in your dataset can create errors and give you inaccurate conclusions. For example, if you were trying to get the total number of sales from the last three months, but a week of transactions were missing, your calculations would be inaccurate.  As a best practice, try to keep your data as clean as possible by maintaining completeness and consistency. (→ [Thao tác dữ liệu trong R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/02-cac-thao-tac-voi-du-lieu-trong-r/))
+- Overlooking missing values: Missing values in your dataset can create errors and give you inaccurate conclusions. For example, if you were trying to get the total number of sales from the last three months, but a week of transactions were missing, your calculations would be inaccurate.  As a best practice, try to keep your data as clean as possible by maintaining completeness and consistency. (→ [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
 
 - Only looking at a subset of the data: It is important to think about all of the relevant data when you are cleaning. This helps make sure you understand the whole story the data is telling, and that you are paying attention to all possible errors. For example, if you are working with data about bird migration patterns from different sources, but you only clean one source, you might not realize that some of the data is being repeated. This will cause problems in your analysis later on. If you want to avoid common errors like duplicates, each field of your data requires equal attention.
 
@@ -462,7 +465,7 @@ Having a 99% confidence level is ideal, but most industries hope for a least a 9
 
 #### Learn basic SQL queries
 
-- Clean string variables using SQL: (→ [Subquery & CASE WHEN](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/intermediate/02-subquery-and-case-when/))
+- Clean string variables using SQL: (→ [Subquery & CASE WHEN](/blog/subquery-and-case-when/))
 
 - Remove duplicate: 
 SELECT

@@ -12,6 +12,9 @@ vaultPath: >-
   Resources/Sinh học/Assisted Natural Regeneration Practitioner Training Course
   2026/Week 5 Assessing the costs and benefits of ANR implementation/Lesson 10
   Assessing the benefits of ANR and modeling financial flows over time.md
+url: /blog/assessing-the-benefits-of-anr-and-modeling-financial-flows-over-time/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -38,7 +41,7 @@ By the end of this lesson, practitioners should be able to:
 
 # 1. Why Benefits Matter in ANR
 
-The long-term success of ANR depends not only on ecological recovery but also on whether local communities receive meaningful benefits. (→ [L1 Introduction to ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-1-introduction-to-anr-key-elements-and-practices/lesson-1-introduction-to-anr/))
+The long-term success of ANR depends not only on ecological recovery but also on whether local communities receive meaningful benefits. (→ [L1 Introduction to ANR](/blog/introduction-to-anr/))
 
 Communities that benefit directly from restoration are more likely to:
 
@@ -51,7 +54,7 @@ Unlike many restoration projects that focus solely on ecological outcomes, ANR a
 
 - **Natural capital** (healthy ecosystems)
 - **Human capital** (knowledge, skills, employment)
-- **Social capital** (community cooperation and governance) (→ [L11 ANR & production](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/))
+- **Social capital** (community cooperation and governance) (→ [L11 ANR & production](/blog/integrating-anr-with-crop-timber-or-livestock-production/))
 
 Therefore, restoration should create benefits for both ecosystems and people.
 
@@ -313,7 +316,7 @@ Natural regeneration restores:
 - Pollinators
 - Soil organisms
 
-Species interactions gradually return as habitats recover. (→ [L12 ANR & conservation](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+Species interactions gradually return as habitats recover. (→ [L12 ANR & conservation](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
 
 ---
 
@@ -508,7 +511,7 @@ Assigning economic value enables:
 
 ## Stronger Policy Support
 
-Decision-makers often respond more effectively when ecological benefits are translated into monetary values. (→ [L16 Communicating benefits](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-16-communicating-the-benefits-of-anr/))
+Decision-makers often respond more effectively when ecological benefits are translated into monetary values. (→ [L16 Communicating benefits](/blog/communicating-the-benefits-of-anr/))
 
 ---
 
@@ -624,7 +627,7 @@ Short-term agricultural production decreases while long-term ecosystem services 
 
 # 11. Cost-Benefit Analysis (CBA)
 
-Cost-benefit analysis compares all project costs with all project benefits. (→ [Economics of Education](/blog/ai-va-dev/khoa-hoc-ai-cua-tsing-hua-university/learning-module/04-economics-of-education/))
+Cost-benefit analysis compares all project costs with all project benefits. (→ [Economics of Education](/blog/economics-of-education/))
 
 The lesson distinguishes between two forms.
 

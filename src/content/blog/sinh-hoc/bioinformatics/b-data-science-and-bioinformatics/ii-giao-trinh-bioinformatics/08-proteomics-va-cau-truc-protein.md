@@ -15,6 +15,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/08 - Proteomics và cấu trúc protein.md
+url: /blog/proteomics-va-cau-truc-protein/
+topic: biology
+updated: '2026-10-19'
 status: chưa học
 order: 8
 description: >-
@@ -29,7 +32,7 @@ Protein mới là phân tử thực hiện chức năng, nên proteomics và sin
 
 ## 8.1 Proteomics khối phổ (MS-based)
 
-Quy trình bottom-up: protein → cắt bằng trypsin thành peptide → sắc ký lỏng (LC) → khối phổ song song (MS/MS) → so phổ với cơ sở dữ liệu → định lượng protein. (→ [LC-MS/MS](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/06-sac-ky-long-khoi-pho-lc-ms-ms/), [MALDI-TOF MS và PMF](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/07-khoi-pho-maldi-tof-ms-va-nhan-dang-protein/))
+Quy trình bottom-up: protein → cắt bằng trypsin thành peptide → sắc ký lỏng (LC) → khối phổ song song (MS/MS) → so phổ với cơ sở dữ liệu → định lượng protein. (→ [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/), [MALDI-TOF MS và PMF](/blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/))
 
 - **Chế độ thu nhận:** DDA (chọn peptide mạnh nhất) và DIA (phân mảnh mọi peptide theo cửa sổ, tái lập tốt hơn).
 - **Định lượng:** label-free (LFQ), đánh dấu đồng vị (TMT, SILAC).

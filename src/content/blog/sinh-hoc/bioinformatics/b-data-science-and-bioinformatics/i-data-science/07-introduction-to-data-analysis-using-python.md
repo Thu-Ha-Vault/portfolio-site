@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/07 - Introduction to Data Analysis Using Python.md
+url: /blog/introduction-to-data-analysis-using-python/
+topic: biology
+updated: '2026-11-09'
 order: 7
 description: >-
   These tools are often used together: e.g. use SQL to pull a dataset → clean
@@ -54,7 +57,7 @@ isIndex: false
 - Module 1: Python's main features → **Jupyter notebooks** (interactive environment for coding and data work) → **object-oriented programming** → **variables** (store and label data, naming conventions) → **data types**: integers, floats, strings
 #### From spreadsheets to SQL to Python
 - Spreadsheets, SQL, and Python have two things in common:
-	- They all use **filters**: Python → pandas library; SQL → `SELECT-FROM-WHERE` query; spreadsheet → menu options (→ [SQL](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/))
+	- They all use **filters**: Python → pandas library; SQL → `SELECT-FROM-WHERE` query; spreadsheet → menu options (→ [SQL](/topics/sql/))
 	- They all use **functions**: in formulas (spreadsheets), in queries (SQL), in code (Python)
 
 | Key question                      | Spreadsheet programs                                                                                              | SQL                                                                              | Python                                                                                                      |
@@ -154,7 +157,7 @@ isIndex: false
 
 - Python: easy to learn, object-oriented, dynamic variables; sometimes requires a longer time to execute, but a great tool for machine learning and automated analysis
 #### Introduction to R
-- **R**: an open-source programming language and software environment specifically designed for statistical computing and graphics (→ [R Tutorial](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/), [Bài tập R cơ bản](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/03-bai-tap-r-co-ban-va-phan-tich-du-lieu/))
+- **R**: an open-source programming language and software environment specifically designed for statistical computing and graphics (→ [R Tutorial](/topics/tutorial/), [Bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/))
 	- Created in 1993 by Ross Ihaka and Robert Gentleman (University of Auckland, New Zealand)
 	- A **domain-specific language** (unlike general-purpose languages such as Python or Java); most users work in the IDE **RStudio**
 	- Typically used by professionals with a statistical or research-oriented approach: data scientists, statisticians, engineers
@@ -774,7 +777,7 @@ isIndex: false
 	```
 #### String indexing and slicing
 - **Indexing**: accessing a single element of a sequence by its position, using square brackets
-	- Zero-based indexing in Python; some languages use **one-based indexing**, such as **R**, Julia, and SAS (→ [R](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/))
+	- Zero-based indexing in Python; some languages use **one-based indexing**, such as **R**, Julia, and SAS (→ [R](/topics/tutorial/))
 	- Selecting an index out of range → `IndexError`
 - **Slicing**: accessing a range of elements from a sequence, using square brackets with two indices separated by a colon
 	- The starting index is **inclusive** and the ending index is **exclusive**
@@ -1228,7 +1231,7 @@ isIndex: false
 	- Florence Briggs Thayer paid £71.28 for her first class ticket → about £10,417 today
 #### pandas basics
 - Two core object classes: **DataFrame** and **Series**
-- **DataFrame**: A two-dimensional, labeled data structure with rows and columns (like a spreadsheet or a SQL table → [SQL](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/))
+- **DataFrame**: A two-dimensional, labeled data structure with rows and columns (like a spreadsheet or a SQL table → [SQL](/topics/sql/))
 	```python
 	d = {'col1': [1, 2], 'col2': [3, 4]}
 	df = pd.DataFrame(data=d)           # from a dictionary: keys = column names, list values = rows
@@ -1383,7 +1386,7 @@ isIndex: false
 	df = df.reset_index(drop=True)         # restart numbering 0–7 without adding an index column
 	```
 	- Best for identically formatted data that simply needs to be combined vertically
-- **`pd.merge()`**: joins two dataframes together, only horizontally (axis 1) (→ [SQL JOIN](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/))
+- **`pd.merge()`**: joins two dataframes together, only horizontally (axis 1) (→ [SQL JOIN](/topics/sql/))
 	- **Keys**: the shared points of reference between different dataframes (what to match on), e.g. the `planet` column
 	- **Inner join**: only keys in both dataframes
 	- **Outer join**: all keys from both dataframes (missing values filled with NaN)
@@ -1459,4 +1462,4 @@ isIndex: false
 - Course 7 review: variables and data types → functions, operators, conditional statements, clean code → loops, strings (slicing, indexing, formatting) → data structures (lists, tuples, dictionaries, sets, arrays) → NumPy and pandas
 - Reflect and connect with peers: Google Data Analytics Community
 - Course 7 glossary (downloadable): https://www.coursera.org/learn/introduction-to-data-analysis-using-python/supplement/8q3FS
-- Coming up next: **Google Data Analytics Capstone: Complete a Case Study** (→ [Course 8: Case Study](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/08-case-study/))
+- Coming up next: **Google Data Analytics Capstone: Complete a Case Study** (→ [Course 8: Case Study](/blog/case-study/))

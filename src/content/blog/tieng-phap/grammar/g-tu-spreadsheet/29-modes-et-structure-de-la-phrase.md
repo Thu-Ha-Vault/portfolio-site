@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/29 - Modes et structure de
   la phrase.md
+url: /blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/
+topic: french
+updated: '2026-10-14'
 order: 29
 description: >-
   Ô D22: "Mise en relief?" → "Mise en relief". Ô E22: "c'est/ce sont + object +
@@ -34,14 +37,14 @@ isIndex: false
 
 
 ## 1. Thì (Temps)
-- **Thì** được sử dụng để diễn đạt thời gian của một hành động, sự việc, hoặc tình huống. Đây là yếu tố quan trọng để xác định thời gian xảy ra của một sự việc trong câu. (→ [Tableau récapitulatif des temps](/blog/tieng-phap/grammar/g-tu-spreadsheet/28-tableau-recapitulatif-des-temps/))
+- **Thì** được sử dụng để diễn đạt thời gian của một hành động, sự việc, hoặc tình huống. Đây là yếu tố quan trọng để xác định thời gian xảy ra của một sự việc trong câu. (→ [Tableau récapitulatif des temps](/blog/tableau-recapitulatif-des-temps-bang-tong-hop-cac-thi/))
 
 ## 2. Thức (les Modes)
-- **Moods** are separate to tenses. Moods indicate the tone of the sentence and make the speaker's intention clear. They show whether the sentence is a request, a wish, a hypothesis, a doubt, a command etc. For each mood there are several tenses. (→ [French Moods](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/))
+- **Moods** are separate to tenses. Moods indicate the tone of the sentence and make the speaker's intention clear. They show whether the sentence is a request, a wish, a hypothesis, a doubt, a command etc. For each mood there are several tenses. (→ [French Moods](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/))
 	- **The indicative (l'indicatif)** is the standard mood in French grammar. It expresses an action, event or state that occurs in reality. There are eight indicative tenses: le présent, l'imparfait, le passé composé, le plus-que-parfait, le passé simple, le passé antérieur, le futur simple and le futur antérieur.
-	- **The subjunctive mood (le subjonctif)**: slightly more unusual. We mostly use it in subordinate clauses that start with que to express a possibility, a hypothesis, a feeling, a thought, a wish, a doubt, uncertainty or advice. It is a mood that emphasises the subjectivity of a sentence and introduces an element of uncertainty or un-reality. (→ [Subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
-	- **The conditional (le conditionnel)**: use to talk about possible outcomes in relation to a condition. This mood talks about acts, actions or states that can only occur once a certain condition has been fulfilled. It is also used to express possibility, and can be used as a tense as well as a mood. (→ [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
-	- **The imperative mood (l'impératif)** gives orders and advice to one or more people. (→ [Impératif](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/))
+	- **The subjunctive mood (le subjonctif)**: slightly more unusual. We mostly use it in subordinate clauses that start with que to express a possibility, a hypothesis, a feeling, a thought, a wish, a doubt, uncertainty or advice. It is a mood that emphasises the subjectivity of a sentence and introduces an element of uncertainty or un-reality. (→ [Subjonctif](/blog/le-subjonctif-thuc-gia-dinh/))
+	- **The conditional (le conditionnel)**: use to talk about possible outcomes in relation to a condition. This mood talks about acts, actions or states that can only occur once a certain condition has been fulfilled. It is also used to express possibility, and can be used as a tense as well as a mood. (→ [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
+	- **The imperative mood (l'impératif)** gives orders and advice to one or more people. (→ [Impératif](/blog/l-imperatif-thuc-menh-lenh/))
 - In addition to these four moods, French also has three **impersonal moods (les modes impersonnels)**: l'infinitif, le gérondif and le participe. These three verb forms do not provide information about when the action takes place or who performs it because they are not conjugated in any tense.
 
 ## 3. Cấu trúc câu (la syntaxe ou la construction de la phrase française)
@@ -71,11 +74,11 @@ isIndex: false
 | -------------------------- | ------------- | ---------- | -------- | -------- | ------------------------------- |
 | me / te / se / nous / vous | le / la / les | lui / leur | y        | en       | + conjugated verb or infinitive |
 
-- Xem thêm: [Order of object pronoun](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/) – bảng thứ tự đại từ trong sổ tay; [Pronoun objects with imperatives](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/) – ở impératif khẳng định thứ tự đổi khác.
+- Xem thêm: [Order of object pronoun](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/) – bảng thứ tự đại từ trong sổ tay; [Pronoun objects with imperatives](/blog/l-imperatif-thuc-menh-lenh/) – ở impératif khẳng định thứ tự đổi khác.
 
 #### Mise en relief
 - **Mise en relief** is emphasis. We can use certain structures to draw attention to particular elements of a sentence.
-- **C'est / Ce sont … qui / que / dont …**: The most common way to create emphasis is with c'est/ce sont … qui / que / dont … This places the element we want to emphasise at the beginning of the sentence. (→ [Relative pronouns qui, que, dont](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- **C'est / Ce sont … qui / que / dont …**: The most common way to create emphasis is with c'est/ce sont … qui / que / dont … This places the element we want to emphasise at the beginning of the sentence. (→ [Relative pronouns qui, que, dont](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 	- Use c'est/ce sont … qui … to emphasise the subject: c'est/ce sont + subject + qui
 	- Use c'est/ce sont … que … to emphasise the object: c'est/ce sont + object + que
 	- Use c'est/ce sont … dont … to emphasise an object that is introduced by the preposition de: c'est/ce sont + object + dont
@@ -84,14 +87,14 @@ isIndex: false
 	- Use ce qui …, c'est/ce sont when you want to emphasise the subject: ce qui + verb + …, c'est/ce sont + subject
 	- Use ce que …, c'est/ce sont when you want to emphasise the object: ce que + subject + …, c'est/ce sont + object
 	- Use ce dont …, c'est/ce sont when you want to emphasise an object introduced by the preposition de
-- **Emphasis via stressed pronouns**: We can also create emphasis by using the stressed pronouns. Place the 1st and 2nd person stressed pronouns (moi, toi, nous, vous) before the subject and the 3rd person pronouns (lui, elle, eux, elles) after the subject. Always place the stressed pronoun between commas. (→ [Disjunctive pronoun](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/13-les-pronoms-personnels-y-et-en/))
+- **Emphasis via stressed pronouns**: We can also create emphasis by using the stressed pronouns. Place the 1st and 2nd person stressed pronouns (moi, toi, nous, vous) before the subject and the 3rd person pronouns (lui, elle, eux, elles) after the subject. Always place the stressed pronoun between commas. (→ [Disjunctive pronoun](/blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/))
 
 #### Adverbs
-- Adverbs and adverbial phrases can come at the beginning of a sentence, in the middle, or at the end. Adverbs are placed in a sentence according to their importance. If they are put at the end of a sentence, their importance is emphasised. (→ [Adverbs: formation and placement](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/))
-- Sentence structure can change in some circumstances. If a sentence begins with aussi, à peine, peut-être, or sans doute, the verb comes before the subject. (→ [Subject/verb inversion](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
+- Adverbs and adverbial phrases can come at the beginning of a sentence, in the middle, or at the end. Adverbs are placed in a sentence according to their importance. If they are put at the end of a sentence, their importance is emphasised. (→ [Adverbs: formation and placement](/blog/les-adverbes-trang-tu/))
+- Sentence structure can change in some circumstances. If a sentence begins with aussi, à peine, peut-être, or sans doute, the verb comes before the subject. (→ [Subject/verb inversion](/blog/l-interrogation-cau-hoi/))
 
 ### Negative sentences (une phrase négative)
-- A negative sentence allows us to negate a statement, express disagreement, make contradictions or deny the occurrence of an event or action. The most common negative construction in French is ne + verb + pas, although there are also other phrases we can use. (→ [La négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- A negative sentence allows us to negate a statement, express disagreement, make contradictions or deny the occurrence of an event or action. The most common negative construction in French is ne + verb + pas, although there are also other phrases we can use. (→ [La négation](/blog/la-negation-phu-dinh/))
 
 #### How to make negative sentences
 - Most negative sentences in French are formed with the ne … pas construction. The conjugated verb comes between the two parts: ne + verb + pas
@@ -111,14 +114,14 @@ isIndex: false
 	- **ne … rien** (nothing, not anything)
 	- **ne … jamais** (never, not ever)
 	- **ne … plus** (no longer, not anymore)
-	- **ne … aucun** (not any, no). When any is used in the negative sense (not any, no), it's translated into French as either aucun or pas de (de = partitive article). As an adjective, aucun agrees with the noun it is modifying (aucun, aucune, aucuns, aucunes). Aucun makes the negation stronger. (→ [Partitive articles](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+	- **ne … aucun** (not any, no). When any is used in the negative sense (not any, no), it's translated into French as either aucun or pas de (de = partitive article). As an adjective, aucun agrees with the noun it is modifying (aucun, aucune, aucuns, aucunes). Aucun makes the negation stronger. (→ [Partitive articles](/blog/les-determinants-tu-han-dinh/))
 
 ### Các mục sheet còn để trống
 - Sheet có tiêu đề nhưng chưa có nội dung cho các mục sau:
-	- **Interrogative clauses** (→ [L'interrogation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
-	- **Exclamative sentences** (→ [Exclamative quel](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
-	- **Indirect speech** (→ [Le discours rapporté](/blog/tieng-phap/grammar/e-thi-thuc-the/24-le-discours-rapporte/))
-	- **Complex sentences** (→ [Subordinating conjunctions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/15-les-conjonctions/))
+	- **Interrogative clauses** (→ [L'interrogation](/blog/l-interrogation-cau-hoi/))
+	- **Exclamative sentences** (→ [Exclamative quel](/blog/l-interrogation-cau-hoi/))
+	- **Indirect speech** (→ [Le discours rapporté](/blog/le-discours-rapporte-cau-tuong-thuat/))
+	- **Complex sentences** (→ [Subordinating conjunctions](/blog/les-conjonctions-lien-tu/))
 
 ## Francophone
 
@@ -133,4 +136,4 @@ isIndex: false
 | L'Europe     | La Suisse   | Lausanne  |
 | L'Amérique   | Le Canada   | Montréal  |
 
-- Xem thêm: [Giới từ trước tên thành phố / nước](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – dùng à / en / au với các tên ở bảng trên.
+- Xem thêm: [Giới từ trước tên thành phố / nước](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – dùng à / en / au với các tên ở bảng trên.

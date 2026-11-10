@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/04 - Phân tích ảnh gel 2D bằng Phoretix.md
+url: /blog/phan-tich-hinh-anh-ban-gel-dien-di-hai-chieu-su-dung-phan-mem-phoretix/
+topic: biology
+updated: '2026-10-16'
 order: 4
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -25,7 +28,7 @@ isIndex: false
 
 ## Nguyên lý
 - Ảnh gel 2D là tập hợp các **spot** (mỗi spot ≈ một chuỗi polypeptide/protein tách theo pI và khối lượng phân tử); có thể từ hàng trăm đến hàng ngàn spot → cần phần mềm chuyên dụng.
-- **Phoretix** (Shimadzu) xác định thứ tự, vị trí và **thể tích (volume)** của từng spot. (→ [Bioinformatics](/blog/sinh-hoc/bioinformatics/))
+- **Phoretix** (Shimadzu) xác định thứ tự, vị trí và **thể tích (volume)** của từng spot. (→ [Bioinformatics](/topics/bioinformatics/))
 	- Volume đánh giá bằng **đo mật độ (densitometry)** điểm ảnh – phụ thuộc kích thước và độ đậm của spot.
 - **Cường độ khối chuẩn hoá (normalized volume)**: cho phép so sánh giữa các gel.
 	- $\%V = \dfrac{V_{spot}}{\sum V_{\text{tất cả spot}}} \times 100$
@@ -56,9 +59,9 @@ isIndex: false
 ## Kết luận & thảo luận
 - Phoretix giúp định lượng spot tự động và so sánh biểu hiện protein giữa các gel; tuy nhiên việc phát hiện spot tự động cần được kiểm tra, chỉnh sửa thủ công (cắt spot bị gộp, nối spot bị tách, xoá nhiễu, thêm spot bị bỏ sót).
 - Nhận xét từ bảng: volume sau khi cắt/nối không bằng tổng volume các spot ban đầu – có thể do phần mềm xác định lại ranh giới và nền của spot (bản gốc không giải thích).
-- Spot khác biệt là đầu vào cho [thủy phân trong gel](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/05-thuy-phan-protein-trong-gel/) và khối phổ.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – bước tính %V của protocol `pt-2dpage`.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – protocol `pt-phoretix`: so hai gel bằng thể tích thô và %V.
+- Spot khác biệt là đầu vào cho [thủy phân trong gel](/blog/thuy-phan-protein-trong-gel-dien-di/) và khối phổ.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – bước tính %V của protocol `pt-2dpage`.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – protocol `pt-phoretix`: so hai gel bằng thể tích thô và %V.
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 4.pdf*

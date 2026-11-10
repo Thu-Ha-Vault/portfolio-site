@@ -10,6 +10,9 @@ folder: Tiếng Pháp / Writing
 vaultPath: >-
   Resources/Tiếng Pháp/Writing/05 - Test 2 - Proposer un projet pour
   améliorer la vie à Hanoï.md
+url: /blog/test-2-proposer-un-projet-pour-ameliorer-la-vie-des-habitants-a-hanoi/
+topic: french
+updated: '2026-10-14'
 order: 5
 description: >-
   Depuis les années 2000, on peut voir que Hanoï se développe rapidement
@@ -58,11 +61,11 @@ Bản nháp sau khi chữa bài, chưa viết xong. Ghi lại theo thứ tự c�
 Pour résoudre ces problèmes, la première étape du projet serait de réduire la densité de population dans cette zone. Il serait nécessaire que la mairie vérifie la faisabilité technique avant de commencer la construction. Elle devrait aussi réaliser un sondage d'opinion auprès des habitants. **Ensuite**, la ville pourrait construire de nouveaux immeubles d'appartements modernes pour reloger une partie des habitants avant d'aménager la zone. **Puis**, le gouvernement pourrait aussi donner une compensation financière aux familles qui devraient quitter leurs anciennes maisons. Le projet durerait environ 5 ans et nécessiterait un investissement d'environ 1 milliard de VND. Le financement pourrait venir de la ville (60 %) et d'entreprises privées (40 %) qui seraient intéressées à investir. Après la rénovation, plusieurs infrastructures pourraient être construites… *(chưa viết xong)*
 
 ## Điểm ngữ pháp dùng trong bài
-- **Subjonctif sau *il faut que*, *il serait nécessaire que***: *il faut que la ville **agisse***, *que la mairie **vérifie*** (→ [Subjonctif](/blog/tieng-phap/grammar/e-thi-thuc-the/22-le-subjonctif/))
-- **Gérondif** (en + participe présent): *en construisant*, *en séparant* (→ [Gérondif](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/), [Gérondif (fiche)](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
-- **Conditionnel présent** cho đề xuất: pourrait, devrait, bâtirait, construirait, durerait (→ [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
-- **Câu bị động**: *les quartiers qui doivent **être réaménagés***, *plusieurs infrastructures pourraient **être construites*** (→ [Voix passive](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/))
-- Từ nối: Pourtant, C'est pourquoi, Actuellement, Tout d'abord, Ensuite, Puis, Après cela (→ [Expressions pour l'expression écrite](/blog/tieng-phap/writing/01-expressions-pour-l-expression-ecrite/))
+- **Subjonctif sau *il faut que*, *il serait nécessaire que***: *il faut que la ville **agisse***, *que la mairie **vérifie*** (→ [Subjonctif](/blog/le-subjonctif-thuc-gia-dinh/))
+- **Gérondif** (en + participe présent): *en construisant*, *en séparant* (→ [Gérondif](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/), [Gérondif (fiche)](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
+- **Conditionnel présent** cho đề xuất: pourrait, devrait, bâtirait, construirait, durerait (→ [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
+- **Câu bị động**: *les quartiers qui doivent **être réaménagés***, *plusieurs infrastructures pourraient **être construites*** (→ [Voix passive](/blog/la-voix-passive-the-bi-dong/))
+- Từ nối: Pourtant, C'est pourquoi, Actuellement, Tout d'abord, Ensuite, Puis, Après cela (→ [Expressions pour l'expression écrite](/blog/expressions-pour-l-expression-ecrite/))
 
 <details class="callout callout-success">
 <summary>Đã sửa so với bản gốc</summary>

@@ -1,0 +1,20 @@
+---
+import { topicNames } from '../i18n';
+import { fmtDate, type Blog } from '../lib';
+interface Props { posts: Blog[]; id?: string; filterable?: boolean }
+const { posts, id, filterable = false } = Astro.props;
+---
+<ul class="rows" id={id}>
+  {posts.map((p) => {
+    const [vi, en] = topicNames[p.data.topic ?? ''] ?? [p.data.topic ?? '', p.data.topic ?? ''];
+    return (
+      <li data-topic={filterable ? p.data.topic : undefined} data-q={filterable ? `${p.data.title} ${p.data.folder ?? ''} ${p.data.tags.join(' ')}`.toLowerCase() : undefined}>
+        <a href={p.data.url}>
+          <time datetime={p.data.updated}>{fmtDate(p.data.updated)}</time>
+          <span class="t">{p.data.title}</span>
+          <span class="where" data-vi={vi} data-en={en}>{vi}</span>
+        </a>
+      </li>
+    );
+  })}
+</ul>

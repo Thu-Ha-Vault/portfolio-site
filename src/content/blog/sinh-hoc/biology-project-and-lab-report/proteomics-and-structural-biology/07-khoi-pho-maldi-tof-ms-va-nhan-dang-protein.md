@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/07 - Khối phổ MALDI-TOF MS và nhận dạng protein.md
+url: /blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/
+topic: biology
+updated: '2026-10-19'
 order: 7
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -25,12 +28,12 @@ isIndex: false
 
 ## Nguyên lý
 - **MALDI-TOF MS** (matrix-assisted laser desorption/ionization – time of flight):
-	- Mẫu trộn với **chất nền (matrix)**, làm khô → xung **laser** làm mẫu ion hoá và phản hấp phụ thành ion pha khí → bay trong ống **TOF** và tách theo **m/z** (ion nhẹ bay nhanh hơn). (→ [Tinh sạch protease nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/), [Protease PQM nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/04-protease-pqm-tu-noc-nhen-cupiennius-salei/))
+	- Mẫu trộn với **chất nền (matrix)**, làm khô → xung **laser** làm mẫu ion hoá và phản hấp phụ thành ion pha khí → bay trong ống **TOF** và tách theo **m/z** (ion nhẹ bay nhanh hơn). (→ [Tinh sạch protease nọc nhện](/blog/tinh-sach-enzyme/), [Protease PQM nọc nhện](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/))
 	- Ưu điểm: độ nhạy cao, dễ dùng, chịu được tạp chất trong mẫu, thu dữ liệu nhanh, phù hợp mức peptide.
 - **So sánh MALDI và ESI**:
 	- **ESI**: chủ yếu tạo **ion đa điện tích** (2+, 3+) → thuận lợi cho phân mảnh bằng khí trơ (MS/MS).
 	- **MALDI**: chủ yếu tạo **ion đơn điện tích** $[M+H]^+$ → khi phân mảnh cho phổ phức tạp, khó xác định ion con.
-- **PMF**: so sánh phổ khối peptide thực nghiệm với phổ peptide lý thuyết (protein trong CSDL cắt bằng trypsin in silico) → tính **score** (Mascot). (→ [Proteomics khối phổ](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/08-proteomics-va-cau-truc-protein/))
+- **PMF**: so sánh phổ khối peptide thực nghiệm với phổ peptide lý thuyết (protein trong CSDL cắt bằng trypsin in silico) → tính **score** (Mascot). (→ [Proteomics khối phổ](/blog/proteomics-va-cau-truc-protein/))
 	- Score phản ánh mức phù hợp giữa thực nghiệm và lý thuyết → độ tin cậy thống kê của nhận dạng.
 
 ## Vật liệu & phương pháp
@@ -39,7 +42,7 @@ isIndex: false
 	1. Chuẩn bị mẫu MALDI và hỗn hợp peptide chuẩn ngoại; tối ưu năng lượng laser.
 	2. Thu phổ mẫu, **cân bằng nội chuẩn** bằng peptide trypsin lợn $842{,}509$ và $2211{,}104\ [M+H]^+$.
 	3. Lập danh sách khối lượng đỉnh (peak list).
-	4. Tra cứu **Mascot**: Carbamidomethyl (C) cố định, Oxidation (M) biến đổi; sai số < 50 ppm (nội chuẩn) hoặc < 100 ppm (ngoại chuẩn). (→ [Bioinformatics](/blog/sinh-hoc/bioinformatics/))
+	4. Tra cứu **Mascot**: Carbamidomethyl (C) cố định, Oxidation (M) biến đổi; sai số < 50 ppm (nội chuẩn) hoặc < 100 ppm (ngoại chuẩn). (→ [Bioinformatics](/topics/bioinformatics/))
 	5. Tra thêm CSDL **decoy** để đánh giá kết quả nhận dạng.
 
 ## Kết quả chính
@@ -63,7 +66,7 @@ isIndex: false
 	- Keratin là họ protein thường gặp trong biểu mô động vật có vú.
 
 ## Kết luận & thảo luận
-- Ngưỡng ý nghĩa: kết quả được xem là có ý nghĩa nếu xác suất trùng khớp ngẫu nhiên < 5%. (→ [Hypothesis testing](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/))
+- Ngưỡng ý nghĩa: kết quả được xem là có ý nghĩa nếu xác suất trùng khớp ngẫu nhiên < 5%. (→ [Hypothesis testing](/blog/hypothesis-testing-and-p-values/))
 - Score cao (> 70) nhưng coverage thấp (< 50%) có thể do:
 	- **Số peptide quan sát**: nhiều peptide khớp → score cao nhưng chỉ phủ một phần chuỗi.
 	- **Độ chính xác khối lượng** cao → score cao dù ít peptide.
@@ -71,8 +74,8 @@ isIndex: false
 	- **Chất lượng phổ**: nhiễu, peptide không đặc hiệu.
 	- **CSDL** chưa hoàn chỉnh/chính xác.
 - Thực tế hầu như không thể khớp mọi khối lượng và phủ 100% trình tự.
-- Keratin thường là **protein nhiễm (contaminant)** phổ biến trong proteomics (từ da, tóc) – các nghiên cứu thường loại keratin khỏi kết quả (xem [tiểu luận](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/)).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – MALDI-TOF và PMF trong protocol `pt-2dpage`, có tra lại với ± 1,2 Da như bài.
+- Keratin thường là **protein nhiễm (contaminant)** phổ biến trong proteomics (từ da, tóc) – các nghiên cứu thường loại keratin khỏi kết quả (xem [tiểu luận](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/)).
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – MALDI-TOF và PMF trong protocol `pt-2dpage`, có tra lại với ± 1,2 Da như bài.
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 7.pdf*

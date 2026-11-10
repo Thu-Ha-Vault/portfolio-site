@@ -13,6 +13,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/06 -
   Cơ sở sinh thái học - Rừng ngập mặn Phù Long.md
+url: /blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/
+topic: biology
+updated: '2026-10-16'
 order: 6
 description: >-
   Ngày 01/07/2023 – rừng ngập mặn Phù Long. Giảng viên: PGS.TS. Lê Xuân Tuấn,
@@ -23,7 +26,7 @@ isIndex: false
 > Ngày 01/07/2023 – rừng ngập mặn Phù Long. Giảng viên: PGS.TS. Lê Xuân Tuấn, TS. Bùi Thị Hoa. Bài tập trung vào **phương pháp ô tiêu chuẩn (quadrat)** và các công thức tính mật độ, liên kết loài, độ phong phú, đa dạng và tương đồng.
 
 ## Mục đích
-- Dùng **ô tiêu chuẩn có kích thước khác nhau** để ước lượng số lượng cá thể và **mật độ quần thể** (thực vật). (→ [Cá thể và quần thể](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
+- Dùng **ô tiêu chuẩn có kích thước khác nhau** để ước lượng số lượng cá thể và **mật độ quần thể** (thực vật). (→ [Cá thể và quần thể](/blog/ca-the-va-quan-the-sinh-vat/))
 - Xác định **mối liên kết giữa các loài** trong khu vực khảo sát.
 - Xác định **mức độ phong phú về loài** và **đa dạng sinh học** của các điểm khảo sát.
 - Xác định **chỉ số tương đồng SI** giữa các điểm (nếu các điểm nằm ở vị trí khác nhau trên tuyến).
@@ -36,8 +39,8 @@ isIndex: false
 - Tính trung bình 5 ô:
 	- $\bar{x} = \dfrac{1}{n}\sum_{i=1}^{n} x_i$ — $n$: số ô; $x_i$: số cá thể ở ô thứ $i$.
 - Từ $\bar{x}$ suy ra số cá thể và mật độ quần thể ứng với từng kích thước ô.
-- **Chọn kích thước ô phù hợp nhất** = kích thước có **sai số nhỏ nhất**: (→ [Thống kê mẫu và ước lượng tham số](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/))
-	- Sai số (số lượng) $= \left(1 - \dfrac{N_{\text{ước lượng}}}{N_{\text{thực tế}}}\right)\times 100\%$ (→ [Ecology Bài 2: phương pháp lấy mẫu](/blog/sinh-hoc/biology-project-and-lab-report/ecology/02-phuong-phap-lay-mau/))
+- **Chọn kích thước ô phù hợp nhất** = kích thước có **sai số nhỏ nhất**: (→ [Thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/))
+	- Sai số (số lượng) $= \left(1 - \dfrac{N_{\text{ước lượng}}}{N_{\text{thực tế}}}\right)\times 100\%$ (→ [Ecology Bài 2: phương pháp lấy mẫu](/blog/phuong-phap-lay-mau/))
 	- Sai số (mật độ) $= \left(1 - \dfrac{D_{\text{ước lượng}}}{D_{\text{thực tế}}}\right)\times 100\%$
 ### Mật độ
 - $\text{Mật độ} = \dfrac{\text{Tổng số cá thể của quần thể}}{\text{Diện tích khu vực quần thể phân bố}}$
@@ -55,7 +58,7 @@ isIndex: false
 
 ## Kết quả chính
 - **Thời gian**: 01/07/2023, 7h–9h30, trời nắng.
-- **Tuyến khảo sát**: **rừng ngập mặn Phù Long** (Hình 11). (→ [Hệ sinh thái và sinh quyển](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/21-he-sinh-thai-va-sinh-quyen/))
+- **Tuyến khảo sát**: **rừng ngập mặn Phù Long** (Hình 11). (→ [Hệ sinh thái và sinh quyển](/blog/he-sinh-thai-va-sinh-quyen/))
 - Thông số môi trường đo được:
 
 | Thông số | Giá trị |
@@ -66,10 +69,10 @@ isIndex: false
 - Bảng đếm cá thể theo ô, giá trị mật độ, V, D, H, SI **không có trong bản gốc**.
 
 ## Kết luận & thảo luận
-- Bài thực hành cung cấp bộ công thức cơ bản của sinh thái học quần thể – quần xã: **mật độ → liên kết loài → độ phong phú → đa dạng → tương đồng**. (→ [Quần xã sinh vật](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/20-quan-xa-sinh-vat/), [ANR Lesson 14: assessing outcomes](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-14-monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/), [ANR Lesson 12: ecosystem restoration](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
-- Việc so sánh 3 kích thước ô với sai số cho thấy **kích thước ô ảnh hưởng đến độ chính xác ước lượng**; ô quá nhỏ dễ bỏ sót, ô quá lớn tốn công. (→ [ANR Lesson 13: baseline monitoring](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+- Bài thực hành cung cấp bộ công thức cơ bản của sinh thái học quần thể – quần xã: **mật độ → liên kết loài → độ phong phú → đa dạng → tương đồng**. (→ [Quần xã sinh vật](/blog/quan-xa-sinh-vat/), [ANR Lesson 14: assessing outcomes](/blog/monitoring-anr-part-2-assessing-outcomes-and-adaptive-management/), [ANR Lesson 12: ecosystem restoration](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+- Việc so sánh 3 kích thước ô với sai số cho thấy **kích thước ô ảnh hưởng đến độ chính xác ước lượng**; ô quá nhỏ dễ bỏ sót, ô quá lớn tốn công. (→ [ANR Lesson 13: baseline monitoring](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 - pH 5,8 cho thấy nền đất/nước rừng ngập mặn hơi chua.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `fe-catba`: ô tiêu chuẩn và chỉ số đa dạng ở Phù Long.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `fe-catba`: ô tiêu chuẩn và chỉ số đa dạng ở Phù Long.
 
 ## Tài liệu gốc
 - Báo cáo thực tập thiên nhiên.docx – Phần II, Bài 5 và Hình 11.

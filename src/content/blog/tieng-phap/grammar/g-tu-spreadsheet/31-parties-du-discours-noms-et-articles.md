@@ -11,6 +11,9 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/31 - Parties du discours -
   noms et articles.md
+url: /blog/parties-du-discours-noms-et-articles-tu-loai-danh-tu-va-mao-tu/
+topic: french
+updated: '2026-10-14'
 order: 31
 description: >-
   Ô C40 và C41 bị đặt lệch dòng: ví dụ "le bail, le corail, l'émail, le
@@ -49,7 +52,7 @@ isIndex: false
 - **Les noms or les substantifs (nouns)** are naming words: they refer to people (la fille), places (la France), animals (le chat), objects (la table) and concepts (l'amour). A noun can be a subject or an object in a sentence. They are often accompanied by an article and can be described by adjectives. To avoid repetition, nouns can be replaced by pronouns.
 
 ### Gender of French nouns
-- Unlike English, French nouns have a **gender (genre)**: they can be masculine (masculin) or feminine (féminin). There are different ways to find out a noun's gender: we can look in the dictionary and check for the abbreviations m. (masculine) or f. (feminine); we can check the noun's ending, which generally gives an indication whether the noun is masculine or feminine; or we can look at the noun's article. Nouns with le or un are masculine, and nouns with la or une are feminine. You should always learn nouns together with their articles to be sure of their gender. (→ [Gender: Masculine, Feminine](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/))
+- Unlike English, French nouns have a **gender (genre)**: they can be masculine (masculin) or feminine (féminin). There are different ways to find out a noun's gender: we can look in the dictionary and check for the abbreviations m. (masculine) or f. (feminine); we can check the noun's ending, which generally gives an indication whether the noun is masculine or feminine; or we can look at the noun's article. Nouns with le or un are masculine, and nouns with la or une are feminine. You should always learn nouns together with their articles to be sure of their gender. (→ [Gender: Masculine, Feminine](/blog/les-noms-danh-tu/))
 - **Typical endings for masculine nouns**: -e/-é, -eur, -ien, -(i)er, -on, -teur, -age, -al, -eau, -ent, -et, -asme/-isme, -in, -oir, -ail, days, months, seasons, trees, languages, cardinal points
 	- Ví dụ: le maître, le danseur, l'ouvrier, le chien, le patron, le nord
 - **Typical endings for feminine nouns**: -esse, -euse, -ienne, -(i)ère, -onne, -trice, -ade, -ance/-ence, -ée, -elle, -ie, -ine, -ise, -aille, -t(i)é, -ure, the continents, academic disciplines
@@ -59,7 +62,7 @@ isIndex: false
 	- **Job titles**: Certain job titles do not have a separate feminine form because they already end in -e. Likewise, there are other job titles that only exist in the masculine form but refer to both men and women. The majority of professions that were previously only associated with men now have their own feminine form, except for those ending in -e or -eur. However, the use of these feminine forms is not very common, nor is it compulsory. Certain professions only exist in the masculine form (grammatically!) but describe both men and women. Likewise, there are some professions that only have a feminine form in French grammar.
 
 ### Singular and plural French nouns
-- In French nouns can be singular or plural (pluriel). The plural form of a noun is usually formed by changing the article to les/des and adding an -s to the end of the word, however there are many exceptions! (→ [Number: singulier, pluriel](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/03-les-noms/))
+- In French nouns can be singular or plural (pluriel). The plural form of a noun is usually formed by changing the article to les/des and adding an -s to the end of the word, however there are many exceptions! (→ [Number: singulier, pluriel](/blog/les-noms-danh-tu/))
 - **General rules**: The plural of most nouns is formed by adding an -s to the end of the word. This -s is silent: it is almost never pronounced aloud.
 - **Plurals ending in -x**:
 	- nouns that end in -eau or -au: un château – des châteaux
@@ -88,7 +91,7 @@ isIndex: false
 - In French, nouns are almost always preceded by an article or a determiner. This indicates the gender of the noun (masculine or feminine) and its number (singular or plural). There are two types of articles: **definite articles (articles définis)** (le, la, les) and **indefinite articles (articles indéfinis)** (un, une, des).
 
 ### Indefinite article (articles indéfinis)
-- The indefinite articles are un (masculine singular), une (feminine singular) and des (plural for both genders). We use the indefinite article in the following cases: (→ [Indefinite Articles](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- The indefinite articles are un (masculine singular), une (feminine singular) and des (plural for both genders). We use the indefinite article in the following cases: (→ [Indefinite Articles](/blog/les-determinants-tu-han-dinh/))
 	- to talk about something non-specific
 	- in an introductory capacity to mention something for the first time in a text
 - The French indefinite article for the plural (des) is similar to the English "some". However, if there is an adjective before a plural noun, the indefinite article des becomes de.
@@ -99,7 +102,7 @@ isIndex: false
 	- Léna et Lara ont acheté de bons hot-dogs.
 
 ### Definite article (articles définis)
-- The definite articles are le in the masculine singular, la in the feminine singular, l' for singular nouns that start with a vowel, and les in the plural (both genders). They correspond to the English article the. We use the definite article in the following cases: (→ [Definite Articles](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- The definite articles are le in the masculine singular, la in the feminine singular, l' for singular nouns that start with a vowel, and les in the plural (both genders). They correspond to the English article the. We use the definite article in the following cases: (→ [Definite Articles](/blog/les-determinants-tu-han-dinh/))
 	- to talk about a specific person or thing
 	- to refer to a person or thing that has already been mentioned or is already known to the listener/reader
 	- after the verbs aimer, adorer, préférer, détester
@@ -109,15 +112,15 @@ isIndex: false
 	- Elle adore les hot-dogs.
 
 ### No article
-- In French we don't use an article for: names of towns, days of the week, months, phrases with en + transport, jobs (in a general context), religions. (→ [Ngày, tháng](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/))
-- In some cases, the partitive article de appears without another article: to express quantities (except after bien, la plupart, une partie, la majorité and la moitié), after a negation, after certain verbs or expressions that contain de. (→ [Négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- In French we don't use an article for: names of towns, days of the week, months, phrases with en + transport, jobs (in a general context), religions. (→ [Ngày, tháng](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/))
+- In some cases, the partitive article de appears without another article: to express quantities (except after bien, la plupart, une partie, la majorité and la moitié), after a negation, after certain verbs or expressions that contain de. (→ [Négation](/blog/la-negation-phu-dinh/))
 - Ví dụ:
 	- Ils habitent à Paris.
 	- Nous l'avons vu lundi.
 	- Je suis né en juillet.
 
 ### Partitive article (l'article partitif)
-- The partitive article is used to talk about an undetermined amount of something. It is formed using the preposition de + article. English uses no article in these cases, but French employs the partitive article: (→ [Partitive articles](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- The partitive article is used to talk about an undetermined amount of something. It is formed using the preposition de + article. English uses no article in these cases, but French employs the partitive article: (→ [Partitive articles](/blog/les-determinants-tu-han-dinh/))
 	- with uncountable nouns
 	- to talk about sports and musical instruments with the verb faire
 - Ví dụ:
@@ -134,4 +137,4 @@ isIndex: false
 | De          | De + le = du          | parler du jeu              |
 | De          | De + les = des        | c'est la table des enfants |
 
-- Xem thêm: [Contractions of "à" and "de"](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/) – bảng tương tự trong sổ tay; [Les prépositions à et de](/blog/tieng-phap/grammar/g-tu-spreadsheet/34-parties-du-discours-prepositions/) – sheet lặp lại bảng này ở phần giới từ.
+- Xem thêm: [Contractions of "à" and "de"](/blog/les-prepositions-gioi-tu/) – bảng tương tự trong sổ tay; [Les prépositions à et de](/blog/parties-du-discours-prepositions-tu-loai-gioi-tu/) – sheet lặp lại bảng này ở phần giới từ.

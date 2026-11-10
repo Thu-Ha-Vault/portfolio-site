@@ -12,6 +12,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/IV - SQL/SQL - Tutorial/01 - Tutorial.md
+url: /blog/tutorial-biology-2/
+topic: biology
+updated: '2026-10-14'
 order: 1
 description: What is SQL?
 isIndex: false
@@ -88,7 +91,7 @@ isIndex: false
 
 - Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
 
-- Some of The Most Important SQL Commands (→ [Bảng tra cứu lập trình](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
+- Some of The Most Important SQL Commands (→ [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
   - SELECT - extracts data from a database
 
@@ -114,7 +117,7 @@ isIndex: false
 
 ## Select
 
-- The SQL SELECT Statement: The SELECT statement is used to select data from a database. (→ [SELECT & WHERE](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/02-select-and-where-truy-van-co-ban/))
+- The SQL SELECT Statement: The SELECT statement is used to select data from a database. (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/))
 
 - Syntax: 
 SELECT column1, column2, …
@@ -128,7 +131,7 @@ FROM table_name;
 
 ## Select Distinct
 
-- The SQL SELECT DISTINCT Statement: The SELECT DISTINCT statement is used to return only distinct (different) values. Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values. (→ [Sắp xếp & Tìm kiếm](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/iv-sql/sql-xom-data/beginner/03-sap-xep-and-tim-kiem/))
+- The SQL SELECT DISTINCT Statement: The SELECT DISTINCT statement is used to return only distinct (different) values. Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values. (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/))
 
 - Syntax:
 SELECT DISTINCT column1, column2, ...

@@ -9,6 +9,9 @@ tags:
 section: Sinh học
 folder: Sinh học / Kiến thức chung
 vaultPath: Resources/Sinh học/Kiến thức chung/Mô hình tế bào tương tác.md
+url: /blog/mo-hinh-te-bao-tuong-tac/
+topic: biology
+updated: '2026-10-14'
 description: >-
   Chọn tab Tế bào động vật / Tế bào thực vật để so sánh. Rê chuột vào bào quan
   để xem tên; bấm để mở mặt cắt ngang kèm chú thích. Trong mặt cắt, bấm từng

@@ -10,6 +10,9 @@ folder: Business / A - Digital Marketing and E-commerce
 vaultPath: >-
   Resources/Business/A - Digital Marketing and E-commerce/02 - Attract and
   Engage Customers with Digital Marketing.md
+url: /blog/attract-and-engage-customers-with-digital-marketing/
+topic: business
+updated: '2026-11-10'
 source: 'https://www.coursera.org/learn/attract-and-engage-customers'
 order: 2
 description: >-
@@ -386,7 +389,7 @@ isIndex: false
 - Low-hanging fruit: find relevant keywords for your business and industry (free tools list top keywords per industry) → build content around them (e.g. a blog page or informational page that funnels traffic)
 - Free audit tools show page load speed and how to decrease page size → faster loading, better user experience
 - Advice: SEO is always changing, but the bottom line stays the same → understand what customers are organically interested in and curious about
-#### Organize your website's pages: Website structure and navigation
+#### Organize your website’s pages: Website structure and navigation
 - **Site structure**: how webpages are linked and connected, and how a visitor navigates the website (generally **technical SEO**; large companies have departments for website architecture and user experience)
 	- Small business: ~10 pages, easy; e-commerce with thousands of products: complicated
 	- Good structure is **hierarchical** (pages fall under and are associated with another page), e.g. product categories on a home improvement site: hardware, electrical, plumbing
@@ -627,7 +630,261 @@ isIndex: false
 - Glossary terms from module 3: https://www.coursera.org/learn/attract-and-engage-customers/supplement/eZfqw
 ## Module 4: Search engine marketing (SEM) and display advertising
 ### Understand search engine marketing (SEM)
+#### Welcome to module 4
+- Online paid advertising: ads in search engines, on websites, and in apps
+- Module 4 roadmap: **SEM** (ads displayed when someone makes a query) → paid ads in Google Search with **Google Ads** (common ad formats, creating a campaign, bidding strategies, audience targeting, **keyword match types**) → the **ad auction** (where an ad appears and how much you pay per click) → creating a great ad → **display advertising** (visual ads on sites across the web), especially **responsive display ads**
+- Coach AK: when launching a new company he needed something faster than SEO → search ads put his company at the top of results in **less than 24 hours**, in front of the target audience at the exact moment they look for solutions
+#### Understand the benefits of SEM
+- Two main ways to get found in SERPs: **search listings** and **paid ads**
+- **Search engine marketing (SEM)**: increasing a product or service's visibility on a SERP through paid advertising
+	- You're typically charged when the ad is **clicked**, not when it shows
+	- Also possible on other search engines and **product-based search engines** (searches on e-commerce sites themselves)
+- Pay models:
+	- **Pay-per-click (PPC) advertising**: businesses only pay when someone clicks on their ad → aligns Google with advertisers (Google is motivated to show ads that get clicked)
+	- Other models: pay per **impressions** (how many times someone sees an ad)
+	- vs. a magazine ad: large upfront cost and no tracking of reader actions; digital ads can be optimized based on user actions
+- Placement: typically at the **top and bottom** of Google Search; depends on ad type (e.g. **shopping ads** at the top for product searches or on the Shopping tab; **local search ads** for local searches); sometimes no ads appear
+- Advantages of SEM:
+	1. **Reach customers likely to buy**: e.g. a plumbing business in Phoenix, Arizona, shown for "plumber in Phoenix Arizona"
+	2. **Quickly appear in SERPs**: useful when a (new) website hasn't built enough authority or reputation for competitive terms
+	3. **Learn which ads drive sales**: drive traffic to specific pages to collect data on which content performs and converts
+	4. **Control where you send searchers**: e.g. homepage ranks for "leaking water heater repair", but SEM can send them to a page with a lead form or phone number → tailored messaging
+		- **Landing page**: any webpage where a visitor enters a website; should directly address the problem the customer is trying to solve
+#### Common SEM terms
+- **Digital advertising**: communication made by a company to promote its brand, product, or service using various platforms and online channels
+- **Traditional advertising**: non-digital placements, like newspapers, radio, TV, or billboards
+- **Clicks**: an interaction between an ad and an online user → how well the ad appeals to people who see it
+- **Impressions**: how often your ad is shown (counted each time on a search result page or other site in the **Google Network**)
+- **Organic results**: search results not paid for by advertisers
+- **Paid results**: search results that advertisers pay to show when a user searches certain words or phrases (**keywords**)
+- **SERPs**: search engine results pages, Google's response to a user's search query
+- **Visitors**: the total number of times people have been to your website or app as a result of clicking your ad
+- **Landing page**: the webpage where people end up after they click your ad
+- **Optimization score**: an estimate of how well your Google Ads account is set to perform, from **0% to 100%** (100% = full potential)
+- **Targeted location**: the towns, cities, or countries where your ads will appear
+- Common SEM terms: https://www.coursera.org/learn/attract-and-engage-customers/supplement/adU1o
+#### Common SEM ad formats in Google Ads
+- Ad types evolve; the goal is to show ads that fulfill a searcher's need
+- Ad types in the SERPs:
+	- **Text ads**: classic ads with a title that is a link + a short description that appeals to the searcher
+	- **Shopping ads**: for e-commerce; show products (with a **photo**) related to the search, often from several companies
+	- **Local services ads**: for local, service-based businesses (locksmiths, plumbers, electricians, real estate agents); the business must be **screened by Google** → additional credibility
+	- **Google Maps ads**: for local businesses, including product-based ones (restaurant, jewelry store, fitness gym)
+	- **Call ads**: mobile searches only; tap to immediately call the business
+- **Ad extensions**: additional information about a business:
+	- **Sitelink extensions**: additional helpful website links
+	- **Call extensions**: call a business by clicking its ad
+	- **Location extensions**: find a local business and pull it up on Google Maps
+	- **Price extensions**: for e-commerce; a specific product and its price → click goes directly to the product page
+	- **Structured snippets extensions**: highlight specific aspects of products and services (headers: services, brands, amenities, types, styles)
+- **YouTube** can also be considered a search engine platform → reach customers researching a product (often in the consideration phase), e.g. a car dealership advertising during car reviews
+#### Ginny - SEM and how to attract customers
+- Ginny: Ads Product Liaison at Google → bridge between the advertiser community (agencies, in-house practitioners, consultants) and internal product, communications, and marketing teams
+- Worked on Google Ads, Microsoft Advertising, social media (Facebook, Pinterest, Instagram, Snap), Amazon → each has a learning curve, but fundamentals are the same: reach the audience with creative that resonates
+- Example: campaign for a university's **summer high school program** → two audiences (students and **parents**, who pay the tuition) → different messaging + **budget allocation** weighted towards parents → incremental conversions (leads)
+- Challenges: SEM is **constantly changing**; automation plays a growing role
+- Most exciting: **instant gratification** (see leads, sales, downloads in near real time)
+- Number one trait for success in SEM: **curiosity**
 ### Understand Google Ads
+#### How Google Ads works
+- Steps to create any Google ad (regardless of format):
+	1. **Define your campaign goal** (also **objective**): more sales, leads, website traffic, store visits → informs other options (e.g. traffic goal → bidding like "maximize clicks", putting your **ad spend** towards clicks)
+	2. **Choose your campaign type**: search, shopping, local, video → determines where ads show and how they look (search → SERPs; video → YouTube; local → Google Maps, websites, YouTube)
+		- **Campaigns**: ads that share a budget, location targeting, and other settings; often organize categories of products and services; an account can run numerous campaigns
+	3. **Set a budget**: maximum spend, changeable anytime → an **average daily budget** over one month; Google Ads optimizes spend for days with more likely clicks and conversions (some days under, some over), but never exceeds the **monthly spending limit**
+	4. **Choose your bidding strategy**: recommended based on the goal (e.g. focus on conversions); **automated bidding strategies** use **machine learning** (software instructions that help the ad achieve its goal) → bids set by likelihood of conversion or sale, learning as ads are served
+	5. **Select audience targeting**: no targeting = widest reach; narrower targeting reaches specific interested customers (→ customer personas); common forms: **keywords, audiences, locations, topics, devices** → plan before creating the ad
+	6. **Create your ad**: primary text ad format = **responsive search ads** (several headlines, descriptions, and a landing page URL; Google tests combinations) → the landing page must deliver what the customer expects
+	7. **Set up conversions**: **conversion tracking** shows whether ads, targeting, and campaigns work → e.g. connect **Google Analytics** to Google Ads
+		- Provide clear information about data collected and get user **consent** (e.g. website pop-up / **cookie consent bar**)
+#### Google Ads bid strategies
+- **Bid strategy**: designed to help achieve campaign goals based on budget
+	- **Manual Cost Per Click (CPC)**: you set your own maximum cost per click
+	- **Automated bidding**: Google Ads sets bids based on the likelihood of a click or conversion
+	- **Smart Bidding**: a subset of automated bidding using machine learning to optimize for conversions or conversion value in each auction, with **auction-time signals** (device, location, time of day, remarketing list, language, operating system) → decides whether and how much to bid
+- Types of bid strategies:
+
+| Bid strategy | Definition | Goal |
+| --- | --- | --- |
+| Maximize conversion value | Advanced machine learning automatically optimizes and sets bids, with auction-time bidding tailored for each auction | Increase business value |
+| Target ROAS | Optional target for maximizing conversion value; predicts the value of a potential conversion for each search and adjusts bids to maximize return (bids high on likely high-value conversions) | Increase business value |
+| Maximize conversions | Sets bids to get the most conversions within your budget | Increase sales or leads |
+| Maximize clicks | Sets bids to get as many clicks as possible within your budget | Increase website visitors |
+| Target CPA | Optional target for maximizing conversions; you set an average cost per conversion (target cost per action) | Increase sales or leads |
+| Target impression share | Shows ads on the absolute top of the page, the top of the page, or anywhere on the page, based on placement settings | Increase awareness and visibility |
+| Cost per 1000 impressions (CPM) | Pay based on impressions on YouTube or the Google Display Network | Increase awareness and visibility |
+| Cost per view (CPV) | Default for video ads; pay for video views or interactions | Increase awareness and visibility |
+
+- Google Ads guides you to a bid strategy with questions about campaign goals; also shows recommended strategies for existing campaigns
+- Identify the goal first, then match a strategy; often trial and error
+- Google Ads bid strategies: https://www.coursera.org/learn/attract-and-engage-customers/supplement/fvXdj
+#### Case study: How Studley's Flower Gardens uses Google Ads to grow their business
+- **Studley's Flower Gardens**: family-owned florist, garden center, and landscaping company in downtown Rochester, New Hampshire, founded **1928**; physical store + robust e-commerce website
+	- Advertising budget: ~**65%** online ads, **35%** local radio and television
+- Challenge: competing with national flower brands in SERPs; SEO is difficult (national brands have large budgets and dedicated teams); local keyword rankings fluctuate → revenue risk
+- Approach: **Google Ads** for a consistent presence for related keywords, targeting specific customers near the business (vs. broad approaches like direct mail)
+	- Bids on keywords related to its **business name** → appears at the top for searches in Rochester
+	- Hired a **marketing company** to manage the ads → owners focus on running the business
+- Results: ads reach customers right when they need flowers and plants (brand name searches → ad + organic listing; "flower delivery near" → ad even without an organic listing)
+- SEM helps small, local businesses compete with larger brands (local targeting)
+- Case study: How Studley's Flower Gardens uses Google Ads to grow their business: https://www.coursera.org/learn/attract-and-engage-customers/supplement/9ee7u
+#### Identify keywords and understand the ad auction
+- Keywords are a foundational component of SEM → accurate keyword research
+- **Keyword match types**: how closely the keyword must match the user's query
+	- **Broad match**: ads show on searches related to the keyword, may not include it (e.g. "low-carb diet plan" → "carb-free foods", "low-carb diets", "low-calorie recipes"); may use recent search activity and **landing page** content → pair with an **automated bidding strategy**
+	- **Phrase match**: searches that include the meaning of the keyword; more flexible than exact, more targeted than broad (e.g. "tennis shoes" → "shoes for tennis", "buy tennis shoes on sale", "red tennis shoes"; not "tennis rackets", "training shoes", "can you wear running shoes for tennis?")
+	- **Exact match**: same meaning or intent; most control (e.g. "shoes for men" → "shoes men", "men shoes", "men shoe"; not "men's tennis shoes", "shoes for boys")
+	- All match types cover **close variants** (plurals, misspellings, synonyms, reordered words) → no need for exhaustive keyword lists
+- **Negative keywords**: exclude search terms from campaigns to avoid irrelevant searches; negative keywords **don't match close variants**
+	- E.g. negative broad match "running shoes": ad may show for "blue tennis shoes" or "running shoe", not for "blue running shoes", "shoes running", "running shoes"
+- **Ad auction**: how Google determines which ads to show and in what order for each search with text ads
+	- **Ad rank**: a value Google uses to determine your ad's position; main factors:
+		1. **Bid**: how much you're willing to pay per click
+		2. **Quality of your ads and landing page**: relevance to the query and likelihood of a click → **quality score** (diagnostic tool, scale **1–10**, a guide only, not used in the auction)
+		3. **Ad extensions**: phone number, additional links → use all relevant ones
+		- Other factors: contents of the search, other results on the page
+- Closely matching keywords + right bid + quality ad + helpful landing page → more likely at the top
+#### Best practices when creating a Google Ad in Search
+- Effective ads can appear higher, get more clicks and conversions, sometimes at a lower **cost per click** than competitors
+- Best practices:
+	1. **Focus messaging on user needs and benefits**: e.g. reliability → "official site"; wide selection → "view our inventory" (use personas' goals)
+	2. **Include at least one keyword from your ad group in your headlines** (the **headline** is the clickable link; the **description** is below); Google tests combinations, so every combination must read well; advanced tools can insert keywords automatically
+	3. **Avoid generic sales language**: "call us today" creates false urgency; generic CTAs ("sign up today", "book today") decrease engagement → specific, relatable CTAs (e.g. "book your dream vacation rental" instead of "book now")
+	4. **Implement all ad extensions that make sense** (location, call, app install help mobile users) → enable at least **four**; Google picks the best combination per auction
+	5. **Optimize your landing page**: relevance to keywords should be clear right away (useful, well organized, clear directions); **load quickly**
+- Treat Google Ads as an experiment: create different ads, get results, tweak lower-performing copy
+#### Google Ads account structure and organization explanation
+- **Google Ads**: Google's online advertising program to reach people exactly when they're interested in your products and services
+- Account structure (in the order you experience it when creating a campaign; diagram in the source):
+	- **Campaign**: a plan of action for how a set of one or more ad groups sharing a budget, location targeting, and other settings will be distributed online; organizes categories of products or services
+	- **Average daily budget**: the average amount set per campaign per day, roughly what you're comfortable spending each day over the month
+	- **Ad Groups**: organize and target ads into themed groups of keywords; each campaign has one or more ad groups
+	- **Ad Formats**: text, videos, images, digital content ads, ...
+	- **Bids**: the amount you're willing to spend each time a potential customer clicks your ad or calls you
+	- **Keywords**: words or phrases describing your product or service that help determine when and where your ad appears; ads are ranked on bid and relevance, among other factors
+- Google Ads account structure and organization explanation: https://www.coursera.org/learn/attract-and-engage-customers/supplement/Lt95L
+#### Creating a Google Ad
+- Guided steps to create a **responsive search ad** campaign in the Google Ads interface (you can also create a campaign without a goal):
+	1. **Define your campaign objective**: Sales, Leads, Website traffic, App promotion, Local store visits and promotions, Awareness and consideration
+	2. **Choose the campaign type**: Search, Performance Max, Demand Gen, Display, Shopping, Video, Discovery (+ name the campaign)
+	3. **Choose your bidding strategy**
+	4. **Choose campaign settings**: networks, locations, languages, EU political ads, audience segments
+	5. **AI Max for Search campaigns**: optional optimization feature
+	6. **Keywords and ads**: generate keywords from the campaign or add your own
+	7. **Create your ad**: descriptions, final URL, display path, headlines, extensions → at least one keyword in headlines; use the **ad strength** indicator for feedback
+	8. **Set your budget** (Google Ads Help Center)
+	9. **Publish**: review all settings, then publish
+- More: Create effective Search ads (Google Help Center)
+- Creating a Google Ad: https://www.coursera.org/learn/attract-and-engage-customers/supplement/GKf9k
 ### Apply display advertising
+#### Introduction to display advertising
+- **Display advertising**: visual ad formats placed on websites or applications that are not search engines (e.g. children's furniture ads on a furniture trends website)
+- Instead of contacting websites one by one → **display advertising networks**, e.g. **Google Display Network**: more than **two million** websites, videos, and apps; reaches over **90%** of Internet users worldwide
+	- Targeting: contexts (e.g. "outdoor lifestyles", a specific website), audiences (young moms, people shopping for new sedans), searcher locations, remarketing to previous visitors
+	- Unlike search ads, viewers aren't searching for your product → delivering to the likely customer is crucial
+- Two types of Google Display Ads:
+	- **Uploaded ads**: you create the ad graphic to required specifications (sizes like **banner, leaderboard, skyscraper**) → for a specific design vision; needs design resources and time
+	- **Responsive display ads**: upload content (images, headlines, logos, videos, descriptions) → Google Ads automatically generates combinations for websites, apps, YouTube, Gmail; less control but easier
+- Benefits of responsive display ads:
+	1. **Optimization by Google Ads software**: best combinations of assets delivered automatically, no manual testing
+	2. **Broader reach**: Google adjusts size, appearance, and format to fit almost any ad space (manually uploaded ads only show where that size is supported)
+	3. **Use with videos**: Google tests videos against photos and shows the better performer
+	4. **Save time**: less time managing a complicated ad portfolio, more on performance improvement
+#### How to optimize a responsive display ad for your goals
+- Responsive display ads are the most popular type of display ad
+- Creative best practices:
+	1. **Upload the recommended number of assets** (**assets** = ad content: headline, image, description, logo, business name) → Google recommends **five headlines, five images, five descriptions**; on average **10% more conversions** with multiple assets
+	2. **Unique and effective copy**: the headline shows the brand or product's value and works without the description; the description complements it and explains the value
+	3. **Cohesive landing page**: messaging matches the ad; make the next desired action clear
+	4. **Rotate in new display ads every few weeks**: swap lower-performing assets → prevent **ad fatigue** (the audience sees your ads so often they become bored and stop paying attention)
+- Image tips (images are the most crucial element):
+	1. **Strong visual focus**: images that support the main point; Google's free **stock image library** if needed
+	2. **Don't overlay a logo, text, or button** (repetitive logos, unreadable text in small formats; buttons like "Book Now" or "Download" may violate Google's ad policy)
+	3. **Make the product the focus**: blank space no more than **80%** of the image
+	4. **Background suits the product**: no fake backgrounds (e.g. product in outer space); physical setting with natural lighting and shadows
+- Google released responsive display ad technology in **2016**
+#### Advertise on YouTube
+- YouTube: millions of videos uploaded daily → reach audiences worldwide
+- Two types of "YouTube ads":
+	- **Display ads**: static visual ads created with Display campaigns in Google Ads ("digital billboards") on the Google Display Network; on YouTube they appear next to the streaming video
+	- **TrueView video ads**: video ads where brands only pay when someone **chooses to view** them; managed in Google Ads but the video must first be uploaded to the brand's YouTube channel
+		- **Skippable video ads**: viewers can skip after **five seconds**
+		- **Non-skippable video ads**: must be watched before the video; **15 to 20 seconds** depending on regional standards; subcategory **bumper ads** (**six seconds**)
+		- **Overlay** image or text ads: on the lower **20%** of a video; computers only, not mobile
+		- **In-display ads** (**TrueView Discovery Ads**): in YouTube search results for related queries (thumbnail, title, description) → like search ads with videos
+- Benefits:
+	- **Inexpensive**: pay-per-view or pay-per-click; on average **$0.10 to $0.30 (USD)** per view or action (depends on watch time, audience targeting, campaign objective)
+	- **Reach your audience**: target by topics, keywords, demographics; appear in suggested video feeds of popular videos
+	- **Effective**: people who view an ad are **10 times** more likely to engage with the brand
+- More: steps for uploading a TrueView video ad campaign
+- Advertise on YouTube: https://www.coursera.org/learn/attract-and-engage-customers/supplement/zBmvg
+#### How to create a responsive display ad
+- **Responsive display ads**: the default ad type across the Google Display Network (more than two million websites, videos, apps); automatically adjust size, appearance, and format; can show as **native** ads (blend into the publisher's font and feel)
+- Before uploading assets:
+	- **Business name**: official name, spelled and capitalized correctly
+	- **Display URL**: where the ad directs customers; landing page and final URL must share the same **domain** as the display URL
+	- **Display campaign** in Google Ads: budget, bid strategy, ad groups, target audience, ...
+	- Steps: log into Google Ads → select the display campaign → Ads & extensions → Ads → Responsive display ad
+- **Upload assets** (asset-based ad type):
+	- **Images**: primary element; high quality, strong visual focus, product as the focus, support the main point, suitable background, no overlaid logo/text/buttons, not blurry, skewed, or over-filtered → **5 to 15 images** (from computer, Google's free stock library, or scanned from your website)
+	- **Logos**: **1:1** (square), recommended **1200 x 1200 px**
+	- **Short headlines**: at least **five**, **30 characters or fewer**, for tight ad spaces
+	- **Long headline**: one, **90 characters or fewer**, for larger ads
+		- Headlines: **sentence case**, unique and compelling value, stand alone without a description, describe promotions or special offers, tell customers what to do
+	- **Descriptions**: up to **five**, **90 character** limit each; sentence case, complement headlines, explain value, unique selling points/prices/promotions, why to trust the brand, ratings and reviews
+	- **Videos** (optional): **30 seconds or fewer**, uploaded to YouTube first
+	- Upload as many assets as possible → more combinations for different spaces
+	- **Accessibility**: viewers with low vision may use a **screen reader** (assistive technology that reads text and image descriptions aloud) → straightforward, descriptive headlines and descriptions
+- **Review performance**: Google uses machine learning to show the most effective combinations; after about **two weeks**, enough data to view best-performing versions → replace assets with little to no traffic
+- More: Create effective responsive display ads (Google Ads Help)
+- How to create a responsive display ad: https://www.coursera.org/learn/attract-and-engage-customers/supplement/jkFBL
 ### Review: Search engine marketing (SEM) and display advertising
+#### Wrap-up
+- Recap: SEM and why advertise in search engines, Google ad types (text, local services, shopping), budgets, bidding strategies, keywords, ad auction, creating a search ad, display advertising and responsive display ads → even if not working directly in SEM, know how each channel works and costs (e.g. help decide between SEM, social media ads, or traditional advertising)
+#### Glossary terms from module 4
+- **Ad auction**: A process that determines which ads will appear for a specific search and in which order those ads will show on the page
+- **Ad extension**: A Google Ads feature that shows additional information about the business, such as website links, a phone number, or address
+- **Ad formats**: Elements such as text, videos, images, digital content ads, and more that make up a Google Ad
+- **Ad group**: A group of ads that is organized by a group of keywords
+- **Automated bidding strategy**: A Google Ads feature that automatically sets a bid for an ad based on an ad's likelihood to result in a click or conversion that helps achieve a specific goal
+- **Average daily budget**: The average amount set for each ad campaign on a per-day basis
+- **Bid**: The amount a marketer is willing to spend each time a potential customer clicks their ad or calls their business
+- **Bidding strategy**: Tells an advertiser how much to pay for each user action related to an ad
+- **Broad match**: A keyword match type in Google Ads that shows ads when someone searches for a term related to a keyword
+- **Campaign**: A plan of action for how a set of one or more ad groups that share a budget, location targeting, and other settings will be distributed online
+- **Click**: An interaction with an ad and online user
+- **Digital advertising**: Communication made by a company to promote its brand, product, or service using various platforms and online channels
+- **Exact match**: A keyword match type in Google Ads that shows ads when someone searches for a term that has the same meaning or same intent as a keyword
+- **Google Ads**: An online advertising platform where advertisers bid to display brief advertisements, service offerings, product listings, or videos to web users
+- **Google Display Network**: A group of websites, videos, and apps where display ads can appear
+- **Impressions**: How often an ad is shown
+- **Keyword**: A search term that people use to find information, products, or services online
+- **Landing page**: The webpage where people end up after they click an ad
+- **Negative keywords**: Search terms excluded from an ad campaign
+- **Optimization score**: An estimate of how well a Google Ads account is set to perform
+- **Organic results**: Search results not paid for by advertisers
+- **Paid results**: Search results that advertisers pay to show whenever a user runs a search containing certain keywords
+- **Pay-per-click (PPC)**: A type of advertising that allows the advertiser to pay only when someone clicks on an ad link
+- **Phrase match**: A keyword match type in Google Ads that shows ads when someone searches for a term that includes the meaning of a keyword
+- **Responsive display ad**: A Display ad that automatically adjusts its size, appearance, and format to fit available ad spaces
+- **Search engine results pages (SERPs)**: The results pages that appear when someone performs a search query
+- **Smart bidding**: Automated bidding strategies that use machine learning to optimize for conversions or conversion value with each auction
+- **Targeted location**: The towns, cities, or countries in which an ad will appear
+- **Traditional advertising**: Non-digital ad placements, like newspapers, radio, TV, or billboards
+- **Visitors**: The total number of times people have been to a website or app as a result of clicking an ad
+- (Terms from previous modules repeated, omitted here)
+- Glossary terms from module 4: https://www.coursera.org/learn/attract-and-engage-customers/supplement/JdXqF
 ### Course review: Attract and engage customers with digital marketing
+#### Reflect and connect with your peers
+- Congratulations on completing the course: marketing funnel, SEO, SEM, display advertising
+- **Google Digital Marketing and E-commerce Community** (optional, no cost): discuss course content, expand your network, unlock career opportunities
+- Reflect and connect with your peers: https://www.coursera.org/learn/attract-and-engage-customers/supplement/W56DQ
+#### Course wrap-up
+- Course recap: customer personas → four stages of the marketing funnel and their strategies (SEM, email marketing, remarketing, testimonials, ...) → how Google Search works → keyword research and keyword lists → site structure → SEO → online advertising (SEM benefits, ad formats, best practices; responsive display ads)
+- Next course: social media marketing and advertising; Coach AK: remember the dedication and commitment that got you here
+#### Course 2 glossary
+- Course 2 glossary (Google Docs template or DOCX download): https://www.coursera.org/learn/attract-and-engage-customers/supplement/fUSV5
+#### Get started on Course 3
+- Course 2 recap: SEO, SEM, display advertising; stages of the marketing funnel; SEO fundamentals (keyword research, search engine algorithms, link building); paid search and advertising
+- Next course: **From Likes to Leads: Interact with Customers Online** → social media platforms, creating content with graphic design principles for marketers, managing a social media presence (→ [Course 3](/blog/from-likes-to-leads-interact-with-customers-online/))
+- Get started on Course 3: https://www.coursera.org/learn/attract-and-engage-customers/supplement/tQ0ah

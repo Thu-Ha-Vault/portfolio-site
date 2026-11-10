@@ -14,6 +14,10 @@ folder: Sinh học / Biology Project and Lab Report / Botany
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Botany/03 - Bidens pilosa -
   Hình thái và giải phẫu.md
+url: >-
+  /blog/morphological-and-anatomical-study-of-bidens-pilosa-var-minor-blume-sher-from-tr/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Bài báo của Dr Ngu Wah Win (Lecturer) và Min Htay Wai Linn (PhD Candidate),
@@ -29,7 +33,7 @@ isIndex: false
 - Kết luận chính: khí khổng kiểu **không đều bào** (*anomocytic*); bó mạch ở gân chính và cuống lá kiểu **chồng kép** (*bicollateral*), **hở** (có cambium), có **bao bó mạch** một lớp.
 
 ## Vật liệu & phương pháp
-- Thu mẫu ở Pyin Oo Lwin (vùng Mandalay); ghi chú thực địa, chụp ảnh; ép một phần mẫu làm **tiêu bản khô (herbarium)**. (→ [Thu mẫu và ép tiêu bản Ardisia](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/07-thuc-vat-bac-cao-ardisia/))
+- Thu mẫu ở Pyin Oo Lwin (vùng Mandalay); ghi chú thực địa, chụp ảnh; ép một phần mẫu làm **tiêu bản khô (herbarium)**. (→ [Thu mẫu và ép tiêu bản Ardisia](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/))
 - Định loại theo Hooker (1881), Heywood (1978), Grierson (1980), Cronquist (1981).
 - Giải phẫu:
 	- **Cắt tay** bằng dao lam, làm trong bằng **chloral hydrate**, nhuộm **safranin**, lên tiêu bản tạm trong glycerin loãng.
@@ -55,7 +59,7 @@ isIndex: false
 	- 4–9 (gân chính) hoặc 6–12 (cuống lá) bó mạch xếp hình **lưỡi liềm**, kiểu **chồng kép, hở**: phloem ở hai phía xylem, **cambium** 2–4 lớp nằm giữa xylem và phloem.
 - **Thân**: tiết diện đa giác / 4 cạnh.
 	- Vỏ gồm mô dày (vòng không liên tục) và mô mềm; **nội bì rõ**; trụ bì hoá **mô cứng** thành từng cụm hình lưỡi liềm.
-	- 16–23 bó mạch **chồng** (*collateral*) xếp thành một vòng không liên tục; cambium 3–5 lớp; **tuỷ** mô mềm lớn. (→ [Thân Hướng Dương, cùng họ Asteraceae](/blog/sinh-hoc/biology-project-and-lab-report/botany/01-giai-phau-la-than-re/))
+	- 16–23 bó mạch **chồng** (*collateral*) xếp thành một vòng không liên tục; cambium 3–5 lớp; **tuỷ** mô mềm lớn. (→ [Thân Hướng Dương, cùng họ Asteraceae](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/))
 - **Rễ**: tiết diện tròn; vỏ 3–4 lớp mô mềm; trụ bì hoá mô cứng liên tục 3–5 lớp; trụ dẫn **đa nguyên** (*polyarch*), xylem thành khối đặc ở giữa, phloem bao quanh.
 - Thành phần mô dẫn (cả lá, thân, rễ): **phloem** gồm ống rây, tế bào kèm, mô mềm phloem, sợi phloem; **xylem** gồm mạch, quản bào, sợi và mô mềm xylem.
 

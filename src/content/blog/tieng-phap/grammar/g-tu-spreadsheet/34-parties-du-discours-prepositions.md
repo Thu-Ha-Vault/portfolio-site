@@ -10,6 +10,9 @@ folder: Tiếng Pháp / Grammar / G - Từ spreadsheet
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/G - Từ spreadsheet/34 - Parties du discours -
   prépositions.md
+url: /blog/parties-du-discours-prepositions-tu-loai-gioi-tu/
+topic: french
+updated: '2026-10-14'
 order: 34
 description: 'Ô C204: "Il es parti il y a une heure." → "Il est parti".'
 isIndex: false
@@ -27,12 +30,12 @@ isIndex: false
 </details>
 
 
-- **Prepositions (les prépositions)** are small words that link elements of a sentence together. They indicate the relationships between words. In French, there are simple prepositions (à, chez, etc.) as well as longer prepositional phrases (d'après, près de etc.). (→ [Les prépositions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- **Prepositions (les prépositions)** are small words that link elements of a sentence together. They indicate the relationships between words. In French, there are simple prepositions (à, chez, etc.) as well as longer prepositional phrases (d'après, près de etc.). (→ [Les prépositions](/blog/les-prepositions-gioi-tu/))
 
 ## The prepositions à, de and en
 - In lists, à, de, and en are repeated before each item (not mentioned once and then left out, as in English).
 	- Ví dụ: Il faut de l'eau, de la farine et du sel pour faire une pâte à pizza.
-- The prepositions à and de are combined with the articles le and les to make one word. (→ [Contractions of "à" and "de"](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/))
+- The prepositions à and de are combined with the articles le and les to make one word. (→ [Contractions of "à" and "de"](/blog/les-prepositions-gioi-tu/))
 
 | Preposition + article | Example                      |
 | --------------------- | ---------------------------- |
@@ -41,7 +44,7 @@ isIndex: false
 | de + le = du          | parler du jeu                |
 | de + les = des        | C'est la table des enfants.  |
 
-- Xem thêm: [Contract articles and prepositions](/blog/tieng-phap/grammar/g-tu-spreadsheet/31-parties-du-discours-noms-et-articles/) – cùng bảng ở phần mạo từ.
+- Xem thêm: [Contract articles and prepositions](/blog/parties-du-discours-noms-et-articles-tu-loai-danh-tu-va-mao-tu/) – cùng bảng ở phần mạo từ.
 
 ## The prepositions avant and devant
 - Avant and devant are often both translated into English as "before". In French, however, these prepositions have two different meanings — **avant** is used when referring to time and **devant** when referring to space (similar to "in front of").
@@ -54,7 +57,7 @@ isIndex: false
 - Ví dụ: Il a pris froid. Il est allé à Reims. / Il est monté sur la table pour réparer la lampe. / Il est sûr d'avoir réparé la lampe hier.
 
 ## Il y a
-- Although not strictly a preposition, the prepositional phrase **il y a** (= ago) is useful for locating past events in time. (→ [Il y a: ago](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/05-les-adverbes/))
+- Although not strictly a preposition, the prepositional phrase **il y a** (= ago) is useful for locating past events in time. (→ [Il y a: ago](/blog/les-adverbes-trang-tu/))
 - Ví dụ: Il est parti il y a une heure.
 
 ## Time
@@ -77,7 +80,7 @@ isIndex: false
 | jusque  | until        | until a certain point                                |
 | pendant | during, for… | to indicate how long something lasts                 |
 
-- Xem thêm: [depuis, pendant, pour: "for"](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/) – phân biệt depuis / pendant / pour và "il y a… que"; [Ngày, tháng, mùa](/blog/tieng-phap/grammar/a-grammaire-essentielle/02-ponctuation-nombres-et-dates/) – en + tháng / mùa, au printemps.
+- Xem thêm: [depuis, pendant, pour: "for"](/blog/les-prepositions-gioi-tu/) – phân biệt depuis / pendant / pour và "il y a… que"; [Ngày, tháng, mùa](/blog/ponctuation-nombres-et-dates-dau-cau-so-va-ngay-thang/) – en + tháng / mùa, au printemps.
 
 ## Place
 
@@ -115,7 +118,7 @@ isIndex: false
 | vers       | towards                 | in the direction of sth.                          |
 | vers       | near                    | near …                                            |
 
-- Xem thêm: [Prepositions with Places](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/) – à / en / au / aux với tên thành phố và nước; [Francophone](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/) – bảng châu lục, nước, thành phố để luyện giới từ.
+- Xem thêm: [Prepositions with Places](/blog/les-prepositions-gioi-tu/) – à / en / au / aux với tên thành phố và nước; [Francophone](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/) – bảng châu lục, nước, thành phố để luyện giới từ.
 
 ## Other
 
@@ -148,4 +151,4 @@ isIndex: false
 | selon        | depending on                           | depending on                                        |
 | selon        | according to                           | according to someone/something                      |
 
-- Xem thêm: [Formation – par](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/) – par giới thiệu tác nhân trong câu bị động; [Prepositions with infinitives](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/) – pour, sans, par + infinitive.
+- Xem thêm: [Formation – par](/blog/la-voix-passive-the-bi-dong/) – par giới thiệu tác nhân trong câu bị động; [Prepositions with infinitives](/blog/les-prepositions-gioi-tu/) – pour, sans, par + infinitive.

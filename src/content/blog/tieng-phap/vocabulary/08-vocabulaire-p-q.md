@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/08 - Vocabulaire P–Q.md
+url: /blog/vocabulaire-p-q-tu-vung-p-q/
+topic: french
+updated: '2026-10-14'
 order: 8
 description: >-
   Parriaer → Parrainer (?) (đoán, cần kiểm tra) Passoir → Passoire Predue →

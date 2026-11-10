@@ -13,6 +13,9 @@ vaultPath: >-
   Resources/Sinh học/Bioinformatics/C - Computational Programming and Applied
   Biostatistics and Bioinformatics/II - R/R - Tutorial/02 - RStudio and R
   notebooks.md
+url: /blog/rstudio-and-r-notebooks/
+topic: biology
+updated: '2026-10-14'
 order: 2
 description: 'Cửa sổ RStudio:'
 isIndex: false
@@ -61,7 +64,7 @@ isIndex: false
 
 - Trong một notebook, code được sắp xếp vào chunks (khối), giúp phân tách phần text  khỏi mọi ghi chú hoặc hình có trong note.
 
-- Tạo chunks mới bằng cách click vào nút ‘Chunk’ trên thanh công cụ (toolbar) hoặc ấn “Cmd+Option+I” trên Mac và “Ctrl+Alt+I” trên Window. (→ [Bảng tra cứu lập trình](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
+- Tạo chunks mới bằng cách click vào nút ‘Chunk’ trên thanh công cụ (toolbar) hoặc ấn “Cmd+Option+I” trên Mac và “Ctrl+Alt+I” trên Window. (→ [Bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 
 - Các đoạn mã trong chunks được thực thi bằng cách nhấp vào nút ‘Run’ trong chunk hoặc đặt con trỏ chuột (cursor) vào trong chunk và ấn ‘Cmd+Shift+Enter” trên Mac và ‘Ctrl+Shift+Enter” trên Window. Ta có thể chạy một dòng code bằng cách đặt cursor vào bất cứ trong trong dòng code và ấn ‘Cmd+Enter’ trên Mac và ‘Ctrl+Enter’ trên Window
 

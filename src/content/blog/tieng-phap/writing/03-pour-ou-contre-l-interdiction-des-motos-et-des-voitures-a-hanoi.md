@@ -9,6 +9,10 @@ folder: Tiếng Pháp / Writing
 vaultPath: >-
   Resources/Tiếng Pháp/Writing/03 - Pour ou contre l'interdiction des motos
   et des voitures à Hanoï.md
+url: >-
+  /blog/etes-vous-pour-ou-contre-l-interdiction-des-motos-et-des-voitures-a-hanoi/
+topic: french
+updated: '2026-10-14'
 order: 3
 description: >-
   Je suis d'accord avec l'interdiction des motos et des voitures à Hanoï pour
@@ -22,7 +26,7 @@ isIndex: false
 
 ## Đề bài
 - *Êtes-vous pour ou contre l'interdiction des motos et des voitures à Hanoï ?*
-- Dạng bài: nghị luận **pour/contre**, mỗi lập luận một đoạn (→ [Expressions pour l'expression écrite](/blog/tieng-phap/writing/01-expressions-pour-l-expression-ecrite/), [Plan dialectique](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
+- Dạng bài: nghị luận **pour/contre**, mỗi lập luận một đoạn (→ [Expressions pour l'expression écrite](/blog/expressions-pour-l-expression-ecrite/), [Plan dialectique](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
 
 ## Bài viết
 
@@ -44,9 +48,9 @@ Je suis d'accord avec l'interdiction des motos et des voitures à Hanoï pour pl
 - Sửa mạo từ trong câu kết: *la réduction de la pollution, **des** embouteillages, **du** bruit, **des** accidents… **de** l'environnement et **des** habitants*.
 
 ## Điểm ngữ pháp dùng trong bài
-- **Conditionnel présent** để nói giả định: pourrait, rendrait, aurait, permettrait, serait (→ [Conditionnel](/blog/tieng-phap/grammar/e-thi-thuc-the/23-les-phrases-avec-si-et-le-conditionnel/))
-- **Câu bị động**: *de nombreux accidents **sont causés par** les véhicules individuels* (→ [Voix passive](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/))
-- **Mạo từ rút gọn sau *de***: de + le = du, de + les = des (→ [Articles contractés](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/))
+- **Conditionnel présent** để nói giả định: pourrait, rendrait, aurait, permettrait, serait (→ [Conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/))
+- **Câu bị động**: *de nombreux accidents **sont causés par** les véhicules individuels* (→ [Voix passive](/blog/la-voix-passive-the-bi-dong/))
+- **Mạo từ rút gọn sau *de***: de + le = du, de + les = des (→ [Articles contractés](/blog/les-determinants-tu-han-dinh/))
 
 <details class="callout callout-success">
 <summary>Đã sửa so với bản gốc</summary>

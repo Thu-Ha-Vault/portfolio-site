@@ -10,6 +10,9 @@ folder: Sinh học / Biology Project and Lab Report / Proteomics and Structural 
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Proteomics and Structural
   Biology/02 - Điện di hai chiều (2D-PAGE).md
+url: /blog/dien-di-hai-chieu-2d-page/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Báo cáo thực tập Proteomic và Sinh học cấu trúc – Nguyễn Thị Thu Hà, K66 Sinh
@@ -23,20 +26,20 @@ isIndex: false
 - Thực hiện được các thao tác cơ bản: trương gel IPG, điện di đẳng điện, cân bằng gel, SDS-PAGE, nhuộm gel.
 
 ## Nguyên lý
-- **2D-PAGE**: phân tách protein theo 2 đặc tính độc lập → cho phép tách đồng thời hàng ngàn protein. (→ [Thực hành Sinh học phân tử](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/11-phan-tich-ket-qua-thuc-hanh-sinh-hoc-phan-tu/))
+- **2D-PAGE**: phân tách protein theo 2 đặc tính độc lập → cho phép tách đồng thời hàng ngàn protein. (→ [Thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/))
 	- **Chiều 1 – Tập trung đẳng điện (IEF, isoelectric focusing)**: tách theo **điểm đẳng điện (pI)**.
 	- **Chiều 2 – SDS-PAGE**: điện di biến tính, tách theo **khối lượng phân tử**.
-- **Điểm đẳng điện (pI)**: pH tại đó tổng điện tích của protein bằng 0. (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/))
+- **Điểm đẳng điện (pI)**: pH tại đó tổng điện tích của protein bằng 0. (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/))
 	- pH < pI → protein tích điện dương, chạy về cực âm; pH > pI → tích điện âm, chạy về cực dương.
 	- Càng gần pI protein càng chậm lại; tại pI protein dừng lại → protein "tập trung" theo pI.
 - Gradient pH tạo bởi **ampholyte** (acid polyamino-polycarboxylic) xếp theo pI tăng dần từ cực dương đến cực âm; trong bài dùng thanh gel có **gradient pH cố định (IPG, immobilized pH gradient)**.
 	- Gel polyacrylamide ~4% vì lỗ lớn, protein di chuyển dễ.
-- **SDS + chất khử** bao protein bằng điện tích âm tỷ lệ với chiều dài chuỗi → protein luôn chạy từ cực âm sang cực dương, tách theo kích thước. (→ [L-methioninase](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/05-thuyet-trinh-l-methioninase-tu-trichoderma-harzianum/), [Protease PQM nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/04-protease-pqm-tu-noc-nhen-cupiennius-salei/))
+- **SDS + chất khử** bao protein bằng điện tích âm tỷ lệ với chiều dài chuỗi → protein luôn chạy từ cực âm sang cực dương, tách theo kích thước. (→ [L-methioninase](/blog/phan-tach-va-xac-dinh-dac-tinh-l-methioninase-tu-trichoderma-harzianum/), [Protease PQM nọc nhện](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/))
 - Ứng dụng: so sánh biểu hiện protein giữa các cặp mẫu (mô thường – mô bệnh, giai đoạn phát triển, giai đoạn bệnh, stress...).
 
 ## Vật liệu & phương pháp
 - **Mẫu**: huyết tương đã xử lý từ bài 1, kết tủa bằng aceton (mẫu : aceton = 1:3), định lượng protein bằng **Bradford**.
-- **Hoá chất chính**: (→ [Bảng tra cứu công cụ tin sinh](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/05-bang-tra-cuu-lap-trinh-va-cong-cu-tin-sinh/))
+- **Hoá chất chính**: (→ [Bảng tra cứu công cụ tin sinh](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/))
 	- Đệm mẫu/trương gel: urea 7 M, thiourea 2 M, CHAPS 4%, DTT 65 mM, Bio-Lyte 3/10 0,2%, Bromophenol Blue.
 	- Đệm cân bằng I: urea 6 M, SDS 2%, Tris-HCl 0,375 M pH 8,8, glycerol 20%, **DTT** 2% (khử cầu disulfide).
 	- Đệm cân bằng II: như đệm I nhưng thay DTT bằng **iodoacetamide** (alkyl hoá cystein).
@@ -46,7 +49,7 @@ isIndex: false
 	2. **IEF**: đặt giấy điện cực làm ướt 8 µl nước, chuyển thanh IPG sang khay IEF, phủ dầu khoáng; chạy chương trình 3 bước, 20 °C, ≤ 50 µA/thanh (thiết bị Protean IEF cell, Bio-Rad). Thanh gel có thể bảo quản −70 °C.
 	3. **Cân bằng thanh IPG**: 10 phút trong đệm cân bằng I (DTT) → 10 phút trong đệm cân bằng II (+0,5 g iodoacetamide).
 	4. **SDS-PAGE**: đặt thanh IPG lên giếng gel SDS-PAGE, cố định bằng agarose, chạy như bài 1.
-	5. **Nhuộm CBB R-250**: cố định bằng TCA 20% (30–60 phút) → nhuộm Coomassie 1–4 giờ/qua đêm → tẩy bằng dung dịch tẩy I (methanol 40%, acid acetic 7%) rồi tẩy II (methanol 5%, acid acetic 7%) → chụp ảnh. (→ [Tinh sạch protease nọc nhện](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/))
+	5. **Nhuộm CBB R-250**: cố định bằng TCA 20% (30–60 phút) → nhuộm Coomassie 1–4 giờ/qua đêm → tẩy bằng dung dịch tẩy I (methanol 40%, acid acetic 7%) rồi tẩy II (methanol 5%, acid acetic 7%) → chụp ảnh. (→ [Tinh sạch protease nọc nhện](/blog/tinh-sach-enzyme/))
 - Lưu ý thao tác: tránh bọt khí dưới thanh gel; không để đệm có urea trên đá (urea kết tinh, không làm ấm quá 30 °C); loại sạch dầu khoáng để giảm kéo vệt.
 
 ## Kết quả chính
@@ -85,9 +88,9 @@ isIndex: false
 | 29 | TRFE | Serotransferrin precursor |
 
 ## Kết luận & thảo luận
-- 2D-PAGE tách được bản đồ protein huyết tương với nhiều nhóm chức năng: protein vận chuyển (albumin, transferrin, apolipoprotein), ức chế protease (A1AT, A2MG, AACT), **hệ bổ thể** (C3, C4, C6, C7, factor B/H/I), đông máu (fibrinogen, plasminogen), immunoglobulin. (→ [Exosome ung thư gan (tiểu luận)](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/08-he-protein-exosome-ung-thu-gan-tieu-luan/))
-- Ảnh gel 2D là đầu vào cho phân tích bằng phần mềm ([bài 4](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/04-phan-tich-anh-gel-2d-bang-phoretix/)) và cắt spot để thủy phân, khối phổ ([bài 5](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/05-thuy-phan-protein-trong-gel/)).
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `pt-2dpage`: 2D-PAGE huyết tương từ trình tự UniProt.
+- 2D-PAGE tách được bản đồ protein huyết tương với nhiều nhóm chức năng: protein vận chuyển (albumin, transferrin, apolipoprotein), ức chế protease (A1AT, A2MG, AACT), **hệ bổ thể** (C3, C4, C6, C7, factor B/H/I), đông máu (fibrinogen, plasminogen), immunoglobulin. (→ [Exosome ung thư gan (tiểu luận)](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/))
+- Ảnh gel 2D là đầu vào cho phân tích bằng phần mềm ([bài 4](/blog/phan-tich-hinh-anh-ban-gel-dien-di-hai-chieu-su-dung-phan-mem-phoretix/)) và cắt spot để thủy phân, khối phổ ([bài 5](/blog/thuy-phan-protein-trong-gel-dien-di/)).
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `pt-2dpage`: 2D-PAGE huyết tương từ trình tự UniProt.
 
 ## Tài liệu gốc
 *Nguyễn Thị Thu Hà - Thứ 2 tiết 6,7 - Bài 2.pdf*

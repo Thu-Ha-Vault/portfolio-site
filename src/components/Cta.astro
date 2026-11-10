@@ -1,0 +1,15 @@
+---
+import config from '../../site.config.json';
+import T from './T.astro';
+interface Props { campaign: string }
+const { campaign } = Astro.props;
+const c = config.cta;
+const href = `${c.url}?${c.utm}&utm_campaign=${encodeURIComponent(campaign)}`;
+---
+<aside class="cta">
+  <div>
+    <h2><T vi={c.title_vi} en={c.title_en} /></h2>
+    <p><T vi={c.text_vi} en={c.text_en} /></p>
+  </div>
+  <a class="button" href={href}><T vi={c.button_vi} en={c.button_en} /></a>
+</aside>

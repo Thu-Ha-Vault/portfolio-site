@@ -12,6 +12,9 @@ folder: Sinh học / Kiến thức chung / C - Quy luật di truyền
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/C - Quy luật di truyền/12 - Liên kết gen và
   hoán vị gen.md
+url: /blog/lien-ket-gen-va-hoan-vi-gen/
+topic: biology
+updated: '2026-10-15'
 order: 12
 description: >-
   Tên riêng/thuật ngữ đổi từ phiên âm tiếng Việt sang tiếng Anh (Moocgan →
@@ -52,7 +55,7 @@ isIndex: false
 ## I. Liên kết gen
 
 ### 1. Thí nghiệm của Morgan
-- Ruồi giấm: (→ [Mô phỏng lai ruồi giấm – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/), [Protocol Morgan – Virtual Lab](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/))
+- Ruồi giấm: (→ [Mô phỏng lai ruồi giấm – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/), [Protocol Morgan – Virtual Lab](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/))
 	- A: thân xám; a: thân đen
 	- B: cánh dài; b: cánh cụt.
 
@@ -66,7 +69,7 @@ isIndex: false
 - **Phân tích thí nghiệm:**
 	- Pt/c tương phản → F1 dị hợp 2 cặp gen
 	- Khi lai phân tích ♂ F1 thì Fa chỉ thu được 2 loại kiểu hình → ♂ F1 tạo ra 2 loại giao tử.
-	- ⇒ 2 cặp gen (Aa; Bb) cùng nằm trên 1 cặp NST (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/))
+	- ⇒ 2 cặp gen (Aa; Bb) cùng nằm trên 1 cặp NST (→ [Quy luật Mendel](/blog/quy-luat-mendel/))
 		- → **Di truyền liên kết gen**
 
 ![Hình - Cách viết kiểu gen liên kết trên cặp NST](/vault-assets/hinh-cach-viet-kieu-gen-lien-ket-tren-cap-nst-ea490aef.svg)
@@ -84,10 +87,10 @@ isIndex: false
 
 ### 3. Ý nghĩa
 - Giảm sự xuất hiện của biến dị tổ hợp.
-- Giúp đảm bảo sự di truyền ổn định của nhóm tính trạng quý. (→ [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
-- **Nhóm liên kết**: nhóm các gen trên 1 NST. (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- Giúp đảm bảo sự di truyền ổn định của nhóm tính trạng quý. (→ [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
+- **Nhóm liên kết**: nhóm các gen trên 1 NST. (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 	- Ở loài 2n: số nhóm liên kết thường = n (đồng giao)
-	- Ở giới XY: số nhóm liên kết = n + 1 (dị giao). (→ [Di truyền liên kết giới tính](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/11-di-truyen-lien-ket-voi-gioi-tinh/))
+	- Ở giới XY: số nhóm liên kết = n + 1 (dị giao). (→ [Di truyền liên kết giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
 	- Ở giới XX: số nhóm liên kết = n.
 
 ### 4. Cách viết kiểu gen
@@ -125,7 +128,7 @@ isIndex: false
 
 ### Phương pháp phân tích
 - Dạng phép lai 2 cặp tính trạng:
-	- 1 tính trạng di truyền tương tác gen: Aa, Bb. (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+	- 1 tính trạng di truyền tương tác gen: Aa, Bb. (→ [Tương tác gen](/blog/tuong-tac-gen/))
 	- 1 tính trạng di truyền theo quy luật phân li: Dd
 - → Cặp gen Aa, Bb phân li độc lập
 	- → Aa, Bb nằm trên 2 cặp NST khác nhau:
@@ -166,7 +169,7 @@ isIndex: false
 
 ![Hình - Trao đổi chéo dẫn đến hoán vị gen](/vault-assets/hinh-trao-doi-cheo-dan-den-hoan-vi-gen-3c950ffd.svg)
 
-- → Do hiện tượng **tiếp hợp** và **trao đổi chéo** cho nhau những đoạn tương đồng giữa 2 chromatid khác nguồn gốc trong cặp nhiễm sắc thể kép tương đồng. (→ [Nguyên phân, giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+- → Do hiện tượng **tiếp hợp** và **trao đổi chéo** cho nhau những đoạn tương đồng giữa 2 chromatid khác nguồn gốc trong cặp nhiễm sắc thể kép tương đồng. (→ [Nguyên phân, giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 
 ### 3. Ý nghĩa
 - Tăng sự xuất hiện biến dị tổ hợp.
@@ -211,7 +214,7 @@ isIndex: false
 	- Cao, tròn = (A-B-) $= 0{,}5 + x^2$
 	- Cao, dài = (A-bb) $= 0{,}25 - x^2$
 	- Thấp, tròn = (aaB-) $= x(0{,}5 - x) \cdot 2 + (0{,}5 - x)^2 = 0{,}25 - x^2$
-	- Thấp, dài = (aa + bb) = ab/ab = x·ab × x·ab $= x^2$ (→ [Probability](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/))
+	- Thấp, dài = (aa + bb) = ab/ab = x·ab × x·ab $= x^2$ (→ [Probability](/blog/probability-biology/))
 - \* (aa + bb) = (AA + BB)
 - ⟹ **Đúng với mọi quy luật.**
 
@@ -320,4 +323,4 @@ isIndex: false
 		- 2 loại tỉ lệ lớn
 		- 2 loại tỉ lệ nhỏ
 
-- Xem thêm: [Tổng ôn – 1. Kiểu gen – kiểu hình (bảng số kiểu gen, kiểu hình F1)](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/#1-kiểu-gen--kiểu-hình-bảng-số-kiểu-gen-kiểu-hình-f1) – mẹo làm bài, ghi chú ôn tập
+- Xem thêm: [Tổng ôn – 1. Kiểu gen – kiểu hình (bảng số kiểu gen, kiểu hình F1)](/blog/tong-on-va-meo-lam-bai/#1-kiểu-gen--kiểu-hình-bảng-số-kiểu-gen-kiểu-hình-f1) – mẹo làm bài, ghi chú ôn tập

@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/01 - Giải
   phẫu cá chép và cá rô phi.md
+url: /blog/giai-phau-ca-chep-va-ca-ro-phi/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực hành viết tay (3 trang ảnh, thiếu phần I–IV ở đầu bài) – mổ và so
@@ -23,10 +26,10 @@ isIndex: false
 ## Mục đích
 - Mô tả **hình thái, cấu tạo, vị trí các cơ quan** thuộc 4 hệ: tiêu hoá, hô hấp, niệu sinh dục, tuần hoàn.
 - So sánh cá chép và cá rô phi; liên hệ cấu tạo với thức ăn và môi trường sống.
-- Câu hỏi giáo viên giao (ghi chú trên máy, ảnh IMG_4104): *vẽ và chú thích mẫu vật đã mổ; mô tả hệ cơ quan tiêu hoá, khác nhau giữa ếch và cá, phù hợp với môi trường sống như thế nào* (→ [Giải phẫu ếch đồng](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/02-giai-phau-ech-dong/)).
+- Câu hỏi giáo viên giao (ghi chú trên máy, ảnh IMG_4104): *vẽ và chú thích mẫu vật đã mổ; mô tả hệ cơ quan tiêu hoá, khác nhau giữa ếch và cá, phù hợp với môi trường sống như thế nào* (→ [Giải phẫu ếch đồng](/blog/giai-phau-ech-dong/)).
 
 ## Nguyên lý
-- Cá xương sống hoàn toàn dưới nước: hô hấp bằng **mang**, **tuần hoàn đơn** (1 vòng), tim 2 ngăn; cơ quan nằm trong xoang cơ thể, mổ từ lỗ hậu môn lên sau mang. (→ [Lý thuyết lớp Cá xương](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/07-lop-ca-xuong-tong-hop-ly-thuyet/))
+- Cá xương sống hoàn toàn dưới nước: hô hấp bằng **mang**, **tuần hoàn đơn** (1 vòng), tim 2 ngăn; cơ quan nằm trong xoang cơ thể, mổ từ lỗ hậu môn lên sau mang. (→ [Lý thuyết lớp Cá xương](/blog/lop-ca-xuong-tong-hop-ly-thuyet-osteichthyes/))
 - Ghi chú buổi học (IMG_4104): *cá tim 2 ngăn: 1 nhĩ 1 thất; ếch 2 vòng tuần hoàn, cá 1 vòng tuần hoàn đơn; côn chủ động mạch: phần tim bơm máu; thành động mạch: vận chuyển máu*.
 
 ## Vật liệu & phương pháp
@@ -48,7 +51,7 @@ isIndex: false
 - Cơ quan hô hấp của cá là **mang** (mang có nguồn gốc từ ngoại bì).
 - Mỗi con có **4 đôi mang**, nằm bên trong xương nắp mang.
 - Hình 2: nước cùng O₂ vào miệng → qua **các sợi mang** → ra ngoài qua khe mang; chú thích **lược mang**, **cung mang**.
-	- **Dòng nước đi qua mang ngược với dòng máu** nên máu hấp thụ được lượng lớn O₂ trong nước. (→ [Hô hấp bằng mang](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+	- **Dòng nước đi qua mang ngược với dòng máu** nên máu hấp thụ được lượng lớn O₂ trong nước. (→ [Hô hấp bằng mang](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 - **Bóng hơi** (Hình 1.1): túi màng mỏng thắt khúc ở giữa chia bong bóng ra 2 khoang.
 	- Tham gia vào hô hấp; tăng cường thính giác; giúp thăng bằng.
 	- → Chức năng chủ yếu: giúp cá **chìm nổi** trong nước.
@@ -64,7 +67,7 @@ isIndex: false
 - **Tim có 3 phần**: xoang tĩnh mạch, một tâm nhĩ, một tâm thất (bản gốc ghi "tâm thất – tâm nhĩ – tâm thất", xem callout).
 - Hình vẽ: **các mao mạch mang** → **động mạch chủ lưng** → **các mao mạch ở các cơ quan** → **tĩnh mạch bụng** → **tâm nhĩ** → **tâm thất** → **động mạch chủ bụng** → mao mạch mang.
 - **Hệ tuần hoàn đơn, kín**; tâm thất ở gần phần đầu hơn tâm nhĩ.
-- Máu trong tim là **máu đỏ thẫm**; máu đi nuôi cơ thể là **máu đỏ tươi** (đã sửa, xem callout). (→ [Tim cá 2 ngăn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+- Máu trong tim là **máu đỏ thẫm**; máu đi nuôi cơ thể là **máu đỏ tươi** (đã sửa, xem callout). (→ [Tim cá 2 ngăn](/blog/tuan-hoan-va-can-bang-noi-moi/))
 
 ### 5. So sánh cá chép và cá rô phi
 - Quan sát chung:
@@ -96,8 +99,8 @@ isIndex: false
 <summary>Cần kiểm tra</summary>
 
 - Chữ "Bộ não trước(?) không lớn" và "nằm ở khoang xoang(?)" đọc chưa chắc.
-- "Mang có nguồn gốc từ ngoại bì": tài liệu tổng hợp của lớp ghi *khe mang do nội bì và ngoại bì, lá mang do ngoại bì* (→ [bài 07](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/07-lop-ca-xuong-tong-hop-ly-thuyet/)); nhiều giáo trình khác cho biểu mô mang cá xương có nguồn gốc nội bì – nên đối chiếu lại giáo trình.
-- Cá chép thuộc họ Cyprinidae **không có dạ dày thật** (ruột nối thẳng thực quản); phần bản gốc gọi là "dạ dày" có thể là đoạn ruột trước phình to. (→ [Virtual Lab: khu giải phẫu cá chép](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/))
+- "Mang có nguồn gốc từ ngoại bì": tài liệu tổng hợp của lớp ghi *khe mang do nội bì và ngoại bì, lá mang do ngoại bì* (→ [bài 07](/blog/lop-ca-xuong-tong-hop-ly-thuyet-osteichthyes/)); nhiều giáo trình khác cho biểu mô mang cá xương có nguồn gốc nội bì – nên đối chiếu lại giáo trình.
+- Cá chép thuộc họ Cyprinidae **không có dạ dày thật** (ruột nối thẳng thực quản); phần bản gốc gọi là "dạ dày" có thể là đoạn ruột trước phình to. (→ [Virtual Lab: khu giải phẫu cá chép](/projects/virtual-lab/thi-nghiem-giai-doan-5/))
 
 </details>
 
@@ -113,8 +116,8 @@ isIndex: false
 ## Kết luận
 - Cá chép và cá rô phi có cấu tạo chung của cá xương: 4 đôi mang có nắp, tuần hoàn đơn kín, bóng hơi giúp chìm nổi, thụ tinh ngoài.
 - Khác biệt chính nằm ở vảy (tròn/lược), chiều dài ruột (liên quan thức ăn), bóng hơi (thông/kín) và số xương dăm – cá rô phi mang nhiều đặc điểm của cá xương tiến hoá hơn.
-- Xem thêm: [Thực tập thiên nhiên – cá vùng triều Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/03-dvcxs-duoi-nuoc-ca-luong-cu-bo-sat/) – định loại cá ngoài thực địa.
-- Xem thêm: [Virtual Lab: cá chép theo ghi chép này](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – thêm lách, gan tuỵ, túi mật xanh đen, bóng hơi hai ngăn; tim cá chỉ chứa máu đỏ thẫm.
+- Xem thêm: [Thực tập thiên nhiên – cá vùng triều Cát Bà](/blog/dong-vat-co-xuong-song-duoi-nuoc-ca-luong-cu-bo-sat/) – định loại cá ngoài thực địa.
+- Xem thêm: [Virtual Lab: cá chép theo ghi chép này](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – thêm lách, gan tuỵ, túi mật xanh đen, bóng hơi hai ngăn; tim cá chỉ chứa máu đỏ thẫm.
 
 ## Tài liệu gốc
 - Ảnh báo cáo (thứ tự trang theo nội dung):

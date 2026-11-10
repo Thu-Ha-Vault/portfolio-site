@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/07 - Vocabulaire L–O.md
+url: /blog/vocabulaire-l-o-tu-vung-l-o/
+topic: french
+updated: '2026-10-14'
 order: 7
 description: 'Madam → Madame Monton → Mouton Tool (tiếng Anh, ghi ở cột tiếng Pháp) → Outil'
 isIndex: false

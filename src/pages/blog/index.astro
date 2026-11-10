@@ -1,58 +1,66 @@
 ---
 import Base from '../../layouts/Base.astro';
 import T from '../../components/T.astro';
-import { blogEntries } from '../../lib';
-import { sectionNames, ui } from '../../i18n';
+import PostRows from '../../components/PostRows.astro';
+import { blogEntries, byUpdated } from '../../lib';
+import { topicNames, ui } from '../../i18n';
 
 const blog = await blogEntries();
-const sections = blog.filter((e) => e.data.isIndex && !e.id.includes('/'));
-const notes = blog.filter((e) => !e.data.isIndex);
-const countIn = (id: string) => notes.filter((e) => e.id.startsWith(id + '/')).length;
+const posts = blog.filter((e) => !e.data.isIndex).sort(byUpdated);
+const topics = [...new Set(posts.map((p) => p.data.topic ?? ''))]
+  .map((t) => ({ t, n: posts.filter((p) => p.data.topic === t).length }))
+  .sort((a, b) => b.n - a.n);
 ---
-<Base title="Blog" description="Notes on biology, data science, AI, business and languages, synced from an Obsidian Second Brain.">
-  <p class="eyebrow"><T k="blog" /></p>
-  <h1><T vi="Kiến thức từ Second Brain" en="Notes from my Second Brain" /></h1>
-  <p class="lead"><T vi="Ghi chép từ các khoá học, sách và sổ tay của mình, sắp xếp theo chủ đề." en="Notes from courses, books and notebooks, organized by topic." /></p>
-
-  <h2 class="section-title"><T k="topics" /></h2>
-  <div class="grid">
-    {sections.map((s) => {
-      const name = sectionNames[s.data.section ?? ''] ?? [s.data.title, s.data.title];
-      return (
-        <a class="card" href={`/blog/${s.id}/`}>
-          <h3><T vi={name[0]} en={name[1]} /></h3>
-          <div class="meta"><span class="count">{countIn(s.id)}</span> <T k="notes" /></div>
-        </a>
-      );
-    })}
+<Base title="Blog" description="Notes on biology, data science, AI, business and languages, written while learning.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1><T k="blog" /></h1>
+      <p><T k="blogIntro" /></p>
+    </header>
+    <div class="filters" role="group" aria-label="Topics">
+      <button type="button" aria-pressed="true" data-filter=""><T k="allTopics" /> {posts.length}</button>
+      {topics.map(({ t, n }) => {
+        const [vi, en] = topicNames[t] ?? [t, t];
+        return <button type="button" aria-pressed="false" data-filter={t}><span data-vi={vi} data-en={en}>{vi}</span> {n}</button>;
+      })}
+    </div>
+    <label class="search-label" for="q"><T k="search" /></label>
+    <input class="search" id="q" type="search" autocomplete="off" placeholder={ui.searchPlaceholder[0]} data-placeholder-vi={ui.searchPlaceholder[0]} data-placeholder-en={ui.searchPlaceholder[1]} />
+    <p class="result-count" id="count" aria-live="polite">{posts.length}</p>
+    <PostRows posts={posts} id="posts" filterable />
+    <p class="empty" id="empty" hidden><T k="noResults" /></p>
   </div>
-
-  <input class="search" id="q" type="search" placeholder={ui.search[0]} data-placeholder-vi={ui.search[0]} data-placeholder-en={ui.search[1]} aria-label="Search" />
-  <ul class="note-list" id="notes">
-    {notes.map((n) => (
-      <li data-q={`${n.data.title} ${n.data.folder ?? ''} ${n.data.tags.join(' ')}`.toLowerCase()}>
-        <a href={`/blog/${n.id}/`}><span>{n.data.title}</span><span class="where">{n.data.folder}</span></a>
-      </li>
-    ))}
-  </ul>
-  <p id="empty" hidden><T k="noResults" /></p>
   <script is:inline>
     (function () {
       var q = document.getElementById('q');
-      var items = Array.prototype.slice.call(document.querySelectorAll('#notes li'));
+      var items = Array.prototype.slice.call(document.querySelectorAll('#posts li'));
       var empty = document.getElementById('empty');
+      var count = document.getElementById('count');
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-filter]'));
+      var topic = '';
       var norm = function (s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd'); };
-      items.forEach(function (li) { li.dataset.n = norm(li.dataset.q); });
-      q.addEventListener('input', function () {
+      items.forEach(function (li) { li.dataset.n = norm(li.dataset.q || ''); });
+      function run() {
         var words = norm(q.value.toLowerCase().trim()).split(/\s+/).filter(Boolean);
         var shown = 0;
         items.forEach(function (li) {
-          var ok = words.every(function (w) { return li.dataset.n.indexOf(w) !== -1; });
+          var ok = (!topic || li.dataset.topic === topic) && words.every(function (w) { return li.dataset.n.indexOf(w) !== -1; });
           li.hidden = !ok;
           if (ok) shown++;
         });
         empty.hidden = shown > 0;
+        count.textContent = shown;
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          topic = b.dataset.filter;
+          buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          run();
+        });
       });
+      q.addEventListener('input', run);
+      var t = new URLSearchParams(location.search).get('topic');
+      if (t) { var b = buttons.find(function (x) { return x.dataset.filter === t; }); if (b) b.click(); }
     })();
   </script>
 </Base>

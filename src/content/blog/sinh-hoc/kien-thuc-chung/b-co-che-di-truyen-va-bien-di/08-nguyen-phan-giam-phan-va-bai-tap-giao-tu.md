@@ -11,6 +11,9 @@ folder: Sinh học / Kiến thức chung / B - Cơ chế di truyền và biến 
 vaultPath: >-
   Resources/Sinh học/Kiến thức chung/B - Cơ chế di truyền và biến dị/08 - Nguyên
   phân, giảm phân và bài tập giao tử.md
+url: /blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/
+topic: biology
+updated: '2026-10-16'
 order: 8
 description: >-
   Tên các chất đổi từ phiên âm tiếng Việt sang tiếng Anh (cromatit →
@@ -49,7 +52,7 @@ isIndex: false
 ### 1. Nguyên phân
 ![Hình - Các kì nguyên phân](/vault-assets/hinh-cac-ki-nguyen-phan-a2bc8eb5.svg)
 
-- **Kì trung gian**: lúc đầu nhiễm sắc thể tồn tại ở dạng sợi đơn và duỗi xoắn. Nhiễm sắc thể tự nhân đôi ở pha S → nhiễm sắc thể kép. Trung thể tự nhân đôi → di chuyển về 2 cực tế bào. (→ [Tế bào chất, bào quan](/blog/sinh-hoc/kien-thuc-chung/a-sinh-hoc-te-bao/03-te-bao-chat-bao-quan-va-nhan-te-bao/))
+- **Kì trung gian**: lúc đầu nhiễm sắc thể tồn tại ở dạng sợi đơn và duỗi xoắn. Nhiễm sắc thể tự nhân đôi ở pha S → nhiễm sắc thể kép. Trung thể tự nhân đôi → di chuyển về 2 cực tế bào. (→ [Tế bào chất, bào quan](/blog/te-bao-chat-bao-quan-va-nhan-te-bao/))
 - **Kì đầu**:
 	- Nhiễm sắc thể kép đóng xoắn, co ngắn, dày lên. Trung thể di chuyển → 2 cực, nằm đó (?); 1 thoi tơ vô sắc được hình thành giữa 2 trung thể.
 	- Màng nhân, nhân con tiêu biến.
@@ -76,7 +79,7 @@ isIndex: false
 ## Công thức nguyên phân – giảm phân
 
 ### 1. Từ a tế bào (2n) nguyên phân k lần
-- Số tế bào con được tạo ra: $a \cdot 2^k$ (→ [Phôi sớm ở chim](/blog/sinh-hoc/biology-project-and-lab-report/developmental-biology/01-su-phat-trien-phoi-som-o-chim/))
+- Số tế bào con được tạo ra: $a \cdot 2^k$ (→ [Phôi sớm ở chim](/blog/su-phat-trien-phoi-som-o-chim/))
 - Số NST trong tế bào con: $a \cdot 2n \cdot 2^k$
 - Số NST môi trường cung cấp: $a \cdot 2n(2^k - 1)$
 - Thoi vô sắc hình thành: $a(2^k - 1)$
@@ -93,7 +96,7 @@ flowchart LR
 - **Vùng chín**: tế bào sinh dục chín (2n) —giảm phân→ (n) giao tử
 	- Tế bào sinh tinh —giảm phân→ 4 tinh trùng (n)
 	- Tế bào sinh trứng —giảm phân→ 1 trứng + 3 thể cực.
-- Xem thêm: [Vòng đời xen kẽ thế hệ ở tảo](/blog/sinh-hoc/biology-project-and-lab-report/botany/02-tao-va-vong-doi-xen-ke-the-he/) – ở thực vật, giảm phân tạo bào tử (n) chứ không tạo trực tiếp giao tử.
+- Xem thêm: [Vòng đời xen kẽ thế hệ ở tảo](/blog/thuc-vat-bac-thap-tao-va-vong-doi-xen-ke-the-he/) – ở thực vật, giảm phân tạo bào tử (n) chứ không tạo trực tiếp giao tử.
 
 #### a) Tính số giao tử được tạo thành
 - Vùng sinh sản: a tế bào sinh dục sơ khai (2n) —nguyên phân k lần→ $a \cdot 2^k$ tế bào (2n)
@@ -109,7 +112,7 @@ flowchart LR
 
 ### 3. Số lượng hợp tử, số loại hợp tử
 - Số lượng hợp tử tạo thành = số tinh trùng thụ tinh = số trứng thụ tinh.
-- Số loại hợp tử = số loại giao tử đực × cái. (→ [Quy luật Mendel](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/09-quy-luat-mendel/), [Chọn giống](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/16-ung-dung-di-truyen-hoc-vao-chon-giong/))
+- Số loại hợp tử = số loại giao tử đực × cái. (→ [Quy luật Mendel](/blog/quy-luat-mendel/), [Chọn giống](/blog/ung-dung-di-truyen-hoc-vao-chon-giong/))
 
 ### 4. Số kiểu giao tử tạo thành trong giảm phân
 | Trường hợp (k cặp NST) | Số giao tử | Thành phần (mỗi cặp NST) |
@@ -138,7 +141,7 @@ flowchart LR
 - m alen trội: $(1/2)^m$
 - Có n cặp dị hợp → có n alen → có n − m alen lặn
 	- → Tỉ lệ: $(1/2)^{n-m}$
-- → Giao tử có m alen trội = $C_n^m \cdot (1/2)^m \cdot (1/2)^{n-m}$ (→ [Probability](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/i-probability/01-probability/))
+- → Giao tử có m alen trội = $C_n^m \cdot (1/2)^m \cdot (1/2)^{n-m}$ (→ [Probability](/blog/probability-biology/))
 	- = $C_n^m \cdot (1/2)^n$
 
 ### Dạng 3: Xác định tỉ lệ giao tử
@@ -155,12 +158,12 @@ flowchart LR
 - P tự thụ →
 	- F1: A-B-D- = 9/16 → P: $\frac{AB}{ab}$Dd hoặc $\frac{AD}{ad}$Bb
 	- F1: A-B-D- = 3/8 → P: $\frac{Ab}{aB}$Dd hoặc $\frac{Ad}{aD}$Bb
-	- (Aa: tính trạng 1; Bb và Dd tương tác: tính trạng 2) (→ [Tương tác gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/10-tuong-tac-gen/))
+	- (Aa: tính trạng 1; Bb và Dd tương tác: tính trạng 2) (→ [Tương tác gen](/blog/tuong-tac-gen/))
 
 ### Dạng 6: Xác định tần số hoán vị
 - x tế bào sinh tinh giảm phân, y tế bào xảy ra hoán vị:
 	- (2x − y : 2x − y : y : y) → $f = \frac{2y}{2(2x-y)+2y} = \frac{y}{2x}$
-- Có x% tế bào xảy ra hoán vị → f = x/2 %. (→ [Liên kết gen, hoán vị gen](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/12-lien-ket-gen-va-hoan-vi-gen/))
+- Có x% tế bào xảy ra hoán vị → f = x/2 %. (→ [Liên kết gen, hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/))
 
 ### Dạng 7: Xác định tỉ lệ giao tử
 - Có x tế bào sinh (tinh) có kiểu gen AaBb giảm phân bình thường
@@ -182,7 +185,7 @@ flowchart LR
 		- AB : ab : Ab : aB = 1 : 1 : 1 : 1 (25%)
 	- Không hoán vị → 2 loại giao tử (liên kết): AB, ab
 		- 2 : 2 ← 4 tinh trùng ← 1 : 1 (50%)
-- **Số loại kiểu gen đột biến lệch bội**: (→ [Đột biến NST](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- **Số loại kiểu gen đột biến lệch bội**: (→ [Đột biến NST](/blog/dot-bien-nhiem-sac-the/))
 	- Thể 1: $3^{n-1} \times 2n$
 	- Thể 3: $3^{n-1} \times 4n$
 	- Thể không: $3^{n-1} \cdot n$
@@ -218,6 +221,6 @@ flowchart LR
 - 1 mm = 10³ µm = 10⁶ nm = 10⁷ Å
 
 <div class="callout callout-note">
-<p class="callout-title">Trang 058 trái (kính hiển vi: thị kính, vật kính, độ phóng đại) thuộc note "26 - Tổng ôn và mẹo làm bài"; trang 061 phải là trang tiêu đề chương "Chuyển hoá vật chất và năng lượng"; trang 069 phải (bảng mã di truyền) nằm ở note "04 - Nhân đôi DNA, phiên mã và dịch mã". (→ [Tổng ôn và mẹo làm bài](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))</p>
+<p class="callout-title">Trang 058 trái (kính hiển vi: thị kính, vật kính, độ phóng đại) thuộc note "26 - Tổng ôn và mẹo làm bài"; trang 061 phải là trang tiêu đề chương "Chuyển hoá vật chất và năng lượng"; trang 069 phải (bảng mã di truyền) nằm ở note "04 - Nhân đôi DNA, phiên mã và dịch mã". (→ [Tổng ôn và mẹo làm bài](/blog/tong-on-va-meo-lam-bai/))</p>
 
 </div>

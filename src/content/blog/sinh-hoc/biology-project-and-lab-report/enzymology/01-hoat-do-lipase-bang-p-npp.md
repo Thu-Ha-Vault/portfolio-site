@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Enzymology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Enzymology/01 - Hoạt độ
   lipase bằng p-NPP.md
+url: /blog/hoat-do-enzyme/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Bài bổ sung (Nhóm 3 – Nguyễn Thị Thu Hà): dùng phương pháp xác định hoạt độ
@@ -23,17 +26,17 @@ isIndex: false
 
 ## Mục đích
 - Áp dụng phương pháp đo hoạt độ enzyme bằng **cơ chất tạo màu** cho lipase.
-- Hiểu cách bài báo dùng hoạt độ để **tối ưu sản xuất**, **tinh sạch** và **đặc tính hoá** enzyme (pH, nhiệt độ, ion kim loại, dung môi, cơ chất, động học). (→ [Nhiệt độ, pH và ion lên amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/09-anh-huong-cua-nhiet-do-ph-va-ion-len-amylase/))
+- Hiểu cách bài báo dùng hoạt độ để **tối ưu sản xuất**, **tinh sạch** và **đặc tính hoá** enzyme (pH, nhiệt độ, ion kim loại, dung môi, cơ chất, động học). (→ [Nhiệt độ, pH và ion lên amylase](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/))
 
 ## Nguyên lý
-- **Enzyme**: lipase – xúc tác thuỷ phân, ester hoá, alcoholysis, acidolysis...; lipase **bền dung môi** là xúc tác sinh học chính trong môi trường không nước. (→ [Mỡ trung tính](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/05-tinh-chat-ly-hoa-cua-mo-trung-tinh/))
+- **Enzyme**: lipase – xúc tác thuỷ phân, ester hoá, alcoholysis, acidolysis...; lipase **bền dung môi** là xúc tác sinh học chính trong môi trường không nước. (→ [Mỡ trung tính](/blog/cac-tinh-chat-ly-hoa-cua-mo-trung-tinh-triacylglycerol/))
 - **Cơ chất**: **p-nitrophenyl palmitate (p-NPP)** → lipase thuỷ phân giải phóng **p-nitrophenol** (màu vàng), đo quang ở **405 nm**.
 	- Độ hấp thụ tỷ lệ với nồng độ p-nitrophenol → tỷ lệ thuận với hoạt độ enzyme.
-- **Định nghĩa đơn vị**: **1 U lipase** = lượng enzyme tạo ra **1 μmol p-nitrophenol/phút** (ủ 28 °C, 30 phút; mỗi thí nghiệm lặp 3 lần). (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- **Định nghĩa đơn vị**: **1 U lipase** = lượng enzyme tạo ra **1 μmol p-nitrophenol/phút** (ủ 28 °C, 30 phút; mỗi thí nghiệm lặp 3 lần). (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 - **Công thức hoạt độ**:
 	- $\text{Hoạt độ (IU/ml)} = \dfrac{\Delta A \times V \times D}{\epsilon \times t}$
 	- $\Delta A$: thay đổi độ hấp thụ; $V$: thể tích tổng hỗn hợp (ml); $D$: hệ số pha loãng; $\epsilon$: hệ số hấp thụ mol của p-nitrophenol; $t$: thời gian ủ.
-- **Hoạt độ còn lại (residual activity)** sau xử lý (nhiệt, pH, chất phụ gia): (→ [Độ bền và tính đặc hiệu của enzyme](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/10-do-ben-va-tinh-dac-hieu-cua-enzyme/))
+- **Hoạt độ còn lại (residual activity)** sau xử lý (nhiệt, pH, chất phụ gia): (→ [Độ bền và tính đặc hiệu của enzyme](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/))
 	- $\text{Hoạt độ còn lại (\%)} = \dfrac{\text{Hoạt độ riêng sau xử lý (IU/mg)}}{\text{Hoạt độ riêng ban đầu (IU/mg)}} \times 100$
 
 ## Vật liệu & phương pháp
@@ -44,8 +47,8 @@ isIndex: false
 	- **Chất hoạt động bề mặt** không ion/ion (Poly-80, Triton X-100, SDS).
 - **Ủ**: trong lọ thuỷ tinh nắp vặn, ví dụ 28 °C / 30 phút; thay đổi pH, nhiệt độ, thời gian ủ để tìm điều kiện tối ưu.
 - **Dừng phản ứng**: thêm dung dịch dừng (acid hoặc base mạnh).
-- **Đo**: độ hấp thụ ~405 nm bằng máy quang phổ. (→ [Mô phỏng máy quang phổ – Virtual Lab](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/))
-- **Phân tích dữ liệu**: biểu thị **IU/mg protein** (hoạt độ riêng) hoặc **IU/ml**; trung bình ± SD; so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/))
+- **Đo**: độ hấp thụ ~405 nm bằng máy quang phổ. (→ [Mô phỏng máy quang phổ – Virtual Lab](/projects/virtual-lab/danh-muc-thi-nghiem-ao/))
+- **Phân tích dữ liệu**: biểu thị **IU/mg protein** (hoạt độ riêng) hoặc **IU/ml**; trung bình ± SD; so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 
 ## Kết quả chính
 - **Phân lập**: 2 chủng phân giải lipid từ đất bền trong cyclohexane, ethanol, n-hexane, heptane, methanol (phương pháp phủ đĩa); 16S rRNA → *P. reinekei* và ***P. brenneri***.
@@ -85,7 +88,7 @@ isIndex: false
 - Diễn giải:
 	- **Zn²⁺, Fe³⁺, EDTA** làm mất hoạt độ → lipase có thể là **metalloenzyme**.
 	- Không mất hoạt độ với 4-mercaptoethanol → không có **cầu disulfide** thiết yếu.
-	- **SDS** (chất tẩy ion) làm mở xoắn protein → giảm hoạt độ; chất tẩy không ion ảnh hưởng ít. (→ [Tính chất của protein](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/04-mot-so-tinh-chat-cua-protein/))
+	- **SDS** (chất tẩy ion) làm mở xoắn protein → giảm hoạt độ; chất tẩy không ion ảnh hưởng ít. (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/))
 - **Dung môi**: giữ **> 80% hoạt độ trong methanol 20% (v/v)** sau 24 h (28 °C và 40 °C); bền trong ethanol 10%; nồng độ cao hơn làm giảm hoạt độ. Dung môi không phân cực **log P cao** (cyclohexane, n-hexane, n-heptane 50%) **tăng** hoạt độ.
 - **Đặc hiệu cơ chất**: thuỷ phân ester **C8:0–C16:0**, tối đa ở **C12:0 (pNP-dodecanoate)**; gần như không thuỷ phân C2:0.
 - **Động học** (p-NPP, 28 °C, đồ thị **Lineweaver–Burk**, [S] 0,2–2 mM): **Vmax = 5,17 ± 0,12** mmol/phút/mg, **Km = 0,37** mM.
@@ -94,7 +97,7 @@ isIndex: false
 ## Kết luận & thảo luận
 - Phương pháp p-NPP đơn giản, định lượng được, linh hoạt để đánh giá ảnh hưởng của pH, nhiệt độ, chất điều chỉnh lên hoạt độ.
 - Lipase *P. brenneri* là **metalloenzyme bền nhiệt – bền dung môi**, được hoạt hoá bởi dung môi log P > 2,0, hoạt động tốt 10–60 °C → tiềm năng cho **biodiesel**, chất tẩy rửa, tổng hợp hương liệu và xử lý sinh học dầu.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `ez-lipase`: p-NPP ở 405 nm, Lineweaver–Burk ra Km gần 0,37 mM.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `ez-lipase`: p-NPP ở 405 nm, Lineweaver–Burk ra Km gần 0,37 mM.
 
 ## Tài liệu gốc
 *Bài 1 - Hoạt độ enzyme - Nguyễn Thị Thu Hà - Nhóm 3.pdf*

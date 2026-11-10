@@ -13,6 +13,10 @@ vaultPath: >-
   2026/Week 2 Biophysical and socioeconomic barriers and enabling factors/Lesson
   4 Socio-economic and policy barriers and enabling factors for assisted natural
   regeneration.md
+url: >-
+  /blog/socio-economic-and-policy-barriers-and-enabling-factors-for-assisted-natural-reg/
+topic: biology
+updated: '2026-10-14'
 source: >-
   https://www.learningfornature.org/en/topic/lesson-1-introduction-to-assisted-natural-regeneration/
 description: >-
@@ -44,7 +48,7 @@ Successful ANR depends not only on ecology but also on people, institutions, gov
 - Restoration activities may require labor, monitoring, and protection costs.
 
 ### 7. Conflicting Stakeholder Interests
-- Different land users may have competing objectives for the same area. (→ [L8 Case studies (enrichment)](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-8-case-studies-of-anr-part-2-with-enrichment-planting/))
+- Different land users may have competing objectives for the same area. (→ [L8 Case studies (enrichment)](/blog/case-studies-of-anr-part-2-with-enrichment-planting/))
 
 ## Socioeconomic Enabling Factors
 
@@ -52,7 +56,7 @@ Successful ANR depends not only on ecology but also on people, institutions, gov
 - Encourage long-term stewardship and investment.
 
 ### Community Ownership and Participation
-- Local involvement improves protection and sustainability. (→ [L11 ANR & production](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-11-integrating-anr-with-crop-timber-or-livestock-production/))
+- Local involvement improves protection and sustainability. (→ [L11 ANR & production](/blog/integrating-anr-with-crop-timber-or-livestock-production/))
 
 ### Traditional Knowledge
 - Indigenous and local practices often support regeneration.

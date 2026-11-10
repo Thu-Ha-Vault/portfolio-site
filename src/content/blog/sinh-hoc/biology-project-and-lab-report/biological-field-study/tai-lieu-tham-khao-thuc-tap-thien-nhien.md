@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Biological Field Study
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Biological Field Study/Tài
   liệu tham khảo - Thực tập thiên nhiên.md
+url: /blog/tai-lieu-tham-khao-thuc-tap-thien-nhien-cat-ba/
+topic: biology
+updated: '2026-10-14'
 isIndex: false
 ---
 ## Bối cảnh
@@ -32,7 +35,7 @@ isIndex: false
 - **Đánh giá đa dạng sinh học Khu bảo tồn đề xuất Bắc Hải Vân, Thừa Thiên Huế** – WWF-Việt Nam/ECODIT, USAID; ảnh bìa Voọc chà vá chân nâu. Bắc Hải Vân, Thừa Thiên Huế.pdf
 - **Đánh giá đa dạng sinh học Khu bảo tồn thiên nhiên Phong Điền, Thừa Thiên Huế** – WWF-Việt Nam, USAID; ảnh bìa Cầy vằn bắc (*Chrotogale owstoni*). Phong Điền, Thừa Thiên Huế.pdf
 - **Báo cáo phân vùng điều tra đa dạng sinh học Khu bảo tồn Saola Quảng Nam** – kèm bản đồ che phủ rừng tỉnh Quảng Nam. Phân vùng điều tra đa dạng sinh học KBT Saola Quảng Nam.pdf
-- **Khảo sát cơ sở về đa dạng sinh học cho Dự án Quản lý bền vững tài nguyên thiên nhiên (SNRM, hợp phần 3)** – Viện Sinh thái học miền Nam, JICA, 11/2017 (134 trang). Khảo sát cơ sở đa dạng sinh học dự án SNRM - JICA (2017).pdf (→ [ANR Lesson 13: baseline monitoring](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-7-monitoring-and-assessment-of-anr/lesson-13-monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data-management/))
+- **Khảo sát cơ sở về đa dạng sinh học cho Dự án Quản lý bền vững tài nguyên thiên nhiên (SNRM, hợp phần 3)** – Viện Sinh thái học miền Nam, JICA, 11/2017 (134 trang). Khảo sát cơ sở đa dạng sinh học dự án SNRM - JICA (2017).pdf (→ [ANR Lesson 13: baseline monitoring](/blog/monitoring-anr-part-1-establishing-baseline-control-and-reference-sites-and-data/))
 - **Vườn Quốc gia Cát Tiên – Trải nghiệm rừng nhiệt đới** – sách giới thiệu (GIZ hỗ trợ, 11/2020): ví dụ về cách trình bày giá trị ĐDSH một VQG. cattien_booklet_vn.pdf
 
 ## Tái sinh tự nhiên và phương pháp điều tra
@@ -41,9 +44,9 @@ isIndex: false
 - **Quy trình điều tra động vật rừng** – văn bản quy trình nội bộ (bản scan CamScanner, 14 trang) của một công ty cao su thuộc Tập đoàn Công nghiệp Cao su Việt Nam (Vietnam Rubber Group). Động vật rừng.pdf
 
 ## Ý nghĩa / ứng dụng
-- Cung cấp số liệu nền (thành phần loài, loài đặc hữu, mối đe doạ) để viết phần **Đặc điểm khu vực** trong [01 - Tổng quan thực tập Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/01-tong-quan-thuc-tap-cat-ba/).
-- Các báo cáo WWF/JICA/USAID là mẫu về **cấu trúc một báo cáo đánh giá ĐDSH**: phương pháp tuyến – ô, danh lục loài, đánh giá đe doạ, khuyến nghị bảo tồn. (→ [ANR Lesson 5: biophysical assessments](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-3-conducting-baseline-site-and-landscape-assessments/lesson-5-conducting-biophysical-assessments-at-site-and-landscape-scale/), [ANR Lesson 12: ecosystem restoration](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-6-integrating-anr-with-production-and-conservation-activities/lesson-12-integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
-- Hai bài về tái sinh tự nhiên minh hoạ ứng dụng **ô tiêu chuẩn – ô dạng bản** đã học ở [06 - Cơ sở sinh thái học - Rừng ngập mặn Phù Long](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/06-co-so-sinh-thai-hoc-rung-ngap-man-phu-long/). (→ [ANR Lesson 7: case studies](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-4-case-studies-of-anr-implementation-practices-and-outcomes/lesson-7-case-studies-of-anr-part-1-without-enrichment-planting/))
+- Cung cấp số liệu nền (thành phần loài, loài đặc hữu, mối đe doạ) để viết phần **Đặc điểm khu vực** trong [01 - Tổng quan thực tập Cát Bà](/blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/).
+- Các báo cáo WWF/JICA/USAID là mẫu về **cấu trúc một báo cáo đánh giá ĐDSH**: phương pháp tuyến – ô, danh lục loài, đánh giá đe doạ, khuyến nghị bảo tồn. (→ [ANR Lesson 5: biophysical assessments](/blog/conducting-biophysical-assessments-at-site-and-landscape-scale/), [ANR Lesson 12: ecosystem restoration](/blog/integrating-anr-with-ecosystem-restoration-and-biodiversity-conservation/))
+- Hai bài về tái sinh tự nhiên minh hoạ ứng dụng **ô tiêu chuẩn – ô dạng bản** đã học ở [06 - Cơ sở sinh thái học - Rừng ngập mặn Phù Long](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/). (→ [ANR Lesson 7: case studies](/blog/case-studies-of-anr-part-1-without-enrichment-planting/))
 
 ## Tài liệu gốc
 - Toàn bộ nằm trong `assets/Tham khảo/` (thư mục con `Chim, Thú/` cho tài liệu chim – thú).

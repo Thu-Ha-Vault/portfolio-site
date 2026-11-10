@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/01 - Ý tưởng và phạm vi.md
+url: /projects/virtual-lab/y-tuong-va-pham-vi/
+updated: '2026-10-16'
 order: 1
 project: virtual-lab
 isIndex: false
@@ -25,7 +27,7 @@ description: >-
 | **B. Hoá học** | Lấy dụng cụ, đong hoá chất, trộn, đun, quan sát | Bảng phản ứng + tỉ lượng + hiện tượng | Kết tủa, đổi màu, sinh khí, chuẩn độ, phản ứng của protein |
 | **C. Thiết bị** | Chuẩn bị mẫu, cài chương trình máy, đọc kết quả | Hàm "mẫu + thông số → tín hiệu" | PCR và điện di, HPLC, máy quang phổ UV-Vis |
 
-- Chi tiết từng thí nghiệm: [Danh mục thí nghiệm ảo](/projects/virtual-lab/02-danh-muc-thi-nghiem-ao/). Cách xây phần lõi: [Kiến trúc mô phỏng](/projects/virtual-lab/03-kien-truc-mo-phong/).
+- Chi tiết từng thí nghiệm: [Danh mục thí nghiệm ảo](/projects/virtual-lab/danh-muc-thi-nghiem-ao/). Cách xây phần lõi: [Kiến trúc mô phỏng](/projects/virtual-lab/kien-truc-mo-phong/).
 
 ## Điểm chung của mọi thí nghiệm
 - **Kho**: sinh vật, hoá chất, dụng cụ, máy. Mỗi thứ có thuộc tính riêng (kiểu gen, công thức, nồng độ, thể tích…).
@@ -42,7 +44,7 @@ description: >-
 - **Người dùng**: tất cả mọi người: học sinh, sinh viên, giáo viên, nhà nghiên cứu.
 - **Nền tảng**: làm bản web trước, sau đó mới phát triển phần mềm cài trên máy.
 - **Mức độ chân thực**: 3D, mô phỏng thao tác kéo thả. Màn hình chia đôi, kéo được để đổi kích thước: một bên là phòng thí nghiệm, một bên là protocol, cho biết kết quả của từng bước (cho chất này vào chất kia ra phản ứng gì, phương trình nào; thí nghiệm sinh học thì chất cho vào có tác dụng gì).
-- **Bước đầu tiên**: dựng bộ khung các khu trong phòng thí nghiệm và khu trồng trọt bên cạnh, mới ở mức phác thảo (→ [Bộ khung phòng thí nghiệm 3D](/projects/virtual-lab/04-bo-khung-phong-thi-nghiem-3d/)).
+- **Bước đầu tiên**: dựng bộ khung các khu trong phòng thí nghiệm và khu trồng trọt bên cạnh, mới ở mức phác thảo (→ [Bộ khung phòng thí nghiệm 3D](/projects/virtual-lab/bo-khung-phong-thi-nghiem-3d/)).
 - **Deadline bản đầu tiên** (chốt 2026-10-16): Chủ nhật 2026-10-18.
 
 ## Thứ tự làm

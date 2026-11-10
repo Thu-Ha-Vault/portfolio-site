@@ -8,6 +8,9 @@ const base = {
   tags: z.array(z.string()).default([]),
   folder: z.string().optional(),
   vaultPath: z.string(),
+  url: z.string(),
+  topic: z.string().optional(),
+  updated: z.string().optional(),
   source: z.string().optional(),
   date: z.string().optional(),
   status: z.string().optional(),
@@ -30,7 +33,10 @@ const projects = defineCollection({
     ...base,
     project: z.string(),
     featured: z.boolean().default(false),
+    summary_vi: z.string().optional(),
+    summary_en: z.string().optional(),
     links: z.record(z.string(), z.string()).default({}),
+    phases: z.array(z.object({ name: z.string(), done: z.number(), total: z.number() })).default([]),
   }),
 });
 

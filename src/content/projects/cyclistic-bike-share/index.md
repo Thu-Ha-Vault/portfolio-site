@@ -1,5 +1,5 @@
 ---
-title: Case Study - Cyclistic
+title: 'Cyclistic bike-share: casual riders vs annual members'
 type: MOC
 tags:
   - project
@@ -8,18 +8,47 @@ tags:
   - google-data-analytics
 folder: Projects / Case Study - Cyclistic
 vaultPath: Projects/Case Study - Cyclistic/_MOC - Case Study - Cyclistic.md
+url: /projects/cyclistic-bike-share/
+updated: '2026-11-10'
 date: '2026-11-10'
 status: active
 deadline: '2026-11-17'
-project: case-study-cyclistic
+project: cyclistic-bike-share
 isIndex: true
 featured: true
+summary_vi: >-
+  Phân tích 12 tháng dữ liệu chuyến đi xe đạp công cộng ở Chicago để tìm khác
+  biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng marketing chuyển
+  đổi khách vãng lai thành hội viên. Python (pandas), Tableau.
+summary_en: >-
+  Twelve months of Chicago bike-share trips, analyzed to show how casual riders
+  and annual members ride differently, ending in three marketing recommendations
+  to convert casual riders. Python (pandas), Tableau.
 links: {}
+phases:
+  - name: Ask
+    done: 0
+    total: 1
+  - name: Prepare
+    done: 0
+    total: 2
+  - name: Process
+    done: 0
+    total: 3
+  - name: Analyze
+    done: 0
+    total: 2
+  - name: Share
+    done: 0
+    total: 1
+  - name: Act
+    done: 0
+    total: 3
 description: >-
   Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi
   tiết nằm ở Course 8: Case Study (mục Case Study 1).
 ---
-> Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi tiết nằm ở [Course 8: Case Study](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/08-case-study/) (mục *Case Study 1*).
+> Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi tiết nằm ở [Course 8: Case Study](/blog/case-study/) (mục *Case Study 1*).
 
 ## Mục tiêu & sản phẩm
 - **Câu hỏi được giao**: How do annual members and casual riders use Cyclistic bikes differently?

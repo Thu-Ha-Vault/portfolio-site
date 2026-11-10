@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
   Science/06 - Share Data through the Art of Visualization.md
+url: /blog/share-data-through-the-art-of-visualization/
+topic: biology
+updated: '2026-11-09'
 order: 6
 description: 'How to choose a data visualization.pdf - Some common errors to avoid:'
 isIndex: false
@@ -20,7 +23,7 @@ isIndex: false
 ## Module 1: Visualize data
 ### Understand data visualization
 #### Why data visualization matters?
-- Data visualization: The graphic representation and presentation of data (→ [Visualizations (R)](/blog/sinh-hoc/bioinformatics/c-computational-programming-and-applied-biostatistics-and-bioinformatics/ii-r/r-tutorial/09-visualizations/))
+- Data visualization: The graphic representation and presentation of data (→ [Visualizations (R)](/blog/visualizations/))
 - History: Start with map
 	- Scientists and mathematicians began to truly embrace the idea of arranging data visually in the 1700s and 1800s
 - Time with data visuals probably split in two way:
@@ -36,7 +39,7 @@ isIndex: false
 
 ![Ảnh chụp Màn hình 2026-06-20 lúc 21.45.59](/vault-assets/anh-chup-man-hinh-2026-06-20-luc-21-45-59-f88c2d6e.png)
 - Effective data visualization: https://www.coursera.org/learn/visualize-data/supplement/9xEjx/effective-data-visualizations
-- Xem thêm: [Transcriptomics: RNA-seq](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/ii-giao-trinh-bioinformatics/07-transcriptomics-rna-seq-va-single-cell/) – các biểu đồ chuẩn trong bioinformatics: PCA, volcano plot, MA plot, heatmap
+- Xem thêm: [Transcriptomics: RNA-seq](/blog/transcriptomics-rna-seq-va-single-cell/) – các biểu đồ chuẩn trong bioinformatics: PCA, volcano plot, MA plot, heatmap
 #### Connect images with data
 - **Bar graphs**: Use size contrast to compare two or more values
 	- x-axis: used to represent categories, time periods, or other variables. 
@@ -55,7 +58,7 @@ isIndex: false
 	-  **Ranked bar chart**: If your data needs to be ranked, ​like when ordering the number of ​responses to survey questions. ​You should first think about what you ​want to highlight in your visualization.
 		- ​Bar charts with horizontal bars ​effectively show data that are ranked, ​with bars arranged in ascending or descending order. ​A bar chart should always be ranked by value, ​unless there's a natural order to ​the data like age or time
 	- **Correlation charts**: Show relationships among data, but they should be used with ​caution because they might lead ​viewers to think that the data shows causation. ​
-		- **Causation**: or a cause-effect relationship ​occurs when an action directly leads to an outcome. ​Correlation and causation are often mixed up because ​humans like to find patterns even when they don't exist. (→ [Causal Inference](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/04-causal-inference/))
+		- **Causation**: or a cause-effect relationship ​occurs when an action directly leads to an outcome. ​Correlation and causation are often mixed up because ​humans like to find patterns even when they don't exist. (→ [Causal Inference](/blog/causal-inference-biology/))
 		- Details: https://www.coursera.org/learn/visualize-data/supplement/PPdt5/correlation-and-causation
 #### Dynamic visualizations
 - **Static visualizations**: Do not change over time unless they're edited.
@@ -86,7 +89,7 @@ isIndex: false
 	- Movement: create a sense of flow or action in a viz
 		- Static image: control all elements of the story you want to tell.
 		- Incorporating movement and interactivity -> the story is controlled by whoever controlling the interactivity.
-- **Principles of design:** (→ [Trình bày và mô tả dữ liệu bằng R](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/01-trinh-bay-va-mo-ta-du-lieu-bang-r/))
+- **Principles of design:** (→ [Trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/))
 	- **Balance**: The design of a data visualization is balanced when the key visual elements, like color and shape, are distributed evenly. This doesn’t mean that you need complete symmetry, but your visualization shouldn’t have one side distracting from the other. If your data visualization is balanced, this could mean that the lines used to create the graphics are similar in length on both sides, or that the space between objects is equal. For example, [**this column chart**](https://developers.google.com/chart/interactive/docs/gallery/columnchart "this column chart") (also shown below) is balanced; even though the columns are different heights and the chart isn’t symmetrical, the colors, width, and spacing of the columns keep this data visualization balanced. The colors provide sufficient contrast to each other so that you can pay attention to both the motivation level and the energy level displayed.
 ![bar chart measuring motivation and energy levels throughout the day](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bqmDqhCfRJipg6oQn0SYBw_d6d283ffacab4c5a83a484cb5e6ac4ac_Screen-Shot-2021-02-28-at-4.11.09-PM.png?expiry=1786464397490&hmac=6l6zNKuADFBy3KhKAvU7Ta4ISlY3V6RiLKK8S8tVMyU)
 	- **Emphasis:** Your data visualization should have a focal point, so that your audience knows where to concentrate. In other words, your visualizations should emphasize the most important data so that users recognize it first. Using color and value is one effective way to make this happen. By using contrasting colors, you can make certain that graphic elements—and the data shown in those elements—stand out. For example, you will notice a heat map data visualization below from [**The Pudding’s “Where Slang Comes From"**](https://pudding.cool/2017/02/new-slang/ "The Pudding's \"Where Slang Comes From\"") article. This heat map uses colors and value intensity to emphasize the states where search interest is highest. You can visually identify the increase in the search over time from low interest to high interest. This way, you are able to quickly grasp the key idea being presented without knowing the specific data values.
@@ -240,7 +243,7 @@ All four of these elements are important on their own, but a successful data vis
 ### Data-driven storytelling
 - [Dashboard]: A tool that organizes information from multiple datasets into one central location for tracking, analysis, and simple visualization.
 - [Dashboard filter]: A tool for showing only the data that meets a specific criteria while hiding the rest
-- [Data storytelling]: Communicating the meaning of a dataset with visuals and a narrative that are customized for each particular audience (→ [Communicating the benefits of ANR](/blog/sinh-hoc/assisted-natural-regeneration-practitioner-training-course-2026/week-8-communicating-the-benefits-and-outcomes-of-anr/lesson-16-communicating-the-benefits-of-anr/))
+- [Data storytelling]: Communicating the meaning of a dataset with visuals and a narrative that are customized for each particular audience (→ [Communicating the benefits of ANR](/blog/communicating-the-benefits-of-anr/))
 - 3 data storytelling steps
 	1. Engage your audience: **Engagement** - Capturing and holding someone's interest and attention
 		- What role does this audience play?
@@ -285,7 +288,7 @@ All four of these elements are important on their own, but a successful data vis
 	- Tableau lets you limit the data based on criteria you specify: e.g. only the last six months, one particular customer, or limit the number of rows/columns in a view
 	- World happiness example: filter for just GDP, family, generosity, freedom, trust, and health, then create individual scatterplots for each
 - Filters can highlight or hide individual data points (e.g. explore a scatterplot without outliers)
-	- Not OK to drop a data point just because it's an outlier – outliers can be the most interesting observations; investigate before removing (→ [Boxplot và outlier](/blog/sinh-hoc/biology-project-and-lab-report/introduction-to-data-analysis/05-data-exploration-using-descriptive-statistics/))
+	- Not OK to drop a data point just because it's an outlier – outliers can be the most interesting observations; investigate before removing (→ [Boxplot và outlier](/blog/data-exploration-using-descriptive-statistics/))
 - Steps to filter data points from a view:
 	1. Select a single data point, or click and drag to select several points
 	2. On the tooltip, select **Exclude** to hide them (or **Keep only** selected points)
@@ -562,7 +565,7 @@ All four of these elements are important on their own, but a successful data vis
 - Consistent theme: title and text in the same place → audience familiar within three slides
 - Scatterplots can be hard to follow – explain in depth the first time (axes: happiness vs population; trend line tests correlation), then reuse without re-explaining
 - One bullet per slide with the result (little to no correlation between happiness and population)
-- Explain new technical concepts simply: **correlation coefficient** = measure of strength and direction of the linear relationship between two variables; closer to 1 → positively correlated (both go up); closer to −1 → negatively correlated; closer to 0 → not correlated (→ [Tương quan và hồi quy](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/03-tuong-quan-va-hoi-quy/))
+- Explain new technical concepts simply: **correlation coefficient** = measure of strength and direction of the linear relationship between two variables; closer to 1 → positively correlated (both go up); closer to −1 → negatively correlated; closer to 0 → not correlated (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/))
 	- Happiness vs health: 0.50 positive correlation
 	- GDP vs health: 0.7; GDP vs happiness: strongest of the three → richer countries have higher average happiness
 - Keep a logical flow with open questions ("are happy people healthy or healthy people happy?"; what contributes to longer life expectancy?)
@@ -713,7 +716,7 @@ All four of these elements are important on their own, but a successful data vis
 - [Professional relationship building]: Building relationships by meeting people both in person and online (Refer to Networking)
 - [Static data]: Data that doesn't change once it has been recorded
 - [Statistics]: The study of how to collect, analyze, summarize, and present data
-- [WITH]: A SQL clause that creates a temporary table that can be queried multiple times (→ [SQL and temporary tables](/blog/sinh-hoc/bioinformatics/b-data-science-and-bioinformatics/i-data-science/05-analyze-data-to-answer-questions/))
+- [WITH]: A SQL clause that creates a temporary table that can be queried multiple times (→ [SQL and temporary tables](/blog/analyze-data-to-answer-questions/))
 - Glossary terms from module 4: https://www.coursera.org/learn/visualize-data/supplement/Adbqw/glossary-terms-from-module-4
 #### Module 4 challenge
 - [ ] Module 4 challenge (graded, 40 min): https://www.coursera.org/learn/visualize-data/assignment-submission/T1Uta/module-4-challenge 📅 2026-10-20

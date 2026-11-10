@@ -13,6 +13,9 @@ folder: >-
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/II -
   Giáo trình Bioinformatics/00 - Giới thiệu và cách dùng giáo trình.md
+url: /blog/gioi-thieu-va-cach-dung-giao-trinh/
+topic: biology
+updated: '2026-10-19'
 order: 0
 description: >-
   Giáo trình gồm 12 phần và phụ lục, học trong khoảng 36 tuần với 8–10 giờ mỗi

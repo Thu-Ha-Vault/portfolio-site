@@ -12,6 +12,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/02 - Giải
   phẫu ếch đồng.md
+url: /blog/giai-phau-ech-dong/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Báo cáo thực hành mổ ếch viết tay (3 trang) – lớp Sinh học K66, môn Thực hành
@@ -26,10 +29,10 @@ isIndex: false
 - Mô tả chức năng các cơ quan chính của ếch.
 - Nhận xét điểm khác biệt và tiến hoá ở ếch so với cá; những đặc điểm phù hợp với môi trường sống.
 - Rèn luyện kĩ năng giải phẫu.
-- Câu hỏi thảo luận nhóm trên slide: *Chỉ ra các đặc điểm cấu tạo thích nghi với chức năng? So sánh giữa cá và ếch?*; *Cấu tạo thích nghi với chức năng – So sánh giữa cá, lưỡng cư và thú*. (→ [Giải phẫu chuột bạch – bảng so sánh 3 lớp](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/05-giai-phau-chuot-bach/))
+- Câu hỏi thảo luận nhóm trên slide: *Chỉ ra các đặc điểm cấu tạo thích nghi với chức năng? So sánh giữa cá và ếch?*; *Cấu tạo thích nghi với chức năng – So sánh giữa cá, lưỡng cư và thú*. (→ [Giải phẫu chuột bạch – bảng so sánh 3 lớp](/blog/giai-phau-chuot-bach/))
 
 ## Nguyên lý
-- Lưỡng cư sống hai nơi: hô hấp bằng **phổi** và **da** ẩm, tim **3 ngăn**, **2 vòng tuần hoàn** nhưng máu nuôi cơ thể là máu pha. (→ [Tim lưỡng cư 3 ngăn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/))
+- Lưỡng cư sống hai nơi: hô hấp bằng **phổi** và **da** ẩm, tim **3 ngăn**, **2 vòng tuần hoàn** nhưng máu nuôi cơ thể là máu pha. (→ [Tim lưỡng cư 3 ngăn](/blog/tuan-hoan-va-can-bang-noi-moi/))
 - Ghi chú buổi học (IMG_4104): *tim nằm trong màng trắng là bao xoang tim, giữa hai phổi; tim 3 ngăn, 2 nhĩ 1 thất, có hệ tuần hoàn phổi; ếch 2 vòng tuần hoàn, cá 1 vòng tuần hoàn đơn*.
 
 ## Vật liệu & phương pháp
@@ -95,15 +98,15 @@ isIndex: false
 <p class="callout-title">Bổ sung</p>
 
 - **Van xoắn** trong nón động mạch giúp phân luồng một phần: máu nghèo O₂ ưu tiên vào cung phổi – da, máu giàu O₂ hơn vào cung cảnh và cung chủ → giảm mức pha trộn.
-- Ếch thở bằng **cử động nâng – hạ thềm miệng** (bơm khí bằng áp suất dương), không có cơ hoành. (→ [Hô hấp ở động vật](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/))
+- Ếch thở bằng **cử động nâng – hạ thềm miệng** (bơm khí bằng áp suất dương), không có cơ hoành. (→ [Hô hấp ở động vật](/blog/tieu-hoa-va-ho-hap-o-dong-vat/))
 
 </div>
 
 ## Kết luận
 - Ếch mang đặc điểm chuyển tiếp nước – cạn: hô hấp bằng phổi kết hợp da ẩm nhiều mao mạch, tim 3 ngăn với 2 vòng tuần hoàn nhưng máu nuôi cơ thể vẫn là máu pha.
 - So với cá: tim thêm một tâm nhĩ, xuất hiện vòng tuần hoàn phổi, nón động mạch có van xoắn; lưỡi và lỗ mũi trong thích nghi bắt mồi và thở trên cạn.
-- Xem thêm: [Virtual Lab: khu giải phẫu ếch đồng](/projects/virtual-lab/10-thi-nghiem-giai-doan-5/) – mổ ảo cùng loài *H. rugulosus*.
-- Xem thêm: [Virtual Lab: ếch theo báo cáo này](/projects/virtual-lab/11-tai-lieu-drive-cho-giai-doan-6/) – khoang miệng, mao mạch dưới da, tuỵ, tì, ruột già trong khu giải phẫu ảo; app ghi rõ máu từ tĩnh mạch phổi về tâm nhĩ trái.
+- Xem thêm: [Virtual Lab: khu giải phẫu ếch đồng](/projects/virtual-lab/thi-nghiem-giai-doan-5/) – mổ ảo cùng loài *H. rugulosus*.
+- Xem thêm: [Virtual Lab: ếch theo báo cáo này](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) – khoang miệng, mao mạch dưới da, tuỵ, tì, ruột già trong khu giải phẫu ảo; app ghi rõ máu từ tĩnh mạch phổi về tâm nhĩ trái.
 
 ## Tài liệu gốc
 - Ảnh báo cáo:

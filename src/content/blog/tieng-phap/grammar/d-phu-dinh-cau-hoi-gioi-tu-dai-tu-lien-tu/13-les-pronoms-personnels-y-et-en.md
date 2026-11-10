@@ -10,6 +10,9 @@ folder: 'Tiếng Pháp / Grammar / D - Phủ định, câu hỏi, giới từ, �
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/D - Phủ định, câu hỏi, giới từ, đại từ, liên
   từ/13 - Les pronoms personnels, y et en.md
+url: /blog/les-pronoms-personnels-y-et-en-dai-tu-nhan-xung-y-va-en/
+topic: french
+updated: '2026-10-14'
 order: 13
 description: >-
   Memo 119: "disjunctives pronouns" → "disjunctive pronouns". Memo 119: nghĩa TA
@@ -60,7 +63,7 @@ isIndex: false
 <!-- Memo 118–119 -->
 ## a) Introduction
 - Đại từ là từ dùng để thay thế một danh từ. Nó thường được dùng để tránh lặp lại danh từ đã nhắc trước đó – **tiền ngữ (antecedent)**.
-- Các đại từ khác nhau được đặt tên dựa trên chức năng ngữ pháp của chúng. (→ [Pronom: COD / COI](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/27-fiches-de-synthese-pour-l-expression/))
+- Các đại từ khác nhau được đặt tên dựa trên chức năng ngữ pháp của chúng. (→ [Pronom: COD / COI](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
 	- **subject pronouns** (đại từ chủ ngữ):
 		- je, tu, il, elle, on, nous, vous, ils, elles
 		- I, you, he, she, one, we, you, they (m), they (f)
@@ -77,8 +80,8 @@ isIndex: false
 	- **reflexive pronouns** (đại từ phản thân):
 		- me, te, se, nous, vous, se: myself, yourself, himself/herself, ourselves, yourselves, themselves
 	<!-- Memo 120–121 -->
-	- **interrogative pronouns**: qui (who), que (what) (→ [Interrogation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/11-l-interrogation/))
-	- **demonstrative pronouns** (đại từ chỉ định): (→ [Pronoms démonstratifs, relatifs, indéfinis](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+	- **interrogative pronouns**: qui (who), que (what) (→ [Interrogation](/blog/l-interrogation-cau-hoi/))
+	- **demonstrative pronouns** (đại từ chỉ định): (→ [Pronoms démonstratifs, relatifs, indéfinis](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 		- celui, celle, ceux
 		- this one/that one (m, f), these, those
 	- **relative pronouns** (Đại từ quan hệ):
@@ -89,7 +92,7 @@ isIndex: false
 		- someone, something
 
 ## b) Subject pronouns
-- Đại từ thay thế để tránh sự lặp lại. **Đại từ chủ ngữ** là chủ ngữ của động từ. Trong TP, đại từ chủ ngữ được theo sau ngay lập tức hoặc gần như ngay lập tức bởi ĐT của nó. Việc sd đại từ chủ ngữ là bắt buộc trong TP, luôn sd đại từ chủ ngữ để tạo thành câu khi không có danh từ làm chủ ngữ. (→ [Từ vựng theo chủ đề](/blog/tieng-phap/vocabulary/01-vocabulaire-thematique/))
+- Đại từ thay thế để tránh sự lặp lại. **Đại từ chủ ngữ** là chủ ngữ của động từ. Trong TP, đại từ chủ ngữ được theo sau ngay lập tức hoặc gần như ngay lập tức bởi ĐT của nó. Việc sd đại từ chủ ngữ là bắt buộc trong TP, luôn sd đại từ chủ ngữ để tạo thành câu khi không có danh từ làm chủ ngữ. (→ [Từ vựng theo chủ đề](/blog/vocabulaire-thematique-tu-vung-theo-chu-de/))
 - Đại từ chủ ngữ được gọi bằng thuật ngữ "**ngôi**" (person), ám chỉ vai trò của chủ ngữ trong cuộc trò chuyện. **Ngôi thứ nhất** (1st person) ám chỉ người nói (I, we), **ngôi thứ 2** (2nd person) ám chỉ người được nói chuyện với (you), và **ngôi thứ 3** (3rd person) ám chỉ người hoặc vật được nói đến (he, she, it, they).
 
 | Ngôi       | Singular                | Plural              |
@@ -143,7 +146,7 @@ isIndex: false
 - "il(s)" và "elle(s)" nhắc đến người hoặc vật cụ thể. "**Ce**" không nhắc đến người hoặc vật cụ thể và được dịch là "that".
 
 ## d) Disjunctive pronoun
-- **Hình thái**: Đại từ phân biệt (hay đại từ tonique hoặc nhấn mạnh) dùng để chỉ những người có tên đã được nhắc đến hoặc có danh tính rõ ràng trong ngữ cảnh. Chúng được dùng trong nhiều tình huống khác nhau trong TP, thường là trong các câu trả lời ngắn không có động từ, để nhấn mạnh, hoặc để tương phản với đại từ chủ ngữ: (→ [Stressed pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/), [Mise en relief](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/))
+- **Hình thái**: Đại từ phân biệt (hay đại từ tonique hoặc nhấn mạnh) dùng để chỉ những người có tên đã được nhắc đến hoặc có danh tính rõ ràng trong ngữ cảnh. Chúng được dùng trong nhiều tình huống khác nhau trong TP, thường là trong các câu trả lời ngắn không có động từ, để nhấn mạnh, hoặc để tương phản với đại từ chủ ngữ: (→ [Stressed pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/), [Mise en relief](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/))
 	- moi (I, me)
 	- nous (we, us)
 	- toi (you)
@@ -160,10 +163,10 @@ isIndex: false
 	- để nhấn mạnh.
 	- sau "c'est" hoặc "ce sont"
 	- với "-même" với nghĩa "-self".
-	- trong sự so sánh. (→ [Adjectifs – comparatif](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/06-les-adjectifs/))
+	- trong sự so sánh. (→ [Adjectifs – comparatif](/blog/les-adjectifs-tinh-tu/))
 
 ## e) Direct object pronouns
-- **Tân ngữ trực tiếp** là một danh từ theo sau động từ trả lời các câu hỏi "what?" hoặc "whom?". Nhớ rằng một đại từ thế chỗ một danh từ, và trong trường hợp này, danh từ là một tân ngữ trực tiếp. Việc một động từ có tân ngữ trực tiếp hay không phụ thuộc vào việc động từ cụ thể đó là ngoại hay nội động từ. (→ [COD → chủ ngữ câu bị động](/blog/tieng-phap/grammar/e-thi-thuc-the/25-la-voix-passive/), [Object pronouns](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- **Tân ngữ trực tiếp** là một danh từ theo sau động từ trả lời các câu hỏi "what?" hoặc "whom?". Nhớ rằng một đại từ thế chỗ một danh từ, và trong trường hợp này, danh từ là một tân ngữ trực tiếp. Việc một động từ có tân ngữ trực tiếp hay không phụ thuộc vào việc động từ cụ thể đó là ngoại hay nội động từ. (→ [COD → chủ ngữ câu bị động](/blog/la-voix-passive-the-bi-dong/), [Object pronouns](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 
 <!-- Memo 126–127 -->
 ### i) Hình thái và các cách sử dụng
@@ -179,16 +182,16 @@ isIndex: false
 - Lưu ý: **le/l'** có thể thay thế một tính từ hoặc một động từ.
 
 ### ii) Vị trí
-- Đại từ tân ngữ trực tiếp đứng trước động từ mà nó là tân ngữ. Trong thì ghép (như passé composé), đại từ đứng trước trợ động từ. Trong cấu trúc nguyên thể, đại từ đứng trước ĐT nguyên thể. Khi động từ chia ở dạng phủ định, "ne" đứng trước đại từ tân ngữ. (→ [Đại từ trước faire nguyên nhân](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
-- Trong **mệnh lệnh phủ định** (negative imperative), đại từ đứng trước động từ theo vị trí thông thường. Tuy nhiên, trong **mệnh lệnh khẳng định**, đại từ tân ngữ đứng sau ĐT bằng dấu gạch nối. Ngoài ra, "me" và "te" trở thành "**moi**" và "**toi**". (→ [Impératif](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/))
+- Đại từ tân ngữ trực tiếp đứng trước động từ mà nó là tân ngữ. Trong thì ghép (như passé composé), đại từ đứng trước trợ động từ. Trong cấu trúc nguyên thể, đại từ đứng trước ĐT nguyên thể. Khi động từ chia ở dạng phủ định, "ne" đứng trước đại từ tân ngữ. (→ [Đại từ trước faire nguyên nhân](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
+- Trong **mệnh lệnh phủ định** (negative imperative), đại từ đứng trước động từ theo vị trí thông thường. Tuy nhiên, trong **mệnh lệnh khẳng định**, đại từ tân ngữ đứng sau ĐT bằng dấu gạch nối. Ngoài ra, "me" và "te" trở thành "**moi**" và "**toi**". (→ [Impératif](/blog/l-imperatif-thuc-menh-lenh/))
 
 ### iii) Agreement of the past participle
-- Quá khứ phân từ khớp về giới tính và số lượng với tân ngữ trực tiếp đứng trước. Nói cách khác, nếu đại từ tân ngữ trực tiếp là giống cái, thêm "**e**" vào cuối QKPT; nếu đại từ là giống đực số nhiều, thêm "**s**" (trừ khi QKPT đã kết thúc bằng "s"); nếu là giống cái số nhiều thì thêm "**es**". (→ [Passé composé](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- Quá khứ phân từ khớp về giới tính và số lượng với tân ngữ trực tiếp đứng trước. Nói cách khác, nếu đại từ tân ngữ trực tiếp là giống cái, thêm "**e**" vào cuối QKPT; nếu đại từ là giống đực số nhiều, thêm "**s**" (trừ khi QKPT đã kết thúc bằng "s"); nếu là giống cái số nhiều thì thêm "**es**". (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 
 ## f) Pronoun "y"
 
 ### i) Uses (aller, voyager, habiter, vivre, être né)
-- "**y**" biểu đạt nơi chốn (place): "y" thay thế giới từ chỉ vị trí cùng với tân ngữ của nó. Nó thường được dịch là "there". Các giới từ chỉ vị trí bao gồm "à, en, dans, devant, derrière, sous, sur". Tân ngữ danh từ của các giới từ này là địa điểm và sự vật chỉ một địa điểm. Ngoại lệ là giới từ "**chez**" được dùng với một người. Lưu ý rằng "à + person" được thay thế bằng một đại từ tân ngữ gián tiếp, ngoại trừ với một số ĐT nhất định. (→ [Prépositions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/12-les-prepositions/), [Y and En](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- "**y**" biểu đạt nơi chốn (place): "y" thay thế giới từ chỉ vị trí cùng với tân ngữ của nó. Nó thường được dịch là "there". Các giới từ chỉ vị trí bao gồm "à, en, dans, devant, derrière, sous, sur". Tân ngữ danh từ của các giới từ này là địa điểm và sự vật chỉ một địa điểm. Ngoại lệ là giới từ "**chez**" được dùng với một người. Lưu ý rằng "à + person" được thay thế bằng một đại từ tân ngữ gián tiếp, ngoại trừ với một số ĐT nhất định. (→ [Prépositions](/blog/les-prepositions-gioi-tu/), [Y and En](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 
 <!-- Memo 128–129 -->
 - "**y**" với một số ĐT nhất định: với một số ĐT nhất định, "y" thay thế giới từ "à" khi tân ngữ của nó là một khái niệm hoặc vật. Một số động từ đó là: "**penser à, réfléchir à, s'intéresser à, répondre à, participer à**". Trong các cách biểu đạt này, giới từ "à" là thành ngữ, nó không cho biết vị trí trong (location in) hoặc chuyển động tới (movement toward).
@@ -200,9 +203,9 @@ isIndex: false
 ## g) Pronoun "en"
 
 ### i) Uses
-- "**En**" là một đại từ thường thay thế cho "de + a noun"; bao gồm các DT được mở đầu bằng các từ hạn định định lượng (partitive) hoặc không xác định (de, du, de la, de l', des). "En" có thể được dịch là "some", "any", hoặc "not any". (quantité indéterminée) (→ [Déterminants – partitive](/blog/tieng-phap/grammar/b-danh-tu-tu-han-dinh-trang-tu-tinh-tu/04-les-determinants/), [Y and En](/blog/tieng-phap/grammar/g-tu-spreadsheet/32-parties-du-discours-pronoms-et-determinants/))
+- "**En**" là một đại từ thường thay thế cho "de + a noun"; bao gồm các DT được mở đầu bằng các từ hạn định định lượng (partitive) hoặc không xác định (de, du, de la, de l', des). "En" có thể được dịch là "some", "any", hoặc "not any". (quantité indéterminée) (→ [Déterminants – partitive](/blog/les-determinants-tu-han-dinh/), [Y and En](/blog/parties-du-discours-pronoms-et-determinants-tu-loai-dai-tu-va-tu-han-dinh/))
 - Tương tự như vậy, "en" thay thế DT được bắt đầu bằng một con số hoặc một cách diễn đạt số lượng. Lưu ý rằng từ tương đương với "en" không phải lúc nào cũng diễn đạt được bằng TA, mặc dù nó vẫn phải được sử dụng trong câu TP.
-- "En" cũng thay thế các cách biểu đạt được bắt đầu bởi giới từ "de" bằng các ĐT sau: (→ [Dont – cùng nhóm ĐT + de](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/14-pronoms-indefinis-demonstratifs-possessifs-et-relatifs/))
+- "En" cũng thay thế các cách biểu đạt được bắt đầu bởi giới từ "de" bằng các ĐT sau: (→ [Dont – cùng nhóm ĐT + de](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
 	- **s'occuper de**: to deal with
 	- **parler de**: to speak of
 	<!-- Memo 130–131 -->
@@ -244,7 +247,7 @@ isIndex: false
 ### i) Overview
 - Thay thế tối đa 2 ĐT: 1 gián + 1 trực.
 - Một đại từ tân ngữ đơn được đặt trước ĐT mà nó phụ thuộc, ngoại trừ câu mệnh lệnh khẳng định khi mà đại từ theo sau ĐT.
-- Thứ tự và vị trí của đại từ khi có nhiều hơn 1 đại từ tân ngữ trong câu: (→ [Bảng thứ tự đại từ tân ngữ](/blog/tieng-phap/grammar/g-tu-spreadsheet/29-modes-et-structure-de-la-phrase/))
+- Thứ tự và vị trí của đại từ khi có nhiều hơn 1 đại từ tân ngữ trong câu: (→ [Bảng thứ tự đại từ tân ngữ](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/))
 
 | SUBJECT + | (1)  | (2) | (3)  |     |     | + VERB (conj.) |
 | --------- | ---- | --- | ---- | --- | --- | -------------- |
@@ -269,7 +272,7 @@ isIndex: false
 
 *(Ghi chú bên cạnh trong sổ: thêm "s" sau ĐT nhóm 1 ngôi "tu".)*
 
-- Xem thêm: [Impératif](/blog/tieng-phap/grammar/e-thi-thuc-the/21-l-imperatif/) – thứ tự đại từ trong câu mệnh lệnh khẳng định.
+- Xem thêm: [Impératif](/blog/l-imperatif-thuc-menh-lenh/) – thứ tự đại từ trong câu mệnh lệnh khẳng định.
 
 ### ii) "y" và "en"
 - "**y**" luôn đứng trước "**en**", và cũng đứng trước ĐT ngoại trừ trong câu mệnh lệnh khẳng định. Khi được dùng với đại từ khác, "y" và "en" luôn theo sau các đại từ tân ngữ khác, kể cả câu mệnh lệnh khẳng định.
@@ -284,7 +287,7 @@ isIndex: false
 	- le leur
 
 ### iv) Negation
-- Ở thì đơn, như hiện tại, tương lai, imperfect và passé simple, đại từ tân ngữ được đặt giữa ne và ĐT. (→ [Négation](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/10-la-negation/))
+- Ở thì đơn, như hiện tại, tương lai, imperfect và passé simple, đại từ tân ngữ được đặt giữa ne và ĐT. (→ [Négation](/blog/la-negation-phu-dinh/))
 
 <!-- Memo 134–135 -->
 - Ở thì ghép, như passé composé, plus-que-parfait, đại từ tân ngữ được đặt giữa "ne" và trợ động từ.

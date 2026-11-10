@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Evolutionary Biology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Evolutionary Biology/03 -
   Chọn lọc tự nhiên ở chim sẻ Darwin.md
+url: /blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Báo cáo thực hành Sinh học tiến hoá – Nguyễn Thị Thu Hà, lớp Thứ 2 tiết 6-7.
@@ -32,8 +35,8 @@ isIndex: false
 - **Biến đổi môi trường 1977**:
 	- Hạn hán kéo dài 18 tháng. Hạt nhỏ, mềm của cây **chamaesyce** (*Chamaesyce amplexicaulis*) – thức ăn ưa thích – trở nên khan hiếm.
 	- Nguồn thức ăn còn lại chủ yếu là hạt **caltrop** (*Tribulus cistoides*): to, cứng, có gai nhọn.
-	- Khoảng 1.200 cá thể lúc đầu → chưa đến 200 con sống sót (mất ~85%; handout ghi "hơn 80%"). (→ [Cá thể và quần thể](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
-	- Chim lớn, mỏ to hơn có lợi thế ăn hạt caltrop → sống sót và sinh sản năm sau → **chọn lọc tự nhiên có định hướng**, tiến hoá có thể xảy ra **nhanh** (trong vài thế hệ). (→ [Cơ chế tiến hoá](/blog/sinh-hoc/kien-thuc-chung/e-tien-hoa/17-bang-chung-va-co-che-tien-hoa/), [Môi trường và biến dị](/blog/sinh-hoc/kien-thuc-chung/c-quy-luat-di-truyen/13-di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
+	- Khoảng 1.200 cá thể lúc đầu → chưa đến 200 con sống sót (mất ~85%; handout ghi "hơn 80%"). (→ [Cá thể và quần thể](/blog/ca-the-va-quan-the-sinh-vat/))
+	- Chim lớn, mỏ to hơn có lợi thế ăn hạt caltrop → sống sót và sinh sản năm sau → **chọn lọc tự nhiên có định hướng**, tiến hoá có thể xảy ra **nhanh** (trong vài thế hệ). (→ [Cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/), [Môi trường và biến dị](/blog/di-truyen-ngoai-nhan-moi-truong-va-bien-di/))
 - **Hình thành loài**:
 	- 13 loài chim sẻ Galápagos có chung tổ tiên – bằng chứng: **trình tự DNA**.
 	- **Cách ly địa lý**: các quần thể sống trên các đảo khác nhau.
@@ -41,12 +44,12 @@ isIndex: false
 - **Thống kê mô tả** (handout Part 2):
 	- **Phương sai mẫu** $s^2$, **độ lệch chuẩn** $s = \sqrt{s^2}$: độ phân tán quanh trung bình.
 	- **Sai số chuẩn của trung bình** $SEM = \dfrac{s}{\sqrt{n}}$: ~68% trung bình mẫu nằm trong ±1 SEM quanh trung bình quần thể.
-	- **Khoảng tin cậy 95%**: handout xấp xỉ $95\%\,CI \approx 2 \times SEM$; báo cáo dùng $1{,}96 \times SEM$ (hàm CONFIDENCE của Excel). (→ [Statistical Inference](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/01-models-statistical-inference-and-learning/))
+	- **Khoảng tin cậy 95%**: handout xấp xỉ $95\%\,CI \approx 2 \times SEM$; báo cáo dùng $1{,}96 \times SEM$ (hàm CONFIDENCE của Excel). (→ [Statistical Inference](/blog/models-statistical-inference-and-learning/))
 	- Thanh sai số 95% CI **không chồng nhau** → gợi ý khác biệt có ý nghĩa; chồng nhau → có thể không có ý nghĩa.
-- **Kiểm định t hai mẫu** (handout Part 4): (→ [Hypothesis Testing](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/02-kiem-dinh-gia-thiet-thong-ke/))
+- **Kiểm định t hai mẫu** (handout Part 4): (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/), [Kiểm định giả thiết](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 	- $H_0$: trung bình của nhóm không sống sót = trung bình nhóm sống sót (khác biệt do ngẫu nhiên).
 	- So sánh $|t_{obs}|$ với $t_{crit}$ (n = 50/nhóm → $t_{crit} = 1{,}98$, mức 5%): $|t_{obs}| > t_{crit}$ → bác bỏ $H_0$.
-- **Phần mở rộng của handout** (báo cáo không làm): vẽ scatterplot độ sâu mỏ – chiều dài cánh, thêm đường **hồi quy tuyến tính** và tính **hệ số xác định** $r^2$ (tỷ lệ biến thiên của y được x giải thích). (→ [Linear and Logistic Regression](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/01-linear-and-logistic-regression/))
+- **Phần mở rộng của handout** (báo cáo không làm): vẽ scatterplot độ sâu mỏ – chiều dài cánh, thêm đường **hồi quy tuyến tính** và tính **hệ số xác định** $r^2$ (tỷ lệ biến thiên của y được x giải thích). (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
 
 ## Vật liệu & phương pháp
 - **Phần 1 – Xem video** HHMI (http://www.hhmi.org/biointeractive/origin-species-beak-finch):
@@ -56,12 +59,12 @@ isIndex: false
 	- Đọc thêm: chim sẻ "ma cà rồng" hút máu chim điên trên Galápagos (VnExpress).
 - **Phần 2 – Phân tích số liệu**:
 	- Số liệu (Phụ lục 1): **100 cá thể** chim sẻ đất trung bình sinh 1973–1976; **50 không sống sót** (chết năm 1977) và **50 sống sót** (còn sống năm 1978).
-	- Tính Mean, SD, SEM, 95% CI cho 4 đặc điểm (Excel) → vẽ 4 biểu đồ cột trung bình kèm thanh sai số (R/ggplot). (→ [Thống kê mẫu và ước lượng](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/))
+	- Tính Mean, SD, SEM, 95% CI cho 4 đặc điểm (Excel) → vẽ 4 biểu đồ cột trung bình kèm thanh sai số (R/ggplot). (→ [Thống kê mẫu và ước lượng](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/))
 	- **F-test** so sánh phương sai ($H_0'$: phương sai khác nhau do ngẫu nhiên) → chọn **t-Test: Two-Sample Assuming Equal Variances** (Excel, df = 98).
 
 ## Kết quả chính
 - **Câu hỏi trắc nghiệm (Phần 1)** – đáp án đã chọn (tô đỏ trong bản gốc):
-	- Khác biệt cấu trúc mỏ là bằng chứng các loài **thích nghi với môi trường khác nhau qua nhiều thế hệ**. (→ [Chim và thú](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/))
+	- Khác biệt cấu trúc mỏ là bằng chứng các loài **thích nghi với môi trường khác nhau qua nhiều thế hệ**. (→ [Chim và thú](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/))
 	- Tổ tiên chung của 13 loài: bằng chứng **trình tự DNA**.
 	- Cây phát sinh loài: mọi chim sẻ Galápagos **gần nhau hơn so với chim sẻ đất liền** (mainland finch).
 	- Cách ly địa lý = hai quần thể sống trên **các đảo khác nhau**.
@@ -97,8 +100,8 @@ isIndex: false
 ## Kết luận & thảo luận
 - **Khối lượng cơ thể, chiều dài cánh và độ sâu mỏ** khác biệt có ý nghĩa thống kê giữa nhóm sống sót và không sống sót → là các đặc điểm **quan trọng cho sự sống sót** trong hạn hán 1977.
 - Chiều dài xương cổ chân không khác biệt có ý nghĩa → không phải yếu tố quyết định.
-- Diễn giải sinh học (theo Phần 1): khi hạt nhỏ, mềm cạn kiệt, chim **to hơn, mỏ sâu hơn** mới tách được hạt caltrop to, cứng → sống sót và sinh sản → thế hệ sau có mỏ lớn hơn: ví dụ trực tiếp của **chọn lọc tự nhiên** quan sát được trong thời gian ngắn. (→ [Tổng ôn](/blog/sinh-hoc/kien-thuc-chung/h-tong-on/26-tong-on-va-meo-lam-bai/))
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/08-thi-nghiem-giai-doan-3/) – protocol `ev-finch` tính lại đúng bảng thống kê và t-test trên 100 cá thể.
+- Diễn giải sinh học (theo Phần 1): khi hạt nhỏ, mềm cạn kiệt, chim **to hơn, mỏ sâu hơn** mới tách được hạt caltrop to, cứng → sống sót và sinh sản → thế hệ sau có mỏ lớn hơn: ví dụ trực tiếp của **chọn lọc tự nhiên** quan sát được trong thời gian ngắn. (→ [Tổng ôn](/blog/tong-on-va-meo-lam-bai/))
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-3/) – protocol `ev-finch` tính lại đúng bảng thống kê và t-test trên 100 cá thể.
 
 ## Tài liệu gốc
 *Báo cáo Sinh Tiến hoá - Bài 3 - Nguyễn Thị Thu Hà.pdf*

@@ -1,59 +1,73 @@
 ---
 import Base from '../layouts/Base.astro';
 import T from '../components/T.astro';
+import KnowledgeMap from '../components/KnowledgeMap.astro';
+import ProjectCase from '../components/ProjectCase.astro';
+import PostRows from '../components/PostRows.astro';
+import Cta from '../components/Cta.astro';
 import config from '../../site.config.json';
-import { blogEntries, projectEntries, statusKey } from '../lib';
-import { sectionNames } from '../i18n';
+import { blogEntries, projectEntries, byUpdated } from '../lib';
 
 const blog = await blogEntries();
 const projects = (await projectEntries()).filter((p) => p.data.isIndex);
-const featured = projects.filter((p) => p.data.featured);
-const sections = blog.filter((e) => e.data.isIndex && !e.id.includes('/'));
-const countIn = (id: string) => blog.filter((e) => e.id.startsWith(id + '/') && !e.data.isIndex).length;
-const links = Object.entries(config.author.links).filter(([, v]) => v);
-const label: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', linkedin: 'LinkedIn', tableau: 'Tableau Public', email: 'Email' };
+const byDue = (a, b) => (a.data.deadline ?? '9999').localeCompare(b.data.deadline ?? '9999');
+const featured = projects.filter((p) => p.data.featured).sort(byDue);
+const others = projects.filter((p) => !p.data.featured);
+const recent = blog.filter((e) => !e.data.isIndex).sort(byUpdated).slice(0, 8);
+const sameAs = Object.entries(config.author.links).filter(([k, v]) => v && k !== 'email').map(([, v]) => v);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: config.author.name,
+  url: config.site,
+  description: config.author.bio_en,
+  ...(sameAs.length ? { sameAs } : {}),
+};
 ---
-<Base description={config.author.bio_en}>
-  <section class="hero">
-    <p class="eyebrow"><T vi={config.author.headline_vi} en={config.author.headline_en} /></p>
-    <h1>{config.author.name}</h1>
-    <p class="lead"><T vi={config.author.bio_vi} en={config.author.bio_en} /></p>
-    <div class="links">
-      <a class="btn primary" href="/projects/"><T k="projects" /> →</a>
-      <a class="btn" href="/blog/"><T k="browseBlog" /></a>
-      {links.map(([k, v]) => (
-        <a class="btn" href={k === 'email' ? `mailto:${v}` : v} rel="me noopener" target={k === 'email' ? undefined : '_blank'}>{label[k] ?? k}</a>
-      ))}
+<Base jsonLd={jsonLd}>
+  <section class="wrap hero">
+    <div>
+      <h1><T k="heroTitle" /></h1>
+      <p class="intro"><T vi={config.author.bio_vi} en={config.author.bio_en} /></p>
+      <div class="actions">
+        <a class="button solid" href="#projects"><T k="seeProjects" /></a>
+        <a class="button" href="/blog/"><T k="readBlog" /></a>
+      </div>
+    </div>
+    <KnowledgeMap><T k="mapCaption" /></KnowledgeMap>
+  </section>
+
+  <section class="band" id="projects">
+    <div class="wrap">
+      <div class="band-head">
+        <div>
+          <h2><T k="projects" /></h2>
+          <p><T k="projectsIntro" /></p>
+        </div>
+        <a href="/projects/"><T k="allProjects" /></a>
+      </div>
+      {(featured.length ? featured : projects).map((p) => <ProjectCase project={p} />)}
+      {featured.length > 0 && others.length > 0 && (
+        <ul class="compact-cases">
+          {others.map((p) => (
+            <li><a href={p.data.url}><strong>{p.data.title}</strong><span class="muted">{p.data.summary_vi ? <T vi={p.data.summary_vi.split('. ')[0]} en={(p.data.summary_en ?? p.data.summary_vi).split('. ')[0]} /> : p.data.description?.slice(0, 90)}</span></a></li>
+          ))}
+        </ul>
+      )}
     </div>
   </section>
 
-  <h2 class="section-title"><T k="featured" /> <a href="/projects/"><T k="allProjects" /> →</a></h2>
-  <div class="grid">
-    {(featured.length ? featured : projects).map((p) => {
-      const s = statusKey(p.data.status);
-      return (
-        <a class="card" href={`/projects/${p.id}/`}>
-          <h3>{p.data.title}</h3>
-          {p.data.description && <p>{p.data.description}</p>}
-          <div class="meta">
-            {s && <span class="badge"><T k={s} /></span>}
-            {p.data.tags.filter((t) => t !== 'project').slice(0, 3).map((t) => <span class="tag">{t}</span>)}
-          </div>
-        </a>
-      );
-    })}
-  </div>
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <h2><T k="recentNotes" /></h2>
+        <a href="/blog/"><T k="allPosts" /></a>
+      </div>
+      <PostRows posts={recent} />
+    </div>
+  </section>
 
-  <h2 class="section-title"><T k="latestTopics" /> <a href="/blog/"><T k="blog" /> →</a></h2>
-  <div class="grid">
-    {sections.map((s) => {
-      const name = sectionNames[s.data.section ?? ''] ?? [s.data.title, s.data.title];
-      return (
-        <a class="card" href={`/blog/${s.id}/`}>
-          <h3><T vi={name[0]} en={name[1]} /></h3>
-          <div class="meta"><span class="count">{countIn(s.id)}</span> <T k="notes" /></div>
-        </a>
-      );
-    })}
-  </div>
+  <section class="wrap" style="padding-bottom:16px">
+    <Cta campaign="home" />
+  </section>
 </Base>

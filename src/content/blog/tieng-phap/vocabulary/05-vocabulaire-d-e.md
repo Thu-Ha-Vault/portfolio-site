@@ -8,6 +8,9 @@ tags:
 section: Tiếng Pháp
 folder: Tiếng Pháp / Vocabulary
 vaultPath: Resources/Tiếng Pháp/Vocabulary/05 - Vocabulaire D–E.md
+url: /blog/vocabulaire-d-e-tu-vung-d-e/
+topic: french
+updated: '2026-10-14'
 order: 5
 description: >-
   Dirgeant → Dirigeant Disponnibilité → Disponibilité Écheques → Échecs Enchantè

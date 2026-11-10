@@ -14,6 +14,10 @@ folder: Sinh học / Biology Project and Lab Report / Enzymology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Enzymology/02 - Thuyết trình
   lipase từ Pseudomonas brenneri.md
+url: >-
+  /blog/danh-gia-hoat-tinh-cua-enzyme-lipase-tu-pseudomonas-brenneri-va-ung-dung-trong-t/
+topic: biology
+updated: '2026-10-14'
 order: 2
 description: >-
   Slide thuyết trình (29 trang) của Nhóm 3 – Vũ Đức Hiệp, Trần Minh Anh, Hoàng
@@ -21,7 +25,7 @@ description: >-
   and characterization of a novel thermo-solvent-stable lipase from P
 isIndex: false
 ---
-> Slide thuyết trình (29 trang) của **Nhóm 3** – Vũ Đức Hiệp, Trần Minh Anh, Hoàng Minh Hiếu, Nguyễn Lê Nhung, Nguyễn Thị Thu Hà – phân tích bài báo *Isolation and characterization of a novel thermo-solvent-stable lipase from Pseudomonas brenneri and its application in biodiesel synthesis* (Priyanka et al., *Biocatalysis and Agricultural Biotechnology* 29, 2020, 101806). Đây là phần trình bày đi kèm [Bài 1](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/01-hoat-do-lipase-bang-p-npp/), không phải bản PDF bài báo.
+> Slide thuyết trình (29 trang) của **Nhóm 3** – Vũ Đức Hiệp, Trần Minh Anh, Hoàng Minh Hiếu, Nguyễn Lê Nhung, Nguyễn Thị Thu Hà – phân tích bài báo *Isolation and characterization of a novel thermo-solvent-stable lipase from Pseudomonas brenneri and its application in biodiesel synthesis* (Priyanka et al., *Biocatalysis and Agricultural Biotechnology* 29, 2020, 101806). Đây là phần trình bày đi kèm [Bài 1](/blog/hoat-do-enzyme/), không phải bản PDF bài báo.
 
 ## Bối cảnh
 - **Lipase**: enzyme quan trọng trong sản xuất **biodiesel**, chế biến thực phẩm, xử lý chất thải; xúc tác thuỷ phân, ester hoá, alcoholysis...
@@ -31,7 +35,7 @@ isIndex: false
 - **Mục tiêu**: xác định yếu tố ảnh hưởng đến hoạt tính lipase (thời gian lên men, nhiệt độ, pH, ion kim loại...) qua đo hoạt độ; tối ưu sản xuất và đánh giá độ bền nhiệt, độ ổn định để mở rộng ứng dụng.
 
 ## Phương pháp
-- Quy trình đo hoạt độ 8 bước: (→ [Hoạt độ amylase](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/08-dinh-tinh-enzyme-va-hoat-do-amylase/))
+- Quy trình đo hoạt độ 8 bước: (→ [Hoạt độ amylase](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/))
 	1. **Chuẩn bị cơ chất**: **p-NPP** – thuỷ phân giải phóng p-nitrophenol, dễ định lượng.
 	2. **Mẫu chứa enzyme**: phân lập *P. brenneri* trên **thạch Rhodamine B**, tinh sạch enzyme.
 	3. **Hỗn hợp phản ứng**: dịch enzyme + p-NPP trong **Tris-HCl pH 7,5** + ion kim loại / chất ức chế / chất hoạt động bề mặt.
@@ -39,11 +43,11 @@ isIndex: false
 	5. **Dừng phản ứng**: acid hoặc base mạnh.
 	6. **Đo**: độ hấp thụ ở khoảng **410 nm** (slide ghi 410 nm; báo cáo Bài 1 ghi 405 nm).
 	7. **Tính hoạt độ**:
-		- Dựng **đường chuẩn** p-nitrophenol thương mại: $y = mx + b$ ($y$: độ hấp thụ, $x$: nồng độ, $m$: độ dốc ≈ hệ số hấp thụ mol của p-nitrophenol), tính bằng OpenOffice Calc. (→ [Linear and Logistic Regression](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/iii-statistical-models-and-method/01-linear-and-logistic-regression/))
+		- Dựng **đường chuẩn** p-nitrophenol thương mại: $y = mx + b$ ($y$: độ hấp thụ, $x$: nồng độ, $m$: độ dốc ≈ hệ số hấp thụ mol của p-nitrophenol), tính bằng OpenOffice Calc. (→ [Linear and Logistic Regression](/blog/linear-and-logistic-regression/))
 		- $\text{Catalytic activity (μmol/min/mL)} = \dfrac{[P]_f - [P]_i}{t}$ với $[P]_i$, $[P]_f$: nồng độ p-nitrophenol đầu/cuối, $t$ = 30 phút.
 		- **1 U** = 1 μmol p-nitrophenol/phút.
 		- $\text{Hoạt độ còn lại (\%)} = \dfrac{\text{Hoạt độ sau xử lý}}{\text{Hoạt độ ban đầu}} \times 100$
-	8. **Phân tích dữ liệu**: IU/mg hoặc IU/ml; mỗi mẫu đo 3 lần (trung bình, SD); so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/sinh-hoc/bioinformatics/a-statistics-and-biostatistics/ii-statistical-inference/05-hypothesis-testing-and-p-values/))
+	8. **Phân tích dữ liệu**: IU/mg hoặc IU/ml; mỗi mẫu đo 3 lần (trung bình, SD); so sánh bằng **t-test**. (→ [Hypothesis Testing](/blog/hypothesis-testing-and-p-values/))
 
 ## Kết quả chính
 - **Phân lập**: 16S rRNA xác định *P. reinekei* và *P. brenneri*; lipase ngoại bào bền trong n-hexane (phương pháp phủ đĩa, chiếu UV trên thạch Rhodamine B).
@@ -59,7 +63,7 @@ isIndex: false
 
 ## Ý nghĩa / ứng dụng
 - Lipase *P. brenneri* là **metalloenzyme bền nhiệt và bền dung môi hữu cơ**, được hoạt hoá bởi dung môi hữu cơ, hoạt động 10–60 °C với p-NPP.
-- Bằng chứng ứng dụng: tổng hợp **FAME thô từ dầu ô liu + methanol** → tiềm năng sản xuất biodiesel, chất tẩy rửa, hương liệu. (→ [Mỡ trung tính](/blog/sinh-hoc/biology-project-and-lab-report/biochemistry-and-molecular-biology/05-tinh-chat-ly-hoa-cua-mo-trung-tinh/))
+- Bằng chứng ứng dụng: tổng hợp **FAME thô từ dầu ô liu + methanol** → tiềm năng sản xuất biodiesel, chất tẩy rửa, hương liệu. (→ [Mỡ trung tính](/blog/cac-tinh-chat-ly-hoa-cua-mo-trung-tinh-triacylglycerol/))
 - Tài liệu tham khảo thêm trong slide: Adrio & Demain (2014) *Microbial enzymes: tools for biotechnological processes*; Salihu & Alam (2015) *Solvent tolerant lipases: a review*.
 
 ## Tài liệu gốc

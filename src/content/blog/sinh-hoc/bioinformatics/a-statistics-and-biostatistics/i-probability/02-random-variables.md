@@ -10,6 +10,9 @@ folder: Sinh học / Bioinformatics / A - Statistics and Biostatistics / I - Pro
 vaultPath: >-
   Resources/Sinh học/Bioinformatics/A - Statistics and Biostatistics/I -
   Probability/02 - Random Variables.md
+url: /blog/random-variables/
+topic: biology
+updated: '2026-10-14'
 order: 2
 description: >-
   Xem thêm: Đặc trưng thống kê mẫu và ước lượng tham số – phân phối chuẩn,
@@ -24,7 +27,7 @@ isIndex: false
 
 ## Some Important Continuous Random Variables
 
-- Xem thêm: [Đặc trưng thống kê mẫu và ước lượng tham số](/blog/sinh-hoc/biology-project-and-lab-report/biostatistics-and-bioinformatics/01-dac-trung-thong-ke-mau-va-uoc-luong-tham-so/) – phân phối chuẩn, Student t và $\chi^2$ dùng để tra $U_{\alpha/2}$, $t_{(n-1,\alpha/2)}$, `CHIINV`
+- Xem thêm: [Đặc trưng thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/) – phân phối chuẩn, Student t và $\chi^2$ dùng để tra $U_{\alpha/2}$, $t_{(n-1,\alpha/2)}$, `CHIINV`
 
 ## Bivariate Distributions
 

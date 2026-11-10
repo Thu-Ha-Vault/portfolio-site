@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Genetics
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Genetics/03 - Di truyền tế
   bào người - băng NST, karyotype và hemoglobin.md
+url: /blog/di-truyen-te-bao-nguoi-bang-nst-karyotype-va-hemoglobin/
+topic: biology
+updated: '2026-10-16'
 order: 3
 description: >-
   Chép từ 6 ảnh chụp slide chiếu trong buổi thực hành Di truyền người (tải lên
@@ -30,7 +33,7 @@ isIndex: false
 | **Băng Q** | Xử lý với quinacrine để làm xuất hiện các băng nhuộm huỳnh quang. Quan sát bằng kính hiển vi huỳnh quang | Quan sát NST Y, tâm động NST 3; đánh giá bất thường ở đầu tận cùng NST |
 | **Băng C** | Xử lý tiêu bản với dung dịch muối, sau đó nhuộm Giemsa | Đánh giá các vùng dị nhiễm sắc nằm cạnh tâm động |
 
-- Các bất thường phát hiện được bằng băng NST là các dạng **đột biến cấu trúc và số lượng NST**. (→ [Đột biến nhiễm sắc thể](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/07-dot-bien-nhiem-sac-the/))
+- Các bất thường phát hiện được bằng băng NST là các dạng **đột biến cấu trúc và số lượng NST**. (→ [Đột biến nhiễm sắc thể](/blog/dot-bien-nhiem-sac-the/))
 
 ### Symbols for Chromosome Abnormalities
 
@@ -61,7 +64,7 @@ isIndex: false
 <p class="callout-title">Bổ sung</p>
 
 - **Cách đọc karyotype (ISCN)**: tổng số NST → NST giới tính → bất thường. Trong ngoặc thứ nhất là số NST, ngoặc thứ hai là vị trí điểm đứt; **p** = vai ngắn, **q** = vai dài; băng ghi theo *vùng + băng*, ví dụ `q32` = vai dài, vùng 3, băng 2. Ví dụ khác: `47,XX,+21` (Down, trisomy 21), `45,X` (Turner).
-- Cách viết `t(3q−,2p+)` là kiểu ghi cũ; ISCN hiện dùng `t(2;3)(p..;q..)`. **der(22)** là NST 22 *dẫn xuất* sau sắp xếp lại cấu trúc (không chỉ "thêm đoạn"), ví dụ NST Philadelphia `der(22)t(9;22)(q34;q11)` trong bệnh bạch cầu tuỷ mạn (→ [Di truyền y học](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/)).
+- Cách viết `t(3q−,2p+)` là kiểu ghi cũ; ISCN hiện dùng `t(2;3)(p..;q..)`. **der(22)** là NST 22 *dẫn xuất* sau sắp xếp lại cấu trúc (không chỉ "thêm đoạn"), ví dụ NST Philadelphia `der(22)t(9;22)(q34;q11)` trong bệnh bạch cầu tuỷ mạn (→ [Di truyền y học](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/)).
 - Bảng ký hiệu trên slide (Df, Dp, Rb, Ts, UpDi…) là quy ước kiểu danh pháp di truyền chuột; karyotype người theo ISCN dùng chữ thường: `del`, `dup`, `inv`, `ins`, `i`, `t`, `rob`, `der`.
 
 </div>
@@ -95,7 +98,7 @@ isIndex: false
 - Bệnh rối loạn máu gồm 2 dạng:
 	- 1. Bất thường trong **cấu trúc** di truyền của các chuỗi globin (các bệnh huyết sắc tố **HbS, HbD, HbC, HbE**).
 	- 2. Bất thường trong quá trình **tổng hợp và số lượng** các chuỗi globin (bệnh **thalassemia**).
-- → Hồng cầu chết sớm hơn bình thường → **thiếu máu**. (→ [Bệnh di truyền phân tử](/blog/sinh-hoc/kien-thuc-chung/d-di-truyen-hoc-quan-the-va-nguoi/15-di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
+- → Hồng cầu chết sớm hơn bình thường → **thiếu máu**. (→ [Bệnh di truyền phân tử](/blog/di-truyen-hoc-nguoi-va-di-truyen-y-hoc/))
 - Slide kèm 2 ảnh tiêu bản máu: hồng cầu bình thường và hồng cầu biến dạng (hình liềm).
 
 <div class="callout callout-info">

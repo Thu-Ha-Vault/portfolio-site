@@ -14,6 +14,10 @@ folder: Sinh học / Biology Project and Lab Report / Enzymology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Enzymology/04 - Protease PQM
   từ nọc nhện Cupiennius salei.md
+url: >-
+  /blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/
+topic: biology
+updated: '2026-10-16'
 order: 4
 description: >-
   Langenegger N. et al. (2018). Identification of a precursor processing
@@ -21,7 +25,7 @@ description: >-
   maturation. J. Biol. Chem. 293(6): 2079–2090. DOI: 10.1074/jbc.M117.810911 (
 isIndex: false
 ---
-> Langenegger N. et al. (2018). *Identification of a precursor processing protease from the spider Cupiennius salei essential for venom neurotoxin maturation*. **J. Biol. Chem.** 293(6): 2079–2090. DOI: 10.1074/jbc.M117.810911 (Open Access, CC BY). Bài báo nguồn của [Bài 2: Tinh sạch enzyme](/blog/sinh-hoc/biology-project-and-lab-report/enzymology/03-tinh-sach-protease-tu-noc-nhen/).
+> Langenegger N. et al. (2018). *Identification of a precursor processing protease from the spider Cupiennius salei essential for venom neurotoxin maturation*. **J. Biol. Chem.** 293(6): 2079–2090. DOI: 10.1074/jbc.M117.810911 (Open Access, CC BY). Bài báo nguồn của [Bài 2: Tinh sạch enzyme](/blog/tinh-sach-enzyme/).
 
 ## Bối cảnh
 - Độc tố thần kinh (neurotoxin) và peptide gây ly giải tế bào (cytolytic) trong nọc nhện được tổng hợp dưới dạng **tiền chất** (signal peptide – propeptide acid – peptide trưởng thành) và cần **protease** cắt để thành dạng hoạt động.
@@ -36,8 +40,8 @@ isIndex: false
 	- **SEC** (lọc gel, Superdex 75 HR, 100 mM NH₄OAc pH 5,0).
 	- **CEX** (trao đổi cation, MiniS PE, gradient 0–0,65 M NaCl).
 	- **RP-HPLC** (Nucleosil 300-5 C4, gradient 0–60% acetonitrile/TFA).
-- **Kiểm tra độ sạch & cấu trúc**: SDS-PAGE (8–25%, nhuộm bạc), **MALDI-TOF-MS**, **LC-MS/MS** (chuỗi nhẹ/nặng, cầu disulfide), phân tích amino acid. (→ [2D-PAGE](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/02-dien-di-hai-chieu-2d-page/), [LC-MS/MS](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/06-sac-ky-long-khoi-pho-lc-ms-ms/))
-- **Trình tự**: transcriptome tuyến nọc (454, Illumina HiSeq3000; lắp ráp Trinity) + proteomics bottom-up (trypsin, chymotrypsin, proteinase K). (→ [Thuỷ phân protein trong gel](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/05-thuy-phan-protein-trong-gel/))
+- **Kiểm tra độ sạch & cấu trúc**: SDS-PAGE (8–25%, nhuộm bạc), **MALDI-TOF-MS**, **LC-MS/MS** (chuỗi nhẹ/nặng, cầu disulfide), phân tích amino acid. (→ [2D-PAGE](/blog/dien-di-hai-chieu-2d-page/), [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/))
+- **Trình tự**: transcriptome tuyến nọc (454, Illumina HiSeq3000; lắp ráp Trinity) + proteomics bottom-up (trypsin, chymotrypsin, proteinase K). (→ [Thuỷ phân protein trong gel](/blog/thuy-phan-protein-trong-gel-dien-di/))
 - **Đặc tính enzyme**: pH 3,5–8,5; cation hoá trị 1 và 2 (5 mM); chất ức chế EDTA, AEBSF (10 mM); đo động học huỳnh quang ở 37 °C.
 - **Đặc hiệu cơ chất**: ủ qua đêm với các peptide tổng hợp mô phỏng vị trí cắt của CsTx-1, CsTx-9, CsTx-13, CsTx-40, ω-agatoxin-1A → phân tích sản phẩm bằng LC-MS.
 - **Tin sinh học**: tìm protein tương đồng ở 18 loài nhện thuộc 9 họ, dựng cây phát sinh maximum likelihood.
@@ -54,7 +58,7 @@ isIndex: false
 
 - Hiệu suất (tổng hoạt độ cuối / ban đầu) ≈ **23,6%** (như tính trong Bài 2); nồng độ protease trong nọc ước tính **0,78 ± 0,2 µM** (có thể bị đánh giá thấp do mất trong tinh sạch).
 - **Cấu trúc**:
-	- **Serine protease giống chymotrypsin**, **heterodimer 28 kDa** (MALDI-TOF), băng đơn hơi dưới 30 kDa trên SDS-PAGE. (→ [MALDI-TOF MS](/blog/sinh-hoc/biology-project-and-lab-report/proteomics-and-structural-biology/07-khoi-pho-maldi-tof-ms-va-nhan-dang-protein/))
+	- **Serine protease giống chymotrypsin**, **heterodimer 28 kDa** (MALDI-TOF), băng đơn hơi dưới 30 kDa trên SDS-PAGE. (→ [MALDI-TOF MS](/blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/))
 	- **Chuỗi nhẹ** (Lys19–Gln33, 1621,935 Da, đầu C được **amid hoá**) nối chuỗi nặng (Ile36–Thr280) bằng **1 cầu disulfide**; chuỗi nặng có nhiều isoform.
 	- ORF 840 bp: signal peptide (Met1–Gly18) + chuỗi nhẹ + spacer Gly34–Arg35 + chuỗi nặng; 2 isoform **VSP1_a1** (~90%) và **VSP1_a2** (~10%).
 	- Thuộc **họ peptidase S1A**: bộ ba xúc tác **His80, Asp130, Ser231**; vị trí gắn cơ chất Asp225, Ala251, Gly253.
@@ -69,7 +73,7 @@ isIndex: false
 - Gợi ý cơ chế tương tự cho tiền chất peptide cytolytic phức tạp (PQM/iPQM + carboxypeptidase).
 - Tiềm năng làm **công cụ sản xuất peptide độc tố tái tổ hợp**.
 - Ví dụ điển hình về **chiến lược tinh sạch enzyme lượng vết** (nồng độ thấp hơn độc tố chính tới ~1000 lần) và tầm quan trọng của theo dõi hoạt độ ở mỗi bước.
-- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/09-thi-nghiem-giai-doan-4/) – bảng tinh sạch của bài báo dùng làm số liệu kiểm thử; ảnh hưởng pH, Zn²⁺, AEBSF; hình hệ FPLC.
+- Xem thêm: [Mô phỏng trong Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/) – bảng tinh sạch của bài báo dùng làm số liệu kiểm thử; ảnh hưởng pH, Zn²⁺, AEBSF; hình hệ FPLC.
 
 ## Tài liệu gốc
 *Protease từ nọc độc nhện.pdf*

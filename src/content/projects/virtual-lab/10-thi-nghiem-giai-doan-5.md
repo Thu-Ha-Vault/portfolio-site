@@ -7,6 +7,8 @@ tags:
   - simulation
 folder: Projects / Virtual_Lab
 vaultPath: Projects/Virtual_Lab/10 - Thí nghiệm giai đoạn 5.md
+url: /projects/virtual-lab/thi-nghiem-giai-doan-5/
+updated: '2026-10-17'
 date: '2026-10-16'
 status: active
 order: 10
@@ -88,11 +90,11 @@ Yêu cầu của chủ dự án (2026-10-16): tìm bản đồ vệ tinh để t
 - **Xử lý** (`tools/catba/fetch.py`): chỉ đọc đúng các ô ảnh nằm trong khung bằng HTTP Range (khoảng 22 MB thay vì vài trăm MB mỗi cảnh); cắt khung UTM 48N 699 960–725 040 E, 2 289 000–2 310 420 N (25,1 × 21,4 km); ảnh nền thu về 12,5 m, tăng sáng nhẹ (gamma 0,8); độ cao lấy mẫu song tuyến về lưới 50 m, ghép hai ô DEM ở kinh tuyến 107° cho liền; mặt nạ nước từ SCL lớp 6.
 - **Kiểm chứng**:
 	- Công thức UTM (Snyder 1987) cho góc ô 48QYH khớp bbox mà STAC tính bằng PROJ (sai dưới 2 m).
-	- Độ cao lớn nhất trong khung khoảng 303 m, phù hợp mô tả "độ cao < 500 m, phần lớn 50–200 m" trong [báo cáo tổng quan](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/01-tong-quan-thuc-tap-cat-ba/).
+	- Độ cao lớn nhất trong khung khoảng 303 m, phù hợp mô tả "độ cao < 500 m, phần lớn 50–200 m" trong [báo cáo tổng quan](/blog/tong-quan-thuc-tap-thien-nhien-cat-ba-2023/).
 	- So với độ cao GPS ghi trong báo cáo thực tập: điểm gặp quạ báo cáo 20–30 m, bản đồ khoảng 31 m; mẫu nấm Trametes báo cáo 80 m, bản đồ khoảng 107 m; Động Trung Trang báo cáo 50 m, bản đồ khoảng 64 m. DEM là mô hình bề mặt đo bằng radar nên gồm một phần tán rừng; sai số đứng của DEM < 4 m (LE90).
-	- Điểm GPS ở Động Trung Trang trong [bài 02](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/) cách cửa hang trên OpenStreetMap khoảng 540 m.
+	- Điểm GPS ở Động Trung Trang trong [bài 02](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/) cách cửa hang trên OpenStreetMap khoảng 540 m.
 - **Điểm trên bản đồ** (`data/catba.json`):
-	- Theo GPS của báo cáo: Động Trung Trang (20°47′23″ B, 107°00′09″ Đ), điểm gặp quạ (20°47′40″ B, 106°59′26″ Đ), mẫu nấm Trametes (20°47′44″ B, 106°59′50″ Đ, → [bài 08](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/08-thuc-vat-bac-thap-nam-trametes/)).
+	- Theo GPS của báo cáo: Động Trung Trang (20°47′23″ B, 107°00′09″ Đ), điểm gặp quạ (20°47′40″ B, 106°59′26″ Đ), mẫu nấm Trametes (20°47′44″ B, 106°59′50″ Đ, → [bài 08](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/)).
 	- Theo OpenStreetMap (*chưa xác minh* đúng chỗ làm bài): rừng ngập mặn Phù Long (nhà văn hoá xã), bãi triều Xuân Đám (bãi biển Xuân Đám), Ao Ếch, đỉnh Ngự Lâm, trung tâm VQG (bảng thông tin rừng Kim Giao), bến phà Gia Luận. Thị trấn Cát Bà theo Wikipedia.
 - **Trong app**: sa bàn 1 : 1000 (25 × 21 m trong cảnh), độ cao phóng đại 3 lần, thước 5 km, hướng bắc, dòng ghi công. Bấm đinh ghim xem toạ độ, độ cao, bài thực tập; bấm mặt bản đồ đọc toạ độ và độ cao một điểm bất kỳ; đo đường chim bay kèm mặt cắt địa hình (VQG – Ao Ếch khoảng 3,1 km, cao nhất khoảng 223 m); đổi lớp ảnh vệ tinh hoặc tô màu độ cao. Protocol `geo-catba` 7 bước.
 - **Giới hạn**: biển phẳng (chưa có độ sâu); chưa vẽ đường mòn thật nên chỉ đo đường chim bay; vị trí Phù Long, Xuân Đám, Ao Ếch là điểm đại diện.
@@ -100,10 +102,10 @@ Yêu cầu của chủ dự án (2026-10-16): tìm bản đồ vệ tinh để t
 ## 7. Khu giải phẫu động vật
 Yêu cầu của chủ dự án (2026-10-16): mở rộng bàn thí nghiệm để làm khu giải phẫu động vật. Khu `#dissect`: bàn nối dài mặt inox bên phải bàn trung tâm.
 - **Mẫu và bài** (`data/dissection.json`):
-	- Giun đất (*Pheretima* sp.), SGK Sinh học 7 bài 16: đặt nằm sấp, ghim đầu và đuôi, cắt nông dọc mặt lưng, đổ nước ngập, phanh da; hầu, diều, dạ dày cơ, ruột, ruột tịt, hạch não, chuỗi hạch thần kinh bụng (→ [ống tiêu hoá](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/24-tieu-hoa-va-ho-hap-o-dong-vat/); [ảnh mổ giun đất thật](/blog/sinh-hoc/biology-project-and-lab-report/invertebrate-zoology/05-nganh-giun-dot-giun-dat/)).
+	- Giun đất (*Pheretima* sp.), SGK Sinh học 7 bài 16: đặt nằm sấp, ghim đầu và đuôi, cắt nông dọc mặt lưng, đổ nước ngập, phanh da; hầu, diều, dạ dày cơ, ruột, ruột tịt, hạch não, chuỗi hạch thần kinh bụng (→ [ống tiêu hoá](/blog/tieu-hoa-va-ho-hap-o-dong-vat/); [ảnh mổ giun đất thật](/blog/nganh-giun-dot-annelida-giun-dat/)).
 	- Tôm sông (*Macrobrachium* sp.), bài 23: găm 4 đinh ghim, đổ nước ngập, nâng tấm lưng; mang, dạ dày, tuyến gan, ruột, hạch não, vòng thần kinh hầu, chuỗi thần kinh ngực và bụng.
-	- Cá chép (*Cyprinus carpio*), bài 32: cá nằm nghiêng, cắt nông từ trước lỗ hậu môn tới sau mang; mang, tim, gan, túi mật, ruột, tuyến sinh dục, bóng hơi, thận (→ [tim cá 2 ngăn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/)). Cá chép không có dạ dày thật (họ Cyprinidae; Wilson & Castro 2010), app ghi rõ chỗ SGK gọi là dạ dày. (→ [Báo cáo mổ cá chép thật](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/01-giai-phau-ca-chep-va-ca-ro-phi/))
-	- Ếch đồng (*Hoplobatrachus rugulosus*), bài 36: nằm ngửa, ghim bốn chi, cắt da theo đường giữa, cắt lớp cơ lệch sang một bên để không đứt tĩnh mạch bụng; tim, phổi, gan, dạ dày, ruột non, ruột thẳng, bóng đái, thận, tuyến sinh dục (→ [tim lưỡng cư 3 ngăn](/blog/sinh-hoc/kien-thuc-chung/g-chuyen-hoa-vat-chat-va-nang-luong/25-tuan-hoan-va-can-bang-noi-moi/); [báo cáo mổ ếch thật](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/02-giai-phau-ech-dong/)).
+	- Cá chép (*Cyprinus carpio*), bài 32: cá nằm nghiêng, cắt nông từ trước lỗ hậu môn tới sau mang; mang, tim, gan, túi mật, ruột, tuyến sinh dục, bóng hơi, thận (→ [tim cá 2 ngăn](/blog/tuan-hoan-va-can-bang-noi-moi/)). Cá chép không có dạ dày thật (họ Cyprinidae; Wilson & Castro 2010), app ghi rõ chỗ SGK gọi là dạ dày. (→ [Báo cáo mổ cá chép thật](/blog/giai-phau-ca-chep-va-ca-ro-phi/))
+	- Ếch đồng (*Hoplobatrachus rugulosus*), bài 36: nằm ngửa, ghim bốn chi, cắt da theo đường giữa, cắt lớp cơ lệch sang một bên để không đứt tĩnh mạch bụng; tim, phổi, gan, dạ dày, ruột non, ruột thẳng, bóng đái, thận, tuyến sinh dục (→ [tim lưỡng cư 3 ngăn](/blog/tuan-hoan-va-can-bang-noi-moi/); [báo cáo mổ ếch thật](/blog/giai-phau-ech-dong/)).
 - **Nguồn**: danh sách cơ quan và cách đặt mẫu theo lời giải SGK trên vietjack.com (*chưa đối chiếu nguyên văn sách*); cách cắt theo Biology Corner (giun, ếch), Ward's Science (giun: không sâu quá khoảng 1,6 mm), hướng dẫn mổ ếch của ĐH Ankara, bài mổ cá của West Linn-Wilsonville. Vị trí và kích thước nội quan là *minh hoạ* theo hình SGK.
 - **Làm sai ra kết quả sai**: giun hoặc tôm nằm ngửa thì đường cắt làm đứt chuỗi thần kinh bụng; cắt sâu làm rách ruột (đất tràn ra) hoặc vỡ túi mật (mật nhuộm xanh); cắt lớp cơ bụng ếch đúng đường giữa thì máu tĩnh mạch bụng che nội quan; ếch nằm sấp không mở được bụng; cá không nằm nghiêng chỉ mở được một phần; giun chưa ngập nước hoặc không dùng kính lúp thì không thấy phần nhỏ; bỏ mẫu vào thùng rác thường là bước sai.
 - **Trong app**: bấm lọ mẫu để lấy ra khay sáp; bấm kéo, ghim, kẹp, dao, bình tia nước, kính lúp, túi rác sinh học; bấm vào từng nội quan để quan sát. Thẻ kết quả có hình chú thích đánh số (dấu ✓ cho cơ quan đã thấy rõ). Tuyến sinh dục là tinh hoàn hay buồng trứng tuỳ mẫu, ngẫu nhiên theo seed. 4 protocol `dis-*`.
@@ -132,9 +134,9 @@ Yêu cầu của chủ dự án (2026-10-17): "Tôi muốn các mô hình có te
 - [x] 0. Chú thích dụng cụ ✅ 2026-10-16
 - [x] 1. Hiệu ứng hiện tượng, bàn hoá học cận cảnh ✅ 2026-10-16
 - [x] 2. Đun và đốt bằng đèn cồn ✅ 2026-10-16
-- [x] 3. Thao tác trực tiếp: giữ để rót (giữ lâu rót nhiều), ống nhỏ giọt đếm giọt, đũa khuấy (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/12-phong-thi-nghiem-giong-phong-that/) mục 6; giữ ống trên lửa theo thời gian giữ vẫn làm bằng nút) ⏫ ✅ 2026-10-17
-- [x] 4. Máy tương tác trong 3D: nút nguồn, màn hình hiện trạng thái và thời gian còn lại từ lõi (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/12-phong-thi-nghiem-giong-phong-that/) mục 5; nắp máy chưa mở bằng tay) ⏫ ✅ 2026-10-17
-- [x] 5. Bàn sinh học cận cảnh: micropipet (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/12-phong-thi-nghiem-giong-phong-that/) mục 6) ✅ 2026-10-17
+- [x] 3. Thao tác trực tiếp: giữ để rót (giữ lâu rót nhiều), ống nhỏ giọt đếm giọt, đũa khuấy (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/phong-thi-nghiem-giong-phong-that/) mục 6; giữ ống trên lửa theo thời gian giữ vẫn làm bằng nút) ⏫ ✅ 2026-10-17
+- [x] 4. Máy tương tác trong 3D: nút nguồn, màn hình hiện trạng thái và thời gian còn lại từ lõi (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/phong-thi-nghiem-giong-phong-that/) mục 5; nắp máy chưa mở bằng tay) ⏫ ✅ 2026-10-17
+- [x] 5. Bàn sinh học cận cảnh: micropipet (làm ở giai đoạn 7, [note 12](/projects/virtual-lab/phong-thi-nghiem-giong-phong-that/) mục 6) ✅ 2026-10-17
 - [x] 6. Bản đồ vệ tinh quần đảo Cát Bà ✅ 2026-10-16
 - [x] 7. Khu giải phẫu động vật ✅ 2026-10-16
 - [x] 8. Vân bề mặt cho mô hình và bảng Di chuyển tự do ✅ 2026-10-17

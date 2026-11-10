@@ -14,6 +14,10 @@ folder: Sinh học / Biology Project and Lab Report / Ecology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Ecology/01 - Ô nhiễm môi
   trường lao động do nhiều yếu tố.md
+url: >-
+  /blog/xac-dinh-muc-do-o-nhiem-moi-truong-lao-dong-do-tac-dong-dong-thoi-cua-nhieu-yeu/
+topic: biology
+updated: '2026-10-16'
 order: 1
 description: >-
   Báo cáo thực hành Cơ sở sinh thái học (viết tay, 2 trang) · Nguyễn Thị Thu Hà,
@@ -27,7 +31,7 @@ isIndex: false
 - Xác định **mức độ tác động của nhiều yếu tố môi trường** tới sức khoẻ con người.
 
 ## Nguyên lý
-- Các yếu tố môi trường thường có tính chất **vật lý, hoá học, sinh học**. Khi cùng tiếp xúc một lúc với 2 hay nhiều yếu tố thì tác động của các yếu tố này gây ra tính chất **cộng hưởng** hoặc **trái ngược** nhau. (→ [Nhân tố sinh thái](/blog/sinh-hoc/kien-thuc-chung/f-sinh-thai-hoc/19-ca-the-va-quan-the-sinh-vat/))
+- Các yếu tố môi trường thường có tính chất **vật lý, hoá học, sinh học**. Khi cùng tiếp xúc một lúc với 2 hay nhiều yếu tố thì tác động của các yếu tố này gây ra tính chất **cộng hưởng** hoặc **trái ngược** nhau. (→ [Nhân tố sinh thái](/blog/ca-the-va-quan-the-sinh-vat/))
 - Coi các yếu tố tác động gồm 2 nhóm:
 	- **Tác động đặc hiệu** (yếu tố chính, chỉ số $c$)
 	- **Tác động không đặc hiệu**

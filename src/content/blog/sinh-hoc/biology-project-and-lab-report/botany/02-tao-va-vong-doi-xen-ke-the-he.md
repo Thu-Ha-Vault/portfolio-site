@@ -11,6 +11,9 @@ folder: Sinh học / Biology Project and Lab Report / Botany
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Botany/02 - Tảo và vòng đời
   xen kẽ thế hệ.md
+url: /blog/thuc-vat-bac-thap-tao-va-vong-doi-xen-ke-the-he/
+topic: biology
+updated: '2026-10-16'
 order: 2
 description: >-
   Chép lại từ ảnh bảng và ảnh mẫu vật buổi thực hành tảo (folder Drive Thực vật,
@@ -27,7 +30,7 @@ isIndex: false
 - Chu trình (theo mũi tên trên bảng):
 	- **Bào tử (n)** → nguyên phân (NP) → **giao tử thể (n)** – "Có giao thế thế hệ".
 	- Giao tử thể tạo **giao tử (n)** → hai giao tử **thụ tinh** → **hợp tử (2n)**.
-	- Hợp tử → **bào tử thể (2n)** → giảm phân (GP) → bào tử (n), quay lại đầu chu trình. (→ [Nguyên phân và giảm phân](/blog/sinh-hoc/kien-thuc-chung/b-co-che-di-truyen-va-bien-di/08-nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
+	- Hợp tử → **bào tử thể (2n)** → giảm phân (GP) → bào tử (n), quay lại đầu chu trình. (→ [Nguyên phân và giảm phân](/blog/nguyen-phan-giam-phan-va-bai-tap-giao-tu/))
 
 ```mermaid
 flowchart LR
@@ -72,7 +75,7 @@ flowchart LR
 - **Tảo silic**: hình vẽ cấu tạo vỏ trong sách, có trục **pervalvar**, mảnh vỏ trên (*epivalve*) và mảnh vỏ dưới (*hypovalve*).
 - Tế bào lớn vách mỏng, tế bào chất dồn ở góc tế bào, quan sát dưới kính hiển vi (tảo hay mẫu khác (?)):
 	- ![IMG_3989](/vault-assets/img-3989-37584f31.jpg)
-- Thực vật bậc thấp khác trong vault: [Nấm lỗ Trametes](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/08-thuc-vat-bac-thap-nam-trametes/) (nay xếp vào giới Nấm, không thuộc thực vật).
+- Thực vật bậc thấp khác trong vault: [Nấm lỗ Trametes](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/) (nay xếp vào giới Nấm, không thuộc thực vật).
 
 <details class="callout callout-question">
 <summary>Cần kiểm tra</summary>

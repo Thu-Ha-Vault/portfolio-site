@@ -14,6 +14,9 @@ folder: Sinh học / Biology Project and Lab Report / Vertebrate Zoology
 vaultPath: >-
   Resources/Sinh học/Biology Project and Lab Report/Vertebrate Zoology/04 - Bộ
   xương bò sát, thú và chim.md
+url: /blog/bo-xuong-dong-vat-co-xuong-song-o-can-bo-sat-thu-va-chim/
+topic: biology
+updated: '2026-10-16'
 order: 4
 description: >-
   Báo cáo thực hành viết tay "Quan sát bộ xương ĐVCXS ở cạn (Bò sát và Thú)" (2
@@ -63,7 +66,7 @@ isIndex: false
 	- Cổ có nhiều đốt hơn các lớp trước (sống dưới nước hoặc cả 2 môi trường) → quan sát và chuyển hướng linh hoạt hơn; cổ phân hoá rõ ràng hơn.
 	- Xương sườn khớp với đốt sống → tạo khung vững chắc.
 	- Xuất hiện thêm phần **thắt lưng** để chống đỡ trọng lượng cơ thể, vì động vật trên cạn phải chịu trọng lực của Trái Đất.
-- **Phần xương chi**: cấu tạo **chi 5 ngón** điển hình → tăng tốc độ và sự linh hoạt. (→ [Sơ đồ chi năm ngón ở ếch](/blog/sinh-hoc/biology-project-and-lab-report/vertebrate-zoology/03-bo-xuong-ech-va-nguon-goc-luong-cu/))
+- **Phần xương chi**: cấu tạo **chi 5 ngón** điển hình → tăng tốc độ và sự linh hoạt. (→ [Sơ đồ chi năm ngón ở ếch](/blog/bo-xuong-ech-va-nguon-goc-luong-cu/))
 
 <details class="callout callout-question">
 <summary>Cần kiểm tra</summary>
@@ -85,7 +88,7 @@ isIndex: false
 ## Kết luận
 - Bò sát (kì đà) và thú (thỏ) đều có cột sống phân vùng rõ, sọ hoá xương hoàn toàn và chi năm ngón; thú có số đốt cổ ổn định (7), lồng ngực có sườn thật – sườn giả, đai chậu khớp chắc hơn với nhiều đốt chậu.
 - Kì đà giữ đuôi dài linh hoạt, nhiều đốt ngực mang sườn – đặc trưng bò sát bò trườn.
-- Xem thêm: [Thực tập thiên nhiên – chim và thú ở Cát Bà](/blog/sinh-hoc/biology-project-and-lab-report/biological-field-study/02-dvcxs-tren-can-chim-va-thu/) – nhận diện chim, thú ngoài thực địa.
+- Xem thêm: [Thực tập thiên nhiên – chim và thú ở Cát Bà](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/) – nhận diện chim, thú ngoài thực địa.
 
 ## Tài liệu gốc
 - Ảnh báo cáo (trang 2 đã xoay đúng chiều):

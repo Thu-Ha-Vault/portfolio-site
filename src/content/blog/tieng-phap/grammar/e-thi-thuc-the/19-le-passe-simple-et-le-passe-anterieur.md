@@ -11,6 +11,9 @@ folder: 'Tiếng Pháp / Grammar / E - Thì, thức, thể'
 vaultPath: >-
   Resources/Tiếng Pháp/Grammar/E - Thì, thức, thể/19 - Le passé simple et le
   passé antérieur.md
+url: /blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/
+topic: french
+updated: '2026-10-14'
 order: 19
 description: >-
   Memo 168: Faire "il/elle/on fi" → "il/elle/on fit". Memo 169: "Tuy nhiên, đuôi
@@ -48,11 +51,11 @@ isIndex: false
 
 <!-- Memo 166–167 -->
 ## 7. Passé simple: QK đơn
-- Thì QK đơn là một thì QK chủ yếu được dùng trong văn viết. Tuy nhiên, nó có thể được sd trong ngôn ngữ nói rất trang trọng, chẳng hạn như diễn văn của tổng thống, bài giảng hoặc phát thanh tin tức. Theo truyền thống, thì này chỉ được sử dụng cho các sự kiện đã hoàn thành trong QK lịch sử xa xưa, tuy nhiên, các nhà văn TK20 (thế kỷ 20) đôi khi sd nó để tạo hiệu ứng văn phong. (→ [Ligne du temps](/blog/tieng-phap/grammar/f-trang-tong-hop-cuoi-so/26-les-modes-et-la-ligne-du-temps/), [Past Historic, Past Anterior](/blog/tieng-phap/grammar/g-tu-spreadsheet/30-parties-du-discours-les-verbes/))
-- Thì QK đơn thường được dịch sang TA bằng thì QK (**preterit**), tức là thì QK đơn. Nhưng giống như thì passé composé, thì passé simple chỉ được sd trong TF để đề cập đến những thay đổi và sk (sự kiện), trong khi thì imparfait vẫn là thì được sd để mô tả bối cảnh, bầu không khí, trạng thái tinh thần đang diễn ra hoặc tình huống chung. (→ [Narration: passé composé vs. imparfait](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
+- Thì QK đơn là một thì QK chủ yếu được dùng trong văn viết. Tuy nhiên, nó có thể được sd trong ngôn ngữ nói rất trang trọng, chẳng hạn như diễn văn của tổng thống, bài giảng hoặc phát thanh tin tức. Theo truyền thống, thì này chỉ được sử dụng cho các sự kiện đã hoàn thành trong QK lịch sử xa xưa, tuy nhiên, các nhà văn TK20 (thế kỷ 20) đôi khi sd nó để tạo hiệu ứng văn phong. (→ [Ligne du temps](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/), [Past Historic, Past Anterior](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/))
+- Thì QK đơn thường được dịch sang TA bằng thì QK (**preterit**), tức là thì QK đơn. Nhưng giống như thì passé composé, thì passé simple chỉ được sd trong TF để đề cập đến những thay đổi và sk (sự kiện), trong khi thì imparfait vẫn là thì được sd để mô tả bối cảnh, bầu không khí, trạng thái tinh thần đang diễn ra hoặc tình huống chung. (→ [Narration: passé composé vs. imparfait](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
 
 ### i) Regular infinitives ending in -er, -ir và -re
-- Đối với tất cả các ĐT có quy tắc "-er, -ir và -re", thì passé simple được hình thành bằng cách bỏ đuôi nguyên thể, và thay thế chúng bằng các đuôi sau. Không có trợ ĐT và đó là lý do nó được gọi là thì "đơn" (simple): nó là thì một từ (**one-word tense**) không giống như thì hai từ passé composé (**two-word tense**). (→ [Passé composé](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- Đối với tất cả các ĐT có quy tắc "-er, -ir và -re", thì passé simple được hình thành bằng cách bỏ đuôi nguyên thể, và thay thế chúng bằng các đuôi sau. Không có trợ ĐT và đó là lý do nó được gọi là thì "đơn" (simple): nó là thì một từ (**one-word tense**) không giống như thì hai từ passé composé (**two-word tense**). (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 
 <!-- Memo 168–169 -->
 - Nhiều ĐT (động từ), chẳng hạn như "aller, sortir, suivre" là BQT (bất quy tắc) ở thì hiện tại, tuân theo qui tắc ở dạng passé simple.
@@ -115,7 +118,7 @@ isIndex: false
 | -us   | -ûtes    |
 | -ut   | -urent   |
 
-- ĐT BQT thường có gốc BQT cho thì passé simple. Trong một số TH (trường hợp), gốc giống với QKPT (quá khứ phân từ) của ĐT. Gốc của một số ĐT là hoàn toàn BQT (như naître, mourir, voir). Tuy nhiên, đuôi ĐT là QT (quy tắc), ngoại trừ "venir và tenir" có dạng số nhiều BQT. (→ [Bảng QKPT bất qui tắc](/blog/tieng-phap/grammar/e-thi-thuc-the/17-present-passe-recent-et-passe-compose/))
+- ĐT BQT thường có gốc BQT cho thì passé simple. Trong một số TH (trường hợp), gốc giống với QKPT (quá khứ phân từ) của ĐT. Gốc của một số ĐT là hoàn toàn BQT (như naître, mourir, voir). Tuy nhiên, đuôi ĐT là QT (quy tắc), ngoại trừ "venir và tenir" có dạng số nhiều BQT. (→ [Bảng QKPT bất qui tắc](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
 	- boire (bu), connaître (connu), croire (cru), devoir (dû), lire (lu), mourir (mort), pouvoir (pu), recevoir (reçu), savoir (su), vivre (vécu), vouloir (voulu) → **ending in -u-**.
 	- dire (dit), écrire (écrit), mettre (mis), ouvrir (ouvert), prendre (pris), rire (ri), voir (vu) → **ending in -i-**.
 	- falloir → fallu → fallut.
@@ -126,14 +129,14 @@ isIndex: false
 	- venir → venu → je/tu vins, il vint, nous vînmes, vous vîntes, ils vinrent.
 
 ## 8. Passé antérieur
-- Giống như "passé simple", passé antérieur là một thì dùng trong văn học. Cả hai thường được tìm thấy cùng nhau trong 1 vb (văn bản). Passé antérieur được sd (sử dụng) trong văn học, văn bản trang trọng, và trong các bài phát biểu rất trang trọng, khi nói về các sự kiện trong QK (quá khứ) diễn ra trước các hành động khác trong QK; nó tương đương với plus-que-parfait trong văn học. Nói cách khác, nó được sd chỉ một hành động trong QK đã hoàn thành trước một hành động khác trong QK (thường được diễn đạt bằng passé simple). (→ [Plus-que-parfait](/blog/tieng-phap/grammar/e-thi-thuc-the/18-l-imparfait-et-le-plus-que-parfait/))
+- Giống như "passé simple", passé antérieur là một thì dùng trong văn học. Cả hai thường được tìm thấy cùng nhau trong 1 vb (văn bản). Passé antérieur được sd (sử dụng) trong văn học, văn bản trang trọng, và trong các bài phát biểu rất trang trọng, khi nói về các sự kiện trong QK (quá khứ) diễn ra trước các hành động khác trong QK; nó tương đương với plus-que-parfait trong văn học. Nói cách khác, nó được sd chỉ một hành động trong QK đã hoàn thành trước một hành động khác trong QK (thường được diễn đạt bằng passé simple). (→ [Plus-que-parfait](/blog/l-imparfait-et-le-plus-que-parfait-qua-khu-chua-hoan-thanh-va-qua-khu-hoan-thanh/))
 
 ### i) Formation
 - Thì passé antérieur được hình thành bằng passé simple của Trợ ĐT thích hợp (avoir hoặc être) cộng với QKPT của ĐT chính.
 	- **Passé antérieur = auxiliary in the literary past + PII of main verb.**
-- Être được áp dụng như "Alamo of être" (?) và động từ phản thân. (→ [Alamo d'être](/blog/tieng-phap/grammar/c-dong-tu/09-verbes-pronominaux-modaux-impersonnels-et-infinitif/))
+- Être được áp dụng như "Alamo of être" (?) và động từ phản thân. (→ [Alamo d'être](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
 
 ### ii) Uses
-- Passé antérieur thường xuất hiện nhất trong mệnh đề phụ (subordinate clause), nó bắt đầu bằng các liên từ như "après que" (after), aussitôt que hoặc dès que (as soon as). Lưu ý rằng, trong TH này, mệnh đề chính luôn ở dạng passé simple. Từ tương đương trong TA (tiếng Anh) thường là (nhưng không phải luôn luôn): had + PII. (→ [Subordinating conjunctions](/blog/tieng-phap/grammar/d-phu-dinh-cau-hoi-gioi-tu-dai-tu-lien-tu/15-les-conjonctions/))
+- Passé antérieur thường xuất hiện nhất trong mệnh đề phụ (subordinate clause), nó bắt đầu bằng các liên từ như "après que" (after), aussitôt que hoặc dès que (as soon as). Lưu ý rằng, trong TH này, mệnh đề chính luôn ở dạng passé simple. Từ tương đương trong TA (tiếng Anh) thường là (nhưng không phải luôn luôn): had + PII. (→ [Subordinating conjunctions](/blog/les-conjonctions-lien-tu/))
 	- Prior action in the past (passé antérieur), action in the past (passé simple).
 - Với "quand và lorsque" (when), việc lựa chọn thì phụ thuộc vào ý nghĩa từng mệnh đề, tùy thuộc vào hành động nào xảy ra trước. Tuy nhiên, passé antérieur cũng có thể xuất hiện trong mệnh đề chính, và passé simple trong mệnh đề phụ.
