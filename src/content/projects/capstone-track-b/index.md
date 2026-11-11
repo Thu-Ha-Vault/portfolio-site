@@ -45,7 +45,7 @@ phases:
     done: 1
     total: 2
   - name: Act
-    done: 1
+    done: 2
     total: 3
 description: >-
   Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề
@@ -73,7 +73,7 @@ description: >-
 - **Quy mô**: bài trình bày khoảng 30 phút, business task không quá đơn giản hay quá phức tạp
 - **Định hướng**: đề tài sinh học / sức khoẻ để tận dụng nền tảng chuyên môn
 - **Đề tài đã chọn (11/11/2026)**: sốt xuất huyết ở Việt Nam theo mùa và theo tỉnh, liên hệ với mưa và nhiệt độ các tháng trước. Khách hàng giả định: công ty dịch vụ kiểm soát côn trùng (hoặc CDC tỉnh) cần chuẩn bị nhân lực, hoá chất trước mùa dịch 1–2 tháng
-- **Dữ liệu**: OpenDengue V1.3.1 (CC BY 4.0), số ca theo tháng của 64 tỉnh từ 02/1994 đến 12/2010 (12.273 dòng, 1,38 triệu ca, nguồn gốc Project Tycho), cộng chuỗi quốc gia đến 2025; thời tiết NASA POWER theo tháng 1994–2024 tại 11 tỉnh lỵ thuộc 4 vùng
+- **Dữ liệu**: OpenDengue V1.3.1 (CC BY 4.0), số ca theo tháng của 64 tỉnh từ 02/1994 đến 12/2010 (12.273 dòng, 1,38 triệu ca, nguồn gốc Project Tycho), cộng chuỗi quốc gia đến 2025; thời tiết NASA POWER theo tháng 1994–2024 tại 11 tỉnh lỵ thuộc 4 vùng; dân số tỉnh của Tổng cục Thống kê (tính tỉ lệ mắc 2004–2010) và ranh giới tỉnh geoBoundaries (vẽ bản đồ)
 - **Thư mục làm việc**: `~/Desktop/Sky/track-b-case-study`, phân tích bằng Python (pandas); chọn đề tài trong `docs/topic_selection.md`. Bài hoàn chỉnh đăng lên website cá nhân (→ Portfolio Website)
 
 ### Đề tài ứng viên
