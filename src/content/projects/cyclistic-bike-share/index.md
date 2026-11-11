@@ -26,8 +26,6 @@ summary_en: >-
   recommendations to convert casual riders. SQL (DuckDB), Python.
 links:
   github: 'https://github.com/lucynguyen777/cyclistic-case-study'
-  kaggle: >-
-    https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides
   tableau: >-
     https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/Membershaveamorningcommutepeakcasualridingspreadsacrossmiddayandevening/Sheet1
 phases:
@@ -44,7 +42,7 @@ phases:
     done: 2
     total: 2
   - name: Share
-    done: 1
+    done: 2
     total: 2
   - name: Act
     done: 3
@@ -89,7 +87,7 @@ description: >-
 - [x] So sánh member vs casual theo ngày trong tuần, giờ, tháng, loại xe, trạm phổ biến 📅 2026-11-14 ✅ 2026-11-11
 ### Share
 - [x] Biểu đồ cho bài trình bày (6 biểu đồ có tiêu đề là phát hiện) và slide 12 trang 📅 2026-11-15 ✅ 2026-11-11
-- [ ] Dashboard Tableau Public từ các file `data/clean/tableau_*.csv` 📅 2026-11-15
+- [x] Dashboard Tableau Public (hồ sơ giờ trong ngày, ngày thường và cuối tuần): https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/Membershaveamorningcommutepeakcasualridingspreadsacrossmiddayandevening/Sheet1 📅 2026-11-15 ✅ 2026-11-11
 ### Act
 - [x] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16 ✅ 2026-11-11
 - [x] README với phát hiện, khuyến nghị và elevator pitch 📅 2026-11-16 ✅ 2026-11-11
