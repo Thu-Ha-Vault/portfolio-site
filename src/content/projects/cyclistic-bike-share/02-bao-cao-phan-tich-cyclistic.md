@@ -24,7 +24,7 @@ description: >-
   ~/Desktop/Sky/cyclistic-case-study (notebook
   notebooks/cyclisticanalysis.ipynb, slide slides/cy
 ---
-> Kết quả phân tích **6,13 triệu chuyến** (11/2025–10/2026) bằng DuckDB (SQL) và Python. Code, dữ liệu sạch, slide và README nằm ở `~/Desktop/Sky/cyclistic-case-study` (notebook `notebooks/cyclistic_analysis.ipynb`, slide `slides/cyclistic_case_study.pptx`).
+> Kết quả phân tích **6,13 triệu chuyến** (11/2025–10/2026) bằng DuckDB (SQL) và Python. Code, dữ liệu sạch, slide và README nằm ở `~/Desktop/Sky/cyclistic-case-study` (notebook `notebooks/cyclistic_analysis.ipynb`, slide `slides/cyclistic_case_study.pptx`). Notebook trên Kaggle: https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides
 
 ## Business task
 - Xác định **casual riders** và **annual members** dùng xe Cyclistic khác nhau thế nào, để thiết kế chiến dịch chuyển casual riders thành members.

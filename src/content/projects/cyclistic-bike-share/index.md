@@ -28,6 +28,8 @@ links:
   github: 'https://github.com/lucynguyen777/cyclistic-case-study'
   kaggle: >-
     https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides
+  tableau: >-
+    https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/Membershaveamorningcommutepeakcasualridingspreadsacrossmiddayandevening/Sheet1
 phases:
   - name: Ask
     done: 1
@@ -45,8 +47,8 @@ phases:
     done: 1
     total: 2
   - name: Act
-    done: 2
-    total: 4
+    done: 3
+    total: 6
 description: >-
   Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi
   tiết nằm ở Course 8: Case Study (mục Case Study 1).
@@ -91,10 +93,13 @@ description: >-
 ### Act
 - [x] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16 ✅ 2026-11-11
 - [x] README với phát hiện, khuyến nghị và elevator pitch 📅 2026-11-16 ✅ 2026-11-11
-- [ ] Đăng notebook lên Kaggle, tạo repo GitHub và push code (README đã có) 📅 2026-11-17
+- [x] Đưa notebook lên Kaggle (bản 1, giữ nguyên output): https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides 📅 2026-11-17 ✅ 2026-11-11
+- [ ] Xác minh số điện thoại trên Kaggle, rồi chuyển notebook sang Public (Share → Public → Save) ⏫ 📅 2026-11-12
+- [ ] Tạo repo GitHub `lucynguyen777/cyclistic-case-study` và push code: chạy script publish trong Portfolio Website 📅 2026-11-17
 - [ ] Tập trình bày case study cho người khác nghe 📅 2026-11-17
 
 ## Map of Content
 - [Báo cáo phân tích: phát hiện, biểu đồ và khuyến nghị](/projects/cyclistic-bike-share/bao-cao-phan-tich-cyclistic-casual-riders-va-annual-members-dung-xe-khac-nhau-th/)
 - [Hướng dẫn thực hiện từng bước (Ask → Publish, lịch 11–17/11)](/projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/)
+- Notebook bản đăng Kaggle (đã chạy, có output)
 - (Thêm note phân tích, change log và bài trình bày vào đây khi tạo)
