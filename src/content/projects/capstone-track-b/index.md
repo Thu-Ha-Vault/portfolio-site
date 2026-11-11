@@ -9,7 +9,7 @@ tags:
 folder: Projects / Case Study - Track B
 vaultPath: Projects/Case Study - Track B/_MOC - Case Study - Track B.md
 url: /projects/capstone-track-b/
-updated: '2026-11-10'
+updated: '2026-11-11'
 date: '2026-11-10'
 status: active
 deadline: '2026-12-01'
@@ -99,4 +99,5 @@ description: >-
 - [ ] Đăng lên portfolio (Kaggle / GitHub / Tableau Public) kèm elevator pitch 📅 2026-12-01
 
 ## Map of Content
+- [Hướng dẫn thực hiện từng bước (chọn đề tài, dữ liệu OpenDengue + NASA POWER, lịch 18/11–01/12)](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/)
 - (Thêm note phân tích, change log và bài trình bày vào đây khi tạo)

@@ -15,7 +15,7 @@ vaultPath: >-
   Bioinformatics/03 - Tương quan và hồi quy.md
 url: /blog/tuong-quan-va-hoi-quy/
 topic: biology
-updated: '2026-10-17'
+updated: '2026-11-11'
 order: 3
 description: >-
   File Excel gồm sheet Lý thuyết (các bước làm bài, cách đọc output Regression
@@ -79,6 +79,7 @@ isIndex: false
 | Lũy thừa $W = a L^b$ | $\ln W = \ln a + b \ln L$ |
 | $H = k/(T - d)$ | $1/H = T/k - d/k$ |
 | Von Bertalanffy $L_t = L_\infty (1 - e^{-k(t - t_0)})$ | Từ $L_{t+1} - L_t = a + bL_t$ suy ra $L_\infty$ khi tốc độ sinh trưởng → 0 |
+- Xem thêm: [Hướng dẫn Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) – tương quan Spearman giữa lượng mưa trễ và số ca sốt xuất huyết
 
 ## Bài tập / ví dụ
 

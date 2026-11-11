@@ -15,7 +15,7 @@ vaultPath: >-
   Science/08 - Case Study.md
 url: /blog/case-study/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 order: 8
 description: >-
   Coursera: Google Data Analytics Capstone: Complete a Case Study –
@@ -155,7 +155,7 @@ isIndex: false
 #### Track A details
 - Similar to a case study in a job interview: a **business task**, a **dataset**, and a list of **deliverables** to present to stakeholders; the downloadable case study packet has everything needed
 #### Case Study 1: How does a bike-share navigate speedy success?
-- **Scenario**: junior data analyst on the marketing analyst team at **Cyclistic**, a bike-share company in Chicago; the director of marketing believes future success depends on maximizing the number of **annual memberships** → understand how **casual riders** and **annual members** use bikes differently → new marketing strategy to convert casual riders into members (executives must approve, so recommendations need compelling data insights and professional visualizations) (→ [Dự án Case Study - Cyclistic](/projects/cyclistic-bike-share/))
+- **Scenario**: junior data analyst on the marketing analyst team at **Cyclistic**, a bike-share company in Chicago; the director of marketing believes future success depends on maximizing the number of **annual memberships** → understand how **casual riders** and **annual members** use bikes differently → new marketing strategy to convert casual riders into members (executives must approve, so recommendations need compelling data insights and professional visualizations) (→ [Dự án Case Study - Cyclistic](/projects/cyclistic-bike-share/), [hướng dẫn từng bước](/projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/), [báo cáo phân tích](/projects/cyclistic-bike-share/bao-cao-phan-tich-cyclistic-casual-riders-va-annual-members-dung-xe-khac-nhau-th/))
 - Characters and teams:
 	- **Cyclistic**: 5,824 geotracked bicycles, 692 stations across Chicago (launched 2016); also reclining bikes, hand tricycles, cargo bikes (about 8% of riders use assistive options); about 30% use the bikes to commute to work
 	- **Lily Moreno**: director of marketing and your manager
@@ -201,7 +201,7 @@ isIndex: false
 #### Track B details
 - Find a public dataset about something that interests you (public bike use in your neighborhood, local wildlife migration, video game console sales, ...) → most flexible but more challenging
 #### Case Study 3: Follow your own case study path
-- Recommended to complete one of the structured case studies first (→ [Dự án Case Study - Track B](/projects/capstone-track-b/))
+- Recommended to complete one of the structured case studies first (→ [Dự án Case Study - Track B](/projects/capstone-track-b/), [hướng dẫn từng bước](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/))
 - **Scenario**: junior data analyst for a **business intelligence consultant**, leading a project for a new client: define the business task, choose the topic, find a fresh dataset, ensure integrity, analyze, visualize, present
 - **Ask** – five questions:
 	1. What type of company does your client represent, and what are they asking you to accomplish?

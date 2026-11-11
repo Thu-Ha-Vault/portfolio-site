@@ -40,8 +40,8 @@
       },
       "slug": "cyclistic-bike-share",
       "title": "Cyclistic bike-share: casual riders vs annual members",
-      "summary_vi": "Phân tích 12 tháng dữ liệu chuyến đi xe đạp công cộng ở Chicago để tìm khác biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng marketing chuyển đổi khách vãng lai thành hội viên. Python (pandas), Tableau.",
-      "summary_en": "Twelve months of Chicago bike-share trips, analyzed to show how casual riders and annual members ride differently, ending in three marketing recommendations to convert casual riders. Python (pandas), Tableau.",
+      "summary_vi": "Phân tích 6,13 triệu chuyến xe đạp công cộng ở Chicago (11/2025–10/2026) để tìm khác biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng marketing chuyển đổi khách vãng lai thành hội viên. SQL (DuckDB), Python.",
+      "summary_en": "6.13 million Chicago bike-share rides (Nov 2025–Oct 2026) analysed to show how casual riders and annual members ride differently, ending in three marketing recommendations to convert casual riders. SQL (DuckDB), Python.",
       "cover": {
         "src": "",
         "alt": "Minh hoạ trừu tượng: bánh xe nan trắng và các túi màng",

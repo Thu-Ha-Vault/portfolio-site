@@ -9,7 +9,7 @@ tags:
 folder: Projects / Case Study - Cyclistic
 vaultPath: Projects/Case Study - Cyclistic/_MOC - Case Study - Cyclistic.md
 url: /projects/cyclistic-bike-share/
-updated: '2026-11-10'
+updated: '2026-11-11'
 date: '2026-11-10'
 status: active
 deadline: '2026-11-17'
@@ -17,33 +17,33 @@ project: cyclistic-bike-share
 isIndex: true
 featured: true
 summary_vi: >-
-  Phân tích 12 tháng dữ liệu chuyến đi xe đạp công cộng ở Chicago để tìm khác
-  biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng marketing chuyển
-  đổi khách vãng lai thành hội viên. Python (pandas), Tableau.
+  Phân tích 6,13 triệu chuyến xe đạp công cộng ở Chicago (11/2025–10/2026) để
+  tìm khác biệt giữa khách vãng lai và hội viên năm, rồi đề xuất 3 hướng
+  marketing chuyển đổi khách vãng lai thành hội viên. SQL (DuckDB), Python.
 summary_en: >-
-  Twelve months of Chicago bike-share trips, analyzed to show how casual riders
-  and annual members ride differently, ending in three marketing recommendations
-  to convert casual riders. Python (pandas), Tableau.
+  6.13 million Chicago bike-share rides (Nov 2025–Oct 2026) analysed to show how
+  casual riders and annual members ride differently, ending in three marketing
+  recommendations to convert casual riders. SQL (DuckDB), Python.
 links: {}
 phases:
   - name: Ask
-    done: 0
+    done: 1
     total: 1
   - name: Prepare
-    done: 0
+    done: 2
     total: 2
   - name: Process
-    done: 0
+    done: 3
     total: 3
   - name: Analyze
-    done: 0
+    done: 2
     total: 2
   - name: Share
-    done: 0
-    total: 1
+    done: 1
+    total: 2
   - name: Act
-    done: 0
-    total: 3
+    done: 2
+    total: 4
 description: >-
   Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi
   tiết nằm ở Course 8: Case Study (mục Case Study 1).
@@ -71,23 +71,27 @@ description: >-
 
 ## Việc cần làm
 ### Ask
-- [ ] Viết business task statement và liệt kê stakeholders 📅 2026-11-11
+- [x] Viết business task statement và liệt kê stakeholders 📅 2026-11-11 ✅ 2026-11-11
 ### Prepare
-- [ ] Tải 12 tháng gần nhất dữ liệu Divvy, lưu bản gốc riêng, đặt tên file theo quy ước 📅 2026-11-11
-- [ ] Mô tả nguồn dữ liệu: cách tổ chức, giấy phép (Motivate International Inc.), ROCCC, giới hạn về quyền riêng tư 📅 2026-11-12
+- [x] Tải 12 tháng gần nhất dữ liệu Divvy, lưu bản gốc riêng, đặt tên file theo quy ước 📅 2026-11-11 ✅ 2026-11-11
+- [x] Mô tả nguồn dữ liệu: cách tổ chức, giấy phép (Motivate International Inc.), ROCCC, giới hạn về quyền riêng tư 📅 2026-11-12 ✅ 2026-11-11
 ### Process
-- [ ] Gộp 12 file thành một bảng, chuẩn hoá tên cột và kiểu dữ liệu 📅 2026-11-12
-- [ ] Tạo cột `ride_length` và `day_of_week` (thêm `month`, `hour`) 📅 2026-11-12
-- [ ] Làm sạch: trùng lặp, giá trị thiếu, chuyến âm hoặc quá dài, trạm test; ghi change log 📅 2026-11-13
+- [x] Gộp 12 file thành một bảng, chuẩn hoá tên cột và kiểu dữ liệu 📅 2026-11-12 ✅ 2026-11-11
+- [x] Tạo cột `ride_length` và `day_of_week` (thêm `month`, `hour`) 📅 2026-11-12 ✅ 2026-11-11
+- [x] Làm sạch: trùng lặp, giá trị thiếu, chuyến âm hoặc quá dài, trạm test; ghi change log 📅 2026-11-13 ✅ 2026-11-11
 ### Analyze
-- [ ] Thống kê mô tả: mean/max `ride_length`, mode `day_of_week`, số chuyến theo `member_casual` 📅 2026-11-14
-- [ ] So sánh member vs casual theo ngày trong tuần, giờ, tháng, loại xe, trạm phổ biến 📅 2026-11-14
+- [x] Thống kê mô tả: mean/max `ride_length`, mode `day_of_week`, số chuyến theo `member_casual` 📅 2026-11-14 ✅ 2026-11-11
+- [x] So sánh member vs casual theo ngày trong tuần, giờ, tháng, loại xe, trạm phổ biến 📅 2026-11-14 ✅ 2026-11-11
 ### Share
-- [ ] Phác thảo trên giấy rồi làm dashboard Tableau / biểu đồ cho bài trình bày 📅 2026-11-15
+- [x] Biểu đồ cho bài trình bày (6 biểu đồ có tiêu đề là phát hiện) và slide 12 trang 📅 2026-11-15 ✅ 2026-11-11
+- [ ] Dashboard Tableau Public từ các file `data/clean/tableau_*.csv` 📅 2026-11-15
 ### Act
-- [ ] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16
-- [ ] Đăng notebook lên Kaggle, tạo repo GitHub với README và elevator pitch 📅 2026-11-17
+- [x] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16 ✅ 2026-11-11
+- [x] README với phát hiện, khuyến nghị và elevator pitch 📅 2026-11-16 ✅ 2026-11-11
+- [ ] Đăng notebook lên Kaggle, tạo repo GitHub và push code (README đã có) 📅 2026-11-17
 - [ ] Tập trình bày case study cho người khác nghe 📅 2026-11-17
 
 ## Map of Content
+- [Báo cáo phân tích: phát hiện, biểu đồ và khuyến nghị](/projects/cyclistic-bike-share/bao-cao-phan-tich-cyclistic-casual-riders-va-annual-members-dung-xe-khac-nhau-th/)
+- [Hướng dẫn thực hiện từng bước (Ask → Publish, lịch 11–17/11)](/projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/)
 - (Thêm note phân tích, change log và bài trình bày vào đây khi tạo)

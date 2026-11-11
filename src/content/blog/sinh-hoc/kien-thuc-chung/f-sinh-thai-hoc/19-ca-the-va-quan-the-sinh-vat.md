@@ -14,7 +14,7 @@ vaultPath: >-
   sinh vật.md
 url: /blog/ca-the-va-quan-the-sinh-vat/
 topic: biology
-updated: '2026-10-16'
+updated: '2026-11-11'
 order: 19
 description: >-
   Ghi chú này hầu như không có tên chất phiên âm cần đổi. Tuổi sinh lí: "sinh ra
@@ -56,6 +56,7 @@ isIndex: false
 - 2 nhóm: (→ [ANR Lesson 3: Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 	- **Vô sinh**: vật lí, hoá học (→ [Ecology Bài 1: tác động đồng thời của nhiều yếu tố](/blog/xac-dinh-muc-do-o-nhiem-moi-truong-lao-dong-do-tac-dong-dong-thoi-cua-nhieu-yeu/))
 	- **Hữu sinh**: thế giới hữu cơ của môi trường và mối quan hệ giữa sinh vật với sinh vật
+- Xem thêm: [Hướng dẫn Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) – nhiệt độ, lượng mưa là nhân tố sinh thái chi phối quần thể muỗi và mùa sốt xuất huyết
 
 ### 3. Giới hạn sinh thái
 - Là khoảng giá trị xác định của 1 nhân tố sinh thái của môi trường mà sinh vật tồn tại, phát triển ổn định theo thời gian.

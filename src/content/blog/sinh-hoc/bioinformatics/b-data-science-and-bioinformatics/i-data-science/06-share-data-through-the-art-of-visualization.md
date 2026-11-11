@@ -15,7 +15,7 @@ vaultPath: >-
   Science/06 - Share Data through the Art of Visualization.md
 url: /blog/share-data-through-the-art-of-visualization/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 order: 6
 description: 'How to choose a data visualization.pdf - Some common errors to avoid:'
 isIndex: false
@@ -134,6 +134,7 @@ All four of these elements are important on their own, but a successful data vis
 	- Prototype: putting charts, dashboards or other viz together
 	- Test
 - Design thinking for visualization improvement: https://www.coursera.org/learn/visualize-data/supplement/ihlqt/optional-design-thinking-for-visualization-improvement
+- Xem thêm: [Hướng dẫn Cyclistic](/projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/) – áp dụng nguyên tắc một biểu đồ một thông điệp, tiêu đề là phát hiện ([Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) dùng cùng cách)
 ### Visualization considerations
 - Pro tips for highlighting key information: https://www.coursera.org/learn/visualize-data/supplement/ewNyk/pro-tips-for-highlighting-key-information
 
