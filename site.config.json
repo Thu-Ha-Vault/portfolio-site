@@ -80,6 +80,34 @@
         "alt": "Mô phỏng máy luân nhiệt (thermocycler) trong Virtual Lab",
         "alt_en": "The thermocycler simulation in the Virtual Lab"
       }
+    },
+    {
+      "folder": "Projects/Capstone - Project Management",
+      "featured": false,
+      "links": {},
+      "slug": "project-management-capstone",
+      "title": "Restaurant tablet pilot: a project management portfolio",
+      "summary_vi": "Bộ 8 tài liệu quản lý dự án cho thí điểm máy tính bảng gọi món tại 2/5 nhà hàng của chuỗi Sauce & Spoon: project charter với mục tiêu SMART, phân tích stakeholder, project plan ước lượng ba điểm, kế hoạch chất lượng, đánh giá, retrospective và báo cáo tác động. Capstone của chứng chỉ Google Project Management.",
+      "summary_en": "Eight project management artifacts for a tabletop-tablet pilot at two of Sauce & Spoon's five restaurants: a charter with SMART goals, stakeholder analysis, a three-point-estimated project plan, quality plan, evaluation, retrospective and impact report. Capstone of the Google Project Management Certificate.",
+      "cover": {
+        "src": "",
+        "alt": "Minh hoạ trừu tượng: các túi màng",
+        "alt_en": "Abstract illustration: vesicles"
+      }
+    },
+    {
+      "folder": "Projects/Capstone - Digital Marketing",
+      "featured": false,
+      "links": {},
+      "slug": "digital-marketing-capstone",
+      "title": "Upcycled lamps online: a digital marketing launch plan",
+      "summary_vi": "Chiến lược ra mắt cửa hàng online cho Sinclair Verde, hãng đèn làm từ đồ tái chế: persona, phân bổ ngân sách $1.000/tháng, lịch nội dung mạng xã hội, chuỗi email chào mừng, Google Ads và Google Shopping, kế hoạch đo lường KPI và chương trình khách hàng thân thiết. Capstone của chứng chỉ Google Digital Marketing & E-commerce.",
+      "summary_en": "A launch plan for Sinclair Verde's new online store of upcycled lamps: persona, a $1,000 monthly budget split, social content calendar, welcome email series, Google Ads and Shopping listings, KPI measurement plan and a loyalty program. Capstone of the Google Digital Marketing & E-commerce Certificate.",
+      "cover": {
+        "src": "",
+        "alt": "Minh hoạ trừu tượng: các túi màng",
+        "alt_en": "Abstract illustration: vesicles"
+      }
     }
   ],
   "cta": {

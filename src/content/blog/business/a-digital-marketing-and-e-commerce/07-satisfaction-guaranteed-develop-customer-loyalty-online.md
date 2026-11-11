@@ -12,7 +12,7 @@ vaultPath: >-
   Guaranteed - Develop Customer Loyalty Online.md
 url: /blog/satisfaction-guaranteed-develop-customer-loyalty-online/
 topic: business
-updated: '2026-11-10'
+updated: '2026-11-12'
 source: 'https://www.coursera.org/learn/satisfaction-guaranteed'
 order: 7
 description: >-
@@ -497,6 +497,7 @@ isIndex: false
 	- **Desired outcome**: three times as many first-time online buyers as the percentage of in-store first-time buyers
 - Your role: support digital marketing and e-commerce efforts with pre-launch and post-launch tasks
 - End of course project overview: https://www.coursera.org/learn/satisfaction-guaranteed/supplement/iReCf
+- Xem thêm: [Capstone - Digital Marketing](/projects/digital-marketing-capstone/) – kế hoạch làm dự án Sinclair Verde cho portfolio
 #### Case study: How ShearShare recovered from unsuccessful ads
 - **ShearShare** (McKinney, Texas): a **space-as-a-service** business connecting salon, barbershop, and spa owners with beauty and barbering professionals needing affordable workspace by the day (e.g. a hairstylist books a salon chair for the day); mission: be the greatest engine of jobs in the beauty and barber industry
 	- Founders Dr. Tye and Courtney Caldwell own a barbershop and salon in Texas → someone asked to rent a chair for a day → realized others might want daily workspace and no business catered to it → proof of concept → official platform

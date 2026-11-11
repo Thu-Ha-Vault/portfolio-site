@@ -9,7 +9,7 @@ tags:
 folder: Archive / Case Study - Track B
 vaultPath: Archive/Case Study - Track B/_MOC - Case Study - Track B.md
 url: /projects/capstone-track-b/
-updated: '2026-11-11'
+updated: '2026-11-12'
 date: '2026-11-10'
 status: done
 deadline: '2026-12-01'

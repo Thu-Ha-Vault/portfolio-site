@@ -14,7 +14,7 @@ vaultPath: >-
   Science/_MOC - I - Data Science.md
 url: /topics/data-science/
 topic: biology
-updated: '2026-11-11'
+updated: '2026-11-12'
 status: đã xong
 description: >-
   Course 1: Foundations - Data, data, everywhere Course 2: Ask questions to make

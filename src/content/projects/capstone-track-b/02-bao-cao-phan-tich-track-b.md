@@ -10,7 +10,7 @@ folder: Archive / Case Study - Track B
 vaultPath: Archive/Case Study - Track B/02 - Báo cáo phân tích Track B.md
 url: >-
   /projects/capstone-track-b/phan-tich-chi-tiet-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-tiet/
-updated: '2026-11-11'
+updated: '2026-11-12'
 date: '2026-11-11'
 status: done
 order: 2

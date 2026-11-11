@@ -12,7 +12,7 @@ vaultPath: >-
   Management in the Real World.md
 url: /blog/capstone-applying-project-management-in-the-real-world/
 topic: business
-updated: '2026-11-10'
+updated: '2026-11-12'
 source: 'https://www.coursera.org/learn/applying-project-management'
 order: 6
 description: >-
@@ -70,6 +70,7 @@ isIndex: false
 	- Applicable to projects in your current line of work; helpful to showcase skills when applying for a project management role
 - Save templates and completed artifacts in a digital folder or online storage drive → easy to share with future project managers, team members, and employers
 - Project management artifacts: https://www.coursera.org/learn/applying-project-management/supplement/LcGHj
+- Xem thêm: [Capstone - Project Management](/projects/project-management-capstone/) – kế hoạch làm 8 tài liệu dự án Sauce & Spoon cho portfolio
 ### Creating a project charter
 #### Project charters: Purpose and components
 - This set of videos: apply **strategic thinking** and effective business writing to initiate a project → analyze project documents and supporting materials to identify requirements, evaluate stakeholders, problem solve; use a project charter to align scope and goals; negotiate with stakeholders to prioritize goals
