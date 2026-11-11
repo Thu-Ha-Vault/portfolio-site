@@ -24,7 +24,8 @@ summary_en: >-
   6.13 million Chicago bike-share rides (Nov 2025–Oct 2026) analysed to show how
   casual riders and annual members ride differently, ending in three marketing
   recommendations to convert casual riders. SQL (DuckDB), Python.
-links: {}
+links:
+  github: 'https://github.com/lucynguyen777/cyclistic-case-study'
 phases:
   - name: Ask
     done: 1
