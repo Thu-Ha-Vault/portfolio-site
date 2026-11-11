@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/ask-questions-to-make-data-driven-decisions/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 2
 description: >-
   [Tableau]: There are many different visualization tools available. One of the

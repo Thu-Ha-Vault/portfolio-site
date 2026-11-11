@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/analyze-data-to-answer-questions/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 5
 description: >-
   Get support during analysis Asking peers or members Note: If the units of

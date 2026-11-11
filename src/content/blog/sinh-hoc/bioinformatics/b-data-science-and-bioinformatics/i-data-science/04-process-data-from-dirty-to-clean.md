@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/process-data-from-dirty-to-clean/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 4
 description: >-
   Data integrity: The accuracy, completeness, consistency, and trustworthiness

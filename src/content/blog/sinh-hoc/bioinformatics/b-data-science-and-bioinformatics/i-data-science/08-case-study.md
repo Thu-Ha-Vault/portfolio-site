@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/case-study/
 topic: biology
 updated: '2026-11-11'
+status: đã xong
 order: 8
 description: >-
   Coursera: Google Data Analytics Capstone: Complete a Case Study –

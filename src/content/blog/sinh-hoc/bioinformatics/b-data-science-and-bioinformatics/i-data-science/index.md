@@ -15,12 +15,19 @@ vaultPath: >-
 url: /topics/data-science/
 topic: biology
 updated: '2026-11-09'
+status: đã xong
 description: >-
   Course 1: Foundations - Data, data, everywhere Course 2: Ask questions to make
   Data-Driven decisions Course 3: Prepare Data for Exploration Course 4: Process
   data from Dirty to Clean Course 5: Analyze Data to Answer Ques
 isIndex: true
 ---
+## Tiến độ
+- **Đã hoàn thành** Google Data Analytics Professional Certificate (Coursera) ngày 11/11/2026: cả 8 course và toàn bộ bài kiểm tra có chấm điểm (yêu cầu ≥ 80% mỗi course).
+- Capstone (Course 8):
+	- Track A: [Case Study - Cyclistic](/projects/cyclistic-bike-share/), đã xong, lưu ở `Archive/`.
+	- Track B: [Case Study - Track B](/projects/capstone-track-b/), sốt xuất huyết ở Việt Nam. Đây là dự án portfolio bổ sung, không ảnh hưởng đến chứng chỉ.
+
 ## Map of Content
 
 - [Course 1: Foundations - Data, data, everywhere](/blog/foundations-data-data-everywhere/)

@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/share-data-through-the-art-of-visualization/
 topic: biology
 updated: '2026-11-11'
+status: đã xong
 order: 6
 description: 'How to choose a data visualization.pdf - Some common errors to avoid:'
 isIndex: false

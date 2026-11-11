@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/prepare-data-for-exploration/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 3
 description: >-
   The fairness issue: The lack of structure makes unstructured data difficult to

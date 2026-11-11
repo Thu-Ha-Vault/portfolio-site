@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/introduction-to-data-analysis-using-python/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 7
 description: >-
   These tools are often used together: e.g. use SQL to pull a dataset → clean

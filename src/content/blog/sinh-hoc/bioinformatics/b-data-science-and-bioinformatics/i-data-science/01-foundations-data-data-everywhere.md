@@ -16,6 +16,7 @@ vaultPath: >-
 url: /blog/foundations-data-data-everywhere/
 topic: biology
 updated: '2026-11-10'
+status: đã xong
 order: 1
 description: >-
   An [ecosystem] is a group of elements that interact with one another.
