@@ -87,8 +87,8 @@ description: >-
 | Dân số tỉnh (tuỳ chọn) | Tổng cục Thống kê: https://www.gso.gov.vn | Dùng để tính incidence; ghi rõ năm dân số |
 
 ### Việc cần làm
-- [ ] Tải `National_extract_V1_3_1.zip` (~0,3 MB) và `Spatial_extract_V1_3_1.zip` (~55 MB) vào `data/raw/`, giữ bản gốc
-- [ ] **Kiểm tra độ phủ Việt Nam trước tiên** (bước quyết định phạm vi bài):
+- [x] Tải `National_extract_V1_3_1.zip` (~0,3 MB) và `Spatial_extract_V1_3_1.zip` (~55 MB) vào `data/raw/`, giữ bản gốc ✅ 2026-11-11
+- [x] **Kiểm tra độ phủ Việt Nam trước tiên** (bước quyết định phạm vi bài): ✅ 2026-11-11. Kết quả: có dữ liệu **cấp tỉnh theo tháng** cho 64 tỉnh, 02/1994–12/2010, không có giá trị âm, thiếu hay trùng; chuỗi quốc gia theo năm 1960–2022, theo tháng một số năm đến 03/2025 → làm bài cấp tỉnh
 	```python
 	import pandas as pd
 	nat = pd.read_csv("data/raw/National_extract_V1_3_1.csv")
@@ -100,12 +100,12 @@ description: >-
 	- **Nếu có dữ liệu tỉnh, theo tháng hoặc tuần, đủ nhiều năm:** làm bài ở cấp tỉnh (chọn 5–10 tỉnh có dữ liệu đầy đủ nhất).
 	- **Nếu chỉ có cấp quốc gia:** làm bài cấp quốc gia, lấy thời tiết tại 3 thành phố đại diện (Hà Nội, Đà Nẵng, TP.HCM) và nêu rõ hạn chế.
 	- **Nếu dữ liệu Việt Nam quá thưa:** mở rộng sang khu vực Đông Nam Á (so sánh Việt Nam với Thái Lan, Campuchia, Philippines) và giữ cùng câu hỏi mùa vụ.
-- [ ] Lấy thời tiết theo tháng cho từng điểm (vĩ độ, kinh độ trung tâm tỉnh/thành phố):
+- [x] Lấy thời tiết theo tháng cho từng điểm (vĩ độ, kinh độ trung tâm tỉnh/thành phố): ✅ 2026-11-11, 11 tỉnh lỵ, 1994–2024, `scripts/download_data.py`
 	```text
 	https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M,PRECTOTCORR,RH2M&community=AG&latitude=21.03&longitude=105.85&start=2010&end=2025&format=CSV
 	```
 	File trả về ở dạng rộng (mỗi dòng là một biến và một năm, cột JAN…DEC, ANN). Lưu mỗi điểm thành một file CSV trong `data/raw/weather/`.
-- [ ] Điền `docs/data_sources.md`: nguồn, giấy phép, giai đoạn, độ phân giải không gian và thời gian, ROCCC, hạn chế
+- [x] Điền `docs/data_sources.md`: nguồn, giấy phép, giai đoạn, độ phân giải không gian và thời gian, ROCCC, hạn chế ✅ 2026-11-11
 
 ### Hạn chế cần ghi rõ
 - Số ca **được báo cáo** thấp hơn số ca thật (nhiều ca nhẹ không đi khám); định nghĩa ca bệnh có thể khác giữa các năm, các nguồn (OpenDengue có cột `case_definition_standardised`).

@@ -1,5 +1,5 @@
 ---
-title: 'Capstone Track B: a health data case study'
+title: 'Dengue in Vietnam: season, provinces and rainfall'
 type: MOC
 tags:
   - project
@@ -17,20 +17,22 @@ project: capstone-track-b
 isIndex: true
 featured: true
 summary_vi: >-
-  Case study tự chọn đề tài và tự tìm dữ liệu, hướng tới sức khoẻ cộng đồng: sốt
-  xuất huyết theo mùa, chất lượng không khí Hà Nội hoặc dữ liệu sàng lọc bệnh.
-  Trình bày khoảng 30 phút cho khách hàng giả định.
+  Sốt xuất huyết ở Việt Nam: mùa dịch đến khi nào, ở đâu, và mưa có báo trước
+  được không. Số ca theo tháng của 64 tỉnh (OpenDengue, 1994–2010) nối với thời
+  tiết NASA POWER, để giúp khách hàng chuẩn bị nhân lực và hoá chất trước mùa
+  dịch 1–2 tháng. Python (pandas, DuckDB).
 summary_en: >-
-  A self-directed case study with my own question and public data, focused on
-  public health: seasonal dengue, Hanoi air quality or disease screening data.
-  Ends in a 30-minute client presentation.
+  Dengue in Vietnam: when and where the season hits, and whether rainfall gives
+  early warning. Monthly cases for 64 provinces (OpenDengue, 1994–2010) joined
+  with NASA POWER weather, so a client can prepare staff and insecticide one to
+  two months before the peak. Python (pandas, DuckDB).
 links: {}
 phases:
   - name: Ask
-    done: 0
+    done: 2
     total: 2
   - name: Prepare
-    done: 0
+    done: 1
     total: 1
   - name: Process
     done: 0
@@ -69,6 +71,8 @@ description: >-
 	7. Your top high-level insights
 - **Quy mô**: bài trình bày khoảng 30 phút, business task không quá đơn giản hay quá phức tạp
 - **Định hướng**: đề tài sinh học / sức khoẻ để tận dụng nền tảng chuyên môn
+- **Đề tài đã chọn (11/11/2026)**: sốt xuất huyết ở Việt Nam theo mùa và theo tỉnh, liên hệ với mưa và nhiệt độ các tháng trước. Khách hàng giả định: công ty dịch vụ kiểm soát côn trùng (hoặc CDC tỉnh) cần chuẩn bị nhân lực, hoá chất trước mùa dịch 1–2 tháng
+- **Dữ liệu**: OpenDengue V1.3.1 (CC BY 4.0), số ca theo tháng của 64 tỉnh từ 02/1994 đến 12/2010 (12.273 dòng, 1,38 triệu ca, nguồn gốc Project Tycho), cộng chuỗi quốc gia đến 2025; thời tiết NASA POWER theo tháng 1994–2024 tại 11 tỉnh lỵ thuộc 4 vùng
 - **Thư mục làm việc**: `~/Desktop/Sky/track-b-case-study`, phân tích bằng Python (pandas); chọn đề tài trong `docs/topic_selection.md`. Bài hoàn chỉnh đăng lên website cá nhân (→ Portfolio Website)
 
 ### Đề tài ứng viên
@@ -84,10 +88,10 @@ description: >-
 
 ## Việc cần làm
 ### Ask
-- [ ] Chọn đề tài, khách hàng giả định và business task 📅 2026-11-19
-- [ ] Xác định stakeholders, audience và metric đo lường 📅 2026-11-19
+- [x] Chọn đề tài, khách hàng giả định và business task 📅 2026-11-19 ✅ 2026-11-11
+- [x] Xác định stakeholders, audience và metric đo lường 📅 2026-11-19 ✅ 2026-11-11
 ### Prepare
-- [ ] Tìm và tải dữ liệu, kiểm tra giấy phép và ROCCC, lưu bản gốc 📅 2026-11-21
+- [x] Tìm và tải dữ liệu, kiểm tra giấy phép và ROCCC, lưu bản gốc 📅 2026-11-21 ✅ 2026-11-11
 ### Process
 - [ ] Làm sạch, biến đổi dữ liệu và ghi change log 📅 2026-11-24
 ### Analyze

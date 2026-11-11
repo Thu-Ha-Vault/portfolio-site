@@ -57,9 +57,9 @@
         "tableau": ""
       },
       "slug": "capstone-track-b",
-      "title": "Capstone Track B: a health data case study",
-      "summary_vi": "Case study tự chọn đề tài và tự tìm dữ liệu, hướng tới sức khoẻ cộng đồng: sốt xuất huyết theo mùa, chất lượng không khí Hà Nội hoặc dữ liệu sàng lọc bệnh. Trình bày khoảng 30 phút cho khách hàng giả định.",
-      "summary_en": "A self-directed case study with my own question and public data, focused on public health: seasonal dengue, Hanoi air quality or disease screening data. Ends in a 30-minute client presentation.",
+      "title": "Dengue in Vietnam: season, provinces and rainfall",
+      "summary_vi": "Sốt xuất huyết ở Việt Nam: mùa dịch đến khi nào, ở đâu, và mưa có báo trước được không. Số ca theo tháng của 64 tỉnh (OpenDengue, 1994–2010) nối với thời tiết NASA POWER, để giúp khách hàng chuẩn bị nhân lực và hoá chất trước mùa dịch 1–2 tháng. Python (pandas, DuckDB).",
+      "summary_en": "Dengue in Vietnam: when and where the season hits, and whether rainfall gives early warning. Monthly cases for 64 provinces (OpenDengue, 1994–2010) joined with NASA POWER weather, so a client can prepare staff and insecticide one to two months before the peak. Python (pandas, DuckDB).",
       "cover": {
         "src": "",
         "alt": "Minh hoạ trừu tượng: khối cầu lưới và các túi màng",
