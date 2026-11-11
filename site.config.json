@@ -8,7 +8,7 @@
     "bio_en": "I study biology, data and business. This is where I share my projects and notes.",
     "links": {
       "github": "https://github.com/lucynguyen777",
-      "kaggle": "",
+      "kaggle": "https://www.kaggle.com/thuhanguyen666",
       "linkedin": "",
       "tableau": "",
       "email": ""
@@ -35,7 +35,7 @@
       "featured": true,
       "links": {
         "github": "https://github.com/lucynguyen777/cyclistic-case-study",
-        "kaggle": "",
+        "kaggle": "https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides",
         "tableau": ""
       },
       "slug": "cyclistic-bike-share",

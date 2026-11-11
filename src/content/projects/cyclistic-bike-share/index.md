@@ -26,6 +26,8 @@ summary_en: >-
   recommendations to convert casual riders. SQL (DuckDB), Python.
 links:
   github: 'https://github.com/lucynguyen777/cyclistic-case-study'
+  kaggle: >-
+    https://www.kaggle.com/code/thuhanguyen666/cyclistic-casual-riders-vs-members-6-13m-rides
 phases:
   - name: Ask
     done: 1
