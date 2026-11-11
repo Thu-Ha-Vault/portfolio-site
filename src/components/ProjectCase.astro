@@ -26,7 +26,7 @@ const tags = d.tags
   .map((t) => ({ label: prettyTag(t), topic: topicById(tagTopic.get(t)) }));
 const real = realCover(d.cover);
 const size = real ? await coverSize(real.src) : undefined;
-const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau', demo: 'Demo', slides: 'Slides' };
+const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau', demo: 'Demo', slides: 'Slides', certificate: 'Certificate' };
 const links = Object.entries(d.links).filter(([, v]) => v);
 ---
 <article class="case">

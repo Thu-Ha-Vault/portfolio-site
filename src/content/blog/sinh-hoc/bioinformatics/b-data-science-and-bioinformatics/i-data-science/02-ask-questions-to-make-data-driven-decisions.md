@@ -15,7 +15,7 @@ vaultPath: >-
   Science/02 - Ask questions to make Data-Driven decisions.md
 url: /blog/ask-questions-to-make-data-driven-decisions/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 status: đã xong
 order: 2
 description: >-

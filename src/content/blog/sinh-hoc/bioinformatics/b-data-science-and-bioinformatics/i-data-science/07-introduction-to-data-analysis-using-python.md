@@ -15,7 +15,7 @@ vaultPath: >-
   Science/07 - Introduction to Data Analysis Using Python.md
 url: /blog/introduction-to-data-analysis-using-python/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 status: đã xong
 order: 7
 description: >-

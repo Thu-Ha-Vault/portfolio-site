@@ -15,7 +15,7 @@ vaultPath: >-
   Science/05 - Analyze Data to Answer Questions.md
 url: /blog/analyze-data-to-answer-questions/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 status: đã xong
 order: 5
 description: >-

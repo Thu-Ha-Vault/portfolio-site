@@ -23,7 +23,7 @@ const { prev, next } = siblings(all, entry);
 const crumbs = breadcrumbs(all, entry.id);
 const s = statusKey(d.status);
 const url = new URL(d.url, Astro.site).toString();
-const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau Public', demo: 'Demo', slides: 'Slides' };
+const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau Public', demo: 'Demo', slides: 'Slides', certificate: 'Certificate' };
 const links = Object.entries(d.links).filter(([, v]) => v);
 // Project index pages get the brutal head with the cover; project notes are reading pages (light reading toggle).
 const real = d.isIndex ? realCover(d.cover) : undefined;

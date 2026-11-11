@@ -30,6 +30,7 @@ links:
   github: 'https://github.com/lucynguyen777/cyclistic-case-study'
   tableau: >-
     https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/shared/D86ZF2XQ6
+  certificate: 'https://www.coursera.org/account/accomplishments/specialization/RB6KN8RLORM4'
 phases:
   - name: Ask
     done: 1

@@ -15,7 +15,7 @@ vaultPath: >-
   Science/03 - Prepare Data for Exploration.md
 url: /blog/prepare-data-for-exploration/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 status: đã xong
 order: 3
 description: >-

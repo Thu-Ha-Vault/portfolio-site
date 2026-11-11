@@ -14,7 +14,7 @@ vaultPath: >-
   Science/_MOC - I - Data Science.md
 url: /topics/data-science/
 topic: biology
-updated: '2026-11-09'
+updated: '2026-11-11'
 status: đã xong
 description: >-
   Course 1: Foundations - Data, data, everywhere Course 2: Ask questions to make
@@ -23,7 +23,8 @@ description: >-
 isIndex: true
 ---
 ## Tiến độ
-- **Đã hoàn thành** Google Data Analytics Professional Certificate (Coursera) ngày 11/11/2026: cả 8 course và toàn bộ bài kiểm tra có chấm điểm (yêu cầu ≥ 80% mỗi course).
+- **Đã hoàn thành** [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/RB6KN8RLORM4) (Google, Coursera), cấp 11/2026: cả 9 course và toàn bộ bài kiểm tra có chấm điểm (yêu cầu ≥ 80% mỗi course).
+- Chứng chỉ từng course (link xác minh trong cột `certificate` của bảng bên dưới). Course 9 *Accelerate Your Job Search with AI* (hoàn thành 05/2026, [xác minh](https://www.coursera.org/account/accomplishments/verify/6PXP6XQGU3SY)) chưa có note trong vault.
 - Capstone (Course 8):
 	- Track A: [Case Study - Cyclistic](/projects/cyclistic-bike-share/), đã xong, lưu ở `Archive/`.
 	- Track B: [Case Study - Track B](/projects/capstone-track-b/), sốt xuất huyết ở Việt Nam. Đây là dự án portfolio bổ sung, không ảnh hưởng đến chứng chỉ.

@@ -15,7 +15,7 @@ vaultPath: >-
   Science/01 - Foundations - Data, data, everywhere.md
 url: /blog/foundations-data-data-everywhere/
 topic: biology
-updated: '2026-11-10'
+updated: '2026-11-11'
 status: đã xong
 order: 1
 description: >-
