@@ -10,7 +10,7 @@ folder: Projects / Case Study - Track B
 vaultPath: Projects/Case Study - Track B/02 - Báo cáo phân tích Track B.md
 url: >-
   /projects/capstone-track-b/phan-tich-chi-tiet-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-tiet/
-updated: '2026-11-11'
+updated: '2026-11-12'
 date: '2026-11-11'
 status: active
 order: 2
@@ -222,4 +222,5 @@ Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (
 
 ## 7. Sản phẩm
 - Notebook đầy đủ 6 bước, change log, mô tả nguồn dữ liệu, script tải dữ liệu và bộ slide 15 trang (khoảng 30 phút, có ghi chú lời nói): [GitHub](https://github.com/lucynguyen777/dengue-vietnam-case-study).
+- Dashboard tương tác (bản đồ tỉ lệ mắc, top tỉnh, heatmap năm × tháng, mùa dịch theo vùng): [Tableau Public](https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/DengueinVietnamseasonprovincesandincidence_/Dashboard1).
 - Dữ liệu sạch cho Tableau: `data/clean/tableau_*.csv` trong repo (chạy lại notebook để tạo), gồm `tableau_incidence.csv` có toạ độ tâm tỉnh để vẽ bản đồ.

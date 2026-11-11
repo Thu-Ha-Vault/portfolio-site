@@ -9,7 +9,7 @@ tags:
 folder: Projects / Case Study - Track B
 vaultPath: Projects/Case Study - Track B/_MOC - Case Study - Track B.md
 url: /projects/capstone-track-b/
-updated: '2026-11-11'
+updated: '2026-11-12'
 date: '2026-11-10'
 status: active
 deadline: '2026-12-01'
@@ -28,6 +28,8 @@ summary_en: >-
   two months before the peak. Python (pandas, DuckDB).
 links:
   github: 'https://github.com/lucynguyen777/dengue-vietnam-case-study'
+  tableau: >-
+    https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/DengueinVietnamseasonprovincesandincidence_/Dashboard1
 phases:
   - name: Ask
     done: 2
@@ -42,7 +44,7 @@ phases:
     done: 1
     total: 1
   - name: Share
-    done: 1
+    done: 2
     total: 2
   - name: Act
     done: 2
