@@ -6,13 +6,13 @@ tags:
   - data-analytics
   - case-study
   - google-data-analytics
-folder: Projects / Case Study - Track B
-vaultPath: Projects/Case Study - Track B/02 - Báo cáo phân tích Track B.md
+folder: Archive / Case Study - Track B
+vaultPath: Archive/Case Study - Track B/02 - Báo cáo phân tích Track B.md
 url: >-
   /projects/capstone-track-b/phan-tich-chi-tiet-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-tiet/
-updated: '2026-11-12'
+updated: '2026-11-11'
 date: '2026-11-11'
-status: active
+status: done
 order: 2
 project: capstone-track-b
 isIndex: false
@@ -92,14 +92,14 @@ description: >-
 - Ngưỡng năm dịch (trung bình + 2 độ lệch chuẩn của 1980–2024) là 258.657 ca. Ba năm vượt ngưỡng: **1987** (354.517), **2019** (320.702), **2022** (367.729), gấp 4,3–5,0 lần năm trung vị. Năm 1998 (234.920) sát ngưỡng.
 - Ý nghĩa: năm dịch lớn đến vài năm một lần và không báo trước; khách hàng cần năng lực dự phòng, đồng thời mức nền tăng dần.
 
-![track-b-01_national_trend](/vault-assets/track-b-01-national-trend-82d36bb7.webp)
+![track-b-01_national_trend](/vault-assets/track-b-01-national-trend-7c8ced7d.webp)
 
 ### 4.2 Mùa dịch rất đều: tháng 6–11
 - Trung bình 72,9% số ca cả năm rơi vào tháng 6–11 (năm thấp nhất 53,7%, cao nhất 80,9%); tháng 2–4 chỉ 9,5%.
 - Đỉnh cả nước rơi vào tháng 7–10 trong 15/16 năm; riêng 1999 đỉnh vào tháng 5.
 - Ý nghĩa: tháng 2–4 là khoảng lặng để chuẩn bị.
 
-![track-b-02_heatmap_year_month](/vault-assets/track-b-02-heatmap-year-month-b045b40f.webp)
+![track-b-02_heatmap_year_month](/vault-assets/track-b-02-heatmap-year-month-688873b8.webp)
 
 ### 4.3 Miền Nam gánh phần lớn số ca
 | Vùng | Tỉ lệ số ca 1995–2010 |
@@ -112,7 +112,7 @@ description: >-
 - Mười tỉnh có số ca trung bình mỗi năm cao nhất chiếm **53,6%** tổng số ca; 9 tỉnh trong đó ở miền Nam: TP.HCM (7.105 ca/năm), Tiền Giang (5.175), Bến Tre (5.033), Đồng Tháp (4.453), Kiên Giang (4.105), An Giang (4.075), Đồng Nai (3.902), Cà Mau (3.756), Sóc Trăng (3.213), và Bình Thuận (3.170) ở miền Trung.
 - Đây là **số ca**, nên tỉnh đông dân luôn đứng đầu. Mục 4.4 chia cho dân số để so sánh nguy cơ trên mỗi người.
 
-![track-b-04_top_provinces](/vault-assets/track-b-04-top-provinces-2efecdce.webp)
+![track-b-04_top_provinces](/vault-assets/track-b-04-top-provinces-a14f7df4.webp)
 
 ### 4.4 Tính trên đầu người: đồng bằng sông Cửu Long có nguy cơ cao nhất
 - Tỉ lệ mắc = số ca / dân số × 100.000, trung bình 2004–2010. Cả nước: **108,5 ca/100.000 dân/năm**.
@@ -136,7 +136,7 @@ description: >-
 - Ý nghĩa: số ca cho biết cần **bao nhiêu đội**; tỉ lệ mắc cho biết mỗi hộ dân cần được can thiệp **dày đến mức nào**. Ở Cà Mau hay Sóc Trăng, khả năng một người mắc bệnh cao gấp khoảng 2,5 lần TP.HCM.
 - Bản đồ vẽ theo ranh giới tỉnh năm 2008; quần đảo Hoàng Sa (Đà Nẵng) và Trường Sa (Khánh Hoà) được đánh dấu riêng vì file ranh giới không có các đảo xa bờ.
 
-![track-b-08_incidence_map](/vault-assets/track-b-08-incidence-map-4a4f88d7.webp)
+![track-b-08_incidence_map](/vault-assets/track-b-08-incidence-map-d9539a4b.webp)
 
 ### 4.5 Mỗi vùng vào mùa một lệch nhau
 | Vùng | Tháng đỉnh | Tháng vượt mức chia đều | 3 tháng cao nhất chiếm |
@@ -151,7 +151,7 @@ description: >-
 - Miền Bắc tăng muộn (từ tháng 8) và dồn mạnh: tháng 9–11 chiếm 50,7%, riêng tháng 10 là 20,0%.
 - Miền Bắc ít ca nhưng dễ bùng phát: Hà Nội từ khoảng 100 ca/năm quanh năm 2000 lên **16.175 ca năm 2009**, khi miền Bắc chiếm 16,7% số ca cả nước.
 
-![track-b-03_region_profiles](/vault-assets/track-b-03-region-profiles-7f915754.webp)
+![track-b-03_region_profiles](/vault-assets/track-b-03-region-profiles-9ea81791.webp)
 
 ### 4.6 Thời tiết đi trước mùa dịch
 Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (trung vị các tỉnh trong vùng):
@@ -168,7 +168,7 @@ Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (
 - TP.HCM có liên hệ yếu nhất với mưa (cao nhất 0,30), có thể vì đô thị trữ nước quanh năm.
 - Cách hiểu đúng: các tương quan này phần lớn phản ánh **chu kỳ mùa chung** của thời tiết và quần thể muỗi (→ [Cá thể và quần thể sinh vật](/blog/ca-the-va-quan-the-sinh-vat/)), tức là thời tiết xác nhận lịch mùa dịch.
 
-![track-b-05_weather_lead](/vault-assets/track-b-05-weather-lead-42c3fdde.webp)
+![track-b-05_weather_lead](/vault-assets/track-b-05-weather-lead-638acdbf.webp)
 
 ### 4.7 Nhưng mưa nhiều bất thường không báo trước mùa dịch nặng
 - Để hỏi "thời tiết bất thường có báo trước mùa dịch bất thường không", tôi trừ mức bình thường của từng tỉnh, từng tháng khỏi cả số ca (thang log) và thời tiết, rồi tính lại tương quan.
@@ -176,7 +176,7 @@ Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (
 - Nóng hơn bình thường cho tín hiệu **yếu**: trung vị ρ 0,10–0,18, rõ nhất ở Đà Nẵng (0,33) và Khánh Hoà (0,27) với độ trễ 2 tháng.
 - Ý nghĩa: không nên tăng giảm nguồn lực theo dự báo mưa; nên lập kế hoạch theo lịch và theo vùng, kèm năng lực dự phòng cho năm dịch lớn.
 
-![track-b-06_weather_anomaly](/vault-assets/track-b-06-weather-anomaly-feb2af7b.webp)
+![track-b-06_weather_anomaly](/vault-assets/track-b-06-weather-anomaly-a665712d.webp)
 
 ### 4.8 Mùa dịch gần đây đến muộn hơn
 | Tháng | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
@@ -188,7 +188,7 @@ Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (
 - Năm 2016 (số liệu theo tuần) cũng đỉnh tháng 10.
 - Mức chắc chắn: chỉ một năm gần đây có đủ 12 tháng, nên đây là dấu hiệu cần theo dõi, chưa phải kết luận.
 
-![track-b-07_recent_season_2024](/vault-assets/track-b-07-recent-season-2024-ef0d70a8.webp)
+![track-b-07_recent_season_2024](/vault-assets/track-b-07-recent-season-2024-a44daf59.webp)
 
 ## 5. Insights và khuyến nghị (Act)
 **Top insights**

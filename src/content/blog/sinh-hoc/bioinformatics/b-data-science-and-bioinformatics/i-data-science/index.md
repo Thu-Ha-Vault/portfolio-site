@@ -27,7 +27,7 @@ isIndex: true
 - Chứng chỉ từng course (link xác minh trong cột `certificate` của bảng bên dưới). Course 9 *Accelerate Your Job Search with AI* (hoàn thành 05/2026, [xác minh](https://www.coursera.org/account/accomplishments/verify/6PXP6XQGU3SY)) chưa có note trong vault.
 - Capstone (Course 8):
 	- Track A: [Case Study - Cyclistic](/projects/cyclistic-bike-share/), đã xong, lưu ở `Archive/`.
-	- Track B: [Case Study - Track B](/projects/capstone-track-b/), sốt xuất huyết ở Việt Nam. Đây là dự án portfolio bổ sung, không ảnh hưởng đến chứng chỉ.
+	- Track B: [Case Study - Track B](/projects/capstone-track-b/), sốt xuất huyết ở Việt Nam. Dự án portfolio bổ sung, đã xong 12/11/2026, lưu ở `Archive/`.
 
 ## Map of Content
 

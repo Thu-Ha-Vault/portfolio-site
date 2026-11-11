@@ -6,12 +6,12 @@ tags:
   - data-analytics
   - case-study
   - google-data-analytics
-folder: Projects / Case Study - Track B
-vaultPath: Projects/Case Study - Track B/_MOC - Case Study - Track B.md
+folder: Archive / Case Study - Track B
+vaultPath: Archive/Case Study - Track B/_MOC - Case Study - Track B.md
 url: /projects/capstone-track-b/
-updated: '2026-11-12'
+updated: '2026-11-11'
 date: '2026-11-10'
-status: active
+status: done
 deadline: '2026-12-01'
 project: capstone-track-b
 isIndex: true
@@ -47,7 +47,7 @@ phases:
     done: 2
     total: 2
   - name: Act
-    done: 2
+    done: 3
     total: 3
 description: >-
   Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề
