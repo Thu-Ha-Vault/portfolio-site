@@ -79,7 +79,7 @@ isIndex: false
 | Lũy thừa $W = a L^b$ | $\ln W = \ln a + b \ln L$ |
 | $H = k/(T - d)$ | $1/H = T/k - d/k$ |
 | Von Bertalanffy $L_t = L_\infty (1 - e^{-k(t - t_0)})$ | Từ $L_{t+1} - L_t = a + bL_t$ suy ra $L_\infty$ khi tốc độ sinh trưởng → 0 |
-- Xem thêm: [Hướng dẫn Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) – tương quan Spearman giữa lượng mưa trễ và số ca sốt xuất huyết; kết quả trong [báo cáo Track B](/projects/capstone-track-b/bao-cao-phan-tich-track-b-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-t/): ρ đến 0,58 theo mùa nhưng gần 0 khi đã trừ yếu tố mùa, ví dụ tương quan không phải nhân quả
+- Xem thêm: Hướng dẫn Track B – tương quan Spearman giữa lượng mưa trễ và số ca sốt xuất huyết; kết quả trong [báo cáo Track B](/projects/capstone-track-b/phan-tich-chi-tiet-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-tiet/): ρ đến 0,58 theo mùa nhưng gần 0 khi đã trừ yếu tố mùa, ví dụ tương quan không phải nhân quả
 
 ## Bài tập / ví dụ
 

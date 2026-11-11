@@ -643,6 +643,13 @@ for (const [abs, dest] of published) {
         .filter((ph) => ph.total > 0);
       if (phases.length) fm.phases = phases;
     }
+    // The task list stays in the vault (it feeds the phase track above) but is not shown on the site, and the
+    // "Map of Content" list is replaced by the page's own list of sub-pages.
+    body = body
+      .split(/^(?=## )/m)
+      .filter((sec) => !/^## (Việc cần làm|Tasks|To do|Map of Content)\b/i.test(sec))
+      .join('')
+      .replace(/\s+$/, '\n');
   }
   // drop the "**Links:** …" navigation line copied from the vault; the site renders its own nav
   body = body.replace(/^\*\*Links:\*\*.*\n/m, '');

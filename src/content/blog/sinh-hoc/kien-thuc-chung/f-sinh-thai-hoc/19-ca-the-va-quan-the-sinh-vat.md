@@ -56,7 +56,7 @@ isIndex: false
 - 2 nhóm: (→ [ANR Lesson 3: Biophysical barriers](/blog/biophysical-barriers-and-enabling-factors-for-assisted-natural-regeneration/))
 	- **Vô sinh**: vật lí, hoá học (→ [Ecology Bài 1: tác động đồng thời của nhiều yếu tố](/blog/xac-dinh-muc-do-o-nhiem-moi-truong-lao-dong-do-tac-dong-dong-thoi-cua-nhieu-yeu/))
 	- **Hữu sinh**: thế giới hữu cơ của môi trường và mối quan hệ giữa sinh vật với sinh vật
-- Xem thêm: [Hướng dẫn Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) – nhiệt độ, lượng mưa là nhân tố sinh thái chi phối quần thể muỗi và mùa sốt xuất huyết; số liệu thực trong [báo cáo Track B](/projects/capstone-track-b/bao-cao-phan-tich-track-b-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-t/): mưa đi trước số ca khoảng 1 tháng ở miền Nam, nhiệt độ 2–3 tháng ở miền Bắc
+- Xem thêm: Hướng dẫn Track B – nhiệt độ, lượng mưa là nhân tố sinh thái chi phối quần thể muỗi và mùa sốt xuất huyết; số liệu thực trong [báo cáo Track B](/projects/capstone-track-b/phan-tich-chi-tiet-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-tiet/): mưa đi trước số ca khoảng 1 tháng ở miền Nam, nhiệt độ 2–3 tháng ở miền Bắc
 
 ### 3. Giới hạn sinh thái
 - Là khoảng giá trị xác định của 1 nhân tố sinh thái của môi trường mà sinh vật tồn tại, phát triển ổn định theo thời gian.

@@ -135,7 +135,7 @@ All four of these elements are important on their own, but a successful data vis
 	- Prototype: putting charts, dashboards or other viz together
 	- Test
 - Design thinking for visualization improvement: https://www.coursera.org/learn/visualize-data/supplement/ihlqt/optional-design-thinking-for-visualization-improvement
-- Xem thêm: [Hướng dẫn Cyclistic](/projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/) – áp dụng nguyên tắc một biểu đồ một thông điệp, tiêu đề là phát hiện ([Track B](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/) dùng cùng cách)
+- Xem thêm: Hướng dẫn Cyclistic – áp dụng nguyên tắc một biểu đồ một thông điệp, tiêu đề là phát hiện (Track B dùng cùng cách)
 ### Visualization considerations
 - Pro tips for highlighting key information: https://www.coursera.org/learn/visualize-data/supplement/ewNyk/pro-tips-for-highlighting-key-information
 
