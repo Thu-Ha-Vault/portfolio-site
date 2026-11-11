@@ -115,12 +115,12 @@ description: >-
 ## 3. Process (22–24/11)
 
 ### Việc cần làm
-- [ ] Lọc Việt Nam (và tỉnh đã chọn), chuẩn hoá thời gian về **tháng** (`calendar_start_date` → `month`); nếu dữ liệu theo tuần, cộng dồn về tháng theo ngày bắt đầu tuần và ghi rõ cách làm
-- [ ] Xử lý trùng lặp giữa các nguồn trong cùng một kỳ (ưu tiên nguồn có độ phân giải cao hơn; ghi vào change log)
-- [ ] Đổi thời tiết từ dạng rộng sang dạng dài: `location, year, month, T2M, PRECTOTCORR, RH2M`; đổi lượng mưa mm/ngày sang **mm/tháng** (× số ngày của tháng)
-- [ ] Nối số ca với thời tiết theo `location + year + month`; tạo cột trễ `rain_lag1`, `rain_lag2`, `rain_lag3`, `temp_lag1`…
+- [x] Lọc Việt Nam (và tỉnh đã chọn), chuẩn hoá thời gian về **tháng** (`calendar_start_date` → `month`); nếu dữ liệu theo tuần, cộng dồn về tháng theo ngày bắt đầu tuần và ghi rõ cách làm ✅ 2026-11-11
+- [x] Xử lý trùng lặp giữa các nguồn trong cùng một kỳ (ưu tiên nguồn có độ phân giải cao hơn; ghi vào change log) ✅ 2026-11-11
+- [x] Đổi thời tiết từ dạng rộng sang dạng dài: `location, year, month, T2M, PRECTOTCORR, RH2M`; đổi lượng mưa mm/ngày sang **mm/tháng** (× số ngày của tháng) ✅ 2026-11-11
+- [x] Nối số ca với thời tiết theo `location + year + month`; tạo cột trễ `rain_lag1`, `rain_lag2`, `rain_lag3`, `temp_lag1`… ✅ 2026-11-11
 - [ ] (Tuỳ chọn) nối dân số và tính incidence / 100.000
-- [ ] Ghi change log: số dòng trước/sau từng bước, kỳ bị thiếu, quyết định xử lý
+- [x] Ghi change log: số dòng trước/sau từng bước, kỳ bị thiếu, quyết định xử lý ✅ 2026-11-11
 
 ### Kiểm tra chất lượng
 - Kỳ nào bị thiếu dữ liệu (tháng không có số ca)? Thiếu thì để trống, **không điền 0**.
@@ -139,9 +139,9 @@ description: >-
 | 5 | (Nâng cao) Phân rã chuỗi | STL decomposition (`statsmodels`) tách xu hướng, mùa vụ, phần dư | Mùa vụ có ổn định qua các năm không |
 
 ### Việc cần làm
-- [ ] Ghi mọi phép tính vào notebook có chú thích (đề bài yêu cầu "document your calculations")
-- [ ] Viết 5–8 phát hiện theo cấu trúc **con số → so sánh → ý nghĩa cho khách hàng**
-- [ ] Ghi rõ mức độ chắc chắn của từng phát hiện (cỡ mẫu, số năm, hạn chế dữ liệu)
+- [x] Ghi mọi phép tính vào notebook có chú thích (đề bài yêu cầu "document your calculations") ✅ 2026-11-11
+- [x] Viết 5–8 phát hiện theo cấu trúc **con số → so sánh → ý nghĩa cho khách hàng** ✅ 2026-11-11
+- [x] Ghi rõ mức độ chắc chắn của từng phát hiện (cỡ mẫu, số năm, hạn chế dữ liệu) ✅ 2026-11-11
 
 ## 5. Share (27–28/11)
 
@@ -170,27 +170,27 @@ Các tiêu đề trên chỉ là ví dụ về cấu trúc; viết lại theo đ
 15. Hỏi đáp (phần còn lại)
 
 ### Việc cần làm
-- [ ] Vẽ biểu đồ trong notebook, lưu `figures/`
+- [x] Vẽ biểu đồ trong notebook, lưu `figures/` ✅ 2026-11-11
 - [ ] Dashboard Tableau Public (heatmap + bản đồ + biểu đồ độ trễ)
-- [ ] Làm slide theo khung trên
+- [x] Làm slide theo khung trên ✅ 2026-11-11
 
 ## 6. Act (29/11)
 
-- [ ] **Top high-level insights:** 3–5 câu, mỗi câu một kết luận có số liệu
-- [ ] **Deliverable bổ sung** (yêu cầu số 6 của đề bài), ví dụ:
+- [x] **Top high-level insights:** 3–5 câu, mỗi câu một kết luận có số liệu ✅ 2026-11-11
+- [x] **Deliverable bổ sung** (yêu cầu số 6 của đề bài), ví dụ: ✅ 2026-11-11
 	- Mô hình cảnh báo sớm dựa trên mưa và nhiệt độ trễ 1–2 tháng
 	- Dữ liệu cấp huyện hoặc chỉ số muỗi (Breteau, House index) nếu khách hàng cung cấp
 	- So sánh với các nước láng giềng
 	- Dashboard cập nhật hằng tháng
-- [ ] **Elevator pitch** 30 giây
-- [ ] Hoàn thiện README
+- [x] **Elevator pitch** 30 giây ✅ 2026-11-11
+- [x] Hoàn thiện README ✅ 2026-11-11
 
 ## 7. Publish (30/11–01/12)
 
 - [ ] **GitHub:** repo `track-b-dengue-vietnam` (hoặc tên theo đề tài), ghi nguồn và giấy phép CC BY 4.0 của OpenDengue
 - [ ] **Kaggle:** notebook + dataset đã làm sạch (cấp tháng, đã nối thời tiết) nếu giấy phép cho phép chia sẻ lại (CC BY 4.0 cho phép, kèm ghi công)
-- [ ] **Website:** điền link vào `site.config.json` → `capstone-track-b`, cập nhật tiêu đề và tóm tắt theo đề tài đã chọn
-- [ ] Tick việc trong [MOC dự án](/projects/capstone-track-b/)
+- [x] **Website:** điền link vào `site.config.json` → `capstone-track-b`, cập nhật tiêu đề và tóm tắt theo đề tài đã chọn ✅ 2026-11-11
+- [x] Tick việc trong [MOC dự án](/projects/capstone-track-b/) ✅ 2026-11-11
 - [ ] Tập thuyết trình đủ 30 phút, có hẹn giờ
 
 ## Kết nối với kiến thức đã có

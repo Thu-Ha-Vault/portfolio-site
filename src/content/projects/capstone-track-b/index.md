@@ -26,7 +26,8 @@ summary_en: >-
   early warning. Monthly cases for 64 provinces (OpenDengue, 1994–2010) joined
   with NASA POWER weather, so a client can prepare staff and insecticide one to
   two months before the peak. Python (pandas, DuckDB).
-links: {}
+links:
+  github: 'https://github.com/lucynguyen777/dengue-vietnam-case-study'
 phases:
   - name: Ask
     done: 2
@@ -35,17 +36,17 @@ phases:
     done: 1
     total: 1
   - name: Process
-    done: 0
+    done: 1
     total: 1
   - name: Analyze
-    done: 0
+    done: 1
     total: 1
   - name: Share
-    done: 0
-    total: 1
-  - name: Act
-    done: 0
+    done: 1
     total: 2
+  - name: Act
+    done: 1
+    total: 3
 description: >-
   Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề
   bài và roadmap nằm ở Course 8: Case Study (mục Case Study 3). Làm sau khi xong
@@ -93,15 +94,17 @@ description: >-
 ### Prepare
 - [x] Tìm và tải dữ liệu, kiểm tra giấy phép và ROCCC, lưu bản gốc 📅 2026-11-21 ✅ 2026-11-11
 ### Process
-- [ ] Làm sạch, biến đổi dữ liệu và ghi change log 📅 2026-11-24
+- [x] Làm sạch, biến đổi dữ liệu và ghi change log 📅 2026-11-24 ✅ 2026-11-11
 ### Analyze
-- [ ] Phân tích, ghi lại các phép tính, tìm xu hướng và mối quan hệ 📅 2026-11-26
+- [x] Phân tích, ghi lại các phép tính, tìm xu hướng và mối quan hệ 📅 2026-11-26 ✅ 2026-11-11
 ### Share
-- [ ] Làm biểu đồ / dashboard và bài trình bày khoảng 30 phút 📅 2026-11-28
+- [x] Làm biểu đồ (7 biểu đồ) và bài trình bày 15 slide, khoảng 30 phút 📅 2026-11-28 ✅ 2026-11-11
+- [ ] Dashboard Tableau Public từ các file `data/clean/tableau_*.csv` (heatmap năm × tháng, bản đồ tỉnh, biểu đồ độ trễ) 📅 2026-11-28
 ### Act
-- [ ] Viết top insights và danh sách deliverable bổ sung 📅 2026-11-29
-- [ ] Đăng lên portfolio (Kaggle / GitHub / Tableau Public) kèm elevator pitch 📅 2026-12-01
+- [x] Viết top insights và danh sách deliverable bổ sung 📅 2026-11-29 ✅ 2026-11-11
+- [ ] Đăng lên GitHub: chạy `bash ~/Desktop/Sky/portfolio-site/scripts/push.sh` (tự tạo repo `lucynguyen777/dengue-vietnam-case-study`), README đã có elevator pitch 📅 2026-12-01
+- [ ] Tập thuyết trình đủ 30 phút, có hẹn giờ (ghi chú lời nói trong slide) 📅 2026-12-01
 
 ## Map of Content
 - [Hướng dẫn thực hiện từng bước (chọn đề tài, dữ liệu OpenDengue + NASA POWER, lịch 18/11–01/12)](/projects/capstone-track-b/huong-dan-thuc-hien-case-study-track-b/)
-- (Thêm note phân tích, change log và bài trình bày vào đây khi tạo)
+- [Báo cáo phân tích: 8 phát hiện, biểu đồ, insights và khuyến nghị](/projects/capstone-track-b/bao-cao-phan-tich-track-b-sot-xuat-huyet-o-viet-nam-theo-mua-theo-vung-va-thoi-t/)
