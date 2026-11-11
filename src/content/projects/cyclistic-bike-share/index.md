@@ -27,7 +27,7 @@ summary_en: >-
 links:
   github: 'https://github.com/lucynguyen777/cyclistic-case-study'
   tableau: >-
-    https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/Membershaveamorningcommutepeakcasualridingspreadsacrossmiddayandevening/Sheet1
+    https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/shared/D86ZF2XQ6
 phases:
   - name: Ask
     done: 1
@@ -87,7 +87,7 @@ description: >-
 - [x] So sánh member vs casual theo ngày trong tuần, giờ, tháng, loại xe, trạm phổ biến 📅 2026-11-14 ✅ 2026-11-11
 ### Share
 - [x] Biểu đồ cho bài trình bày (6 biểu đồ có tiêu đề là phát hiện) và slide 12 trang 📅 2026-11-15 ✅ 2026-11-11
-- [x] Dashboard Tableau Public (hồ sơ giờ trong ngày, ngày thường và cuối tuần): https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/Membershaveamorningcommutepeakcasualridingspreadsacrossmiddayandevening/Sheet1 📅 2026-11-15 ✅ 2026-11-11
+- [x] Dashboard Tableau Public (hồ sơ giờ trong ngày, bản đồ trạm casual, số chuyến theo tháng): https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/shared/D86ZF2XQ6 📅 2026-11-15 ✅ 2026-11-11
 ### Act
 - [x] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16 ✅ 2026-11-11
 - [x] README với phát hiện, khuyến nghị và elevator pitch 📅 2026-11-16 ✅ 2026-11-11

@@ -16,7 +16,18 @@
   by Base.astro (topicCss()). Do not hand-copy those hexes here.
 */
 
-/* ---------- fonts ---------- */
+/* ---------- fonts ----------
+   Self-hosted static faces, subset to Latin + Vietnamese (public/fonts, rebuilt by scripts/build-fonts.sh).
+   A page downloads only the faces it renders. Noto Serif Display: 400 (h1, h2), 300 (desktop hero),
+   650 at 75% width (project band heads), italic 400 (wordmark, quotes). Be Vietnam Pro: 400/500/600 + italic. */
+@font-face { font-family: 'Noto Serif Display'; src: url('/fonts/noto-serif-display-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-stretch: 100%; font-display: swap; }
+@font-face { font-family: 'Noto Serif Display'; src: url('/fonts/noto-serif-display-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-stretch: 100%; font-display: swap; }
+@font-face { font-family: 'Noto Serif Display'; src: url('/fonts/noto-serif-display-650-condensed.woff2') format('woff2'); font-weight: 650; font-style: normal; font-stretch: 75%; font-display: swap; }
+@font-face { font-family: 'Noto Serif Display'; src: url('/fonts/noto-serif-display-italic-400.woff2') format('woff2'); font-weight: 400; font-style: italic; font-stretch: 100%; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('/fonts/be-vietnam-pro-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('/fonts/be-vietnam-pro-medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('/fonts/be-vietnam-pro-semibold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('/fonts/be-vietnam-pro-italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
 @font-face {
   font-family: 'Display Fallback';
   src: local('Times New Roman');
@@ -226,15 +237,25 @@ input:focus-visible, textarea:focus-visible, select:focus-visible { outline-offs
   transition: opacity 240ms ease;
   pointer-events: none;
 }
-.masthead.is-frosted {
-  -webkit-backdrop-filter: blur(14px) saturate(150%);
-  backdrop-filter: blur(14px) saturate(150%);
+/* Performance: the live blur re-samples everything under the bar on every frame, which costs phones about half
+   a second of main-thread time on load and more while scrolling. Phones and tablets get a tinted solid bar;
+   the blur stays on desktops (fine pointer, wide screen). */
+.masthead.is-frosted::before { opacity: 1; background: var(--glass-fallback); }
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .masthead.is-frosted {
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      backdrop-filter: blur(14px) saturate(150%);
+    }
+    .masthead.is-frosted::before { background: rgba(16, 5, 46, 0.22); }
+  }
 }
-.masthead.is-frosted::before { opacity: 1; }
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .masthead.is-frosted::before { background: var(--glass-fallback); }
+html[data-reading='light'] body.is-reading .masthead::before { background: rgba(255, 255, 255, 0.94); }
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    html[data-reading='light'] body.is-reading .masthead::before { background: rgba(255, 255, 255, 0.4); }
+  }
 }
-html[data-reading='light'] body.is-reading .masthead::before { background: rgba(255, 255, 255, 0.4); }
 html[data-reading='light'] body.is-reading .masthead { box-shadow: 0 1px 0 var(--line); }
 
 .masthead-inner { display: flex; align-items: center; gap: 8px 28px; flex-wrap: wrap; padding-block: 8px; }

@@ -154,7 +154,8 @@ const controls = [
         console.warn('galaxy', e);
         fail(root);
       });
-    if ('IntersectionObserver' in window) {
+    const whenVisible = () => {
+      if (!('IntersectionObserver' in window)) return start();
       const io = new IntersectionObserver(
         (es) => {
           if (es.some((e) => e.isIntersecting)) {
@@ -165,7 +166,16 @@ const controls = [
         { rootMargin: '200px' },
       );
       io.observe(root);
-    } else start();
+    };
+    // Performance: three.js and the WebGL scene cost seconds of main-thread time on phones, so the page loads
+    // with the CSS poster only and the galaxy ignites on the visitor's first interaction (pointer, touch,
+    // wheel, key or scroll). Reading, links and the LCP never wait for it.
+    const WAKE = ['pointermove', 'pointerdown', 'touchstart', 'wheel', 'keydown', 'scroll'] as const;
+    const wake = () => {
+      WAKE.forEach((t) => removeEventListener(t, wake));
+      whenVisible();
+    };
+    WAKE.forEach((t) => addEventListener(t, wake, { passive: true }));
   }
 
   /** No WebGL: keep the poster, hide the controls and hint, show the text fallback. */

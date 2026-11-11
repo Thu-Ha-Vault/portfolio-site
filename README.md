@@ -76,6 +76,13 @@ shows an icon only for links that are filled in), which project folders to show,
   `Virtual_Lab/figures/thermocycler/thermocycler.html` with `--anatomy-page` and `--anatomy-card` set to
   `#1a0b45` and the plate chrome hidden, cropped 16:9 to 1600×900.
 
+## Performance
+Mobile PageSpeed on the home page went from 43 to the mid-90s (Lighthouse, Nov 2026). Keep these when changing the site:
+- **Fonts are self-hosted** in `public/fonts`: static faces subset to Latin + Vietnamese, about 20 KB each, built by `scripts/build-fonts.sh`. Do not add Google Fonts links back. A new weight or style needs a new face there and an `@font-face` in `src/styles/global.css`.
+- **The 3D galaxy starts on the first interaction** (pointer, touch, wheel, key or scroll). Until then the CSS poster shows. Loading three.js at page load costs phones several seconds of main-thread time.
+- **The header blur is desktop only**. Phones and tablets get a tinted solid bar.
+- **Mermaid loads when a diagram comes near the viewport**.
+
 ## Deploy (GitHub Pages)
 
 - Repo `lucynguyen777/portfolio-site`; every push to `main` runs `.github/workflows/deploy.yml` (npm ci → astro build → GitHub Pages).

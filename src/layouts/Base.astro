@@ -90,9 +90,8 @@ const [readVi, readEn] = ui.readingLight;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/rss+xml" title={`${config.author.name} blog`} href="/rss.xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,300..700;1,62.5..100,300..700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/fonts/noto-serif-display-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/be-vietnam-pro-regular.woff2" as="font" type="font/woff2" crossorigin />
     <Fragment set:html={`<style>${topicCss()}</style>`} />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script is:inline>
@@ -310,7 +309,8 @@ const [readVi, readEn] = ui.readingLight;
     </script>
     {mermaid && (
       <script type="module" is:inline>
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+        // Performance: mermaid is large, so it is downloaded only when a diagram comes near the viewport.
+        let mermaid = null;
         // Keep the source in data-src so the diagrams can re-render when light reading toggles.
         // mermaid is in excludeLangs (astro.config.mjs), so it arrives as <pre><code class="language-mermaid">.
         document.querySelectorAll('pre[data-language="mermaid"], pre > code.language-mermaid').forEach((el) => {
@@ -346,6 +346,7 @@ const [readVi, readEn] = ui.readingLight;
         const render = async () => {
           const nodes = [...document.querySelectorAll('.mermaid[data-src]')];
           if (!nodes.length) return;
+          if (!mermaid) mermaid = (await import('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs')).default;
           nodes.forEach((n) => { n.removeAttribute('data-processed'); n.textContent = n.dataset.src; });
           // Natural size, not squeezed to the column: a wide LR flowchart keeps readable labels and scrolls
           // sideways inside .mermaid (overflow-x: auto), which becomes a named keyboard stop while it overflows.
@@ -369,8 +370,14 @@ const [readVi, readEn] = ui.readingLight;
             }
           });
         };
-        render();
-        document.addEventListener('readingchange', render);
+        const diagrams = document.querySelectorAll('.mermaid[data-src]');
+        if (diagrams.length && 'IntersectionObserver' in window) {
+          const io = new IntersectionObserver((es) => {
+            if (es.some((e) => e.isIntersecting)) { io.disconnect(); render(); }
+          }, { rootMargin: '800px 0px' });
+          diagrams.forEach((n) => io.observe(n));
+        } else render();
+        document.addEventListener('readingchange', () => { if (mermaid) render(); });
       </script>
     )}
   </body>
