@@ -8,13 +8,13 @@ tags:
   - data-analytics
   - case-study
   - google-data-analytics
-folder: Projects / Case Study - Cyclistic
-vaultPath: Projects/Case Study - Cyclistic/02 - Báo cáo phân tích Cyclistic.md
+folder: Archive / Case Study - Cyclistic
+vaultPath: Archive/Case Study - Cyclistic/02 - Báo cáo phân tích Cyclistic.md
 url: >-
   /projects/cyclistic-bike-share/bao-cao-phan-tich-cyclistic-casual-riders-va-annual-members-dung-xe-khac-nhau-th/
 updated: '2026-11-11'
 date: '2026-11-11'
-status: active
+status: done
 order: 2
 project: cyclistic-bike-share
 isIndex: false
@@ -45,16 +45,16 @@ description: >-
 ## Phát hiện chính
 1. **Casual chiếm 1/3 số chuyến và rất theo mùa**: 35,3% cả năm, từ 17,9% (tháng 1) lên 40,8% (tháng 7).
 2. **Chuyến của casual dài hơn**: trung vị 11,1 so với 8,7 phút (+28%); phân vị 90% là 35,4 so với 23,4 phút; 13,2% chuyến casual dài hơn 30 phút (member 5,4%).
-	![cyclistic-01_overview](/vault-assets/cyclistic-01-overview-3d7bed86.webp)
+	![cyclistic-01_overview](/vault-assets/cyclistic-01-overview-0783624a.webp)
 3. **Casual đi cuối tuần**: 37,6% chuyến casual vào thứ 7, CN (riêng thứ 7 là 21,5%), member 23,7%.
-	![cyclistic-02_rides_by_day](/vault-assets/cyclistic-02-rides-by-day-8ca41a2b.webp)
+	![cyclistic-02_rides_by_day](/vault-assets/cyclistic-02-rides-by-day-e4b83938.webp)
 4. **Member đi làm**: ngày thường cả hai nhóm đều có đỉnh 17h, nhưng member có thêm đỉnh sáng 7–9h (15,2% chuyến ngày thường so với 7,7% của casual); 38,5% chuyến member rơi vào giờ đi làm ngày thường, casual 25,1%.
-	![cyclistic-03_rides_by_hour](/vault-assets/cyclistic-03-rides-by-hour-41bef0fc.webp)
+	![cyclistic-03_rides_by_hour](/vault-assets/cyclistic-03-rides-by-hour-d7fe5fd3.webp)
 5. **Nhu cầu casual dồn vào mùa hè**: tháng cao nhất gấp 14,5 lần tháng thấp nhất (member 4,7 lần); 69,3% chuyến casual diễn ra từ tháng 5 đến tháng 9 (member 58,5%).
-	![cyclistic-04_rides_by_month](/vault-assets/cyclistic-04-rides-by-month-4ec5b5a3.webp)
-	![cyclistic-05_ride_length](/vault-assets/cyclistic-05-ride-length-e41cc2ef.webp)
+	![cyclistic-04_rides_by_month](/vault-assets/cyclistic-04-rides-by-month-283fc5f7.webp)
+	![cyclistic-05_ride_length](/vault-assets/cyclistic-05-ride-length-a606ed21.webp)
 6. **Ven hồ và bảo tàng là "lãnh thổ" của casual**: casual chiếm 76–82% số chuyến tại Navy Pier, Shedd Aquarium, Field Museum, DuSable Lake Shore Dr & Monroe St; chuyến khứ hồi 7,4% so với 2,2% (trong các chuyến có tên trạm).
-	![cyclistic-06_top_casual_stations](/vault-assets/cyclistic-06-top-casual-stations-4ec03500.webp)
+	![cyclistic-06_top_casual_stations](/vault-assets/cyclistic-06-top-casual-stations-d1690ee0.webp)
 7. **Có nhóm casual đi như người đi làm**: 25,1% chuyến casual (khoảng 540 nghìn chuyến) diễn ra ngày thường vào giờ đi làm.
 
 ## Khuyến nghị

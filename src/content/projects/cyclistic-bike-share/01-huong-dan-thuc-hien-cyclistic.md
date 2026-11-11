@@ -6,8 +6,8 @@ tags:
   - data-analytics
   - case-study
   - google-data-analytics
-folder: Projects / Case Study - Cyclistic
-vaultPath: Projects/Case Study - Cyclistic/01 - Hướng dẫn thực hiện Cyclistic.md
+folder: Archive / Case Study - Cyclistic
+vaultPath: Archive/Case Study - Cyclistic/01 - Hướng dẫn thực hiện Cyclistic.md
 url: /projects/cyclistic-bike-share/huong-dan-thuc-hien-case-study-cyclistic/
 updated: '2026-11-11'
 date: '2026-11-11'

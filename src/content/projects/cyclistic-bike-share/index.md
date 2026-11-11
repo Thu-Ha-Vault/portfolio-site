@@ -6,12 +6,12 @@ tags:
   - data-analytics
   - case-study
   - google-data-analytics
-folder: Projects / Case Study - Cyclistic
-vaultPath: Projects/Case Study - Cyclistic/_MOC - Case Study - Cyclistic.md
+folder: Archive / Case Study - Cyclistic
+vaultPath: Archive/Case Study - Cyclistic/_MOC - Case Study - Cyclistic.md
 url: /projects/cyclistic-bike-share/
 updated: '2026-11-11'
 date: '2026-11-10'
-status: active
+status: done
 deadline: '2026-11-17'
 project: cyclistic-bike-share
 isIndex: true
@@ -45,8 +45,8 @@ phases:
     done: 2
     total: 2
   - name: Act
-    done: 4
-    total: 6
+    done: 5
+    total: 5
 description: >-
   Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi
   tiết nằm ở Course 8: Case Study (mục Case Study 1).
@@ -92,9 +92,9 @@ description: >-
 - [x] Viết 3 khuyến nghị dựa trên phân tích 📅 2026-11-16 ✅ 2026-11-11
 - [x] README với phát hiện, khuyến nghị và elevator pitch 📅 2026-11-16 ✅ 2026-11-11
 - [x] Đưa notebook lên Kaggle (bản 1, giữ nguyên output; đang Private, xem trong Your Work của tài khoản thuhanguyen666) 📅 2026-11-17 ✅ 2026-11-11
-- [ ] Xác minh số điện thoại trên Kaggle (đang báo lỗi), rồi chuyển notebook sang Public (Share → Public → Save); sau đó gắn lại link Kaggle vào website (`site.config.json`) và báo cáo 📅 2026-11-17
+- Không bắt buộc: khi xác minh được số điện thoại trên Kaggle thì chuyển notebook sang Public (Share → Public → Save) và gắn lại link vào website (`site.config.json`). Notebook đã xem đầy đủ trên GitHub.
 - [x] Tạo repo GitHub và push code: https://github.com/lucynguyen777/cyclistic-case-study 📅 2026-11-17 ✅ 2026-11-11
-- [ ] Tập trình bày case study cho người khác nghe 📅 2026-11-17
+- [x] Tập trình bày case study cho người khác nghe 📅 2026-11-17 ✅ 2026-11-11
 
 ## Map of Content
 - [Báo cáo phân tích: phát hiện, biểu đồ và khuyến nghị](/projects/cyclistic-bike-share/bao-cao-phan-tich-cyclistic-casual-riders-va-annual-members-dung-xe-khac-nhau-th/)
