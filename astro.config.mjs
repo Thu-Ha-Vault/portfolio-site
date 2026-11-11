@@ -7,7 +7,7 @@ import rehypeImages from './src/lib/rehype-images.mjs';
 import rehypeTableScroll from './src/lib/rehype-table-scroll.mjs';
 
 export default defineConfig({
-  site: 'https://portfolio.ceovanta.com',
+  site: 'https://thuha.ceovanta.com',
   trailingSlash: 'always',
   integrations: [sitemap()],
   // three.module (~750 kB) is the only large chunk; Galaxy.astro loads it with a lazy dynamic import()

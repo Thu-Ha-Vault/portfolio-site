@@ -1,4 +1,4 @@
-# portfolio.ceovanta.com
+# thuha.ceovanta.com
 
 Personal site: **projects** + a **knowledge blog** generated from my Obsidian vault (`Sky_Vault`).
 Built with [Astro](https://astro.build), hosted on Vercel, bilingual UI (Tiếng Việt / English).
@@ -76,12 +76,9 @@ shows an icon only for links that are filled in), which project folders to show,
   `Virtual_Lab/figures/thermocycler/thermocycler.html` with `--anatomy-page` and `--anatomy-card` set to
   `#1a0b45` and the plate chrome hidden, cropped 16:9 to 1600×900.
 
-## First deploy (one time)
+## Deploy (GitHub Pages)
 
-1. Create an empty GitHub repo (e.g. `portfolio-site`) and push this folder:
-   `git remote add origin https://github.com/<you>/portfolio-site.git && git push -u origin main`
-2. On vercel.com → **Add New → Project** → import the repo. Framework is detected as Astro; no settings needed.
-3. Vercel project → **Settings → Domains** → add `portfolio.ceovanta.com`.
-4. At the DNS provider of `ceovanta.com`, add the record Vercel shows, normally:
-   `CNAME  portfolio  →  cname.vercel-dns.com`
-   This does not affect the existing WordPress site on `ceovanta.com`.
+- Repo `lucynguyen777/portfolio-site`; every push to `main` runs `.github/workflows/deploy.yml` (npm ci → astro build → GitHub Pages).
+- Custom domain `thuha.ceovanta.com` (`public/CNAME`), DNS: `CNAME thuha → lucynguyen777.github.io` at Hostinger.
+- Content is synced locally from the vault (`npm run sync`) and committed; CI only builds.
+- First-time setup: run `scripts/publish-github.sh` once.
