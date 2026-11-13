@@ -29,6 +29,10 @@
       "Học phần đại cương": "university-courses"
     }
   },
+  "articles": {
+    "root": "Projects/Portfolio Website/Bài viết",
+    "_comment": "A note here with type: article and replaces: \"<path under blog.root>\" is published at that note's URL instead of the note."
+  },
   "projects": [
     {
       "folder": "Archive/Case Study - Cyclistic",

@@ -41,12 +41,12 @@
     {
       "a": "ai-development",
       "b": "biology",
-      "weight": 24
+      "weight": 22
     },
     {
       "a": "biology",
       "b": "business",
-      "weight": 46
+      "weight": 45
     },
     {
       "a": "biology",

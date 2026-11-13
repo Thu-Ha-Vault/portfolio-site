@@ -9,7 +9,7 @@ folder: Projects / Capstone - Project Management
 vaultPath: Projects/Capstone - Project Management/08 - Project impact report.md
 url: >-
   /projects/project-management-capstone/project-impact-report-sauce-and-spoon-tablet-pilot/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 8
 project: project-management-capstone
 isIndex: false

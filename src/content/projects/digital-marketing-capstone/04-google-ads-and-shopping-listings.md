@@ -9,7 +9,7 @@ folder: Projects / Capstone - Digital Marketing
 vaultPath: Projects/Capstone - Digital Marketing/04 - Google Ads and Shopping listings.md
 url: >-
   /projects/digital-marketing-capstone/google-ads-and-google-shopping-listings-sinclair-verde/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 4
 project: digital-marketing-capstone
 isIndex: false

@@ -9,7 +9,7 @@ folder: Projects / Capstone - Project Management
 vaultPath: Projects/Capstone - Project Management/05 - Evaluation presentation.md
 url: >-
   /projects/project-management-capstone/evaluation-presentation-sauce-and-spoon-tablet-pilot-launch-testing/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 5
 project: project-management-capstone
 isIndex: false

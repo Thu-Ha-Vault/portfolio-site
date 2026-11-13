@@ -11,7 +11,7 @@ vaultPath: >-
   email.md
 url: >-
   /projects/project-management-capstone/stakeholder-analysis-and-coalition-email-sauce-and-spoon-tablet-pilot/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 2
 project: project-management-capstone
 isIndex: false

@@ -9,7 +9,7 @@ folder: Projects / Capstone - Digital Marketing
 vaultPath: Projects/Capstone - Digital Marketing/01 - Digital marketing strategy.md
 url: >-
   /projects/digital-marketing-capstone/digital-marketing-strategy-sinclair-verde-lamp-company-online-store/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 1
 project: digital-marketing-capstone
 isIndex: false

@@ -9,7 +9,7 @@ folder: Projects / Capstone - Digital Marketing
 vaultPath: Projects/Capstone - Digital Marketing/05 - Measurement plan and KPI report.md
 url: >-
   /projects/digital-marketing-capstone/measurement-plan-and-first-month-kpi-report-sinclair-verde/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 5
 project: digital-marketing-capstone
 isIndex: false

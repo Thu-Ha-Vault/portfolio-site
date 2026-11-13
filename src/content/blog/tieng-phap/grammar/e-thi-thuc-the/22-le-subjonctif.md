@@ -1,242 +1,326 @@
 ---
-title: Le subjonctif (Thức giả định)
-type: note
+title: >-
+  Subjonctif cho người Việt: thực tại hay khả năng, mười chỗ sổ tay cần sửa và
+  một lỗi của chính tôi
+type: article
 tags:
+  - article
   - french
   - grammar
   - subjunctive
 section: Tiếng Pháp
 folder: 'Tiếng Pháp / Grammar / E - Thì, thức, thể'
-vaultPath: 'Resources/Tiếng Pháp/Grammar/E - Thì, thức, thể/22 - Le subjonctif.md'
+vaultPath: Projects/Portfolio Website/Bài viết/Tiếng Pháp/BV - 22 - Le subjonctif.md
 url: /blog/le-subjonctif-thuc-gia-dinh/
 topic: french
-updated: '2026-10-14'
+updated: '2026-11-13'
+date: '2026-11-13'
+status: draft
 order: 22
 description: >-
-  Memo 179: "Subjuctive mood" → "Subjunctive mood". Memo 181: "je écrive" →
-  "j'écrive". Memo 182: "nous burions" → "nous buvions"; "nous vaulions" → "nous
-  voulions". Memo 183: "qu'il/elle/on sait" → "qu'il/elle/on soit"; "
+  Subjonctif (thức giả định) là chỗ nhiều người Việt học tiếng Pháp vẫn chọn
+  theo cảm giác. Bài này bắt đầu từ một lỗi thật trong bài kiểm tra của tôi, đưa
+  ra một câu hỏi để chọn thức (người nói coi sự việc là thật, hay mớ
 isIndex: false
 ---
-<div class="callout callout-info">
-<p class="callout-title">Chép từ sổ viết tay ngữ pháp tiếng Pháp (Memo 179–190 và trang ngay sau Memo 190). Nội dung đã sửa lỗi; <code>(?)</code> là chỗ chưa đọc rõ.</p>
+Subjonctif (thức giả định) là chỗ nhiều người Việt học tiếng Pháp vẫn chọn theo cảm giác. Bài này bắt đầu từ một lỗi thật trong bài kiểm tra của tôi, đưa ra một câu hỏi để chọn thức (người nói coi sự việc là thật, hay mới là điều có thể?), rồi soát lại sổ tay ngữ pháp của tôi bằng từ điển, sách ngữ pháp và nghiên cứu về người học. Kết quả: khoảng mười chỗ cần sửa, mười cặp hay nhầm và vài gợi ý nên học gì trước.
+
+## 1. Một chữ giáo viên sửa
+
+Trong bài kiểm tra viết *Test 2* ở Institut Français (lớp Niveau avancé 2/4), tôi viết: *Pour résoudre ces problèmes, il faut que la ville sciait agir.* Giáo viên gạch *sciait agir* và viết lên trên dạng subjonctif của *agir*. Câu đúng là *il faut que la ville agisse* (để giải quyết các vấn đề này, thành phố phải hành động). Bài được 7,5/10, riêng mục hình thái – cú pháp chỉ được 1/2 ([bài Test 2](/blog/test-2-proposer-un-projet-pour-ameliorer-la-vie-des-habitants-a-hanoi/)).
+
+Trên ảnh bản gốc, ngay trước đó có một cụm tôi tự gạch, đọc ra giống *il faudrait que la ville*. Tôi biết sau *il faut* cần *que*, nhưng không chắc động từ phải ở dạng nào; *sciait* không phải dạng chia của động từ nào (mục 11). Vậy vì sao phải là *agisse*, và làm sao biết lúc nào cần subjonctif?
+
+Khi soạn bài, tôi nhận ra phần subjonctif trong sổ tay viết tay của mình (Memo 179–190) trùng gần như hoàn toàn với *Tex's French Grammar* của Đại học Texas tại Austin, từ thứ tự mục, danh sách động từ đến các nhãn nhóm (Blyth et al., n.d.). Sổ thực chất là bản dịch của nguồn này, mang theo vài chỗ khái quát quá rộng. Vì vậy bài viết soát lại sổ bằng từ điển của Viện Hàn lâm Pháp (Académie française), Banque de dépannage linguistique của Office québécois de la langue française (OQLF), từ điển Larousse, sách ngữ pháp của Boularès và Frérot (1997) và nghiên cứu về người học.
+
+## 2. Subjonctif là gì và không là gì
+
+Viện Hàn lâm Pháp định nghĩa subjonctif là một thức có ngôi (*mode personnel*), thường dùng trong mệnh đề phụ và luôn có *que* đứng trước, trừ vài cách dùng cố định như *Ainsi soit-il* (Académie française, n.d.-a). OQLF gọi nó là "le mode de la possibilité, de l'hypothèse", còn indicatif (thức chỉ định) trình bày sự việc như điều chắc chắn hoặc có lẽ sẽ xảy ra (Office québécois de la langue française [OQLF], n.d.-a).
+
+Sổ của tôi viết "thức là thuật ngữ giúp phân loại thì của động từ", và bài [thì, thể, thức](/blog/temps-aspect-mode-et-voix-thi-the-thuc-va-dang/) cũng viết vậy. Cách nói này chưa đúng: **thì** cho biết sự việc xảy ra khi nào, còn **thức** cho biết người nói trình bày nó như sự thật, mệnh lệnh, điều kiện hay khả năng. Câu "một trong 4 thức" cũng tuỳ cách đếm:
+
+| Cách đếm                                     | Số thức  | Ghi chú                                                                     |
+| -------------------------------------------- | -------- | --------------------------------------------------------------------------- |
+| *Tex's French Grammar*, sổ chép theo          | 4        | indicatif, subjonctif, conditionnel, impératif                              |
+| Sơ đồ "French Moods" cuối sổ                 | 6        | thêm infinitif, gérondif (không chia theo ngôi)                             |
+| Viện Hàn lâm Pháp (Académie française, 2015) | 3 hoặc 4 | conditionnel là thức theo ngữ pháp truyền thống, là thì theo nhiều nhà ngữ pháp hiện nay |
+
+Bảng 1. Ba cách đếm thức (xem thêm [sơ đồ các thức](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/) và [conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/)).
+
+Sổ ghi subjonctif "có 2 thì", đủ dùng cho tiếng Pháp thông dụng. Thật ra có 4 thì, nhưng imparfait và plus-que-parfait "pratiquement sortis de l'usage" (OQLF, n.d.-a); chỉ cần nhận ra khi đọc, như *Qu'il mourût* của Corneille (Académie française, n.d.-a). Sổ ghi đúng rằng subjonctif tự nó không chỉ thời gian: *J'insiste pour qu'il vienne* và *J'insistais pour qu'il vienne* dùng cùng dạng *vienne* (OQLF, n.d.-a). Nó cũng có thể đứng một mình để ra lệnh hay cầu mong: *Qu'il parte !* (Académie française, n.d.-a), *Pourvu qu'il fasse beau pendant mes vacances* (OQLF, n.d.-d), *Vive la France !* ([động từ -er](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/)).
+
+Sổ dùng lẫn "thức cầu khẩn" và "thể giả định"; loạt bài này thống nhất gọi là **thức giả định**, vì "cầu khẩn" dễ lẫn với thức mệnh lệnh, còn "thể" dành cho *aspect*. Thêm một nhận xét của người viết: tiếng Việt không chia động từ theo thức. Ý "mong", "phải", "sợ", "dù" nằm ở từ ngữ, nên người Việt phải tập nhận ra chúng trong từ dẫn rồi đổi hình thái động từ phía sau.
+
+## 3. Chia động từ: một quy tắc, ba lớp ngoại lệ
+
+Quy tắc gốc: lấy ngôi *ils* của hiện tại indicatif, bỏ *-ent*, thêm *-e, -es, -e, -ions, -iez, -ent*: *ils partent → que je parte* (Boularès & Frérot, 1997, tr. 56; Blyth et al., n.d.). Với động từ -er, kết quả trùng gần hết với dạng đã biết:
+
+| Ngôi | Indicatif présent | Subjonctif présent | Imparfait |
+| ---- | ----------------- | ------------------ | --------- |
+| je   | parle             | que je parle       | parlais   |
+| nous | parlons           | que nous parlions  | parlions  |
+| vous | parlez            | que vous parliez   | parliez   |
+| ils  | parlent           | qu'ils parlent     | parlaient |
+
+Bốn ngôi *je, tu, il, ils* (dạng "boot") giống hệt indicatif, *nous, vous* giống imparfait (Wiktionnaire, n.d.), nên ghi chú lề Memo 180 của sổ là đúng; *acheter* cũng vậy (*que j'achète, que nous achetions*). Hệ quả: với động từ -er, người đọc **không thể biết** người viết có chọn subjonctif hay không (*que la mairie vérifie* trùng với indicatif). Chỉ động từ có dạng riêng mới cho thấy rõ: *il agit* nhưng *qu'il agisse* (Wiktionnaire, n.d.). Đó là lý do lỗi của tôi lộ ra.
+
+| Lớp | Động từ | Dạng subjonctif |
+| --- | --- | --- |
+| 0. Theo quy tắc, kể cả nhiều động từ bất quy tắc ở indicatif | dormir, partir, lire, dire, écrire, mettre, connaître, agir | *que je dise, qu'il agisse*; ngôi *ils* giống indicatif |
+| 1. Hai gốc: *ils* cho dạng "boot", *nous* cho *nous, vous* | venir, prendre, boire, croire, devoir, recevoir, voir, acheter | *que je vienne, que nous venions*; ngôi *ils* giống indicatif |
+| 2. Gốc "boot" riêng | aller, vouloir, valoir | *que j'aille, que je veuille, que je vaille*; **khác**: *qu'ils aillent, veuillent, vaillent* |
+| 3. Gốc hoàn toàn riêng | être, avoir, faire, pouvoir, savoir | **khác**: *qu'ils soient, aient, fassent, puissent, sachent* |
+
+Bảng 2. Một quy tắc và ba lớp ngoại lệ (Blyth et al., n.d.; Larousse, n.d.-b; Wiktionnaire, n.d.).
+
+Bảng này sửa hai chỗ trong sổ. Thứ nhất, sổ (theo Tex) xếp *aller, vouloir* vào nhóm hai gốc, nhưng *aill-, veuill-* không lấy từ *ils vont, ils veulent* (Larousse, n.d.-b); *valoir* cũng vậy, và đáng nhớ vì *il vaut mieux que* là một từ dẫn subjonctif. Thứ hai, Memo 181 viết "đối với tất cả các cách chia động từ, ngôi thứ 3 số nhiều của subjonctif luôn giống indicatif". Câu gốc của Tex nằm trong phần về động từ có quy tắc; chép thành "tất cả" thì sai với lớp 2 và 3 (chính bảng *avoir* trong sổ có *ils ont / qu'ils aient*). Viết lại: ngôi *ils* giống indicatif **ở mọi động từ lấy gốc subjonctif từ ngôi *ils***.
+
+Sổ ghi đúng rằng *avoir, être* viết *nous, vous* bằng chữ *y* (*ayons, soyez*) và mệnh lệnh của *avoir, être, savoir* dựa trên gốc subjonctif (*aie, sois, sache*; xem [thức mệnh lệnh](/blog/l-imperatif-thuc-menh-lenh/)), nhưng còn thiếu các động từ phi ngôi: *falloir → qu'il faille*, *valoir → qu'il vaille* (Larousse, n.d.-b), *pleuvoir → qu'il pleuve* (*il se peut qu'il pleuve demain*; Boularès & Frérot, 1997, tr. 66). Vì gốc subjonctif đi từ hiện tại indicatif, nắm chắc [động từ có quy tắc](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/) và [bất quy tắc](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/) ở hiện tại là đã đi được nửa đường.
+
+## 4. Nguyên tắc chọn thức: thực tại hay khả năng
+
+Theo Boularès và Frérot (1997, tr. 62), thức ở mệnh đề phụ do **động từ dẫn** quyết định, tuỳ cách người nói nhìn sự việc phía sau *que*: "Lorsque le locuteur envisage une réalisation possible, le subjonctif est utilisé" (khi người nói hình dung một việc **có thể** xảy ra thì dùng subjonctif). Sách minh hoạ bằng một thang (tr. 56, 62): *il est certain qu'il viendra* (chắc chắn) và *il est probable qu'il viendra* (có lẽ) dùng indicatif; *il est possible qu'il vienne* (có thể) dùng subjonctif.
+
+Ranh giới nằm giữa "có lẽ" và "có thể", không phải giữa "chắc" và "không chắc"; người học hay đoán sai ở đây. OQLF nói cùng ý: indicatif trình bày sự việc như sẽ xảy ra "de façon certaine ou probable" (OQLF, n.d.-a).
+
+Phủ định hoặc đảo ngữ nghi vấn đẩy động từ ý kiến sang phía "có thể": *Je crois qu'il est prêt*, nhưng *Croyez-vous qu'il soit prêt ?* và *Je ne crois pas qu'il le sache* (Boularès & Frérot, 1997, tr. 56; xem [phủ định](/blog/la-negation-phu-dinh/) và [câu hỏi](/blog/l-interrogation-cau-hoi/)). OQLF xếp động từ kéo theo subjonctif thành ba nhóm: ý kiến hoặc đánh giá, ý muốn, cảm xúc; riêng với ý muốn, OQLF giải thích điều ta muốn "demeure de l'ordre du possible" (OQLF, n.d.-c). Điều kiện thứ hai là **hai chủ ngữ khác nhau**: *J'aimerais qu'il vienne*, nhưng *J'aimerais venir* khi người muốn và người đến là một (Boularès & Frérot, 1997, tr. 56).
+
+```mermaid
+flowchart TD
+    A["Từ dẫn + que"] --> B{"Người nói coi việc phía sau là gì?"}
+    B -->|"Thật, chắc chắn, có lẽ"| C["Indicatif"]
+    B -->|"Có thể: muốn, cần, nghi ngờ"| D{"Cùng chủ ngữ?"}
+    B -->|"Đối tượng của cảm xúc"| D
+    D -->|"Khác"| E["que + subjonctif"]
+    D -->|"Cùng"| F["Nguyên thể"]
+    C --> G["Kiểm tra từ có thức cố định, mục 5 và 6"]
+    E --> G
+```
+
+Hình 1. Câu hỏi chọn thức, vẽ lại theo ý của Boularès và Frérot (1997, tr. 56, 62).
+
+Nguyên tắc này không giải thích được mọi trường hợp. *Je regrette qu'elle soit fâchée* (tôi tiếc là cô ấy giận) nói về việc có thật mà vẫn dùng subjonctif (Boularès & Frérot, 1997), *bien que* cũng vậy. Ở những chỗ này, thức là **quy ước gắn với từng từ** (Poplack et al., 2013; mục 10). Người học cần cả hai: nguyên tắc để hiểu, và một danh sách ngắn đã kiểm chứng để dùng.
+
+## 5. Các nhóm từ kéo theo subjonctif, đã soát lại
+
+Sổ chia từ dẫn theo nhóm như Tex. Tôi giữ cách chia này và soát lại từng nhóm.
+
+**Bắt buộc.** *Il faut que, il est nécessaire / important que, il vaut mieux que* (Boularès & Frérot, 1997, tr. 58); sổ ghi thêm, theo Tex, rằng *il faut que* nhấn mạnh hơn *devoir* + nguyên thể ([động từ khuyết thiếu](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/)). Bản nháp viết lại bài Test 2 của tôi dùng đúng: *Il serait nécessaire que la mairie vérifie la faisabilité technique.*
+
+**Ý muốn.** *Vouloir, désirer, souhaiter, exiger, préférer que* (OQLF, n.d.-c). Sổ dịch *souhaiter que* là "to hope that"; nên là "to wish that": *Je souhaite que tu guérisses rapidement* (OQLF, n.d.-c). *Attendre que* chủ yếu là "đợi đến khi" (*J'attends qu'il ait fini pour partir*), nhưng Larousse cũng ghi nghĩa "trông chờ" nên chữ "expect" của sổ không sai; nghĩa "đoán trước" thì dùng *s'attendre à ce que*: *je m'attends à ce qu'il m'écrive* (Larousse, n.d.-a).
+
+**Mâu thuẫn "hope" và *espérer*.** Memo 179 viết subjonctif diễn đạt "hy vọng", Memo 187 lại ghi *espérer* đi với indicatif; cả hai đều có trong Tex. Theo Larousse, *espérer que* ở câu khẳng định đi với indicatif hoặc conditionnel (*nous espérons qu'il viendra*); chỉ ở câu phủ định, nghi vấn mới có thể dùng subjonctif (*je n'espère plus qu'elle vienne*) (Larousse, n.d.-d). "Hy vọng" là ý nghĩa, còn thức do **từ** quyết định.
+
+**Cảm xúc.** *Regretter, craindre, avoir peur, être content / désolé que, il est dommage que* (OQLF, n.d.-c). Các dòng sổ để trống nghĩa có thể điền: *redouter que, avoir peur que* (sợ rằng), *être heureux que* (vui vì), *être malheureux que* (buồn vì). Sau *craindre que* thường có *ne* explétif, không mang nghĩa phủ định: *Je crains qu'il ne veuille partir malgré tout* (OQLF, n.d.-c).
+
+**Nghi ngờ.** *Douter que, il est possible / douteux que, il se peut que* (Boularès & Frérot, 1997, tr. 62). Sổ (theo Tex) viết nghi ngờ bị phủ định thì dùng indicatif. Thật ra *ne pas douter que* thông thường đi với subjonctif (*je ne doute pas qu'il vienne*), indicatif chỉ để nhấn mạnh sự thật (*je ne doute pas qu'il sera présent à l'heure dite*) (Larousse, n.d.-c).
+
+**Danh sách "chắc chắn → indicatif"** trên giấy note dán ở Memo 184–185 đúng với hầu hết các dòng (*croire, penser, être sûr, il est certain / probable que*), trừ hai dòng:
+
+- *Il me semble que* + indicatif vì là ý kiến (*il me semble que tu as grandi*), nhưng *il semble que* + subjonctif khi không chắc (*il semble qu'il se soit perdu*), + indicatif khi thấy rõ (*il semble qu'il s'est perdu*) (Larousse, n.d.-e).
+- *Supposer que* (cho rằng) + indicatif: *Nous supposons qu'il sera là*; nhưng *supposons que* (giả sử) + subjonctif: *Supposons qu'il ne vienne pas* (Boularès & Frérot, 1997, tr. 64). OQLF cũng xếp *à supposer que* vào nhóm luôn đi với subjonctif (OQLF, 2025).
+
+Dòng *se douter que* (đoán là) + indicatif thì đúng (Larousse, n.d.-c).
+
+**Mệnh đề quan hệ.** Tiền ngữ chưa chắc tồn tại thì dùng subjonctif: *Je cherche un traducteur qui connaisse l'anglais, le français et le japonais* (Boularès & Frérot, 1997, tr. 58). So sánh *Connaissez-vous quelqu'un qui puisse m'aider ?* với *Je connais quelqu'un qui peut vous aider* (Académie française, n.d.-b; xem [đại từ quan hệ](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/)).
+
+**So sánh nhất, *le seul, le premier*.** Sổ nói subjonctif khi là ý kiến chủ quan, indicatif khi là sự thật. Nguồn chuẩn xác nhận, thêm rằng subjonctif thường gặp nhưng không bắt buộc (OQLF, 2016): *Voici le meilleur vin que l'on puisse trouver dans la région*, nhưng *Ce soir, c'est le meilleur qui a gagné* (Académie française, n.d.-b). Nhóm ý kiến phi ngôi (*il est bon / juste / urgent que*) giữ như sổ.
+
+| Từ dẫn                     | Thức                                 | Sổ ghi → sửa                     |
+| -------------------------- | ------------------------------------ | -------------------------------- |
+| *souhaiter que*            | subjonctif                           | "to hope" → "to wish"            |
+| *espérer que* (khẳng định) | indicatif hoặc conditionnel          | Giải mâu thuẫn Memo 179/187      |
+| *ne pas douter que*        | subjonctif; indicatif để nhấn mạnh   | "luôn indicatif" → cả hai        |
+| *il semble que*            | subjonctif hoặc indicatif            | Tách khỏi *il me semble que*     |
+| *supposons que*            | subjonctif                           | "luôn indicatif" → tuỳ nghĩa     |
+| *le meilleur… que*         | subjonctif thường gặp                | Thêm "không bắt buộc"            |
+
+Bảng 3. Các từ dẫn cần sửa so với sổ.
+
+## 6. Mười cặp hay nhầm
+
+Khi ôn thi, có ích nhất là những cặp chỉ khác một chữ mà đổi thức:
+
+| #   | Indicatif                                                  | Subjonctif                                          | Đổi vì                  | Nguồn                          |
+| --- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------------- | ------------------------------ |
+| 1   | *Je pense qu'il viendra.*                                  | *Je ne pense pas qu'il vienne.*                     | Phủ định ý kiến         | Boularès & Frérot (1997)       |
+| 2   | *Il est probable qu'il viendra.*                           | *Il est possible qu'il vienne.*                     | Có lẽ / có thể          | Boularès & Frérot (1997)       |
+| 3   | *Il me semble que tu as grandi.*                           | *Il semble qu'il se soit perdu.*                    | Ý kiến / không chắc     | Larousse (n.d.-e)              |
+| 4   | *Nous espérons qu'il viendra.*                             | *Je souhaite que tu guérisses rapidement.*          | Quy ước theo từ         | Larousse (n.d.-d); OQLF (n.d.-c) |
+| 5   | *Nous supposons qu'il sera là.*                            | *Supposons qu'il ne vienne pas.*                    | Cho rằng / giả sử       | Boularès & Frérot (1997)       |
+| 6   | *Il dit qu'il viendra demain.*                             | *Dites-lui qu'il vienne tout de suite.*             | Thuật lại / ra lệnh     | Boularès & Frérot (1997)       |
+| 7   | *Je comprends qu'il est fatigué.*                          | *Je comprends qu'il soit fatigué.*                  | Nhận ra / thông cảm     | Boularès & Frérot (1997)       |
+| 8   | *Il a parlé fort, de sorte que tout le monde l'a entendu.* | *Parle fort, de sorte que tout le monde t'entende.* | Kết quả / mục đích      | OQLF (2025)                    |
+| 9   | *Après qu'ils seront arrivés, ils iront saluer ma tante.*  | *Avant qu'il ait commencé, j'aurai fini.*           | *Après que / avant que* | OQLF (n.d.-b)                  |
+| 10  | *Même s'il pleut, je sortirai.*                            | *Bien qu'il pleuve, je sortirai.*                   | *Même si / bien que*    | Boularès & Frérot (1997)       |
+
+Bảng 4. Mười cặp indicatif / subjonctif. Ví dụ ở dòng 6, 7, 8, 10 do tôi đặt theo quy tắc của nguồn (Boularès & Frérot, 1997, tr. 56–64, 152).
+
+Ở cặp 6, mệnh lệnh trong câu tường thuật thường chuyển thành *dire de* + nguyên thể (*Dites-lui de venir*; xem [câu tường thuật](/blog/le-discours-rapporte-cau-tuong-thuat/)). *Admettre* đổi thức giống *comprendre* ở cặp 7: *J'admets que j'ai eu tort* (thừa nhận sự thật), *J'admets qu'on puisse ne pas être d'accord* (thấy chấp nhận được). Cặp 9 là bẫy loại suy: *avant que* + subjonctif vì việc chưa xảy ra, *après que* + indicatif vì việc đã hoặc chắc chắn sẽ xảy ra (Académie française, n.d.-a). Cặp 10 là quy ước, không phải nghĩa: cùng một cơn mưa có thật mà hai liên từ đòi hai thức.
+
+## 7. Liên từ: phần tóm tắt
+
+Liên từ có [bài riêng](/blog/les-conjonctions-lien-tu/); ở đây chỉ bàn phần thuộc về subjonctif. OQLF liệt kê các liên từ luôn đi với subjonctif, trong đó có *à condition que, afin que, à moins que, avant que, de peur que, en attendant que, jusqu'à ce que, pour que, pourvu que, sans que*; *bien que* thường đi với subjonctif, còn với *quoique* và *le fait que* thì subjonctif "fréquent mais non obligatoire" (OQLF, 2025). Có bốn chỗ cần sửa so với sổ:
+
+- **Nhóm của *sans que*.** Sổ (theo Tex) xếp *sans que* vào nhóm điều kiện. Boularès và Frérot (1997, tr. 152) xếp nó vào phần nhượng bộ, mang nghĩa phủ định: *Elles sont venues sans que je les aie invitées*.
+- ***Ne* explétif.** Sổ chỉ ghi *ne* sau *de crainte que, de peur que*. Boularès và Frérot (1997, tr. 58–60) thêm *avant que, à moins que*: *à moins que tu (ne) viennes me chercher*.
+- ***Après que* + indicatif.** Sổ chưa có. *Après que* đi với passé antérieur hoặc thì khác của indicatif (*Après qu'ils furent arrivés, ils allèrent saluer ma tante*); dùng subjonctif sau *après que* bị phê phán vì mệnh đề nói về điều chắc chắn (OQLF, n.d.-b; xem [passé antérieur](/blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/)).
+- ***De sorte que*** chỉ đi với subjonctif khi chỉ mục đích; khi chỉ kết quả đã xảy ra thì dùng indicatif (OQLF, 2025; cặp 8).
+
+Sổ (theo Tex) còn ghi bốn liên từ giữ subjonctif dù hai mệnh đề cùng chủ ngữ: *bien que, quoique, pourvu que, jusqu'à ce que* (*Tex veut attendre jusqu'à ce qu'il se sente prêt*; Blyth et al., n.d.). Cả bốn đều không nằm trong danh sách phải đổi sang nguyên thể ở mục 9, nên không mâu thuẫn với Boularès và Frérot (1997, tr. 76).
+
+## 8. Subjonctif passé và quan hệ thời gian
+
+Subjonctif passé tạo giống passé composé: *avoir* hoặc *être* ở subjonctif présent cộng phân từ quá khứ (Boularès & Frérot, 1997, tr. 60; Blyth et al., n.d.), cùng quy tắc chọn trợ động từ và hợp giống số như ở [bài về passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/): *que j'aie fini, qu'elle soit partie*. Hai thì phân biệt theo quan hệ thời gian giữa hai việc:
+
+```mermaid
+flowchart LR
+    M["Mốc: mệnh đề chính"] --> T1["Việc phụ xảy ra TRƯỚC"]
+    M --> T2["CÙNG LÚC"]
+    M --> T3["SAU"]
+    T1 --> P1["Subjonctif passé: Elle est déçue que nous ne lui ayons pas répondu."]
+    T2 --> P2["Subjonctif présent: Je suis désolée qu'il ne soit pas là."]
+    T3 --> P3["Subjonctif présent: Il aimerait que tu ailles le voir demain."]
+```
+
+Hình 2. Chọn subjonctif présent hay passé (ví dụ của Boularès & Frérot, 1997, tr. 60).
+
+Subjonctif passé còn dùng cho việc sẽ xong trước một mốc tương lai: *Il faut que vous soyez rentrés avant minuit* (Boularès & Frérot, 1997, tr. 60). Hình này giúp đọc lại Memo 190, nơi sổ ghi "HT giả định biểu thị một hành động đồng thời hoặc hơt (?) trong tương lai": đối chiếu với sách, "hơt" nhiều khả năng là "hoặc sau", nhưng tôi sẽ kiểm tra lại trang sổ.
+
+Sổ ghi đúng rằng thì của mệnh đề chính **không** quyết định thì của subjonctif (ví dụ *J'insiste / J'insistais pour qu'il vienne* ở mục 2); bảng hoà hợp thì ở [bài về câu tường thuật](/blog/le-discours-rapporte-cau-tuong-thuat/) cũng giữ subjonctif présent ở cả hai cột.
+
+<div class="callout callout-warning">
+<p class="callout-title">Hai thì văn chương</p>
+
+*Imparfait* và *plus-que-parfait du subjonctif* gần như không còn dùng (OQLF, n.d.-a); chỉ cần nhận ra khi đọc. Đừng nhầm *qu'il fût* (có dấu mũ, subjonctif) với *il fut* (passé simple); *après qu'ils furent arrivés* là passé antérieur của indicatif.
 
 </div>
 
-<details class="callout callout-success">
-<summary>Đã sửa so với sổ gốc</summary>
+## 9. Khi nào tránh subjonctif
 
-- Memo 179: "Subjuctive mood" → "Subjunctive mood".
-- Memo 181: "je écrive" → "j'écrive".
-- Memo 182: "nous burions" → "nous buvions"; "nous vaulions" → "nous voulions".
-- Memo 183: "qu'il/elle/on sait" → "qu'il/elle/on soit"; "je faisse" → "je fasse"; "sujet different" → "sujet différent"; "il faut que… (it is necessary to…)" → "(it is necessary that...)".
-- Memo 184: "essentiol" → "essentiel"; "il raut mieux que" → "il vaut mieux que"; "indipensable" → "indispensable".
-- Memo 186: "antedent" → "antecedent"; "(define)" → "(definite)".
-- Memo 187: "dependant" → "dependent".
-- Memo 188: "Conjunction with subjuctive" → "subjunctive"; giấy note: "il est just que" → "il est juste que", "il est utille que" → "il est utile que".
-- Memo 189: "althrough" → "although"; "prouvu que" → "pourvu que" (2 lần); "jusquā ce que" → "jusqu'à ce que" (2 lần); "Past subjuctive" → "subjunctive" (2 lần); "Ētre" → "Être".
-- Memo 190: "Ways to avoid subjuctive" → "subjunctive".
-- Trang sau Memo 190: "Conjuction" → "Conjunction".
-- Giấy note (IMG_3529): "to sceppose that" → "to suppose that"; "it seem (to me) that" → "it seems (to me) that".
-- Giấy note (IMG_3531): "(le désin)" → "(le désir)".
-- Giấy note (IMG_3532): "se rejouir que" → "se réjouir que"; "crainer que" → "craindre que"; "to delighted that" → "to be delighted that"; "être surpri(se) que" → "être surpris(e) que".
+Sổ coi việc tránh subjonctif là lựa chọn văn phong. Boularès và Frérot (1997, tr. 76) cho thấy có chỗ nó **bắt buộc**: khi hai mệnh đề cùng chủ ngữ, *pour que, afin que, avant que, sans que, de peur que, de crainte que, en attendant que* phải đổi thành *pour, afin de, avant de, sans, de peur de, de crainte de, en attendant de* + nguyên thể. Bài Test 2 của tôi viết đúng: *elle devrait vérifier la faisabilité technique avant de commencer la construction*. Động từ ý muốn cũng vậy: *Je voudrais sortir*, không viết *je voudrais que je sorte*; với *espérer*, nguyên thể cho giọng trang trọng: *J'espère recevoir bientôt de vos nouvelles* (Boularès & Frérot, 1997, tr. 56, 76).
+
+Khi nói chung chung, cụm phi ngôi đi với nguyên thể: *il est nécessaire de réduire le nombre de véhicules*, *il vaut mieux vérifier les conditions du logement* (bản gốc của tôi là *il veut mieux de vérifier*, giáo viên sửa thành *vaut* và bỏ *de*; xem [động từ phi ngôi và nguyên thể](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/)). Cũng có thể đổi liên từ thành giới từ + danh từ: *bien qu'il ait des soucis → malgré ses soucis* (Blyth et al., n.d.), *jusqu'à ce que* + mệnh đề → *jusqu'à* + danh từ ([giới từ](/blog/les-prepositions-gioi-tu/)). Tránh subjonctif là kỹ năng tốt, nhưng lúc nào cũng tránh thì sẽ không luyện được dạng chia (mục 11).
+
+## 10. Người bản ngữ và người học thật sự dùng subjonctif thế nào
+
+Sách ngữ pháp cho biết **nên** dùng subjonctif ở đâu; nghiên cứu cho biết người ta **thật sự** dùng nó ở đâu, và người học vấp ở chỗ nào.
+
+**Lời nói tự nhiên.** Poplack, Lealess và Dion (2013) so sánh tiếng Pháp Québec nói hằng ngày với lời khuyên của sách ngữ pháp suốt năm thế kỷ. Từ thế kỷ 16, sách đã gắn subjonctif với hàng trăm từ dẫn và sắc thái nghĩa, nhưng trong lời nói tự phát, subjonctif gần như chỉ xuất hiện quanh một nhóm nhỏ động từ. Yếu tố quyết định mạnh nhất không phải nghĩa mà là **chính từ dẫn**; subjonctif cũng được ưa dùng hơn khi động từ có dạng riêng dễ nhận ra, khi có *que*, và khi hai mệnh đề đứng sát nhau. Tôi mới đọc phần tóm tắt nên không nêu danh sách động từ cụ thể, nhưng kết quả này giải thích vì sao *agisse, fasse, soit* "nổi" hơn *vérifie*.
+
+**Chín tháng ở Pháp.** McManus và Mitchell (2015) theo dõi 29 sinh viên tiếng Pháp của một trường đại học ở Anh trước và sau chín tháng sống ở Pháp. Tất cả đã dùng subjonctif ít nhiều trước khi đi, nhưng thời gian ở Pháp chỉ mang lại tiến bộ hạn chế. Subjonctif xuất hiện trong bài viết nhiều hơn bài nói, khớp với nghiên cứu ngữ liệu trước đó (O'Connor Di Vito, 1997, như được dẫn trong McManus & Mitchell, 2015). Người học nhận ra từ dẫn khẳng định kiểu *il faut que* tốt hơn liên từ và câu phủ định.
+
+**Biết luật chưa chắc dùng được.** Dudley và Slabakova (2021) cho người Anh học tiếng Pháp làm bài đánh giá câu và theo dõi chuyển động mắt khi đọc. Họ nhận ra subjonctif khi chấm câu, nhưng không dùng được kiến thức đó lúc đọc để hiểu; kiến thức này chủ yếu là tường minh, chưa thành phản xạ.
+
+**Subjonctif đến muộn.** Bartning và Schlyter (2004) đề xuất sáu giai đoạn phát triển tiếng Pháp nói của người lớn nói tiếng Thuỵ Điển. Ngữ cảnh bắt buộc đầu tiên là *il faut que*, nhưng lúc đầu người học đặt sau đó động từ chưa chia hoặc chia ở indicatif (như *il faut que j'écris*); ngữ cảnh đến muộn nhất là động từ ý kiến bị phủ định kiểu *je ne crois pas que* (tr. 287–288). Subjonctif xuất hiện từ giai đoạn 4 nhưng chưa ổn định, đến giai đoạn 5 mới dùng nhiều hơn.
+
+**Hàm ý cho người Việt.** Tôi chưa tìm được nghiên cứu nào về người Việt học subjonctif, nên đây là nhận định của tôi:
+
+1. Học trước các từ dẫn hay gặp (*il faut que*, ý muốn, cảm xúc) cùng các dạng bất quy tắc dùng nhiều: *être, avoir, faire, pouvoir, aller, savoir, vouloir*.
+2. Luyện riêng câu phủ định và liên từ, chỗ yếu đã được ghi nhận ở người học khác (McManus & Mitchell, 2015; Bartning & Schlyter, 2004).
+3. Dùng subjonctif khi nói và đọc thật, không chỉ trong bài điền từ (Dudley & Slabakova, 2021).
+
+## 11. Soi lại bài viết của chính tôi
+
+Rà ba bài viết có giáo viên chữa, tôi thấy năm chỗ phải chọn thức sau *que*. Đây chỉ là ví dụ minh hoạ, không phải thống kê; câu ở hai bài sau lấy từ bản chép đã sửa lỗi, còn phải đối chiếu với ảnh gốc.
+
+| Bài | Câu | Thức cần | Đã viết | Subjonctif có dạng riêng? |
+| --- | --- | --- | --- | --- |
+| Test 2, bản gốc | *il faut que la ville sciait agir* | subjonctif | *sciait agir* (sai) | Có: *agisse / agit* |
+| Test 2, bản nháp | *Il serait nécessaire que la mairie vérifie…* | subjonctif | *vérifie* (đúng) | Không |
+| Trúng xổ số | *je crois que cette cause peut améliorer…* | indicatif | *peut* (đúng) | Có: *puisse / peut* |
+| Cấm xe máy | *je pense que l'interdiction… serait…* | indicatif, conditionnel | *serait* (đúng) | Có: *soit / serait* |
+| Cấm xe máy | *il est nécessaire de réduire…* | nguyên thể | *de réduire* (đúng) | Không áp dụng |
+
+Bảng 5. Các ngữ cảnh chọn thức trong bài [Test 2](/blog/test-2-proposer-un-projet-pour-ameliorer-la-vie-des-habitants-a-hanoi/), bài [trúng xổ số](/blog/si-vous-gagniez-au-loto-que-feriez-vous-de-cet-argent/) và bài [cấm xe máy](/blog/etes-vous-pour-ou-contre-l-interdiction-des-motos-et-des-voitures-a-hanoi/).
+
+Bốn đúng, một sai, nhưng **chỗ** sai mới đáng chú ý: đó là chỗ duy nhất mà subjonctif có dạng khác indicatif. Chỗ subjonctif "đúng" (*vérifie*) trùng dạng với indicatif nên không chứng minh được tôi đã chọn subjonctif; hai lần chọn đúng có dạng riêng (*peut, serait*) đều là indicatif sau động từ ý kiến khẳng định. Nghĩa là dữ liệu nhỏ này **chưa có câu nào cho thấy tôi tự tạo được một dạng subjonctif riêng**, và kiểu lỗi *il faut que* + dạng không phải subjonctif chính là kiểu Bartning và Schlyter (2004) mô tả. Ngoài ra có ba chỗ tôi chọn đúng nguyên thể: *avant de commencer* (Test 2), *avant de signer le contrat* và *il vaut mieux vérifier* (bài [tìm nhà](/blog/conseils-pour-trouver-un-logement-au-vietnam/)).
+
+Về chữ *sciait*, tôi có hai giả thuyết nhưng chưa kết luận: định viết *sache agir* (subjonctif của *savoir*; câu vẫn đúng ngữ pháp), hoặc lẫn với *serait*, *savait*. Bài học cho lần sau: chủ động dùng vài cấu trúc có dạng subjonctif riêng, như *il faut que* + *faire, pouvoir, être*, để giáo viên có cơ hội sửa.
+
+## 12. Tự kiểm tra và kết luận
+
+Chia động từ trong ngoặc ở thức đúng:
+
+1. *Je pense qu'il … (venir).*
+2. *Je ne pense pas qu'il … (venir).*
+3. *Il est probable qu'il … (venir).*
+4. *Il est possible qu'il … (venir).*
+5. *Nous espérons qu'il … (venir).*
+6. *Il me semble que tu … (grandir).*
+7. *Je cherche un traducteur qui … (connaître) le japonais.*
+8. *On attendra jusqu'à ce que tu … (revenir).*
+9. *Après qu'ils … (arriver), ils iront saluer ma tante.*
+10. *Elle est déçue que nous ne lui … pas … (répondre).*
+11. *Supposons qu'il ne … pas (venir).*
+12. *Pour résoudre ces problèmes, il faut que la ville … (agir).*
+
+<details class="callout callout-example">
+<summary>Đáp án</summary>
+
+**1–4.** *viendra* (hoặc *vient*), *vienne*, *viendra*, *vienne* (Boularès & Frérot, 1997).
+
+**5–6.** *viendra* (Larousse, n.d.-d); *as grandi* (Larousse, n.d.-e).
+
+**7.** *connaisse*: tiền ngữ chưa chắc tồn tại (Boularès & Frérot, 1997).
+
+**8–9.** *reviennes* (OQLF, 2025); *seront arrivés*: *après que* + indicatif (OQLF, n.d.-b).
+
+**10–11.** *ayons … répondu*: việc xảy ra trước; *vienne*: giả sử (Boularès & Frérot, 1997).
+
+**12.** *agisse*.
 
 </details>
 
-<details class="callout callout-question">
-<summary>Cần kiểm tra</summary>
+Subjonctif không phải "thì của cảm xúc", cũng không chỉ là một danh sách để thuộc. Phần lớn trường hợp trả lời được bằng một câu hỏi: người nói coi việc phía sau *que* là thật (kể cả "có lẽ"), hay mới là điều có thể? Phần còn lại là quy ước theo từng từ (*espérer, après que* + indicatif; *regretter, bien que* + subjonctif dù nói về sự thật), và lời nói tự nhiên cũng cho thấy chính từ dẫn là yếu tố mạnh nhất (Poplack et al., 2013). Soát lại sổ, tôi sửa khoảng mười chỗ, từ định nghĩa thức và câu "ngôi *ils* luôn giống indicatif" đến *souhaiter, espérer, il semble que, supposer que, ne pas douter que, sans que, de sorte que, après que*. Về cách học: luyện câu phủ định, liên từ, dạng bất quy tắc thường dùng, và dùng subjonctif khi nói, đọc thật.
 
-- Memo 179: sổ ghi thức giả định diễn đạt "hy vọng (hope)"; Memo 187 chính sổ lại ghi espérer (hope) là ngoại lệ, theo sau bởi chỉ định. Giữ nguyên cả hai, chủ vault đối chiếu.
-- Memo 187: dòng "- Will, desire: (le" bị viết dở trên trang sổ, chữ "désir)" nằm ở dòng đầu giấy note dán đè lên → ghép thành "Will, desire (le désir)".
-- Memo 188 (IMG_3534 / 3535): mục "Opinion" ghi "Dưới đây là danh sách…" nhưng trang sổ không có danh sách; danh sách nằm trên giấy note dán (ảnh 3535), đã đặt ngay sau mục này.
-- Memo 190: "HT giả định biểu thị một hành động đồng thời hoặc hơt (?) trong tương lai" – chữ "hơt" không rõ nghĩa, có thể định viết "hoặc ở trong tương lai" hoặc "hoặc sau".
-- Giấy note (IMG_3529): vị trí giấy note không cố định (cầm trên tay đè lên Memo 184–185); đặt ngay sau câu "Các biểu thức sau hàm ý sự chắc chắn" vì nội dung là danh sách các biểu thức chắc chắn.
-- Giấy note (IMG_3531): "souhaiter que: to hope that" — giữ nguyên như sổ (souhaiter thường dịch "to wish").
-- Giấy note (IMG_3532): các dòng "redouter que", "avoir peur que", "être heureux(se) que", "être malheureux(se) que" để trống phần nghĩa tiếng Anh (chỉ có gạch ngang) — giữ nguyên "____".
+<div class="callout callout-note">
+<p class="callout-title">Ghi công</p>
 
-</details>
+Cấu trúc và một phần danh sách trong sổ tay gốc dựa trên *Tex's French Grammar* (Blyth et al., n.d.), Français interactif, COERLL, The University of Texas at Austin, cấp phép CC BY 3.0. Bài này diễn đạt lại và sửa đổi, không dịch nguyên văn.
 
+</div>
 
-<!-- Memo 178–179 -->
-## 12. Subjunctive mood
-- Thức cầu khẩn (giả định) là một trong 4 thức trong TP. Thức là một thuật ngữ ngữ pháp giúp phân loại thì của động từ. Thức giả định được sử dụng phổ biến trong TP hơn TA. Nó có 2 thì: hiện tại và quá khứ. Nó diễn đạt một số khái niệm, chẳng hạn như mong muốn (wish), hy vọng (hope) hoặc nghi ngờ (doubt) cũng như nghĩa vụ (obligation) hoặc sự cần thiết (necessity). Một trong những thành ngữ luôn đi kèm với thức giả định là: "il faut que..." (it is necessary that...) (→ [French Moods](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/), [Mood](/blog/temps-aspect-mode-et-voix-thi-the-thuc-va-dang/), [The subjunctive mood](/blog/modes-et-structure-de-la-phrase-thuc-va-cau-truc-cau/), [Bảng chia subjonctif](/blog/parties-du-discours-les-verbes-tu-loai-dong-tu/); ví dụ trong bài viết: [Test 2](/blog/test-2-proposer-un-projet-pour-ameliorer-la-vie-des-habitants-a-hanoi/))
+## Tài liệu tham khảo
 
-### i) Regular
-- **"-er, -re và -ir" verbs**:
-	- Các đuôi giả định giống nhau cho tất cả động từ: "-e, -es, -e, -ions, -iez, -ent". Đối với hầu hết các động từ, thức giả định được hình thành bằng cách bỏ đuôi "-ent" khỏi ngôi thứ 3 số nhiều của thì hiện tại chỉ định (ils/elles) và thêm đuôi giả định.
-	<!-- Memo 180–181 -->
-	- *(Ghi chú lề trên Memo 180: "er: thường giống indicatif và giống nhau!" — kèm ngoặc: "gốc nous cho ngôi ns, vs (imparfait)" / "gốc ils/elles cho je, tu, il/elle, (ils) → giống indicatif".)*
-	- Lưu ý: có sự tương đồng giữa thì hiện tại chỉ định (indicative) và giả định của động từ đuôi "-er". Điều này là do sự cùng gốc được sử dụng cho 2 thức, đuôi cũng giống hệt nhau trừ dạng nous và vous. (→ [Verbes en -er au présent](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/))
-		- → **Boot form** thức giả định của ĐT đuôi "er" giống hệt về phát âm và cách chia với thì hiện tại chỉ định.
-	- Vì thức giả định xuất hiện trong mệnh đề phụ nên liên từ phụ thuộc "que" thường được đưa vào như một phần hệ biến hoá (paradigm) cho dạng giả định.
-	- Dạng số ít của động từ "-re, -ir", thức giả định trông và nghe khác so với thức chỉ định hiện tại do gốc khác nhau.
-	- Lưu ý rằng, đối với tất cả các cách chia động từ, ngôi thứ 3 số nhiều của thì hiện tại giả định luôn giống như thức chỉ định thì gốc của thức giả định xuất phát từ đây.
-- **Irregular verbs with regular subjunctive forms**: Nhiều ĐT BQT ở thì hiện tại chỉ định lại tuân theo QT ở thể giả định. Nói cách khác, gốc ĐT được hình thành bằng cách bỏ đuôi "-ent" khỏi ngôi 3 số nhiều của thì h.tại chỉ định và thêm đuôi giả định.
+Académie française. (n.d.-a). Subjonctif. In *Dictionnaire de l'Académie française* (9e éd.). https://www.dictionnaire-academie.fr/article/A9S3147
 
-| ĐT        | Giả định     | ĐT      | Giả định  |
-| --------- | ------------ | ------- | --------- |
-| dormir    | je dorme     | sourire | je sourie |
-| sortir    | je sorte     | dire    | je dise   |
-| partir    | je parte     | écrire  | j'écrive  |
-| lire      | je lise      | mettre  | je mette  |
-| connaître | je connaisse |         |           |
+Académie française. (n.d.-b). Subordonnée relative : indicatif ou subjonctif ? In *Questions de langue*. https://www.dictionnaire-academie.fr/article/QDL083
 
-- **Stem changing verbs**: Một số ĐT có gốc thay đổi ở thì hiện tại chỉ định có một gốc cho thức giả định dạng "nous, vous" và một gốc khác cho dạng "boot". VD (ví dụ) như động từ acheter, appeler.
+Académie française. (2015, novembre). Le conditionnel est-il un mode ou un temps qui fait partie de l'indicatif ? In *Courrier des internautes*. https://www.dictionnaire-academie.fr/article/QR_0169
 
-### ii) Irregular
-- **Verbs with two stems**: Có một số loại cấu trúc giả định bất qui tắc. Loại đầu tiên liên quan đến các ĐT có 2 gốc ở thể giả định. Các động từ này có 2 gốc ĐT BQT ở thì h.tại chỉ định (VD: ils viennent, nhưng nous venons). Gốc của ĐT dạng boot là ngôi thứ 3 số nhiều của thì hiện tại chỉ định, giống hệt với gốc ĐT ở thể giả định theo QT. Ngôi thứ nhất số nhiều (nous) của thì HT (hiện tại) chỉ định cung cấp gốc ĐT cho dạng "nous, vous" của thể giả định. (→ [Verbes irréguliers au présent](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/))
-	<!-- Memo 182–183 -->
-	- Một số ĐT thường gặp có 2 gốc:
+Bartning, I., & Schlyter, S. (2004). Itinéraires acquisitionnels et stades de développement en français L2. *Journal of French Language Studies, 14*(3), 281–299. https://doi.org/10.1017/S0959269504001802
 
-| ĐT     | Giả định                | ĐT       | Giả định                   |
-| ------ | ----------------------- | -------- | -------------------------- |
-| venir  | je vienne, nous venions | prendre  | je prenne, nous prenions   |
-| aller  | j'aille, nous allions   | recevoir | je reçoive, nous recevions |
-| boire  | je boive, nous buvions  | tenir    | je tienne, nous tenions    |
-| croire | je croie, nous croyions | voir     | je voie, nous voyions      |
-| devoir | je doive, nous devions  | vouloir  | je veuille, nous voulions  |
-| mourir | je meure, nous mourions |          |                            |
+Blyth, C., Kelton, K., Myers, L., Delyfer, C., Munn, Y., & Lippmann, J. (n.d.). *Tex's French grammar* [Các trang về subjonctif]. Français interactif, COERLL, The University of Texas at Austin. https://www.laits.utexas.edu/tex/gr/index.html
 
-- **Avoir and être**: "Avoir và être" rất BQT trong thể giả định và cần phải ghi nhớ. Lưu ý rằng các dạng nous và vous được viết bằng chữ "y" (thay vì "i" như thức giả định thông thường). Đặc biệt lưu ý cách phát âm của các dạng giả định của "avoir", có cùng nguyên âm như "j'ai" - ngôi thứ nhất số ít trong thì hiện tại chỉ định.
-	- **Avoir**:
+Boularès, M., & Frérot, J.-L. (1997). *Grammaire progressive du français avec 400 exercices: Niveau avancé*. CLE International.
 
-		| Số ít             | Số nhiều           |
-		| ----------------- | ------------------ |
-		| que j'aie         | que nous ayons     |
-		| que tu aies       | que vous ayez      |
-		| qu'il/elle/on ait | qu'ils/elles aient |
+Dudley, A., & Slabakova, R. (2021). L2 knowledge of the obligatory French subjunctive: Offline measures and eye tracking compared. *Languages, 6*(1), Article 31. https://doi.org/10.3390/languages6010031
 
-	- **Être**:
+Larousse. (n.d.-a). Attendre. In *Dictionnaire de français Larousse*. https://www.larousse.fr/dictionnaires/francais/attendre
 
-		| Số ít              | Số nhiều            |
-		| ------------------ | ------------------- |
-		| que je sois        | que nous soyons     |
-		| que tu sois        | que vous soyez      |
-		| qu'il/elle/on soit | qu'ils/elles soient |
+Larousse. (n.d.-b). *Conjugaison* [Bảng chia aller, falloir, valoir, vouloir]. https://www.larousse.fr/conjugaison/francais
 
-	- → Giống với dạng imperative (thức mệnh lệnh). (→ [Impératif](/blog/l-imperatif-thuc-menh-lenh/))
-- **Faire, savoir, pouvoir**: các ĐT này có gốc hoàn toàn BQT nhưng đuôi lại theo QT.
-	- faire → je fasse
-	- pouvoir → je puisse
-	- savoir → je sache → giống imperative
+Larousse. (n.d.-c). Douter. In *Dictionnaire de français Larousse*. https://www.larousse.fr/dictionnaires/francais/douter
 
-### iii) Usage: sujet différent
-- **Obligation**: Thức giả định là bắt buộc sau các sự biểu đạt phi nhân xưng (impersonal expression) về sự cần thiết (necessity) và nghĩa vụ (obligation). Một sự biểu đạt là bất kì cách biểu đạt nào được mở đầu bởi đại từ phi nhân xưng "il". Một trong những dạng phổ biến nhất là "il faut que..." (it is necessary that...). Khi mệnh đề chính sử dụng "il faut que", mệnh đề phụ theo sau phải ở thể giả định. Lưu ý rằng luôn có 2 chủ ngữ khác nhau trong 2 mệnh đề. (→ [Verbes impersonnels](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/); tổng hợp cách diễn đạt obligation: [Fiches de synthèse](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
-	<!-- Memo 184–185 -->
-	- Lưu ý rằng cụm từ "il faut que" mạnh mẽ và nhấn mạnh hơn động từ "devoir" (theo sau là ĐT nguyên thể) - "must / be supposed to". (→ [Verbes modaux](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
-	- Một số cách biểu đạt phi nhân xưng khác:
-		- il est important que: it is important that.
-		- — nécessaire que: — necessary —.
-		- — essentiel —: — essential —.
-		- — inévitable —: — unavoidable —.
-		- — préférable —: — preferable —.
-		- — indispensable —: — indispensable —.
-		- il vaut mieux que: it is better that.
-- **Doubt**: Sự lựa chọn thức cho thấy mức độ không chắc chắn của người nói: giả định ngụ ý người nói nghi ngờ về sự tồn tại hoặc khả năng của những gì được mô tả; chỉ định ngụ ý người nói tin hoặc chắc chắn rằng những gì đang được mô tả là có thể hoặc thực sự tồn tại.
-	- **Expression of doubt and uncertainty**: Thức giả định xuất hiện trong mệnh đề phụ được mở đầu bởi ĐT và cách diễn đạt sự nghi ngờ hoặc không chắc chắn bất cứ khi nào có 2 chủ ngữ khác nhau trong 2 mệnh đề được liên kết bằng liên từ phụ thuộc "que".
-		- il est (im)possible que: it is (im)possible that.
-		- — incroyable que: it is unbelievable that.
-		- — douteux que: it is doubtful that.
-		- douter que: to doubt that.
-	- **Interrogatives and negatives**: Sự nghi ngờ thường được thể hiện bằng cách đặt câu hỏi hoặc phủ định một mệnh đề. (→ [Négation](/blog/la-negation-phu-dinh/), [Interrogation](/blog/l-interrogation-cau-hoi/))
-		- Các biểu thức sau hàm ý sự chắc chắn, nên khi chúng được sd trong các câu khẳng định, chúng sẽ được theo sau bởi thức chỉ định.
-			> [!note] Giấy note dán
-			> - croire que: to believe that
-			> - penser que: to think that
-			> - être sûr que: to be sure that
-			> - trouver que: to find that
-			> - se douter que: to suspect that
-			> - supposer que: to suppose that
-			> - avoir l'impression que: to have the impression that
-			> - il est vrai que: it is true that
-			> - — probable que: it is probable that
-			> - — clair que: it is clear that
-			> - — évident que: it is evident that
-			> - — certain que: it is certain that
-			> - il paraît que: it appears that
-			> - il (me) semble que: it seems (to me) that
+Larousse. (n.d.-d). Espérer. In *Dictionnaire de français Larousse*. https://www.larousse.fr/dictionnaires/francais/espérer
 
-		- Tuy nhiên, khi những cách biểu đạt này được dùng ở thể nghi vấn hoặc phủ định, sự nghi ngờ được đưa vào. Do đó, trong mệnh đề phụ, thức giả định được sử dụng. Mặt khác, khi những biểu đạt nghi ngờ bị phủ định, chúng biểu thị sự chắc chắn và do đó được theo sau bởi thức chỉ định.
-	<!-- Memo 186–187 -->
-	- **Relative clauses**: Khi mệnh đề quan hệ diễn tả sự không chắc chắn, chúng cũng kích hoạt việc sử dụng thức giả định. Nếu sự tồn tại của tiền đề (antecedent - từ mà một từ tiếp theo được dùng để thay thế), hoặc đối tượng tham chiếu, không chắc chắn, thì thức giả định được sử dụng để nhấn mạnh sự không chắc chắn này. Mặt khác, nếu sự tồn tại hoặc khả năng của tiền đề là có khả năng (likely) và/hoặc chắc chắn (definite) thì sự nghi ngờ được loại bỏ và thức chỉ định được sử dụng. (→ [Pronoms relatifs](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/))
-	- **Superlatives**: Việc sử dụng so sánh nhất có thể ảnh hưởng đến việc lựa chọn giữa giả định và chỉ định. Giả định được dùng sau các cụm so sánh nhất chứa đựng ý kiến chủ quan. Mặt khác, nếu cụm từ so sánh nhất chứa đựng một sự thật hoặc một ý kiến hoàn toàn khách quan, thì chỉ định được sử dụng vì ý tưởng đó không có bất kỳ sự nghi ngờ nào. List sau đây bao gồm một nhóm các cách diễn đạt thường thường có cách sd như so sánh nhất. (→ [Adjectifs – superlatif](/blog/les-adjectifs-tinh-tu/))
-		- le seul: the only
-		- l'unique: the only
-		- il n'y a que: there is only
-		- le dernier: the last
-		- le premier: the first
-		- le meilleur: the best
-- **Will, desire** (le désir)
-	> [!note] Giấy note dán
-	> - aimer que: to like that
-	> - aimer mieux que: to prefer that
-	> - attendre que: to wait/expect that
-	> - désirer que: to desire that
-	> - exiger que: to require that
-	> - préférer que: to prefer that
-	> - souhaiter que: to hope that
-	> - vouloir que: to want that
-	> - vouloir bien que: to be willing that
+Larousse. (n.d.-e). Sembler. In *Dictionnaire de français Larousse*. https://www.larousse.fr/dictionnaires/francais/sembler
 
-	- **Will, desire**: Thức giả định được dùng trong mệnh đề phụ thuộc (dependent) sau các cách biểu đạt ý định (will) và mong muốn (desire) bất cứ khi nào có 2 chủ ngữ khác nhau trong 2 mệnh đề được liên kết bằng liên từ phụ thuộc "que".
-		- Tuy nhiên cần lưu ý rằng espérer (hope) là ngoại lệ và được theo sau bởi câu chỉ định. Nhớ rằng khi chỉ có một chủ ngữ, động từ chia được theo sau bởi ĐT nguyên thể.
-	- **Emotion**: Thức giả định được dùng sau các biểu đạt cảm xúc (emotion) và ý kiến (opinion). Lưu ý rằng thức giả định được tìm thấy trong mệnh đề phụ của các câu có sự thay đổi chủ ngữ từ mệnh đề chính sang phụ.
-		> [!note] Giấy note dán
-		> - se réjouir que: to rejoice/celebrate that
-		> - craindre que: to fear that
-		> - redouter que: ____
-		> - avoir peur que: ____
-		> - être content(e) que: to be happy that
-		> - être heureux(se) que: ____
-		> - être ravi(e) que: to be delighted that
-		> - être étonné(e) que: to be surprised that
-		> - être mécontent(e) que: to be unhappy that
-		> - être malheureux(se) que: ____
-		> - être triste que: to be sad that
-		> - être surpris(e) que: to be surprised that
-		> - être impatient(e) que: to be impatient that
-		> - être désolé(e) que: to be sorry that
-		> - regretter que: to regret that
+McManus, K., & Mitchell, R. (2015). Subjunctive use and development in L2 French: A longitudinal study. *Language, Interaction and Acquisition, 6*(1), 42–73. https://doi.org/10.1075/lia.6.1.02mcm
 
-		- Lưu ý có 2 cách dịch vì thức giả định là thì của giả thuyết và tiềm năng, đôi khi mang nghĩa tương lai.
-		<!-- Memo 188–189 -->
-		- Chỉ ngữ cảnh mới quyết định hành động trong thức giả định ám chỉ thời điểm hiện tại hay tương lai.
-	- **Opinion**: Dưới đây là danh sách các cách diễn đạt phổ biến của ý kiến phi nhân xưng, còn rất nhiều cách diễn đạt tương tự khác nữa vì bất kỳ tính từ nào cũng có thể được sử dụng. Nhớ rằng các cách diễn đạt phi nhân xưng luôn có "il" làm chủ ngữ. Những cách diễn đạt này được theo sau bởi một mệnh đề phụ thuộc ở thức giả định.
-		> [!note] Giấy note dán
-		> - **il est bon que**: it is good that
-		> - **il est juste que**: it is fair that
-		> - **il est dommage que**: it is unfortunate that
-		> - **il est utile que**: it is useful that
-		> - **il est urgent que**: it is urgent that
-		> - **il est logique que**: it is logical that
+Office québécois de la langue française. (n.d.-a). Généralités sur le subjonctif. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/24236/la-grammaire/le-verbe/modes/subjonctif/generalites-sur-le-subjonctif
 
-	- **One subject**: nếu các cách biểu đạt cảm xúc hoặc ý kiến chỉ có một chủ ngữ trong toàn bộ câu, thì giới từ "de + V nguyên thể" sẽ thay thế "que + giả định". (→ [Infinitive constructions](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
+Office québécois de la langue française. (n.d.-b). Mode verbal avec après que et avant que. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/21132/la-grammaire/le-verbe/modes/concordance-des-temps/mode-verbal-avec-apres-que-et-avant-que
 
-### iv) Conjunction with subjunctive
-- Khi các liên từ sau đây mở đầu một mệnh đề phụ với một chủ ngữ mới, chúng luôn kích hoạt thức giả định. Nhớ rằng chủ ngữ của mệnh đề chính và phụ ≠ nhau. (→ [Conjonctions](/blog/les-conjonctions-lien-tu/))
-	- **Conjunction expressing intention** (mục đích): "pour que, afin que, de sorte que" (in order that, so that) (→ Le but trong [Fiches de synthèse](/blog/fiches-de-synthese-pour-l-expression-tong-hop-cho-bai-viet/))
-	- **Conj expressing fear**: "de crainte que, de peur que" + (ne) (for fear that, lest)
-		- "ne": không bắt buộc, đôi khi được thêm vào một số mệnh đề giả định vì mục đích văn phong nghệ thuật, trong những trường hợp này nó không phủ định động từ.
-	- **Conj expressing time**: avant que (before), en attendant que (while waiting for), jusqu'à ce que (until).
-	- **Conj expressing obstacles** (trở ngại) hoặc **restriction** (hạn chế): bien que, quoique (although), à moins que (unless).
-	- **Conj expressing a condition**: à condition que (on the condition that), pourvu que (provided that), sans que (without).
-	- **Conjoining conj which have the same subject**: Thức giả định là bắt buộc sau một vài liên từ, ngay cả khi chủ ngữ vẫn giữ nguyên từ mệnh đề chính đến phụ. Bốn liên từ này là: "bien que, quoique, pourvu que, jusqu'à ce que".
+Office québécois de la langue française. (n.d.-c). Subjonctif après certains verbes. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/24253/la-grammaire/le-verbe/modes/subjonctif/subjonctif-apres-certains-verbes
 
-### v) Past subjunctive
-- **Formation**: Thức giả định quá khứ giống với thì passé composé ở chỗ nó được hình thành bằng: (→ [Passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/))
-	- **Past subjunctive** = aux verb in present subjunctive (Avoir / Être) + past participle (Main verb).
+Office québécois de la langue française. (n.d.-d). Valeurs particulières du subjonctif. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/24248/la-grammaire/le-verbe/modes/subjonctif/valeurs-particulieres-du-subjonctif
 
-<!-- Memo 190 -->
-- **Uses**: Quá khứ giả định được dùng trong mệnh đề phụ thuộc mô tả một hành động xảy ra trước hành động của mệnh đề chính. QK (quá khứ) giả định được mở đầu bởi cùng loại mệnh đề của HT (hiện tại) giả định.
-	- Lưu ý: nghĩa thì QK (past tense meaning) của sự kiện được mã hoá trong QK giả định. Mặt khác, HT giả định biểu thị một hành động đồng thời hoặc hơt (?) trong tương lai.
-	- Lưu ý: Thì của động từ trong mệnh đề chính trong TP (tiếng Pháp) không dự đoán thì của thể giả định trong mệnh đề phụ thuộc. Việc lựa chọn giữa QK và HT phụ thuộc vào mối quan hệ thời gian giữa hai mệnh đề.
+Office québécois de la langue française. (2016). Subjonctif et subordonnée relative. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/25168/la-grammaire/le-verbe/modes/subjonctif/subjonctif-et-subordonnee-relative
 
-### vi) Ways to avoid subjunctive
-- **Biểu đạt phi nhân xưng với mệnh đề nguyên thể**: Nhiều biểu đạt phi nhân xưng sd (sử dụng) thể giả định có thể được sửa đổi và hoàn thành bằng mệnh đề nguyên thể. Lưu ý rằng cấu trúc nguyên thể loại bỏ chủ ngữ của mệnh đề phụ thuộc ban đầu. (→ [Infinitive constructions](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/))
-- **Thay thế liên từ bởi "de + inf."**: Một số liên từ thường theo sau bởi thức giả định có giới từ tương đương, do đó câu được diễn đạt lại bằng cách sd một chủ ngữ, với một động từ nguyên thể theo sau giới từ:
-	- "à condition que, afin que, à moins que, avant que, de crainte que, de peur que, en attendant que" → "que" thành "de"
-	- pour que → pour, sans que → sans.
-	- → Việc sử dụng động từ nguyên thể bao gồm việc nhắc lại nội dung (restatement) do đó chỉ có một chủ ngữ ngữ pháp trong câu.
+Office québécois de la langue française. (2025). Subjonctif ou indicatif après les subordonnants composés. In *Banque de dépannage linguistique*. https://vitrinelinguistique.oqlf.gouv.qc.ca/24238/la-grammaire/le-verbe/modes/subjonctif/subjonctif-ou-indicatif-apres-les-subordonnants-composes
 
-<!-- Trang sau Memo 190 (không có số Memo) -->
-- **Conjunction thay thế bởi preposition + object**: Một số liên từ, như "jusqu'à ce que" và "bien que", mở đầu giả định, có thể nói lại bằng cách sử dụng giới từ được theo sau bởi danh từ. (→ [Prépositions](/blog/les-prepositions-gioi-tu/))
+Poplack, S., Lealess, A., & Dion, N. (2013). The evolving grammar of the French subjunctive. *Probus, 25*(1), 139–195. https://doi.org/10.1515/probus-2013-0005
+
+Wiktionnaire. (n.d.). *Conjugaison:français* [Bảng chia acheter, agir, parler, pouvoir, savoir]. https://fr.wiktionary.org/wiki/Conjugaison:français

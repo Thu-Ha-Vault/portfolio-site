@@ -11,7 +11,7 @@ vaultPath: >-
   survey.md
 url: >-
   /projects/project-management-capstone/quality-management-plan-and-survey-sauce-and-spoon-tablet-pilot/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 4
 project: project-management-capstone
 isIndex: false

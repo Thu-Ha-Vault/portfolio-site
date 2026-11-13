@@ -9,7 +9,7 @@ folder: Projects / Capstone - Project Management
 vaultPath: Projects/Capstone - Project Management/01 - Project charter.md
 url: >-
   /projects/project-management-capstone/project-charter-sauce-and-spoon-tabletop-tablet-pilot/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 1
 project: project-management-capstone
 isIndex: false

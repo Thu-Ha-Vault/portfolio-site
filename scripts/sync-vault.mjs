@@ -169,6 +169,45 @@ for (const f of [...published.keys()]) {
   parsed.set(f, fm);
 }
 
+// ---------- finished articles take over their source notes ----------
+// A note under config.articles.root with `type: article` and `replaces: "<path under blog.root>"` is published at
+// the source note's URL instead of the note itself (the note stays untouched in the vault). Links to either file
+// lead to that page. `publish: false` on the article keeps the original note online.
+const sourceOfArticle = new Map(); // article abs → source abs
+const urlTitle = new Map(); // source abs → the source note's own title (its URL stays the same)
+const stats1 = { articles: 0 };
+if (config.articles?.root) {
+  const byRelNFC = new Map(allFiles.map((f) => [rel(f).normalize('NFC'), f]));
+  const aDir = path.join(VAULT, config.articles.root);
+  for (const f of fs.existsSync(aDir) ? walk(aDir) : []) {
+    if (!f.endsWith('.md') || SKIP_FILES.has(path.basename(f)) || /^_MOC - /.test(path.basename(f))) continue;
+    let fm;
+    try {
+      fm = matter(fs.readFileSync(f, 'utf8'));
+    } catch {
+      console.warn(`article: unreadable frontmatter in ${rel(f)}`);
+      continue;
+    }
+    if (fm.data.type !== 'article' || !fm.data.replaces || fm.data.publish === false) continue;
+    const target = String(fm.data.replaces).normalize('NFC').replace(/^\/+/, '').replace(new RegExp(`^${config.blog.root}/`), '');
+    const srcAbs = byRelNFC.get(`${config.blog.root}/${target}`.normalize('NFC'));
+    if (!srcAbs || isExcluded(rel(srcAbs))) {
+      console.warn(`article ${rel(f)}: replaces "${target}" is not a blog note; skipped`);
+      continue;
+    }
+    if (!published.has(srcAbs)) {
+      // the note itself is hidden (publish: false, or still a skeleton): the article gets the URL it would have had
+      const s = slugPath(rel(srcAbs).slice(config.blog.root.length + 1));
+      published.set(srcAbs, { collection: 'blog', slug: s, url: `/blog/${s}/`, isIndex: false });
+    }
+    published.get(srcAbs).article = f;
+    urlTitle.set(srcAbs, String(parsed.get(srcAbs)?.data?.title || path.basename(srcAbs, '.md')).normalize('NFC'));
+    parsed.set(srcAbs, fm);
+    sourceOfArticle.set(f, srcAbs);
+    stats1.articles++;
+  }
+}
+
 // ---------- public URLs ----------
 // Files keep their folder structure internally (for the topic tree); public URLs are short and flat:
 //   /blog/<post>/   /topics/<topic>/   /projects/<project>/   /projects/<project>/<note>/
@@ -183,10 +222,12 @@ const titleOf = (abs) => {
   const d = parsed.get(abs)?.data || {};
   return String(d.title || path.basename(abs, '.md')).normalize('NFC');
 };
+// URLs come from the note's own title, so a finished article keeps the URL its source note already had
+const slugTitleOf = (abs) => urlTitle.get(abs) ?? titleOf(abs);
 const titleCount = new Map();
-for (const abs of published.keys()) titleCount.set(titleOf(abs), (titleCount.get(titleOf(abs)) || 0) + 1);
+for (const abs of published.keys()) titleCount.set(slugTitleOf(abs), (titleCount.get(slugTitleOf(abs)) || 0) + 1);
 // notes that share a title (e.g. every lesson titled after the course) are named by their file instead
-const nameOf = (abs) => (titleCount.get(titleOf(abs)) > 1 ? path.basename(abs, '.md').normalize('NFC') : titleOf(abs));
+const nameOf = (abs) => (titleCount.get(slugTitleOf(abs)) > 1 ? path.basename(abs, '.md').normalize('NFC') : slugTitleOf(abs));
 const used = new Set();
 const claim = (base, extra) => {
   let s = base || 'note';
@@ -259,6 +300,7 @@ function resolveNote(target, fromAbs) {
   if (t.includes('/')) {
     const abs = path.join(VAULT, t + '.md');
     if (published.has(abs)) return abs;
+    if (sourceOfArticle.has(abs)) return sourceOfArticle.get(abs);
   }
   const base = path.basename(t).toLowerCase();
   const cands = (byBasename.get(base) || []).filter((c) => c.endsWith('.md'));
@@ -266,7 +308,8 @@ function resolveNote(target, fromAbs) {
   // prefer the candidate closest to the current note
   const fromDir = path.dirname(fromAbs);
   cands.sort((a, b) => commonPrefix(b, fromDir) - commonPrefix(a, fromDir));
-  return cands[0];
+  // a finished article stands in for its source note
+  return sourceOfArticle.get(cands[0]) || cands[0];
 }
 const commonPrefix = (a, b) => {
   let i = 0;
@@ -585,10 +628,10 @@ for (const [abs, dest] of published) {
     tags: toArray(data.tags).map(String).filter((t) => t !== 'second-brain'),
     section: dest.collection === 'blog' ? (folderParts[1] || 'Resources').normalize('NFC') : undefined,
     folder: folderParts.slice(dest.collection === 'blog' ? 1 : 0).join(' / ').normalize('NFC'),
-    vaultPath: r,
+    vaultPath: dest.article ? rel(dest.article) : r,
     url: dest.url,
     topic: dest.topic,
-    updated: updatedOf(abs),
+    updated: updatedOf(dest.article || abs),
     source: data.source && /^https?:/.test(String(data.source)) ? String(data.source) : undefined,
     date: toDate(data.date),
     status: data.status ? String(data.status) : undefined,
@@ -952,6 +995,7 @@ console.log(
   `Synced ${stats.notes} notes (${[...published.values()].filter((d) => d.collection === 'blog').length} blog, ` +
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
     `${new Set(assetJobs.values()).size} images (${stats.covers} covers, ${stats.gallery} gallery photos, ${stats.noDims} without dimensions). ` +
-    `Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}.` +
+    `Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}. ` +
+    `Finished articles in place of notes: ${stats1.articles}.` +
     (privateDropped.size ? ` Private photos dropped from notes (images.exclude): ${privateDropped.size}.` : '')
 );

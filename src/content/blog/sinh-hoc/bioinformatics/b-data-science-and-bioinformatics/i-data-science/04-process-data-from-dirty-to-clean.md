@@ -1,708 +1,516 @@
 ---
-title: 'Course 4: Process data from Dirty to Clean'
-type: course-note
+title: 'Dữ liệu bẩn trong khoa học: từ lỗi Excel đổi tên gen đến ngộ nhận “n ≥ 30”'
+type: article
 tags:
-  - bioinformatics
-  - data-science-and-bioinformatics
+  - article
+  - biology
   - data-science
-  - course-04
+  - data-cleaning
+  - biostatistics
 section: Sinh học
 folder: >-
   Sinh học / Bioinformatics / B - Data Science and Bioinformatics / I - Data
   Science
 vaultPath: >-
-  Resources/Sinh học/Bioinformatics/B - Data Science and Bioinformatics/I - Data
-  Science/04 - Process data from Dirty to Clean.md
+  Projects/Portfolio Website/Bài viết/Sinh học/BV - 04 - Process data from Dirty
+  to Clean.md
 url: /blog/process-data-from-dirty-to-clean/
 topic: biology
-updated: '2026-11-11'
-status: đã xong
+updated: '2026-11-13'
+date: '2026-11-13'
+status: draft
 order: 4
 description: >-
-  Data integrity: The accuracy, completeness, consistency, and trustworthiness
-  of data throughout its lifecycle.
+  Dữ liệu khoa học có thể bẩn theo những cách khó nhận ra, và chính công cụ quen
+  thuộc cũng gây lỗi: 30,9% số bài báo có danh sách gen dạng Excel trên PubMed
+  Central giai đoạn 2014–2020 chứa tên gen bị đổi thành ngày tháng
 isIndex: false
 ---
-### i. Module 1: The importance of integrity
+Dữ liệu khoa học có thể bẩn theo những cách khó nhận ra, và chính công cụ quen thuộc cũng gây lỗi: 30,9% số bài báo có danh sách gen dạng Excel trên PubMed Central giai đoạn 2014–2020 chứa tên gen bị đổi thành ngày tháng hoặc con số (Abeysooriya et al., 2021). Bài thứ tư của series *Phân tích dữ liệu dựa trên bằng chứng (Evidence-based Data Analytics)* viết lại Course 4 của khoá Google Data Analytics với nguồn học thuật: quy trình làm sạch có ghi chép bằng spreadsheet, SQL và Python; case study lỗi tên gen; và đính chính các hiểu lầm về “n ≥ 30”, khoảng tin cậy 95% và statistical power, kèm checklist, mẫu changelog và code để bạn tự chạy lại.
 
-#### Data integrity and analytics
+## 1. Mở đầu: dữ liệu bẩn là chuyện của khoa học, không chỉ của doanh nghiệp
 
-- Data integrity: The accuracy, completeness, consistency, and trustworthiness of data throughout its lifecycle.
+Dán tên gen DEC1 vào Excel, ô đó hiện “1-DEC” vì Excel hiểu là ngày 1 tháng 12; mã RIKEN “2310009E13” thành số thực 2,31 × 10¹³. Zeeberg et al. (2004) gặp hai kiểu lỗi này khi xử lý dữ liệu microarray: ít nhất 30 tên gen bị đổi sang ngày, ít nhất 2.000 định danh bị đổi sang số thực nếu tính cả RIKEN ID. Cả hai **không đảo ngược được**, và đã lọt vào cả những cơ sở dữ liệu công khai được biên tập cẩn thận.
 
-- Data replication: The process of storing data in multiple locations
+Course 4 (Google, n.d.) nhìn dữ liệu bẩn (dirty data) từ góc doanh nghiệp; các con số thiệt hại theo ngành trong ghi chú của tôi đã mất nguồn nên không dùng lại. Trong khoa học, cái giá là kết luận sai và kết quả không tái lập được. Luận điểm xuyên suốt bài lấy từ Van den Broeck et al. (2005): làm sạch dữ liệu (data cleaning) là phần thiết yếu của nghiên cứu và nên được đưa vào **thiết kế nghiên cứu**; bài báo nên mô tả cách làm sạch, loại và tỷ lệ lỗi, tỷ lệ sửa và xoá.
 
-- Data transfer: The process of copying data from a storage device to memory, or from one computer to another.
+[Bài 03](/blog/prepare-data-for-exploration/) hỏi nguồn dữ liệu có đáng tin không; bài này hỏi tiếp: dữ liệu đã sạch chưa, và việc làm sạch có để lại dấu vết không. Mục 2–4 dành cho người làm phân tích, mục 5 cho người làm sinh học, mục 6 cho phần thống kê.
 
-- Data manipulation: The process of changing data to make it more organized and easier to read
+## 2. Khung khái niệm: data integrity, data quality và data constraint
 
-- Other threats to data integrity:
+### 2.1. Data integrity và data quality
 
-- Human error
+Khoá học định nghĩa tính toàn vẹn dữ liệu (data integrity) là độ chính xác, đầy đủ, nhất quán và đáng tin của dữ liệu suốt vòng đời. Khảo sát người dùng dữ liệu, Wang và Strong (1996) đề xuất khung chất lượng dữ liệu (data quality) rộng hơn với bốn nhóm: **intrinsic** (dữ liệu tự nó có chất lượng), **contextual** (chất lượng xét trong bối cảnh nhiệm vụ), **representational** và **accessibility** (trình bày rõ, truy cập được). Nhóm contextual khớp với ý “alignment to business objectives” của khoá học: bảng biểu hiện gen đo chính xác nhưng trên mô không liên quan vẫn là dữ liệu kém **cho câu hỏi đó**.
 
-- Viruses
+### 2.2. Data constraint: bảng đã sửa
 
-- Malware
+Ràng buộc dữ liệu (data constraint) quyết định một giá trị có hợp lệ không. Bảng 1 giữ chín constraint của khoá học, thêm ví dụ sinh học và cách kiểm tra.
 
-- Hacking
+**Bảng 1.** Data constraint, định nghĩa đã sửa và ví dụ sinh học
 
-- System failures
-
-| Data constraint | Definition | Examples |
-| --- | --- | --- |
-| Data type | Values must be of a certain type: date, number, percentage, Boolean, etc. | If the data type is a date, a single number like 30 would fail the constraint and be invalid |
-| Data range | Values must fall between predefined maximum and minimum values | If the data range is 10-20, a value of 30 would fail the constraint and be invalid |
-| Mandatory | Values can’t be left blank or empty | If age is mandatory, that value must be filled in |
-| Unique | Values can’t have a duplicate | Two people can’t have the same mobile phone number within the same service area |
-| Regular expression (regex) patterns | Values must match a prescribed pattern | A phone number must match ###-###-#### (no other characters allowed) |
-| Cross-field validation | Certain conditions for multiple fields must be satisfied | Values are percentages and values from multiple fields must add up to 100% |
-| Primary-key | (Databases only) value must be unique per column | A database table can’t have two rows with the same primary key value. A primary key is an identifier in a database that references a column in which each value is unique. More information about primary and foreign keys is provided later in the program. |
-| Set-membership | (Databases only) values for a column must come from a set of discrete values | Value for a column must be set to Yes, No, or Not Applicable |
-| Foreign-key | (Databases only) values for a column must be unique values coming from a column in another table | In a U.S. taxpayer database, the State column must be a valid state or territory with the set of acceptable values defined in a separate States table |
-| Accuracy | The degree to which the data conforms to the actual entity being measured or described | If values for zip codes are validated by street location, the accuracy of the data goes up. |
-| Completeness | The degree to which the data contains all desired components or measures | If data for personal profiles required hair and eye color, and both are collected, the data is complete. |
-| Consistency | The degree to which the data is repeatable from different points of entry or collection | If a customer has the same address in the sales and repair databases, the data is consistent. |
-
-- Well-aligned objectives and data: You can gain powerful insights and make accurate conclusions when data is well-aligned to business objectives. As a data analyst, alignment is something you will need to judge. Good alignment means that the data is relevant and can help you solve a business problem or determine a course of action to achieve a given business objective.
-
-- Clean data + alignment to business objective = accurate conclusions
-
-- Alignment to business objective + additional data cleaning = accurate conclusions
-
-- Alignment to business objective + newly discovered variables + constraints = accurate conclusions
-
-#### Overcome the challenges of insufficient data
-
-- Types of insufficient data:
-
-- Data from only one source
-
-- Data that keeps updating
-
-- Outdated data
-
-- Geographically-limited data
-
-- Ways to address insufficient data:
-
-- Identify trends with the available data
-
-- Wait for more data if time allows
-
-- Talk with stakeholders and adjust your objective
-
-- Look for a new dataset
-
-- Data issues and possible solution:
-
-- No data:
-
-- Gather the data on a small scale to perform a preliminary analysis and then request additional time to complete the analysis after you have collected more data.
-
-- If there isn’t time to collect data, perform the analysis using proxy data from other datasets. (This is the most common workaround.)
-
-- Too little data:
-
-- Do the analysis using proxy data along with actual data.
-
-- Adjust your analysis to align with the data you already have.
-
-- Wrong data, including data with errors
-
-- If you have the wrong data because requirements were misunderstood, communicate the requirements again.
-
-- Identify errors in the data and, if possible, correct them at the source by looking for a pattern in the errors.
-
-- If you can’t correct data errors yourself, you can ignore the  wrong data and go ahead with the analysis if your sample size is still large enough and ignoring the data won’t cause systematic bias.
-
-- Important note: Sometimes data with errors can be a warning sign that the data isn’t reliable. Use your best judgment.
-
-![image_032](/vault-assets/image-032-0238919d.webp)
-
-- Population: All possible data values in a certain dataset.
-
-- Sample size: A part of a population that is representative of the population
-
-- Sample bias: A sample isn’t representative of the population as a whole
-
-- Random sampling: A way of selecting a sample from a population so that every possible type of the sample has an equal chance of being chosen
-
-- Margin of error: Since a sample is used to represent a population, the sample’s results are expected to differ from what the result would have been if you had surveyed the entire population. This difference is called the margin of error. The smaller the margin of error, the closer the results of the sample are to what the result would have been if you had surveyed the entire population.
-
-- Confidence level: How confident you are in the survey results. For example, a 95% confidence level means that if you were to run the same survey 100 times, you would get similar results 95 of those 100 times. Confidence level is targeted before you start your study because it will affect how big your margin of error is at the end of your study.  
-Having a 99% confidence level is ideal, but most industries hope for a least a 90% or 95% confidence level
-
-- Confidence interval: The range of possible values that the population’s result would be at the confidence level of the study. This range is the sample result +/- the margin of error.
-
-- Statistical significance: The determination of whether your result could be due to random chance or not. The greater the significance, the less due to chance.
-
-- Things to remember when determining the size of your sample:
-
-- When figuring out a sample size, here are things to keep in mind:
-
-- Don’t use a sample size less than 30. It has been statistically proven that 30 is the smallest sample size where an average result of a sample starts to represent the average result of a population.
-
-- The confidence level most commonly used is 95%, but 90% can work in some cases.
-
-- Increase the sample size to meet specific needs of your project:
-
-- For a higher confidence level, use a larger sample size
-
-- To decrease the margin of error, use a larger sample size
-
-- For greater statistical significance, use a larger sample size
-
-- Note: Sample size calculators use statistical formulas to determine a sample size. More about these are coming up in the course!  Stay tuned.
-
-- Why a minimum sample of 30: This recommendation is based on the Central Limit Theorem (CLT) in the field of probability and statistics. As sample size increases, the results more closely resemble the normal (bell-shaped) distribution from a large number of samples. A sample of 30 is the smallest sample size for which the CLT is still valid. Researchers who rely on regression analysis – statistical methods to determine the relationships between controlled and dependent variables – also prefer a minimum sample of 30.
-
-- Sample sizes vary by business problem: Sample size will vary based on the type of business problem you are trying to solve.
-
-- Larger sample sizes have a higher cost: You also have to weigh the cost against the benefits of more accurate results with a larger sample size. Someone who is trying to understand consumer preferences for a new line of products wouldn’t need as large a sample size as someone who is trying to understand the effects of a new drug. For drug safety, the benefits outweigh the cost of using a larger sample size. But for consumer preferences, a smaller sample size at a lower cost could provide good enough results.
-
-- Knowing the basic is helpful:
-
-- Knowing the basics will help you make the right choices when it comes to sample size. You can always raise concerns if you come across a sample size that is too small. A sample size calculator is also a great tool for this. Sample size calculators let you enter a desired confidence level and margin of error for a given population size. They then calculate the sample size needed to statistically achieve those results.
-
-- Refer to the Determine the Best Sample Size video for a demonstration of a sample size calculator, or refer to the Sample Size Calculator reading for additional information.
-
-- Pre-cleaning activities: Pre-cleaning steps are crucial before data cleaning to ensure accurate and reliable results. Without these steps, issues like missing or incorrect data, biased analysis, and inaccurate conclusions may arise. By conducting pre-cleaning tasks such as removing duplicates, handling missing values, and addressing outliers, the data quality is improved, leading to more effective data cleaning processes and analysis.
-
-- Review data integrity:
-
-- 1. Determine data integrity by assessing the overall accuracy, consistency, and completeness of the data.
-
-- 2. Connect objectives to data by understanding how your business objectives can be served by an investigation into the data.
-
-- 3. Know when to stop collecting data.
-
-- Identify what makes data insufficient
-
-- Deal with insufficient data
-
-#### Test your data
-
-- Statistical power: The probability of getting meaningful results from a test.
-
-- Hypothesis testing: A way to see if a survey or experiment has meaningful results (→ [Digital marketing Course 5: A/B tests](/blog/assess-for-success-marketing-analytics-and-measurement/))
-
-- If a test is statistically significant, it means the results of the test are real and not an error caused by random chance.
-
-- Usually, you need a statistical power of at least 0.8 or 80% to consider your results statistically significant
-
-- Determine the best sample size: Sample Size Calculator
-
-- Estimated response rate: If you are running a survey of individuals, this is the percentage of people you expect will complete your survey out of those who received the survey.
-
-#### Consider the margin or error
-
-- Margin of error: The maximum amount that the sample results are expected to differ from those of the actual population. (→ [Digital marketing Course 5: A/B test results in Google Ads](/blog/assess-for-success-marketing-analytics-and-measurement/))
-
-- Calculate margin of error: Margin of Error Calculator
-
-  - Population size
-
-  - Sample size
-
-  - Confidence level
-
-- Regular expression (RegEx): A rule that says the values in a table must match a prescribed pattern
-
-- Mandatory: A data value that cannot be left blank or empty
-
-- DATEDIF: A spreadsheet function that calculates the number of days, months, or years between two dates
-
-- Data constraints: The criteria that determine whether a piece of a data is clean and valid
-
-- Accuracy: The degree to which the data conforms to the actual entity being measured or described
-
-- Completeness: The degree to which the data contains all desired components or measures
-
-- Consistency: The degree to which data is repeatable from different points of entry or collection
-
-- Cross-field validation: A process that ensures certain conditions for multiple data fields are satisfied
-
-- Data range: Numerical values that fall between predefined maximum and minimum values
-
-### ii. Module 2: Clean data for more accurate insights
-
-#### Data cleaning is a must
-
-- #1 cause of poor quality data = human error
-
-- Dirty data: Data that is incomplete, incorrect, or irrelevant to the problem you’re trying to solve (→ [Data Mining](/blog/data-mining/))
-
-| Types of dirty data | Description | Possible cause | Potential harm to businesses |
+| Constraint | Giá trị phải… | Ví dụ sinh học | Kiểm tra nhanh |
 | --- | --- | --- | --- |
-| Duplicate | Any data record that shows up more than once | Manual data entry, batch data imports, or data migration | Skewed metrics or analyses, inflated or inaccurate counts or prediction, or confusion during data retrieval |
-| Outdated | Any data that is old which should be replaced with newer and more accurate information | People changing roles or companies, or software and systems becoming obsolete | Inaccurate insights, decision-making, and analytics |
-| Incomplete | Any data that is missing important fields | Improper data collection or incorrect data entry | Decreased productivity, inaccurate insights, or inability to complete essential services |
-| Incorrect/Inaccurate | Any data that is complete but inaccurate | Human error inserted during data input, fake information, or mock data | Inaccurate insights or decision-making based on bad information resulting in revenue loss |
-| Inconsistent | Any data that uses different formats to represent the same thing | Data stored incorrectly or errors inserted during data transfer | Contradictory data points leading to confusion or inability to classify or segment customers |
+| Data type | đúng kiểu | nồng độ glucose là số, không phải “5,6 mmol/L” | `ISNUMBER()`; `pd.to_numeric()` |
+| Data range | nằm trong khoảng định trước | OD trong khoảng tuyến tính của máy đo | Data validation; `BETWEEN` |
+| Mandatory | không trống | sample ID | `COUNTBLANK()`; `isna()` |
+| Unique | không lặp | mã ống mẫu trong một lô | `COUNTIF()`; `HAVING COUNT(*) > 1` |
+| Regular expression | khớp một mẫu chữ | mã GEO dạng GSE + chữ số | `REGEXMATCH()`; `str.fullmatch()` |
+| Cross-field validation | thoả điều kiện giữa nhiều cột | tỷ lệ các loại tế bào cộng lại 100% | so tổng với 100 |
+| Set-membership | thuộc một tập rời rạc | kiểu gen AA, Aa, aa | danh sách thả xuống; `isin()` |
+| Primary key | duy nhất **cho mỗi dòng** | sample ID trong bảng thông tin mẫu | Unique cộng Mandatory |
+| Foreign key | **khớp** khoá ở bảng khác, **không cần** duy nhất | sample ID trong bảng kết quả đo | `LEFT JOIN`, tìm dòng không khớp |
 
-- Business impact of dirty data: For further reading on the business impact of dirty data, enter the term “dirty data” into your preferred browser’s search bar to bring up numerous articles on the topic. Here are a few impacts cited for certain industries from a previous search:
+Hai dòng cuối sửa định nghĩa sai trong ghi chú của tôi: khoá chính (primary key) duy nhất cho mỗi dòng, không phải “theo cột”; khoá ngoại (foreign key) không cần duy nhất, vì mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ [SQL: Subquery & CASE WHEN](/blog/subquery-and-case-when/), [bài 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness và consistency được tách khỏi bảng vì là chiều chất lượng, không phải luật kiểm tra bằng công thức.
 
-- Banking: Inaccuracies cost companies between 15% and 25% of revenue (source).
+### 2.3. Các loại dirty data và ba giai đoạn làm sạch
 
-- Digital commerce: Up to 25% of B2B database contacts contain inaccuracies (source).
+Khoá học chia dirty data thành năm loại: duplicate, outdated, incomplete, incorrect và inconsistent. Tôi thêm **misfielded** (nhập sai cột) và **system-introduced** (do phần mềm tự chuyển đổi, mục 5). Phân loại cho biết lỗi trông thế nào, chưa cho biết phải làm gì. Van den Broeck et al. (2005) mô tả làm sạch là các vòng lặp ba giai đoạn (Hình 1).
 
-- Marketing and sales: 99% of companies are actively tackling data quality in some way (source).
+```mermaid
+flowchart LR
+    A["Screening<br/>tìm điểm bất thường"] --> B["Diagnosing<br/>lỗi, cực trị thật, bình thường hay chưa rõ"]
+    B --> C["Editing<br/>sửa, xoá hay giữ nguyên"]
+    C -->|"ghi lại, lặp lại"| A
+```
 
-- Healthcare: Duplicate records can be 10% and even up to 20% of a hospital’s electronic health records (source).
+**Hình 1.** Ba giai đoạn làm sạch dữ liệu, vẽ lại theo Van den Broeck et al. (2005).
 
-- Clean data: Data that is complete, correct, and relevant to the problem you’re trying to solve (→ [Statistic and Regression](/blog/statistic-and-regression/))
+**Screening** tìm bốn loại bất thường: thiếu hoặc thừa dữ liệu; outlier và điểm không nhất quán; mẫu hình lạ trong phân phối; kết quả phân tích bất ngờ. *Erroneous inlier*, giá trị sai nhưng nằm trong khoảng hợp lệ, thường lọt qua và chỉ lộ ra khi đối chiếu với biến khác. **Diagnosing** xếp mỗi điểm đáng ngờ thành lỗi, cực trị có thật, bình thường hoặc chưa rõ, ví dụ bằng cách lần ngược dòng dữ liệu, nên phải lưu bản gốc và lý do mọi thay đổi. **Editing** chỉ có ba lựa chọn: sửa, xoá hoặc giữ nguyên; giá trị bất khả thi thì sửa nếu tìm được giá trị đúng, không thì xoá.
 
-- Data engineers: Transform data into a useful format for analysis and give it a reliable infrastructure
+Ví dụ: trong bảng calcium huyết thanh của 100 người bình thường ở bài tập [thống kê sinh học](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/) của tôi, một giá trị 6,0 mg/L nằm giữa các giá trị khoảng 80–130 và đẩy kurtosis lên 19,1. Cần chẩn đoán điểm này trước khi tính thống kê: tra sổ gốc, sửa nếu là lỗi gõ, không tra được thì loại, và ghi lại.
 
-- Data warehouse specialists: Develop processes and procedures to effectively store and organize data
+## 3. Tổ chức dữ liệu để ít phải làm sạch
 
-- Field: A single piece of information from a row or column of a spreadsheet.
+### 3.1. Tidy data
 
-- Field length: A tool for determining how many characters can be keyed into a field
+Theo Wickham (2014), dữ liệu gọn (tidy data) tuân ba quy tắc: mỗi biến là một cột, mỗi quan sát là một dòng, mỗi loại đơn vị quan sát là một bảng. Ghi chú của tôi mô tả chuyển vị (transpose) là đổi từ long format “nhiều dòng hơn cột” sang wide format “nhiều cột hơn dòng”. Mô tả này chưa đúng: long hay wide là chuyện biến và quan sát nằm ở đâu, không phải tỷ lệ dòng và cột. Trong file thực hành “Cleaning with Spreadsheets” của khoá học, Sheet1 đặt mỗi đơn hàng thành một cột, còn Sheet2 tidy vì mỗi đơn hàng là một dòng. Ma trận đếm gen × mẫu trong RNA-seq là dạng wide; muốn vẽ theo nhóm mẫu thường phải chuyển sang long bằng `melt()` của pandas (→ [Python cho phân tích dữ liệu](/blog/introduction-to-data-analysis-using-python/)).
 
-- Data validation: A tool for checking the accuracy and quality of data before adding or importing it
+### 3.2. Spreadsheet đúng cách theo Broman và Woo
 
-#### First step toward clean data
+Broman và Woo (2018) đưa ra các nguyên tắc nhập liệu: nhất quán; ghi ngày YYYY-MM-DD; không để ô trống; mỗi ô một thứ; một hình chữ nhật với một dòng tiêu đề; có data dictionary; không đặt phép tính trong file gốc; không dùng màu làm dữ liệu; đặt tên tốt; sao lưu; dùng data validation; lưu plain text. Mục “common mistakes” của khoá học nói về quá trình làm sạch, còn danh sách này chặn lỗi ngay từ lúc nhập.
 
-- How to remove unwanted data, clean up text to remove extra spaces and blanks, fix typos, and make formatting consistent.
+Quy tắc YYYY-MM-DD sửa đúng một lỗi trong file thực hành: cột Order Date hiển thị “1/6/19”, không rõ là 6 tháng 1 hay 1 tháng 6. Thực ra ô lưu **số ngày nội bộ** 43471, tức 2019-01-06; đổi định dạng hiển thị sang yyyy-mm-dd là hết mơ hồ. Con số năm chữ số này sẽ gặp lại ở mục 5.
 
-- However, before removing unwanted data, it's always a good practice to make a copy of the data set. That way, if you remove something that you end up needing in the future, you can easily access it and put it back in the data set.
+### 3.3. Coi dữ liệu gốc là read-only
 
-- Once that's done, then you can move on to getting rid of the duplicates or data that isn't relevant to the problem you're trying to solve.
+Buffalo (2015) khuyên coi mọi dữ liệu là chỉ đọc (read-only): không sửa ô Excel rồi lưu đè, mà để chương trình đọc bản gốc và ghi kết quả ra file mới. Wilson et al. (2017) xếp quản lý dữ liệu và theo dõi thay đổi vào bộ thực hành “good enough” cho nhà nghiên cứu. Ellis và Leek (2018) khuyên đưa raw data cho người phân tích, kèm thông tin thí nghiệm và mọi bước tiền xử lý. Muốn lần ngược dòng dữ liệu khi diagnosing thì bản gốc phải còn nguyên, như thư mục `data/raw/` chỉ đọc trong [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
-- Typically, duplicates appear when you're combining data sets from more than one source or using data from multiple departments within the same business.
+## 4. Quy trình làm sạch có ghi chép: một ví dụ chạy được
 
-- Irrelevant data, which is data that doesn't fit the specific problem that you're trying to solve, also needs to be removed. Removing irrelevant data takes a little more time and effort because you have to figure out the difference between the data you need and the data you don't.
+Mục này biến checklist và changelog của Module 4 thành năm bước (Hình 2). File thực hành thuộc tài liệu khoá học nên tôi không đăng lại; code dưới chạy trên bảng đồ chơi 7 dòng mô phỏng đúng các loại lỗi của file thật, còn kết quả trên file thật nằm ở Bảng 2.
 
-- The next step is removing extra spaces and blanks. Extra spaces can cause unexpected results when you sort, filter, or search through your data. And because these characters are easy to miss, they can lead to unexpected and confusing results.
+```mermaid
+flowchart LR
+    S0["0. Sao lưu, mô tả"] --> S1["1. Screening"]
+    S1 --> S2["2. Diagnosing, editing"]
+    S2 --> S3["3. Verification"]
+    S3 --> S4["4. Changelog"]
+    S3 -.->|"còn lỗi"| S1
+```
 
-- Fixing misspellings
+**Hình 2.** Quy trình làm sạch có ghi chép.
 
-- Inconsistent capitalization
+### 4.1. Bước 0: sao lưu và mô tả dữ liệu
 
-- Incorrect punctuation and other typos
+Giữ bản gốc chỉ đọc, làm trên bản sao, rồi mô tả theo “cleaning checklist” của khoá học: kích thước, số nhãn, dữ liệu thiếu, định dạng, kiểu dữ liệu. Sheet2 có 44 đơn hàng × 8 biến; Region có 4 chuỗi cho 3 vùng, Item 6 chuỗi cho 5 mặt hàng: dấu hiệu đầu tiên của dữ liệu không nhất quán.
 
-- The next step is removing formatting. This is particularly important when you get data from lots of different sources. Every database has its own formatting, which can cause the data to seem inconsistent. Creating a clean and consistent visual appearance for your spreadsheets will help make it a valuable tool for you and your team when making key decisions. Most spreadsheet applications also have a "clear formats" tool, which is a great time saver.
+### 4.2. Bước 1: screening theo constraint
 
-- Cleaning data is an essential step in increasing the quality of your data. Now you know lots of different ways to do that.
+Đoạn Python dưới đọc mọi cột dưới dạng text để phần mềm không tự đoán kiểu, rồi kiểm tra từng constraint:
 
-- Merger: An agreement that unites two organizations into a single new one
+```python
+import io
+import pandas as pd
 
-- Data merging: The process of combining two or more datasets into a single dataset
+raw_csv = """Number,Order Date,Region,Name,Item,Units,Unit Cost,Total
+1,1/6/19,East,Jones,Pencil,40,1.99,79.60
+2,1/23/19,CENTRAL,KIVELL,BINDER,12,19.99,239.88
+3,2/9/19,Central,Gill,Pen,30,4.99,149.70
+5,3/15/19,East   ,Parent,Binder,70,19.99,"1,399.30"
+6,4/1/19,West,Sorvino,Pen    Set,20,15.99,319.80
+8,4/20/19,Central,Smith,Desk,3,125,357
+9,1/6/19,West,Howard,Pen Set,20,15.99,319.80
+"""
+raw = pd.read_csv(io.StringIO(raw_csv), dtype=str)   # mọi cột là text
 
-- Do I have all the data I need?
+# 1. Số thứ tự bị khuyết
+num = raw["Number"].astype(int)
+print("Số thứ tự khuyết:", sorted(set(range(num.min(), num.max() + 1)) - set(num)))
 
-- Does the data I need exist within these datasets
+# 2. Khoảng trắng thừa, chữ hoa không thống nhất
+def normalize(s):
+    return s.str.strip().str.replace(r"\s+", " ", regex=True).str.title()
 
-- Does the data need to be cleaned, or are they ready for me to use?
+for col in ["Region", "Name", "Item"]:
+    bad = raw[col] != normalize(raw[col])
+    print(f"{col}: cần chuẩn hoá ở đơn", raw.loc[bad, "Number"].tolist())
 
-- Common mistakes to avoid:
+# 3. Cross-field validation: Total = Units × Unit Cost
+total = pd.to_numeric(raw["Total"].str.replace(",", "", regex=False))
+expected = raw["Units"].astype(int) * raw["Unit Cost"].astype(float)
+print("Total sai lệch ở đơn", raw.loc[(expected - total).abs() > 0.01, "Number"].tolist())
 
-- Not checking for spelling errors: Misspellings can be as simple as typing or input errors. Most of the time the wrong spelling or common grammatical errors can be detected, but it gets harder with things like names or addresses. For example, if you are working with a spreadsheet table of customer data, you might come across a customer named “John” whose name has been input incorrectly as “Jon” in some places. The spreadsheet’s spellcheck probably won’t flag this, so if you don’t double-check for spelling errors and catch this, your analysis will have mistakes in it.
-
-- Forgetting to document errors: Documenting your errors can be a big time saver, as it helps you avoid those errors in the future by showing you how you resolved them. For example, you might find an error in a formula in your spreadsheet. You discover that some of the dates in one of your columns haven’t been formatted correctly. If you make a note of this fix, you can reference it the next time your formula is broken, and get a head start on troubleshooting. Documenting your errors also helps you keep track of changes in your work, so that you can backtrack if a fix didn’t work.
-
-- Not checking for misfielded values: A misfielded value happens when the values are entered into the wrong field. These values might still be formatted correctly, which makes them harder to catch if you aren’t careful. For example, you might have a dataset with columns for cities and countries. These are the same type of data, so they are easy to mix up. But if you were trying to find all of the instances of Spain in the country column, and Spain had mistakenly been entered into the city column, you would miss key data points. Making sure your data has been entered correctly is key to accurate, complete analysis.
-
-- Overlooking missing values: Missing values in your dataset can create errors and give you inaccurate conclusions. For example, if you were trying to get the total number of sales from the last three months, but a week of transactions were missing, your calculations would be inaccurate.  As a best practice, try to keep your data as clean as possible by maintaining completeness and consistency. (→ [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
-
-- Only looking at a subset of the data: It is important to think about all of the relevant data when you are cleaning. This helps make sure you understand the whole story the data is telling, and that you are paying attention to all possible errors. For example, if you are working with data about bird migration patterns from different sources, but you only clean one source, you might not realize that some of the data is being repeated. This will cause problems in your analysis later on. If you want to avoid common errors like duplicates, each field of your data requires equal attention.
-
-- Losing track of business objectives: When you are cleaning data, you might make new and interesting discoveries about your dataset-- but you don’t want those discoveries to distract you from the task at hand. For example, if you were working with weather data to find the average number of rainy days in your city, you might notice some interesting patterns about snowfall, too. That is really interesting, but it isn’t related to the question you are trying to answer right now. Being curious is great! But try not to let it distract you from the task at hand.
-
-- Not fixing the source of the error: Fixing the error itself is important. But if that error is actually part of a bigger problem, you need to find the source of the issue. Otherwise, you will have to keep fixing that same error over and over again. For example, imagine you have a team spreadsheet that tracks everyone’s progress. The table keeps breaking because different people are entering different values. You can keep fixing all of these problems one by one, or you can set up your table to streamline data entry so everyone is on the same page. Addressing the source of the errors in your data will save you a lot of time in the long run.
-
-- Not analyzing the system prior to data cleaning: If we want to clean our data and avoid future errors, we need to understand the root cause of your dirty data. Imagine you are an auto mechanic. You would find the cause of the problem before you started fixing the car, right? The same goes for data. First, you figure out where the errors come from. Maybe it is from a data entry error, not setting up a spell check, lack of formats, or from duplicates. Then, once you understand where bad data comes from, you can control it and keep your data clean.
-
-- Not backing up your data prior to data cleaning: It is always good to be proactive and create your data backup before you start your data clean-up. If your program crashes, or if your changes cause a problem in your dataset, you can always go back to the saved version and restore it. The simple procedure of backing up your data can save you hours of work-- and most importantly, a headache.
-
-- Not accounting for data cleaning in your deadlines/process: All good things take time, and that includes data cleaning. It is important to keep that in mind when going through your process and looking at your deadlines. When you set aside time for data cleaning, it helps you get a more accurate estimate for ETAs for stakeholders, and can help you know when to request an adjusted ETA.
-
-![image_033](/vault-assets/image-033-b6c6d2eb.webp)
-
-- CLEAN DTA:
-
-  - Delete fields that contain nulls values: Data/Create Filter/Filter by condition/Is null/Delete the ro
-
-  - Transposing data (Hoán vị/Chuyển vị): convert the data from the current long format (more rows than columns) to the wide format (more columns than rows): Highlight and copy data/Right-clink on the cell you want the transposed data to start/Paste Special/Transposed/Delete previous data and by its columns.
-
-  - Eliminate the extra spaces in the values of the cell:
-
-- Google Sheet: Data (Dữ liệu)/Data cleanup (Dọn sạch dữ liệu)/Trim whitespace (Cắt bỏ khoảng trắng).
-
-- Excel: TRIM()
-
-- Change lower/uppercase/proper case text:
-
-- Excel
-
-- Google sheet: Add-Ons/Get add-ons/ChangeCase/Install/Select column you want to make changes/Add-Ons/ChangeCase/All uppercase
-
-- Delete all formatting:
-
-- Select the data for which you want to delete the formatting
-
-- Format/Clear Formatting
-
-#### Continue cleaning data in spreadsheets
-
-- Conditional formatting: A spreadsheet tool that changes how cells appear when values meet specific conditions
-
-- Selecting the range we want to search
-
-- Format/Conditional formatting
-
-- Format rules, Format Styles
-
-- Remove duplicate: A tool that automatically searches for and eliminates duplicate entries from a spreadsheet (Before make any changes like this, make a copy of raw data): Data/Data Cleanup/Remove Duplicate
-
-- Text string: A group of characters within a cell, most often composed of letters.
-
-- Substring: A smaller subset of a text string
-
-- Split: A tool that divides text around a specified character and puts each fragment into a new, separate cell
-
-- Specified text separator = delimiter
-
-- Select data you want to split/Data/Split text to column
-
-- Concatenate: A function that join multiple text strings into a single string
-
-- COUNTIF: A function that returns the number of cells that match a specified value
-
-- LEN: A function that tells you the length of a text string by counting the number of character it contains
-
-- LEFT: A function that gives you a set number of characters from the left side of a text string
-
-- RIGHT: A function that gives you a set number of characters from the right side of a text string
-
-- MID: A function that gives you a segment from the middle of a text string
-
-- TRIM: A function that remove leading, trailing, and repeated spaces in data
-
-- Workflow automation: is the process of automating parts of your work. That could mean creating an event trigger that sends a notification when a system is updated. Or it could mean automating parts of the data cleaning process. As you can probably imagine, automating different parts of your work can save you tons of time, increase productivity, and give you more bandwidth to focus on other important aspects of the job.
-
-- What can be automated:
-
-| Task | Can it be automated? | Why? |
-| --- | --- | --- |
-| Communicating with your team and stakeholders | No | Communication is key to understanding the needs of your team and stakeholders as you complete the tasks you are working on. There is no replacement for person-to-person communications. |
-| Presenting your findings | No | Presenting your data is a big part of your job as a data analyst. Making data accessible and understandable to stakeholders and creating data visualizations can’t be automated for the same reasons that communications can’t be automated. |
-| Preparing and cleaning data | Partially | Some tasks in data preparation and cleaning can be automated by setting up specific processes, like using a programming script to automatically detect missing values. |
-| Data exploration | Partially | Sometimes the best way to understand data is to see it. Luckily, there are plenty of tools available that can help automate the process of visualizing data. These tools can speed up the process of visualizing and understanding the data, but the exploration itself still needs to be done by a data analyst. |
-| Modeling the data | Yes | Data modeling is a difficult process that involves lots of different factors; luckily there are tools that can completely automate the different stages. |
-
-- One of the most important ways you can streamline your data cleaning is to clean data where it lives. This will benefit your whole team, and it also means you don’t have to repeat the process over and over. For example, you could create a programming script that counted the number of words in each spreadsheet file stored in a specific folder. Using tools that can be used where your data is stored means that you don’t have to repeat your cleaning steps, saving you and your team time and energy.
-
-- There are a lot of tools out there that can help automate your processes, and those tools are improving all the time. Here are a few articles or blogs you can check out if you want to learn more about workflow automation and the different tools out there for you to use:
-
-- Towards Data Science’s Automating Scientific Data Analysis
-
-- MIT News’ Automating Big-Data Analysis
-
-- TechnologyAdvice’s 10 of the Best Options for Workflow Automation Software
-
-- Different data perspectives: different methods data analysts use to view data differently and how looking at different views leads to more efficient and effective data cleaning.
-
-- Pivot table: A pivot table is a data summarization tool. It can be used in data processing and in data cleaning, for which pivot tables offer a quick, clutter-free view of your data. Pivot tables help sort, reorganize, group, count, total, or average data in a dataset: Select the data you will include/Insert/Pivot Table/New sheet/Create/Pivot table editor
-
-- VLOOKUP: VLOOKUP is a spreadsheet function that vertically searches for a certain value in a column to return a corresponding piece of information. It's rare for all of the data an analyst will need to be in the same place. Usually, you'll have to search across multiple sheets or even different databases. VLOOKUP helps bring the information together.
-
-- Plotting: The plotting tool allows analysts to quickly create a graph, chart, table, or other visual from data. Plotting is useful for identifying skewed data or outliers: Select data you want to plot/Insert/Chart
-
-- Data mapping: The process of matching fields from on data source to another
-
-- Compatibility: How well two or more datasets are able to work together.
-
-- Cleaning checklist: Start developing your personal approach to cleaning data by creating a checklist to help you identify problems in your data efficiently and identify the scale and scope of your dataset. Think of this checklist as your default “what to search for” list:
-
-- Determine the size of the dataset: Large datasets may have more data quality issues and take longer to process. This may impact your choice of data cleaning techniques and how much time to allocate to the project.
-
-- Determine the number of categories or labels: By understanding the number and nature of categories and labels in a dataset, you can better understand the diversity of the dataset. This understanding also helps inform data merging and migration strategies.
-
-- Identify missing data: Recognizing missing data helps you understand data quality so you can take appropriate steps to remediate the problem. Data integrity is important for accurate and unbiased analysis.
-
-- Identify unformatted data: Identifying improperly or inconsistently formatted data helps analysts ensure data uniformity. This is essential for accurate analysis and visualization.
-
-- Explore the different data types: Understanding the types of data in your dataset (for instance, numerical, categorical, text) helps you select appropriate cleaning methods and apply relevant data analysis techniques.
-
-### iii. Module 3: Cleaning data with SQL
-
-#### SQL for sparkling clean data
-
-- SQL: a structured query language that analysts use to work with databases. Data analysts usually use SQL to deal with large datasets because it can handle huge amounts of data.
-
-- Before analysis, data analyst needs to choose what tool to use. First, they have to think about where the data lives. If it is stored in a database, then SQL is the best tool for the job. But if it is stored in a spreadsheet, then they will have to perform their analysis in that spreadsheet.
-
-| Features of Spreadsheets | Feature of SQL databases |
-| --- | --- |
-| Small data sets Enter data manually Create graphs and visualizations in the same program Built-in spell check and other useful functions Best when working solo on a project Generated with a program Access to the data you input Stored locally | Larger datasets Access tables across a database Prepare data for further analysis in another software Fast and powerful functionality Great for collaborative work and tracking queries run by all users A language used to interact with database program Can pull information from different sources in the database Stored across a database |
-
-- SQL dialects and their uses: Learning SQL can be a lot like learning a new language—including the fact that languages usually have different dialects within them. Some database products have their own variant of SQL, and these different varieties of SQL dialects are what help you communicate with each database product. These dialects will be different from company to company and might change over time if the company moves to another database system. So, a lot of analysts start with Standard SQL and then adjust the dialect they use based on what database they are working with. Standard SQL works with a majority of databases and requires a small number of syntax changes to adapt to other dialects.
-
-- LearnSQL’s blog, What Is a SQL Dialect, and Which One Should You Learn?
-
-- Software Testing Help’s article, Differences Between SQL Vs MySQL vs SQL Server
-
-- Datacamp’s blog, SQL Server, PostgreSQL, MySQL... what's the difference? Where do I start?
-
-- Note that there is an error in this blog article. The comparison table incorrectly states that SQlite uses subqueries instead of window functions. Refer to the SQLite Window Functions documentation for proper clarification.
-
-- SQL Tutorial’s tutorial, What is SQL
-
-- How data is measured: All information in a computer is represented as a binary number consisting solely of 0’s and 1’s. Each 0 or 1 in a number is a bit, which is the smallest unit of storage in computers. Data is measured by the number of bits it takes to represent it. This is then described in bytes, which are equal to 8 bits.
-
-| Unit | Abbreviation | Equivalent to | Example (with approximate size) |
+# 4. Trùng hoàn toàn và trùng một phần
+print("Dòng trùng hoàn toàn:", raw.drop(columns="Number").duplicated().sum())
+keyed = raw.assign(Item=normalize(raw["Item"]), Total=total)
+suspects = keyed[keyed.duplicated(["Item", "Units", "Unit Cost", "Total"], keep=False)]
+print(suspects[["Number", "Order Date", "Region", "Name", "Item", "Total"]].to_string(index=False))
+```
+
+```text
+Số thứ tự khuyết: [4, 7]
+Region: cần chuẩn hoá ở đơn ['2', '5']
+Name: cần chuẩn hoá ở đơn ['2']
+Item: cần chuẩn hoá ở đơn ['2', '6']
+Total sai lệch ở đơn ['8']
+Dòng trùng hoàn toàn: 0
+Number Order Date Region    Name    Item  Total
+     6     4/1/19   West Sorvino Pen Set  319.8
+     9     1/6/19   West  Howard Pen Set  319.8
+```
+
+Remove duplicates của Google Sheets và `SELECT DISTINCT` chỉ bắt dòng giống nhau ở mọi cột, nên đơn 9 (khác đơn 6 ở Name và ngày) lọt qua: một erroneous inlier điển hình. Hai kiểm tra tương ứng trong SQL (SQLite, bảng `orders`; BigQuery dùng `STRING_AGG` thay `GROUP_CONCAT`):
+
+```sql
+-- Khoảng trắng thừa: LENGTH cho thấy ký tự mà mắt không thấy
+SELECT number, region, LENGTH(region) AS len_region, item, LENGTH(item) AS len_item
+FROM orders
+WHERE region <> TRIM(region) OR item <> TRIM(item) OR item LIKE '%  %';
+
+-- Nghi trùng một phần: cùng item đã chuẩn hoá, units, unit_cost, total
+SELECT REPLACE(UPPER(item), ' ', '') AS item_key, units, unit_cost, total,
+       COUNT(*) AS n, GROUP_CONCAT(number) AS orders
+FROM orders
+GROUP BY item_key, units, unit_cost, total
+HAVING COUNT(*) > 1;
+```
+
+```text
+number  region   len_region  item        len_item
+------  -------  ----------  ----------  --------
+5       East     7           Binder      6
+6       West     4           Pen    Set  10
+
+item_key  units  unit_cost  total   n  orders
+--------  -----  ---------  ------  -  ------
+PENSET    20     15.99      319.80  2  6,9
+```
+
+Trong Google Sheets (dữ liệu ở A1:H8), bốn cột phụ gõ ở dòng 2 rồi kéo xuống cho cùng kết quả:
+
+```text
+I2  =OR(LEN(C2)<>LEN(TRIM(C2)), LEN(E2)<>LEN(TRIM(E2)))        TRUE ở đơn 5, 6
+J2  =UPPER(TRIM(E2))                                            khoá Item
+K2  =ABS(F2*G2-H2)>0.01                                         TRUE ở đơn 8
+L2  =COUNTIFS(J$2:J$8,J2,F$2:F$8,F2,G$2:G$8,G2,H$2:H$8,H2)>1   TRUE ở đơn 6, 9
+```
+
+Trên file thật, cả 44 dòng đều thoả Total = Units × Unit Cost, Total trong Sheets là số (nhưng có thể thành text nếu giá trị hiển thị như “1,619.19” theo file CSV sang pandas hay SQL), và có sáu cặp đơn nghi trùng.
+
+### 4.3. Bước 2: diagnosing và editing
+
+**Bảng 2.** Bất thường trong file thực hành và quyết định xử lý
+
+| Bất thường | Đơn hàng | Quyết định | Lý do |
 | --- | --- | --- | --- |
-| Byte | B | 8 bits | 1 character in a string (1 byte) |
-| Kilobyte | KB | 1024 bytes | A page of text (4 kilobytes) |
-| Megabyte | MB | 1024 Kilobytes | 1 song in MP3 format (2-3 megabytes) |
-| Gigabyte | GB | 1024 Megabytes | 300 songs in MP3 format (1 gigabyte) |
-| Terabyte | TB | 1024 Gigabytes | 500 hours of HD video (1 terabyte) |
-| Petabyte | PB | 1024 Terabytes | 10 billion Facebook photos (1 petabyte) |
-| Exabyte | EB | 1024 Petabytes | 500 million hours of HD video (1 exabyte) |
-| Zettabyte | ZB | 1024 Exabytes | All the data on the internet in 2019 (4.5 ZB) |
+| Chữ hoa không thống nhất | Sheet1, đơn 2 | Sửa | giá trị đúng là rõ ràng |
+| Khoảng trắng thừa | 13 (Region), 33 (Item) | Sửa bằng TRIM | không đổi nghĩa |
+| Số thứ tự khuyết | 6, 8, 14, 17, 21 | Giữ, hỏi chủ dữ liệu | chưa rõ bị xoá hay bị mất |
+| Nghi trùng một phần | 44–49 so với 29–34 | Gắn cờ, chưa xoá | cùng Item, Units, Unit Cost, Total; Name khác ở cả sáu cặp |
+| Ngày dễ hiểu nhầm | cột Order Date | Hiển thị YYYY-MM-DD | giá trị bên dưới đã xác định |
+| Định dạng số không thống nhất | Total của 6 đơn từ 1.000 | Bỏ dấu phẩy khi đổi kiểu | tránh thành text khi xuất CSV |
 
-- Dataset size is important: The size of the dataset you’re working with usually determines which tool—spreadsheets or SQL—is best suited for the task. Spreadsheets often start to have performance issues as dataset sizes increase beyond a few megabytes. SQL databases are much better at working with larger datasets that have billions of rows with sizes measured in gigabytes. Yet the dataset’s size still matters here: Even in SQL, it takes longer for queries to complete when they’re run on longer datasets, depending on the query’s content and the number of rows SQL has to process.
+Nhóm 44–49 đứng sau đơn 43 (cuối 2020) nhưng ngày của đơn 44–48 trùng ngày đơn 1–5 (đầu 2019): nhiều dấu hiệu chỉ về lỗi sao chép, nhưng khi chưa chẩn đoán được thì gắn cờ và hỏi người tạo dữ liệu thay vì xoá (Van den Broeck et al., 2005). Phần editing, chạy tiếp sau code ở mục 4.2:
 
-#### Learn basic SQL queries
+```python
+clean = raw.copy()                                   # raw giữ nguyên
+for col in ["Region", "Name", "Item"]:
+    clean[col] = normalize(clean[col])
+clean["Total"] = pd.to_numeric(clean["Total"].str.replace(",", "", regex=False))
+clean["Units"] = clean["Units"].astype(int)
+clean["Unit Cost"] = clean["Unit Cost"].astype(float)
+# Giả định M/D/YY, ghi vào changelog
+clean["Order Date"] = pd.to_datetime(clean["Order Date"], format="%m/%d/%y")
 
-- Clean string variables using SQL: (→ [Subquery & CASE WHEN](/blog/subquery-and-case-when/))
+# Không xoá dòng nghi vấn, chỉ gắn cờ
+clean["flag"] = ""
+clean.loc[clean["Number"] == "8", "flag"] = "Total khác Units × Unit Cost"
+clean.loc[clean["Number"] == "9", "flag"] = "nghi trùng đơn 6"
+```
 
-- Remove duplicate: 
-SELECT
-DISTINCT
-FROM
+`str.title()`, như PROPER trong Sheets, biến “McDonald” thành “Mcdonald”, nên tên người hay tên gen phải chuẩn hoá theo danh sách nhãn chuẩn. Thao tác tương tự trong R: [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/).
 
-- Check consistent of string variables: LENGTH/LEN
+### 4.4. Bước 3: verification
 
-#### Transforming data
+Verification checklist của Module 4 rà null, chính tả, khoảng trắng, trùng lặp, kiểu dữ liệu, ngày, tên cột và logic nghiệp vụ; tôi thêm **chuyển đổi tự động do phần mềm** (mục 5). Ngoài checklist, hãy so sánh trước và sau:
 
-- CAST(): Can be used to convert anything from one data type to another
+```python
+for col in ["Region", "Name", "Item"]:
+    print(f"{col}: {raw[col].nunique()} -> {clean[col].nunique()} nhãn")
+print("Số dòng:", len(raw), "->", len(clean))
+print("Tổng Total:", round(clean["Total"].sum(), 2))
+```
 
-- ORDER BY
-column name DESC: Sorting
+```text
+Region: 5 -> 3 nhãn
+Name: 7 -> 7 nhãn
+Item: 7 -> 5 nhãn
+Số dòng: 7 -> 7
+Tổng Total: 2865.08
+```
 
-- Float: A number that contains a decimal
+Trên file thật, Region giảm từ 4 xuống 3 nhãn, Item từ 6 xuống 5, còn số dòng (44) và tổng Total (21.254,52) giữ nguyên vì không dòng nào bị xoá. Nếu tổng đổi mà changelog không giải thích được, chính bước làm sạch đã gây lỗi.
 
-- Typecasting: Converting data from one type to another
+### 4.5. Bước 4: changelog
 
-- CONCAT(): Adds string together to create new text strings that can be used as unique keys
+Version history ghi **cái gì** đã đổi, changelog ghi thêm **vì sao**. Nguyên tắc changelog của khoá học trùng với Keep a Changelog (Lacan, n.d.): viết cho người đọc; mỗi phiên bản một mục, mới nhất ở trên, có ngày; nhóm thay đổi thành Added, Changed, Deprecated, Removed, Fixed, Security; giữ mục Unreleased ở đầu. Mẫu cho file thực hành:
 
-- COALESCE(): Can be used to return non-null values in a list
+```markdown
+## [Unreleased]
+- Chờ chủ dữ liệu xác nhận đơn 44–49 và các số thứ tự khuyết.
 
-### iv. Module 4: Verify and report on cleaning results
+## [1.0.0] - 2026-11-13
+### Added
+- Cột flag: đơn 44–49 nghi trùng đơn 29–34.
+### Fixed
+- Region, Item: bỏ khoảng trắng thừa (đơn 13, 33), chuẩn hoá chữ hoa.
+- Total: bỏ dấu phẩy hàng nghìn, đổi sang kiểu số.
+### Removed
+- Không có: vẫn 44 dòng, tổng Total 21.254,52.
+```
 
-#### Manually cleaning data
+Wilson et al. (2017) gợi ý hai cách theo dõi thay đổi: file CHANGELOG.txt ghi chú có ngày, mới nhất ở trên, hoặc version control như Git. Theo tôi (không phải theo Wilson et al.), dùng Git rồi vẫn cần changelog dữ liệu: commit cho biết code nào đổi, changelog cho biết vì sao đơn 44–49 được giữ lại. Bảng các bước làm sạch trong [case study Cyclistic](/projects/cyclistic-bike-share/phan-tich-chi-tiet-casual-riders-va-annual-members-dung-xe-cyclistic-khac-nhau-t/) là một changelog rút gọn như vậy.
 
-- Verification: A process to confirm that a data-cleaning effort was well-executed and the resulting data is accurate and reliable
+## 5. Case study: khi Excel âm thầm đổi tên gen
 
-- Changelog: A file containing a chronologically ordered list of modifications made to a project
+Lỗi system-introduced có thật, đo được, và tồn tại trong tài liệu khoa học gần hai thập kỷ (Hình 3).
 
-- Steps of verification process:
+```mermaid
+flowchart LR
+    A["2004 · Zeeberg et al.<br/>≥ 30 tên gen thành ngày"] --> B["2016 · Ziemann et al.<br/>19,6% bài bị lỗi"]
+    B --> C["2020 · HGNC<br/>đổi ký hiệu gây lỗi"]
+    C --> D["2021 · Abeysooriya et al.<br/>30,9% bài bị lỗi"]
+```
 
-- Going back to the original unclean data set and comparing it to what you have now
+**Hình 3.** Dòng thời gian lỗi tên gen. Nguồn: Zeeberg et al. (2004); Ziemann et al. (2016); Bruford et al. (2020); Abeysooriya et al. (2021).
 
-- See the big picture when verifying data-cleaning
+### 5.1. Từ phát hiện (2004) đến đo lường (2016)
+
+Sau Zeeberg et al. (2004), Ziemann et al. (2016) quét 35.175 file Excel supplementary của 18 tạp chí giai đoạn 2005–2015, tìm thấy 7.467 danh sách gen thuộc 3.597 bài báo. Lỗi được xác nhận ở 987 file của 704 bài, tức **19,6%** số bài có danh sách gen dạng Excel, ví dụ SEPT2 thành “2-Sep”. Trên GEO, 228 trong 574 file Excel có danh sách gen (39,7%) bị lỗi. Tỷ lệ danh sách gen bị lỗi tương quan dương với impact factor năm 2015 của tạp chí (Spearman rho = 0,52; p hai phía = 0,03), có thể vì các tạp chí này đi kèm bộ dữ liệu lớn hơn và nhiều hơn.
 
-- Consider the business problem
+### 5.2. “Lessons not learned” (2021)
 
-- Consider the goal
+Abeysooriya et al. (2021) quét file supplementary trên PubMed Central giai đoạn 2014–2020 bằng phần mềm cải tiến: **30,9%** (3.436/11.117) số bài có danh sách gen dạng Excel bị lỗi, và lỗi vẫn tích luỹ sau năm 2016. Tỷ lệ cao hơn trước một phần vì có thêm dạng lỗi tên gen thành **số ngày nội bộ** năm chữ số, đúng loại số ở cột Order Date (mục 3.2).
 
-- Consider the data
+Nhóm cũng thử Microsoft Excel 365, Google Sheets (bản năm 2021), LibreOffice 6.4.6.2 và Gnumeric 1.12.46. Excel và **Google Sheets** đổi tên gen thành ngày ở cả ba cách nhập (mở file text, dán, gõ trực tiếp); LibreOffice và Gnumeric thì không; định dạng ô đích là plain text trước khi dán hoặc gõ thì tránh được. Điều này quan trọng vì khoá Google Data Analytics dạy làm sạch chủ yếu bằng Google Sheets. Hành vi phần mềm có thể đã đổi sau năm 2021, nên hãy tự thử lại.
 
-- Find and replace: A tool that looks for specified search term in a spreadsheet and allows you to replace it with something else
+### 5.3. Phản ứng của cộng đồng
 
-- CASE statement: The CASE statement goes through one or more conditions and returns a value as soon as a condition is met
+Theo Abeysooriya et al. (2021), HGNC đã đổi các ký hiệu dễ bị chuyển đổi, ví dụ SEPT1 thành SEPTIN1 và MARCH1 thành MARCHF1. Hướng dẫn đặt tên gen người năm 2020 cho biết HGNC có thể cập nhật ký hiệu dùng rộng rãi nhưng gây vấn đề đáng kể, và khuyên trích HGNC ID (dạng HGNC:số), vốn gần như không đổi khi ký hiệu đổi (Bruford et al., 2020). Với bảng DEG, hãy luôn giữ một cột ID ổn định như HGNC ID hay Ensembl ID cạnh cột ký hiệu gen.
 
-- Data-cleaning verification checklist:
+Trang hỗ trợ của Microsoft hướng dẫn định dạng ô là Text trước khi nhập, hoặc gõ dấu nháy đơn (hay dấu cách) ở đầu, và viết thẳng: “there is no way to turn this off” (Microsoft, n.d.). Từ năm 2022, Excel có tuỳ chọn Automatic Data Conversion để tắt việc bỏ số 0 ở đầu, cắt số dài quá 15 chữ số và đổi chuỗi số quanh chữ “E” thành ký hiệu khoa học (đúng lỗi mã RIKEN), nhưng bài giới thiệu ghi rằng kiểm soát chuyển đổi sang **ngày** vẫn đang lên kế hoạch (Fifadra, 2022). Chưa thấy tài liệu chính thức nào xác nhận đã tắt được chuyển đổi ngày, nên an toàn nhất vẫn là định dạng cột tên gen là Text, hoặc giữ dữ liệu genomics ở định dạng text chuẩn ([Định dạng dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
-- Correct the most common problems:
+### 5.4. Tự kiểm tra: quét một file DEG
 
-- Sources of errors: Did you use the right tools and functions to find the source of the errors in your dataset?
+Bảng gen biểu hiện khác biệt (DEG) hay được xuất ra Excel ở cuối pipeline RNA-seq ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)). Hãy đọc file ở dạng text rồi tìm trong cột ký hiệu gen các giá trị trông như ngày hoặc số. Với `pd.read_excel(path, dtype=str)`, ô đã thành ngày trả về “2021-09-02 00:00:00”, ô số ngày nội bộ “44075”, ô 2,31 × 10¹³ “23100000000000”; mẫu tìm kiếm phải bắt cả các dạng này:
 
-- Null data: Did you search for NULLs using conditional formatting and filters?
+```python
+import pandas as pd
 
-- Misspelled words: Did you locate all misspellings?
+SUSPECT = (r"^\d{1,2}-[a-z]{3}$"                  # "2-Sep", "1-DEC" trong file text/CSV
+           r"|^\d{4}-\d{2}-\d{2}( 00:00:00)?$"    # ô đã thành ngày, đọc từ .xlsx
+           r"|^\d+(\.\d+)?e\+\d+$"                # "2.31E+13"
+           r"|^\d{5,}$")                          # số ngày nội bộ (44075) hoặc số dài
 
-- Mistyped numbers: Did you double-check that your numeric data has been entered correctly?
+def scan(genes):
+    genes = pd.Series(genes).dropna().astype(str).str.strip()
+    return genes[genes.str.match(SUSPECT, case=False)].tolist()
 
-- Extra spaces and characters: Did you remove any extra spaces or characters using the TRIM function?
+cells = ["TP53", "2021-09-02 00:00:00", "MARCHF1", "44075",
+         "23100000000000", "2-Sep", "1-DEC", "2.31E+13", "BRCA1"]
+print(scan(cells))
+```
 
-- Duplicates: Did you remove duplicates in spreadsheets using the Remove Duplicates function or DISTINCT in SQL?
+```text
+['2021-09-02 00:00:00', '44075', '23100000000000', '2-Sep', '1-DEC', '2.31E+13']
+```
 
-- Mismatched data types: Did you check that numeric, date, and string data are typecast correctly?
+Chỉ dùng mẫu này cho cột ký hiệu gen, vì Entrez Gene ID vốn là số. Nếu quét vài file trên GEO, hãy báo cáo số file đã kiểm tra, số file lỗi và các gen bị ảnh hưởng; mẫu nhỏ không so sánh được với các tỷ lệ trên.
 
-- Messy (inconsistent) strings: Did you make sure that all of your strings are consistent and meaningful?
+## 6. Đính chính thống kê: cỡ mẫu, khoảng tin cậy và power
 
-- Messy (inconsistent) date formats: Did you format the dates consistently throughout your dataset?
+Phần cỡ mẫu và kiểm định trong ghi chú Module 1 của tôi có vài định nghĩa sai hoặc giản lược quá mức (Bảng 3).
 
-- Misleading variable labels (columns): Did you name your columns meaningfully?
+**Bảng 3.** Các ngộ nhận thống kê trong ghi chú Course 4
 
-- Truncated data: Did you check for truncated or missing data that needs correction?
+| Ghi chú nói | Nói đúng là | Nguồn |
+| --- | --- | --- |
+| Không dùng cỡ mẫu dưới 30; từ 30 thì CLT đúng | CLT là kết quả tiệm cận; cỡ mẫu tuỳ phân phối và mục tiêu | Hesterberg (2015); Lakens (2022) |
+| 95%: chạy lại 100 lần thì 95 lần cho kết quả tương tự | 95% là tần suất các khoảng tạo bởi cùng phương pháp chứa giá trị thật | Greenland et al. (2016) |
+| Significant nghĩa là thật, không do ngẫu nhiên | P value không phải xác suất giả thuyết đúng | Greenland et al. (2016) |
+| Cần power ≥ 0,8 để kết quả significant | Power là xác suất trước nghiên cứu, dùng khi lên kế hoạch | Greenland et al. (2016); Hoenig và Heisey (2001) |
 
-- Business Logic: Did you check that the data makes sense given your knowledge of the business?
+### 6.1. Ngộ nhận “n ≥ 30”
 
-- Review the goal of your project:
+Ghi chú viết rằng mốc 30 đã được “chứng minh thống kê”. Thực ra định lý giới hạn trung tâm (central limit theorem, CLT) là kết quả **tiệm cận**: trung bình mẫu tiến dần về phân phối chuẩn khi n tăng, với tốc độ tuỳ hình dạng phân phối gốc, nên không có ngưỡng nào để CLT “bắt đầu đúng”.
 
-- Confirm the business problem
+Theo bản preprint của Hesterberg (2015), với phân phối exponential (skewness bằng 2), xấp xỉ tiệm cận cần n > 4.578 để t-interval 95% sai không quá 10% ở mỗi phía (tỷ lệ hụt mỗi phía trong 2,25–2,75%); mô phỏng của ông cho 4.815, khoảng 5.000, và ông nhận xét “n ≥ 30” không hề gần con số này. Lakens (2022) liệt kê sáu cách biện minh cỡ mẫu, trong đó có a-priori power analysis và độ chính xác mong muốn; “n ≥ 30” thuộc nhóm heuristic. Câu “người làm regression cũng ưa tối thiểu 30” không có nguồn nên tôi bỏ.
 
-- Confirm the goal of the project
+Mô phỏng dưới lấy 10.000 mẫu cho mỗi cỡ n từ ba phân phối, rồi đếm tỷ lệ t-interval 95% nằm hẳn dưới hoặc hẳn trên trung bình thật μ:
 
-- Verify that data can solve the problem and is aligned to the goal.
+```python
+import numpy as np
+from scipy import stats
 
-#### Document the cleaning process
+rng = np.random.default_rng(2026)
+reps = 10_000
+dists = {   # tên: (hàm sinh mẫu, trung bình thật μ)
+    "normal":      (lambda size: rng.normal(0, 1, size),    0.0),
+    "exponential": (lambda size: rng.exponential(1, size),  1.0),
+    "log-normal":  (lambda size: rng.lognormal(0, 1, size), np.exp(0.5)),
+}
+print(f"{'phân phối':<12}{'n':>6}{'phủ μ':>8}{'hụt dưới':>10}{'hụt trên':>10}")
+for name, (draw, mu) in dists.items():
+    for n in (10, 30, 100, 1000):
+        x = draw((reps, n))
+        mean, se = x.mean(axis=1), x.std(axis=1, ddof=1) / np.sqrt(n)
+        half = stats.t.ppf(0.975, df=n - 1) * se
+        below = (mean + half < mu).mean()   # cả khoảng nằm dưới μ
+        above = (mean - half > mu).mean()   # cả khoảng nằm trên μ
+        print(f"{name:<12}{n:>6}{1 - below - above:>8.1%}{below:>10.1%}{above:>10.1%}")
+```
 
-- Documentation: The process of tracking changes, additions, deletions, and errors involved in your data-cleaning effort
+```text
+phân phối        n   phủ μ  hụt dưới  hụt trên
+normal          10   95.0%      2.5%      2.6%
+normal          30   94.8%      2.5%      2.7%
+normal         100   95.3%      2.4%      2.3%
+normal        1000   94.9%      2.5%      2.6%
+exponential     10   90.1%      9.6%      0.4%
+exponential     30   92.9%      6.4%      0.7%
+exponential    100   94.0%      4.6%      1.4%
+exponential   1000   94.7%      3.0%      2.3%
+log-normal      10   83.8%     16.2%      0.1%
+log-normal      30   88.5%     11.3%      0.2%
+log-normal     100   91.6%      7.9%      0.4%
+log-normal    1000   94.2%      4.3%      1.5%
+```
 
-- Recover data-cleaning errors
+![bv-04-data-cleaning-2](/vault-assets/bv-04-data-cleaning-2-01cb84c2.webp)
 
-- Inform other users of changes
+**Hình 5.** Tỷ lệ t-interval 95% nằm hẳn về một phía của μ (kết quả của code trên).
 
-- Determine quality of data
+Với normal, mỗi phía hụt khoảng 2,5% ở mọi n. Với exponential ở n = 30, độ phủ tổng 92,9% trông ổn nhưng lỗi lệch hẳn một phía: 6,4% số khoảng nằm dưới μ, chỉ 0,7% nằm trên; log-normal hụt tới 11,3%. Ở n = 1.000, exponential vẫn hụt 3,0% phía dưới, ngoài dải 2,25–2,75%. Nồng độ, số đếm hay thời gian sống thường lệch phải, nên đây không chỉ là lý thuyết.
 
-- The instructor stated that the first two benefits of documentation --1) recalling the errors that were cleaned and 2) informing others of the changes -- assume that the data errors aren't fixable. She then added that when the data errors are fixable, the documentation needs to record how the data was fixed. Data-cleaning documentation is important in both cases.
+### 6.2. Confidence level và confidence interval
 
-- Engineers use engineering change orders (ECOs) to keep track of new product design details and proposed changes to existing products. Writers use document revision histories to keep track of changes to document flow and edits. And data analysts use changelogs to keep track of data transformation and cleaning.
+Theo Greenland et al. (2016), mức tin cậy 95% là tần suất mà **các khoảng tạo bởi cùng một phương pháp** chứa giá trị thật khi mọi giả định đều đúng, tức tính chất của phương pháp chứ không của một khoảng cụ thể. Vì vậy, một khoảng tin cậy (confidence interval, CI) 95% cụ thể không có 95% cơ hội chứa giá trị thật (ngộ nhận số 19), không dự đoán 95% ước lượng của các nghiên cứu sau (số 22), và hai CI chồng nhau không có nghĩa là khác biệt không significant (số 21). Hiểu sai CI rất phổ biến: Hoekstra et al. (2014) đưa sáu phát biểu sai về CI cho 120 nhà nghiên cứu và 442 sinh viên tâm lý học, và trung bình mỗi người vẫn đồng ý với hơn ba.
 
-- Most software applications have a kind of history tracking built in. For example, in Google sheets, you can check the version history of an entire sheet or an individual cell and go back to an earlier version. In Microsoft Excel, you can use a feature called Track Changes. And in BigQuery, you can view the history to check what has changed. Here’s how it works:
+![bv-04-data-cleaning-1](/vault-assets/bv-04-data-cleaning-1-5134db99.webp)
 
-| Google Sheets | 1. Right-click the cell and select Show edit history. 2. Click the left-arrow < or right arrow > to move backward and forward in the history as needed. |
-| --- | --- |
-| Microsoft Excel | 1. If Track Changes has been enabled for the spreadsheet: click Review. 2. Under Track Changes, click the Accept/Reject Changes option to accept or reject any change made. |
-| BigQuery | Bring up a previous version (without reverting to it) and figure out what changed by comparing it to the current version. |
+**Hình 4.** 100 khoảng tin cậy 95%, mỗi khoảng từ một mẫu n = 30 của phân phối normal (một lần chạy; trung bình qua 200 lần chạy là 4,8 khoảng không chứa μ).
 
-- A changelog can build on your automated version history by giving you an even more detailed record of your work. This is where data analysts record all the changes they make to the data. Here is another way of looking at it. Version histories record what was done in a data change for a project, but don't tell us why. Changelogs are super useful for helping us understand the reasons changes have been made. Changelogs have no set format and you can even make your entries in a blank document. But if you are using a shared changelog, it is best to agree with other data analysts on the format of all your log entries.
+Ghi chú còn viết “99% là lý tưởng”, nhưng với cùng dữ liệu, mức tin cậy càng cao thì khoảng càng rộng; đây là lựa chọn đánh đổi tuỳ hậu quả của việc sai.
 
-- Typically, a changelog records:
+### 6.3. Statistical significance và statistical power
 
-- Data, file, formula, query, or any other component that changed
+Về ý nghĩa thống kê (statistical significance), Greenland et al. (2016) chỉ ra rằng P value không phải xác suất để giả thuyết kiểm định đúng (ngộ nhận số 1), và significant không có nghĩa là quan trọng về khoa học, vì ở nghiên cứu lớn hiệu ứng rất nhỏ cũng significant được (số 7). Ngược lại, P > 0,05 không có nghĩa là giả thuyết kiểm định đúng (số 4) hay không có hiệu ứng (số 6). Định nghĩa P value: [Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/), [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/).
 
-- Description of what changed
+Power (năng lực của kiểm định) là xác suất **trước nghiên cứu** để test bác bỏ giả thuyết kiểm định khi một giả thuyết thay thế cụ thể là đúng (Greenland et al., 2016). Mức 0,8 là mục tiêu khi **lên kế hoạch** cỡ mẫu, không phải điều kiện để gọi kết quả là significant. Dùng power để diễn giải kết quả không significant cũng sai (ngộ nhận số 24, 25); Hoenig và Heisey (2001) gọi cách làm này là “fundamentally flawed”. Dù vậy power thấp vẫn nguy hiểm: theo Button et al. (2013), nó làm giảm khả năng phát hiện hiệu ứng thật, giảm khả năng một kết quả significant là thật, và phóng đại cỡ hiệu ứng ước lượng.
 
-- Date of the change
+### 6.4. Các định nghĩa nhỏ khác
 
-- Person who made the change
+“Sample size: a part of a population that is representative” là định nghĩa của **mẫu** (sample); cỡ mẫu là **số đơn vị** trong mẫu. “Sample bias” nên viết là sampling bias ([bài 03](/blog/prepare-data-for-exploration/)). Random sampling nên đổi thành simple random sampling: mọi tập con cỡ n có cùng xác suất được chọn. Margin of error chỉ phản ánh sai số ngẫu nhiên do lấy mẫu, không phản ánh sampling bias hay lỗi đo. Tăng cỡ mẫu làm tăng power và độ chính xác; “significance” không phải mục tiêu để tối ưu.
 
-- Person who approved the change
+### 6.5. Kiểm tra lại máy tính cỡ mẫu của khoá học
 
-- Version number
+Trong bảng tính Margin of Error Calculator tôi lưu khi học, sheet Sample Size Calculator nhập quần thể 80.000.000, mức tin cậy 99%, margin of error 5% và hiển thị cỡ mẫu **100**. Tính lại với p = 0,5, $n_0 = z^2 p(1-p)/e^2$, kèm hiệu chỉnh quần thể hữu hạn như bảng tính:
 
-- Reason for the change
+```python
+import math
+from scipy.stats import norm
 
-- If an analyst is making changes to an existing SQL query that is shared across the company, the company most likely uses what is called a version control system. An example might be a query that pulls daily revenue to build a dashboard for senior management. Here's how a version control system affects a change to a query:
+N, conf, moe, p = 80_000_000, 0.99, 0.05, 0.5
 
-  - A company has official versions of important queries in their version control system.
+def sample_size(z):
+    n0 = z**2 * p * (1 - p) / moe**2
+    return math.ceil(n0 / (1 + n0 / N))     # cùng dạng hiệu chỉnh với bảng tính
 
-  - An analyst makes sure the most up-to-date version of the query is the one they will change. This is called syncing
+z = norm.ppf(1 - (1 - conf) / 2)
+print(f"z = {z:.4f}; n = {sample_size(z)}")
+print("Nếu tra nhầm cột xác suất 0,995:", sample_size(0.995))
+```
 
-  - The analyst makes a change to the query.
+```text
+z = 2.5758; n = 664
+Nếu tra nhầm cột xác suất 0,995: 100
+```
 
-  - The analyst might ask someone to review this change. This is called a code review and can be informally or formally done. An informal review could be as simple as asking a senior analyst to take a look at the change.
+Kết quả đúng là **664**. Công thức ô kết quả cho thấy nguyên nhân: `VLOOKUP(D5,'ZScore Lookup'!A51:C102,2,FALSE)` lấy **cột 2** của bảng tra (xác suất tích luỹ 0,995) thay vì **cột 3** (z = 2,58). Bản trống của cùng công cụ tra đúng cột 3, nên lỗi chỉ có ở bản tôi lưu, chưa rõ có sẵn hay phát sinh khi chỉnh sửa. Bảng ZScore Lookup cũng có vẻ gõ tay: so với z tính lại và làm tròn 2 chữ số, 18 trên 102 dòng lệch, rõ nhất ở mức 20% (0,26 so với 0,253), 29% (0,36 so với 0,372) và 30% (0,37 so với 0,385); các mức 95% và 99% thì đúng.
 
-  - After a reviewer approves the change, the analyst submits the updated version of the query to a repository in the company's version control system. This is called a code commit. A best practice is to document exactly what the change was and why it was made in a comments area. Going back to our example of a query that pulls daily revenue, a comment might be: Updated revenue to include revenue coming from the new product, Calypso.
+## 7. Checklist tổng hợp và bàn luận
 
-  - After the change is submitted, everyone else in the company will be able to access and use this new query when they sync to the most up-to-date queries stored in the version control system.
+**Trước khi nhập dữ liệu**
+- Tidy data (Wickham, 2014); một bảng hình chữ nhật, data dictionary, data validation, ngày YYYY-MM-DD, lưu plain text (Broman & Woo, 2018).
+- Cột tên gen định dạng Text trước khi dán hoặc gõ, kèm cột ID ổn định (Abeysooriya et al., 2021; Bruford et al., 2020).
 
-  - If the query has a problem or business needs change, the analyst can undo the change to the query using the version control system. The analyst can look at a chronological list of all changes made to the query and who made each change. Then, after finding their own change, the analyst can revert to the previous version.
+**Khi làm sạch**
+- Bản gốc read-only, mọi thay đổi đi qua script (Buffalo, 2015; Wilson et al., 2017).
+- Screening theo constraint, kể cả trùng lặp một phần và chuyển đổi tự động sang ngày hay số.
+- Chẩn đoán trước khi sửa; chưa rõ thì gắn cờ, không xoá (Van den Broeck et al., 2005).
 
-  - The query is back to what it was before the analyst made the change. And everyone at the company sees this reverted, original query, too.
+**Sau khi làm sạch**
+- Verification checklist; so sánh số dòng, số nhãn và các tổng trước và sau.
+- Changelog có lý do (Lacan, n.d.); báo cáo loại lỗi và số dòng bị sửa hoặc xoá (Van den Broeck et al., 2005).
 
-- A changelog for a personal project may take any form desired. However, in a professional setting and while collaborating with others, readability is important. These guiding principles help to make a changelog accessible to others:
+Bài có ba giới hạn: file thực hành là dữ liệu bán hàng; phần quét GEO mới là đề xuất; mô phỏng chỉ để minh hoạ, không thay cho power analysis thật.
 
-- Changelogs are for humans, not machines, so write legibly.
+Hai nội dung khác của khoá học nên đọc thận trọng. Nhánh dùng proxy data trong sơ đồ “Data errors / Not enough data” cần cảnh báo rằng dữ liệu thay thế có thể mang bias riêng ([bài 02](/blog/ask-questions-to-make-data-driven-decisions/)). Bảng “What can be automated” khẳng định mô hình hoá tự động hoá được hoàn toàn mà không dẫn nguồn; khi ngay bước diagnosing đã cần hiểu biết chuyên môn (Van den Broeck et al., 2005), tôi cho rằng khẳng định này quá mạnh.
 
-- Every version should have its own entry.
+## 8. Kết luận
 
-- Each change should have its own line.
+Làm sạch dữ liệu là một phần của thiết kế nghiên cứu, không phải bước dọn dẹp cuối cùng. Ít lỗi nhất là khi dữ liệu được tổ chức đúng từ đầu, bản gốc được giữ nguyên, và mọi thay đổi đi qua script kèm changelog. Trường hợp tên gen cho thấy công cụ quen thuộc có thể âm thầm làm hỏng dữ liệu của hàng nghìn bài báo, và một bài cảnh báo chưa đủ để đổi thói quen. Các quy tắc dùng nhanh như “n ≥ 30” cần nhường chỗ cho lập luận theo mục tiêu. Bước tiếp theo là gộp bảng: [bài 05](/blog/analyze-data-to-answer-questions/) bàn về VLOOKUP và JOIN, nơi một chỉ số cột sai như ở mục 6.5 có thể tạo lỗi mới.
 
-- Group the same types of changes. For example, Fixed should be grouped separately from Added.
+## Tài liệu tham khảo
 
-- Versions should be ordered chronologically starting with the latest.
+Abeysooriya, M., Soria, M., Kasu, M. S., & Ziemann, M. (2021). Gene name errors: Lessons not learned. *PLOS Computational Biology, 17*(7), e1008984. https://doi.org/10.1371/journal.pcbi.1008984
 
-- The release date of each version should be noted.
+Broman, K. W., & Woo, K. H. (2018). Data organization in spreadsheets. *The American Statistician, 72*(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
 
-- All the changes for each category should be grouped together. Types of changes usually fall into one of the following categories:
+Bruford, E. A., Braschi, B., Denny, P., Jones, T. E. M., Seal, R. L., & Tweedie, S. (2020). Guidelines for human gene nomenclature. *Nature Genetics, 52*(8), 754–758. https://doi.org/10.1038/s41588-020-0669-3
 
-- Added: new features introduced
+Buffalo, V. (2015). *Bioinformatics data skills: Reproducible and robust research with open source tools*. O'Reilly Media.
 
-- Changed: changes in existing functionality
+Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: Why small sample size undermines the reliability of neuroscience. *Nature Reviews Neuroscience, 14*(5), 365–376. https://doi.org/10.1038/nrn3475
 
-- Deprecated: features about to be removed
+Ellis, S. E., & Leek, J. T. (2018). How to share data for collaboration. *The American Statistician, 72*(1), 53–57. https://doi.org/10.1080/00031305.2017.1375987
 
-- Removed: features that have been removed
+Fifadra, C. (2022, July 5). *Control data conversions in Excel*. Microsoft 365 Insider Blog. https://techcommunity.microsoft.com/blog/microsoft365insiderblog/control-data-conversions-in-excel/4215348
 
-- Fixed: bug fixes
+Google. (n.d.). *Process data from dirty to clean* [MOOC]. Coursera. https://www.coursera.org/learn/process-data
 
-- Security: lowering vulnerabilities
+Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G. (2016). Statistical tests, P values, confidence intervals, and power: A guide to misinterpretations. *European Journal of Epidemiology, 31*(4), 337–350. https://doi.org/10.1007/s10654-016-0149-3
 
-- Common data errors:
+Hesterberg, T. C. (2015). What teachers should know about the bootstrap: Resampling in the undergraduate statistics curriculum. *The American Statistician, 69*(4), 371–386. https://doi.org/10.1080/00031305.2015.1089789 (preprint: https://arxiv.org/abs/1411.5279)
 
-- Human error in data entry
+Hoekstra, R., Morey, R. D., Rouder, J. N., & Wagenmakers, E.-J. (2014). Robust misinterpretation of confidence intervals. *Psychonomic Bulletin & Review, 21*(5), 1157–1164. https://doi.org/10.3758/s13423-013-0572-3
 
-- Flawed processes
+Hoenig, J. M., & Heisey, D. M. (2001). The abuse of power: The pervasive fallacy of power calculations for data analysis. *The American Statistician, 55*(1), 19–24. https://doi.org/10.1198/000313001300339897
 
-- System issues
+Lacan, O. (n.d.). *Keep a Changelog* (Version 1.1.0). https://keepachangelog.com/en/1.1.0/
 
-![image_034](/vault-assets/image-034-841115ce.webp)
+Lakens, D. (2022). Sample size justification. *Collabra: Psychology, 8*(1), 33267. https://doi.org/10.1525/collabra.33267
 
-- The IMPORTRANGE function in Google Sheets and the Paste Link feature (a Paste Special option in Microsoft Excel) both allow you to insert data from one sheet to another. Using these on a large amount of data is more efficient than manual copying and pasting. They also reduce the chance of errors being introduced by copying and pasting the wrong data. They are also helpful for data cleaning because you can “cherry pick” the data you want to analyze and leave behind the data that isn’t relevant to your project. Basically, it is like canceling noise from your data so you can focus on what is most important to solve your problem. This functionality is also useful for day-to-day data monitoring; with it, you can build a tracking spreadsheet to share the relevant data with others. The data is synced with the data source so when the data is updated in the source file, the tracked data is also refreshed.
+Microsoft. (n.d.). *Stop automatically changing numbers to dates*. Microsoft Support. https://support.microsoft.com/en-us/office/stop-automatically-changing-numbers-to-dates-452bd2db-cc96-47d1-81e4-72cec11c4ed8
 
-- In Google Sheets, you can use the IMPORTRANGE function. It enables you to specify a range of cells in the other spreadsheet to duplicate in the spreadsheet you are working in. You must allow access to the spreadsheet containing the data the first time you import the data.
+Van den Broeck, J., Argeseanu Cunningham, S., Eeckels, R., & Herbst, K. (2005). Data cleaning: Detecting, diagnosing, and editing data abnormalities. *PLoS Medicine, 2*(10), e267. https://doi.org/10.1371/journal.pmed.0020267
 
-- The QUERY function is also useful when you want to pull data from another spreadsheet. The QUERY function's SQL-like ability can extract specific data within a spreadsheet. For a large amount of data, using the QUERY function is faster than filtering data manually. This is especially true when repeated filtering is required. For example, you could generate a list of all customers who bought your company’s products in a particular month using manual filtering. But if you also want to figure out customer growth month over month, you have to copy the filtered data to a new spreadsheet, filter the data for sales during the following month, and then copy those results for the analysis. With the QUERY function, you can get all the data for both months without a need to change your original dataset or copy results.
+Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. *Journal of Management Information Systems, 12*(4), 5–33. https://doi.org/10.1080/07421222.1996.11518099
 
-- The QUERY function syntax is similar to IMPORTRANGE. You enter the sheet by name and the range of data that you want to query from, and then use the SQL SELECT command to select the specific columns. You can also add specific criteria after the SELECT statement by including a WHERE statement. But remember, all of the SQL code you use has to be placed between the quotes!
+Wickham, H. (2014). Tidy data. *Journal of Statistical Software, 59*(10). https://doi.org/10.18637/jss.v059.i10
 
-- Google Sheets run the Google Visualization API Query Language across the data. Excel spreadsheets use a query wizard to guide you through the steps to connect to a data source and select the tables. In either case, you are able to be sure that the data imported is verified and clean based on the criteria in the query.
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLOS Computational Biology, 13*(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
-- The FILTER function is fully internal to a spreadsheet and doesn’t require the use of a query language. The FILTER function lets you view only the rows (or columns) in the source data that meet your specified conditions. It makes it possible to pre-filter data before you analyze it.
+Zeeberg, B. R., Riss, J., Kane, D. W., Bussey, K. J., Uchio, E., Linehan, W. M., Barrett, J. C., & Weinstein, J. N. (2004). Mistaken identifiers: Gene name errors can be introduced inadvertently when using Excel in bioinformatics. *BMC Bioinformatics, 5*, 80. https://doi.org/10.1186/1471-2105-5-80
 
-- The FILTER function might run faster than the QUERY function. But keep in mind, the QUERY function can be combined with other functions for more complex calculations. For example, the QUERY function can be used with other functions like SUM and COUNT to summarize data, but the FILTER function can't.
-
-v. Module 5: Add data to your resume
-
-- Summary:
-
-- Problem
-
-- Action
-
-- Result
-
-- Skills: Spreadsheets, SQL, R, Tableau
-
-  - Programming languages: SQL, R
-
-- Job title: Junior or associate data analysts
-
-- Healthcare analyst
-
-- Marketing analyst
-
-- Business intelligence analyst
-
-- Financial analyst
-
-- Ethical considerations: Data analysts often have access to a great deal of data and must consider what's right and fair when collecting and interpreting it. It’s important to establish and follow ethical guidelines for data use, some of which are included below:
-
-  - Informed consent: Obtain informed and voluntary consent from individuals before collecting their data. This ensures that people are aware of how their data will be used and gives them the opportunity to make an informed decision about data sharing.
-
-  - Anonymity and confidentiality: Protect the privacy of individuals through de-identification and confidentiality measures. This guideline helps prevent unauthorized access to sensitive data and maintains trust in data handling.
-
-  - Data security: Implement robust data security measures to safeguard data from breaches and unauthorized access. Data security is foundational for protecting individuals' information.
-
-  - Transparency: Transparency in data use practices is critical for building trust. Clearly communicate how data is collected, processed, and shared.
-
-  - Data ownership and control:  Make sure to give people control over their data, including the ability to access, correct, or delete it.
-
-- If your team is small or lacks diversity, there are steps you can take to identify and mitigate bias in data collection and analysis:
-
-- Educate yourself on unconscious bias and its impact on data analysis.
-
-- Review data collection methods to find and fix bias in tools and survey questions.
-
-- Be transparent in documenting all aspects of your data collection and analysis methods to allow others to review and identify potential biases in your methodology.
-
-- Consult with diverse data experts and seek peer reviews from colleagues with diverse perspectives.
-
-- Engage in continuous learning and in discussions with other data analysts to stay up to date on the latest research and techniques.
+Ziemann, M., Eren, Y., & El-Osta, A. (2016). Gene name errors are widespread in the scientific literature. *Genome Biology, 17*, 177. https://doi.org/10.1186/s13059-016-1044-7

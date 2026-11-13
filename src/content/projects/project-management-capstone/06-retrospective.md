@@ -9,7 +9,7 @@ folder: Projects / Capstone - Project Management
 vaultPath: Projects/Capstone - Project Management/06 - Retrospective.md
 url: >-
   /projects/project-management-capstone/retrospective-sauce-and-spoon-tablet-pilot-after-launch-testing/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 6
 project: project-management-capstone
 isIndex: false

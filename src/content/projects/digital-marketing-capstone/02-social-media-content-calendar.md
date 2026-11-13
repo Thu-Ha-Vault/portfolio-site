@@ -9,7 +9,7 @@ folder: Projects / Capstone - Digital Marketing
 vaultPath: Projects/Capstone - Digital Marketing/02 - Social media content calendar.md
 url: >-
   /projects/digital-marketing-capstone/social-media-content-calendar-sinclair-verde-launch-month/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 2
 project: digital-marketing-capstone
 isIndex: false

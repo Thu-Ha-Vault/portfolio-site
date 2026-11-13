@@ -8,7 +8,7 @@ tags:
 folder: Projects / Capstone - Digital Marketing
 vaultPath: Projects/Capstone - Digital Marketing/03 - Welcome email series.md
 url: /projects/digital-marketing-capstone/welcome-email-series-sinclair-verde/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 3
 project: digital-marketing-capstone
 isIndex: false

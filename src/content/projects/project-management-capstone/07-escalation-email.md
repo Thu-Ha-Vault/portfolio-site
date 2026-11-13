@@ -9,7 +9,7 @@ folder: Projects / Capstone - Project Management
 vaultPath: Projects/Capstone - Project Management/07 - Escalation email.md
 url: >-
   /projects/project-management-capstone/escalation-email-tablet-freezes-and-the-guest-experience/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 7
 project: project-management-capstone
 isIndex: false

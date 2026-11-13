@@ -11,7 +11,7 @@ vaultPath: >-
   survey.md
 url: >-
   /projects/digital-marketing-capstone/loyalty-program-and-post-purchase-survey-sinclair-verde/
-updated: '2026-11-11'
+updated: '2026-11-12'
 order: 6
 project: digital-marketing-capstone
 isIndex: false
