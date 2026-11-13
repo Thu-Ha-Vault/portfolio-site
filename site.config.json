@@ -31,7 +31,8 @@
   },
   "articles": {
     "root": "Projects/Portfolio Website/Bài viết",
-    "_comment": "A note here with type: article and replaces: \"<path under blog.root>\" is published at that note's URL instead of the note."
+    "_comment": "A note here with type: article and replaces: \"<path under blog.root>\" is published at that note's URL instead of the note. With only: true the blog shows finished articles only (topic pages stay while they contain one).",
+    "only": true
   },
   "projects": [
     {

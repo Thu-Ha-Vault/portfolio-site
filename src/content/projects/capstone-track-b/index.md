@@ -54,7 +54,7 @@ description: >-
   bài và roadmap nằm ở Course 8: Case Study (mục Case Study 3). Làm sau khi xong
   Case Study - Cyclistic. Khoá Google Data Analytics đã hoàn thà
 ---
-> Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề bài và roadmap nằm ở [Course 8: Case Study](/blog/case-study/) (mục *Case Study 3*). Làm sau khi xong [Case Study - Cyclistic](/projects/cyclistic-bike-share/). Khoá Google Data Analytics đã hoàn thành ngày 11/11/2026 (→ [Data Science](/topics/data-science/)), nên Track B là dự án portfolio bổ sung, không còn là điều kiện lấy chứng chỉ.
+> Track B của capstone Google Data Analytics: tự chọn đề tài, tự tìm dữ liệu. Đề bài và roadmap nằm ở Course 8: Case Study (mục *Case Study 3*). Làm sau khi xong [Case Study - Cyclistic](/projects/cyclistic-bike-share/). Khoá Google Data Analytics đã hoàn thành ngày 11/11/2026 (→ [Data Science](/topics/data-science/)), nên Track B là dự án portfolio bổ sung, không còn là điều kiện lấy chứng chỉ.
 
 ## Mục tiêu & sản phẩm
 - **Kịch bản**: junior data analyst cho một công ty tư vấn business intelligence, dẫn dắt dự án cho khách hàng mới, từ định nghĩa business task đến trình bày khuyến nghị

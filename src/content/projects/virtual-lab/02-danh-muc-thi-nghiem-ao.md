@@ -33,8 +33,8 @@ isIndex: false
 	- Mỗi cây mang kiểu gen; giảm phân tạo giao tử ngẫu nhiên, thụ tinh tổ hợp ngẫu nhiên, kiểu hình theo quan hệ trội – lặn.
 	- Lai một cặp và hai cặp tính trạng (phân li độc lập), lai phân tích, lai thuận nghịch.
 	- Sinh trưởng: hạt → cây con → ra hoa → quả → hạt; mỗi quả có số hạt ngẫu nhiên.
-- **Kết quả**: bảng đếm F2, ví dụ số liệu thật của Mendel là 5474 hạt trơn : 1850 hạt nhăn. Tỉ lệ gần 3 : 1 hoặc 9 : 3 : 3 : 1 nhưng luôn lệch ngẫu nhiên. (→ [Quy luật Mendel](/blog/quy-luat-mendel/))
-	- Người dùng tự kiểm định $\chi^2$ để kết luận số liệu có phù hợp tỉ lệ lý thuyết không. (→ [Kiểm định χ²](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
+- **Kết quả**: bảng đếm F2, ví dụ số liệu thật của Mendel là 5474 hạt trơn : 1850 hạt nhăn. Tỉ lệ gần 3 : 1 hoặc 9 : 3 : 3 : 1 nhưng luôn lệch ngẫu nhiên. (→ Quy luật Mendel)
+	- Người dùng tự kiểm định $\chi^2$ để kết luận số liệu có phù hợp tỉ lệ lý thuyết không. (→ Kiểm định χ²)
 - **Mở rộng**: tương tác gen (9 : 7, 12 : 3 : 1, 9 : 3 : 4…), trội không hoàn toàn (hoa mõm chó, 1 : 2 : 1).
 
 ### A2. Ruồi giấm (Morgan)
@@ -48,8 +48,8 @@ isIndex: false
 	- Liên kết gen và hoán vị gen theo khoảng cách trên NST; ở ruồi giấm chỉ con cái có hoán vị.
 	- Vòng đời: trứng → ấu trùng → nhộng → ruồi trưởng thành, ~10 ngày ở 25 °C, chậm hơn khi lạnh.
 - **Kết quả**:
-	- Gen màu mắt (white): lai thuận và lai nghịch cho kết quả khác nhau; ở F2 của phép lai ♀ mắt đỏ × ♂ mắt trắng, mắt trắng chỉ xuất hiện ở con đực. (→ [Di truyền liên kết với giới tính](/blog/di-truyen-lien-ket-voi-gioi-tinh/))
-	- Thân xám/đen và cánh dài/cụt: lai phân tích ♀ F1 cho 4 kiểu hình, 2 kiểu tái tổ hợp chiếm ~17% → tính tần số hoán vị, dựng bản đồ gen. (→ [Liên kết gen và hoán vị gen](/blog/lien-ket-gen-va-hoan-vi-gen/))
+	- Gen màu mắt (white): lai thuận và lai nghịch cho kết quả khác nhau; ở F2 của phép lai ♀ mắt đỏ × ♂ mắt trắng, mắt trắng chỉ xuất hiện ở con đực. (→ Di truyền liên kết với giới tính)
+	- Thân xám/đen và cánh dài/cụt: lai phân tích ♀ F1 cho 4 kiểu hình, 2 kiểu tái tổ hợp chiếm ~17% → tính tần số hoán vị, dựng bản đồ gen. (→ Liên kết gen và hoán vị gen)
 
 ### A3. Nuôi phôi cá ngựa vằn
 <div class="callout callout-success">
@@ -60,7 +60,7 @@ isIndex: false
 - **Mô phỏng**:
 	- Các giai đoạn phát triển theo giờ ở 28,5 °C: hợp tử (0–0,75 hpf), phân cắt (0,75–2,25), phôi nang (2,25–5,25), phôi vị (5,25–10), phân đốt (10–24), pharyngula (24–48), nở (48–72).
 	- Đường cong liều – đáp ứng: nồng độ càng cao thì tỉ lệ chết và dị dạng càng tăng; mỗi phôi có độ nhạy ngẫu nhiên.
-- **Kết quả**: ảnh phôi theo giờ, bảng sống/chết theo nồng độ, LC50. Đánh giá theo OECD 236: phôi đông tụ, không hình thành đốt, đuôi không tách khỏi khối noãn hoàng, không có nhịp tim. (→ [Độc tính PG trên phôi cá ngựa vằn](/blog/danh-gia-tac-dong-cua-propylene-glycol-pg-len-su-phat-trien-phoi-ca-ngua-van/))
+- **Kết quả**: ảnh phôi theo giờ, bảng sống/chết theo nồng độ, LC50. Đánh giá theo OECD 236: phôi đông tụ, không hình thành đốt, đuôi không tách khỏi khối noãn hoàng, không có nhịp tim. (→ Độc tính PG trên phôi cá ngựa vằn)
 
 ### Ý tưởng thêm
 - Lai ngô hoặc lai hoa để minh hoạ tương tác gen.
@@ -91,7 +91,7 @@ isIndex: false
 	- Chuẩn độ HCl bằng NaOH, chỉ thị phenolphthalein: dung dịch chuyển từ không màu sang hồng nhạt ở điểm tương đương.
 - **Ví dụ hoá sinh**:
 	- Phản ứng biuret: protein + CuSO₄ trong môi trường NaOH → màu tím.
-	- Kết tủa protein bằng (NH₄)₂SO₄, nhiệt, acid hữu cơ, ion kim loại nặng. (→ [Tính chất của protein](/blog/xac-dinh-mot-so-tinh-chat-cua-protein/))
+	- Kết tủa protein bằng (NH₄)₂SO₄, nhiệt, acid hữu cơ, ion kim loại nặng. (→ Tính chất của protein)
 	- Thuỷ phân tinh bột bằng amylase, thử bằng iodine: màu xanh tím nhạt dần rồi mất.
 
 ## C. Thiết bị
@@ -104,7 +104,7 @@ isIndex: false
 	- Nhiệt độ gắn mồi quá thấp → thêm băng không đặc hiệu; quá cao → không có sản phẩm.
 	- Nhiễm mẫu → giếng đối chứng âm có băng.
 	- Điện di: DNA chạy về cực dương, quãng đường tỉ lệ nghịch với log(kích thước); plasmid siêu xoắn chạy nhanh hơn dạng thẳng.
-- **Kết quả**: ảnh gel ảo với giếng ladder, mẫu và đối chứng. (→ [Thực hành Sinh học phân tử](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/))
+- **Kết quả**: ảnh gel ảo với giếng ladder, mẫu và đối chứng. (→ Thực hành Sinh học phân tử)
 
 ### C2. HPLC
 - **Người dùng làm**: chọn cột (C18 pha đảo, trao đổi ion), pha động (nước, acetonitrile, formic acid), chương trình gradient, tốc độ dòng, bước sóng detector; tiêm mẫu chuẩn và mẫu thật.
@@ -112,14 +112,14 @@ isIndex: false
 	- Mỗi chất có thời gian lưu riêng, phụ thuộc độ phân cực và tỉ lệ dung môi hữu cơ: trên cột pha đảo, chất càng kém phân cực ra càng muộn.
 	- Peak dạng Gauss, càng ra muộn càng rộng; hai peak gần nhau có thể chồng lên nhau.
 	- Diện tích peak tỉ lệ với nồng độ → dựng đường chuẩn để định lượng.
-- **Kết quả**: sắc ký đồ, bảng thời gian lưu và diện tích peak. (→ [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/))
+- **Kết quả**: sắc ký đồ, bảng thời gian lưu và diện tích peak. (→ LC-MS/MS)
 
 ### C3. Máy quang phổ UV-Vis
 - **Người dùng làm**: pha dãy chuẩn, chọn bước sóng, đo mẫu trắng rồi đo mẫu.
 - **Mô phỏng**:
 	- Định luật Beer–Lambert $A = \varepsilon l c$; độ hấp thụ quá cao thì mất tuyến tính, phải pha loãng.
 	- Động học enzyme: tốc độ phản ứng theo nồng độ cơ chất (Michaelis–Menten), ảnh hưởng của nhiệt độ và pH.
-- **Kết quả**: đường chuẩn, hoạt độ enzyme. (→ [Hoạt độ lipase bằng p-NPP](/blog/hoat-do-enzyme/))
+- **Kết quả**: đường chuẩn, hoạt độ enzyme. (→ Hoạt độ lipase bằng p-NPP)
 
 ### Thiết bị thêm sau
 - Máy ly tâm, kính hiển vi, tủ ấm, máy đọc vi đĩa, real-time PCR (qPCR), máy khối phổ (MALDI-TOF, LC-MS/MS).

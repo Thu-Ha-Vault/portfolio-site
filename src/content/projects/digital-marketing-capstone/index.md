@@ -50,7 +50,7 @@ description: >-
   Module 3 của Course 7: Satisfaction Guaranteed: đóng vai nhân viên agency Good
   Mercury Marketing, làm chiến lược marketing số cho Sinclair Verde
 ---
-> Dự án cuối khoá của chứng chỉ Google Digital Marketing & E-commerce, nằm ở Module 3 của [Course 7: Satisfaction Guaranteed](/blog/satisfaction-guaranteed-develop-customer-loyalty-online/): đóng vai nhân viên agency **Good Mercury Marketing**, làm chiến lược marketing số cho **Sinclair Verde Lamp Company** (cửa hàng ở Phoenix làm đèn từ đồ tái chế, vừa mở cửa hàng online).
+> Dự án cuối khoá của chứng chỉ Google Digital Marketing & E-commerce, nằm ở Module 3 của Course 7: Satisfaction Guaranteed: đóng vai nhân viên agency **Good Mercury Marketing**, làm chiến lược marketing số cho **Sinclair Verde Lamp Company** (cửa hàng ở Phoenix làm đèn từ đồ tái chế, vừa mở cửa hàng online).
 
 ## Mục tiêu & sản phẩm
 - **Có bắt buộc không**: đây là chuỗi hoạt động tự đánh giá (self review), không chấm điểm riêng; chứng chỉ cần qua các quiz có chấm điểm (≥ 80%). Nhưng course xây dự án này để làm **portfolio**, nên nên làm đầy đủ.

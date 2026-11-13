@@ -666,7 +666,7 @@ description: >-
 	- Bệnh lá (phấn trắng, gỉ sắt) và mốc xám theo độ ẩm, nhiệt độ của loài; hệ số giảm quả: bệnh lá 0,7, mốc xám 0,6, khô hạn lúc ra hoa 0,6 (*minh hoạ*).
 - `pea-garden.js`: bao hoa; loài thụ phấn nhờ ong (hoa mõm chó, bí) không bao thì hạt mang phấn lạ của nhóm cây khác theo tỉ lệ giao phấn của loài. Thụ phấn tay khi chưa khử nhị dùng tỉ lệ giao phấn tự nhiên thay cho giả định 10 % cũ.
 - Bảng khí hậu đổi theo loài của protocol, có chọn tưới nhỏ giọt hoặc tự tưới; cảnh 3D: lá bệnh trắng xám, hoa đã bao màu giấy.
-- Protocol "Nhà kính: chăm đậu Hà Lan từ gieo tới thu hạt"; thêm bước bao hoa vào lai hoa mõm chó và bí. (→ [Quy luật Mendel](/blog/quy-luat-mendel/): khử nhị và bao hoa giữ cho phép lai sạch)
+- Protocol "Nhà kính: chăm đậu Hà Lan từ gieo tới thu hạt"; thêm bước bao hoa vào lai hoa mõm chó và bí. (→ Quy luật Mendel: khử nhị và bao hoa giữ cho phép lai sạch)
 - [x] Ngưỡng khí hậu có nguồn, tưới nước, bệnh, bao hoa, cây đúng loài ✅ 2026-10-16
 - [x] Hình chi tiết buồng sinh trưởng ✅ 2026-10-16
 

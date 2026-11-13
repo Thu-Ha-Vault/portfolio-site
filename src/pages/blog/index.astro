@@ -22,7 +22,7 @@ const topics = [...new Set(posts.map((p) => p.data.topic ?? ''))]
     <form class="search-form" role="search" action="/blog/" method="get" data-search>
       <label class="search-label" for="q"><T k="search" /></label>
       <input class="search" id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" spellcheck="false" placeholder={ui.searchPlaceholder[0]} data-placeholder-vi={ui.searchPlaceholder[0]} data-placeholder-en={ui.searchPlaceholder[1]} />
-      <p class="result-count" aria-live="polite"><span id="count">{posts.length}</span> <T vi="ghi chép" en="notes" /></p>
+      <p class="result-count" aria-live="polite"><span id="count">{posts.length}</span> <T vi="bài viết" en="articles" /></p>
     </form>
     <div class="filters" role="group" aria-label={ui.topics[0]} data-aria-vi={ui.topics[0]} data-aria-en={ui.topics[1]}>
       <button type="button" class="chip" aria-pressed="true" data-filter=""><T k="allTopics" /> <span class="n">{posts.length}</span></button>
@@ -40,9 +40,9 @@ const topics = [...new Set(posts.map((p) => p.data.topic ?? ''))]
     <div class="empty" id="empty" hidden>
       <p>
         <span id="empty-with-q">
-          <T vi="Không có ghi chép nào khớp “" en="No notes match “" /><span class="empty-q" id="empty-q"></span><T vi="”. " en="”. " />
+          <T vi="Không có bài viết nào khớp “" en="No articles match “" /><span class="empty-q" id="empty-q"></span><T vi="”. " en="”. " />
         </span>
-        <span id="empty-no-q" hidden><T vi="Không có ghi chép nào khớp. " en="No notes match. " /></span>
+        <span id="empty-no-q" hidden><T vi="Không có bài viết nào khớp. " en="No articles match. " /></span>
         <T vi="Thử từ khoá ngắn hơn hoặc chọn chủ đề khác." en="Try a shorter keyword or choose another topic." />
       </p>
       <button type="button" class="button flat" id="clear"><T vi="Xoá bộ lọc" en="Clear filters" /></button>

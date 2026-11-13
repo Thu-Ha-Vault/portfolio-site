@@ -40,12 +40,12 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Nhiều lối tắt tới thư viện tài liệu chung của khoa (không đọc hết).
 - **Hoá học** (khoảng 420 mục):
 	- Giáo trình "Thực tập hoá đại cương" (Khoa Hoá, ĐHKHTN – ĐHQGHN, 10 bài, bản scan 138 trang).
-	- Đề cương CHE 1080, đề thi, bài giảng (→ [Hoá học đại cương](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/)).
+	- Đề cương CHE 1080, đề thi, bài giảng (→ Hoá học đại cương).
 	- Thư viện "HÓA HỌC" chia sẻ: muối Mohr, HPLC paracetamol + caffeine, nano bạc, thực tập công nghệ hoá học.
 
 ## 3. Đã đưa vào app
 ### 3.1. Tách DNA thực vật bằng CTAB
-- Nguồn: báo cáo "Bài 5–6. Tách ADN từ thực vật" (→ [Tách chiết DNA thực vật bằng CTAB](/blog/tach-chiet-dna-thuc-vat-bang-ctab-va-dien-di-gel-agarose/)).
+- Nguồn: báo cáo "Bài 5–6. Tách ADN từ thực vật" (→ Tách chiết DNA thực vật bằng CTAB).
 - App: `src/core/dna-extract.js`, protocol `dx-ctab` ở bàn sinh học phân tử.
 	- 13 bước như báo cáo: 50 mg mẫu + 1 mL đệm CTAB (2 % CTAB, 100 mM Tris-HCl pH 8, 20 mM EDTA, 1,4 M NaCl), 65 °C 15 phút, 500 µL chloroform : isoamyl alcohol 24 : 1, ly tâm 13 000 rpm 10 phút 4 °C, isopropanol 0,6 thể tích, ethanol 70 %.
 	- Đo A260/A280 (DNA sạch khoảng 1,8, RNA khoảng 2,0 theo NanoDrop Technical Note T042); điện di với thang 1 kb.
@@ -55,20 +55,20 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 
 ### 3.2. Khu giải phẫu mở rộng
 - Động vật không xương sống, theo ảnh thực hành ĐVKXS:
-	- Giun đũa cái (→ [Giun đũa](/blog/nganh-giun-tron-nematoda-giun-dua/)), ốc có nắp (→ [Ốc](/blog/nganh-than-mem-mollusca-oc/)), gián (→ [Gián](/blog/nganh-chan-khop-arthropoda-gian-va-phan-phu-mieng-con-trung/)): protocol `dis-ascaris`, `dis-snail`, `dis-cockroach`.
+	- Giun đũa cái (→ Giun đũa), ốc có nắp (→ Ốc), gián (→ Gián): protocol `dis-ascaris`, `dis-snail`, `dis-cockroach`.
 	- Giun đất sửa theo ảnh mổ thật (thêm túi tinh).
-- Ếch đồng theo báo cáo mổ ếch ĐVCXS (→ [Giải phẫu ếch đồng](/blog/giai-phau-ech-dong/)):
+- Ếch đồng theo báo cáo mổ ếch ĐVCXS (→ Giải phẫu ếch đồng):
 	- Quan sát khoang miệng trước khi mổ: lưỡi chẻ hai thuỳ, lỗ mũi trong, lỗ vòi Eustache.
 	- Thêm mạng mao mạch dưới da (hô hấp qua da), tuyến tuỵ dọc tá tràng, tì, ruột già và trực tràng; màu nội quan theo ảnh mẫu mổ thật; gan ba thuỳ.
-- Chuột nhắt trắng (→ [Giải phẫu chuột bạch](/blog/giai-phau-chuot-bach/)), protocol `dis-mouse`:
+- Chuột nhắt trắng (→ Giải phẫu chuột bạch), protocol `dis-mouse`:
 	- 17 cơ quan: tuyến nước bọt dưới hàm, khí quản, tim 4 ngăn, phổi (trái 1 thuỳ, phải 4 thuỳ), cơ hoành, gan, túi mật, dạ dày, lách, tuỵ, ruột non, manh tràng, ruột già, bóng đái, thận, mạch chủ, tuyến sinh dục.
 	- Cơ thành bụng cắt đúng đường trắng giữa bụng (ít mạch máu), khác ếch; nằm sấp thì không mở được; cắt sâu thủng manh tràng.
 	- Nguồn thêm: Cook M.J. 1965, *The Anatomy of the Laboratory Mouse*.
-- Cá chép (→ [Giải phẫu cá chép và cá rô phi](/blog/giai-phau-ca-chep-va-ca-ro-phi/)): thêm lách; mô tả mang (4 đôi, sợi mang, lược mang, răng hầu), tim, gan tuỵ, túi mật xanh đen, bóng hơi hai ngăn theo ghi chép.
+- Cá chép (→ Giải phẫu cá chép và cá rô phi): thêm lách; mô tả mang (4 đôi, sợi mang, lược mang, răng hầu), tim, gan tuỵ, túi mật xanh đen, bóng hơi hai ngăn theo ghi chép.
 - Cảnh 3D: hình chuột (đầu nhọn, tai, ria, bốn chân, đuôi dài); camera lại gần mẫu nhỏ; nhãn ✓ chỉ cho 3 cơ quan vừa quan sát.
 
 ### 3.3. Tiêu bản hiển vi ảo
-- Nguồn: ảnh thực hành Thực vật (→ [Giải phẫu lá, thân, rễ](/blog/giai-phau-la-than-re-cay-mot-la-mam-va-hai-la-mam/); [Ảnh tiêu bản giải phẫu thực vật](/blog/anh-tieu-ban-giai-phau-thuc-vat/); [tảo](/blog/thuc-vat-bac-thap-tao-va-vong-doi-xen-ke-the-he/)) và Sinh Tế Bào (tiêu bản ép giảm phân, nguyên phân).
+- Nguồn: ảnh thực hành Thực vật (→ Giải phẫu lá, thân, rễ; Ảnh tiêu bản giải phẫu thực vật; tảo) và Sinh Tế Bào (tiêu bản ép giảm phân, nguyên phân).
 - App: `src/core/slides.js`, `src/ui/slide-svg.js`, `data/slides.json`, 3 protocol `sl-plant`, `sl-meiosis`, `sl-mitosis` ở bàn quang học; `tests/slides.html` xem nhanh mọi tiêu bản.
 	- 12 tiêu bản: rễ ngô, thân dâm bụt non, thân thứ cấp (tiêu bản cố định), thân lúa, thân ngô, thân bí ngô, lá trúc đào, lá lúa có mô khí, giảm phân tinh hoàn châu chấu (kiểu đỏ cam và hồng tím), nguyên phân đỉnh rễ hành, tảo silic.
 	- Nhuộm kép theo ghi chú trên bảng của buổi thực hành: vách cellulose hồng, vách hoá gỗ xanh.
@@ -86,7 +86,7 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Làm sai: methyl orange cho oxalic acid (dừng ở nấc thứ hai, C(NaOH) sai khoảng 30 %), không tráng buret bằng dung dịch chuẩn, dừng khi màu hồng chưa bền 30 giây, chuẩn KMnO₄ không có acid (MnO₂ nâu) hoặc không đun, pha quá vạch, cân chất gốc bằng cân kỹ thuật, mép giấy lọc cao hơn phễu.
 
 ### 3.5. Phương pháp lấy mẫu
-- Nguồn: báo cáo Cơ sở sinh thái học Bài 2 (→ [Phương pháp lấy mẫu](/blog/phuong-phap-lay-mau/)).
+- Nguồn: báo cáo Cơ sở sinh thái học Bài 2 (→ Phương pháp lấy mẫu).
 - App: `src/core/sampling.js`, `data/sampling.json`, protocol `eco-sampling` ở khu nuôi sinh vật.
 	- 26 cốc mọt, tổng 275 con như bài; 10 cốc đầu là mẫu 10 cốc của bài, 16 cốc còn lại là số *minh hoạ* sao cho tổng đúng 275.
 	- Bốc thăm ngẫu nhiên n cốc: x̄, s², SE, khoảng μ = x̄ ± 1,96 SE, P = x̄ · 26, số mẫu cần lấy N = 25 s²/x̄²; đếm toàn bộ để tính sai số phương pháp.
@@ -94,7 +94,7 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Làm sai: chọn cốc trông nhiều mọt (lệch cao khoảng 2–3 con mỗi cốc), lấy quá ít cốc.
 
 ### 3.6. Vi sinh vật học
-- Nguồn: giáo trình Thí nghiệm vi sinh vật học (phần II) trong thư mục Sinh học (→ [Thí nghiệm vi sinh vật học](/blog/thi-nghiem-vi-sinh-vat-hoc-microbiology-laboratory-methods/)); công thức đếm theo ISO 7218, MPN theo Cochran 1950.
+- Nguồn: giáo trình Thí nghiệm vi sinh vật học (phần II) trong thư mục Sinh học (→ Thí nghiệm vi sinh vật học); công thức đếm theo ISO 7218, MPN theo Cochran 1950.
 - App: `src/core/microcount.js`, `src/ui/gram-svg.js`, `data/microbe.json`, 4 protocol ở khu tủ an toàn sinh học.
 	- `vs-gram` (Bài 4): tím kết tinh 1 phút, Lugol 1 phút, tẩy cồn 30 giây, safranin; *B. subtilis* tím, *E. coli* hồng, vết trộn có cả hai. Hình vi trường vẽ theo kích thước tế bào của giáo trình (*B. subtilis* 3–5 × 0,6 µm).
 	- `vs-tpc` (Bài 10): 10 g mẫu + 90 mL SPW, pha loãng 1 + 9, đổ đĩa 1 mL với PCA 45 °C, ủ 30 °C 72 giờ, chọn đĩa 25–250 khuẩn lạc, N = ΣC/[V(n₁ + 0,1n₂)d]. Ví dụ của giáo trình (10⁻³: 235, 246; 10⁻⁴: 26, 21) ra đúng 2,4 · 10⁵ CFU/g.
@@ -113,7 +113,7 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 
 ### 3.8. Hồi quy phi tuyến
 - Nguồn: Ritz & Streibig 2005, *Bioassay analysis using R* (PDF trong thư mục Sinh học).
-- App: `nls()` (Levenberg–Marquardt, sai số chuẩn từ (JᵀJ)⁻¹s²) trong `src/core/stats.js`; mô hình Michaelis–Menten và logistic 4 tham số của gói drc trong bảng Phân tích số liệu (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/)); mã R xuất ra là `nls()` hoặc `drm()`.
+- App: `nls()` (Levenberg–Marquardt, sai số chuẩn từ (JᵀJ)⁻¹s²) trong `src/core/stats.js`; mô hình Michaelis–Menten và logistic 4 tham số của gói drc trong bảng Phân tích số liệu (→ Tương quan và hồi quy); mã R xuất ra là `nls()` hoặc `drm()`.
 	- Bộ Puromycin (Treloar 1974) trong `data/stats.json`, protocol `st-puromycin`: khớp ra Vm = 212,7, K = 0,0641 (tế bào xử lý) và Vm = 160,3, K = 0,0477 (không xử lý), đúng như trong bài báo.
 	- Bộ `ryegrass` của bài báo không có số liệu gốc trong PDF nên không đưa vào; số nhớ lại không ra đúng tham số của bài báo.
 
@@ -124,32 +124,32 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Cùng một hình học dựng cả hình SVG trong thẻ kết quả (`src/ui/dissect-svg.js`: khay sáp đen, bóng, vân mô, số chú thích xếp hai dải) và mẫu 3D trên khay (`src/scene/anatomy-mesh.js`).
 	- Hình đổi theo từng bước: nằm sấp hay ngửa, đường cắt, vạt da và vạt cơ đã phanh, mở một phần, nội quan đã gỡ, đực hay cái. Xem nhanh mọi loài ở `tests/anatomy.html?sp=…&steps=…`.
 - Từng loài:
-	- Ếch đồng (→ [Giải phẫu ếch đồng](/blog/giai-phau-ech-dong/)): nhìn mặt bụng.
+	- Ếch đồng (→ Giải phẫu ếch đồng): nhìn mặt bụng.
 		- Vị trí theo chiều mõm – huyệt lấy từ Ecker & Haslam 1889 (Fig. 185): tim 0,28–0,48, gan 0,34–0,65, dạ dày 0,42–0,70, thận 0,58–0,80, bóng đái 0,78–0,97.
 		- Theo Holmes 1916: gan thuỳ phải, thuỳ trái chia hai, thuỳ giữa nhỏ; túi mật giữa thuỳ phải và trái; tì gần đầu ruột già; bóng đái hai thuỳ.
 		- Khoang miệng (lưỡi, lỗ mũi trong, lỗ vòi Eustache) vẽ trong hình tròn tách rời; ếch đực có đôi túi kêu.
-	- Chuột nhắt trắng (→ [Giải phẫu chuột bạch](/blog/giai-phau-chuot-bach/)):
+	- Chuột nhắt trắng (→ Giải phẫu chuột bạch):
 		- Vị trí theo chiều mũi – hậu môn đo trên atlas Digimouse (Dogdas et al. 2007): tim 0,37–0,49, vòm cơ hoành 0,47–0,50, gan 0,47–0,69, thận phải cao hơn thận trái.
 		- Theo Cook 1965: phổi trái 1 thuỳ, phổi phải 4 thuỳ; dạ dày có phần trước không tuyến.
 		- Thêm tuyến ức.
-	- Cá chép (→ [Giải phẫu cá chép và cá rô phi](/blog/giai-phau-ca-chep-va-ca-ro-phi/)): cá nằm nghiêng, thấy mặt trái.
+	- Cá chép (→ Giải phẫu cá chép và cá rô phi): cá nằm nghiêng, thấy mặt trái.
 		- Tỉ lệ ngoài (mắt, nắp mang, các vây) theo FishBase và các bài đo hình thái.
 		- Nội quan theo giáo trình thực hành của Đại học Sư phạm Hoa Nam (SCNU), bài 13: tim giữa hai vây ngực, gan tuỵ phân tán, bóng hơi hai ngăn, thận rộng nhất ở chỗ thắt của bóng hơi.
 	- Tôm càng: nhìn mặt lưng; mang lá (phyllobranchia), 8 lá mỗi bên (Bauer; Martinez et al. 2005).
 		- Theo SCNU bài 9: tim hình tam giác có 3 đôi lỗ tim, tuyến gan bao quanh dạ dày.
 		- Theo FAO 2002 (New): buồng trứng chín màu cam nằm phía lưng giáp đầu ngực. Thêm tuyến sinh dục.
-	- Giun đất (→ [Giun đất](/blog/nganh-giun-dot-annelida-giun-dat/)): *Pheretima* khoảng 110 đốt, vị trí theo đốt của Bahl 1919, 1921.
+	- Giun đất (→ Giun đất): *Pheretima* khoảng 110 đốt, vị trí theo đốt của Bahl 1919, 1921.
 		- Ống tiêu hoá: hầu 3–4, thực quản 5–7, mề 8–9, dạ dày 9–14, ruột từ đốt 15, đôi ruột tịt ở đốt 26.
 		- Tim bên ở đốt 7, 9, 12, 13; túi nhận tinh ở đốt 6–9, túi tinh ở đốt 11–12, đai ở đốt 14–16.
 		- Hình SVG chỉ phóng to khoảng 30 đốt đầu; mẫu 3D đủ cả con.
-	- Giun đũa cái (→ [Giun đũa](/blog/nganh-giun-tron-nematoda-giun-dua/)): theo Fox 2006 và Saunders 1972.
+	- Giun đũa cái (→ Giun đũa): theo Fox 2006 và Saunders 1972.
 		- Lỗ sinh dục cái ở khoảng 1/3 thân; tử cung chữ Y chứa trứng.
 		- Ống dẫn trứng cuộn từ 0,33 tới 0,9 thân; búi buồng trứng ở giữa thân.
 		- Hình giãn ngang 2 lần để thấy rõ.
-	- Ốc có nắp (→ [Ốc](/blog/nganh-than-mem-mollusca-oc/)): xoang áo theo Rodriguez et al. 2018 (*Pomacea*).
+	- Ốc có nắp (→ Ốc): xoang áo theo Rodriguez et al. 2018 (*Pomacea*).
 		- Phổi chiếm trần bên trái và giữa xoang áo; mang hình chữ L ôm mép phải và mép sau của phổi.
 		- Trực tràng dọc mép phải; xoang bao tim ở góc trước trái của thận; tuyến tiêu hoá và tuyến sinh dục ở tháp nội tạng.
-	- Gián (→ [Gián](/blog/nganh-chan-khop-arthropoda-gian-va-phan-phu-mieng-con-trung/)): ống tiêu hoá và chuỗi hạch theo Miall & Denny 1886, khoảng 150 ống Malpighi theo Wall et al. 1975.
+	- Gián (→ Gián): ống tiêu hoá và chuỗi hạch theo Miall & Denny 1886, khoảng 150 ống Malpighi theo Wall et al. 1975.
 		- Ống tiêu hoá: diều, mề 6 răng, 8 manh tràng vị, trực tràng 6 nếp.
 		- Chuỗi hạch: não, hạch dưới hầu, 3 hạch ngực, 6 hạch bụng.
 		- Phần phụ miệng vẽ tách rời: môi trên, hàm trên (theo Weihmann et al. 2015), hàm dưới, môi dưới.
@@ -168,7 +168,7 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Số chú thích trên hình bằng số cơ quan đang thấy.
 
 ### 3.10. Thực tập hoá đại cương Bài 7: tốc độ phản ứng (2026-10-19)
-- Nguồn: giáo trình Thực tập hoá đại cương, Bài 7 (→ [Hoá học đại cương](/blog/hoa-hoc-hoa-dai-cuong-hoa-phan-tich-hoa-huu-co/)).
+- Nguồn: giáo trình Thực tập hoá đại cương, Bài 7 (→ Hoá học đại cương).
 - App: thao tác `gc-rate-conc`, `gc-rate-temp`, `gc-rate-cat`, `gc-rate-plot` trong `src/core/genchem.js`, protocol `gc-bai7` ở bàn hoá học.
 	- Nồng độ: bảng 5 ống của giáo trình (3,00/1,50/1,00/0,75/0,50 mL Na₂S₂O₃ 0,20 M + nước tới 3 mL, rót nhanh 3,00 mL H₂SO₄ 0,20 M), bấm giờ tới khi bắt đầu vẩn đục; vẽ v = 1/Δt theo [Na₂S₂O₃] sau khi trộn, tính bậc riêng từ độ dốc lg v theo lg C. Ea và mốc thời gian dùng chung với protocol `rate-thio` (`data/thermo.json`); mô hình bậc 1 là đơn giản hoá.
 	- Nhiệt độ: 2,0 mL KMnO₄ 0,01 M + 2,0 mL oxalic acid 0,10 M (H₂SO₄ 10 %) ở t phòng, +10, +20, +30 °C, ngâm hai ống 5 phút; vẽ lg(1/Δt) theo 1/T, tính γ (2,6–2,7) và Ea.
@@ -194,14 +194,14 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 	- Phần B (pin Ganvani) và phần CuSO₄ chưa làm; giáo trình ghi phần CuSO₄ là "không làm thí nghiệm này".
 
 ### 3.13. Vi sinh: nhuộm bào tử, kháng sinh đồ, lên men rượu (2026-10-19)
-- Nguồn: giáo trình Thí nghiệm vi sinh vật học (→ [Thí nghiệm vi sinh vật học](/blog/thi-nghiem-vi-sinh-vat-hoc-microbiology-laboratory-methods/)) Bài 4 mục 4.2, Bài 6 phần I, Bài 8 mục 1.2d; vòng kiểm chuẩn theo EUCAST QC Tables v13.1 (2023).
+- Nguồn: giáo trình Thí nghiệm vi sinh vật học (→ Thí nghiệm vi sinh vật học) Bài 4 mục 4.2, Bài 6 phần I, Bài 8 mục 1.2d; vòng kiểm chuẩn theo EUCAST QC Tables v13.1 (2023).
 - App: `vs-spore`, `vs-disk`, `vs-ferment` trong `src/core/microcount.js`; hình ở `src/ui/micro-svg.js`; 3 protocol cùng tên.
 	- Nhuộm bào tử Ôgietska (Ozheshko): *B. subtilis* 2 tuần tuổi, bào tử đỏ hình ovan ở giữa hoặc lệch tâm, tế bào chất xanh. Làm sai: canh trường 24 giờ (hầu như chưa có bào tử), không hơ nóng (bào tử không màu), quên xanh methylene.
 	- Kháng sinh đồ: khoanh 6 mm, 37 °C 18 giờ; *E. coli* ATCC 25922 trên Mueller-Hinton cho vòng quanh đích EUCAST (ampicillin 10 µg 15–22 mm, gentamicin 10 µg 19–26, chloramphenicol 30 µg 21–27, ciprofloxacin 5 µg 29–37); cùng chủng mang pUC19 (gen *bla*) mọc sát khoanh ampicillin, nối với bài biến nạp. Làm sai: cấy quá dày (vòng nhỏ đi 3 mm, minh hoạ), khoanh sát nhau (vòng chồng lên nhau), ủ 6 giờ.
 	- Lên men rượu: dịch quả + men giống, 30 °C 24 giờ; CO₂ đẩy nước trong ống chia vạch, Ba(OH)₂ đục, iodoform vàng, K₂Cr₂O₇ da cam thành xanh lục, ống đối chứng giữ da cam. Làm sai: quên cấy men, để 4 °C. Thời gian ống đầy khí là minh hoạ nên app không hiện số mL.
 
 ### 3.14. PCR mở rộng (2026-10-19)
-- Nguồn: chương "Polymerase Chain Reaction: Các vấn đề cơ bản" (→ [PCR – Các vấn đề cơ bản](/blog/cac-van-de-co-ban-polymerase-chain-reaction/)), bài tổng quan kỹ thuật chỉ thị DNA (Nguyễn Đức Thành 2014), sách Sinh học phân tử chương 1 (Hoàng Trọng Phán 2012); Tm theo Schildkraut & Lifson 1965 và Marmur & Doty 1962.
+- Nguồn: chương "Polymerase Chain Reaction: Các vấn đề cơ bản" (→ PCR – Các vấn đề cơ bản), bài tổng quan kỹ thuật chỉ thị DNA (Nguyễn Đức Thành 2014), sách Sinh học phân tử chương 1 (Hoàng Trọng Phán 2012); Tm theo Schildkraut & Lifson 1965 và Marmur & Doty 1962.
 - App: `src/core/pcrmix.js`, `data/pcrmix.json`, bảng "PCR mở rộng" ở bàn PCR, protocol `pm-touchdown`, `pm-rapd`, `pm-melt`.
 	- Master mix 100 phản ứng 25 µL tính bằng C·V = C′·V′, trùng Bảng 1 của tài liệu (nước 1505 µL). Làm sai: pha từng ống (phải lấy 0,05–0,25 µL), buffer có sẵn MgCl₂ mà vẫn thêm (Mg²⁺ 3 mM, băng phụ tăng).
 	- Touch-down sơ đồ 1 và 2 so với 35 chu kỳ bắt cặp 55 °C (có băng phụ) và 65 °C (đặc hiệu nhưng mờ); ảnh gel vẽ từ số bản sao của từng sản phẩm. Tm của mồi, của vị trí bắt cặp lệch và số vị trí là minh hoạ.

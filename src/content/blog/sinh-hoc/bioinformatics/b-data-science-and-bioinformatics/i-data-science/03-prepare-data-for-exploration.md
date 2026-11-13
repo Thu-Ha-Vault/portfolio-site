@@ -95,7 +95,7 @@ Hơn 100.000 bản ghi tự chọn, với tương quan chỉ 0,006, cho sai số
 
 **Hình 2.** Sai số ước lượng tỉ lệ theo cỡ mẫu: mẫu ngẫu nhiên đơn giản so với mẫu tự chọn có thiên lệch nhẹ (dữ liệu mô phỏng, cùng mô hình với code trên).
 
-Các công cụ tính cỡ mẫu và sai số biên (margin of error) đều giả định mẫu ngẫu nhiên, nên chỉ đo sai số ngẫu nhiên: con số "±1%" của một khảo sát online đông người trả lời không phản ánh thiên lệch tự chọn (→ [lấy mẫu và suy diễn thống kê](/blog/statistic-and-regression/)).
+Các công cụ tính cỡ mẫu và sai số biên (margin of error) đều giả định mẫu ngẫu nhiên, nên chỉ đo sai số ngẫu nhiên: con số "±1%" của một khảo sát online đông người trả lời không phản ánh thiên lệch tự chọn (→ lấy mẫu và suy diễn thống kê).
 
 ### 2.2. Bốn loại bias thường gặp, đối chiếu với tài liệu khoa học
 
@@ -138,7 +138,7 @@ Khung được trích dẫn nhiều là của Wang và Strong (1996), xây dựn
 | *(thiếu)* thiết kế lấy mẫu | contextual | Bệnh nhân được tuyển thế nào, ai bị loại? |
 | *(thiếu)* metadata, giấy phép | representational, accessibility | Có giao thức, đơn vị, phiên bản, điều kiện dùng lại không? |
 
-Hai dòng cuối là hai điểm ROCCC bỏ sót: "Original" không cho biết mẫu được chọn ra sao, và "Cited" chưa cho biết dữ liệu đo bằng gì, phiên bản nào, dùng lại theo điều kiện gì. Đó là việc của metadata. Cũng đừng nhầm "Current" (dữ liệu còn cập nhật) với "currency" trong các bộ nguyên tắc đạo đức dữ liệu, chỉ việc người cho dữ liệu được biết về các giao dịch tài chính phát sinh từ dữ liệu cá nhân của họ (→ [đạo đức dữ liệu trong quản lý dự án](/blog/project-execution-running-the-project/)).
+Hai dòng cuối là hai điểm ROCCC bỏ sót: "Original" không cho biết mẫu được chọn ra sao, và "Cited" chưa cho biết dữ liệu đo bằng gì, phiên bản nào, dùng lại theo điều kiện gì. Đó là việc của metadata. Cũng đừng nhầm "Current" (dữ liệu còn cập nhật) với "currency" trong các bộ nguyên tắc đạo đức dữ liệu, chỉ việc người cho dữ liệu được biết về các giao dịch tài chính phát sinh từ dữ liệu cá nhân của họ (→ đạo đức dữ liệu trong quản lý dự án).
 
 ## 3. Phần 2: Metadata và nguyên tắc FAIR
 
@@ -146,7 +146,7 @@ Hai dòng cuối là hai điểm ROCCC bỏ sót: "Original" không cho biết m
 
 Metadata thường được định nghĩa là dữ liệu về dữ liệu, chia làm ba loại: **descriptive** (tiêu đề, tác giả, từ khoá), **structural** (dữ liệu được tổ chức thế nào, phần nào thuộc tập nào) và **administrative** (nguồn kỹ thuật, quyền truy cập, ngày tạo). Định nghĩa này chưa nói metadata phải chi tiết đến đâu.
 
-Trong bioinformatics, metadata còn là **nguồn gốc dữ liệu** (provenance). Buffalo (2015) khuyên ghi lại nguồn gốc mọi dữ liệu trong dự án, kể cả genome tham chiếu và annotation track; ghi ngày tải vì nguồn bên ngoài có thể thay đổi; ghi phiên bản, như TAIR10 hay WormBase WS231; và ghi cách tải. Cùng một tên gen nhưng khác bản annotation thì toạ độ có thể khác, nên kết quả không ghi phiên bản là kết quả không tái lập được (→ [định dạng và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
+Trong bioinformatics, metadata còn là **nguồn gốc dữ liệu** (provenance). Buffalo (2015) khuyên ghi lại nguồn gốc mọi dữ liệu trong dự án, kể cả genome tham chiếu và annotation track; ghi ngày tải vì nguồn bên ngoài có thể thay đổi; ghi phiên bản, như TAIR10 hay WormBase WS231; và ghi cách tải. Cùng một tên gen nhưng khác bản annotation thì toạ độ có thể khác, nên kết quả không ghi phiên bản là kết quả không tái lập được (→ định dạng và cơ sở dữ liệu sinh học).
 
 ### 3.2. Nguyên tắc FAIR
 
@@ -201,7 +201,7 @@ Article 29 Working Party, nhóm gồm đại diện các cơ quan bảo vệ d�
 | Mã hoá (encryption) | biện pháp an ninh, vẫn là dữ liệu cá nhân | người giữ khoá |
 | Gộp giá trị, k-anonymity có đánh giá rủi ro | có thể tiến tới ẩn danh | tuỳ mức gộp và dữ liệu ngoài |
 
-Cần tách **an ninh dữ liệu** khỏi **ẩn danh hoá**: mã hoá bảo vệ dữ liệu khỏi người không có khoá, như khi máy chủ bị xâm nhập (→ [Cybersecurity Primer](/blog/cybersecurity-primer/)), nhưng với người có khoá, đó vẫn là dữ liệu cá nhân.
+Cần tách **an ninh dữ liệu** khỏi **ẩn danh hoá**: mã hoá bảo vệ dữ liệu khỏi người không có khoá, như khi máy chủ bị xâm nhập (→ Cybersecurity Primer), nhưng với người có khoá, đó vẫn là dữ liệu cá nhân.
 
 Ở Mỹ, quy định HIPAA tại 45 C.F.R. § 164.514(b) cũng không coi xoá cột là đủ: hoặc chuyên gia thống kê xác định rủi ro nhận ra cá nhân là rất nhỏ, hoặc xoá 18 nhóm định danh **và** bên công bố không biết rằng thông tin còn lại có thể dùng để nhận ra người đó.
 
@@ -352,7 +352,7 @@ Erlich và Narayanan (2014) hệ thống hoá các con đường xâm phạm quy
 **Tầng 1: Đại diện**
 - Ai được lấy mẫu, ai bị bỏ sót (Popejoy & Fullerton, 2016)? Dữ liệu từ lấy mẫu xác suất hay tự đăng ký? Không có lấy mẫu xác suất thì cỡ mẫu lớn không bù được thiên lệch (Meng, 2018).
 - Người đo, người chấm kết cục có được làm mù không (Hróbjartsson et al., 2012)?
-- Dữ liệu dùng huấn luyện mô hình thì thiên lệch trong mẫu thành thiên lệch trong dự đoán (→ [machine learning trong sinh học](/blog/machine-learning-va-ai-trong-sinh-hoc/)).
+- Dữ liệu dùng huấn luyện mô hình thì thiên lệch trong mẫu thành thiên lệch trong dự đoán (→ machine learning trong sinh học).
 
 **Tầng 2: Mô tả**
 - Có accession ổn định, ngày tải, phiên bản genome, annotation, platform không (Buffalo, 2015)?

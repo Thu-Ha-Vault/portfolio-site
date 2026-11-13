@@ -54,7 +54,7 @@ description: >-
   Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi
   tiết nằm ở Course 8: Case Study (mục Case Study 1).
 ---
-> Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi tiết nằm ở [Course 8: Case Study](/blog/case-study/) (mục *Case Study 1*).
+> Track A của capstone Google Data Analytics. Đề bài, kịch bản và roadmap chi tiết nằm ở Course 8: Case Study (mục *Case Study 1*).
 
 ## Mục tiêu & sản phẩm
 - **Câu hỏi được giao**: How do annual members and casual riders use Cyclistic bikes differently?

@@ -18,11 +18,11 @@ isIndex: true
 
 ## Map of Content
 - [Grammar (Ngữ pháp)](/topics/grammar/): sổ ngữ pháp viết tay (Memo 1–190 và các trang tổng hợp) cùng các sheet ngữ pháp trong spreadsheet
-- [Vocabulary (Từ vựng)](/topics/vocabulary/): sheet Từ vựng, khoảng 2.300 từ
-- [Writing (Viết)](/topics/writing/): bài viết tay có giáo viên chữa, cụm từ cho bài thi viết
-- [Speaking (Nói)](/topics/speaking/)
-- [Listening (Nghe)](/topics/listening/)
-- [Reading (Đọc)](/topics/reading/)
+- Vocabulary (Từ vựng): sheet Từ vựng, khoảng 2.300 từ
+- Writing (Viết): bài viết tay có giáo viên chữa, cụm từ cho bài thi viết
+- Speaking (Nói)
+- Listening (Nghe)
+- Reading (Đọc)
 
 ## Tài liệu gốc
 - Ngữ pháp Tiếng Pháp.xlsx: gồm các sheet Các thì, Từ loại, Ngữ pháp, Từ vựng, Bài thi và IPA_DB.

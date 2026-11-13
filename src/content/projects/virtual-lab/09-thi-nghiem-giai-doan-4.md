@@ -57,7 +57,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- [ ] Thêm secret `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` cho repo và gắn subdomain trong Cloudflare (README của repo, mục "Bản web công khai"). Workflow `pages.yml` đã chạy thử: dựng và kiểm CSP đạt, bỏ qua bước đẩy vì chưa có secret. ⏫
 
 ## 1. Tinh sạch enzyme
-- **Bài gốc**: [Enzymology bài 2: tinh sạch enzyme](/blog/tinh-sach-enzyme/) và bài báo nguồn [Langenegger et al. 2018](/blog/identification-of-a-precursor-processing-protease-from-the-spider-cupiennius-sal/).
+- **Bài gốc**: Enzymology bài 2: tinh sạch enzyme và bài báo nguồn Langenegger et al. 2018.
 - **Lõi** `src/core/purify.js`, số liệu `data/purify.json`:
 	- Quy trình như bài báo: nọc thô 3 mL → lọc gel Superdex 75 HR (pH 5,0) → trao đổi cation MiniS PE 4.6/50 (0–0,65 M NaCl) → RP-HPLC C4.
 	- Mỗi cột cho sắc ký đồ theo phân đoạn (A280, hoạt độ, muối). Người học đo hoạt độ FRET (DABCYL–EDANS, 340/485 nm) rồi gộp phân đoạn.
@@ -76,7 +76,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 - Protocol `pu-protease`.
 
 ## 2. Bóng ngoại bào và so sánh gel 2D
-- **Bài gốc**: [Proteomics bài 03](/blog/phan-tach-exosome-va-cac-bong-ngoai-bao-tu-huyet-tuong-nguoi/), [bài 04](/blog/phan-tich-hinh-anh-ban-gel-dien-di-hai-chieu-su-dung-phan-mem-phoretix/), [tiểu luận exosome ung thư gan](/blog/seminar-nghien-cuu-xac-dinh-he-protein-exosome-trong-benh-nhan-ung-thu-gan-su-du/).
+- **Bài gốc**: Proteomics bài 03, bài 04, tiểu luận exosome ung thư gan.
 - **Lõi** `src/core/exosome.js`, `data/exosome.json`:
 	- Huyết tương ly tâm 1500 × g rồi 10000 × g, pha 1:1 PBS, lọc 0,22 µm, cột Sepharose CL-4B 3 mL, 20 phân đoạn × 150 µL.
 	- Thể tích rửa giải theo đường kính thuỷ động (Kav, *minh hoạ*): EV ra ở thể tích rỗng, rồi LDL, IgM, α2-macroglobulin, IgG, HDL, transferrin, albumin.
@@ -90,7 +90,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 - Protocol `exo-plasma-ev`, `pt-phoretix`.
 
 ## 3. Phân tích số liệu
-- **Bài gốc**: [Biostatistics 01](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), [02](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/), [03](/blog/tuong-quan-va-hoi-quy/).
+- **Bài gốc**: Biostatistics 01, 02, 03.
 - **Lõi** `src/core/stats.js` dùng chung (`genetics.js`, `evolution.js`, `fieldeco.js` gọi lại) và `src/core/stats-lab.js`, số liệu `data/stats.json` lấy từ file Excel bài làm.
 - **Khớp Excel** (kiểm thử):
 	- Chiều cao 40 thanh niên: TB 162,775; KTC 95 % (161,206; 164,344); KTC phương sai (17,635; 43,331).
@@ -102,11 +102,11 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- Đa thức bậc 4 lệch Excel ở chữ số thứ 4 nhưng khớp numpy: Excel làm tròn khi ma trận gần suy biến.
 - Hệ số di truyền trong bài làm tính bằng h² = 1 − 1/F, app ghi đúng như vậy.
 - Bảng phân tích: nạp số liệu bài tập, sổ thí nghiệm của bất kỳ lõi nào, hoặc CSV dán vào; mỗi kết quả kèm mã R.
-- Không đưa bộ nhà ở Boston của [bài 04 Introduction to Data Analysis](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/): biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
+- Không đưa bộ nhà ở Boston của bài 04 Introduction to Data Analysis: biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
 - Protocol `st-biostat`.
 
 ## 4. Thực địa mở rộng
-- **Bài gốc**: [Field Study 02](/blog/dong-vat-co-xuong-song-tren-can-chim-thu/), [03](/blog/dong-vat-co-xuong-song-duoi-nuoc-ca-luong-cu-bo-sat/), [05](/blog/dong-vat-khong-xuong-song-duoi-nuoc-giap-xac-cua/), [07](/blog/thuc-vat-bac-cao-thu-mau-va-dinh-loai-ardisia-sp/), [08](/blog/thuc-vat-bac-thap-nam-tao-mau-nam-trametes-sp/).
+- **Bài gốc**: Field Study 02, 03, 05, 07, 08.
 - **Dơi**: máy ghi siêu âm ở Động Trung Trang tách hai đỉnh tần số 98,6 kHz (~100 con) và 78,1 kHz (~300 con) theo báo cáo; độ lệch chuẩn 1,2 kHz là *minh hoạ*. Không có máy thì không tách được hai loài.
 - **Chim**: chỉ gồm các taxon trong báo cáo. Tỉ lệ bắt gặp chỉnh để 4 giờ buổi sáng yên lặng có loa phát tiếng cho trung bình 4 Hút mật, 1 Bông lau họng vạch, 1 Quạ. Đi ồn ào thì giảm mạnh.
 - **Cá và cua** ở bãi triều Xuân Đám: cá bống, thòi lòi chỉ bắt được bằng ống hút bùn; cua phải thu lúc triều rút, cua bãi triều (Grapsidae) phải đào hố; không đeo găng thì cảnh báo. Số con mỗi lần là *minh hoạ* (báo cáo không ghi số lượng).

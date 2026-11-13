@@ -21,4 +21,4 @@ isIndex: true
 
 - [Data Science:](/topics/data-science/)
 - [Bioinformatics](/topics/bioinformatics/)
-- [Giáo trình Bioinformatics: Từ nhập môn đến nâng cao](/topics/giao-trinh-bioinformatics/)
+- Giáo trình Bioinformatics: Từ nhập môn đến nâng cao

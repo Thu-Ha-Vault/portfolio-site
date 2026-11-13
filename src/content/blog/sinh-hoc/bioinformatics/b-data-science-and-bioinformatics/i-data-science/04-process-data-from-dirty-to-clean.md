@@ -60,7 +60,7 @@ Ràng buộc dữ liệu (data constraint) quyết định một giá trị có 
 | Primary key | duy nhất **cho mỗi dòng** | sample ID trong bảng thông tin mẫu | Unique cộng Mandatory |
 | Foreign key | **khớp** khoá ở bảng khác, **không cần** duy nhất | sample ID trong bảng kết quả đo | `LEFT JOIN`, tìm dòng không khớp |
 
-Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ [SQL: Subquery & CASE WHEN](/blog/subquery-and-case-when/), [bài 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
+Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ SQL: Subquery & CASE WHEN, bài 05). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
 
 ### 2.3. Các loại dirty data và ba giai đoạn làm sạch
 
@@ -85,7 +85,7 @@ flowchart LR
 
 **Editing** chỉ có ba lựa chọn: sửa, xoá hoặc giữ nguyên. Giá trị bất khả thi không bao giờ được giữ nguyên: sửa nếu tìm được giá trị đúng, không thì xoá. Với cực trị có thật hoặc điểm vẫn đáng ngờ, nên xem ảnh hưởng của chúng lên kết quả; nếu loại thì báo cáo là “loại khỏi phân tích”, và có thể trình bày kết quả có và không có chúng.
 
-Ví dụ: một bảng calcium huyết thanh (mg/L) của 100 người khoẻ mạnh có các giá trị khoảng 80–130, riêng một giá trị là 6,0. Điểm này đẩy kurtosis lên 19,1 và skewness xuống −2,9, làm lệch mọi đặc trưng mẫu tính sau đó ([đặc trưng thống kê mẫu](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)). Giá trị nhỏ hơn phần còn lại hơn mười lần gợi ý lỗi gõ, nhưng vẫn phải chẩn đoán: đối chiếu phiếu kết quả hoặc file xuất từ máy đo, sửa nếu tìm được giá trị đúng, không thì loại, và ghi lại.
+Ví dụ: một bảng calcium huyết thanh (mg/L) của 100 người khoẻ mạnh có các giá trị khoảng 80–130, riêng một giá trị là 6,0. Điểm này đẩy kurtosis lên 19,1 và skewness xuống −2,9, làm lệch mọi đặc trưng mẫu tính sau đó (đặc trưng thống kê mẫu). Giá trị nhỏ hơn phần còn lại hơn mười lần gợi ý lỗi gõ, nhưng vẫn phải chẩn đoán: đối chiếu phiếu kết quả hoặc file xuất từ máy đo, sửa nếu tìm được giá trị đúng, không thì loại, và ghi lại.
 
 ## 3. Tổ chức dữ liệu để ít phải làm sạch
 
@@ -103,7 +103,7 @@ Theo Wickham (2014), dữ liệu gọn (tidy data) tuân ba quy tắc: mỗi bi�
 | Nhiều loại đơn vị quan sát trong một bảng | tuổi, giới của bệnh nhân lặp lại ở mọi dòng kết quả xét nghiệm | tách thành bảng bệnh nhân và bảng xét nghiệm, nối bằng khoá |
 | Một đơn vị quan sát nằm ở nhiều bảng | mỗi lần chạy máy lưu một file riêng | gộp các file, thêm cột ghi lần chạy |
 
-Dạng rộng (wide) và dạng dài (long) khác nhau ở chỗ biến nằm, không ở việc số dòng nhiều hay ít hơn số cột: ở dạng rộng, giá trị của một biến như “mẫu” trải thành nhiều cột; ở dạng dài, chúng gom về một cột. Chuyển vị (transpose) chỉ đổi chỗ dòng và cột: đủ để sửa một bảng đặt mỗi quan sát thành một cột, nhưng khác với việc gom cột. Ma trận đếm gen × mẫu trong RNA-seq ở dạng rộng; muốn vẽ theo nhóm mẫu, hãy gom về dạng dài bằng `melt()` của pandas rồi nối với bảng thông tin mẫu (→ [Python cho phân tích dữ liệu](/blog/introduction-to-data-analysis-using-python/)):
+Dạng rộng (wide) và dạng dài (long) khác nhau ở chỗ biến nằm, không ở việc số dòng nhiều hay ít hơn số cột: ở dạng rộng, giá trị của một biến như “mẫu” trải thành nhiều cột; ở dạng dài, chúng gom về một cột. Chuyển vị (transpose) chỉ đổi chỗ dòng và cột: đủ để sửa một bảng đặt mỗi quan sát thành một cột, nhưng khác với việc gom cột. Ma trận đếm gen × mẫu trong RNA-seq ở dạng rộng; muốn vẽ theo nhóm mẫu, hãy gom về dạng dài bằng `melt()` của pandas rồi nối với bảng thông tin mẫu (→ Python cho phân tích dữ liệu):
 
 ```python
 import pandas as pd
@@ -146,7 +146,7 @@ Buffalo (2015) khuyên coi mọi dữ liệu là chỉ đọc (read-only): khôn
 - Ghi lại mọi bước xử lý, tốt nhất bằng script; thao tác tay thì ghi rõ đã làm gì.
 - Cho mỗi bản ghi một định danh duy nhất, cùng định dạng ở mọi bảng: “14025” ở bảng này mà “014025” ở bảng kia thì phép nối sẽ trượt.
 
-Ellis và Leek (2018) khuyên đưa raw data cho người phân tích, kèm thông tin thí nghiệm và mọi bước tiền xử lý. Muốn lần ngược dòng dữ liệu khi diagnosing thì bản gốc phải còn nguyên, như thư mục `data/raw/` chỉ đọc trong [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
+Ellis và Leek (2018) khuyên đưa raw data cho người phân tích, kèm thông tin thí nghiệm và mọi bước tiền xử lý. Muốn lần ngược dòng dữ liệu khi diagnosing thì bản gốc phải còn nguyên, như thư mục `data/raw/` chỉ đọc trong Quy trình tái lập.
 
 ## 4. Quy trình làm sạch có ghi chép: một ví dụ chạy được
 
@@ -292,7 +292,7 @@ clean.loc[clean["Number"] == "8", "flag"] = "Total khác Units × Unit Cost"
 clean.loc[clean["Number"] == "9", "flag"] = "nghi trùng đơn 6"
 ```
 
-`str.title()`, như PROPER trong Sheets, biến “McDonald” thành “Mcdonald” và ký hiệu gen người “BRCA1” thành “Brca1”, nên tên người hay tên gen phải chuẩn hoá theo danh sách nhãn chuẩn (set-membership ở Bảng 1) chứ không theo quy tắc viết hoa. Thao tác tương tự trong R: [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/).
+`str.title()`, như PROPER trong Sheets, biến “McDonald” thành “Mcdonald” và ký hiệu gen người “BRCA1” thành “Brca1”, nên tên người hay tên gen phải chuẩn hoá theo danh sách nhãn chuẩn (set-membership ở Bảng 1) chứ không theo quy tắc viết hoa. Thao tác tương tự trong R: Thao tác dữ liệu trong R.
 
 ### 4.4. Bước 3: verification
 
@@ -366,11 +366,11 @@ Nhóm cũng thử Microsoft Excel 365, Google Sheets (bản năm 2021), LibreOff
 
 Theo Abeysooriya et al. (2021), HGNC đã đổi các ký hiệu dễ bị chuyển đổi, ví dụ SEPT1 thành SEPTIN1 và MARCH1 thành MARCHF1. Hướng dẫn đặt tên gen người năm 2020 cho biết HGNC có thể cập nhật ký hiệu dùng rộng rãi nhưng gây vấn đề đáng kể, và khuyên trích HGNC ID (dạng HGNC:số), vốn gần như không đổi khi ký hiệu đổi (Bruford et al., 2020). Với bảng DEG, hãy luôn giữ một cột ID ổn định như HGNC ID hay Ensembl ID cạnh cột ký hiệu gen.
 
-Trang hỗ trợ của Microsoft hướng dẫn định dạng ô là Text trước khi nhập, hoặc gõ dấu nháy đơn (hay dấu cách) ở đầu, và viết thẳng: “there is no way to turn this off” (Microsoft, n.d.). Từ năm 2022, Excel có tuỳ chọn Automatic Data Conversion để tắt việc bỏ số 0 ở đầu, cắt số dài quá 15 chữ số và đổi chuỗi số quanh chữ “E” thành ký hiệu khoa học (đúng lỗi mã RIKEN), nhưng bài giới thiệu ghi rằng kiểm soát chuyển đổi sang **ngày** vẫn đang lên kế hoạch (Fifadra, 2022). Chưa thấy tài liệu chính thức nào xác nhận đã tắt được chuyển đổi ngày, nên an toàn nhất vẫn là định dạng cột tên gen là Text, hoặc giữ dữ liệu genomics ở định dạng text chuẩn ([Định dạng dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
+Trang hỗ trợ của Microsoft hướng dẫn định dạng ô là Text trước khi nhập, hoặc gõ dấu nháy đơn (hay dấu cách) ở đầu, và viết thẳng: “there is no way to turn this off” (Microsoft, n.d.). Từ năm 2022, Excel có tuỳ chọn Automatic Data Conversion để tắt việc bỏ số 0 ở đầu, cắt số dài quá 15 chữ số và đổi chuỗi số quanh chữ “E” thành ký hiệu khoa học (đúng lỗi mã RIKEN), nhưng bài giới thiệu ghi rằng kiểm soát chuyển đổi sang **ngày** vẫn đang lên kế hoạch (Fifadra, 2022). Chưa thấy tài liệu chính thức nào xác nhận đã tắt được chuyển đổi ngày, nên an toàn nhất vẫn là định dạng cột tên gen là Text, hoặc giữ dữ liệu genomics ở định dạng text chuẩn (Định dạng dữ liệu sinh học).
 
 ### 5.4. Tự kiểm tra: quét một file DEG
 
-Bảng gen biểu hiện khác biệt (DEG) hay được xuất ra Excel ở cuối pipeline RNA-seq ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)). Hãy đọc file ở dạng text rồi tìm trong cột ký hiệu gen các giá trị trông như ngày hoặc số. Với `pd.read_excel(path, dtype=str)`, ô đã thành ngày trả về “2021-09-02 00:00:00”, ô số ngày nội bộ “44075”, ô 2,31 × 10¹³ “23100000000000”; mẫu tìm kiếm phải bắt cả các dạng này:
+Bảng gen biểu hiện khác biệt (DEG) hay được xuất ra Excel ở cuối pipeline RNA-seq (Transcriptomics). Hãy đọc file ở dạng text rồi tìm trong cột ký hiệu gen các giá trị trông như ngày hoặc số. Với `pd.read_excel(path, dtype=str)`, ô đã thành ngày trả về “2021-09-02 00:00:00”, ô số ngày nội bộ “44075”, ô 2,31 × 10¹³ “23100000000000”; mẫu tìm kiếm phải bắt cả các dạng này:
 
 ```python
 import pandas as pd
@@ -472,7 +472,7 @@ Cũng không có mức tin cậy “lý tưởng”: với cùng dữ liệu, kh
 
 ### 6.3. Statistical significance và statistical power
 
-Về ý nghĩa thống kê (statistical significance), Greenland et al. (2016) chỉ ra rằng P value không phải xác suất để giả thuyết kiểm định đúng (ngộ nhận số 1), và significant không có nghĩa là quan trọng về khoa học, vì ở nghiên cứu lớn hiệu ứng rất nhỏ cũng significant được (số 7). Ngược lại, P > 0,05 không có nghĩa là giả thuyết kiểm định đúng (số 4) hay không có hiệu ứng (số 6). Định nghĩa P value: [Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/), [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/).
+Về ý nghĩa thống kê (statistical significance), Greenland et al. (2016) chỉ ra rằng P value không phải xác suất để giả thuyết kiểm định đúng (ngộ nhận số 1), và significant không có nghĩa là quan trọng về khoa học, vì ở nghiên cứu lớn hiệu ứng rất nhỏ cũng significant được (số 7). Ngược lại, P > 0,05 không có nghĩa là giả thuyết kiểm định đúng (số 4) hay không có hiệu ứng (số 6). Định nghĩa P value: Toán và thống kê cho sinh học, Kiểm định giả thiết thống kê.
 
 Power (năng lực của kiểm định) là xác suất **trước nghiên cứu** để test bác bỏ giả thuyết kiểm định khi một giả thuyết thay thế cụ thể là đúng (Greenland et al., 2016). Mức 0,8 là mục tiêu khi **lên kế hoạch** cỡ mẫu, không phải điều kiện để gọi kết quả là significant. Dùng power để diễn giải kết quả không significant cũng sai (ngộ nhận số 24, 25); Hoenig và Heisey (2001) gọi cách làm này là “fundamentally flawed”. Dù vậy power thấp vẫn nguy hiểm: theo Button et al. (2013), nó làm giảm khả năng phát hiện hiệu ứng thật, giảm khả năng một kết quả significant là thật, và phóng đại cỡ hiệu ứng ước lượng.
 
@@ -537,7 +537,7 @@ Hai điểm cần thận trọng khi áp dụng. Thứ nhất, khi dữ liệu k
 
 ## 8. Kết luận
 
-Làm sạch dữ liệu là một phần của thiết kế nghiên cứu, không phải bước dọn dẹp cuối cùng. Ít lỗi nhất là khi dữ liệu được tổ chức đúng từ đầu, bản gốc được giữ nguyên, và mọi thay đổi đi qua script kèm changelog. Trường hợp tên gen cho thấy công cụ quen thuộc có thể âm thầm làm hỏng dữ liệu của hàng nghìn bài báo, và một bài cảnh báo chưa đủ để đổi thói quen. Các quy tắc dùng nhanh như “n ≥ 30” cần nhường chỗ cho lập luận theo mục tiêu. Bước tiếp theo là gộp bảng: [bài 05](/blog/analyze-data-to-answer-questions/) bàn về hàm tra cứu và JOIN, nơi một khoá không cùng định dạng hay một chỉ số cột sai có thể tạo lỗi mới.
+Làm sạch dữ liệu là một phần của thiết kế nghiên cứu, không phải bước dọn dẹp cuối cùng. Ít lỗi nhất là khi dữ liệu được tổ chức đúng từ đầu, bản gốc được giữ nguyên, và mọi thay đổi đi qua script kèm changelog. Trường hợp tên gen cho thấy công cụ quen thuộc có thể âm thầm làm hỏng dữ liệu của hàng nghìn bài báo, và một bài cảnh báo chưa đủ để đổi thói quen. Các quy tắc dùng nhanh như “n ≥ 30” cần nhường chỗ cho lập luận theo mục tiêu. Bước tiếp theo là gộp bảng: bài 05 bàn về hàm tra cứu và JOIN, nơi một khoá không cùng định dạng hay một chỉ số cột sai có thể tạo lỗi mới.
 
 ## Tài liệu tham khảo
 

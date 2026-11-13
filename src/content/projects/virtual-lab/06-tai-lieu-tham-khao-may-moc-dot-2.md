@@ -66,7 +66,7 @@ isIndex: false
 
 ### Số liệu dùng cho mô hình (`figures/spectro/model.mjs`)
 - Beer–Lambert A = ε·l·c; T = 10^(−A); cuvet l = 1 cm
-- p-nitrophenol (pH 9,8): ε405 = 18 500 L·mol⁻¹·cm⁻¹ (quy trình DEA của Sigma-Aldrich, https://www.sigmaaldrich.com/US/en/technical-documents/protocol/protein-biology/enzyme-activity-assays/enzymatic-assay-of-alkaline-phosphatase-diethanolamine-assay ; tài liệu khác ghi 18 300–18 400) (→ [Hoạt độ lipase bằng p-NPP](/blog/hoat-do-enzyme/))
+- p-nitrophenol (pH 9,8): ε405 = 18 500 L·mol⁻¹·cm⁻¹ (quy trình DEA của Sigma-Aldrich, https://www.sigmaaldrich.com/US/en/technical-documents/protocol/protein-biology/enzyme-activity-assays/enzymatic-assay-of-alkaline-phosphatase-diethanolamine-assay ; tài liệu khác ghi 18 300–18 400) (→ Hoạt độ lipase bằng p-NPP)
 - NADH: ε340 = 6 220 L·mol⁻¹·cm⁻¹; dải thứ hai ε259 ≈ 14 400
 - Ánh sáng lạc: A_đo = −log10((T + s)/(1 + s)); s(λ) nội suy theo log giữa 0,15 % (198 nm) và 0,004 % (220 nm), giữ 0,004 % từ 220 nm trở lên
 	- Ở 405 nm số đọc lệch 1 % khi A ≈ 3,3; ở 198 nm lệch 1 % khi A ≈ 1,3
@@ -218,7 +218,7 @@ isIndex: false
 	- `figures/hplc/` (189 món vẽ, 20 đường ống); trong app bấm "Cận cảnh HPLC" ở khu "HPLC, ly tâm, đo DNA", hoặc mở `#hplc`
 	- Thao tác: Space tiêm (kim hút mẫu, van xoay sang tiêm, vùng mẫu chạy vào cột và tách ra, sắc ký đồ vẽ dần trên laptop); ← → % acetonitrile, ↑ ↓ lưu lượng; piston chạy theo nhịp thật, áp suất hiện trên màn hình
 	- Kiểm tra: `audit passed` (không ống nào xuyên vật); `line ends: 0` ở cả hai giao diện mọi tư thế; cận cảnh 4× các mối nối; 390 px không cuộn ngang
-	- Cột vẽ to hơn thật và cắt vỏ để thấy các dải tách chất (→ [LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/))
+	- Cột vẽ to hơn thật và cắt vỏ để thấy các dải tách chất (→ LC-MS/MS)
 	- Trong app (`src/core/hplc-lab.js`, sắc ký đồ `src/ui/trace-chart.js`): protocol "HPLC: định lượng caffeine trong nước giải khát" (đặt pha động, dãy chuẩn 10–100 µg/mL, tiêm mẫu pha loãng 1:1, dựng đường chuẩn); nồng độ thật của mẫu ngẫu nhiên 30–120 µg/mL kèm theobromine; % acetonitrile quá cao thì caffeine ra sát thời gian chết hoặc chồng pic bên cạnh (Rs < 1,5), đều có cảnh báo; hình cận cảnh mở với đúng phương pháp và mẫu vừa tiêm
 
 ## Máy real-time PCR (qPCR) — Bio-Rad CFX96 Touch
@@ -543,7 +543,7 @@ isIndex: false
 
 ### Tiến độ
 - [x] Hình chi tiết LC-MS/MS (Fig 13, mức Hero, Shimadzu LCMS-8060) ✅ 2026-10-16
-	- `figures/lcms/` (287 mục vẽ, 209 khối, 18 ống và cáp); trong app bấm "Cận cảnh LC-MS/MS" ở khu "HPLC, ly tâm, đo DNA", hoặc mở `#lcms` (→ [Sắc ký lỏng – khối phổ LC-MS/MS](/blog/sac-ky-long-khoi-pho-lc-ms-ms-va-nhan-dang-protein/))
+	- `figures/lcms/` (287 mục vẽ, 209 khối, 18 ống và cáp); trong app bấm "Cận cảnh LC-MS/MS" ở khu "HPLC, ly tâm, đo DNA", hoặc mở `#lcms` (→ Sắc ký lỏng – khối phổ LC-MS/MS)
 	- Thao tác: Space tiêm mẫu; ← → đổi kênh MRM (8 kênh); ↑ ↓ nồng độ ×2/÷2. Hoạt cảnh: dải chất trong cột, phun ESI với giọt co lại, ion qua DL, Q-array, Q1 (ion sai m/z xoáy ra), ô va chạm (vỡ thành mảnh), Q3, dynode và ống nhân; sắc ký đồ MRM vẽ theo từng chu kỳ
 	- Kiểm tra: `audit passed`; `line ends: 0` ở hai giao diện, lúc nghỉ và lúc xong; cận cảnh 4×; 390 px không cuộn ngang
 

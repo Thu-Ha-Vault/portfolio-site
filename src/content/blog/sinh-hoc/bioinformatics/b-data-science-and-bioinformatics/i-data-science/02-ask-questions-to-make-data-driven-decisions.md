@@ -34,7 +34,7 @@ Quy trình phân tích dữ liệu thường gồm sáu pha: hỏi (ask), chuẩ
 
 Leek và Peng (2015) cho rằng lỗi phổ biến nhất trong phân tích dữ liệu không nằm ở code hay phép kiểm định, mà ở việc nhầm **loại** câu hỏi. Một mối tương quan được đọc như quan hệ nhân quả, hay một phân tích khám phá được báo cáo như thể đã kiểm định giả thuyết, đều là cùng một kiểu lỗi: trả lời câu hỏi này nhưng tuyên bố về câu hỏi khác.
 
-Trong khoa học, quy trình nghiên cứu nào cũng bắt đầu bằng xác định vấn đề (→ [Phương pháp nghiên cứu khoa học](/blog/phuong-phap-nghien-cuu-khoa-hoc-quy-trinh-7-buoc-va-cau-truc-bai-bao/)); pha Ask là cùng việc đó với tên khác. Bài lần lượt bàn các khung đặt câu hỏi (phần 2), bằng chứng về ra quyết định dựa trên dữ liệu (phần 3), big data và dashboard (phần 4), rồi áp tất cả vào một ví dụ có dữ liệu thật (phần 5).
+Trong khoa học, quy trình nghiên cứu nào cũng bắt đầu bằng xác định vấn đề (→ Phương pháp nghiên cứu khoa học); pha Ask là cùng việc đó với tên khác. Bài lần lượt bàn các khung đặt câu hỏi (phần 2), bằng chứng về ra quyết định dựa trên dữ liệu (phần 3), big data và dashboard (phần 4), rồi áp tất cả vào một ví dụ có dữ liệu thật (phần 5).
 
 ## 2. Từ mục tiêu quản trị đến câu hỏi nghiên cứu
 
@@ -80,7 +80,7 @@ flowchart TB
 
 ### 2.4. Câu hỏi đi từ giả thuyết hay từ dữ liệu
 
-Sinh học hậu genome gặp câu hỏi này sớm, khi omics tạo ra dữ liệu nhanh hơn khả năng đặt giả thuyết. Kell và Oliver (2004) lập luận rằng nghiên cứu quy nạp đi từ dữ liệu và nghiên cứu dựa trên giả thuyết **bổ sung** cho nhau: dữ liệu lớn gợi ra giả thuyết, giả thuyết định hướng thí nghiệm tiếp theo. Kitchin (2014) phê phán tuyên bố "the end of theory" và cho rằng dữ liệu không tự nói: cách thu thập, chọn biến và diễn giải đều mang giả định. Với người làm bioinformatics, một sàng lọc hàng nghìn gen "để xem gen nào khác" vẫn có câu hỏi, và câu hỏi đó thuộc loại exploratory. Ghi rõ điều này giúp người đọc không coi kết quả như đã kiểm định giả thuyết định trước (→ [Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/)).
+Sinh học hậu genome gặp câu hỏi này sớm, khi omics tạo ra dữ liệu nhanh hơn khả năng đặt giả thuyết. Kell và Oliver (2004) lập luận rằng nghiên cứu quy nạp đi từ dữ liệu và nghiên cứu dựa trên giả thuyết **bổ sung** cho nhau: dữ liệu lớn gợi ra giả thuyết, giả thuyết định hướng thí nghiệm tiếp theo. Kitchin (2014) phê phán tuyên bố "the end of theory" và cho rằng dữ liệu không tự nói: cách thu thập, chọn biến và diễn giải đều mang giả định. Với người làm bioinformatics, một sàng lọc hàng nghìn gen "để xem gen nào khác" vẫn có câu hỏi, và câu hỏi đó thuộc loại exploratory. Ghi rõ điều này giúp người đọc không coi kết quả như đã kiểm định giả thuyết định trước (→ Nhập môn Bioinformatics).
 
 ### 2.5. Những câu hỏi nên tránh
 
@@ -160,11 +160,11 @@ Các định nghĩa học thuật sau đó giữ khung của Laney và thêm h�
 | Veracity | độ tin cậy, chất lượng | V bổ sung, không định nghĩa (Laney, 2001) |
 | Value | giá trị tạo ra nhờ công nghệ và phân tích | hệ quả (De Mauro et al., 2016) |
 
-Dữ liệu giải trình tự thế hệ mới minh hoạ cả ba V gốc: mỗi lần chạy tạo ra rất nhiều dữ liệu, máy sinh dữ liệu liên tục trong khi phòng thí nghiệm cần kết quả sớm, và một dự án thường ghép trình tự với dữ liệu biểu hiện, hình ảnh và lâm sàng (→ [NGS và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)).
+Dữ liệu giải trình tự thế hệ mới minh hoạ cả ba V gốc: mỗi lần chạy tạo ra rất nhiều dữ liệu, máy sinh dữ liệu liên tục trong khi phòng thí nghiệm cần kết quả sớm, và một dự án thường ghép trình tự với dữ liệu biểu hiện, hình ảnh và lâm sàng (→ NGS và genomics).
 
 ### 4.2. Small data và big data
 
-Small data thường nằm gọn trong spreadsheet; big data nằm trong cơ sở dữ liệu và được truy vấn (→ [Dữ liệu và database](/blog/gioi-thieu-du-lieu-and-database/)). Đây là mô tả thực hành, và ranh giới dịch chuyển theo công nghệ; câu hỏi hữu ích là "câu hỏi này cần dữ liệu cỡ nào và công cụ nào là đủ".
+Small data thường nằm gọn trong spreadsheet; big data nằm trong cơ sở dữ liệu và được truy vấn (→ Dữ liệu và database). Đây là mô tả thực hành, và ranh giới dịch chuyển theo công nghệ; câu hỏi hữu ích là "câu hỏi này cần dữ liệu cỡ nào và công cụ nào là đủ".
 
 ### 4.3. Report hay dashboard
 
@@ -181,7 +181,7 @@ Không có mục tiêu rõ thì không biết đâu là "thông tin quan trọng
 | Tốc độ thay đổi của dữ liệu | chậm, cần ảnh chụp tại một thời điểm | nhanh, người dùng cần biết ngay |
 | Rủi ro dữ liệu | cần làm sạch, kiểm tra trước mỗi lần dùng | đường ống ổn định, có kiểm tra tự động |
 
-Dashboard thường được chia theo người dùng thành **strategic** (mục tiêu dài hạn), **operational** (theo dõi ngắn hạn) và **analytical** (chi tiết dữ liệu, cho nhóm phân tích). Loại nào thì mỗi ô cũng nên ứng với một **metric**: một loại dữ liệu đơn lẻ, định lượng được. Metric gắn với mức cần đạt thành **metric goal**, như một tỷ lệ giữ chân khách hàng mục tiêu, hay ROI tính bằng lợi nhuận ròng trong kỳ chia chi phí đầu tư. Chữ M của SMART chỉ có nghĩa khi câu hỏi chỉ ra được một metric có đơn vị và cách tính; hàm spreadsheet để tính metric ở [bài 05](/blog/analyze-data-to-answer-questions/), cách chọn biểu đồ ở [bài 06](/blog/share-data-through-the-art-of-visualization/).
+Dashboard thường được chia theo người dùng thành **strategic** (mục tiêu dài hạn), **operational** (theo dõi ngắn hạn) và **analytical** (chi tiết dữ liệu, cho nhóm phân tích). Loại nào thì mỗi ô cũng nên ứng với một **metric**: một loại dữ liệu đơn lẻ, định lượng được. Metric gắn với mức cần đạt thành **metric goal**, như một tỷ lệ giữ chân khách hàng mục tiêu, hay ROI tính bằng lợi nhuận ròng trong kỳ chia chi phí đầu tư. Chữ M của SMART chỉ có nghĩa khi câu hỏi chỉ ra được một metric có đơn vị và cách tính; hàm spreadsheet để tính metric ở bài 05, cách chọn biểu đồ ở bài 06.
 
 ## 5. Minh hoạ: biến câu hỏi mơ hồ thành câu hỏi đo được
 
@@ -193,7 +193,7 @@ Câu hỏi mơ hồ "Hạn hán có ảnh hưởng đến chim sẻ không?" qua
 
 - **Specific**: *G. fortis* trên Daphne Major; đặc điểm là **độ sâu mỏ**.
 - **Measurable**: độ sâu mỏ (mm), so sánh trung bình hai nhóm.
-- **Action-oriented / Relevant**: kiểm tra một dự đoán của chọn lọc tự nhiên: mỏ sâu hơn giúp tách hạt to, cứng còn lại trong hạn hán (→ [Bằng chứng và cơ chế tiến hoá](/blog/bang-chung-va-co-che-tien-hoa/)).
+- **Action-oriented / Relevant**: kiểm tra một dự đoán của chọn lọc tự nhiên: mỏ sâu hơn giúp tách hạt to, cứng còn lại trong hạn hán (→ Bằng chứng và cơ chế tiến hoá).
 - **Time-bound**: chim sinh 1973–1976; nhóm không sống sót chết năm 1977, nhóm sống sót còn sống năm 1978.
 
 Áp thêm PICO và Leek và Peng: **P** là 100 con chim trong bộ dữ liệu giáo dục của HHMI BioInteractive, trích từ dữ liệu của nhà Grant, gồm 50 con sống sót và 50 con không sống sót (HHMI BioInteractive, 2021); vai trò **I** do "sống sót qua hạn hán" đảm nhận; **C** là nhóm không sống sót; **O** là độ sâu mỏ trung bình. Đây là câu hỏi **inferential**, không phải **causal**: dữ liệu cho thấy liên hệ giữa đặc điểm và sống sót, còn cơ chế (hạt to, cứng) đến từ quan sát sinh thái độc lập.
@@ -239,7 +239,7 @@ Cohen's d = 0.65
 
 **Hình 2.** Độ sâu mỏ của 50 con *G. fortis* không sống sót và 50 con sống sót qua hạn hán 1977. Khoảng tin cậy 95% theo phân phối t (df = 49): 8,86–9,36 mm và 9,43–9,91 mm. Dữ liệu: HHMI BioInteractive (2021), trích từ dữ liệu của P. R. Grant và B. R. Grant.
 
-Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiều; chọn lọc dịch chuyển trung bình quần thể chứ không phải một ngưỡng sống chết. Vì vậy nên báo cáo chênh lệch, khoảng tin cậy và cỡ hiệu ứng cạnh p-value (→ [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). Kết quả cùng chiều với nghiên cứu gốc: Boag và Grant (1981) báo cáo rằng chim lớn, đặc biệt chim trống có mỏ lớn, sống sót tốt nhất vì tách được hạt to và cứng chiếm ưu thế trong hạn hán.
+Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiều; chọn lọc dịch chuyển trung bình quần thể chứ không phải một ngưỡng sống chết. Vì vậy nên báo cáo chênh lệch, khoảng tin cậy và cỡ hiệu ứng cạnh p-value (→ Kiểm định giả thiết thống kê). Kết quả cùng chiều với nghiên cứu gốc: Boag và Grant (1981) báo cáo rằng chim lớn, đặc biệt chim trống có mỏ lớn, sống sót tốt nhất vì tách được hạt to và cứng chiếm ưu thế trong hạn hán.
 
 **Bảng 5.** Bốn đặc điểm của hai nhóm (n = 50 mỗi nhóm; kiểm định t hai mẫu, df = 98)
 
@@ -252,7 +252,7 @@ Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiề
 
 Nhóm sống sót lớn hơn ở cả bốn đặc điểm, khác biệt có ý nghĩa ở khối lượng, cánh và độ sâu mỏ. Vì các đặc điểm đều tương quan với kích thước cơ thể, bảng này **không** cho phép kết luận đặc điểm nào "quan trọng nhất"; đó là một câu hỏi khác, cần mô hình nhiều biến. Câu hỏi nêu rõ chiều so sánh còn giúp bắt lỗi viết ngược chiều khác biệt, nhất là khi phần mềm trả về t âm.
 
-Giới hạn cần nói: đây là 100 con được chọn cho mục đích giáo dục, không phải toàn bộ khoảng 1.200 con trên đảo, và cách chọn không được mô tả, nên không suy rộng ra ngoài mẫu. Cỡ mẫu nên được **lên kế hoạch** từ câu hỏi, theo độ lớn hiệu ứng muốn phát hiện (→ [Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/)).
+Giới hạn cần nói: đây là 100 con được chọn cho mục đích giáo dục, không phải toàn bộ khoảng 1.200 con trên đảo, và cách chọn không được mô tả, nên không suy rộng ra ngoài mẫu. Cỡ mẫu nên được **lên kế hoạch** từ câu hỏi, theo độ lớn hiệu ứng muốn phát hiện (→ Toán và thống kê cho sinh học).
 
 ### 5.2. Ví dụ kinh doanh giả định
 

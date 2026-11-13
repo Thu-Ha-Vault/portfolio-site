@@ -55,7 +55,7 @@ Quy trình phân tích dữ liệu của chương trình Google Data Analytics g
 - **Share**: trình bày và diễn giải kết quả cho người ra quyết định.
 - **Act**: đưa kết quả vào hành động.
 
-Mô hình bắt đầu từ **stakeholder** và **business task**, tức câu hỏi thường được giao từ bên ngoài, và gộp một số chức năng vào pha khác: thiết kế việc tạo dữ liệu nằm trong Prepare, diễn giải nằm trong Share. Cách sáu pha ăn khớp với giai đoạn thực thi của một dự án nói chung được bàn ở [Project Execution](/blog/project-execution-running-the-project/).
+Mô hình bắt đầu từ **stakeholder** và **business task**, tức câu hỏi thường được giao từ bên ngoài, và gộp một số chức năng vào pha khác: thiết kế việc tạo dữ liệu nằm trong Prepare, diễn giải nằm trong Share. Cách sáu pha ăn khớp với giai đoạn thực thi của một dự án nói chung được bàn ở Project Execution.
 
 Giới doanh nghiệp còn những cách chia khác. EMC Education Services (2015) mô tả một **vòng đời phân tích dữ liệu (Data Analytics Lifecycle)** sáu pha: discovery, data preparation, model planning, model building, communicate results và operationalize, trong đó việc lập kế hoạch mô hình là một pha riêng.
 
@@ -73,7 +73,7 @@ Fayyad et al. (1996a) mô tả KDD là quá trình **tương tác và lặp (int
 8. diễn giải mẫu tìm được, có thể quay lại bất kỳ bước 1–7;
 9. hành động dựa trên tri thức, gồm cả kiểm tra và giải quyết mâu thuẫn với tri thức đã có.
 
-Quá trình có thể lặp giữa hai bước bất kỳ. Một bản ngắn hơn được công bố cùng năm trên *Communications of the ACM* (Fayyad et al., 1996b). Phân tích sâu hơn về KDD có ở [bài Data Mining](/blog/data-mining/).
+Quá trình có thể lặp giữa hai bước bất kỳ. Một bản ngắn hơn được công bố cùng năm trên *Communications of the ACM* (Fayyad et al., 1996b). Phân tích sâu hơn về KDD có ở bài Data Mining.
 
 ### 2.3. CRISP-DM
 
@@ -218,7 +218,7 @@ Cũng ở giai đoạn đầu, loại câu hỏi quyết định loại phân t�
 
 ### 4.4. Lưu trữ và huỷ dữ liệu
 
-Vòng đời của Google kết thúc bằng Archive và Destroy (Google, n.d.); USGS có Preserve và Publish/Share nhưng không có huỷ (Faundeen et al., 2014); Dispose của DCC thường là chuyển giao, chỉ đôi khi là huỷ (Higgins, 2008). Trong doanh nghiệp, dữ liệu khách hàng vừa là tài sản vừa là rủi ro, nên huỷ đúng lúc là bước bình thường; trong nghiên cứu, mặc định là **giữ và chia sẻ**: nguyên tắc **FAIR** đề nghị dữ liệu và metadata khoa học phải **Findable**, **Accessible**, **Interoperable** và **Reusable** (tìm thấy, truy cập, dùng chung và tái sử dụng được), cho cả người lẫn máy (Wilkinson et al., 2016). Với dữ liệu biểu hiện gene, Gene Expression Omnibus (GEO) của NCBI là kho công cộng xây dựng riêng cho loại dữ liệu này (Edgar et al., 2002; [Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
+Vòng đời của Google kết thúc bằng Archive và Destroy (Google, n.d.); USGS có Preserve và Publish/Share nhưng không có huỷ (Faundeen et al., 2014); Dispose của DCC thường là chuyển giao, chỉ đôi khi là huỷ (Higgins, 2008). Trong doanh nghiệp, dữ liệu khách hàng vừa là tài sản vừa là rủi ro, nên huỷ đúng lúc là bước bình thường; trong nghiên cứu, mặc định là **giữ và chia sẻ**: nguyên tắc **FAIR** đề nghị dữ liệu và metadata khoa học phải **Findable**, **Accessible**, **Interoperable** và **Reusable** (tìm thấy, truy cập, dùng chung và tái sử dụng được), cho cả người lẫn máy (Wilkinson et al., 2016). Với dữ liệu biểu hiện gene, Gene Expression Omnibus (GEO) của NCBI là kho công cộng xây dựng riêng cho loại dữ liệu này (Edgar et al., 2002; Định dạng dữ liệu và cơ sở dữ liệu sinh học).
 
 Huỷ trong nghiên cứu là ngoại lệ, chủ yếu đặt ra với dữ liệu định danh được người tham gia; phạm vi và thời điểm huỷ cần đối chiếu với phiếu đồng thuận và quy định bảo vệ dữ liệu áp dụng, phần pháp lý nằm ngoài phạm vi bài. Dữ liệu đã làm căn cứ cho một kết luận khoa học cần được giữ để người khác kiểm tra.
 
@@ -226,7 +226,7 @@ Buffalo (2015) bổ sung ba thói quen nối pha Process với pha lưu trữ: c
 
 ## 5. Một dự án RNA-seq đi trọn vòng
 
-Ví dụ giả định: so sánh biểu hiện gene giữa mô xử lý thuốc và mô đối chứng bằng RNA-seq ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)). Khung dùng ở đây là sáu pha của Google cộng ba pha: **Design** trước Prepare, **Validate** trước Share, **Archive theo FAIR** sau Share. Đây là đề xuất của bài, ghép từ các mô hình ở mục 2, không phải mô hình đã công bố (Hình 2).
+Ví dụ giả định: so sánh biểu hiện gene giữa mô xử lý thuốc và mô đối chứng bằng RNA-seq (Transcriptomics). Khung dùng ở đây là sáu pha của Google cộng ba pha: **Design** trước Prepare, **Validate** trước Share, **Archive theo FAIR** sau Share. Đây là đề xuất của bài, ghép từ các mô hình ở mục 2, không phải mô hình đã công bố (Hình 2).
 
 ```mermaid
 flowchart TB
@@ -261,9 +261,9 @@ flowchart TB
 
 **Design** là nơi dự án dễ hỏng nhất mà khó nhận ra nhất: thiếu replicate hay batch trùng nhóm xử lý không làm code báo lỗi, pipeline vẫn trả về một danh sách gene. Lỗi chỉ lộ ra khi có người hỏi khác biệt này do thuốc hay do ngày chuẩn bị thư viện. Đây là nhận định của người viết, dựa trên việc Conesa et al. (2016) đặt thiết kế lên đầu các bước phân tích, không phải một con số thống kê. Với một dự án nhỏ, DMP (Michener, 2015) có thể chỉ là một trang ghi dữ liệu nào sẽ tạo ra, lưu ở đâu, mô tả bằng metadata gì và nộp vào kho nào.
 
-**Validate** là chỗ người phân tích tự phản biện, như Evaluation của CRISP-DM hay bước 9 của KDD, nhưng bằng công cụ thống kê và tái lập. **Share** gồm cả việc để người khác kiểm tra được hình: tránh chỉnh dữ liệu bằng tay và lưu dữ liệu thô đằng sau mỗi hình (Sandve et al., 2013). **Archive** đặt sau Share nhưng nên chuẩn bị từ Design, đúng lý do USGS đặt Preserve trước Publish/Share; code và môi trường phần mềm cũng cần lưu ([Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)). **Act** trong nghiên cứu thường là thí nghiệm tiếp theo, đúng như PPDAC: kết quả chu trình này khởi động chu trình sau (Wild & Pfannkuch, 1999).
+**Validate** là chỗ người phân tích tự phản biện, như Evaluation của CRISP-DM hay bước 9 của KDD, nhưng bằng công cụ thống kê và tái lập. **Share** gồm cả việc để người khác kiểm tra được hình: tránh chỉnh dữ liệu bằng tay và lưu dữ liệu thô đằng sau mỗi hình (Sandve et al., 2013). **Archive** đặt sau Share nhưng nên chuẩn bị từ Design, đúng lý do USGS đặt Preserve trước Publish/Share; code và môi trường phần mềm cũng cần lưu (Quy trình tái lập). **Act** trong nghiên cứu thường là thí nghiệm tiếp theo, đúng như PPDAC: kết quả chu trình này khởi động chu trình sau (Wild & Pfannkuch, 1999).
 
-Mỗi hàng của Bảng 2 ứng với một bài sau, nên bảng cũng là mục lục của series: Ask ở bài 02, Prepare ở bài 03, Process ở [bài 04](/blog/process-data-from-dirty-to-clean/), Analyze ở [bài 05](/blog/analyze-data-to-answer-questions/), Share ở [bài 06](/blog/share-data-through-the-art-of-visualization/), và cả vòng trên dữ liệu thật ở [bài 08](/blog/case-study/). Toàn cảnh một dự án bioinformatics có ở [Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/).
+Mỗi hàng của Bảng 2 ứng với một bài sau, nên bảng cũng là mục lục của series: Ask ở bài 02, Prepare ở bài 03, Process ở [bài 04](/blog/process-data-from-dirty-to-clean/), Analyze ở bài 05, Share ở bài 06, và cả vòng trên dữ liệu thật ở bài 08. Toàn cảnh một dự án bioinformatics có ở Nhập môn Bioinformatics.
 
 ## 6. Thảo luận: dùng mô hình nào, khi nào
 

@@ -83,7 +83,7 @@ description: >-
 	- Mùa vụ và vùng tính trên 1995–2010, các năm đủ tháng.
 	- Trước 1980 dữ liệu quốc gia quá thưa, nên ngưỡng năm dịch tính trên 1980–2024.
 	- Tỉ lệ mắc chỉ tính cho 2004–2010: đó là giai đoạn duy nhất số ca và dân số dùng cùng ranh giới tỉnh (đợt tách tỉnh năm 1997 đã được Tổng cục Thống kê tính lùi theo tỉnh mới, còn số ca năm 1995–1996 vẫn theo tỉnh cũ).
-	- Tương quan Spearman tính bằng tương quan Pearson của thứ hạng, ít bị ảnh hưởng bởi các đợt bùng phát cực lớn (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/)).
+	- Tương quan Spearman tính bằng tương quan Pearson của thứ hạng, ít bị ảnh hưởng bởi các đợt bùng phát cực lớn (→ Tương quan và hồi quy).
 
 ## 4. Phân tích (Analyze)
 
@@ -166,7 +166,7 @@ Tương quan Spearman giữa số ca tháng t và thời tiết tháng t − k (
 - Ở đồng bằng sông Cửu Long, mưa đi trước số ca khoảng **1 tháng** (An Giang ρ 0,58, Tiền Giang 0,52).
 - Ở miền Bắc và miền Trung, **nhiệt độ** đi trước 2–3 tháng (Hà Nội 0,52 ở độ trễ 2 tháng, Đà Nẵng 0,62 ở độ trễ 3 tháng).
 - TP.HCM có liên hệ yếu nhất với mưa (cao nhất 0,30), có thể vì đô thị trữ nước quanh năm.
-- Cách hiểu đúng: các tương quan này phần lớn phản ánh **chu kỳ mùa chung** của thời tiết và quần thể muỗi (→ [Cá thể và quần thể sinh vật](/blog/ca-the-va-quan-the-sinh-vat/)), tức là thời tiết xác nhận lịch mùa dịch.
+- Cách hiểu đúng: các tương quan này phần lớn phản ánh **chu kỳ mùa chung** của thời tiết và quần thể muỗi (→ Cá thể và quần thể sinh vật), tức là thời tiết xác nhận lịch mùa dịch.
 
 ![track-b-05_weather_lead](/vault-assets/track-b-05-weather-lead-638acdbf.webp)
 

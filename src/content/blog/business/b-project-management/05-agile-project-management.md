@@ -111,7 +111,7 @@ Moløkken-Østvold và Jørgensen (2005) khảo sát sâu các dự án phần m
 
 Ba lưu ý về phương pháp:
 
-- **Cắt ngang, tự báo cáo.** Người trả lời tự chọn dự án, tự đánh giá mức dùng Agile và mức thành công. Thiết kế "một thành công, một kém" có thể phóng đại tương quan: đã biết dự án nào thành công thì dễ nhớ nó "linh hoạt" hơn. Số liệu tự báo cáo từ cộng đồng PMI về tỷ lệ thất bại dự án cũng gặp đúng vấn đề này (xem [bài 01](/blog/foundations-of-project-management/)).
+- **Cắt ngang, tự báo cáo.** Người trả lời tự chọn dự án, tự đánh giá mức dùng Agile và mức thành công. Thiết kế "một thành công, một kém" có thể phóng đại tương quan: đã biết dự án nào thành công thì dễ nhớ nó "linh hoạt" hơn. Số liệu tự báo cáo từ cộng đồng PMI về tỷ lệ thất bại dự án cũng gặp đúng vấn đề này (xem bài 01).
 - **Phần lớn biến thiên chưa được giải thích.** R² tối đa 0,41 nghĩa là hơn một nửa khác biệt về thành công nằm ngoài mô hình.
 - **Không có thử nghiệm ngẫu nhiên.** Bản tóm tắt của APM trích nhận xét của một tác giả rằng Agile "dẫn đến" dự án thành công hơn; cách nói nhân quả đó mạnh hơn những gì khảo sát cắt ngang cho phép.
 
@@ -168,7 +168,7 @@ Bài học chung: khảo sát của vendor cho biết xu hướng tự báo cáo
 
 Lập luận quen thuộc trong cộng đồng Scrum như sau: con người hay ước lượng thấp thời gian hoàn thành, nên thay vì **ước lượng tuyệt đối** (absolute estimation, theo giờ hoặc ngày), đội dùng **ước lượng tương đối** (relative estimation, so khối lượng việc này với việc khác), qua cỡ áo (T-shirt sizes) hoặc **story point** theo dãy Fibonacci. Trong **Planning Poker**, mỗi người úp lá bài ước lượng, cả nhóm lật cùng lúc rồi thảo luận các ước lượng chênh xa, nhờ đó tránh **thiên kiến mỏ neo** (anchoring bias).
 
-Vế "con người hay ước lượng thấp" thuộc chủ đề ngụy biện lập kế hoạch (xem [bài 03 về planning fallacy](/blog/project-planning-putting-it-all-together/)). Ở đây chỉ cần biết ước lượng chuyên gia (expert estimation) là chiến lược phổ biến nhất trong dự án phần mềm, và chưa có bằng chứng đáng kể rằng mô hình ước lượng hình thức tốt hơn (Jørgensen, 2004). Planning Poker là **một cách có cấu trúc để kết hợp ước lượng của nhiều chuyên gia**; câu hỏi đúng là nó có tốt hơn các cách kết hợp khác, hay tốt hơn một chuyên gia, không.
+Vế "con người hay ước lượng thấp" thuộc chủ đề ngụy biện lập kế hoạch (xem bài 03 về planning fallacy). Ở đây chỉ cần biết ước lượng chuyên gia (expert estimation) là chiến lược phổ biến nhất trong dự án phần mềm, và chưa có bằng chứng đáng kể rằng mô hình ước lượng hình thức tốt hơn (Jørgensen, 2004). Planning Poker là **một cách có cấu trúc để kết hợp ước lượng của nhiều chuyên gia**; câu hỏi đúng là nó có tốt hơn các cách kết hợp khác, hay tốt hơn một chuyên gia, không.
 
 ### 6.2. Bằng chứng
 
@@ -191,12 +191,12 @@ Hai nghiên cứu khác thêm sắc thái; với hai nghiên cứu này, bài ch
 
 **"Planning Poker tránh anchoring."** Úp bài rồi lật cùng lúc là cơ chế hợp lý, nhưng không nghiên cứu nào ở trên đo anchoring trực tiếp. Điều đã được chứng minh hẹp hơn: đồng thuận nhóm tốt hơn gộp máy móc, không tốt hơn một chuyên gia, và với người ít kinh nghiệm, thảo luận có thể làm ước lượng lạc quan hơn.
 
-**"Story point chính xác hơn giờ."** Các nguồn của bài chưa có nghiên cứu nào so sánh trực tiếp hai cách này. Story point chủ yếu **đổi đơn vị**; muốn tính sai số vẫn phải quy về effort thực tế. Đối trọng là ước lượng ba điểm và PERT (xem [bài 06 về three-point estimating](/blog/capstone-applying-project-management-in-the-real-world/)). Giá trị chắc hơn của Planning Poker có lẽ nằm ở **thảo luận**: ước lượng chênh nhau buộc mọi người nói ra điều họ biết về độ phức tạp.
+**"Story point chính xác hơn giờ."** Các nguồn của bài chưa có nghiên cứu nào so sánh trực tiếp hai cách này. Story point chủ yếu **đổi đơn vị**; muốn tính sai số vẫn phải quy về effort thực tế. Đối trọng là ước lượng ba điểm và PERT (xem bài 06 về three-point estimating). Giá trị chắc hơn của Planning Poker có lẽ nằm ở **thảo luận**: ước lượng chênh nhau buộc mọi người nói ra điều họ biết về độ phức tạp.
 
 <div class="callout callout-note">
 <p class="callout-title">Hộp thống kê: vì sao nghiên cứu ước lượng hay dùng trung vị</p>
 
-Sai số tương đối của một task là $\text{MRE} = \lvert \text{thực tế} - \text{ước lượng} \rvert / \text{thực tế}$; MMRE là trung bình của MRE. Vì là trung bình, MMRE rất nhạy với vài task lệch xa. Ví dụ giả định: năm task có MRE 0,1; 0,1; 0,2; 0,2 và 3,0 cho MMRE 0,72, nghe như sai trung bình 72%, nhưng trung vị chỉ 0,2. Trung vị là ước lượng vị trí bền vững, không bị kéo bởi giá trị cực đoan (Bruce & Bruce, 2017), nên Moløkken-Østvold và Haugen (2007) xét thiên lệch theo trung vị. Cùng ý này trong thống kê mô tả: [mean nhạy với outlier, median bền hơn](/blog/data-exploration-using-descriptive-statistics/).
+Sai số tương đối của một task là $\text{MRE} = \lvert \text{thực tế} - \text{ước lượng} \rvert / \text{thực tế}$; MMRE là trung bình của MRE. Vì là trung bình, MMRE rất nhạy với vài task lệch xa. Ví dụ giả định: năm task có MRE 0,1; 0,1; 0,2; 0,2 và 3,0 cho MMRE 0,72, nghe như sai trung bình 72%, nhưng trung vị chỉ 0,2. Trung vị là ước lượng vị trí bền vững, không bị kéo bởi giá trị cực đoan (Bruce & Bruce, 2017), nên Moløkken-Østvold và Haugen (2007) xét thiên lệch theo trung vị. Cùng ý này trong thống kê mô tả: mean nhạy với outlier, median bền hơn.
 
 </div>
 
@@ -220,7 +220,7 @@ Câu "làm ít việc cùng lúc thì việc xong nhanh hơn" có cơ sở toán
 
 ### 7.4. Daily Scrum
 
-Scrum Guide 2020 mô tả Daily Scrum là sự kiện 15 phút dành cho Developers, tổ chức cùng giờ, cùng địa điểm mỗi ngày làm việc của Sprint, để xem tiến độ hướng tới Sprint Goal và điều chỉnh Sprint Backlog khi cần (Schwaber & Sutherland, 2020). Stray, Sjøberg và Dybå (2016) nghiên cứu buổi stand-up hằng ngày ngoài thực tế bằng grounded theory với 12 đội phần mềm ở ba công ty tại Malaysia, Na Uy, Ba Lan và Anh: phỏng vấn 60 người, quan sát 79 buổi họp. Thái độ tích cực đến từ chia sẻ thông tin và cùng giải quyết vấn đề; thái độ tiêu cực đến từ việc buổi họp biến thành **báo cáo trạng thái cho quản lý**, quá dày và quá dài. Nói cách khác, buổi họp mất giá trị khi lệch khỏi mục đích phối hợp trong đội mà Scrum Guide đặt ra. Phần retrospective và an toàn tâm lý được bàn ở [bài 04 về retrospective](/blog/project-execution-running-the-project/).
+Scrum Guide 2020 mô tả Daily Scrum là sự kiện 15 phút dành cho Developers, tổ chức cùng giờ, cùng địa điểm mỗi ngày làm việc của Sprint, để xem tiến độ hướng tới Sprint Goal và điều chỉnh Sprint Backlog khi cần (Schwaber & Sutherland, 2020). Stray, Sjøberg và Dybå (2016) nghiên cứu buổi stand-up hằng ngày ngoài thực tế bằng grounded theory với 12 đội phần mềm ở ba công ty tại Malaysia, Na Uy, Ba Lan và Anh: phỏng vấn 60 người, quan sát 79 buổi họp. Thái độ tích cực đến từ chia sẻ thông tin và cùng giải quyết vấn đề; thái độ tiêu cực đến từ việc buổi họp biến thành **báo cáo trạng thái cho quản lý**, quá dày và quá dài. Nói cách khác, buổi họp mất giá trị khi lệch khỏi mục đích phối hợp trong đội mà Scrum Guide đặt ra. Phần retrospective và an toàn tâm lý được bàn ở bài 04 về retrospective.
 
 > **Mức bằng chứng ước tính:** velocity và WIP dựa trên lập luận đo lường và toán học; Daily Scrum ở mức thấp, một nghiên cứu định tính kỹ.
 

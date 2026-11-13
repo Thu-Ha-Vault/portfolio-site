@@ -50,7 +50,7 @@ description: >-
   Peta triển khai thí điểm máy tính bảng gọi món tại 2/5 nhà hàng của chuỗi
   Sauce & Spoon, và tự làm bộ tài liệu dự án (artifacts) qua từng giai đo
 ---
-> Course 6 của chứng chỉ Google Project Management: theo dõi project manager **Peta** triển khai thí điểm máy tính bảng gọi món tại 2/5 nhà hàng của chuỗi **Sauce & Spoon**, và tự làm bộ **tài liệu dự án (artifacts)** qua từng giai đoạn. Nội dung course nằm ở [Course 6: Capstone](/blog/capstone-applying-project-management-in-the-real-world/).
+> Course 6 của chứng chỉ Google Project Management: theo dõi project manager **Peta** triển khai thí điểm máy tính bảng gọi món tại 2/5 nhà hàng của chuỗi **Sauce & Spoon**, và tự làm bộ **tài liệu dự án (artifacts)** qua từng giai đoạn. Nội dung course nằm ở Course 6: Capstone.
 
 ## Mục tiêu & sản phẩm
 - **Có bắt buộc không**: các bài thực hành trong capstone không chấm điểm riêng (tự so với bài mẫu), nhưng quiz có chấm điểm của course hỏi trực tiếp về các tài liệu này, và chứng chỉ cần qua mọi bài có chấm điểm (≥ 80%). Bộ tài liệu cũng là portfolio quản lý dự án duy nhất của khoá, nên nên làm đầy đủ.
@@ -98,4 +98,4 @@ Mỗi ngày hai buổi: một buổi Project Management (tài liệu dài, cần
 | 25–26/11 | Hoàn thiện | quiz cuối, xuất PDF vào `assets/`, viết trang portfolio, nhận badge |
 
 - **Cách làm mỗi tài liệu**: mở template của course → điền theo tình huống → so với bài mẫu (exemplar) → ghi 1–2 điểm khác biệt và lý do vào note của dự án.
-- **Kỹ năng ôn lại trước khi làm**: SMART goals, RACI và phân tích stakeholder ([Course 2](/blog/project-initiation-starting-a-successful-project/)), ước lượng thời gian và milestones ([Course 3](/blog/project-planning-putting-it-all-together/)), quản lý chất lượng và retrospective ([Course 4](/blog/project-execution-running-the-project/)).
+- **Kỹ năng ôn lại trước khi làm**: SMART goals, RACI và phân tích stakeholder (Course 2), ước lượng thời gian và milestones (Course 3), quản lý chất lượng và retrospective (Course 4).

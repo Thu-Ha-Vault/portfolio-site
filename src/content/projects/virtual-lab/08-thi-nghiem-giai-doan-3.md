@@ -78,22 +78,22 @@ Kế hoạch ở mục 8 của CLAUDE.md. Mỗi việc ghi: thiết bị thật,
 	- Nhiệt độ dịch trong ống tiến dần về nhiệt độ bể hoặc tủ: nước nhanh, không khí chậm.
 	- Arrhenius; biến tính bậc nhất theo nhiệt độ và pH; đường chuông pH.
 	- Cl⁻ hoạt hoá, Cu²⁺ kìm hãm; tính đặc hiệu cơ chất.
-- **Protocol `ez-amylase`** ([Bài 08](/blog/dinh-tinh-va-xac-dinh-hoat-do-cua-enzyme/)):
+- **Protocol `ez-amylase`** (Bài 08):
 	- Lugol trên bản sứ: xanh đen → nâu → vàng nghệ → vàng sau 12 phút; ống nước cất giữ xanh đen.
 	- Wohlgemuth phần lớn ra **16 đơn vị** (nhóm 3: 16), các lần khác 8 hoặc 32 như sự dao động giữa các nhóm.
 	- Urease đun sôi thì mất hoạt tính.
-- **Protocol `ez-factors`** ([Bài 09](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme/)):
+- **Protocol `ez-factors`** (Bài 09):
 	- 55 °C trong tủ ấm tới vàng ở phút 21; 4 °C gần như không đổi.
 	- pH tối thích 6,8; pH 7,7–8,4 bất hoạt; Cu²⁺ kìm hãm.
 	- Từng mốc lệch bảng của bài không quá một mức màu.
 	- Ống 100 °C trong mô hình dừng ở nâu đỏ sau vài phút. Bài thấy ống này đổi màu dần tới phút 21 và tự giải thích là mực nước thấp hơn dịch trong ống, nên chỉ so màu cuối.
 	- Cl⁻ theo lý thuyết làm nhanh hơn. Bài thấy ngược lại và cho là do nhầm ống.
-- **Protocol `ez-stability`** ([Bài 10](/blog/xac-dinh-mot-so-tinh-chat-cua-enzyme-tiep/)):
+- **Protocol `ez-stability`** (Bài 10):
 	- Enzyme bài 10 vẫn còn hoạt tính sau 30 phút ở 80 °C, nên mô hình coi là α-amylase vi khuẩn bền nhiệt (*chưa xác minh*, bài không ghi nguồn enzyme).
 	- Xử lý 80 °C nhanh hơn 4 °C vì dịch lạnh cần thời gian ấm lên.
 	- pH 8,4 mất hoạt tính không hồi phục.
 	- Urease không thuỷ phân acetamide; amylase và saccharase đặc hiệu cơ chất.
-- **Protocol `ez-lipase`** ([Enzymology bài 01](/blog/hoat-do-enzyme/)):
+- **Protocol `ez-lipase`** (Enzymology bài 01):
 	- Lipase *Pseudomonas brenneri* (Priyanka et al. 2020).
 	- Lineweaver–Burk cho Km gần 0,37 mM.
 	- Zn²⁺ mất hoạt độ, Ca²⁺ 106 %; bán huỷ ở 60 °C là 190 phút.
@@ -108,7 +108,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Mỗi việc ghi: thiết bị thật,
 	- NEB tips: mỗi 10 phút ủ đá bớt đi, hiệu suất giảm 2 lần. Các số về vortex, LB thay SOC, thời gian phục hồi *chưa xác minh* vì không mở trực tiếp được trang NEB.
 - **Lõi** `src/core/micro.js`, protocol `mb-transform`:
 	- Kết quả: khoảng 150 khuẩn lạc ở độ pha loãng 100, hiệu suất 1,5 × 10⁹ cfu/µg.
-	- [Bài 11](/blog/bao-cao-tong-ket-thuc-hanh-sinh-hoc-phan-tu-phan-tich-ket-qua/), nhóm 7.1: bể sốc nhiệt nhảy lên 44 °C thì LB+ gần như không có khuẩn lạc, LB− vẫn mọc.
+	- Bài 11, nhóm 7.1: bể sốc nhiệt nhảy lên 44 °C thì LB+ gần như không có khuẩn lạc, LB− vẫn mọc.
 	- Bài 11, nhóm 7.3: cấy LB− không pha loãng thì mọc kín đĩa.
 	- Tế bào khả biến lấy hoạt tính từ kho lạnh (rã đông rồi đông lại thì giảm).
 	- Thao tác trong tủ an toàn sinh học chỉ vô trùng khi tủ đang bảo vệ mẫu.
@@ -132,9 +132,9 @@ Kế hoạch ở mục 8 của CLAUDE.md. Mỗi việc ghi: thiết bị thật,
 	- Làm sai: ly giải quá 5 phút ra vòng sợi đơn; vortex thì DNA genome đậm hơn; thiếu RNase có RNA; cắt thiếu enzyme còn plasmid nguyên.
 - **Proteomics** (`src/core/proteomics.js`, `data/proteins.json`, protocol `pt-2dpage`):
 	- 15 chuỗi protein huyết tương lấy từ UniProt (chuỗi trưởng thành, số N-glycan). Khối lượng và pI tính từ trình tự: albumin 66,5 kDa, pI 5,8.
-	- SDS-PAGE; 2D-PAGE theo [bài 02](/blog/dien-di-hai-chieu-2d-page/) (170 µg, IPG 3–10 7 cm); %V như Phoretix ở [bài 04](/blog/phan-tich-hinh-anh-ban-gel-dien-di-hai-chieu-su-dung-phan-mem-phoretix/).
-	- Thuỷ phân trypsin trong gel theo [bài 05](/blog/thuy-phan-protein-trong-gel-dien-di/).
-	- MALDI-TOF và PMF theo [bài 07](/blog/phan-tich-khoi-pho-maldi-tof-ms-va-nhan-dang-protein-pmf/): peptide tự cắt trypsin 842,509 và 2211,104 tính ra đúng như bài; ngưỡng điểm khoảng 71 với cỡ SwissProt (bài: > 70).
+	- SDS-PAGE; 2D-PAGE theo bài 02 (170 µg, IPG 3–10 7 cm); %V như Phoretix ở bài 04.
+	- Thuỷ phân trypsin trong gel theo bài 05.
+	- MALDI-TOF và PMF theo bài 07: peptide tự cắt trypsin 842,509 và 2211,104 tính ra đúng như bài; ngưỡng điểm khoảng 71 với cỡ SwissProt (bài: > 70).
 	- Sai số ± 1,2 Da cho điểm thấp hơn ± 50 ppm. Không đeo găng thì có peptide keratin (bài nhận ra keratin).
 	- Nồng độ protein huyết tương theo Anderson & Anderson 2002 (*chưa xác minh từng số*). Vùng biến đổi Ig 12 kDa và 2,2 kDa mỗi N-glycan là ước lượng.
 - **Thiết bị**:
@@ -157,11 +157,11 @@ Kế hoạch ở mục 8 của CLAUDE.md. Mỗi việc ghi: thiết bị thật,
 - **Bảng Hamburger & Hamilton 1951**: giờ ấp lấy giữa khoảng; số cặp đốt thân HH7–HH20 = 3 × giai đoạn − 20.
 - **Máy ấp Brinsea Ovation 28 EX**: 447 × 332 × 223 mm, 28 trứng gà, tự đảo, tự giữ ẩm, 30 W (theo trang bán hàng).
 - **Lõi** `src/core/chick.js`, ảnh `src/ui/chick-svg.js`, protocol `dv-chick`:
-	- Quan sát được HH4 (dải nguyên thuỷ và nút Hensen), HH10 (10 cặp đốt thân, túi não), HH20 (màng ối, mầm chi, túi niệu), HH24 (4 ngày) như [bài 01 Developmental Biology](/blog/su-phat-trien-phoi-som-o-chim/).
+	- Quan sát được HH4 (dải nguyên thuỷ và nút Hensen), HH10 (10 cặp đốt thân, túi não), HH20 (màng ối, mầm chi, túi niệu), HH24 (4 ngày) như bài 01 Developmental Biology.
 	- Ấp 34 °C phôi chậm; 40,5 °C chết nhiều; không đảo trứng chết nhiều hơn; mở cửa sổ không rút lòng trắng chết khoảng một nửa. Các nguy cơ chết là *minh hoạ*.
 
 ## 6. Tiến hoá và di truyền quần thể
-- **Số liệu thật** 100 chim sẻ đất trung bình (HHMI BioInteractive), lấy từ file `Chim sẻ.xlsx` của [bài 03 Evolutionary Biology](/blog/chon-loc-tu-nhien-va-tien-hoa-loai-chim-se-darwin/) vào `data/finch.json`.
+- **Số liệu thật** 100 chim sẻ đất trung bình (HHMI BioInteractive), lấy từ file `Chim sẻ.xlsx` của bài 03 Evolutionary Biology vào `data/finch.json`.
 - **Lõi** `src/core/evolution.js`, protocol `ev-finch`. Kết quả trùng bảng của bài:
 	- Mean, SD, SEM trùng hết.
 	- t = −4,08 / −3,27 / −1,82 / −3,27.
@@ -175,11 +175,11 @@ Kế hoạch ở mục 8 của CLAUDE.md. Mỗi việc ghi: thiết bị thật,
 ## 7. Thực địa Cát Bà
 - **Lõi** `src/core/fieldeco.js`, protocol `fe-catba`, khu ngoài trời `#field` trong cảnh 3D.
 - **Rừng ngập mặn Phù Long**: hai dải thu nhỏ 1 : 2.
-	- Cây đặt theo phân bố cụm: trang, sú, mắm biển, bần chua, vẹt dù, đước vòi, giá, ô rô. Mật độ là *minh hoạ*, vì [bài 06](/blog/co-so-sinh-thai-hoc-o-tieu-chuan-va-chi-so-da-dang/) không có bảng đếm.
+	- Cây đặt theo phân bố cụm: trang, sú, mắm biển, bần chua, vẹt dù, đước vòi, giá, ô rô. Mật độ là *minh hoạ*, vì bài 06 không có bảng đếm.
 	- Đo môi trường: độ muối 1,2–1,3 (bài không ghi đơn vị), pH 5,8.
 	- Công thức đúng như bài 06: sai số ước lượng, hệ số liên kết V, Margalef (bài dùng lg, mô hình hiện cả ln và lg), Shannon–Wiener, Sørensen; thêm Simpson.
 	- Ô 5 × 5 m cho sai số nhỏ hơn ô 1 × 1 m.
-- **Côn trùng tuyến Ao Ếch** ([bài 04](/blog/dong-vat-khong-xuong-song-tren-can-con-trung/)):
+- **Côn trùng tuyến Ao Ếch** (bài 04):
 	- Vợt 2,5 giờ thu khoảng 12 bướm thuộc 7 họ, nhiều nhất là bướm phấn, như bài.
 	- Bẫy hố, đĩa vàng, Malaise, lưới cản bắt các nhóm khác. Tốc độ bắt là *minh hoạ*.
 	- Đường tích luỹ loài.

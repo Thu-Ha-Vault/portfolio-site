@@ -12,5 +12,5 @@ updated: '2026-11-10'
 isIndex: true
 ---
 ## Map of Content
-- [Google Digital Marketing & E-commerce (Marketing số và Thương mại điện tử)](/topics/digital-marketing-and-e-commerce/)
+- Google Digital Marketing & E-commerce (Marketing số và Thương mại điện tử)
 - [Google Project Management (Quản lý dự án)](/topics/project-management/)

@@ -37,7 +37,7 @@ Vậy vì sao sau *il faut que* phải là *écrive*, và làm sao biết lúc n
 
 Viện Hàn lâm Pháp định nghĩa subjonctif là một thức có ngôi (*mode personnel*), thường dùng trong mệnh đề phụ và luôn có *que* đứng trước, trừ vài cách dùng cố định như *Ainsi soit-il* (Académie française, n.d.-a). OQLF gọi nó là "le mode de la possibilité, de l'hypothèse", còn indicatif (thức chỉ định) trình bày sự việc như điều chắc chắn hoặc có lẽ sẽ xảy ra (Office québécois de la langue française [OQLF], n.d.-a).
 
-Cần tách **thức** khỏi **thì**. Thì cho biết sự việc xảy ra khi nào; thức cho biết người nói trình bày sự việc như thế nào: như sự thật, mệnh lệnh, điều kiện hay khả năng (xem thêm [thì, thể, thức](/blog/temps-aspect-mode-et-voix-thi-the-thuc-va-dang/)). Định nghĩa thuật ngữ của OQLF nói cùng ý: thức đặt hành động hay trạng thái của động từ trong quan hệ với ý định giao tiếp của câu, và có thể diễn đạt nghi ngờ, mong muốn, khả năng, thực tại hay mệnh lệnh (OQLF, 2025a). Còn tiếng Pháp có bao nhiêu thức thì tuỳ cách đếm:
+Cần tách **thức** khỏi **thì**. Thì cho biết sự việc xảy ra khi nào; thức cho biết người nói trình bày sự việc như thế nào: như sự thật, mệnh lệnh, điều kiện hay khả năng (xem thêm thì, thể, thức). Định nghĩa thuật ngữ của OQLF nói cùng ý: thức đặt hành động hay trạng thái của động từ trong quan hệ với ý định giao tiếp của câu, và có thể diễn đạt nghi ngờ, mong muốn, khả năng, thực tại hay mệnh lệnh (OQLF, 2025a). Còn tiếng Pháp có bao nhiêu thức thì tuỳ cách đếm:
 
 | Nguồn                                        | Số thức       | Cách đếm                                                                                              |
 | -------------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------- |
@@ -45,9 +45,9 @@ Cần tách **thức** khỏi **thì**. Thì cho biết sự việc xảy ra khi
 | OQLF (2025a)                                 | 5             | 3 thức có ngôi (indicatif, subjonctif, impératif), 2 thức không ngôi (infinitif, participe); conditionnel là một thì của indicatif |
 | Viện Hàn lâm Pháp (Académie française, 2015) | tuỳ quan điểm | conditionnel là thức theo ngữ pháp truyền thống, là thì của indicatif hoặc subjonctif theo nhiều nhà ngữ pháp hiện nay |
 
-Bảng 1. Ba cách đếm thức (xem thêm [sơ đồ các thức](/blog/les-modes-et-la-ligne-du-temps-cac-thuc-va-truc-thoi-gian/) và [conditionnel](/blog/les-phrases-avec-si-et-le-conditionnel-cau-dieu-kien-si-va-thuc-dieu-kien/)). Dù đếm theo cách nào, subjonctif vẫn là một thức có ngôi.
+Bảng 1. Ba cách đếm thức (xem thêm sơ đồ các thức và conditionnel). Dù đếm theo cách nào, subjonctif vẫn là một thức có ngôi.
 
-Trong tiếng Pháp thông dụng, subjonctif chỉ còn dùng hai thì: présent và passé. Về hệ thống có bốn thì, nhưng imparfait và plus-que-parfait "pratiquement sortis de l'usage" (OQLF, n.d.-a); chỉ cần nhận ra khi đọc, như *Qu'il mourût* của Corneille (Académie française, n.d.-a). Subjonctif tự nó không chỉ thời gian: *J'insiste pour qu'il vienne* và *J'insistais pour qu'il vienne* dùng cùng dạng *vienne* (OQLF, n.d.-a). Nó cũng có thể đứng một mình để ra lệnh hay cầu mong: *Qu'il parte !* (Académie française, n.d.-a), *Pourvu qu'il fasse beau pendant mes vacances* (OQLF, n.d.-d), *Vive la France !* ([động từ -er](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/)).
+Trong tiếng Pháp thông dụng, subjonctif chỉ còn dùng hai thì: présent và passé. Về hệ thống có bốn thì, nhưng imparfait và plus-que-parfait "pratiquement sortis de l'usage" (OQLF, n.d.-a); chỉ cần nhận ra khi đọc, như *Qu'il mourût* của Corneille (Académie française, n.d.-a). Subjonctif tự nó không chỉ thời gian: *J'insiste pour qu'il vienne* và *J'insistais pour qu'il vienne* dùng cùng dạng *vienne* (OQLF, n.d.-a). Nó cũng có thể đứng một mình để ra lệnh hay cầu mong: *Qu'il parte !* (Académie française, n.d.-a), *Pourvu qu'il fasse beau pendant mes vacances* (OQLF, n.d.-d), *Vive la France !* (động từ -er).
 
 Bài này gọi subjonctif là **thức giả định**, không dùng "thức cầu khẩn" vì dễ lẫn với thức mệnh lệnh, cũng không dùng "thể giả định" vì "thể" nên dành cho *aspect*. Thêm một nhận xét của người viết: tiếng Việt không chia động từ theo thức. Ý "mong", "phải", "sợ", "dù" nằm ở từ ngữ, nên người Việt phải tập nhận ra chúng trong từ dẫn rồi đổi hình thái động từ phía sau.
 
@@ -75,7 +75,7 @@ Bảng 2. Một quy tắc và ba lớp ngoại lệ (Blyth et al., n.d.; Larouss
 
 Hai điểm trong bảng cần chú ý. Thứ nhất, *aller* và *vouloir* cũng có hai gốc, nhưng gốc "boot" *aill-, veuill-* không lấy từ *ils vont, ils veulent*, nên phải học thuộc riêng (Larousse, n.d.-b); *valoir* cũng vậy, và đáng nhớ vì *il vaut mieux que* là một từ dẫn subjonctif. Thứ hai, câu "ngôi *ils* của subjonctif giống indicatif" chỉ đúng với **mọi động từ lấy gốc subjonctif từ ngôi *ils*** (lớp 0 và 1). Ở lớp 2 và 3, hai dạng khác nhau: *ils ont / qu'ils aient, ils vont / qu'ils aillent, ils font / qu'ils fassent*.
 
-*Avoir, être* viết *nous, vous* bằng chữ *y* (*ayons, soyez*), và mệnh lệnh của *avoir, être, savoir* dựa trên gốc subjonctif (*aie, sois, sache*; Blyth et al., n.d.; xem [thức mệnh lệnh](/blog/l-imperatif-thuc-menh-lenh/)). Các động từ phi ngôi cũng có dạng subjonctif riêng: *falloir → qu'il faille*, *valoir → qu'il vaille* (Larousse, n.d.-b), *pleuvoir → qu'il pleuve* (*il se peut qu'il pleuve demain*; Boularès & Frérot, 1997, tr. 66). Vì gốc subjonctif đi từ hiện tại indicatif, nắm chắc [động từ có quy tắc](/blog/les-verbes-introduction-et-verbes-reguliers-au-present-dong-tu-gioi-thieu-va-chi/) và [bất quy tắc](/blog/les-verbes-irreguliers-au-present-dong-tu-bat-quy-tac-o-thi-hien-tai/) ở hiện tại là đã đi được nửa đường.
+*Avoir, être* viết *nous, vous* bằng chữ *y* (*ayons, soyez*), và mệnh lệnh của *avoir, être, savoir* dựa trên gốc subjonctif (*aie, sois, sache*; Blyth et al., n.d.; xem thức mệnh lệnh). Các động từ phi ngôi cũng có dạng subjonctif riêng: *falloir → qu'il faille*, *valoir → qu'il vaille* (Larousse, n.d.-b), *pleuvoir → qu'il pleuve* (*il se peut qu'il pleuve demain*; Boularès & Frérot, 1997, tr. 66). Vì gốc subjonctif đi từ hiện tại indicatif, nắm chắc động từ có quy tắc và bất quy tắc ở hiện tại là đã đi được nửa đường.
 
 ## 4. Nguyên tắc chọn thức: thực tại hay khả năng
 
@@ -83,7 +83,7 @@ Theo Boularès và Frérot (1997, tr. 62), thức ở mệnh đề phụ do **đ
 
 Ranh giới nằm giữa "có lẽ" và "có thể", không phải giữa "chắc" và "không chắc"; đây là chỗ dễ đoán sai. OQLF nói cùng ý: indicatif trình bày sự việc như sẽ xảy ra "de façon certaine ou probable" (OQLF, n.d.-a).
 
-Phủ định hoặc đảo ngữ nghi vấn đẩy động từ ý kiến sang phía "có thể": *Je crois qu'il est prêt*, nhưng *Croyez-vous qu'il soit prêt ?* và *Je ne crois pas qu'il le sache* (Boularès & Frérot, 1997, tr. 56; xem [phủ định](/blog/la-negation-phu-dinh/) và [câu hỏi](/blog/l-interrogation-cau-hoi/)). OQLF xếp động từ kéo theo subjonctif thành ba nhóm: ý kiến hoặc đánh giá, ý muốn, cảm xúc; riêng với ý muốn, OQLF giải thích điều ta muốn "demeure de l'ordre du possible" (OQLF, n.d.-c). Điều kiện thứ hai là **hai chủ ngữ khác nhau**: *J'aimerais qu'il vienne*, nhưng *J'aimerais venir* khi người muốn và người đến là một (Boularès & Frérot, 1997, tr. 56).
+Phủ định hoặc đảo ngữ nghi vấn đẩy động từ ý kiến sang phía "có thể": *Je crois qu'il est prêt*, nhưng *Croyez-vous qu'il soit prêt ?* và *Je ne crois pas qu'il le sache* (Boularès & Frérot, 1997, tr. 56; xem phủ định và câu hỏi). OQLF xếp động từ kéo theo subjonctif thành ba nhóm: ý kiến hoặc đánh giá, ý muốn, cảm xúc; riêng với ý muốn, OQLF giải thích điều ta muốn "demeure de l'ordre du possible" (OQLF, n.d.-c). Điều kiện thứ hai là **hai chủ ngữ khác nhau**: *J'aimerais qu'il vienne*, nhưng *J'aimerais venir* khi người muốn và người đến là một (Boularès & Frérot, 1997, tr. 56).
 
 ```mermaid
 flowchart TD
@@ -105,7 +105,7 @@ Nguyên tắc này không giải thích được mọi trường hợp. *Je regr
 
 Sách ngữ pháp thường chia từ dẫn theo nhóm nghĩa: bắt buộc, ý muốn, cảm xúc, nghi ngờ, mệnh đề quan hệ, so sánh nhất (Blyth et al., n.d.); OQLF gom thành ba nhóm ý kiến hoặc đánh giá, ý muốn, cảm xúc (OQLF, n.d.-c). Mỗi nhóm dưới đây đi kèm các ngoại lệ dễ chọn nhầm.
 
-**Bắt buộc.** *Il faut que, il est nécessaire / important que, il vaut mieux que* (Boularès & Frérot, 1997, tr. 58). *Il faut que* nhấn mạnh hơn *devoir* + nguyên thể (Blyth et al., n.d.; xem [động từ khuyết thiếu](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/)). Người học thường nhận ra nhóm này tốt hơn liên từ và câu phủ định (McManus & Mitchell, 2015; mục 10).
+**Bắt buộc.** *Il faut que, il est nécessaire / important que, il vaut mieux que* (Boularès & Frérot, 1997, tr. 58). *Il faut que* nhấn mạnh hơn *devoir* + nguyên thể (Blyth et al., n.d.; xem động từ khuyết thiếu). Người học thường nhận ra nhóm này tốt hơn liên từ và câu phủ định (McManus & Mitchell, 2015; mục 10).
 
 **Ý muốn.** *Vouloir, désirer, souhaiter, exiger, préférer que* (OQLF, n.d.-c). *Souhaiter que* nghĩa là "mong rằng" (tiếng Anh *to wish that*): *Je souhaite que tu guérisses rapidement* (OQLF, n.d.-c); còn "hy vọng" (*to hope*) là *espérer*, và động từ này đi với thức khác (xem đoạn sau). *Attendre que* chủ yếu là "đợi đến khi" (*J'attends qu'il ait fini pour partir*), Larousse cũng ghi nghĩa "trông chờ"; còn nghĩa "đoán trước, chờ sẵn một điều gì" thì dùng *s'attendre à ce que*: *je m'attends à ce qu'il m'écrive* (Larousse, n.d.-a).
 
@@ -120,7 +120,7 @@ Sách ngữ pháp thường chia từ dẫn theo nhóm nghĩa: bắt buộc, ý 
 - *Il me semble que* + indicatif vì là ý kiến (*il me semble que tu as grandi*), nhưng *il semble que* + subjonctif khi không chắc (*il semble qu'il se soit perdu*), + indicatif khi thấy rõ (*il semble qu'il s'est perdu*) (Larousse, n.d.-e).
 - *Supposer que* (cho rằng) + indicatif: *Nous supposons qu'il sera là*; nhưng *supposons que* (giả sử) + subjonctif: *Supposons qu'il ne vienne pas* (Boularès & Frérot, 1997, tr. 64). OQLF cũng xếp *à supposer que* vào nhóm luôn đi với subjonctif (OQLF, 2025b).
 
-**Mệnh đề quan hệ.** Tiền ngữ chưa chắc tồn tại thì dùng subjonctif: *Je cherche un traducteur qui connaisse l'anglais, le français et le japonais* (Boularès & Frérot, 1997, tr. 58). So sánh *Connaissez-vous quelqu'un qui puisse m'aider ?* với *Je connais quelqu'un qui peut vous aider* (Académie française, n.d.-b; xem [đại từ quan hệ](/blog/pronoms-indefinis-demonstratifs-possessifs-et-relatifs-dai-tu-bat-dinh-chi-dinh/)).
+**Mệnh đề quan hệ.** Tiền ngữ chưa chắc tồn tại thì dùng subjonctif: *Je cherche un traducteur qui connaisse l'anglais, le français et le japonais* (Boularès & Frérot, 1997, tr. 58). So sánh *Connaissez-vous quelqu'un qui puisse m'aider ?* với *Je connais quelqu'un qui peut vous aider* (Académie française, n.d.-b; xem đại từ quan hệ).
 
 **So sánh nhất, *le seul, le premier*.** Sau so sánh nhất và *le seul, le premier, le dernier*, dùng subjonctif khi là đánh giá chủ quan, indicatif khi nêu sự thật (Blyth et al., n.d.); subjonctif ở đây thường gặp nhưng không bắt buộc (OQLF, 2016): *Voici le meilleur vin que l'on puisse trouver dans la région*, nhưng *Ce soir, c'est le meilleur qui a gagné* (Académie française, n.d.-b). Các cụm phi ngôi chỉ đánh giá như *il est bon / juste / urgent que* cũng kéo theo subjonctif (Blyth et al., n.d.).
 
@@ -154,22 +154,22 @@ Khi ôn thi, có ích nhất là những cặp chỉ khác một chữ mà đổ
 
 Bảng 4. Mười cặp indicatif / subjonctif. Ví dụ ở dòng 6, 7, 8, 10 do người viết đặt theo quy tắc của nguồn (Boularès & Frérot, 1997, tr. 56–64, 152).
 
-Ở cặp 6, mệnh lệnh trong câu tường thuật thường chuyển thành *dire de* + nguyên thể (*Dites-lui de venir*; xem [câu tường thuật](/blog/le-discours-rapporte-cau-tuong-thuat/)). *Admettre* đổi thức giống *comprendre* ở cặp 7: *J'admets que j'ai eu tort* (thừa nhận sự thật), *J'admets qu'on puisse ne pas être d'accord* (thấy chấp nhận được). Cặp 9 là bẫy loại suy: *avant que* + subjonctif vì việc chưa xảy ra, *après que* + indicatif vì việc đã hoặc chắc chắn sẽ xảy ra (Académie française, n.d.-a). Cặp 10 là quy ước, không phải nghĩa: cùng một cơn mưa có thật mà hai liên từ đòi hai thức.
+Ở cặp 6, mệnh lệnh trong câu tường thuật thường chuyển thành *dire de* + nguyên thể (*Dites-lui de venir*; xem câu tường thuật). *Admettre* đổi thức giống *comprendre* ở cặp 7: *J'admets que j'ai eu tort* (thừa nhận sự thật), *J'admets qu'on puisse ne pas être d'accord* (thấy chấp nhận được). Cặp 9 là bẫy loại suy: *avant que* + subjonctif vì việc chưa xảy ra, *après que* + indicatif vì việc đã hoặc chắc chắn sẽ xảy ra (Académie française, n.d.-a). Cặp 10 là quy ước, không phải nghĩa: cùng một cơn mưa có thật mà hai liên từ đòi hai thức.
 
 ## 7. Liên từ: phần tóm tắt
 
-Liên từ có [bài riêng](/blog/les-conjonctions-lien-tu/); ở đây chỉ bàn phần thuộc về subjonctif. OQLF liệt kê các liên từ luôn đi với subjonctif, trong đó có *à condition que, afin que, à moins que, avant que, de peur que, en attendant que, jusqu'à ce que, pour que, pourvu que, sans que*; *bien que* thường đi với subjonctif, còn với *quoique* và *le fait que* thì subjonctif "fréquent mais non obligatoire" (OQLF, 2025b). Bốn điểm dễ bỏ sót:
+Liên từ có bài riêng; ở đây chỉ bàn phần thuộc về subjonctif. OQLF liệt kê các liên từ luôn đi với subjonctif, trong đó có *à condition que, afin que, à moins que, avant que, de peur que, en attendant que, jusqu'à ce que, pour que, pourvu que, sans que*; *bien que* thường đi với subjonctif, còn với *quoique* và *le fait que* thì subjonctif "fréquent mais non obligatoire" (OQLF, 2025b). Bốn điểm dễ bỏ sót:
 
 - ***Sans que*** mang nghĩa phủ định; Boularès và Frérot (1997, tr. 152) xếp nó vào phần nhượng bộ: *Elles sont venues sans que je les aie invitées*.
 - ***Ne* explétif** có thể đứng sau *de crainte que, de peur que*, và cả sau *avant que, à moins que* (Boularès & Frérot, 1997, tr. 58–60): *à moins que tu (ne) viennes me chercher*. *Ne* này không phủ định động từ.
-- ***Après que* + indicatif.** *Après que* đi với passé antérieur hoặc thì khác của indicatif (*Après qu'ils furent arrivés, ils allèrent saluer ma tante*); dùng subjonctif sau *après que* bị phê phán vì mệnh đề nói về điều chắc chắn (OQLF, n.d.-b; xem [passé antérieur](/blog/le-passe-simple-et-le-passe-anterieur-qua-khu-don-va-qua-khu-truoc/)).
+- ***Après que* + indicatif.** *Après que* đi với passé antérieur hoặc thì khác của indicatif (*Après qu'ils furent arrivés, ils allèrent saluer ma tante*); dùng subjonctif sau *après que* bị phê phán vì mệnh đề nói về điều chắc chắn (OQLF, n.d.-b; xem passé antérieur).
 - ***De sorte que*** chỉ đi với subjonctif khi chỉ mục đích; khi chỉ kết quả đã xảy ra thì dùng indicatif (OQLF, 2025b; cặp 8).
 
 Bốn liên từ vẫn giữ *que* + subjonctif dù hai mệnh đề cùng chủ ngữ: *bien que, quoique, pourvu que, jusqu'à ce que* (*Tex veut attendre jusqu'à ce qu'il se sente prêt*; Blyth et al., n.d.). Cả bốn đều không nằm trong danh sách liên từ phải đổi sang nguyên thể ở mục 9 (Boularès & Frérot, 1997, tr. 76).
 
 ## 8. Subjonctif passé và quan hệ thời gian
 
-Subjonctif passé tạo giống passé composé: *avoir* hoặc *être* ở subjonctif présent cộng phân từ quá khứ (Boularès & Frérot, 1997, tr. 60; Blyth et al., n.d.), cùng quy tắc chọn trợ động từ và hợp giống số như ở [bài về passé composé](/blog/present-passe-recent-et-passe-compose-hien-tai-qua-khu-gan-va-passe-compose/): *que j'aie fini, qu'elle soit partie*. Hai thì phân biệt theo quan hệ thời gian giữa hai việc:
+Subjonctif passé tạo giống passé composé: *avoir* hoặc *être* ở subjonctif présent cộng phân từ quá khứ (Boularès & Frérot, 1997, tr. 60; Blyth et al., n.d.), cùng quy tắc chọn trợ động từ và hợp giống số như ở bài về passé composé: *que j'aie fini, qu'elle soit partie*. Hai thì phân biệt theo quan hệ thời gian giữa hai việc:
 
 ```mermaid
 flowchart LR
@@ -185,7 +185,7 @@ Hình 2. Chọn subjonctif présent hay passé (ví dụ của Boularès & Frér
 
 Subjonctif passé còn dùng cho việc sẽ xong trước một mốc tương lai: *Il faut que vous soyez rentrés avant minuit* (Boularès & Frérot, 1997, tr. 60). Nói gọn: subjonctif présent chỉ việc xảy ra đồng thời hoặc sau mốc của mệnh đề chính, kể cả trong tương lai; subjonctif passé chỉ việc xảy ra trước, hoặc hoàn tất trước một mốc.
 
-Thì của mệnh đề chính **không** quyết định thì của subjonctif (OQLF, n.d.-a): *J'insiste / J'insistais pour qu'il vienne* ở mục 2 dùng cùng một dạng. Vì vậy, khi chuyển câu sang quá khứ, subjonctif présent vẫn giữ nguyên (xem bảng hoà hợp thì ở [bài về câu tường thuật](/blog/le-discours-rapporte-cau-tuong-thuat/)).
+Thì của mệnh đề chính **không** quyết định thì của subjonctif (OQLF, n.d.-a): *J'insiste / J'insistais pour qu'il vienne* ở mục 2 dùng cùng một dạng. Vì vậy, khi chuyển câu sang quá khứ, subjonctif présent vẫn giữ nguyên (xem bảng hoà hợp thì ở bài về câu tường thuật).
 
 <div class="callout callout-warning">
 <p class="callout-title">Hai thì văn chương</p>
@@ -198,7 +198,7 @@ Thì của mệnh đề chính **không** quyết định thì của subjonctif 
 
 Tránh subjonctif không chỉ là lựa chọn văn phong: có chỗ nguyên thể là **bắt buộc**. Theo Boularès và Frérot (1997, tr. 76), khi hai mệnh đề cùng chủ ngữ, *pour que, afin que, avant que, sans que, de peur que, de crainte que, en attendant que* phải đổi thành *pour, afin de, avant de, sans, de peur de, de crainte de, en attendant de* + nguyên thể. Ví dụ do người viết đặt theo quy tắc này: *Je t'appelle avant que tu partes* (hai người khác nhau), nhưng *Je t'appelle avant de partir* (người gọi cũng là người đi). Động từ ý muốn cũng vậy: *Je voudrais sortir*, không viết *je voudrais que je sorte*; với *espérer*, nguyên thể cho giọng trang trọng: *J'espère recevoir bientôt de vos nouvelles* (Boularès & Frérot, 1997, tr. 56, 76).
 
-Khi nói chung chung, không nhắm vào chủ ngữ nào, cụm phi ngôi đi với *de* + nguyên thể thay cho *que* + subjonctif: *Il est essentiel que tu lises les journaux → Il est essentiel de lire les journaux* (Blyth et al., n.d.; xem [động từ phi ngôi và nguyên thể](/blog/verbes-pronominaux-modaux-impersonnels-et-infinitif-dong-tu-phan-than-khuyet-thi/)). Cũng có thể đổi liên từ thành giới từ + danh từ: *bien qu'il ait des soucis → malgré ses soucis* (Blyth et al., n.d.), *jusqu'à ce que* + mệnh đề → *jusqu'à* + danh từ ([giới từ](/blog/les-prepositions-gioi-tu/)). Tránh subjonctif là kỹ năng tốt, nhưng lúc nào cũng tránh thì sẽ không luyện được dạng chia (mục 10).
+Khi nói chung chung, không nhắm vào chủ ngữ nào, cụm phi ngôi đi với *de* + nguyên thể thay cho *que* + subjonctif: *Il est essentiel que tu lises les journaux → Il est essentiel de lire les journaux* (Blyth et al., n.d.; xem động từ phi ngôi và nguyên thể). Cũng có thể đổi liên từ thành giới từ + danh từ: *bien qu'il ait des soucis → malgré ses soucis* (Blyth et al., n.d.), *jusqu'à ce que* + mệnh đề → *jusqu'à* + danh từ (giới từ). Tránh subjonctif là kỹ năng tốt, nhưng lúc nào cũng tránh thì sẽ không luyện được dạng chia (mục 10).
 
 ## 10. Người bản ngữ và người học thật sự dùng subjonctif thế nào
 

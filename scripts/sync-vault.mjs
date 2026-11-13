@@ -207,6 +207,21 @@ if (config.articles?.root) {
     stats1.articles++;
   }
 }
+// config.articles.only: the blog shows finished articles only; raw notes from Resources stay in the vault. A topic
+// page (a folder's MOC) stays while at least one finished article sits somewhere under its folder.
+stats1.rawHidden = 0;
+if (config.articles?.only) {
+  const articleDirs = [...published.entries()].filter(([, d]) => d.article).map(([abs]) => path.dirname(abs));
+  for (const [abs, d] of [...published.entries()]) {
+    if (d.collection !== 'blog' || d.article) continue;
+    const dir = path.dirname(abs);
+    const keep = d.isIndex && articleDirs.some((a) => a === dir || a.startsWith(dir + path.sep));
+    if (!keep) {
+      published.delete(abs);
+      stats1.rawHidden++;
+    }
+  }
+}
 
 // ---------- public URLs ----------
 // Files keep their folder structure internally (for the topic tree); public URLs are short and flat:
@@ -996,6 +1011,6 @@ console.log(
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
     `${new Set(assetJobs.values()).size} images (${stats.covers} covers, ${stats.gallery} gallery photos, ${stats.noDims} without dimensions). ` +
     `Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}. ` +
-    `Finished articles in place of notes: ${stats1.articles}.` +
+    `Finished articles in place of notes: ${stats1.articles}. Raw notes hidden (articles.only): ${stats1.rawHidden}.` +
     (privateDropped.size ? ` Private photos dropped from notes (images.exclude): ${privateDropped.size}.` : '')
 );
