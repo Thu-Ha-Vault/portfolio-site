@@ -21,73 +21,71 @@ date: '2026-11-13'
 status: draft
 order: 5
 description: >-
-  Khoá Agile Project Management của Google trình bày Agile như lựa chọn hợp lý
-  cho một thế giới nhiều biến động: giảm lãng phí, phản hồi nhanh, ước lượng
-  bằng Planning Poker để tránh thiên kiến. Bài này đối chiếu từng tuyê
+  Agile thường được giới thiệu như lựa chọn hợp lý cho một thế giới nhiều biến
+  động: giảm lãng phí, phản hồi nhanh, ước lượng bằng Planning Poker để tránh
+  thiên kiến. Bài này đối chiếu từng tuyên bố đó với nghiên cứu thực 
 isIndex: false
 ---
-Khoá Agile Project Management của Google trình bày Agile như lựa chọn hợp lý cho một thế giới nhiều biến động: giảm lãng phí, phản hồi nhanh, ước lượng bằng Planning Poker để tránh thiên kiến. Bài này đối chiếu từng tuyên bố đó với nghiên cứu thực nghiệm, từ tổng quan hệ thống đầu tiên về Agile đến các khảo sát hàng trăm dự án và các thực nghiệm về Planning Poker. Kết luận ngắn: Agile có lợi thế thật nhưng không lớn, rõ nhất ở sự hài lòng của các bên liên quan; nhiều "quy tắc Scrum" trong khoá học là thực hành bổ sung, và cả ba con số khảo sát khoá học dùng đều cần đọc lại.
+Agile thường được giới thiệu như lựa chọn hợp lý cho một thế giới nhiều biến động: giảm lãng phí, phản hồi nhanh, ước lượng bằng Planning Poker để tránh thiên kiến. Bài này đối chiếu từng tuyên bố đó với nghiên cứu thực nghiệm, từ tổng quan hệ thống đầu tiên về Agile đến các khảo sát hàng trăm dự án và các thực nghiệm về Planning Poker. Kết luận ngắn: Agile có lợi thế thật nhưng không lớn, rõ nhất ở sự hài lòng của các bên liên quan; story point, velocity và Planning Poker là thực hành đi kèm chứ không có trong Scrum Guide; và các con số khảo sát hay được trích về Agile cần đọc kỹ đơn vị và mẫu.
 
 ## Tóm tắt
 
-Đây là bài thứ năm của loạt *Quản lý dự án dựa trên bằng chứng*, viết theo dạng tổng quan bằng chứng (evidence review), không phải systematic review đầy đủ: không có protocol, nguồn được chọn có chủ đích. Mình ưu tiên các systematic review đã công bố, các nghiên cứu định lượng có cỡ mẫu lớn và các thực nghiệm về Planning Poker, rồi đối chiếu với Scrum Guide bản 2017 và 2020. Năm kết luận chính:
+Đây là bài thứ năm của loạt *Quản lý dự án dựa trên bằng chứng*, viết theo dạng tổng quan bằng chứng (evidence review), không phải systematic review đầy đủ: không có protocol, nguồn được chọn có chủ đích. Bài ưu tiên các systematic review đã công bố, các nghiên cứu định lượng có cỡ mẫu lớn và các thực nghiệm về Planning Poker, rồi đối chiếu với Scrum Guide bản 2017 và 2020. Năm kết luận chính:
 
 1. Bằng chứng ủng hộ Agile có thật nhưng yếu; tổng quan hệ thống đầu tiên xếp nó ở mức *very low* theo thang GRADE.
 2. Lợi thế rõ nhất là sự hài lòng của các bên liên quan; lợi thế về thời gian và ngân sách nhỏ, hoặc không thấy ở nghiên cứu mới nhất.
 3. Cách làm lai (hybrid) rất phổ biến và cho kết quả tương tự Agile thuần.
-4. Planning Poker tốt hơn việc gộp máy móc các ước lượng cá nhân, nhưng không chính xác hơn một chuyên gia ước lượng một mình.
+4. Planning Poker tốt hơn việc gộp máy móc các ước lượng cá nhân, nhưng không chính xác hơn một chuyên gia ước lượng riêng.
 5. Agile quy mô lớn (SAFe, LeSS, Spotify model) chủ yếu dựa trên báo cáo kinh nghiệm.
 
 ## 1. Vì sao "Agile tốt hơn" cần được kiểm chứng
 
-Course 5 của Google Project Management Certificate dạy Agile bằng một câu chuyện mạch lạc: thế giới ngày càng biến động, bất định, phức tạp và mơ hồ (VUCA), kế hoạch lập sẵn sẽ lỗi thời, còn Agile với vòng lặp ngắn và phản hồi liên tục giúp giảm lãng phí. Khoá học không cực đoan; giảng viên Sue đánh giá cao ứng viên không coi Waterfall là giải pháp tồi nhất. Nhưng suốt khoá học không có một nghiên cứu so sánh hay cỡ tác động nào, nên người học có niềm tin mạnh mà không có dữ liệu để bảo vệ nó trước một người quản lý hoài nghi.
+Agile thường được giới thiệu bằng một câu chuyện mạch lạc: thế giới ngày càng biến động, bất định, phức tạp và mơ hồ (VUCA), kế hoạch lập sẵn sẽ lỗi thời, còn Agile, với vòng lặp ngắn và phản hồi liên tục, giúp đội ưu tiên phản hồi với thay đổi hơn là bám theo kế hoạch (Beck et al., 2001) và nhờ đó giảm lãng phí. Câu chuyện thuyết phục, nhưng thường được kể mà không kèm nghiên cứu so sánh hay cỡ tác động nào. Người làm dự án vì vậy dễ có niềm tin mạnh mà thiếu dữ liệu, cả để bảo vệ lựa chọn đó trước một người quản lý hoài nghi lẫn để nhận ra khi nào cách làm tuần tự mới là hợp lý.
 
 Câu hỏi "Agile có tốt hơn Waterfall không?" cũng đặt chưa đúng. Thành công của dự án có nhiều chiều: đúng hạn, đúng ngân sách, đủ phạm vi, đạt chất lượng, làm hài lòng khách hàng và nhà tài trợ. Luận điểm của bài: câu hỏi đúng là **Agile tốt hơn ở chiều nào, trong bối cảnh nào, với mức bằng chứng nào**.
 
-Để đo "mức bằng chứng", bài mượn thang GRADE mà Dybå và Dingsøyr (2008) dùng: cao (high), trung bình (moderate), thấp (low), rất thấp (very low). Thử nghiệm ngẫu nhiên khởi đầu ở mức cao, nghiên cứu quan sát ở mức thấp, rồi bị hạ mức nếu thiết kế có hạn chế hay kết quả không nhất quán. Từ mục 3, mỗi mục kết thúc bằng một mức do mình ước tính theo tinh thần đó, không phải đánh giá GRADE chính thức. Hai giới hạn cần nói ngay: gần như toàn bộ bằng chứng đến từ phát triển phần mềm, và các nghiên cứu định lượng lớn đều là khảo sát hồi cứu, người trả lời tự báo cáo.
+Để đo "mức bằng chứng", bài mượn thang GRADE mà Dybå và Dingsøyr (2008) dùng: cao (high), trung bình (moderate), thấp (low), rất thấp (very low). Thử nghiệm ngẫu nhiên khởi đầu ở mức cao, nghiên cứu quan sát ở mức thấp, rồi bị hạ mức nếu thiết kế có hạn chế hay kết quả không nhất quán. Từ mục 3, mỗi mục kết thúc bằng một mức ước tính theo tinh thần đó, không phải đánh giá GRADE chính thức. Hai giới hạn cần nói ngay: gần như toàn bộ bằng chứng đến từ phát triển phần mềm, và các nghiên cứu định lượng lớn đều là khảo sát hồi cứu, người trả lời tự báo cáo.
 
-## 2. Waterfall và Agile: định nghĩa, nguồn gốc và những gì khoá học nói chưa đúng
+## 2. Waterfall và Agile: định nghĩa và nguồn gốc
 
 ### 2.1. Định nghĩa làm việc
 
-**Waterfall** là cách làm tuần tự: xong giai đoạn này mới sang giai đoạn sau, yêu cầu được chốt sớm, thay đổi đi qua quy trình kiểm soát thay đổi (change control), sản phẩm bàn giao một lần ở cuối. **Agile** là cách làm lặp và tăng dần (iterative and incremental): yêu cầu được phép thay đổi, sản phẩm bàn giao thành nhiều phần nhỏ, thường xuyên. Nền tư tưởng của Agile là Agile Manifesto với 4 giá trị và 12 nguyên tắc (Beck et al., 2001). Bảng 1 rút gọn bảng so sánh bảy chiều của [Course 1](/blog/foundations-of-project-management/) và thêm cột bằng chứng (chi tiết ở mục 3).
+**Waterfall** là cách làm tuần tự: xong giai đoạn này mới sang giai đoạn sau, yêu cầu được chốt sớm, thay đổi đi qua quy trình kiểm soát thay đổi (change control), sản phẩm bàn giao một lần ở cuối. **Agile** là cách làm lặp và tăng dần (iterative and incremental): yêu cầu được phép thay đổi, sản phẩm bàn giao thành nhiều phần nhỏ, thường xuyên. Nền tư tưởng của Agile là Agile Manifesto với 4 giá trị và 12 nguyên tắc (Beck et al., 2001). Bảng 1 so sánh hai cách tiếp cận theo bảy chiều quen thuộc của quản lý dự án và thêm cột bằng chứng (chi tiết ở mục 3).
 
-**Bảng 1.** Waterfall và Agile theo bảy chiều của Course 1
+**Bảng 1.** Waterfall và Agile theo bảy chiều
 
-| Chiều         | Waterfall                      | Agile                                 | Bằng chứng so sánh                             |
-| ------------- | ------------------------------ | ------------------------------------- | ---------------------------------------------- |
-| Vai trò PM    | Chỉ huy, phân công             | Scrum Master hỗ trợ, đội tự quản      | Chưa có trong các nguồn của bài                |
-| Phạm vi       | Chốt sớm, qua change request   | Điều chỉnh theo vòng lặp              | Tương đương                                    |
-| Lịch          | Tuần tự theo giai đoạn         | Các Sprint cố định thời hạn           | Không nhất quán                                |
-| Chi phí       | Ước lượng kỹ từ đầu            | Có thể đổi sau mỗi vòng lặp           | Không nhất quán                                |
-| Chất lượng    | Tiêu chí đặt từ đầu            | Phản hồi người dùng liên tục          | Tương đương                                    |
-| Giao tiếp     | PM báo cáo theo mốc            | Trao đổi liên tục với khách hàng      | Chỉ có nghiên cứu mô tả (mục 7)                |
+| Chiều         | Waterfall                      | Agile                                 | Bằng chứng so sánh                              |
+| ------------- | ------------------------------ | ------------------------------------- | ----------------------------------------------- |
+| Vai trò PM    | Chỉ huy, phân công             | Scrum Master hỗ trợ, đội tự quản      | Chưa có trong các nguồn của bài                 |
+| Phạm vi       | Chốt sớm, qua change request   | Điều chỉnh theo vòng lặp              | Tương đương                                     |
+| Lịch          | Tuần tự theo giai đoạn         | Các Sprint cố định thời hạn           | Không nhất quán                                 |
+| Chi phí       | Ước lượng kỹ từ đầu            | Có thể đổi sau mỗi vòng lặp           | Không nhất quán                                 |
+| Chất lượng    | Tiêu chí đặt từ đầu            | Phản hồi người dùng liên tục          | Tương đương                                     |
+| Giao tiếp     | PM báo cáo theo mốc            | Trao đổi liên tục với khách hàng      | Chỉ có nghiên cứu mô tả (mục 7)                 |
 | Bên liên quan | PM quản lý mức tham gia        | Tiến độ dựa vào phản hồi              | Hài lòng cao hơn ở Agile và hybrid (tương quan) |
 
 Các nghiên cứu không dùng cùng một cặp khái niệm: mô hình **linh hoạt** và **tuần tự** (Moløkken-Østvold & Jørgensen, 2005), **mức độ dùng Agile** tự đánh giá (Serrador & Pinto, 2015), hay traditional, agile và hybrid (Gemino et al., 2021). Bài gộp các nhãn này để tổng hợp, nên "Agile" ở mục 3 là một họ cách tiếp cận, không riêng Scrum.
 
-### 2.2. Nguồn gốc: lịch sử dài hơn khoá học kể
+### 2.2. Nguồn gốc: lịch sử dài hơn chữ Agile
 
-Khoá học nói Waterfall ra đời thập niên 1970, Agile nổi lên thập niên 1990, chữ "scrum" xuất hiện năm 1986. Mỗi mốc đều chỉ đúng một phần.
+Ý tưởng làm lặp có trước chữ Agile hàng chục năm. Larman và Basili (2003) cho thấy phát triển lặp và tăng dần (iterative and incremental development, IID) đã được dùng từ **giữa thập niên 1950**, nhằm tránh cách làm tuần tự một lượt, nặng tài liệu. Thập niên 1990 là lúc các phương pháp agile **có tên** xuất hiện; Dybå và Dingsøyr (2008) ghi DSDM là phương pháp agile đầu tiên, tiếp theo là XP.
 
-Larman và Basili (2003) cho thấy phát triển lặp và tăng dần (iterative and incremental development, IID) đã được dùng từ **giữa thập niên 1950**, nhằm tránh cách làm tuần tự một lượt, nặng tài liệu. Câu "Agile nổi lên thập niên 1990" chỉ đúng với các phương pháp **có tên**; Dybå và Dingsøyr (2008) ghi DSDM là phương pháp agile đầu tiên, tiếp theo là XP.
+Bài báo thường được gắn với Waterfall là của Royce (1970), và nó chứa một bất ngờ. Royce có vẽ chuỗi giai đoạn từ yêu cầu hệ thống đến vận hành, nhưng viết ngay sau đó rằng cách triển khai một lượt "is risky and invites failure", vì kiểm thử ở cuối là lần đầu các vấn đề thực sự lộ ra. Ông đề xuất năm bước khắc phục, trong đó có làm một phiên bản sơ bộ trước ("do it twice") và đưa khách hàng tham gia chính thức. Chữ "waterfall" không xuất hiện trong bài. Như vậy, mô hình tuần tự được Royce mô tả, và phê phán, năm 1970; cái tên đến sau.
 
-Bài báo thường được gắn với Waterfall là của Royce (1970), và nó chứa một bất ngờ. Royce có vẽ chuỗi giai đoạn từ yêu cầu hệ thống đến vận hành, nhưng viết ngay sau đó rằng cách triển khai một lượt "is risky and invites failure", vì kiểm thử ở cuối là lần đầu các vấn đề thực sự lộ ra. Ông đề xuất năm bước khắc phục, trong đó có làm một phiên bản sơ bộ trước ("do it twice") và đưa khách hàng tham gia chính thức. Chữ "waterfall" không xuất hiện trong bài. Nói cho đúng: mô hình tuần tự được Royce mô tả, và phê phán, năm 1970; cái tên đến sau.
+Chữ "scrum" đến từ bài báo của Takeuchi và Nonaka (1986) trên *Harvard Business Review*. Hai tác giả đối lập cách làm tuần tự kiểu "chạy tiếp sức" với cách làm kiểu bóng bầu dục, nơi cả đội cùng tiến lên, và trong mục "Moving the Scrum Downfield" nêu sáu đặc điểm: bất ổn được cài sẵn (built-in instability), đội dự án tự tổ chức (self-organizing project teams), các giai đoạn phát triển chồng lấn (overlapping development phases), học đa chiều (multilearning), kiểm soát tinh tế (subtle control) và chuyển giao bài học trong tổ chức (organizational transfer of learning). Một chi tiết ít được nhắc: bài báo nghiên cứu sáu sản phẩm phần cứng (máy photocopy, máy ảnh, ô tô, máy tính) ở Fuji-Xerox, Canon, Honda và NEC, được chọn một phần vì đã thành công trên thị trường. Đó là case study về người thắng cuộc, không có nhóm so sánh, nên nó cho thấy cách làm này **có thể** thành công, chưa cho thấy nó thành công **thường xuyên hơn** cách làm tuần tự.
 
-Chữ "scrum" đến từ bài báo của Takeuchi và Nonaka (1986) trên *Harvard Business Review*, một bài tạp chí chứ không phải chương sách như ghi chú khoá học viết. Hai tác giả đối lập cách làm tuần tự kiểu "chạy tiếp sức" với cách làm kiểu bóng bầu dục, và trong mục "Moving the Scrum Downfield" nêu sáu đặc điểm khớp với khoá học. Khoá học không nói rằng bài báo nghiên cứu sáu sản phẩm phần cứng (máy photocopy, máy ảnh, ô tô, máy tính) ở Fuji-Xerox, Canon, Honda và NEC, được chọn một phần vì đã thành công trên thị trường: đó là case study về người thắng cuộc, không có nhóm so sánh.
-
-Scrum được phát triển từ đầu thập niên 1990 (Schwaber & Sutherland, 2020), nên có trước Agile Manifesto như khoá học nói. Manifesto ra đời ngày 11–13/2/2001 tại Snowbird, Utah, do 17 người tự gọi là "organizational anarchists" (Highsmith, 2001). Theo Hoda et al. (2018), từ đó Agile chi phối nửa sau của năm mươi năm kỹ nghệ phần mềm; đó là bằng chứng về **mức phổ biến**, chưa phải **hiệu quả**.
+Scrum được phát triển từ đầu thập niên 1990 (Schwaber & Sutherland, 2020), tức có trước Agile Manifesto. Manifesto ra đời ngày 11–13/2/2001 tại Snowbird, Utah, do 17 người tự gọi là "organizational anarchists" (Highsmith, 2001). Theo Hoda et al. (2018), từ đó Agile chi phối nửa sau của năm mươi năm kỹ nghệ phần mềm; đó là bằng chứng về **mức phổ biến**, chưa phải **hiệu quả**.
 
 **Bảng 2.** Dòng thời gian đã kiểm chứng
 
-| Thời điểm           | Mốc                                                                                      |
-| ------------------- | ---------------------------------------------------------------------------------------- |
-| Giữa thập niên 1950 | IID được dùng trong các dự án lớn (Larman & Basili, 2003)                                |
+| Thời điểm           | Mốc                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------ |
+| Giữa thập niên 1950 | IID được dùng trong các dự án lớn (Larman & Basili, 2003)                                  |
 | 1970                | Royce mô tả chuỗi giai đoạn tuần tự và cảnh báo rủi ro của cách làm một lượt (Royce, 1970) |
-| 1/1986              | Ẩn dụ rugby và scrum trên HBR (Takeuchi & Nonaka, 1986)                                  |
-| Thập niên 1990      | Các phương pháp có tên: DSDM, XP, Scrum (Dybå & Dingsøyr, 2008)                          |
-| 2/2001              | Agile Manifesto, 17 người (Beck et al., 2001)                                            |
-| 2017, 2020          | Hai bản Scrum Guide khác nhau về cỡ đội (mục 7)                                          |
+| 1/1986              | Ẩn dụ rugby và scrum trên HBR (Takeuchi & Nonaka, 1986)                                    |
+| Thập niên 1990      | Các phương pháp có tên: DSDM, XP, Scrum (Dybå & Dingsøyr, 2008)                            |
+| 2/2001              | Agile Manifesto, 17 người (Beck et al., 2001)                                              |
+| 2017, 2020          | Hai bản Scrum Guide khác nhau về cỡ đội (mục 7)                                            |
 
 ## 3. Agile có hiệu quả hơn Waterfall không? Ba lớp bằng chứng
 
@@ -113,7 +111,7 @@ Moløkken-Østvold và Jørgensen (2005) khảo sát sâu các dự án phần m
 
 Ba lưu ý về phương pháp:
 
-- **Cắt ngang, tự báo cáo.** Người trả lời tự chọn dự án, tự đánh giá mức dùng Agile và mức thành công. Thiết kế "một thành công, một kém" có thể phóng đại tương quan: đã biết dự án nào thành công thì dễ nhớ nó "linh hoạt" hơn. Bài 01 gặp đúng vấn đề này với số liệu tự báo cáo của PMI (xem [Course 1](/blog/foundations-of-project-management/)).
+- **Cắt ngang, tự báo cáo.** Người trả lời tự chọn dự án, tự đánh giá mức dùng Agile và mức thành công. Thiết kế "một thành công, một kém" có thể phóng đại tương quan: đã biết dự án nào thành công thì dễ nhớ nó "linh hoạt" hơn. Số liệu tự báo cáo từ cộng đồng PMI về tỷ lệ thất bại dự án cũng gặp đúng vấn đề này (xem [bài 01](/blog/foundations-of-project-management/)).
 - **Phần lớn biến thiên chưa được giải thích.** R² tối đa 0,41 nghĩa là hơn một nửa khác biệt về thành công nằm ngoài mô hình.
 - **Không có thử nghiệm ngẫu nhiên.** Bản tóm tắt của APM trích nhận xét của một tác giả rằng Agile "dẫn đến" dự án thành công hơn; cách nói nhân quả đó mạnh hơn những gì khảo sát cắt ngang cho phép.
 
@@ -123,12 +121,12 @@ Bảng 3 đặt bốn nguồn cạnh nhau theo kiểu forest plot định tính.
 
 **Bảng 3.** Hướng tác động của Agile so với cách làm tuần tự (+ có lợi cho Agile; 0 không khác; ± không nhất quán; – không đo hoặc không có kết luận so sánh)
 
-| Nghiên cứu                          | Thiết kế, cỡ mẫu                    | Thời gian, chi phí | Phạm vi, chất lượng | Hài lòng bên liên quan |
-| ----------------------------------- | ----------------------------------- | ------------------ | ------------------- | ---------------------- |
-| Dybå & Dingsøyr (2008)              | Systematic review, 36 nghiên cứu    | ± (năng suất)      | –                   | –                      |
-| Moløkken-Østvold & Jørgensen (2005) | Khảo sát sâu dự án phần mềm         | +                  | 0                   | –                      |
-| Serrador & Pinto (2015)             | Khảo sát hồi cứu, hơn 1.000 dự án   | +                  | + (trong hiệu suất) | + (mạnh nhất)          |
-| Gemino et al. (2021)                | Khảo sát quốc tế, 477 dự án         | 0                  | 0                   | +                      |
+| Nghiên cứu                          | Thiết kế, cỡ mẫu                  | Thời gian, chi phí | Phạm vi, chất lượng | Hài lòng bên liên quan |
+| ----------------------------------- | --------------------------------- | ------------------ | ------------------- | ---------------------- |
+| Dybå & Dingsøyr (2008)              | Systematic review, 36 nghiên cứu  | ± (năng suất)      | –                   | –                      |
+| Moløkken-Østvold & Jørgensen (2005) | Khảo sát sâu dự án phần mềm       | +                  | 0                   | –                      |
+| Serrador & Pinto (2015)             | Khảo sát hồi cứu, hơn 1.000 dự án | +                  | + (trong hiệu suất) | + (mạnh nhất)          |
+| Gemino et al. (2021)                | Khảo sát quốc tế, 477 dự án       | 0                  | 0                   | +                      |
 
 Agile và hybrid **liên quan** đến sự hài lòng của các bên liên quan cao hơn, nhất quán ở hai nghiên cứu định lượng lớn. Lợi thế về thời gian và chi phí không nhất quán: có ở hai nghiên cứu cũ, không thấy ở nghiên cứu mới nhất. Tất cả là tương quan, chưa phải nhân quả.
 
@@ -138,41 +136,39 @@ Agile và hybrid **liên quan** đến sự hài lòng của các bên liên qua
 
 Nghiên cứu thực nghiệm kỹ nhất về lãng phí trong phần mềm là của Sedano, Ralph và Péraire (2017). Họ quan sát tham gia hai năm năm tháng trên tám dự án tại Pivotal, một công ty tư vấn phát triển phần mềm, phỏng vấn 33 người và phân tích một năm chủ đề retrospective. Kết quả là **taxonomy lãng phí thực nghiệm đầu tiên**, gồm chín loại: làm sai tính năng hoặc sản phẩm, quản lý backlog kém, làm lại, giải pháp phức tạp không cần thiết, tải nhận thức thừa, căng thẳng tâm lý, chờ đợi và đa nhiệm, mất tri thức, giao tiếp kém.
 
-Nghiên cứu này không chứng minh điều khoá học nói. Môi trường được quan sát có backlog và retrospective, vậy mà danh sách vẫn có "làm sai tính năng", đúng thứ Agile được cho là ngăn chặn. Không có nhóm so sánh dùng Waterfall, và chính các tác giả lưu ý grounded theory không cho phép suy rộng thống kê. "Agile giảm lãng phí" vì vậy là **mục tiêu thiết kế**, chưa phải kết quả đã đo.
+Nghiên cứu này không chứng minh rằng Agile giảm lãng phí. Môi trường được quan sát có backlog và retrospective, vậy mà danh sách vẫn có "làm sai tính năng", đúng thứ Agile được cho là ngăn chặn. Không có nhóm so sánh dùng Waterfall, và chính các tác giả lưu ý grounded theory không cho phép suy rộng thống kê. "Agile giảm lãng phí" vì vậy là **mục tiêu thiết kế**, chưa phải kết quả đã đo.
 
-Với **VUCA**, khoá học dùng bốn chữ như một chẩn đoán: VUCA cao thì chọn Agile. Bennett và Lemoine (2014) phản đối chính cách dùng gộp này. Theo họ, VUCA hay bị dùng như nhãn chung cho mọi tình huống khó đoán, khiến lãnh đạo nghĩ lập kế hoạch là vô ích; trong khi biến động, bất định, phức tạp và mơ hồ là bốn điều kiện khác nhau, cần phân bổ nguồn lực khác nhau. "VUCA cao thì chọn Agile" vì thế là quy tắc quá thô. Bằng chứng định lượng duy nhất gắn được với một thành tố cụ thể là kết quả của Moløkken-Østvold và Jørgensen (2005): lợi thế của mô hình linh hoạt đi kèm đặc tả yêu cầu và cộng tác với khách hàng, tức thành tố **bất định về yêu cầu**. Nguồn gốc VUCA thường được gán cho US Army War College như khoá học nói, nhưng mình chưa tìm được tài liệu gốc xác nhận.
+Lập luận thứ hai dùng **VUCA** như một chẩn đoán: môi trường càng VUCA thì càng nên chọn Agile. Bennett và Lemoine (2014) phản đối chính cách dùng gộp này. Theo họ, VUCA hay bị dùng như nhãn chung cho mọi tình huống khó đoán, khiến lãnh đạo nghĩ lập kế hoạch là vô ích; trong khi biến động, bất định, phức tạp và mơ hồ là bốn điều kiện khác nhau, cần phân bổ nguồn lực khác nhau. "VUCA cao thì chọn Agile" vì thế là quy tắc quá thô. Bằng chứng định lượng duy nhất gắn được với một thành tố cụ thể là kết quả của Moløkken-Østvold và Jørgensen (2005): lợi thế của mô hình linh hoạt đi kèm đặc tả yêu cầu và cộng tác với khách hàng, tức thành tố **bất định về yêu cầu**. Thuật ngữ VUCA thường được gán cho US Army War College, nhưng nguồn gốc này chưa được xác nhận bằng tài liệu gốc trong các nguồn của bài.
 
 > **Mức bằng chứng ước tính:** cả hai là khung khái niệm hợp lý; bằng chứng so sánh trực tiếp rất thấp.
 
-## 5. Ba con số khảo sát: 72%, 85% và 30%
+## 5. Agile phổ biến đến đâu? Đọc lại các con số khảo sát
 
 Mục này dùng cách đọc "một con số, ba câu hỏi" của bài 01: nguồn nào, đo ai, thu thập ra sao.
 
-**72%.** Nguồn là *13th Annual State of Agile Report* (CollabNet VersionOne, 2019): khảo sát tháng 8–12/2018, do một nhà cung cấp công cụ phần mềm tài trợ, **1.319** phản hồi đầy đủ, 17% là khách hàng của nhà tài trợ. Câu gốc là "at least 72% of respondents" dùng Scrum hoặc hybrid có Scrum. Đơn vị là **người trả lời**, không phải "các đội" như khoá học nói. Biểu đồ trong báo cáo cho thấy 72% khớp với tổng của Scrum (54%), Scrum/XP hybrid (10%) và Scrumban (8%); mục "Other/Hybrid/Multiple" chiếm thêm 14%. Còn con số "95% có ít nhất một số dự án Agile thành công" gần như không mang thông tin, vì "thành công" không được định nghĩa.
+**72%.** Con số hay được trích nhất về mức phổ biến của Scrum đến từ *13th Annual State of Agile Report* (CollabNet VersionOne, 2019): khảo sát tháng 8–12/2018, do một nhà cung cấp công cụ phần mềm tài trợ, **1.319** phản hồi đầy đủ, 17% là khách hàng của nhà tài trợ. Câu gốc là "at least 72% of respondents" dùng Scrum hoặc hybrid có Scrum. Đơn vị là **người trả lời**, không phải đội hay dự án. Biểu đồ trong báo cáo cho thấy 72% khớp với tổng của Scrum (54%), Scrum/XP hybrid (10%) và Scrumban (8%); mục "Other/Hybrid/Multiple" chiếm thêm 14%. Cùng báo cáo, 95% người trả lời nói tổ chức có ít nhất một số dự án Agile thành công và 48% nói hầu hết hoặc tất cả; các con số này gần như không mang thông tin, vì "thành công" không được định nghĩa.
 
-**85%.** Không có trong State of Agile. Nguồn khớp nhất là thông cáo của Gartner (2019): 85% tổ chức **đã áp dụng hoặc dự định áp dụng** ("adopted, or plan to adopt") mô hình giao ứng dụng hướng sản phẩm (product-centric application delivery); người trả lời dùng mô hình này cho khoảng 40% công việc năm 2018. Ghi chú phương pháp cho biết đây là khảo sát trực tuyến quý 2/2018 với **129** chuyên gia IT thuộc Gartner Research Circle, một nhóm khách hàng của Gartner. Con số gồm cả ý định, nói về mô hình giao ứng dụng chứ không trực tiếp về Agile, và đến từ một mẫu nhỏ, không đại diện.
+**85%.** Con số này đến từ thông cáo của Gartner (2019): 85% tổ chức **đã áp dụng hoặc dự định áp dụng** ("adopted, or plan to adopt") mô hình giao ứng dụng hướng sản phẩm (product-centric application delivery); người trả lời dùng mô hình này cho khoảng 40% công việc năm 2018. Phần mô tả phương pháp của thông cáo cho biết đây là khảo sát trực tuyến quý 2/2018 với **129** chuyên gia IT thuộc Gartner Research Circle, một nhóm khách hàng của Gartner. Con số gồm cả ý định, nói về mô hình giao ứng dụng chứ không trực tiếp về Agile, và đến từ một mẫu nhỏ, không đại diện.
 
-**30% hybrid.** Mình không tìm thấy con số này trong bản 13th. Chữ "hybrid" chỉ xuất hiện ở câu 72%, ở mục Scrum/XP hybrid và mục Other/Hybrid/Multiple. Cùng báo cáo có một con số 30% khác: 30% người trả lời nói tổ chức họ theo sát SAFe nhất. Có thể hai con số đã bị nhầm, nhưng đó chỉ là suy đoán; chưa tìm được nguồn thì không nên nhắc lại.
-
-Nghiên cứu học thuật cho bức tranh rõ hơn về hybrid. Kuhrmann et al. (2019) thấy các công ty được khảo sát dùng hybrid cho từng dự án **kể cả khi có chính sách quy trình chung**, và dùng **bất kể quy mô hay ngành**. Gemino et al. (2021) xếp 52% dự án là hybrid. Hybrid là trạng thái thường gặp, không phải ngoại lệ.
+**Hybrid.** State of Agile bản 13th không đưa ra một tỷ lệ hybrid riêng: chữ "hybrid" chỉ xuất hiện trong câu 72%, ở mục Scrum/XP hybrid và mục Other/Hybrid/Multiple. Nghiên cứu học thuật cho bức tranh rõ hơn. Kuhrmann et al. (2019) thấy các công ty được khảo sát dùng hybrid cho từng dự án **kể cả khi có chính sách quy trình chung**, và dùng **bất kể quy mô hay ngành**. Gemino et al. (2021) xếp 52% dự án là hybrid. Hybrid là trạng thái thường gặp, không phải ngoại lệ.
 
 **Bảng 4.** Một con số, ba câu hỏi
 
-| Con số trong khoá học | Nguồn thật, mẫu                                  | Nên nói thế nào                                                              |
-| --------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
-| 72% dùng Scrum        | State of Agile 13th; 1.319 người, vendor tài trợ | "Ít nhất 72% người trả lời một khảo sát của vendor"                          |
-| 85% product-centric   | Gartner; 129 chuyên gia IT, quý 2/2018           | "85% đã áp dụng **hoặc dự định** áp dụng mô hình giao ứng dụng hướng sản phẩm" |
-| 30% hybrid            | Không tìm thấy                                   | Không dùng                                                                   |
+| Con số hay được trích | Nguồn, mẫu                                         | Nên nói thế nào                                                                |
+| --------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------ |
+| 72% dùng Scrum        | State of Agile 13th; 1.319 người, vendor tài trợ   | "Ít nhất 72% người trả lời một khảo sát của vendor"                            |
+| 85% product-centric   | Gartner; 129 chuyên gia IT, quý 2/2018             | "85% đã áp dụng **hoặc dự định** áp dụng mô hình giao ứng dụng hướng sản phẩm" |
+| Tỷ lệ hybrid          | Gemino et al. (2021); 477 dự án, khảo sát quốc tế  | "52% dự án trong một mẫu quốc tế là hybrid"                                    |
 
 Bài học chung: khảo sát của vendor cho biết xu hướng tự báo cáo, không cho biết hiệu quả.
 
 ## 6. Story point và Planning Poker: ước lượng tương đối có tốt hơn không?
 
-### 6.1. Khoá học dạy gì
+### 6.1. Lập luận cho ước lượng tương đối
 
-Khoá học lập luận: con người hay ước lượng thấp thời gian hoàn thành, nên Scrum dùng **ước lượng tương đối** (relative estimation, so khối lượng việc này với việc khác) thay cho **ước lượng tuyệt đối** (absolute estimation, theo giờ hoặc ngày), qua cỡ áo (T-shirt sizes) hoặc **story point** theo dãy Fibonacci. Trong **Planning Poker**, mỗi người úp lá bài ước lượng, cả nhóm lật cùng lúc rồi thảo luận các ước lượng chênh xa, nhờ đó tránh **thiên kiến mỏ neo** (anchoring bias).
+Lập luận quen thuộc trong cộng đồng Scrum như sau: con người hay ước lượng thấp thời gian hoàn thành, nên thay vì **ước lượng tuyệt đối** (absolute estimation, theo giờ hoặc ngày), đội dùng **ước lượng tương đối** (relative estimation, so khối lượng việc này với việc khác), qua cỡ áo (T-shirt sizes) hoặc **story point** theo dãy Fibonacci. Trong **Planning Poker**, mỗi người úp lá bài ước lượng, cả nhóm lật cùng lúc rồi thảo luận các ước lượng chênh xa, nhờ đó tránh **thiên kiến mỏ neo** (anchoring bias).
 
-Vế "con người hay ước lượng thấp" thuộc chủ đề ngụy biện lập kế hoạch của bài 03 (xem [Course 3: planning fallacy](/blog/project-planning-putting-it-all-together/)). Ở đây chỉ cần biết ước lượng chuyên gia (expert estimation) là chiến lược phổ biến nhất trong dự án phần mềm, và chưa có bằng chứng đáng kể rằng mô hình ước lượng hình thức tốt hơn (Jørgensen, 2004). Planning Poker là **một cách có cấu trúc để kết hợp ước lượng của nhiều chuyên gia**; câu hỏi đúng là nó có tốt hơn các cách kết hợp khác, hay tốt hơn một chuyên gia, không.
+Vế "con người hay ước lượng thấp" thuộc chủ đề ngụy biện lập kế hoạch (xem [bài 03 về planning fallacy](/blog/project-planning-putting-it-all-together/)). Ở đây chỉ cần biết ước lượng chuyên gia (expert estimation) là chiến lược phổ biến nhất trong dự án phần mềm, và chưa có bằng chứng đáng kể rằng mô hình ước lượng hình thức tốt hơn (Jørgensen, 2004). Planning Poker là **một cách có cấu trúc để kết hợp ước lượng của nhiều chuyên gia**; câu hỏi đúng là nó có tốt hơn các cách kết hợp khác, hay tốt hơn một chuyên gia, không.
 
 ### 6.2. Bằng chứng
 
@@ -180,22 +176,22 @@ Usman et al. (2014) tổng quan 25 nghiên cứu sơ cấp về ước lượng 
 
 Thực nghiệm trực tiếp nhất là của Moløkken-Østvold và Haugen (2007). Trong một dự án phần mềm thật, nhóm dùng Planning Poker cho một nửa số task. Với các task đó, ước lượng đồng thuận **ít lạc quan hơn** và **chính xác hơn** việc gộp máy móc (mechanical combination) các ước lượng cá nhân cho cùng task. Nhưng nhóm task đối chứng, do từng chuyên gia ước lượng riêng, đạt **độ chính xác tương tự**; xét theo trung vị, cả hai nhóm đều không thiên lệch.
 
-Hai nghiên cứu khác thêm sắc thái, dù mình mới đọc được phần tóm tắt. Bài báo năm 2008 của cùng nhóm gợi ý rằng task ước lượng bằng Planning Poker tốn thêm effort gắn với độ phức tạp của thay đổi, có thể do thảo luận làm lộ thông tin (Moløkken-Østvold et al., 2008). Mahnič và Hovelja (2012) cho 13 đội sinh viên ước lượng user story và so với một nhóm chuyên gia: ước lượng của sinh viên lạc quan quá mức, và Planning Poker làm sự lạc quan đó tăng thêm; với chuyên gia, Planning Poker lại cho kết quả gần effort thực tế hơn trung bình các ước lượng cá nhân. Thiên kiến lạc quan do thảo luận nhóm giảm dần khi chuyên môn tăng.
+Hai nghiên cứu khác thêm sắc thái; với hai nghiên cứu này, bài chỉ dựa trên phần tóm tắt. Bài báo năm 2008 của cùng nhóm gợi ý rằng task ước lượng bằng Planning Poker tốn thêm effort gắn với độ phức tạp của thay đổi, có thể do thảo luận làm lộ thông tin (Moløkken-Østvold et al., 2008). Mahnič và Hovelja (2012) cho 13 đội sinh viên ước lượng user story và so với một nhóm chuyên gia: ước lượng của sinh viên lạc quan quá mức, và Planning Poker làm sự lạc quan đó tăng thêm; với chuyên gia, Planning Poker lại cho kết quả gần effort thực tế hơn trung bình các ước lượng cá nhân. Thiên kiến lạc quan do thảo luận nhóm giảm dần khi chuyên môn tăng.
 
 **Bảng 5.** Các nghiên cứu về Planning Poker
 
-| Nghiên cứu                       | Bối cảnh                         | So với                                 | Kết quả chính                                         |
-| -------------------------------- | -------------------------------- | -------------------------------------- | ----------------------------------------------------- |
-| Moløkken-Østvold & Haugen (2007) | Một dự án thật, nửa số task      | Gộp máy móc; một chuyên gia            | Tốt hơn gộp máy móc; ngang một chuyên gia             |
-| Moløkken-Østvold et al. (2008)   | Cùng nhóm, có phân tích code     | Task không dùng Planning Poker         | Effort tăng thêm gắn với độ phức tạp (mới đọc tóm tắt) |
-| Mahnič & Hovelja (2012)          | 13 đội sinh viên, nhóm chuyên gia | Trung bình ước lượng cá nhân          | Sinh viên lạc quan hơn; chuyên gia chính xác hơn (mới đọc tóm tắt) |
-| Usman et al. (2014)              | Systematic review, 25 nghiên cứu | –                                      | Planning Poker, story point phổ biến; không so độ chính xác |
+| Nghiên cứu                       | Bối cảnh                          | So với                          | Kết quả chính                                                    |
+| -------------------------------- | --------------------------------- | ------------------------------- | ---------------------------------------------------------------- |
+| Moløkken-Østvold & Haugen (2007) | Một dự án thật, nửa số task       | Gộp máy móc; một chuyên gia     | Tốt hơn gộp máy móc; ngang một chuyên gia                        |
+| Moløkken-Østvold et al. (2008)   | Cùng nhóm, có phân tích code      | Task không dùng Planning Poker  | Effort tăng thêm gắn với độ phức tạp (theo tóm tắt)              |
+| Mahnič & Hovelja (2012)          | 13 đội sinh viên, nhóm chuyên gia | Trung bình ước lượng cá nhân    | Sinh viên lạc quan hơn; chuyên gia chính xác hơn (theo tóm tắt)  |
+| Usman et al. (2014)              | Systematic review, 25 nghiên cứu  | –                               | Planning Poker, story point phổ biến; không so độ chính xác      |
 
 ### 6.3. Đọc phản biện
 
 **"Planning Poker tránh anchoring."** Úp bài rồi lật cùng lúc là cơ chế hợp lý, nhưng không nghiên cứu nào ở trên đo anchoring trực tiếp. Điều đã được chứng minh hẹp hơn: đồng thuận nhóm tốt hơn gộp máy móc, không tốt hơn một chuyên gia, và với người ít kinh nghiệm, thảo luận có thể làm ước lượng lạc quan hơn.
 
-**"Story point chính xác hơn giờ."** Mình chưa tìm được nghiên cứu so sánh trực tiếp. Story point chủ yếu **đổi đơn vị**; muốn tính sai số vẫn phải quy về effort thực tế. Đối trọng là ước lượng ba điểm và PERT, chủ đề của bài 06 (xem [Course 6: three-point estimating](/blog/capstone-applying-project-management-in-the-real-world/)). Giá trị chắc hơn của Planning Poker có lẽ nằm ở **thảo luận**: ước lượng chênh nhau buộc mọi người nói ra điều mình biết về độ phức tạp.
+**"Story point chính xác hơn giờ."** Các nguồn của bài chưa có nghiên cứu nào so sánh trực tiếp hai cách này. Story point chủ yếu **đổi đơn vị**; muốn tính sai số vẫn phải quy về effort thực tế. Đối trọng là ước lượng ba điểm và PERT (xem [bài 06 về three-point estimating](/blog/capstone-applying-project-management-in-the-real-world/)). Giá trị chắc hơn của Planning Poker có lẽ nằm ở **thảo luận**: ước lượng chênh nhau buộc mọi người nói ra điều họ biết về độ phức tạp.
 
 <div class="callout callout-note">
 <p class="callout-title">Hộp thống kê: vì sao nghiên cứu ước lượng hay dùng trung vị</p>
@@ -210,81 +206,76 @@ Sai số tương đối của một task là $\text{MRE} = \lvert \text{thực t
 
 ### 7.1. Scrum chính thức và thực hành đi kèm
 
-Scrum Guide 2020 **không nhắc** story point, velocity hay Planning Poker. Burn-down chỉ là một ví dụ thực hành dự báo, cạnh burn-up và cumulative flow, và không thay được tư duy thực nghiệm (empiricism) (Schwaber & Sutherland, 2020). Phần lớn Module 3 của khoá học vì thế là thực hành cộng đồng hay dùng cùng Scrum, không phải luật của Scrum.
+Scrum Guide 2020 **không nhắc** story point, velocity hay Planning Poker. Burn-down chỉ là một ví dụ thực hành dự báo, cạnh burn-up và cumulative flow, và không thay được tư duy thực nghiệm (empiricism) (Schwaber & Sutherland, 2020). Story point, velocity và Planning Poker vì thế là thực hành cộng đồng hay dùng cùng Scrum, không phải luật của Scrum.
 
-Hai chi tiết cần sửa. Con số "3–9 người" là quy định cho **Development Team** trong bản 2017, không tính Product Owner và Scrum Master trừ khi họ cũng làm việc trong Sprint Backlog (Schwaber & Sutherland, 2017). Bản 2020 dùng thuật ngữ **Developers** và viết Scrum Team "typically 10 or fewer people", tính cả Product Owner và Scrum Master. Còn Sprint Review tối đa 4 giờ và Retrospective tối đa 3 giờ là mức **cho Sprint một tháng**; Sprint ngắn hơn thì thường ngắn hơn (Schwaber & Sutherland, 2020).
+Cỡ đội và timebox cũng khác nhau giữa các phiên bản. Bản 2017 quy định **Development Team** từ 3 đến 9 người: ít hơn 3 thì giảm tương tác, nhiều hơn 9 thì cần quá nhiều phối hợp; con số này không tính Product Owner và Scrum Master trừ khi họ cũng làm việc trong Sprint Backlog (Schwaber & Sutherland, 2017). Bản 2020 thay Development Team bằng thuật ngữ **Developers** và viết Scrum Team "typically 10 or fewer people", tính cả Product Owner và Scrum Master. Sprint Review tối đa 4 giờ và Retrospective tối đa 3 giờ là mức **cho Sprint một tháng**; Sprint ngắn hơn thì thường ngắn hơn (Schwaber & Sutherland, 2020).
 
 ### 7.2. Velocity
 
-Lời khuyên không dùng velocity để so sánh các đội đúng vì **logic đo lường**, không cần thực nghiệm. Mỗi đội tự hiệu chỉnh story point theo task mốc của mình, nên "5 điểm" của hai đội không cùng thang đo; so velocity giữa hai đội giống so hai nhiệt kế không ghi đơn vị. Rủi ro là có thật: trong State of Agile 2019, velocity là thước đo thành công dự án được nhắc nhiều thứ ba (38% người trả lời), sau sự hài lòng của khách hàng (46%) và giá trị kinh doanh (42%) (CollabNet VersionOne, 2019). Khi một chỉ số nội bộ thành KPI, nó dễ bị thổi phồng.
+Lời khuyên không dùng velocity để so sánh các đội đúng vì **logic đo lường**, không cần thực nghiệm. Mỗi đội tự hiệu chỉnh story point theo task mốc riêng, nên "5 điểm" của hai đội không cùng thang đo; so velocity giữa hai đội giống so hai nhiệt kế không ghi đơn vị. Rủi ro là có thật: trong State of Agile 2019, velocity là thước đo thành công dự án được nhắc nhiều thứ ba (38% người trả lời), sau sự hài lòng của khách hàng (46%) và giá trị kinh doanh (42%) (CollabNet VersionOne, 2019). Khi một chỉ số nội bộ thành KPI, nó dễ bị thổi phồng.
 
 ### 7.3. Giới hạn việc dở dang và định luật Little
 
-Câu "làm ít việc cùng lúc thì việc xong nhanh hơn" có cơ sở toán học là định luật Little, $L = \lambda W$: số việc trung bình trong hệ thống ($L$) bằng tốc độ việc đi qua ($\lambda$) nhân thời gian trung bình mỗi việc nằm trong hệ thống ($W$), với điều kiện các trung bình hữu hạn và quá trình ổn định (Little, 1961). Nếu tốc độ hoàn thành giữ nguyên, giảm việc dở dang (work in progress, WIP) thì mỗi việc xong sớm hơn. Nhưng định luật nói về trung bình dài hạn, và không tự làm tăng tổng sản lượng; sản lượng chỉ tăng nếu bớt đa nhiệm làm giảm thời gian chuyển việc, đúng loại lãng phí "chờ đợi và đa nhiệm" của Sedano et al. (2017). LeSS cũng đưa lý thuyết hàng đợi vào nguyên tắc của mình (LeSS Company, n.d.).
+Câu "làm ít việc cùng lúc thì việc xong nhanh hơn" có cơ sở toán học là định luật Little, $L = \lambda W$: số việc trung bình trong hệ thống ($L$) bằng tốc độ việc đi qua ($\lambda$) nhân thời gian trung bình mỗi việc nằm trong hệ thống ($W$), với điều kiện các trung bình hữu hạn và quá trình ổn định (Little, 1961). Nếu tốc độ hoàn thành giữ nguyên, giảm việc dở dang (work in progress, WIP) thì mỗi việc xong sớm hơn. Nhưng định luật nói về trung bình dài hạn, và không tự làm tăng tổng sản lượng; sản lượng chỉ tăng nếu bớt đa nhiệm làm giảm thời gian chuyển việc, đúng loại lãng phí "chờ đợi và đa nhiệm" của Sedano et al. (2017). LeSS cũng đưa lý thuyết hàng đợi vào bộ nguyên tắc của framework (LeSS Company, n.d.).
 
 ### 7.4. Daily Scrum
 
-Stray, Sjøberg và Dybå (2016) nghiên cứu buổi stand-up hằng ngày bằng grounded theory với 12 đội phần mềm ở ba công ty tại Malaysia, Na Uy, Ba Lan và Anh: phỏng vấn 60 người, quan sát 79 buổi họp. Thái độ tích cực đến từ chia sẻ thông tin và cùng giải quyết vấn đề; thái độ tiêu cực đến từ việc buổi họp biến thành **báo cáo trạng thái cho quản lý**, quá dày và quá dài. Điều này khớp với khoá học: đội của Sue họp stand-up hai lần mỗi tuần, Sarah giữ buổi họp trong 15–20 phút. Phần retrospective và an toàn tâm lý thuộc bài 04 (xem [Course 4: retrospectives](/blog/project-execution-running-the-project/)).
+Scrum Guide 2020 mô tả Daily Scrum là sự kiện 15 phút dành cho Developers, tổ chức cùng giờ, cùng địa điểm mỗi ngày làm việc của Sprint, để xem tiến độ hướng tới Sprint Goal và điều chỉnh Sprint Backlog khi cần (Schwaber & Sutherland, 2020). Stray, Sjøberg và Dybå (2016) nghiên cứu buổi stand-up hằng ngày ngoài thực tế bằng grounded theory với 12 đội phần mềm ở ba công ty tại Malaysia, Na Uy, Ba Lan và Anh: phỏng vấn 60 người, quan sát 79 buổi họp. Thái độ tích cực đến từ chia sẻ thông tin và cùng giải quyết vấn đề; thái độ tiêu cực đến từ việc buổi họp biến thành **báo cáo trạng thái cho quản lý**, quá dày và quá dài. Nói cách khác, buổi họp mất giá trị khi lệch khỏi mục đích phối hợp trong đội mà Scrum Guide đặt ra. Phần retrospective và an toàn tâm lý được bàn ở [bài 04 về retrospective](/blog/project-execution-running-the-project/).
 
 > **Mức bằng chứng ước tính:** velocity và WIP dựa trên lập luận đo lường và toán học; Daily Scrum ở mức thấp, một nghiên cứu định tính kỹ.
 
-### 7.5. Ví dụ từ dữ liệu riêng: timeline app Dictionaire
+### 7.5. Ví dụ minh hoạ: một dự án hybrid có WIP cao
 
 <div class="callout callout-example">
-<p class="callout-title">Một dự án cá nhân đọc như dự án hybrid có WIP cao</p>
+<p class="callout-title">Một dự án nhỏ đọc theo hybrid và theo định luật Little</p>
 
-Mình theo dõi app từ điển đang làm bằng một sheet timeline (xem Mobile_App-Dictionary). Dữ liệu đọc ngày 13/11/2026 có 34 việc: **13** đã hoàn thành, **10** đang thực hiện, **11** chưa bắt đầu (dữ liệu dự án cá nhân, 2026).
+Giả sử một người làm một app di động nhỏ và theo dõi công việc bằng bảng tính. Dự án chia thành bảy giai đoạn nối tiếp nhau, từ nghiên cứu thị trường, thiết kế, phát triển đến kiểm thử, phát hành và bảo trì. Trong mỗi giai đoạn, các việc lớn được chia thành việc con, và giai đoạn phát triển nhắm tới một bản MVP.
 
-![bv-05-agile-1](/vault-assets/bv-05-agile-1-7c74f999.webp)
-*Hình 1. Trạng thái công việc theo giai đoạn, app Dictionaire.*
+**Đọc theo hybrid.** Bảy giai đoạn nối tiếp là khung kiểu Waterfall; bên trong, danh sách việc lớn chia thành việc con giống một backlog có epic. Đây là kiểu kết hợp rất thường gặp đã nói ở mục 5.
 
-**Đọc theo hybrid.** Bảy "Bước" từ nghiên cứu thị trường đến bảo trì là các giai đoạn tuần tự kiểu Waterfall; bên trong có MVP và các việc "Main" chia thành "Sub", giống backlog có epic.
+**Đọc theo WIP.** Giả sử có 6 việc con cùng đang mở, ví dụ 6 màn hình của app đều đang làm dở, và người làm hoàn thành trung bình 2 việc con mỗi tuần. Theo định luật Little, mỗi việc nằm trong hệ thống trung bình $W = L/\lambda = 6/2 = 3$ tuần. Nếu giới hạn WIP ở 2 thì $W = 2/2 = 1$ tuần.
 
-**Đọc theo WIP.** Trong 10 việc đang làm có 4 việc "Main" và **6 việc lá** cùng mở cho một người: 2 ở Bước 3 và 4 tab của trang từ điển ở Bước 4, hạn 11–14/02/2026. Trong khi đó, các việc đã xong ở Bước 3 (trừ một việc thiếu ngày) đều ghi hoàn thành ngày 01/02/2026, sớm 7 ngày so với hạn 08/02.
-
-**Minh hoạ định luật Little, có giả định.** Nếu mình hoàn thành trung bình 2 việc lá mỗi tuần, 6 việc đang mở cho $W = 6/2 = 3$ tuần mỗi việc; giới hạn WIP ở 2 thì $W = 1$ tuần. Tổng thời gian làm hết không đổi, nhưng từng tab xong và dùng được sớm hơn.
-
-**Chất lượng dữ liệu.** Một việc ghi đã hoàn thành nhưng thiếu ngày hoàn thành, hai việc đã bắt đầu hoặc đã xong không có hạn, và có một dòng trống. Sheet có thể chưa được cập nhật, nên các con số mô tả **sheet**, chưa chắc là tiến độ thật; chúng chỉ để minh hoạ khái niệm.
+**Điều thay đổi và điều không đổi.** Tổng thời gian làm hết 6 việc không đổi, vì tốc độ hoàn thành vẫn là 2 việc mỗi tuần. Cái thay đổi là từng màn hình xong và dùng được sớm hơn, phản hồi đến sớm hơn, và người làm bớt chuyển qua lại giữa nhiều việc dở dang. Các con số ở đây là giả định để minh hoạ khái niệm, không phải dữ liệu đo.
 
 </div>
 
 ## 8. Agile quy mô lớn: SAFe, LeSS và Spotify model
 
-Khoá học giới thiệu năm cách mở rộng Agile cho nhiều đội: SAFe, Scrum of Scrums, LeSS, Disciplined Agile Delivery (DAD) và Spotify model. Chúng có bằng chứng hiệu quả không? Tổng quan hệ thống của Dikert, Paasivaara và Lassenius (2016) trả lời khá rõ. Từ 1.875 bài, họ giữ **52 bài về 42 case** chuyển đổi trong công nghiệp; **gần 90%** là báo cáo kinh nghiệm (experience report), điều chính các tác giả coi là dấu hiệu thiếu nghiên cứu học thuật vững. Họ tổng hợp 35 thách thức và 29 yếu tố thành công; nổi bật nhất là hỗ trợ của quản lý, chọn và **tuỳ biến** mô hình Agile, đào tạo và coaching, tư duy và sự thống nhất.
+Khi nhiều đội cùng làm một sản phẩm, có năm cách mở rộng Agile hay được nhắc: SAFe, Scrum of Scrums, LeSS, Disciplined Agile Delivery (DAD) và Spotify model. Chúng có bằng chứng hiệu quả không? Tổng quan hệ thống của Dikert, Paasivaara và Lassenius (2016) trả lời khá rõ. Từ 1.875 bài, họ giữ **52 bài về 42 case** chuyển đổi trong công nghiệp; **gần 90%** là báo cáo kinh nghiệm (experience report), điều chính các tác giả coi là dấu hiệu thiếu nghiên cứu học thuật vững. Họ tổng hợp 35 thách thức và 29 yếu tố thành công; nổi bật nhất là hỗ trợ của quản lý, chọn và **tuỳ biến** mô hình Agile, đào tạo và coaching, tư duy và sự thống nhất.
 
-Edison, Wang và Conboy (2022) so sánh SAFe, LeSS, Scrum-at-Scale, DAD và Spotify model, và ghi nhận trước đó chưa có so sánh liên phương pháp nào dựa trên bằng chứng thực nghiệm; tài liệu chú trọng **thực hành của framework thương mại** hơn nguyên lý nền, trong khi Nokia hay Ericsson tự xây phương pháp. Bản đồ 136 nghiên cứu của Uludağ et al. (2022) cũng kết thúc bằng một chương trình nghiên cứu còn bỏ ngỏ. Với SAFe, Putta, Paasivaara và Lassenius (2018) làm một multivocal review, gộp cả case study và báo cáo kinh nghiệm không bình duyệt, và xác định 52 tổ chức áp dụng. Theo các mô tả mình đọc được, phần lớn case đến từ tài liệu xám, nên lợi ích được báo cáo là lời kể của người áp dụng, chưa phải kết quả đo độc lập.
+Edison, Wang và Conboy (2022) so sánh SAFe, LeSS, Scrum-at-Scale, DAD và Spotify model, và ghi nhận trước đó chưa có so sánh liên phương pháp nào dựa trên bằng chứng thực nghiệm; tài liệu chú trọng **thực hành của framework thương mại** hơn nguyên lý nền, trong khi Nokia hay Ericsson tự xây phương pháp. Bản đồ 136 nghiên cứu của Uludağ et al. (2022) cũng kết thúc bằng một chương trình nghiên cứu còn bỏ ngỏ. Với SAFe, Putta, Paasivaara và Lassenius (2018) làm một multivocal review, gộp cả case study và báo cáo kinh nghiệm không bình duyệt, và xác định 52 tổ chức áp dụng. Vì nguồn gồm cả tài liệu xám, nhiều lợi ích được báo cáo là lời kể của người áp dụng, chưa phải kết quả đo độc lập.
 
-**Spotify model** có lẽ bị hiểu sai nhiều nhất. Whitepaper gốc tự nhận chỉ là một "snapshot", "a journey in progress, not a journey completed" (Kniberg & Ivarsson, 2012). Squad không có trưởng nhóm chính thức nhưng có Product Owner và agile coach; Tribe được thiết kế **nhỏ hơn khoảng 100 người**, dựa trên con số Dunbar, khi bộ phận kỹ thuật tăng từ 30 lên 250 người trong ba năm. Ghi chú khoá học có hai con số mâu thuẫn cho Tribe, "dưới 100" và "40–150"; con số sau mình không tìm được nguồn. Nghiên cứu học thuật chủ yếu đi vào từng cơ chế, như guild giúp chia sẻ tri thức và ra quyết định tập thể (Šmite et al., 2019). Lời khuyên "lấy cảm hứng, đừng sao chép" khớp với chính whitepaper. **LeSS** chia thành LeSS cho 2–8 đội và LeSS Huge từ 8 đội, và được mô tả là kết quả của "hundreds of concrete experiments", không phải "600+" như khoá học ghi (LeSS Company, n.d.).
+**Spotify model** có lẽ bị hiểu sai nhiều nhất. Whitepaper gốc tự nhận chỉ là một "snapshot", "a journey in progress, not a journey completed" (Kniberg & Ivarsson, 2012). Squad không có trưởng nhóm chính thức nhưng có Product Owner và agile coach; Tribe được thiết kế **nhỏ hơn khoảng 100 người**, dựa trên con số Dunbar, khi bộ phận kỹ thuật tăng từ 30 lên 250 người trong ba năm. Nghiên cứu học thuật chủ yếu đi vào từng cơ chế, như guild giúp chia sẻ tri thức và ra quyết định tập thể (Šmite et al., 2019). Cách đọc hợp lý vì thế là lấy cảm hứng từ mô hình chứ không sao chép nó, đúng tinh thần whitepaper tự mô tả. **LeSS** chia thành LeSS cho 2–8 đội và LeSS Huge từ 8 đội, và được mô tả là kết quả của "hundreds of concrete experiments" (LeSS Company, n.d.).
 
 Về mức phổ biến, State of Agile 2019 hỏi tổ chức theo sát cách mở rộng nào nhất: SAFe 30%, Scrum of Scrums 16%, phương pháp tự xây 8%, DAD 7%, Spotify model 5%, LeSS 3%, và 19% không biết (CollabNet VersionOne, 2019). Mức phổ biến của SAFe **không phải** bằng chứng về hiệu quả.
 
 **Bảng 6.** Các cách mở rộng Agile và loại bằng chứng
 
-| Cách mở rộng       | Theo sát nhất (2019) | Loại bằng chứng hiện có                                  |
-| ------------------ | -------------------- | -------------------------------------------------------- |
-| SAFe               | 30%                  | Multivocal review, phần lớn tài liệu xám                 |
-| Scrum of Scrums    | 16%                  | Chủ yếu báo cáo kinh nghiệm                              |
-| Tự xây             | 8%                   | Case study trong các tổng quan                           |
-| DAD                | 7%                   | So sánh ở mức mô tả                                      |
-| Spotify model      | 5%                   | Whitepaper tự mô tả; nghiên cứu về từng cơ chế như guild |
-| LeSS               | 3%                   | So sánh ở mức mô tả                                      |
+| Cách mở rộng    | Theo sát nhất (2019) | Loại bằng chứng hiện có                                  |
+| --------------- | -------------------- | -------------------------------------------------------- |
+| SAFe            | 30%                  | Multivocal review, gồm cả tài liệu xám                   |
+| Scrum of Scrums | 16%                  | Chủ yếu báo cáo kinh nghiệm                              |
+| Tự xây          | 8%                   | Case study trong các tổng quan                           |
+| DAD             | 7%                   | So sánh ở mức mô tả                                      |
+| Spotify model   | 5%                   | Whitepaper tự mô tả; nghiên cứu về từng cơ chế như guild |
+| LeSS            | 3%                   | So sánh ở mức mô tả                                      |
 
-> **Mức bằng chứng ước tính:** rất thấp đến thấp. Với nền bằng chứng mỏng như vậy, lời khuyên "đừng mở rộng nếu không cần" là lời khuyên khôn ngoan nhất của Module 4.
+> **Mức bằng chứng ước tính:** rất thấp đến thấp. Với nền bằng chứng mỏng như vậy, lời khuyên thận trọng nhất là đừng mở rộng nếu chưa thật cần.
 
 ## 9. Thảo luận và kết luận
 
-**Bảng 7.** Tuyên bố của khoá học và mức bằng chứng
+**Bảng 7.** Các tuyên bố phổ biến về Agile và mức bằng chứng
 
-| Tuyên bố của khoá học                 | Bằng chứng tốt nhất                  | Mức ước tính        | Nên nói thế nào                                                     |
-| ------------------------------------- | ------------------------------------ | ------------------- | ------------------------------------------------------------------- |
-| Agile hiệu quả hơn Waterfall          | 1 systematic review, 3 nghiên cứu quan sát | Thấp đến rất thấp | Liên quan đến hài lòng của bên liên quan; thời gian, chi phí chưa chắc |
-| Agile giảm lãng phí                   | Taxonomy trong một công ty           | Rất thấp            | Là mục tiêu thiết kế                                                |
-| Agile hợp với VUCA                    | Khung khái niệm                      | Rất thấp            | Hợp nhất khi yêu cầu bất định và khách hàng tham gia được           |
-| 72%, 85%, 30%                         | Khảo sát vendor; Gartner; không có   | Mô tả               | Nói rõ đơn vị, mẫu, ý định; bỏ 30%                                  |
-| Planning Poker chính xác hơn          | 1 thực nghiệm, vài nghiên cứu nhỏ    | Thấp                | Tốt hơn gộp máy móc, ngang một chuyên gia                           |
-| Không so velocity giữa các đội        | Logic đo lường                       | Không cần thực nghiệm | Giữ nguyên                                                        |
-| Daily Scrum giúp đội đồng bộ          | 1 nghiên cứu, 12 đội                 | Thấp                | Có ích khi chia sẻ thông tin, phản tác dụng khi thành báo cáo        |
-| SAFe, LeSS, Spotify giúp mở rộng      | Gần 90% báo cáo kinh nghiệm          | Rất thấp đến thấp   | Có mô tả thực hành, chưa có so sánh hiệu quả                        |
+| Tuyên bố phổ biến                    | Bằng chứng tốt nhất                        | Mức ước tính          | Nên nói thế nào                                                        |
+| ------------------------------------ | ------------------------------------------ | --------------------- | ---------------------------------------------------------------------- |
+| Agile hiệu quả hơn Waterfall         | 1 systematic review, 3 nghiên cứu quan sát | Thấp đến rất thấp     | Liên quan đến hài lòng của bên liên quan; thời gian, chi phí chưa chắc |
+| Agile giảm lãng phí                  | Taxonomy trong một công ty                 | Rất thấp              | Là mục tiêu thiết kế                                                   |
+| Agile hợp với VUCA                   | Khung khái niệm                            | Rất thấp              | Hợp nhất khi yêu cầu bất định và khách hàng tham gia được              |
+| Phần lớn tổ chức đã dùng Agile       | Khảo sát vendor; thông cáo Gartner         | Mô tả                 | Nói rõ đơn vị, mẫu, ý định                                             |
+| Planning Poker chính xác hơn         | 1 thực nghiệm, vài nghiên cứu nhỏ          | Thấp                  | Tốt hơn gộp máy móc, ngang một chuyên gia                              |
+| Không so velocity giữa các đội       | Logic đo lường                             | Không cần thực nghiệm | Đúng: mỗi đội một thang đo                                             |
+| Daily Scrum giúp đội đồng bộ         | 1 nghiên cứu, 12 đội                       | Thấp                  | Có ích khi chia sẻ thông tin, phản tác dụng khi thành báo cáo          |
+| SAFe, LeSS, Spotify giúp mở rộng     | Gần 90% báo cáo kinh nghiệm                | Rất thấp đến thấp     | Có mô tả thực hành, chưa có so sánh hiệu quả                           |
 
 Từ bảng này, có năm hướng dẫn thực hành:
 
@@ -296,7 +287,7 @@ Từ bảng này, có năm hướng dẫn thực hành:
 
 Khoảng trống nghiên cứu vẫn lớn: ít nghiên cứu về Scrum ở đội đã thành thạo (Dybå & Dingsøyr, 2008), gần như chưa có so sánh Agile ngoài phần mềm, và thiếu thiết kế dọc trước và sau chuyển đổi.
 
-Vậy Agile có hiệu quả hơn Waterfall không? Câu trả lời trung thực là **có, ở một số chiều, trong một số bối cảnh, với bằng chứng chưa mạnh**. Đó không phải lý do để bỏ Agile, mà để coi Agile như một giả thuyết cần kiểm chứng trong chính dự án của mình, đúng tinh thần thực nghiệm của Scrum.
+Vậy Agile có hiệu quả hơn Waterfall không? Câu trả lời trung thực là **có, ở một số chiều, trong một số bối cảnh, với bằng chứng chưa mạnh**. Đó không phải lý do để bỏ Agile, mà để coi Agile như một giả thuyết cần kiểm chứng trong chính dự án của bạn, đúng tinh thần thực nghiệm của Scrum.
 
 ## Tài liệu tham khảo
 
@@ -311,8 +302,6 @@ Bruce, P., & Bruce, A. (2017). *Practical statistics for data scientists: 50 ess
 CollabNet VersionOne. (2019). *13th annual State of Agile report*. https://eg.bucknell.edu/~cs479/common-files/resources/versionone-state-of-agile/13th-annual-state-of-agile-report.pdf
 
 Dikert, K., Paasivaara, M., & Lassenius, C. (2016). Challenges and success factors for large-scale agile transformations: A systematic literature review. *Journal of Systems and Software, 119*, 87–108. https://doi.org/10.1016/j.jss.2016.06.013
-
-Dữ liệu dự án cá nhân. (2026). *Timeline dự án app Dictionaire* [Dữ liệu chưa công bố, đọc ngày 13/11/2026].
 
 Dybå, T., & Dingsøyr, T. (2008). Empirical studies of agile software development: A systematic review. *Information and Software Technology, 50*(9–10), 833–859. https://doi.org/10.1016/j.infsof.2008.01.006
 
