@@ -41,17 +41,17 @@
     {
       "a": "ai-development",
       "b": "biology",
-      "weight": 22
+      "weight": 23
     },
     {
       "a": "biology",
       "b": "business",
-      "weight": 45
+      "weight": 39
     },
     {
       "a": "biology",
       "b": "university-courses",
-      "weight": 18
+      "weight": 19
     },
     {
       "a": "english",
