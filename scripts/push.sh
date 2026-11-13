@@ -1,10 +1,11 @@
 #!/bin/bash
-# Push local commits of the website and the case-study repos to GitHub (account lucynguyen777).
+# Push local commits of the website and the case-study repos to GitHub (organization Thu-Ha-Vault, pushed as lucynguyen777).
 # A repo that does not exist on GitHub yet is created (public) on the first run.
 # A push to portfolio-site main redeploys thuha.ceovanta.com automatically (GitHub Actions).
 # Run in Terminal:  bash ~/Desktop/Sky/portfolio-site/scripts/push.sh
 set -e
-ACCOUNT=lucynguyen777
+ACCOUNT=lucynguyen777   # gh login used to push (member of the org)
+ORG=Thu-Ha-Vault
 gh auth switch -u "$ACCOUNT"
 trap 'gh auth switch -u nguyentthuha1702' EXIT   # back to the account used by the Sky_Vault repo
 
@@ -17,9 +18,10 @@ REPOS=(
 for entry in "${REPOS[@]}"; do
   IFS='|' read -r dir name desc <<< "$entry"
   cd ~/Desktop/Sky/"$dir"
-  echo "== $dir → $ACCOUNT/$name"
-  gh repo view "$ACCOUNT/$name" >/dev/null 2>&1 || gh repo create "$ACCOUNT/$name" --public --description "$desc"
-  git remote get-url origin >/dev/null 2>&1 || git remote add origin "https://github.com/$ACCOUNT/$name.git"
+  echo "== $dir → $ORG/$name"
+  gh repo view "$ORG/$name" >/dev/null 2>&1 || gh repo create "$ORG/$name" --public --description "$desc"
+  git remote get-url origin >/dev/null 2>&1 || git remote add origin "https://github.com/$ORG/$name.git"
+  git remote set-url origin "https://github.com/$ORG/$name.git"
   git -c credential.helper= -c "credential.helper=!gh auth git-credential" push -u origin main
 done
-echo "Done. Deploy progress: https://github.com/$ACCOUNT/portfolio-site/actions"
+echo "Done. Deploy progress: https://github.com/$ORG/portfolio-site/actions"

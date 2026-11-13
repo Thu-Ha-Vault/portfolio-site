@@ -27,7 +27,7 @@ summary_en: >-
   with NASA POWER weather, so a client can prepare staff and insecticide one to
   two months before the peak. Python (pandas, DuckDB).
 links:
-  github: 'https://github.com/lucynguyen777/dengue-vietnam-case-study'
+  github: 'https://github.com/Thu-Ha-Vault/dengue-vietnam-case-study'
   tableau: >-
     https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/DengueinVietnamseasonprovincesandincidence_/Dashboard1
 phases:

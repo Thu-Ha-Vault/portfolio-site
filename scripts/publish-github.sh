@@ -1,8 +1,8 @@
 #!/bin/bash
-# One-time setup: create the two public repos on GitHub account lucynguyen777, push, and turn on GitHub Pages.
+# One-time setup: create the two public repos on GitHub (now organization Thu-Ha-Vault), push, and turn on GitHub Pages.
 # Run in Terminal:  bash ~/Desktop/Sky/portfolio-site/scripts/publish-github.sh
 set -e
-ACCOUNT=lucynguyen777
+ACCOUNT=Thu-Ha-Vault   # organization, repos moved here 2026-11-13
 gh auth switch -u "$ACCOUNT"
 push() { git -c credential.helper= -c "credential.helper=!gh auth git-credential" push -u origin main; }
 

@@ -27,7 +27,7 @@ summary_en: >-
   recommendations to convert casual riders. SQL (DuckDB), Python. Capstone of
   the Google Data Analytics Professional Certificate (completed Nov 2026).
 links:
-  github: 'https://github.com/lucynguyen777/cyclistic-case-study'
+  github: 'https://github.com/Thu-Ha-Vault/cyclistic-case-study'
   tableau: >-
     https://public.tableau.com/app/profile/ha.nguyen.thi.thu8875/viz/shared/D86ZF2XQ6
   certificate: 'https://www.coursera.org/account/accomplishments/specialization/RB6KN8RLORM4'

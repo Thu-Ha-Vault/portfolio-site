@@ -85,7 +85,7 @@ Mobile PageSpeed on the home page went from 43 to the mid-90s (Lighthouse, Nov 2
 
 ## Deploy (GitHub Pages)
 
-- Repo `lucynguyen777/portfolio-site`; every push to `main` runs `.github/workflows/deploy.yml` (npm ci → astro build → GitHub Pages).
-- Custom domain `thuha.ceovanta.com` (`public/CNAME`), DNS: `CNAME thuha → lucynguyen777.github.io` at Hostinger.
+- Repo `Thu-Ha-Vault/portfolio-site` (organization; pushed with `scripts/push.sh` as lucynguyen777); every push to `main` runs `.github/workflows/deploy.yml` (npm ci → astro build → GitHub Pages).
+- Custom domain `thuha.ceovanta.com` (`public/CNAME`), DNS: `CNAME thuha → thu-ha-vault.github.io` at Hostinger.
 - Content is synced locally from the vault (`npm run sync`) and committed; CI only builds.
 - First-time setup: run `scripts/publish-github.sh` once.
