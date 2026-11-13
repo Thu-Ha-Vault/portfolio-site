@@ -26,6 +26,12 @@ GROUPS = [
               r'^Sinh học/Bioinformatics/B - Data Science and Bioinformatics/',
               r'^AI và DEV/Khoá học AI của Tsing Hua University/Learning Module/(01 - Data Mining|05 - Statistic|10 - Causal)']),
     ('business', [r'^Business/']),
+    # the rest, by season: high-school biology before the THPT exam (June), then French (DELF sessions),
+    # then university lab work, ANR, general courses and AI/education (owner: "còn lại", order set 2026-11-13)
+    ('biology-thpt', [r'^Sinh học/Kiến thức chung/']),
+    ('french', [r'^Tiếng Pháp/']),
+    ('biology-lab', [r'^Sinh học/Biology Project and Lab Report/', r'^Sinh học/ISO']),
+    ('anr', [r'^Sinh học/Assisted Natural Regeneration']),
     ('other', [r'.']),
 ]
 

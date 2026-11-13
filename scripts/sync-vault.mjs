@@ -739,6 +739,8 @@ for (const [abs, dest] of published) {
       .trim()
       .slice(0, 220);
   }
+  // a hand-written meta description (frontmatter `description:`, ≤ 160 characters) wins over the first paragraph
+  if (data.description) fm.description = String(data.description).replace(/\s+/g, ' ').trim().slice(0, 220);
   for (const k of Object.keys(fm)) if (fm[k] === undefined) delete fm[k];
   const outDir = dest.collection === 'blog' ? OUT_BLOG : OUT_PROJECTS;
   const outFile = path.join(outDir, dest.slug + (dest.isIndex ? '/index' : '') + '.md');
