@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thuha.ceovanta.com/sitemap-index.xml
