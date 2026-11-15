@@ -696,7 +696,7 @@ pandas biến thao tác quen thuộc của spreadsheet và SQL thành code đọ
 
 Notebook giúp kể chuyện nhưng không tự bảo đảm tái lập: trong 10.388 notebook được chạy lại, 879 cho đúng kết quả cũ (Samuel & Mietchen, 2024). Tái lập là một thói quen gồm ghi lại phụ thuộc, không ghi đè biến và chạy lại từ đầu trong kernel sạch (Rule et al., 2019).
 
-Điểm chung của cả ba phần là kiểm tra những thứ không tự báo lỗi: dtype, shape, số dòng, số giá trị thiếu và thứ tự chạy. Bài có ba giới hạn: số đo thời gian chỉ đến từ một máy và hai phép tính; bảng mẫu ở mục 3 là dữ liệu mô phỏng, chọn để bẫy dễ thấy; và bài không so sánh Python với R, hai ngôn ngữ dùng chung nhiều ý tưởng như vectorization và split-apply-combine. Bước tiếp theo là bài 08, nơi toàn bộ quy trình của series được áp dụng vào một case study với dữ liệu thật.
+Điểm chung của cả ba phần là kiểm tra những thứ không tự báo lỗi: dtype, shape, số dòng, số giá trị thiếu và thứ tự chạy. Bài có ba giới hạn: số đo thời gian chỉ đến từ một máy và hai phép tính; bảng mẫu ở mục 3 là dữ liệu mô phỏng, chọn để bẫy dễ thấy; và bài không so sánh Python với R, hai ngôn ngữ dùng chung nhiều ý tưởng như vectorization và split-apply-combine. Bước tiếp theo là [bài 08](/blog/case-study/), nơi toàn bộ quy trình của series được áp dụng vào một case study với dữ liệu thật.
 
 ## Phụ lục: hai bảng tra nhanh
 
