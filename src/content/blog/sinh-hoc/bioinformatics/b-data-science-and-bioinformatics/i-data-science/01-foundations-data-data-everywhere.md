@@ -18,10 +18,14 @@ vaultPath: >-
   data, everywhere.md
 url: /blog/foundations-data-data-everywhere/
 topic: biology
-updated: '2026-11-13'
+updated: '2026-11-16'
 date: '2026-11-13'
 status: draft
 order: 1
+translationUrl: /en/blog/foundations-data-data-everywhere/
+translationTitle: >-
+  The Six-Phase Data Analysis Process Next to KDD, CRISP-DM, PPDAC, and Data
+  Life Cycles
 description: >-
   Ask – Prepare – Process – Analyze – Share – Act là quy trình mà nhiều người
   học phân tích dữ liệu gặp đầu tiên, nhưng nó không phải mô hình duy nhất, cũng
