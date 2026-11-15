@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Queue for writing finished blog articles from the research plans in the vault.
 
-  python3 scripts/articles-queue.py status        # current batch: which plans are written
-  python3 scripts/articles-queue.py next N        # claim the next N unwritten plans, print JSON with a brief per item
-  python3 scripts/articles-queue.py remaining     # how many plans are still not `status: written`, per group
+  python3 scripts/articles-queue.py status        # current batch: which articles exist (Vietnamese and English)
+  python3 scripts/articles-queue.py next [N]      # claim the next N unwritten plans (default 1) plus one English backlog
+                                                  # item, print JSON with a brief per item
+  python3 scripts/articles-queue.py remaining     # plans not yet written, per group, and the English backlog
 
-Order: Data first, then Business, then everything else by plan folder (owner's choice, 2026-11-13).
-A plan is done when its frontmatter says `status: written` (the writer sets it after finishing the article).
+Order: Data first, then Business, then the rest by season (owner's choice, 2026-11-13).
+Since 2026-11-16 every article is bilingual: the Vietnamese article `BV - <name>.md` and its English version
+`BV - <name> (EN).md`. A plan is done when its frontmatter says `status: written` and the English file exists.
+Articles written before that date only have the Vietnamese file: they are the English backlog, one per run.
 """
 import json, os, re, sys, unicodedata
 
@@ -70,6 +73,10 @@ def article_path(it):
     return N(os.path.join(ARTICLES, topic, 'BV - ' + name))
 
 
+def en_path(it):
+    return article_path(it)[:-3] + ' (EN).md'
+
+
 BRIEF = """Write one complete blog article in the Obsidian vault /Users/pc/Desktop/Sky/Sky_Vault from an existing research plan. The owner approved three pilot articles; match their standard.
 
 Read fully first:
@@ -93,37 +100,72 @@ Owner's rules that matter most (all in the style guide):
 
 Before finishing, grep the body (excluding the **Links** line) for: sổ, Memo, IMG_, khoá học, khóa học, Coursera, của tôi, chính tôi, ghi chú gốc, note gốc, mình — and fix any reference to the owner's notes, course errors or personal mistakes.
 
-Return (concise): output path, word count, claims dropped/hedged, figures created, owner tasks added."""
+Then write the ENGLISH version of the same article, following section 7 "Bản tiếng Anh" of the style guide exactly:
+- File: {out_en} (same folder), frontmatter with `lang: en`, the same `replaces`, `translation_of: "[[{out_name}]]"`, an English `title` and `description`.
+- A complete, natural American-English rendering of the finished Vietnamese article: same structure, numbers, citations and reference list; translate table text, captions, mermaid labels and code comments; figures that contain Vietnamese text get an English-labelled copy named `<same name>-en.png` made from the same script.
+- Add ` · English: [[{out_en_name}|English]]` to the Vietnamese article's **Links** line.
+
+Return (concise): both output paths, both word counts, claims dropped/hedged, figures created, owner tasks added."""
+
+BRIEF_EN = """Write the ENGLISH version of an existing Vietnamese blog article in the Obsidian vault /Users/pc/Desktop/Sky/Sky_Vault.
+
+Read fully first:
+- Style guide (binding; section 7 "Bản tiếng Anh" defines this job): {guide}
+- The finished Vietnamese article (do not change its content): {out}
+- Its plan, for the source list only: {plan}
+
+Output: {out_en}
+- Frontmatter as section 7 says: English `title` (≤ ~90 characters) and `description` (≤ 155 characters), `type: article`, `lang: en`, the same `replaces` and `article_type` as the Vietnamese article, `translation_of: "[[{out_name}]]"`, `plan`, `status: draft`, `date`, `word_count`, `parent`, `tags`.
+- A complete, natural American-English rendering: same structure, numbers, citations and reference list. Do not add claims or sources that are not in the Vietnamese article; if you find an error in it, fix it in both files and say so in your report. Explain Vietnam-specific context in one clause where an international reader needs it.
+- Translate table text, captions, mermaid labels and code comments; re-run any code you change. Figures that contain Vietnamese text get an English-labelled copy `<same name>-en.png` in {assets} (recreate the chart from the data in the article; if the data is not recoverable, reuse the original figure and note it). Figures without text are reused.
+- Keep the [[wikilinks]] to vault notes with English display text; never link to the original note in the body.
+- Same owner rules as the Vietnamese article: about the topic, no mention of the owner's notes, course errors or personal mistakes; minimal first person; no drive.google.com / docs.google.com links.
+- Afterwards add ` · English: [[{out_en_name}|English]]` to the **Links** line of the Vietnamese article and of the plan. Touch no other files (keep scratch files in your own new temp folder and delete only what you created). Do not git commit.
+
+Return (concise): output path, word count, figures created or reused, any error fixed in the Vietnamese article."""
 
 
-def brief(it):
+def brief(it, en_only=False):
     out = article_path(it)
     slug = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', os.path.basename(out)[5:-3]).encode('ascii', 'ignore').decode().lower()).strip('-')[:40]
-    return BRIEF.format(guide=f'{ARTICLES}/00 - Quy chuẩn viết bài.md',
-                        example=f'{ARTICLES}/Sinh học/BV - 04 - Process data from Dirty to Clean.md',
-                        plan=it['plan'], source=it['source'], out=out, type=it['type'] or 'review', words=it['words'],
-                        assets=f'{ARTICLES}/assets/', slug=slug, out_name=os.path.basename(out)[:-3])
+    return (BRIEF_EN if en_only else BRIEF).format(
+        guide=f'{ARTICLES}/00 - Quy chuẩn viết bài.md',
+        example=f'{ARTICLES}/Sinh học/BV - 04 - Process data from Dirty to Clean.md',
+        plan=it['plan'], source=it['source'], out=out, type=it['type'] or 'review', words=it['words'],
+        assets=f'{ARTICLES}/assets/', slug=slug, out_name=os.path.basename(out)[:-3],
+        out_en=en_path(it), out_en_name=os.path.basename(en_path(it))[:-3])
 
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'status'
     ps = plans()
+    backlog = [p for p in ps if p['status'] == 'written' and not os.path.exists(en_path(p))]
     if cmd == 'remaining':
         from collections import Counter
         c = Counter(p['group'] for p in ps if p['status'] != 'written')
-        print(json.dumps({'remaining': sum(c.values()), 'by_group': c}, ensure_ascii=False))
+        print(json.dumps({'remaining': sum(c.values()), 'by_group': c, 'english_backlog': len(backlog)}, ensure_ascii=False))
     elif cmd == 'status':
         batch = json.load(open(STATE)) if os.path.exists(STATE) else []
-        st = {p['plan']: p['status'] for p in ps}
-        res = [{'plan': os.path.basename(b), 'written': st.get(N(b)) == 'written',
-                'article_exists': os.path.exists(article_path({'plan': N(b)}))} for b in batch]
-        print(json.dumps({'batch': res, 'all_written': all(r['written'] for r in res)}, ensure_ascii=False, indent=1))
+        by = {p['plan']: p for p in ps}
+        res = []
+        for b in batch:
+            if isinstance(b, str):  # batches claimed before 2026-11-16 were Vietnamese only
+                b = {'plan': b, 'job': 'vi'}
+            p = by.get(N(b['plan']))
+            r = {'plan': os.path.basename(b['plan']), 'job': b['job'],
+                 'vi_written': bool(p) and p['status'] == 'written',
+                 'vi_exists': bool(p) and os.path.exists(article_path(p)),
+                 'en_exists': bool(p) and os.path.exists(en_path(p))}
+            r['done'] = {'vi': r['vi_written'], 'en': r['en_exists']}.get(b['job'], r['vi_written'] and r['en_exists'])
+            res.append(r)
+        print(json.dumps({'batch': res, 'all_done': all(r['done'] for r in res)}, ensure_ascii=False, indent=1))
     elif cmd == 'next':
-        n = int(sys.argv[2]) if len(sys.argv) > 2 else 3
-        todo = [p for p in ps if p['status'] != 'written'][:n]
-        json.dump([t['plan'] for t in todo], open(STATE, 'w'), ensure_ascii=False)
-        print(json.dumps([{'plan': os.path.basename(t['plan']), 'group': t['group'], 'out': article_path(t),
-                           'brief': brief(t)} for t in todo], ensure_ascii=False, indent=1))
+        n = int(sys.argv[2]) if len(sys.argv) > 2 else 1
+        todo = [(p, 'vi+en') for p in ps if p['status'] != 'written'][:n] + [(p, 'en') for p in backlog[:1]]
+        json.dump([{'plan': p['plan'], 'job': job} for p, job in todo], open(STATE, 'w'), ensure_ascii=False)
+        print(json.dumps([{'plan': os.path.basename(p['plan']), 'job': job, 'group': p['group'],
+                           'out': article_path(p), 'out_en': en_path(p), 'brief': brief(p, en_only=(job == 'en'))}
+                          for p, job in todo], ensure_ascii=False, indent=1))
 
 
 if __name__ == '__main__':
