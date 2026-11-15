@@ -6,7 +6,8 @@
 //     otherwise class "photo". Plates sit on a light card and are never inverted or recoloured.
 // An image that stands alone (its own paragraph, or alone in a list item) and has a real alt text becomes
 //   <figure class="prose-fig"><img …><figcaption>alt</figcaption></figure>
-// Camera and screenshot names that the sync uses as fallback alt (IMG_4985, image-016, Ảnh chụp màn hình …)
+// Camera and screenshot names that the sync uses as fallback alt (IMG_4985, image-016, Ảnh chụp màn hình …),
+// and slug-like file names of generated figures (bv-03-prepare-data-for-exploration-1, track-b-08_incidence_map)
 // are not captions.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -36,7 +37,7 @@ function manifest() {
 
 const PLATE = /^(anh-chup-man-hinh-|image-|pasted-image-)/i;
 const NOT_A_CAPTION =
-  /^\s*(?:img|dsc|dscn|pxl|photo|image|pasted image|screenshot|screen shot|ảnh chụp màn hình|anh chup man hinh|dvcxs\s*-\s*img|sổ\s*-\s*trang)?[\s_-]*[\d\s_.:x-]*\s*$|^\s*(?:img|dsc|pxl|image|pasted image|screenshot|ảnh chụp màn hình|dvcxs)[\s_-]/i;
+  /^\s*(?:img|dsc|dscn|pxl|photo|image|pasted image|screenshot|screen shot|ảnh chụp màn hình|anh chup man hinh|dvcxs\s*-\s*img|sổ\s*-\s*trang)?[\s_-]*[\d\s_.:x-]*\s*$|^\s*(?:img|dsc|pxl|image|pasted image|screenshot|ảnh chụp màn hình|dvcxs)[\s_-]|^\s*[a-z0-9]+(?:[-_][a-z0-9]+)+\s*$/i;
 
 const fileOf = (src) => {
   let s = String(src).split(/[?#]/)[0];
