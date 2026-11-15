@@ -35,9 +35,9 @@ isIndex: true
 - [Course 2: Ask questions to make Data-Driven decisions](/blog/ask-questions-to-make-data-driven-decisions/)
 - [Course 3: Prepare Data for Exploration](/blog/prepare-data-for-exploration/)
 - [Course 4: Process data from Dirty to Clean](/blog/process-data-from-dirty-to-clean/)
-- Course 5: Analyze Data to Answer Questions
-- Course 6: Share Data through the Art of Visualization
-- Course 7: Introduction to Data Analysis Using Python
+- [Course 5: Analyze Data to Answer Questions](/blog/analyze-data-to-answer-questions/)
+- [Course 6: Share Data through the Art of Visualization](/blog/share-data-through-the-art-of-visualization/)
+- [Course 7: Introduction to Data Analysis Using Python](/blog/introduction-to-data-analysis-using-python/)
 - Course 8: Case Study
 - Xem thêm: AI Course Tsing Hua – phân tích dữ liệu, data mining
 - Xem thêm: SQL – SQL dùng trong phân tích dữ liệu

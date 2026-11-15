@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import T from '../../components/T.astro';
 import { ui } from '../../i18n';
 import Cover from '../../components/Cover.astro';
-import { blogEntries, childrenOf, breadcrumbs, hasMermaid, param } from '../../lib';
+import { blogEntries, childrenOf, breadcrumbs, englishOf, hasMermaid, param } from '../../lib';
 import { ogUrl } from '../../lib/cover';
 
 export async function getStaticPaths() {
@@ -35,9 +35,13 @@ const crumbs = breadcrumbs(all, entry.id);
       <section class="children topic-children" aria-labelledby="in-topic">
         <h2 id="in-topic"><T k="inThisTopic" /></h2>
         <ul class="rows">
-          {kids.map((k) => (
-            <li><a href={k.data.url}><span class={`t${k.data.isIndex ? ' is-topic' : ''}`}>{k.data.title}</span><span class="where num">{k.data.isIndex ? countIn(k.id) : ''}</span></a></li>
-          ))}
+          {kids.map((k) => {
+            // an article with an English version shows its English title and page while the UI is in English
+            const english = englishOf(k);
+            return (
+              <li><a href={k.data.url} data-href-vi={english && k.data.url} data-href-en={english?.url}><span class={`t${k.data.isIndex ? ' is-topic' : ''}`} data-vi={english && k.data.title} data-en={english?.title}>{k.data.title}</span><span class="where num">{k.data.isIndex ? countIn(k.id) : ''}</span></a></li>
+            );
+          })}
         </ul>
       </section>
     )}

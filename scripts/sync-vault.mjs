@@ -2,6 +2,7 @@
 // Sync notes from the Obsidian vault into Astro content collections.
 //   Blog     ← every .md under config.blog.root (minus config.blog.exclude)
 //   Projects ← every .md inside each folder listed in config.projects
+//   English  ← an article with `lang: en` is the English version of the article that `replaces` the same note
 // Wikilinks, embeds, callouts and Obsidian-only syntax are converted to plain Markdown.
 // Images: JPG/PNG → auto-rotated WebP (long edge ≤ images.maxEdge) in public/vault-assets/, sizes in
 // src/data/images.json, an automatic `cover` per note, and the home gallery thumbs in public/vault-thumbs/.
@@ -17,6 +18,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.config.json'), 'utf8'));
 const VAULT = path.resolve(ROOT, process.env.VAULT_DIR || '../Sky_Vault');
 const OUT_BLOG = path.join(ROOT, 'src/content/blog');
+const OUT_BLOG_EN = path.join(ROOT, 'src/content/blog-en');
 const OUT_PROJECTS = path.join(ROOT, 'src/content/projects');
 const OUT_ASSETS = path.join(ROOT, 'public/vault-assets');
 const OUT_THUMBS = path.join(ROOT, 'public/vault-thumbs');
@@ -173,12 +175,18 @@ for (const f of [...published.keys()]) {
 // A note under config.articles.root with `type: article` and `replaces: "<path under blog.root>"` is published at
 // the source note's URL instead of the note itself (the note stays untouched in the vault). Links to either file
 // lead to that page. `publish: false` on the article keeps the original note online.
+//
+// English versions: an article with `lang: en` (file `BV - <name> (EN).md` next to the Vietnamese one, same `replaces`)
+// never takes over a page. It is published at /en/blog/<slug of the Vietnamese page>/, in its own collection
+// (src/content/blog-en, same inner path), and only while the Vietnamese article is published.
 const sourceOfArticle = new Map(); // article abs → source abs
+const enSource = new Map(); // English article abs → source abs (also when it is not published: links to it fall back to the Vietnamese page)
 const urlTitle = new Map(); // source abs → the source note's own title (its URL stays the same)
-const stats1 = { articles: 0 };
+const stats1 = { articles: 0, english: 0 };
 if (config.articles?.root) {
   const byRelNFC = new Map(allFiles.map((f) => [rel(f).normalize('NFC'), f]));
   const aDir = path.join(VAULT, config.articles.root);
+  const english = []; // paired with their Vietnamese articles once all of those are known
   for (const f of fs.existsSync(aDir) ? walk(aDir) : []) {
     if (!f.endsWith('.md') || SKIP_FILES.has(path.basename(f)) || /^_MOC - /.test(path.basename(f))) continue;
     let fm;
@@ -188,11 +196,21 @@ if (config.articles?.root) {
       console.warn(`article: unreadable frontmatter in ${rel(f)}`);
       continue;
     }
-    if (fm.data.type !== 'article' || !fm.data.replaces || fm.data.publish === false) continue;
+    if (fm.data.type !== 'article' || !fm.data.replaces) continue;
+    // `lang: en` marks the English version; a file named "… (EN)" without a `lang` key is treated the same way,
+    // so a forgotten key cannot put the English text on the Vietnamese page
+    const named = fm.data.lang == null && / \(EN\)$/i.test(path.basename(f, '.md'));
+    const isEn = named || /^en\b/i.test(String(fm.data.lang ?? ''));
+    if (named) console.warn(`article ${rel(f)}: no \`lang\` key, treated as English because of its "(EN)" name`);
+    if (fm.data.publish === false && !isEn) continue;
     const target = String(fm.data.replaces).normalize('NFC').replace(/^\/+/, '').replace(new RegExp(`^${config.blog.root}/`), '');
     const srcAbs = byRelNFC.get(`${config.blog.root}/${target}`.normalize('NFC'));
     if (!srcAbs || isExcluded(rel(srcAbs))) {
       console.warn(`article ${rel(f)}: replaces "${target}" is not a blog note; skipped`);
+      continue;
+    }
+    if (isEn) {
+      english.push({ f, fm, srcAbs });
       continue;
     }
     if (!published.has(srcAbs)) {
@@ -205,6 +223,25 @@ if (config.articles?.root) {
     parsed.set(srcAbs, fm);
     sourceOfArticle.set(f, srcAbs);
     stats1.articles++;
+  }
+  for (const { f, fm, srcAbs } of english) {
+    enSource.set(f, srcAbs);
+    if (fm.data.publish === false) continue;
+    const dest = published.get(srcAbs);
+    if (!dest?.article) {
+      console.warn(`article ${rel(f)}: no published Vietnamese article replaces the same note; the English version is skipped`);
+      continue;
+    }
+    if (dest.en) {
+      console.warn(`article ${rel(f)}: ${rel(dest.en.file)} is already the English version of that note; skipped`);
+      continue;
+    }
+    // `translation_of` is for readers of the vault; the pair is made by `replaces`, so only report a mismatch
+    const of = String(fm.data.translation_of ?? '').replace(/^\[\[|\]\]$/g, '').split('|')[0].trim();
+    if (of && path.basename(of).toLowerCase() !== path.basename(dest.article, '.md').toLowerCase())
+      console.warn(`article ${rel(f)}: translation_of names "${of}" but its Vietnamese article is ${rel(dest.article)}`);
+    dest.en = { file: f, fm };
+    stats1.english++;
   }
 }
 // config.articles.only: the blog shows finished articles only; raw notes from Resources stay in the vault. A topic
@@ -280,6 +317,9 @@ for (const [abs, dest] of entries) {
   }
 }
 
+// the English version sits under /en/ at the slug of its Vietnamese page
+for (const dest of published.values()) if (dest.en) dest.en.url = `/en${dest.url}`;
+
 // ---------- last-updated dates from the vault's git history ----------
 const updated = new Map();
 try {
@@ -309,13 +349,13 @@ const linkFrom = (fromAbs, toAbs) => {
 };
 
 // ---------- link resolution ----------
+/** The vault file a wikilink names: a note, a finished article or the English version of one. */
 function resolveNote(target, fromAbs) {
   const t = target.replace(/\.md$/i, '').trim();
   if (!t) return null;
   if (t.includes('/')) {
     const abs = path.join(VAULT, t + '.md');
-    if (published.has(abs)) return abs;
-    if (sourceOfArticle.has(abs)) return sourceOfArticle.get(abs);
+    if (published.has(abs) || sourceOfArticle.has(abs) || enSource.has(abs)) return abs;
   }
   const base = path.basename(t).toLowerCase();
   const cands = (byBasename.get(base) || []).filter((c) => c.endsWith('.md'));
@@ -323,8 +363,7 @@ function resolveNote(target, fromAbs) {
   // prefer the candidate closest to the current note
   const fromDir = path.dirname(fromAbs);
   cands.sort((a, b) => commonPrefix(b, fromDir) - commonPrefix(a, fromDir));
-  // a finished article stands in for its source note
-  return sourceOfArticle.get(cands[0]) || cands[0];
+  return cands[0];
 }
 const commonPrefix = (a, b) => {
   let i = 0;
@@ -339,6 +378,7 @@ const assetJobs = new Map(); // abs → { abs, ext, stem, file, url, raster, dig
 const jobsByContent = new Map(); // sha1 of the file bytes → job: byte-identical images at two vault paths publish once
 let noteImages = null; // images embedded by the note being converted, in order (for the cover pick)
 let noteAlts = null; // job → the alt text it was embedded with in that note (for cover_alt)
+let noteEn = false; // the page being converted is the English version of an article
 // Sentinel returned by publishAsset() for a photo on the privacy list (site.config.json images.exclude):
 // it is never written to public/ and its embed is dropped from the note, not only kept out of covers and the gallery.
 const PRIVATE = Symbol('private');
@@ -535,14 +575,19 @@ function linkFor(target, alias, fromAbs, stats) {
   const [file, heading] = target.split('#');
   const label = (alias || (file ? path.basename(file) : heading) || '').trim();
   if (!file) return `[${mdText(label)}](#${headingAnchor(heading)})`;
-  const abs = resolveNote(file, fromAbs);
+  const named = resolveNote(file, fromAbs);
+  // a finished article (either language) stands in for its source note
+  const abs = named && (enSource.get(named) || sourceOfArticle.get(named) || named);
   const dest = abs && published.get(abs);
   if (!dest) {
     stats.unresolved++;
     return mdText(label);
   }
-  linkFrom(fromAbs, abs);
-  return `[${mdText(label)}](${dest.url}${heading ? '#' + headingAnchor(heading) : ''})`;
+  // The English page of the target, when it has one, for a link that names the "(EN)" file and for every link inside
+  // an English article; otherwise the Vietnamese page. The topic graph counts the Vietnamese articles only.
+  const url = (noteEn || enSource.has(named)) && dest.en ? dest.en.url : dest.url;
+  if (!noteEn) linkFrom(fromAbs, abs);
+  return `[${mdText(label)}](${url}${heading ? '#' + headingAnchor(heading) : ''})`;
 }
 
 function convertCallouts(lines) {
@@ -611,6 +656,7 @@ function convertBody(content, fromAbs, stats) {
 
 // ---------- write ----------
 rmrf(OUT_BLOG);
+rmrf(OUT_BLOG_EN);
 rmrf(OUT_PROJECTS);
 rmrf(OUT_ASSETS);
 rmrf(OUT_THUMBS);
@@ -629,13 +675,22 @@ const toDate = (v) => {
   return isNaN(d) ? undefined : d.toISOString().slice(0, 10);
 };
 
+/** Page title: the frontmatter `title`, else the file name. */
+const pageTitle = (data, baseTitle) =>
+  (data.title ? String(data.title) : baseTitle.replace(/^_MOC - /, '')).normalize('NFC').replace(/^_MOC_?\s*/, '');
+
+// one page per published note, plus the English version of an article that has one (`en` set)
+const pages = [];
 for (const [abs, dest] of published) {
-  const { data, content } = parsed.get(abs);
+  pages.push({ abs, dest, src: parsed.get(abs) });
+  if (dest.en) pages.push({ abs, dest, src: dest.en.fm, en: dest.en });
+}
+for (const { abs, dest, src, en } of pages) {
+  const { data, content } = src;
   const r = rel(abs);
   const baseTitle = path.basename(abs, '.md');
   const isMoc = data.type === 'MOC' || /^_MOC - /.test(baseTitle);
-  let title = (data.title ? String(data.title) : baseTitle.replace(/^_MOC - /, '')).normalize('NFC');
-  title = title.replace(/^_MOC_?\s*/, '');
+  const title = pageTitle(data, baseTitle);
   const folderParts = path.dirname(r).split('/');
   const fm = {
     title,
@@ -643,16 +698,25 @@ for (const [abs, dest] of published) {
     tags: toArray(data.tags).map(String).filter((t) => t !== 'second-brain'),
     section: dest.collection === 'blog' ? (folderParts[1] || 'Resources').normalize('NFC') : undefined,
     folder: folderParts.slice(dest.collection === 'blog' ? 1 : 0).join(' / ').normalize('NFC'),
-    vaultPath: dest.article ? rel(dest.article) : r,
-    url: dest.url,
+    vaultPath: en ? rel(en.file) : dest.article ? rel(dest.article) : r,
+    url: en ? en.url : dest.url,
     topic: dest.topic,
-    updated: updatedOf(dest.article || abs),
+    updated: updatedOf(en ? en.file : dest.article || abs),
     source: data.source && /^https?:/.test(String(data.source)) ? String(data.source) : undefined,
     date: toDate(data.date),
     status: data.status ? String(data.status) : undefined,
     deadline: toDate(data.deadline),
     order: (baseTitle.match(/^(\d+)/) || [])[1] ? Number(baseTitle.match(/^(\d+)/)[1]) : undefined,
   };
+  // the two language versions of an article point at each other (URL and title of the other page)
+  if (en) {
+    fm.lang = 'en';
+    fm.translationUrl = dest.url;
+    fm.translationTitle = pageTitle(parsed.get(abs).data, baseTitle);
+  } else if (dest.en) {
+    fm.translationUrl = dest.en.url;
+    fm.translationTitle = pageTitle(dest.en.fm.data, baseTitle);
+  }
   if (dest.collection === 'projects') {
     fm.project = dest.project;
     fm.isIndex = dest.isIndex;
@@ -666,11 +730,13 @@ for (const [abs, dest] of published) {
   }
   noteImages = [];
   noteAlts = new Map();
+  noteEn = !!en;
   let body = convertBody(content, abs, stats);
   const images = noteImages;
   const alts = noteAlts;
   noteImages = null;
   noteAlts = null;
+  noteEn = false;
   // vault-side `cover:` picks the photo (`cover: none` turns the automatic pick off)
   let explicitCover = null;
   if (data.cover != null && data.cover !== '') {
@@ -742,10 +808,10 @@ for (const [abs, dest] of published) {
   // a hand-written meta description (frontmatter `description:`, ≤ 160 characters) wins over the first paragraph
   if (data.description) fm.description = String(data.description).replace(/\s+/g, ' ').trim().slice(0, 220);
   for (const k of Object.keys(fm)) if (fm[k] === undefined) delete fm[k];
-  const outDir = dest.collection === 'blog' ? OUT_BLOG : OUT_PROJECTS;
+  const outDir = en ? OUT_BLOG_EN : dest.collection === 'blog' ? OUT_BLOG : OUT_PROJECTS;
   const outFile = path.join(outDir, dest.slug + (dest.isIndex ? '/index' : '') + '.md');
   fm.isIndex = !!dest.isIndex;
-  pending.push({ abs, dest, data, fm, body, outFile, images, alts, explicitCover });
+  pending.push({ abs, dest, data, fm, body, outFile, images, alts, explicitCover, en });
 }
 
 // ---------- images: convert, measure, pick covers ----------
@@ -855,7 +921,7 @@ for (const p of pending) {
   if (fm.cover) stats.covers++;
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, matter.stringify(body, fm));
-  stats.notes++;
+  if (!p.en) stats.notes++;
 }
 fs.mkdirSync(path.dirname(IMAGES_JSON), { recursive: true });
 fs.writeFileSync(
@@ -1013,6 +1079,7 @@ console.log(
     `${[...published.values()].filter((d) => d.collection === 'projects').length} project), ` +
     `${new Set(assetJobs.values()).size} images (${stats.covers} covers, ${stats.gallery} gallery photos, ${stats.noDims} without dimensions). ` +
     `Unpublished link targets: ${stats.unresolved}. Missing/oversized images: ${stats.missingAssets}. Hidden (no real content yet): ${stats0.skeletons}. ` +
-    `Finished articles in place of notes: ${stats1.articles}. Raw notes hidden (articles.only): ${stats1.rawHidden}.` +
+    `Finished articles in place of notes: ${stats1.articles}. English versions of articles: ${stats1.english}. ` +
+    `Raw notes hidden (articles.only): ${stats1.rawHidden}.` +
     (privateDropped.size ? ` Private photos dropped from notes (images.exclude): ${privateDropped.size}.` : '')
 );

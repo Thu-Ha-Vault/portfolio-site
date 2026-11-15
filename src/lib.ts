@@ -1,6 +1,10 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { hasEnglishArticles } from './lib/english';
 
 export type Blog = CollectionEntry<'blog'>;
+export type BlogEn = CollectionEntry<'blog-en'>;
+/** A blog entry in either language (the two collections share one schema). */
+export type Post = Blog | BlogEn;
 export type Project = CollectionEntry<'projects'>;
 
 const collator = new Intl.Collator('vi', { numeric: true, sensitivity: 'base' });
@@ -16,7 +20,7 @@ export function childrenOf<T extends Blog | Project>(all: T[], id: string) {
   return all.filter((e) => e.id !== id && parentId(e.id) === id).sort(byOrder);
 }
 
-export function siblings<T extends Blog | Project>(all: T[], entry: T) {
+export function siblings<T extends Post | Project>(all: T[], entry: T) {
   if (entry.data.isIndex) return { prev: undefined, next: undefined };
   const sibs = all.filter((e) => !e.data.isIndex && parentId(e.id) === parentId(entry.id)).sort(byOrder);
   const i = sibs.findIndex((e) => e.id === entry.id);
@@ -35,6 +39,16 @@ export function breadcrumbs<T extends Blog | Project>(all: T[], id: string) {
 
 export const hasMermaid = (body?: string) => !!body && /```mermaid/.test(body);
 export const blogEntries = async () => (await getCollection('blog')).sort(byOrder);
+/** English versions of articles (no topic pages among them); empty until the vault has one. */
+export const blogEnEntries = async () => (hasEnglishArticles() ? (await getCollection('blog-en')).sort(byOrder) : []);
+/**
+ * The English version (URL and title) of a Vietnamese post that has one. Lists on pages that follow the language
+ * toggle put it in data-href-en / data-en next to the Vietnamese values, and Base.astro swaps them with the UI language.
+ */
+export const englishOf = (p: Post) =>
+  p.data.lang !== 'en' && p.data.translationUrl
+    ? { url: p.data.translationUrl, title: p.data.translationTitle ?? p.data.title }
+    : undefined;
 export const projectEntries = async () => (await getCollection('projects')).sort(byOrder);
 
 export const statusKey = (s?: string) =>

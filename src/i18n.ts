@@ -49,6 +49,12 @@ export const ui = {
 
 export type UiKey = keyof typeof ui;
 
+/**
+ * Pages under /en/ are written in English: they render the English UI on the server and keep it whatever language
+ * the visitor stored with the toggle. Every other page starts in Vietnamese and follows the toggle.
+ */
+export const isEnglishPath = (pathname: string) => pathname === '/en' || pathname.startsWith('/en/');
+
 /** Display names for top-level topics (slug → [vi, en]). Derived from src/data/topics.ts. */
 export const topicNames: Record<string, [string, string]> = Object.fromEntries(
   TOPICS.map((t) => [t.id, [t.names.vi, t.names.en] as [string, string]]),

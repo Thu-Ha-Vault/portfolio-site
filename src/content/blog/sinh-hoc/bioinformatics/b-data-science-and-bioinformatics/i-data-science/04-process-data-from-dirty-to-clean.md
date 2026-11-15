@@ -48,19 +48,19 @@ Ràng buộc dữ liệu (data constraint) quyết định một giá trị có 
 
 **Bảng 1.** Data constraint, định nghĩa và ví dụ sinh học
 
-| Constraint | Giá trị phải… | Ví dụ sinh học | Kiểm tra nhanh |
-| --- | --- | --- | --- |
-| Data type | đúng kiểu | nồng độ glucose là số, không phải “5,6 mmol/L” | `ISNUMBER()`; `pd.to_numeric()` |
-| Data range | nằm trong khoảng định trước | OD trong khoảng tuyến tính của máy đo | Data validation; `BETWEEN` |
-| Mandatory | không trống | sample ID | `COUNTBLANK()`; `isna()` |
-| Unique | không lặp | mã ống mẫu trong một lô | `COUNTIF()`; `HAVING COUNT(*) > 1` |
-| Regular expression | khớp một mẫu chữ | mã GEO dạng GSE + chữ số | `REGEXMATCH()`; `str.fullmatch()` |
-| Cross-field validation | thoả điều kiện giữa nhiều cột | tỷ lệ các loại tế bào cộng lại 100% | so tổng với 100 |
-| Set-membership | thuộc một tập rời rạc | kiểu gen AA, Aa, aa | danh sách thả xuống; `isin()` |
-| Primary key | duy nhất **cho mỗi dòng** | sample ID trong bảng thông tin mẫu | Unique cộng Mandatory |
-| Foreign key | **khớp** khoá ở bảng khác, **không cần** duy nhất | sample ID trong bảng kết quả đo | `LEFT JOIN`, tìm dòng không khớp |
+| Constraint             | Giá trị phải…                                     | Ví dụ sinh học                                 | Kiểm tra nhanh                     |
+| ---------------------- | ------------------------------------------------- | ---------------------------------------------- | ---------------------------------- |
+| Data type              | đúng kiểu                                         | nồng độ glucose là số, không phải “5,6 mmol/L” | `ISNUMBER()`; `pd.to_numeric()`    |
+| Data range             | nằm trong khoảng định trước                       | OD trong khoảng tuyến tính của máy đo          | Data validation; `BETWEEN`         |
+| Mandatory              | không trống                                       | sample ID                                      | `COUNTBLANK()`; `isna()`           |
+| Unique                 | không lặp                                         | mã ống mẫu trong một lô                        | `COUNTIF()`; `HAVING COUNT(*) > 1` |
+| Regular expression     | khớp một mẫu chữ                                  | mã GEO dạng GSE + chữ số                       | `REGEXMATCH()`; `str.fullmatch()`  |
+| Cross-field validation | thoả điều kiện giữa nhiều cột                     | tỷ lệ các loại tế bào cộng lại 100%            | so tổng với 100                    |
+| Set-membership         | thuộc một tập rời rạc                             | kiểu gen AA, Aa, aa                            | danh sách thả xuống; `isin()`      |
+| Primary key            | duy nhất **cho mỗi dòng**                         | sample ID trong bảng thông tin mẫu             | Unique cộng Mandatory              |
+| Foreign key            | **khớp** khoá ở bảng khác, **không cần** duy nhất | sample ID trong bảng kết quả đo                | `LEFT JOIN`, tìm dòng không khớp   |
 
-Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ SQL: Subquery & CASE WHEN, bài 05). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
+Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ SQL: Subquery & CASE WHEN, [bài 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
 
 ### 2.3. Các loại dirty data và ba giai đoạn làm sạch
 
@@ -103,7 +103,7 @@ Theo Wickham (2014), dữ liệu gọn (tidy data) tuân ba quy tắc: mỗi bi�
 | Nhiều loại đơn vị quan sát trong một bảng | tuổi, giới của bệnh nhân lặp lại ở mọi dòng kết quả xét nghiệm | tách thành bảng bệnh nhân và bảng xét nghiệm, nối bằng khoá |
 | Một đơn vị quan sát nằm ở nhiều bảng | mỗi lần chạy máy lưu một file riêng | gộp các file, thêm cột ghi lần chạy |
 
-Dạng rộng (wide) và dạng dài (long) khác nhau ở chỗ biến nằm, không ở việc số dòng nhiều hay ít hơn số cột: ở dạng rộng, giá trị của một biến như “mẫu” trải thành nhiều cột; ở dạng dài, chúng gom về một cột. Chuyển vị (transpose) chỉ đổi chỗ dòng và cột: đủ để sửa một bảng đặt mỗi quan sát thành một cột, nhưng khác với việc gom cột. Ma trận đếm gen × mẫu trong RNA-seq ở dạng rộng; muốn vẽ theo nhóm mẫu, hãy gom về dạng dài bằng `melt()` của pandas rồi nối với bảng thông tin mẫu (→ Python cho phân tích dữ liệu):
+Dạng rộng (wide) và dạng dài (long) khác nhau ở chỗ biến nằm, không ở việc số dòng nhiều hay ít hơn số cột: ở dạng rộng, giá trị của một biến như “mẫu” trải thành nhiều cột; ở dạng dài, chúng gom về một cột. Chuyển vị (transpose) chỉ đổi chỗ dòng và cột: đủ để sửa một bảng đặt mỗi quan sát thành một cột, nhưng khác với việc gom cột. Ma trận đếm gen × mẫu trong RNA-seq ở dạng rộng; muốn vẽ theo nhóm mẫu, hãy gom về dạng dài bằng `melt()` của pandas rồi nối với bảng thông tin mẫu (→ [Python cho phân tích dữ liệu](/blog/introduction-to-data-analysis-using-python/)):
 
 ```python
 import pandas as pd
@@ -537,7 +537,7 @@ Hai điểm cần thận trọng khi áp dụng. Thứ nhất, khi dữ liệu k
 
 ## 8. Kết luận
 
-Làm sạch dữ liệu là một phần của thiết kế nghiên cứu, không phải bước dọn dẹp cuối cùng. Ít lỗi nhất là khi dữ liệu được tổ chức đúng từ đầu, bản gốc được giữ nguyên, và mọi thay đổi đi qua script kèm changelog. Trường hợp tên gen cho thấy công cụ quen thuộc có thể âm thầm làm hỏng dữ liệu của hàng nghìn bài báo, và một bài cảnh báo chưa đủ để đổi thói quen. Các quy tắc dùng nhanh như “n ≥ 30” cần nhường chỗ cho lập luận theo mục tiêu. Bước tiếp theo là gộp bảng: bài 05 bàn về hàm tra cứu và JOIN, nơi một khoá không cùng định dạng hay một chỉ số cột sai có thể tạo lỗi mới.
+Làm sạch dữ liệu là một phần của thiết kế nghiên cứu, không phải bước dọn dẹp cuối cùng. Ít lỗi nhất là khi dữ liệu được tổ chức đúng từ đầu, bản gốc được giữ nguyên, và mọi thay đổi đi qua script kèm changelog. Trường hợp tên gen cho thấy công cụ quen thuộc có thể âm thầm làm hỏng dữ liệu của hàng nghìn bài báo, và một bài cảnh báo chưa đủ để đổi thói quen. Các quy tắc dùng nhanh như “n ≥ 30” cần nhường chỗ cho lập luận theo mục tiêu. Bước tiếp theo là gộp bảng: [bài 05](/blog/analyze-data-to-answer-questions/) bàn về hàm tra cứu và JOIN, nơi một khoá không cùng định dạng hay một chỉ số cột sai có thể tạo lỗi mới.
 
 ## Tài liệu tham khảo
 

@@ -8,7 +8,7 @@ import '../styles/brutal.css';
 import '../styles/cta.css';
 import T from '../components/T.astro';
 import Vesicles from '../components/Vesicles.astro';
-import { ui } from '../i18n';
+import { ui, isEnglishPath } from '../i18n';
 import { topicCss } from '../data/topics';
 import config from '../../site.config.json';
 
@@ -28,9 +28,18 @@ interface Props {
   imageAlt?: string;
   /** Long-form page that is not a reading page (project root pages): the page glow stays in the top-left corner, never behind the column. */
   quietGlow?: boolean;
+  /**
+   * Site-relative URLs of this page in Vietnamese and in English, for a page that exists in both (an article and its
+   * English version, /blog/ and /en/blog/): adds the hreflang links (x-default is the Vietnamese page) and, on the
+   * English page, makes the language toggle a link to the Vietnamese one.
+   */
+  alternates?: { vi: string; en: string };
 }
-const { title, description, mermaid = false, type = 'website', jsonLd, reading = false, image, imageAlt, quietGlow = false } = Astro.props;
+const { title, description, mermaid = false, type = 'website', jsonLd, reading = false, image, imageAlt, quietGlow = false, alternates } = Astro.props;
 const path = Astro.url.pathname;
+// A page under /en/ is written in English: its UI is English from the server and does not follow the stored toggle.
+const en = isEnglishPath(path);
+const L = en ? 1 : 0; // index into the [vi, en] pairs of `ui`
 const home = Astro.props.home ?? path === '/';
 const fullTitle = title ? `${title} | ${config.author.name}` : `${config.author.name} | ${config.author.headline_en}`;
 const desc = description || config.author.bio_en;
@@ -38,9 +47,10 @@ const canonical = new URL(path, Astro.site);
 const ogImage = new URL(image ?? '/og/home.png', Astro.site);
 const nav = [
   { href: '/projects/', k: 'projects' as const },
-  { href: '/blog/', k: 'blog' as const },
+  { href: en ? '/en/blog/' : '/blog/', k: 'blog' as const },
   { href: '/topics/', k: 'topics' as const },
 ];
+const feed = en ? '/en/rss.xml' : '/rss.xml';
 const links = Object.entries(config.author.links).filter(([, v]) => v) as [string, string][];
 const label: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', linkedin: 'LinkedIn', tableau: 'Tableau Public', email: 'Email' };
 // 24×24 glyphs for the footer icon squares. `fill` icons are filled, the rest are stroked.
@@ -65,7 +75,7 @@ const ctaHref = `${config.cta.url}?${config.cta.utm}&utm_campaign=footer`;
 const [readVi, readEn] = ui.readingLight;
 ---
 <!doctype html>
-<html lang="vi" data-reading-page={reading ? '' : undefined}>
+<html lang={en ? 'en' : 'vi'} data-lang-fixed={en ? '' : undefined} data-reading-page={reading ? '' : undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -74,11 +84,20 @@ const [readVi, readEn] = ui.readingLight;
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
     <link rel="canonical" href={canonical} />
+    {alternates && (
+      <Fragment>
+        <link rel="alternate" hreflang="vi" href={new URL(alternates.vi, Astro.site)} />
+        <link rel="alternate" hreflang="en" href={new URL(alternates.en, Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={new URL(alternates.vi, Astro.site)} />
+      </Fragment>
+    )}
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title ?? config.author.name} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={config.author.name} />
+    <meta property="og:locale" content={en ? 'en_US' : 'vi_VN'} />
+    {alternates && <meta property="og:locale:alternate" content={en ? 'vi_VN' : 'en_US'} />}
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -88,7 +107,7 @@ const [readVi, readEn] = ui.readingLight;
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate" type="application/rss+xml" title={`${config.author.name} blog`} href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${config.author.name} blog`} href={feed} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preload" href="/fonts/noto-serif-display-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/be-vietnam-pro-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -101,7 +120,8 @@ const [readVi, readEn] = ui.readingLight;
           // The old site stored theme=light|dark. The site is dark-only now, so drop it.
           localStorage.removeItem('theme');
           var l = localStorage.getItem('lang');
-          if (l === 'en' || l === 'vi') d.lang = l;
+          // a page written in English (data-lang-fixed) keeps lang="en" whatever the visitor stored
+          if (!d.hasAttribute('data-lang-fixed') && (l === 'en' || l === 'vi')) d.lang = l;
           if (d.hasAttribute('data-reading-page') && localStorage.getItem('reading') === 'light') d.dataset.reading = 'light';
         } catch (e) {}
       })();
@@ -114,8 +134,8 @@ const [readVi, readEn] = ui.readingLight;
     )}
     <header class:list={['masthead', { 'is-frosted': !home }]} data-masthead>
       <div class="wrap masthead-inner">
-        <a class="wordmark" href="/" aria-label={`${config.author.name}, ${ui.home[0]}`} data-aria-vi={`${config.author.name}, ${ui.home[0]}`} data-aria-en={`${config.author.name}, ${ui.home[1]}`}>{config.author.name}</a>
-        <nav class="nav" aria-label={ui.mainNav[0]} data-aria-vi={ui.mainNav[0]} data-aria-en={ui.mainNav[1]}>
+        <a class="wordmark" href="/" aria-label={`${config.author.name}, ${ui.home[L]}`} data-aria-vi={`${config.author.name}, ${ui.home[0]}`} data-aria-en={`${config.author.name}, ${ui.home[1]}`}>{config.author.name}</a>
+        <nav class="nav" aria-label={ui.mainNav[L]} data-aria-vi={ui.mainNav[0]} data-aria-en={ui.mainNav[1]}>
           {nav.map((n) => (
             <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}><T k={n.k} /></a>
           ))}
@@ -124,13 +144,18 @@ const [readVi, readEn] = ui.readingLight;
           {reading && (
             <button class="toggle toggle-reading" id="reading-toggle" type="button" aria-pressed="false">
               <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="3.6" fill="currentColor" /><path d="M10 1.8v2.4M10 15.8v2.4M1.8 10h2.4M15.8 10h2.4M4.2 4.2l1.7 1.7M14.1 14.1l1.7 1.7M4.2 15.8l1.7-1.7M14.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
-              <span class="toggle-text"><span data-vi={readVi} data-en={readEn}>{readVi}</span></span>
+              <span class="toggle-text"><span data-vi={readVi} data-en={readEn}>{en ? readEn : readVi}</span></span>
             </button>
           )}
-          {/* The accessible name is the visible word (WCAG 2.5.3), spoken in its own language. */}
-          <button class="toggle" id="lang-toggle" type="button">
-            <span lang="en" data-vi="English" data-en="Tiếng Việt" data-lang-vi="en" data-lang-en="vi">English</span>
-          </button>
+          {/* The accessible name is the visible word (WCAG 2.5.3), spoken in its own language. On a page written in
+              English the toggle is a link to its Vietnamese version (or to the home page when it has none). */}
+          {en ? (
+            <a class="toggle" id="lang-toggle" href={alternates?.vi ?? '/'} lang="vi" hreflang="vi">Tiếng Việt</a>
+          ) : (
+            <button class="toggle" id="lang-toggle" type="button">
+              <span lang="en" data-vi="English" data-en="Tiếng Việt" data-lang-vi="en" data-lang-en="vi">English</span>
+            </button>
+          )}
         </div>
       </div>
     </header>
@@ -154,7 +179,7 @@ const [readVi, readEn] = ui.readingLight;
               </li>
             ))}
             <li>
-              <a class="icon-square" href="/rss.xml" aria-label="RSS" title="RSS">
+              <a class="icon-square" href={feed} aria-label="RSS" title="RSS">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d={icons.rss.d} /></svg>
               </a>
             </li>
@@ -194,9 +219,19 @@ const [readVi, readEn] = ui.readingLight;
             var v = el.getAttribute('data-lang-' + lang);
             if (v != null) el.setAttribute('lang', v);
           });
+          // a link to a post that also has an English version leads to the page in the UI language
+          document.querySelectorAll('[data-href-vi]').forEach(function (el) {
+            var v = el.getAttribute('data-href-' + lang);
+            if (v != null) el.setAttribute('href', v);
+          });
         }
         apply(root.lang === 'en' ? 'en' : 'vi');
         document.getElementById('lang-toggle').addEventListener('click', function () {
+          // On a page written in English the toggle is a link to the Vietnamese page: store the choice and follow it.
+          if (root.hasAttribute('data-lang-fixed')) {
+            try { localStorage.setItem('lang', 'vi'); } catch (e) {}
+            return;
+          }
           var next = root.lang === 'en' ? 'vi' : 'en';
           try { localStorage.setItem('lang', next); } catch (e) {}
           apply(next);

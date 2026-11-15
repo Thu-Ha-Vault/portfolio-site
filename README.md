@@ -32,6 +32,30 @@ share buttons (Facebook, LinkedIn, X, Threads, copy link) and a CEOVANTA call-to
 (`utm_source=portfolio&utm_medium=referral&utm_campaign=<home|post_<topic>|project_<slug>|footer>`) so visits
 from this site show up separately in ceovanta.com analytics.
 
+## Articles and their English versions
+
+The blog publishes finished articles from `Projects/Portfolio Website/Bài viết/<topic>/BV - <name>.md`
+(`type: article`, `replaces: "<source note path under Resources/>"`). Each one takes the URL of its source note,
+`/blog/<slug>/` (`articles` in `site.config.json`). An article can also have an English version:
+
+- **Vault:** a file next to the Vietnamese one, `BV - <name> (EN).md`, with `type: article`, `lang: en`, the same
+  `replaces:` value, `translation_of: "[[BV - <name>]]"`, an English `title` and `description` (at most 155
+  characters), and the usual `status`, `date`, `word_count`, `parent`, `tags`. The Vietnamese article has no `lang`
+  key. The body follows the same rules as any article (`**Links:**` line, wikilinks, `![[image.png]]` embeds).
+- **Site:** `/en/blog/<slug>/`, at the slug of the Vietnamese page, always with the English UI and
+  `<html lang="en">`. `/en/blog/` lists the English articles and `/en/rss.xml` is their feed. The sync writes them to
+  `src/content/blog-en/` (same inner paths as `src/content/blog/`); both entries of a pair carry `translationUrl` and
+  `translationTitle`. No page under `/en/` is built while the vault has no English article (the feed is empty).
+- **Pairing:** by `replaces`, not by file name. The English version is published only while its Vietnamese article
+  is; `publish: false` on the English file hides the English page alone.
+- **Links:** inside an English article a wikilink leads to the English page of its target when there is one and to
+  the Vietnamese page otherwise. `[[BV - <name> (EN)]]` leads to the English page from any note.
+- **Pages:** both versions have `hreflang` links (`vi`, `en`, `x-default` → Vietnamese), their own canonical URL,
+  `inLanguage` in the JSON-LD and a link to the other version in the byline ("Read in English" / "Đọc bản tiếng
+  Việt"). The blog index, the home list and the topic pages show the English title and link to the English page
+  while the UI is in English (`data-en` / `data-href-en`, swapped by the language toggle in `Base.astro`).
+  The sitemap lists both versions as each other's alternates.
+
 ## Design
 
 "Thin film" (full spec: `docs/redesign-spec.md`). The whole site sits in the galaxy's violet space: iridescent

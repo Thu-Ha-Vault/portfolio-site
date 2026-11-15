@@ -9,7 +9,8 @@ import rehypeTableScroll from './src/lib/rehype-table-scroll.mjs';
 export default defineConfig({
   site: 'https://thuha.ceovanta.com',
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  // i18n: an article's two language versions (/blog/<slug>/ and /en/blog/<slug>/) are listed as each other's alternates
+  integrations: [sitemap({ i18n: { defaultLocale: 'vi', locales: { vi: 'vi', en: 'en' } } })],
   // three.module (~750 kB) is the only large chunk; Galaxy.astro loads it with a lazy dynamic import()
   // once the hero scrolls into view, so it never blocks first paint. Raise the limit to that size only.
   vite: { build: { chunkSizeWarningLimit: 800 } },

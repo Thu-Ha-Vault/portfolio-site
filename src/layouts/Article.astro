@@ -1,0 +1,120 @@
+---
+/**
+ * Article page, shared by /blog/<slug>/ and by the English version of an article at /en/blog/<slug>/.
+ * An article published in both languages gets hreflang links, `inLanguage` in its JSON-LD and, in the byline, a link
+ * to its other version. The English page reuses the cover and OG image of the Vietnamese page unless it has a photo
+ * of its own, and its previous/next links stay among the English articles.
+ */
+import { render } from 'astro:content';
+import Base from './Base.astro';
+import T from '../components/T.astro';
+import Cover from '../components/Cover.astro';
+import ShareBar from '../components/ShareBar.astro';
+import Cta from '../components/Cta.astro';
+import config from '../../site.config.json';
+import { siblings, breadcrumbs, englishOf, hasMermaid, fmtDate, type Blog, type Post } from '../lib';
+import { topicNames, ui } from '../i18n';
+import { glyphSvg, topicVar } from '../data/topics';
+import { ogUrl } from '../lib/cover';
+
+interface Props {
+  entry: Post;
+  /** posts in the entry's language (previous and next) */
+  all: Post[];
+  /** the Vietnamese collection with its topic pages (breadcrumbs); defaults to `all` */
+  tree?: Blog[];
+}
+const { entry, all } = Astro.props;
+const tree = Astro.props.tree ?? (all as Blog[]);
+const { Content } = await render(entry);
+const d = entry.data;
+const en = d.lang === 'en';
+const L = en ? 1 : 0; // index into the [vi, en] pairs of `ui`
+const { prev, next } = siblings(all, entry);
+const crumbs = breadcrumbs(tree, entry.id);
+const url = new URL(d.url, Astro.site).toString();
+// URL of each language version, when the article has both
+const alternates = d.translationUrl ? (en ? { vi: d.translationUrl, en: d.url } : { vi: d.url, en: d.translationUrl }) : undefined;
+const other = d.translationUrl && new URL(d.translationUrl, Astro.site).toString();
+// Covers and OG images are generated per Vietnamese page. The English page shows its own photo when it has one,
+// otherwise the cover of the Vietnamese page (as decoration: that page's alt text is Vietnamese).
+const viUrl = alternates?.vi ?? d.url;
+const coverEntry = en && !d.cover ? (tree.find((e) => e.id === entry.id) ?? { data: { ...d, url: viUrl } }) : entry;
+const [topicVi, topicEn] = d.topic ? (topicNames[d.topic] ?? [d.topic, d.topic]) : ['', ''];
+// Reading time from the markdown body: strip code, math, links and markup, then about 220 words a minute.
+const words = (entry.body ?? '')
+  .replace(/```[\s\S]*?```/g, ' ')
+  .replace(/\$\$[\s\S]*?\$\$/g, ' ')
+  .replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/[#>*_`|\-]+/g, ' ')
+  .split(/\s+/)
+  .filter(Boolean).length;
+const minutes = Math.max(1, Math.round(words / 220));
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  dateModified: d.updated,
+  url,
+  inLanguage: en ? 'en' : 'vi',
+  ...(other ? { [en ? 'translationOfWork' : 'workTranslation']: { '@type': 'BlogPosting', '@id': other } } : {}),
+  image: new URL(ogUrl(viUrl), Astro.site).toString(),
+  author: { '@type': 'Person', name: config.author.name, url: config.site },
+  keywords: d.tags.join(', '),
+};
+---
+<Base title={d.title} description={d.description} mermaid={hasMermaid(entry.body)} type="article" jsonLd={jsonLd} reading image={ogUrl(viUrl)} alternates={alternates}>
+  <div class="wrap article">
+    <div class="post-top">
+      <Cover entry={coverEntry} alt={coverEntry === entry ? undefined : ''} class="post-cover" loading="eager" fetchpriority="high" />
+      <nav class="crumbs-nav" aria-label={ui.crumbs[L]} data-aria-vi={ui.crumbs[0]} data-aria-en={ui.crumbs[1]}>
+        <ol class="crumbs">
+          <li><a href={en ? '/en/blog/' : '/blog/'}><T k="blog" /></a></li>
+          {crumbs.map((c, i) => <li><a href={c.url}>{en && i === 0 && d.topic ? topicEn : c.title}</a></li>)}
+        </ol>
+      </nav>
+      <header class="article-head">
+        <h1>{d.title}</h1>
+        <p class="byline">
+          {d.topic && (
+            <span class="byline-topic" style={`--tc:${topicVar(d.topic)}`}>
+              <Fragment set:html={glyphSvg(d.topic, 12)} />
+              <T vi={topicVi} en={topicEn} />
+            </span>
+          )}
+          {d.updated && <span><T k="updated" /> <time datetime={d.updated}>{fmtDate(d.updated)}</time></span>}
+          <span>{minutes} <T vi="phút đọc" en="min read" /></span>
+          {d.source && <span><a href={d.source} rel="noopener"><T k="source" /></a></span>}
+          {/* The link to the other version is written in that version's language, whatever the UI language is. */}
+          {alternates && (
+            <span>
+              {en
+                ? <a href={alternates.vi} hreflang="vi" lang="vi">Đọc bản tiếng Việt</a>
+                : <a href={alternates.en} hreflang="en" lang="en">Read in English</a>}
+            </span>
+          )}
+        </p>
+      </header>
+    </div>
+    <article class="prose"><Content /></article>
+    <div class="after">
+      {(prev || next) && (
+        <nav class="pager" aria-label={en ? 'Previous and next' : 'Bài trước và bài sau'} data-aria-vi="Bài trước và bài sau" data-aria-en="Previous and next">
+          {[prev, next].map((p, i) => {
+            if (!p) return null;
+            const e = englishOf(p);
+            return (
+              <a class={i ? 'next' : 'prev'} href={p.data.url} data-href-vi={e && p.data.url} data-href-en={e?.url}>
+                <small><T k={i ? 'next' : 'prev'} /></small>
+                <span data-vi={e && p.data.title} data-en={e?.title}>{p.data.title}</span>
+              </a>
+            );
+          })}
+        </nav>
+      )}
+      <ShareBar url={url} title={d.title} />
+      <Cta campaign={`post_${d.topic ?? 'blog'}`} />
+    </div>
+  </div>
+</Base>

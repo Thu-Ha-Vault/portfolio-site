@@ -4,31 +4,35 @@
  * - `thumbs` (home "Mới cập nhật" only): a 56px procedural cover thumb on the left at 640px and up (§7.1).
  *   /blog/ rows and search results never get images.
  * - `filterable`: adds data-topic / data-q for the /blog/ search script.
+ * A Vietnamese post that has an English version also carries its English title and URL (data-en, data-href-en):
+ * Base.astro shows those while the UI is in English. On /en/blog/ the posts are the English versions themselves.
  * The topic hex only colours the polyhedron glyph; the topic name stays --ink-soft (§2 colour semantics).
  */
+import T from './T.astro';
 import { topicNames } from '../i18n';
-import { fmtDate, type Blog } from '../lib';
+import { englishOf, fmtDate, type Post } from '../lib';
 import { glyphSvg, topicVar } from '../data/topics';
 import { thumbUrl, COVER_SIZE } from '../lib/cover';
-interface Props { posts: Blog[]; id?: string; filterable?: boolean; thumbs?: boolean }
+interface Props { posts: Post[]; id?: string; filterable?: boolean; thumbs?: boolean }
 const { posts, id, filterable = false, thumbs = false } = Astro.props;
 ---
 <ul class:list={['rows', { 'has-thumbs': thumbs }]} id={id}>
   {posts.map((p) => {
     const topic = p.data.topic ?? '';
     const [vi, en] = topicNames[topic] ?? [topic, topic];
+    const english = englishOf(p);
     return (
-      <li data-topic={filterable ? topic : undefined} data-q={filterable ? `${p.data.title} ${p.data.folder ?? ''} ${p.data.tags.join(' ')} ${vi} ${en}`.toLowerCase() : undefined}>
-        <a href={p.data.url}>
+      <li data-topic={filterable ? topic : undefined} data-q={filterable ? `${p.data.title} ${english ? english.title + ' ' : ''}${p.data.folder ?? ''} ${p.data.tags.join(' ')} ${vi} ${en}`.toLowerCase() : undefined}>
+        <a href={p.data.url} data-href-vi={english && p.data.url} data-href-en={english?.url}>
           {thumbs && (
             <img class="row-thumb" src={thumbUrl(p.data.url)} width={COVER_SIZE.thumb.width} height={COVER_SIZE.thumb.height} alt="" aria-hidden="true" loading="lazy" decoding="async" />
           )}
           <time datetime={p.data.updated}>{fmtDate(p.data.updated)}</time>
-          <span class="t">{p.data.title}</span>
+          <span class="t" data-vi={english && p.data.title} data-en={english?.title}>{p.data.title}</span>
           {topic && (
             <span class="where" style={`--tc:${topicVar(topic)}`}>
               <Fragment set:html={glyphSvg(topic, 12)} />
-              <span data-vi={vi} data-en={en}>{vi}</span>
+              <T vi={vi} en={en} />
             </span>
           )}
         </a>

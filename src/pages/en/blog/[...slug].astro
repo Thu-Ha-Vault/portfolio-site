@@ -1,0 +1,20 @@
+---
+// The English blog: /en/blog/ lists the articles that have an English version, and /en/blog/<slug>/ is each of them
+// at the slug of its Vietnamese page (/blog/<slug>/). No page is built while the vault has no English article.
+import Article from '../../../layouts/Article.astro';
+import BlogList from '../../../layouts/BlogList.astro';
+import { blogEntries, blogEnEntries, byUpdated, param } from '../../../lib';
+
+export async function getStaticPaths() {
+  const all = await blogEnEntries();
+  if (!all.length) return [];
+  const tree = await blogEntries();
+  return [
+    { params: { slug: undefined }, props: { all } },
+    // param() drops the first URL segment: for /en/blog/<slug>/ that is the /en prefix, so the route is named after its own URL
+    ...all.map((entry) => ({ params: { slug: param(entry.data.url.replace(/^\/en/, '')) }, props: { entry, all, tree } })),
+  ];
+}
+const { entry, all, tree } = Astro.props;
+---
+{entry ? <Article entry={entry} all={all} tree={tree} /> : <BlogList posts={[...all].sort(byUpdated)} />}

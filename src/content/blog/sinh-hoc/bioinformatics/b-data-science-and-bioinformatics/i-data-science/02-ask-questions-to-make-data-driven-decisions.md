@@ -181,7 +181,7 @@ Không có mục tiêu rõ thì không biết đâu là "thông tin quan trọng
 | Tốc độ thay đổi của dữ liệu | chậm, cần ảnh chụp tại một thời điểm | nhanh, người dùng cần biết ngay |
 | Rủi ro dữ liệu | cần làm sạch, kiểm tra trước mỗi lần dùng | đường ống ổn định, có kiểm tra tự động |
 
-Dashboard thường được chia theo người dùng thành **strategic** (mục tiêu dài hạn), **operational** (theo dõi ngắn hạn) và **analytical** (chi tiết dữ liệu, cho nhóm phân tích). Loại nào thì mỗi ô cũng nên ứng với một **metric**: một loại dữ liệu đơn lẻ, định lượng được. Metric gắn với mức cần đạt thành **metric goal**, như một tỷ lệ giữ chân khách hàng mục tiêu, hay ROI tính bằng lợi nhuận ròng trong kỳ chia chi phí đầu tư. Chữ M của SMART chỉ có nghĩa khi câu hỏi chỉ ra được một metric có đơn vị và cách tính; hàm spreadsheet để tính metric ở bài 05, cách chọn biểu đồ ở bài 06.
+Dashboard thường được chia theo người dùng thành **strategic** (mục tiêu dài hạn), **operational** (theo dõi ngắn hạn) và **analytical** (chi tiết dữ liệu, cho nhóm phân tích). Loại nào thì mỗi ô cũng nên ứng với một **metric**: một loại dữ liệu đơn lẻ, định lượng được. Metric gắn với mức cần đạt thành **metric goal**, như một tỷ lệ giữ chân khách hàng mục tiêu, hay ROI tính bằng lợi nhuận ròng trong kỳ chia chi phí đầu tư. Chữ M của SMART chỉ có nghĩa khi câu hỏi chỉ ra được một metric có đơn vị và cách tính; hàm spreadsheet để tính metric ở [bài 05](/blog/analyze-data-to-answer-questions/), cách chọn biểu đồ ở [bài 06](/blog/share-data-through-the-art-of-visualization/).
 
 ## 5. Minh hoạ: biến câu hỏi mơ hồ thành câu hỏi đo được
 

@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { EN_CONTENT_DIR, hasEnglishArticles } from './lib/english';
 
 const base = {
   title: z.string(),
@@ -25,9 +26,31 @@ const base = {
 
 const id = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '').replace(/\/index$/, '');
 
+const post = z.object({
+  ...base,
+  section: z.string().optional(),
+  /** `en` on the English version of an article (collection `blog-en`); the sync leaves it out on Vietnamese pages. */
+  lang: z.enum(['vi', 'en']).default('vi'),
+  /** an article published in both languages: URL and title of its other version */
+  translationUrl: z.string().optional(),
+  translationTitle: z.string().optional(),
+});
+
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog', generateId: id }),
-  schema: z.object({ ...base, section: z.string().optional() }),
+  schema: post,
+});
+
+// English versions of articles, at the inner paths of their Vietnamese pages in `blog` (ids match across the two).
+// While no article has one the folder is empty; glob() would then warn and keep the entries cached by an earlier
+// build, so the collection is emptied here instead.
+const englishGlob = glob({ pattern: '**/*.md', base: `./${EN_CONTENT_DIR}`, generateId: id });
+const blogEn = defineCollection({
+  loader: {
+    ...englishGlob,
+    load: async (context) => (hasEnglishArticles() ? englishGlob.load(context) : context.store.clear()),
+  },
+  schema: post,
 });
 
 const projects = defineCollection({
@@ -45,4 +68,4 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, projects };
+export const collections = { blog, 'blog-en': blogEn, projects };
