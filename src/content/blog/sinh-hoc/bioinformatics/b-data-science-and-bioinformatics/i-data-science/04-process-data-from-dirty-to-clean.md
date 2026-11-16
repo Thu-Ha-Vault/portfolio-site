@@ -294,7 +294,7 @@ clean.loc[clean["Number"] == "8", "flag"] = "Total khác Units × Unit Cost"
 clean.loc[clean["Number"] == "9", "flag"] = "nghi trùng đơn 6"
 ```
 
-`str.title()`, như PROPER trong Sheets, biến “McDonald” thành “Mcdonald” và ký hiệu gen người “BRCA1” thành “Brca1”, nên tên người hay tên gen phải chuẩn hoá theo danh sách nhãn chuẩn (set-membership ở Bảng 1) chứ không theo quy tắc viết hoa. Thao tác tương tự trong R: Thao tác dữ liệu trong R.
+`str.title()`, như PROPER trong Sheets, biến “McDonald” thành “Mcdonald” và ký hiệu gen người “BRCA1” thành “Brca1”, nên tên người hay tên gen phải chuẩn hoá theo danh sách nhãn chuẩn (set-membership ở Bảng 1) chứ không theo quy tắc viết hoa. Thao tác tương tự trong R: [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/).
 
 ### 4.4. Bước 3: verification
 

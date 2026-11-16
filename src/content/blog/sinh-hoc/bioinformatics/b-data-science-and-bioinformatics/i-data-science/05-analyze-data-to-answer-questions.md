@@ -530,7 +530,7 @@ Trình bày kết quả tổng hợp sao cho người đọc thấy cả con s�
 
 ## Phụ lục: bảng tra nhanh
 
-**Bảng 4.** Cùng một thao tác trên bốn công cụ (cột R: Thao tác dữ liệu trong R)
+**Bảng 4.** Cùng một thao tác trên bốn công cụ (cột R: [Thao tác dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/))
 
 | Thao tác | Google Sheets | SQL | pandas | R |
 | --- | --- | --- | --- | --- |

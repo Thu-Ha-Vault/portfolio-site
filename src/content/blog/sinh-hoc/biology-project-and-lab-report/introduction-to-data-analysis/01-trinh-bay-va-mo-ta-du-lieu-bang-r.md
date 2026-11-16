@@ -340,7 +340,7 @@ Checklist tám bước trước khi đưa một biểu đồ vào báo cáo:
 7. Ghi seed, `RNGkind()` và `sessionInfo()`; xuất hình bằng code với kích thước cố định.
 8. Đọc lại hình như một người lạ: không có chú thích của bạn, họ có hiểu đúng không?
 
-Bài tiếp theo, các thao tác với dữ liệu trong R, đi vào chọn, lọc và xử lý dữ liệu thiếu; quantile, hinge và outlier có ở bài thống kê mô tả; còn [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/) là bước nên làm trước khi vẽ bất kỳ biểu đồ nào.
+Bài tiếp theo, [các thao tác với dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/), đi vào chọn, lọc và xử lý dữ liệu thiếu; quantile, hinge và outlier có ở bài thống kê mô tả; còn [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/) là bước nên làm trước khi vẽ bất kỳ biểu đồ nào.
 
 ## Tài liệu tham khảo
 

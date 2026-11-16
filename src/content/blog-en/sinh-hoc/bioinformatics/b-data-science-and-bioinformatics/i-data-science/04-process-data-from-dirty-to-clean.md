@@ -294,7 +294,7 @@ clean.loc[clean["Number"] == "8", "flag"] = "Total differs from Units × Unit Co
 clean.loc[clean["Number"] == "9", "flag"] = "suspected duplicate of order 6"
 ```
 
-`str.title()`, like PROPER in Sheets, turns “McDonald” into “Mcdonald” and the human gene symbol “BRCA1” into “Brca1,” so personal names and gene names must be normalized against a list of standard labels (set-membership in Table 1), not by a capitalization rule. The same operations in R: Data manipulation in R.
+`str.title()`, like PROPER in Sheets, turns “McDonald” into “Mcdonald” and the human gene symbol “BRCA1” into “Brca1,” so personal names and gene names must be normalized against a list of standard labels (set-membership in Table 1), not by a capitalization rule. The same operations in R: [Data manipulation in R](/en/blog/cac-thao-tac-voi-du-lieu-trong-r/).
 
 ### 4.4. Step 3: verification
 
