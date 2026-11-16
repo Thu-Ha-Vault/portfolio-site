@@ -341,7 +341,7 @@ An eight-step checklist before a chart goes into a report:
 7. Record the seed, `RNGkind()` and `sessionInfo()`; export figures from code at a fixed size.
 8. Reread the chart as a stranger would: without your explanation, would they read it correctly?
 
-The next article, data manipulation in R, covers selecting, filtering and handling missing data; quantiles, hinges and outliers are in the descriptive statistics article; and [data cleaning](/blog/process-data-from-dirty-to-clean/) is the step to take before drawing any chart at all.
+The next article, data manipulation in R, covers selecting, filtering and handling missing data; quantiles, hinges and outliers are in the descriptive statistics article; and [data cleaning](/en/blog/process-data-from-dirty-to-clean/) is the step to take before drawing any chart at all.
 
 ## References
 

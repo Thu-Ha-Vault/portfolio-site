@@ -50,7 +50,7 @@ flowchart TB
 
 The same three questions appear in materials for research participants: a Vietnamese-language information sheet on donating cells for stem cell research suggests that donors ask whether their information will be linked to the cell line and whether the cell line will be shared with other researchers, and it states plainly that a cell line contains genetic information that can be linked back to the donor's identity (*Nghiên cứu tế bào gốc*, n.d.).
 
-The article covers only assessing, describing, and protecting data **before** cleaning, which is the subject of [article 04](/blog/process-data-from-dirty-to-clean/). It is a selective review, not legal advice.
+The article covers only assessing, describing, and protecting data **before** cleaning, which is the subject of [article 04](/en/blog/process-data-from-dirty-to-clean/). It is a selective review, not legal advice.
 
 ## 2. Part 1: Bias and source reliability
 
@@ -371,7 +371,7 @@ Back to the central question: is deleting names enough to protect health and gen
 
 ## 6. Conclusion
 
-Bias is systematic error and does not shrink as data grows; without probability sampling, the size of a dataset must be measured as a fraction of the population (Meng, 2018). Metadata is the precondition for reusing data, and FAIR does not mean open (Wilkinson et al., 2016). Deleting names, masking, hashing, or tokenizing usually produces only pseudonymized data, not anonymous data, especially with genetic data (Article 29 Data Protection Working Party, 2014). Once a dataset has passed all three layers of checks, the next step is cleaning it, the subject of [article 04](/blog/process-data-from-dirty-to-clean/).
+Bias is systematic error and does not shrink as data grows; without probability sampling, the size of a dataset must be measured as a fraction of the population (Meng, 2018). Metadata is the precondition for reusing data, and FAIR does not mean open (Wilkinson et al., 2016). Deleting names, masking, hashing, or tokenizing usually produces only pseudonymized data, not anonymous data, especially with genetic data (Article 29 Data Protection Working Party, 2014). Once a dataset has passed all three layers of checks, the next step is cleaning it, the subject of [article 04](/en/blog/process-data-from-dirty-to-clean/).
 
 ## References
 

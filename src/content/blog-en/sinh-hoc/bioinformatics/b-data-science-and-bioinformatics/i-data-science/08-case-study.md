@@ -114,7 +114,7 @@ From `started_at` and `ended_at` come `ride_min` (ride length in minutes), day o
 
 ### 3.3. Cleaning with a changelog
 
-The principles come from [article 04](/blog/process-data-from-dirty-to-clean/): the raw data are never edited, every step lives in code, each row is one ride in keeping with tidy data (Wickham, 2014; Broman & Woo, 2018; Wilson et al., 2017), and implicit assumptions are written as `assert` statements so errors surface early (Buffalo, 2015). The code below loads the 12 files, checks the assumptions, and prints the changelog.
+The principles come from [article 04](/en/blog/process-data-from-dirty-to-clean/): the raw data are never edited, every step lives in code, each row is one ride in keeping with tidy data (Wickham, 2014; Broman & Woo, 2018; Wilson et al., 2017), and implicit assumptions are written as `assert` statements so errors surface early (Buffalo, 2015). The code below loads the 12 files, checks the assumptions, and prints the changelog.
 
 ```python
 import re, zipfile, pathlib

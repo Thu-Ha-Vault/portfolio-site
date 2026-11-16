@@ -54,7 +54,7 @@ The data analysis process of the Google Data Analytics program has six phases (G
 
 - **Ask**: define the problem, meaning the gap between the current state and the desired state, and understand what the stakeholders expect.
 - **Prepare**: identify sources, collect the data, and check that the data are accurate and useful; the program's materials also place creating, storing, and managing data in this phase.
-- **Process**: clean the data, handle missing values, convert formats, and combine datasets; outliers are detected, diagnosed, and removed only for a reason that can be documented ([Part 4](/blog/process-data-from-dirty-to-clean/)).
+- **Process**: clean the data, handle missing values, convert formats, and combine datasets; outliers are detected, diagnosed, and removed only for a reason that can be documented ([Part 4](/en/blog/process-data-from-dirty-to-clean/)).
 - **Analyze**: run calculations and look for trends and patterns.
 - **Share**: present and interpret the results for decision-makers.
 - **Act**: put the results to work.
@@ -267,7 +267,7 @@ flowchart TB
 
 **Validate** is where analysts argue against their own results, like Evaluation in CRISP-DM or step 9 in KDD, but with the tools of statistics and reproducibility. **Share** includes making the figures checkable by others: avoid manual data manipulation and store the raw data behind every figure (Sandve et al., 2013). **Archive** comes after Share but should be prepared for from Design onward, the same reason USGS places Preserve before Publish/Share; the code and the software environment need archiving as well (Reproducible workflows). **Act** in research is usually the next experiment, just as in PPDAC: the outcome of this cycle starts the next one (Wild & Pfannkuch, 1999).
 
-Each row of Table 2 corresponds to a later article, so the table doubles as the table of contents for the series: Ask in Part 2, Prepare in Part 3, Process in [Part 4](/blog/process-data-from-dirty-to-clean/), Analyze in [Part 5](/blog/analyze-data-to-answer-questions/), Share in [Part 6](/blog/share-data-through-the-art-of-visualization/), and the whole loop on real data in [Part 8](/en/blog/case-study/). The big picture of a bioinformatics project is in Introduction to Bioinformatics.
+Each row of Table 2 corresponds to a later article, so the table doubles as the table of contents for the series: Ask in Part 2, Prepare in Part 3, Process in [Part 4](/en/blog/process-data-from-dirty-to-clean/), Analyze in [Part 5](/blog/analyze-data-to-answer-questions/), Share in [Part 6](/blog/share-data-through-the-art-of-visualization/), and the whole loop on real data in [Part 8](/en/blog/case-study/). The big picture of a bioinformatics project is in Introduction to Bioinformatics.
 
 ## 6. Discussion: which model to use, and when
 

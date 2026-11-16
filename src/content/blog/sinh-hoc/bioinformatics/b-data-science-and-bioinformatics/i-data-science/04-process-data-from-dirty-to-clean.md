@@ -16,10 +16,12 @@ vaultPath: >-
   to Clean.md
 url: /blog/process-data-from-dirty-to-clean/
 topic: biology
-updated: '2026-11-13'
+updated: '2026-11-16'
 date: '2026-11-13'
 status: draft
 order: 4
+translationUrl: /en/blog/process-data-from-dirty-to-clean/
+translationTitle: 'Dirty Data in Science: From Excel Gene-Name Errors to the “n ≥ 30” Myth'
 description: >-
   Dữ liệu khoa học có thể bẩn theo những cách khó nhận ra, và chính công cụ quen
   thuộc cũng gây lỗi: 30,9% số bài báo có danh sách gen dạng Excel trên PubMed

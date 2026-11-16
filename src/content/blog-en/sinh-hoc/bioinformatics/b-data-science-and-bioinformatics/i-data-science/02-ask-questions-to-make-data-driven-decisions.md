@@ -129,7 +129,7 @@ Sections 3.2 and 3.3 quietly assume that the data measure what they are supposed
 
 **The wrong proxy.** Obermeyer et al. (2019) analyzed a commercial algorithm that selects patients for extra-care programs. The algorithm predicted health care **costs**, using cost as a proxy for **need**. Because less money is spent on the care of Black patients, at the same risk score they were sicker than White patients; removing this disparity would raise the share of Black patients receiving additional help from **17.7% to 46.5%**. This is an Ask-phase error: "Who needs care the most?" was silently replaced with "Who will cost the most?"
 
-**Data you cannot see.** Hand (2020) calls the data we do not have or cannot see "dark data," from missing values to cases that were never recorded at all, and argues that this is the very part that can distort conclusions. Incomplete data, data whose definitions do not match across groups, and dirty data all belong here (→ [article 03](/en/blog/prepare-data-for-exploration/), [article 04](/blog/process-data-from-dirty-to-clean/)).
+**Data you cannot see.** Hand (2020) calls the data we do not have or cannot see "dark data," from missing values to cases that were never recorded at all, and argues that this is the very part that can distort conclusions. Incomplete data, data whose definitions do not match across groups, and dirty data all belong here (→ [article 03](/en/blog/prepare-data-for-exploration/), [article 04](/en/blog/process-data-from-dirty-to-clean/)).
 
 **Table 2.** An evidence map for DDD
 
