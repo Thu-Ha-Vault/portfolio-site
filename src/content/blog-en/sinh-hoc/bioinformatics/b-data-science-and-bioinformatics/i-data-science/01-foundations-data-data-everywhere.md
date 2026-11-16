@@ -218,7 +218,7 @@ treated    3  3
 
 The first crosstab has two zero cells: the difference between the two batches is also the difference between drug and control. The second is balanced, so the batch effect can be estimated. This check has to happen **before** library preparation, and `sample_sheet.csv` is the sample metadata that travels with the data until they are submitted to a public repository.
 
-Also at this early stage, the type of question determines the type of analysis. Leek and Peng (2015) divide data analysis questions into six types: **descriptive, exploratory, inferential, predictive, causal**, and **mechanistic** (Peng & Matsui, 2015). The inferential question "which genes are expressed differently between the two groups" cannot answer a causal question; two co-expressed genes are not necessarily causally related. Asking "why" five times (the five whys) or running a gap analysis helps clarify the problem but does not replace identifying the type of question ([Part 2](/blog/ask-questions-to-make-data-driven-decisions/)); sampling bias is covered in [Part 3](/blog/prepare-data-for-exploration/).
+Also at this early stage, the type of question determines the type of analysis. Leek and Peng (2015) divide data analysis questions into six types: **descriptive, exploratory, inferential, predictive, causal**, and **mechanistic** (Peng & Matsui, 2015). The inferential question "which genes are expressed differently between the two groups" cannot answer a causal question; two co-expressed genes are not necessarily causally related. Asking "why" five times (the five whys) or running a gap analysis helps clarify the problem but does not replace identifying the type of question ([Part 2](/en/blog/ask-questions-to-make-data-driven-decisions/)); sampling bias is covered in [Part 3](/blog/prepare-data-for-exploration/).
 
 ### 4.4. Archiving and destroying data
 
@@ -281,7 +281,7 @@ The article has three limitations. Every life cycle model, the framework propose
 
 Process models come from different traditions: the six-phase model and EMC serve decision-making in business, KDD and CRISP-DM serve data mining, PPDAC serves statistical investigation, and USGS and DCC serve the management and preservation of research data. They are alike at the core (understanding the problem, preparing the data, analyzing, communicating) and differ at the two ends: the six-phase model lacks a design phase and a validation phase, and analysis models in general lack data description, archiving, and preservation. The RNA-seq example shows that the two missing phases are exactly where a biology project fails most easily.
 
-For biology students, the "six phases + Design + Validate + FAIR Archive" framework is enough: it keeps the familiar phase names and adds the three places that science requires. The next article starts with the first phase: asking a question that data can answer ([Part 2](/blog/ask-questions-to-make-data-driven-decisions/)).
+For biology students, the "six phases + Design + Validate + FAIR Archive" framework is enough: it keeps the familiar phase names and adds the three places that science requires. The next article starts with the first phase: asking a question that data can answer ([Part 2](/en/blog/ask-questions-to-make-data-driven-decisions/)).
 
 ## References
 

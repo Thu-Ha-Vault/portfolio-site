@@ -16,10 +16,12 @@ vaultPath: >-
   Data-Driven decisions.md
 url: /blog/ask-questions-to-make-data-driven-decisions/
 topic: biology
-updated: '2026-11-13'
+updated: '2026-11-16'
 date: '2026-11-13'
 status: draft
 order: 2
+translationUrl: /en/blog/ask-questions-to-make-data-driven-decisions/
+translationTitle: 'Asking Data Questions: SMART, PICO, and the Evidence on Data-Driven Decisions'
 description: >-
   Theo Leek và Peng (2015), lỗi phổ biến nhất trong phân tích dữ liệu là nhầm
   loại câu hỏi đang được hỏi. Bài thứ hai của series Phân tích dữ liệu dựa trên
