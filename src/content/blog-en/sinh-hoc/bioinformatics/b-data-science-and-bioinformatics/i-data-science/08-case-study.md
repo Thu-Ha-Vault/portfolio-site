@@ -84,7 +84,7 @@ Under the Data License Agreement, the licensor is Lyft Bikes and Scooters, LLC, 
 
 ### 2.3. ROCCC assessment
 
-Table 2 rates the source on the five ROCCC criteria discussed in [article 03](/blog/prepare-data-for-exploration/).
+Table 2 rates the source on the five ROCCC criteria discussed in [article 03](/en/blog/prepare-data-for-exploration/).
 
 **Table 2.** ROCCC assessment
 

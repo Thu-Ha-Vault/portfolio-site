@@ -18,10 +18,12 @@ vaultPath: >-
   Exploration.md
 url: /blog/prepare-data-for-exploration/
 topic: biology
-updated: '2026-11-13'
+updated: '2026-11-16'
 date: '2026-11-13'
 status: draft
 order: 3
+translationUrl: /en/blog/prepare-data-for-exploration/
+translationTitle: 'Can You Trust This Data? Bias, FAIR Metadata, and the Limits of Anonymization'
 description: >-
   Bạn đã xoá tên bệnh nhân khỏi file dữ liệu, nhưng một mô hình công bố năm 2019
   ước tính 99,98% người Mỹ vẫn bị tái định danh đúng chỉ từ 15 thuộc tính nhân

@@ -129,7 +129,7 @@ Sections 3.2 and 3.3 quietly assume that the data measure what they are supposed
 
 **The wrong proxy.** Obermeyer et al. (2019) analyzed a commercial algorithm that selects patients for extra-care programs. The algorithm predicted health care **costs**, using cost as a proxy for **need**. Because less money is spent on the care of Black patients, at the same risk score they were sicker than White patients; removing this disparity would raise the share of Black patients receiving additional help from **17.7% to 46.5%**. This is an Ask-phase error: "Who needs care the most?" was silently replaced with "Who will cost the most?"
 
-**Data you cannot see.** Hand (2020) calls the data we do not have or cannot see "dark data," from missing values to cases that were never recorded at all, and argues that this is the very part that can distort conclusions. Incomplete data, data whose definitions do not match across groups, and dirty data all belong here (→ [article 03](/blog/prepare-data-for-exploration/), [article 04](/blog/process-data-from-dirty-to-clean/)).
+**Data you cannot see.** Hand (2020) calls the data we do not have or cannot see "dark data," from missing values to cases that were never recorded at all, and argues that this is the very part that can distort conclusions. Incomplete data, data whose definitions do not match across groups, and dirty data all belong here (→ [article 03](/en/blog/prepare-data-for-exploration/), [article 04](/blog/process-data-from-dirty-to-clean/)).
 
 **Table 2.** An evidence map for DDD
 
@@ -322,7 +322,7 @@ Questions 3, 5, and 6 are the three that SMART does not ask. Question 6 is the l
 
 ## 7. Conclusion
 
-A good question does more than any tool to determine what an analysis is worth. SMART makes a question measurable and gives it a deadline, but it does not make the person asking say what the comparison is or how far the conclusion may go; PICO and Leek and Peng's classification fill those two gaps. Data-driven decision-making is associated with better performance in large firms, but when the data are incomplete or are the wrong proxy, "relying on the data" can amplify bias. Once the question is set, the next question is whether the data can be trusted, the subject of [article 03](/blog/prepare-data-for-exploration/).
+A good question does more than any tool to determine what an analysis is worth. SMART makes a question measurable and gives it a deadline, but it does not make the person asking say what the comparison is or how far the conclusion may go; PICO and Leek and Peng's classification fill those two gaps. Data-driven decision-making is associated with better performance in large firms, but when the data are incomplete or are the wrong proxy, "relying on the data" can amplify bias. Once the question is set, the next question is whether the data can be trusted, the subject of [article 03](/en/blog/prepare-data-for-exploration/).
 
 ## References
 

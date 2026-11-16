@@ -30,5 +30,5 @@ isIndex: true
 - ISO/IEC 17025:2017 Laboratory Management Systems
 - [Bioinformatics](/topics/bioinformatics/)
 - Kiến thức chung (Sinh học đại cương)
-- Biology Project and Lab Report (Đại học)
+- [Biology Project and Lab Report (Đại học)](/topics/biology-project-and-lab-report/)
 - Thư viện tài liệu Sinh học: danh mục giáo trình, bài báo, bộ slide theo chủ đề trên Google Drive
