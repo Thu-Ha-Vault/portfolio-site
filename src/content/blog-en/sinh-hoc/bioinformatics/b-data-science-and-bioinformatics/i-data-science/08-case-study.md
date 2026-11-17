@@ -178,7 +178,7 @@ Rides with a missing station name were not dropped. A missing start station name
 
 ### 3.4. Statistical plan
 
-Ride length is summarized with the median, the interquartile range (IQR), P90, and P99; the mean is reported alongside for comparison. The median is a location estimate that is robust to outliers and the mean is not (Bruce & Bruce, 2017), and [article 05](/blog/analyze-data-to-answer-questions/) discussed why that choice matters for right-skewed distributions. The maximum is used only to detect data errors.
+Ride length is summarized with the median, the interquartile range (IQR), P90, and P99; the mean is reported alongside for comparison. The median is a location estimate that is robust to outliers and the mean is not (Bruce & Bruce, 2017), and [article 05](/en/blog/analyze-data-to-answer-questions/) discussed why that choice matters for right-skewed distributions. The maximum is used only to detect data errors.
 
 Effect sizes are the difference and ratio of medians (casual versus member) and, for categorical variables, differences in proportions expressed in percentage points. The 95% confidence intervals come from 2,000 bootstrap replicates in which the resampling unit is the **day**, not the ride, stratified by weekday and weekend, with a fixed seed of 20261116. Rides on the same day share the same weather and events, so treating them as independent would produce artificially narrow intervals. The article does not use p-values as a criterion: with very large samples, p-values quickly approach zero and any difference, however small, becomes “statistically significant” (Lin et al., 2013). The following code, continuing from `clean`, computes the confidence interval for the difference in weekend share.
 

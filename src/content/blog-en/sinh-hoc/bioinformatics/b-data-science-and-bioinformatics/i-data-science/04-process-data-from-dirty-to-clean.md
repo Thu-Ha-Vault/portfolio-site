@@ -62,7 +62,7 @@ A data constraint determines whether a value is valid. Table 1 lists nine common
 | Primary key            | be unique **for each row**                          | sample ID in the sample information table          | Unique plus Mandatory              |
 | Foreign key            | **match** a key in another table, **need not** be unique | sample ID in the measurement results table    | `LEFT JOIN`, look for unmatched rows |
 
-The last two rows need a clear distinction. A primary key identifies a record, so it must be unique for each row and must not be blank. A foreign key only has to match an existing key in the other table and does not need to be unique: a sample measured ten times appears ten times in the results table (→ SQL: Subquery & CASE WHEN, [article 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness and consistency are not in the table because they are quality dimensions (Section 2.1), not rules that a single formula can check.
+The last two rows need a clear distinction. A primary key identifies a record, so it must be unique for each row and must not be blank. A foreign key only has to match an existing key in the other table and does not need to be unique: a sample measured ten times appears ten times in the results table (→ SQL: Subquery & CASE WHEN, [article 05](/en/blog/analyze-data-to-answer-questions/)). Accuracy, completeness and consistency are not in the table because they are quality dimensions (Section 2.1), not rules that a single formula can check.
 
 ### 2.3. Types of dirty data and the three phases of cleaning
 
@@ -539,7 +539,7 @@ Two points call for caution when applying all this. First, when data are insuffi
 
 ## 8. Conclusion
 
-Data cleaning is part of study design, not a final tidying-up step. Errors are fewest when data are organized correctly from the start, the original is kept intact, and every change goes through a script with a changelog. The gene-name case shows that a familiar tool can silently corrupt the data of thousands of papers, and that one warning paper is not enough to change habits. Rules of thumb such as “n ≥ 30” should give way to reasoning based on the goal of the analysis. The next step is combining tables: [article 05](/blog/analyze-data-to-answer-questions/) covers lookup functions and JOINs, where a key in the wrong format or a wrong column index can create new errors.
+Data cleaning is part of study design, not a final tidying-up step. Errors are fewest when data are organized correctly from the start, the original is kept intact, and every change goes through a script with a changelog. The gene-name case shows that a familiar tool can silently corrupt the data of thousands of papers, and that one warning paper is not enough to change habits. Rules of thumb such as “n ≥ 30” should give way to reasoning based on the goal of the analysis. The next step is combining tables: [article 05](/en/blog/analyze-data-to-answer-questions/) covers lookup functions and JOINs, where a key in the wrong format or a wrong column index can create new errors.
 
 ## References
 

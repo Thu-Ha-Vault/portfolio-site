@@ -16,10 +16,14 @@ vaultPath: >-
   Questions.md
 url: /blog/analyze-data-to-answer-questions/
 topic: biology
-updated: '2026-11-15'
+updated: '2026-11-17'
 date: '2026-11-15'
 status: draft
 order: 5
+translationUrl: /en/blog/analyze-data-to-answer-questions/
+translationTitle: >-
+  From VLOOKUP to SQL JOIN: Why the Same Table Join Gives Three Different
+  Answers
 description: >-
   Cùng một phép ghép bảng trên spreadsheet, SQL và pandas có thể cho ba đáp số.
   Cách kiểm tra khoá, fan-out và NULL với dữ liệu gen HGNC và GTEx.

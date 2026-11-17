@@ -23,7 +23,7 @@ isIndex: true
 ## Map of Content
 - [01 - Trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/): Chương 2 – barplot, histogram, pie, scatter, tuỳ chỉnh biểu đồ, boxplot và loại outlier theo IQR, `summary()`
 - [02 - Các thao tác với dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/): nhập/xuất, recode bằng factor/match/replace/cut, chuyển kiểu, `subset`, sinh dữ liệu, xử lý dữ liệu thiếu, if/for/function
-- 03 - Bài tập R cơ bản và phân tích dữ liệu: Homework + bài tập buổi 5 (WHO1), buổi 6 (AirPassengers, ChickWeight, chickwts, iris, sleep), buổi 7 (hàm while, Stat2Data)
+- [03 - Bài tập R cơ bản và phân tích dữ liệu](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/): Homework + bài tập buổi 5 (WHO1), buổi 6 (AirPassengers, ChickWeight, chickwts, iris, sleep), buổi 7 (hàm while, Stat2Data)
 - 04 - Phân tích dữ liệu nhà ở Boston: lab report – tiểu luận Nhóm 4: EDA, hồi quy tuyến tính/đa thức/tương tác ($R^2$ 0,86), chẩn đoán phần dư, Random Forest (RMSE 2,93)
 
 ## Tài liệu tham khảo
