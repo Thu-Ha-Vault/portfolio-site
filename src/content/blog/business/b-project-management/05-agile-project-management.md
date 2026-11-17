@@ -16,10 +16,14 @@ vaultPath: >-
   Management.md
 url: /blog/agile-project-management/
 topic: business
-updated: '2026-11-13'
+updated: '2026-11-17'
 date: '2026-11-13'
 status: draft
 order: 5
+translationUrl: /en/blog/agile-project-management/
+translationTitle: >-
+  Is Agile Better Than Waterfall? Evidence on Scrum, Planning Poker and
+  Large-Scale Agile
 description: >-
   Agile thường được giới thiệu như lựa chọn hợp lý cho một thế giới nhiều biến
   động: giảm lãng phí, phản hồi nhanh, ước lượng bằng Planning Poker để tránh

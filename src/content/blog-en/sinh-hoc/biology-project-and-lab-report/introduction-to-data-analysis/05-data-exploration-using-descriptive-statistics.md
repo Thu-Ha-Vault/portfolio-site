@@ -70,7 +70,7 @@ The constant 1.4826 puts the MAD on the same scale as the SD when the data are n
 
 Robustness is measured by the **breakdown point**: the largest fraction of observations that can be replaced by arbitrary values without the estimate being driven to infinity (Rousseeuw & Croux, 1993; Rousseeuw & Hubert, 2011). The mean and SD have a breakdown point of 0, because a single sufficiently large value can make them arbitrarily large. The IQR withstands up to 25% contamination, since more than a quarter of the data must be corrupted before a quartile can be dragged away. The median and MAD withstand up to 50%, the highest possible value. Any rule built on the mean and SD inherits that weakness, as section 3 will show.
 
-A small note on the sample variance: dividing by $n - 1$ makes $s^2$ an unbiased estimator of $\sigma^2$, but $s = \sqrt{s^2}$ is still a slightly biased estimator of $\sigma$, because the square root does not preserve expectations. Estimation and confidence intervals are covered in more depth in the article on sample statistics and parameter estimation.
+A small note on the sample variance: dividing by $n - 1$ makes $s^2$ an unbiased estimator of $\sigma^2$, but $s = \sqrt{s^2}$ is still a slightly biased estimator of $\sigma$, because the square root does not preserve expectations. Estimation and confidence intervals are covered in more depth in the article on [sample statistics and parameter estimation](/en/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/).
 
 ## 3. Thread 1: three families of outlier rules
 
@@ -179,7 +179,7 @@ There are two ways to handle this. The first is to transform the data first, typ
 <div class="callout callout-warning">
 <p class="callout-title">Flagging does not mean deleting</p>
 
-A rule only tells you which points are **worth checking**. Bruce and Bruce (2017) point out that outliers may come from unit errors or faulty sensors, but they may also be valid observations. In a table of serum calcium values of about 80–130 mg/L, a value of 6.0 mg/L suggests a typing error, but you should still check it against the lab report or the file exported from the analyzer before correcting or excluding it (see sample statistics). A workflow for logging every change is covered in the article on [data cleaning](/en/blog/process-data-from-dirty-to-clean/).
+A rule only tells you which points are **worth checking**. Bruce and Bruce (2017) point out that outliers may come from unit errors or faulty sensors, but they may also be valid observations. In a table of serum calcium values of about 80–130 mg/L, a value of 6.0 mg/L suggests a typing error, but you should still check it against the lab report or the file exported from the analyzer before correcting or excluding it (see [sample statistics](/en/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)). A workflow for logging every change is covered in the article on [data cleaning](/en/blog/process-data-from-dirty-to-clean/).
 
 </div>
 

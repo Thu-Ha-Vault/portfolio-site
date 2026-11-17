@@ -69,7 +69,7 @@ Hằng số 1,4826 đưa MAD về cùng thang với SD khi dữ liệu có phân
 
 Mức độ "bền vững" được đo bằng **điểm sụp đổ** (breakdown point): tỷ lệ quan sát lớn nhất có thể bị thay bằng giá trị tuỳ ý mà ước lượng vẫn không bị kéo ra vô cùng (Rousseeuw & Croux, 1993; Rousseeuw & Hubert, 2011). Mean và SD có breakdown point bằng 0, vì chỉ một giá trị đủ lớn là đủ làm chúng lớn tuỳ ý. IQR chịu được tới 25% dữ liệu bẩn, vì phải hỏng hơn một phần tư dữ liệu thì một quartile mới bị kéo đi. Median và MAD chịu được tới 50%, mức cao nhất có thể. Quy tắc nào xây trên mean và SD thì kế thừa điểm yếu đó, như mục 3 sẽ cho thấy.
 
-Một lưu ý nhỏ về phương sai mẫu: chia cho $n - 1$ làm $s^2$ trở thành ước lượng không chệch của $\sigma^2$, nhưng $s = \sqrt{s^2}$ vẫn là ước lượng hơi chệch của $\sigma$, vì căn bậc hai không giữ nguyên kỳ vọng. Phần ước lượng và khoảng tin cậy được bàn kỹ hơn trong bài về đặc trưng thống kê mẫu và ước lượng tham số.
+Một lưu ý nhỏ về phương sai mẫu: chia cho $n - 1$ làm $s^2$ trở thành ước lượng không chệch của $\sigma^2$, nhưng $s = \sqrt{s^2}$ vẫn là ước lượng hơi chệch của $\sigma$, vì căn bậc hai không giữ nguyên kỳ vọng. Phần ước lượng và khoảng tin cậy được bàn kỹ hơn trong bài về [đặc trưng thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/).
 
 ## 3. Trục 1: ba họ quy tắc phát hiện outlier
 
@@ -178,7 +178,7 @@ Có hai cách xử lý. Cách thứ nhất là biến đổi dữ liệu trướ
 <div class="callout callout-warning">
 <p class="callout-title">Gắn cờ không có nghĩa là xoá</p>
 
-Quy tắc chỉ cho biết điểm nào **đáng kiểm tra**. Bruce và Bruce (2017) nhắc rằng outlier có thể đến từ lỗi đơn vị hay cảm biến hỏng, nhưng cũng có thể là quan sát hợp lệ. Trong một bảng calcium huyết thanh có các giá trị khoảng 80–130 mg/L, một giá trị 6,0 mg/L gợi ý lỗi gõ, nhưng vẫn phải đối chiếu phiếu kết quả hay file xuất từ máy đo trước khi sửa hay loại (xem đặc trưng thống kê mẫu). Quy trình ghi chép mọi thay đổi được trình bày trong bài về [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/).
+Quy tắc chỉ cho biết điểm nào **đáng kiểm tra**. Bruce và Bruce (2017) nhắc rằng outlier có thể đến từ lỗi đơn vị hay cảm biến hỏng, nhưng cũng có thể là quan sát hợp lệ. Trong một bảng calcium huyết thanh có các giá trị khoảng 80–130 mg/L, một giá trị 6,0 mg/L gợi ý lỗi gõ, nhưng vẫn phải đối chiếu phiếu kết quả hay file xuất từ máy đo trước khi sửa hay loại (xem [đặc trưng thống kê mẫu](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)). Quy trình ghi chép mọi thay đổi được trình bày trong bài về [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/).
 
 </div>
 

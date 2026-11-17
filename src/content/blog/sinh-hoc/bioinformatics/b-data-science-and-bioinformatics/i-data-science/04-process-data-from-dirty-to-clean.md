@@ -87,7 +87,7 @@ flowchart LR
 
 **Editing** chỉ có ba lựa chọn: sửa, xoá hoặc giữ nguyên. Giá trị bất khả thi không bao giờ được giữ nguyên: sửa nếu tìm được giá trị đúng, không thì xoá. Với cực trị có thật hoặc điểm vẫn đáng ngờ, nên xem ảnh hưởng của chúng lên kết quả; nếu loại thì báo cáo là “loại khỏi phân tích”, và có thể trình bày kết quả có và không có chúng.
 
-Ví dụ: một bảng calcium huyết thanh (mg/L) của 100 người khoẻ mạnh có các giá trị khoảng 80–130, riêng một giá trị là 6,0. Điểm này đẩy kurtosis lên 19,1 và skewness xuống −2,9, làm lệch mọi đặc trưng mẫu tính sau đó (đặc trưng thống kê mẫu). Giá trị nhỏ hơn phần còn lại hơn mười lần gợi ý lỗi gõ, nhưng vẫn phải chẩn đoán: đối chiếu phiếu kết quả hoặc file xuất từ máy đo, sửa nếu tìm được giá trị đúng, không thì loại, và ghi lại.
+Ví dụ: một bảng calcium huyết thanh (mg/L) của 100 người khoẻ mạnh có các giá trị khoảng 80–130, riêng một giá trị là 6,0. Điểm này đẩy kurtosis lên 19,1 và skewness xuống −2,9, làm lệch mọi đặc trưng mẫu tính sau đó ([đặc trưng thống kê mẫu](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)). Giá trị nhỏ hơn phần còn lại hơn mười lần gợi ý lỗi gõ, nhưng vẫn phải chẩn đoán: đối chiếu phiếu kết quả hoặc file xuất từ máy đo, sửa nếu tìm được giá trị đúng, không thì loại, và ghi lại.
 
 ## 3. Tổ chức dữ liệu để ít phải làm sạch
 

@@ -206,7 +206,7 @@ The boxplot was introduced by Tukey and has many variants, including notches and
 
 One technical detail is worth knowing: the hinges computed by `boxplot()` come from `fivenum()`, which are close to, but not always equal to, the quartiles $Q_1$ and $Q_3$ that `quantile()` returns by default. For `wt` in `mtcars`, `quantile()` gives $Q_1$ = 2.581 and $Q_3$ = 3.610, while the two hinges are 2.5425 and 3.650. As a result, two ways of flagging outliers, computing the thresholds $Q_1 - 1.5\,IQR$ and $Q_3 + 1.5\,IQR$ yourself from `quantile()` versus taking `boxplot.stats()$out`, can give different results on the same data. The details of quantile definitions and outlier handling belong to the series' [article on descriptive statistics](/en/blog/data-exploration-using-descriptive-statistics/).
 
-The numbers that accompany a figure come from `summary()` (min, $Q_1$, median, mean, $Q_3$, max; for `can_nang` these are 32.04, 46.74, 51.55, 50.43, 54.08, 59.08) or from `mean()`, `median()`, `var()` (dividing by $n - 1$) and `sd()`; the Excel version is in the article on sample statistics.
+The numbers that accompany a figure come from `summary()` (min, $Q_1$, median, mean, $Q_3$, max; for `can_nang` these are 32.04, 46.74, 51.55, 50.43, 54.08, 59.08) or from `mean()`, `median()`, `var()` (dividing by $n - 1$) and `sd()`; the Excel version is in the [article on sample statistics](/en/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/).
 
 ### 4.4. Histograms and the `breaks` argument
 

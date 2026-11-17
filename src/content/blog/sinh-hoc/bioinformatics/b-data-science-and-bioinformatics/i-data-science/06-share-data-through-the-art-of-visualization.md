@@ -183,7 +183,7 @@ Ba phép thử nhanh theo Crameri et al. (2020): các màu kề nhau có khác n
 
 Weissgerber et al. (2015) nêu ba vấn đề của bar graph cho dữ liệu liên tục: nhiều phân phối khác nhau cho ra cùng một cột và cùng một thanh sai số; với dữ liệu ghép cặp, bar graph ngầm gợi ý hai nhóm độc lập; và trung bình kèm SE hay SD khiến người đọc mặc định dữ liệu phân phối chuẩn, không có outlier. Trong các bài có bar graph mà nhóm rà soát, 77,6% dùng trung bình ± SE, và ở 75% số bài, nhóm nhỏ nhất trong hình chỉ có từ hai đến sáu quan sát. Với cỡ mẫu như vậy, nhóm khuyên vẽ toàn bộ dữ liệu bằng univariate scatterplot (strip plot, dot plot).
 
-Khi mẫu lớn hơn, box plot là bước tiếp theo, nhưng nên tránh với mẫu rất nhỏ (n < 5) (Krzywinski & Altman, 2014); histogram, density plot và violin plot là các lựa chọn khác (Bruce & Bruce, 2017; → [Boxplot và outlier](/blog/data-exploration-using-descriptive-statistics/)). Dù chọn dạng nào, chú thích hình phải ghi n và loại thanh sai số, vì SD, SE và khoảng tin cậy 95% trả lời ba câu hỏi khác nhau (→ Đặc trưng thống kê mẫu).
+Khi mẫu lớn hơn, box plot là bước tiếp theo, nhưng nên tránh với mẫu rất nhỏ (n < 5) (Krzywinski & Altman, 2014); histogram, density plot và violin plot là các lựa chọn khác (Bruce & Bruce, 2017; → [Boxplot và outlier](/blog/data-exploration-using-descriptive-statistics/)). Dù chọn dạng nào, chú thích hình phải ghi n và loại thanh sai số, vì SD, SE và khoảng tin cậy 95% trả lời ba câu hỏi khác nhau (→ [Đặc trưng thống kê mẫu](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)).
 
 ### 5.2. PCA plot
 

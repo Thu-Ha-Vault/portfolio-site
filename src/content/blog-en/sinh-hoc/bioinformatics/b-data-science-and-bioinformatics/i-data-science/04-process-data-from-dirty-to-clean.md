@@ -87,7 +87,7 @@ flowchart LR
 
 **Editing** has only three options: correct, delete or leave unchanged. Impossible values are never left unchanged: correct them if the true value can be found, otherwise delete them. For true extremes or points that remain suspect, examine their influence on the results; if they are excluded, report them as “excluded from analysis,” and consider presenting the results both with and without them.
 
-Example: a table of serum calcium (mg/L) for 100 healthy people has values of roughly 80–130, except for one value of 6.0. That single point pushes the kurtosis up to 19.1 and the skewness down to −2.9, distorting every sample statistic computed afterwards (sample statistics). A value more than ten times smaller than the rest suggests a typo, but it still has to be diagnosed: check the result sheet or the file exported from the analyzer, correct it if the true value can be found, otherwise exclude it, and record what was done.
+Example: a table of serum calcium (mg/L) for 100 healthy people has values of roughly 80–130, except for one value of 6.0. That single point pushes the kurtosis up to 19.1 and the skewness down to −2.9, distorting every sample statistic computed afterwards ([sample statistics](/en/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/)). A value more than ten times smaller than the rest suggests a typo, but it still has to be diagnosed: check the result sheet or the file exported from the analyzer, correct it if the true value can be found, otherwise exclude it, and record what was done.
 
 ## 3. Organizing data so there is less to clean
 

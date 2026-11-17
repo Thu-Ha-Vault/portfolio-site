@@ -39,6 +39,6 @@ File nằm trong `assets/Dữ liệu trong bài giảng/`:
 - dulieu.xls: bảng nhỏ 5 dòng × 2 cột Age – Insulin (ví dụ nhập dữ liệu từ Excel)
 
 ## Liên quan
-- Biostatistics and Bioinformatics (Thống kê sinh học): học phần song song – cùng nội dung thống kê, làm bằng Excel
+- [Biostatistics and Bioinformatics (Thống kê sinh học)](/topics/biostatistics-and-bioinformatics/): học phần song song – cùng nội dung thống kê, làm bằng Excel
 - R: các khoá học R trong vault (R Tutorial, R Xóm Data)
 - [Data Science](/topics/data-science/): khoá Google Data Analytics (có course R programming và Case Study)

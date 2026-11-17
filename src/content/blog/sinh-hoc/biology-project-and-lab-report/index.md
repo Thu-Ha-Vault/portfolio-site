@@ -26,7 +26,7 @@ isIndex: true
 - Developmental Biology (Sinh học phát triển)
 - Evolutionary Biology (Sinh học tiến hoá)
 - Biological Field Study (Thực tập thiên nhiên)
-- Biostatistics and Bioinformatics (Thống kê sinh học)
+- [Biostatistics and Bioinformatics (Thống kê sinh học)](/topics/biostatistics-and-bioinformatics/)
 - [Introduction to Data Analysis (Phân tích dữ liệu với R)](/topics/introduction-to-data-analysis/)
 - Genetics (Di truyền học)
 - Microbiology (Vi sinh vật học)

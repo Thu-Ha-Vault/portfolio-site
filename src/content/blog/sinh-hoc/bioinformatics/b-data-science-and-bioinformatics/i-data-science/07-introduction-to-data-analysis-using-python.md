@@ -18,7 +18,7 @@ vaultPath: >-
   Analysis Using Python.md
 url: /blog/introduction-to-data-analysis-using-python/
 topic: biology
-updated: '2026-11-15'
+updated: '2026-11-17'
 date: '2026-11-15'
 status: draft
 order: 7

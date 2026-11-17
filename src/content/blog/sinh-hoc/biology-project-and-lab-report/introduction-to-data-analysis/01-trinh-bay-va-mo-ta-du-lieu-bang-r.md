@@ -205,7 +205,7 @@ Boxplot do Tukey giới thiệu và có nhiều biến thể, trong đó có not
 
 Có một chi tiết kỹ thuật cần biết: hinge do `boxplot()` tính bằng `fivenum()`, gần nhưng không luôn trùng với tứ phân vị $Q_1$, $Q_3$ mà `quantile()` trả về theo mặc định. Với biến `wt` của `mtcars`, `quantile()` cho $Q_1$ = 2,581 và $Q_3$ = 3,610, còn hai hinge là 2,5425 và 3,650. Vì vậy hai cách đánh dấu outlier, một cách tự tính ngưỡng $Q_1 - 1{,}5\,IQR$ và $Q_3 + 1{,}5\,IQR$ từ `quantile()`, một cách lấy `boxplot.stats()$out`, có thể cho kết quả khác nhau trên cùng dữ liệu. Chi tiết về các định nghĩa quantile và việc xử lý outlier thuộc về [bài về thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/) của series.
 
-Con số đi kèm hình lấy từ `summary()` (min, $Q_1$, median, trung bình, $Q_3$, max; với `can_nang` là 32,04; 46,74; 51,55; 50,43; 54,08; 59,08) hoặc từ `mean()`, `median()`, `var()` (chia cho $n - 1$) và `sd()`; cách tính bằng Excel có ở bài về đặc trưng thống kê mẫu.
+Con số đi kèm hình lấy từ `summary()` (min, $Q_1$, median, trung bình, $Q_3$, max; với `can_nang` là 32,04; 46,74; 51,55; 50,43; 54,08; 59,08) hoặc từ `mean()`, `median()`, `var()` (chia cho $n - 1$) và `sd()`; cách tính bằng Excel có ở [bài về đặc trưng thống kê mẫu](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/).
 
 ### 4.4. Histogram và tham số `breaks`
 
