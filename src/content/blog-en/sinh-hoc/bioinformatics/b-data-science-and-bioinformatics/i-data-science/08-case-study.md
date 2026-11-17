@@ -106,7 +106,7 @@ The data contain no user ID or payment information. Even so, mobility data in ge
 
 ### 3.1. Environment
 
-The analysis ran on Python 3.13.2, pandas 3.0.3, NumPy 2.4.6, pyarrow 24.0.0, and matplotlib 3.11.0 on macOS 12.7. Recording exact versions is one of the basic rules of reproducibility (Sandve et al., 2013; Rule et al., 2019), and [article 07](/blog/introduction-to-data-analysis-using-python/) discussed why notebooks are hard to rerun; Pimentel et al. (2019) analyzed 1.4 million notebooks on GitHub to identify the characteristics that affect reproducibility.
+The analysis ran on Python 3.13.2, pandas 3.0.3, NumPy 2.4.6, pyarrow 24.0.0, and matplotlib 3.11.0 on macOS 12.7. Recording exact versions is one of the basic rules of reproducibility (Sandve et al., 2013; Rule et al., 2019), and [article 07](/en/blog/introduction-to-data-analysis-using-python/) discussed why notebooks are hard to rerun; Pimentel et al. (2019) analyzed 1.4 million notebooks on GitHub to identify the characteristics that affect reproducibility.
 
 ### 3.2. Derived variables
 

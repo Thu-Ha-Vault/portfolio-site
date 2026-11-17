@@ -27,7 +27,7 @@ isIndex: true
 - [04 - Phân tích dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/): lab report – tiểu luận Nhóm 4: EDA, hồi quy tuyến tính/đa thức/tương tác ($R^2$ 0,86), chẩn đoán phần dư, Random Forest (RMSE 2,93)
 
 ## Tài liệu tham khảo
-- 05 - Data Exploration Using Descriptive Statistics: bài đọc eDA-2026 (AI Việt Nam) – loại dữ liệu, central tendency, dispersion, boxplot/outlier, z-score, tương quan và nghịch lý Simpson
+- [05 - Data Exploration Using Descriptive Statistics](/blog/data-exploration-using-descriptive-statistics/): bài đọc eDA-2026 (AI Việt Nam) – loại dữ liệu, central tendency, dispersion, boxplot/outlier, z-score, tương quan và nghịch lý Simpson
 
 ## Dữ liệu
 File nằm trong `assets/Dữ liệu trong bài giảng/`:

@@ -203,7 +203,7 @@ stripchart(can_nang ~ gioi_tinh, data = du_lieu, vertical = TRUE,
 
 Boxplot do Tukey giới thiệu và có nhiều biến thể, trong đó có notch và độ rộng hộp theo cỡ mẫu (McGill et al., 1978); Krzywinski và Altman (2014) có một bài ngắn giải thích cách đọc boxplot cho người làm sinh học. Trong R, vạch giữa hộp là median, hai cạnh hộp là hai "hinge", và râu kéo dài tới giá trị xa nhất còn nằm trong khoảng 1,5 lần độ dài hộp tính từ cạnh hộp (tham số `range = 1.5` của `boxplot()`); các điểm vượt quá được vẽ riêng.
 
-Có một chi tiết kỹ thuật cần biết: hinge do `boxplot()` tính bằng `fivenum()`, gần nhưng không luôn trùng với tứ phân vị $Q_1$, $Q_3$ mà `quantile()` trả về theo mặc định. Với biến `wt` của `mtcars`, `quantile()` cho $Q_1$ = 2,581 và $Q_3$ = 3,610, còn hai hinge là 2,5425 và 3,650. Vì vậy hai cách đánh dấu outlier, một cách tự tính ngưỡng $Q_1 - 1{,}5\,IQR$ và $Q_3 + 1{,}5\,IQR$ từ `quantile()`, một cách lấy `boxplot.stats()$out`, có thể cho kết quả khác nhau trên cùng dữ liệu. Chi tiết về các định nghĩa quantile và việc xử lý outlier thuộc về bài về thống kê mô tả của series.
+Có một chi tiết kỹ thuật cần biết: hinge do `boxplot()` tính bằng `fivenum()`, gần nhưng không luôn trùng với tứ phân vị $Q_1$, $Q_3$ mà `quantile()` trả về theo mặc định. Với biến `wt` của `mtcars`, `quantile()` cho $Q_1$ = 2,581 và $Q_3$ = 3,610, còn hai hinge là 2,5425 và 3,650. Vì vậy hai cách đánh dấu outlier, một cách tự tính ngưỡng $Q_1 - 1{,}5\,IQR$ và $Q_3 + 1{,}5\,IQR$ từ `quantile()`, một cách lấy `boxplot.stats()$out`, có thể cho kết quả khác nhau trên cùng dữ liệu. Chi tiết về các định nghĩa quantile và việc xử lý outlier thuộc về [bài về thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/) của series.
 
 Con số đi kèm hình lấy từ `summary()` (min, $Q_1$, median, trung bình, $Q_3$, max; với `can_nang` là 32,04; 46,74; 51,55; 50,43; 54,08; 59,08) hoặc từ `mean()`, `median()`, `var()` (chia cho $n - 1$) và `sd()`; cách tính bằng Excel có ở bài về đặc trưng thống kê mẫu.
 
@@ -340,7 +340,7 @@ Checklist tám bước trước khi đưa một biểu đồ vào báo cáo:
 7. Ghi seed, `RNGkind()` và `sessionInfo()`; xuất hình bằng code với kích thước cố định.
 8. Đọc lại hình như một người lạ: không có chú thích của bạn, họ có hiểu đúng không?
 
-Bài tiếp theo, [các thao tác với dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/), đi vào chọn, lọc và xử lý dữ liệu thiếu; quantile, hinge và outlier có ở bài thống kê mô tả; còn [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/) là bước nên làm trước khi vẽ bất kỳ biểu đồ nào.
+Bài tiếp theo, [các thao tác với dữ liệu trong R](/blog/cac-thao-tac-voi-du-lieu-trong-r/), đi vào chọn, lọc và xử lý dữ liệu thiếu; quantile, hinge và outlier có ở [bài thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/); còn [làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/) là bước nên làm trước khi vẽ bất kỳ biểu đồ nào.
 
 ## Tài liệu tham khảo
 

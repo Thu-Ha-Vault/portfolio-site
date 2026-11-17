@@ -204,7 +204,7 @@ stripchart(can_nang ~ gioi_tinh, data = du_lieu, vertical = TRUE,
 
 The boxplot was introduced by Tukey and has many variants, including notches and box widths proportional to sample size (McGill et al., 1978); Krzywinski and Altman (2014) wrote a short piece explaining how to read box plots for life scientists. In R, the line inside the box is the median, the box edges are the two "hinges," and the whiskers extend to the most extreme value lying within 1.5 times the box length from the box (the `range = 1.5` argument of `boxplot()`); points beyond that are drawn individually.
 
-One technical detail is worth knowing: the hinges computed by `boxplot()` come from `fivenum()`, which are close to, but not always equal to, the quartiles $Q_1$ and $Q_3$ that `quantile()` returns by default. For `wt` in `mtcars`, `quantile()` gives $Q_1$ = 2.581 and $Q_3$ = 3.610, while the two hinges are 2.5425 and 3.650. As a result, two ways of flagging outliers, computing the thresholds $Q_1 - 1.5\,IQR$ and $Q_3 + 1.5\,IQR$ yourself from `quantile()` versus taking `boxplot.stats()$out`, can give different results on the same data. The details of quantile definitions and outlier handling belong to the series' article on descriptive statistics.
+One technical detail is worth knowing: the hinges computed by `boxplot()` come from `fivenum()`, which are close to, but not always equal to, the quartiles $Q_1$ and $Q_3$ that `quantile()` returns by default. For `wt` in `mtcars`, `quantile()` gives $Q_1$ = 2.581 and $Q_3$ = 3.610, while the two hinges are 2.5425 and 3.650. As a result, two ways of flagging outliers, computing the thresholds $Q_1 - 1.5\,IQR$ and $Q_3 + 1.5\,IQR$ yourself from `quantile()` versus taking `boxplot.stats()$out`, can give different results on the same data. The details of quantile definitions and outlier handling belong to the series' [article on descriptive statistics](/en/blog/data-exploration-using-descriptive-statistics/).
 
 The numbers that accompany a figure come from `summary()` (min, $Q_1$, median, mean, $Q_3$, max; for `can_nang` these are 32.04, 46.74, 51.55, 50.43, 54.08, 59.08) or from `mean()`, `median()`, `var()` (dividing by $n - 1$) and `sd()`; the Excel version is in the article on sample statistics.
 
@@ -341,7 +341,7 @@ An eight-step checklist before a chart goes into a report:
 7. Record the seed, `RNGkind()` and `sessionInfo()`; export figures from code at a fixed size.
 8. Reread the chart as a stranger would: without your explanation, would they read it correctly?
 
-The next article, [data manipulation in R](/en/blog/cac-thao-tac-voi-du-lieu-trong-r/), covers selecting, filtering and handling missing data; quantiles, hinges and outliers are in the descriptive statistics article; and [data cleaning](/en/blog/process-data-from-dirty-to-clean/) is the step to take before drawing any chart at all.
+The next article, [data manipulation in R](/en/blog/cac-thao-tac-voi-du-lieu-trong-r/), covers selecting, filtering and handling missing data; quantiles, hinges and outliers are in the [descriptive statistics article](/en/blog/data-exploration-using-descriptive-statistics/); and [data cleaning](/en/blog/process-data-from-dirty-to-clean/) is the step to take before drawing any chart at all.
 
 ## References
 

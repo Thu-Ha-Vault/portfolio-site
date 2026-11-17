@@ -22,6 +22,10 @@ updated: '2026-11-15'
 date: '2026-11-15'
 status: draft
 order: 7
+translationUrl: /en/blog/introduction-to-data-analysis-using-python/
+translationTitle: >-
+  Python for Scientific Data Analysis: NumPy, pandas and Jupyter's
+  Reproducibility Problem
 description: >-
   Vì sao NumPy nhanh, pandas dễ sai ở giá trị thiếu và Jupyter notebook khó chạy
   lại: hướng dẫn kèm code Python, số đo thật và ví dụ Biopython.

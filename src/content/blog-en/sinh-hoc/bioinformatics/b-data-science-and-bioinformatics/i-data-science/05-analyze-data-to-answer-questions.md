@@ -299,7 +299,7 @@ IN only filters, so it does not fan out: 40,979 rows, not 40,982. NOT IN, howeve
 
 ### 3.4. pandas: merge with validate, indicator and groupby
 
-pandas provides data structures for statistical computing in Python (McKinney, 2010), with the DataFrame playing the role of a table ([article 07](/blog/introduction-to-data-analysis-using-python/)). The `merge` function has two safety arguments that beginners rarely use (pandas development team, n.d.-b):
+pandas provides data structures for statistical computing in Python (McKinney, 2010), with the DataFrame playing the role of a table ([article 07](/en/blog/introduction-to-data-analysis-using-python/)). The `merge` function has two safety arguments that beginners rarely use (pandas development team, n.d.-b):
 
 ```python
 import io
@@ -531,7 +531,7 @@ VLOOKUP, JOIN and `merge` are the same idea, going back to Codd's (1970) relatio
 
 Three habits are enough to avoid most of the errors in this article. First, join on stable IDs in the same format in every table. Second, count rows and compute totals before and after every join, then read the list of unmatched rows. Third, keep every important aggregation as rerunnable code, leave the raw data untouched and record versions (Broman & Woo, 2018; Wilson et al., 2017). Spreadsheets are not inherently wrong; they are just hard to check.
 
-Presenting aggregated results so that readers see both the numbers and their limits is the subject of [article 06](/en/blog/share-data-through-the-art-of-visualization/); [article 07](/blog/introduction-to-data-analysis-using-python/) returns to Python for scientific analysis.
+Presenting aggregated results so that readers see both the numbers and their limits is the subject of [article 06](/en/blog/share-data-through-the-art-of-visualization/); [article 07](/en/blog/introduction-to-data-analysis-using-python/) returns to Python for scientific analysis.
 
 ## Appendix: quick-reference table
 

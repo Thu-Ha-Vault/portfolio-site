@@ -2,7 +2,7 @@
   "nodes": [
     {
       "topic": "biology",
-      "notes": 13,
+      "notes": 14,
       "url": "/topics/biology/",
       "title": "Sinh học"
     },
@@ -19,5 +19,11 @@
       "title": "Tiếng Pháp (French)"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "a": "biology",
+      "b": "business",
+      "weight": 1
+    }
+  ]
 }

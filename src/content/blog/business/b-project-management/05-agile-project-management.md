@@ -196,7 +196,7 @@ Hai nghiên cứu khác thêm sắc thái; với hai nghiên cứu này, bài ch
 <div class="callout callout-note">
 <p class="callout-title">Hộp thống kê: vì sao nghiên cứu ước lượng hay dùng trung vị</p>
 
-Sai số tương đối của một task là $\text{MRE} = \lvert \text{thực tế} - \text{ước lượng} \rvert / \text{thực tế}$; MMRE là trung bình của MRE. Vì là trung bình, MMRE rất nhạy với vài task lệch xa. Ví dụ giả định: năm task có MRE 0,1; 0,1; 0,2; 0,2 và 3,0 cho MMRE 0,72, nghe như sai trung bình 72%, nhưng trung vị chỉ 0,2. Trung vị là ước lượng vị trí bền vững, không bị kéo bởi giá trị cực đoan (Bruce & Bruce, 2017), nên Moløkken-Østvold và Haugen (2007) xét thiên lệch theo trung vị. Cùng ý này trong thống kê mô tả: mean nhạy với outlier, median bền hơn.
+Sai số tương đối của một task là $\text{MRE} = \lvert \text{thực tế} - \text{ước lượng} \rvert / \text{thực tế}$; MMRE là trung bình của MRE. Vì là trung bình, MMRE rất nhạy với vài task lệch xa. Ví dụ giả định: năm task có MRE 0,1; 0,1; 0,2; 0,2 và 3,0 cho MMRE 0,72, nghe như sai trung bình 72%, nhưng trung vị chỉ 0,2. Trung vị là ước lượng vị trí bền vững, không bị kéo bởi giá trị cực đoan (Bruce & Bruce, 2017), nên Moløkken-Østvold và Haugen (2007) xét thiên lệch theo trung vị. Cùng ý này trong thống kê mô tả: [mean nhạy với outlier, median bền hơn](/blog/data-exploration-using-descriptive-statistics/).
 
 </div>
 
