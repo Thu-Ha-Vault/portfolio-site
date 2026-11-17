@@ -22,6 +22,10 @@ updated: '2026-11-15'
 date: '2026-11-15'
 status: draft
 order: 6
+translationUrl: /en/blog/share-data-through-the-art-of-visualization/
+translationTitle: >-
+  Evidence-Based Data Visualization: Chart Choice, Truncated Axes and
+  Colorblind-Safe Color
 description: >-
   Nghiên cứu về nhận thức đồ hoạ nói gì về chọn biểu đồ, cắt trục y và thang
   màu; áp dụng cho volcano plot, heatmap và số liệu thí nghiệm sinh học.

@@ -472,7 +472,7 @@ Checklist dưới đây áp dụng được cho số liệu thí nghiệm sinh h
 6. **Chọn phương pháp theo cơ chế**: xoá hàng chỉ khi gần MCAR và mất ít dòng; tránh thay bằng trung bình cho suy luận; dùng MI khi MAR hợp lý, với các biến giải thích cả sự thiếu lẫn giá trị thiếu trong mô hình điền (White et al., 2011), và đọc cảnh báo như `imp$loggedEvents`.
 7. **Báo cáo đầy đủ**: số dòng trước và sau, phương pháp, số bộ điền, biến trong mô hình điền, phiên bản gói và seed (Sterne et al., 2009); dùng đường dẫn tương đối thay cho `setwd()` tới thư mục tuyệt đối (Wilson et al., 2017; xem thêm quy trình tái lập).
 
-Các bài sau trong series luyện tiếp những thao tác này: [bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/), hồi quy trên dữ liệu nhà ở Boston và thống kê mô tả với trung vị và giá trị ngoại lai.
+Các bài sau trong series luyện tiếp những thao tác này: [bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/), [hồi quy trên dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/) và thống kê mô tả với trung vị và giá trị ngoại lai.
 
 ## Tài liệu tham khảo
 

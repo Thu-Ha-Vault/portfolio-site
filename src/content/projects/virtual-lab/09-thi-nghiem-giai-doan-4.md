@@ -102,7 +102,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 	- Đa thức bậc 4 lệch Excel ở chữ số thứ 4 nhưng khớp numpy: Excel làm tròn khi ma trận gần suy biến.
 - Hệ số di truyền trong bài làm tính bằng h² = 1 − 1/F, app ghi đúng như vậy.
 - Bảng phân tích: nạp số liệu bài tập, sổ thí nghiệm của bất kỳ lõi nào, hoặc CSV dán vào; mỗi kết quả kèm mã R.
-- Không đưa bộ nhà ở Boston của bài 04 Introduction to Data Analysis: biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
+- Không đưa bộ nhà ở Boston của [bài 04 Introduction to Data Analysis](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/): biến B xây theo chủng tộc (nhiều thư viện đã bỏ bộ này), giấy phép phân phối lại chưa rõ.
 - Protocol `st-biostat`.
 
 ## 4. Thực địa mở rộng

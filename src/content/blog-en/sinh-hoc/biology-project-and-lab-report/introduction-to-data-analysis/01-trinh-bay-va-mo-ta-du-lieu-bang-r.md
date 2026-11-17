@@ -87,7 +87,7 @@ flowchart TB
     D -->|A second continuous variable| H[plot x, y]
 ```
 
-Table 1 is not a hard rule. It summarizes one general principle: choose a chart so that the most important comparison is encoded as **position along a common scale**, and for measured data from small samples, let readers see every observation. For more on designing charts for an audience, see [principles of data visualization](/blog/share-data-through-the-art-of-visualization/) and visualization in R.
+Table 1 is not a hard rule. It summarizes one general principle: choose a chart so that the most important comparison is encoded as **position along a common scale**, and for measured data from small samples, let readers see every observation. For more on designing charts for an audience, see [principles of data visualization](/en/blog/share-data-through-the-art-of-visualization/) and visualization in R.
 
 ## 3. Evidence 1: Cleveland and McGill's accuracy ranking
 

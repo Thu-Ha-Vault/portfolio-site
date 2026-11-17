@@ -531,7 +531,7 @@ VLOOKUP, JOIN and `merge` are the same idea, going back to Codd's (1970) relatio
 
 Three habits are enough to avoid most of the errors in this article. First, join on stable IDs in the same format in every table. Second, count rows and compute totals before and after every join, then read the list of unmatched rows. Third, keep every important aggregation as rerunnable code, leave the raw data untouched and record versions (Broman & Woo, 2018; Wilson et al., 2017). Spreadsheets are not inherently wrong; they are just hard to check.
 
-Presenting aggregated results so that readers see both the numbers and their limits is the subject of [article 06](/blog/share-data-through-the-art-of-visualization/); [article 07](/blog/introduction-to-data-analysis-using-python/) returns to Python for scientific analysis.
+Presenting aggregated results so that readers see both the numbers and their limits is the subject of [article 06](/en/blog/share-data-through-the-art-of-visualization/); [article 07](/blog/introduction-to-data-analysis-using-python/) returns to Python for scientific analysis.
 
 ## Appendix: quick-reference table
 
