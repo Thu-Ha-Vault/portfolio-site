@@ -1,0 +1,38 @@
+{
+  "_note": "Thí nghiệm vi sinh vật học (src/core/microcount.js): nhuộm Gram, pha loãng thập phân và đếm khuẩn lạc, MPN coliform 3 × 3, đếm tế bào nấm men bằng buồng đếm. Quy trình, thời gian, nhiệt độ, công thức theo giáo trình (tnvs) trong Google Drive của chủ dự án. Mật độ thật của mẫu, tỉ lệ tế bào chết khi thạch quá nóng, tỉ lệ khuẩn lạc chưa kịp mọc, tỉ lệ ống LSB dương tính giả, mức lệch khi nhuộm sai là số minh hoạ.",
+  "sources": {
+    "tnvs": "Lê Xuân Phương, Thí nghiệm vi sinh vật học (giáo trình thực hành, phần II, Google Drive của chủ dự án): Bài 4 nhuộm Gram (tím kết tinh 1 phút, Lugol 1 phút, tẩy cồn 30 giây, fuchsin hoặc safranin 10–30 giây; B. subtilis Gram dương tím, E. coli Gram âm hồng; tế bào B. subtilis 3–5 × 0,6 µm); Bài 5 buồng đếm Goriaev (25 ô lớn, 400 ô nhỏ, sâu 0,1 mm, N/mL = 0,25 · a · 10⁶, 5–10 tế bào mỗi ô nhỏ, đếm ít nhất 5 ô lớn); Bài 10 tổng vi khuẩn hiếu khí (10 g + 90 mL SPW, pha loãng 1 + 9, đổ đĩa 1 mL với 10–15 mL PCA 45 °C, 30 °C 72 giờ, chọn đĩa 25–250 khuẩn lạc, A = ΣC/[V(n₁ + 0,1n₂)d], ví dụ 10⁻³: 235, 246; 10⁻⁴: 26, 21 → 2,4 · 10⁵ CFU/g) và coliform MPN 3 × 3 (LSB 37 °C 48 giờ, khẳng định BGBL 37 °C 48 giờ)",
+    "iso4833": "ISO 7218 (yêu cầu chung cho kiểm nghiệm vi sinh): N = ΣC/[V(n₁ + 0,1n₂)d] với hai độ pha loãng liên tiếp; ISO 4833-1:2013 (đổ đĩa, 30 °C) dùng một đĩa mỗi độ pha loãng nên mẫu số là V × 1,1 × d",
+    "cochran": "Cochran W.G. 1950, Estimation of bacterial densities by means of the most probable number, Biometrics 6: 105–116: MPN là nghiệm hợp lý cực đại của Σ pᵢvᵢ/(1 − e^(−λvᵢ)) = Σ nᵢvᵢ; trùng với bảng MPN 3 ống trong giáo trình (3-0-0 → 23, 3-1-0 → 43, 3-2-0 → 93, 3-3-0 → 240)",
+    "ecoli": "Kích thước điển hình của E. coli khoảng 1–2 × 0,5 µm (minh hoạ, giáo trình không ghi)",
+    "spore": "Giáo trình Thí nghiệm vi sinh vật học, Bài 4 mục 4.2 nhuộm bào tử theo Ôgietska: vết bôi B. subtilis 2 tuần tuổi, HCl 0,5 % hơ tới bốc hơi giữ 2 phút, giấy lọc + fuchsin Ziehl hơ tới bốc hơi giữ 5 phút, tẩy H₂SO₄ 1 % 2 phút, xanh methylene Loeffler 5–15 phút; bào tử đỏ, tế bào chất xanh; bào tử B. subtilis hình ovan, ở giữa hoặc lệch tâm",
+    "disk": "Giáo trình Thí nghiệm vi sinh vật học, Bài 8 mục 1.2d phương pháp khoanh giấy lọc: giấy lọc đường kính 6 mm tẩm kháng sinh, đặt cách đều trên đĩa đã cấy vi sinh vật kiểm định, 37 °C 16–18 giờ, đo vòng vô khuẩn. Đường kính vòng chuẩn của E. coli ATCC 25922 trên thạch Mueller-Hinton theo EUCAST QC Tables v13.1 (2023): ampicillin 10 µg đích 18–19, khoảng 15–22 mm; gentamicin 10 µg đích 22–23, khoảng 19–26 mm; chloramphenicol 30 µg đích 24, khoảng 21–27 mm; ciprofloxacin 5 µg đích 33, khoảng 29–37 mm",
+    "ferment": "Giáo trình Thí nghiệm vi sinh vật học, Bài 6 lên men rượu: dịch quả pH 4–6, cấy men giống 2–5 %, 28–30 °C 1–2 ngày; bình Smith (50 mL dịch + 10 mL men giống, ống chia vạch 1–25 mL); 5 mL dịch + 1 mL Ba(OH)₂ 10 % đun nhẹ cho BaCO₃ trắng; 5 mL dịch + 5 mL NaOH + 0,1 g I₂ ở 60 °C, để nguội cho tinh thể iodoform vàng; 2 mL dịch + 1–2 mL H₂SO₄ đặc + K₂Cr₂O₇ 1 % chuyển xanh lục, ống đối chứng dịch chưa lên men giữ màu da cam"
+  },
+  "gram": {
+    "bsub": { "name": "Bacillus subtilis", "gram": "+", "len": [3, 5], "width": 0.6, "chain": [1, 4] },
+    "ecoli": { "name": "Escherichia coli", "gram": "-", "len": [1.2, 2], "width": 0.5, "chain": [1, 1] },
+    "colors": { "violet": "#4b2378", "pink": "#d4577c", "faint": "#ead6dc", "bg": "#f2ede6" }
+  },
+  "tpc": { "trueCfuPerG": 240000, "label": "mẫu thực phẩm (mật độ như ví dụ của giáo trình)", "hotAgarSurvival": 0.5, "early24h": 0.75, "tipCarry": 0.05 },
+  "mpn": { "truePerG": 40, "volumesG": [0.1, 0.01, 0.001], "falseLsb": 0.1 },
+  "yeast": { "trueCellsPerMl": 1.2e8, "crowdLoss": 0.02 },
+  "spore": {
+    "_note": "Tỉ lệ tế bào đã tạo bào tử (2 tuần 0,6; 24 giờ 0,03), tỉ lệ bào tử tự do (0,3) và cỡ bào tử 0,8 × 1,4 µm là số minh hoạ",
+    "fraction": { "2w": 0.6, "24h": 0.03 }, "free": 0.3, "size": [1.4, 0.8],
+    "colors": { "red": "#c8203a", "blue": "#3a64b8", "clear": "#f7f5ee", "faint": "#d9d6e8", "bg": "#f2ede6" }
+  },
+  "disk": {
+    "_note": "Vùng ức chế lấy ngẫu nhiên quanh đích EUCAST với độ lệch chuẩn bằng 1/4 bề rộng khoảng kiểm chuẩn. Chủng mang pUC19 (gen bla) không có vòng quanh ampicillin là minh hoạ; cấy dày làm vòng nhỏ đi 3 mm là số minh hoạ theo hướng của EUCAST Disk Diffusion Manual",
+    "disks": [
+      { "id": "AMP", "name": "ampicillin 10 µg", "target": 18.5, "range": [15, 22] },
+      { "id": "GEN", "name": "gentamicin 10 µg", "target": 22.5, "range": [19, 26] },
+      { "id": "CHL", "name": "chloramphenicol 30 µg", "target": 24, "range": [21, 27] },
+      { "id": "CIP", "name": "ciprofloxacin 5 µg", "target": 33, "range": [29, 37] }
+    ],
+    "diskMm": 6, "plateMm": 90, "ringMm": 26, "heavyShrinkMm": 3, "closeMm": 14
+  },
+  "ferment": {
+    "_note": "Thời gian ống chia vạch 25 mL đầy khí ở 30 °C (khoảng 20 giờ) và ở 4 °C (lên men rất chậm) là số minh hoạ"
+  }
+}

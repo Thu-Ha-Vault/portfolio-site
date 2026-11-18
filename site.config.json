@@ -74,17 +74,21 @@
     },
     {
       "folder": "Projects/Virtual_Lab",
+      "page": "00 - Giới thiệu Virtual Lab.md",
       "featured": false,
-      "links": {},
+      "links": {
+        "app": "/virtual-lab/"
+      },
       "slug": "virtual-lab",
       "title": "Virtual Lab: a 3D biology laboratory",
-      "summary_vi": "Phòng thí nghiệm sinh học ảo 3D để học sinh, sinh viên thực hành thí nghiệm mà không cần phòng lab thật: danh mục thí nghiệm, kiến trúc mô phỏng và bộ khung phòng thí nghiệm.",
-      "summary_en": "A 3D virtual biology lab where students can practice experiments without a physical lab: experiment catalogue, simulation architecture and lab layout.",
+      "summary_vi": "Phòng thí nghiệm sinh học và hoá học 3D chạy ngay trên trình duyệt: kéo chai hoá chất vào cốc, pha ống PCR, chạy điện di, lai đậu Hà Lan như Mendel, mổ ếch ảo. 108 protocol, kết quả có sai số và làm sai thì ra kết quả sai. Mở và dùng thử miễn phí.",
+      "summary_en": "A 3D biology and chemistry lab that runs in the browser: pour reagents into beakers, set up PCR tubes, run a gel, cross peas like Mendel, dissect a virtual frog. 108 protocols with realistic error, where mistakes give wrong results. Free to open and try.",
       "cover": {
         "src": "/project-covers/virtual-lab.webp",
         "alt": "Mô phỏng máy luân nhiệt (thermocycler) trong Virtual Lab",
         "alt_en": "The thermocycler simulation in the Virtual Lab"
-      }
+      },
+      "appName": "Virtual Lab"
     },
     {
       "folder": "Projects/Capstone - Project Management",

@@ -1,0 +1,267 @@
+{
+  "sources": {
+    "lab08": "Bài 08 - Định tính enzyme và hoạt độ amylase (báo cáo thực hành Hoá sinh, nhóm 3 K66; vault: Resources/Sinh học/Biology Project and Lab Report/Biochemistry and Molecular Biology)",
+    "lab09": "Bài 09 - Ảnh hưởng của nhiệt độ, pH và ion lên amylase (cùng nguồn)",
+    "lab10": "Bài 10 - Độ bền và tính đặc hiệu của enzyme (cùng nguồn)",
+    "enz01": "Enzymology bài 01 - Hoạt độ lipase bằng p-NPP: Priyanka et al. 2020, Biocatalysis and Agricultural Biotechnology 29:101806 (lipase Pseudomonas brenneri)",
+    "pnp": "p-nitrophenolat: ε405 = 18 500 L·mol⁻¹·cm⁻¹ ở pH ≥ 9,8 (figures/spectro/model.mjs); pKa p-nitrophenol 7,15 (CRC Handbook, chưa xác minh bản gốc)"
+  },
+  "media": {
+    "_note": "Hằng số thời gian để nhiệt độ dịch trong ống nghiệm tiến về nhiệt độ môi trường (phút): nước truyền nhiệt nhanh hơn không khí nhiều lần (minh hoạ). Bài 09 ghi 55 °C là tủ ấm, 4 °C là tủ lạnh, 100 °C là nồi sôi.",
+    "bath": {
+      "name": "bể ổn nhiệt (nước)",
+      "tau": 1.0
+    },
+    "air": {
+      "name": "tủ ấm hoặc tủ lạnh (không khí)",
+      "tau": 12
+    },
+    "ice": {
+      "name": "thùng đá",
+      "tau": 2.5
+    },
+    "room": {
+      "name": "để trên bàn",
+      "tau": 15
+    }
+  },
+  "lugol": {
+    "_note": "Màu trên bản sứ theo mức tinh bột đã thuỷ phân D (tên màu như trong bảng của bài 08–10). Ngưỡng là minh hoạ.",
+    "levels": [
+      [
+        0.25,
+        "xanh đen",
+        "#2b2766"
+      ],
+      [
+        0.4,
+        "nâu đen",
+        "#3d2b33"
+      ],
+      [
+        0.6,
+        "nâu",
+        "#7a4a2a"
+      ],
+      [
+        0.75,
+        "nâu đỏ",
+        "#8a3b25"
+      ],
+      [
+        0.9,
+        "vàng cam",
+        "#d9822b"
+      ],
+      [
+        2,
+        "vàng",
+        "#e3c23a"
+      ]
+    ]
+  },
+  "enzymes": {
+    "saliva": {
+      "name": "α-amylase nước bọt",
+      "substrates": [
+        "starch"
+      ],
+      "unit": "g/L",
+      "vmax": 3.8,
+      "_vmax": "g tinh bột/L/phút khi dịch phản ứng toàn là nước bọt nguyên ở 37 °C, đủ Cl⁻, pH tối ưu; chỉnh cùng các hằng số dưới đây để khớp bảng màu Lugol của bài 08 (TN1, Wohlgemuth) và bài 09 (nhiệt độ, pH, ion) trong phạm vi một mức màu (minh hoạ)",
+      "km": 2.0,
+      "_km": "Km với tinh bột khoảng 2 g/L (minh hoạ, cùng bậc với các số đo α-amylase 1–10 mg/mL)",
+      "ea": 35000,
+      "_ea": "Năng lượng hoạt hoá của phản ứng xúc tác, J/mol (minh hoạ)",
+      "kd80": 0.09,
+      "ead": 150000,
+      "_kd": "Biến tính bậc nhất: hằng số ở 80 °C (phút⁻¹) và năng lượng hoạt hoá biến tính (J/mol); chỉnh để ống đặt vào nồi sôi ở bài 09 thuỷ phân được một phần trong lúc nóng lên rồi dừng ở màu nâu đỏ (minh hoạ)",
+      "pKa1": 6.15,
+      "pKa2": 7.5,
+      "_pKa": "Đường chuông hoạt độ theo pH, đỉnh khoảng 6,8 như bài 09 (minh hoạ)",
+      "alkali": {
+        "k": 0.12,
+        "at": 7.2,
+        "slope": 2.0,
+        "_note": "Mất hoạt tính không thuận nghịch ở pH kiềm: k phút⁻¹ ở pH 7,2, tăng 10^slope mỗi đơn vị pH (bài 09: pH 7,7–8,4 gần như bất hoạt)"
+      },
+      "acid": {
+        "k": 0.02,
+        "at": 5.3,
+        "slope": 1.0,
+        "_note": "Mất hoạt tính chậm ở pH acid (minh hoạ)"
+      },
+      "clKa": 5,
+      "clBasal": 0.35,
+      "_cl": "Cl⁻ hoạt hoá: hoạt độ = basal + (1 − basal)·[Cl]/(Ka + [Cl]), Ka 5 mM (minh hoạ)",
+      "salivaCl": 20,
+      "_salivaCl": "Cl⁻ trong nước bọt khoảng 20 mM (khoảng thường gặp 5–40 mM, minh hoạ)",
+      "cuKi": 0.1,
+      "_cu": "Cu²⁺ kìm hãm, Ki 0,1 mM (minh hoạ)"
+    },
+    "bacterial": {
+      "name": "α-amylase (chế phẩm bền nhiệt)",
+      "_origin": "Bài 10 không ghi nguồn enzyme; enzyme còn nguyên hoạt tính sau 30 phút ở 80 °C nên mô hình coi là α-amylase vi khuẩn bền nhiệt (chưa xác minh)",
+      "substrates": [
+        "starch"
+      ],
+      "unit": "g/L",
+      "vmax": 3.2,
+      "km": 2.0,
+      "ea": 45000,
+      "kd80": 0.003,
+      "ead": 300000,
+      "_kd": "Còn khoảng 90 % sau 30 phút ở 80 °C, bất hoạt sau 30 phút ở 100 °C (bài 10)",
+      "pKa1": 5.6,
+      "pKa2": 7.4,
+      "alkali": {
+        "k": 0.6,
+        "at": 8.4,
+        "slope": 2.0
+      },
+      "acid": {
+        "k": 0.09,
+        "at": 5.3,
+        "slope": 1.0
+      },
+      "clKa": 5,
+      "clBasal": 1.0,
+      "salivaCl": 0,
+      "cuKi": 0.1
+    },
+    "urease": {
+      "name": "urease",
+      "substrates": [
+        "urea"
+      ],
+      "unit": "mM",
+      "vmax": 3.0,
+      "km": 3.0,
+      "_km": "Km urease đậu kiếm với ure khoảng 3 mM (minh hoạ)",
+      "ea": 40000,
+      "kd80": 1.5,
+      "ead": 200000,
+      "pKa1": 5.8,
+      "pKa2": 8.6,
+      "clKa": 1,
+      "clBasal": 1.0,
+      "salivaCl": 0,
+      "cuKi": 0.01
+    },
+    "saccharase": {
+      "name": "saccharase (invertase) nấm men",
+      "substrates": [
+        "sucrose"
+      ],
+      "unit": "mM",
+      "vmax": 6.0,
+      "km": 25,
+      "_km": "Km invertase nấm men với sucrose khoảng 25 mM (minh hoạ)",
+      "ea": 40000,
+      "kd80": 1.0,
+      "ead": 200000,
+      "pKa1": 3.5,
+      "pKa2": 6.5,
+      "clKa": 1,
+      "clBasal": 1.0,
+      "salivaCl": 0,
+      "cuKi": 0.05
+    },
+    "lipase": {
+      "name": "lipase Pseudomonas brenneri",
+      "substrates": [
+        "pnpp"
+      ],
+      "unit": "mM",
+      "kmPaper": 0.37,
+      "vmaxPaper": 5.17,
+      "_paper": "Km 0,37 mM, Vmax 5,17 µmol/phút/mg với p-NPP ở 28 °C (Priyanka et al. 2020; note ghi 'mmol/phút/mg', mô hình dùng µmol)",
+      "halfLife60": 190,
+      "_half": "Thời gian bán huỷ ở 60 °C 190 phút (bất hoạt bậc nhất)",
+      "ea": 40000,
+      "pHStable": [
+        6,
+        8
+      ],
+      "additives": {
+        "none": 100,
+        "CaCl2": 106.03,
+        "MgCl2": 93.52,
+        "KCl": 103.12,
+        "NaCl": 99.84,
+        "CoCl2": 91.14,
+        "MnCl2": 94.55,
+        "FeCl3": 6.68,
+        "ZnSO4": 0,
+        "EDTA": 0,
+        "mercapto": 103.1,
+        "poly80": 98.29,
+        "triton": 89.94,
+        "SDS": 59.7
+      },
+      "_additives": "Hoạt độ còn lại (%) sau 24 giờ với 10 mM phụ gia ở 28 °C (bảng của bài báo)"
+    }
+  },
+  "substrates": {
+    "starch1": {
+      "name": "tinh bột 1 %",
+      "kind": "starch",
+      "gL": 10
+    },
+    "starch05": {
+      "name": "tinh bột 0,5 % trong NaCl 0,1 %",
+      "kind": "starch",
+      "gL": 5,
+      "clMM": 17
+    },
+    "starch01": {
+      "name": "tinh bột 0,1 %",
+      "kind": "starch",
+      "gL": 1
+    },
+    "sucrose": {
+      "name": "saccharose 5 %",
+      "kind": "sucrose",
+      "mM": 146
+    },
+    "urea": {
+      "name": "ure 5 %",
+      "kind": "urea",
+      "mM": 833
+    },
+    "acetamide": {
+      "name": "acetamide 5 %",
+      "kind": "acetamide",
+      "mM": 846
+    },
+    "pnpp": {
+      "name": "p-NPP trong đệm Tris-HCl pH 7,5",
+      "kind": "pnpp"
+    }
+  },
+  "additives": {
+    "none": {
+      "name": "không thêm"
+    },
+    "water": {
+      "name": "nước cất"
+    },
+    "NaCl": {
+      "name": "NaCl 1 %",
+      "clMM": 171
+    },
+    "CuSO4": {
+      "name": "CuSO₄ 1 %",
+      "cuMM": 62.6
+    }
+  },
+  "noise": 0.06,
+  "_noise": "Độ lệch ngẫu nhiên hoạt độ giữa các ống 6 % (pipet, trộn; minh hoạ)",
+  "preps": {
+    "_note": "Hoạt độ tương đối của dịch enzyme dùng trong từng bài so với nước bọt nguyên (bài 08 = 1). Bài 10 không ghi độ pha loãng; hai giá trị chỉnh để khớp bảng màu của bài (minh hoạ).",
+    "saliva": 1,
+    "lab10-tn1": 1.5,
+    "lab10-tn2": 26,
+    "lab10-tn4": 1.5
+  }
+}

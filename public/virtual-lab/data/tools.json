@@ -1,0 +1,35 @@
+{
+  "sources": {
+    "ISO 4788": "Ống đong (graduated cylinder) 10 mL: dung sai ±0,1 mL (cấp A), ±0,2 mL (cấp B); 50 mL: ±0,5 mL (cấp B)",
+    "ISO 648": "Pipet bầu (volumetric pipette) 10 mL cấp A: ±0,02 mL",
+    "ISO 835": "Pipet chia vạch 10 mL cấp A: ±0,05 mL (chưa đối chiếu văn bản gốc lần này)",
+    "ISO 385": "Buret 25 mL cấp A: ±0,03 mL; đọc vạch chia 0,1 mL ước lượng tới 0,01–0,02 mL",
+    "drop": "Một giọt từ ống nhỏ giọt hoặc buret khoảng 0,05 mL (20 giọt mỗi mL)",
+    "pour": "Rót trực tiếp từ chai: chỉ ước lượng bằng mắt, lấy sai số khoảng ±20 % (giả định)",
+    "spatula": "Xúc chất rắn bằng thìa: một thìa nhỏ khoảng 0,5 g, sai số khoảng ±30 % (giả định); cân phân tích mới cho khối lượng chính xác",
+    "hand": "Rót bằng tay: lưu lượng khoảng 4 mL/s khi nghiêng hẳn chai 100 mL, lệch ±25 % mỗi lần (minh hoạ, src/core/handling.js); người dùng đọc vạch trên cốc",
+    "usp": "USP <1101> Medicine Dropper: mỗi giọt nước 45–55 mg, tức khoảng 20 giọt mỗi mL"
+  },
+  "tools": [
+    { "id": "pour", "name": "Rót trực tiếp từ chai", "volumes": [2, 5], "rel": 0.2, "start": true,
+      "effect": "Rót ước lượng bằng mắt: nhanh nhưng lượng thật lệch nhiều so với dự định." },
+    { "id": "hand", "name": "Rót bằng tay (giữ để rót)", "volumes": [], "rel": 0, "start": true, "hand": true,
+      "effect": "Thả chai lên cốc rồi giữ nút \"Giữ để rót\" ở bảng Thao tác tay: giữ càng lâu rót càng nhiều; đọc vạch trên cốc để biết đã rót bao nhiêu." },
+    { "id": "dropper", "name": "Ống nhỏ giọt", "volumes": [0.05, 0.25, 0.5], "rel": 0.15, "start": true,
+      "effect": "Mỗi giọt khoảng 0,05 mL, kích thước giọt thay đổi theo cách bóp và độ nhớt." },
+    { "id": "drops", "name": "Ống nhỏ giọt (đếm từng giọt)", "volumes": [], "rel": 0, "start": true, "hand": true,
+      "effect": "Thả chai lên cốc rồi bấm \"Nhỏ 1 giọt\" ở bảng Thao tác tay; mỗi giọt khoảng 0,05 mL (20 giọt mỗi mL theo USP), lệch ±10 %." },
+    { "id": "cyl10", "name": "Ống đong 10 mL (cấp B)", "volumes": [1, 2, 5, 10], "tol": 0.2,
+      "effect": "Đong thể tích gần đúng, đọc vạch ở đáy mặt khum; dung sai ±0,2 mL." },
+    { "id": "pipg10", "name": "Pipet chia vạch 10 mL (cấp A)", "volumes": [1, 2, 5, 10], "tol": 0.05,
+      "effect": "Lấy thể tích bất kỳ tới 10 mL theo vạch chia 0,1 mL; dung sai ±0,05 mL, kém pipet bầu nhưng linh hoạt hơn." },
+    { "id": "pip10", "name": "Pipet bầu 10 mL (cấp A)", "volumes": [10], "tol": 0.02,
+      "effect": "Lấy đúng 10 mL với dung sai ±0,02 mL: dùng khi cần thể tích chính xác (chuẩn độ, pha dung dịch chuẩn)." },
+    { "id": "burette", "name": "Buret 25 mL (cấp A)", "volumes": [1, 0.5, 0.1, 0.05], "tol": 0.03, "titration": true,
+      "effect": "Nhỏ dung dịch chuẩn có kiểm soát; thể tích đọc trên buret trước và sau, dung sai ±0,03 mL." },
+    { "id": "phmeter", "name": "Máy đo pH", "meter": true, "model": "Mettler Toledo FiveEasy F20: pH 0,00–14,00, độ phân giải 0,01, sai số ±0,01; 227 × 147 × 70 mm; hiệu chuẩn tuyến tính tới 3 điểm (theo trang phân phối Fisher Scientific, faust.ch)",
+      "effect": "Điện cực thuỷ tinh đo pH của dung dịch trong cốc; dùng để vẽ đường cong chuẩn độ." },
+    { "id": "spatula", "name": "Thìa xúc hoá chất", "grams": [0.5, 0.2, 1], "rel": 0.3, "start": true, "solid": true,
+      "effect": "Xúc chất rắn ước lượng bằng mắt: một thìa nhỏ khoảng 0,5 g, lệch khoảng ±30 % (giả định)." }
+  ]
+}

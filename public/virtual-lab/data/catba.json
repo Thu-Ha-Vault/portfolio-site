@@ -1,0 +1,39 @@
+{
+  "_note": "Bản đồ vệ tinh quần đảo Cát Bà. Ảnh nền, độ cao và mặt nạ nước ở data/catba/ do tools/catba/fetch.py tạo (grid.json ghi khung UTM 48N, độ phân giải, cảnh dùng). Điểm khảo sát: toạ độ GPS ghi trong báo cáo thực tập của chủ dự án nếu có, còn lại lấy từ OpenStreetMap; vị trí nhãn tên biển, vịnh chỉ để đọc bản đồ (minh hoạ).",
+  "sources": {
+    "sentinel2": "Copernicus Sentinel-2 L2A, cảnh S2C_48QYJ_20260114_0_L2A và S2C_48QYH_20260114_1_L2A (14/01/2026), ảnh màu thật TCI 10 m và lớp phân loại cảnh SCL 20 m; tải từ kho COG Sentinel-2 trên AWS qua Earth Search STAC. Contains modified Copernicus Sentinel data 2026",
+    "dem": "Copernicus DEM GLO-30 (ô N20 E106, N20 E107), độ cao bề mặt 1″ (khoảng 30 m), tham chiếu EGM2008; © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. Độ chính xác tuyệt đối theo chiều đứng < 4 m (LE90) theo Copernicus DEM Product Handbook",
+    "report02": "GPS ghi trong báo cáo thực tập bài 02 (ĐVCXS trên cạn, 27/6/2023)",
+    "report08": "GPS ghi trong báo cáo thực tập bài 08 (thực vật bậc thấp, 3/7/2023)",
+    "osm": "OpenStreetMap (tra bằng Nominatim, 16/10/2026), © OpenStreetMap contributors, ODbL",
+    "wiki": "Wikipedia tiếng Việt, mục Cát Bà (đảo)",
+    "snyder": "Snyder J.P. 1987, Map Projections – A Working Manual, USGS Professional Paper 1395 (công thức UTM)"
+  },
+  "scale": 1000,
+  "exaggeration": 3,
+  "notes": {
+    "dem": "Copernicus DEM là mô hình bề mặt (DSM) đo bằng radar vệ tinh TanDEM-X: ở chỗ có rừng, độ cao gồm một phần tán cây, nên thường cao hơn mặt đất dưới tán; GPS cầm tay đo độ cao kém chính xác hơn đo vị trí ngang. Ô lưới của bản đồ là 50 m.",
+    "route": "Đây là đường thẳng trên bản đồ; đường mòn thật vòng theo thung lũng và sườn núi nên dài hơn và lên xuống nhiều hơn. Độ cao lấy theo mô hình bề mặt (có tán rừng)."
+  },
+  "layers": {
+    "sat": { "name": "Ảnh vệ tinh", "text": "Ảnh màu thật Sentinel-2 ngày 14/01/2026 (độ phân giải 10 m, thu về 12,5 m; tăng sáng nhẹ, gamma 0,8). Ảnh chụp lúc triều thấp: bãi bùn phía tây bắc lộ ra." },
+    "height": { "name": "Độ cao", "text": "Tô màu theo độ cao bề mặt Copernicus DEM: xanh lục đậm gần mực nước biển, vàng khoảng 100 m, nâu khoảng 200 m, trắng trên 280 m. Biển tô xanh lam theo mặt nạ nước Sentinel-2 (lớp SCL = 6)." }
+  },
+  "sites": [
+    { "id": "trungtrang", "name": "Động Trung Trang", "kind": "cave", "lat": 20.789722, "lon": 107.0025, "alt": 50, "source": "report02", "lesson": "Bài 02 (27/6/2023): hai loài dơi nếp mũi trong hang, phân biệt bằng tần số sóng siêu âm định vị 98,6 kHz (H. larvatus) và 78,1 kHz (H. alongensis). Thao tác ở khu Thực địa Cát Bà, bảng Thực địa, nút \"Ghi dơi ở cửa hang\".", "note": "Cửa hang trên OpenStreetMap ở 20°47′20″ B, 106°59′51″ Đ, cách điểm GPS của báo cáo khoảng 540 m về phía tây; điểm GPS có thể ghi ở chỗ quan sát dơi trên đường vào hang." },
+    { "id": "corvus", "name": "Điểm gặp quạ (chi Corvus)", "kind": "obs", "lat": 20.794444, "lon": 106.990556, "alt": 25, "altRange": [20, 30], "source": "report02", "lesson": "Bài 02: tuyến VQG – Động Trung Trang, ghi nhận 1 con quạ bằng tiếng kêu và bộ lông đen." },
+    { "id": "trametes", "name": "Mẫu nấm Trametes", "kind": "obs", "lat": 20.795556, "lon": 106.997222, "alt": 80, "source": "report08", "lesson": "Bài 08 (3/7/2023): tuyến lên đỉnh Ngự Lâm; nấm lỗ Trametes (Polyporaceae) trên cành gỗ mục. Khoá định loại ở bảng Thực địa." },
+    { "id": "vqg", "name": "Trung tâm VQG Cát Bà", "kind": "place", "lat": 20.794657, "lon": 106.997629, "source": "osm", "lesson": "Điểm xuất phát các tuyến của bài 02, 04, 07, 08.", "note": "Lấy theo bảng thông tin rừng Kim Giao trên OpenStreetMap, cạnh khu trung tâm vườn (chưa xác minh vị trí cổng trung tâm)." },
+    { "id": "ngulam", "name": "Đỉnh Ngự Lâm", "kind": "peak", "lat": 20.794367, "lon": 106.999308, "source": "osm", "lesson": "Bài 08: tuyến VQG – đỉnh Ngự Lâm (nấm, tảo)." },
+    { "id": "aoech", "name": "Ao Ếch", "kind": "place", "lat": 20.800242, "lon": 107.026532, "source": "osm", "lesson": "Bài 04 (29/6/2023): côn trùng trên đường lên Ao Ếch, 12 mẫu bướm thuộc 7 họ. Thao tác ở bảng Thực địa, hàng Côn trùng." },
+    { "id": "xuandam", "name": "Bãi triều Xuân Đám", "kind": "shore", "lat": 20.747163, "lon": 106.995934, "source": "osm", "lesson": "Bài 03 (28/6/2023): cá vùng triều (thòi lòi, bống, cá đục…); bài 05 (30/6/2023): 5 họ cua. Thao tác ở bảng Thực địa, hàng Bãi triều.", "note": "Lấy theo bãi biển Xuân Đám trên OpenStreetMap; báo cáo không ghi toạ độ bãi triều." },
+    { "id": "phulong", "name": "Rừng ngập mặn Phù Long", "kind": "mangrove", "lat": 20.804688, "lon": 106.928277, "source": "osm", "lesson": "Bài 06 (1/7/2023): ô tiêu chuẩn, mật độ, hệ số liên kết, chỉ số đa dạng ở hai dải rừng ngập mặn. Khu Thực địa Cát Bà dựng lại hai dải rừng này.", "note": "Lấy theo nhà văn hoá xã Phù Long trên OpenStreetMap; báo cáo không ghi toạ độ khu đặt ô. Bãi bùn và rừng ngập mặn nằm quanh đầm Cái Viềng ở phía tây bắc." },
+    { "id": "town", "name": "Thị trấn Cát Bà", "kind": "town", "lat": 20.723889, "lon": 107.057778, "source": "wiki" },
+    { "id": "gialuan", "name": "Bến phà Gia Luận", "kind": "place", "lat": 20.858968, "lon": 106.981983, "source": "osm", "lesson": "Phà sang Tuần Châu (Hạ Long, Quảng Ninh)." }
+  ],
+  "waters": [
+    { "name": "Vịnh Lan Hạ", "lat": 20.752, "lon": 107.092 },
+    { "name": "Vịnh Hạ Long (phía bắc)", "lat": 20.874, "lon": 107.105 },
+    { "name": "Biển Hải Phòng – Đồ Sơn", "lat": 20.715, "lon": 106.95 }
+  ]
+}

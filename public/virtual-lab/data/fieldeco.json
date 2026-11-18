@@ -1,0 +1,492 @@
+{
+  "sources": {
+    "lab06": "Bài 06 Biological Field Study (rừng ngập mặn Phù Long, 01/07/2023): ô tiêu chuẩn 3 kích thước × 5 ô, sai số ước lượng, hệ số liên kết V, Margalef, Shannon–Wiener, Sørensen; độ muối 1,2–1,3 (bản gốc không ghi đơn vị), pH 5,8",
+    "lab04": "Bài 04 (côn trùng, đường lên Ao Ếch, 29/06/2023): 12 mẫu bướm thuộc 7 họ (Pieridae 3; Nymphalidae, Lycaenidae, Satyridae 2; Danaidae, Riodinidae, Papilionidae 1); bẫy hố, bẫy đĩa vàng, lưới cản, bẫy Malaise",
+    "lab05": "Bài 05: 5 họ cua (Grapsidae, Eriphiidae, Calappidae, Leucosiidae, Dorippidae) ở bãi triều Xuân Đám",
+    "species": "Cây ngập mặn phổ biến ở ven biển Hải Phòng – Quảng Ninh (trang, sú, mắm biển, bần chua, vẹt dù, đước vòi, giá, ô rô); mật độ và mức phân bố cụm trong mô hình là minh hoạ, không phải số đo ở Phù Long",
+    "groups": "Báo cáo thực tập Cát Bà của chủ dự án (bài 02–05, 07, 08): dơi nếp mũi ở Động Trung Trang (~100 cá thể ở 98,6 kHz dự đoán Hipposideros larvatus, ~300 ở 78,1 kHz dự đoán H. alongensis), chim trên tuyến (họ Hút mật 4, Bông lau họng vạch 1, chi Quạ 1), cá ở bãi triều Xuân Đám (Oxudercidae, Sillaginidae, Gambusia, Sardinella, Gobiidae), 5 họ cua (Grapsidae, Eriphiidae, Calappidae, Leucosiidae, Dorippidae), Ardisia sp., Trametes (phiếu mô tả mẫu)"
+  },
+  "sites": {
+    "sea": {
+      "name": "Phù Long, dải sát biển",
+      "side": 40,
+      "species": [
+        [
+          "Avicennia marina",
+          "mắm biển",
+          6,
+          3
+        ],
+        [
+          "Sonneratia caseolaris",
+          "bần chua",
+          2,
+          2
+        ],
+        [
+          "Aegiceras corniculatum",
+          "sú",
+          10,
+          1.5
+        ],
+        [
+          "Kandelia obovata",
+          "trang",
+          12,
+          2
+        ]
+      ]
+    },
+    "land": {
+      "name": "Phù Long, dải phía trong",
+      "side": 40,
+      "species": [
+        [
+          "Kandelia obovata",
+          "trang",
+          18,
+          2
+        ],
+        [
+          "Bruguiera gymnorrhiza",
+          "vẹt dù",
+          6,
+          2.5
+        ],
+        [
+          "Rhizophora stylosa",
+          "đước vòi",
+          5,
+          2.5
+        ],
+        [
+          "Aegiceras corniculatum",
+          "sú",
+          8,
+          1.5
+        ],
+        [
+          "Excoecaria agallocha",
+          "giá",
+          3,
+          3
+        ],
+        [
+          "Acanthus ilicifolius",
+          "ô rô",
+          20,
+          1
+        ]
+      ]
+    }
+  },
+  "_species": "Mỗi loài: [tên khoa học, tên Việt, mật độ cây/100 m², bán kính cụm (m)]; cây mọc theo cụm (quá trình Thomas), mỗi cụm khoảng 5 cây (minh hoạ)",
+  "env": {
+    "salinity": [
+      1.2,
+      1.3
+    ],
+    "pH": 5.8
+  },
+  "insects": {
+    "_note": "Số con trung bình mỗi giờ theo loại bẫy (minh hoạ); với vợt, tốc độ của 7 họ bướm chỉnh để 2,5 giờ (7h–9h30) ra khoảng 12 mẫu theo đúng tỉ lệ họ của bài 04",
+    "groups": [
+      [
+        "Lepidoptera: Pieridae",
+        "bướm phấn",
+        {
+          "net": 1.2,
+          "malaise": 0.2
+        }
+      ],
+      [
+        "Lepidoptera: Nymphalidae",
+        "bướm giáp",
+        {
+          "net": 0.8,
+          "malaise": 0.15
+        }
+      ],
+      [
+        "Lepidoptera: Lycaenidae",
+        "bướm xanh",
+        {
+          "net": 0.8,
+          "malaise": 0.2
+        }
+      ],
+      [
+        "Lepidoptera: Satyridae",
+        "bướm mắt rắn",
+        {
+          "net": 0.8,
+          "malaise": 0.1
+        }
+      ],
+      [
+        "Lepidoptera: Danaidae",
+        "bướm đốm",
+        {
+          "net": 0.4
+        }
+      ],
+      [
+        "Lepidoptera: Riodinidae",
+        "bướm ngao",
+        {
+          "net": 0.4
+        }
+      ],
+      [
+        "Lepidoptera: Papilionidae",
+        "bướm phượng",
+        {
+          "net": 0.4
+        }
+      ],
+      [
+        "Hymenoptera: Formicidae",
+        "kiến",
+        {
+          "pitfall": 6,
+          "yellow": 0.3
+        }
+      ],
+      [
+        "Coleoptera: Carabidae",
+        "bọ chân chạy",
+        {
+          "pitfall": 1.2
+        }
+      ],
+      [
+        "Coleoptera: Staphylinidae",
+        "bọ cánh cụt",
+        {
+          "pitfall": 0.8,
+          "malaise": 0.2
+        }
+      ],
+      [
+        "Orthoptera: Gryllidae",
+        "dế",
+        {
+          "pitfall": 0.6
+        }
+      ],
+      [
+        "Hymenoptera: Apidae",
+        "ong",
+        {
+          "yellow": 1.5,
+          "malaise": 0.6,
+          "net": 0.2
+        }
+      ],
+      [
+        "Diptera: Syrphidae",
+        "ruồi giả ong",
+        {
+          "yellow": 1.2,
+          "malaise": 0.8
+        }
+      ],
+      [
+        "Diptera: Muscidae",
+        "ruồi nhà",
+        {
+          "yellow": 0.8,
+          "malaise": 1.5
+        }
+      ],
+      [
+        "Diptera: Culicidae",
+        "muỗi",
+        {
+          "malaise": 2,
+          "intercept": 0.5
+        }
+      ],
+      [
+        "Hemiptera: Cicadellidae",
+        "rầy lá",
+        {
+          "yellow": 0.6,
+          "malaise": 0.8,
+          "intercept": 0.4
+        }
+      ],
+      [
+        "Coleoptera: Chrysomelidae",
+        "bọ lá",
+        {
+          "intercept": 0.8,
+          "yellow": 0.3
+        }
+      ],
+      [
+        "Hymenoptera: Ichneumonidae",
+        "ong cự",
+        {
+          "malaise": 0.7,
+          "intercept": 0.3
+        }
+      ]
+    ],
+    "traps": {
+      "net": "vợt bắt chủ động trên tuyến",
+      "pitfall": "bẫy hố (cốc chôn ngang mặt đất)",
+      "yellow": "bẫy đĩa vàng",
+      "malaise": "bẫy Malaise",
+      "intercept": "lưới cản đường bay"
+    }
+  },
+  "bats": {
+    "_note": "Tần số sóng định vị lấy theo báo cáo (bài 02); độ lệch chuẩn 1,2 kHz và số lượt ghi mỗi phút là minh hoạ",
+    "cave": "Động Trung Trang",
+    "species": [
+      [
+        "Hipposideros larvatus",
+        "dơi nếp mũi xám (dự đoán)",
+        100,
+        98.6
+      ],
+      [
+        "Hipposideros alongensis",
+        "dơi nếp mũi Hạ Long (dự đoán)",
+        300,
+        78.1
+      ]
+    ],
+    "sdKHz": 1.2,
+    "passesPerMin": 4
+  },
+  "birds": {
+    "_note": "Chỉ gồm các taxon có trong báo cáo (bài 02). Số lần bắt gặp mỗi giờ là minh hoạ, chỉnh để 4 giờ buổi sáng yên lặng có loa phát tiếng cho trung bình đúng số con trong báo cáo (4, 1, 1)",
+    "taxa": [
+      [
+        "Nectariniidae",
+        "họ Hút mật",
+        0.67
+      ],
+      [
+        "Pycnonotus finlaysoni",
+        "Bông lau họng vạch",
+        0.17
+      ],
+      [
+        "Corvus",
+        "chi Quạ",
+        0.17
+      ]
+    ],
+    "playback": 1.5,
+    "noisy": 0.3,
+    "afternoon": 0.6
+  },
+  "fish": {
+    "_note": "Cá ghi nhận ở bãi triều Xuân Đám theo báo cáo (bài 03); cách bắt hợp với từng nhóm theo sinh thái chung, số con mỗi lần là minh hoạ (báo cáo không ghi số lượng)",
+    "taxa": [
+      [
+        "Oxudercidae",
+        "cá thòi lòi",
+        {
+          "pump": 3,
+          "net": 0.3,
+          "look": 4
+        }
+      ],
+      [
+        "Gobiidae",
+        "cá bống trắng",
+        {
+          "pump": 2,
+          "net": 0.5
+        }
+      ],
+      [
+        "Sillaginidae",
+        "cá đục",
+        {
+          "net": 1.5
+        }
+      ],
+      [
+        "Gambusia",
+        "cá ăn muỗi",
+        {
+          "net": 2
+        }
+      ],
+      [
+        "Sardinella",
+        "cá trích",
+        {
+          "net": 1
+        }
+      ]
+    ]
+  },
+  "crabs": {
+    "_note": "5 họ cua theo báo cáo (bài 05); số con mỗi lần thu và ảnh hưởng của triều là minh hoạ",
+    "families": [
+      [
+        "Grapsidae",
+        "cua đá, cua bãi triều",
+        3,
+        true
+      ],
+      [
+        "Eriphiidae",
+        "cua đá (stone crab)",
+        1,
+        false
+      ],
+      [
+        "Calappidae",
+        "cua hộp",
+        0.5,
+        false
+      ],
+      [
+        "Leucosiidae",
+        "cua sỏi",
+        0.8,
+        false
+      ],
+      [
+        "Dorippidae",
+        "cua cõng",
+        0.6,
+        false
+      ]
+    ],
+    "highTide": 0.15,
+    "dig": 2
+  },
+  "keys": {
+    "_note": "Khoá lưỡng phân rút gọn theo các đặc điểm quan sát trong báo cáo (bài 07, 08) và đặc điểm phân biệt thường gặp của các chi gần nhau; minh hoạ, chưa đối chiếu một khoá định loại chuẩn",
+    "ardisia": {
+      "name": "Mẫu cây bụi, tuyến Ao Lươn",
+      "answers": [
+        1,
+        1,
+        1
+      ],
+      "couplets": [
+        {
+          "q": "Cách mọc lá",
+          "opts": [
+            [
+              "lá mọc đối",
+              {
+                "result": "Psychotria (họ Cà phê, Rubiaceae)"
+              }
+            ],
+            [
+              "lá đơn mọc cách, mép có răng cưa",
+              {
+                "next": 1
+              }
+            ]
+          ]
+        },
+        {
+          "q": "Dạng cây",
+          "opts": [
+            [
+              "dây leo",
+              {
+                "result": "Embelia (dây chua ngút)"
+              }
+            ],
+            [
+              "cây bụi hoặc gỗ nhỏ, thân đứng",
+              {
+                "next": 2
+              }
+            ]
+          ]
+        },
+        {
+          "q": "Cụm hoa và quả",
+          "opts": [
+            [
+              "cụm hoa chùm, quả nhỏ nhiều hạt",
+              {
+                "result": "Maesa (đơn nem)"
+              }
+            ],
+            [
+              "cụm hoa tán, quả mọng hình cầu đỏ một hạt, cuống dài",
+              {
+                "result": "Ardisia (trọng đũa, cơm nguội)"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "trametes": {
+      "name": "Mẫu nấm trên gỗ mục, đường lên Ngự Lâm",
+      "answers": [
+        1,
+        1,
+        1
+      ],
+      "couplets": [
+        {
+          "q": "Mặt dưới mũ",
+          "opts": [
+            [
+              "có phiến xẻ đôi theo chiều dọc",
+              {
+                "result": "Schizophyllum (nấm chân chim)"
+              }
+            ],
+            [
+              "có lỗ nhỏ li ti, không có phiến",
+              {
+                "next": 1
+              }
+            ]
+          ]
+        },
+        {
+          "q": "Mặt mũ",
+          "opts": [
+            [
+              "bóng như sơn mài, thịt nâu dày",
+              {
+                "result": "Ganoderma (linh chi)"
+              }
+            ],
+            [
+              "không bóng, có lông mịn",
+              {
+                "next": 2
+              }
+            ]
+          ]
+        },
+        {
+          "q": "Màu và độ dày mũ",
+          "opts": [
+            [
+              "cam đỏ tươi",
+              {
+                "result": "Pycnoporus (nấm cam)"
+              }
+            ],
+            [
+              "nâu xám có vân đồng tâm, mỏng 1–3 mm, chất gỗ dai",
+              {
+                "result": "Trametes (nấm vân chi)"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

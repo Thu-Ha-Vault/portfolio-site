@@ -1,0 +1,11 @@
+{
+  "_note": "Ước lượng số lượng cá thể bằng lấy mẫu (src/core/sampling.js), theo báo cáo Cơ sở sinh thái học Bài 2 của chủ dự án. 26 cốc, tổng 275 con mọt như bài; 10 cốc đầu là mẫu 10 cốc của bài, 16 cốc còn lại là số minh hoạ chọn sao cho tổng đúng 275 và chứa các giá trị của lần lấy mẫu 8 cốc.",
+  "sources": {
+    "csst": "Báo cáo thực hành Cơ sở sinh thái học, Bài 2 Phương pháp lấy mẫu (ảnh trong Google Drive của chủ dự án): 26 cốc mọt, đếm được 275 con (μ = 275/26); mẫu 10 cốc Σx = 122, x̄ = 12,2; mẫu lại 8 cốc Σx = 86, x̄ = 10,75; công thức x̄, s² = [Σx² − (Σx)²/n]/(n − 1), SE = √(s²/n), μ = x̄ ± 1,96 SE, P = x̄ · 26, số mẫu cần lấy N = 4s²/(D² x̄²) với D = 0,4 thành N = 25 s²/x̄²"
+  },
+  "cups": [11, 13, 15, 9, 16, 12, 10, 11, 16, 9, 8, 10, 9, 12, 7, 11, 10, 9, 8, 13, 10, 9, 11, 8, 10, 8],
+  "report": {
+    "10": { "x": [11, 13, 15, 9, 16, 12, 10, 11, 16, 9], "sumSq": 1891, "var": 44.73, "note": "Báo cáo ghi Σx² = 1891 nhưng cộng lại cột x² được 1554, nên s² đúng là khoảng 7,29 chứ không phải 44,73; khoảng tin cậy và số mẫu cần lấy tính lại theo s² đúng." },
+    "8": { "x": [12, 7, 10, 11, 9, 13, 11, 13] }
+  }
+}

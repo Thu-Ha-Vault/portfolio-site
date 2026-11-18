@@ -117,6 +117,8 @@ const isExcluded = (r) => blogExclude.some((e) => r === e || r.startsWith(e + '/
 
 /** published notes: abs → { collection, slug, url } */
 const published = new Map();
+/** unpublished notes of a project with a single `page` → that page's abs */
+const projectStandIn = new Map();
 
 for (const f of allFiles) {
   if (!f.endsWith('.md') || SKIP_FILES.has(path.basename(f))) continue;
@@ -137,10 +139,18 @@ for (const p of config.projects) {
     continue;
   }
   const projectSlug = p.slug || slugify(path.basename(p.folder));
+  // `page: "<note in the folder>"`: that one note is the whole project page; the other notes stay in the vault only,
+  // and wikilinks to them lead to the project page (projectStandIn).
+  const only = p.page ? path.join(dir, p.page) : null;
+  if (only && !fs.existsSync(only)) console.warn(`project page missing: ${p.folder}/${p.page}`);
   for (const f of walk(dir)) {
     if (!f.endsWith('.md') || SKIP_FILES.has(path.basename(f))) continue;
+    if (only && f !== only) {
+      projectStandIn.set(f, only);
+      continue;
+    }
     const inner = path.relative(dir, f).split(path.sep).join('/');
-    const isIndex = /^_MOC - /.test(path.basename(f)) && !inner.includes('/');
+    const isIndex = only ? true : /^_MOC - /.test(path.basename(f)) && !inner.includes('/');
     const slug = isIndex ? projectSlug : `${projectSlug}/${slugPath(inner)}`;
     published.set(f, { collection: 'projects', slug, url: `/projects/${slug}/`, project: projectSlug, isIndex, cfg: p });
   }
@@ -577,8 +587,11 @@ function linkFor(target, alias, fromAbs, stats) {
   if (!file) return `[${mdText(label)}](#${headingAnchor(heading)})`;
   const named = resolveNote(file, fromAbs);
   // a finished article (either language) stands in for its source note
-  const abs = named && (enSource.get(named) || sourceOfArticle.get(named) || named);
+  const standIn = named && projectStandIn.get(named);
+  const abs = named && (enSource.get(named) || sourceOfArticle.get(named) || standIn || named);
   const dest = abs && published.get(abs);
+  // a vault-only note of a single-page project, linked from that page itself: plain text, not a link to itself
+  if (standIn && standIn === fromAbs) return mdText(label);
   if (!dest) {
     stats.unresolved++;
     return mdText(label);
@@ -587,7 +600,7 @@ function linkFor(target, alias, fromAbs, stats) {
   // an English article; otherwise the Vietnamese page. The topic graph counts the Vietnamese articles only.
   const url = (noteEn || enSource.has(named)) && dest.en ? dest.en.url : dest.url;
   if (!noteEn) linkFrom(fromAbs, abs);
-  return `[${mdText(label)}](${url}${heading ? '#' + headingAnchor(heading) : ''})`;
+  return `[${mdText(label)}](${url}${heading && !standIn ? '#' + headingAnchor(heading) : ''})`;
 }
 
 function convertCallouts(lines) {
@@ -726,6 +739,7 @@ for (const { abs, dest, src, en } of pages) {
       if (dest.cfg.summary_vi) fm.summary_vi = dest.cfg.summary_vi;
       if (dest.cfg.summary_en) fm.summary_en = dest.cfg.summary_en;
       fm.links = Object.fromEntries(Object.entries(dest.cfg.links || {}).filter(([, v]) => v));
+      if (dest.cfg.appName) fm.appName = dest.cfg.appName;
     }
   }
   noteImages = [];

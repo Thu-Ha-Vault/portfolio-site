@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-1yvnH29VT6SvG/tGoNfuKL3PfgQC2PuybzkQ2c6rgyA='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Virtual Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6.2L4.6 18.4A1.8 1.8 0 0 0 6.2 21h11.6a1.8 1.8 0 0 0 1.6-2.6L14 9.2V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.4 15.5h9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <strong>Virtual Lab</strong>
+      <span class="brand-sub">Phòng thí nghiệm ảo</span>
+    </div>
+    <nav class="zone-nav" id="zone-nav" aria-label="Chọn khu trong phòng thí nghiệm"></nav>
+  </header>
+
+  <main class="split" id="split">
+    <section class="pane pane-lab" aria-label="Phòng thí nghiệm 3D">
+      <div class="viewport" id="viewport"></div>
+      <p class="hint">Kéo chai thả vào cốc hoặc ống PCR · Rê chuột lên dụng cụ để xem tên, giữ lâu để xem cách dùng · Kéo khoảng trống để xoay · W A S D để đi lại</p>
+      <div class="view-tools">
+        <button type="button" class="list-toggle" id="list-toggle" aria-expanded="false" aria-controls="devices" aria-label="Danh sách khu và thiết bị">Danh sách<span class="wide-only"> khu và thiết bị</span></button>
+        <button type="button" class="list-toggle" id="nav-toggle" aria-pressed="false" aria-controls="nav-console" title="Bảng di chuyển tự do: đi lại, quay, bay lên, bản đồ nhỏ (phím W A S D)">Di chuyển</button>
+        <button type="button" class="list-toggle" id="hand-toggle" aria-pressed="false" aria-controls="hand-panel" title="Thao tác tay: giữ để rót, nhỏ giọt, khuấy, micropipet, xếp ống vào rotor">Thao tác tay</button>
+        <div class="lab-clock" id="lab-clock" role="group" aria-label="Đồng hồ phòng thí nghiệm">
+          <span class="clock-time">8:00:00</span>
+          <select class="clock-speed" aria-label="Tốc độ thời gian"><option value="1">×1</option><option value="10">×10</option><option value="60">×60</option></select>
+          <button type="button" class="clock-wait" title="Nhảy tới lúc việc đang chạy gần xong nhất">Chờ xong</button>
+          <span class="clock-jobs"></span>
+        </div>
+        <button type="button" class="list-toggle more-toggle" id="more-toggle" aria-expanded="false" aria-controls="view-more">Tuỳ chọn</button>
+        <div class="view-more" id="view-more">
+          <button type="button" class="list-toggle" id="names-toggle" aria-pressed="false">Tên dụng cụ</button>
+          <button type="button" class="list-toggle" id="focus-toggle" aria-pressed="true" title="Khi rót hoặc đun, camera tự lại gần vật chứa để thấy rõ hiện tượng">Tự nhìn gần</button>
+          <button type="button" class="list-toggle" id="guide-toggle" aria-pressed="true" title="Hướng dẫn: vòng cam quanh dụng cụ và nhãn trên máy hoặc khu của bước protocol đang chờ">Hướng dẫn</button>
+          <button type="button" class="list-toggle" id="sound-toggle" aria-pressed="false" title="Âm thanh: quạt tủ hút, máy nén tủ lạnh, máy ly tâm và máy PCR đang chạy, tiếng bíp khi máy xong, tiếng rót (sinh bằng Web Audio)">Âm thanh</button>
+          <button type="button" class="list-toggle" id="tex-toggle" aria-pressed="true" title="Vân bề mặt của sàn, tường, đồ đạc, máy và mẫu mổ; tắt để nhẹ máy hoặc xem kiểu phác thảo">Vân bề mặt</button>
+          <label class="list-toggle quality-pick" title="Mức hình ảnh: Phác thảo (khối có viền), Thấp, Vừa (bóng đổ), Cao (bóng đổ rõ, thuỷ tinh khúc xạ); Tự động chọn theo máy và hạ khi chậm">Hình ảnh <select id="quality-select"></select></label>
+        </div>
+      </div>
+      <aside class="devices" id="devices" aria-labelledby="devices-title" hidden>
+        <header class="climate-head"><strong id="devices-title">Khu và thiết bị</strong><button type="button" class="icon-btn" id="devices-close" aria-label="Đóng danh sách">×</button></header>
+        <p class="devices-note">Dùng thay cho cảnh 3D khi điều khiển bằng bàn phím hoặc trình đọc màn hình. Thao tác với máy nằm ở bảng bên phải.</p>
+        <div id="devices-list"></div>
+      </aside>
+      <aside class="climate" id="climate" aria-label="Điều khiển khí hậu khu trồng trọt" hidden></aside>
+      <aside class="detail" id="detail" aria-labelledby="detail-title" hidden>
+        <header class="detail-head"><strong id="detail-title"></strong><button type="button" class="icon-btn" id="detail-close" aria-label="Đóng hình cận cảnh">×</button></header>
+        <iframe id="detail-frame" title="Hình cận cảnh thiết bị" loading="lazy"></iframe>
+      </aside>
+      <div class="loading" id="loading">Đang dựng phòng thí nghiệm…</div>
+    </section>
+    <div class="divider" id="divider" role="separator" tabindex="0" aria-label="Kéo để đổi kích thước hai bên" aria-valuemin="28" aria-valuemax="80"></div>
+    <section class="pane pane-protocol" id="pane-protocol" aria-label="Protocol và kết quả từng bước"></section>
+  </main>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.js",
+    "three/addons/": "./vendor/three/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

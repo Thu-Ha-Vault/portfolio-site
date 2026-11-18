@@ -1,0 +1,113 @@
+{
+  "_note": "Tiêu bản hiển vi ảo theo ảnh thực hành Thực vật học và Sinh học tế bào của chủ dự án (src/core/slides.js). Hình học do lõi sinh ra theo cấu tạo điển hình (esau) và theo mô tả ảnh (photos): thứ tự các lớp mô, số bó mạch, cách xếp. Kích thước (µm) và tần số các kỳ phân bào là số minh hoạ ước từ ảnh (so với thị trường của kính CX23), không đo trên mẫu thật. Thị trường lấy từ figures/microscope/model.mjs (cx23).",
+  "sources": {
+    "photos": "Ảnh thực hành của chủ dự án (Google Drive, thư mục Thực vật và Sinh Tế Bào/Thực hành): lát cắt rễ ngô, thân dâm bụt non, thân thứ cấp (tiêu bản cố định), thân lúa, thân ngô, thân bí ngô, gân giữa lá trúc đào, lá có mô khí; tiêu bản ép tinh hoàn côn trùng (giảm phân, hai kiểu nhuộm), đỉnh rễ (nguyên phân), tảo silic; các lỗi thấy trong ảnh: bọt khí, lát cắt dày, mẫu chưa ép dàn",
+    "board": "Ghi chú trên bảng trong buổi thực hành giải phẫu thực vật (ảnh của chủ dự án): vách tế bào cấp 1 bắt màu hồng; vách cấp 2 (mô cứng, sợi, xylem) bắt màu xanh. Ảnh không ghi tên thuốc nhuộm (chưa xác minh)",
+    "cx23": "Olympus CX23 (figures/microscope/model.mjs): thị kính 10×, số trường 20 mm; đường kính thị trường = 20 mm / độ phóng đại vật kính",
+    "esau": "Evert R.F. 2006, Esau's Plant Anatomy, 3rd ed., Wiley: cấu tạo rễ, thân, lá cây Một lá mầm và Hai lá mầm; bó mạch kín của cây Một lá mầm; bó mạch chồng kép của họ Bầu bí",
+    "locusta": "Kiểu nhân châu chấu di cư Locusta migratoria, mẫu kinh điển cho tiêu bản giảm phân: con đực 2n = 23 (22 + X0), kỳ giữa I có 11 thể lưỡng trị và một nhiễm sắc thể X đơn. Loài trong ảnh của chủ dự án chưa xác minh; ảnh thấy khoảng 10–12 thể lưỡng trị",
+    "onion": "Đỉnh rễ hành Allium cepa, 2n = 16; vùng mô phân sinh cách chóp rễ khoảng 1–2 mm (esau)",
+    "tb2": "Bài thực tập số 2: Quan sát và nhận biết tế bào động vật và thực vật (Sinh học tế bào, Google Drive của chủ dự án): vỏ lụa củ hành cắt khoảng 5 × 5 mm, giọt xanh methylene, đậy lamen không để bọt khí, đợi 15–20 phút, thấm dung dịch thừa, xem 10×, 20×, 40×; niêm mạc miệng quệt tăm bông, để khô se, cố định methanol 1–2 phút, Giemsa 1X 1–2 phút hoặc xanh methylene 10 phút; tế bào đa giác xếp sát như gạch lát nền, Giemsa nhân hồng tím ở giữa, tế bào chất hồng nhạt. Kích thước tế bào (vảy hành khoảng 250 × 55 µm, niêm mạc miệng khoảng 60 µm, nhân 8–22 µm) là số minh hoạ"
+  },
+  "stains": {
+    "double": "nhuộm kép: vách cellulose hồng đỏ, vách hoá gỗ xanh lục (board)",
+    "none": "không nhuộm: mô vàng nâu, khó phân biệt các loại vách",
+    "red": "thuốc nhuộm nhân màu đỏ cam (ảnh ghi chú là kiểu đỏ cam, có thể là aceto-carmine; chưa xác minh)",
+    "purple": "thuốc nhuộm nhân màu hồng tím (có thể là aceto-orcein; chưa xác minh)",
+    "wet": "giọt nước, không nhuộm", "mb": "xanh methylene: nhân xanh đậm, tế bào chất xanh nhạt, vách tế bào thực vật thấy rõ", "giemsa": "Giemsa: nhân hồng tím, tế bào chất hồng nhạt"
+  },
+  "kinds": {
+    "root-monocot": "Rễ cây Một lá mầm",
+    "stem-dicot-young": "Thân cây Hai lá mầm, cấu tạo sơ cấp",
+    "stem-dicot-secondary": "Thân cây Hai lá mầm, cấu tạo thứ cấp",
+    "stem-monocot-hollow": "Thân rỗng cây Một lá mầm (họ Lúa)",
+    "stem-monocot-solid": "Thân đặc cây Một lá mầm (ngô)",
+    "stem-cucurbit": "Thân cây họ Bầu bí (bí ngô)",
+    "leaf-dicot": "Lá cây Hai lá mầm, qua gân giữa",
+    "leaf-aerenchyma": "Lá có mô khí (lá lúa)"
+  },
+  "phases": {
+    "meiosis": {
+      "p1": ["Kỳ đầu I", 0.34, "Nhân lớn, chất nhiễm sắc dạng sợi, hạt"],
+      "m1": ["Kỳ giữa I", 0.1, "Các thể lưỡng trị xếp thành dải ở mặt phẳng xích đạo"],
+      "a1": ["Kỳ sau I", 0.05, "Hai nhóm nhiễm sắc thể kép tách về hai cực"],
+      "t1": ["Kỳ cuối I, kỳ đầu II", 0.08, "Hai nhân con trong một tế bào"],
+      "m2": ["Kỳ giữa II", 0.06, "Hai dải nhiễm sắc thể nhỏ"],
+      "a2": ["Kỳ sau II", 0.04, "Bốn nhóm nhiễm sắc thể đơn"],
+      "t2": ["Kỳ cuối II", 0.05, "Bốn nhân nhỏ"],
+      "sd": ["Tinh tử", 0.2, "Tế bào nhỏ, nhân tròn đặc"],
+      "sp": ["Tinh trùng", 0.08, "Đầu hình que cong, đuôi dài, xếp thành bó"]
+    },
+    "mitosis": {
+      "i": ["Kỳ trung gian", 0.86, "Nhân tròn, chất nhiễm sắc dạng lưới, có hạch nhân"],
+      "p": ["Kỳ đầu", 0.07, "Nhiễm sắc thể co xoắn thành sợi trong nhân"],
+      "m": ["Kỳ giữa", 0.03, "Nhiễm sắc thể kép xếp thành dải ở giữa tế bào"],
+      "a": ["Kỳ sau", 0.02, "Hai nhóm nhiễm sắc thể đơn đi về hai cực"],
+      "t": ["Kỳ cuối", 0.02, "Hai nhân con, vách ngăn hình thành giữa tế bào"]
+    }
+  },
+  "slides": {
+    "root-monocot": {
+      "name": "Rễ ngô, lát cắt ngang", "kind": "section", "group": "Thực vật", "stain": "double", "size": 1400,
+      "photos": "IMG_4149–4151 (nhãn \"1 lá mầm\", khay ghi rễ ngô)",
+      "keys": ["Vỏ rễ chiếm phần lớn bán kính, tế bào tròn xếp thành vòng đồng tâm, nhỏ dần vào trong", "Nội bì là một vòng tế bào sẫm bao trụ giữa", "Khoảng 14 mạch hậu mộc lớn xếp một vòng quanh tuỷ, libe xen kẽ với gỗ", "Không có tầng phát sinh"]
+    },
+    "stem-dicot-young": {
+      "name": "Thân cây Hai lá mầm non (dâm bụt non?), lát cắt ngang", "kind": "section", "group": "Thực vật", "stain": "double", "size": 2400,
+      "photos": "IMG_4147, 4148",
+      "keys": ["Mô dày dưới biểu bì", "Mô mềm vỏ có khoang tiết", "Cụm sợi libe đứt quãng ngoài libe", "Một vòng gỗ liên tục, mạch xếp thành dãy toả tia", "Tuỷ lớn ở giữa"]
+    },
+    "stem-dicot-secondary": {
+      "name": "Thân cây Hai lá mầm cấu tạo thứ cấp, tiêu bản cố định", "kind": "section", "group": "Thực vật", "stain": "double", "size": 4000,
+      "photos": "IMG_4168",
+      "keys": ["Chu bì ở ngoài cùng", "Libe thứ cấp có băng sợi xen libe mềm, tia libe loe rộng", "Tầng phát sinh là dải tế bào dẹt giữa libe và gỗ", "Gỗ thứ cấp dày, mạch rải theo dãy toả tia, có tia gỗ", "Tuỷ nhỏ ở giữa"]
+    },
+    "stem-monocot-hollow": {
+      "name": "Thân lúa (thân rỗng họ Lúa), lát cắt ngang", "kind": "section", "group": "Thực vật", "stain": "double", "size": 3000,
+      "photos": "IMG_4156–4161, 4181, 4182",
+      "keys": ["Giữa thân là khoang rỗng lớn", "Mô cứng dưới biểu bì", "Khoảng 30 bó mạch kín xếp hai vòng: vòng ngoài nhỏ, vòng trong lớn", "Mỗi bó có vòng mô cứng bao quanh, libe ngoài, gỗ trong", "Không có tầng phát sinh"]
+    },
+    "stem-monocot-solid": {
+      "name": "Thân ngô, lát cắt ngang", "kind": "section", "group": "Thực vật", "stain": "double", "size": 4500,
+      "photos": "IMG_4162 (ảnh chiếu), IMG_4165, 4170–4175 (tự cắt)",
+      "keys": ["Bó mạch kín rải rác khắp mô mềm, dày hơn ở gần mép", "Bó mạch kiểu \"mặt khỉ\": hai mạch hậu mộc lớn, khoang khí, libe phía ngoài", "Không phân biệt vỏ và tuỷ", "Không có tầng phát sinh"]
+    },
+    "stem-cucurbit": {
+      "name": "Thân bí ngô, lát cắt ngang", "kind": "section", "group": "Thực vật", "stain": "double", "size": 6000,
+      "photos": "IMG_4163 (ảnh chiếu ghi \"Thân bí ngô\"), IMG_4169",
+      "keys": ["Lông che chở đa bào trên biểu bì", "Mô dày dưới biểu bì", "Bó mạch lớn xếp hai vòng, mỗi bó có 1–3 mạch rất lớn", "Libe ở cả hai phía gỗ (bó chồng kép)", "Thân rỗng ở giữa"]
+    },
+    "leaf-dicot": {
+      "name": "Lá trúc đào (?), lát cắt ngang qua gân giữa", "kind": "leaf", "group": "Thực vật", "stain": "double", "size": 3000,
+      "photos": "IMG_4152 (4×), IMG_4154 (10×); IMG_4166, 4167 là lát cắt quá dày",
+      "keys": ["Phiến lá dẹt, gân giữa lồi về mặt dưới", "Gân giữa có một bó mạch hình cung, gỗ quay lên mặt trên lá, libe ở phía dưới", "Mô dày dưới biểu bì gân giữa", "Thịt lá: mô giậu ở mặt trên, mô xốp ở mặt dưới"]
+    },
+    "leaf-aerenchyma": {
+      "name": "Lá lúa (?), lát cắt ngang qua gân giữa có mô khí", "kind": "leaf", "group": "Thực vật", "stain": "double", "size": 3000,
+      "photos": "IMG_4176, 4177; IMG_4178, 4179 là lát cắt quá dày",
+      "keys": ["Các khoang khí lớn ngăn bởi vách mỏng một vài lớp tế bào", "Dải biểu bì và thịt lá sẫm bao ngoài", "Bó mạch nhỏ kiểu Một lá mầm ở chỗ vách gặp dải ngoài"]
+    },
+    "meiosis-red": {
+      "name": "Tinh hoàn châu chấu (?), tiêu bản ép, nhuộm đỏ cam", "kind": "meiosis", "group": "Tế bào", "stain": "red", "size": 1200,
+      "photos": "IMG_0007, 0019, 0020; chú thích tay: Giữa, Sau I, Cuối II, Đầu II, Sau II",
+      "keys": ["Tế bào sinh tinh cùng một nang ở cùng một kỳ", "Kỳ giữa I có khoảng 11 thể lưỡng trị (locusta)"]
+    },
+    "meiosis-purple": {
+      "name": "Tinh hoàn châu chấu (?), tiêu bản ép, nhuộm hồng tím", "kind": "meiosis", "group": "Tế bào", "stain": "purple", "size": 1200,
+      "photos": "IMG_4014, 4015, 4017; màn hình camera IMG_4018–4021",
+      "keys": ["Tế bào sinh tinh cùng một nang ở cùng một kỳ", "Kỳ giữa I có khoảng 11 thể lưỡng trị (locusta)"]
+    },
+    "mitosis-root": {
+      "name": "Đỉnh rễ hành, tiêu bản ép, nhuộm đỏ", "kind": "mitosis", "group": "Tế bào", "stain": "red", "size": 1200,
+      "photos": "IMG_3956; lỗi: IMG_3955 (vùng kéo dài), IMG_3997, 3998 (chưa ép dàn)",
+      "keys": ["Tế bào gần vuông xếp thành cột dọc, nhân lớn", "Phần lớn tế bào ở kỳ trung gian; chỉ số nguyên phân là tỉ lệ tế bào đang phân chia"]
+    },
+    "onion-epidermis": { "name": "Biểu bì vảy hành, tiêu bản giọt ép, xanh methylene", "kind": "cells", "cell": "plant", "group": "Tế bào", "stain": "mb", "size": 2400, "photos": "Bài thực tập số 2 Sinh học tế bào (tb2)", "keys": ["Tế bào hình chữ nhật dài xếp sát nhau như lớp gạch, có vách tế bào rõ", "Nhân hình cầu dẹt nằm sát vách, có hạch nhân", "Không bào lớn chiếm gần hết tế bào, tế bào chất mỏng sát vách"] },
+    "cheek-cells": { "name": "Tế bào niêm mạc miệng, tiêu bản dấu quét, Giemsa", "kind": "cells", "cell": "animal", "group": "Tế bào", "stain": "giemsa", "size": 1600, "photos": "Bài thực tập số 2 Sinh học tế bào (tb2)", "keys": ["Tế bào dẹt đa giác, nằm rời hoặc thành mảng như gạch lát nền", "Nhân nhỏ, tròn, ở giữa, bắt màu hồng tím", "Không có vách tế bào, không có không bào lớn"] },
+    "diatom": {
+      "name": "Tảo silic, giọt nước tươi", "kind": "wet", "group": "Thực vật", "stain": "wet", "size": 1200,
+      "photos": "IMG_3987–3990, 3992; IMG_3989 là ví dụ bọt khí chiếm gần hết thị trường",
+      "keys": ["Vỏ silic hình thuyền, hai nửa vỏ lồng vào nhau", "Vân ngang mảnh, đường rãnh giữa dọc thân"]
+    }
+  }
+}

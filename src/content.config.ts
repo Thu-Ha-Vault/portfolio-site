@@ -62,6 +62,8 @@ const projects = defineCollection({
     summary_vi: z.string().optional(),
     summary_en: z.string().optional(),
     links: z.record(z.string(), z.string()).default({}),
+    /** name on the `app` link button (site.config.json projects[].appName) */
+    appName: z.string().optional(),
     phases: z.array(z.object({ name: z.string(), done: z.number(), total: z.number() })).default([]),
     /** project index: site.config.json projects[].cover; project notes: the sync's photo pick. Missing → procedural banner. */
     cover: z.object({ src: z.string(), alt: z.string(), alt_en: z.string().optional() }).optional(),

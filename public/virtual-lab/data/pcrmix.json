@@ -1,0 +1,60 @@
+{
+  "_note": "PCR mở rộng (src/core/pcrmix.js): pha master mix theo bảng, touch-down PCR, RAPD, đường cong nóng chảy DNA. Thành phần, nồng độ, chương trình nhiệt theo các tài liệu trong Google Drive của chủ dự án (sources). Tm của mồi và của các vị trí bắt cặp không đặc hiệu, số vị trí, độ rộng đường chuyển pha, độ tăng sắc 37 %, độ trễ nhiệt khi đun nhanh, cây quan hệ của 6 giống trong bài RAPD là số minh hoạ.",
+  "sources": {
+    "pcrbasic": "Polymerase Chain Reaction: Các vấn đề cơ bản (chương sách, tr. 9–33, Google Drive của chủ dự án; tác giả chưa xác minh): Bảng 1 pha master mix cho 100 phản ứng 25 µL, mẫu 5 µL (PCR buffer 10X → 1X 250 µL; MgCl₂ 50 mM → 1,5 mM 75 µL; Taq 5 U/µL → 1,25 U 25 µL; dNTP 25 mM mỗi loại → 200 µM 20 µL; mồi 100 pmol/µL → 10 pmol 10 + 10 µL; dUTP 100 mM → 200 µM 5 µL; UNG 1 U/µL → 1 U 100 µL; nước 1505 µL), công thức C·V = C′·V′; nếu buffer 10X đã có MgCl₂ 15 mM thì không thêm MgCl₂ khi cần 1,5 mM; không pha từng ống vì phải lấy dưới 1 µL; Sơ đồ 1 touch-down: 20 chu kỳ 94 °C 15 s, 65 °C 15 s giảm 0,5 °C mỗi chu kỳ, rồi 35 chu kỳ 94 °C 15 s, 55 °C 30 s, 72 °C 1 phút, 72 °C 7 phút; Sơ đồ 2: 10 chu kỳ 65 °C, 10 chu kỳ 60 °C, rồi 35 chu kỳ 55 °C",
+    "marker": "Nguyễn Đức Thành 2014, Các kỹ thuật chỉ thị DNA trong nghiên cứu và chọn lọc thực vật, Tạp chí Sinh học 36(3): 265–294: RAPD dùng mồi ngẫu nhiên 10 nucleotide, nhiệt độ bắt mồi 34–37 °C, GC ≥ 40 %, sản phẩm chạy agarose 1,5–2 %, đọc băng có hoặc không",
+    "wallace": "Quy tắc Wallace (Wallace et al. 1979, Nucleic Acids Research 6: 3543): Tm ≈ 2·(A + T) + 4·(G + C) °C cho oligonucleotide ngắn",
+    "dice": "Hệ số tương đồng Dice (Nei & Li 1979, PNAS 76: 5269): S = 2a/(2a + b + c); cây UPGMA (Sokal & Michener 1958)",
+    "melt": "Schildkraut C., Lifson S. 1965, Biopolymers 3: 195: Tm = 81,5 + 16,6·log₁₀[Na⁺] + 0,41·(%GC); trong SSC ([Na⁺] 0,195 M) trùng với Marmur J., Doty P. 1962, J. Mol. Biol. 5: 109: Tm = 69,3 + 0,41·(%GC). %GC theo Hoàng Trọng Phán 2012, Sinh học phân tử, chương 1 (Drive của chủ dự án)",
+    "phan": "Hoàng Trọng Phán 2012, Sinh học phân tử (ĐH Huế), chương 1: %GC Dictyostelium 22, S. pyogenes 34, B. cereus 37, S. cerevisiae 39, S. pneumoniae 42, B. subtilis 44, E. coli 51, Neurospora 54, M. phlei 73; đo nóng chảy bằng tăng hấp thụ 260 nm; sách ghi Tm E. coli khoảng 69–70 °C, khác Marmur & Doty (xem note 11)"
+  },
+  "mix": {
+    "rxnUl": 25, "sampleUl": 5, "n": 100,
+    "rows": [
+      { "id": "buffer", "name": "PCR buffer", "stock": 10, "final": 1, "unit": "X", "kind": "conc", "book": 250 },
+      { "id": "mg", "name": "MgCl₂", "stock": 50, "final": 1.5, "unit": "mM", "kind": "conc", "book": 75 },
+      { "id": "taq", "name": "Taq polymerase", "stock": 5, "final": 1.25, "unit": "U", "stockUnit": "U/µL", "kind": "amount", "book": 25 },
+      { "id": "dntp", "name": "dNTP (mỗi loại)", "stock": 25000, "final": 200, "unit": "µM", "stockLabel": "25 mM", "kind": "conc", "book": 20 },
+      { "id": "fwd", "name": "Mồi xuôi", "stock": 100, "final": 10, "unit": "pmol", "stockUnit": "pmol/µL", "kind": "amount", "book": 10 },
+      { "id": "rev", "name": "Mồi ngược", "stock": 100, "final": 10, "unit": "pmol", "stockUnit": "pmol/µL", "kind": "amount", "book": 10 },
+      { "id": "dutp", "name": "dUTP", "stock": 100000, "final": 200, "unit": "µM", "stockLabel": "100 mM", "kind": "conc", "book": 5 },
+      { "id": "ung", "name": "UNG", "stock": 1, "final": 1, "unit": "U", "stockUnit": "U/µL", "kind": "amount", "book": 100 }
+    ],
+    "waterBook": 1505, "minPipetUl": 0.5, "bufferMgMM": 15
+  },
+  "td": {
+    "_note": "Tm của sản phẩm đặc hiệu 64 °C, hai vị trí bắt cặp lệch 56 và 55 °C với số vị trí gấp 4 lần, hệ số hiệu suất 0,95, độ dốc 1,5 °C và sức chứa của phản ứng là minh hoạ",
+    "products": [
+      { "id": "spec", "bp": 450, "tm": 64, "copies": 10000, "name": "sản phẩm đặc hiệu" },
+      { "id": "ns1", "bp": 300, "tm": 56, "copies": 40000, "name": "băng phụ" },
+      { "id": "ns2", "bp": 800, "tm": 55, "copies": 40000, "name": "băng phụ" }
+    ],
+    "eMax": 0.95, "width": 1.5, "capacity": 4e11, "visible": 2e9,
+    "programs": {
+      "std55": { "name": "35 chu kỳ, bắt cặp 55 °C", "steps": [[35, 55, 0]] },
+      "std65": { "name": "35 chu kỳ, bắt cặp 65 °C", "steps": [[35, 65, 0]] },
+      "td1": { "name": "touch-down sơ đồ 1 (65 → 55,5 °C, −0,5 °C mỗi chu kỳ)", "steps": [[20, 65, -0.5], [35, 55, 0]] },
+      "td2": { "name": "touch-down sơ đồ 2 (65 °C, 60 °C, rồi 55 °C)", "steps": [[10, 65, 0], [10, 60, 0], [35, 55, 0]] }
+    }
+  },
+  "rapd": {
+    "_note": "Trình tự hai mồi theo bộ mồi Operon kit A (chưa xác minh). Sáu giống A–F và cây quan hệ ((A,B),((C,D),E)),F) là mẫu minh hoạ; mỗi mồi có 12 vị trí khuếch đại, xác suất mất hay thêm một băng theo độ dài nhánh",
+    "primers": [
+      { "id": "OPA-02", "seq": "TGCCGAGCTG" },
+      { "id": "OPA-04", "seq": "AATCGGGCTG" }
+    ],
+    "accessions": ["A", "B", "C", "D", "E", "F"],
+    "tree": { "n": ["root", "AB", "CDE", "CD"], "edges": [["root", "AB", 0.15], ["AB", "A", 0.05], ["AB", "B", 0.05], ["root", "CDE", 0.1], ["CDE", "CD", 0.08], ["CD", "C", 0.04], ["CD", "D", 0.04], ["CDE", "E", 0.12], ["root", "F", 0.3]] },
+    "sites": 12, "bpRange": [250, 2500]
+  },
+  "melt": {
+    "species": {
+      "dicty": { "name": "Dictyostelium", "gc": 22 },
+      "sce": { "name": "S. cerevisiae", "gc": 39 },
+      "spneu": { "name": "S. pneumoniae", "gc": 42 },
+      "ecoli": { "name": "E. coli", "gc": 51 }
+    },
+    "buffers": { "ssc": { "name": "SSC 1X", "na": 0.195 }, "low": { "name": "SSC 0,1X", "na": 0.0195 } },
+    "hyper": 0.37, "width": 1.6, "fastLag": 2.5
+  }
+}

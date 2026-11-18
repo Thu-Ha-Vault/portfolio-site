@@ -99,6 +99,25 @@ shows an icon only for links that are filled in), which project folders to show,
   `public/project-covers/virtual-lab.webp` is a one-off headless-Chrome capture of
   `Virtual_Lab/figures/thermocycler/thermocycler.html` with `--anatomy-page` and `--anatomy-card` set to
   `#1a0b45` and the plate chrome hidden, cropped 16:9 to 1600×900.
+- `projects[].page`: one note inside the project folder that is the whole project page (instead of the folder's
+  MOC). The folder's other notes are not published, and wikilinks to them lead to the project page. Virtual Lab
+  uses it (`00 - Giới thiệu Virtual Lab.md`); its old note URLs redirect to `/projects/virtual-lab/` (`redirects`
+  in `astro.config.mjs`).
+- `projects[].links.app` + `appName`: a live app hosted on this site; shown first in the project head as a filled
+  "Mở <appName> / Open <appName>" button.
+
+## Virtual Lab app (`public/virtual-lab/`)
+
+The browser build of the private repo `Virtual_Lab`, served at `/virtual-lab/` (Astro copies `public/` untouched).
+It is the output of that repo's `tools/build-site.sh` (index.html, sw.js, src/, data/, vendor/ with Three.js r170,
+CC0 assets/, built figures `figures/*/*.html` and `model.mjs`), minus `_headers`; no tests, desktop app, `.claude/`
+or CLAUDE.md. All paths are relative, so it runs under any sub-path. To update it:
+
+```bash
+cd ~/Desktop/Sky/Virtual_Lab && git pull && bash tools/build-site.sh /tmp/vl-site
+rm -rf ~/Desktop/Sky/portfolio-site/public/virtual-lab && cp -R /tmp/vl-site ~/Desktop/Sky/portfolio-site/public/virtual-lab
+rm ~/Desktop/Sky/portfolio-site/public/virtual-lab/_headers
+```
 
 ## Performance
 Mobile PageSpeed on the home page went from 43 to the mid-90s (Lighthouse, Nov 2026). Keep these when changing the site:

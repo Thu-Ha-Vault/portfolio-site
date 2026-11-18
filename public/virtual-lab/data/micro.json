@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "neb_c2987": "NEB High Efficiency Transformation Protocol (C2987): rã tế bào trên đá 10 phút, ủ DNA với tế bào trên đá 30 phút, sốc nhiệt đúng 42 °C 30 giây, đá 5 phút, 950 µL SOC, 37 °C lắc 250 rpm 60 phút, cấy 50–100 µL, ủ qua đêm 37 °C; NEB 5-alpha hiệu suất 1–3 × 10⁹ cfu/µg pUC19",
+    "neb_faq_shock": "NEB FAQ: sốc nhiệt 42 °C 30 giây cho hiệu suất cao nhất; sốc 80 giây mất khoảng 60 %",
+    "neb_tips": "NEB Chemical Transformation Tips: ủ trên đá 30 phút, mỗi 10 phút bớt đi giảm 2 lần; SOC cho hiệu suất cao nhất; các số về vortex, thời gian phục hồi và LB thay SOC lấy theo trang này nhưng chưa mở trực tiếp được (chưa xác minh)",
+    "lab11": "Bài 11 - Phân tích kết quả thực hành Sinh học phân tử (nhóm 7.1): bể sốc nhiệt nhảy lên 44 °C ở những giây cuối, LB+ không có khuẩn lạc (H = 0), LB− mọc dày; nhóm 7.3 khuẩn lạc phủ kín LB− do pha loãng chưa đúng",
+    "amp": "Ampicillin: để thạch nguội tới khoảng 50–55 °C rồi mới cho kháng sinh (Cold Spring Harbor Protocols; tốc độ phân huỷ theo nhiệt độ trong mô hình là minh hoạ); nồng độ dùng 100 µg/mL"
+  },
+  "cells": {
+    "name": "tế bào khả biến E. coli 5-alpha",
+    "volUl": 50, "perMl": 1e8, "_perMl": "Mật độ tế bào sống trong dịch tế bào khả biến khoảng 10⁸/mL (minh hoạ)",
+    "efficiency": 1.5e9, "_efficiency": "cfu/µg pUC19, giữa khoảng 1–3 × 10⁹ của NEB",
+    "survival": 0.5, "_survival": "Tỉ lệ sống sau CaCl₂ và sốc nhiệt (minh hoạ)",
+    "outgrowthDoubleMin": 45, "_double": "Thời gian thế hệ trong SOC ở 37 °C khoảng 45 phút lúc mới phục hồi (minh hoạ)"
+  },
+  "factors": {
+    "iceHalvingMin": 10, "iceMin": 30,
+    "shockOptC": 42, "shockWidthC": 1.0, "_width": "Hiệu suất theo nhiệt độ sốc là hàm Gauss rộng 1 °C quanh 42 °C (minh hoạ, chỉnh để 44 °C cho gần như không có khuẩn lạc như bài 11)",
+    "shockUptakeS": 8, "shockKillPerS": 0.0188, "_shock": "Hấp thu DNA bão hoà với hằng số 8 giây; tổn thương tế bào 0,0188/giây để sốc 80 giây còn khoảng 40 % so với 30 giây (NEB FAQ)",
+    "noShock": 0.05, "_noShock": "Không sốc nhiệt: khoảng 5 % (minh hoạ)",
+    "vortex": 0.5, "lbInsteadOfSoc": 0.5, "outHalvingMin": 15, "outMin": 60, "_out": "Trộn bằng vortex, phục hồi bằng LB thay SOC, mỗi 15 phút phục hồi bớt đi: giảm khoảng 2 lần (theo NEB tips, chưa xác minh)"
+  },
+  "amp": {
+    "mgL": 100, "mic": 8, "_mic": "Ampicillin dưới khoảng 8 µg/mL thì E. coli không mang plasmid mọc được (minh hoạ)",
+    "k55": 0.005, "slope": 0.25, "setMin": 10, "_k": "Ampicillin phân huỷ bậc nhất trong thạch nóng: k = 0,005·e^(0,25·(T − 55)) phút⁻¹, thạch đông sau khoảng 10 phút (minh hoạ)",
+    "satelliteH": 24, "_satellite": "Ủ quá 24 giờ, β-lactamase do khuẩn lạc tiết ra phân huỷ ampicillin quanh nó: xuất hiện khuẩn lạc vệ tinh nhỏ (minh hoạ)"
+  },
+  "contamination": {
+    "unsterileMedium": 200, "openBench": 4, "unflamedSpreader": 6, "_note": "Số khuẩn lạc lạ trung bình trên một đĩa (minh hoạ)",
+    "ampSensitive": 0.6
+  },
+  "growth": { "visibleH": 12, "fullH": 16, "_note": "Khuẩn lạc E. coli thấy được bằng mắt sau khoảng 12 giờ ở 37 °C, đủ lớn để đếm sau 16 giờ (minh hoạ); ở 30 °C chậm khoảng 1,6 lần" },
+  "count": { "min": 30, "max": 300, "lawn": 3000, "_note": "Đếm được khi 30–300 khuẩn lạc; trên 300 ghi quá nhiều không đếm được (TNTC); trên khoảng 3000 thì mọc kín đĩa" }
+}

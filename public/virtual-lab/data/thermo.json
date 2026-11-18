@@ -1,0 +1,445 @@
+{
+  "_sources": {
+    "NBS82": "Wagman et al., J. Phys. Chem. Ref. Data 11, Suppl. 2 (1982) — https://srd.nist.gov/JPCRD/jpcrdS2Vol11.pdf",
+    "OSG": "https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances",
+    "CRC84_T1": "https://chem.libretexts.org/Bookshelves/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1%3A_Standard_Thermodynamic_Quantities",
+    "CRC84_Ksp": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E3._Solubility_Constants_for_Compounds_at_25C",
+    "LT_sol": "https://chem.libretexts.org/Courses/Northern_Michigan_University/CH_215%3A_Chemistry_of_the_Elements_Fall_2023/05%3A_Solids_and_Solid-State_Chemistry/5.09%3A_Enthalpy_of_Solution",
+    "LT_NH4NO3": "https://chem.libretexts.org/Ancillary_Materials/Demos_Techniques_and_Experiments/Lecture_Demonstrations/Additional_Demos/Endothermic_Reactions--_The_Enthalpy_of_Solution",
+    "WP_sol": "https://en.wikipedia.org/wiki/Solubility_table",
+    "WB_NO2": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C10102440&Mask=1",
+    "WB_N2O4": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C10544726&Mask=1",
+    "WB_H2O": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=2",
+    "DURAN": "https://psec.uchicago.edu/glass/schott_DURAN_datasheet.pdf",
+    "DWK_beaker": "https://www.dwk.com/duran-beaker-low-form-with-spout?switch=BR",
+    "FO1947_via_UCA": "https://faculty.uca.edu/kdooley/equilibrium_constant_spectrophotometry_with_fescn2__v010816.pdf",
+    "deBerg2017": "https://research.avondale.edu.au/handle/123456789/10390039",
+    "SiS2023": "https://scienceinschool.org/article/2023/quantitative-chemistry-microscale-way/",
+    "JCIS1973": "https://www.sciencedirect.com/science/article/abs/pii/0021979773900131"
+  },
+  "physical": {
+    "water_cp_J_per_gK": {
+      "value": 4.18,
+      "source": "WB_H2O (75.4 J/mol·K / 18.015)"
+    },
+    "solution_density_g_per_mL": {
+      "value": 1.0,
+      "note": "dung dịch ≤ 1 M; nước 0,997 ở 25 °C (CRC, chưa xác minh lần này)"
+    },
+    "solution_cp_J_per_gK": {
+      "value": 4.18,
+      "note": "bỏ qua sai lệch vài % của dung dịch muối (chưa xác minh)"
+    },
+    "glass_cp_J_per_gK": {
+      "value": 0.78,
+      "range": [
+        0.75,
+        0.8
+      ],
+      "source": "DURAN (0,8 trung bình 20–100 °C); Avantor 0,75 ở 20 °C"
+    },
+    "glass_density_g_per_cm3": {
+      "value": 2.23,
+      "source": "DURAN"
+    },
+    "beaker_100mL": {
+      "mass_g": 45,
+      "diameter_mm": 50,
+      "height_mm": 70,
+      "source": "DWK_beaker (kích thước); khối lượng ước tính, chưa xác minh"
+    },
+    "newton_cooling": {
+      "h_W_per_m2K": 7,
+      "area_m2_for_50mL_in_100mL_beaker": 0.01,
+      "tau_min": 55,
+      "note": "minh hoạ; h đối lưu tự nhiên 5–10 W/m²K (Incropera bảng 1.1, chưa xác minh); bay hơi làm τ giảm ~2 lần trên 80 °C"
+    },
+    "h2so4_l_cp_J_per_gK": {
+      "value": 1.42,
+      "source": "NBS82 tr. 2-58 (138,91 J/mol·K)"
+    }
+  },
+  "reactions": {
+    "naoh-hcl": {
+      "dH_kJ_per_mol": -55.84,
+      "source": "NBS82: H2O(l) −285,830; OH⁻ −229,994"
+    },
+    "naoh-hno3": {
+      "dH_kJ_per_mol": -55.84,
+      "source": "NBS82, như trên"
+    },
+    "naoh-hclx": {
+      "dH_kJ_per_mol": -55.84,
+      "source": "NBS82, như trên"
+    },
+    "naoh01-hclx": {
+      "dH_kJ_per_mol": -55.84,
+      "source": "NBS82, như trên"
+    },
+    "naoh01-hcl": {
+      "dH_kJ_per_mol": -55.84,
+      "source": "NBS82, như trên"
+    },
+    "naoh-h2so4": {
+      "dH_kJ_per_mol": -111.68,
+      "source": "NBS82; coi H2SO4 phân li hoàn toàn. Phần HSO4⁻ toả thêm 21,93 kJ/mol"
+    },
+    "na2co3-h2so4": {
+      "dH_kJ_per_mol": -2.2,
+      "source": "NBS82: CO3²⁻ −677,14; CO2(g) −393,509",
+      "steps": {
+        "CO3_to_HCO3": -14.85,
+        "HCO3_to_CO2g": 12.65,
+        "HCO3_to_CO2aq": -7.64
+      }
+    },
+    "na2co3-hcl": {
+      "dH_kJ_per_mol": -2.2,
+      "source": "NBS82, như trên"
+    },
+    "na2co3-hno3": {
+      "dH_kJ_per_mol": -2.2,
+      "source": "NBS82, như trên"
+    },
+    "cuoh2-hcl": {
+      "dH_kJ_per_mol": -57.09,
+      "source": "NBS82: Cu(OH)2 −449,8; Cu²⁺ +64,77"
+    },
+    "cuso4-naoh": {
+      "dH_kJ_per_mol": -54.58,
+      "source": "NBS82: Cu(OH)2 −449,8; Cu²⁺ +64,77; OH⁻ −229,994"
+    },
+    "cucl2-naoh": {
+      "dH_kJ_per_mol": -54.58,
+      "source": "NBS82, như trên"
+    },
+    "cuso4-na2co3": {
+      "dH_kJ_per_mol": 0.0,
+      "computed_malachite_CO2g": 65.66,
+      "computed_malachite_HCO3": 38.16,
+      "verified": false,
+      "source": "NBS82 malachite −1051,4; kết tủa thật là vô định hình nên đề xuất ≈ 0 (chưa xác minh)"
+    },
+    "agno3-nacl": {
+      "dH_kJ_per_mol": -65.49,
+      "source": "NBS82: AgCl cr −127,068, ai −61,580"
+    },
+    "agno3-hcl": {
+      "dH_kJ_per_mol": -65.49,
+      "source": "NBS82, như trên"
+    },
+    "agno3-kcl": {
+      "dH_kJ_per_mol": -65.49,
+      "source": "NBS82, như trên"
+    },
+    "bacl2-agno3": {
+      "dH_kJ_per_mol": -130.98,
+      "source": "NBS82, 2 × AgCl"
+    },
+    "fecl3-agno3": {
+      "dH_kJ_per_mol": -196.47,
+      "source": "NBS82, 3 × AgCl"
+    },
+    "agno3-naoh": {
+      "dH_kJ_per_mol": -68.05,
+      "source": "NBS82: Ag2O −31,05; Ag⁺ +105,579"
+    },
+    "agno3-na2co3": {
+      "dH_kJ_per_mol": -39.82,
+      "source": "NBS82: Ag2CO3 −505,8"
+    },
+    "agno3-ki": {
+      "dH_kJ_per_mol": -112.23,
+      "source": "NBS82: AgI cr −61,84, ai +50,38"
+    },
+    "bacl2-h2so4": {
+      "dH_kJ_per_mol": -26.29,
+      "source": "CRC84/OSG BaSO4 −1473,2; NBS82 Ba²⁺ −537,64; SO4²⁻ −909,27"
+    },
+    "bacl2-na2so4": {
+      "dH_kJ_per_mol": -26.29,
+      "source": "như trên"
+    },
+    "cuso4-bacl2": {
+      "dH_kJ_per_mol": -26.29,
+      "source": "như trên"
+    },
+    "bacl2-na2co3": {
+      "dH_kJ_per_mol": -1.52,
+      "source": "NBS82: BaCO3 cr −1216,3, ai −1214,78 (CRC −1213,0 cho +1,7 ⇒ ≈ 0 ± 2)"
+    },
+    "baco3-hcl": {
+      "dH_kJ_per_mol": -0.68,
+      "source": "NBS82"
+    },
+    "fecl3-naoh": {
+      "dH_kJ_per_mol": -84.52,
+      "source": "NBS82: Fe(OH)3 −823,0; Fe³⁺ −48,5"
+    },
+    "feoh3-hcl": {
+      "dH_kJ_per_mol": -82.99,
+      "source": "NBS82"
+    },
+    "fecl3-kscn": {
+      "dH_kJ_per_mol": -4.54,
+      "per": "mol FeSCN²⁺ tạo thành",
+      "source": "NBS82: FeSCN²⁺ +23,4; SCN⁻ +76,44; Fe³⁺ −48,5"
+    },
+    "pbno32-ki": {
+      "dH_kJ_per_mol": -63.38,
+      "source": "NBS82: PbI2 cr −175,48, ai −112,1"
+    },
+    "na2s2o3-hcl": {
+      "dH_kJ_per_mol": 43.5,
+      "source": "NBS82: ΔfH° S2O3²⁻(aq) −652,3; SO2(aq) −323,0; H2O(l) −285,8 kJ/mol (SO₂ ở lượng nhỏ coi như tan trong nước); chưa xác minh lại giá trị S2O3²⁻"
+    }
+  },
+  "dissolution_kJ_per_mol": {
+    "NaOH_s": {
+      "value": -44.51,
+      "source": "LT_sol"
+    },
+    "NH4NO3_s": {
+      "value": 25.7,
+      "source": "LT_NH4NO3"
+    },
+    "KNO3_s": {
+      "value": 34.89,
+      "source": "LT_sol"
+    },
+    "NaCl_s": {
+      "value": 3.88,
+      "source": "LT_sol"
+    },
+    "KCl_s": {
+      "value": 17.22,
+      "source": "LT_sol (bảng in nhầm dấu −17,22)"
+    },
+    "NH4Cl_s": {
+      "value": 14.77,
+      "source": "LT_sol"
+    },
+    "CuSO4_5H2O_s": {
+      "value": 6.0,
+      "source": "NBS82 tr. 2-156"
+    },
+    "CuSO4_anh_s": {
+      "value": -73.1,
+      "source": "NBS82 + OSG"
+    },
+    "H2SO4_l_integral": {
+      "source": "NBS82 tr. 2-58/2-59",
+      "n_H2O_per_mol": [
+        1,
+        2,
+        5,
+        10,
+        20,
+        50,
+        100,
+        1000,
+        "inf"
+      ],
+      "dH_kJ_per_mol": [
+        -27.8,
+        -41.45,
+        -57.49,
+        -66.54,
+        -70.93,
+        -72.78,
+        -73.65,
+        -78.35,
+        -95.28
+      ],
+      "note": "nội suy theo log n; giải thích quy tắc rót acid vào nước"
+    }
+  },
+  "solubility_g_per_100g_water": {
+    "_source": "WP_sol (thứ cấp)",
+    "T_C": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "KNO3": [
+      13.3,
+      20.9,
+      31.6,
+      45.8,
+      63.9,
+      85.5,
+      110.0,
+      138,
+      169,
+      202,
+      246
+    ],
+    "NaCl": [
+      35.65,
+      35.72,
+      35.89,
+      36.09,
+      36.37,
+      36.69,
+      37.04,
+      37.46,
+      37.93,
+      38.47,
+      38.99
+    ],
+    "CuSO4_5H2O": [
+      23.1,
+      27.5,
+      32,
+      37.8,
+      44.6,
+      null,
+      61.8,
+      null,
+      83.8,
+      null,
+      114
+    ],
+    "PbI2": [
+      0.044,
+      0.056,
+      0.076,
+      0.09,
+      0.124,
+      null,
+      0.193,
+      null,
+      0.294,
+      null,
+      0.42
+    ],
+    "_note_CuSO4": "chưa rõ tính theo hydrate hay khan — chưa xác minh"
+  },
+  "ksp_25C": {
+    "_source": "CRC84_Ksp",
+    "BaSO4": {
+      "Ksp": 1.08e-10,
+      "dH_sol_kJ": 26.29
+    },
+    "BaCO3": {
+      "Ksp": 2.58e-09,
+      "dH_sol_kJ": 1.52
+    },
+    "AgCl": {
+      "Ksp": 1.77e-10,
+      "dH_sol_kJ": 65.49
+    },
+    "AgI": {
+      "Ksp": 8.52e-17,
+      "dH_sol_kJ": 112.23
+    },
+    "Ag2CO3": {
+      "Ksp": 8.46e-12,
+      "dH_sol_kJ": 39.82
+    },
+    "PbI2": {
+      "Ksp": 9.8e-09,
+      "dH_sol_kJ": 63.38,
+      "ions": [
+        {
+          "from": "PbNO32",
+          "n": 1
+        },
+        {
+          "from": "KI",
+          "n": 2
+        }
+      ]
+    },
+    "FeOH3": {
+      "Ksp": 2.79e-39,
+      "dH_sol_kJ": 84.52
+    },
+    "CuOH2": {
+      "Ksp": 2.2e-20,
+      "dH_sol_kJ": 54.58,
+      "verified": false
+    },
+    "_temperature": "van 't Hoff: ln K(T) = ln K25 − dH_sol·1000/8.314·(1/T − 1/298.15)",
+    "_ions": "ions: ion của muối khi tan và chất trong cốc cung cấp ion chung (mỗi đơn vị chất cho 1 ion). Dùng tính độ tan có ion chung: Ksp = (c₁ + n₁s)^n₁ (c₂ + n₂s)^n₂"
+  },
+  "equilibria": {
+    "N2O4_from_NO2": {
+      "eq": "2NO2 ⇌ N2O4",
+      "K25": 6.75,
+      "K_units": "bar^-1",
+      "dH_kJ": -57.12,
+      "dS_J_per_K": -175.7,
+      "source": "WB_NO2 + WB_N2O4 (JANAF)"
+    },
+    "FeSCN": {
+      "eq": "Fe3+ + SCN- ⇌ FeSCN2+",
+      "K25_I0": 917,
+      "K25_I0_deBerg2017": 708,
+      "K25_lab_acidic": {
+        "value": 140,
+        "verified": false
+      },
+      "dH_kJ": -4.54,
+      "source_dH": "NBS82",
+      "epsilon_447nm_L_per_mol_cm": 4700,
+      "source_epsilon": "FO1947_via_UCA",
+      "reaction": "fecl3-kscn",
+      "metal": {
+        "id": "FeCl3",
+        "per": 1
+      },
+      "ligand": {
+        "id": "KSCN",
+        "per": 1
+      },
+      "complex": {
+        "id": "FeSCN3",
+        "metal": 1,
+        "ligand": 3
+      },
+      "_model": "Engine tách lại Fe(SCN)3 thành tổng Fe và SCN, rồi giải cân bằng 1:1 Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺ với K25_I0 (lực ion 0) và van 't Hoff theo dH_kJ; màu theo A447 = ε·[FeSCN²⁺] với đường đi 1 cm"
+    },
+    "CoCl4": {
+      "eq": "[Co(H2O)6]2+ + 4Cl- ⇌ [CoCl4]2- + 6H2O",
+      "sign": "endothermic",
+      "dH_kJ": null,
+      "K25": null,
+      "verified": false,
+      "lambda_max_nm": {
+        "CoCl4": 692,
+        "CoH2O6": 511
+      },
+      "epsilon_L_per_mol_cm": {
+        "CoCl4": 572,
+        "CoH2O6": 4.85
+      },
+      "note": "ΔH chưa xác minh (Chem. Educator 14(5):225, 2009); chưa có Co trong substances.json"
+    }
+  },
+  "kinetics": {
+    "thiosulfate_acid": {
+      "eq": "Na2S2O3 + 2HCl → 2NaCl + S↓ + SO2 + H2O",
+      "Ea_kJ_per_mol": 48,
+      "Ea_range": [
+        44,
+        50
+      ],
+      "source": "SiS2023 (~50); JCIS1973 (11,0 kcal ≈ 46; chưa mở bản gốc)",
+      "t_ref_s": 60,
+      "T_ref_C": 25,
+      "thiosulfate_ref_M": 0.15,
+      "t_ref_verified": false,
+      "order_note": "≈ 3/2 theo S2O3²⁻, 1/2 theo H⁺ ở nồng độ thấp (Flinn); mô hình đơn giản: t ∝ 1/[S2O3²⁻]",
+      "reaction": "na2s2o3-hcl"
+    }
+  }
+}

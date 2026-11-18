@@ -1,0 +1,294 @@
+{
+  "_note": "Khu giải phẫu động vật trên bàn thí nghiệm (src/core/dissect.js). Mẫu và danh sách cơ quan theo các bài thực hành SGK Sinh học 7; cách đặt mẫu, đường cắt, độ sâu theo các hướng dẫn mổ ghi ở sources. pos (dọc thân từ đầu 0 đến đuôi 1; ngang thân từ −1 đến 1, với cá nằm nghiêng là từ lưng −1 đến bụng 1) chỉ dùng để biết cơ quan nằm nửa nào khi mẫu mở một phần; hình dạng và vị trí để vẽ (hình SVG và mẫu 3D) nằm trong src/core/anatomy/<mẫu>.js, đo theo các nguồn giải phẫu ghi ở sources. layer: 0 nhìn thấy bên ngoài, 1 thấy sau khi mở thành cơ thể, 2 thấy sau khi gỡ ống tiêu hoá. small: cần kính lúp; fragile: dễ vỡ khi cắt sâu; flat: lớp mỏng nằm dưới các cơ quan khác (cơ bụng của tôm). body.length: chiều dài thật của mẫu trưởng thành (mét), nguồn ở body.sizeSource; từ giai đoạn 7 mẫu vẽ đúng 1 : 1, không phóng to.",
+  "sources": {
+    "sgk16": "SGK Sinh học 7 (NXB Giáo dục Việt Nam), bài 16 Thực hành: mổ và quan sát giun đất; danh sách cơ quan tiêu hoá theo lời giải trang 58 (vietjack.com)",
+    "sgk23": "SGK Sinh học 7, bài 23 Thực hành: mổ và quan sát tôm sông: găm tôm nằm sấp bằng 4 đinh ghim, đổ nước ngập, dùng kẹp nâng tấm lưng; chú thích hình 23.3B (dạ dày, tuyến gan, ruột) và 23.3C (hạch não, vòng thần kinh hầu, chuỗi thần kinh ngực, chuỗi thần kinh bụng) theo lời giải trang 77–78 (vietjack.com)",
+    "sgk32": "SGK Sinh học 7, bài 32 Thực hành: mổ cá: xác định mang, tim, dạ dày, ruột, gan, mật, thận, tinh hoàn hoặc buồng trứng, bóng hơi; tim ngang vây ngực, thận đỏ tím sát cột sống (lời giải trang 106–107, vietjack.com)",
+    "sgk36": "SGK Sinh học 7, bài 36 Thực hành: quan sát cấu tạo trong của ếch đồng trên mẫu mổ: tim, phổi, gan, mật, dạ dày, ruột, ruột thẳng, thận, ống dẫn nước tiểu, bóng đái, huyệt (lời giải bài 35–36, vietjack.com); tim ếch 3 ngăn",
+    "bcworm": "Biology Corner, Earthworm Dissection: đặt giun mặt lưng lên, mũi kéo hướng lên, chỉ cắt qua da; dùng kim tách vách ngăn, ghim da sang hai bên",
+    "wards": "Ward's Science, Earthworm Dissection: cắt không sâu quá 1/16 inch (khoảng 1,6 mm)",
+    "bcfrog": "Biology Corner, Dissection of the Bullfrog – Internal Anatomy: tĩnh mạch bụng chạy dọc đường giữa bụng; nâng cơ, cắt dọc lệch sang một bên tĩnh mạch",
+    "ankara": "Ankara University, hướng dẫn mổ ếch: cắt lớp cơ bụng lệch sang trái hoặc phải đường giữa để không cắt phải mạch máu bụng",
+    "wlwv": "West Linn-Wilsonville School District, LAB – Fish Dissection: cá nằm nghiêng, bắt đầu cắt ở mặt bụng ngay trước lỗ hậu môn, cắt nông vì phần lớn nội quan nằm ở nửa bụng, tới mang thì cắt lên phía sau mang",
+    "agastric": "Wilson J.M., Castro L.F.C. 2010, Morphological diversity of the gastrointestinal tract in fishes, Fish Physiology 30: họ Cá chép (Cyprinidae) không có dạ dày thật",
+    "3r": "Russell W.M.S., Burch R.L. 1959, The Principles of Humane Experimental Technique: nguyên tắc 3R (thay thế, giảm bớt, cải tiến)",
+    "dvkxs": "Ảnh thực hành Động vật không xương sống của chủ dự án (Drive, thư mục ĐVKXS, 14/03–16/05/2022): mẫu mổ giun đất, giun đũa cái, ốc có nắp, gián; khay đáy sáp đen, đổ nước ngập mẫu, ghim nghiêng khoảng 45°",
+    "hickman": "Hickman C.P., Keen S.L., Larson A. et al. 2017, Integrated Principles of Zoology, 17th ed., McGraw-Hill (bản PDF trong Drive của chủ dự án)",
+    "sgk13": "SGK Sinh học 7, bài 13 Giun đũa: cơ thể hình trụ, có khoang cơ thể chưa chính thức, ống tiêu hoá thẳng từ miệng tới hậu môn, tuyến sinh dục dài cuộn khúc",
+    "sgk26": "SGK Sinh học 7, bài 26 Châu chấu: hệ tiêu hoá có diều, dạ dày, ruột tịt; bài tiết bằng ống Malpighi; hô hấp bằng hệ thống ống khí; thần kinh dạng chuỗi hạch",
+    "dvcxs": "Báo cáo và ảnh thực hành Động vật có xương sống của chủ dự án (Google Drive, thư mục ĐVCXS, lớp Sinh học K66): báo cáo mổ ếch viết tay (da, khoang miệng, Hình 3 nội quan: tim 3 ngăn, phổi, gan 3 thuỳ, mật, dạ dày cong, thể mỡ, tì, tuyến tuỵ dọc đầu ruột non, ruột non, ruột già, trực tràng, bóng đái; thận đỏ thẫm dưới hệ tiêu hoá), ảnh mẫu mổ thật của ếch đồng, cá chép và chuột nhắt trắng; dụng cụ: kéo thẳng, kéo cong, banh, kẹp, khay, ghim, dùi chọc tuỷ",
+    "cook1965": "Cook M.J. 1965, The Anatomy of the Laboratory Mouse, Academic Press, London: vị trí và hình dạng nội quan chuột nhắt (phổi trái 1 thuỳ, phổi phải 4 thuỳ; gan nhiều thuỳ; dạ dày có phần trước không tuyến; manh tràng lớn; lách dài ôm dạ dày)",
+    "linea": "Hướng dẫn mổ chuột trong các giáo trình động vật học (ví dụ Biology Corner, Rat Dissection): cắt da rồi cắt cơ thành bụng dọc đường trắng giữa bụng (linea alba, ít mạch máu), mũi kéo hướng lên để không cắt vào ruột; cắt cơ hoành và xương sườn hai bên để mở lồng ngực",
+    "holmes": "Holmes S.J. 1916, The Biology of the Frog, Macmillan (Fig. 10–11 nội quan, Fig. 63 bộ xương): gan gồm thuỳ phải, thuỳ trái có khía chia hai và thuỳ giữa nhỏ khuất sau tim; túi mật ở mặt lưng giữa thuỳ phải và trái; tì ở mạc treo gần đầu ruột già; bóng đái hai thuỳ",
+    "ecker": "Ecker A., Haslam G. 1889, The Anatomy of the Frog, Clarendon Press (Fig. 185): vị trí nội quan theo chiều mõm – huyệt (tim 0,28–0,48, gan 0,34–0,65, dạ dày 0,42–0,70, thận 0,58–0,80, bóng đái 0,78–0,97)",
+    "boulenger": "Boulenger G.A. 1882, Catalogue of the Batrachia Salientia, British Museum; Thongproh et al. 2022: răng lá mía hai hàng xiên bắt đầu ở góc trong phía trước lỗ mũi trong; ếch đực có đôi túi kêu dưới họng; chiều dài mõm – huyệt con trưởng thành 90,2 ± 11,9 mm (đực, n = 25), 106,5 ± 16,4 mm (cái, n = 28) (Thongproh et al. 2022, Bảng 3)",
+    "digimouse": "Dogdas B. et al. 2007, Digimouse: a 3D whole body mouse atlas, Phys. Med. Biol. 52: 577–587 (CC BY-SA): đo vị trí theo chiều mũi – hậu môn (đầu tới 0,3; tim 0,37–0,49; vòm cơ hoành 0,47–0,50; gan 0,47–0,69; dạ dày 0,535–0,62; thận phải 0,59–0,71, thận trái 0,61–0,73)",
+    "uysal2017": "Uysal M. et al. 2017, Lab. Anim. 51: 245–255 (doi:10.1177/0023677216658916): ở 100 chuột BALB/c manh tràng thường nằm ở bụng sau bên trái, hình dấu phẩy, đầu tịt chĩa vào giữa",
+    "scnu": "Đại học Sư phạm Hoa Nam (SCNU), giáo trình thực hành Sinh học động vật: 实验9 mổ tôm càng Macrobrachium (tim tam giác 3 đôi lỗ tim, tuyến gan bao quanh dạ dày môn vị, buồng trứng trên tuyến gan) và 实验13 mổ cá chép (tim giữa hai vây ngực, gan tuỵ phân tán, ruột không dạ dày, túi mật bên phải ruột trước, lách trên mặt lưng ruột trước, bóng hơi hai ngăn, thận rộng nhất ở chỗ thắt của bóng hơi)",
+    "fishbase": "FishBase, Cyprinus carpio; Majeed et al. 2023, Indian J. Ecology 50: 499–502; Ota et al. 2018, Neotrop. Ichthyol. 16(2): tỉ lệ ngoài theo chiều dài toàn thân (mắt 0,087–0,133, nắp mang tới 0,244, vây ngực 0,246, vây bụng 0,415, vây lưng 0,409–0,698, vây hậu môn 0,607–0,679, vây đuôi từ 0,816); chiều dài thường gặp 31,0 cm TL, thành thục 25–36 cm (https://www.fishbase.se/summary/Cyprinus-carpio.html)",
+    "bauer": "Bauer R.T., General biology of decapod shrimps (University of Louisiana); Martinez et al. 2005, Tissue & Cell 37: 153–165: tôm thuộc nhóm Caridea (có Macrobrachium) có mang dạng tấm xếp hai hàng trên trục (phyllobranchia), 8 lá mang mỗi bên lớn dần về sau; mang phân nhánh kiểu lông chim là của họ tôm he",
+    "fao2002": "New M.B. 2002, Farming freshwater prawns, FAO Fish. Tech. Pap. 428, ch. 2; Lima et al. 2016, Acta Amazonica 46(2): giáp đầu ngực, bụng 6 đốt và đốt đuôi; buồng trứng chín màu cam ở phía lưng giáp đầu ngực; dạ dày tim không có răng nghiền",
+    "bahl": "Bahl K.N. 1919, 1921, Quarterly Journal of Microscopical Science; NCERT Sinh học 11 (bản 2006), chương 7; Bantaowong et al. 2011: Pheretima 100–120 đốt; hầu đốt 3–4, thực quản 5–7, mề 8–9, dạ dày 9–14, ruột từ đốt 15, đôi ruột tịt ở đốt 26 chĩa về trước; tim bên ở đốt 7, 9, 12, 13; túi nhận tinh 4 đôi ở đốt 6–9; túi tinh 2 đôi ở đốt 11–12; đai đốt 14–16; hạch não đốt 3",
+    "fox2006": "Fox R. 2006, Ascaris suum, Invertebrate Anatomy Online (Lander University); Saunders 1972 (luận văn thạc sĩ, Simon Fraser University): hầu 5,5–8,6 mm; ruột dẹt tới trực tràng ngắn, hậu môn mặt bụng sát đuôi; lỗ sinh dục cái khoảng 1/3 thân; tử cung từ khoảng 0,35 thân về gần đuôi; ống dẫn trứng cuộn 0,33–0,9; búi buồng trứng ở khoảng giữa thân",
+    "rodriguez2018": "Rodriguez C. et al. 2018, PeerJ 6: e5789 (doi:10.7717/peerj.5789) và 2019, 2021: trong xoang áo của Pomacea canaliculata phổi là túi kín chiếm phần lớn trần bên trái và giữa, mang là dải chữ L ôm mép phải và mép sau của phổi; trực tràng dọc mép phải; xoang bao tim ở góc trước trái của thận; tuyến tiêu hoá nâu sẫm ánh lục chiếm tháp nội tạng",
+    "hayes2015": "Hayes K.A. et al. 2015, Malacologia 58 (doi:10.4002/040.058.0209): so sánh Pila và Pomacea (Pila nắp vôi, Pomacea nắp sừng); lưỡi bào 7 răng mỗi hàng",
+    "miall": "Miall L.C., Denny A. 1886, The Structure and Life-History of the Cockroach, Lovell Reeve: diều thành mỏng tới đốt bụng 3–6, mề có 6 răng kitin, 8 manh tràng vị chĩa về trước, trực tràng 6 nếp dọc, chuỗi thần kinh gồm não, hạch dưới hầu, 3 hạch ngực, 6 hạch bụng",
+    "wall1975": "Wall B.J. et al. 1975, J. Morphol. 146 (doi:10.1002/jmor.1051460207): Periplaneta americana có khoảng 150 ống Malpighi đổ vào 6 bóng ở chỗ nối ruột giữa và ruột sau",
+    "weihmann2015": "Weihmann T. et al. 2015, PLoS ONE 10: e0141226: hàm trên trái 4 răng, phải 3 răng, có vùng nghiền; Luo et al. 2023, ZooKeys: thân P. americana dài khoảng 30–31 mm, rộng 11–14 mm; Joda et al. 2023: râu dài 1,3–1,6 lần thân",
+    "bantaowong2011": "Bantaowong et al. 2011, Tropical Natural History 11(1): 55–69: Metaphire (= Pheretima) posthuma dài 64–126 mm, đường kính 3–6 mm, 90–126 đốt. https://li01.tci-thaijo.org/index.php/tnh/article/view/103012",
+    "basrah2017": "Luận văn thạc sĩ, ĐH Basrah 2017: Macrobrachium nipponense, tổng chiều dài cái 48,3–69,1 mm, đực 52,1–74,7 mm (FAO ghi con đực tối đa 36 mm, có thể in nhầm). https://www.home.iqdr.iq/search/print/0f8909c631d1aac947ad422c3324adda",
+    "thongproh2022": "Thongproh et al. 2022, Agriculture and Natural Resources 56: 1135–1152, Bảng 3: Hoplobatrachus rugulosus SVL đực 90,2 ± 11,9 mm (74,4–122,3), cái 106,5 ± 16,4 mm (78,3–143,7). https://li01.tci-thaijo.org/index.php/anres/article/view/257250",
+    "applesnail": "applesnail.net, Pila polita: dạng lớn cao 80–95 mm, rộng 70–80 mm; dạng nhỏ cao 60–70 mm, rộng 45–55 mm. https://applesnail.net/content/species/pila_polita.htm",
+    "ufifas": "UF/IFAS EENY-141, American cockroach Periplaneta americana: dài trung bình 4 cm. https://ask.ifas.ufl.edu/publication/IN298",
+    "mpd": "Mouse Phenome Database (RIKEN-EAD1), chiều dài mũi tới gốc đuôi lúc 12 tuần: BALB/cAJcl cái 90,1, đực 93,2 mm; C57BL/6J cái 84,5, đực 90,2 mm. https://phenome.jax.org/measures/37227",
+    "cdc-ascaris": "CDC DPDx, Ascariasis: giun đũa cái 20–35 cm, đực 15–30 cm. https://www.cdc.gov/dpdx/ascariasis/index.html"
+  },
+  "ethics": "Mẫu vật trong bài thực hành phải là mẫu đã chết, lấy từ nơi cung cấp mẫu hoặc được làm chết nhân đạo theo quy định của trường. Mổ ảo là một cách thay thế (Replacement) trong nguyên tắc 3R.",
+  "places": {
+    "dorsal": "nằm sấp, mặt lưng lên trên",
+    "ventral": "nằm ngửa, mặt bụng lên trên",
+    "side": "nằm nghiêng"
+  },
+  "lines": {
+    "mid": "dọc đường giữa",
+    "side": "lệch sang một bên đường giữa"
+  },
+  "depths": {
+    "shallow": "nông, mũi kéo hướng lên, chỉ cắt thành cơ thể",
+    "deep": "sâu, mũi kéo chúi xuống"
+  },
+  "specimens": {
+    "earthworm": {
+      "name": "Giun đất", "sci": "Pheretima sp.", "lesson": "SGK Sinh học 7, bài 16", "source": "sgk16",
+      "place": "dorsal", "line": ["mid", "side"], "pins": 2, "water": true, "remove": "Ống tiêu hoá",
+      "body": {"shape": "worm", "length": 0.12, "width": 0.0099, "color": "#b9776e", "segments": 60, "sizeSource": "bantaowong2011"},
+      "how": "Đặt giun nằm sấp, ghim đầu và đuôi; dùng kẹp kéo da lên, mũi kéo hướng lên, cắt nông dọc giữa lưng từ đầu tới khoảng 9/10 thân, giữ nguyên đuôi (dvkxs). Đổ nước ngập để nội quan tách ra; dùng kim cắt các vách ngăn nối ruột với thành cơ thể ở mỗi ranh giới đốt, phanh da và ghim nghiêng khoảng 45° ra ngoài, so le hai bên (bcworm, dvkxs).",
+      "wrong": {
+        "place": "Giun nằm ngửa: đường cắt dọc mặt bụng cắt đứt chuỗi hạch thần kinh bụng nằm sát mặt bụng.",
+        "deep": "Cắt sâu làm rách ruột: đất trong ruột tràn ra che nội quan (wards: không cắt sâu quá khoảng 1,6 mm).",
+        "water": "Chưa đổ nước: nội quan dính vào nhau và vào vách ngăn, các phần nhỏ khó nhìn."
+      },
+      "deepDamage": ["ruot"],
+      "placeDamage": ["chuoi-hach"],
+      "required": ["hau", "dieu", "da-day", "ruot", "ruot-tit", "tui-tinh", "hach-nao", "chuoi-hach"],
+      "organs": [
+        { "id":  "dai", "name":  "Đai sinh dục", "system":  "Sinh sản", "fn":  "Vòng trơn, sẫm, không thấy rãnh đốt, ở đốt 14–16; tiết chất nhầy tạo kén chứa trứng. Mặt bụng có lỗ sinh dục cái ở đốt 14 và đôi lỗ sinh dục đực ở đốt 18 (bahl).", "layer":  0, "pos":  [0.15, 0], "size":  [0.05, 1.1], "color":  "#8d5a52" },
+        { "id":  "hau", "name":  "Hầu", "system":  "Tiêu hoá", "fn":  "Khối hồng thịt ở đốt 3–4, có nhiều sợi cơ và tuyến trắng toả ra bám vào thành cơ thể; cơ khoẻ hút thức ăn và đất vào.", "layer":  1, "pos":  [0.035, 0], "size":  [0.05, 0.5], "color":  "#d99a95" },
+        { "id":  "thuc-quan", "name":  "Thực quản", "system":  "Tiêu hoá", "fn":  "Ống hẹp ở đốt 5–7 dẫn thức ăn từ hầu xuống mề.", "layer":  1, "pos":  [0.065, 0], "size":  [0.03, 0.25], "color":  "#e0896c" },
+        { "id":  "dieu", "name":  "Diều", "system":  "Tiêu hoá", "fn":  "Pheretima không có diều tách riêng như giun đỏ Lumbricus (diều ở đốt 15–16); SGK gọi đoạn thực quản phình nhẹ ngay trước mề (đốt 6–7) là diều. Chứa thức ăn tạm thời.", "layer":  1, "pos":  [0.08, 0], "size":  [0.02, 0.38], "color":  "#e6a688" },
+        { "id":  "da-day", "name":  "Dạ dày cơ (mề)", "system":  "Tiêu hoá", "fn":  "Khối tròn hồng, bóng, căng ở đốt 8–9; thành cơ dày co bóp nghiền nhỏ thức ăn cùng hạt đất. Sau mề là đoạn dạ dày hẹp đốt 9–14.", "layer":  1, "pos":  [0.1, 0], "size":  [0.03, 0.55], "color":  "#e8a49a" },
+        { "id":  "ruot", "name":  "Ruột", "system":  "Tiêu hoá", "fn":  "Bắt đầu từ đốt 15, phình thành túi theo từng đốt, phủ mô vàng (chloragogen) màu vàng cam, chứa đất nâu vàng; tiêu hoá và hấp thụ chất dinh dưỡng, đất ra ngoài qua hậu môn.", "layer":  1, "gut":  true, "fragile":  true, "shape":  "tube", "pos":  [0.57, 0], "size":  [0.82, 0.48], "color":  "#c99a4a" },
+        { "id":  "ruot-tit", "name":  "Ruột tịt", "system":  "Tiêu hoá", "fn":  "Đôi túi hình nón mọc hai bên ruột ở đốt 26, chĩa về phía trước tới khoảng đốt 22; tiết dịch tiêu hoá.", "layer":  1, "small":  true, "pair":  true, "pos":  [0.24, 0.42], "size":  [0.05, 0.14], "color":  "#c48a73" },
+        { "id":  "mach-lung", "name":  "Mạch lưng", "system":  "Tuần hoàn", "fn":  "Mạch đỏ tươi chạy lượn sóng dọc mặt trên ống tiêu hoá, có nhánh vòng quanh từng túi ruột; máu trong hệ tuần hoàn kín chảy từ sau ra trước.", "layer":  1, "small":  true, "shape":  "cord", "pos":  [0.5, 0], "size":  [0.92, 0.06], "color":  "#c4302b" },
+        { "id":  "tim", "name":  "Tim bên (mạch vòng)", "system":  "Tuần hoàn", "fn":  "Bốn đôi vòng mạch đỏ sẫm ở đốt 7, 9, 12, 13 (đôi ở đốt 9 bên trái to hơn), co bóp đẩy máu từ mạch lưng xuống mạch bụng.", "layer":  1, "small":  true, "pair":  true, "pos":  [0.09, 0.4], "size":  [0.04, 0.1], "color":  "#9e2424" },
+        { "id":  "tui-tinh", "name":  "Túi tinh", "system":  "Sinh sản", "fn":  "Hai đôi thuỳ trắng sữa ở đốt 11–12, hai bên ống tiêu hoá; chứa tinh trùng chưa thành thục. Túi tinh hoàn ở đốt 10–11 nằm dưới ống tiêu hoá.", "layer":  1, "pair":  true, "pos":  [0.115, 0.45], "size":  [0.04, 0.22], "color":  "#f4efe3" },
+        { "id":  "tui-nhan-tinh", "name":  "Túi nhận tinh", "system":  "Sinh sản", "fn":  "Bốn đôi túi trắng nhỏ có túi phụ ở đốt 6–9, sát thành cơ thể; nhận tinh của con khác khi giao phối (giun đất lưỡng tính, thụ tinh chéo).", "layer":  1, "small":  true, "pair":  true, "pos":  [0.07, 0.62], "size":  [0.025, 0.12], "color":  "#efe7d6" },
+        { "id":  "hach-nao", "name":  "Hạch não", "system":  "Thần kinh", "fn":  "Đôi hạch nhỏ trắng ở mặt lưng hầu, đốt 3; nối với hạch dưới hầu (đốt 4) bằng vòng thần kinh hầu.", "layer":  1, "small":  true, "pos":  [0.025, 0], "size":  [0.02, 0.3], "color":  "#f1ead2" },
+        { "id":  "chuoi-hach", "name":  "Chuỗi hạch thần kinh bụng", "system":  "Thần kinh", "fn":  "Chuỗi hạch trắng chạy dọc mặt bụng từ đốt 4, mỗi đốt một hạch, điều khiển vận động các đốt.", "layer":  2, "small":  true, "shape":  "cord", "pos":  [0.52, 0], "size":  [0.92, 0.07], "color":  "#f4efe0" }
+      ]
+    },
+    "shrimp": {
+      "name": "Tôm sông", "sci": "Macrobrachium sp.", "lesson": "SGK Sinh học 7, bài 23", "source": "sgk23",
+      "place": "dorsal", "line": ["mid", "side"], "pins": 4, "water": true, "remove": "Ống tiêu hoá và tuyến gan",
+      "body": {"shape": "shrimp", "length": 0.07, "width": 0.0159, "color": "#9fb3a8", "segments": 6, "sizeSource": "basrah2017"},
+      "how": "Găm tôm nằm sấp bằng 4 đinh ghim, đổ nước ngập cơ thể; cắt hai bên mai và tấm lưng các đốt bụng, dùng kẹp khẽ nâng tấm lưng ra (sgk23). Gỡ ống tiêu hoá để thấy chuỗi thần kinh nằm ở mặt bụng.",
+      "wrong": {
+        "place": "Tôm nằm ngửa: cắt từ mặt bụng làm đứt chuỗi hạch thần kinh ngực và bụng.",
+        "deep": "Cắt sâu xuyên qua tấm lưng làm nát ruột và tuyến gan.",
+        "water": "Chưa đổ nước: nội quan khô, dính vào nhau, mang và dây thần kinh khó thấy."
+      },
+      "deepDamage": ["ruot", "tuyen-gan"],
+      "placeDamage": ["chuoi-nguc", "chuoi-bung"],
+      "required": ["mang", "da-day", "tuyen-gan", "ruot", "hach-nao", "vong-hau", "chuoi-nguc", "chuoi-bung"],
+      "organs": [
+        { "id":  "mang", "name":  "Mang", "system":  "Hô hấp", "fn":  "Tám lá mang mỗi bên, nằm dưới hai bên mai, lớn dần về phía sau; mỗi lá gồm các tấm mỏng xếp hai hàng trên một trục (phyllobranchia), nhìn tổng thể giống lông chim như SGK mô tả; trao đổi khí với nước.", "layer":  1, "pair":  true, "pos":  [0.28, 0.72], "size":  [0.16, 0.3], "color":  "#d8c7b7" },
+        { "id":  "da-day", "name":  "Dạ dày", "system":  "Tiêu hoá", "fn":  "Nằm ở phía trước giáp đầu ngực: dạ dày tim lớn có các tấm kitin chứa và nghiền thức ăn (tôm càng không có răng nghiền), dạ dày môn vị nhỏ phía sau lọc thức ăn và được tuyến gan bao quanh.", "layer":  1, "gut":  true, "pos":  [0.14, 0], "size":  [0.1, 0.5], "color":  "#b9a38f" },
+        { "id":  "tuyen-gan", "name":  "Tuyến gan", "system":  "Tiêu hoá", "fn":  "Khối lớn hai thuỳ màu nâu vàng ở giữa và sau giáp đầu ngực, bao quanh dạ dày môn vị, nằm dưới tim và tuyến sinh dục; tiết dịch tiêu hoá đổ vào ruột.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.27, 0], "size":  [0.12, 0.55], "color":  "#c9852e" },
+        { "id":  "tim", "name":  "Tim", "system":  "Tuần hoàn", "fn":  "Hình tam giác đỉnh hướng ra trước, màu trắng vàng, có 3 đôi lỗ tim, nằm trong xoang bao tim ở phía lưng sau giáp đầu ngực; đẩy máu đi trong hệ tuần hoàn hở.", "layer":  1, "small":  true, "pos":  [0.34, 0], "size":  [0.05, 0.25], "color":  "#e7d7c9" },
+        { "id":  "ruot", "name":  "Ruột", "system":  "Tiêu hoá", "fn":  "Ống thẳng chạy dọc mặt lưng phần bụng, có động mạch lưng bụng ở trên, tới trực tràng phình và hậu môn ở mặt bụng gốc đốt đuôi.", "layer":  1, "gut":  true, "fragile":  true, "shape":  "cord", "pos":  [0.66, 0], "size":  [0.6, 0.1], "color":  "#6e5a48" },
+        { "id":  "co-bung", "name":  "Cơ bụng", "system":  "Vận động", "fn":  "Khối cơ gấp bụng rất lớn ở mặt bụng và dải cơ duỗi mỏng ở mặt lưng; cơ gấp co mạnh để tôm búng mình bơi giật lùi.", "layer":  1, "flat":  true, "pos":  [0.68, 0], "size":  [0.5, 0.75], "color":  "#efe3d6" },
+        { "id":  "tuyen-sinh-duc", "name":  "Tuyến sinh dục", "system":  "Sinh sản", "fn":  "Tôm cái có buồng trứng nằm trên tuyến gan ở phía lưng giáp đầu ngực, khi chín thành khối lớn màu cam; ống dẫn trứng mở ở gốc đôi chân ngực thứ 3. Tôm đực có đôi tinh hoàn trắng nối nhau phía sau thành hình chữ V, ống dẫn tinh mở ở gốc đôi chân ngực thứ 5.", "layer":  1, "gut":  true, "sexed":  true, "pos":  [0.33, 0.1], "size":  [0.12, 0.4], "color":  "#e8812a", "colorMale":  "#f2efe6" },
+        { "id":  "hach-nao", "name":  "Hạch não", "system":  "Thần kinh", "fn":  "Hạch trên hầu nằm ở phần đầu giữa hai mắt, điều khiển mắt và râu.", "layer":  2, "small":  true, "pos":  [0.05, 0], "size":  [0.03, 0.2], "color":  "#f4efe0" },
+        { "id":  "vong-hau", "name":  "Vòng thần kinh hầu", "system":  "Thần kinh", "fn":  "Vòng dây thần kinh quanh thực quản, nối hạch não với chuỗi hạch ngực.", "layer":  2, "small":  true, "pos":  [0.1, 0], "size":  [0.03, 0.25], "color":  "#f4efe0" },
+        { "id":  "chuoi-nguc", "name":  "Chuỗi thần kinh ngực", "system":  "Thần kinh", "fn":  "Khối hạch lớn ở mặt bụng phần ngực, điều khiển chân bò và chân hàm.", "layer":  2, "small":  true, "shape":  "cord", "pos":  [0.25, 0], "size":  [0.22, 0.09], "color":  "#f4efe0" },
+        { "id":  "chuoi-bung", "name":  "Chuỗi thần kinh bụng", "system":  "Thần kinh", "fn":  "Chuỗi 6 hạch dọc mặt bụng phần bụng, mỗi đốt một hạch, điều khiển chân bơi và cơ bụng.", "layer":  2, "small":  true, "shape":  "cord", "pos":  [0.66, 0], "size":  [0.6, 0.06], "color":  "#f4efe0" }
+      ]
+    },
+    "carp": {
+      "name": "Cá chép", "sci": "Cyprinus carpio", "lesson": "SGK Sinh học 7, bài 32", "source": "sgk32",
+      "place": "side", "line": ["mid", "side"], "pins": 0, "water": false, "remove": "Ống tiêu hoá, gan và tuyến sinh dục",
+      "body": {"shape": "fish", "length": 0.31, "width": 0.1003, "color": "#b9a26a", "sizeSource": "fishbase"},
+      "how": "Đặt cá nằm nghiêng trên khay, bụng quay về phía người mổ. Mũi kéo hướng lên, cắt nông từ ngay trước lỗ hậu môn dọc bụng tới sau mang, rồi cắt lên phía sau mang và vòng theo đường bên để lật bỏ thành bụng (wlwv). Gỡ bớt ruột, tách mỡ dính ruột để thấy bóng hơi và thận sát cột sống (sgk32). Ảnh mổ cá của chủ dự án (dvcxs): gan tuỵ và ruột kéo ra được thành một khối, túi mật xanh đen nằm trên, lách đỏ sẫm cạnh đó; phúc mạc phía lưng có sắc tố đen.",
+      "wrong": {
+        "place": "Cá đặt nằm sấp hoặc ngửa: thân lăn trên khay, đường cắt lệch, chỉ mở được một phần khoang bụng.",
+        "deep": "Cắt sâu đâm thủng ruột và túi mật: mật xanh đắng tràn ra nhuộm nội quan."
+      },
+      "deepDamage": ["ruot", "tui-mat"],
+      "placeDamage": [],
+      "required": ["mang", "tim", "gan", "tui-mat", "lach", "ruot", "tuyen-sinh-duc", "bong-hoi", "than"],
+      "misplaced": "partial",
+      "organs": [
+        { "id":  "mang", "name":  "Mang", "system":  "Hô hấp", "fn":  "Bốn đôi mang dưới xương nắp mang; mỗi cung mang có hai hàng sợi mang đỏ ở mặt ngoài (trao đổi khí, máu chảy ngược chiều dòng nước) và lược mang ở mặt trong. Cá chép không có răng hàm, chỉ có răng hầu.", "layer":  1, "pos":  [0.19, 0.05], "size":  [0.08, 0.55], "color":  "#c2373b" },
+        { "id":  "tim", "name":  "Tim", "system":  "Tuần hoàn", "fn":  "Nằm ở mặt bụng ngay sau mang, ngang vây ngực, màu đỏ tím; tim 2 ngăn (1 tâm nhĩ, 1 tâm thất) kèm xoang tĩnh mạch và bầu động mạch, chỉ chứa máu đỏ thẫm nghèo O₂ và đẩy máu lên mang; máu sau mang mới giàu O₂ đi nuôi cơ thể (1 vòng tuần hoàn).", "layer":  1, "pos":  [0.26, 0.62], "size":  [0.05, 0.22], "color":  "#a32630" },
+        { "id":  "gan", "name":  "Gan", "system":  "Tiêu hoá", "fn":  "Gan tuỵ đỏ sẫm, không có hình dạng nhất định, phân tán trên mạc treo giữa các quai ruột ở nửa trước khoang bụng; mô tuỵ lẫn trong gan, mắt thường không phân biệt được; tiết mật.", "layer":  1, "gut":  true, "pos":  [0.35, 0.42], "size":  [0.12, 0.45], "color":  "#9a4a3c" },
+        { "id":  "tui-mat", "name":  "Túi mật", "system":  "Tiêu hoá", "fn":  "Túi bầu dục xanh lục thẫm nằm ở bên phải đoạn ruột trước gần thực quản, phần lớn lẫn trong gan tuỵ: nhìn từ bên trái chỉ thấy một phần, lật nhẹ khối ruột mới thấy rõ; vỡ thì mật nhuộm xanh và làm đắng thịt.", "layer":  1, "gut":  true, "fragile":  true, "small":  true, "pos":  [0.37, 0.24], "size":  [0.03, 0.1], "color":  "#1f3a2c" },
+        { "id":  "lach", "name":  "Lách", "system":  "Tuần hoàn, miễn dịch", "fn":  "Dải dài mảnh đỏ sẫm nằm trên mặt lưng đoạn ruột trước, giữa ruột và gan tuỵ; lọc máu, sinh tế bào máu.", "layer":  1, "gut":  true, "pos":  [0.42, 0.3], "size":  [0.05, 0.12], "color":  "#5a1a24" },
+        { "id":  "ruot", "name":  "Ruột", "system":  "Tiêu hoá", "fn":  "Ống dài khoảng 2–3 lần thân, xếp thành 3 quai chữ U tới hậu môn ngay trước vây hậu môn; có mỡ bám giữa các quai. Cá chép không có dạ dày thật: đoạn ruột đầu phình to (bóng ruột) chứa thức ăn, chỗ SGK gọi là dạ dày.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.52, 0.48], "size":  [0.38, 0.5], "color":  "#d8b48f" },
+        { "id":  "tuyen-sinh-duc", "name":  "Tuyến sinh dục", "system":  "Sinh sản", "fn":  "Đôi tuyến dài nằm phía bụng – bên của bóng hơi, ngoài cùng khi lật thành bụng trái. Cá đực có tinh hoàn trắng sữa; cá cái có buồng trứng vàng cam nhiều hạt, khi chín gần đầy khoang bụng.", "layer":  1, "gut":  true, "sexed":  true, "pos":  [0.6, 0.18], "size":  [0.28, 0.25], "color":  "#e9a64a", "colorMale":  "#f3efe6" },
+        { "id":  "bong-hoi", "name":  "Bóng hơi", "system":  "Chìm nổi", "fn":  "Túi màng trắng bạc, căng, thắt ở khoảng giữa chia ngăn trước hình trứng và ngăn sau dài hình nón, nằm sát cột sống; ống khí đi từ mặt bụng đầu trước ngăn sau tới mặt lưng thực quản. Điều chỉnh lượng khí giúp cá chìm nổi.", "layer":  2, "pos":  [0.47, -0.22], "size":  [0.38, 0.3], "color":  "#efe8dc" },
+        { "id":  "than", "name":  "Thận", "system":  "Bài tiết", "fn":  "Hai dải đỏ tím sát cột sống, phía lưng bóng hơi, rộng nhất ở chỗ thắt của bóng hơi; đầu trước phình thành thận đầu nằm trên tim. Lọc máu, thải chất không cần thiết.", "layer":  2, "shape":  "cord", "pos":  [0.48, -0.74], "size":  [0.42, 0.12], "color":  "#6b2440" }
+      ]
+    },
+    "frog": {
+      "name": "Ếch đồng", "sci": "Hoplobatrachus rugulosus", "lesson": "SGK Sinh học 7, bài 36", "source": "sgk36",
+      "place": "ventral", "line": ["side"], "pins": 4, "water": false, "remove": "Ống tiêu hoá, gan và thể mỡ",
+      "body": {"shape": "frog", "length": 0.1, "width": 0.055, "color": "#7f8f52", "sizeSource": "thongproh2022"},
+      "how": "Đặt ếch nằm ngửa, ghim bốn chi. Bài thực hành ĐVCXS của chủ dự án (dvcxs) quan sát da và khoang miệng trước: banh miệng xem lưỡi, lỗ mũi trong, lỗ vòi Eustache. Nhấc da bụng bằng kẹp, cắt da dọc đường giữa từ huyệt lên hàm dưới, lật da thấy mạng mao mạch ở mặt trong; lớp cơ bụng thì nâng lên và cắt lệch sang một bên đường giữa để không cắt phải tĩnh mạch bụng (bcfrog, ankara); phanh và ghim hai mép.",
+      "wrong": {
+        "place": "Ếch nằm sấp: cắt vào lưng gặp cột sống và cơ lưng dày, không mở được khoang bụng.",
+        "mid": "Cắt lớp cơ dọc đúng đường giữa: đứt tĩnh mạch bụng, máu chảy che nội quan.",
+        "deep": "Cắt sâu đâm vào gan và ruột."
+      },
+      "deepDamage": ["gan", "ruot-non"],
+      "placeDamage": [],
+      "required": ["luoi", "lo-mui-trong", "voi-eustache", "mao-mach-da", "tim", "phoi", "gan", "tui-mat", "da-day", "tuy", "lach", "ruot-non", "ruot-thang", "the-mo", "than", "bong-dai"],
+      "misplaced": "closed",
+      "organs": [
+        { "id":  "tim", "name":  "Tim", "system":  "Tuần hoàn", "fn":  "Hình nón đỏ tím bóng giữa ngực, trong bao tim màng trắng trong; tim 3 ngăn (2 tâm nhĩ, 1 tâm thất), nón động mạch có van xoắn. Máu giàu O₂ từ tĩnh mạch phổi về tâm nhĩ trái, máu từ cơ thể về xoang tĩnh mạch rồi tâm nhĩ phải; hai dòng gặp nhau ở tâm thất nên máu đi nuôi cơ thể là máu pha (2 vòng tuần hoàn).", "layer":  1, "pos":  [0.2, 0], "size":  [0.07, 0.22], "color":  "#7d2338" },
+        { "id":  "phoi", "name":  "Phổi", "system":  "Hô hấp", "fn":  "Hai túi hồng đỏ, xốp, mặt trong vân tổ ong, hai bên tim; hô hấp cùng với da.", "layer":  1, "pair":  true, "pos":  [0.25, 0.42], "size":  [0.11, 0.22], "color":  "#e0897f" },
+        { "id":  "gan", "name":  "Gan", "system":  "Tiêu hoá", "fn":  "Gan lớn đỏ mận thẫm, bóng, ngay sau tim, che phần lớn dạ dày: thuỳ phải, thuỳ trái lớn có khía chia hai và một thuỳ giữa nhỏ khuất sau tim; tiết mật.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.34, 0.05], "size":  [0.13, 0.7], "color":  "#5e1d28" },
+        { "id":  "tui-mat", "name":  "Túi mật", "system":  "Tiêu hoá", "fn":  "Túi tròn nhỏ xanh thẫm nằm ở mặt lưng giữa thuỳ phải và thuỳ trái gan: nâng gan lên mới thấy rõ; chứa mật.", "layer":  1, "gut":  true, "small":  true, "pos":  [0.35, 0.18], "size":  [0.03, 0.08], "color":  "#1f3d33" },
+        { "id":  "da-day", "name":  "Dạ dày", "system":  "Tiêu hoá", "fn":  "Ống to cong hình chữ J màu trắng ngà, thành dày, bên trái con ếch dưới thuỳ gan; co bóp và tiết dịch vị.", "layer":  1, "gut":  true, "pos":  [0.42, -0.38], "size":  [0.14, 0.2], "color":  "#e8e0cf" },
+        { "id":  "ruot-non", "name":  "Ruột non", "system":  "Tiêu hoá", "fn":  "Tá tràng chạy ngược lên song song dạ dày (tuỵ nằm trong quai này), rồi ruột non cuộn nhiều quai, phần lớn ở nửa bên phải con ếch; treo trên mạc treo trong có mạch máu toả hình quạt; tiêu hoá và hấp thụ.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.56, 0.05], "size":  [0.16, 0.55], "color":  "#d9d4b0" },
+        { "id":  "tuy", "name":  "Tuyến tuỵ", "system":  "Tiêu hoá", "fn":  "Dải mỏng màu nhạt nằm dọc quai đầu ruột non (tá tràng), tiết dịch tuỵ đổ vào ruột.", "layer":  1, "gut":  true, "pos":  [0.47, -0.16], "size":  [0.08, 0.1], "color":  "#eedfc4" },
+        { "id":  "lach", "name":  "Tì (lá lách)", "system":  "Tuần hoàn, miễn dịch", "fn":  "Hạt tròn nhỏ đỏ thẫm trong mạc treo gần đầu ruột già, khuất sau các quai ruột non; lọc máu, sinh tế bào lympho.", "layer":  1, "gut":  true, "pos":  [0.6, -0.12], "size":  [0.035, 0.07], "color":  "#5a1a24" },
+        { "id":  "ruot-thang", "name":  "Ruột già, trực tràng", "system":  "Tiêu hoá", "fn":  "Đoạn cuối ống tiêu hoá, to hơn ruột non, nâu sẫm do chứa phân, đổ vào huyệt.", "layer":  1, "gut":  true, "pos":  [0.74, 0], "size":  [0.1, 0.16], "color":  "#7d6b5a" },
+        { "id":  "the-mo", "name":  "Thể mỡ", "system":  "Dự trữ", "fn":  "Hai cụm dải hình ngón tay màu vàng (thể vàng) gắn phía trước tuyến sinh dục, hai bên khoang bụng; dự trữ năng lượng cho mùa ngủ đông và sinh sản, kích thước đổi theo mùa.", "layer":  1, "gut":  true, "pair":  true, "pos":  [0.6, 0.45], "size":  [0.1, 0.12], "color":  "#ecd48a" },
+        { "id":  "bong-dai", "name":  "Bóng đái", "system":  "Bài tiết", "fn":  "Túi mỏng hai thuỳ ở cuối khoang bụng, chứa nước tiểu.", "layer":  1, "pos":  [0.83, 0], "size":  [0.07, 0.3], "color":  "#ddd2df" },
+        { "id":  "huyet", "name":  "Huyệt", "system":  "Bài tiết, sinh sản", "fn":  "Lỗ chung của ống tiêu hoá, ống dẫn nước tiểu và ống sinh dục.", "layer":  0, "small":  true, "pos":  [0.95, 0], "size":  [0.02, 0.06], "color":  "#5e4a3a" },
+        { "id":  "than", "name":  "Thận", "system":  "Bài tiết", "fn":  "Đôi khối dài đỏ thẫm, mềm, sát thành lưng dưới hệ tiêu hoá (phải gỡ ống tiêu hoá mới thấy); lọc máu, ống dẫn nước tiểu đổ vào huyệt.", "layer":  2, "pair":  true, "pos":  [0.66, 0.18], "size":  [0.16, 0.12], "color":  "#6e1f2c" },
+        { "id":  "tuyen-sinh-duc", "name":  "Tuyến sinh dục", "system":  "Sinh sản", "fn":  "Ếch đực có đôi tinh hoàn hình hạt đậu màu vàng nhạt gắn với thận, ống dẫn tinh đổ vào huyệt; ếch cái có buồng trứng nhiều trứng nhỏ đen trắng và ống dẫn trứng cuộn sát hai bên thận, từ huyệt lên tới sau tim.", "layer":  2, "sexed":  true, "pair":  true, "pos":  [0.58, 0.2], "size":  [0.08, 0.12], "color":  "#3b3632", "colorMale":  "#efe1a6" },
+        { "id":  "mao-mach-da", "name":  "Mạng mao mạch dưới da", "system":  "Hô hấp", "fn":  "Mặt trong vạt da bụng trắng ngà phủ mạng mao mạch đỏ dày: da mỏng, luôn ẩm, O₂ tan vào chất nhầy rồi thấm vào máu nên ếch hô hấp được qua da.", "layer":  1, "flat":  true, "pair":  true, "pos":  [0.5, 0.9], "size":  [0.36, 0.07], "color":  "#c8606a" },
+        { "id":  "luoi", "name":  "Lưỡi", "system":  "Tiêu hoá", "fn":  "Lưỡi cơ đàn hồi gắn ở phía trước thềm miệng, đầu lưỡi tự do quay về phía họng và có khía, có chất dính, lật ra ngoài để bắt côn trùng. Răng nhỏ ở hàm trên chỉ để giữ mồi.", "layer":  0, "pos":  [0.05, 0], "size":  [0.06, 0.18], "color":  "#d99a92" },
+        { "id":  "lo-mui-trong", "name":  "Lỗ mũi trong", "system":  "Hô hấp", "fn":  "Đôi lỗ ở phía trước trần miệng thông với lỗ mũi ngoài: ếch lấy không khí mà không cần mở miệng. Hai hàng răng lá mía xiên bắt đầu ngay góc trong phía trước của đôi lỗ này.", "layer":  0, "pair":  true, "pos":  [0.03, 0.1], "size":  [0.015, 0.03], "color":  "#3a2a28" },
+        { "id":  "voi-eustache", "name":  "Lỗ vòi Eustache", "system":  "Thần kinh, giác quan", "fn":  "Đôi lỗ ở góc sau trần miệng thông với tai giữa, cân bằng áp suất hai bên màng nhĩ.", "layer":  0, "pair":  true, "pos":  [0.1, 0.35], "size":  [0.015, 0.03], "color":  "#4a3430" }
+      ]
+    },
+    "ascaris": {
+      "name": "Giun đũa cái", "sci": "Ascaris sp.", "lesson": "SGK Sinh học 7, bài 13", "source": "sgk13",
+      "place": "dorsal", "line": ["mid", "side"], "pins": 4, "water": true, "remove": "Ống tiêu hoá",
+      "body": {"shape": "worm", "length": 0.25, "width": 0.0153, "color": "#ece2cc", "segments": 0, "sizeSource": "sgk13"},
+      "how": "Đặt giun mặt lưng lên, ghim hai đầu; cắt nông dọc thân, banh hai mép thành cơ thể và ghim nghiêng mỗi bên nhiều đinh; đổ nước ngập (dvkxs). Khoang cơ thể không có vách ngăn nên nội quan nằm tự do, buồng trứng là sợi mảnh dễ tràn ra khi banh.",
+      "wrong": {
+        "place": "Không đặt mặt lưng lên: đường cắt chạy trùng dây bên (đường bên) ở hai bên thân nên cắt đứt nó.",
+        "deep": "Cắt sâu làm rách tử cung: trứng tràn ra che các cơ quan.",
+        "water": "Chưa đổ nước: các sợi buồng trứng, ống dẫn trứng dính vào nhau, khó tách và khó thấy."
+      },
+      "deepDamage": ["tu-cung"],
+      "placeDamage": ["day-ben"],
+      "required": ["lo-sinh-duc", "hau", "ruot", "tu-cung", "ong-dan-trung", "buong-trung", "day-ben"],
+      "organs": [
+        { "id":  "lo-sinh-duc", "name":  "Lỗ sinh dục cái", "system":  "Sinh sản", "fn":  "Lỗ nhỏ ở mặt bụng, khoảng 1/3 thân tính từ đầu; nơi đẻ trứng.", "layer":  0, "small":  true, "pos":  [0.33, 0.5], "size":  [0.015, 0.15], "color":  "#b8a888" },
+        { "id":  "hau", "name":  "Hầu", "system":  "Tiêu hoá", "fn":  "Đoạn đầu ống tiêu hoá dài khoảng 1/40 thân, có cơ khoẻ, hút chất dinh dưỡng từ ruột người.", "layer":  1, "pos":  [0.04, 0], "size":  [0.05, 0.25], "color":  "#e3d4b4" },
+        { "id":  "ruot", "name":  "Ruột", "system":  "Tiêu hoá", "fn":  "Dải dẹt chạy thẳng suốt từ sau hầu tới trực tràng ngắn, hậu môn ở mặt bụng ngay trước mút đuôi; đoạn đầu khoảng 1/3 thân hầu như chỉ có ruột.", "layer":  1, "gut":  true, "shape":  "tube", "pos":  [0.53, 0], "size":  [0.88, 0.2], "color":  "#d8cdb2" },
+        { "id":  "tu-cung", "name":  "Tử cung", "system":  "Sinh sản", "fn":  "Đôi ống to trắng đục gợn như chuỗi hạt, chứa đầy trứng, từ âm đạo ngắn ở khoảng 1/3 thân chạy về gần đuôi, hai bên ruột (một con cái đẻ khoảng 200 nghìn trứng mỗi ngày theo SGK).", "layer":  1, "fragile":  true, "pair":  true, "pos":  [0.6, 0.3], "size":  [0.45, 0.12], "color":  "#f6f2ea" },
+        { "id":  "ong-dan-trung", "name":  "Ống dẫn trứng", "system":  "Sinh sản", "fn":  "Đôi ống mảnh hơn, cuộn nhiều vòng trong khoảng từ 1/3 tới 9/10 thân, nối buồng trứng với tử cung.", "layer":  1, "small":  true, "pair":  true, "pos":  [0.78, 0.5], "size":  [0.2, 0.06], "color":  "#f2ece0" },
+        { "id":  "buong-trung", "name":  "Buồng trứng", "system":  "Sinh sản", "fn":  "Đôi sợi rất mảnh như chỉ, cuộn rối thành búi ở khoảng giữa thân (0,4–0,65 chiều dài); tạo trứng.", "layer":  1, "small":  true, "pos":  [0.52, 0.15], "size":  [0.22, 0.4], "color":  "#fbf8f1" },
+        { "id":  "day-ben", "name":  "Dây bên (đường bên)", "system":  "Bài tiết, thần kinh", "fn":  "Dải dọc ở hai bên thành cơ thể, chứa ống bài tiết.", "layer":  1, "small":  true, "pair":  true, "shape":  "cord", "pos":  [0.5, 0.92], "size":  [0.9, 0.05], "color":  "#e7dcc4" },
+        { "id":  "co-doc", "name":  "Lớp cơ dọc", "system":  "Vận động", "fn":  "Lớp cơ dọc dưới lớp vỏ cuticun; giun đũa chỉ cong duỗi thân, không có cơ vòng.", "layer":  2, "flat":  true, "pos":  [0.5, 0], "size":  [0.85, 0.85], "color":  "#efe5d0" }
+      ]
+    },
+    "snail": {
+      "name": "Ốc có nắp (ốc nhồi, ốc bươu)", "sci": "Ampullariidae (Pila hoặc Pomacea, chưa xác định)", "lesson": "Thực hành ĐVKXS, ngành Thân mềm", "source": "dvkxs",
+      "place": "dorsal", "line": ["mid", "side"], "pins": 2, "water": false, "remove": "Ống tiêu hoá",
+      "body": {"shape": "snail", "length": 0.09, "width": 0.0495, "color": "#4c4844", "sizeSource": "applesnail"},
+      "how": "Bỏ vỏ (đập nhẹ hoặc cắt cơ trụ bám vỏ), đặt ốc khối nội tạng lên trên, ghim chân xuống sáp. Rạch màng áo và banh sang một bên để mở xoang áo: thấy mang, phổi, thận; kéo ống tiêu hoá ra; khối nội tạng xoắn ở đỉnh chứa gan tuỵ và tuyến sinh dục (dvkxs, hickman).",
+      "wrong": {
+        "place": "Đặt chân lên trên: rạch vào khối cơ chân dày, không mở được xoang áo.",
+        "deep": "Rạch sâu qua màng áo làm thủng khối nội tạng: dịch gan tuỵ vàng nâu tràn ra."
+      },
+      "deepDamage": ["gan-tuy"],
+      "placeDamage": [],
+      "required": ["chan", "nap-mieng", "mang", "phoi", "than", "ong-tieu-hoa", "gan-tuy"],
+      "organs": [
+        { "id":  "chan", "name":  "Chân", "system":  "Vận động", "fn":  "Khối cơ xám đen lấm tấm hạt, co duỗi để bò.", "layer":  0, "pos":  [0.32, 0.25], "size":  [0.45, 0.8], "color":  "#3f3c3a" },
+        { "id":  "nap-mieng", "name":  "Nắp miệng", "system":  "Bảo vệ", "fn":  "Mảnh dẹt có vòng sinh trưởng đồng tâm, gắn ở mặt lưng phần sau của chân; đậy miệng vỏ khi ốc rút vào (Pila nắp vôi, Pomacea nắp sừng).", "layer":  0, "pos":  [0.55, 0.6], "size":  [0.12, 0.3], "color":  "#6e6458" },
+        { "id":  "xuc-tu", "name":  "Tua đầu", "system":  "Cảm giác", "fn":  "Hai đôi tua: tua môi ngắn ở mõm và tua đầu dài, mắt trên cuống ngắn ở gốc tua đầu; ống thở là thuỳ gáy bên trái.", "layer":  0, "small":  true, "pair":  true, "pos":  [0.04, 0.35], "size":  [0.08, 0.06], "color":  "#57524c" },
+        { "id":  "khoi-mieng", "name":  "Khối miệng", "system":  "Tiêu hoá", "fn":  "Khối hồng nhạt ở đầu, có lưỡi bào (radula) 7 răng mỗi hàng cạo thức ăn; hai bên có tuyến nước bọt màu cam.", "layer":  1, "pos":  [0.1, 0], "size":  [0.08, 0.25], "color":  "#e7b9b0" },
+        { "id":  "mang", "name":  "Mang", "system":  "Hô hấp", "fn":  "Dải hình chữ L gồm một hàng lá mang hình tam giác trên trần xoang áo, từ góc trước bên phải chạy dọc mép phải phổi rồi vòng theo mép sau phổi sang trái; trao đổi khí trong nước.", "layer":  1, "pos":  [0.36, -0.35], "size":  [0.2, 0.22], "color":  "#c9b79a" },
+        { "id":  "phoi", "name":  "Phổi", "system":  "Hô hấp", "fn":  "Túi kín, thành mỏng có lưới mạch máu, chiếm phần lớn trần xoang áo bên trái và giữa; lỗ phổi ở phía trước bên trái, cạnh cơ quan khứu giác (osphradium). Ốc họ này thở được cả khí trời qua ống thở.", "layer":  1, "pos":  [0.42, 0.3], "size":  [0.2, 0.25], "color":  "#d9cfc7" },
+        { "id":  "tim", "name":  "Tim", "system":  "Tuần hoàn", "fn":  "Nằm trong xoang bao tim ở góc trước bên trái của thận, sát xoang áo; tim gồm tâm nhĩ và tâm thất, hệ tuần hoàn hở.", "layer":  1, "small":  true, "pos":  [0.5, 0.05], "size":  [0.05, 0.1], "color":  "#b8726a" },
+        { "id":  "than", "name":  "Thận", "system":  "Bài tiết", "fn":  "Khối màu nâu, xốp có phiến, ở phía sau xoang áo; nối với xoang bao tim; lọc chất thải, đổ ra qua niệu quản.", "layer":  1, "pos":  [0.56, -0.1], "size":  [0.1, 0.2], "color":  "#d6c3a0" },
+        { "id":  "ong-tieu-hoa", "name":  "Ống tiêu hoá", "system":  "Tiêu hoá", "fn":  "Kéo ra thấy túi trắng phình (dạ dày), đoạn trắng cuộn chặt và đoạn vàng có ngấn chứa phân (ruột sau).", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.68, 0.1], "size":  [0.2, 0.3], "color":  "#efe8dc" },
+        { "id":  "gan-tuy", "name":  "Gan tuỵ", "system":  "Tiêu hoá", "fn":  "Tuyến tiêu hoá nâu sẫm ánh lục chiếm phần lớn tháp nội tạng xoắn ở phía sau bên phải; dạ dày nằm lọt trong tuyến ở chân tháp; tiết dịch tiêu hoá và dự trữ.", "layer":  1, "fragile":  true, "pos":  [0.86, 0], "size":  [0.22, 0.6], "color":  "#a68b5c" },
+        { "id":  "tuyen-sinh-duc", "name":  "Tuyến sinh dục", "system":  "Sinh sản", "fn":  "Lớp phủ trên tuyến tiêu hoá ở các vòng trên cùng của tháp nội tạng; tinh hoàn vàng kem, buồng trứng màu cam (Pila); ốc họ này đơn tính.", "layer":  1, "small":  true, "pos":  [0.93, 0.25], "size":  [0.06, 0.15], "color":  "#ece0b6" }
+      ]
+    },
+    "cockroach": {
+      "name": "Gián", "sci": "Periplaneta americana", "lesson": "Thực hành ĐVKXS, lớp Côn trùng (so sánh SGK Sinh học 7, bài 26)", "source": "dvkxs",
+      "place": "dorsal", "line": ["side"], "pins": 4, "water": true, "remove": "Ống tiêu hoá",
+      "body": {"shape": "insect", "length": 0.04, "width": 0.0175, "color": "#7a3f1e", "sizeSource": "ufifas"},
+      "how": "Cắt cánh, đặt gián nằm sấp, ghim nghiêng qua mép thân. Cắt dọc hai bên mép thân (không cắt giữa lưng vì tim hình ống nằm ngay dưới tấm lưng), lật bỏ tấm lưng, đổ nước ngập (dvkxs). Kéo ống tiêu hoá ra phía sau bằng cách cắt rời đốt cuối để thấy chuỗi thần kinh bụng. Phần phụ miệng tách bằng kim, xem dưới kính lúp.",
+      "wrong": {
+        "place": "Gián nằm ngửa: cắt từ mặt bụng làm đứt chuỗi hạch thần kinh bụng.",
+        "mid": "Cắt đúng giữa lưng: rách tim hình ống bám dưới tấm lưng, dịch máu và mảnh thể mỡ che nội quan.",
+        "deep": "Cắt sâu làm thủng diều và ruột giữa: thức ăn trong ruột tràn ra.",
+        "water": "Chưa đổ nước: ống Malpighi, khí quản mảnh dính vào thể mỡ, không tách ra được."
+      },
+      "deepDamage": ["dieu", "ruot-giua"],
+      "placeDamage": ["chuoi-than-kinh"],
+      "required": ["ham-tren", "ham-duoi", "co-bay", "dieu", "ruot-giua", "ong-malpighi", "truc-trang", "khi-quan", "chuoi-than-kinh"],
+      "organs": [
+        { "id":  "rau", "name":  "Râu", "system":  "Cảm giác", "fn":  "Đôi râu dài 1,3–1,6 lần thân, hơn 120 đốt, xúc giác và khứu giác.", "layer":  0, "small":  true, "pair":  true, "pos":  [0.02, 0.2], "size":  [0.04, 0.06], "color":  "#5a2e16" },
+        { "id":  "ham-tren", "name":  "Hàm trên", "system":  "Tiêu hoá (phần phụ miệng)", "fn":  "Đôi mảnh kitin nâu đỏ hình tam giác: hàm trái 4 răng, hàm phải 3 răng, gốc có vùng nghiền; cắn và nghiền thức ăn (kiểu miệng nghiền).", "layer":  0, "small":  true, "pair":  true, "pos":  [0.05, 0.12], "size":  [0.02, 0.08], "color":  "#6b2a12" },
+        { "id":  "ham-duoi", "name":  "Hàm dưới", "system":  "Tiêu hoá (phần phụ miệng)", "fn":  "Đôi hàm dưới có lá hàm răng sẫm, mũ hàm có lông và xúc biện 5 đốt; giữ và đưa thức ăn vào miệng.", "layer":  0, "small":  true, "pair":  true, "pos":  [0.06, 0.28], "size":  [0.02, 0.08], "color":  "#8a5a32" },
+        { "id":  "moi-duoi", "name":  "Môi dưới", "system":  "Tiêu hoá (phần phụ miệng)", "fn":  "Mảnh dưới miệng gồm cằm phụ, cằm, 4 thuỳ lưỡi và đôi xúc biện 3 đốt.", "layer":  0, "small":  true, "pos":  [0.07, 0], "size":  [0.02, 0.12], "color":  "#9a6a3e" },
+        { "id":  "canh", "name":  "Cánh", "system":  "Vận động", "fn":  "Cánh trước dày nâu (cánh da), cánh sau màng mỏng gấp quạt dùng để bay.", "layer":  0, "pair":  true, "pos":  [0.55, 0.45], "size":  [0.6, 0.35], "color":  "#8b4a22" },
+        { "id":  "co-bay", "name":  "Cơ ngực (cơ bay)", "system":  "Vận động", "fn":  "Các bó cơ màu hồng kem trong ngực, cử động cánh và chân.", "layer":  1, "pos":  [0.27, 0], "size":  [0.16, 0.7], "color":  "#f0cdb8" },
+        { "id":  "tuyen-nuoc-bot", "name":  "Tuyến nước bọt", "system":  "Tiêu hoá", "fn":  "Đôi tuyến trắng hình lá chia chùm ở ngực, hai bên thực quản và diều, mỗi tuyến có bình chứa trong suốt dài khoảng 1,5 lần tuyến; tiết nước bọt vào miệng.", "layer":  1, "small":  true, "pair":  true, "pos":  [0.25, 0.3], "size":  [0.06, 0.15], "color":  "#f4f0e8" },
+        { "id":  "dieu", "name":  "Diều", "system":  "Tiêu hoá", "fn":  "Túi thành mỏng, nhăn nếp khi rỗng, sau thực quản, kéo dài tới đốt bụng 3–6 tuỳ độ đầy; chứa thức ăn. Cuối diều là mề nhỏ có 6 răng kitin.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.38, 0], "size":  [0.12, 0.3], "color":  "#e9dcc2" },
+        { "id":  "ruot-giua", "name":  "Ruột giữa (dạ dày)", "system":  "Tiêu hoá", "fn":  "Ống trắng đục có vân; đầu ruột có 8 manh tràng vị hình ngón tay chĩa về phía trước quanh mề; tiêu hoá và hấp thụ.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.55, 0], "size":  [0.16, 0.2], "color":  "#f2ece0" },
+        { "id":  "ong-malpighi", "name":  "Ống Malpighi", "system":  "Bài tiết", "fn":  "Khoảng 150 sợi tơ trắng vàng đổ vào 6 bóng ở chỗ nối ruột giữa và ruột sau; lọc chất thải từ thể xoang đổ vào ruột.", "layer":  1, "gut":  true, "small":  true, "pos":  [0.64, 0.25], "size":  [0.08, 0.5], "color":  "#f1e2a8" },
+        { "id":  "truc-trang", "name":  "Ruột sau, trực tràng", "system":  "Tiêu hoá", "fn":  "Hồi tràng, kết tràng cuộn và trực tràng có 6 nếp dọc, nối tới đốt cuối; hấp thụ lại nước.", "layer":  1, "gut":  true, "pos":  [0.8, 0], "size":  [0.2, 0.14], "color":  "#ddd5c8" },
+        { "id":  "the-mo", "name":  "Thể mỡ", "system":  "Dự trữ", "fn":  "Mô trắng xốp phủ kín khoang bụng, dự trữ chất dinh dưỡng.", "layer":  1, "flat":  true, "pos":  [0.68, 0], "size":  [0.45, 0.85], "color":  "#f7f3ea" },
+        { "id":  "khi-quan", "name":  "Ống khí", "system":  "Hô hấp", "fn":  "Ống trắng bạc phân nhánh tới từng cơ quan, mở ra ngoài qua 10 đôi lỗ thở ở hai bên thân; côn trùng hô hấp bằng hệ thống ống khí.", "layer":  1, "small":  true, "pair":  true, "shape":  "cord", "pos":  [0.6, 0.7], "size":  [0.6, 0.04], "color":  "#e6ecef" },
+        { "id":  "chuoi-than-kinh", "name":  "Chuỗi thần kinh bụng", "system":  "Thần kinh", "fn":  "Não ở đầu, hạch dưới hầu, 3 hạch ngực và 6 hạch bụng (hạch cuối lớn nhất), các hạch nối bằng đôi dây thần kinh, nằm sâu nhất ở mặt bụng.", "layer":  2, "small":  true, "shape":  "cord", "pos":  [0.55, 0], "size":  [0.75, 0.05], "color":  "#f4efe0" }
+      ]
+    },
+    "mouse": {
+      "name": "Chuột nhắt trắng", "sci": "Mus musculus", "lesson": "Thực hành ĐVCXS, lớp Thú", "source": "dvcxs",
+      "place": "ventral", "line": ["mid"], "pins": 4, "water": false, "remove": "Ống tiêu hoá, gan và lách",
+      "misplaced": "closed",
+      "body": {"shape": "mouse", "length": 0.09, "width": 0.045, "color": "#f1ece6", "sizeSource": "mpd"},
+      "how": "Đặt chuột nằm ngửa, ghim bốn chân (dvcxs). Nhấc da bụng dưới bằng kẹp, cắt da dọc đường giữa từ bẹn lên cằm rồi lật da sang hai bên; cắt lớp cơ thành bụng đúng đường trắng giữa bụng (ít mạch máu), mũi kéo hướng lên; cắt cơ hoành và xương sườn hai bên để mở lồng ngực (linea, cook1965).",
+      "wrong": {
+        "place": "Chuột nằm sấp: cắt vào lưng gặp cột sống và cơ lưng, không mở được khoang bụng và lồng ngực.",
+        "mid": "Cắt lệch khỏi đường trắng giữa bụng: cắt qua cơ thẳng bụng nhiều mạch máu, máu rỉ che nội quan.",
+        "deep": "Cắt sâu đâm thủng ruột non và manh tràng: dịch ruột vàng nâu tràn ra che nội quan."
+      },
+      "deepDamage": ["ruot-non", "manh-trang"],
+      "placeDamage": [],
+      "required": ["tuyen-nuoc-bot", "khi-quan", "tim", "phoi", "co-hoanh", "gan", "da-day", "lach", "ruot-non", "manh-trang", "than", "bong-dai"],
+      "organs": [
+        { "id":  "tuyen-nuoc-bot", "name":  "Tuyến nước bọt dưới hàm", "system":  "Tiêu hoá", "fn":  "Hai khối dạng thuỳ hạt màu hồng – trắng ngà ở cổ, dưới hàm; tiết nước bọt chứa amylase.", "layer":  1, "pair":  true, "pos":  [0.12, 0.3], "size":  [0.06, 0.28], "color":  "#ecd3cf" },
+        { "id":  "khi-quan", "name":  "Khí quản", "system":  "Hô hấp", "fn":  "Ống trắng hồng có các vòng sụn ngang giữ ống luôn mở, đi từ thanh quản xuống ngực rồi chia hai phế quản.", "layer":  1, "shape":  "cord", "pos":  [0.2, 0], "size":  [0.12, 0.07], "color":  "#f0dcd6" },
+        { "id":  "tuyen-uc", "name":  "Tuyến ức", "system":  "Miễn dịch", "fn":  "Hai thuỳ trắng hồng nhạt, mềm, nằm trước tim ở phần trên lồng ngực; nơi tế bào lympho T trưởng thành, nhỏ dần khi chuột già.", "layer":  1, "pair":  true, "pos":  [0.31, 0.2], "size":  [0.04, 0.08], "color":  "#f3e6e2" },
+        { "id":  "tim", "name":  "Tim", "system":  "Tuần hoàn", "fn":  "Khối đỏ tím sẫm hình quả lê giữa lồng ngực, tâm nhĩ sẫm ở trên; tim 4 ngăn (2 tâm nhĩ, 2 tâm thất) tách hẳn máu giàu O₂ và máu nghèo O₂, máu đi nuôi cơ thể là máu đỏ tươi không pha.", "layer":  1, "pos":  [0.3, 0.04], "size":  [0.07, 0.22], "color":  "#6e1d30" },
+        { "id":  "phoi", "name":  "Phổi", "system":  "Hô hấp", "fn":  "Các thuỳ hồng nhạt, xốp, nhiều phế nang, hai bên tim; ở chuột phổi trái 1 thuỳ, phổi phải 4 thuỳ.", "layer":  1, "pair":  true, "pos":  [0.3, 0.45], "size":  [0.13, 0.3], "color":  "#eaa5a0" },
+        { "id":  "co-hoanh", "name":  "Cơ hoành", "system":  "Hô hấp", "fn":  "Vách cơ mỏng hình vòm, trong mờ, ở khoảng nửa thân, ngăn khoang ngực với khoang bụng; co lại làm lồng ngực rộng ra khi hít vào. Chỉ thú mới có cơ hoành.", "layer":  1, "flat":  true, "pos":  [0.4, 0], "size":  [0.02, 0.9], "color":  "#d9c3c0" },
+        { "id":  "gan", "name":  "Gan", "system":  "Tiêu hoá", "fn":  "Nhiều thuỳ rất lớn đỏ mận thẫm, bóng, mép sắc, xếp như cánh hoa ngay dưới cơ hoành; tiết mật, dự trữ glycogen.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.47, 0.05], "size":  [0.13, 0.85], "color":  "#5e1a2a" },
+        { "id":  "tui-mat", "name":  "Túi mật", "system":  "Tiêu hoá", "fn":  "Túi hình giọt 3–4 mm trong mờ, chứa dịch mật vàng nâu, nằm trong khe giữa các thuỳ gan.", "layer":  1, "gut":  true, "small":  true, "pos":  [0.49, 0.14], "size":  [0.025, 0.06], "color":  "#9a7a2a" },
+        { "id":  "da-day", "name":  "Dạ dày", "system":  "Tiêu hoá", "fn":  "Túi hình hạt đậu trắng xám, nửa trong, bên trái con chuột sau gan; phần trước không có tuyến, phần sau có tuyến tiết dịch vị; nối với tá tràng.", "layer":  1, "gut":  true, "pos":  [0.53, -0.42], "size":  [0.1, 0.28], "color":  "#e6dbd2" },
+        { "id":  "lach", "name":  "Lách", "system":  "Tuần hoàn, miễn dịch", "fn":  "Dải dài cong màu đỏ tím sẫm ôm bờ ngoài dạ dày; lọc máu, chứa tế bào miễn dịch.", "layer":  1, "gut":  true, "pos":  [0.55, -0.72], "size":  [0.15, 0.06], "color":  "#45131f" },
+        { "id":  "tuy", "name":  "Tuỵ", "system":  "Tiêu hoá", "fn":  "Mô hồng nhạt dạng cành lá trong mạc treo quai tá tràng; tiết dịch tuỵ và hormone insulin, glucagon.", "layer":  1, "gut":  true, "pos":  [0.59, -0.2], "size":  [0.08, 0.25], "color":  "#efcac4" },
+        { "id":  "ruot-non", "name":  "Ruột non", "system":  "Tiêu hoá", "fn":  "Búi quai ống hồng nhạt dày đặc, mạch máu đỏ trên mạc treo trong suốt, khi gỡ ra duỗi được rất dài; tiêu hoá và hấp thụ.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.68, 0], "size":  [0.22, 0.65], "color":  "#eab9a9" },
+        { "id":  "manh-trang", "name":  "Manh tràng", "system":  "Tiêu hoá", "fn":  "Túi lớn hình dấu phẩy màu vàng nâu ở chỗ ruột non nối ruột già, nằm ở bụng sau bên trái (đa số chuột), đầu tịt chĩa vào giữa bụng; chứa vi sinh vật lên men chất xơ, rất lớn ở thú gặm nhấm.", "layer":  1, "gut":  true, "fragile":  true, "pos":  [0.8, -0.42], "size":  [0.1, 0.26], "color":  "#b48a58" },
+        { "id":  "ruot-gia", "name":  "Ruột già, trực tràng", "system":  "Tiêu hoá", "fn":  "Ống trắng ngà – vàng nhạt chạy dọc giữa xuống chậu, hấp thụ nước; trực tràng có các viên phân xám nâu.", "layer":  1, "gut":  true, "pos":  [0.86, 0], "size":  [0.12, 0.08], "color":  "#ddcaa2" },
+        { "id":  "bong-dai", "name":  "Bóng đái", "system":  "Bài tiết", "fn":  "Túi tròn hồng tím nhạt, trong mờ, có mạch máu mảnh, ở giữa bụng dưới; chứa nước tiểu từ hai niệu quản.", "layer":  1, "pos":  [0.94, 0], "size":  [0.05, 0.15], "color":  "#e3cbd6" },
+        { "id":  "than", "name":  "Thận", "system":  "Bài tiết", "fn":  "Đôi khối hình hạt đậu đỏ nâu, bóng, sát thành lưng hai bên cột sống, bao mỡ trắng; thận phải nằm cao hơn (gần đầu hơn) thận trái; tuyến trên thận nhỏ màu vàng ở cực trước; lọc máu tạo nước tiểu.", "layer":  2, "pair":  true, "pos":  [0.6, 0.26], "size":  [0.08, 0.12], "color":  "#6a2232" },
+        { "id":  "mach-chu", "name":  "Động mạch chủ bụng, tĩnh mạch chủ dưới", "system":  "Tuần hoàn", "fn":  "Hai mạch lớn sẫm màu chạy dọc giữa thành lưng, giữa hai thận.", "layer":  2, "shape":  "cord", "pos":  [0.62, 0], "size":  [0.42, 0.05], "color":  "#3d1424" },
+        { "id":  "tuyen-sinh-duc", "name":  "Tuyến sinh dục", "system":  "Sinh sản", "fn":  "Chuột đực có đôi tinh hoàn bầu dục trắng ngà ở bụng dưới hoặc trong bìu, kèm mỡ mào tinh; chuột cái có đôi buồng trứng nhỏ cạnh thận nối với tử cung hai sừng hình chữ Y.", "layer":  2, "sexed":  true, "pair":  true, "pos":  [0.86, 0.3], "size":  [0.08, 0.1], "color":  "#e7b9b0", "colorMale":  "#f0e8da" }
+      ]
+    }
+  }
+}

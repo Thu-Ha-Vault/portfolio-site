@@ -1,0 +1,128 @@
+{
+  "species": "Drosophila melanogaster",
+  "sources": {
+    "morgan": "Morgan T.H. (1910) Sex limited inheritance in Drosophila. Science 32: 120–122 (F2 của ♀ mắt đỏ × ♂ mắt trắng: 2459 ♀ đỏ, 1011 ♂ đỏ, 782 ♂ trắng)",
+    "map": "Vị trí trên bản đồ di truyền theo FlyBase: w 1-1.5, b 2-48.5, pr 2-54.5, vg 2-67.0 (b–pr 6 cM, pr–vg 12,5 cM, b–vg 18,5 cM)",
+    "nocrossover": "Ruồi giấm đực không có trao đổi chéo trong giảm phân (Morgan 1912), nên hoán vị gen chỉ xảy ra ở con cái",
+    "lifecycle": "Bloomington Drosophila Stock Center, Basic methods of culturing Drosophila: vòng đời khoảng 10 ngày ở 25 °C, khoảng 19 ngày ở 18 °C; ruồi cái chưa giao phối trong khoảng 8 giờ đầu sau khi nở",
+    "heat": "Ruồi đực D. melanogaster gần như bất thụ ở 30–31 °C (David và cộng sự 2005, J. Evol. Biol. 18: 838–846)",
+    "interference": "Nhiễu trên nhiễm sắc thể 2 lấy I = 0,6 (hệ số trùng hợp 0,4): số minh hoạ trong khoảng thường gặp của các phép lai ba điểm ở ruồi giấm, chưa xác minh với một bộ số liệu cụ thể"
+  },
+  "chromosomes": [
+    {
+      "id": "X",
+      "sex": true,
+      "genes": [
+        {
+          "id": "w",
+          "pos": 1.5,
+          "name": "Màu mắt",
+          "dom": "mắt đỏ",
+          "rec": "mắt trắng",
+          "note": "Gen white trên nhiễm sắc thể X mã hoá protein vận chuyển tiền chất sắc tố mắt; ruồi đực chỉ có một X nên một alen w là đủ biểu hiện mắt trắng."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "genes": [
+        {
+          "id": "b",
+          "pos": 48.5,
+          "name": "Màu thân",
+          "dom": "thân xám",
+          "rec": "thân đen",
+          "note": "Gen black: thiếu β-alanine cho sắc tố cutin nên thân sẫm đen."
+        },
+        {
+          "id": "pr",
+          "pos": 54.5,
+          "name": "Màu mắt (purple)",
+          "dom": "mắt đỏ",
+          "rec": "mắt tím",
+          "note": "Gen purple mã hoá enzyme 6-pyruvoyl tetrahydropterin synthase trong con đường tổng hợp sắc tố đỏ drosopterin; pr pr mắt tím sẫm."
+        },
+        {
+          "id": "vg",
+          "pos": 67.0,
+          "name": "Cánh",
+          "dom": "cánh dài",
+          "rec": "cánh cụt",
+          "note": "Gen vestigial cần cho sự phát triển đĩa cánh; vg vg cánh teo ngắn, không bay được."
+        }
+      ],
+      "interference": 0.6
+    }
+  ],
+  "stocks": [
+    {
+      "id": "Hoang dại",
+      "label": "Dòng hoang dại (Canton-S): mắt đỏ, thân xám, cánh dài",
+      "mutant": []
+    },
+    {
+      "id": "Mắt trắng",
+      "label": "Dòng w: mắt trắng",
+      "mutant": [
+        "w"
+      ]
+    },
+    {
+      "id": "Đen cụt",
+      "label": "Dòng b vg: thân đen, cánh cụt",
+      "mutant": [
+        "b",
+        "vg"
+      ]
+    },
+    {
+      "id": "Đen tím cụt",
+      "label": "Dòng b pr vg: thân đen, mắt tím, cánh cụt",
+      "mutant": [
+        "b",
+        "pr",
+        "vg"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "days": {
+      "18": 19,
+      "25": 10,
+      "29": 9,
+      "31": 9
+    },
+    "emergeWindow": 4,
+    "virginHours": 8,
+    "sterileMaleFrom": 30,
+    "note": "Số ngày từ lúc cho bố mẹ vào lọ đến khi ruồi con nở; ruồi con nở rải rác trong khoảng 4 ngày.",
+    "stages": [
+      {
+        "id": "egg",
+        "to": 0.11,
+        "name": "trứng"
+      },
+      {
+        "id": "larva",
+        "to": 0.56,
+        "name": "ấu trùng"
+      },
+      {
+        "id": "pupa",
+        "to": 1,
+        "name": "nhộng"
+      }
+    ],
+    "stagesNote": "Ở 25 °C vòng đời khoảng 9–10 ngày: phôi khoảng 1 ngày, ấu trùng khoảng 4 ngày (tuổi 1 và 2 mỗi tuổi 1 ngày, tuổi 3 khoảng 2 ngày), nhộng khoảng 4 ngày (Ashburner, Golic & Hawley 2005, Drosophila: A Laboratory Handbook; Fernández-Moreno và cộng sự 2007, Drosophila melanogaster as a model system). Tỉ lệ dùng để vẽ giai đoạn trong lọ."
+  },
+  "brood": {
+    "perFemale": 45,
+    "note": "Số ruồi con trưởng thành đếm được trên mỗi ruồi cái trong một lọ nuôi (giả định gần đúng: ruồi cái đẻ tới khoảng 100 trứng/ngày nhưng lọ chật làm nhiều ấu trùng chết)."
+  },
+  "temps": [
+    18,
+    25,
+    29,
+    31
+  ]
+}

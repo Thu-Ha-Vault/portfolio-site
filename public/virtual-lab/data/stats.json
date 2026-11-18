@@ -1,0 +1,28 @@
+{
+  "sources": [
+    "Sổ bài tập Biostatistics của chủ dự án (Chương 2 + 3, Chương 4, Chương 5, file Excel trong vault): số liệu gốc và kết quả Excel dùng để kiểm thử",
+    "Ritz C., Streibig J.C. 2005, Bioassay analysis using R, Journal of Statistical Software 12(5) (PDF trong Drive của chủ dự án): mô hình logistic 4 tham số của gói drc f(x) = c + (d − c)/(1 + exp(b(ln x − ln e))), EDy = e·(y/(100 − y))^(1/b); ví dụ Michaelis–Menten trên bộ Puromycin (Treloar 1974, có sẵn trong R)",
+    "Bộ số liệu nhà ở Boston (bài 04 Introduction to Data Analysis) không đưa vào: biến B được xây dựng theo chủng tộc nên nhiều thư viện đã bỏ bộ này, và giấy phép phân phối lại chưa rõ"
+  ],
+  "datasets": [
+    { "id": "height", "name": "Chiều cao 40 thanh niên (Chương 2–3, bài 2)", "note": "Bài làm dùng VARP, STDEVP và CONFIDENCE (z): TB 162,775; KTC 95 % (161,21; 164,34); KTC phương sai (17,64; 43,33)",
+      "columns": [{ "name": "chiều cao (cm)", "values": [152, 154, 155, 156, 157, 157, 157, 158, 158, 159, 159, 160, 160, 161, 161, 161, 161, 162, 162, 162, 163, 163, 164, 164, 164, 164, 165, 165, 166, 167, 167, 167, 168, 168, 169, 169, 170, 171, 172, 173] }] },
+    { "id": "vaccine", "name": "Phản ứng với hai lô vaccine, 348 chuột (Chương 4, bài 1)", "note": "Bảng 2 × 3: χ² = 8,71; df = 2", "table": true,
+      "rows": ["lô A", "lô B"],
+      "columns": [{ "name": "nhẹ", "values": [12, 29] }, { "name": "trung bình", "values": [156, 135] }, { "name": "nặng", "values": [9, 7] }] },
+    { "id": "media", "name": "Số mầm trên hai môi trường nuôi cấy mô, 22 cặp (Chương 4, bài 3)", "note": "t ghép cặp = −6,52; p hai phía = 1,8×10⁻⁶", "paired": true,
+      "columns": [{ "name": "MT1", "values": [1, 0, 1, 2, 2, 3, 1, 0, 2, 4, 6, 3, 4, 5, 6, 2, 2, 3, 5, 6, 4, 5] }, { "name": "MT2", "values": [3, 2, 3, 2, 6, 6, 1, 2, 2, 6, 8, 5, 5, 7, 6, 4, 6, 4, 6, 8, 4, 7] }] },
+    { "id": "rice", "name": "Năng suất 4 giống lúa, 5 lần lặp (Chương 4, bài 6)", "note": "ANOVA: F = 16,85; F crit = 3,24; p = 3,3×10⁻⁵; h² = 0,94",
+      "columns": [{ "name": "G1", "values": [8, 7, 6, 6, 8] }, { "name": "G2", "values": [9, 10, 7, 9, 8] }, { "name": "G3", "values": [5, 5, 4, 3, 6] }, { "name": "G4", "values": [5, 4, 5, 5, 6] }] },
+    { "id": "bees", "name": "Mật của 3 giống ong, 9 tổ mỗi giống (Chương 4, bài 13)", "note": "ANOVA: F = 9,75; F crit = 3,40; p = 0,0008; h² = 0,90",
+      "columns": [{ "name": "a", "values": [12.5, 14.65, 15.95, 13.65, 9.75, 11.35, 14.23, 13.56, 15.21] }, { "name": "b", "values": [10.1, 11, 11.2, 9.7, 13.85, 12.7, 12.45, 11.24, 9.21] }, { "name": "c", "values": [15.3, 13.95, 14.32, 13.3, 14.65, 13.58, 14.55, 13.54, 15.24] }] },
+    { "id": "chlorophyll", "name": "Tỉ lệ chlorophyll a/b ở thực vật C3 và C4 (Chương 4, bài 19)", "note": "F-Test p = 0,97; t (phương sai bằng nhau) = −4,65; p hai phía = 1,4×10⁻⁴",
+      "columns": [{ "name": "C3", "values": [2.15, 3.14, 2.57, 2.9, 3.14, 2.24, 2.81, 2.11, 2.49, 1.75] }, { "name": "C4", "values": [2.3, 3.53, 3.93, 3.88, 2.74, 3.25, 3.39, 3.68, 3.75, 3.85, 3.8, 3.54, 3.3] }] },
+    { "id": "drosophila", "name": "Nhiệt độ và thời gian nở của trứng ruồi giấm (Chương 5, bài 9)", "note": "Tuyến tính H = 80,656 − 2,2125T, R² = 0,788, tổng bình phương sai lệch 315,38; đa thức bậc 4: 0,48; mũ H = 150,33·e^(−0,0746T)",
+      "columns": [{ "name": "T (°C)", "values": [16, 18, 20, 22, 24, 26, 28, 30, 32] }, { "name": "H (giờ)", "values": [56.5, 41, 32.5, 26, 22, 19, 16.5, 15.5, 19] }] },
+    { "id": "puro-t", "name": "Puromycin: tốc độ phản ứng enzyme, tế bào xử lý puromycin (Treloar 1974)", "note": "Ví dụ Michaelis–Menten trong Ritz & Streibig, Bioassay analysis using R (Drive của chủ dự án): Vm = 212,7, K = 0,0641; cùng số liệu với bộ Puromycin của R",
+      "columns": [{ "name": "nồng độ (ppm)", "values": [0.02, 0.02, 0.06, 0.06, 0.11, 0.11, 0.22, 0.22, 0.56, 0.56, 1.1, 1.1] }, { "name": "tốc độ (đếm/phút²)", "values": [76, 47, 97, 107, 123, 139, 159, 152, 191, 201, 207, 200] }] },
+    { "id": "puro-u", "name": "Puromycin: tốc độ phản ứng enzyme, tế bào không xử lý (Treloar 1974)", "note": "Ritz & Streibig: Vm = 160,3, K = 0,0477; chênh Vm giữa hai nhóm 52,4 ± 9,9",
+      "columns": [{ "name": "nồng độ (ppm)", "values": [0.02, 0.02, 0.06, 0.06, 0.11, 0.11, 0.22, 0.22, 0.56, 0.56, 1.1] }, { "name": "tốc độ (đếm/phút²)", "values": [67, 51, 84, 86, 98, 115, 131, 124, 144, 158, 160] }] }
+  ]
+}

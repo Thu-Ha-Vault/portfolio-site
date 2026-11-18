@@ -1,0 +1,57 @@
+{
+  "species": "Pisum sativum",
+  "sources": {
+    "mendel": "Mendel G. (1866) Versuche über Pflanzen-Hybriden. Verh. Naturforsch. Ver. Brünn 4: 3–47 (bản dịch tiếng Anh: Experiments in Plant Hybridization, mendelweb.org)",
+    "genes": "Reid J.B., Ross J.J. (2011) Mendel's genes: toward a full molecular characterization. Genetics 189: 3–10",
+    "growth": "Giai đoạn sinh trưởng đậu Hà Lan: nảy mầm 7–10 ngày, ra hoa khoảng 8 tuần, hạt khô 12–14 tuần sau gieo ở 13–21 °C (con số làm tròn, giả định gần đúng)",
+    "cleistogamy": "Hoa đậu Hà Lan tự thụ phấn khi còn là nụ, trước khi hoa nở; Mendel khử nhị nụ chưa chín rồi thụ phấn bằng tay (Mendel 1866, mục 2)"
+  },
+  "traits": [
+    { "id": "seedShape", "gene": "R", "name": "Hình dạng hạt", "dom": "trơn", "rec": "nhăn", "on": "seed",
+      "mendelF2": [5474, 1850], "note": "Alen r làm hỏng enzyme phân nhánh tinh bột (SBEI): hạt giữ nhiều đường, hút nước, khi khô thì nhăn." },
+    { "id": "seedColor", "gene": "I", "name": "Màu hạt (lá mầm)", "dom": "vàng", "rec": "xanh", "on": "seed",
+      "mendelF2": [6022, 2001], "note": "Alen i của gen SGR làm chlorophyll không bị phân giải khi hạt chín, lá mầm giữ màu xanh." },
+    { "id": "flowerColor", "gene": "A", "name": "Màu hoa", "dom": "tím", "rec": "trắng", "on": "flower",
+      "mendelF2": [705, 224], "note": "Gen A mã hoá nhân tố phiên mã bHLH điều khiển tổng hợp anthocyanin; aa không có sắc tố, hoa trắng, vỏ hạt trắng." },
+    { "id": "podShape", "gene": "V", "name": "Hình dạng quả", "dom": "phồng", "rec": "thắt", "on": "pod",
+      "mendelF2": [882, 299], "note": "Quả thắt lại giữa các hạt khi thành quả thiếu lớp mô cứng (gen V hoặc P)." },
+    { "id": "podColor", "gene": "Gp", "name": "Màu quả non", "dom": "xanh", "rec": "vàng", "on": "pod",
+      "mendelF2": [428, 152], "note": "Alen gp làm thành quả thiếu chlorophyll nên quả non màu vàng." },
+    { "id": "flowerPos", "gene": "Fa", "name": "Vị trí hoa", "dom": "nách lá", "rec": "ngọn", "on": "flower",
+      "mendelF2": [651, 207], "note": "Alen fa (fasciata) làm đỉnh sinh trưởng dẹt lại, hoa dồn lên ngọn." },
+    { "id": "height", "gene": "Le", "name": "Chiều cao thân", "dom": "cao", "rec": "thấp", "on": "plant",
+      "mendelF2": [787, 277], "note": "Alen le làm giảm hoạt tính enzyme GA 3β-hydroxylase, thiếu gibberellin hoạt động nên lóng ngắn, thân thấp." }
+  ],
+  "free": {
+    "traits": ["seedShape", "seedColor", "flowerColor", "height"],
+    "lines": [
+      { "id": "Trội", "label": "Dòng thuần hạt trơn, vàng, hoa tím, thân cao", "spec": {} },
+      { "id": "Lặn", "label": "Dòng thuần hạt nhăn, xanh, hoa trắng, thân thấp", "spec": { "seedShape": "rec", "seedColor": "rec", "flowerColor": "rec", "height": "rec" } }
+    ]
+  },
+  "dihybrid": { "traits": ["seedShape", "seedColor"], "mendelF2": [315, 108, 101, 32], "plants": 15 },
+  "growth": {
+    "emerge": 8,
+    "bud": 50,
+    "flower": 56,
+    "pod": 66,
+    "ripe": 92,
+    "note": "Ngày sau gieo ở điều kiện phù hợp. Cây tự thụ phấn trong nụ từ ngày 'flower' trở đi, nên khử nhị phải làm trong khoảng bud–flower."
+  },
+  "rate": { "good": 1, "warn": 0.65, "bad": 0.15 },
+  "yield": {
+    "pods": 5,
+    "seedsPerPod": 6,
+    "note": "Trung bình khoảng 29–31 hạt mỗi cây F1 trong số liệu của Mendel (7324 hạt từ 253 cây; 8023 hạt từ 258 cây): lấy 5 quả × 6 hạt, số quả và số hạt dao động ngẫu nhiên (Poisson).",
+    "heatPodFactor": 0.4
+  },
+  "stages": {
+    "seed": "Hạt",
+    "sprout": "Cây con",
+    "veg": "Sinh trưởng",
+    "bud": "Có nụ",
+    "flower": "Ra hoa",
+    "pod": "Có quả",
+    "ripe": "Quả chín khô"
+  }
+}

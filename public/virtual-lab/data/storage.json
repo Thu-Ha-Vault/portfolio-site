@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "note": "Số liệu bảo quản, độ bền và thiết bị: note 07 - Các khu của phòng thí nghiệm (mục Tủ lạnh, tủ đông). decay: hằng số mất hoạt tính bậc một (1/giờ) theo nhiệt độ; thawLoss: phần mất mỗi lần rã đông.",
+    "taq": "Qiagen FAQ 1743 (TopTaq giữ đủ hoạt tính ≥ 2 tuần ở 15–25 °C, 12 tháng ở 2–8 °C) https://www.qiagen.com/us/resources/faq/1743; Thermo EP0402 (t½ > 40 phút ở 95 °C) https://www.thermofisher.com/order/catalog/product/EP0402; NEB 24 tháng ở −20 °C. k ở 25 °C là giới hạn trên suy ra; 37 °C minh hoạ (Q10 ≈ 2). Glycerol 50 % không đông ở −20 °C.",
+    "dNTP": "Thermo R0191 (≥ 95 % còn dạng triphosphate sau 7 tuần ở nhiệt độ phòng; chịu nhiều lần đông – rã) https://www.thermofisher.com/order/catalog/product/R0191",
+    "primers": "IDT (24 tháng ở −20 °C, > 60 tuần ở 4 °C, 30 chu kỳ đông – rã không ảnh hưởng) https://www.idtdna.com/pages/education/decoded/article/storing-oligos-7-things-you-should-know",
+    "buffer": "NEB (đệm bền 2 tuần ở 4 °C, không quá 4 ngày ở nhiệt độ phòng); Promega: trộn đều sau khi rã",
+    "template": "Shao 2012 (DNA bộ gen còn khoảng 25 kb sau 18 chu kỳ đông – rã) https://pubmed.ncbi.nlm.nih.gov/24849748; phần khuôn còn nguyên cho đoạn 1 250 bp = 1 − 1 250/độ dài mảnh, từ 50 kb (minh hoạ) xuống 25 kb: mất khoảng 0,14 % mỗi lần (suy ra)",
+    "competent": "NEB FAQ (tế bào NEB 5-alpha để ở −20 °C mất 94,5 % hiệu suất sau 24 giờ, 98,9 % sau 2 ngày) https://www.neb.com/en/faqs/can-i-store-competent-cells-at-20-deg-c-instead-of-80-deg-c; đông lại sau khi rã giảm khoảng 3 lần (OpenWetWare TOP10) https://openwetware.org/wiki/TOP10_chemically_competent_cells; ở −70 °C coi như không mất (các hãng ghi bảo quản ở −70 °C hoặc lạnh hơn), giữa −70 và −20 °C nội suy tuyến tính: chưa xác minh",
+    "glycerol": "Addgene (chủng trong glycerol 15–25 % bền nhiều năm ở −80 °C) https://www.addgene.org/plasmid-protocols/create-glycerol-stock/; sống sót sau rã – đông lại 50 % là minh hoạ",
+    "fridge": "Thermo TSX2305SA: dải 3–7 °C, đặt sẵn 5 °C https://www.thermofisher.com/order/catalog/product/TSX2305SA",
+    "water": "Nước không nuclease: hãng không ghi điều kiện bảo quản (chưa xác minh); cất tủ lạnh theo thói quen phòng thí nghiệm"
+  },
+  "places": [
+    { "id": "bench", "name": "Bàn (nhiệt độ phòng)", "temp": 25 },
+    { "id": "ice", "name": "Hộp đá trên bàn", "temp": 0 },
+    { "id": "fridge", "name": "Tủ lạnh 5 °C", "temp": 5 },
+    { "id": "freezer", "name": "Tủ đông −20 °C", "temp": -20 },
+    { "id": "ult", "name": "Tủ âm sâu −80 °C", "temp": -80 },
+    { "id": "ln2", "name": "Bình nitơ lỏng", "temp": -196 }
+  ],
+  "kit": ["water", "buffer", "MgCl2", "dNTP", "primers", "taq", "template"],
+  "items": {
+    "water": { "name": "Nước cất không nuclease", "store": "fridge", "start": "ice", "storeTemp": 5, "freezes": false, "decay": {}, "shape": "tube", "color": "#d6e6f2" },
+    "buffer": { "name": "Đệm PCR 10×", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": true, "thawLoss": 0, "decay": {}, "shape": "tube", "color": "#e9d27c" },
+    "MgCl2": { "name": "MgCl₂ 25 mM", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": true, "thawLoss": 0, "decay": {}, "shape": "tube", "color": "#cfd6dc" },
+    "dNTP": { "name": "dNTP 10 mM", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": true, "thawLoss": 0, "decay": { "-20": 0, "4": 0, "25": 4.4e-5, "37": 1.3e-4 }, "shape": "tube", "color": "#9ec7e8" },
+    "primers": { "name": "Mồi xuôi và ngược 10 µM", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": true, "thawLoss": 0, "decay": {}, "shape": "tube", "color": "#b6d7a8" },
+    "taq": { "name": "Taq polymerase", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": false, "decay": { "-20": 0, "4": 5.9e-6, "25": 1.5e-4, "37": 4.5e-4, "95": 1.04 }, "shape": "tube", "color": "#f4b183" },
+    "template": { "name": "DNA khuôn", "store": "freezer", "start": "ice", "storeTemp": -20, "freezes": true, "thawLoss": 0.0014, "decay": {}, "shape": "tube", "color": "#c9a0dc" },
+    "glycerol": { "name": "Chủng E. coli trong glycerol 15 %", "store": "ult", "storeTemp": -80, "freezes": true, "thawLoss": 0.5, "decay": {}, "shape": "tube", "color": "#f2e1a6" },
+    "competent": { "name": "Tế bào khả biến E. coli 5-alpha", "store": "ult", "storeTemp": -80, "freezes": true, "thawLoss": 0.667, "decay": { "-80": 0, "-70": 0, "-20": 0.121 }, "shape": "tube", "color": "#e6e6e6" }
+  }
+}

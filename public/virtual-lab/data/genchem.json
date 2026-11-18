@@ -1,0 +1,81 @@
+{
+  "_note": "Thực tập hoá đại cương, Bài 1 và Bài 2 (src/core/genchem.js). Lượng chất, thể tích, cách làm theo giáo trình (tthdc); hằng số có nguồn ở sources. Sai số tay người làm (độ tinh khiết NaOH, KMnO₄ phân huỷ, lượng nước còn trong buret, thời gian đợi màu bền) là số minh hoạ.",
+  "sources": {
+    "tthdc": "Giáo trình Thực tập hoá đại cương (Khoa Hoá, ĐHKHTN – ĐHQGHN, lưu hành nội bộ, cho sinh viên không thuộc ngành Hoá), Bài 1 Cân, lọc, rửa tách kết tủa và Bài 2 Pha dung dịch và chuẩn độ (Google Drive của chủ dự án)",
+    "iupac": "Khối lượng mol theo khối lượng nguyên tử chuẩn IUPAC: H₂C₂O₄·2H₂O 126,07; NaOH 40,00; KMnO₄ 158,03; HCl 36,46; CaCO₃ 100,09; CaSO₄·2H₂O 172,17; Ca₃(PO₄)₂ 310,18 g/mol",
+    "harris": "Harris D.C., Quantitative Chemical Analysis (W.H. Freeman): oxalic acid pKa₁ = 1,25, pKa₂ = 4,27 ở 25 °C; acetic acid pKa = 4,76; NH₄⁺ pKa = 9,24; khoảng đổi màu methyl orange pH 3,1–4,4 (đỏ → vàng), phenolphthalein pH 8,0–9,6 (không màu → hồng); MnO₄⁻ nhận 5 electron trong acid mạnh, 3 electron thành MnO₂ trong môi trường trung tính",
+    "crc": "CRC Handbook of Chemistry and Physics, tích số tan ở 25 °C: CaCO₃ (calcite) 3,36·10⁻⁹; CaSO₄ 4,93·10⁻⁵; Ca₃(PO₄)₂ 2,07·10⁻³³; AgCl 1,77·10⁻¹⁰. Khối lượng riêng nước 0,99820 g/mL ở 20 °C",
+    "iso": "Dung sai cấp A: pipet bầu 10 mL ±0,02 mL (ISO 648); bình định mức 250 mL ±0,15 mL, 100 mL ±0,10 mL (ISO 1042); buret 50 mL ±0,05 mL (ISO 385), đọc tới ±0,02 mL; một giọt khoảng 0,05 mL",
+    "bai9": "Giáo trình Thực tập hoá đại cương, Bài 9 Cân bằng hoá học – Le Chatelier: 10 giọt CoCl₂ 0,1 M với HCl đặc, NH₄Cl tinh thể, nước nóng và lạnh (chú ý: hoà tan NH₄Cl thu nhiệt); 10–15 giọt CH₃COOH 0,1 M + methyl orange, thêm CH₃COONa hoặc NaOH 1 M; 10–15 giọt NH₃ 0,1 M + phenolphthalein, thêm NH₄Cl hoặc ZnCl₂ 1 M; NaCl bão hoà + HCl đặc",
+    "cobalt": "Chiều tạo CoCl₄²⁻ (xanh) từ Co(H₂O)₆²⁺ (hồng) thu nhiệt nên đun nóng chuyển xanh, làm lạnh chuyển hồng (hoá học đại cương); app chỉ dùng chiều chuyển dịch, không dùng số",
+    "hcl": "HCl đặc 37 %, d = 1,19 g/mL: C ≈ 1,19·10³·0,37/36,46 ≈ 12,1 M; HCl (1+1) khoảng 6 M (tthdc)",
+    "bai7": "Giáo trình Thực tập hoá đại cương, Bài 7 Các yếu tố ảnh hưởng đến tốc độ phản ứng: bảng 5 ống Na₂S₂O₃ 0,20 M (3,00/1,50/1,00/0,75/0,50 mL + nước tới 3 mL) với 3,00 mL H₂SO₄ 0,20 M, bấm giờ tới khi bắt đầu đục trắng sữa; 2,0 mL KMnO₄ 0,01 M + 2,0 mL oxalic acid 0,10 M trong H₂SO₄ 10 % ở t phòng, +10, +20, +30 °C, ngâm hai ống 5 phút trong máy điều nhiệt; 2,0 mL oxalic acid 0,10 M trong H₂SO₄ 20 % + 3 giọt CuSO₄ hoặc 3 giọt nước + 3 giọt KMnO₄ 0,01 M",
+    "thioKin": "Na₂S₂O₃ + acid: Ea và mốc thời gian dùng chung với data/thermo.json (kinetics.thiosulfate_acid: Ea 48 kJ/mol trong khoảng 44–50; mốc 60 s ở 0,15 M, 25 °C là minh hoạ); mô hình đơn giản t ∝ 1/[S₂O₃²⁻] (bậc 1), tài liệu cho bậc khoảng 3/2 ở nồng độ thấp (Flinn, chưa xác minh)",
+    "bai4": "Giáo trình Thực tập hoá đại cương, Bài 4 Phân tích định tính một số ion trong cùng dung dịch mẫu: mẫu 1 chứa cả 6 anion CO₃²⁻, PO₄³⁻, Cl⁻, I⁻, S²⁻, NO₃⁻, mẫu 2 chỉ chứa một số anion; sơ đồ tách A–G (Ca(NO₃)₂ trong NH₃, (NH₄)₂MoO₄ 0,5 M đun nhẹ để yên 15 phút, CO₂ làm đục Ca(OH)₂ trên đầu đũa không chạm thành ống, Cu(NO₃)₂ 1 M tạo CuS đen, Fe(NO₃)₃ 0,2 M đợi 1–2 phút rồi hồ tinh bột 1 %, AgNO₃ 0,01 M rồi NH₃ 6 M và HNO₃ 6 M, Ag₂SO₄ bão hoà 0,04 M kết tủa các ion khác rồi FeSO₄ bão hoà và H₂SO₄ đặc nhỏ theo thành ống nghiêng 45°, không xáo trộn, tạo vòng nâu FeNO²⁺)",
+    "bai5a": "Giáo trình Thực tập hoá đại cương, Bài 5A Xác định nhiệt hoà tan: bình nhiệt lượng kế 500 mL với 250 mL nước, KNO₃ 6–8 g (ΔH = 8,52 kcal/mol theo giáo trình) để tìm C_k, KCl khoảng 6 g; ghi nhiệt độ 30 giây một lần ở giai đoạn đầu (10–15 điểm), 10 giây một lần ở giai đoạn chính, 30 giây một lần ở giai đoạn cuối (khoảng 10 điểm); hiệu chỉnh Δt bằng đồ thị (hình 5.2, hai tam giác có diện tích bằng nhau); không để muối dính thành ămpun",
+    "mohr": "Giáo trình Thực tập hoá học ứng dụng phần vô cơ (ĐHKHTN TP.HCM) và hai báo cáo sinh viên trong thư viện HÓA HỌC chia sẻ trong Google Drive của chủ dự án (không phải bài của chủ dự án): định tính Fe²⁺ (NaOH 30 %, BaCl₂ 0,1 M, để ngoài không khí, H₂O₂ 10 %, KMnO₄ 0,1 M, K₂Cr₂O₇ 0,1 M); pha 3,92 g muối Mohr trong 100 mL nước đã acid hoá, chuẩn 10,00 mL + 5 mL H₂SO₄ (1:2) bằng KMnO₄ 0,103 N tới hồng nhạt bền 30 giây (số liệu 9,900; 9,850; 9,900 mL); 50,00 mL + 25,0 mL BaCl₂ 0,50 M, già hoá 15–20 phút, lọc nóng, rửa nước nóng rồi cồn, sấy 120 °C 45 phút (2,368 g BaSO₄); công thức thực nghiệm (NH₄)₁,₉₈Fe(SO₄)₁,₉₉·5,67H₂O, nguyên nhân thiếu nước do rửa cồn kéo nước kết tinh",
+    "mno4Kin": "KMnO₄ + oxalic acid: Ea 80 kJ/mol chưa xác minh (báo cáo thực hành sinh viên đo 76–81 kJ/mol bằng đồ thị Arrhenius; tài liệu thực nghiệm về bước phân huỷ phức Mn(III)–oxalat cho 78–101 kJ/mol). Mn²⁺ sinh ra xúc tác cho chính phản ứng (tự xúc tác), thêm MnSO₄ làm mất màu nhanh hẳn (Purdue demo 22.2; LibreTexts Reduction of Permanganate). Không tìm được nguồn đo tác dụng của Cu²⁺, nên app không gán tác dụng xúc tác cho Cu²⁺; mốc thời gian 300 s và 120 s ở 25 °C là minh hoạ"
+  },
+  "M": { "oxalic": 126.07, "NaOH": 40.0, "KMnO4": 158.03, "HCl": 36.46, "CaCO3": 100.09, "CaSO4": 172.17, "Ca3PO42": 310.18 },
+  "pKa": { "oxalic": [1.25, 4.27], "acetic": 4.76, "NH4": 9.24 },
+  "indicators": {
+    "pp": { "name": "phenolphthalein", "range": [8.0, 9.6], "from": "không màu", "to": "hồng", "end": 8.3 },
+    "mo": { "name": "methyl orange", "range": [3.1, 4.4], "from": "đỏ", "to": "vàng", "end": 4.3 }
+  },
+  "Ksp": { "CaCO3": 3.36e-9, "CaSO4": 4.93e-5, "Ca3PO42": 2.07e-33, "AgCl": 1.77e-10 },
+  "water": { "density20": 0.9982 },
+  "precip": {
+    "CO3": { "reagent": "Na₂CO₃ 0,2 M", "c": 0.2, "product": "CaCO₃", "key": "CaCO3", "ratio": [1, 1], "look": "kết tủa trắng xuất hiện ngay, lắng nhanh", "eq": "CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl", "slow": 1 },
+    "SO4": { "reagent": "Na₂SO₄ 0,4 M", "c": 0.4, "product": "CaSO₄·2H₂O", "key": "CaSO4", "ratio": [1, 1], "look": "kết tủa trắng mịn xuất hiện chậm hơn và ít hơn lúc đầu, vì độ tan mol của CaSO₄ (căn bậc hai của Ksp, khoảng 7·10⁻³ M) lớn hơn CaCO₃ khoảng 120 lần", "eq": "CaCl₂ + Na₂SO₄ → CaSO₄↓ + 2NaCl", "slow": 1.5 },
+    "PO4": { "reagent": "Na₃PO₄ 0,15 M", "c": 0.15, "product": "Ca₃(PO₄)₂", "key": "Ca3PO42", "ratio": [3, 2], "look": "kết tủa trắng dạng keo (vô định hình), lọc chậm", "eq": "3CaCl₂ + 2Na₃PO₄ → Ca₃(PO₄)₂↓ + 6NaCl", "slow": 2.5 }
+  },
+  "eq": {
+    "_note": "Lượng chất trong ống nghiệm theo giáo trình: 15 giọt (một giọt 0,05 mL); 'ít tinh thể' lấy 0,1 g; 'vài giọt' NaOH lấy 3 giọt (minh hoạ). Màu CoCl₂ theo mức chuyển dịch là thang định tính.",
+    "dropMl": 0.05, "drops": 15, "crystalG": 0.1, "fewDrops": 3,
+    "M": { "CH3COONa": 82.03, "NH4Cl": 53.49 },
+    "coColors": [[-1, "#f4c6d4", "hồng nhạt"], [0, "#e98fb0", "hồng"], [1, "#a36cb4", "tím hồng"], [2, "#5f67c2", "tím xanh"], [3, "#2f5fc4", "xanh lam"]],
+    "indicatorColors": { "mo": [[3.1, "#d8343a", "đỏ"], [4.4, "#ee8a2b", "da cam"], [99, "#f2cf3a", "vàng"]], "pp": [[8.0, null, "không màu"], [9.6, "#f3a9c9", "hồng nhạt"], [99, "#d93f8c", "hồng"]] }
+  },
+  "wash": { "retainMl": 1.0, "washMl": 10.0, "turbidM": 1e-5, "faintM": 1e-6, "_note": "Lượng nước còn giữ trên giấy lọc và kết tủa sau mỗi lần chảy hết (1 mL), lượng nước mỗi lần rửa (10 mL) và ngưỡng mắt thấy đục của AgCl là số minh hoạ" },
+  "rate": {
+    "_note": "Bài 7 (src/core/genchem.js). Nhiệt độ phòng 25 °C, sai số bấm giờ (3 % khi nhận mốc đục hoặc mất màu, 0,3 s phản xạ), thời gian ống đạt nhiệt độ máy điều nhiệt (hằng số 1,2 phút), nước còn trong ống ướt (0,3 mL), hệ số khi đợi đục hẳn (1,6) và khi có Mn²⁺ (0,12) là số minh hoạ.",
+    "roomC": 25, "timerRel": 0.03, "timerAbsS": 0.3, "wetMl": 0.3, "opaqueFactor": 1.6,
+    "thio": { "stockM": 0.2, "acidM": 0.2, "acidMl": 3.0, "tubes": [[3.0, 0], [1.5, 1.5], [1.0, 2.0], [0.75, 2.25], [0.5, 2.5]], "tRefS": 60, "cRefM": 0.15, "order": 1, "EaKJ": 48, "TrefC": 25 },
+    "mno4": { "EaKJ": 80, "tRefS": 300, "TrefC": 25, "steps": [0, 10, 20, 30], "soakMin": 5, "tauMin": 1.2 },
+    "cat": { "tRefS": 120, "mnFactor": 0.12 }
+  },
+  "anion": {
+    "_note": "Bài 4 (src/core/genchem.js). Mẫu 2 chọn ngẫu nhiên theo seed của phiên, có 2–5 trong 6 anion. Màu là màu thật của sản phẩm (định tính); không có số đo.",
+    "ions": {
+      "CO3": { "name": "CO₃²⁻", "test": "C", "pos": "đầu đũa nhúng Ca(OH)₂ đục trắng (CaCO₃)", "neg": "đầu đũa vẫn trong", "color": null, "ppt": true, "eq": "CaCO₃ + 2H⁺ → Ca²⁺ + CO₂↑ + H₂O; CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O" },
+      "PO4": { "name": "PO₄³⁻", "test": "B", "pos": "kết tủa vàng (NH₄)₃PO₄·12MoO₃", "neg": "không có kết tủa vàng", "color": "#e9c22e", "ppt": true, "eq": "PO₄³⁻ + 3NH₄⁺ + 12MoO₄²⁻ + 24H⁺ → (NH₄)₃PO₄·12MoO₃↓ + 12H₂O" },
+      "S": { "name": "S²⁻", "test": "D", "pos": "kết tủa đen CuS", "neg": "không có kết tủa đen", "color": "#2a2a2a", "ppt": true, "eq": "Cu²⁺ + S²⁻ → CuS↓ (đen)" },
+      "I": { "name": "I⁻", "test": "E", "pos": "phức xanh đen I₃⁻ – tinh bột", "neg": "không có màu xanh", "color": "#1f2a6b", "ppt": false, "eq": "2Fe³⁺ + 3I⁻ → 2Fe²⁺ + I₃⁻; I₃⁻ + tinh bột → phức xanh đen" },
+      "Cl": { "name": "Cl⁻", "test": "F", "pos": "kết tủa trắng AgCl, tan trong NH₃ 6 M, kết tủa lại khi thêm HNO₃", "neg": "không có kết tủa trắng", "color": null, "ppt": true, "eq": "Ag⁺ + Cl⁻ → AgCl↓; AgCl + 2NH₃ → [Ag(NH₃)₂]⁺ + Cl⁻; [Ag(NH₃)₂]⁺ + Cl⁻ + 2H⁺ → AgCl↓ + 2NH₄⁺" },
+      "NO3": { "name": "NO₃⁻", "test": "G", "pos": "vòng nâu ở mặt phân cách hai lớp", "neg": "không có vòng nâu", "color": "#7a4a1e", "ppt": false, "eq": "NO₃⁻ + 3Fe²⁺ + 4H⁺ → NO + 3Fe³⁺ + 2H₂O; Fe²⁺ + NO → FeNO²⁺ (nâu)" }
+    },
+    "order": ["PO4", "CO3", "S", "I", "Cl", "NO3"],
+    "falseRing": "#6b3f5e"
+  },
+  "calorimeter": {
+    "_note": "Bài 5A. Nhiệt dung riêng của nước 4,18 J/(g·K); nhiệt dung bình Đêoa, que khuấy, nhiệt kế (80 J/K), hệ số trao đổi nhiệt với phòng (0,01 phút⁻¹), nhiệt do khuấy (0,002 K/phút), hằng số thời gian tan của muối nghiền nhỏ (KNO₃ 25 s, KCl 30 s), phần muối dính thành ămpun (15 %) và độ phân giải nhiệt kế 0,01 °C là số minh hoạ. ΔH hoà tan thật lấy từ data/thermo.json (dissolution_kJ_per_mol); giáo trình dùng ΔH(KNO₃) = 8,52 kcal/mol.",
+    "waterG": 250, "cpWater": 4.18, "vesselJK": 80, "leakPerMin": 0.01, "stirKPerMin": 0.002, "roomC": 25.0, "waterOffsetC": -0.4,
+    "tau": { "KNO3": 25, "KCl": 30 }, "M": { "KNO3": 101.10, "KCl": 74.55 }, "dH": { "KNO3": 34.89, "KCl": 17.22 },
+    "textbookKNO3kcal": 8.52, "kcal": 4.184, "stuckFrac": 0.15, "resolution": 0.01,
+    "pre": { "points": 12, "every": 30 }, "main": { "every": 10, "maxPoints": 40 }, "post": { "points": 10, "every": 30 }
+  },
+  "mohrLab": {
+    "_note": "Muối Mohr (src/core/genchem.js). Khối lượng mol theo IUPAC: (NH₄)₂Fe(SO₄)₂ khan 284,05; H₂O 18,015; BaSO₄ 233,39; NH₄⁺ 18,04; Fe 55,845; SO₄²⁻ 96,06. Muối rửa quá nhiều cồn còn 5,67 H₂O như báo cáo; phần BaSO₄ hạt mịn lọt qua giấy khi không già hoá (6 %), BaCl₂ bám khi không rửa (1,5 %), Fe²⁺ bị không khí oxy hoá khi không acid hoá (4 %) là số minh hoạ.",
+    "M": { "anhydrous": 284.05, "water": 18.015, "BaSO4": 233.39, "NH4": 18.04, "Fe": 55.845, "SO4": 96.06 },
+    "grams": 3.92, "flaskMl": 100, "aliquotTitr": 10, "aliquotBa": 50, "normKMnO4": 0.103,
+    "waterOk": 6, "waterEthanol": 5.67, "fineLoss": 0.06, "bacl2Gain": 0.015, "airLoss": 0.04,
+    "qual": {
+      "naoh": { "short": "trắng xanh", "label": "NaOH 30 %", "color": "#bfd8d2", "name": "kết tủa trắng xanh Fe(OH)₂", "ppt": true, "note": "đun thì chuyển nâu đỏ Fe(OH)₃; giấy pH ẩm ở miệng ống {nh3}", "eq": "Fe²⁺ + 2OH⁻ → Fe(OH)₂↓; NH₄⁺ + OH⁻ → NH₃↑ + H₂O" },
+      "bacl2": { "short": "trắng", "label": "BaCl₂ 0,1 M", "color": null, "name": "kết tủa trắng BaSO₄", "ppt": true, "note": "", "eq": "Ba²⁺ + SO₄²⁻ → BaSO₄↓" },
+      "air": { "short": "đỏ nâu", "label": "NaOH, để ngoài không khí", "color": "#a8562e", "name": "xanh lơ chuyển dần đỏ nâu", "ppt": true, "note": "", "eq": "4Fe(OH)₂ + O₂ + 2H₂O → 4Fe(OH)₃" },
+      "h2o2": { "short": "vàng nhạt", "label": "H₂SO₄ 2 M + H₂O₂ 10 %", "color": "#efe39a", "name": "vàng nhạt, có bọt khí", "ppt": false, "note": "", "eq": "2Fe²⁺ + H₂O₂ + 2H⁺ → 2Fe³⁺ + 2H₂O" },
+      "kmno4": { "short": "mất màu", "label": "H₂SO₄ 2 M + KMnO₄ 0,1 M", "color": "#f6eef0", "name": "mất màu tím", "ppt": false, "note": "", "eq": "5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O" },
+      "k2cr2o7": { "short": "xanh ngọc", "label": "H₂SO₄ 2 M + K₂Cr₂O₇ 0,1 M", "color": "#3f9a86", "name": "da cam chuyển xanh ngọc bích", "ppt": false, "note": "", "eq": "6Fe²⁺ + Cr₂O₇²⁻ + 14H⁺ → 6Fe³⁺ + 2Cr³⁺ + 7H₂O" }
+    }
+  }
+}

@@ -1,0 +1,1265 @@
+{
+  "sources": {
+    "note": "Xem research/safety.md: SDS Merck/Sigma/Fisher/Loba cho dung dịch đúng nồng độ, luật hỗn hợp CLP Annex I, PubChem (ECHA C&L) cho chất nguyên chất, BU EHS cho nhóm bảo quản."
+  },
+  "ppeBase": [
+    "coat",
+    "gloves",
+    "glasses"
+  ],
+  "substances": {
+    "CuSO4": {
+      "ghs": [
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds",
+      "waste": "heavy-metal"
+    },
+    "NaOH": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H290",
+        "H314"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "base",
+      "hood": false,
+      "basis": "sds"
+    },
+    "HCl": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H290"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "acid",
+      "hood": false,
+      "basis": "sds"
+    },
+    "AgNO3": {
+      "ghs": [
+        "GHS05",
+        "GHS08",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H290",
+        "H315",
+        "H319",
+        "H360D",
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "sds",
+      "flags": [
+        "nitrate",
+        "light-sensitive",
+        "amber-bottle"
+      ],
+      "waste": "heavy-metal"
+    },
+    "NaCl": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds"
+    },
+    "Na2CO3": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "base",
+      "hood": false,
+      "basis": "clp",
+      "cautious": {
+        "ghs": [
+          "GHS07"
+        ],
+        "signal": "Warning",
+        "h": [
+          "H319"
+        ]
+      }
+    },
+    "phenolphthalein": {
+      "ghs": [
+        "GHS02",
+        "GHS07",
+        "GHS08"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H225",
+        "H319",
+        "H341",
+        "H350"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "flammable",
+      "hood": false,
+      "basis": "sds",
+      "flags": [
+        "no-flame"
+      ],
+      "solvent": "ethanol (giả định, chưa xác minh)"
+    },
+    "H2SO4": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H290"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "acid",
+      "hood": false,
+      "basis": "sds"
+    },
+    "BaCl2": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "sds",
+      "waste": "heavy-metal"
+    },
+    "FeCl3": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H290",
+        "H318"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "acid",
+      "hood": false,
+      "basis": "clp"
+    },
+    "KSCN": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302",
+        "H312",
+        "H332",
+        "H412",
+        "EUH032"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "sds",
+      "flags": [
+        "no-acid"
+      ]
+    },
+    "KI": {
+      "ghs": [
+        "GHS08"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H373"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "clp"
+    },
+    "PbNO32": {
+      "ghs": [
+        "GHS05",
+        "GHS08",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H318",
+        "H360Df",
+        "H362",
+        "H373",
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "clp",
+      "flags": [
+        "nitrate",
+        "reprotoxic"
+      ],
+      "waste": "heavy-metal"
+    },
+    "HClx": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H290"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "acid",
+      "hood": false,
+      "basis": "clp"
+    },
+    "NaOH01": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "base",
+      "hood": false,
+      "basis": "clp"
+    },
+    "water": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "buffer": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "MgCl2": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "clp"
+    },
+    "dNTP": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "primers": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "taq": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "template": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "bio",
+      "hood": false,
+      "basis": "sds"
+    },
+    "BaSO4": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "group": "general",
+      "hood": false,
+      "basis": "pure"
+    },
+    "BaCO3": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "BaNO32": {
+      "ghs": [
+        "GHS03",
+        "GHS06"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H272",
+        "H302",
+        "H332"
+      ],
+      "group": "oxidizer",
+      "hood": false,
+      "basis": "pure",
+      "flags": [
+        "nitrate"
+      ],
+      "waste": "heavy-metal"
+    },
+    "FeOH3": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H315",
+        "H319",
+        "H335"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure"
+    },
+    "FeSCN3": {
+      "ghs": [],
+      "signal": null,
+      "h": [
+        "EUH032"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "chưa xác minh",
+      "flags": [
+        "no-acid"
+      ]
+    },
+    "FeNO33": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H315",
+        "H319"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "flags": [
+        "nitrate"
+      ]
+    },
+    "KCl": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "group": "general",
+      "hood": false,
+      "basis": "pure"
+    },
+    "KNO3": {
+      "ghs": [
+        "GHS03",
+        "GHS07"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H272",
+        "H315",
+        "H319",
+        "H335"
+      ],
+      "group": "oxidizer",
+      "hood": false,
+      "basis": "pure",
+      "flags": [
+        "nitrate"
+      ]
+    },
+    "PbI2": {
+      "ghs": [
+        "GHS07",
+        "GHS08",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H302",
+        "H332",
+        "H360",
+        "H373",
+        "H410"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "pure",
+      "flags": [
+        "reprotoxic"
+      ],
+      "waste": "heavy-metal"
+    },
+    "AgI": {
+      "ghs": [
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H410"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "CuOH2": {
+      "ghs": [
+        "GHS05",
+        "GHS06",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H302",
+        "H318",
+        "H330",
+        "H410"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "Cu2OH2CO3": {
+      "ghs": [
+        "GHS07",
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302",
+        "H332",
+        "H319",
+        "H410"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "CuCl2": {
+      "ghs": [
+        "GHS05",
+        "GHS07",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H302",
+        "H312",
+        "H315",
+        "H318",
+        "H410"
+      ],
+      "group": "toxic",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "Na2SO4": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "group": "general",
+      "hood": false,
+      "basis": "pure"
+    },
+    "AgCl": {
+      "ghs": [
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H410"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "Ag2O": {
+      "ghs": [
+        "GHS03",
+        "GHS05",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H271",
+        "H318",
+        "H410"
+      ],
+      "group": "oxidizer",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "Ag2CO3": {
+      "ghs": [
+        "GHS05",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H318",
+        "H410"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "waste": "heavy-metal"
+    },
+    "NaNO3": {
+      "ghs": [
+        "GHS03",
+        "GHS07"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H272",
+        "H319"
+      ],
+      "group": "oxidizer",
+      "hood": false,
+      "basis": "pure",
+      "flags": [
+        "nitrate"
+      ]
+    },
+    "HNO3": {
+      "ghs": [
+        "GHS05"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H290"
+      ],
+      "group": "acid",
+      "hood": false,
+      "basis": "chưa xác minh (loãng < 0,1 M)",
+      "concentrated": {
+        "ghs": [
+          "GHS03",
+          "GHS05",
+          "GHS06"
+        ],
+        "signal": "Danger",
+        "h": [
+          "H272",
+          "H314",
+          "H330"
+        ],
+        "hood": true,
+        "store": "riêng"
+      }
+    },
+    "CO2": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "group": "general",
+      "hood": false,
+      "basis": "pure",
+      "note": "H280 chỉ cho bình khí nén"
+    },
+    "H2O": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "group": "general",
+      "hood": false,
+      "basis": "none"
+    },
+    "Na2S2O3": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "dung dịch loãng không phân loại GHS (chưa xác minh SDS cho đúng nồng độ 0,15 M)"
+    },
+    "NaHCO3s": {
+      "ghs": [],
+      "signal": null,
+      "h": [],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds"
+    },
+    "CuSO45": {
+      "ghs": [
+        "GHS07",
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302",
+        "H315",
+        "H319",
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds",
+      "waste": "heavy-metal"
+    },
+    "CuSO4anh": {
+      "ghs": [
+        "GHS07",
+        "GHS09"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302",
+        "H315",
+        "H319",
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds",
+      "waste": "heavy-metal"
+    },
+    "NH4Cl": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H302",
+        "H319"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds"
+    },
+    "I2": {
+      "ghs": [
+        "GHS07",
+        "GHS08",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H312",
+        "H332",
+        "H315",
+        "H319",
+        "H335",
+        "H372",
+        "H400"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "toxic",
+      "hood": true,
+      "basis": "sds"
+    },
+    "KMnO4s": {
+      "ghs": [
+        "GHS03",
+        "GHS07",
+        "GHS09"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H272",
+        "H302",
+        "H410"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "oxidizer",
+      "hood": false,
+      "basis": "sds",
+      "waste": "heavy-metal"
+    },
+    "Mg": {
+      "ghs": [
+        "GHS02"
+      ],
+      "signal": "Danger",
+      "h": [
+        "H228",
+        "H261"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "goggles"
+      ],
+      "group": "flammable",
+      "hood": false,
+      "basis": "sds"
+    },
+    "LiCl": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H319"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "clp"
+    },
+    "CaCl2": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H319"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "sds"
+    },
+    "SrCl2": {
+      "ghs": [
+        "GHS07"
+      ],
+      "signal": "Warning",
+      "h": [
+        "H319"
+      ],
+      "ppe": [
+        "coat",
+        "gloves",
+        "glasses"
+      ],
+      "group": "general",
+      "hood": false,
+      "basis": "clp"
+    }
+  },
+  "groups": [
+    "acid",
+    "base",
+    "oxidizer",
+    "flammable",
+    "toxic",
+    "general",
+    "bio"
+  ],
+  "incompatible": [
+    [
+      "acid",
+      "base"
+    ],
+    [
+      "acid",
+      "oxidizer"
+    ],
+    [
+      "acid",
+      "flammable"
+    ],
+    [
+      "acid",
+      "toxic"
+    ],
+    [
+      "base",
+      "oxidizer"
+    ],
+    [
+      "base",
+      "flammable"
+    ],
+    [
+      "base",
+      "toxic"
+    ],
+    [
+      "oxidizer",
+      "flammable"
+    ],
+    [
+      "oxidizer",
+      "toxic"
+    ],
+    [
+      "flammable",
+      "toxic"
+    ],
+    [
+      "bio",
+      "acid"
+    ],
+    [
+      "bio",
+      "base"
+    ],
+    [
+      "bio",
+      "oxidizer"
+    ],
+    [
+      "bio",
+      "flammable"
+    ],
+    [
+      "bio",
+      "toxic"
+    ],
+    [
+      "bio",
+      "general"
+    ]
+  ],
+  "incompatibleFlags": [
+    {
+      "flag": "no-acid",
+      "with": {
+        "group": "acid"
+      },
+      "why": "EUH032: gặp acid giải phóng khí rất độc"
+    },
+    {
+      "flag": "nitrate",
+      "with": {
+        "group": "flammable"
+      },
+      "why": "Nitrate là chất oxi hoá, tách khỏi chất dễ cháy"
+    },
+    {
+      "id": "AgNO3",
+      "with": {
+        "ids": [
+          "NaCl",
+          "KI",
+          "BaCl2",
+          "FeCl3",
+          "Na2CO3",
+          "NaOH",
+          "NaOH01",
+          "phenolphthalein"
+        ]
+      },
+      "why": "SDS AgNO3: tương kỵ halide, carbonate, kiềm, chất hữu cơ"
+    }
+  ],
+  "storage": {
+    "acidNoMetalShelf": true,
+    "lightSensitive": [
+      "AgNO3"
+    ]
+  },
+  "hoodReactions": [
+    {
+      "id": "cu-hno3-conc",
+      "gas": "NO2",
+      "eq": "Cu + 4HNO3(đặc) → Cu(NO3)2 + 2NO2↑ + 2H2O",
+      "hood": true
+    },
+    {
+      "id": "cu-h2so4-hot",
+      "gas": "SO2",
+      "eq": "Cu + 2H2SO4(đặc, nóng) → CuSO4 + SO2↑ + 2H2O",
+      "hood": true
+    },
+    {
+      "id": "naclo-hcl",
+      "gas": "Cl2",
+      "eq": "NaClO + 2HCl → NaCl + Cl2↑ + H2O",
+      "hood": true
+    },
+    {
+      "id": "fes-hcl",
+      "gas": "H2S",
+      "eq": "FeS + 2HCl → FeCl2 + H2S↑",
+      "hood": true
+    },
+    {
+      "id": "nh4cl-naoh-heat",
+      "gas": "NH3",
+      "eq": "NH4Cl + NaOH → NaCl + NH3↑ + H2O",
+      "hood": true
+    },
+    {
+      "id": "kscn-acid",
+      "gas": "HCN/H2S/COS (tuỳ SDS)",
+      "warnOnly": true,
+      "hood": true
+    }
+  ],
+  "co2Reactions": {
+    "ids": [
+      "na2co3-h2so4",
+      "na2co3-hcl",
+      "na2co3-hno3",
+      "cuso4-na2co3",
+      "baco3-hcl"
+    ],
+    "hood": false,
+    "why": "CO2 ở quy mô bàn: vài mmol, OSHA PEL 5000 ppm"
+  },
+  "oel_ppm": {
+    "NO2": {
+      "oshaPEL": {
+        "C": 5
+      },
+      "nioshREL": {
+        "ST": 1
+      },
+      "idlh": 13,
+      "acgihTLV": {
+        "TWA": 0.2
+      }
+    },
+    "Cl2": {
+      "oshaPEL": {
+        "C": 1
+      },
+      "nioshREL": {
+        "C": 0.5
+      },
+      "idlh": 10,
+      "acgihTLV": {
+        "TWA": 0.1,
+        "STEL": 0.4
+      }
+    },
+    "NH3": {
+      "oshaPEL": {
+        "TWA": 50
+      },
+      "nioshREL": {
+        "TWA": 25,
+        "ST": 35
+      },
+      "idlh": 300,
+      "acgihTLV": {
+        "TWA": 25,
+        "STEL": 35
+      }
+    },
+    "HCl": {
+      "oshaPEL": {
+        "C": 5
+      },
+      "nioshREL": {
+        "C": 5
+      },
+      "idlh": 50,
+      "acgihTLV": {
+        "C": 2
+      }
+    },
+    "SO2": {
+      "oshaPEL": {
+        "TWA": 5
+      },
+      "nioshREL": {
+        "TWA": 2,
+        "ST": 5
+      },
+      "idlh": 100,
+      "acgihTLV": {
+        "STEL": 0.25
+      }
+    },
+    "H2S": {
+      "oshaPEL": {
+        "C": 20,
+        "peak10min": 50
+      },
+      "nioshREL": {
+        "C": 10
+      },
+      "idlh": 100,
+      "acgihTLV": {
+        "TWA": 1,
+        "STEL": 5
+      }
+    },
+    "CO2": {
+      "oshaPEL": {
+        "TWA": 5000
+      },
+      "nioshREL": {
+        "TWA": 5000,
+        "ST": 30000
+      },
+      "idlh": 40000,
+      "acgihTLV": {
+        "TWA": 5000,
+        "STEL": 30000
+      }
+    }
+  },
+  "fumeHood": {
+    "faceVelocity_mps": {
+      "alarmBelow": 0.4,
+      "okMin": 0.4,
+      "okMax": 0.6,
+      "highAbove": 0.6
+    },
+    "faceVelocity_fpm": {
+      "z95Legacy": [
+        80,
+        120
+      ],
+      "z95_2022Start": [
+        80,
+        100
+      ],
+      "prudentPractices": [
+        60,
+        100
+      ]
+    },
+    "ukPractice_mps": {
+      "hazardous": 0.4,
+      "radioactive": 0.7,
+      "storageOnly": 0.2
+    },
+    "ashrae110": {
+      "tracer": "SF6",
+      "release_Lpm": 4,
+      "maxLeak_ppm": {
+        "asManufactured": 0.05,
+        "asInstalled": 0.1
+      }
+    },
+    "workDepth_cm": 15,
+    "certifyEvery_months": 12
+  },
+  "emergency": {
+    "eyewash": {
+      "flow_Lpm": 1.5,
+      "duration_min": 15,
+      "reach_s": 10,
+      "reach_m": 17,
+      "temp_C": [
+        16,
+        38
+      ],
+      "nozzleHeight_cm": [
+        84,
+        135
+      ],
+      "testEvery": "tuần",
+      "inspectEvery": "năm"
+    },
+    "shower": {
+      "flow_Lpm": 75.7,
+      "duration_min": 15,
+      "reach_s": 10,
+      "reach_m": 17,
+      "temp_C": [
+        16,
+        38
+      ],
+      "columnHeight_cm": [
+        208,
+        244
+      ],
+      "sprayDiameter_cm": 50.8,
+      "sprayAt_cm": 152
+    },
+    "extinguisher": {
+      "default": "ABC bột khô 2A:40B:C",
+      "electronics": "CO2",
+      "metal": "loại D (cát, Na2CO3)",
+      "travelMax_m": {
+        "A": 23,
+        "B_20B": 15,
+        "B_10B": 9
+      }
+    },
+    "sharps": {
+      "closable": true,
+      "punctureResistant": true,
+      "leakproof": true,
+      "label": "biohazard, cam huỳnh quang/cam đỏ hoặc đỏ",
+      "upright": true,
+      "noOverfill": true
+    },
+    "bioWaste": {
+      "closable": true,
+      "leakproof": true,
+      "label": "biohazard hoặc túi đỏ"
+    }
+  }
+}

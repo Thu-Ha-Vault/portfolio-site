@@ -1,0 +1,66 @@
+{
+  "sources": [
+    "Langenegger N. et al. (2018) Identification of a precursor processing protease from the spider Cupiennius salei essential for venom neurotoxin maturation. J. Biol. Chem. 293(6): 2079–2090, doi:10.1074/jbc.M117.810911 (CC BY): bảng tinh sạch, cột Superdex 75 HR (100 mM NH4OAc pH 5,0), MiniS PE 4.6/50 (0–0,65 M NaCl), Nucleosil 300-5 C4 (0–60 % acetonitrile/TFA), đo FRET, pH tối ưu 6,0, ảnh hưởng ion và chất ức chế, heterodimer 28 kDa",
+    "Bài thực hành của chủ dự án: Enzymology, Bài 2 Tinh sạch enzyme (hiệu suất 23,6 %, độ sạch 1097 lần); điều kiện đo FRET: 1,2 µg cơ chất trong 130 µL đệm (200 mM NH4OAc pH 6,0, 100 mM KCl, 1 mM CaCl2) + 20 µL mẫu, đĩa đen 96 giếng, kích thích 340/30 nm, phát 485/20 nm (BioTek Synergy HT)",
+    "Vị trí rửa giải, độ rộng đỉnh, lượng tạp chất và hệ số thu hồi của từng nhóm protein là số hiệu chỉnh (minh hoạ) để quy trình chuẩn (gộp các phân đoạn có hoạt độ ≥ 20 % đỉnh) ra đúng bảng tinh sạch của bài báo",
+    "Độ nhạy nhuộm: Coomassie khoảng 10 ng/băng, nhuộm bạc khoảng 1 ng/băng (giá trị thường gặp trong tài liệu của các hãng, minh hoạ)"
+  ],
+  "paper": {
+    "unit": "hoạt độ ×10⁻¹⁰ mol l⁻¹ s⁻¹ (µL nọc)⁻¹; protein µg (µL nọc)⁻¹; hoạt độ riêng ×10⁻¹² mol l⁻¹ s⁻¹ µg⁻¹",
+    "rows": [
+      { "step": "crude", "name": "Nọc thô", "act": [5.93, 1.40], "protein": [101.750, 6.124], "spec": [5.8, 1.7], "fold": 1 },
+      { "step": "sec", "name": "SEC", "act": [5.26, 0.53], "protein": [3.581, 0.110], "spec": [146.8, 19.2], "fold": 25 },
+      { "step": "cex", "name": "CEX", "act": [0.85, 0.14], "protein": [0.053, 0.009], "spec": [1601.7, 527.8], "fold": 276 },
+      { "step": "rp", "name": "RP-HPLC", "act": [1.40, 0.16], "protein": [0.022, 0.006], "spec": [6364.3, 2305.6], "fold": 1097 }
+    ],
+    "yield": 23.6,
+    "venomUl": 3000
+  },
+  "enzyme": {
+    "name": "Protease PQM (VSP1, serine protease giống chymotrypsin)",
+    "kDa": 28,
+    "specific": 6.3643e-9,
+    "pHopt": 6.0,
+    "pHwidth": 1.0,
+    "cexActive": 0.516,
+    "pI": 7.0,
+    "additives": {
+      "none": { "name": "không thêm", "f": 1 },
+      "Ca": { "name": "Ca²⁺ 5 mM", "f": 1 },
+      "Mg": { "name": "Mg²⁺ 5 mM", "f": 1 },
+      "Zn": { "name": "Zn²⁺ 5 mM", "f": 0.2 },
+      "EDTA": { "name": "EDTA 10 mM", "f": 0.8 },
+      "AEBSF": { "name": "AEBSF 10 mM", "f": 0 }
+    },
+    "notes": "pH: hàm Gauss quanh 6,0 (độ rộng 1,0, minh hoạ) cho gần 0 ở pH ≤ 4 và ≥ 8 như bài báo. Zn²⁺ giảm 5 lần, AEBSF mất hoàn toàn theo bài báo; EDTA 'giảm nhẹ' lấy 0,8 (minh hoạ). pI 7,0 là minh hoạ (protease bám cột trao đổi cation ở pH 5,0 nên pI cao hơn 5,0). cexActive: tổng hoạt độ đo được sau CEX thấp hơn lượng protease còn lại (bước RP sau đó thu được nhiều hoạt độ hơn); bài thực hành giải thích là protease bị tổn hại ở bước này, mô hình gán hệ số 0,516 hiệu chỉnh theo bảng."
+  },
+  "assay": {
+    "substrateUg": 1.2,
+    "substrateDa": 2300,
+    "wellUl": 150,
+    "sampleUl": 20,
+    "fneg": 800,
+    "fpos": 21000,
+    "noise": 0.03,
+    "linearMax": 0.5,
+    "notes": "Khối lượng cơ chất PQM khoảng 2,3 kDa (ước tính từ chuỗi DABCYL-PFFENEQARKDDKN-Glu(EDANS)-NH2, chưa xác minh). Huỳnh quang đối chứng âm, dương là số minh hoạ. Cắt cơ chất theo bậc nhất (giả định nồng độ cơ chất thấp hơn nhiều Km)."
+  },
+  "columns": {
+    "sec": { "name": "Lọc gel Superdex 75 HR (100 mM NH₄OAc pH 5,0)", "fractions": 40, "fractionMl": 0.5 },
+    "cex": { "name": "Trao đổi cation MiniS PE 4.6/50 (gradient 0–0,65 M NaCl)", "fractions": 30, "washFractions": 4, "saltMax": 0.65, "capacityMg": 20 },
+    "rp": { "name": "RP-HPLC Nucleosil 300-5 C4 (0–60 % acetonitrile, TFA)", "fractions": 40, "acnMax": 60, "capacityMg": 5 }
+  },
+  "poolThreshold": 0.2,
+  "species": [
+    { "id": "P", "name": "Protease PQM", "kDa": 28, "crude": 0.0932,
+      "sec": { "c": 20, "w": 1.5, "rec": 0.9749 }, "cex": { "salt": 0.30, "w": 1.2, "rec": 0.3502, "pI": 7.0 }, "rp": { "acn": 38, "w": 1.0, "rec": 0.8948 } },
+    { "id": "b", "name": "Peptide tạp b", "kDa": 9, "crude": 0.0532,
+      "sec": { "c": 20.4, "w": 1.6, "rec": 0.9 }, "cex": { "salt": 0.32, "w": 1.4, "rec": 0.8269, "pI": 9.5 }, "rp": { "acn": 30, "w": 1.0, "rec": 0.9 } },
+    { "id": "co", "name": "Protein 25–35 kDa khác", "kDa": 32, "crude": 5.745,
+      "sec": { "c": 21, "w": 2.6, "rec": 0.9 }, "cex": { "salt": null, "w": 1, "rec": 0.95, "pI": 4.8 }, "rp": { "acn": 45, "w": 3, "rec": 0.8 } },
+    { "id": "hi", "name": "Protein lớn (> 60 kDa)", "kDa": 70, "crude": 8.9,
+      "sec": { "c": 10, "w": 2, "rec": 0.9 }, "cex": { "salt": null, "w": 1, "rec": 0.95, "pI": 5.0 }, "rp": { "acn": 50, "w": 3, "rec": 0.7 } },
+    { "id": "lo", "name": "Độc tố thần kinh và peptide ly giải (< 10 kDa)", "kDa": 7, "crude": 86.46,
+      "sec": { "c": 31, "w": 3, "rec": 0.95 }, "cex": { "salt": 0.5, "w": 2, "rec": 0.9, "pI": 9.0 }, "rp": { "acn": 22, "w": 3, "rec": 0.9 } }
+  ]
+}

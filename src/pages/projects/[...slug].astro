@@ -24,7 +24,8 @@ const crumbs = breadcrumbs(all, entry.id);
 const s = statusKey(d.status);
 const url = new URL(d.url, Astro.site).toString();
 const linkLabel: Record<string, string> = { github: 'GitHub', kaggle: 'Kaggle', tableau: 'Tableau Public', demo: 'Demo', slides: 'Slides', certificate: 'Certificate' };
-const links = Object.entries(d.links).filter(([, v]) => v);
+// `app` (a live app hosted on this site) comes first and gets the label "Mở <appName> / Open <appName>"
+const links = Object.entries(d.links).filter(([, v]) => v).sort(([a], [b]) => Number(b === 'app') - Number(a === 'app'));
 // Project index pages get the brutal head with the cover; project notes are reading pages (light reading toggle).
 const real = d.isIndex ? realCover(d.cover) : undefined;
 const size = real ? await coverSize(real.src) : undefined;
@@ -59,7 +60,12 @@ const size = real ? await coverSize(real.src) : undefined;
         {d.phases.length > 0 && <PhaseTrack phases={d.phases} class="head-track" />}
         {links.length > 0 && (
           <div class="actions head-actions">
-            {links.map(([k, v]) => <a class="button" href={v} rel="noopener">{linkLabel[k] ?? k}</a>)}
+            {links.map(([k, v]) =>
+              k === 'app' ? (
+                <a class="button app-button" href={v}><T vi={`Mở ${d.appName ?? 'ứng dụng'}`} en={`Open ${d.appName ?? 'the app'}`} /></a>
+              ) : (
+                <a class="button" href={v} rel="noopener">{linkLabel[k] ?? k}</a>
+              ))}
           </div>
         )}
       </header>

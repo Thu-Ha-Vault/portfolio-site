@@ -1,0 +1,25 @@
+{
+  "sources": [
+    "Bài thực hành của chủ dự án: Proteomics and Structural Biology, Bài 3 Phân tách exosome và bóng ngoại bào từ huyết tương (ly tâm 1500 × g 5 phút rồi 10000 × g 10 phút, pha loãng 1:1 PBS 45 + 45 µL, lọc 0,22 µm, cột Sepharose CL-4B 3 mL, 20 phân đoạn × 150 µL, EV ở phân đoạn 8–12; SDS-PAGE 10 % nhuộm CBB: giếng 8–10 không có băng, 11–12 băng mờ gần đầu gel, protein tăng dần sau phân đoạn 11)",
+    "Dong et al. 2022 (tóm tắt trong tiểu luận 08 của chủ dự án): NTA NanoSight NS300 kích thước trung bình 147,5 nm (17,5–300 nm); Western blot CD63, CD81, TSG101 dương, Calnexin âm",
+    "Webber J., Clayton A. (2013) How pure are your vesicles? J. Extracell. Vesicles 2: 19861: tỉ lệ hạt/µg protein > 3×10¹⁰ là tinh khiết cao, 2×10⁹–2×10¹⁰ là thấp, < 1,5×10⁹ là không tinh khiết",
+    "Théry C. et al. (2018) MISEV2018, J. Extracell. Vesicles 7: 1535750: EV nhỏ < 200 nm; marker dương (CD63, CD81, TSG101), marker âm (Calnexin)",
+    "Cytiva, Sepharose CL-4B: khoảng phân tách protein cầu 6×10⁴–2×10⁷ Da",
+    "Độ nhạy nhuộm CBB R-250 khoảng 0,1 µg/băng (thường gặp trong tài liệu của các hãng)",
+    "Nồng độ protein huyết tương (mg/mL) theo khoảng tham chiếu thường gặp; đường kính thuỷ động, thể tích rỗng của cột, nồng độ EV trong huyết tương và độ rộng đỉnh là số minh hoạ chọn để phân đoạn EV và protein khớp bài 03"
+  ],
+  "column": { "bedMl": 3.0, "voidMl": 1.35, "fractionUl": 150, "fractions": 20, "sigmaMl": 0.15, "dMin": 5, "dMax": 40 },
+  "plasma": { "ul": 45, "pbsUl": 45, "evPerMl": 5e10, "evPerUgProtein": 3e10, "sizeMedian": 130, "sizeSigma": 0.5 },
+  "species": [
+    { "id": "EV", "name": "Bóng ngoại bào (EV)", "d": 120, "mgMl": 0, "bands": [] },
+    { "id": "LDL", "name": "LDL (apoB-100)", "d": 22, "mgMl": 0.9, "bands": [["apoB-100", 515]] },
+    { "id": "IGM", "name": "IgM (ngũ phân)", "d": 20, "mgMl": 1.2, "bands": [["chuỗi μ", 70], ["chuỗi nhẹ", 25]] },
+    { "id": "A2M", "name": "α2-macroglobulin", "d": 15, "mgMl": 2.0, "bands": [["α2M", 163]] },
+    { "id": "IGG", "name": "IgG", "d": 11, "mgMl": 10, "bands": [["chuỗi nặng γ", 50], ["chuỗi nhẹ", 25]] },
+    { "id": "HDL", "name": "HDL (apoA-I)", "d": 10, "mgMl": 1.3, "bands": [["apoA-I", 28]] },
+    { "id": "TRFE", "name": "Transferrin", "d": 8, "mgMl": 2.5, "bands": [["transferrin", 77]] },
+    { "id": "ALB", "name": "Albumin", "d": 7, "mgMl": 40, "bands": [["albumin", 66]] }
+  ],
+  "debris": { "name": "Tiểu cầu, mảnh tế bào", "d": 600, "perMl": 2e10, "calnexin": true },
+  "stain": { "coomassieNg": 100, "wbEv": 1e8, "calnexinDebris": 1e6 }
+}

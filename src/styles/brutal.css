@@ -211,6 +211,9 @@
 .brutal .button:hover { background: var(--raise); color: var(--ink); box-shadow: 6px 6px 0 var(--iris-pink); }
 .brutal .button:focus-visible { box-shadow: 6px 6px 0 var(--iris-pink), 0 0 0 6px var(--focus-halo); }
 .brutal .button:active { box-shadow: 0 0 0 var(--iris-pink); transition-duration: 80ms; }
+/* the live app of a project (links.app): the one filled button in the head */
+.brutal .button.app-button { background: #fff; color: var(--on-light); font-size: 1.06rem; padding-inline: 1.4em; }
+.brutal .button.app-button:hover { background: #ece8fb; color: var(--on-light); }
 .case-actions, .head-actions { gap: 14px; }
 
 /* ---------- neon-brutal press (motion #12): 120ms ease-out, active 80ms ---------- */

@@ -1,0 +1,658 @@
+{
+  "_note": "Chú thích dụng cụ, máy, tủ trong cảnh 3D (giai đoạn 5 mục 0). name: tên; use: tác dụng (một câu); how: cách dùng; safety: lưu ý an toàn; model: hãng và model thật đã tra (note 05, 06, 07, 08, 09); detail: id hình cận cảnh trong DETAILS của src/main.js. Số liệu lấy từ figures/*/model.mjs, data/*.json đã có nguồn, hoặc quy tắc thực hành trong sách giáo khoa Hoá học phổ thông (SGK Hoá học 8 bài 'Một số quy tắc an toàn trong phòng thí nghiệm', SGK Hoá học 10) và hướng dẫn của hãng.",
+  "_sources": {
+    "sgk": "Bộ Giáo dục và Đào tạo, SGK Hoá học 8 và Hoá học 10: quy tắc dùng đèn cồn, ống nghiệm, kẹp ống nghiệm, cách lấy hoá chất (chưa xác minh số trang)",
+    "ansi": "ANSI/ISEA Z358.1: rửa mắt liên tục ít nhất 15 phút",
+    "who": "WHO Laboratory Biosafety Manual, 4th ed. (2020): tủ an toàn sinh học cấp II, xử lý rác thải sinh học, vật sắc nhọn",
+    "sgk16": "SGK Sinh học 7, bài 16 Thực hành: mổ và quan sát giun đất",
+    "sgk23": "SGK Sinh học 7, bài 23 Thực hành: mổ và quan sát tôm sông (găm tôm bằng 4 đinh ghim, đổ nước ngập, kẹp nâng tấm lưng)",
+    "bcworm": "Biology Corner, Earthworm Dissection",
+    "wards": "Ward's Science, Earthworm Dissection (cắt không sâu quá 1/16 inch)",
+    "3r": "Russell W.M.S., Burch R.L. 1959, The Principles of Humane Experimental Technique (nguyên tắc 3R)",
+    "nih": "NIH Design Requirements Manual, Rev. 2.1 (2024): bồn rửa tay cạnh cửa ra có vòi rửa mắt (§2.1.3.7.6), vòi rửa mắt ở mọi bồn rửa (§4.5.3.5), cửa phòng 1,1 m (§4.2.2.2)",
+    "who-pcr": "WHO SEARO, Establishment of PCR laboratory in developing countries, 2nd ed. (2016), chương 5: tách khu trước và sau khuếch đại, đi một chiều",
+    "eppendorf": "Eppendorf: epT.I.P.S. Box 2.0 (Instructions for use, kích thước hộp cỡ 1: 141 × 111 × 73 mm); Safe-Lock Tubes 1,5 mL (Technical Data Sheet 0017010417)"
+  },
+  "items": {
+    "reagent-bottle": {
+      "name": "Chai đựng hoá chất",
+      "use": "Đựng dung dịch pha sẵn, nhãn ghi tên và nồng độ. Màu nắp theo nhóm: đỏ là acid, xanh là base, xám là muối, hồng là chất chỉ thị.",
+      "how": ["Mở nắp, đặt ngửa nắp trên bàn.", "Cầm chai quay nhãn vào lòng bàn tay khi rót để hoá chất không chảy làm hỏng nhãn.", "Rót xong đậy nắp ngay, không đổ hoá chất thừa trở lại chai."],
+      "safety": "Không ngửi trực tiếp miệng chai, không nếm hoá chất.",
+      "source": "sgk"
+    },
+    "beaker": {
+      "name": "Cốc có mỏ",
+      "use": "Chứa, pha, trộn và đun dung dịch. Vạch chia trên cốc chỉ để ước lượng, không dùng để đo chính xác.",
+      "how": ["Rót dung dịch ra theo mỏ cốc.", "Đun thì đặt cốc trên lưới tản nhiệt hoặc mặt bếp, không đặt trực tiếp lên ngọn lửa.", "Khuấy bằng đũa thuỷ tinh, không gõ mạnh vào thành cốc."],
+      "source": "sgk"
+    },
+    "flask": {
+      "name": "Bình tam giác",
+      "use": "Đựng dung dịch khi chuẩn độ và khi lắc trộn: cổ hẹp nên ít bắn ra ngoài, ít bay hơi hơn cốc.",
+      "how": ["Khi chuẩn độ, đặt bình dưới buret, lót giấy trắng để dễ thấy đổi màu.", "Lắc tròn bằng cổ tay trong lúc nhỏ dung dịch chuẩn."],
+      "source": "sgk"
+    },
+    "buret": {
+      "name": "Buret",
+      "use": "Nhỏ dung dịch chuẩn và đọc chính xác thể tích đã dùng khi chuẩn độ (buret 25 mL cấp A, sai số ±0,03 mL, dài khoảng 800 mm).",
+      "how": ["Tráng buret bằng chính dung dịch chuẩn, nạp đầy, đuổi bọt khí ở đầu buret.", "Đọc vạch ở đáy mặt khum, mắt ngang mặt chất lỏng.", "Gần điểm tương đương thì nhỏ từng giọt."],
+      "source": "data/tools.json; chiều dài theo BRAND BLAUBRAND 25 mL khoá thẳng (12487)"
+    },
+    "pcr-tube": {
+      "name": "Ống PCR",
+      "use": "Chứa hỗn hợp phản ứng PCR. Thành ống mỏng để nhiệt truyền nhanh khi máy PCR đổi nhiệt độ.",
+      "how": ["Pha trên đá, cho Taq polymerase sau cùng.", "Đậy nắp kín, ly tâm nhanh cho dung dịch xuống đáy rồi đặt vào máy PCR."]
+    },
+    "reagent-tube": {
+      "name": "Ống thuốc thử (microtube)",
+      "use": "Đựng enzyme, mồi, dNTP, DNA khuôn với thể tích nhỏ.",
+      "how": ["Lấy từ tủ đông, giữ trên đá trong lúc dùng.", "Mỗi lần hút dùng một đầu tip mới để không nhiễm chéo."]
+    },
+    "test-tube": {
+      "name": "Ống nghiệm",
+      "use": "Làm phản ứng với lượng nhỏ hoá chất, đun trực tiếp được trên ngọn lửa đèn cồn.",
+      "how": ["Khi đun chỉ đựng tới khoảng một phần ba ống.", "Kẹp ống bằng kẹp ống nghiệm ở khoảng một phần ba từ miệng ống.", "Hơ đều cả ống trước rồi mới đun tập trung ở đáy."],
+      "safety": "Miệng ống hướng ra xa người, không hướng về phía bạn bên cạnh.",
+      "source": "sgk"
+    },
+    "test-tube-rack": {
+      "name": "Giá ống nghiệm",
+      "use": "Giữ ống nghiệm đứng thẳng khi chờ phản ứng, khi pha và khi để nguội.",
+      "how": ["Mỗi ống một lỗ, dán nhãn ống theo thứ tự trên giá."]
+    },
+    "test-tube-holder": {
+      "name": "Kẹp ống nghiệm",
+      "use": "Cầm ống nghiệm khi đun hoặc khi ống nóng, tay không chạm vào ống.",
+      "how": ["Kẹp từ đáy ống đi lên, giữ ở khoảng một phần ba ống tính từ miệng.", "Cầm ở cán kẹp, không bóp vào phần kẹp."],
+      "source": "sgk"
+    },
+    "alcohol-lamp": {
+      "name": "Đèn cồn",
+      "use": "Đun nóng trong thí nghiệm nhỏ. Đun bằng phần trên của ngọn lửa vì ở đó nóng nhất.",
+      "how": ["Cồn trong bầu đèn không quá hai phần ba bầu.", "Mở nắp, châm bằng diêm hoặc bật lửa.", "Tắt bằng cách đậy nắp lại."],
+      "safety": "Không thổi để tắt đèn, không châm đèn từ một đèn cồn khác đang cháy, không rót thêm cồn khi đèn đang cháy.",
+      "source": "sgk"
+    },
+    "tripod": {
+      "name": "Kiềng sắt ba chân",
+      "use": "Đỡ cốc, bình hoặc chén sứ phía trên ngọn lửa đèn cồn khi đun.",
+      "how": ["Đặt lưới tản nhiệt lên kiềng trước khi đặt cốc thuỷ tinh.", "Đèn cồn đặt giữa ba chân kiềng."],
+      "safety": "Kiềng còn nóng một lúc sau khi tắt đèn."
+    },
+    "gauze": {
+      "name": "Lưới tản nhiệt",
+      "use": "Lót giữa ngọn lửa và đáy cốc, bình thuỷ tinh để nhiệt phân bố đều, cốc không bị nứt vì nóng cục bộ.",
+      "how": ["Đặt lên kiềng, phần lõi gốm ở giữa ngay trên ngọn lửa."]
+    },
+    "dropper": {
+      "name": "Ống nhỏ giọt",
+      "use": "Lấy và nhỏ từng giọt dung dịch, dùng khi cần thêm từ từ (ví dụ nhỏ NaOH vào CuSO₄).",
+      "how": ["Bóp quả bóp, nhúng đầu ống vào dung dịch rồi thả tay để hút.", "Giữ ống thẳng đứng phía trên miệng ống nghiệm, không để đầu ống chạm vào dung dịch trong ống.", "Mỗi hoá chất dùng một ống nhỏ giọt riêng."],
+      "source": "sgk"
+    },
+    "glass-rod": {
+      "name": "Đũa thuỷ tinh",
+      "use": "Khuấy cho chất tan nhanh và trộn đều, dẫn dòng chất lỏng khi rót, chấm dung dịch lên giấy chỉ thị.",
+      "how": ["Khuấy nhẹ theo vòng tròn, không gõ vào thành và đáy cốc."]
+    },
+    "crucible": {
+      "name": "Chén sứ",
+      "use": "Nung, đốt và cô cạn chất rắn ở nhiệt độ cao mà cốc thuỷ tinh không chịu được.",
+      "how": ["Đặt trên kiềng có tam giác sứ hoặc lưới, đun trực tiếp bằng ngọn lửa.", "Gắp chén nóng bằng kẹp sắt."]
+    },
+    "tongs": {
+      "name": "Kẹp sắt",
+      "use": "Gắp chén sứ nóng, gắp mẩu kim loại hoặc dây kim loại khi đốt trên ngọn lửa.",
+      "how": ["Gắp chắc vật, giữ vật trên ngọn lửa và xa tay."]
+    },
+    "flame-wire": {
+      "name": "Dây đốt thử màu ngọn lửa",
+      "use": "Dây nichrome có vòng ở đầu, nhúng vào dung dịch muối rồi đưa vào ngọn lửa để nhận biết kim loại theo màu ngọn lửa.",
+      "how": ["Làm sạch: nhúng HCl rồi hơ trên lửa tới khi ngọn lửa không còn màu lạ.", "Nhúng vòng dây vào mẫu, đưa vào phần ngoài ngọn lửa, quan sát màu.", "Làm sạch lại trước mỗi mẫu."],
+      "source": "LibreTexts Chemistry, Flame Tests"
+    },
+    "splint": {
+      "name": "Que đóm",
+      "use": "Que gỗ nhỏ để thử khí: que đóm còn tàn đỏ bùng cháy trong khí O₂; que đóm đang cháy tắt trong khí CO₂.",
+      "how": ["Châm que đóm, thổi tắt cho còn tàn đỏ, đưa vào miệng ống nghiệm (không nhúng vào chất lỏng)."],
+      "source": "sgk"
+    },
+    "spatula": {
+      "name": "Thìa xúc hoá chất",
+      "use": "Lấy hoá chất dạng bột hoặc hạt ra khỏi lọ.",
+      "how": ["Dùng thìa sạch, khô; lấy vừa đủ, lượng thừa không đổ lại lọ."],
+      "source": "sgk"
+    },
+    "wash-bottle": {
+      "name": "Bình tia nước cất",
+      "use": "Tráng dụng cụ và đầu điện cực, thêm nước cất tới vạch khi pha dung dịch.",
+      "how": ["Bóp nhẹ thân bình, hướng vòi vào thành dụng cụ.", "Chỉ đựng nước cất; bình đựng dung môi khác phải có nhãn riêng."]
+    },
+    "ice-bucket": {
+      "name": "Hộp đá",
+      "use": "Giữ enzyme và mẫu DNA lạnh trên bàn trong lúc pha phản ứng.",
+      "how": ["Cắm ống thuốc thử vào đá vảy; lấy từ máy làm đá."]
+    },
+    "balance": {
+      "name": "Cân phân tích",
+      "use": "Cân chính xác chất rắn để pha dung dịch chuẩn: tối đa 220 g, đọc tới 0,1 mg.",
+      "how": ["Bật máy và để ấm 60 phút trước khi cân.", "Đặt giấy cân hoặc thuyền cân, bấm trừ bì (tare), rồi cho chất vào.", "Đóng cửa kính chắn gió trước khi đọc số."],
+      "model": "Mettler Toledo MS204TS",
+      "detail": "balance",
+      "source": "figures/balance/model.mjs"
+    },
+    "hotplate": {
+      "name": "Máy khuấy từ gia nhiệt",
+      "use": "Vừa đun nóng vừa khuấy dung dịch bằng con khuấy từ; cắm đầu dò nhiệt thì máy giữ đúng nhiệt độ dung dịch.",
+      "how": ["Thả con khuấy từ vào cốc, đặt cốc giữa mặt đế.", "Đặt nhiệt độ và tốc độ khuấy, nhúng đầu dò vào dung dịch."],
+      "safety": "Mặt đế vẫn nóng sau khi tắt máy (đèn Hot Top sáng khi trên 50 °C).",
+      "model": "IKA C-MAG HS 7 control",
+      "detail": "hotplate",
+      "source": "figures/hotplate/model.mjs"
+    },
+    "water-bath": {
+      "name": "Bể ổn nhiệt",
+      "use": "Đun cách thuỷ ống nghiệm ở nhiệt độ ổn định, dùng cho phản ứng Fehling, Benedict và ủ enzyme.",
+      "how": ["Đổ nước cất ngập bộ phận gia nhiệt, đặt nhiệt độ, chờ đạt rồi mới cho ống vào."],
+      "model": "Memmert WNB 10",
+      "detail": "waterbath"
+    },
+    "sharps": {
+      "name": "Hộp đựng vật sắc nhọn",
+      "use": "Bỏ kim tiêm, lưỡi dao, lam kính vỡ để không ai bị đứt tay khi đổ rác.",
+      "how": ["Không đậy lại nắp kim trước khi bỏ; hộp đầy khoảng ba phần tư thì đóng lại và thay hộp mới."],
+      "source": "who"
+    },
+    "dissect-bench": {
+      "name": "Bàn giải phẫu",
+      "use": "Phần bàn nối dài có mặt inox, dễ lau rửa và khử trùng, dùng để mổ và quan sát mẫu động vật.",
+      "how": ["Trải khay mổ giữa bàn, dụng cụ xếp một bên theo thứ tự dùng.", "Xong buổi: rửa mặt bàn bằng nước xà phòng rồi lau cồn 70 %."],
+      "source": "sgk16"
+    },
+    "dissect-tray": {
+      "name": "Khay mổ",
+      "use": "Khay kim loại có đáy sáp: đinh ghim cắm xuống sáp để giữ mẫu và giữ hai mép đã phanh.",
+      "how": ["Giun, tôm: ghim đầu và đuôi (tôm 4 ghim), đổ nước ngập mẫu.", "Cắm ghim nghiêng ra ngoài để không vướng tay."],
+      "safety": "Cầm mẫu bằng kẹp, đeo găng tay.",
+      "source": "sgk23"
+    },
+    "dissect-scissors": {
+      "name": "Kéo mổ",
+      "use": "Cắt mở da và thành cơ thể. Mũi kéo hướng lên, chỉ cắt lớp ngoài để không làm rách nội quan.",
+      "how": ["Dùng kẹp nhấc lớp da lên rồi mới luồn mũi kéo vào.", "Cắt nông: với giun đất không sâu quá khoảng 1,6 mm."],
+      "safety": "Đưa kéo cho người khác bằng cán, mũi kéo khép lại.",
+      "source": "wards"
+    },
+    "scalpel": {
+      "name": "Dao mổ",
+      "use": "Tách nội quan khỏi màng và vách ngăn, gỡ ống tiêu hoá.",
+      "how": ["Dùng sống dao để tách, hạn chế cắt bằng lưỡi.", "Thay lưỡi dao bằng kẹp, không bằng tay."],
+      "safety": "Lưỡi dao cũ bỏ vào hộp đựng vật sắc nhọn.",
+      "source": "who"
+    },
+    "forceps": {
+      "name": "Kẹp mổ",
+      "use": "Nhấc da trước khi cắt, phanh hai mép thành cơ thể, gắp nội quan nhỏ.",
+      "how": ["Kẹp nhẹ để không làm nát mô."],
+      "source": "sgk23"
+    },
+    "dissect-needle": {
+      "name": "Kim mũi mác",
+      "use": "Tách vách ngăn và màng mỏng giữa da và nội quan, chỉ vào chi tiết khi quan sát.",
+      "source": "bcworm"
+    },
+    "dissect-pins": {
+      "name": "Hộp đinh ghim",
+      "use": "Ghim mẫu xuống đáy sáp của khay và ghim hai mép đã phanh.",
+      "how": ["Giun: ghim đầu và đuôi. Tôm: 4 ghim. Ếch: ghim bốn chi."],
+      "source": "sgk23"
+    },
+    "magnifier": {
+      "name": "Kính lúp cầm tay",
+      "use": "Phóng to để nhìn các phần nhỏ: hạch thần kinh, mạch máu, ruột tịt, túi mật.",
+      "how": ["Bấm kính lúp để đưa lên trên khay hoặc cất đi."],
+      "source": "sgk16"
+    },
+    "specimen-jar": {
+      "name": "Lọ mẫu vật",
+      "use": "Mẫu động vật đã chết dùng cho bài thực hành, lấy từ nơi cung cấp mẫu thí nghiệm.",
+      "how": ["Bấm một lọ để lấy mẫu ra khay mổ."],
+      "safety": "Mẫu ngâm cồn hoặc formalin: làm ở nơi thoáng khí, đeo găng tay.",
+      "source": "3r"
+    },
+    "biohazard-bag": {
+      "name": "Túi rác sinh học",
+      "use": "Đựng mẫu động vật đã mổ và găng tay dùng rồi, xử lý riêng, không bỏ thùng rác thường.",
+      "source": "who"
+    },
+    "dissect-water": {
+      "name": "Bình tia nước",
+      "use": "Đổ nước ngập mẫu (giun, tôm) để nội quan nổi lên, tách nhau; rửa đất hoặc dịch tràn ra.",
+      "source": "sgk23"
+    },
+    "bench": {
+      "name": "Bàn thí nghiệm trung tâm",
+      "use": "Mặt bàn chịu hoá chất. Nửa trái làm hoá học, nửa phải làm sinh học phân tử.",
+      "how": ["Giữ mặt bàn gọn, lau ngay hoá chất bị đổ."]
+    },
+    "glassware-cabinet": {
+      "name": "Tủ dụng cụ thuỷ tinh",
+      "use": "Cất cốc, bình, ống nghiệm, ống đong, buret, pipet đã rửa sạch và để khô.",
+      "how": ["Lấy dụng cụ cần dùng trong bảng Tủ dụng cụ bên phải; dùng xong rửa sạch rồi cất lại."]
+    },
+    "cabinet-acid": {
+      "name": "Tủ acid, chất ăn mòn",
+      "use": "Cất acid (HCl, H₂SO₄, HNO₃) trong tủ chống ăn mòn có thông gió, tách riêng khỏi base và chất oxy hoá.",
+      "how": ["Bấm cửa tủ để mở, bấm chai để lấy ra bàn."],
+      "safety": "Không để acid cạnh base hoặc kim loại hoạt động."
+    },
+    "cabinet-base": {
+      "name": "Tủ base",
+      "use": "Cất base (NaOH, NH₃), tách riêng khỏi acid.",
+      "how": ["Bấm cửa tủ để mở, bấm chai để lấy ra bàn."]
+    },
+    "cabinet-salt": {
+      "name": "Tủ muối",
+      "use": "Cất các muối và dung dịch muối ít nguy hiểm.",
+      "how": ["Bấm cửa tủ để mở, bấm chai để lấy ra bàn."]
+    },
+    "cabinet-flammable": {
+      "name": "Tủ chất dễ cháy",
+      "use": "Cất ethanol, acetone và dung môi dễ cháy trong tủ kim loại chống cháy, xa nguồn nhiệt.",
+      "how": ["Bấm cửa tủ để mở, bấm chai để lấy ra bàn."],
+      "safety": "Không để chất oxy hoá trong tủ này."
+    },
+    "cabinet-toxic": {
+      "name": "Tủ chất độc",
+      "use": "Cất chất độc (muối chì, ethidium bromide) có khoá, ghi sổ khi lấy ra.",
+      "how": ["Bấm cửa tủ để mở, bấm chai để lấy ra bàn."]
+    },
+    "cabinet-oxidizer": {
+      "name": "Tủ chất oxy hoá",
+      "use": "Cất chất oxy hoá mạnh (KMnO₄) riêng, xa chất khử (KI, KSCN), chất dễ cháy và acid.",
+      "how": ["Bấm cửa tủ để mở, bấm lọ để lấy ra bàn."],
+      "safety": "Chất oxy hoá gặp chất dễ cháy hoặc chất khử có thể gây cháy, nổ."
+    },
+    "fume-hood": {
+      "name": "Tủ hút khí độc",
+      "use": "Hút khí độc và hơi acid ra ngoài; phản ứng sinh khí độc (như Cu với HNO₃ đặc sinh NO₂) phải làm trong tủ này.",
+      "how": ["Bật quạt, hạ cửa kính tới vạch an toàn, làm việc cách mép trong ít nhất 15 cm."],
+      "safety": "Cửa mở quá cao thì vận tốc gió ở cửa giảm, khí độc có thể thoát ra.",
+      "model": "Labconco Protector XStream 5 ft",
+      "detail": "fumehood"
+    },
+    "fridge": {
+      "name": "Tủ lạnh 5 °C",
+      "use": "Bảo quản môi trường nuôi cấy, dung dịch đệm, kháng sinh pha sẵn.",
+      "how": ["Bấm cửa để mở, bấm hộp để lấy ra bàn; đóng cửa ngay để nhiệt độ trong tủ không tăng."]
+    },
+    "freezer": {
+      "name": "Tủ đông −20 °C",
+      "use": "Bảo quản enzyme (Taq polymerase), mồi, dNTP.",
+      "how": ["Lấy ống ra thì đặt ngay vào hộp đá; tránh rã đông rồi đông lại nhiều lần."]
+    },
+    "ult": {
+      "name": "Tủ âm sâu −80 °C",
+      "use": "Bảo quản lâu dài chủng vi khuẩn trong glycerol, tế bào khả biến, mẫu RNA.",
+      "how": ["Mở cửa thật nhanh; cửa mở lâu thì nhiệt độ trong tủ tăng và tủ báo động."],
+      "model": "Thermo Scientific TSX40086V",
+      "detail": "ultrafreezer"
+    },
+    "ice-machine": {
+      "name": "Máy làm đá vảy",
+      "use": "Làm đá vảy để giữ mẫu và thuốc thử lạnh trên bàn.",
+      "how": ["Xúc đá bằng xẻng vào hộp đá, không dùng tay."]
+    },
+    "ln2": {
+      "name": "Bình nitơ lỏng",
+      "use": "Bảo quản tế bào, phôi trong nitơ lỏng ở khoảng −196 °C.",
+      "how": ["Đeo găng chịu lạnh và tấm che mặt khi mở nắp, nhấc giá chứa lên từ từ."],
+      "safety": "Nitơ lỏng gây bỏng lạnh và làm thiếu oxy trong phòng kín.",
+      "model": "Thermo Scientific Locator 4 Plus",
+      "detail": "ln2"
+    },
+    "fly-incubator": {
+      "name": "Tủ ấm ruồi giấm",
+      "use": "Giữ lọ ruồi lai ở 25 °C; ở nhiệt độ này vòng đời ruồi khoảng 10 ngày.",
+      "how": ["Bấm cửa kính để mở; lọ trên kệ là các lọ lai đang nuôi."],
+      "source": "data/fly.json"
+    },
+    "zebrafish-rack": {
+      "name": "Giá nuôi cá ngựa vằn",
+      "use": "Hệ nuôi tuần hoàn: lọc nước liên tục, giữ 28,5 °C cho cá bố mẹ và cho cá đẻ.",
+      "how": ["Cho cá đẻ trong bể giao phối có vách ngăn, rút vách lúc bật đèn buổi sáng."],
+      "model": "Tecniplast ZebTEC Active Blue",
+      "detail": "zebrafish",
+      "source": "data/zebrafish.json"
+    },
+    "fly-station": {
+      "name": "Bàn soi ruồi",
+      "use": "Soi và phân loại ruồi đã gây mê theo giới tính và kiểu hình dưới kính lúp soi nổi.",
+      "how": ["Đặt ruồi trên tấm gây mê CO₂, gạt ruồi bằng chổi lông mềm."],
+      "safety": "Gây mê CO₂ quá lâu thì ruồi chết.",
+      "model": "Olympus/Evident SZ61 + Flystuff Flypad",
+      "detail": "stereo"
+    },
+    "eyewash": {
+      "name": "Vòi tắm và rửa mắt khẩn cấp",
+      "use": "Rửa mắt hoặc tắm ngay khi hoá chất bắn vào mắt, vào người.",
+      "how": ["Đẩy tay gạt, giữ mí mắt mở, rửa liên tục ít nhất 15 phút rồi đi khám."],
+      "model": "Guardian Equipment G1902",
+      "detail": "eyewash",
+      "source": "ansi"
+    },
+    "extinguisher": {
+      "name": "Bình chữa cháy CO₂",
+      "use": "Dập đám cháy thiết bị điện và chất lỏng dễ cháy.",
+      "how": ["Rút chốt, hướng loa vào gốc lửa, bóp cò, quét qua lại."],
+      "safety": "Không dùng cho đám cháy kim loại kiềm; không cầm vào loa phun vì rất lạnh."
+    },
+    "biobin": {
+      "name": "Thùng rác thải sinh học",
+      "use": "Bỏ đầu tip, găng tay, đĩa thạch và môi trường đã dùng có vi sinh vật.",
+      "how": ["Hấp tiệt trùng túi rác trước khi chuyển đi xử lý."],
+      "source": "who"
+    },
+    "rules-board": {
+      "name": "Bảng nội quy phòng thí nghiệm",
+      "use": "Nhắc các quy tắc an toàn: mặc áo, đeo găng và kính, không ăn uống, biết chỗ vòi rửa mắt và bình chữa cháy."
+    },
+    "growth-chamber": {
+      "name": "Buồng sinh trưởng",
+      "use": "Trồng cây trong điều kiện ánh sáng, nhiệt độ và độ ẩm đặt sẵn, không phụ thuộc thời tiết.",
+      "how": ["Đặt chương trình ngày đêm, nhiệt độ, độ ẩm trên bảng điều khiển."],
+      "model": "Conviron GEN1000",
+      "detail": "growthchamber"
+    },
+    "pcr": {
+      "name": "Máy PCR",
+      "use": "Lặp lại các chu kỳ nhiệt biến tính, gắn mồi, kéo dài để nhân bản một đoạn DNA lên hàng triệu bản.",
+      "how": ["Mở nắp, đặt ống PCR vào khối nhiệt, đóng nắp có gia nhiệt, chọn chương trình rồi chạy."],
+      "model": "Bio-Rad T100",
+      "detail": "pcr"
+    },
+    "qpcr": {
+      "name": "Máy real-time PCR",
+      "use": "Vừa nhân DNA vừa đo huỳnh quang sau mỗi chu kỳ để định lượng DNA ban đầu (giá trị Ct).",
+      "model": "Bio-Rad CFX96 Touch",
+      "detail": "qpcr"
+    },
+    "gel": {
+      "name": "Bộ điện di",
+      "use": "Tách DNA trên gel agarose theo kích thước: DNA mang điện âm chạy về cực dương, đoạn ngắn chạy xa hơn.",
+      "how": ["Đặt gel cho giếng ở phía cực âm (dây đen), đổ đệm TAE ngập gel, nạp mẫu và ladder, cắm điện rồi chạy."],
+      "safety": "Tắt nguồn trước khi mở nắp bể.",
+      "model": "Bio-Rad Mini-Sub Cell GT + PowerPac Basic",
+      "detail": "gel"
+    },
+    "geldoc": {
+      "name": "Máy chụp ảnh gel",
+      "use": "Chiếu sáng gel đã nhuộm và chụp ảnh các băng DNA.",
+      "model": "Bio-Rad Gel Doc EZ",
+      "detail": "geldoc"
+    },
+    "spectro": {
+      "name": "Máy quang phổ UV-Vis",
+      "use": "Đo độ hấp thụ ánh sáng của dung dịch theo bước sóng; từ A = εlc tính ra nồng độ.",
+      "how": ["Đo mẫu trắng trước, rồi đặt cuvet mẫu (mặt nhám không hướng vào đường sáng) và đọc A."],
+      "model": "Shimadzu UV-1900i",
+      "detail": "spectro"
+    },
+    "microscope": {
+      "name": "Kính hiển vi quang học",
+      "use": "Phóng đại mẫu trên lam kính để quan sát tế bào; vật kính dầu 100× với thị kính 10× cho độ phóng đại 1000 lần.",
+      "how": ["Bắt đầu ở vật kính nhỏ nhất, chỉnh núm thô rồi núm tinh, sau đó mới chuyển vật kính lớn hơn."],
+      "model": "Olympus CX23",
+      "detail": "microscope"
+    },
+    "vortex": {
+      "name": "Máy vortex và máy ly tâm mini",
+      "use": "Vortex trộn nhanh dung dịch trong ống; ly tâm mini gom giọt bám thành ống xuống đáy.",
+      "model": "Vortex-Genie 2 + Spectrafuge Mini",
+      "detail": "vortex"
+    },
+    "hplc": {
+      "name": "Máy sắc ký lỏng hiệu năng cao (HPLC)",
+      "use": "Tách và định lượng các chất trong hỗn hợp lỏng khi bơm qua cột C18 dưới áp suất cao; mỗi chất ra khỏi cột ở một thời gian lưu riêng.",
+      "model": "Agilent 1260 Infinity II",
+      "detail": "hplc"
+    },
+    "centrifuge": {
+      "name": "Máy ly tâm",
+      "use": "Quay nhanh để lắng tế bào, kết tủa và tách pha; lực ly tâm RCF = 1,118×10⁻⁵ × r × rpm².",
+      "how": ["Đặt các ống cân nhau ở vị trí đối xứng, đóng nắp khoá rồi mới chạy."],
+      "safety": "Ống không cân làm máy rung mạnh, có thể hỏng rotor.",
+      "model": "Eppendorf 5425 + rotor FA-24×2",
+      "detail": "centrifuge"
+    },
+    "platereader": {
+      "name": "Máy đọc vi đĩa",
+      "use": "Đo độ hấp thụ của 96 giếng cùng lúc: ELISA, đo protein, đo độ đục vi khuẩn.",
+      "model": "Agilent BioTek Epoch 2",
+      "detail": "platereader"
+    },
+    "nanodrop": {
+      "name": "Máy đo nồng độ DNA",
+      "use": "Đo nồng độ và độ tinh sạch DNA, RNA, protein (tỉ số A260/A280) chỉ với 1–2 µL mẫu.",
+      "how": ["Lau sạch bệ đo, đo mẫu trắng bằng dung dịch hoà tan mẫu, rồi nhỏ mẫu và hạ cần đo."],
+      "model": "Thermo Scientific NanoDrop One",
+      "detail": "nanodrop"
+    },
+    "fplc": {
+      "name": "Máy sắc ký protein FPLC",
+      "use": "Tinh sạch protein qua cột lọc gel, trao đổi ion; bộ thu phân đoạn hứng từng phân đoạn để đo hoạt độ.",
+      "model": "Cytiva ÄKTA pure 25 + F9-C",
+      "detail": "fplc"
+    },
+    "lcms": {
+      "name": "Máy khối phổ LC-MS/MS",
+      "use": "Tách bằng sắc ký lỏng rồi đo khối lượng ion để nhận diện và định lượng chất ở nồng độ rất thấp.",
+      "model": "Shimadzu LCMS-8060",
+      "detail": "lcms"
+    },
+    "autoclave": {
+      "name": "Nồi hấp tiệt trùng",
+      "use": "Tiệt trùng môi trường, dụng cụ và rác sinh học bằng hơi nước bão hoà ở 121 °C.",
+      "how": ["Châm nước, nới nắp chai môi trường, đóng nắp nồi, chọn chương trình; chờ áp suất về 0 mới mở."],
+      "safety": "Không mở nắp khi còn áp suất.",
+      "model": "Tomy SX-500",
+      "detail": "autoclave"
+    },
+    "shaker": {
+      "name": "Tủ ấm lắc",
+      "use": "Nuôi vi khuẩn trong bình lắc ở nhiệt độ đặt; lắc để môi trường thoáng khí, vi khuẩn mọc nhanh.",
+      "model": "New Brunswick Innova 42",
+      "detail": "shaker"
+    },
+    "bsc": {
+      "name": "Tủ an toàn sinh học cấp II",
+      "use": "Thao tác vô trùng với vi sinh vật: dòng khí qua lọc HEPA bảo vệ người làm, mẫu và môi trường.",
+      "how": ["Bật quạt trước vài phút, lau mặt bàn bằng cồn 70 %, không che lưới hút phía trước."],
+      "model": "Esco Airstream AC2-4S8-NS",
+      "detail": "bsc",
+      "source": "who"
+    },
+    "sdspage": {
+      "name": "Bộ điện di protein (SDS-PAGE)",
+      "use": "Tách protein trên gel polyacrylamide theo khối lượng phân tử.",
+      "model": "Bio-Rad Mini-PROTEAN Tetra + PowerPac HC",
+      "detail": "sdspage"
+    },
+    "hand-sink": {
+      "name": "Bồn rửa tay",
+      "use": "Rửa tay trước khi ra khỏi phòng và sau khi tháo găng. Vòi cảm ứng nên không phải chạm tay vào vòi.",
+      "how": ["Đưa tay dưới vòi, xoa xà phòng ít nhất 20 giây, rửa sạch, lau bằng giấy rồi bỏ giấy vào thùng.", "Chỉ dùng để rửa tay, không đổ hoá chất hay rửa dụng cụ ở bồn này."],
+      "safety": "Có vòi rửa mắt gắn ở mép bồn: bật lên bằng cách gạt cần xanh.",
+      "source": "nih"
+    },
+    "lab-sink": {
+      "name": "Bồn rửa dụng cụ",
+      "use": "Ngâm, rửa và tráng dụng cụ thuỷ tinh; vòi bên phải là nước cất để tráng lần cuối.",
+      "how": ["Đổ bỏ hoá chất còn lại vào can chất thải đúng loại trước khi rửa.", "Rửa bằng bàn chải và nước xà phòng, tráng nước máy rồi tráng nước cất 2–3 lần.", "Úp lên giá phơi hoặc cho vào tủ sấy."],
+      "safety": "Đeo găng chịu hoá chất khi ngâm dụng cụ trong dung dịch rửa acid hoặc kiềm.",
+      "source": "nih"
+    },
+    "bench-eyewash": {
+      "name": "Vòi rửa mắt ở bồn",
+      "use": "Rửa mắt ngay khi hoá chất bắn vào mắt; gắn ở mọi bồn rửa trong phòng thí nghiệm.",
+      "how": ["Gạt cần cho nước phun lên, cúi mắt vào hai đầu phun, dùng tay giữ mí mắt mở.", "Rửa liên tục ít nhất 15 phút rồi đi khám."],
+      "safety": "Phải tới được trong 10 giây đi bộ; với chất ăn mòn thì không được có cửa ở giữa đường.",
+      "source": "ansi"
+    },
+    "di-tap": {
+      "name": "Vòi nước cất",
+      "use": "Lấy nước cất hoặc nước khử ion để pha dung dịch và tráng dụng cụ lần cuối.",
+      "how": ["Xả bỏ vài giây đầu rồi mới hứng.", "Không cắm ống cao su hay dụng cụ bẩn vào miệng vòi."]
+    },
+    "gas-taps": {
+      "name": "Vòi khí đốt, chân không, khí nén",
+      "use": "Cấp khí đốt cho đèn Bunsen, hút chân không khi lọc, thổi khí nén để làm khô; mỗi vòi có nhãn tên khí.",
+      "how": ["Đọc nhãn trước khi cắm ống; khoá vòi ngay sau khi dùng.", "Ngửi thấy mùi khí đốt thì khoá vòi, mở cửa, không bật lửa hay công tắc điện, báo người phụ trách."],
+      "safety": "Không để ống cao su nối vòi khí đốt đi qua chỗ nóng."
+    },
+    "sockets": {
+      "name": "Ổ điện",
+      "use": "Cấp điện cho máy trên bàn. Mỗi máy cắm một ổ, không nối nhiều ổ chồng lên nhau.",
+      "how": ["Tắt máy trước khi rút phích, rút bằng phích chứ không kéo dây."],
+      "safety": "Không để ổ điện ướt; tràn nước gần ổ điện thì ngắt cầu dao trước khi lau."
+    },
+    "spill-kit": {
+      "name": "Bộ xử lý tràn hoá chất",
+      "use": "Đồ để thấm và gom hoá chất tràn: bột trung hoà acid và base, gối thấm, găng, kính, xẻng, túi đựng chất thải.",
+      "how": ["Báo cho người xung quanh, đeo đồ bảo hộ trong bộ.", "Rắc bột trung hoà hoặc đặt gối thấm từ mép vũng vào giữa, gom vào túi, dán nhãn chất thải."],
+      "safety": "Tràn chất dễ bay hơi độc hoặc lượng lớn thì ra khỏi phòng và gọi người phụ trách, không tự xử lý."
+    },
+    "first-aid": {
+      "name": "Tủ sơ cứu",
+      "use": "Băng, gạc, nước muối sinh lý, kéo, găng để sơ cứu vết cắt, vết bỏng nhỏ.",
+      "how": ["Rửa vết thương bằng nước sạch, băng lại, ghi vào sổ sự cố.", "Lấy đồ trong tủ thì báo để bổ sung."],
+      "safety": "Bỏng hoá chất thì rửa dưới vòi nước hoặc vòi tắm khẩn cấp trước, rồi mới sơ cứu."
+    },
+    "evac-map": {
+      "name": "Sơ đồ thoát hiểm",
+      "use": "Chỉ chỗ đang đứng, lối thoát gần nhất, vòi rửa mắt, bình chữa cháy và tủ sơ cứu. Vẽ từ đúng mặt bằng toà nhà trong app.",
+      "how": ["Xem trước lối thoát khi bắt đầu buổi thí nghiệm ở một phòng mới."]
+    },
+    "glove-dispenser": {
+      "name": "Hộp găng nitrile",
+      "use": "Găng dùng một lần theo cỡ S, M, L. Đeo trước khi vào phòng làm việc.",
+      "how": ["Rút một đôi, kiểm tra không thủng.", "Tháo găng bằng cách lộn trái, không chạm mặt ngoài găng vào da; bỏ vào thùng rác rồi rửa tay."],
+      "safety": "Không đeo găng đã dùng để chạm tay nắm cửa, điện thoại, bàn phím."
+    },
+    "goggles-rack": {
+      "name": "Giá kính bảo hộ",
+      "use": "Kính bảo hộ dùng chung, che kín mắt khỏi giọt hoá chất bắn.",
+      "how": ["Lấy kính, chỉnh dây cho vừa, đeo suốt thời gian làm thí nghiệm.", "Trả kính về giá sau khi lau cồn."]
+    },
+    "coat-rack": {
+      "name": "Móc áo blouse",
+      "use": "Áo blouse của phòng thí nghiệm treo ở phòng đệm: mặc khi vào, cởi ra khi rời phòng.",
+      "how": ["Cài hết cúc, xắn tay áo không quá khuỷu.", "Không mặc áo blouse ra căng tin, thư viện."]
+    },
+    "waste-bin": {
+      "name": "Thùng rác thường",
+      "use": "Bỏ găng sạch, giấy lau tay. Rác dính hoá chất, máu, vi khuẩn bỏ vào thùng riêng.",
+      "how": ["Đạp chân để mở nắp, không mở bằng tay."]
+    },
+    "drying-rack": {
+      "name": "Giá phơi dụng cụ",
+      "use": "Úp dụng cụ thuỷ tinh vừa rửa lên chốt cho ráo nước.",
+      "how": ["Úp miệng xuống, không xếp chồng dụng cụ lên nhau."]
+    },
+    "drying-oven": {
+      "name": "Tủ sấy dụng cụ",
+      "use": "Sấy khô dụng cụ thuỷ tinh sau khi rửa (thường 60–110 °C tuỳ dụng cụ).",
+      "how": ["Không sấy dụng cụ đo thể tích chính xác (bình định mức, pipet) ở nhiệt độ cao vì thuỷ tinh giãn nở làm sai vạch.", "Dùng găng chịu nhiệt khi lấy dụng cụ ra."],
+      "safety": "Không cho vào tủ sấy dụng cụ còn dính dung môi dễ cháy."
+    },
+    "safety-sign": {
+      "name": "Biển báo an toàn",
+      "use": "Biển đỏ là cấm, biển xanh dương là bắt buộc, biển vàng là cảnh báo, biển xanh lá là thoát hiểm và sơ cứu; hình thoi viền đỏ là hình đồ cảnh báo GHS của hoá chất.",
+      "source": "nih"
+    },
+    "lab-door": {
+      "name": "Cửa phòng thí nghiệm",
+      "use": "Cửa một cánh rộng 1,1 m, có ô kính nhìn; đi tới gần thì cửa mở, bấm vào cánh cửa để giữ mở.",
+      "how": ["Phòng sau PCR: không mang ống, gel, dụng cụ từ phòng này về khu trước PCR."],
+      "safety": "Không chèn cửa phòng vi sinh và phòng có tủ hút: cửa mở làm lệch luồng khí.",
+      "source": "nih"
+    },
+    "tip-box": {
+      "name": "Hộp đầu tip 2–200 µL",
+      "use": "Đầu tip nhựa vô trùng gắn vào micropipet; mỗi lần hút một chất hoặc một mẫu thì thay tip mới để không nhiễm chéo.",
+      "how": ["Mở nắp, ấn thẳng đầu micropipet xuống một tip, xoay nhẹ cho chặt.", "Đậy nắp hộp ngay sau khi lấy tip.", "Dùng xong bấm nút thải tip vào hộp chất thải."],
+      "safety": "Không chạm tay vào phần dưới của tip.",
+      "model": "Eppendorf epT.I.P.S. Box 2.0 (141 × 111 × 73 mm)",
+      "source": "eppendorf"
+    },
+    "tube-rack": {
+      "name": "Giá ống 1,5 mL",
+      "use": "Giữ ống Eppendorf 1,5 mL đứng thẳng khi pha mẫu, ghi nhãn trên nắp và thân ống.",
+      "how": ["Đặt ống theo thứ tự trong sổ thí nghiệm.", "Mở nắp ống bằng ngón cái một tay, không chạm vào mặt trong nắp."],
+      "model": "Heathrow Scientific HS29025B, 5 × 16 lỗ (225 × 67 × 28 mm)"
+    },
+    "micropipette": {
+      "name": "Micropipet",
+      "use": "Hút và nhả chính xác thể tích nhỏ (0,5 µL tới 1 mL): đỏ P20, vàng P200, xanh P1000.",
+      "how": ["Vặn núm chỉnh tới thể tích cần, không vặn quá giới hạn của micropipet.", "Gắn tip, ấn nút tới nấc 1, nhúng tip 2–3 mm dưới mặt chất lỏng, nhả từ từ để hút.", "Nhả: ấn tới nấc 1 rồi nấc 2 để đẩy hết giọt cuối; nhấc ra rồi mới thả nút; thải tip."],
+      "safety": "Không đặt micropipet nằm ngang khi tip còn chất lỏng: dịch chảy ngược vào thân.",
+      "model": "Kích thước theo IKA Pette vario 20–200 µL (30 × 248 × 63 mm)"
+    },
+    "petri": {
+      "name": "Đĩa petri",
+      "use": "Đĩa nhựa Ø 90 mm để đổ thạch, cấy vi khuẩn, đếm khuẩn lạc.",
+      "how": ["Mở nắp hé trong tủ an toàn sinh học, không để nắp ngửa trên bàn.", "Ủ đĩa úp ngược để hơi nước không nhỏ xuống thạch."],
+      "model": "Thermo Scientific Sterilin 101RTC (Ø 90 × 15,7 mm)"
+    },
+    "paper-towel": {
+      "name": "Cuộn giấy lau",
+      "use": "Lau khô dụng cụ, thấm giọt tràn nhỏ trên bàn.",
+      "how": ["Giấy dính hoá chất bỏ vào thùng chất thải hoá học, dính mẫu sinh học bỏ vào thùng rác sinh học."]
+    },
+    "machine-screen": {
+      "name": "Màn hình máy",
+      "use": "Hiện trạng thái máy lấy từ mô phỏng: chương trình đang chạy, nhiệt độ, thời gian còn lại, kết quả lần chạy gần nhất.",
+      "how": ["Bấm vào màn hình để bật hoặc tắt máy.", "Cuối buổi tắt máy không dùng tới (trừ tủ lạnh, tủ đông, tủ ấm đang nuôi mẫu)."]
+    },
+    "measuring-cylinder": {
+      "name": "Ống đong 10 mL",
+      "use": "Đong nhanh thể tích chất lỏng khi không cần thật chính xác (cấp B, sai số ±0,2 mL).",
+      "how": ["Đặt ống đong trên mặt phẳng, rót tới gần vạch rồi nhỏ thêm bằng ống nhỏ giọt.", "Đọc vạch ở đáy mặt khum, mắt ngang mặt chất lỏng."],
+      "model": "DURAN ống đong đế lục giác cấp B, Ø 14 × 137 mm (DWK 213960801)",
+      "source": "data/tools.json; DWK"
+    },
+    "pipette-stand": {
+      "name": "Giá pipet",
+      "use": "Giữ pipet đứng, đầu nhọn quay xuống, không chạm mặt bàn bẩn.",
+      "how": ["Cắm pipet sạch đầu nhọn xuống; không đặt pipet nằm trên bàn."]
+    },
+    "volumetric-pipette": {
+      "name": "Pipet bầu 10 mL",
+      "use": "Lấy đúng một thể tích cố định (10 mL, cấp A, sai số ±0,02 mL): dùng khi pha chuẩn, lấy mẫu chuẩn độ.",
+      "how": ["Hút bằng quả bóp, không hút bằng miệng.", "Hút quá vạch rồi xả từ từ tới khi đáy mặt khum chạm vạch.", "Xả chảy tự do, chạm đầu pipet vào thành bình, không thổi giọt cuối."],
+      "model": "BLAUBRAND pipet bầu một vạch 10 mL, dài 440 mm (Sigma-Aldrich Z325147)",
+      "source": "data/tools.json; DIN EN ISO 648"
+    },
+    "graduated-pipette": {
+      "name": "Pipet chia vạch 10 mL",
+      "use": "Lấy thể tích bất kỳ tới 10 mL theo vạch chia 0,1 mL (cấp A, sai số ±0,05 mL); kém chính xác hơn pipet bầu.",
+      "how": ["Hút bằng quả bóp, chỉnh mặt khum về vạch 0.", "Xả tới vạch cần lấy, đọc ngang tầm mắt."],
+      "model": "BLAUBRAND pipet chia vạch 10 mL : 0,1 mL kiểu 3, dài 360 mm (Sigma-Aldrich Z325937)",
+      "source": "data/tools.json; DIN EN ISO 835"
+    },
+    "volumetric-flask": {
+      "name": "Bình định mức 100 mL",
+      "use": "Pha dung dịch có nồng độ chính xác: hoà tan chất rồi thêm nước tới vạch trên cổ hẹp (cấp A, sai số ±0,1 mL).",
+      "how": ["Hoà tan chất rắn trong cốc, chuyển vào bình, tráng cốc vài lần.", "Thêm nước tới gần vạch, nhỏ giọt cho đáy mặt khum chạm vạch.", "Đậy nút, lật ngược bình nhiều lần cho đều."],
+      "model": "DURAN bình định mức 100 mL cấp A, nút NS 12/21, cao 170 mm",
+      "source": "ISO 1042 (src/core/balance-lab.js)"
+    },
+    "bottle-cap": {
+      "name": "Nắp chai",
+      "use": "Đậy kín chai hoá chất ngay sau khi lấy: hoá chất không bay hơi, không hút ẩm, không lẫn bụi, không đổ khi lỡ tay chạm chai.",
+      "how": ["Mở nắp, đặt ngửa trên bàn để mặt trong nắp không chạm bàn bẩn.", "Lấy xong thì đậy ngay: bấm vào nắp đặt cạnh chai hoặc nút Đậy nắp trong bảng Thao tác tay."],
+      "source": "SGK Hoá học 8, quy tắc lấy hoá chất"
+    }
+  }
+}

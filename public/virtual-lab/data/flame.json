@@ -1,0 +1,136 @@
+{
+  "_note": "Đun và đốt bằng đèn cồn (giai đoạn 5 mục 2, src/core/flame.js). Mỗi số có nguồn trong _sources hoặc ghi minh hoạ. Hiệu ứng trong cảnh 3D chỉ vẽ theo kết quả của lõi.",
+  "_sources": {
+    "nist_ethanol": "NIST Chemistry WebBook, ethanol: ΔcH° (lỏng) = −1366,8 kJ/mol; Mr 46,07 → 29,7 kJ/g",
+    "minisci": "Mini-Science, Alcohol Burner Lamp Portable Aluminum Alloy 50 ml (us.chemicalstore.com): cháy khoảng 4 giờ khi bấc ngắn, khoảng 2 giờ khi bấc dài → 0,16–0,33 g ethanol/phút",
+    "caie": "Cambridge International AS & A Level Chemistry 9701 Paper 5 (11/2021): đèn cồn mất 0,53 g ethanol làm 100 cm³ nước nóng từ 18,1 lên 38,2 °C, tức nước nhận khoảng một nửa nhiệt đốt cháy",
+    "water": "Nhiệt hoá hơi của nước ở 100 °C 40,65 kJ/mol = 2257 J/g (CRC Handbook; NIST WebBook)",
+    "libretexts": "LibreTexts Chemistry, Flame Tests, bảng 1 (màu ngọn lửa) và cách làm với dây nichrome hoặc platinum nhúng HCl",
+    "nist_asd": "NIST Atomic Spectra Database: Na 589,0 và 589,6 nm; K 766,5, 769,9 nm và 404,4 nm; Li 670,8 nm",
+    "nbs82": "Wagman et al. 1982, NBS Tables of Chemical Thermodynamic Properties: ΔfH° CuSO₄(r) −771,36; CuSO₄·5H₂O(r) −2279,65; CuSO₄ trong nước (ao) −844,50; H₂O(l) −285,83 kJ/mol",
+    "pubchem": "PubChem, mục Decomposition / Melting point / Sublimation của từng chất (chưa xác minh từng trang trong lần này)",
+    "sgk": "SGK Hoá học 8 (quy tắc dùng đèn cồn, ống nghiệm), Hoá học 9, 10, 11 (nhiệt phân NaHCO₃, KMnO₄; thử O₂ bằng que đóm; đốt Mg)"
+  },
+  "lamp": {
+    "fuel_g": 40,
+    "burn_g_per_min": 0.25,
+    "dHc_kJ_per_g": 29.7,
+    "note": "Tốc độ cháy lấy giữa khoảng 0,16–0,33 g/phút của đèn 50 mL (minisci), ứng với khoảng 124 W nhiệt đốt cháy (nist_ethanol). Lượng cồn ban đầu 40 g là minh hoạ (dưới hai phần ba bầu đèn 50 mL)."
+  },
+  "transfer": {
+    "tube_in_flame": 0.3,
+    "beaker_on_gauze": 0.35,
+    "beaker_no_gauze": 0.4,
+    "note": "Phần nhiệt đốt cháy đi vào ống nghiệm hoặc cốc. Bài đo của caie cho khoảng 0,5 với lon kim loại sát ngọn lửa; ống nghiệm hẹp và cốc trên lưới nhận ít hơn (minh hoạ)."
+  },
+  "tube": {
+    "capacity_mL": 20,
+    "glass_g": 6,
+    "glass_cp_J_per_gK": 0.78,
+    "area_m2": 0.0035,
+    "h_W_per_m2K": 10,
+    "h_dry_W_per_m2K": 30,
+    "note": "Ống nghiệm 16 × 150 mm (khoảng 20 mL). glass_g là phần thuỷ tinh nóng lên cùng chất lỏng (minh hoạ). Ống khô nóng mất nhiệt cả bằng bức xạ nên h lớn hơn (minh hoạ): ống chứa chất rắn nóng tới khoảng 380 °C trong ngọn lửa đèn cồn, đủ cho NH₄Cl thăng hoa như thí nghiệm ở trường."
+  },
+  "beaker": { "glass_g": 45, "area_m2": 0.012, "h_W_per_m2K": 7, "note": "Cốc 100 mL 45 g (data/thermo.json beaker_100mL); h đối lưu tự nhiên của data/thermo.json" },
+  "water": { "boil_C": 100, "Lv_J_per_g": 2257, "cp_J_per_gK": 4.18, "solid_cp_J_per_gK": 1.0, "dryAt_mL": 0.02 },
+  "bump": {
+    "loss": 0.3,
+    "minVolume_mL": 2,
+    "note": "Đun tập trung ở đáy ngay từ đầu (không hơ đều): chất lỏng quá nhiệt rồi sôi bùng, trào ra khỏi miệng ống. Tỉ lệ mất 30 % là minh hoạ."
+  },
+  "splatter_mL": 0.4,
+  "decompositions": [
+    {
+      "id": "cuoh2-cuo",
+      "from": ["CuOH2"],
+      "minT": 80,
+      "k_per_s": 0.08,
+      "products": [["CuO", 1]],
+      "gases": [["H2Og", 1]],
+      "equation": "Cu(OH)₂ → CuO + H₂O",
+      "observation": "Kết tủa xanh lam chuyển dần sang đen: Cu(OH)₂ mất nước thành CuO.",
+      "source": "sgk; pubchem (Cu(OH)₂ mất nước khi đun nóng)"
+    },
+    {
+      "id": "nahco3",
+      "from": ["NaHCO3s"],
+      "dry": true,
+      "minT": 100,
+      "k_per_s": 0.01,
+      "products": [["Na2CO3", 0.5]],
+      "gases": [["CO2", 0.5], ["H2Og", 0.5]],
+      "equation": "2NaHCO₃ → Na₂CO₃ + CO₂↑ + H₂O",
+      "observation": "Hơi nước ngưng thành giọt nhỏ ở phần trên (nguội) của ống nghiệm; khí CO₂ không màu, làm tắt que đóm. Chất rắn còn lại là Na₂CO₃ trắng.",
+      "source": "sgk; pubchem (NaHCO₃ phân huỷ nhanh khi đun trên 100 °C)"
+    },
+    {
+      "id": "cuso4-dehydrate",
+      "from": ["CuSO45", "CuSO4"],
+      "dry": true,
+      "minT": 110,
+      "k_per_s": 0.012,
+      "products": [["CuSO4anh", 1]],
+      "gases": [["H2Og", 5]],
+      "equation": "CuSO₄·5H₂O → CuSO₄ + 5H₂O",
+      "observation": "Tinh thể xanh lam nhạt dần rồi thành bột trắng (CuSO₄ khan); hơi nước ngưng thành giọt ở miệng ống.",
+      "note": "Thực tế mất 4 phân tử nước ở khoảng 100–110 °C và phân tử cuối ở khoảng 250 °C; mô hình gộp thành một bước (chưa xác minh từng nấc).",
+      "source": "pubchem"
+    },
+    {
+      "id": "nh4cl",
+      "from": ["NH4Cl"],
+      "dry": true,
+      "minT": 300,
+      "k_per_s": 0.03,
+      "sublime": true,
+      "vapor": "#f2f2f2",
+      "equation": "NH₄Cl ⇌ NH₃ + HCl",
+      "observation": "Chất rắn trắng ở đáy ống ít dần; khói trắng bốc lên rồi đọng lại thành lớp trắng ở phần trên (nguội) của ống: ở chỗ nguội NH₃ và HCl kết hợp lại thành NH₄Cl.",
+      "source": "pubchem (thăng hoa khoảng 338 °C)"
+    },
+    {
+      "id": "i2",
+      "from": ["I2"],
+      "dry": true,
+      "minT": 60,
+      "k_per_s": 0.02,
+      "sublime": true,
+      "vapor": "#7a2e8e",
+      "equation": "I₂ (rắn) → I₂ (hơi)",
+      "observation": "Hơi màu tím bay lên đầy ống; ở phần trên nguội, iodine đọng lại thành tinh thể đen tím (thăng hoa rồi ngưng kết).",
+      "source": "pubchem (nóng chảy 113,7 °C, sôi 184,3 °C; áp suất hơi đáng kể khi đun nhẹ)"
+    },
+    {
+      "id": "kmno4",
+      "from": ["KMnO4s"],
+      "dry": true,
+      "minT": 200,
+      "k_per_s": 0.02,
+      "products": [["K2MnO4", 0.5], ["MnO2", 0.5]],
+      "gases": [["O2", 0.5]],
+      "equation": "2KMnO₄ → K₂MnO₄ + MnO₂ + O₂↑",
+      "observation": "Tinh thể tím đen nổ lách tách rồi thành bột đen ánh lục; khí O₂ thoát ra làm que đóm còn tàn đỏ bùng cháy.",
+      "source": "sgk; pubchem (phân huỷ khoảng 240 °C)"
+    }
+  ],
+  "flameColors": {
+    "Na": { "color": "#ffb02e", "name": "vàng cam đậm, giữ lâu", "line": "589,0 và 589,6 nm" },
+    "K": { "color": "#c58ad8", "name": "tím hồng (lilac)", "line": "766,5 và 769,9 nm (đỏ sẫm) cùng vạch tím 404,4 nm" },
+    "Li": { "color": "#e0303a", "name": "đỏ", "line": "670,8 nm" },
+    "Ca": { "color": "#ff6a2a", "name": "đỏ cam" },
+    "Sr": { "color": "#e8202a", "name": "đỏ" },
+    "Ba": { "color": "#a8e05f", "name": "lục nhạt" },
+    "Cu": { "color": "#2ec4b6", "name": "xanh lục lam, thường có chớp trắng" },
+    "source": "libretexts; nist_asd"
+  },
+  "magnesium": {
+    "ignite_s": 3,
+    "ribbon_g": 0.05,
+    "equation": "2Mg + O₂ → 2MgO",
+    "observation": "Băng magnesium bắt lửa, cháy sáng chói màu trắng, toả nhiều nhiệt, còn lại bột trắng MgO.",
+    "safety": "Không nhìn thẳng vào ngọn lửa magnesium (ánh sáng rất mạnh); gắp bằng kẹp sắt, hứng chén sứ bên dưới.",
+    "note": "Thời gian bắt lửa khoảng 3 giây trong ngọn lửa đèn cồn là minh hoạ.",
+    "source": "sgk"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "sources": {
+    "hh": "Hamburger V, Hamilton HL (1951) A series of normal stages in the development of the chick embryo. J Morphol 88:49–92: giờ ấp lấy giữa khoảng của bảng; số cặp đốt thân HH7–HH20 = 3 × giai đoạn − 20",
+    "lab": "Bài 01 Developmental Biology (nhóm 5): phân cắt đĩa, dải nguyên thuỷ và nút Hensen, HH4 là dải nguyên thuỷ hoàn chỉnh, tạo phôi vị xong sau khoảng 4 ngày, bốn túi ngoài phôi",
+    "incubator": "Brinsea Ovation 28 EX: 447 × 332 × 223 mm, 28 trứng gà, tự đảo trứng theo chu kỳ đặt được, tự điều chỉnh độ ẩm, 30 W (thông số từ trang bán hàng, chưa mở tài liệu hãng)",
+    "conditions": "Ấp 37,5–37,8 °C, độ ẩm khoảng 50–55 %, đảo trứng nhiều lần mỗi ngày tới ngày 18 (hướng dẫn ấp trứng gà thông dụng, chưa xác minh tài liệu cụ thể)"
+  },
+  "incubator": { "w": 0.447, "d": 0.332, "h": 0.223, "eggs": 28 },
+  "stages": [
+    [1, 0, "đĩa phôi trước khi có dải nguyên thuỷ: vùng sáng ở giữa, vùng tối bao quanh"],
+    [2, 6.5, "dải nguyên thuỷ bắt đầu: vệt dày hình tam giác ngắn ở phía sau vùng sáng"],
+    [3, 12.5, "dải nguyên thuỷ trung gian, kéo dài tới giữa vùng sáng"],
+    [4, 18.5, "dải nguyên thuỷ hoàn chỉnh, có rãnh nguyên thuỷ và nút Hensen ở đầu trước"],
+    [5, 20.5, "mấu đầu (dây sống) mọc ra phía trước nút Hensen"],
+    [6, 24, "nếp đầu xuất hiện, chưa có đốt thân"],
+    [7, 24.5, "1 cặp đốt thân, nếp thần kinh bắt đầu"],
+    [8, 27.5, "4 cặp đốt thân, nếp thần kinh gặp nhau ở não giữa, đảo máu ở vùng tối"],
+    [9, 31, "7 cặp đốt thân, túi thị giác chính"],
+    [10, 35.5, "10 cặp đốt thân, ba túi não, ống tim cong"],
+    [11, 42.5, "13 cặp đốt thân, năm túi não"],
+    [12, 47, "16 cặp đốt thân, tim hình chữ S, đầu bắt đầu xoay"],
+    [13, 50, "19 cặp đốt thân, đầu xoay một phần"],
+    [14, 51.5, "22 cặp đốt thân, màng ối bắt đầu phủ đầu"],
+    [16, 53.5, "26 cặp đốt thân, mầm cánh"],
+    [17, 58, "30 cặp đốt thân, mầm chân, túi niệu bắt đầu"],
+    [18, 67, "33 cặp đốt thân, màng ối phủ gần hết thân, túi niệu thành túi nhỏ"],
+    [20, 71, "40 cặp đốt thân, mắt có sắc tố, phôi xoay hẳn sang trái"],
+    [22, 84, "chi dài ra, túi niệu lớn dần"],
+    [24, 96, "chi có chồi ngón, tạo phôi vị và các túi ngoài phôi đã đủ"],
+    [26, 114, "chi gấp khuỷu, mầm ngón rõ"],
+    [28, 132, "mỏ bắt đầu nhô ra"],
+    [30, 162, "mầm lông đầu tiên"],
+    [34, 192, "mí mắt phát triển, lông phủ nhiều vùng"],
+    [36, 240, "mỏ sừng hoá, móng chân"],
+    [40, 336, "phôi lớn chiếm phần lớn trứng, lông dài"],
+    [44, 432, "noãn hoàng rút vào bụng"],
+    [46, 492, "nở"]
+  ],
+  "model": {
+    "optC": 37.75, "zeroC": 27, "_rate": "Tốc độ phát triển tỉ lệ với (T − 27 °C) so với 37,75 °C (minh hoạ)",
+    "baseDeath": 0.004, "hotC": 39.5, "hotPerC": 0.5, "lethalC": 41, "coldC": 35, "coldDeath": 0.03, "noTurn": 0.04, "dryRh": 35, "wetRh": 75, "rhDeath": 0.01,
+    "_death": "Nguy cơ chết mỗi ngày: nền 0,4 %; trên 39,5 °C thêm 50 % mỗi độ; trên 41 °C chết trong vài giờ; dưới 35 °C thêm 3 %; không đảo trứng ngày 3–7 thêm 4 % (phôi dính màng vỏ); độ ẩm ngoài 35–75 % thêm 1 % (minh hoạ)",
+    "fertile": 0.9, "_fertile": "90 % trứng có phôi (minh hoạ)",
+    "windowTear": 0.5, "_window": "Mở cửa sổ vỏ mà không rút bớt 2–3 mL lòng trắng: noãn hoàng dính vỏ, rách màng, 50 % phôi chết (minh hoạ)"
+  }
+}

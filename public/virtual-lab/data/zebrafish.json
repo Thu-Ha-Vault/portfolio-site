@@ -1,0 +1,31 @@
+{
+  "species": "Danio rerio",
+  "sources": {
+    "stages": "Kimmel C.B. và cộng sự (1995) Stages of embryonic development of the zebrafish. Dev. Dyn. 203: 253–310, bảng 1 (giờ sau thụ tinh ở 28,5 °C); thời gian ở nhiệt độ khác: H_T = h / (0,055·T − 0,57)",
+    "oecd": "OECD Test Guideline 236 (2013), Fish Embryo Acute Toxicity (FET) Test: 20 phôi/nồng độ, 96 giờ, 26 ± 1 °C; 4 tiêu chí chết (phôi đông tụ, không hình thành thể tiết, đuôi không tách khỏi noãn hoàng, không có nhịp tim); hợp lệ khi tỉ lệ thụ tinh ≥ 70 %, đối chứng âm sống ≥ 90 %, đối chứng âm nở ≥ 80 % lúc 96 giờ, 3,4-dichloroaniline 4 mg/L gây chết ≥ 30 %",
+    "pg": "Báo cáo thực hành Nhóm 5, Khoa Sinh học ĐH KHTN – ĐHQGHN: Propylene glycol 0–500 mg/L, 15 phôi/giếng; 50 mg/L không chết, 150 mg/L chết 93–100 %, không dị dạng; LC50 khoảng 75–125 mg/L",
+    "dca": "3,4-dichloroaniline là đối chứng dương của OECD 236; LC50 và EC50 trong mô hình là giả định gần đúng, chọn sao cho 4 mg/L gây chết khoảng 50–60 % như các phòng thí nghiệm thường gặp"
+  },
+  "stages": [
+    { "id": "zygote", "h": 0, "name": "Hợp tử (1 tế bào)" },
+    { "id": "cleavage", "h": 0.75, "name": "Phân cắt (2–64 tế bào)" },
+    { "id": "blastula", "h": 2.25, "name": "Phôi nang" },
+    { "id": "gastrula", "h": 5.25, "name": "Phôi vị (lan phủ 50 %)" },
+    { "id": "bud", "h": 10, "name": "Chồi đuôi" },
+    { "id": "segmentation", "h": 10.33, "name": "Phân đốt (hình thành thể tiết)" },
+    { "id": "pharyngula", "h": 24, "name": "Pharyngula (tim đập, sắc tố)" },
+    { "id": "hatching", "h": 48, "name": "Giai đoạn nở" },
+    { "id": "larva", "h": 72, "name": "Ấu thể (bơi tự do)" }
+  ],
+  "hatch": { "mean": 60, "sd": 7, "note": "Giờ nở ở 28,5 °C: phôi nở rải rác trong khoảng 48–72 hpf (Kimmel 1995); giả định phân phối chuẩn" },
+  "background": { "death": 0.04, "note": "Tỉ lệ chết tự nhiên trong 96 giờ ở phôi khoẻ (giả định; báo cáo thực hành ghi 7–20 % ở đối chứng)" },
+  "fertilization": [0.75, 0.95],
+  "chemicals": [
+    { "id": "PG", "name": "Propylene glycol", "unit": "mg/L", "lc50": 100, "slope": 8, "teratogen": null,
+      "series": [0, 10, 50, 150, 350, 500],
+      "note": "Theo số liệu thực hành: phôi chết chủ yếu trong 24 giờ đầu, không gây dị dạng ở phôi sống sót." },
+    { "id": "DCA", "name": "3,4-Dichloroaniline", "unit": "mg/L", "lc50": 3.6, "slope": 4, "teratogen": { "ec50": 2.2, "slope": 3 },
+      "series": [0, 0.5, 1, 2, 4, 8],
+      "note": "Đối chứng dương của OECD 236; ở nồng độ dưới mức gây chết, phôi thường phù màng tim, phù noãn hoàng, cong đuôi." }
+  ]
+}

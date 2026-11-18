@@ -1,0 +1,140 @@
+{
+  "note": "Loài dùng cho các phép lai mở rộng của thí nghiệm Mendel. Lịch sinh trưởng, năng suất dùng lại của đậu Hà Lan (data/pea.json) cho gọn: đây là giả định, không phải số liệu của các loài này.",
+  "sweetpea": {
+    "name": "Đậu thơm",
+    "latin": "Lathyrus odoratus",
+    "form": "climber",
+    "source": "Bateson W., Saunders E.R., Punnett R.C. (1905), Reports to the Evolution Committee of the Royal Society II: lai hai dòng đậu thơm hoa trắng cho F1 hoa tím, F2 phân li xấp xỉ 9 tím : 7 trắng (tương tác bổ trợ của hai gen C và P)",
+    "traits": [
+      {
+        "id": "flowerCP",
+        "genes": [
+          "C",
+          "P"
+        ],
+        "kind": "complementary",
+        "name": "Màu hoa",
+        "dom": "tím",
+        "rec": "trắng",
+        "on": "flower",
+        "colors": {
+          "dom": "#8a4fb0",
+          "rec": "#f3f1ea"
+        },
+        "note": "Hai gen cùng một con đường tổng hợp anthocyanin: thiếu enzyme của một trong hai bước (cc hoặc pp) là hoa trắng."
+      }
+    ]
+  },
+  "snapdragon": {
+    "name": "Hoa mõm chó",
+    "latin": "Antirrhinum majus",
+    "form": "spike",
+    "source": "Ví dụ kinh điển về trội không hoàn toàn: hoa đỏ × hoa trắng cho F1 hoa hồng, F2 phân li 1 đỏ : 2 hồng : 1 trắng",
+    "traits": [
+      {
+        "id": "flowerR",
+        "gene": "R",
+        "kind": "incomplete",
+        "name": "Màu hoa",
+        "dom": "đỏ",
+        "het": "hồng",
+        "rec": "trắng",
+        "on": "flower",
+        "colors": {
+          "dom": "#c8323c",
+          "het": "#ef9ab3",
+          "rec": "#f3f1ea"
+        },
+        "note": "Một alen R chỉ tạo được khoảng một nửa lượng sắc tố, nên thể dị hợp có màu trung gian."
+      }
+    ]
+  },
+  "squash": {
+    "name": "Bí ngô mùa hè",
+    "latin": "Cucurbita pepo",
+    "form": "bush",
+    "source": "Ví dụ kinh điển về át chế trội ở màu quả bí (Cucurbita pepo): gen W cho quả trắng át gen Y (vàng) và y (xanh); F2 của dòng trắng WWYY × dòng xanh wwyy phân li 12 trắng : 3 vàng : 1 xanh",
+    "traits": [
+      {
+        "id": "fruitWY",
+        "genes": [
+          "W",
+          "Y"
+        ],
+        "kind": "dominant-epistasis",
+        "name": "Màu quả",
+        "dom": "trắng",
+        "mid": "vàng",
+        "rec": "xanh",
+        "on": "pod",
+        "note": "Alen W chặn con đường tạo sắc tố ở vỏ quả nên quả trắng bất kể gen Y; khi ww, Y_ cho quả vàng, yy cho quả xanh.",
+        "colors": {
+          "dom": "#f1ede0",
+          "mid": "#e8c43a",
+          "rec": "#4f8a34"
+        }
+      }
+    ]
+  },
+  "maize": {
+    "name": "Ngô",
+    "latin": "Zea mays",
+    "form": "spike",
+    "source": "Ví dụ kinh điển về át chế lặn ở màu lớp aleurone hạt ngô (gen C cần cho mọi sắc tố, gen Pr cho tím, pr cho đỏ): F2 của dòng tím CCPrPr × dòng trắng ccprpr phân li 9 tím : 3 đỏ : 4 trắng (Griffiths et al., An Introduction to Genetic Analysis; chưa xác minh số liệu đếm gốc)",
+    "traits": [
+      {
+        "id": "aleuroneCPr",
+        "genes": [
+          "C",
+          "Pr"
+        ],
+        "kind": "recessive-epistasis",
+        "name": "Màu hạt (aleurone)",
+        "dom": "tím",
+        "mid": "đỏ",
+        "rec": "trắng",
+        "on": "seed",
+        "note": "cc không tạo được anthocyanin nên hạt trắng bất kể gen Pr; khi có C, Pr_ cho tím, prpr cho đỏ."
+      }
+    ]
+  },
+  "capsella": {
+    "name": "Tề thái (rau tề)",
+    "latin": "Capsella bursa-pastoris",
+    "form": "spike",
+    "source": "Shull G.H. (1914) Duplicate genes for capsule-form in Bursa bursa-pastoris. Zeitschrift für induktive Abstammungs- und Vererbungslehre 12: 97–149: F2 của dòng quả tam giác × dòng quả bầu dục phân li 15 : 1",
+    "traits": [
+      {
+        "id": "capsuleAB",
+        "genes": [
+          "A",
+          "B"
+        ],
+        "kind": "duplicate",
+        "name": "Hình quả",
+        "dom": "tam giác",
+        "rec": "bầu dục",
+        "on": "pod",
+        "note": "Hai gen trùng lặp: chỉ một alen trội ở một trong hai gen đã đủ tạo quả hình tam giác; chỉ aabb mới có quả bầu dục."
+      }
+    ]
+  },
+  "aurea": {
+    "name": "Hoa mõm chó aurea",
+    "latin": "Antirrhinum majus",
+    "form": "spike",
+    "source": "Baur E. (1907) Untersuchungen über die Erblichkeitsverhältnisse einer nur in Bastardform lebensfähigen Sippe von Antirrhinum majus. Berichte der Deutschen Botanischen Gesellschaft 25: 442–454: cây lá vàng (aurea) tự thụ cho 1 cây lá xanh : 2 cây lá vàng : 1 cây con trắng chết, nên cây sống phân li 2 vàng : 1 xanh",
+    "traits": [
+      {
+        "id": "aurea",
+        "gene": "Y",
+        "kind": "lethal",
+        "name": "Màu lá",
+        "dom": "vàng (aurea)",
+        "rec": "xanh",
+        "on": "plant",
+        "note": "Alen Y làm giảm diệp lục: dị hợp Yy lá vàng, đồng hợp YY không có diệp lục nên cây con chết khi hết chất dự trữ trong hạt."
+      }
+    ]
+  }
+}
