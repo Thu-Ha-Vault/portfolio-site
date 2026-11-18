@@ -5,6 +5,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeImages from './src/lib/rehype-images.mjs';
 import rehypeTableScroll from './src/lib/rehype-table-scroll.mjs';
+import rehypeTaskList from './src/lib/rehype-task-list.mjs';
+import rehypeLocalLinks from './src/lib/rehype-local-links.mjs';
 
 export default defineConfig({
   site: 'https://thuha.ceovanta.com',
@@ -16,7 +18,7 @@ export default defineConfig({
   vite: { build: { chunkSizeWarningLimit: 800 } },
   markdown: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [[rehypeKatex, { strict: false }], rehypeImages, rehypeTableScroll],
+    rehypePlugins: [[rehypeKatex, { strict: false }], rehypeImages, rehypeTableScroll, rehypeTaskList, rehypeLocalLinks],
     syntaxHighlight: { type: 'shiki', excludeLangs: ['mermaid'] },
     // Dark Shiki colours are inline by default; light reading swaps to var(--shiki-light) / var(--shiki-light-bg) (global.css).
     shikiConfig: { themes: { light: 'github-light', dark: 'github-dark-dimmed' }, defaultColor: 'dark' },
