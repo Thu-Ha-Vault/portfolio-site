@@ -241,7 +241,7 @@ Cohen's d = 0.65
 
 **Figure 2.** Beak depth of the 50 *G. fortis* that did not survive and the 50 that survived the 1977 drought. The 95% confidence intervals, based on the t distribution (df = 49), are 8.86–9.36 mm and 9.43–9.91 mm. Data: HHMI BioInteractive (2021), drawn from the data of P. R. Grant and B. R. Grant.
 
-Figure 2 shows what "p = 0.0015" hides: the two groups overlap a great deal; selection shifts the population mean rather than setting a threshold between life and death. That is why the difference, the confidence interval, and the effect size should be reported next to the p-value (→ Statistical hypothesis testing). The result points in the same direction as the original study: Boag and Grant (1981) reported that large birds, especially males with large beaks, survived best because they could crack the large, hard seeds that predominated during the drought.
+Figure 2 shows what "p = 0.0015" hides: the two groups overlap a great deal; selection shifts the population mean rather than setting a threshold between life and death. That is why the difference, the confidence interval, and the effect size should be reported next to the p-value (→ [Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). The result points in the same direction as the original study: Boag and Grant (1981) reported that large birds, especially males with large beaks, survived best because they could crack the large, hard seeds that predominated during the drought.
 
 **Table 5.** Four traits in the two groups (n = 50 per group; two-sample t-test, df = 98)
 

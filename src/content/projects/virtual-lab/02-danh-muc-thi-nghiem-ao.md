@@ -34,7 +34,7 @@ isIndex: false
 	- Lai một cặp và hai cặp tính trạng (phân li độc lập), lai phân tích, lai thuận nghịch.
 	- Sinh trưởng: hạt → cây con → ra hoa → quả → hạt; mỗi quả có số hạt ngẫu nhiên.
 - **Kết quả**: bảng đếm F2, ví dụ số liệu thật của Mendel là 5474 hạt trơn : 1850 hạt nhăn. Tỉ lệ gần 3 : 1 hoặc 9 : 3 : 3 : 1 nhưng luôn lệch ngẫu nhiên. (→ Quy luật Mendel)
-	- Người dùng tự kiểm định $\chi^2$ để kết luận số liệu có phù hợp tỉ lệ lý thuyết không. (→ Kiểm định χ²)
+	- Người dùng tự kiểm định $\chi^2$ để kết luận số liệu có phù hợp tỉ lệ lý thuyết không. (→ [Kiểm định χ²](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 - **Mở rộng**: tương tác gen (9 : 7, 12 : 3 : 1, 9 : 3 : 4…), trội không hoàn toàn (hoa mõm chó, 1 : 2 : 1).
 
 ### A2. Ruồi giấm (Morgan)

@@ -241,7 +241,7 @@ Cohen's d = 0.65
 
 **Hình 2.** Độ sâu mỏ của 50 con *G. fortis* không sống sót và 50 con sống sót qua hạn hán 1977. Khoảng tin cậy 95% theo phân phối t (df = 49): 8,86–9,36 mm và 9,43–9,91 mm. Dữ liệu: HHMI BioInteractive (2021), trích từ dữ liệu của P. R. Grant và B. R. Grant.
 
-Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiều; chọn lọc dịch chuyển trung bình quần thể chứ không phải một ngưỡng sống chết. Vì vậy nên báo cáo chênh lệch, khoảng tin cậy và cỡ hiệu ứng cạnh p-value (→ Kiểm định giả thiết thống kê). Kết quả cùng chiều với nghiên cứu gốc: Boag và Grant (1981) báo cáo rằng chim lớn, đặc biệt chim trống có mỏ lớn, sống sót tốt nhất vì tách được hạt to và cứng chiếm ưu thế trong hạn hán.
+Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiều; chọn lọc dịch chuyển trung bình quần thể chứ không phải một ngưỡng sống chết. Vì vậy nên báo cáo chênh lệch, khoảng tin cậy và cỡ hiệu ứng cạnh p-value (→ [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). Kết quả cùng chiều với nghiên cứu gốc: Boag và Grant (1981) báo cáo rằng chim lớn, đặc biệt chim trống có mỏ lớn, sống sót tốt nhất vì tách được hạt to và cứng chiếm ưu thế trong hạn hán.
 
 **Bảng 5.** Bốn đặc điểm của hai nhóm (n = 50 mỗi nhóm; kiểm định t hai mẫu, df = 98)
 

@@ -117,7 +117,7 @@ with(sleep2, t.test(extra.1, extra.2, paired = TRUE))$p.value   # 0.00283
 
 ### 2.4. Bài học
 
-Thiết kế mỗi người tự làm đối chứng được dùng chính vì nó loại được biến thiên giữa các cá thể. Phân tích như hai nhóm độc lập lãng phí đúng phần thông tin đó, và ở đây đổi kết luận từ "có khác biệt rõ" thành "chưa đủ bằng chứng". Tín hiệu nhận ra thiết kế ghép cặp: một cột định danh (`ID`, `Chick`, `Subject`) lặp lại qua các mức của biến nhóm. Kiểm định giả thuyết nói chung được bàn kỹ hơn ở bài kiểm định giả thiết thống kê.
+Thiết kế mỗi người tự làm đối chứng được dùng chính vì nó loại được biến thiên giữa các cá thể. Phân tích như hai nhóm độc lập lãng phí đúng phần thông tin đó, và ở đây đổi kết luận từ "có khác biệt rõ" thành "chưa đủ bằng chứng". Tín hiệu nhận ra thiết kế ghép cặp: một cột định danh (`ID`, `Chick`, `Subject`) lặp lại qua các mức của biến nhóm. Kiểm định giả thuyết nói chung được bàn kỹ hơn ở [bài kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/).
 
 ## 3. iris: dữ liệu của Anderson, bài báo của Fisher, và tên một tạp chí
 

@@ -38,7 +38,7 @@ A confidence interval (CI) is not just a step on the way to a hypothesis test. C
 
 It also helps to separate the standard deviation (SD) from the standard error (SE). The SD describes how spread out the individual observations are; the SE, which equals the SD divided by √n, describes the uncertainty of the sample mean. Altman and Bland (2005) point out that you report the SD to describe the data and the SE or a CI to say how precise the mean is. A larger sample shrinks the SE; it does not shrink the SD.
 
-The four issues are ordered by increasing impact: n or n−1 (section 3), z or t (section 4), intervals for a proportion (section 5), and one outlier (section 6, the core of the article). Hypothesis testing and regression are covered in Statistical hypothesis testing and Correlation and regression.
+The four issues are ordered by increasing impact: n or n−1 (section 3), z or t (section 4), intervals for a proportion (section 5), and one outlier (section 6, the core of the article). Hypothesis testing and regression are covered in [Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/) and Correlation and regression.
 
 ## 2. Data and methods
 
@@ -507,7 +507,7 @@ The third sentence is a sensitivity analysis: both scenarios plus the flagging c
 5. **For a proportion, use Wilson**; state whether a sample-size error is absolute or relative.
 6. **If there are outliers, report a sensitivity analysis** based on predefined criteria.
 
-In the same spirit of "don't assume what you don't need to," Welch's t test does not assume equal variances (Statistical hypothesis testing). A 95% CI on real measurements: Darwin's finches; the 40 heights recomputed in R: [Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/); basic descriptive functions in R: [presenting and describing data in R](/en/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
+In the same spirit of "don't assume what you don't need to," Welch's t test does not assume equal variances ([Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). A 95% CI on real measurements: Darwin's finches; the 40 heights recomputed in R: [Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/); basic descriptive functions in R: [presenting and describing data in R](/en/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
 
 ## 9. Conclusion
 

@@ -13,10 +13,14 @@ folder: 'Tiếng Pháp / Grammar / E - Thì, thức, thể'
 vaultPath: Projects/Portfolio Website/Bài viết/Tiếng Pháp/BV - 22 - Le subjonctif.md
 url: /blog/le-subjonctif-thuc-gia-dinh/
 topic: french
-updated: '2026-11-13'
+updated: '2026-11-18'
 date: '2026-11-13'
 status: draft
 order: 22
+translationUrl: /en/blog/le-subjonctif-thuc-gia-dinh/
+translationTitle: >-
+  French Subjunctive for Vietnamese Learners: Real or Possible, Forms, and 10
+  Tricky Pairs
 description: >-
   Subjonctif (thức giả định) là phần mà nhiều người học tiếng Pháp vẫn chọn theo
   cảm giác. Bài này đưa ra một câu hỏi để chọn thức (người nói coi sự việc là

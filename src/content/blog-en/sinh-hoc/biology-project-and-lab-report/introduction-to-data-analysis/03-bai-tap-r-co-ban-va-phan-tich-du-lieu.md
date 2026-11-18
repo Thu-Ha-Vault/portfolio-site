@@ -118,7 +118,7 @@ with(sleep2, t.test(extra.1, extra.2, paired = TRUE))$p.value   # 0.00283
 
 ### 2.4. Lesson
 
-A design in which each person serves as their own control is used precisely because it removes variability between individuals. Analyzing it as two independent groups wastes exactly that information, and here it changes the conclusion from "a clear difference" to "not enough evidence." The telltale sign of a paired design: an identifier column (`ID`, `Chick`, `Subject`) that repeats across the levels of the grouping variable. Hypothesis testing in general is covered in more depth in the article on statistical hypothesis testing.
+A design in which each person serves as their own control is used precisely because it removes variability between individuals. Analyzing it as two independent groups wastes exactly that information, and here it changes the conclusion from "a clear difference" to "not enough evidence." The telltale sign of a paired design: an identifier column (`ID`, `Chick`, `Subject`) that repeats across the levels of the grouping variable. Hypothesis testing in general is covered in more depth in [the article on statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/).
 
 ## 3. iris: Anderson's data, Fisher's paper, and the name of a journal
 

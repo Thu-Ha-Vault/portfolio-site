@@ -68,7 +68,7 @@ isIndex: false
 	- Ảnh gel sinh từ đúng các ống đã pha, vẽ trong thẻ kết quả; hình cận cảnh của máy mở ra với đúng ống hoặc gel đó.
 	- Làm sai thì ra kết quả sai: thiếu Taq polymerase, mồi, Mg²⁺, dNTP hay DNA khuôn thì không có băng; thiếu buffer thì sản phẩm quá ít; DNA khuôn rơi vào ống ĐC− thì đối chứng âm có băng; quên đối chứng âm, nạp gel trước khi chạy PCR, chụp trước khi điện di đều có cảnh báo.
 	- Có sai số ngẫu nhiên theo seed: số bản khuôn ban đầu, hiệu suất mỗi chu kỳ, vị trí băng. Số liệu và nguồn ở đầu `src/core/pcr-chain.js`.
-- **Mendel** (2026-10-16), ở khu trồng trọt, 3 protocol: lai một cặp (hạt trơn × nhăn, 13 bước), lai hai cặp (trơn vàng × nhăn xanh, 9 : 3 : 3 : 1), màu hoa (phải gieo hạt F2 thành cây mới đếm). (→ Quy luật Mendel, Kiểm định χ²)
+- **Mendel** (2026-10-16), ở khu trồng trọt, 3 protocol: lai một cặp (hạt trơn × nhăn, 13 bước), lai hai cặp (trơn vàng × nhăn xanh, 9 : 3 : 3 : 1), màu hoa (phải gieo hạt F2 thành cây mới đếm). (→ Quy luật Mendel, [Kiểm định χ²](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/))
 	- Bảng điều khiển vườn đậu nằm trong nửa protocol: đồng hồ ảo (+1, +7 ngày, tua tới giai đoạn), gieo, khử nhị, thu hoạch, thụ phấn chéo, đếm, sổ thí nghiệm CSV.
 	- Đậu tự thụ phấn trong nụ (khoảng ngày 56): quên khử nhị hoặc khử nhị muộn thì hạt thu được là hạt tự thụ; khử nhị mà không thụ phấn thì hoa rụng, không có hạt; nóng quá thì cây chậm lớn và rụng hoa.
 	- Thẻ "Đếm kiểu hình" có bảng quan sát/kỳ vọng, χ², p, và số liệu thật của Mendel (5474 : 1850; 315 : 108 : 101 : 32) để so sánh.
