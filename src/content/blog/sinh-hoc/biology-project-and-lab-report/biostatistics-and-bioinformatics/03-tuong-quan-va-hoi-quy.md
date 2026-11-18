@@ -452,7 +452,7 @@ Bốn tình huống cho cùng một bài học: chọn mô hình hồi quy là q
 
 Tóm lại: F có ý nghĩa mà các hệ số đa thức không có ý nghĩa nghĩa là mô hình thừa tham số, hãy hạ bậc. t tới hạn của từng hệ số dùng df Residual; đọc thẳng cột P-value là an toàn nhất. So mô hình khác số tham số bằng AICc hoặc cross-validation, không bằng SSE thô. Biến đổi logarit là giả định về sai số, cần phần dư xác nhận. Và khi có mô hình mà tham số mang nghĩa sinh học, như tổng nhiệt hay von Bertalanffy, hãy bắt đầu từ nó: kể cả khi khớp kém đa thức một chút, nó cho những con số đối chiếu được với tài liệu và những dự đoán kiểm chứng được.
 
-Bài tiếp theo chuyển sang phân tích cơ sở dữ liệu trên Excel: tổ chức bảng số liệu sinh học trước khi đưa vào bất kỳ mô hình nào.
+Bài tiếp theo chuyển sang [phân tích cơ sở dữ liệu trên Excel](/blog/phan-tich-co-so-du-lieu/): tổ chức bảng số liệu sinh học trước khi đưa vào bất kỳ mô hình nào.
 
 ## Tài liệu tham khảo
 

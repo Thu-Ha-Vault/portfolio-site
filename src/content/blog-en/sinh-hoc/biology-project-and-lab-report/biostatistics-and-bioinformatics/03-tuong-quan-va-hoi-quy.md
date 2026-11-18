@@ -453,7 +453,7 @@ The four cases teach the same lesson: choosing a regression model is a biologica
 
 In short: a significant F with non-significant polynomial coefficients means the model is over-parameterized, so lower the degree. The critical t for each coefficient uses df Residual; reading the P-value column directly is the safest option. Compare models with different numbers of parameters using AICc or cross-validation, not raw SSE. A log transformation is an assumption about the errors and needs to be confirmed by the residuals. And when there is a model whose parameters carry biological meaning, like the degree-day or von Bertalanffy model, start from it: even if it fits slightly worse than a polynomial, it yields numbers you can check against the literature and predictions you can test.
 
-The next article moves on to database analysis in Excel: organizing biological data tables before they go into any model.
+The next article moves on to [database analysis in Excel](/en/blog/phan-tich-co-so-du-lieu/): organizing biological data tables before they go into any model.
 
 ## References
 

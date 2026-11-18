@@ -172,7 +172,7 @@ Có ba chỗ dễ sai. Một, nếu quên cắt version suffix, mọi dòng đ�
 | Symbol bị đổi thành ngày | "2-Sep" ở chỗ của SEPT2 | định dạng Plain text; tìm ô kiểu ngày |
 | Giá trị ngoài miền | tổng hoặc trung bình bất thường | `MIN`, `MAX`; data validation |
 
-Một quy tắc data validation kiểu "số trong khoảng" chặn được ô 640 ở mục 1 ngay lúc nhập. Còn lọc dòng bằng Filter hay Advanced Filter thì tương ứng với mệnh đề WHERE ở mục sau (Phân tích cơ sở dữ liệu trên Excel).
+Một quy tắc data validation kiểu "số trong khoảng" chặn được ô 640 ở mục 1 ngay lúc nhập. Còn lọc dòng bằng Filter hay Advanced Filter thì tương ứng với mệnh đề WHERE ở mục sau ([Phân tích cơ sở dữ liệu trên Excel](/blog/phan-tich-co-so-du-lieu/)).
 
 Mọi bước trên đều làm được trong spreadsheet. Điểm yếu nằm ở chỗ khác: kéo công thức, sắp xếp, dán đè đều không để lại dấu vết đọc lại được. Vì thế Broman và Woo (2018) khuyên không đặt phép tính trong file dữ liệu gốc, còn Wilson et al. (2017) khuyên ghi lại mọi bước xử lý.
 

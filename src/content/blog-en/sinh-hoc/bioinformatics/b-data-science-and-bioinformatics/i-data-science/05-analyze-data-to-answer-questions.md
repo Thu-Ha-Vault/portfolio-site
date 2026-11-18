@@ -173,7 +173,7 @@ There are three easy mistakes here. First, if you forget to strip the version su
 | Symbol converted into a date | "2-Sep" in place of SEPT2 | Plain text formatting; look for date-typed cells |
 | Out-of-range values | unusual total or mean | `MIN`, `MAX`; data validation |
 
-A "number in range" data validation rule blocks the 640 cell from Section 1 at the moment of entry. Filtering rows with Filter or Advanced Filter corresponds to the WHERE clause in the next section (Database analysis in Excel).
+A "number in range" data validation rule blocks the 640 cell from Section 1 at the moment of entry. Filtering rows with Filter or Advanced Filter corresponds to the WHERE clause in the next section ([Database analysis in Excel](/en/blog/phan-tich-co-so-du-lieu/)).
 
 Every step above can be done in a spreadsheet. The weakness lies elsewhere: filling formulas down, sorting and pasting over cells leave no trace that can be read back. That is why Broman and Woo (2018) advise against putting calculations in the raw data file, and Wilson et al. (2017) advise recording every processing step.
 
