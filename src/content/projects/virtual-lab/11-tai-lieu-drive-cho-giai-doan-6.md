@@ -113,7 +113,7 @@ Kế hoạch và tiêu chí "xong" của giai đoạn 6 nằm ở mục 8 của 
 
 ### 3.8. Hồi quy phi tuyến
 - Nguồn: Ritz & Streibig 2005, *Bioassay analysis using R* (PDF trong thư mục Sinh học).
-- App: `nls()` (Levenberg–Marquardt, sai số chuẩn từ (JᵀJ)⁻¹s²) trong `src/core/stats.js`; mô hình Michaelis–Menten và logistic 4 tham số của gói drc trong bảng Phân tích số liệu (→ Tương quan và hồi quy); mã R xuất ra là `nls()` hoặc `drm()`.
+- App: `nls()` (Levenberg–Marquardt, sai số chuẩn từ (JᵀJ)⁻¹s²) trong `src/core/stats.js`; mô hình Michaelis–Menten và logistic 4 tham số của gói drc trong bảng Phân tích số liệu (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/)); mã R xuất ra là `nls()` hoặc `drm()`.
 	- Bộ Puromycin (Treloar 1974) trong `data/stats.json`, protocol `st-puromycin`: khớp ra Vm = 212,7, K = 0,0641 (tế bào xử lý) và Vm = 160,3, K = 0,0477 (không xử lý), đúng như trong bài báo.
 	- Bộ `ryegrass` của bài báo không có số liệu gốc trong PDF nên không đưa vào; số nhớ lại không ra đúng tham số của bài báo.
 

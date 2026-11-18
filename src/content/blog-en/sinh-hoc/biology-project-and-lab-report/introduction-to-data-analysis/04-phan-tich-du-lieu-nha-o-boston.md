@@ -359,7 +359,7 @@ In M4 fitted on the full dataset, the coefficient of `lstat` is +1.87. Read hast
 
 $$\frac{\partial\, \widehat{medv}}{\partial\, lstat} = 1.87 - 0.331 \cdot rm - 0.036 \cdot rad.$$
 
-At the means `rm` = 6.28 and `rad` = 9.55, the slope is −0.56 thousand USD per percentage point of `lstat`; at the mean `rm`, the slope is −0.25 at `rad` = 1 and −1.08 at `rad` = 24. The right way to read a model with interactions is to report the effect at meaningful values of the other variable, or to center the variables before creating the interactions so that the main coefficient means "the slope at the mean". Background on multiple regression is in the article on correlation and regression and the article on linear and logistic regression.
+At the means `rm` = 6.28 and `rad` = 9.55, the slope is −0.56 thousand USD per percentage point of `lstat`; at the mean `rm`, the slope is −0.25 at `rad` = 1 and −1.08 at `rad` = 24. The right way to read a model with interactions is to report the effect at meaningful values of the other variable, or to center the variables before creating the interactions so that the main coefficient means "the slope at the mean". Background on multiple regression is in the [article on correlation and regression](/en/blog/tuong-quan-va-hoi-quy/) and the article on linear and logistic regression.
 
 The interactions with `rad` are also questionable: multiplying `lstat` or `rm` by an ordinal index in which 24 is not "three times" 8 in any sense assumes that the slope changes linearly with a number that has no measurement scale. Re-encoding `rad` does not improve accuracy (section 3.5), but the issue here is interpretation.
 

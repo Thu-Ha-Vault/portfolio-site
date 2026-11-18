@@ -38,7 +38,7 @@ A confidence interval (CI) is not just a step on the way to a hypothesis test. C
 
 It also helps to separate the standard deviation (SD) from the standard error (SE). The SD describes how spread out the individual observations are; the SE, which equals the SD divided by √n, describes the uncertainty of the sample mean. Altman and Bland (2005) point out that you report the SD to describe the data and the SE or a CI to say how precise the mean is. A larger sample shrinks the SE; it does not shrink the SD.
 
-The four issues are ordered by increasing impact: n or n−1 (section 3), z or t (section 4), intervals for a proportion (section 5), and one outlier (section 6, the core of the article). Hypothesis testing and regression are covered in [Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/) and Correlation and regression.
+The four issues are ordered by increasing impact: n or n−1 (section 3), z or t (section 4), intervals for a proportion (section 5), and one outlier (section 6, the core of the article). Hypothesis testing and regression are covered in [Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/) and [Correlation and regression](/en/blog/tuong-quan-va-hoi-quy/).
 
 ## 2. Data and methods
 

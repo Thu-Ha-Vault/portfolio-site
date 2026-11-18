@@ -453,7 +453,7 @@ Phần lớn kết luận "có khác biệt" giữ nguyên khi chuyển sang cá
 
 Danh sách công cụ của ToolPak theo trang hỗ trợ của Microsoft (Microsoft, n.d.) gồm ANOVA, F-test, ba loại t-test và z-test, không có công cụ hậu kiểm. Excel vẫn tốt để nhập và mô tả số liệu; phần suy luận vượt quá t-test và ANOVA nên chuyển sang R (làm quen với R) hoặc Python.
 
-Hai chủ đề còn bỏ ngỏ, hồi quy và mô hình tuyến tính tổng quát (GLM), được bàn tiếp ở bài về tương quan và hồi quy, nơi phân tích tỷ lệ chết của cá theo nồng độ sẽ có đất để làm đầy đủ.
+Hai chủ đề còn bỏ ngỏ, hồi quy và mô hình tuyến tính tổng quát (GLM), được bàn tiếp ở [bài về tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/), nơi phân tích tỷ lệ chết của cá theo nồng độ sẽ có đất để làm đầy đủ.
 
 ## Tài liệu tham khảo
 

@@ -37,7 +37,7 @@ Khoảng tin cậy (confidence interval, CI) không chỉ là bước trung gian
 
 Cũng cần tách độ lệch chuẩn (standard deviation, SD) khỏi sai số chuẩn (standard error, SE). SD mô tả mức phân tán của từng quan sát; SE, bằng SD chia √n, mô tả độ bất định của trung bình mẫu. Altman và Bland (2005) nhắc rằng muốn mô tả dữ liệu thì báo cáo SD, muốn nói trung bình chính xác đến đâu thì dùng SE hoặc CI. Tăng cỡ mẫu làm SE nhỏ đi, còn SD thì không.
 
-Bốn vấn đề được xếp theo mức ảnh hưởng tăng dần: n hay n−1 (mục 3), z hay t (mục 4), khoảng cho tỷ lệ (mục 5) và một ngoại lai (mục 6, phần trọng tâm). Phần kiểm định và hồi quy nằm ở [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/) và Tương quan và hồi quy.
+Bốn vấn đề được xếp theo mức ảnh hưởng tăng dần: n hay n−1 (mục 3), z hay t (mục 4), khoảng cho tỷ lệ (mục 5) và một ngoại lai (mục 6, phần trọng tâm). Phần kiểm định và hồi quy nằm ở [Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/) và [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/).
 
 ## 2. Dữ liệu và cách tính
 

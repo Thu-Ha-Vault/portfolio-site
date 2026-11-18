@@ -83,7 +83,7 @@ description: >-
 	- Mùa vụ và vùng tính trên 1995–2010, các năm đủ tháng.
 	- Trước 1980 dữ liệu quốc gia quá thưa, nên ngưỡng năm dịch tính trên 1980–2024.
 	- Tỉ lệ mắc chỉ tính cho 2004–2010: đó là giai đoạn duy nhất số ca và dân số dùng cùng ranh giới tỉnh (đợt tách tỉnh năm 1997 đã được Tổng cục Thống kê tính lùi theo tỉnh mới, còn số ca năm 1995–1996 vẫn theo tỉnh cũ).
-	- Tương quan Spearman tính bằng tương quan Pearson của thứ hạng, ít bị ảnh hưởng bởi các đợt bùng phát cực lớn (→ Tương quan và hồi quy).
+	- Tương quan Spearman tính bằng tương quan Pearson của thứ hạng, ít bị ảnh hưởng bởi các đợt bùng phát cực lớn (→ [Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/)).
 
 ## 4. Phân tích (Analyze)
 

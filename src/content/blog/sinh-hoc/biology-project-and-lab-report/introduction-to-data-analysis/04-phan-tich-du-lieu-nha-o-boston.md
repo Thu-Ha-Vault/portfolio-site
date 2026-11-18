@@ -357,7 +357,7 @@ Trong M4 fit trên toàn bộ dữ liệu, hệ số của `lstat` là +1,87. Đ
 
 $$\frac{\partial\, \widehat{medv}}{\partial\, lstat} = 1{,}87 - 0{,}331 \cdot rm - 0{,}036 \cdot rad.$$
 
-Tại giá trị trung bình `rm` = 6,28 và `rad` = 9,55, độ dốc là −0,56 nghìn USD cho mỗi điểm phần trăm `lstat`; với `rm` trung bình, độ dốc là −0,25 ở `rad` = 1 và −1,08 ở `rad` = 24. Cách đọc đúng một mô hình có tương tác là báo cáo hiệu ứng tại các giá trị có ý nghĩa của biến kia, hoặc căn giữa (centering) các biến trước khi tạo tương tác để hệ số chính mang nghĩa "độ dốc tại giá trị trung bình". Phần nền về hồi quy bội có trong bài tương quan và hồi quy và bài hồi quy tuyến tính và logistic.
+Tại giá trị trung bình `rm` = 6,28 và `rad` = 9,55, độ dốc là −0,56 nghìn USD cho mỗi điểm phần trăm `lstat`; với `rm` trung bình, độ dốc là −0,25 ở `rad` = 1 và −1,08 ở `rad` = 24. Cách đọc đúng một mô hình có tương tác là báo cáo hiệu ứng tại các giá trị có ý nghĩa của biến kia, hoặc căn giữa (centering) các biến trước khi tạo tương tác để hệ số chính mang nghĩa "độ dốc tại giá trị trung bình". Phần nền về hồi quy bội có trong [bài tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/) và bài hồi quy tuyến tính và logistic.
 
 Tương tác với `rad` cũng đáng ngờ: nhân một chỉ số thứ bậc mà 24 không "gấp ba" 8 theo nghĩa nào với `lstat` hay `rm` là giả định độ dốc đổi tuyến tính theo một con số không có thang đo. Mã hoá lại `rad` không cải thiện độ chính xác (mục 3.5), nhưng vấn đề ở đây là diễn giải.
 

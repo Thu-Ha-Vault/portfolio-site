@@ -90,7 +90,7 @@ Kế hoạch ở mục 8 của CLAUDE.md. Cách ghi giống [08 - Thí nghiệm 
 - Protocol `exo-plasma-ev`, `pt-phoretix`.
 
 ## 3. Phân tích số liệu
-- **Bài gốc**: [Biostatistics 01](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), [02](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/), 03.
+- **Bài gốc**: [Biostatistics 01](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/), [02](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/), [03](/blog/tuong-quan-va-hoi-quy/).
 - **Lõi** `src/core/stats.js` dùng chung (`genetics.js`, `evolution.js`, `fieldeco.js` gọi lại) và `src/core/stats-lab.js`, số liệu `data/stats.json` lấy từ file Excel bài làm.
 - **Khớp Excel** (kiểm thử):
 	- Chiều cao 40 thanh niên: TB 162,775; KTC 95 % (161,206; 164,344); KTC phương sai (17,635; 43,331).

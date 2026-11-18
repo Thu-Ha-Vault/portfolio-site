@@ -281,7 +281,7 @@ Trong cả ba loài, mỏ dài hơn thì sâu hơn. Hồi quy cũng vậy: hệ 
 
 Loài ở đây là **biến gây nhiễu** (confounder): nó liên quan đến cả hai biến đang xét. Mỏ của Gentoo dài (trung bình 47,5 mm) nhưng nông (15,0 mm); Adelie có mỏ ngắn (38,8 mm) và sâu (18,3 mm); Chinstrap dài (48,8 mm) và sâu (18,4 mm). Khi gộp lại, đám mây Gentoo nằm ở góc "dài mà nông" kéo đường hồi quy chung nghiêng xuống, ngược với độ dốc dương bên trong mỗi đám mây. Đây là dạng biến liên tục của hiện tượng mà Simpson (1951) phân tích trên bảng ngẫu nhiên (contingency table): một liên hệ ở mức gộp có thể đổi chiều khi phân tầng theo biến thứ ba. Ví dụ kinh điển dạng bảng là dữ liệu tuyển sinh sau đại học ở Berkeley (Bickel et al., 1975). Câu hỏi nên kiểm soát biến nào là câu hỏi nhân quả chứ không chỉ là thống kê, như bài về suy luận nhân quả trình bày.
 
-Bài học cho báo cáo khá cụ thể. Trước khi diễn giải một hệ số tương quan, hãy vẽ scatter tô màu theo nhóm. Nếu nhóm có ý nghĩa sinh học (loài, giới, lô thí nghiệm, ngày đo), báo cáo r trong từng nhóm hoặc dùng mô hình có biến nhóm. Bài về tương quan và hồi quy bàn thêm các trường hợp khác mà một con số r đứng riêng gây hiểu sai.
+Bài học cho báo cáo khá cụ thể. Trước khi diễn giải một hệ số tương quan, hãy vẽ scatter tô màu theo nhóm. Nếu nhóm có ý nghĩa sinh học (loài, giới, lô thí nghiệm, ngày đo), báo cáo r trong từng nhóm hoặc dùng mô hình có biến nhóm. Bài về [tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/) bàn thêm các trường hợp khác mà một con số r đứng riêng gây hiểu sai.
 
 ### 5.4. Outlier cũng phải xét theo nhóm
 

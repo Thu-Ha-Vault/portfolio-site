@@ -24,7 +24,7 @@ isIndex: true
 ## Map of Content
 - [01 - Đặc trưng thống kê mẫu và ước lượng tham số](/blog/3-dac-trung-thong-ke-cua-mot-mau-va-uoc-luong-tham-so-cua-tong-the/): Ch. 2 + 3 – trung bình, trung vị, mode, phương sai, bách phân vị (dãy số và bảng tần số); KTC cho $\mu$, $\sigma^2$, $p$; cỡ mẫu tối thiểu
 - [02 - Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/): Ch. 4 – $\chi^2$, t-Test (paired, equal/unequal variances), z-Test, Kruskal-Wallis, ANOVA 1 và 2 nhân tố, hệ số di truyền $h^2$; 21 bài tập
-- 03 - Tương quan và hồi quy: Ch. 5 – hệ số tương quan, bình phương tối thiểu, đọc output Regression, tuyến tính hoá hàm hypebol/đa thức/mũ/lũy thừa
+- [03 - Tương quan và hồi quy](/blog/tuong-quan-va-hoi-quy/): Ch. 5 – hệ số tương quan, bình phương tối thiểu, đọc output Regression, tuyến tính hoá hàm hypebol/đa thức/mũ/lũy thừa
 - 04 - Phân tích cơ sở dữ liệu trên Excel: Ch. 6 – Advanced Filter, `DMAX`/`DAVERAGE`, Sort nhiều khoá, phân bố tần số (Histogram) trên số liệu cá và nhân trắc
 - 05 - Bảng tra cứu lập trình và công cụ tin sinh: cheat sheet lệnh R, SQL/MySQL, Git, phím tắt RStudio, công cụ tin sinh online, hoá chất đệm
 
