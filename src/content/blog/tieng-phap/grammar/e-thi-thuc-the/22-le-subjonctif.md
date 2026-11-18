@@ -22,9 +22,8 @@ translationTitle: >-
   French Subjunctive for Vietnamese Learners: Real or Possible, Forms, and 10
   Tricky Pairs
 description: >-
-  Subjonctif (thức giả định) là phần mà nhiều người học tiếng Pháp vẫn chọn theo
-  cảm giác. Bài này đưa ra một câu hỏi để chọn thức (người nói coi sự việc là
-  thật, hay mới là điều có thể?), rồi trình bày cách chia theo một 
+  Khi nào dùng subjonctif trong tiếng Pháp: một câu hỏi để chọn thức, cách chia,
+  mười cặp indicatif/subjonctif dễ nhầm và 12 câu tự kiểm tra.
 isIndex: false
 ---
 Subjonctif (thức giả định) là phần mà nhiều người học tiếng Pháp vẫn chọn theo cảm giác. Bài này đưa ra một câu hỏi để chọn thức (người nói coi sự việc là thật, hay mới là điều có thể?), rồi trình bày cách chia theo một quy tắc và ba lớp ngoại lệ, các nhóm từ dẫn, mười cặp hay nhầm và cách tránh subjonctif khi cần. Nội dung dựa trên từ điển của Viện Hàn lâm Pháp và Larousse, Banque de dépannage linguistique của OQLF, sách ngữ pháp và nghiên cứu về người học; cuối bài có 12 câu tự kiểm tra.
