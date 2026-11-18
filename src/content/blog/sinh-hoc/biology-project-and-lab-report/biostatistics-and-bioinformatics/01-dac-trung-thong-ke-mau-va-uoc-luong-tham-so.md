@@ -506,7 +506,7 @@ Câu thứ ba là phân tích độ nhạy: cả hai kịch bản kèm tiêu ch�
 5. **Với tỷ lệ, dùng Wilson**; ghi rõ sai số tuyệt đối hay tương đối khi tính cỡ mẫu.
 6. **Có ngoại lai thì báo cáo phân tích độ nhạy** theo tiêu chí định trước.
 
-Cùng logic "đừng giả định khi không cần", kiểm định t của Welch không giả định hai phương sai bằng nhau ([Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). Ví dụ CI 95% trên số liệu đo thật: chim sẻ Darwin; bộ chiều cao 40 thanh niên tính lại bằng R: [Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/); các hàm mô tả cơ bản trong R: [trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
+Cùng logic "đừng giả định khi không cần", kiểm định t của Welch không giả định hai phương sai bằng nhau ([Kiểm định giả thiết thống kê](/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). Ví dụ CI 95% trên số liệu đo thật: chim sẻ Darwin; bộ chiều cao 40 thanh niên tính lại bằng R: [Virtual Lab](/projects/virtual-lab/); các hàm mô tả cơ bản trong R: [trình bày và mô tả dữ liệu bằng R](/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
 
 ## 9. Kết luận
 

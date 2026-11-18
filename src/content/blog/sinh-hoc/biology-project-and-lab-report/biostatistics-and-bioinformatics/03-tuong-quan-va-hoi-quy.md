@@ -396,7 +396,7 @@ Khớp trực tiếp trên sáu điểm, khởi đầu từ kết quả Ford–W
 
 Ba giới hạn cần nhớ. Chỉ có sáu tuổi và năm cặp. Trong Ford–Walford, cùng một $L_t$ vừa là biến độc lập ở cặp này vừa là biến phụ thuộc ở cặp trước, nên sai số chuẩn và p-value của hồi quy này không đúng giả định; nó tốt để khám phá và tìm giá trị khởi đầu, còn ước lượng chính thức nên từ khớp phi tuyến. Và chiều dài lớn nhất quan sát là 115 trong khi $L_\infty \approx 185$: tham số quan trọng nhất là một **ngoại suy**, SE 14,8 là con số lạc quan. Dự đoán 148 ở tuổi 10 và 178 ở tuổi 20 chỉ đáng tin nếu quần thể thật sự sống lâu như vậy.
 
-Ý tưởng "tuyến tính hoá để lấy giá trị khởi đầu, rồi khớp trực tiếp" cũng là cách Ritz và Streibig (2005) dùng cho phân tích sinh định lượng (*bioassay*) trong R, chẳng hạn khớp thẳng động học Michaelis–Menten thay vì qua đồ thị Lineweaver–Burk; [phần hồi quy phi tuyến trong dự án Virtual Lab](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) áp dụng đúng cách này.
+Ý tưởng "tuyến tính hoá để lấy giá trị khởi đầu, rồi khớp trực tiếp" cũng là cách Ritz và Streibig (2005) dùng cho phân tích sinh định lượng (*bioassay*) trong R, chẳng hạn khớp thẳng động học Michaelis–Menten thay vì qua đồ thị Lineweaver–Burk; [phần hồi quy phi tuyến trong dự án Virtual Lab](/projects/virtual-lab/) áp dụng đúng cách này.
 
 ## 7. Quy trình sáu bước chọn mô hình hồi quy
 

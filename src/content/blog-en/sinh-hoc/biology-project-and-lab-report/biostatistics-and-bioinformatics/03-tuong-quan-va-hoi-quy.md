@@ -397,7 +397,7 @@ A direct fit to the six points, starting from the Ford–Walford values, gives $
 
 Three limitations are worth keeping in mind. There are only six ages and five pairs. In Ford–Walford, the same $L_t$ is the predictor in one pair and the response in the previous pair, so the standard errors and p-values of that regression violate its assumptions; it is good for exploration and for finding starting values, but formal estimates should come from the nonlinear fit. And the largest observed length is 115 while $L_\infty \approx 185$: the most important parameter is an **extrapolation**, and the SE of 14.8 is optimistic. The predictions of 148 at age 10 and 178 at age 20 are only credible if the population actually lives that long.
 
-The idea of "linearize to get starting values, then fit directly" is also how Ritz and Streibig (2005) approach bioassay analysis in R, for example fitting Michaelis–Menten kinetics directly rather than through a Lineweaver–Burk plot; the [nonlinear regression section of the Virtual Lab project](/projects/virtual-lab/tai-lieu-drive-cho-giai-doan-6/) applies exactly this approach.
+The idea of "linearize to get starting values, then fit directly" is also how Ritz and Streibig (2005) approach bioassay analysis in R, for example fitting Michaelis–Menten kinetics directly rather than through a Lineweaver–Burk plot; the [nonlinear regression section of the Virtual Lab project](/projects/virtual-lab/) applies exactly this approach.
 
 ## 7. A six-step workflow for choosing a regression model
 

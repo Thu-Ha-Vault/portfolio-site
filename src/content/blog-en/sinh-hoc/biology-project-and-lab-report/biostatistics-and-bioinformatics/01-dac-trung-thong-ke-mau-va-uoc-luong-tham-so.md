@@ -507,7 +507,7 @@ The third sentence is a sensitivity analysis: both scenarios plus the flagging c
 5. **For a proportion, use Wilson**; state whether a sample-size error is absolute or relative.
 6. **If there are outliers, report a sensitivity analysis** based on predefined criteria.
 
-In the same spirit of "don't assume what you don't need to," Welch's t test does not assume equal variances ([Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). A 95% CI on real measurements: Darwin's finches; the 40 heights recomputed in R: [Virtual Lab](/projects/virtual-lab/thi-nghiem-giai-doan-4/); basic descriptive functions in R: [presenting and describing data in R](/en/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
+In the same spirit of "don't assume what you don't need to," Welch's t test does not assume equal variances ([Statistical hypothesis testing](/en/blog/kiem-dinh-gia-thiet-thong-ke-trong-nghien-cuu-sinh-hoc/)). A 95% CI on real measurements: Darwin's finches; the 40 heights recomputed in R: [Virtual Lab](/projects/virtual-lab/); basic descriptive functions in R: [presenting and describing data in R](/en/blog/trinh-bay-va-mo-ta-du-lieu-thuc-hanh-r/).
 
 ## 9. Conclusion
 
