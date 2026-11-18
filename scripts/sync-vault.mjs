@@ -627,6 +627,51 @@ function convertCallouts(lines) {
   return out;
 }
 
+// ---------- local paths and private links (owner decision 18/11/2026: no machine paths on any public page) ----------
+// A path on the owner's machine (~/Desktop/…, /Users/<name>/…, /private/tmp/…, file://…, C:\…) becomes just its last
+// file or folder name: `~/Desktop/Sky/cyclistic-case-study` → `cyclistic-case-study`; inside a fenced code block it
+// becomes ./<name> so commands still read as commands. Generic paths such as ~/.zshrc are left alone. Links to private
+// repos (site.config.json privateLinks, URL prefixes) keep their text but lose the link; bare private URLs are dropped.
+const LOCAL_ROOT = String.raw`(?:file:\/\/)?(?:~\/(?:Desktop|Documents|Downloads|Library|Dropbox|iCloud[^\/\s]*)|\/Users\/[^\/\s]+|\/home\/[^\/\s]+|\/private\/(?:tmp|var)|\/var\/folders|\/Volumes\/[^\/\s]+|[A-Za-z]:\\(?:Users|Documents and Settings)\\[^\\\s]+|(?<![\w\/.-])Desktop\/Sky)`;
+const reLocalStart = new RegExp('^\\s*' + LOCAL_ROOT);
+const reLocalBare = new RegExp(LOCAL_ROOT + String.raw`(?:[\/\\][^\s\`'"<>()\[\]|,;]*)?`, 'g');
+const privateLinks = ['https://github.com/Thu-Ha-Vault/Sky_Vault', ...(config.privateLinks || [])].map((u) => u.replace(/\/+$/, '').toLowerCase());
+const isPrivateUrl = (u) => privateLinks.some((p) => u.toLowerCase() === p || u.toLowerCase().startsWith(p + '/') || u.toLowerCase().startsWith(p + '.git') || u.toLowerCase().startsWith(p + '#') || u.toLowerCase().startsWith(p + '?'));
+function pathTail(p, inCode) {
+  const parts = p.trim().replace(/^file:\/\//, '').split(/[\/\\]+/).filter(Boolean);
+  let last = parts.length > 1 ? parts[parts.length - 1] : '';
+  if (/^(Desktop|Documents|Downloads|Sky|Users|home|tmp|private|~)$/.test(last) || /^[A-Za-z]:$/.test(last)) last = '';
+  if (!last) return inCode ? '.' : 'project folder';
+  return inCode ? `./${last}` : last;
+}
+function hideLocalPathsInText(s, inCode) {
+  return s.replace(reLocalBare, (m) => pathTail(m.replace(/[.:]+$/, ''), inCode) + (m.match(/[.:]+$/) || [''])[0]);
+}
+function hideLocalPaths(text) {
+  const out = [];
+  let fence = null;
+  for (const line of text.split('\n')) {
+    const fm = line.match(/^\s*(```+|~~~+)/);
+    if (fence) {
+      if (fm && line.trim().replace(/[`~]/g, '') === '' && line.trim().startsWith(fence)) fence = null;
+      out.push(hideLocalPathsInText(line, true));
+      continue;
+    }
+    if (fm) { fence = fm[1]; out.push(line); continue; }
+    let l = line
+      // inline code that is a local path (may contain spaces): keep only the last name
+      .replace(/`([^`\n]+)`/g, (m, inner) => (reLocalStart.test(inner) ? '`' + pathTail(inner, false) + '`' : '`' + hideLocalPathsInText(inner, false) + '`'))
+      // [text](private-or-local url) → text
+      .replace(/\[([^\]]*)\]\(<?([^)>\s]+)>?(?:\s+"[^"]*")?\)/g, (m, t, u) => (isPrivateUrl(u) || /^file:/i.test(u) ? t : m))
+      // bare private URLs
+      .replace(/<?(https?:\/\/[^\s)>\]]+)>?/g, (m, u) => (isPrivateUrl(u.replace(/[.,;:]+$/, '')) ? '' : m));
+    // remaining local paths in prose (outside inline code)
+    l = l.split(/(`[^`\n]*`)/).map((part, i) => (i % 2 ? part : hideLocalPathsInText(part, false))).join('');
+    out.push(l);
+  }
+  return out.join('\n');
+}
+
 function convertBody(content, fromAbs, stats) {
   content = content.replace(/%%[\s\S]*?%%/g, '');
   const lines = content.split('\n');
@@ -804,6 +849,8 @@ for (const { abs, dest, src, en } of pages) {
   body = body.replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}/g, (e) =>
     allowEmails.has(e.toLowerCase()) || /^(ban|you|name|user)@email\.com$/i.test(e) ? e : '[email hidden]'
   );
+  // hide paths on the owner's machine and links to private repos (published output only; the vault keeps them)
+  body = hideLocalPaths(body);
   // first paragraph as description
   const firstPara = body
     .split('\n\n')
@@ -820,7 +867,7 @@ for (const { abs, dest, src, en } of pages) {
       .slice(0, 220);
   }
   // a hand-written meta description (frontmatter `description:`, ≤ 160 characters) wins over the first paragraph
-  if (data.description) fm.description = String(data.description).replace(/\s+/g, ' ').trim().slice(0, 220);
+  if (data.description) fm.description = hideLocalPaths(String(data.description)).replace(/\s+/g, ' ').trim().slice(0, 220);
   for (const k of Object.keys(fm)) if (fm[k] === undefined) delete fm[k];
   const outDir = en ? OUT_BLOG_EN : dest.collection === 'blog' ? OUT_BLOG : OUT_PROJECTS;
   const outFile = path.join(outDir, dest.slug + (dest.isIndex ? '/index' : '') + '.md');
