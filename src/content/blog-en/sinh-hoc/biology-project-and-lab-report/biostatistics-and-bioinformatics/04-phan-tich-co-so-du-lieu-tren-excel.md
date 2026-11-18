@@ -618,7 +618,7 @@ Before sending a data file to a supervisor or collaborator, run through these te
 9. No color or formatting used to carry information or hide real values.
 10. A data dictionary and a CSV export that uses the decimal point.
 
-The article has two limitations. The dataset is a small teaching table of unknown provenance and sampling site, so every biological remark about *C. grayii* is only a plausibility check. The meaning of several codes and the exact definition of L remain unclear; these very gaps show why a data dictionary matters. Syntax for other tools is collected in the programming reference table.
+The article has two limitations. The dataset is a small teaching table of unknown provenance and sampling site, so every biological remark about *C. grayii* is only a plausibility check. The meaning of several codes and the exact definition of L remain unclear; these very gaps show why a data dictionary matters. Syntax for other tools is collected in the [programming reference table](/en/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/).
 
 ## 9. Conclusion
 

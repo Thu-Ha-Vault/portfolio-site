@@ -617,7 +617,7 @@ Trước khi gửi file dữ liệu cho người hướng dẫn hay cộng tác 
 9. Không dùng màu hay định dạng để mang thông tin hoặc che giá trị thật.
 10. Có từ điển dữ liệu và bản CSV dùng dấu chấm thập phân.
 
-Bài có hai giới hạn. Bộ dữ liệu là một bảng giảng dạy nhỏ, chưa rõ nguồn gốc và nơi thu mẫu, nên mọi nhận xét sinh học về *C. grayii* chỉ là kiểm tra hợp lý. Nghĩa của nhiều mã hoá và định nghĩa chính xác của L vẫn chưa rõ; chính những khoảng trống này cho thấy vì sao từ điển dữ liệu quan trọng. Cú pháp cho các công cụ khác có trong bảng tra cứu lập trình.
+Bài có hai giới hạn. Bộ dữ liệu là một bảng giảng dạy nhỏ, chưa rõ nguồn gốc và nơi thu mẫu, nên mọi nhận xét sinh học về *C. grayii* chỉ là kiểm tra hợp lý. Nghĩa của nhiều mã hoá và định nghĩa chính xác của L vẫn chưa rõ; chính những khoảng trống này cho thấy vì sao từ điển dữ liệu quan trọng. Cú pháp cho các công cụ khác có trong [bảng tra cứu lập trình](/blog/programming-bang-tra-cuu-lenh-r-sql-cong-cu-tin-sinh-va-hoa-chat/).
 
 ## 9. Kết luận
 
