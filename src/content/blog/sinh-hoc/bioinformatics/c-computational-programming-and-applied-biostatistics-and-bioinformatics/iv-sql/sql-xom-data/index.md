@@ -25,13 +25,13 @@ isIndex: true
 ## Map of Content
 
 - BEGINNER
-	- [01 - Giới thiệu - Dữ liệu & Database](/blog/tutorial-biology/)
+	- [01 - Giới thiệu - Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/)
 	- 02 - SELECT & WHERE - Truy vấn cơ bản
 	- 03 - Sắp xếp & Tìm kiếm
 	- 04 - Hàm tổng hợp (Aggregate)
 	- 05 - GROUP BY & HAVING - Tổng hợp dữ liệu
 - INTERMEDIATE
-	- 01 - JOIN - Kết hợp nhiều bảng
+	- [01 - JOIN - Kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)
 	- 02 - Subquery & CASE WHEN
 	- 03 - Kết hợp tất cả kỹ năng
 - ADVANCED

@@ -95,7 +95,7 @@ INSERT INTO annot VALUES
   ('HGNC:29665', 'MALAT1',     'non-coding RNA',      'ENSG00000251562');
 ```
 
-Theo tài liệu GoogleSQL (Google Cloud, n.d.-a), bốn loại JOIN khác nhau ở chỗ giữ lại dòng nào. **INNER JOIN** chỉ giữ các cặp dòng thoả điều kiện ghép. **LEFT JOIN** giữ mọi dòng của bảng trái (bảng viết trước); dòng không khớp nhận NULL ở các cột của bảng phải, còn dòng bảng phải không khớp bị bỏ. **RIGHT JOIN** làm ngược lại. **FULL OUTER JOIN** giữ **mọi dòng của cả hai bảng**: ghép nếu khớp, điền NULL nếu không. Cả LEFT, RIGHT và FULL đều là outer join, và JOIN là một mệnh đề chứ không phải một hàm (JOIN: kết hợp nhiều bảng). Truy vấn FULL OUTER JOIN cho thấy mọi trường hợp cùng lúc:
+Theo tài liệu GoogleSQL (Google Cloud, n.d.-a), bốn loại JOIN khác nhau ở chỗ giữ lại dòng nào. **INNER JOIN** chỉ giữ các cặp dòng thoả điều kiện ghép. **LEFT JOIN** giữ mọi dòng của bảng trái (bảng viết trước); dòng không khớp nhận NULL ở các cột của bảng phải, còn dòng bảng phải không khớp bị bỏ. **RIGHT JOIN** làm ngược lại. **FULL OUTER JOIN** giữ **mọi dòng của cả hai bảng**: ghép nếu khớp, điền NULL nếu không. Cả LEFT, RIGHT và FULL đều là outer join, và JOIN là một mệnh đề chứ không phải một hàm ([JOIN: kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)). Truy vấn FULL OUTER JOIN cho thấy mọi trường hợp cùng lúc:
 
 ```sql
 SELECT e.description, e.liver, a.symbol, a.locus_group

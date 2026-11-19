@@ -96,7 +96,7 @@ INSERT INTO annot VALUES
   ('HGNC:29665', 'MALAT1',     'non-coding RNA',      'ENSG00000251562');
 ```
 
-According to the GoogleSQL documentation (Google Cloud, n.d.-a), the four kinds of JOIN differ in which rows they keep. **INNER JOIN** keeps only the pairs of rows that satisfy the join condition. **LEFT JOIN** keeps every row of the left table (the one written first); unmatched rows get NULL in the right table's columns, and unmatched rows of the right table are dropped. **RIGHT JOIN** does the reverse. **FULL OUTER JOIN** keeps **every row of both tables**: joined where they match, filled with NULL where they do not. LEFT, RIGHT and FULL are all outer joins, and JOIN is a clause, not a function (JOIN: combining tables). A FULL OUTER JOIN query shows every case at once:
+According to the GoogleSQL documentation (Google Cloud, n.d.-a), the four kinds of JOIN differ in which rows they keep. **INNER JOIN** keeps only the pairs of rows that satisfy the join condition. **LEFT JOIN** keeps every row of the left table (the one written first); unmatched rows get NULL in the right table's columns, and unmatched rows of the right table are dropped. **RIGHT JOIN** does the reverse. **FULL OUTER JOIN** keeps **every row of both tables**: joined where they match, filled with NULL where they do not. LEFT, RIGHT and FULL are all outer joins, and JOIN is a clause, not a function ([JOIN: combining tables](/en/blog/join-ket-hop-nhieu-bang/)). A FULL OUTER JOIN query shows every case at once:
 
 ```sql
 SELECT e.description, e.liver, a.symbol, a.locus_group

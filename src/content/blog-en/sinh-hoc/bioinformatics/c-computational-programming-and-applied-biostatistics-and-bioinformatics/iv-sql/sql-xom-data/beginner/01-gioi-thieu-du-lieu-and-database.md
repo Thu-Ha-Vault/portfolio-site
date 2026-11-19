@@ -16,14 +16,14 @@ folder: >-
 vaultPath: >-
   Projects/Portfolio Website/Bài viết/Sinh học/BV - 01 - Giới thiệu - Dữ liệu &
   Database (EN).md
-url: /en/blog/tutorial-biology/
+url: /en/blog/gioi-thieu-du-lieu-and-database/
 topic: biology
 updated: '2026-11-19'
 date: '2026-11-19'
 status: draft
 order: 1
 lang: en
-translationUrl: /blog/tutorial-biology/
+translationUrl: /blog/gioi-thieu-du-lieu-and-database/
 translationTitle: >-
   Vì sao dữ liệu sinh học cần cơ sở dữ liệu quan hệ: bảng tính, schema và lỗi
   tên gene
@@ -252,7 +252,7 @@ ORDER BY et.exon_id;
 -- SEPTIN2 | E3 | 1
 ```
 
-The two databases are also alike in how they record missing values: a customer without an email or a product whose stock has not been updated is stored as `NULL`, just like a missing annotation or a missing measurement. `NULL` is neither 0 nor an empty string; it will be covered in later articles. To practice JOIN, see JOIN and the combined skills article.
+The two databases are also alike in how they record missing values: a customer without an email or a product whose stock has not been updated is stored as `NULL`, just like a missing annotation or a missing measurement. `NULL` is neither 0 nor an empty string; it will be covered in later articles. To practice JOIN, see [JOIN](/en/blog/join-ket-hop-nhieu-bang/) and the combined skills article.
 
 ## 8. When a spreadsheet is enough, and when you need a database
 

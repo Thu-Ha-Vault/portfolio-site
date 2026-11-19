@@ -31,7 +31,7 @@ Một con cá *Coilia grayii* nặng 31,4 g, mổ xong lại nặng 38,8 g, và 
 
 ## 1. Mở đầu: bảng tính là cơ sở dữ liệu đầu tiên của nhà sinh học
 
-Với nhiều sinh viên sinh học, cơ sở dữ liệu đầu tiên là một sheet Excel: mỗi dòng một con cá hay một mẫu máu, mỗi cột một số đo. Excel gọi vùng này là **Database Range**: hàng đầu chứa tên trường (*field*), các hàng dưới là bản ghi (*record*). Khoa học dữ liệu gọi đúng cấu trúc đó là **dữ liệu dạng bảng chữ nhật** (rectangular data), với dòng là quan sát và cột là biến (Bruce & Bruce, 2017). Lý thuyết cơ sở dữ liệu gọi nó là **quan hệ** (relation): Codd (1970) đề xuất mô hình dữ liệu quan hệ, nền tảng lý thuyết của các hệ quản trị cơ sở dữ liệu quan hệ mà SQL được dùng để truy vấn (→ [Dữ liệu và database](/blog/tutorial-biology/)).
+Với nhiều sinh viên sinh học, cơ sở dữ liệu đầu tiên là một sheet Excel: mỗi dòng một con cá hay một mẫu máu, mỗi cột một số đo. Excel gọi vùng này là **Database Range**: hàng đầu chứa tên trường (*field*), các hàng dưới là bản ghi (*record*). Khoa học dữ liệu gọi đúng cấu trúc đó là **dữ liệu dạng bảng chữ nhật** (rectangular data), với dòng là quan sát và cột là biến (Bruce & Bruce, 2017). Lý thuyết cơ sở dữ liệu gọi nó là **quan hệ** (relation): Codd (1970) đề xuất mô hình dữ liệu quan hệ, nền tảng lý thuyết của các hệ quản trị cơ sở dữ liệu quan hệ mà SQL được dùng để truy vấn (→ [Dữ liệu và database](/blog/gioi-thieu-du-lieu-and-database/)).
 
 Vì cấu trúc giống nhau, mọi thao tác trên Database Range của Excel đều có câu lệnh tương ứng trong SQL và R. Nói được cùng một truy vấn bằng cả ba công cụ có ba lợi ích:
 

@@ -32,7 +32,7 @@ A *Coilia grayii* weighs 31.4 g whole and 38.8 g after gutting, and Excel still 
 
 ## 1. Introduction: the spreadsheet is a biologist's first database
 
-For many biology students, the first database they ever build is an Excel sheet: one row per fish or blood sample, one column per measurement. Excel calls this block a **Database Range**: the top row holds the field names, and the rows below are records. Data science calls the same structure **rectangular data**, with rows as observations and columns as variables (Bruce & Bruce, 2017). Database theory calls it a **relation**: Codd (1970) proposed the relational model of data, the theoretical foundation of the relational database management systems that SQL is used to query (→ [Data and databases](/en/blog/tutorial-biology/)).
+For many biology students, the first database they ever build is an Excel sheet: one row per fish or blood sample, one column per measurement. Excel calls this block a **Database Range**: the top row holds the field names, and the rows below are records. Data science calls the same structure **rectangular data**, with rows as observations and columns as variables (Bruce & Bruce, 2017). Database theory calls it a **relation**: Codd (1970) proposed the relational model of data, the theoretical foundation of the relational database management systems that SQL is used to query (→ [Data and databases](/en/blog/gioi-thieu-du-lieu-and-database/)).
 
 Because the structure is the same, every operation on an Excel Database Range has a matching statement in SQL and in R. Being able to express the same query in all three tools has three benefits:
 
