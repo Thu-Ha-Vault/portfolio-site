@@ -41,7 +41,7 @@ isIndex: true
 - [Course 8: Case Study](/blog/case-study/)
 - Xem thêm: AI Course Tsing Hua – phân tích dữ liệu, data mining
 - Xem thêm: [SQL](/topics/sql/) – SQL dùng trong phân tích dữ liệu
-- Xem thêm: R – R dùng trong phân tích dữ liệu
+- Xem thêm: [R](/topics/tutorial/) – R dùng trong phân tích dữ liệu
 
 ## Original structure
 

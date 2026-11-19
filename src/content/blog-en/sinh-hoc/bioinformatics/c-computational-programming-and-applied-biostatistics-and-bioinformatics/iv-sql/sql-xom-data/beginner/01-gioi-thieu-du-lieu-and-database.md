@@ -16,14 +16,14 @@ folder: >-
 vaultPath: >-
   Projects/Portfolio Website/Bài viết/Sinh học/BV - 01 - Giới thiệu - Dữ liệu &
   Database (EN).md
-url: /en/blog/tutorial/
+url: /en/blog/tutorial-biology/
 topic: biology
 updated: '2026-11-19'
 date: '2026-11-19'
 status: draft
 order: 1
 lang: en
-translationUrl: /blog/tutorial/
+translationUrl: /blog/tutorial-biology/
 translationTitle: >-
   Vì sao dữ liệu sinh học cần cơ sở dữ liệu quan hệ: bảng tính, schema và lỗi
   tên gene

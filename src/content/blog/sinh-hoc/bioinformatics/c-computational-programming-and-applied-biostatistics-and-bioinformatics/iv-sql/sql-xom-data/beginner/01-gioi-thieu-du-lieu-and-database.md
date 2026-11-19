@@ -16,13 +16,13 @@ folder: >-
 vaultPath: >-
   Projects/Portfolio Website/Bài viết/Sinh học/BV - 01 - Giới thiệu - Dữ liệu &
   Database.md
-url: /blog/tutorial/
+url: /blog/tutorial-biology/
 topic: biology
 updated: '2026-11-19'
 date: '2026-11-19'
 status: draft
 order: 1
-translationUrl: /en/blog/tutorial/
+translationUrl: /en/blog/tutorial-biology/
 translationTitle: >-
   Why Biological Data Needs Relational Databases: Spreadsheets, Schemas and Gene
   Name Errors

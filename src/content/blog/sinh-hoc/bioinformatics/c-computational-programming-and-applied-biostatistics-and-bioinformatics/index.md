@@ -24,6 +24,6 @@ isIndex: true
 ## Map of Content
 
 - Programming
-- R
+- [R](/topics/tutorial/)
 - Python
 - [SQL](/topics/sql/)

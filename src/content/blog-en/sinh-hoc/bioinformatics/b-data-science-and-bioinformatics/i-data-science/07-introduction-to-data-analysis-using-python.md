@@ -179,7 +179,7 @@ print(cpm.round(0))
 
 **Figure 3.** Broadcasting: the vector `lib_size` is reused for all three rows of `counts` without being copied.
 
-`counts.sum(axis=0)` is a reduction, that is, it combines elements along one axis (Harris et al., 2020): `axis=0` returns one value per column, `axis=1` one value per row. pandas follows the same convention. Anyone who has learned R will find this familiar: Buffalo (2015) devotes a section to vectors, vectorization and indexing in the introductory R chapter (R Tutorial).
+`counts.sum(axis=0)` is a reduction, that is, it combines elements along one axis (Harris et al., 2020): `axis=0` returns one value per column, `axis=1` one value per row. pandas follows the same convention. Anyone who has learned R will find this familiar: Buffalo (2015) devotes a section to vectors, vectorization and indexing in the introductory R chapter ([R Tutorial](/topics/tutorial/)).
 
 ### 2.3. Measurement: list loops versus NumPy
 

@@ -25,7 +25,7 @@ isIndex: true
 ## Map of Content
 
 - BEGINNER
-	- [01 - Giới thiệu - Dữ liệu & Database](/blog/tutorial/)
+	- [01 - Giới thiệu - Dữ liệu & Database](/blog/tutorial-biology/)
 	- 02 - SELECT & WHERE - Truy vấn cơ bản
 	- 03 - Sắp xếp & Tìm kiếm
 	- 04 - Hàm tổng hợp (Aggregate)

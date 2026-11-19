@@ -40,5 +40,5 @@ File nằm trong `assets/Dữ liệu trong bài giảng/`:
 
 ## Liên quan
 - [Biostatistics and Bioinformatics (Thống kê sinh học)](/topics/biostatistics-and-bioinformatics/): học phần song song – cùng nội dung thống kê, làm bằng Excel
-- R: các khoá học R trong vault (R Tutorial, R Xóm Data)
+- [R](/topics/tutorial/): các khoá học R trong vault (R Tutorial, R Xóm Data)
 - [Data Science](/topics/data-science/): khoá Google Data Analytics (có course R programming và Case Study)

@@ -178,7 +178,7 @@ print(cpm.round(0))
 
 **Hình 3.** Broadcasting: vector `lib_size` được dùng lại cho cả ba hàng của `counts` mà không bị sao chép.
 
-`counts.sum(axis=0)` là một phép rút gọn (reduction), tức gộp các phần tử theo một trục (Harris et al., 2020): `axis=0` trả về một giá trị cho mỗi cột, `axis=1` một giá trị cho mỗi hàng. pandas dùng cùng quy ước này. Người đã học R sẽ thấy quen: Buffalo (2015) dành một mục cho vector, vectorization và indexing ngay trong chương nhập môn R (R Tutorial).
+`counts.sum(axis=0)` là một phép rút gọn (reduction), tức gộp các phần tử theo một trục (Harris et al., 2020): `axis=0` trả về một giá trị cho mỗi cột, `axis=1` một giá trị cho mỗi hàng. pandas dùng cùng quy ước này. Người đã học R sẽ thấy quen: Buffalo (2015) dành một mục cho vector, vectorization và indexing ngay trong chương nhập môn R ([R Tutorial](/topics/tutorial/)).
 
 ### 2.3. Phép đo: vòng lặp trên list so với NumPy
 
