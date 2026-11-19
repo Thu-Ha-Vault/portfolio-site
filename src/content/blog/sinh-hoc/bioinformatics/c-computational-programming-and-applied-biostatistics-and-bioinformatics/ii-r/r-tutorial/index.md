@@ -38,7 +38,7 @@ isIndex: true
 
 ## R - Xóm Data (R Beginner)
 
-- Làm quen với R
+- [Làm quen với R](/blog/lam-quen-voi-r/)
 - Cấu trúc dữ liệu
 - Rẽ nhánh & Vòng lặp
 - Hàm & Xử lý chuỗi

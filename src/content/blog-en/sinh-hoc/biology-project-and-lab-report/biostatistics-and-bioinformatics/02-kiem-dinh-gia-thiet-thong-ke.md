@@ -452,7 +452,7 @@ Most "there is a difference" conclusions hold when you switch to the recommended
 | χ² with Monte Carlo p, residuals | No (only the `CHISQ.TEST` function) | `chisq.test()` (R) |
 | Binomial GLM, Mantel–Haenszel | No | `glm()`, `mantelhaen.test()` (R) |
 
-According to Microsoft's support page (Microsoft, n.d.), the ToolPak's tools include ANOVA, the F-test, three kinds of t-test, and the z-test, with no post hoc tool. Excel is still fine for entering and describing data; inference beyond the t-test and ANOVA is better moved to R (getting started with R) or Python.
+According to Microsoft's support page (Microsoft, n.d.), the ToolPak's tools include ANOVA, the F-test, three kinds of t-test, and the z-test, with no post hoc tool. Excel is still fine for entering and describing data; inference beyond the t-test and ANOVA is better moved to R ([getting started with R](/en/blog/lam-quen-voi-r/)) or Python.
 
 Two topics remain open, regression and generalized linear models (GLMs), and they are taken up in [the article on correlation and regression](/en/blog/tuong-quan-va-hoi-quy/), where the analysis of fish mortality by concentration gets room to be done in full.
 
