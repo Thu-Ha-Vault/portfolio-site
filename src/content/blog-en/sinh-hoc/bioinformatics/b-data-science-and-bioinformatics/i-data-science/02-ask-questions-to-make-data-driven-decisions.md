@@ -166,7 +166,7 @@ Next-generation sequencing data illustrate all three original Vs: each run produ
 
 ### 4.2. Small data and big data
 
-Small data usually fit in a spreadsheet; big data live in databases and are queried (→ Data and databases). This is a practical description, and the boundary moves with technology; the useful question is "How much data does this question need, and which tool is enough?"
+Small data usually fit in a spreadsheet; big data live in databases and are queried (→ [Data and databases](/en/blog/tutorial/)). This is a practical description, and the boundary moves with technology; the useful question is "How much data does this question need, and which tool is enough?"
 
 ### 4.3. Report or dashboard
 

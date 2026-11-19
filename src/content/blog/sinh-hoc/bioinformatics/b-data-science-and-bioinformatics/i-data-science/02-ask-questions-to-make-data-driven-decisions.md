@@ -166,7 +166,7 @@ Dữ liệu giải trình tự thế hệ mới minh hoạ cả ba V gốc: mỗ
 
 ### 4.2. Small data và big data
 
-Small data thường nằm gọn trong spreadsheet; big data nằm trong cơ sở dữ liệu và được truy vấn (→ Dữ liệu và database). Đây là mô tả thực hành, và ranh giới dịch chuyển theo công nghệ; câu hỏi hữu ích là "câu hỏi này cần dữ liệu cỡ nào và công cụ nào là đủ".
+Small data thường nằm gọn trong spreadsheet; big data nằm trong cơ sở dữ liệu và được truy vấn (→ [Dữ liệu và database](/blog/tutorial/)). Đây là mô tả thực hành, và ranh giới dịch chuyển theo công nghệ; câu hỏi hữu ích là "câu hỏi này cần dữ liệu cỡ nào và công cụ nào là đủ".
 
 ### 4.3. Report hay dashboard
 

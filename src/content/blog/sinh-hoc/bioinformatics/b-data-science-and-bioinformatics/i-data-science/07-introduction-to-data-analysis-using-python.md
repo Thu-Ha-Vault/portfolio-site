@@ -342,7 +342,7 @@ object
 
 ### 3.2. Boolean masking, WHERE và bộ lọc
 
-Boolean mask là một Series kiểu bool có cùng index với bảng; đặt nó vào ngoặc vuông thì chỉ các dòng `True` được giữ lại. Đây là cùng một thao tác với bộ lọc trên cột của spreadsheet và mệnh đề `WHERE` của SQL (SQL). Tìm các mẫu có xử lý thuốc và biểu hiện trên 1,5:
+Boolean mask là một Series kiểu bool có cùng index với bảng; đặt nó vào ngoặc vuông thì chỉ các dòng `True` được giữ lại. Đây là cùng một thao tác với bộ lọc trên cột của spreadsheet và mệnh đề `WHERE` của SQL ([SQL](/topics/sql/)). Tìm các mẫu có xử lý thuốc và biểu hiện trên 1,5:
 
 ```python
 high = (df["treatment"] == "drug") & (df["expr"] > 1.5)

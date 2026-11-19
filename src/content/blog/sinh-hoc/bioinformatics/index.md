@@ -20,7 +20,7 @@ Nguồn được chia nhỏ từ file DOCX thành các note Markdown để impor
 
 - [Statistics and Biostatistics (Thống kê và Thống kê Sinh)](/topics/statistics-and-biostatistics/)
 - [Data Science and Bioinformatics (Khoa học Dữ liệu và Tin Sinh học)](/topics/data-science-and-bioinformatics/)
-- Computational Programming and Applied Biostatistics and Bioinformatics  (Lập trình máy tính và Thống kê Sinh và Tin sinh học Ứng dụng)
+- [Computational Programming and Applied Biostatistics and Bioinformatics  (Lập trình máy tính và Thống kê Sinh và Tin sinh học Ứng dụng)](/topics/computational-programming-and-applied-biostatistics-and-bioinformatics/)
 - Dictionary
 - Phím tắt
 - References

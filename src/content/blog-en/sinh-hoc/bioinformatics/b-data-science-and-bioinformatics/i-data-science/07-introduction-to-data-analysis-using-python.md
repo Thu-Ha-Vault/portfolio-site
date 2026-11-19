@@ -343,7 +343,7 @@ object
 
 ### 3.2. Boolean masking, WHERE and filters
 
-A Boolean mask is a Series of type bool sharing the table's index; put it inside square brackets and only the `True` rows are kept. This is the same operation as a column filter in a spreadsheet and a `WHERE` clause in SQL (SQL). Finding the drug-treated samples with expression above 1.5:
+A Boolean mask is a Series of type bool sharing the table's index; put it inside square brackets and only the `True` rows are kept. This is the same operation as a column filter in a spreadsheet and a `WHERE` clause in SQL ([SQL](/topics/sql/)). Finding the drug-treated samples with expression above 1.5:
 
 ```python
 high = (df["treatment"] == "drug") & (df["expr"] > 1.5)
