@@ -183,7 +183,7 @@ From there the standard grew with each edition. Table 1 lists only the features 
 
 *Table 1. SQL standard editions and their main features for data analysis.*
 
-Recursive queries in SQL:1999 solved problems earlier SQL could not, such as walking a hierarchy (a bill of materials, in Eisenberg & Melton's 1999 example). In biology, taxonomic trees and the hierarchical vocabulary of the Gene Ontology have the same shape (→ CTE & Set Operations). Window functions let you compute ranks, running totals or moving averages without collapsing rows (→ Window Functions). Both features run on SQLite 3.45.3: `ROW_NUMBER() OVER (PARTITION BY gene_id ORDER BY n_exon DESC)` and `WITH RECURSIVE`.
+Recursive queries in SQL:1999 solved problems earlier SQL could not, such as walking a hierarchy (a bill of materials, in Eisenberg & Melton's 1999 example). In biology, taxonomic trees and the hierarchical vocabulary of the Gene Ontology have the same shape (→ CTE & Set Operations). Window functions let you compute ranks, running totals or moving averages without collapsing rows (→ [Window Functions](/en/blog/window-functions/)). Both features run on SQLite 3.45.3: `ROW_NUMBER() OVER (PARTITION BY gene_id ORDER BY n_exon DESC)` and `WITH RECURSIVE`.
 
 The current edition, ISO/IEC 9075-1:2023, is the 6th edition of Part 1 (Framework), published in June 2023 (ISO, 2023). The standard is not one document but several parts (Framework, Foundation…), and it defines a mandatory feature set called **Core SQL** plus many optional features. When the PostgreSQL 18 documentation reports at least 170 of 177 mandatory Core SQL:2023 features and says no system claims full conformance (PostgreSQL Global Development Group, n.d.-a), that figure shows the gap between standard and product even in a system known for following the standard.
 
@@ -259,7 +259,7 @@ The next articles in the series take the syntax one group at a time:
 - ORDER BY and searching (→ Sorting & Searching).
 - Aggregate functions, GROUP BY and HAVING (→ Aggregate, GROUP BY & HAVING).
 - JOIN, subqueries, CASE WHEN (→ [JOIN](/en/blog/join-ket-hop-nhieu-bang/), Subquery & CASE WHEN, Putting the skills together).
-- Window functions, recursive CTEs and applications (→ Window Functions, CTE & Set Operations, Real-world applications).
+- Window functions, recursive CTEs and applications (→ [Window Functions](/en/blog/window-functions/), CTE & Set Operations, Real-world applications).
 
 ## Frequently asked questions
 

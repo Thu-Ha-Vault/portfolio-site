@@ -181,7 +181,7 @@ Từ đó chuẩn lớn dần qua các bản. Bảng 1 chỉ ghi những tính n
 
 *Bảng 1. Các bản chuẩn SQL và tính năng chính cho phân tích dữ liệu.*
 
-Truy vấn đệ quy của SQL:1999 giải quyết bài toán mà SQL trước đó không làm được, như duyệt cây phân cấp (bill of materials, theo ví dụ của Eisenberg & Melton, 1999); trong sinh học, cây phân loại hay hệ thuật ngữ phân cấp của Gene Ontology là dạng dữ liệu tương tự (→ CTE & Set Operations). Hàm cửa sổ (window function) cho phép tính thứ hạng, tổng tích luỹ hay trung bình trượt mà không gộp mất dòng (→ Window Functions). Hai tính năng này đều chạy trên SQLite 3.45.3: `ROW_NUMBER() OVER (PARTITION BY gene_id ORDER BY n_exon DESC)` và `WITH RECURSIVE`.
+Truy vấn đệ quy của SQL:1999 giải quyết bài toán mà SQL trước đó không làm được, như duyệt cây phân cấp (bill of materials, theo ví dụ của Eisenberg & Melton, 1999); trong sinh học, cây phân loại hay hệ thuật ngữ phân cấp của Gene Ontology là dạng dữ liệu tương tự (→ CTE & Set Operations). Hàm cửa sổ (window function) cho phép tính thứ hạng, tổng tích luỹ hay trung bình trượt mà không gộp mất dòng (→ [Window Functions](/blog/window-functions/)). Hai tính năng này đều chạy trên SQLite 3.45.3: `ROW_NUMBER() OVER (PARTITION BY gene_id ORDER BY n_exon DESC)` và `WITH RECURSIVE`.
 
 Bản hiện hành, ISO/IEC 9075-1:2023, là bản thứ 6 của Part 1 (Framework), phát hành tháng 6/2023 (ISO, 2023). Chuẩn không phải một văn bản mà gồm nhiều phần (Framework, Foundation…), và định nghĩa một tập tính năng bắt buộc gọi là **Core SQL**, cộng nhiều tính năng tuỳ chọn. Khi tài liệu PostgreSQL 18 ghi đạt ít nhất 170 trên 177 tính năng bắt buộc của Core SQL:2023 và chưa hệ nào tuyên bố tuân thủ đầy đủ (PostgreSQL Global Development Group, n.d.-a), con số đó cho thấy khoảng cách giữa chuẩn và sản phẩm ngay cả ở hệ được coi là bám chuẩn.
 
@@ -257,7 +257,7 @@ Các bài tiếp theo của series đi vào từng nhóm cú pháp:
 - ORDER BY và tìm kiếm (→ Sắp xếp & Tìm kiếm).
 - Hàm tổng hợp, GROUP BY và HAVING (→ Aggregate, GROUP BY & HAVING).
 - JOIN, subquery, CASE WHEN (→ [JOIN](/blog/join-ket-hop-nhieu-bang/), Subquery & CASE WHEN, Kết hợp kỹ năng).
-- Window function, CTE đệ quy và ứng dụng (→ Window Functions, CTE & Set Operations, Ứng dụng thực chiến).
+- Window function, CTE đệ quy và ứng dụng (→ [Window Functions](/blog/window-functions/), CTE & Set Operations, Ứng dụng thực chiến).
 
 ## Câu hỏi thường gặp
 
