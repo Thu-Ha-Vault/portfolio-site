@@ -167,7 +167,7 @@ Cột phá hoà `fish` chỉ nên nằm trong cửa sổ của `ROW_NUMBER`. N�
 
 ### Lấy top-k mỗi nhóm
 
-Câu hỏi "4 con dài nhất của mỗi giới tính" là một ứng dụng quen thuộc của hàm xếp hạng. Vì không thể lọc window function trong `WHERE`, bạn bọc trong CTE (→ CTE & Set Operations):
+Câu hỏi "4 con dài nhất của mỗi giới tính" là một ứng dụng quen thuộc của hàm xếp hạng. Vì không thể lọc window function trong `WHERE`, bạn bọc trong CTE (→ [CTE & Set Operations](/blog/cte-and-set-operations/)):
 
 ```sql
 WITH h AS (
@@ -427,7 +427,7 @@ Phần hay bị bỏ qua nhất trong một biểu thức `OVER (...)` là phầ
 5. Đã có cột phá hoà ổn định chưa?
 6. NULL và khoảng trống (tháng không có đơn, vị trí độ phủ 0) xử lý thế nào?
 
-Bài sau trong series: CTE và `WITH RECURSIVE` (→ CTE & Set Operations), RFM và cohort (→ Ứng dụng thực chiến).
+Bài sau trong series: CTE và `WITH RECURSIVE` (→ [CTE & Set Operations](/blog/cte-and-set-operations/)), RFM và cohort (→ Ứng dụng thực chiến).
 
 ## Câu hỏi thường gặp
 

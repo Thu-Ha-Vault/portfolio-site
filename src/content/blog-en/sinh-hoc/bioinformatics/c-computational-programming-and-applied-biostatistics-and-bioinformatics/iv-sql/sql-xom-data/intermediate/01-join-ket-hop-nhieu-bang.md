@@ -373,7 +373,7 @@ A checklist before you trust a number that came out of a JOIN:
 6. **Read `EXPLAIN QUERY PLAN`**: if you see two nested `SCAN`s over large tables, create an index on the foreign key column.
 7. **Record versions**: the SQLite version (`SELECT sqlite_version();`) and the annotation version alongside your results.
 
-The next articles in the series pick up two threads started here: subqueries and CASE WHEN for `EXISTS`, `NOT IN` and NULL, and CTEs and set operations for splitting a multi-JOIN query into named steps so you can check the row count at each one.
+The next articles in the series pick up two threads started here: subqueries and CASE WHEN for `EXISTS`, `NOT IN` and NULL, and [CTEs and set operations](/en/blog/cte-and-set-operations/) for splitting a multi-JOIN query into named steps so you can check the row count at each one.
 
 ## References
 

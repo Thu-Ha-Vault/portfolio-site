@@ -372,7 +372,7 @@ Checklist trước khi tin một con số sau JOIN:
 6. **Đọc `EXPLAIN QUERY PLAN`**: thấy hai `SCAN` lồng nhau trên bảng lớn thì tạo index trên cột khoá ngoại.
 7. **Ghi phiên bản** SQLite (`SELECT sqlite_version();`) và phiên bản chú giải kèm kết quả.
 
-Các bài tiếp theo của series mở rộng hai hướng đã chạm tới ở đây: subquery và CASE WHEN cho `EXISTS`, `NOT IN` và NULL; CTE và phép toán tập hợp cho cách chia một truy vấn nhiều JOIN thành các bước có tên, dễ kiểm tra số dòng từng bước.
+Các bài tiếp theo của series mở rộng hai hướng đã chạm tới ở đây: subquery và CASE WHEN cho `EXISTS`, `NOT IN` và NULL; [CTE và phép toán tập hợp](/blog/cte-and-set-operations/) cho cách chia một truy vấn nhiều JOIN thành các bước có tên, dễ kiểm tra số dòng từng bước.
 
 ## Tài liệu tham khảo
 

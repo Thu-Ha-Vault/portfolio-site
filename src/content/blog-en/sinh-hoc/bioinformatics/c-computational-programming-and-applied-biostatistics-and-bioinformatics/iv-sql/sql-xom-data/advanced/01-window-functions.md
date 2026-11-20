@@ -170,7 +170,7 @@ The tie-breaker `fish` belongs only in the `ROW_NUMBER` window. If you add `fish
 
 ### Top-k per group
 
-The question "the 4 longest fish of each sex" is a familiar use of ranking functions. Because you cannot filter on a window function in `WHERE`, wrap it in a CTE (→ CTE & Set Operations):
+The question "the 4 longest fish of each sex" is a familiar use of ranking functions. Because you cannot filter on a window function in `WHERE`, wrap it in a CTE (→ [CTE & Set Operations](/en/blog/cte-and-set-operations/)):
 
 ```sql
 WITH r AS (
@@ -430,7 +430,7 @@ The part of an `OVER (...)` expression people overlook most is the part that is 
 5. Is there a stable tie-breaker column?
 6. How are NULLs and gaps (months with no orders, zero-depth positions) handled?
 
-Next in the series: CTEs and `WITH RECURSIVE` (→ CTE & Set Operations), then RFM and cohort analysis (→ Real-world applications).
+Next in the series: CTEs and `WITH RECURSIVE` (→ [CTE & Set Operations](/en/blog/cte-and-set-operations/)), then RFM and cohort analysis (→ Real-world applications).
 
 ## Frequently asked questions
 

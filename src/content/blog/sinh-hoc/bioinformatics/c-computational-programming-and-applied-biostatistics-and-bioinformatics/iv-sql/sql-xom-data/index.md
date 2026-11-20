@@ -36,5 +36,5 @@ isIndex: true
 	- 03 - Kết hợp tất cả kỹ năng
 - ADVANCED
 	- [01 - Window Functions](/blog/window-functions/)
-	- 02 - CTE & Set Operations
+	- [02 - CTE & Set Operations](/blog/cte-and-set-operations/)
 	- 03 - Ứng dụng thực chiến
