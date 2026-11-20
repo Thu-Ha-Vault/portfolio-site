@@ -18,7 +18,7 @@ updated: '2026-11-10'
 isIndex: true
 ---
 ## Map of Content
-- SQL - Tutorial
+- [SQL - Tutorial](/topics/tutorial-biology/)
 - [SQL - Xóm Data](/topics/xom-data/)
 - Xem thêm: [Data Science](/topics/data-science/) – SQL dùng trong phân tích dữ liệu
 - Xem thêm: [Course 7: Python](/blog/introduction-to-data-analysis-using-python/) – so sánh spreadsheet, SQL và Python; pandas DataFrame và merge/join tương tự bảng và JOIN trong SQL

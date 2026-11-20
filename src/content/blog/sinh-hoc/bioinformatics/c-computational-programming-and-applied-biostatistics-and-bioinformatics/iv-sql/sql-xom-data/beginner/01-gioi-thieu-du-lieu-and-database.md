@@ -37,7 +37,7 @@ Năm 2020, ủy ban danh pháp gene người (HGNC) đổi tên SEPT1 thành SEP
 
 Trong nhiều phòng thí nghiệm, thông tin mẫu nằm trong một file, kết quả qPCR trong file khác, danh sách gene biểu hiện khác biệt xuất từ R rồi mở bằng Excel để lọc. Rắc rối đến khi file nặng dần, nhiều người cùng sửa, và các sheet phải tra chéo bằng VLOOKUP.
 
-Câu hỏi "bảng tính hay database?" thường được trả lời bằng bốn ý: Excel chỉ chứa khoảng một triệu dòng còn database chứa hàng tỷ dòng, database nhanh nhờ index, Excel khó cho nhiều người dùng, VLOOKUP yếu hơn JOIN. Các ý này đúng một phần, nhưng bỏ sót điều quan trọng nhất: một ô bảng tính không biết cột của nó chứa ký hiệu gene, nên phần mềm đoán kiểu theo nội dung, và `SEPT2` trông giống ngày 2 tháng 9. Lợi thế thật của cơ sở dữ liệu quan hệ nằm ở **schema có kiểu dữ liệu, khoá và ràng buộc** theo mô hình của Codd (1970). Đây là bài thứ hai của series *SQL cho dữ liệu sinh học và phân tích*, sau bài về lịch sử SQL.
+Câu hỏi "bảng tính hay database?" thường được trả lời bằng bốn ý: Excel chỉ chứa khoảng một triệu dòng còn database chứa hàng tỷ dòng, database nhanh nhờ index, Excel khó cho nhiều người dùng, VLOOKUP yếu hơn JOIN. Các ý này đúng một phần, nhưng bỏ sót điều quan trọng nhất: một ô bảng tính không biết cột của nó chứa ký hiệu gene, nên phần mềm đoán kiểu theo nội dung, và `SEPT2` trông giống ngày 2 tháng 9. Lợi thế thật của cơ sở dữ liệu quan hệ nằm ở **schema có kiểu dữ liệu, khoá và ràng buộc** theo mô hình của Codd (1970). Đây là bài thứ hai của series *SQL cho dữ liệu sinh học và phân tích*, sau bài về [lịch sử SQL](/blog/tutorial-biology-2/).
 
 ## 2. Database là gì: bảng, dòng, cột và schema
 
