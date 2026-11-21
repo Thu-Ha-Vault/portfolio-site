@@ -38,7 +38,7 @@ RNA-seq, single-cell RNA-seq and epigenetics are the three kinds of data usually
 
 With data in that shape, the core problem is **statistical**: modeling count data with very few replicates, testing tens of thousands of hypotheses at once, and visualizing the results. Love et al. (2014) spell out exactly these difficulties for RNA-seq count data: few replicates, discreteness, a large dynamic range and the presence of outliers. Huber et al. (2015) place Bioconductor, a project built on R, at the center of high-throughput data analysis in genomics.
 
-So why is the most familiar tool for these problems a statistics language? The article works through three layers: history (Sections 2–3), community infrastructure (Section 4) and methods (Section 5), then discusses limits (Section 6). It is a conceptual overview and does not teach syntax. Syntax, RStudio and notebooks are covered in Part 2 (→ RStudio and R notebooks); installing packages is covered in Part 7 (→ Installing packages).
+So why is the most familiar tool for these problems a statistics language? The article works through three layers: history (Sections 2–3), community infrastructure (Section 4) and methods (Section 5), then discusses limits (Section 6). It is a conceptual overview and does not teach syntax. Syntax, RStudio and notebooks are covered in Part 2 (→ [RStudio and R notebooks](/en/blog/rstudio-and-r-notebooks/)); installing packages is covered in Part 7 (→ Installing packages).
 
 ## 2. From S to R: a language for data analysis
 
@@ -224,7 +224,7 @@ R became a foundation of biological data analysis through three layers that add 
 
 The limits are clear too: very large data, deep learning and raw sequence processing usually call for other tools as well. The next articles move from concepts to practice:
 
-- Part 2: RStudio and R notebooks (→ RStudio and R notebooks)
+- Part 2: RStudio and R notebooks (→ [RStudio and R notebooks](/en/blog/rstudio-and-r-notebooks/))
 - Part 3: importing and exporting data (→ Importing and exporting data)
 - Part 4: data frames (→ Data frames)
 - Part 5: basic data types (→ Basic data types)

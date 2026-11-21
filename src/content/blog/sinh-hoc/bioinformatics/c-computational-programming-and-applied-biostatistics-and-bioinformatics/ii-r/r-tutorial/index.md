@@ -24,7 +24,7 @@ isIndex: true
 ## Map of Content
 
 - [Introduction](/blog/introduction/)
-- RStudio and R notebooks
+- [RStudio and R notebooks](/blog/rstudio-and-r-notebooks/)
 - Importing and exporting data
 - Data frames
 - Basic data types

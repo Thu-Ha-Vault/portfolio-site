@@ -37,7 +37,7 @@ RNA-seq, single-cell RNA-seq và epigenetics là ba loại dữ liệu thường
 
 Với dữ liệu ở dạng đó, bài toán cốt lõi là **thống kê**: mô hình hoá dữ liệu đếm có rất ít replicate, kiểm định hàng chục nghìn giả thuyết cùng lúc, và trực quan hoá kết quả. Love et al. (2014) nêu đúng những khó khăn của dữ liệu đếm RNA-seq: ít replicate, giá trị rời rạc, khoảng động lớn và có điểm ngoại lai. Huber et al. (2015) đặt Bioconductor, một dự án xây trên R, vào trung tâm của phân tích dữ liệu thông lượng cao (high-throughput data) trong genomics.
 
-Vậy vì sao công cụ quen thuộc nhất cho các bài toán này lại là một ngôn ngữ thống kê? Bài đi qua ba lớp: lịch sử (mục 2–3), hạ tầng cộng đồng (mục 4), phương pháp (mục 5), rồi bàn về giới hạn (mục 6). Bài là tổng quan khái niệm, không dạy cú pháp. Cú pháp, RStudio và notebook nằm ở bài 2 (→ RStudio và R notebook); cách cài package nằm ở bài 7 (→ Cài đặt package).
+Vậy vì sao công cụ quen thuộc nhất cho các bài toán này lại là một ngôn ngữ thống kê? Bài đi qua ba lớp: lịch sử (mục 2–3), hạ tầng cộng đồng (mục 4), phương pháp (mục 5), rồi bàn về giới hạn (mục 6). Bài là tổng quan khái niệm, không dạy cú pháp. Cú pháp, RStudio và notebook nằm ở bài 2 (→ [RStudio và R notebook](/blog/rstudio-and-r-notebooks/)); cách cài package nằm ở bài 7 (→ Cài đặt package).
 
 ## 2. Từ S đến R: một ngôn ngữ cho phân tích dữ liệu
 
@@ -223,7 +223,7 @@ R trở thành nền tảng phân tích dữ liệu sinh học nhờ ba lớp c�
 
 Giới hạn cũng rõ: dữ liệu cực lớn, học sâu và xử lý trình tự thô thường cần thêm công cụ khác. Các bài tiếp theo đi từ khái niệm sang thực hành:
 
-- Bài 2: RStudio và R notebook (→ RStudio và R notebook)
+- Bài 2: RStudio và R notebook (→ [RStudio và R notebook](/blog/rstudio-and-r-notebooks/))
 - Bài 3: nhập và xuất dữ liệu (→ Nhập và xuất dữ liệu)
 - Bài 4: data frame (→ Data frame)
 - Bài 5: các kiểu dữ liệu cơ bản (→ Kiểu dữ liệu cơ bản)
