@@ -107,7 +107,7 @@ The six results fall into two kinds of difference, and their risk levels are far
 **Silent semantic differences** are the dangerous kind. The statement runs and returns rows, but the rows mean something other than what you think.
 
 - `LIKE 'tp53'` returns both `TP53` and `tp53`, because by default SQLite's LIKE is case-insensitive for ASCII characters (SQLite, n.d.-b). In a multi-species table, a filter meant to pick "zebrafish genes only" has quietly pulled in the human gene as well.
-- `chr = NULL` returns zero rows even though one row has no chromosome. NULL is not "equal" to anything, not even NULL; you have to write `IS NULL`. The PostgreSQL documentation says it plainly: do not write `expression = NULL`, because NULL is not equal to NULL (PostgreSQL Global Development Group, n.d.-d) (→ SELECT & WHERE).
+- `chr = NULL` returns zero rows even though one row has no chromosome. NULL is not "equal" to anything, not even NULL; you have to write `IS NULL`. The PostgreSQL documentation says it plainly: do not write `expression = NULL`, because NULL is not equal to NULL (PostgreSQL Global Development Group, n.d.-d) (→ [SELECT & WHERE](/en/blog/select-and-where-truy-van-co-ban/)).
 - `sym = "TP53"` works, but only because of a quirk. Standard SQL uses double quotes for **identifiers** (table and column names) and single quotes for **strings**. SQLite treats `"TP53"` as a string only when no column by that name exists, for compatibility with older software (SQLite, n.d.-a).
 - The fifth line shows what that quirk costs. Misspell the column name as `"symbol"` and SQLite raises no error. It reads both sides as the string `'symbol'`, the condition is always true, and all three rows come back.
 
@@ -255,7 +255,7 @@ ISO/IEC 9075 is a target that systems converge toward, not a description of any 
 The next articles in the series take the syntax one group at a time:
 
 - Data and relational databases (→ [Data & Databases](/en/blog/gioi-thieu-du-lieu-and-database/)).
-- SELECT, WHERE, NULL and three-valued logic (→ SELECT & WHERE).
+- SELECT, WHERE, NULL and three-valued logic (→ [SELECT & WHERE](/en/blog/select-and-where-truy-van-co-ban/)).
 - ORDER BY and searching (→ Sorting & Searching).
 - Aggregate functions, GROUP BY and HAVING (→ Aggregate, GROUP BY & HAVING).
 - JOIN, subqueries, CASE WHEN (→ [JOIN](/en/blog/join-ket-hop-nhieu-bang/), Subquery & CASE WHEN, Putting the skills together).

@@ -275,7 +275,7 @@ With one or two "yes" answers, a well-organized spreadsheet plus text files may 
 
 The familiar claims about Excel and databases have a kernel of truth but put the emphasis in the wrong place. The core difference is the **schema**: a database makes you state up front what each column holds, while a spreadsheet guesses afterward. Two decades of gene name errors show the cost of letting software guess, to the point that gene names themselves had to change. Databases are not a cure-all either: a column with the wrong declared type still corrupts IDs, SQLite foreign keys must be switched on, and data that has passed through a spreadsheet is damaged before it arrives. Learning SQL, then, is first of all learning to declare structure for biological data.
 
-You can try it right away: move a sample table you manage in Excel into SQLite as a `STRICT` table with a few `CHECK` constraints, or try connecting to the public UCSC or Ensembl servers. The next article in the series covers SELECT and WHERE.
+You can try it right away: move a sample table you manage in Excel into SQLite as a `STRICT` table with a few `CHECK` constraints, or try connecting to the public UCSC or Ensembl servers. The next article in the series covers [SELECT and WHERE](/en/blog/select-and-where-truy-van-co-ban/).
 
 ## References
 

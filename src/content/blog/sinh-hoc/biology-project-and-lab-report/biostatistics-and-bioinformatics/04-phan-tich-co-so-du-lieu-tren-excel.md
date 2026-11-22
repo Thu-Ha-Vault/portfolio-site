@@ -246,7 +246,7 @@ Truy vấn 1: L > 21 HOẶC tuổi 5+         Truy vấn 2: Msex = 3 HOẶC 4
 
 ### 4.2. Cùng một truy vấn bằng ba công cụ
 
-Trong SQL, `WHERE` nhận điều kiện viết bằng `AND`, `OR` và `IN` (→ SELECT & WHERE). Đoạn dưới tạo bảng trong SQLite, nạp `coilia_clean.csv` và chạy hai truy vấn lọc. Bảng được khai báo kiểu trước khi nạp để cột số không bị lưu thành văn bản.
+Trong SQL, `WHERE` nhận điều kiện viết bằng `AND`, `OR` và `IN` (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/)). Đoạn dưới tạo bảng trong SQLite, nạp `coilia_clean.csv` và chạy hai truy vấn lọc. Bảng được khai báo kiểu trước khi nạp để cột số không bị lưu thành văn bản.
 
 ```sql
 CREATE TABLE fish (

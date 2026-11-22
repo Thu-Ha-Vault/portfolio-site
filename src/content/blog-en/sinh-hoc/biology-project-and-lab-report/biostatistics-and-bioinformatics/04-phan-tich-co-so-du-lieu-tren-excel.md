@@ -247,7 +247,7 @@ In query 1, ">21" and "5+" sit on different rows, so they are joined with OR. Pu
 
 ### 4.2. The same query in three tools
 
-In SQL, `WHERE` takes conditions written with `AND`, `OR`, and `IN` (→ SELECT & WHERE). The code below creates a table in SQLite, loads `coilia_clean.csv`, and runs the two filter queries. The column types are declared before loading so that numeric columns are not stored as text.
+In SQL, `WHERE` takes conditions written with `AND`, `OR`, and `IN` (→ [SELECT & WHERE](/en/blog/select-and-where-truy-van-co-ban/)). The code below creates a table in SQLite, loads `coilia_clean.csv`, and runs the two filter queries. The column types are declared before loading so that numeric columns are not stored as text.
 
 ```sql
 CREATE TABLE fish (

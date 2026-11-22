@@ -274,7 +274,7 @@ Một hai câu "có" thì bảng tính tổ chức tốt kèm file văn bản c�
 
 Những nhận định quen thuộc về Excel và database có hạt nhân đúng nhưng đặt trọng tâm sai chỗ. Khác biệt cốt lõi là **schema**: database buộc bạn nói trước mỗi cột chứa gì, bảng tính đoán sau. Hai thập kỷ lỗi tên gene cho thấy cái giá của việc để phần mềm đoán, đến mức chính tên gene phải đổi. Database cũng không vạn năng: cột khai báo sai kiểu vẫn làm hỏng ID, khoá ngoại của SQLite phải tự bật, và dữ liệu đã qua bảng tính thì hỏng từ trước. Học SQL, vì vậy, trước hết là học cách khai báo cấu trúc cho dữ liệu sinh học.
 
-Bạn có thể thử ngay: chuyển một bảng mẫu đang quản lý bằng Excel sang SQLite với bảng `STRICT` và vài ràng buộc `CHECK`, hoặc kết nối thử máy chủ công khai của UCSC hay Ensembl. Bài sau của series đi vào SELECT và WHERE.
+Bạn có thể thử ngay: chuyển một bảng mẫu đang quản lý bằng Excel sang SQLite với bảng `STRICT` và vài ràng buộc `CHECK`, hoặc kết nối thử máy chủ công khai của UCSC hay Ensembl. Bài sau của series đi vào [SELECT và WHERE](/blog/select-and-where-truy-van-co-ban/).
 
 ## Tài liệu tham khảo
 

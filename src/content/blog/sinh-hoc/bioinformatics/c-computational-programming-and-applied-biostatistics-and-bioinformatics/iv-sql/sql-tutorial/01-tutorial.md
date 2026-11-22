@@ -105,7 +105,7 @@ Sáu dòng kết quả chia thành hai loại khác biệt, và mức nguy hiể
 **Khác biệt ngữ nghĩa âm thầm** là loại nguy hiểm: câu lệnh chạy, trả về kết quả, nhưng kết quả mang nghĩa khác với điều bạn nghĩ.
 
 - `LIKE 'tp53'` trả về cả `TP53` lẫn `tp53`, vì theo mặc định LIKE của SQLite không phân biệt hoa thường với ký tự ASCII (SQLite, n.d.-b). Với bảng gồm nhiều loài, một phép lọc tưởng là "chỉ gene zebrafish" đã gộp luôn gene người.
-- `chr = NULL` trả về 0 dòng dù có một dòng thiếu nhiễm sắc thể. NULL không "bằng" bất cứ thứ gì, kể cả NULL; phải viết `IS NULL`. Tài liệu PostgreSQL ghi rõ: đừng viết `expression = NULL`, vì NULL không bằng NULL (PostgreSQL Global Development Group, n.d.-d) (→ SELECT & WHERE).
+- `chr = NULL` trả về 0 dòng dù có một dòng thiếu nhiễm sắc thể. NULL không "bằng" bất cứ thứ gì, kể cả NULL; phải viết `IS NULL`. Tài liệu PostgreSQL ghi rõ: đừng viết `expression = NULL`, vì NULL không bằng NULL (PostgreSQL Global Development Group, n.d.-d) (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/)).
 - `sym = "TP53"` chạy được, nhưng chỉ vì một quirk: chuẩn SQL dùng ngoặc kép cho **định danh** (tên bảng, tên cột) và nháy đơn cho **chuỗi**; SQLite chỉ coi `"TP53"` là chuỗi khi không tìm thấy cột nào tên như vậy, để tương thích với phần mềm cũ (SQLite, n.d.-a).
 - Dòng thứ năm cho thấy hậu quả của quirk đó: gõ sai tên cột thành `"symbol"`, SQLite không báo lỗi mà coi cả hai vế là chuỗi `'symbol'`, điều kiện luôn đúng, và cả ba dòng được trả về.
 
@@ -253,7 +253,7 @@ Chuẩn ISO/IEC 9075 là đích hội tụ, không phải bản mô tả hệ n�
 Các bài tiếp theo của series đi vào từng nhóm cú pháp:
 
 - Dữ liệu và cơ sở dữ liệu quan hệ (→ [Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/)).
-- SELECT, WHERE, NULL và logic ba giá trị (→ SELECT & WHERE).
+- SELECT, WHERE, NULL và logic ba giá trị (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/)).
 - ORDER BY và tìm kiếm (→ Sắp xếp & Tìm kiếm).
 - Hàm tổng hợp, GROUP BY và HAVING (→ Aggregate, GROUP BY & HAVING).
 - JOIN, subquery, CASE WHEN (→ [JOIN](/blog/join-ket-hop-nhieu-bang/), Subquery & CASE WHEN, Kết hợp kỹ năng).
