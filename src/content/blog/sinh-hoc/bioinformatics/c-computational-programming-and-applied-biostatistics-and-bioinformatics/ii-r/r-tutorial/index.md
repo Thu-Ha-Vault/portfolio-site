@@ -25,7 +25,7 @@ isIndex: true
 
 - [Introduction](/blog/introduction/)
 - [RStudio and R notebooks](/blog/rstudio-and-r-notebooks/)
-- Importing and exporting data
+- [Importing and exporting data](/blog/importing-and-exporting-data/)
 - Data frames
 - Basic data types
 - Functions

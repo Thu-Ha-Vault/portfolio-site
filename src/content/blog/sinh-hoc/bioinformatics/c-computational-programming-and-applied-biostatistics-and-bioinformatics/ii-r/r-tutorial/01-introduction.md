@@ -224,7 +224,7 @@ R trở thành nền tảng phân tích dữ liệu sinh học nhờ ba lớp c�
 Giới hạn cũng rõ: dữ liệu cực lớn, học sâu và xử lý trình tự thô thường cần thêm công cụ khác. Các bài tiếp theo đi từ khái niệm sang thực hành:
 
 - Bài 2: RStudio và R notebook (→ [RStudio và R notebook](/blog/rstudio-and-r-notebooks/))
-- Bài 3: nhập và xuất dữ liệu (→ Nhập và xuất dữ liệu)
+- Bài 3: nhập và xuất dữ liệu (→ [Nhập và xuất dữ liệu](/blog/importing-and-exporting-data/))
 - Bài 4: data frame (→ Data frame)
 - Bài 5: các kiểu dữ liệu cơ bản (→ Kiểu dữ liệu cơ bản)
 - Bài 6: hàm (→ Hàm)

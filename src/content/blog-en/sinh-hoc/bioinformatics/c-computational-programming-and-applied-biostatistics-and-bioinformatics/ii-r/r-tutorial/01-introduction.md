@@ -225,7 +225,7 @@ R became a foundation of biological data analysis through three layers that add 
 The limits are clear too: very large data, deep learning and raw sequence processing usually call for other tools as well. The next articles move from concepts to practice:
 
 - Part 2: RStudio and R notebooks (→ [RStudio and R notebooks](/en/blog/rstudio-and-r-notebooks/))
-- Part 3: importing and exporting data (→ Importing and exporting data)
+- Part 3: importing and exporting data (→ [Importing and exporting data](/en/blog/importing-and-exporting-data/))
 - Part 4: data frames (→ Data frames)
 - Part 5: basic data types (→ Basic data types)
 - Part 6: functions (→ Functions)

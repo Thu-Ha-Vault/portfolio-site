@@ -109,7 +109,7 @@ Lỗi này không phải lỗi gõ phím mà là hành vi mặc định: ô khô
 
 Về sau Microsoft thêm nhóm tuỳ chọn *Automatic Data Conversion* cho Excel trong Microsoft 365 và Excel 2024 (Windows và Mac), cho phép tắt việc bỏ số 0 đứng đầu, cắt số dài, đổi chuỗi có chữ "E" thành số khoa học và đổi chuỗi chữ–số liền nhau thành ngày (Microsoft, n.d.-c). Tuỳ chọn cuối có giới hạn: theo trang hướng dẫn, chỉ chuỗi liền như `JAN1` được giữ nguyên, còn `JAN 1` hay `JAN-1` vẫn có thể thành ngày. Đây vẫn là cài đặt trên từng máy, không đi theo dữ liệu.
 
-Cách đọc file an toàn trong R có ở bài nhập và xuất dữ liệu trong R và Basic data types; xử lý khi lỗi đã xảy ra có ở [bài làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/).
+Cách đọc file an toàn trong R có ở bài [nhập và xuất dữ liệu trong R](/blog/importing-and-exporting-data/) và Basic data types; xử lý khi lỗi đã xảy ra có ở [bài làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/).
 
 ## 5. Database ngăn lỗi bằng cách nào, và khi nào không ngăn được
 
