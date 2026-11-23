@@ -355,7 +355,7 @@ On the variant table this gives 2 "rare" rows, 2 "common" rows and 2 "missing" r
 
 Errors caused by NULL come with no message. They only show up when you count. What to do now with the table you're working on: run the NULL count from step 1 of the checklist, then run the totals check from section 3.4 on your most important filter. If `a + not_a` falls short of `total`, rewrite the condition with `IS NULL`, `IS DISTINCT FROM` (PostgreSQL) or `IS NOT` (SQLite), and record the number of dropped rows in your Methods section.
 
-The next article looks at where NULLs end up when you sort (→ Sorting and searching), and the one after that looks at how aggregate functions such as `COUNT` and `AVG` treat NULL (→ Aggregate functions).
+The next article looks at where NULLs end up when you sort (→ [Sorting and searching](/en/blog/sap-xep-and-tim-kiem/)), and the one after that looks at how aggregate functions such as `COUNT` and `AVG` treat NULL (→ Aggregate functions).
 
 ## References
 

@@ -27,7 +27,7 @@ isIndex: true
 - BEGINNER
 	- [01 - Giới thiệu - Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/)
 	- [02 - SELECT & WHERE - Truy vấn cơ bản](/blog/select-and-where-truy-van-co-ban/)
-	- 03 - Sắp xếp & Tìm kiếm
+	- [03 - Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)
 	- 04 - Hàm tổng hợp (Aggregate)
 	- 05 - GROUP BY & HAVING - Tổng hợp dữ liệu
 - INTERMEDIATE

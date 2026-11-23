@@ -130,7 +130,7 @@ WINDOW w AS (ORDER BY salary DESC);
 
 ### Determinism and the tie-breaker column
 
-The two people earning 25 get `ROW_NUMBER` 2 and 3, but the query does not say who gets 2. When the sort key has ties, `ROW_NUMBER` is not deterministic: the result can change between two runs or between two database systems (Leis et al., 2015; Zemke, 2012). The fix is to add a unique tie-breaker column to `ORDER BY`, for example `ORDER BY salary DESC, id` (→ Sorting & Searching). With biological data, the tie-breaker should be a stable identifier such as a sample ID, an individual ID or an Ensembl ID, not a row number generated on import, because that number changes every time the data are reloaded.
+The two people earning 25 get `ROW_NUMBER` 2 and 3, but the query does not say who gets 2. When the sort key has ties, `ROW_NUMBER` is not deterministic: the result can change between two runs or between two database systems (Leis et al., 2015; Zemke, 2012). The fix is to add a unique tie-breaker column to `ORDER BY`, for example `ORDER BY salary DESC, id` (→ [Sorting & Searching](/en/blog/sap-xep-and-tim-kiem/)). With biological data, the tie-breaker should be a stable identifier such as a sample ID, an individual ID or an Ensembl ID, not a row number generated on import, because that number changes every time the data are reloaded.
 
 ### Is ORDER BY required?
 

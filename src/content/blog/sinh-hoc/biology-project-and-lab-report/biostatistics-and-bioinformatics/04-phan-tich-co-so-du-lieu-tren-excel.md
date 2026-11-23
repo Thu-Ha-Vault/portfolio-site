@@ -446,7 +446,7 @@ Mỗi hàm D- chỉ trả về **một** con số. Muốn tính cho từng nhóm
 
 ### 6.1. Sắp xếp và vị trí của giá trị thiếu
 
-Truy vấn 5 là sắp xếp tăng dần theo Wo (khoá chính), rồi Wf, rồi Msex (khoá phụ). Trong Excel, đó là Data → Sort với ba mức. Trong SQL là `ORDER BY wo_g, wf_g, msex`, trong R là `arrange(wo_g, wf_g, msex)` (→ Sắp xếp & Tìm kiếm). Điểm cần chú ý là giá trị thiếu đứng ở đâu. SQLite coi NULL nhỏ hơn mọi giá trị khác, nên NULL đứng đầu khi sắp tăng dần; cú pháp `NULLS LAST` đổi lại thứ tự này (SQLite, n.d.-b). `arrange()` của `dplyr` luôn đẩy NA xuống cuối.
+Truy vấn 5 là sắp xếp tăng dần theo Wo (khoá chính), rồi Wf, rồi Msex (khoá phụ). Trong Excel, đó là Data → Sort với ba mức. Trong SQL là `ORDER BY wo_g, wf_g, msex`, trong R là `arrange(wo_g, wf_g, msex)` (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)). Điểm cần chú ý là giá trị thiếu đứng ở đâu. SQLite coi NULL nhỏ hơn mọi giá trị khác, nên NULL đứng đầu khi sắp tăng dần; cú pháp `NULLS LAST` đổi lại thứ tự này (SQLite, n.d.-b). `arrange()` của `dplyr` luôn đẩy NA xuống cuối.
 
 ```sql
 -- Truy vấn 5: Wo tăng dần, rồi Wf, rồi Msex

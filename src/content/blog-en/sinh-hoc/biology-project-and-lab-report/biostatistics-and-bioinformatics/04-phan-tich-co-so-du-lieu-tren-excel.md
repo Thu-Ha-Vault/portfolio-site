@@ -447,7 +447,7 @@ Each D-function returns **one** number. To compute it for every group, Excel nee
 
 ### 6.1. Sorting and where missing values go
 
-Query 5 sorts in ascending order by Wo (primary key), then Wf, then Msex (secondary keys). In Excel, that is Data → Sort with three levels; in SQL, `ORDER BY wo_g, wf_g, msex`; in R, `arrange(wo_g, wf_g, msex)` (→ Sorting and searching). The point to watch is where missing values end up. SQLite treats NULL as smaller than any other value, so NULL comes first in an ascending sort; the `NULLS LAST` syntax reverses this (SQLite, n.d.-b). `dplyr`'s `arrange()` always puts NA at the end.
+Query 5 sorts in ascending order by Wo (primary key), then Wf, then Msex (secondary keys). In Excel, that is Data → Sort with three levels; in SQL, `ORDER BY wo_g, wf_g, msex`; in R, `arrange(wo_g, wf_g, msex)` (→ [Sorting and searching](/en/blog/sap-xep-and-tim-kiem/)). The point to watch is where missing values end up. SQLite treats NULL as smaller than any other value, so NULL comes first in an ascending sort; the `NULLS LAST` syntax reverses this (SQLite, n.d.-b). `dplyr`'s `arrange()` always puts NA at the end.
 
 ```sql
 -- Query 5: Wo ascending, then Wf, then Msex

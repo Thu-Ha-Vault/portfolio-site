@@ -127,7 +127,7 @@ WINDOW w AS (ORDER BY salary DESC);
 
 ### Tính tất định và cột phá hoà
 
-Hai người cùng lương 25 nhận `ROW_NUMBER` 2 và 3, nhưng ai là 2 thì truy vấn không quy định. Khi khoá sắp xếp có giá trị trùng, `ROW_NUMBER` không tất định: kết quả có thể đổi giữa hai lần chạy hoặc giữa hai hệ quản trị (Leis et al., 2015; Zemke, 2012). Cách sửa là thêm một cột phá hoà (tie-breaker) duy nhất vào `ORDER BY`, ví dụ `ORDER BY salary DESC, id` (→ Sắp xếp & Tìm kiếm). Với dữ liệu sinh học, cột phá hoà nên là mã định danh ổn định như mã mẫu, mã cá thể hay Ensembl ID, không phải số thứ tự dòng tự sinh khi nhập file, vì số đó đổi mỗi lần nạp lại.
+Hai người cùng lương 25 nhận `ROW_NUMBER` 2 và 3, nhưng ai là 2 thì truy vấn không quy định. Khi khoá sắp xếp có giá trị trùng, `ROW_NUMBER` không tất định: kết quả có thể đổi giữa hai lần chạy hoặc giữa hai hệ quản trị (Leis et al., 2015; Zemke, 2012). Cách sửa là thêm một cột phá hoà (tie-breaker) duy nhất vào `ORDER BY`, ví dụ `ORDER BY salary DESC, id` (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)). Với dữ liệu sinh học, cột phá hoà nên là mã định danh ổn định như mã mẫu, mã cá thể hay Ensembl ID, không phải số thứ tự dòng tự sinh khi nhập file, vì số đó đổi mỗi lần nạp lại.
 
 ### ORDER BY có bắt buộc không?
 

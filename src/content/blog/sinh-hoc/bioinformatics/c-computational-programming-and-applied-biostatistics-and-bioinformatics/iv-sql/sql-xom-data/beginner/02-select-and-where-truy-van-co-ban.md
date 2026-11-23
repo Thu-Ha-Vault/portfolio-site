@@ -353,7 +353,7 @@ Trên bảng biến thể, câu này cho 2 dòng "hiếm", 2 dòng "phổ biến
 
 Lỗi do NULL không kèm thông báo nào. Nó chỉ lộ ra khi bạn đếm. Việc nên làm ngay với bảng đang dùng: chạy câu đếm NULL ở bước 1 của checklist, rồi chạy câu kiểm tra tổng ở mục 3.4 cho bộ lọc quan trọng nhất. Nếu `a + not_a` thiếu so với `total`, viết lại điều kiện với `IS NULL`, `IS DISTINCT FROM` (PostgreSQL) hoặc `IS NOT` (SQLite), và ghi số dòng bị loại vào phần Methods.
 
-Bài tiếp theo xem NULL đứng ở đâu khi sắp xếp (→ Sắp xếp & Tìm kiếm), và bài sau đó xem các hàm tổng hợp như `COUNT` và `AVG` đối xử với NULL ra sao (→ Hàm tổng hợp).
+Bài tiếp theo xem NULL đứng ở đâu khi sắp xếp (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)), và bài sau đó xem các hàm tổng hợp như `COUNT` và `AVG` đối xử với NULL ra sao (→ Hàm tổng hợp).
 
 ## Tài liệu tham khảo
 
