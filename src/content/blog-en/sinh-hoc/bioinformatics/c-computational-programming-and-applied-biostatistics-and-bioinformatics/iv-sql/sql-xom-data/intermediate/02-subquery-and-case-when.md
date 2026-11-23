@@ -343,7 +343,7 @@ Choosing between `IN` and `EXISTS` is first a question of semantics. Speed comes
 - When unnesting a query with `COUNT`, use `LEFT JOIN` and count a column from the right-hand table so groups with a count of 0 aren't lost.
 - Don't replace NULL with 0 in a frequency column just to make the query run cleanly.
 
-The next article in the series combines subqueries, joins and aggregation into a complete workflow: putting all the skills together; naming subqueries and writing recursive queries are covered in the [CTE article](/en/blog/cte-and-set-operations/).
+The next article in the series combines subqueries, joins and aggregation into a complete workflow: [putting all the skills together](/en/blog/ket-hop-tat-ca-ky-nang/); naming subqueries and writing recursive queries are covered in the [CTE article](/en/blog/cte-and-set-operations/).
 
 ## Frequently asked questions
 

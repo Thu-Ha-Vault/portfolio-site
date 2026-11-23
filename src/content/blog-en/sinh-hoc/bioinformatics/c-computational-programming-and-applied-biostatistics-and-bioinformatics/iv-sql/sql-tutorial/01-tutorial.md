@@ -258,7 +258,7 @@ The next articles in the series take the syntax one group at a time:
 - SELECT, WHERE, NULL and three-valued logic (→ [SELECT & WHERE](/en/blog/select-and-where-truy-van-co-ban/)).
 - ORDER BY and searching (→ Sorting & Searching).
 - Aggregate functions, GROUP BY and HAVING (→ Aggregate, GROUP BY & HAVING).
-- JOIN, subqueries, CASE WHEN (→ [JOIN](/en/blog/join-ket-hop-nhieu-bang/), [Subquery & CASE WHEN](/en/blog/subquery-and-case-when/), Putting the skills together).
+- JOIN, subqueries, CASE WHEN (→ [JOIN](/en/blog/join-ket-hop-nhieu-bang/), [Subquery & CASE WHEN](/en/blog/subquery-and-case-when/), [Putting the skills together](/en/blog/ket-hop-tat-ca-ky-nang/)).
 - Window functions, recursive CTEs and applications (→ [Window Functions](/en/blog/window-functions/), [CTE & Set Operations](/en/blog/cte-and-set-operations/), Real-world applications).
 
 ## Frequently asked questions

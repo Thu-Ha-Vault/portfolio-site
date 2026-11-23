@@ -33,7 +33,7 @@ isIndex: true
 - INTERMEDIATE
 	- [01 - JOIN - Kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)
 	- [02 - Subquery & CASE WHEN](/blog/subquery-and-case-when/)
-	- 03 - Kết hợp tất cả kỹ năng
+	- [03 - Kết hợp tất cả kỹ năng](/blog/ket-hop-tat-ca-ky-nang/)
 - ADVANCED
 	- [01 - Window Functions](/blog/window-functions/)
 	- [02 - CTE & Set Operations](/blog/cte-and-set-operations/)

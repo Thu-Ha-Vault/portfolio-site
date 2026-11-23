@@ -340,7 +340,7 @@ Chọn `IN` hay `EXISTS` trước hết là chuyện ngữ nghĩa. Tốc độ �
 - Khi gỡ lồng truy vấn có `COUNT`, dùng `LEFT JOIN` và đếm một cột của bảng phải để không mất nhóm có số đếm bằng 0.
 - Không thay NULL bằng 0 trong cột tần số chỉ để truy vấn chạy gọn.
 
-Bài tiếp theo trong series ráp subquery, JOIN và tổng hợp thành một quy trình hoàn chỉnh: kết hợp tất cả kỹ năng; còn cách đặt tên cho subquery và truy vấn đệ quy nằm ở [bài CTE](/blog/cte-and-set-operations/).
+Bài tiếp theo trong series ráp subquery, JOIN và tổng hợp thành một quy trình hoàn chỉnh: [kết hợp tất cả kỹ năng](/blog/ket-hop-tat-ca-ky-nang/); còn cách đặt tên cho subquery và truy vấn đệ quy nằm ở [bài CTE](/blog/cte-and-set-operations/).
 
 ## Câu hỏi thường gặp
 

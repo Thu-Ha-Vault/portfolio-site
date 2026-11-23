@@ -632,7 +632,7 @@ function convertCallouts(lines) {
 // file or folder name: `~/Desktop/Sky/cyclistic-case-study` → `cyclistic-case-study`; inside a fenced code block it
 // becomes ./<name> so commands still read as commands. Generic paths such as ~/.zshrc are left alone. Links to private
 // repos (site.config.json privateLinks, URL prefixes) keep their text but lose the link; bare private URLs are dropped.
-const LOCAL_ROOT = String.raw`(?:file:\/\/)?(?:~\/(?:Desktop|Documents|Downloads|Library|Dropbox|iCloud[^\/\s]*)|\/Users\/[^\/\s]+|\/home\/[^\/\s]+|\/private\/(?:tmp|var)|\/var\/folders|\/Volumes\/[^\/\s]+|[A-Za-z]:\\(?:Users|Documents and Settings)\\[^\\\s]+|(?<![\w\/.-])Desktop\/Sky)`;
+const LOCAL_ROOT = String.raw`(?:file:\/\/|(?<![\w.\/:%-]))(?:~\/(?:Desktop|Documents|Downloads|Library|Dropbox|iCloud[^\/\s]*)|\/Users\/[^\/\s]+|\/home\/[^\/\s]+|\/private\/(?:tmp|var)|\/var\/folders|\/Volumes\/[^\/\s]+|[A-Za-z]:\\(?:Users|Documents and Settings)\\[^\\\s]+|(?<![\w\/.-])Desktop\/Sky)`;
 const reLocalStart = new RegExp('^\\s*' + LOCAL_ROOT);
 const reLocalBare = new RegExp(LOCAL_ROOT + String.raw`(?:[\/\\][^\s\`'"<>()\[\]|,;]*)?`, 'g');
 const privateLinks = ['https://github.com/Thu-Ha-Vault/Sky_Vault', ...(config.privateLinks || [])].map((u) => u.replace(/\/+$/, '').toLowerCase());

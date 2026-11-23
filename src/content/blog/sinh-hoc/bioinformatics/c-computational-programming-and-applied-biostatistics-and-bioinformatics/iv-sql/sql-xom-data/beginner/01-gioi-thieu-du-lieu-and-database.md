@@ -251,7 +251,7 @@ ORDER BY et.exon_id;
 -- SEPTIN2 | E3 | 1
 ```
 
-Hai database còn giống nhau ở giá trị trống: khách hàng chưa có email hay sản phẩm chưa cập nhật tồn kho được lưu là `NULL`, cũng như annotation chưa có hay giá trị đo bị thiếu. `NULL` không bằng 0 và không bằng chuỗi rỗng; nó sẽ được bàn ở các bài sau. Để luyện JOIN, xem [JOIN](/blog/join-ket-hop-nhieu-bang/) và bài tổng hợp.
+Hai database còn giống nhau ở giá trị trống: khách hàng chưa có email hay sản phẩm chưa cập nhật tồn kho được lưu là `NULL`, cũng như annotation chưa có hay giá trị đo bị thiếu. `NULL` không bằng 0 và không bằng chuỗi rỗng; nó sẽ được bàn ở các bài sau. Để luyện JOIN, xem [JOIN](/blog/join-ket-hop-nhieu-bang/) và [bài tổng hợp](/blog/ket-hop-tat-ca-ky-nang/).
 
 ## 8. Khi nào bảng tính vẫn đủ, khi nào cần database
 

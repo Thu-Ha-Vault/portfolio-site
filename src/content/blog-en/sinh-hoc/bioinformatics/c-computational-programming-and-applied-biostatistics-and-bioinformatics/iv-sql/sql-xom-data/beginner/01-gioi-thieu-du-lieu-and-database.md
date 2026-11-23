@@ -252,7 +252,7 @@ ORDER BY et.exon_id;
 -- SEPTIN2 | E3 | 1
 ```
 
-The two databases are also alike in how they record missing values: a customer without an email or a product whose stock has not been updated is stored as `NULL`, just like a missing annotation or a missing measurement. `NULL` is neither 0 nor an empty string; it will be covered in later articles. To practice JOIN, see [JOIN](/en/blog/join-ket-hop-nhieu-bang/) and the combined skills article.
+The two databases are also alike in how they record missing values: a customer without an email or a product whose stock has not been updated is stored as `NULL`, just like a missing annotation or a missing measurement. `NULL` is neither 0 nor an empty string; it will be covered in later articles. To practice JOIN, see [JOIN](/en/blog/join-ket-hop-nhieu-bang/) and [the combined skills article](/en/blog/ket-hop-tat-ca-ky-nang/).
 
 ## 8. When a spreadsheet is enough, and when you need a database
 
