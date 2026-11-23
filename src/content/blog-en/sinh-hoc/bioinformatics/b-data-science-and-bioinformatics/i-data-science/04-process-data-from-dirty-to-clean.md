@@ -62,7 +62,7 @@ A data constraint determines whether a value is valid. Table 1 lists nine common
 | Primary key            | be unique **for each row**                          | sample ID in the sample information table          | Unique plus Mandatory              |
 | Foreign key            | **match** a key in another table, **need not** be unique | sample ID in the measurement results table    | `LEFT JOIN`, look for unmatched rows |
 
-The last two rows need a clear distinction. A primary key identifies a record, so it must be unique for each row and must not be blank. A foreign key only has to match an existing key in the other table and does not need to be unique: a sample measured ten times appears ten times in the results table (→ SQL: Subquery & CASE WHEN, [article 05](/en/blog/analyze-data-to-answer-questions/)). Accuracy, completeness and consistency are not in the table because they are quality dimensions (Section 2.1), not rules that a single formula can check.
+The last two rows need a clear distinction. A primary key identifies a record, so it must be unique for each row and must not be blank. A foreign key only has to match an existing key in the other table and does not need to be unique: a sample measured ten times appears ten times in the results table (→ [SQL: Subquery & CASE WHEN](/en/blog/subquery-and-case-when/), [article 05](/en/blog/analyze-data-to-answer-questions/)). Accuracy, completeness and consistency are not in the table because they are quality dimensions (Section 2.1), not rules that a single formula can check.
 
 ### 2.3. Types of dirty data and the three phases of cleaning
 

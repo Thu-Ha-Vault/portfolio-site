@@ -192,7 +192,7 @@ print(n("clin_sig = NULL"), n("clin_sig IS NULL"))   # 0 2
 
 ### 3.3. Vì sao NOT IN với NULL trả về 0 dòng
 
-`x NOT IN ('TP53', 'KRAS', NULL)` tương đương `x <> 'TP53' AND x <> 'KRAS' AND x <> NULL`. Vế cuối luôn là UNKNOWN. Theo Bảng 1, `TRUE AND UNKNOWN` là UNKNOWN, còn `FALSE AND UNKNOWN` là FALSE, nên không dòng nào đạt TRUE. Ngược lại, `IN` tương đương một chuỗi `OR`, và `TRUE OR UNKNOWN` là TRUE, nên NULL trong danh sách không gây hại cho `IN`. Bẫy này nguy hiểm nhất khi danh sách là một subquery lấy từ bảng khác có ô trống (→ Subquery & CASE WHEN).
+`x NOT IN ('TP53', 'KRAS', NULL)` tương đương `x <> 'TP53' AND x <> 'KRAS' AND x <> NULL`. Vế cuối luôn là UNKNOWN. Theo Bảng 1, `TRUE AND UNKNOWN` là UNKNOWN, còn `FALSE AND UNKNOWN` là FALSE, nên không dòng nào đạt TRUE. Ngược lại, `IN` tương đương một chuỗi `OR`, và `TRUE OR UNKNOWN` là TRUE, nên NULL trong danh sách không gây hại cho `IN`. Bẫy này nguy hiểm nhất khi danh sách là một subquery lấy từ bảng khác có ô trống (→ [Subquery & CASE WHEN](/blog/subquery-and-case-when/)).
 
 ### 3.4. Quy tắc kiểm tra tổng
 
@@ -318,7 +318,7 @@ Sáu bước dưới đây gom các kết quả trên thành quy trình dùng tr
 1. **Đếm NULL từng cột.** `COUNT(*)` đếm mọi dòng, `COUNT(col)` bỏ qua NULL, nên hiệu của chúng là số ô thiếu. Trên bảng biến thể, `SELECT COUNT(*) - COUNT(gene), COUNT(*) - COUNT(consequence), COUNT(*) - COUNT(clin_sig), COUNT(*) - COUNT(af) FROM variant;` cho 1, 1, 2, 2.
 2. **Tìm mã thiếu không phải NULL.** Ô thiếu có thể là chuỗi rỗng (như Thí nghiệm 2), `'NA'`, `'.'` hay `'not_provided'`. Tìm bằng `WHERE clin_sig IN ('', 'NA', '.', 'not_provided')` và đổi về NULL một lần, có ghi chép.
 3. **Khi lọc "khác" hoặc "không thuộc", quyết định dòng NULL đi đâu.** Muốn giữ thì viết rõ `OR col IS NULL`, hoặc dùng `IS DISTINCT FROM` (PostgreSQL) hay `IS NOT` (SQLite). Trên bảng biến thể, `clin_sig <> 'Benign'` trả 2 dòng, `clin_sig IS NOT 'Benign'` trả 4.
-4. **Tránh `NOT IN` khi danh sách có thể chứa NULL.** Dùng `NOT EXISTS` với subquery, cách này giữ được dòng không khớp kể cả khi danh sách có NULL; chi tiết ở bài Subquery & CASE WHEN.
+4. **Tránh `NOT IN` khi danh sách có thể chứa NULL.** Dùng `NOT EXISTS` với subquery, cách này giữ được dòng không khớp kể cả khi danh sách có NULL; chi tiết ở bài [Subquery & CASE WHEN](/blog/subquery-and-case-when/).
 5. **Dùng `COALESCE` chỉ khi giá trị thay thế có nghĩa khoa học.** Thay NULL của `clin_sig` bằng `'not_provided'` là hợp lý; thay NULL của `af` bằng 0 thì sai, vì biến thể chưa có dữ liệu quần thể không phải biến thể có tần số 0.
 6. **Kiểm tra tổng và báo cáo.** Chạy truy vấn kiểm tra ở mục 3.4 cho mỗi điều kiện quan trọng. Trong phần Methods, ghi cách nạp dữ liệu, cách mã hoá giá trị thiếu và số dòng bị loại vì NULL ở mỗi bước lọc.
 

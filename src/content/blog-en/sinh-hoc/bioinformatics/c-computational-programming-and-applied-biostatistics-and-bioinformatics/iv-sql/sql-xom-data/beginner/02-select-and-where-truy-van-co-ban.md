@@ -194,7 +194,7 @@ print(n("clin_sig = NULL"), n("clin_sig IS NULL"))   # 0 2
 
 ### 3.3. Why NOT IN with a NULL returns 0 rows
 
-`x NOT IN ('TP53', 'KRAS', NULL)` is equivalent to `x <> 'TP53' AND x <> 'KRAS' AND x <> NULL`. The last term is always UNKNOWN. By Table 1, `TRUE AND UNKNOWN` is UNKNOWN and `FALSE AND UNKNOWN` is FALSE, so no row ever reaches TRUE. `IN`, by contrast, is equivalent to a chain of `OR`s, and `TRUE OR UNKNOWN` is TRUE, so a NULL in the list does no harm to `IN`. The trap is most dangerous when the list is a subquery pulled from another table that has empty cells (→ Subquery & CASE WHEN).
+`x NOT IN ('TP53', 'KRAS', NULL)` is equivalent to `x <> 'TP53' AND x <> 'KRAS' AND x <> NULL`. The last term is always UNKNOWN. By Table 1, `TRUE AND UNKNOWN` is UNKNOWN and `FALSE AND UNKNOWN` is FALSE, so no row ever reaches TRUE. `IN`, by contrast, is equivalent to a chain of `OR`s, and `TRUE OR UNKNOWN` is TRUE, so a NULL in the list does no harm to `IN`. The trap is most dangerous when the list is a subquery pulled from another table that has empty cells (→ [Subquery & CASE WHEN](/en/blog/subquery-and-case-when/)).
 
 ### 3.4. The totals check
 
@@ -320,7 +320,7 @@ The six steps below turn the results above into a routine to run before every fi
 1. **Count NULLs in each column.** `COUNT(*)` counts every row and `COUNT(col)` skips NULLs, so their difference is the number of missing cells. On the variant table, `SELECT COUNT(*) - COUNT(gene), COUNT(*) - COUNT(consequence), COUNT(*) - COUNT(clin_sig), COUNT(*) - COUNT(af) FROM variant;` returns 1, 1, 2, 2.
 2. **Look for missing-value codes that aren't NULL.** A missing cell may be an empty string (as in Experiment 2), `'NA'`, `'.'` or `'not_provided'`. Find them with `WHERE clin_sig IN ('', 'NA', '.', 'not_provided')` and convert them to NULL once, with a record of what you did.
 3. **When filtering for "not equal" or "not in," decide where NULL rows go.** To keep them, write `OR col IS NULL` explicitly, or use `IS DISTINCT FROM` (PostgreSQL) or `IS NOT` (SQLite). On the variant table, `clin_sig <> 'Benign'` returns 2 rows and `clin_sig IS NOT 'Benign'` returns 4.
-4. **Avoid `NOT IN` when the list might contain NULL.** Use `NOT EXISTS` with a subquery instead; it keeps non-matching rows even when the list contains NULL. Details are in Subquery & CASE WHEN.
+4. **Avoid `NOT IN` when the list might contain NULL.** Use `NOT EXISTS` with a subquery instead; it keeps non-matching rows even when the list contains NULL. Details are in [Subquery & CASE WHEN](/en/blog/subquery-and-case-when/).
 5. **Use `COALESCE` only when the replacement value means something scientifically.** Replacing a NULL `clin_sig` with `'not_provided'` is reasonable; replacing a NULL `af` with 0 is wrong, because a variant with no population data is not a variant with frequency 0.
 6. **Check the totals and report them.** Run the check from section 3.4 for every important condition. In the Methods section, record how the data were loaded, how missing values were coded, and how many rows each filtering step dropped because of NULL.
 

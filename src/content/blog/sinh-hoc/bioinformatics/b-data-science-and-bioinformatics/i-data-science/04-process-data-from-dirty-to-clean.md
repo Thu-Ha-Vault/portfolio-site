@@ -62,7 +62,7 @@ Ràng buộc dữ liệu (data constraint) quyết định một giá trị có 
 | Primary key            | duy nhất **cho mỗi dòng**                         | sample ID trong bảng thông tin mẫu             | Unique cộng Mandatory              |
 | Foreign key            | **khớp** khoá ở bảng khác, **không cần** duy nhất | sample ID trong bảng kết quả đo                | `LEFT JOIN`, tìm dòng không khớp   |
 
-Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ SQL: Subquery & CASE WHEN, [bài 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
+Cần phân biệt rõ hai dòng cuối. Khoá chính (primary key) định danh một bản ghi, nên phải duy nhất cho mỗi dòng và không được trống. Khoá ngoại (foreign key) chỉ cần khớp với một khoá có sẵn ở bảng kia và không cần duy nhất: mẫu đo mười lần thì sample ID lặp mười lần trong bảng kết quả (→ [SQL: Subquery & CASE WHEN](/blog/subquery-and-case-when/), [bài 05](/blog/analyze-data-to-answer-questions/)). Accuracy, completeness và consistency không nằm trong bảng vì đó là các chiều chất lượng (mục 2.1), không phải luật kiểm tra được bằng một công thức.
 
 ### 2.3. Các loại dirty data và ba giai đoạn làm sạch
 

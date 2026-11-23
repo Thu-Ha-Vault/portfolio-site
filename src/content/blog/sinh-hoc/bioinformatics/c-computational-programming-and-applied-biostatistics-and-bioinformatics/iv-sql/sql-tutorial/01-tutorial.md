@@ -256,7 +256,7 @@ Các bài tiếp theo của series đi vào từng nhóm cú pháp:
 - SELECT, WHERE, NULL và logic ba giá trị (→ [SELECT & WHERE](/blog/select-and-where-truy-van-co-ban/)).
 - ORDER BY và tìm kiếm (→ Sắp xếp & Tìm kiếm).
 - Hàm tổng hợp, GROUP BY và HAVING (→ Aggregate, GROUP BY & HAVING).
-- JOIN, subquery, CASE WHEN (→ [JOIN](/blog/join-ket-hop-nhieu-bang/), Subquery & CASE WHEN, Kết hợp kỹ năng).
+- JOIN, subquery, CASE WHEN (→ [JOIN](/blog/join-ket-hop-nhieu-bang/), [Subquery & CASE WHEN](/blog/subquery-and-case-when/), Kết hợp kỹ năng).
 - Window function, CTE đệ quy và ứng dụng (→ [Window Functions](/blog/window-functions/), [CTE & Set Operations](/blog/cte-and-set-operations/), Ứng dụng thực chiến).
 
 ## Câu hỏi thường gặp

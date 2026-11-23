@@ -274,7 +274,7 @@ rows_before  rows_after  tpm_before     tpm_after
 
 Truy vấn (1) tìm khoá trùng ở phía "một": ba Ensembl ID, mỗi ID ứng với hai mục HGNC. Truy vấn (2) là một anti-join: đếm dòng bên trái không tìm thấy dòng bên phải. Truy vấn (3) cho thấy số dòng tăng từ 56.200 lên 56.203 và tổng TPM tăng 0,131268, đúng bằng TPM của RP11-448G15.1 bị đếm hai lần. Trên bảng trích, ba truy vấn trả về một khoá trùng, một dòng không khớp (SOD2) và 6 dòng thành 7.
 
-Bước kiểm tra cũng có thể viết bằng subquery, tức một truy vấn lồng trong truy vấn khác (Subquery và CASE WHEN):
+Bước kiểm tra cũng có thể viết bằng subquery, tức một truy vấn lồng trong truy vấn khác ([Subquery và CASE WHEN](/blog/subquery-and-case-when/)):
 
 ```sql
 -- Khoá có trong bảng chú giải: lọc bằng subquery, không nhân bản dòng

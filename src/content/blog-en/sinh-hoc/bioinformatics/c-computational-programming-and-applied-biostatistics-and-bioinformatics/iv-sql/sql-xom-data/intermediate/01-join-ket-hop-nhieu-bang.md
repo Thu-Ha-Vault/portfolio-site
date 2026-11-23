@@ -307,7 +307,7 @@ WHERE NOT EXISTS (SELECT 1 FROM variant v
                   WHERE v.gene_id = g.gene_id);                -- 1
 ```
 
-In the large experiment, the three approaches return the same 4,952 rows only because `gene.gene_id` is a primary key and is never NULL. In biological data, a foreign key column with NULLs is common (intergenic variants), so `NOT IN` on that column is a risk. `NOT EXISTS` is semantically safe in every case; in this experiment it was about three times slower because SQLite runs the correlated subquery for each row, but 0.05 seconds for 200,000 rows is still fast enough for most analyses. Subqueries and NULL are covered in more depth in subqueries and CASE WHEN.
+In the large experiment, the three approaches return the same 4,952 rows only because `gene.gene_id` is a primary key and is never NULL. In biological data, a foreign key column with NULLs is common (intergenic variants), so `NOT IN` on that column is a risk. `NOT EXISTS` is semantically safe in every case; in this experiment it was about three times slower because SQLite runs the correlated subquery for each row, but 0.05 seconds for 200,000 rows is still fast enough for most analyses. Subqueries and NULL are covered in more depth in [subqueries and CASE WHEN](/en/blog/subquery-and-case-when/).
 
 ## 8. Biology case study: the GEMINI schema
 
@@ -373,7 +373,7 @@ A checklist before you trust a number that came out of a JOIN:
 6. **Read `EXPLAIN QUERY PLAN`**: if you see two nested `SCAN`s over large tables, create an index on the foreign key column.
 7. **Record versions**: the SQLite version (`SELECT sqlite_version();`) and the annotation version alongside your results.
 
-The next articles in the series pick up two threads started here: subqueries and CASE WHEN for `EXISTS`, `NOT IN` and NULL, and [CTEs and set operations](/en/blog/cte-and-set-operations/) for splitting a multi-JOIN query into named steps so you can check the row count at each one.
+The next articles in the series pick up two threads started here: [subqueries and CASE WHEN](/en/blog/subquery-and-case-when/) for `EXISTS`, `NOT IN` and NULL, and [CTEs and set operations](/en/blog/cte-and-set-operations/) for splitting a multi-JOIN query into named steps so you can check the row count at each one.
 
 ## References
 

@@ -306,7 +306,7 @@ WHERE NOT EXISTS (SELECT 1 FROM variant v
                   WHERE v.gene_id = g.gene_id);                -- 1
 ```
 
-Trong thí nghiệm lớn, ba cách cho cùng 4 952 dòng chỉ vì `gene.gene_id` là khoá chính, không bao giờ NULL. Với dữ liệu sinh học, cột khoá ngoại có NULL là chuyện thường (biến thể liên gene), nên `NOT IN` trên cột đó là rủi ro. `NOT EXISTS` an toàn về ngữ nghĩa trong mọi trường hợp; ở thí nghiệm này nó chậm hơn khoảng ba lần vì SQLite chạy subquery tương quan cho từng dòng, nhưng 0,05 giây cho 200 000 dòng vẫn đủ nhanh cho phần lớn phân tích. Chi tiết về subquery và NULL nằm ở bài subquery và CASE WHEN.
+Trong thí nghiệm lớn, ba cách cho cùng 4 952 dòng chỉ vì `gene.gene_id` là khoá chính, không bao giờ NULL. Với dữ liệu sinh học, cột khoá ngoại có NULL là chuyện thường (biến thể liên gene), nên `NOT IN` trên cột đó là rủi ro. `NOT EXISTS` an toàn về ngữ nghĩa trong mọi trường hợp; ở thí nghiệm này nó chậm hơn khoảng ba lần vì SQLite chạy subquery tương quan cho từng dòng, nhưng 0,05 giây cho 200 000 dòng vẫn đủ nhanh cho phần lớn phân tích. Chi tiết về subquery và NULL nằm ở bài [subquery và CASE WHEN](/blog/subquery-and-case-when/).
 
 ## 8. Case sinh học: lược đồ GEMINI
 
@@ -372,7 +372,7 @@ Checklist trước khi tin một con số sau JOIN:
 6. **Đọc `EXPLAIN QUERY PLAN`**: thấy hai `SCAN` lồng nhau trên bảng lớn thì tạo index trên cột khoá ngoại.
 7. **Ghi phiên bản** SQLite (`SELECT sqlite_version();`) và phiên bản chú giải kèm kết quả.
 
-Các bài tiếp theo của series mở rộng hai hướng đã chạm tới ở đây: subquery và CASE WHEN cho `EXISTS`, `NOT IN` và NULL; [CTE và phép toán tập hợp](/blog/cte-and-set-operations/) cho cách chia một truy vấn nhiều JOIN thành các bước có tên, dễ kiểm tra số dòng từng bước.
+Các bài tiếp theo của series mở rộng hai hướng đã chạm tới ở đây: [subquery và CASE WHEN](/blog/subquery-and-case-when/) cho `EXISTS`, `NOT IN` và NULL; [CTE và phép toán tập hợp](/blog/cte-and-set-operations/) cho cách chia một truy vấn nhiều JOIN thành các bước có tên, dễ kiểm tra số dòng từng bước.
 
 ## Tài liệu tham khảo
 

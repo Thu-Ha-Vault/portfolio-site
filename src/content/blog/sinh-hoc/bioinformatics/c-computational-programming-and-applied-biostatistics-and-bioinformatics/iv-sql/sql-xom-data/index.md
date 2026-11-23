@@ -32,7 +32,7 @@ isIndex: true
 	- 05 - GROUP BY & HAVING - Tổng hợp dữ liệu
 - INTERMEDIATE
 	- [01 - JOIN - Kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)
-	- 02 - Subquery & CASE WHEN
+	- [02 - Subquery & CASE WHEN](/blog/subquery-and-case-when/)
 	- 03 - Kết hợp tất cả kỹ năng
 - ADVANCED
 	- [01 - Window Functions](/blog/window-functions/)

@@ -86,7 +86,7 @@ SELECT go_id, n_gene FROM big_terms ORDER BY n_gene DESC;
 
 ### 2.2. CTEs, subqueries, views, and temporary tables
 
-A subquery in `FROM` can do the same job, but it has no name: if you need its result twice, you have to paste the query twice, while a CTE can be called by name as often as you like within the same statement. A view is stored in the schema and works across statements; a temporary table holds real data for the whole session. How subqueries work is covered in the Subquery and CASE WHEN article.
+A subquery in `FROM` can do the same job, but it has no name: if you need its result twice, you have to paste the query twice, while a CTE can be called by name as often as you like within the same statement. A view is stored in the schema and works across statements; a temporary table holds real data for the whole session. How subqueries work is covered in the [Subquery and CASE WHEN article](/en/blog/subquery-and-case-when/).
 
 **Table 1.** Four ways to name an intermediate result
 

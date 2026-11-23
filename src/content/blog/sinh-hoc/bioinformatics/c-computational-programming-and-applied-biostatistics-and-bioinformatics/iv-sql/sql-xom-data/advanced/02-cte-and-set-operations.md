@@ -83,7 +83,7 @@ SELECT go_id, n_gene FROM term_lon ORDER BY n_gene DESC;
 
 ### 2.2. CTE, subquery, view và bảng tạm
 
-Subquery trong `FROM` làm được việc tương tự nhưng không có tên: cần kết quả đó hai lần thì phải chép đoạn truy vấn hai lần, còn CTE gọi bằng tên bao nhiêu lần cũng được trong cùng câu lệnh. View được lưu trong schema và dùng qua nhiều câu lệnh; bảng tạm chứa dữ liệu thật suốt phiên làm việc. Cách subquery hoạt động có ở bài Subquery và CASE WHEN.
+Subquery trong `FROM` làm được việc tương tự nhưng không có tên: cần kết quả đó hai lần thì phải chép đoạn truy vấn hai lần, còn CTE gọi bằng tên bao nhiêu lần cũng được trong cùng câu lệnh. View được lưu trong schema và dùng qua nhiều câu lệnh; bảng tạm chứa dữ liệu thật suốt phiên làm việc. Cách subquery hoạt động có ở [bài Subquery và CASE WHEN](/blog/subquery-and-case-when/).
 
 **Bảng 1.** Bốn cách đặt tên cho một kết quả trung gian
 

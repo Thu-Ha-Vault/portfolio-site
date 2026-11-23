@@ -275,7 +275,7 @@ rows_before  rows_after  tpm_before     tpm_after
 
 Query (1) finds duplicate keys on the "one" side: three Ensembl IDs, each corresponding to two HGNC entries. Query (2) is an anti-join: it counts rows on the left that find no row on the right. Query (3) shows the row count rising from 56,200 to 56,203 and the total TPM rising by 0.131268, exactly the TPM of RP11-448G15.1 counted twice. On the extract, the three queries return one duplicate key, one unmatched row (SOD2), and 6 rows turning into 7.
 
-The checks can also be written with subqueries, that is, a query nested inside another query (Subqueries and CASE WHEN):
+The checks can also be written with subqueries, that is, a query nested inside another query ([Subqueries and CASE WHEN](/en/blog/subquery-and-case-when/)):
 
 ```sql
 -- Keys present in the annotation table: filter with a subquery, no row duplication
