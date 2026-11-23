@@ -100,7 +100,7 @@ File TSV (tab-separated values) theo cùng ý tưởng nhưng ngăn cột bằng
 
 ### 2.1. Thư mục làm việc: dùng dự án thay cho đường dẫn tuyệt đối
 
-Khi gọi `read.csv("birthweight.csv")`, R tìm file trong thư mục làm việc (working directory) hiện tại. Cách quen thuộc là chạy `setwd()` với đường dẫn tuyệt đối, ví dụ `setwd("R_project")`, hoặc chọn *Session > Set Working Directory* trong RStudio. Script như vậy chạy trên máy bạn nhưng hỏng trên máy người khác. Bryan (2017) gọi đó là script không tự chứa, không mang đi được: ai nhận cũng phải sửa tay đường dẫn.
+Khi gọi `read.csv("birthweight.csv")`, R tìm file trong thư mục làm việc (working directory) hiện tại. Cách quen thuộc là chạy `setwd()` với đường dẫn tuyệt đối, ví dụ `setwd("D:/projects/R_project")`, hoặc chọn *Session > Set Working Directory* trong RStudio. Script như vậy chạy trên máy bạn nhưng hỏng trên máy người khác. Bryan (2017) gọi đó là script không tự chứa, không mang đi được: ai nhận cũng phải sửa tay đường dẫn.
 
 Cách thay thế được khuyên là làm việc theo dự án: mỗi phân tích nằm trong một thư mục riêng, đánh dấu bằng một RStudio Project (file `.Rproj`), và mọi đường dẫn viết tương đối từ thư mục gốc của dự án, có thể dùng hàm `here()` của gói here (Bryan, 2017). Wilson et al. (2017) cũng khuyên đặt mỗi dự án trong một thư mục, dữ liệu thô trong `data/` và kết quả trong `results/`. Cách tạo Project trong RStudio được trình bày ở [bài 2 về RStudio và R Notebook](/blog/rstudio-and-r-notebooks/).
 

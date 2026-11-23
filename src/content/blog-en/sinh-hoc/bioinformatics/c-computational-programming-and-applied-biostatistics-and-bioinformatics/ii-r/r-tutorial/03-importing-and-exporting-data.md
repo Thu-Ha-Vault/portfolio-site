@@ -101,7 +101,7 @@ TSV (tab-separated values) files follow the same idea but separate columns with 
 
 ### 2.1. Working directory: use a project instead of absolute paths
 
-When you call `read.csv("birthweight.csv")`, R looks for the file in the current working directory. The familiar approach is to run `setwd()` with an absolute path, for example `setwd("R_project")`, or to choose *Session > Set Working Directory* in RStudio. A script like that runs on your machine and breaks on anyone else's. Bryan (2017) calls such scripts not self-contained and not portable: everyone who receives one has to fix the paths by hand.
+When you call `read.csv("birthweight.csv")`, R looks for the file in the current working directory. The familiar approach is to run `setwd()` with an absolute path, for example `setwd("D:/projects/R_project")`, or to choose *Session > Set Working Directory* in RStudio. A script like that runs on your machine and breaks on anyone else's. Bryan (2017) calls such scripts not self-contained and not portable: everyone who receives one has to fix the paths by hand.
 
 The recommended alternative is a project-oriented workflow. Each analysis lives in its own folder, marked by an RStudio Project (a `.Rproj` file), and every path is written relative to the project root, optionally with the `here()` function from the here package (Bryan, 2017). Wilson et al. (2017) likewise recommend putting each project in its own directory, with raw data in `data/` and output in `results/`. How to create a Project in RStudio is covered in [article 2 on RStudio and R Notebooks](/en/blog/rstudio-and-r-notebooks/).
 
