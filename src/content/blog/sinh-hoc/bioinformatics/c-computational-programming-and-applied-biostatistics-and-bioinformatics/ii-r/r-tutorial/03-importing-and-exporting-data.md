@@ -142,7 +142,7 @@ Từ R 4.0.0, `stringsAsFactors = FALSE` là mặc định, nên cột chữ gi�
 
 Ô trống trong cột số thành `NA`; chỉ bốn biến của người cha có giá trị thiếu, 4–5 ô mỗi cột.
 
-Cột `birth.date` lưu ngày dạng `1/25/1967` (tháng/ngày/năm) và được giữ là chuỗi. R không tự đổi chuỗi trông giống ngày thành ngày; muốn dùng làm ngày, bạn chuyển rõ ràng với định dạng khai báo, ví dụ `as.Date(bw$birth.date, format = "%m/%d/%Y")` (kiểu dữ liệu và chuyển kiểu được bàn ở bài về kiểu dữ liệu cơ bản). Đây là khác biệt cốt lõi so với bảng tính, nơi việc đổi thành ngày xảy ra ngay khi mở file (mục 5).
+Cột `birth.date` lưu ngày dạng `1/25/1967` (tháng/ngày/năm) và được giữ là chuỗi. R không tự đổi chuỗi trông giống ngày thành ngày; muốn dùng làm ngày, bạn chuyển rõ ràng với định dạng khai báo, ví dụ `as.Date(bw$birth.date, format = "%m/%d/%Y")` (kiểu dữ liệu và chuyển kiểu được bàn ở [bài về kiểu dữ liệu cơ bản](/blog/basic-data-types/)). Đây là khác biệt cốt lõi so với bảng tính, nơi việc đổi thành ngày xảy ra ngay khi mở file (mục 5).
 
 ### 2.4. Kiểm tra ngay sau khi nhập
 

@@ -72,7 +72,7 @@ Cả bài xoay quanh cột đó. Gặp NULL, các toán tử so sánh, `BETWEEN`
 <div class="callout callout-note">
 <p class="callout-title">Người dùng R</p>
 
-Nếu bạn đã quen `NA` trong R, NULL của SQL hành xử theo cùng tinh thần: giá trị thiếu lan qua phép so sánh, và phải kiểm tra bằng hàm hoặc toán tử riêng thay vì `==` (→ Các kiểu dữ liệu cơ bản trong R).
+Nếu bạn đã quen `NA` trong R, NULL của SQL hành xử theo cùng tinh thần: giá trị thiếu lan qua phép so sánh, và phải kiểm tra bằng hàm hoặc toán tử riêng thay vì `==` (→ [Các kiểu dữ liệu cơ bản trong R](/blog/basic-data-types/)).
 
 </div>
 

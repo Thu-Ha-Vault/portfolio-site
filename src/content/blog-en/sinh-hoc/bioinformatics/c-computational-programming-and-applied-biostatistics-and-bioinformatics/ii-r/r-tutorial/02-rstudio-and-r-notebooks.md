@@ -306,7 +306,7 @@ An R Notebook is the quickest way to keep the explanation, code, and results of 
 2. Add a `sessionInfo()` chunk to the end of every notebook.
 3. Before you hand in or send a file, restart R and rerun everything from the top, or Knit.
 
-The next article in the series covers importing and exporting data ([Importing and exporting data](/en/blog/importing-and-exporting-data/)): CSV files, spreadsheets, and common formatting errors. `renv` comes back in the article on installing packages (Installing packages). Background on data types is in article 05.
+The next article in the series covers importing and exporting data ([Importing and exporting data](/en/blog/importing-and-exporting-data/)): CSV files, spreadsheets, and common formatting errors. `renv` comes back in the article on installing packages (Installing packages). Background on data types is in [article 05](/en/blog/basic-data-types/).
 
 ## Frequently asked questions
 

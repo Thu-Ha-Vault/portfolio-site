@@ -211,7 +211,7 @@ SELECT ROUND(AVG(NULLIF(v, 'NA')), 2), COUNT(NULLIF(v, 'NA')) FROM s;  -- 5.6 | 
 
 `'NA'` counts as 0, so the mean is (5.2 + 0 + 6.0) / 3 = 3.73 instead of 5.6, and `COUNT` still reports 3 values. This is exactly how the 65.85 in Section 1 came about: 40 spaces were counted as 40 zeros.
 
-Biology spreadsheets often mark missing cells with `NA` (a habit from R, see data types and NA in R), `-`, `n.d.` (not detected), a blank cell, or a space. If you load them into SQLite without declaring column types, these codes stay behind as TEXT. The `typeof(x)` function tells you the storage class of each value; a "numeric" column with `text` rows is a sign that something needs checking. The cleanest fix is to normalize every missing-value code to NULL in one step:
+Biology spreadsheets often mark missing cells with `NA` (a habit from R, see [data types and NA in R](/en/blog/basic-data-types/)), `-`, `n.d.` (not detected), a blank cell, or a space. If you load them into SQLite without declaring column types, these codes stay behind as TEXT. The `typeof(x)` function tells you the storage class of each value; a "numeric" column with `text` rows is a sign that something needs checking. The cleanest fix is to normalize every missing-value code to NULL in one step:
 
 ```sql
 SELECT ROUND(AVG(CASE WHEN TRIM(v) IN ('NA', '', '-', 'n.d.') THEN NULL

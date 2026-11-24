@@ -110,7 +110,7 @@ as.matrix(bw)[1, 1:5]
 #>      "1107" "1/25/1967"   "General"        "52"      "3.23"
 ```
 
-Mixed data therefore belongs in a data frame, while matrices are for single-type data such as gene expression tables (→ data structures in R). Data types and coercion rules are covered in detail in article 05.
+Mixed data therefore belongs in a data frame, while matrices are for single-type data such as gene expression tables (→ data structures in R). Data types and coercion rules are covered in detail in [article 05](/en/blog/basic-data-types/).
 
 ## 2. Three operators, three meanings: `$`, `[[` and `[`
 
@@ -480,7 +480,7 @@ Once you see a data frame as a list of equal-length columns, the rest is predict
 5. Recompute derived variables (low birth weight, age groups) from the original measurements using a published definition, instead of trusting the existing column.
 6. Keep data tidy from the spreadsheet onward: one variable per column, one observation per row, one value per cell.
 
-Article 05 goes deeper into data types, `NA` and coercion, all of which came up repeatedly here; article 06 uses functions and `apply` to answer questions about smoking and birth weight.
+[Article 05](/en/blog/basic-data-types/) goes deeper into data types, `NA` and coercion, all of which came up repeatedly here; article 06 uses functions and `apply` to answer questions about smoking and birth weight.
 
 ### Frequently asked questions
 

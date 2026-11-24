@@ -171,7 +171,7 @@ ifelse(lfc > 0, "up", "down")
 
 Logical operators come in two families. `&` and `|` work element by element. `&&` and `||` take only length-1 values and belong inside `if`. Since R 4.3.0, passing a vector longer than 1 to `&&` or `||` is an error, with a message like `'length = 2' in coercion to 'logical(1)'` (R Core Team, 2023). To filter on two conditions, use `&`: `lfc[abs(lfc) >= 1 & lfc > 0]`.
 
-When you build a vector with `c()`, every element is coerced to a single type: `c(1, TRUE)` gives `1 1`, and `c(TRUE, "a")` gives `"TRUE" "a"`. The coercion hierarchy and how `NA` propagates are covered in the data types article.
+When you build a vector with `c()`, every element is coerced to a single type: `c(1, TRUE)` gives `1 1`, and `c(TRUE, "a")` gives `"TRUE" "a"`. The coercion hierarchy and how `NA` propagates are covered in the [data types article](/en/blog/basic-data-types/).
 
 ## 5. Recycling: silence, a warning or an error
 

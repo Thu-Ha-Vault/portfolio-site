@@ -110,7 +110,7 @@ This is not a typing mistake but default behavior: if a cell has no declared typ
 
 Microsoft later added a group of *Automatic Data Conversion* options to Excel for Microsoft 365 and Excel 2024 (Windows and Mac), letting users turn off removing leading zeros, truncating long numbers, converting strings with the letter "E" into scientific notation, and converting continuous letters and numbers into dates (Microsoft, n.d.-c). The last option has a limit: according to the help page, only continuous strings such as `JAN1` stay as text, while `JAN 1` or `JAN-1` may still become dates. It is also a per-machine setting that does not travel with the data.
 
-Safe file reading in R is covered in [importing and exporting data in R](/en/blog/importing-and-exporting-data/) and Basic data types; handling errors after they happen is covered in [the data cleaning article](/en/blog/process-data-from-dirty-to-clean/).
+Safe file reading in R is covered in [importing and exporting data in R](/en/blog/importing-and-exporting-data/) and [Basic data types](/en/blog/basic-data-types/); handling errors after they happen is covered in [the data cleaning article](/en/blog/process-data-from-dirty-to-clean/).
 
 ## 5. How a database prevents errors, and when it does not
 

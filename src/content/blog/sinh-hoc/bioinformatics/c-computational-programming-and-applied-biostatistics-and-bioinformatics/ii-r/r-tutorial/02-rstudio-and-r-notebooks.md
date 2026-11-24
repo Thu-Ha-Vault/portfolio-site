@@ -305,7 +305,7 @@ R Notebook là cách nhanh nhất để giữ lời giải thích, mã và kết
 2. Thêm chunk `sessionInfo()` vào cuối mọi notebook.
 3. Trước khi nộp hay gửi file, Restart R rồi chạy lại từ đầu, hoặc Knit.
 
-Bài tiếp theo của series bàn chuyện nhập và xuất dữ liệu ([Importing and exporting data](/blog/importing-and-exporting-data/)): CSV, bảng tính và các lỗi định dạng hay gặp. `renv` sẽ được dùng tiếp ở bài về cài gói (Installing packages). Phần nền về kiểu dữ liệu nằm ở bài 05.
+Bài tiếp theo của series bàn chuyện nhập và xuất dữ liệu ([Importing and exporting data](/blog/importing-and-exporting-data/)): CSV, bảng tính và các lỗi định dạng hay gặp. `renv` sẽ được dùng tiếp ở bài về cài gói (Installing packages). Phần nền về kiểu dữ liệu nằm ở [bài 05](/blog/basic-data-types/).
 
 ## Câu hỏi thường gặp
 

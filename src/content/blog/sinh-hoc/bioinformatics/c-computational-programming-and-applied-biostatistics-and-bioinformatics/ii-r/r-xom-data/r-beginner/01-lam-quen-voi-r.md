@@ -170,7 +170,7 @@ ifelse(lfc > 0, "up", "down")
 
 Toán tử logic có hai họ. `&` và `|` làm việc theo từng phần tử. `&&` và `||` chỉ nhận giá trị độ dài 1 và dùng trong `if`. Từ R 4.3.0, đưa vector dài hơn 1 vào `&&` hoặc `||` là lỗi, với thông báo dạng `'length = 2' in coercion to 'logical(1)'` (R Core Team, 2023). Lọc dữ liệu theo hai điều kiện thì dùng `&`: `lfc[abs(lfc) >= 1 & lfc > 0]`.
 
-Khi tạo vector bằng `c()`, các phần tử bị ép về cùng một kiểu: `c(1, TRUE)` cho `1 1`, `c(TRUE, "a")` cho `"TRUE" "a"`. Thứ bậc ép kiểu và cách `NA` lan truyền nằm ở bài về kiểu dữ liệu.
+Khi tạo vector bằng `c()`, các phần tử bị ép về cùng một kiểu: `c(1, TRUE)` cho `1 1`, `c(TRUE, "a")` cho `"TRUE" "a"`. Thứ bậc ép kiểu và cách `NA` lan truyền nằm ở [bài về kiểu dữ liệu](/blog/basic-data-types/).
 
 ## 5. Recycling: im lặng, cảnh báo hay lỗi
 

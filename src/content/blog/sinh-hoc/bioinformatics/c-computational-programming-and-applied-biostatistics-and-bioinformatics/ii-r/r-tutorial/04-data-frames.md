@@ -109,7 +109,7 @@ as.matrix(bw)[1, 1:5]
 #>      "1107" "1/25/1967"   "General"        "52"      "3.23"
 ```
 
-Dữ liệu hỗn hợp vì thế nên để ở data frame, còn ma trận dành cho dữ liệu cùng kiểu như bảng biểu hiện gen (→ các cấu trúc dữ liệu trong R). Kiểu dữ liệu và quy tắc ép kiểu (coercion) sẽ được bàn kỹ ở bài 05.
+Dữ liệu hỗn hợp vì thế nên để ở data frame, còn ma trận dành cho dữ liệu cùng kiểu như bảng biểu hiện gen (→ các cấu trúc dữ liệu trong R). Kiểu dữ liệu và quy tắc ép kiểu (coercion) sẽ được bàn kỹ ở [bài 05](/blog/basic-data-types/).
 
 ## 2. Ba toán tử, ba ngữ nghĩa: `$`, `[[` và `[`
 
@@ -479,7 +479,7 @@ Hiểu data frame là list các cột cùng độ dài thì phần còn lại d�
 5. Tính lại biến dẫn xuất (nhẹ cân, nhóm tuổi) từ biến gốc theo định nghĩa đã công bố, thay vì tin cột có sẵn.
 6. Giữ dữ liệu gọn ngay từ bảng tính: mỗi biến một cột, mỗi quan sát một hàng, mỗi ô một giá trị.
 
-Bài 05 đi sâu vào kiểu dữ liệu, `NA` và ép kiểu, những thứ đã xuất hiện nhiều lần ở đây; bài 06 dùng hàm và `apply` để trả lời câu hỏi về hút thuốc và cân nặng sơ sinh.
+[Bài 05](/blog/basic-data-types/) đi sâu vào kiểu dữ liệu, `NA` và ép kiểu, những thứ đã xuất hiện nhiều lần ở đây; bài 06 dùng hàm và `apply` để trả lời câu hỏi về hút thuốc và cân nặng sơ sinh.
 
 ### Câu hỏi thường gặp
 

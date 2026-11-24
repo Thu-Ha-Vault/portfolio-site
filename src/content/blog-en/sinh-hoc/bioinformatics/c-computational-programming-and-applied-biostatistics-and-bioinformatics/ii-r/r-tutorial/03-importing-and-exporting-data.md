@@ -143,7 +143,7 @@ Since R 4.0.0, `stringsAsFactors = FALSE` has been the default, so text columns 
 
 Empty cells in numeric columns become `NA`. Only the four father variables have missing values, 4–5 cells each.
 
-The `birth.date` column stores dates as `1/25/1967` (month/day/year) and is kept as a string. R doesn't turn date-like strings into dates on its own; to use the column as dates, convert it explicitly with a declared format, for example `as.Date(bw$birth.date, format = "%m/%d/%Y")` (data types and type conversion are covered in the article on basic data types). This is the core difference from spreadsheets, where the conversion to a date happens the moment you open the file (section 5).
+The `birth.date` column stores dates as `1/25/1967` (month/day/year) and is kept as a string. R doesn't turn date-like strings into dates on its own; to use the column as dates, convert it explicitly with a declared format, for example `as.Date(bw$birth.date, format = "%m/%d/%Y")` (data types and type conversion are covered in the [article on basic data types](/en/blog/basic-data-types/)). This is the core difference from spreadsheets, where the conversion to a date happens the moment you open the file (section 5).
 
 ### 2.4. Check right after importing
 

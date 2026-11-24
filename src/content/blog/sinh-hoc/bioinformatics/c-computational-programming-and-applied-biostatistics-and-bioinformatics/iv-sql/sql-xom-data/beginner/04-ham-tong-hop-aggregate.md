@@ -210,7 +210,7 @@ SELECT ROUND(AVG(NULLIF(v, 'NA')), 2), COUNT(NULLIF(v, 'NA')) FROM s;  -- 5.6 | 
 
 `'NA'` được tính là 0, nên trung bình là (5,2 + 0 + 6,0) / 3 = 3,73 thay vì 5,6, và `COUNT` vẫn báo 3 giá trị. Đây đúng là cơ chế của con số 65,85 ở mục 1: 40 dấu cách bị tính là 40 số 0.
 
-Bảng tính sinh học hay ghi ô thiếu bằng `NA` (thói quen từ R, xem kiểu dữ liệu và NA trong R), `-`, `n.d.` (not detected), ô trống hoặc dấu cách. Khi nạp vào SQLite mà không khai báo kiểu cột, các mã này nằm lại dưới dạng TEXT. Hàm `typeof(x)` cho biết kiểu lưu của từng giá trị; một cột "số" mà có dòng `text` là dấu hiệu cần kiểm tra. Cách sửa gọn nhất là chuẩn hoá mọi mã thiếu thành NULL trong một bước:
+Bảng tính sinh học hay ghi ô thiếu bằng `NA` (thói quen từ R, xem [kiểu dữ liệu và NA trong R](/blog/basic-data-types/)), `-`, `n.d.` (not detected), ô trống hoặc dấu cách. Khi nạp vào SQLite mà không khai báo kiểu cột, các mã này nằm lại dưới dạng TEXT. Hàm `typeof(x)` cho biết kiểu lưu của từng giá trị; một cột "số" mà có dòng `text` là dấu hiệu cần kiểm tra. Cách sửa gọn nhất là chuẩn hoá mọi mã thiếu thành NULL trong một bước:
 
 ```sql
 SELECT ROUND(AVG(CASE WHEN TRIM(v) IN ('NA', '', '-', 'n.d.') THEN NULL

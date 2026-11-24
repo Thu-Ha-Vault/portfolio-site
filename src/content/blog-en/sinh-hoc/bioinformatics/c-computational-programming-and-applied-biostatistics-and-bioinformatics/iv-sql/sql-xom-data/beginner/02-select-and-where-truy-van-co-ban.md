@@ -74,7 +74,7 @@ The whole article turns on that column. When they meet a NULL, comparison operat
 <div class="callout callout-note">
 <p class="callout-title">For R users</p>
 
-If you already know `NA` in R, SQL's NULL works in the same spirit: missing values propagate through comparisons, and you test for them with a dedicated function or operator instead of `==` (→ Basic data types in R).
+If you already know `NA` in R, SQL's NULL works in the same spirit: missing values propagate through comparisons, and you test for them with a dedicated function or operator instead of `==` (→ [Basic data types in R](/en/blog/basic-data-types/)).
 
 </div>
 
