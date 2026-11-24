@@ -112,7 +112,7 @@ fish,l_cm,lo_cm,w_g,wo_g,wf_g,sex,msex,fs,ls,age,main_food
 25,15.5,14.0,14.0,12.7,0.1,0,3,1,1,2+,Copepoda
 ```
 
-All code in this article was run with R 4.4 with `dplyr` 1.2.1 and `tidyr` 1.3.2 (Wickham et al., 2019; → tidyverse, Data frames), SQLite 3.37, and Python 3.13 with pandas 3.0.
+All code in this article was run with R 4.4 with `dplyr` 1.2.1 and `tidyr` 1.3.2 (Wickham et al., 2019; → tidyverse, [Data frames](/en/blog/data-frames/)), SQLite 3.37, and Python 3.13 with pandas 3.0.
 
 ## 3. Giving the spreadsheet a health check before querying
 

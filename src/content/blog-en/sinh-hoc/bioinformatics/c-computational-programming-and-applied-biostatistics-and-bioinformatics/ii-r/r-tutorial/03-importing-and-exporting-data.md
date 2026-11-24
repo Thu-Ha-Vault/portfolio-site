@@ -333,7 +333,7 @@ The code only flags; it doesn't fix. "2-Sep" might once have been `SEPT2` or `SE
 
 ## 6. Good practice for organizing and sharing tabular data
 
-Broman and Woo (2018) set out a list of rules for entering data in spreadsheets, from writing dates as YYYY-MM-DD, putting one thing in each cell, and keeping the data as a single rectangle with one header row, to saving an extra plain-text copy. Table 2 picks the rules that bear directly on import and export. Wickham (2014) calls the easy-to-analyze layout tidy data: each variable a column, each observation a row (→ article on data frames).
+Broman and Woo (2018) set out a list of rules for entering data in spreadsheets, from writing dates as YYYY-MM-DD, putting one thing in each cell, and keeping the data as a single rectangle with one header row, to saving an extra plain-text copy. Table 2 picks the rules that bear directly on import and export. Wickham (2014) calls the easy-to-analyze layout tidy data: each variable a column, each observation a row (→ [article on data frames](/en/blog/data-frames/)).
 
 When sending data to an analyst, Ellis and Leek (2018) recommend including four things: the raw data, a tidy table, a codebook describing each variable, and a description of the steps that take you from the raw data to the tidy table. Wilson et al. (2017) and Sandve et al. (2013) add: keep the raw data, record every processing step in code, and use version control. Applied to this article, a small project might look like this:
 
@@ -406,7 +406,7 @@ The integer/double difference rarely changes a statistical result, but it makes 
 
 If you need a quick rule: use `read.csv()` for small tables and exercises, since there's nothing extra to install; use `read_csv()` if the whole analysis lives in the tidyverse (dplyr, ggplot2), so you get a tibble and a report of column types; use `fread()` for large tables such as RNA-seq count matrices. All three accept a column-type argument (`colClasses` for `read.csv()` and `fread()`, `col_types` for `read_csv()`), and setting it is the surest way to get the same result from two reads.
 
-The test ran on one machine with an expanded file built from repeated rows, so the numbers show orders of magnitude, not a general benchmark. When the machine was busy with many other tasks, all three functions ran about 3–6 times slower (medians of 4.09 s, 1.22 s, and 0.32 s), but the ranking held: `fread()` was still about 13 times faster than `read.csv()`. A real table with more text columns may give different ratios. How tibbles and data.tables print and filter data is covered in the article on data frames.
+The test ran on one machine with an expanded file built from repeated rows, so the numbers show orders of magnitude, not a general benchmark. When the machine was busy with many other tasks, all three functions ran about 3–6 times slower (medians of 4.09 s, 1.22 s, and 0.32 s), but the ranking held: `fread()` was still about 13 times faster than `read.csv()`. A real table with more text columns may give different ratios. How tibbles and data.tables print and filter data is covered in the [article on data frames](/en/blog/data-frames/).
 
 ## 8. Conclusion
 
@@ -418,7 +418,7 @@ Import and export are where data most easily change without anyone noticing, bec
 4. Export to `results/` with `row.names = FALSE`.
 5. Read the file you just wrote and compare it with `identical()`; that one line catches both the `X` column and delimiter mistakes.
 
-The next article in the series looks at the structure of the data frame you just imported (→ Data frames).
+The next article in the series looks at the structure of the data frame you just imported (→ [Data frames](/en/blog/data-frames/)).
 
 ## Appendix: reproducible code
 

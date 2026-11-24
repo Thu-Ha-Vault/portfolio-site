@@ -111,7 +111,7 @@ fish,l_cm,lo_cm,w_g,wo_g,wf_g,sex,msex,fs,ls,age,main_food
 25,15.5,14.0,14.0,12.7,0.1,0,3,1,1,2+,Copepoda
 ```
 
-Code trong bài đã chạy với R 4.4 cùng `dplyr` 1.2.1, `tidyr` 1.3.2 (Wickham et al., 2019; → tidyverse, Data frames), SQLite 3.37 và Python 3.13 với pandas 3.0.
+Code trong bài đã chạy với R 4.4 cùng `dplyr` 1.2.1, `tidyr` 1.3.2 (Wickham et al., 2019; → tidyverse, [Data frames](/blog/data-frames/)), SQLite 3.37 và Python 3.13 với pandas 3.0.
 
 ## 3. Kiểm tra sức khoẻ bảng tính trước khi truy vấn
 

@@ -332,7 +332,7 @@ gene_col[suspect]
 
 ## 6. Thực hành tốt khi tổ chức và trao đổi dữ liệu bảng
 
-Broman và Woo (2018) đưa ra một bộ nguyên tắc nhập dữ liệu trong bảng tính, từ ghi ngày dạng YYYY-MM-DD, mỗi ô một thứ, dữ liệu là một hình chữ nhật với một dòng tiêu đề, đến lưu thêm bản văn bản thuần. Bảng 2 chọn những nguyên tắc chạm trực tiếp tới việc nhập, xuất. Wickham (2014) gọi dạng bảng dễ phân tích là tidy data: mỗi biến một cột, mỗi quan sát một hàng (→ bài về data frame).
+Broman và Woo (2018) đưa ra một bộ nguyên tắc nhập dữ liệu trong bảng tính, từ ghi ngày dạng YYYY-MM-DD, mỗi ô một thứ, dữ liệu là một hình chữ nhật với một dòng tiêu đề, đến lưu thêm bản văn bản thuần. Bảng 2 chọn những nguyên tắc chạm trực tiếp tới việc nhập, xuất. Wickham (2014) gọi dạng bảng dễ phân tích là tidy data: mỗi biến một cột, mỗi quan sát một hàng (→ [bài về data frame](/blog/data-frames/)).
 
 Khi gửi dữ liệu cho người phân tích, Ellis và Leek (2018) khuyên gửi đủ bốn thứ: dữ liệu thô, bảng tidy, codebook mô tả từng biến, và mô tả quy trình đi từ dữ liệu thô tới bảng tidy. Wilson et al. (2017) và Sandve et al. (2013) bổ sung: lưu dữ liệu thô, ghi lại mọi bước xử lý bằng code, quản lý phiên bản. Áp vào bài này, một dự án nhỏ có thể trông như sau:
 
@@ -405,7 +405,7 @@ Khác biệt integer/double hiếm khi đổi kết quả thống kê, nhưng l�
 
 Nếu cần chọn nhanh: bảng nhỏ và bài tập dùng `read.csv()`, không phải cài thêm gì; nếu cả phân tích theo hệ tidyverse (dplyr, ggplot2) thì dùng `read_csv()` để có tibble và thông báo kiểu cột; bảng lớn như ma trận đếm RNA-seq thì dùng `fread()`. Cả ba hàm đều có tham số khai báo kiểu cột (`colClasses` cho `read.csv()` và `fread()`, `col_types` cho `read_csv()`), và đó là cách chắc chắn nhất để hai lần đọc cho cùng một kết quả.
 
-Phép đo chạy trên một máy, với file nhân bản có cấu trúc lặp lại, nên con số chỉ cho thấy thứ tự độ lớn chứ không phải benchmark tổng quát. Khi máy đang chạy nhiều tác vụ khác, cả ba hàm chậm hơn khoảng 3–6 lần (trung vị 4,09 s, 1,22 s và 0,32 s), nhưng thứ tự giữ nguyên: `fread()` vẫn nhanh hơn `read.csv()` khoảng 13 lần. Bảng thật nhiều cột chữ hơn có thể cho tỉ lệ khác. Cách tibble và data.table in, lọc dữ liệu được bàn ở bài về data frame.
+Phép đo chạy trên một máy, với file nhân bản có cấu trúc lặp lại, nên con số chỉ cho thấy thứ tự độ lớn chứ không phải benchmark tổng quát. Khi máy đang chạy nhiều tác vụ khác, cả ba hàm chậm hơn khoảng 3–6 lần (trung vị 4,09 s, 1,22 s và 0,32 s), nhưng thứ tự giữ nguyên: `fread()` vẫn nhanh hơn `read.csv()` khoảng 13 lần. Bảng thật nhiều cột chữ hơn có thể cho tỉ lệ khác. Cách tibble và data.table in, lọc dữ liệu được bàn ở [bài về data frame](/blog/data-frames/).
 
 ## 8. Kết luận
 
@@ -417,7 +417,7 @@ Nhập và xuất là chỗ dữ liệu dễ đổi âm thầm nhất, vì phầ
 4. Xuất vào `results/` với `row.names = FALSE`.
 5. Đọc lại file vừa ghi và so bằng `identical()`; một dòng này bắt được cả cột `X` lẫn lỗi dấu ngăn cột.
 
-Bài tiếp theo của series đi vào cấu trúc của data frame vừa nhập (→ Data frames).
+Bài tiếp theo của series đi vào cấu trúc của data frame vừa nhập (→ [Data frames](/blog/data-frames/)).
 
 ## Phụ lục: code tái lập
 

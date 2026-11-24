@@ -89,7 +89,7 @@ score[c(TRUE, FALSE)] #> 8 9 10
 
 **Positive indices** start at 1. An index past the end does not raise an error; it returns `NA`. **Negative indices** drop elements from the result, and you cannot mix them with positive ones. A negative index past the end is silently ignored (since R 2.6.0). **Index 0** returns an empty vector. **Logical indices** keep the `TRUE` positions. If the logical vector is shorter than the data, it is recycled, with no warning even when the lengths don't divide evenly (here 5 is not a multiple of 2). If it is longer, the result picks up extra `NA`s.
 
-With **character indices**, `[` matches names exactly: `score["s"]` returns `NA` when there is no element named `s`. `$` on a list does partial matching by default, and `[[` does partial matching when you set `exact = FALSE` (R Core Team, n.d.-b). How this applies to data frames is covered in the data frame article.
+With **character indices**, `[` matches names exactly: `score["s"]` returns `NA` when there is no element named `s`. `$` on a list does partial matching by default, and `[[` does partial matching when you set `exact = FALSE` (R Core Team, n.d.-b). How this applies to data frames is covered in the [data frame article](/en/blog/data-frames/).
 
 **Table 1.** Kinds of index, their results and what R reports (R 4.4.3)
 

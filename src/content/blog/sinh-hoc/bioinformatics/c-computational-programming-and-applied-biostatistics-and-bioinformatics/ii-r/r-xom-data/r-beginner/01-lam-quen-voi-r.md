@@ -88,7 +88,7 @@ score[c(TRUE, FALSE)] #> 8 9 10
 
 **Chỉ số dương** bắt đầu từ 1. Chỉ số vượt độ dài không gây lỗi mà trả `NA`. **Chỉ số âm** loại phần tử khỏi kết quả, và không được trộn với chỉ số dương. Chỉ số âm vượt độ dài thì bị bỏ qua, không báo gì (từ R 2.6.0). **Chỉ số 0** trả về vector rỗng. **Chỉ số logic** giữ các vị trí `TRUE`. Nếu ngắn hơn vector, nó được recycle, và không có cảnh báo ngay cả khi độ dài không chia hết (ở đây 5 không chia hết cho 2). Nếu dài hơn, kết quả có thêm `NA`.
 
-Với **chỉ số theo tên**, `[` so khớp chính xác: `score["s"]` trả `NA` khi không có tên `s`. `$` trên list khớp một phần theo mặc định, còn `[[` khớp một phần khi đặt `exact = FALSE` (R Core Team, n.d.-b). Phần áp dụng cho data frame có trong bài về data frame.
+Với **chỉ số theo tên**, `[` so khớp chính xác: `score["s"]` trả `NA` khi không có tên `s`. `$` trên list khớp một phần theo mặc định, còn `[[` khớp một phần khi đặt `exact = FALSE` (R Core Team, n.d.-b). Phần áp dụng cho data frame có trong [bài về data frame](/blog/data-frames/).
 
 **Bảng 1.** Các loại chỉ số, kết quả và phản hồi của R (R 4.4.3)
 
