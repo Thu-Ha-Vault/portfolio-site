@@ -37,4 +37,4 @@ isIndex: true
 - ADVANCED
 	- [01 - Window Functions](/blog/window-functions/)
 	- [02 - CTE & Set Operations](/blog/cte-and-set-operations/)
-	- 03 - Ứng dụng thực chiến
+	- [03 - Ứng dụng thực chiến](/blog/ung-dung-thuc-chien/)

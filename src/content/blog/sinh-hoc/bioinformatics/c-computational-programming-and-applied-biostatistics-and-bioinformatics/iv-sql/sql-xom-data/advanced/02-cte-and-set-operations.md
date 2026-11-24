@@ -505,7 +505,7 @@ Sáu điều nên kiểm:
 5. Luôn chống chu trình (`UNION`, cột đường đi, `CYCLE`) kèm giới hạn độ sâu hoặc `LIMIT`; chặn trường hợp gốc tự trỏ.
 6. Ghi phiên bản dữ liệu và phần mềm cạnh mọi con số.
 
-Kết quả truy vấn đệ quy là một bảng như mọi bảng khác, nên bước tiếp theo tự nhiên là xếp hạng hay tính tích luỹ trên nó bằng [window function](/blog/window-functions/), hoặc kết hợp CTE với window function trong bài Ứng dụng thực chiến.
+Kết quả truy vấn đệ quy là một bảng như mọi bảng khác, nên bước tiếp theo tự nhiên là xếp hạng hay tính tích luỹ trên nó bằng [window function](/blog/window-functions/), hoặc kết hợp CTE với window function trong [bài Ứng dụng thực chiến](/blog/ung-dung-thuc-chien/).
 
 ## Tài liệu tham khảo
 

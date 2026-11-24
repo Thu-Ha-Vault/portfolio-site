@@ -508,7 +508,7 @@ Six things to check:
 5. Always guard against cycles (`UNION`, a path column, `CYCLE`) together with a depth limit or `LIMIT`; block the self-pointing root case.
 6. Record the data and software versions next to every number.
 
-The output of a recursive query is a table like any other, so a natural next step is ranking or running totals over it with [window functions](/en/blog/window-functions/), or combining CTEs with window functions in the applied case-study article.
+The output of a recursive query is a table like any other, so a natural next step is ranking or running totals over it with [window functions](/en/blog/window-functions/), or combining CTEs with window functions in the [applied case-study article](/en/blog/ung-dung-thuc-chien/).
 
 ## References
 

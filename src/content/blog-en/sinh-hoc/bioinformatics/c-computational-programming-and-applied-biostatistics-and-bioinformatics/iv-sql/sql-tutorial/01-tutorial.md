@@ -259,7 +259,7 @@ The next articles in the series take the syntax one group at a time:
 - ORDER BY and searching (→ [Sorting & Searching](/en/blog/sap-xep-and-tim-kiem/)).
 - Aggregate functions, GROUP BY and HAVING (→ Aggregate, GROUP BY & HAVING).
 - JOIN, subqueries, CASE WHEN (→ [JOIN](/en/blog/join-ket-hop-nhieu-bang/), [Subquery & CASE WHEN](/en/blog/subquery-and-case-when/), [Putting the skills together](/en/blog/ket-hop-tat-ca-ky-nang/)).
-- Window functions, recursive CTEs and applications (→ [Window Functions](/en/blog/window-functions/), [CTE & Set Operations](/en/blog/cte-and-set-operations/), Real-world applications).
+- Window functions, recursive CTEs and applications (→ [Window Functions](/en/blog/window-functions/), [CTE & Set Operations](/en/blog/cte-and-set-operations/), [Real-world applications](/en/blog/ung-dung-thuc-chien/)).
 
 ## Frequently asked questions
 

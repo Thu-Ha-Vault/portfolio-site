@@ -430,7 +430,7 @@ The part of an `OVER (...)` expression people overlook most is the part that is 
 5. Is there a stable tie-breaker column?
 6. How are NULLs and gaps (months with no orders, zero-depth positions) handled?
 
-Next in the series: CTEs and `WITH RECURSIVE` (→ [CTE & Set Operations](/en/blog/cte-and-set-operations/)), then RFM and cohort analysis (→ Real-world applications).
+Next in the series: CTEs and `WITH RECURSIVE` (→ [CTE & Set Operations](/en/blog/cte-and-set-operations/)), then RFM and cohort analysis (→ [Real-world applications](/en/blog/ung-dung-thuc-chien/)).
 
 ## Frequently asked questions
 

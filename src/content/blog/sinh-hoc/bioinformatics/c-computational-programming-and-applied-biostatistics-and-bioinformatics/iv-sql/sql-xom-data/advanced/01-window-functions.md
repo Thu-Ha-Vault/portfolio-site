@@ -427,7 +427,7 @@ Phần hay bị bỏ qua nhất trong một biểu thức `OVER (...)` là phầ
 5. Đã có cột phá hoà ổn định chưa?
 6. NULL và khoảng trống (tháng không có đơn, vị trí độ phủ 0) xử lý thế nào?
 
-Bài sau trong series: CTE và `WITH RECURSIVE` (→ [CTE & Set Operations](/blog/cte-and-set-operations/)), RFM và cohort (→ Ứng dụng thực chiến).
+Bài sau trong series: CTE và `WITH RECURSIVE` (→ [CTE & Set Operations](/blog/cte-and-set-operations/)), RFM và cohort (→ [Ứng dụng thực chiến](/blog/ung-dung-thuc-chien/)).
 
 ## Câu hỏi thường gặp
 
