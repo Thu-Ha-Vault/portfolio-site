@@ -28,7 +28,7 @@ isIndex: true
 	- [01 - Giới thiệu - Dữ liệu & Database](/blog/gioi-thieu-du-lieu-and-database/)
 	- [02 - SELECT & WHERE - Truy vấn cơ bản](/blog/select-and-where-truy-van-co-ban/)
 	- [03 - Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)
-	- 04 - Hàm tổng hợp (Aggregate)
+	- [04 - Hàm tổng hợp (Aggregate)](/blog/ham-tong-hop-aggregate/)
 	- 05 - GROUP BY & HAVING - Tổng hợp dữ liệu
 - INTERMEDIATE
 	- [01 - JOIN - Kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)

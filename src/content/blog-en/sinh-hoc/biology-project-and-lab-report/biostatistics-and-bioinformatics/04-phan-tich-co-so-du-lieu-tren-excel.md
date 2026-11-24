@@ -384,7 +384,7 @@ Excel's database functions share the syntax `Dxxx(database, field, criteria)`: `
 =DAVERAGE(A1:L26, "l_cm", R1:R2)   -> 19.995
 ```
 
-**Query 3**: among the 10 fish with 19 ≤ L < 21, the maximum W is **37.4 g**, from fish 10 (L = 19.6 cm). **Query 4**: among the 20 fish with LS ≥ 3, the mean L is **19.995 cm**. SQL uses the aggregate functions `MAX()` and `AVG()` after `WHERE` (→ Aggregate functions):
+**Query 3**: among the 10 fish with 19 ≤ L < 21, the maximum W is **37.4 g**, from fish 10 (L = 19.6 cm). **Query 4**: among the 20 fish with LS ≥ 3, the mean L is **19.995 cm**. SQL uses the aggregate functions `MAX()` and `AVG()` after `WHERE` (→ [Aggregate functions](/en/blog/ham-tong-hop-aggregate/)):
 
 ```sql
 -- Query 3: maximum W where 19 <= L < 21

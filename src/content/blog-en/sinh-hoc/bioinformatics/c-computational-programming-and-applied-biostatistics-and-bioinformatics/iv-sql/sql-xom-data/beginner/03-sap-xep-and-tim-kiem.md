@@ -259,7 +259,7 @@ SELECT DISTINCT Msex FROM fish ORDER BY Msex NULLS LAST;
 -- II, III, IV, V, NULL
 ```
 
-`SELECT DISTINCT` returns 5 rows including NULL, but `COUNT(DISTINCT Msex)` returns 4, because aggregate functions drop NULLs before counting. When you report the number of groups, say whether an "unknown" group is included. The aggregate functions article covers this mechanism in more depth.
+`SELECT DISTINCT` returns 5 rows including NULL, but `COUNT(DISTINCT Msex)` returns 4, because aggregate functions drop NULLs before counting. When you report the number of groups, say whether an "unknown" group is included. The [aggregate functions](/en/blog/ham-tong-hop-aggregate/) article covers this mechanism in more depth.
 
 Two more notes. First, `DISTINCT` does not sort. The `SELECT DISTINCT` output above happens to look sorted, but that is a by-product of how the engine removes duplicates, and without `ORDER BY` the order is still undefined (SQLite, n.d.-b). Second, `DISTINCT` on several columns merges rows that match on **every** selected column. Two identical measurement rows might be a duplicate entry or two real individuals with the same measurements; `DISTINCT` can't tell them apart, so don't use it to "clean" data before you have checked the source.
 
@@ -306,7 +306,7 @@ Seven rules for reviewing a script before its results go into a report:
 6. Don't sort by column position (`ORDER BY 2`) in code you keep for the long term.
 7. Record the database engine name and version alongside the query, in the spirit of Rule 3 from Sandve et al. (2013).
 
-What the seven rules share: result order is a decision, not something that comes for free. Any order you don't write down, the engine picks for you, and it can change at any time. In biological analysis, where a list of "the 20 most significant genes" or "the 5 largest individuals" can go straight into a paper's results table, writing a complete `ORDER BY` matters as much as reporting the sample size or the p-value threshold. A quick test before you submit a table: add or drop an index and rerun the query; if the list changes, a tie-breaker is still missing. The next article in the series covers aggregate functions.
+What the seven rules share: result order is a decision, not something that comes for free. Any order you don't write down, the engine picks for you, and it can change at any time. In biological analysis, where a list of "the 20 most significant genes" or "the 5 largest individuals" can go straight into a paper's results table, writing a complete `ORDER BY` matters as much as reporting the sample size or the p-value threshold. A quick test before you submit a table: add or drop an index and rerun the query; if the list changes, a tie-breaker is still missing. The next article in the series covers [aggregate functions](/en/blog/ham-tong-hop-aggregate/).
 
 ## References
 

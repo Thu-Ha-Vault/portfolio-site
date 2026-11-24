@@ -383,7 +383,7 @@ Các hàm cơ sở dữ liệu của Excel có chung cú pháp `Dxxx(database, f
 =DAVERAGE(A1:L26, "l_cm", R1:R2)   -> 19.995
 ```
 
-**Truy vấn 3**: trong 10 cá có 19 ≤ L < 21, W lớn nhất là **37,4 g**, thuộc cá số 10 (L = 19,6 cm). **Truy vấn 4**: trong 20 cá có LS ≥ 3, L trung bình là **19,995 cm**. SQL dùng các hàm tổng hợp `MAX()` và `AVG()` sau `WHERE` (→ Hàm tổng hợp):
+**Truy vấn 3**: trong 10 cá có 19 ≤ L < 21, W lớn nhất là **37,4 g**, thuộc cá số 10 (L = 19,6 cm). **Truy vấn 4**: trong 20 cá có LS ≥ 3, L trung bình là **19,995 cm**. SQL dùng các hàm tổng hợp `MAX()` và `AVG()` sau `WHERE` (→ [Hàm tổng hợp](/blog/ham-tong-hop-aggregate/)):
 
 ```sql
 -- Truy vấn 3: W lớn nhất khi 19 <= L < 21

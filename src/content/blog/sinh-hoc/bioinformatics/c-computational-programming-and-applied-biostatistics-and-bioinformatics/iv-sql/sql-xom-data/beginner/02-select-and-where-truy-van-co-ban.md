@@ -322,7 +322,7 @@ Sáu bước dưới đây gom các kết quả trên thành quy trình dùng tr
 5. **Dùng `COALESCE` chỉ khi giá trị thay thế có nghĩa khoa học.** Thay NULL của `clin_sig` bằng `'not_provided'` là hợp lý; thay NULL của `af` bằng 0 thì sai, vì biến thể chưa có dữ liệu quần thể không phải biến thể có tần số 0.
 6. **Kiểm tra tổng và báo cáo.** Chạy truy vấn kiểm tra ở mục 3.4 cho mỗi điều kiện quan trọng. Trong phần Methods, ghi cách nạp dữ liệu, cách mã hoá giá trị thiếu và số dòng bị loại vì NULL ở mỗi bước lọc.
 
-Bước 6 nối SQL với thống kê. Loại dòng NULL khỏi phân tích chính là phân tích ca đầy đủ (complete-case analysis), và nó chỉ không gây sai lệch dưới những điều kiện nhất định về cơ chế gây ra dữ liệu thiếu; Rubin (1976) nêu các điều kiện để có thể bỏ qua cơ chế đó khi suy luận. Phần này sẽ được bàn kỹ hơn cùng các hàm tổng hợp như `AVG`, vốn cũng bỏ qua NULL (→ Hàm tổng hợp).
+Bước 6 nối SQL với thống kê. Loại dòng NULL khỏi phân tích chính là phân tích ca đầy đủ (complete-case analysis), và nó chỉ không gây sai lệch dưới những điều kiện nhất định về cơ chế gây ra dữ liệu thiếu; Rubin (1976) nêu các điều kiện để có thể bỏ qua cơ chế đó khi suy luận. Phần này sẽ được bàn kỹ hơn cùng các hàm tổng hợp như `AVG`, vốn cũng bỏ qua NULL (→ [Hàm tổng hợp](/blog/ham-tong-hop-aggregate/)).
 
 <div class="callout callout-example">
 <p class="callout-title">Gắn nhãn thay vì để NULL tự biến mất</p>
@@ -353,7 +353,7 @@ Trên bảng biến thể, câu này cho 2 dòng "hiếm", 2 dòng "phổ biến
 
 Lỗi do NULL không kèm thông báo nào. Nó chỉ lộ ra khi bạn đếm. Việc nên làm ngay với bảng đang dùng: chạy câu đếm NULL ở bước 1 của checklist, rồi chạy câu kiểm tra tổng ở mục 3.4 cho bộ lọc quan trọng nhất. Nếu `a + not_a` thiếu so với `total`, viết lại điều kiện với `IS NULL`, `IS DISTINCT FROM` (PostgreSQL) hoặc `IS NOT` (SQLite), và ghi số dòng bị loại vào phần Methods.
 
-Bài tiếp theo xem NULL đứng ở đâu khi sắp xếp (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)), và bài sau đó xem các hàm tổng hợp như `COUNT` và `AVG` đối xử với NULL ra sao (→ Hàm tổng hợp).
+Bài tiếp theo xem NULL đứng ở đâu khi sắp xếp (→ [Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)), và bài sau đó xem các hàm tổng hợp như `COUNT` và `AVG` đối xử với NULL ra sao (→ [Hàm tổng hợp](/blog/ham-tong-hop-aggregate/)).
 
 ## Tài liệu tham khảo
 

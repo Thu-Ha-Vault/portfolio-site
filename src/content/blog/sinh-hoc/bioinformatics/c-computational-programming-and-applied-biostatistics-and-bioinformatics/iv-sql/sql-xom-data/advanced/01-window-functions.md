@@ -297,7 +297,7 @@ SELECT d, v,
 FROM ngay;
 ```
 
-Ở ngày 05, `ROWS` lấy ba dòng (01, 02, 05), bỏ NULL và chia cho 2: kết quả 2,0. `RANGE` lấy các ngày trong [03, 05], chỉ có chính ngày 05: kết quả 3,0. `RANGE` với offset số cần cột sắp xếp là số, nên ngày được đổi sang `julianday(d)`. `AVG` bỏ NULL nên mẫu số thực tế có thể nhỏ hơn 3 (→ Hàm tổng hợp); muốn biết mỗi trung bình dựa trên bao nhiêu giá trị, thêm cột `COUNT(v) OVER (...)` cùng khung. SQLite cũng chỉ cho `RANGE` có offset đi với đúng một biểu thức trong `ORDER BY`; thêm cột thứ hai sẽ báo lỗi.
+Ở ngày 05, `ROWS` lấy ba dòng (01, 02, 05), bỏ NULL và chia cho 2: kết quả 2,0. `RANGE` lấy các ngày trong [03, 05], chỉ có chính ngày 05: kết quả 3,0. `RANGE` với offset số cần cột sắp xếp là số, nên ngày được đổi sang `julianday(d)`. `AVG` bỏ NULL nên mẫu số thực tế có thể nhỏ hơn 3 (→ [Hàm tổng hợp](/blog/ham-tong-hop-aggregate/)); muốn biết mỗi trung bình dựa trên bao nhiêu giá trị, thêm cột `COUNT(v) OVER (...)` cùng khung. SQLite cũng chỉ cho `RANGE` có offset đi với đúng một biểu thức trong `ORDER BY`; thêm cột thứ hai sẽ báo lỗi.
 
 ### GROUPS
 

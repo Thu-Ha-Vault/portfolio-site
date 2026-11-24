@@ -324,7 +324,7 @@ The six steps below turn the results above into a routine to run before every fi
 5. **Use `COALESCE` only when the replacement value means something scientifically.** Replacing a NULL `clin_sig` with `'not_provided'` is reasonable; replacing a NULL `af` with 0 is wrong, because a variant with no population data is not a variant with frequency 0.
 6. **Check the totals and report them.** Run the check from section 3.4 for every important condition. In the Methods section, record how the data were loaded, how missing values were coded, and how many rows each filtering step dropped because of NULL.
 
-Step 6 connects SQL to statistics. Dropping NULL rows from the main analysis is complete-case analysis, and it is unbiased only under certain conditions on the mechanism that produced the missing data; Rubin (1976) set out the conditions under which that mechanism can be ignored for inference. That topic comes up again with aggregate functions such as `AVG`, which also skip NULLs (→ Aggregate functions).
+Step 6 connects SQL to statistics. Dropping NULL rows from the main analysis is complete-case analysis, and it is unbiased only under certain conditions on the mechanism that produced the missing data; Rubin (1976) set out the conditions under which that mechanism can be ignored for inference. That topic comes up again with aggregate functions such as `AVG`, which also skip NULLs (→ [Aggregate functions](/en/blog/ham-tong-hop-aggregate/)).
 
 <div class="callout callout-example">
 <p class="callout-title">Label missing rows instead of letting NULL make them vanish</p>
@@ -355,7 +355,7 @@ On the variant table this gives 2 "rare" rows, 2 "common" rows and 2 "missing" r
 
 Errors caused by NULL come with no message. They only show up when you count. What to do now with the table you're working on: run the NULL count from step 1 of the checklist, then run the totals check from section 3.4 on your most important filter. If `a + not_a` falls short of `total`, rewrite the condition with `IS NULL`, `IS DISTINCT FROM` (PostgreSQL) or `IS NOT` (SQLite), and record the number of dropped rows in your Methods section.
 
-The next article looks at where NULLs end up when you sort (→ [Sorting and searching](/en/blog/sap-xep-and-tim-kiem/)), and the one after that looks at how aggregate functions such as `COUNT` and `AVG` treat NULL (→ Aggregate functions).
+The next article looks at where NULLs end up when you sort (→ [Sorting and searching](/en/blog/sap-xep-and-tim-kiem/)), and the one after that looks at how aggregate functions such as `COUNT` and `AVG` treat NULL (→ [Aggregate functions](/en/blog/ham-tong-hop-aggregate/)).
 
 ## References
 

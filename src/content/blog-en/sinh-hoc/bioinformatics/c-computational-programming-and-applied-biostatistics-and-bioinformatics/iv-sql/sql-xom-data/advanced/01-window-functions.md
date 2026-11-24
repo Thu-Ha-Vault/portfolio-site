@@ -300,7 +300,7 @@ SELECT d, v,
 FROM daily;
 ```
 
-On the 5th, `ROWS` takes three rows (the 1st, 2nd and 5th), drops the NULL and divides by 2: the result is 2.0. `RANGE` takes the days in [3rd, 5th], which contains only the 5th itself: the result is 3.0. `RANGE` with a numeric offset needs a numeric sort column, so the date is converted with `julianday(d)`. `AVG` skips NULLs, so the real denominator can be smaller than 3 (→ Aggregate functions); to see how many values each average rests on, add a `COUNT(v) OVER (...)` column with the same frame. SQLite also allows a `RANGE` frame with an offset only when `ORDER BY` has exactly one expression; adding a second column raises an error.
+On the 5th, `ROWS` takes three rows (the 1st, 2nd and 5th), drops the NULL and divides by 2: the result is 2.0. `RANGE` takes the days in [3rd, 5th], which contains only the 5th itself: the result is 3.0. `RANGE` with a numeric offset needs a numeric sort column, so the date is converted with `julianday(d)`. `AVG` skips NULLs, so the real denominator can be smaller than 3 (→ [Aggregate functions](/en/blog/ham-tong-hop-aggregate/)); to see how many values each average rests on, add a `COUNT(v) OVER (...)` column with the same frame. SQLite also allows a `RANGE` frame with an offset only when `ORDER BY` has exactly one expression; adding a second column raises an error.
 
 ### GROUPS
 

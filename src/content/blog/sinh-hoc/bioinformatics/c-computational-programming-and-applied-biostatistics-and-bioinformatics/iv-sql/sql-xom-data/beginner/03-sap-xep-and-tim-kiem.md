@@ -256,7 +256,7 @@ SELECT DISTINCT Msex FROM fish ORDER BY Msex NULLS LAST;
 -- II, III, IV, V, NULL
 ```
 
-`SELECT DISTINCT` cho 5 dòng, có NULL, nhưng `COUNT(DISTINCT Msex)` cho 4, vì hàm tổng hợp bỏ NULL trước khi đếm. Khi báo cáo số nhóm, hãy nói rõ có tính nhóm "chưa xác định" hay không. Cơ chế này được bàn kỹ hơn trong bài hàm tổng hợp.
+`SELECT DISTINCT` cho 5 dòng, có NULL, nhưng `COUNT(DISTINCT Msex)` cho 4, vì hàm tổng hợp bỏ NULL trước khi đếm. Khi báo cáo số nhóm, hãy nói rõ có tính nhóm "chưa xác định" hay không. Cơ chế này được bàn kỹ hơn trong bài [hàm tổng hợp](/blog/ham-tong-hop-aggregate/).
 
 Hai lưu ý nữa. Thứ nhất, `DISTINCT` không sắp xếp. Kết quả `SELECT DISTINCT` ở trên tình cờ trông như đã được sắp, nhưng đó là sản phẩm phụ của cách hệ quản trị loại trùng, và không có `ORDER BY` thì thứ tự vẫn không xác định (SQLite, n.d.-b). Thứ hai, `DISTINCT` trên nhiều cột gộp các dòng giống nhau ở **mọi** cột được chọn. Hai dòng số đo giống hệt nhau có thể là nhập trùng hoặc hai cá thể thật có số đo trùng; `DISTINCT` không phân biệt được, nên đừng dùng nó để "làm sạch" dữ liệu trước khi kiểm tra nguồn.
 
@@ -303,7 +303,7 @@ Bảy quy tắc để rà một script trước khi đưa kết quả vào báo 
 6. Không dùng số thứ tự cột (`ORDER BY 2`) trong mã lưu lâu dài.
 7. Ghi tên và phiên bản hệ quản trị cùng truy vấn, theo tinh thần Rule 3 của Sandve và cộng sự (2013).
 
-Điểm chung của bảy quy tắc: thứ tự kết quả là một quyết định, không phải thứ có sẵn. Thứ tự nào không được viết ra thì hệ quản trị chọn thay bạn, và có thể đổi bất cứ lúc nào. Trong phân tích sinh học, nơi danh sách "20 gene có ý nghĩa nhất" hay "5 cá thể lớn nhất" có thể đi thẳng vào bảng kết quả của bài báo, viết `ORDER BY` đầy đủ cũng quan trọng như ghi cỡ mẫu hay ngưỡng p. Một phép thử nhanh trước khi nộp bảng: thêm hoặc bỏ một index rồi chạy lại truy vấn; danh sách đổi nghĩa là còn thiếu cột phá hoà. Bài tiếp theo trong series bàn về hàm tổng hợp.
+Điểm chung của bảy quy tắc: thứ tự kết quả là một quyết định, không phải thứ có sẵn. Thứ tự nào không được viết ra thì hệ quản trị chọn thay bạn, và có thể đổi bất cứ lúc nào. Trong phân tích sinh học, nơi danh sách "20 gene có ý nghĩa nhất" hay "5 cá thể lớn nhất" có thể đi thẳng vào bảng kết quả của bài báo, viết `ORDER BY` đầy đủ cũng quan trọng như ghi cỡ mẫu hay ngưỡng p. Một phép thử nhanh trước khi nộp bảng: thêm hoặc bỏ một index rồi chạy lại truy vấn; danh sách đổi nghĩa là còn thiếu cột phá hoà. Bài tiếp theo trong series bàn về [hàm tổng hợp](/blog/ham-tong-hop-aggregate/).
 
 ## Tài liệu tham khảo
 

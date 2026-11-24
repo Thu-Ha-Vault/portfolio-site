@@ -262,7 +262,7 @@ SELECT COUNT(DISTINCT v.var_id)
 FROM variant v JOIN go_annot a ON a.gene_id = v.gene_id;
 ```
 
-`COUNT(DISTINCT …)` fixes a count but not a `SUM`, because `SUM(DISTINCT qual)` merges two different variants that happen to share a QUAL value. Option 1 fits when the right table is used only for filtering. Option 2 fits when you also need information from the right table, such as the number of GO terms per gene, because after `GROUP BY gene_id` the subquery has one row per gene and the relationship becomes one-to-one. The articles on GROUP BY and HAVING and aggregate functions cover this aggregation step in more detail.
+`COUNT(DISTINCT …)` fixes a count but not a `SUM`, because `SUM(DISTINCT qual)` merges two different variants that happen to share a QUAL value. Option 1 fits when the right table is used only for filtering. Option 2 fits when you also need information from the right table, such as the number of GO terms per gene, because after `GROUP BY gene_id` the subquery has one row per gene and the relationship becomes one-to-one. The articles on GROUP BY and HAVING and [aggregate functions](/en/blog/ham-tong-hop-aggregate/) cover this aggregation step in more detail.
 
 The trap is not specific to biological data. A revenue-by-category query that joins `order_details` → `products` → `categories` → `orders` gives the right answer because each order-detail row matches exactly one product, one category and one order: every join goes from the "many" side to the "one" side. Add a `reviews` table (many reviews per product) to the same query, and each product's revenue is multiplied by its number of reviews. The general rule: joining from the "many" side to the "one" side is safe; joining toward a "many" side increases the row count.
 
