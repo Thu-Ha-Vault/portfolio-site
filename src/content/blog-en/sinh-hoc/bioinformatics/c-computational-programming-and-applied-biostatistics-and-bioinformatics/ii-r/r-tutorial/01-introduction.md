@@ -228,7 +228,7 @@ The limits are clear too: very large data, deep learning and raw sequence proces
 - Part 3: importing and exporting data (→ [Importing and exporting data](/en/blog/importing-and-exporting-data/))
 - Part 4: data frames (→ [Data frames](/en/blog/data-frames/))
 - Part 5: basic data types (→ [Basic data types](/en/blog/basic-data-types/))
-- Part 6: functions (→ Functions)
+- Part 6: functions (→ [Functions](/en/blog/functions/))
 - Part 7: installing packages (→ Installing packages)
 - Part 8: the tidyverse (→ Introduction to the tidyverse)
 - Part 9: visualization (→ Data visualization)

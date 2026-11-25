@@ -413,7 +413,7 @@ Luật kiểu của R được ghi rõ (R Core Team, 2025, 2026). Lỗi thườn
 - Đếm `table(x, useNA = "ifany")` trước và sau mỗi lần đổi kiểu, ghi kết quả vào cột mới.
 - Ghi `nobs()` cạnh mọi mô hình. Con số 38 thay vì 42 là một quyết định thống kê (Sterne et al., 2009), nên cần được báo cáo và giải thích.
 
-Bài tiếp theo, Hàm trong R, viết lại các bước kiểm tra ở đây thành hàm và dùng cột `smoker_lgl` để so sánh cân nặng sơ sinh theo nhóm hút thuốc.
+Bài tiếp theo, [Hàm trong R](/blog/functions/), viết lại các bước kiểm tra ở đây thành hàm và dùng cột `smoker_lgl` để so sánh cân nặng sơ sinh theo nhóm hút thuốc.
 
 ## Phụ lục: code tái lập
 

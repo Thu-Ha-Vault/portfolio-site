@@ -416,7 +416,7 @@ R's type rules are clearly documented (R Core Team, 2025, 2026). Errors usually 
 - Run `table(x, useNA = "ifany")` before and after every type conversion, and write the result to a new column.
 - Record `nobs()` next to every model. Getting 38 instead of 42 is a statistical decision (Sterne et al., 2009), so it needs to be reported and explained.
 
-The next article, Functions in R, turns the checks here into functions and uses the `smoker_lgl` column to compare birth weight between smoking groups.
+The next article, [Functions in R](/en/blog/functions/), turns the checks here into functions and uses the `smoker_lgl` column to compare birth weight between smoking groups.
 
 ## Appendix: reproducible code
 

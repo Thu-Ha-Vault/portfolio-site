@@ -405,7 +405,7 @@ table(bw$geriatric.pregnancy, bw$maternal.age >= 35)
 
 All 4 mothers aged 35 or older are flagged `TRUE`, and the other 38 are `FALSE`. Two derived columns: one matches its rule, one does not. Unless you open the data and check, you cannot tell which kind you are holding.
 
-**Dates stored as strings.** `birth.date` holds values such as `"1/25/1967"` in month/day/year order. As strings, R cannot sort them or compute the time between two dates; splitting and handling this date column is one of the examples in article 06.
+**Dates stored as strings.** `birth.date` holds values such as `"1/25/1967"` in month/day/year order. As strings, R cannot sort them or compute the time between two dates; splitting and handling this date column is one of the examples in [article 06](/en/blog/functions/).
 
 Most of these problems are best solved at data entry. Broman and Woo (2018) advise scientists to be consistent in codes and column names, to put just one thing in each cell, not to use font or fill color as data, and not to keep calculations in the raw data file. A spreadsheet built that way gives you a tidy data frame right after `read.csv()`. A documented data cleaning workflow is covered in more depth in [the article on cleaning data](/en/blog/process-data-from-dirty-to-clean/).
 
@@ -480,7 +480,7 @@ Once you see a data frame as a list of equal-length columns, the rest is predict
 5. Recompute derived variables (low birth weight, age groups) from the original measurements using a published definition, instead of trusting the existing column.
 6. Keep data tidy from the spreadsheet onward: one variable per column, one observation per row, one value per cell.
 
-[Article 05](/en/blog/basic-data-types/) goes deeper into data types, `NA` and coercion, all of which came up repeatedly here; article 06 uses functions and `apply` to answer questions about smoking and birth weight.
+[Article 05](/en/blog/basic-data-types/) goes deeper into data types, `NA` and coercion, all of which came up repeatedly here; [article 06](/en/blog/functions/) uses functions and `apply` to answer questions about smoking and birth weight.
 
 ### Frequently asked questions
 

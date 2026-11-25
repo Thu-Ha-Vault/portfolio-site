@@ -332,7 +332,7 @@ Table 4 shows two kinds of difference. The first lies **between database systems
 
 R has at least three ways to do split-apply-combine:
 
-- `tapply(x, group, FUN)` works on vectors (→ Functions and the apply family in R).
+- `tapply(x, group, FUN)` works on vectors (→ [Functions and the apply family in R](/en/blog/functions/)).
 - `aggregate()` comes in two forms. The formula form `aggregate(y ~ g, data, FUN)` defaults to `na.action = na.omit`, so it only considers complete rows; the data frame form `aggregate(x, by, FUN)` drops rows with NA in the grouping variable (R Core Team, n.d.).
 - `dplyr::group_by() |> summarise()` returns one row for each combination of grouping variables (Wickham et al., n.d.); dplyr is part of the tidyverse ecosystem (Wickham et al., 2019).
 

@@ -343,7 +343,7 @@ Từ R 3.4.0, trình biên dịch byte-code JIT được bật mặc định ở
 
 Nối dần chậm vì vector phải được cấp phát lại và sao chép mỗi khi lớn lên (Wickham, 2019, mục 24.6). *The R Inferno* gọi đây là "growing objects" và dành riêng vòng thứ hai trong số các lỗi hay gặp cho nó (Burns, 2012). Cũng từ R 3.4.0, gán vào vị trí vượt độ dài sẽ cấp phát dư một phần nhỏ, nên nối dần đỡ tốn hơn trước. Dù vậy, ghi chú phát hành vẫn coi cấp phát trước là cách nên dùng (R Core Team, 2017). Kết quả đo khớp với điều đó: nối dần vẫn chậm hơn cấp phát trước từ 3,8 đến 5,4 lần.
 
-`sapply()` chậm nhất vì nó gọi một hàm R cho mỗi phần tử, rồi còn gom kết quả lại thành vector. Họ `apply` giúp code gọn hơn vòng lặp, nhưng không phải vector hoá theo nghĩa của mục 4. Chi tiết có trong bài về hàm trong R; cú pháp vòng lặp có trong bài về rẽ nhánh và vòng lặp.
+`sapply()` chậm nhất vì nó gọi một hàm R cho mỗi phần tử, rồi còn gom kết quả lại thành vector. Họ `apply` giúp code gọn hơn vòng lặp, nhưng không phải vector hoá theo nghĩa của mục 4. Chi tiết có trong [bài về hàm trong R](/blog/functions/); cú pháp vòng lặp có trong bài về rẽ nhánh và vòng lặp.
 
 <div class="callout callout-warning">
 <p class="callout-title">Giới hạn của phép đo</p>

@@ -404,7 +404,7 @@ table(bw$geriatric.pregnancy, bw$maternal.age >= 35)
 
 Cả 4 bà mẹ từ 35 tuổi được đánh dấu `TRUE`, 38 người còn lại `FALSE`. Hai cột dẫn xuất, một cột khớp quy tắc, một cột không. Không mở dữ liệu ra kiểm thì không biết cột đang dùng thuộc loại nào.
 
-**Ngày tháng lưu dạng chuỗi.** `birth.date` có giá trị như `"1/25/1967"` theo thứ tự tháng/ngày/năm. Ở dạng chuỗi, R không sắp xếp hay tính khoảng cách giữa hai ngày được; tách và xử lý cột ngày này là một ví dụ trong bài 06.
+**Ngày tháng lưu dạng chuỗi.** `birth.date` có giá trị như `"1/25/1967"` theo thứ tự tháng/ngày/năm. Ở dạng chuỗi, R không sắp xếp hay tính khoảng cách giữa hai ngày được; tách và xử lý cột ngày này là một ví dụ trong [bài 06](/blog/functions/).
 
 Phần lớn những vấn đề này nên được giải quyết từ lúc nhập liệu. Broman và Woo (2018) khuyên người làm khoa học: nhất quán trong mã hoá và tên cột, mỗi ô chỉ chứa một thứ, không dùng màu chữ hay màu nền làm dữ liệu, và không để công thức tính toán trong file dữ liệu thô. Bảng tính như vậy cho ra data frame gọn ngay sau `read.csv()`. Quy trình làm sạch dữ liệu có ghi chép được trình bày kỹ hơn trong [bài về làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/).
 
@@ -479,7 +479,7 @@ Hiểu data frame là list các cột cùng độ dài thì phần còn lại d�
 5. Tính lại biến dẫn xuất (nhẹ cân, nhóm tuổi) từ biến gốc theo định nghĩa đã công bố, thay vì tin cột có sẵn.
 6. Giữ dữ liệu gọn ngay từ bảng tính: mỗi biến một cột, mỗi quan sát một hàng, mỗi ô một giá trị.
 
-[Bài 05](/blog/basic-data-types/) đi sâu vào kiểu dữ liệu, `NA` và ép kiểu, những thứ đã xuất hiện nhiều lần ở đây; bài 06 dùng hàm và `apply` để trả lời câu hỏi về hút thuốc và cân nặng sơ sinh.
+[Bài 05](/blog/basic-data-types/) đi sâu vào kiểu dữ liệu, `NA` và ép kiểu, những thứ đã xuất hiện nhiều lần ở đây; [bài 06](/blog/functions/) dùng hàm và `apply` để trả lời câu hỏi về hút thuốc và cân nặng sơ sinh.
 
 ### Câu hỏi thường gặp
 

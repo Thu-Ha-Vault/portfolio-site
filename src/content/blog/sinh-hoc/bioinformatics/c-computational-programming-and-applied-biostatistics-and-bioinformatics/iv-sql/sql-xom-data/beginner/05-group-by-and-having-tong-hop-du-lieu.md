@@ -331,7 +331,7 @@ Bảng 4 có hai loại khác biệt. Loại đầu nằm **giữa các hệ qu�
 
 R có ít nhất ba cách làm split-apply-combine:
 
-- `tapply(x, group, FUN)` làm việc trên vector (→ Hàm và họ apply trong R).
+- `tapply(x, group, FUN)` làm việc trên vector (→ [Hàm và họ apply trong R](/blog/functions/)).
 - `aggregate()` có hai dạng. Dạng công thức `aggregate(y ~ g, data, FUN)` dùng mặc định `na.action = na.omit`, tức là chỉ xét các dòng đầy đủ; dạng data frame `aggregate(x, by, FUN)` bỏ các dòng có NA trong biến nhóm (R Core Team, n.d.).
 - `dplyr::group_by() |> summarise()` trả về một dòng cho mỗi tổ hợp biến nhóm (Wickham et al., n.d.); dplyr thuộc hệ sinh thái tidyverse (Wickham et al., 2019).
 

@@ -28,7 +28,7 @@ isIndex: true
 - [Importing and exporting data](/blog/importing-and-exporting-data/)
 - [Data frames](/blog/data-frames/)
 - [Basic data types](/blog/basic-data-types/)
-- Functions
+- [Functions](/blog/functions/)
 - Installing packages
 - Introduction to tidyverse
 - Visualizations

@@ -344,7 +344,7 @@ Since R 3.4.0, the bytecode JIT compiler has been on by default at level 3: func
 
 Growing a vector is slow because it has to be reallocated and copied each time it gets bigger (Wickham, 2019, section 24.6). *The R Inferno* calls this "growing objects" and devotes its second circle of common mistakes to it (Burns, 2012). Also since R 3.4.0, assigning past the end of a vector over-allocates a little, which makes growing cheaper than it used to be. Even so, the release notes still treat preallocation as the preferred approach (R Core Team, 2017). The measurements agree: growing is still 3.8 to 5.4 times slower than preallocating.
 
-`sapply()` is the slowest because it calls an R function for every element and then has to assemble the results into a vector. The `apply` family makes code tidier than a loop, but it is not vectorization in the sense of section 4. More on this is in the article on functions in R, and loop syntax is in the article on conditionals and loops.
+`sapply()` is the slowest because it calls an R function for every element and then has to assemble the results into a vector. The `apply` family makes code tidier than a loop, but it is not vectorization in the sense of section 4. More on this is in the [article on functions in R](/en/blog/functions/), and loop syntax is in the article on conditionals and loops.
 
 <div class="callout callout-warning">
 <p class="callout-title">Limits of this benchmark</p>
