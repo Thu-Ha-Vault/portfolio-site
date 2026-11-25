@@ -64,7 +64,7 @@ Lộ trình chia ba cấp độ: **Nhập môn** (tuần 1–11, Phần 1–4), 
 | 11. Quy trình tái lập | 34 | Workflow manager, container, HPC, cloud |
 | 12. Dự án và portfolio | 35–36 | Dự án tổng hợp, repo, trình bày, phỏng vấn |
 
-Gần một nửa thời gian rơi vào hai khối: nền tảng tính toán (6 tuần) và NGS cộng transcriptomics (10 tuần). Lý do là hai khối này được dùng lại ở mọi phần sau. Metabolomics có mặt ở Phần 1 khi giới thiệu các tầng omics nhưng nằm ngoài phạm vi lộ trình.
+Gần một nửa thời gian rơi vào hai khối: nền tảng tính toán (6 tuần) và NGS cộng transcriptomics (10 tuần). Lý do là hai khối này được dùng lại ở mọi phần sau. Metabolomics có mặt ở [Phần 1](/blog/nhap-mon-bioinformatics/) khi giới thiệu các tầng omics nhưng nằm ngoài phạm vi lộ trình.
 
 ### 1.2. Đầu ra, đối tượng và cấu trúc mỗi phần
 
@@ -304,7 +304,7 @@ Bạn có thể dùng lộ trình theo bốn bước:
 3. **Học theo lộ trình đã chỉnh** ở mục 5.6 và lịch tuần ở phụ lục A.
 4. **Chấm lại sau mỗi cấp độ** (tuần 11, 24, 36) bằng đoạn code ở mục 3. Năng lực nào vẫn bằng 0 thì đưa vào kế hoạch của cấp sau.
 
-Bài tiếp theo, Phần 1 – Nhập môn Bioinformatics, bắt đầu từ định nghĩa bioinformatics, các tầng omics và quy trình 7 bước của một dự án.
+Bài tiếp theo, [Phần 1 – Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/), bắt đầu từ định nghĩa bioinformatics, các tầng omics và quy trình 7 bước của một dự án.
 
 ## 7. Phụ lục
 

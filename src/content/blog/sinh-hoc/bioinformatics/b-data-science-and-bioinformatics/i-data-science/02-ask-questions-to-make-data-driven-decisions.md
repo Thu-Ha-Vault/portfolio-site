@@ -82,7 +82,7 @@ flowchart TB
 
 ### 2.4. Câu hỏi đi từ giả thuyết hay từ dữ liệu
 
-Sinh học hậu genome gặp câu hỏi này sớm, khi omics tạo ra dữ liệu nhanh hơn khả năng đặt giả thuyết. Kell và Oliver (2004) lập luận rằng nghiên cứu quy nạp đi từ dữ liệu và nghiên cứu dựa trên giả thuyết **bổ sung** cho nhau: dữ liệu lớn gợi ra giả thuyết, giả thuyết định hướng thí nghiệm tiếp theo. Kitchin (2014) phê phán tuyên bố "the end of theory" và cho rằng dữ liệu không tự nói: cách thu thập, chọn biến và diễn giải đều mang giả định. Với người làm bioinformatics, một sàng lọc hàng nghìn gen "để xem gen nào khác" vẫn có câu hỏi, và câu hỏi đó thuộc loại exploratory. Ghi rõ điều này giúp người đọc không coi kết quả như đã kiểm định giả thuyết định trước (→ Nhập môn Bioinformatics).
+Sinh học hậu genome gặp câu hỏi này sớm, khi omics tạo ra dữ liệu nhanh hơn khả năng đặt giả thuyết. Kell và Oliver (2004) lập luận rằng nghiên cứu quy nạp đi từ dữ liệu và nghiên cứu dựa trên giả thuyết **bổ sung** cho nhau: dữ liệu lớn gợi ra giả thuyết, giả thuyết định hướng thí nghiệm tiếp theo. Kitchin (2014) phê phán tuyên bố "the end of theory" và cho rằng dữ liệu không tự nói: cách thu thập, chọn biến và diễn giải đều mang giả định. Với người làm bioinformatics, một sàng lọc hàng nghìn gen "để xem gen nào khác" vẫn có câu hỏi, và câu hỏi đó thuộc loại exploratory. Ghi rõ điều này giúp người đọc không coi kết quả như đã kiểm định giả thuyết định trước (→ [Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/)).
 
 ### 2.5. Những câu hỏi nên tránh
 

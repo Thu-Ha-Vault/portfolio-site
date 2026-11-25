@@ -34,7 +34,7 @@ isIndex: true
 - [Giới thiệu và cách dùng giáo trình](/blog/gioi-thieu-va-cach-dung-giao-trinh/)
 
 ### Cấp 1 – Nhập môn (Tuần 1–11)
-- Phần 1 – Nhập môn Bioinformatics
+- [Phần 1 – Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/)
 - Phần 2 – Nền tảng tính toán
 - Phần 3 – Toán và thống kê cho sinh học
 - Phần 4 – Định dạng dữ liệu và cơ sở dữ liệu sinh học

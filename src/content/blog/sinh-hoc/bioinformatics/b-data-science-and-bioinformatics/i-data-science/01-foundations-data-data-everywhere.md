@@ -267,7 +267,7 @@ flowchart TB
 
 **Validate** là chỗ người phân tích tự phản biện, như Evaluation của CRISP-DM hay bước 9 của KDD, nhưng bằng công cụ thống kê và tái lập. **Share** gồm cả việc để người khác kiểm tra được hình: tránh chỉnh dữ liệu bằng tay và lưu dữ liệu thô đằng sau mỗi hình (Sandve et al., 2013). **Archive** đặt sau Share nhưng nên chuẩn bị từ Design, đúng lý do USGS đặt Preserve trước Publish/Share; code và môi trường phần mềm cũng cần lưu (Quy trình tái lập). **Act** trong nghiên cứu thường là thí nghiệm tiếp theo, đúng như PPDAC: kết quả chu trình này khởi động chu trình sau (Wild & Pfannkuch, 1999).
 
-Mỗi hàng của Bảng 2 ứng với một bài sau, nên bảng cũng là mục lục của series: Ask ở bài 02, Prepare ở bài 03, Process ở [bài 04](/blog/process-data-from-dirty-to-clean/), Analyze ở [bài 05](/blog/analyze-data-to-answer-questions/), Share ở [bài 06](/blog/share-data-through-the-art-of-visualization/), và cả vòng trên dữ liệu thật ở [bài 08](/blog/case-study/). Toàn cảnh một dự án bioinformatics có ở Nhập môn Bioinformatics.
+Mỗi hàng của Bảng 2 ứng với một bài sau, nên bảng cũng là mục lục của series: Ask ở bài 02, Prepare ở bài 03, Process ở [bài 04](/blog/process-data-from-dirty-to-clean/), Analyze ở [bài 05](/blog/analyze-data-to-answer-questions/), Share ở [bài 06](/blog/share-data-through-the-art-of-visualization/), và cả vòng trên dữ liệu thật ở [bài 08](/blog/case-study/). Toàn cảnh một dự án bioinformatics có ở [Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/).
 
 ## 6. Thảo luận: dùng mô hình nào, khi nào
 

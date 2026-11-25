@@ -65,7 +65,7 @@ The roadmap has three levels: **Beginner** (weeks 1–11, Parts 1–4), **Interm
 | 11. Reproducible workflows | 34 | Workflow managers, containers, HPC, cloud |
 | 12. Projects and portfolio | 35–36 | Capstone project, repo, presentation, interviews |
 
-Nearly half the time goes to two blocks: computing foundations (6 weeks) and NGS plus transcriptomics (10 weeks). Both get reused in every later part. Metabolomics shows up in Part 1 as one of the omics layers but sits outside the roadmap's scope.
+Nearly half the time goes to two blocks: computing foundations (6 weeks) and NGS plus transcriptomics (10 weeks). Both get reused in every later part. Metabolomics shows up in [Part 1](/en/blog/nhap-mon-bioinformatics/) as one of the omics layers but sits outside the roadmap's scope.
 
 ### 1.2. Outcomes, audience and how each part is built
 
@@ -305,7 +305,7 @@ You can use the roadmap in four steps:
 3. **Follow the revised roadmap** in section 5.6 and the weekly schedule in Appendix A.
 4. **Rescore after each level** (weeks 11, 24 and 36) using the code in section 3. Any competency still at 0 goes into the plan for the next level.
 
-The next article, Part 1 – Introduction to Bioinformatics, starts with what bioinformatics is, the omics layers and the 7 steps of a project.
+The next article, [Part 1 – Introduction to Bioinformatics](/en/blog/nhap-mon-bioinformatics/), starts with what bioinformatics is, the omics layers and the 7 steps of a project.
 
 ## 7. Appendix
 
