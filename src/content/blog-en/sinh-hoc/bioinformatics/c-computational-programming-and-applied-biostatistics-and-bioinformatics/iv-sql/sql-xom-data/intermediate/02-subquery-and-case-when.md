@@ -291,7 +291,7 @@ On the simulated data, gene 13763 comes out on top with 7 variants, 2 of them pa
 
 **COALESCE** returns the first non-NULL argument and evaluates only up to that argument (PostgreSQL Global Development Group, n.d.-b). `COALESCE(af, 0)` runs, but it's wrong biologically: missing frequency data doesn't mean the frequency is zero. On the simulated data, `AVG(af)` is 0.0904 while `AVG(COALESCE(af, 0))` is 0.0877.
 
-**Aliases in GROUP BY.** SQLite accepts `GROUP BY af_group` where `af_group` is the alias of the CASE. Not every system allows this; the safe approach is to repeat the CASE expression in `GROUP BY` or wrap it in a subquery or CTE. Aggregate functions with `GROUP BY` are covered in depth in the GROUP BY and HAVING article.
+**Aliases in GROUP BY.** SQLite accepts `GROUP BY af_group` where `af_group` is the alias of the CASE. Not every system allows this; the safe approach is to repeat the CASE expression in `GROUP BY` or wrap it in a subquery or CTE. Aggregate functions with `GROUP BY` are covered in depth in the [GROUP BY and HAVING article](/en/blog/group-by-and-having-tong-hop-du-lieu/).
 
 ## 7. Biology case: filtering and binning variants
 

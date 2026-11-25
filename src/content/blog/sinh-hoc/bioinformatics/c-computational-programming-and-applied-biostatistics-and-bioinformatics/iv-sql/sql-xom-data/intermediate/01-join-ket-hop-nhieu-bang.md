@@ -261,7 +261,7 @@ SELECT COUNT(DISTINCT v.var_id)
 FROM variant v JOIN go_annot a ON a.gene_id = v.gene_id;
 ```
 
-`COUNT(DISTINCT …)` sửa được phép đếm nhưng không sửa được `SUM`, vì `SUM(DISTINCT qual)` gộp hai biến thể khác nhau có cùng QUAL. Cách 1 hợp khi bảng phải chỉ dùng để lọc. Cách 2 hợp khi bạn cần cả thông tin từ bảng phải, ví dụ số GO term của gene, vì sau `GROUP BY gene_id` bảng con chỉ còn một dòng mỗi gene và quan hệ trở thành một–một. Bài GROUP BY và HAVING và [hàm tổng hợp](/blog/ham-tong-hop-aggregate/) nói kỹ hơn về bước tổng hợp này.
+`COUNT(DISTINCT …)` sửa được phép đếm nhưng không sửa được `SUM`, vì `SUM(DISTINCT qual)` gộp hai biến thể khác nhau có cùng QUAL. Cách 1 hợp khi bảng phải chỉ dùng để lọc. Cách 2 hợp khi bạn cần cả thông tin từ bảng phải, ví dụ số GO term của gene, vì sau `GROUP BY gene_id` bảng con chỉ còn một dòng mỗi gene và quan hệ trở thành một–một. Bài [GROUP BY và HAVING](/blog/group-by-and-having-tong-hop-du-lieu/) và [hàm tổng hợp](/blog/ham-tong-hop-aggregate/) nói kỹ hơn về bước tổng hợp này.
 
 Bẫy này không riêng gì dữ liệu sinh học. Một truy vấn doanh thu theo danh mục, nối `order_details` → `products` → `categories` → `orders`, cho kết quả đúng vì mỗi dòng chi tiết đơn hàng chỉ khớp đúng một sản phẩm, một danh mục, một đơn hàng: mọi bước nối đều đi từ phía "nhiều" sang phía "một". Thêm một bảng `reviews` (mỗi sản phẩm nhiều đánh giá) vào cùng truy vấn, doanh thu của mỗi sản phẩm sẽ bị nhân với số đánh giá của nó. Quy tắc chung: nối từ phía "nhiều" sang phía "một" thì an toàn; nối sang phía "nhiều" thì số dòng tăng.
 

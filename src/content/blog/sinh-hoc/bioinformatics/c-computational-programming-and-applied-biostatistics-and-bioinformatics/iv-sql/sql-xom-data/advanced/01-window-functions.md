@@ -39,7 +39,7 @@ Window function (hàm cửa sổ) trong SQL tính một giá trị cho mỗi dò
 
 ## 1. Window function là gì: giữ dòng, thêm cột
 
-Lấy một câu hỏi sinh học đơn giản: trong bảng đo 25 cá *Coilia grayii*, mỗi con dài hơn hay ngắn hơn trung bình của nhóm giới tính của nó bao nhiêu? `GROUP BY sex` trả lời được nửa đầu (trung bình mỗi nhóm) nhưng trả về hai dòng, và cột chiều dài của từng con biến mất (→ GROUP BY & HAVING). Window function trả lời cả hai trong một biểu thức.
+Lấy một câu hỏi sinh học đơn giản: trong bảng đo 25 cá *Coilia grayii*, mỗi con dài hơn hay ngắn hơn trung bình của nhóm giới tính của nó bao nhiêu? `GROUP BY sex` trả lời được nửa đầu (trung bình mỗi nhóm) nhưng trả về hai dòng, và cột chiều dài của từng con biến mất (→ [GROUP BY & HAVING](/blog/group-by-and-having-tong-hop-du-lieu/)). Window function trả lời cả hai trong một biểu thức.
 
 ```sql
 SELECT fish, sex, l_cm,

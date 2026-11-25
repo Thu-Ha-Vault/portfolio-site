@@ -430,7 +430,7 @@ age  n  l_mean  w_mean
 | Maximum W where 19 ≤ L < 21 | `DMAX` | `MAX(w_g) … WHERE` | `filter() \|> summarise(max())` | 10 | 37.4 g |
 | Mean L where LS ≥ 3 | `DAVERAGE` | `AVG(l_cm) … WHERE` | `filter() \|> summarise(mean())` | 20 | 19.995 cm |
 
-Each D-function returns **one** number. To compute it for every group, Excel needs a PivotTable, SQL uses `GROUP BY`, and R uses `group_by()` followed by `summarise()` (→ GROUP BY & HAVING). In Table 5, length and weight increase with age up to 4+ and then roughly level off, but the 0+ and 1+ groups have only one fish each, so the comparison is descriptive only. By main food, Copepoda account for 9 fish, Cladocera and Acetes 6 each, Polychaeta 2, and Amphipoda and Mysis 1 each.
+Each D-function returns **one** number. To compute it for every group, Excel needs a PivotTable, SQL uses `GROUP BY`, and R uses `group_by()` followed by `summarise()` (→ [GROUP BY & HAVING](/en/blog/group-by-and-having-tong-hop-du-lieu/)). In Table 5, length and weight increase with age up to 4+ and then roughly level off, but the 0+ and 1+ groups have only one fish each, so the comparison is descriptive only. By main food, Copepoda account for 9 fish, Cladocera and Acetes 6 each, Polychaeta 2, and Amphipoda and Mysis 1 each.
 
 **Table 5.** Mean length and weight by age group
 

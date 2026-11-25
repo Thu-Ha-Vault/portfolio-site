@@ -29,7 +29,7 @@ isIndex: true
 	- [02 - SELECT & WHERE - Truy vấn cơ bản](/blog/select-and-where-truy-van-co-ban/)
 	- [03 - Sắp xếp & Tìm kiếm](/blog/sap-xep-and-tim-kiem/)
 	- [04 - Hàm tổng hợp (Aggregate)](/blog/ham-tong-hop-aggregate/)
-	- 05 - GROUP BY & HAVING - Tổng hợp dữ liệu
+	- [05 - GROUP BY & HAVING - Tổng hợp dữ liệu](/blog/group-by-and-having-tong-hop-du-lieu/)
 - INTERMEDIATE
 	- [01 - JOIN - Kết hợp nhiều bảng](/blog/join-ket-hop-nhieu-bang/)
 	- [02 - Subquery & CASE WHEN](/blog/subquery-and-case-when/)

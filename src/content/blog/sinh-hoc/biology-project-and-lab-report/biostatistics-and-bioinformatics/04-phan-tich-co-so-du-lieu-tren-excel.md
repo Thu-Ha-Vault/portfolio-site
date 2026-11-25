@@ -429,7 +429,7 @@ age  n  l_mean  w_mean
 | W lớn nhất khi 19 ≤ L < 21 | `DMAX` | `MAX(w_g) … WHERE` | `filter() \|> summarise(max())` | 10 | 37,4 g |
 | L trung bình khi LS ≥ 3 | `DAVERAGE` | `AVG(l_cm) … WHERE` | `filter() \|> summarise(mean())` | 20 | 19,995 cm |
 
-Mỗi hàm D- chỉ trả về **một** con số. Muốn tính cho từng nhóm, Excel cần PivotTable, SQL dùng `GROUP BY`, R dùng `group_by()` rồi `summarise()` (→ GROUP BY & HAVING). Theo Bảng 5, chiều dài và khối lượng tăng theo tuổi đến 4+ rồi gần như chững lại, nhưng nhóm 0+ và 1+ chỉ có một cá mỗi nhóm, nên so sánh chỉ mang tính mô tả. Theo thức ăn chính, Copepoda có 9 cá, Cladocera và Acetes mỗi nhóm 6, Polychaeta 2, Amphipoda và Mysis mỗi nhóm 1.
+Mỗi hàm D- chỉ trả về **một** con số. Muốn tính cho từng nhóm, Excel cần PivotTable, SQL dùng `GROUP BY`, R dùng `group_by()` rồi `summarise()` (→ [GROUP BY & HAVING](/blog/group-by-and-having-tong-hop-du-lieu/)). Theo Bảng 5, chiều dài và khối lượng tăng theo tuổi đến 4+ rồi gần như chững lại, nhưng nhóm 0+ và 1+ chỉ có một cá mỗi nhóm, nên so sánh chỉ mang tính mô tả. Theo thức ăn chính, Copepoda có 9 cá, Cladocera và Acetes mỗi nhóm 6, Polychaeta 2, Amphipoda và Mysis mỗi nhóm 1.
 
 **Bảng 5.** Chiều dài và khối lượng trung bình theo nhóm tuổi
 

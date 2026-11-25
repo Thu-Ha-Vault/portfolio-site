@@ -324,7 +324,7 @@ Multiple imputation cũng không phải lúc nào cũng tốt hơn phân tích c
 
 Trước khi chép một con số trung bình vào báo cáo, hãy hỏi ba câu. Thiếu bao nhiêu: `COUNT(*) - COUNT(x)`. Thiếu được ghi thế nào: NULL thật hay chuỗi trá hình. Vì sao thiếu: câu hỏi này không trả lời được bằng SQL, mà bằng hiểu biết về cách dữ liệu được tạo ra.
 
-Mức thiếu thường khác nhau giữa các nhóm, như hai nhóm tuổi trong thí nghiệm MAR. Bài tiếp theo về GROUP BY và HAVING đưa `COUNT(x)` vào từng nhóm để thấy nhóm nào bị đại diện kém.
+Mức thiếu thường khác nhau giữa các nhóm, như hai nhóm tuổi trong thí nghiệm MAR. Bài tiếp theo về [GROUP BY và HAVING](/blog/group-by-and-having-tong-hop-du-lieu/) đưa `COUNT(x)` vào từng nhóm để thấy nhóm nào bị đại diện kém.
 
 ## Tài liệu tham khảo
 

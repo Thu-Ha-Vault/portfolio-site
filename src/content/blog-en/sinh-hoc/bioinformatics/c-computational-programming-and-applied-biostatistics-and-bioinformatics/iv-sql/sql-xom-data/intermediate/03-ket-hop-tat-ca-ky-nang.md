@@ -346,7 +346,7 @@ The number of "high" genes changes almost fivefold between the lowest and highes
 
 ### 7.2. HAVING and a check against an independent number
 
-HAVING filters groups after GROUP BY (see GROUP BY and HAVING). To drop genes with too little data, add `HAVING COUNT(DISTINCT VariationID) >= 5` to the derived table: 2,042 genes remain. Row-level conditions (assembly, review status) belong in WHERE; conditions on aggregated results belong in HAVING.
+HAVING filters groups after GROUP BY (see [GROUP BY and HAVING](/en/blog/group-by-and-having-tong-hop-du-lieu/)). To drop genes with too little data, add `HAVING COUNT(DISTINCT VariationID) >= 5` to the derived table: 2,042 genes remain. Row-level conditions (assembly, review status) belong in WHERE; conditions on aggregated results belong in HAVING.
 
 | Gene | P/LP variants (narrow definition) | ClinVar's P/LP column |
 | --- | --- | --- |

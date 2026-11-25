@@ -42,7 +42,7 @@ A window function in SQL computes a value for each row from a set of related row
 
 ## 1. What a window function is: keep the rows, add a column
 
-Take a simple biological question. In a table of measurements for 25 *Coilia grayii* fish, how much longer or shorter is each fish than the average for its sex? `GROUP BY sex` answers the first half (the mean of each group), but it returns two rows and the length of each individual fish disappears (→ GROUP BY & HAVING). A window function answers both halves in one expression.
+Take a simple biological question. In a table of measurements for 25 *Coilia grayii* fish, how much longer or shorter is each fish than the average for its sex? `GROUP BY sex` answers the first half (the mean of each group), but it returns two rows and the length of each individual fish disappears (→ [GROUP BY & HAVING](/en/blog/group-by-and-having-tong-hop-du-lieu/)). A window function answers both halves in one expression.
 
 ```sql
 SELECT fish, sex, l_cm,

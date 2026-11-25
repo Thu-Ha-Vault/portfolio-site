@@ -325,7 +325,7 @@ Multiple imputation isn't always better than complete-case analysis. White and C
 
 Before you copy a mean into a report, ask three questions. How much is missing: `COUNT(*) - COUNT(x)`. How is it recorded: true NULL or a disguised string. Why is it missing: SQL can't answer that one. Knowing how the data were produced can.
 
-Missing rates often differ between groups, like the two age groups in the MAR experiment. The next article, on GROUP BY and HAVING, puts `COUNT(x)` into each group so you can see which groups are underrepresented.
+Missing rates often differ between groups, like the two age groups in the MAR experiment. The next article, on [GROUP BY and HAVING](/en/blog/group-by-and-having-tong-hop-du-lieu/), puts `COUNT(x)` into each group so you can see which groups are underrepresented.
 
 ## References
 

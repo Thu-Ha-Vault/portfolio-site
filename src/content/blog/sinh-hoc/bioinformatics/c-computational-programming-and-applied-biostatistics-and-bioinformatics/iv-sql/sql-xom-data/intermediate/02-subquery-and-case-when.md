@@ -288,7 +288,7 @@ Trên dữ liệu mô phỏng, gene 13763 đứng đầu với 7 biến thể, 2
 
 **COALESCE** trả về đối số khác NULL đầu tiên và chỉ đánh giá đến đối số đó (PostgreSQL Global Development Group, n.d.-b). `COALESCE(af, 0)` chạy được nhưng sai về sinh học: thiếu dữ liệu tần số không có nghĩa tần số bằng 0. Trên dữ liệu mô phỏng, `AVG(af)` là 0,0904 còn `AVG(COALESCE(af, 0))` là 0,0877.
 
-**Alias trong GROUP BY.** SQLite chấp nhận `GROUP BY af_group` với `af_group` là alias của CASE. Không phải hệ nào cũng cho phép; cách chắc chắn là lặp lại biểu thức CASE trong `GROUP BY` hoặc bọc nó vào subquery hay CTE. Hàm tổng hợp đi với `GROUP BY` được bàn kỹ trong bài GROUP BY và HAVING.
+**Alias trong GROUP BY.** SQLite chấp nhận `GROUP BY af_group` với `af_group` là alias của CASE. Không phải hệ nào cũng cho phép; cách chắc chắn là lặp lại biểu thức CASE trong `GROUP BY` hoặc bọc nó vào subquery hay CTE. Hàm tổng hợp đi với `GROUP BY` được bàn kỹ trong [bài GROUP BY và HAVING](/blog/group-by-and-having-tong-hop-du-lieu/).
 
 ## 7. Case sinh học: lọc và phân nhóm biến thể
 

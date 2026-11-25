@@ -345,7 +345,7 @@ Số gene ở tầng "high" thay đổi gần năm lần giữa bộ ngưỡng t
 
 ### 7.2. HAVING và đối chiếu với một con số độc lập
 
-HAVING lọc nhóm sau GROUP BY (xem GROUP BY và HAVING). Muốn bỏ các gene quá ít dữ liệu, thêm `HAVING COUNT(DISTINCT VariationID) >= 5` vào derived table: còn 2.042 gene. Điều kiện trên dòng (bản genome, review status) thuộc WHERE; điều kiện trên kết quả tổng hợp thuộc HAVING.
+HAVING lọc nhóm sau GROUP BY (xem [GROUP BY và HAVING](/blog/group-by-and-having-tong-hop-du-lieu/)). Muốn bỏ các gene quá ít dữ liệu, thêm `HAVING COUNT(DISTINCT VariationID) >= 5` vào derived table: còn 2.042 gene. Điều kiện trên dòng (bản genome, review status) thuộc WHERE; điều kiện trên kết quả tổng hợp thuộc HAVING.
 
 | Gene | Biến thể P/LP (định nghĩa hẹp) | Cột P/LP của ClinVar |
 | --- | --- | --- |
