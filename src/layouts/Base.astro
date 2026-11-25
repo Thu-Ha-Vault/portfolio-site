@@ -34,8 +34,10 @@ interface Props {
    * English page, makes the language toggle a link to the Vietnamese one.
    */
   alternates?: { vi: string; en: string };
+  /** Page that must not be indexed (404): adds robots noindex and drops the canonical/og:url, which would name a URL that does not exist. */
+  noindex?: boolean;
 }
-const { title, description, mermaid = false, type = 'website', jsonLd, reading = false, image, imageAlt, quietGlow = false, alternates } = Astro.props;
+const { title, description, mermaid = false, type = 'website', jsonLd, reading = false, image, imageAlt, quietGlow = false, alternates, noindex = false } = Astro.props;
 const path = Astro.url.pathname;
 // A page under /en/ is written in English: its UI is English from the server and does not follow the stored toggle.
 const en = isEnglishPath(path);
@@ -83,7 +85,7 @@ const [readVi, readEn] = ui.readingLight;
     <meta name="color-scheme" content="dark" />
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
-    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
     {alternates && (
       <Fragment>
         <link rel="alternate" hreflang="vi" href={new URL(alternates.vi, Astro.site)} />
@@ -94,7 +96,7 @@ const [readVi, readEn] = ui.readingLight;
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title ?? config.author.name} />
     <meta property="og:description" content={desc} />
-    <meta property="og:url" content={canonical} />
+    {!noindex && <meta property="og:url" content={canonical} />}
     <meta property="og:site_name" content={config.author.name} />
     <meta property="og:locale" content={en ? 'en_US' : 'vi_VN'} />
     {alternates && <meta property="og:locale:alternate" content={en ? 'vi_VN' : 'en_US'} />}
