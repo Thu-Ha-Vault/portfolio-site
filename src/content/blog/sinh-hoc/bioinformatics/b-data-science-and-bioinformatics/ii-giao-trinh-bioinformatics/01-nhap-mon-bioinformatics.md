@@ -269,13 +269,13 @@ Trục "công cụ hay câu hỏi" của NIH (2000) cũng phân biệt các vai 
 
 Ba điều nên mang sang các phần sau: bioinformatics là ngành của công cụ và dữ liệu, chồng lấn với computational biology (NIH, 2000); một tầng omics đơn lẻ chủ yếu cho tương quan; và trong bảy bước của một dự án, thiết kế quyết định kết luận nào còn rút ra được.
 
-Bài tập: chọn một bài báo omics truy cập mở trên PubMed, chép Bảng 4 với ba cột cuối để trống, điền cho bài đó và đánh dấu bước làm yếu nhất. Phần 2 chuyển sang công cụ bạn cần để tự đi qua bước 3–5.
+Bài tập: chọn một bài báo omics truy cập mở trên PubMed, chép Bảng 4 với ba cột cuối để trống, điền cho bài đó và đánh dấu bước làm yếu nhất. [Phần 2](/blog/nen-tang-tinh-toan/) chuyển sang công cụ bạn cần để tự đi qua bước 3–5.
 
 ## Câu hỏi thường gặp
 
 **Tin sinh học là gì?** Là tên tiếng Việt của bioinformatics: ngành phát triển và dùng công cụ tính toán để lưu trữ, phân tích và trực quan hoá dữ liệu sinh học như trình tự DNA hay dữ liệu biểu hiện gen.
 
-**Cần học gì trước khi vào bioinformatics?** Series đi theo thứ tự: sinh học phân tử ở bài này, lập trình ở Phần 2, thống kê ở Phần 3. [Bài mở đầu](/blog/gioi-thieu-va-cach-dung-giao-trinh/) sắp các phần thành lộ trình 36 tuần và đối chiếu với khung năng lực ISCB.
+**Cần học gì trước khi vào bioinformatics?** Series đi theo thứ tự: sinh học phân tử ở bài này, lập trình ở [Phần 2](/blog/nen-tang-tinh-toan/), thống kê ở Phần 3. [Bài mở đầu](/blog/gioi-thieu-va-cach-dung-giao-trinh/) sắp các phần thành lộ trình 36 tuần và đối chiếu với khung năng lực ISCB.
 
 **Batch effect là gì?** Là khác biệt kỹ thuật giữa các nhóm mẫu xử lý khác ngày, khác lô hoá chất hoặc khác người làm. Cách phòng hiệu quả nhất là chia đều các nhóm so sánh vào mỗi lô ngay khi thiết kế.
 

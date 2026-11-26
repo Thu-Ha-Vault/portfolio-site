@@ -71,7 +71,7 @@ Nearly half the time goes to two blocks: computing foundations (6 weeks) and NGS
 
 After 36 weeks you should be able to do four things. First, work comfortably in Linux and write Python and R scripts for biological data. Second, run an NGS pipeline on your own, from raw FASTQ to a list of variants or differentially expressed genes. Third, understand the algorithms well enough to choose parameters for a reason. Fourth, have 3–4 projects on GitHub: the first in Part 7, the second in Part 10, and a capstone in Part 12.
 
-The roadmap assumes a background in molecular biology (DNA, RNA, protein, PCR, gene expression). You don't need to know how to program, because Part 2 starts from your first command. Each part follows the same template: **Goals → Core concepts → Practice → Exercises → Resources**. Part 12 swaps the exercises for an end-of-roadmap checklist. The goals and exercises of each part are its learning outcomes, and they are what gets mapped in section 3.
+The roadmap assumes a background in molecular biology (DNA, RNA, protein, PCR, gene expression). You don't need to know how to program, because [Part 2](/en/blog/nen-tang-tinh-toan/) starts from your first command. Each part follows the same template: **Goals → Core concepts → Practice → Exercises → Resources**. Part 12 swaps the exercises for an end-of-roadmap checklist. The goals and exercises of each part are its learning outcomes, and they are what gets mapped in section 3.
 
 ### 1.3. Why compare against a competency framework
 

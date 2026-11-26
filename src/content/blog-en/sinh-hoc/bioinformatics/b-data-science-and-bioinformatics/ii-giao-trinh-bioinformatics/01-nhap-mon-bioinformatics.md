@@ -271,13 +271,13 @@ The NIH (2000) "tools or questions" axis also separates job roles. A **bioinform
 
 Three ideas are worth carrying into the next parts: bioinformatics is the field of tools and data, overlapping with computational biology (NIH, 2000); a single omics layer mostly yields correlations; and of the seven steps in a project, design decides which conclusions you can still draw.
 
-Exercise: pick an open-access omics paper on PubMed, copy Table 4 with the last three columns blank, fill it in for that paper and mark its weakest step. Part 2 moves on to the tools you need to work through steps 3–5 yourself.
+Exercise: pick an open-access omics paper on PubMed, copy Table 4 with the last three columns blank, fill it in for that paper and mark its weakest step. [Part 2](/en/blog/nen-tang-tinh-toan/) moves on to the tools you need to work through steps 3–5 yourself.
 
 ## Frequently asked questions
 
 **What is bioinformatics, in plain terms?** It is the field that builds and uses computational tools to store, analyze and visualize biological data such as DNA sequences or gene expression data. In Vietnamese it is called "tin sinh học."
 
-**What should I learn before getting into bioinformatics?** This series goes in order: molecular biology in this article, programming in Part 2, statistics in Part 3. The [introduction](/en/blog/gioi-thieu-va-cach-dung-giao-trinh/) arranges the parts into a 36-week roadmap and maps it against the ISCB competency framework.
+**What should I learn before getting into bioinformatics?** This series goes in order: molecular biology in this article, programming in [Part 2](/en/blog/nen-tang-tinh-toan/), statistics in Part 3. The [introduction](/en/blog/gioi-thieu-va-cach-dung-giao-trinh/) arranges the parts into a 36-week roadmap and maps it against the ISCB competency framework.
 
 **What is a batch effect?** It is a technical difference between groups of samples processed on different days, with different reagent lots or by different people. The most effective prevention is to spread the groups you are comparing evenly across every batch at the design stage.
 

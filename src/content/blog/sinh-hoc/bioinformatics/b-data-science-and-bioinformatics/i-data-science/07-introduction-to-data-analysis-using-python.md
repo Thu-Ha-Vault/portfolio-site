@@ -565,7 +565,7 @@ Các khuyến nghị chung về tính toán khoa học nói cùng một hướng
 
 Biopython là dự án mã nguồn mở cung cấp thư viện Python cho nhiều việc của bioinformatics: đọc và ghi các định dạng trình tự và alignment, làm việc với cấu trúc 3D, gọi các công cụ như BLAST và truy cập cơ sở dữ liệu trực tuyến (Cock et al., 2009). Ví dụ dưới dùng hệ gen ti thể người, bản tham chiếu NC_012920.1 của NCBI dài 16.569 bp, tải ngày 15/11/2026 ở hai dạng FASTA: 13 trình tự mã hoá protein (CDS) và toàn bộ hệ gen (National Center for Biotechnology Information, n.d.). Định dạng FASTA được giới thiệu ở Định dạng dữ liệu sinh học.
 
-**Bước 1: đọc FASTA vào DataFrame.** `SeqIO.parse` duyệt từng bản ghi, như đoạn code tính GC trong Nền tảng tính toán. `gc_fraction` trả về tỷ lệ G + C. Tên gen và tên protein được lấy từ dòng tiêu đề của mỗi bản ghi.
+**Bước 1: đọc FASTA vào DataFrame.** `SeqIO.parse` duyệt từng bản ghi, như đoạn code tính GC trong [Nền tảng tính toán](/blog/nen-tang-tinh-toan/). `gc_fraction` trả về tỷ lệ G + C. Tên gen và tên protein được lấy từ dòng tiêu đề của mỗi bản ghi.
 
 ```python
 import re

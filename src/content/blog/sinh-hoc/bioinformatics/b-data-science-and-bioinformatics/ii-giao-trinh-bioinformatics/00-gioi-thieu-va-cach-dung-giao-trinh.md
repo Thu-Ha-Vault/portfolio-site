@@ -70,7 +70,7 @@ Gần một nửa thời gian rơi vào hai khối: nền tảng tính toán (6 
 
 Sau 36 tuần, bạn cần làm được bốn việc. Một, làm việc thành thạo trên Linux và viết script Python, R cho dữ liệu sinh học. Hai, tự chạy một quy trình NGS từ FASTQ thô đến danh sách biến thể hoặc gen biểu hiện khác biệt. Ba, hiểu thuật toán đủ để chọn tham số có căn cứ. Bốn, có 3–4 dự án trên GitHub: dự án thứ nhất ở Phần 7, dự án thứ hai ở Phần 10, dự án tổng hợp ở Phần 12.
 
-Đối tượng là người đã có nền sinh học phân tử (DNA, RNA, protein, PCR, biểu hiện gen). Chưa biết lập trình vẫn theo được, vì Phần 2 bắt đầu từ dòng lệnh đầu tiên. Mỗi phần đi theo khuôn **Mục tiêu → Kiến thức cốt lõi → Thực hành → Bài tập → Tài nguyên**; riêng Phần 12 thay bài tập bằng danh sách kiểm tra cuối lộ trình. Mục tiêu và bài tập của từng phần là chuẩn đầu ra (learning outcome) dùng để ánh xạ ở mục 3.
+Đối tượng là người đã có nền sinh học phân tử (DNA, RNA, protein, PCR, biểu hiện gen). Chưa biết lập trình vẫn theo được, vì [Phần 2](/blog/nen-tang-tinh-toan/) bắt đầu từ dòng lệnh đầu tiên. Mỗi phần đi theo khuôn **Mục tiêu → Kiến thức cốt lõi → Thực hành → Bài tập → Tài nguyên**; riêng Phần 12 thay bài tập bằng danh sách kiểm tra cuối lộ trình. Mục tiêu và bài tập của từng phần là chuẩn đầu ra (learning outcome) dùng để ánh xạ ở mục 3.
 
 ### 1.3. Vì sao cần đối chiếu với một khung năng lực
 
