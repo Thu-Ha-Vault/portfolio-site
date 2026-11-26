@@ -465,7 +465,7 @@ Bài tập đề xuất:
 4. Vẽ histogram GC bằng ggplot2 thay cho R base.
 5. Đưa dự án lên GitHub với `.gitignore` loại dữ liệu.
 
-Bài tiếp theo trong series nói về toán và thống kê cho sinh học; bài 04 nói về định dạng FASTQ, điểm Phred và các cơ sở dữ liệu sinh học (Định dạng dữ liệu và cơ sở dữ liệu sinh học).
+Bài tiếp theo trong series nói về toán và thống kê cho sinh học; bài 04 nói về định dạng FASTQ, điểm Phred và các cơ sở dữ liệu sinh học ([Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ## Câu hỏi thường gặp
 

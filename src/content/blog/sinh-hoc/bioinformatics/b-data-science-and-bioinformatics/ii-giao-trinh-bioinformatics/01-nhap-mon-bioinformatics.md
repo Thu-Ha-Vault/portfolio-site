@@ -105,7 +105,7 @@ flowchart TB
 ```
 *Hình 2.* Sáu tầng omics. Mũi tên liền: dòng thông tin trình tự; mũi tên đứt: điều hoà hoặc trao đổi chất. Sơ đồ tự vẽ.
 
-**Bảng 2.** Sáu tầng omics: đo gì, bằng gì, ra định dạng gì (định dạng giải thích ở Phần 4)
+**Bảng 2.** Sáu tầng omics: đo gì, bằng gì, ra định dạng gì (định dạng giải thích ở [Phần 4](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/))
 
 | Tầng | Đo cái gì | Công nghệ chính | Định dạng |
 | --- | --- | --- | --- |
@@ -227,7 +227,7 @@ Khi lô trùng nhóm, protein "tăng" 1,02 đơn vị log2 ở HCC với p = 4,3
 
 ### Bước 3. Dữ liệu thô
 
-Dữ liệu thô đến từ máy của bạn hoặc từ cơ sở dữ liệu công khai (→ Phần 4); với dữ liệu tải về, hãy đọc kỹ thông tin lô và loại mẫu đi kèm. Trong ca minh hoạ, máy ghi được 850.808 phổ MS/MS, trong đó 77.850 phổ khớp với UniProt (Dong et al., 2022): chưa đến một phần mười số phổ được gán cho một peptide đã biết.
+Dữ liệu thô đến từ máy của bạn hoặc từ cơ sở dữ liệu công khai (→ [Phần 4](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)); với dữ liệu tải về, hãy đọc kỹ thông tin lô và loại mẫu đi kèm. Trong ca minh hoạ, máy ghi được 850.808 phổ MS/MS, trong đó 77.850 phổ khớp với UniProt (Dong et al., 2022): chưa đến một phần mười số phổ được gán cho một peptide đã biết.
 
 ### Bước 4. Kiểm soát chất lượng và tiền xử lý
 

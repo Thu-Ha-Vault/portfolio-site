@@ -341,7 +341,7 @@ Nygaard et al. (2016) khuyên trước hết phải bảo đảm thiết kế c�
 7. **Có câu nào nói "p > 0,05 nghĩa là không khác biệt" không?** Đó là hiểu sai (Greenland et al., 2016).
 8. **Code và phiên bản phần mềm có được công bố không?** (Wasserstein & Lazar, 2016, nguyên tắc 4).
 
-Bảng nào không trả lời được câu 1, 2 và 5 thì nên hỏi lại người phân tích trước khi chọn gen để làm tiếp. Bài 4 của series nói về định dạng dữ liệu, tức ma trận đếm đến từ đâu (Định dạng dữ liệu và cơ sở dữ liệu sinh học); bài 7 đi qua pipeline RNA-seq đầy đủ.
+Bảng nào không trả lời được câu 1, 2 và 5 thì nên hỏi lại người phân tích trước khi chọn gen để làm tiếp. Bài 4 của series nói về định dạng dữ liệu, tức ma trận đếm đến từ đâu ([Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)); bài 7 đi qua pipeline RNA-seq đầy đủ.
 
 ## Câu hỏi thường gặp
 

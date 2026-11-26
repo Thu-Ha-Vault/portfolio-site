@@ -355,7 +355,7 @@ SELECT gene, COUNT(*) FROM gene_summary
 GROUP BY gene HAVING COUNT(*) > 1;
 ```
 
-GEMINI is not a special case. VEP (McLaren et al., 2016) and ANNOVAR (Wang et al., 2010) annotate variants by transcript and by gene, so a single variant usually carries several annotations. Joining annotation output to a gene table, ClinVar or GO is usually left to the analyst; Buffalo (2015) devotes a chapter to SQLite and JOINs in bioinformatics workflows. The article on biological data formats and databases introduces these annotation sources.
+GEMINI is not a special case. VEP (McLaren et al., 2016) and ANNOVAR (Wang et al., 2010) annotate variants by transcript and by gene, so a single variant usually carries several annotations. Joining annotation output to a gene table, ClinVar or GO is usually left to the analyst; Buffalo (2015) devotes a chapter to SQLite and JOINs in bioinformatics workflows. The article on [biological data formats and databases](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/) introduces these annotation sources.
 
 A note on tooling: the README of the GEMINI repository says the tool has largely been superseded by slivar and recommends that users switch to slivar (arq5x, n.d.). Here GEMINI serves only as an example of schema design, not as a recommendation for new projects.
 

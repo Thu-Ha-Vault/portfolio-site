@@ -342,7 +342,7 @@ Nygaard et al. (2016) advise making sure the design is balanced first; if the da
 7. **Does any sentence say "p > 0.05 means no difference"?** That is a misreading (Greenland et al., 2016).
 8. **Were the code and software versions published?** (Wasserstein & Lazar, 2016, principle 4).
 
-If a table can't answer questions 1, 2 and 5, go back to whoever ran the analysis before you pick genes for follow-up work. Article 4 in this series covers data formats, that is, where the count matrix comes from (Data formats and biological databases); article 7 walks through a full RNA-seq pipeline.
+If a table can't answer questions 1, 2 and 5, go back to whoever ran the analysis before you pick genes for follow-up work. Article 4 in this series covers data formats, that is, where the count matrix comes from ([Data formats and biological databases](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)); article 7 walks through a full RNA-seq pipeline.
 
 ## Frequently asked questions
 

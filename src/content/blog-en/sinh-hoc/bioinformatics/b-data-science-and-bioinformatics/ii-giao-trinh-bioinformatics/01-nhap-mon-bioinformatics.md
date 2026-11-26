@@ -107,7 +107,7 @@ flowchart TB
 ```
 *Figure 2.* The six omics layers. Solid arrows: flow of sequence information; dashed arrows: regulation or metabolism. Original diagram.
 
-**Table 2.** The six omics layers: what is measured, with what, and in which format (formats are explained in Part 4)
+**Table 2.** The six omics layers: what is measured, with what, and in which format (formats are explained in [Part 4](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/))
 
 | Layer | What it measures | Main technologies | Format |
 | --- | --- | --- | --- |
@@ -229,7 +229,7 @@ When batch is confounded with group, the protein is "up" 1.02 log2 units in HCC 
 
 ### Step 3. Raw data
 
-Raw data come from your own instrument or from public databases (→ Part 4); for downloaded data, read the batch and sample-type information that comes with them. In the example, the instrument recorded 850,808 MS/MS spectra, of which 77,850 matched UniProt (Dong et al., 2022): fewer than one in ten spectra were assigned to a known peptide.
+Raw data come from your own instrument or from public databases (→ [Part 4](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)); for downloaded data, read the batch and sample-type information that comes with them. In the example, the instrument recorded 850,808 MS/MS spectra, of which 77,850 matched UniProt (Dong et al., 2022): fewer than one in ten spectra were assigned to a known peptide.
 
 ### Step 4. Quality control and preprocessing
 

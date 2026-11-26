@@ -148,7 +148,7 @@ Hai dòng cuối là hai điểm ROCCC bỏ sót: "Original" không cho biết m
 
 Metadata thường được định nghĩa là dữ liệu về dữ liệu, chia làm ba loại: **descriptive** (tiêu đề, tác giả, từ khoá), **structural** (dữ liệu được tổ chức thế nào, phần nào thuộc tập nào) và **administrative** (nguồn kỹ thuật, quyền truy cập, ngày tạo). Định nghĩa này chưa nói metadata phải chi tiết đến đâu.
 
-Trong bioinformatics, metadata còn là **nguồn gốc dữ liệu** (provenance). Buffalo (2015) khuyên ghi lại nguồn gốc mọi dữ liệu trong dự án, kể cả genome tham chiếu và annotation track; ghi ngày tải vì nguồn bên ngoài có thể thay đổi; ghi phiên bản, như TAIR10 hay WormBase WS231; và ghi cách tải. Cùng một tên gen nhưng khác bản annotation thì toạ độ có thể khác, nên kết quả không ghi phiên bản là kết quả không tái lập được (→ định dạng và cơ sở dữ liệu sinh học).
+Trong bioinformatics, metadata còn là **nguồn gốc dữ liệu** (provenance). Buffalo (2015) khuyên ghi lại nguồn gốc mọi dữ liệu trong dự án, kể cả genome tham chiếu và annotation track; ghi ngày tải vì nguồn bên ngoài có thể thay đổi; ghi phiên bản, như TAIR10 hay WormBase WS231; và ghi cách tải. Cùng một tên gen nhưng khác bản annotation thì toạ độ có thể khác, nên kết quả không ghi phiên bản là kết quả không tái lập được (→ [định dạng và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ### 3.2. Nguyên tắc FAIR
 

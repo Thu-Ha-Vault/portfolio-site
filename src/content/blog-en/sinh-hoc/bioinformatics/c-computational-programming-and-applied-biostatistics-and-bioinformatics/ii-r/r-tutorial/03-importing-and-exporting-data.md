@@ -95,7 +95,7 @@ str(read.csv2("eu.csv"))
 
 `read.csv()` doesn't stop. It splits each line at the decimal comma, turns the part before it ("A1;3") into a row name, and returns a single integer column of 23 and 95 that means nothing. `read.csv2()` reads the two columns correctly, with concentrations of 3.23 and 2.95. When someone sends you a file, open it in a text editor to see the delimiter, then check it with `str()`. No error doesn't mean the import is right.
 
-TSV (tab-separated values) files follow the same idea but separate columns with a tab character. Gene names and sample IDs rarely contain tabs, so TSV needs quoting less often than CSV. Domain formats such as FASTA, FASTQ, and VCF have their own rules, covered in the article on biological data formats.
+TSV (tab-separated values) files follow the same idea but separate columns with a tab character. Gene names and sample IDs rarely contain tabs, so TSV needs quoting less often than CSV. Domain formats such as FASTA, FASTQ, and VCF have their own rules, covered in the [article on biological data formats](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/).
 
 ## 2. Importing data with `read.csv()`
 

@@ -37,7 +37,7 @@ isIndex: true
 - [Phần 1 – Nhập môn Bioinformatics](/blog/nhap-mon-bioinformatics/)
 - [Phần 2 – Nền tảng tính toán](/blog/nen-tang-tinh-toan/)
 - [Phần 3 – Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/)
-- Phần 4 – Định dạng dữ liệu và cơ sở dữ liệu sinh học
+- [Phần 4 – Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)
 
 ### Cấp 2 – Trung cấp (Tuần 12–24)
 - Phần 5 – Phân tích trình tự

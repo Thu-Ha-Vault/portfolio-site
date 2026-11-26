@@ -148,7 +148,7 @@ The last two rows are the two things ROCCC leaves out: "Original" does not tell 
 
 Metadata is usually defined as data about data and divided into three types: **descriptive** (title, author, keywords), **structural** (how the data is organized and which part belongs to which set), and **administrative** (technical source, access rights, creation date). This definition does not say how detailed metadata needs to be.
 
-In bioinformatics, metadata also means **provenance**. Buffalo (2015) advises recording the origin of every piece of data in a project, including reference genomes and annotation tracks; recording the download date, because external sources can change; recording versions, such as TAIR10 or WormBase WS231; and recording how the data was downloaded. The same gene name can have different coordinates in different annotation releases, so a result without a version is a result that cannot be reproduced (→ biological data formats and databases).
+In bioinformatics, metadata also means **provenance**. Buffalo (2015) advises recording the origin of every piece of data in a project, including reference genomes and annotation tracks; recording the download date, because external sources can change; recording versions, such as TAIR10 or WormBase WS231; and recording how the data was downloaded. The same gene name can have different coordinates in different annotation releases, so a result without a version is a result that cannot be reproduced (→ [biological data formats and databases](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ### 3.2. The FAIR principles
 

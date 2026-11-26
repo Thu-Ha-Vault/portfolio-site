@@ -210,7 +210,7 @@ Nhiều tài nguyên lớn của tin sinh học chạy trên hệ quản trị c
 | GEMINI | SQLite | Một file database tạo từ VCF | Paila et al. (2013) |
 | Chado (FlyBase) | Schema dạng module | Cài đặt theo dự án | Mungall et al. (2007) |
 
-Học `SELECT`, `WHERE` và `JOIN` vì vậy là học cách hỏi trực tiếp những kho dữ liệu này. Tổng quan về định dạng và cơ sở dữ liệu sinh học có ở bài định dạng dữ liệu.
+Học `SELECT`, `WHERE` và `JOIN` vì vậy là học cách hỏi trực tiếp những kho dữ liệu này. Tổng quan về định dạng và cơ sở dữ liệu sinh học có ở [bài định dạng dữ liệu](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/).
 
 ## 7. Từ database cửa hàng đến database gene: hai sơ đồ quan hệ
 

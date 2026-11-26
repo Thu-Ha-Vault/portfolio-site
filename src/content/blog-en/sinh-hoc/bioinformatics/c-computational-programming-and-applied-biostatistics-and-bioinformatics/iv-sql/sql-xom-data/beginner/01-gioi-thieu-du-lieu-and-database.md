@@ -211,7 +211,7 @@ Many major bioinformatics resources run on a relational database management syst
 | GEMINI | SQLite | One database file built from VCF | Paila et al. (2013) |
 | Chado (FlyBase) | Modular schema | Installed per project | Mungall et al. (2007) |
 
-Learning `SELECT`, `WHERE` and `JOIN` therefore means learning to query these resources directly. An overview of biological data formats and databases is in the data formats article.
+Learning `SELECT`, `WHERE` and `JOIN` therefore means learning to query these resources directly. An overview of biological data formats and databases is in [the data formats article](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/).
 
 ## 7. From a store database to a gene database: two relationship diagrams
 

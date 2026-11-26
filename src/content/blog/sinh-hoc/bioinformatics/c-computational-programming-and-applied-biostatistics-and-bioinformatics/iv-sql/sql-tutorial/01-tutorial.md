@@ -242,7 +242,7 @@ Khi nạp 25 dòng vào bảng này trên SQLite 3.45.3, 24 dòng vào được,
 
 Người học sinh học cần SQL vì nhiều cơ sở dữ liệu lớn của ngành được xây trên mô hình quan hệ. Cơ sở dữ liệu của UCSC Genome Browser được thiết kế để phục vụ truy vấn tương tác của trình duyệt hệ gen (Karolchik et al., 2003). Ensembl lưu dữ liệu trong nhiều cơ sở dữ liệu MySQL và cung cấp thư viện phần mềm che bớt schema phức tạp; chương trình dùng thư viện này ít bị ảnh hưởng khi schema thay đổi hơn so với SQL viết tay (Stabenau et al., 2004). SQL viết tay linh hoạt hơn; API bền hơn qua các phiên bản. Chado, schema do FlyBase và dự án GMOD phát triển, là schema quan hệ mô-đun dựa trên ontology, được dùng lại cho nhiều cơ sở dữ liệu sinh vật mô hình (Mungall et al., 2007).
 
-Ở quy mô cá nhân, SQLite là lựa chọn phổ biến: cơ sở dữ liệu nhúng chạy ngay trong tiến trình của chương trình, nằm gọn trong một file, và theo nhóm phát triển là engine cơ sở dữ liệu được triển khai rộng rãi nhất (Gaffney et al., 2022). Buffalo (2015) dành một phần của *Bioinformatics Data Skills* để giới thiệu cơ sở dữ liệu quan hệ qua SQLite cho người làm tin sinh học (→ Định dạng dữ liệu và cơ sở dữ liệu sinh học).
+Ở quy mô cá nhân, SQLite là lựa chọn phổ biến: cơ sở dữ liệu nhúng chạy ngay trong tiến trình của chương trình, nằm gọn trong một file, và theo nhóm phát triển là engine cơ sở dữ liệu được triển khai rộng rãi nhất (Gaffney et al., 2022). Buffalo (2015) dành một phần của *Bioinformatics Data Skills* để giới thiệu cơ sở dữ liệu quan hệ qua SQLite cho người làm tin sinh học (→ [Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ## 8. Kết luận và lộ trình
 

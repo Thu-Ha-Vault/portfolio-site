@@ -244,7 +244,7 @@ Loading the 25 rows into this table on SQLite 3.45.3, 24 rows go in and fish no.
 
 Biologists need SQL because many of the field's large databases are built on the relational model. The UCSC Genome Browser Database was designed to serve the browser's interactive queries (Karolchik et al., 2003). Ensembl stores its data in many MySQL databases and provides software libraries that hide the complex schema; programs using these libraries are less affected by schema changes than hand-written SQL (Stabenau et al., 2004). Hand-written SQL is more flexible; an API holds up better across releases. Chado, the schema developed by FlyBase and the GMOD project, is a modular, ontology-based relational schema reused by many model-organism databases (Mungall et al., 2007).
 
-At the scale of a single researcher, SQLite is a popular choice. It is an embedded database that runs inside the program's own process and lives in a single file, and according to its developers it is the most widely deployed database engine (Gaffney et al., 2022). Buffalo (2015) devotes part of *Bioinformatics Data Skills* to introducing relational databases through SQLite for bioinformaticians (→ Biological data formats and databases).
+At the scale of a single researcher, SQLite is a popular choice. It is an embedded database that runs inside the program's own process and lives in a single file, and according to its developers it is the most widely deployed database engine (Gaffney et al., 2022). Buffalo (2015) devotes part of *Bioinformatics Data Skills* to introducing relational databases through SQLite for bioinformaticians (→ [Biological data formats and databases](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ## 8. Conclusion and roadmap
 

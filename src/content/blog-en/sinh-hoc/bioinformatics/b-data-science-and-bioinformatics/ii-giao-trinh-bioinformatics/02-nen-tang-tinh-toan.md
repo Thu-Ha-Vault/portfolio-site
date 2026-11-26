@@ -468,7 +468,7 @@ Suggested exercises:
 4. Redraw the GC histogram with ggplot2 instead of base R.
 5. Put the project on GitHub with a `.gitignore` that excludes the data.
 
-The next article in the series covers math and statistics for biology; article 04 covers the FASTQ format, Phred scores and biological databases (Data formats and biological databases).
+The next article in the series covers math and statistics for biology; article 04 covers the FASTQ format, Phred scores and biological databases ([Data formats and biological databases](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)).
 
 ## Frequently asked questions
 

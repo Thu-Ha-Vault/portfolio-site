@@ -564,7 +564,7 @@ General recommendations for scientific computing point the same way. Sandve et a
 
 ## 5. Part 4: combining the three tools in a Biopython example
 
-Biopython is an open-source project providing Python libraries for many bioinformatics tasks: reading and writing sequence and alignment formats, working with 3D structures, calling tools such as BLAST and accessing online databases (Cock et al., 2009). The example below uses the human mitochondrial genome, NCBI reference sequence NC_012920.1, 16,569 bp long, downloaded on November 15, 2026 in two FASTA forms: the 13 protein-coding sequences (CDS) and the complete genome (National Center for Biotechnology Information, n.d.). The FASTA format is introduced in Biological data formats.
+Biopython is an open-source project providing Python libraries for many bioinformatics tasks: reading and writing sequence and alignment formats, working with 3D structures, calling tools such as BLAST and accessing online databases (Cock et al., 2009). The example below uses the human mitochondrial genome, NCBI reference sequence NC_012920.1, 16,569 bp long, downloaded on November 15, 2026 in two FASTA forms: the 13 protein-coding sequences (CDS) and the complete genome (National Center for Biotechnology Information, n.d.). The FASTA format is introduced in [Biological data formats](/en/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/).
 
 **Step 1: read the FASTA files into a DataFrame.** `SeqIO.parse` iterates over the records one by one, like the GC-counting code in [Computational foundations](/en/blog/nen-tang-tinh-toan/). `gc_fraction` returns the G + C fraction. Gene and protein names are taken from each record's header line.
 

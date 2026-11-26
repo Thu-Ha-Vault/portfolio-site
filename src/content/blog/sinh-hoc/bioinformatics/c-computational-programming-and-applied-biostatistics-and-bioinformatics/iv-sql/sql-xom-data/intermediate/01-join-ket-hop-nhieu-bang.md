@@ -354,7 +354,7 @@ SELECT gene, COUNT(*) FROM gene_summary
 GROUP BY gene HAVING COUNT(*) > 1;
 ```
 
-GEMINI không phải trường hợp riêng. VEP (McLaren et al., 2016) và ANNOVAR (Wang et al., 2010) chú giải biến thể theo transcript và theo gene, nên một biến thể thường gắn với nhiều chú giải. Bước nối kết quả chú giải với bảng gene, ClinVar hay GO thường do người phân tích tự viết; Buffalo (2015) dành một chương cho SQLite và JOIN trong quy trình tin sinh học. Bài định dạng dữ liệu và cơ sở dữ liệu sinh học giới thiệu các nguồn chú giải này.
+GEMINI không phải trường hợp riêng. VEP (McLaren et al., 2016) và ANNOVAR (Wang et al., 2010) chú giải biến thể theo transcript và theo gene, nên một biến thể thường gắn với nhiều chú giải. Bước nối kết quả chú giải với bảng gene, ClinVar hay GO thường do người phân tích tự viết; Buffalo (2015) dành một chương cho SQLite và JOIN trong quy trình tin sinh học. Bài [định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/) giới thiệu các nguồn chú giải này.
 
 Một lưu ý về công cụ: README của kho mã GEMINI cho biết công cụ này phần lớn đã được slivar thay thế và khuyên người dùng chuyển sang slivar (arq5x, n.d.). Ở đây GEMINI chỉ là ví dụ về thiết kế lược đồ, không phải khuyến nghị dùng cho dự án mới.
 

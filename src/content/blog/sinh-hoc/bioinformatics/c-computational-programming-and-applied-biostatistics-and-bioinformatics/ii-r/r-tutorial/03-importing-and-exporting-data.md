@@ -94,7 +94,7 @@ str(read.csv2("vn.csv"))
 
 `read.csv()` không dừng lại: nó cắt mỗi dòng tại dấu phẩy thập phân, biến phần đứng trước ("A1;3") thành tên hàng và trả về một cột số nguyên 23, 95 hoàn toàn vô nghĩa. `read.csv2()` đọc đúng hai cột, nồng độ 3,23 và 2,95. Khi nhận file từ người khác, hãy mở bằng trình soạn thảo văn bản để xem dấu ngăn cột, rồi kiểm tra bằng `str()`: không báo lỗi chưa có nghĩa là đúng.
 
-File TSV (tab-separated values) theo cùng ý tưởng nhưng ngăn cột bằng ký tự tab. Tên gene và mã mẫu hiếm khi chứa tab, nên TSV ít cần bao ngoặc hơn CSV. Các định dạng chuyên ngành như FASTA, FASTQ hay VCF có quy tắc riêng, được bàn trong bài về định dạng dữ liệu sinh học.
+File TSV (tab-separated values) theo cùng ý tưởng nhưng ngăn cột bằng ký tự tab. Tên gene và mã mẫu hiếm khi chứa tab, nên TSV ít cần bao ngoặc hơn CSV. Các định dạng chuyên ngành như FASTA, FASTQ hay VCF có quy tắc riêng, được bàn trong [bài về định dạng dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/).
 
 ## 2. Nhập dữ liệu bằng `read.csv()`
 
