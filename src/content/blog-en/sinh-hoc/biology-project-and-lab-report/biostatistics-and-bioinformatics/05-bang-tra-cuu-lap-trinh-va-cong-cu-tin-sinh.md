@@ -36,7 +36,7 @@ In a list of 19 bioinformatics tools (21 URLs), how many still worked in Novembe
 
 MAVID, a tool for aligning multiple genomic sequences, was published in 2004 (Bray & Pachter, 2004). Type MAVID's web address into a browser today and you get a "server not found" error: the domain `baboon.math.berkeley.edu` no longer exists. The algorithm is still in the paper, but the tool you could click on and run is gone.
 
-The bioinformatics tool tables that students often build for themselves while working on sequence alignment and BLAST assignments usually have a simple status column. The table used here is no different: each row has the tool name, its role, a link, the platform, and a label **O** (works) or **X** (unreachable); 12 tools are labeled O and 7 are labeled X. A binary label answers "does the link open?", but not "where, and how, can the tool still be used?"
+The bioinformatics tool tables that students often build for themselves while working on [sequence alignment and BLAST](/en/blog/phan-tich-trinh-tu/) assignments usually have a simple status column. The table used here is no different: each row has the tool name, its role, a link, the platform, and a label **O** (works) or **X** (unreachable); 12 tools are labeled O and 7 are labeled X. A binary label answers "does the link open?", but not "where, and how, can the tool still be used?"
 
 Dead links in the scientific literature have been measured many times; Table 1 summarizes the main studies.
 

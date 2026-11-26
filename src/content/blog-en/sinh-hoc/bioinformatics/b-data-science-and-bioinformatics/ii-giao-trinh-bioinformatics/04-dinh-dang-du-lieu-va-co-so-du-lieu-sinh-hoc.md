@@ -479,7 +479,7 @@ When a field in a file is confusing, open the dated, versioned specification bef
 | 7 | Which database release? | the database's info page or API |
 | 8 | Have you tested a known position against two sources? | e.g., R175H = C at 7675088 |
 
-The next article in the series, Part 5, uses TP53 sequences from several species to teach sequence alignment. Part 6 walks through the full FASTQ → BAM → VCF pipeline, where every format in this article shows up at its own step.
+The next article in the series, [Part 5](/en/blog/phan-tich-trinh-tu/), uses TP53 sequences from several species to teach sequence alignment. Part 6 walks through the full FASTQ → BAM → VCF pipeline, where every format in this article shows up at its own step.
 
 ## Frequently asked questions
 

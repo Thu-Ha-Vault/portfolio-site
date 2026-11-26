@@ -198,7 +198,7 @@ Cách quy đổi này thô, vì một tuần học Git không "bằng" một tu�
 
 **Khoa học sự sống.** A3 là đầu vào. Lộ trình giả định bạn đã có nền sinh học và dùng lại nó khi diễn giải kết quả ở Phần 5–9. B3 có ở Phần 4 (định dạng, tải dữ liệu), Phần 6 (QC, cắt tỉa read), Phần 7 (số mẫu lặp, hiệu ứng lô), Phần 8 và 9. C3 xuất hiện ở quy trình 7 bước của Phần 1, từ câu hỏi sinh học đến kiểm chứng bằng thực nghiệm, và ở dự án tổng hợp.
 
-**Khoa học dữ liệu.** D3 dày nhất: thống kê ở [Phần 3](/blog/toan-va-thong-ke-cho-sinh-hoc/), thuật toán sắp gióng ở Phần 5, biểu hiện khác biệt, tích hợp đa omics, machine learning. F3 có ở hầu hết các phần. E3 thì chỉ có mảnh rời. Bạn tải dữ liệu từ SRA và GEO ở [Phần 4](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/), đặt thư mục `data/raw/` chỉ đọc ở Phần 11, ghi nguồn dữ liệu và ngày tải trong README ở Phần 12. Chưa phần nào nói về FAIR, metadata theo chuẩn kho hay cách nộp dữ liệu.
+**Khoa học dữ liệu.** D3 dày nhất: thống kê ở [Phần 3](/blog/toan-va-thong-ke-cho-sinh-hoc/), thuật toán sắp gióng ở [Phần 5](/blog/phan-tich-trinh-tu/), biểu hiện khác biệt, tích hợp đa omics, machine learning. F3 có ở hầu hết các phần. E3 thì chỉ có mảnh rời. Bạn tải dữ liệu từ SRA và GEO ở [Phần 4](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/), đặt thư mục `data/raw/` chỉ đọc ở Phần 11, ghi nguồn dữ liệu và ngày tải trong README ở Phần 12. Chưa phần nào nói về FAIR, metadata theo chuẩn kho hay cách nộp dữ liệu.
 
 **Khoa học máy tính.** H3 mạnh nhờ 6 tuần ở Phần 2. I3 có ở Phần 11 và một phần ở Phần 2 (conda). G3 gần như không có, chấp nhận được vì Discovery biologist chỉ cần mức Knowledge.
 

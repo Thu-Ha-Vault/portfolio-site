@@ -40,7 +40,7 @@ isIndex: true
 - [Phần 4 – Định dạng dữ liệu và cơ sở dữ liệu sinh học](/blog/dinh-dang-du-lieu-va-co-so-du-lieu-sinh-hoc/)
 
 ### Cấp 2 – Trung cấp (Tuần 12–24)
-- Phần 5 – Phân tích trình tự
+- [Phần 5 – Phân tích trình tự](/blog/phan-tich-trinh-tu/)
 - Phần 6 – NGS và genomics
 - Phần 7 – Transcriptomics: RNA-seq và single-cell
 

@@ -36,7 +36,7 @@ Trong một danh sách 19 công cụ tin sinh (21 URL), bao nhiêu công cụ c�
 
 MAVID, một công cụ sắp gióng nhiều trình tự genome, được công bố năm 2004 (Bray & Pachter, 2004). Gõ địa chỉ web của MAVID vào trình duyệt hôm nay, bạn nhận được lỗi "không tìm thấy máy chủ": tên miền `baboon.math.berkeley.edu` không còn tồn tại. Thuật toán vẫn nằm trong bài báo, nhưng công cụ để bấm vào và chạy thì đã biến mất.
 
-Bảng tra cứu công cụ tin sinh mà sinh viên hay tự lập khi làm bài tập sắp gióng trình tự và BLAST thường có một cột trạng thái đơn giản. Bảng dùng trong bài này cũng vậy: mỗi dòng có tên công cụ, vai trò, link, nền tảng và nhãn **O** (dùng được) hoặc **X** (không truy cập được); 12 công cụ mang nhãn O, 7 mang nhãn X. Nhãn nhị phân trả lời câu hỏi "link có mở được không", nhưng chưa trả lời "công cụ còn dùng được ở đâu và theo cách nào".
+Bảng tra cứu công cụ tin sinh mà sinh viên hay tự lập khi làm bài tập [sắp gióng trình tự và BLAST](/blog/phan-tich-trinh-tu/) thường có một cột trạng thái đơn giản. Bảng dùng trong bài này cũng vậy: mỗi dòng có tên công cụ, vai trò, link, nền tảng và nhãn **O** (dùng được) hoặc **X** (không truy cập được); 12 công cụ mang nhãn O, 7 mang nhãn X. Nhãn nhị phân trả lời câu hỏi "link có mở được không", nhưng chưa trả lời "công cụ còn dùng được ở đâu và theo cách nào".
 
 Link chết trong tài liệu khoa học đã được đo nhiều lần; Bảng 1 tóm tắt các nghiên cứu chính.
 

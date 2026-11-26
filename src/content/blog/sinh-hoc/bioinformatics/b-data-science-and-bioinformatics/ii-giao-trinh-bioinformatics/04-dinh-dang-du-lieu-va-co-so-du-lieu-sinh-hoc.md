@@ -478,7 +478,7 @@ Khi một trường trong file khó hiểu, hãy mở đặc tả có ngày và 
 | 7 | CSDL bản release nào? | trang thông tin hoặc API của CSDL |
 | 8 | Đã thử một vị trí đã biết bằng hai nguồn chưa? | ví dụ R175H = C ở 7675088 |
 
-Bài tiếp theo trong series, Phần 5, dùng trình tự TP53 ở nhiều loài để học gióng hàng trình tự. Phần 6 đi qua cả pipeline FASTQ → BAM → VCF, nơi mọi định dạng trong bài này xuất hiện ở đúng bước của nó.
+Bài tiếp theo trong series, [Phần 5](/blog/phan-tich-trinh-tu/), dùng trình tự TP53 ở nhiều loài để học gióng hàng trình tự. Phần 6 đi qua cả pipeline FASTQ → BAM → VCF, nơi mọi định dạng trong bài này xuất hiện ở đúng bước của nó.
 
 ## Câu hỏi thường gặp
 
