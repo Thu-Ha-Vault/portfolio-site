@@ -235,7 +235,7 @@ Kiểm soát chất lượng (quality control, QC) là một bước riêng: t�
 
 ### Bước 5. Phân tích chính
 
-Trong ca minh hoạ, 335 protein được định danh và 281 được định lượng. Tiêu chí fold change ≥ 1,5 hoặc < 0,66 cho 54 protein; 27 trong số đó có p < 0,05, gồm 13 tăng và 14 giảm (Dong et al., 2022). Khi đọc một danh sách như vậy, hãy hỏi p-value đã được hiệu chỉnh cho nhiều kiểm định chưa. Kiểm định 281 protein ở ngưỡng 0,05 thì dù không có khác biệt thật nào, trung bình vẫn có khoảng 14 protein "có ý nghĩa" do ngẫu nhiên (→ Phần 3: FDR). Bài báo hiệu chỉnh Benjamini–Hochberg ở bước làm giàu (Bước 6); với ngưỡng chọn 27 protein, hãy tự kiểm trong chú thích hình và tệp bổ sung.
+Trong ca minh hoạ, 335 protein được định danh và 281 được định lượng. Tiêu chí fold change ≥ 1,5 hoặc < 0,66 cho 54 protein; 27 trong số đó có p < 0,05, gồm 13 tăng và 14 giảm (Dong et al., 2022). Khi đọc một danh sách như vậy, hãy hỏi p-value đã được hiệu chỉnh cho nhiều kiểm định chưa. Kiểm định 281 protein ở ngưỡng 0,05 thì dù không có khác biệt thật nào, trung bình vẫn có khoảng 14 protein "có ý nghĩa" do ngẫu nhiên (→ [Phần 3: FDR](/blog/toan-va-thong-ke-cho-sinh-hoc/)). Bài báo hiệu chỉnh Benjamini–Hochberg ở bước làm giàu (Bước 6); với ngưỡng chọn 27 protein, hãy tự kiểm trong chú thích hình và tệp bổ sung.
 
 ### Bước 6. Diễn giải sinh học
 
@@ -275,7 +275,7 @@ Bài tập: chọn một bài báo omics truy cập mở trên PubMed, chép B�
 
 **Tin sinh học là gì?** Là tên tiếng Việt của bioinformatics: ngành phát triển và dùng công cụ tính toán để lưu trữ, phân tích và trực quan hoá dữ liệu sinh học như trình tự DNA hay dữ liệu biểu hiện gen.
 
-**Cần học gì trước khi vào bioinformatics?** Series đi theo thứ tự: sinh học phân tử ở bài này, lập trình ở [Phần 2](/blog/nen-tang-tinh-toan/), thống kê ở Phần 3. [Bài mở đầu](/blog/gioi-thieu-va-cach-dung-giao-trinh/) sắp các phần thành lộ trình 36 tuần và đối chiếu với khung năng lực ISCB.
+**Cần học gì trước khi vào bioinformatics?** Series đi theo thứ tự: sinh học phân tử ở bài này, lập trình ở [Phần 2](/blog/nen-tang-tinh-toan/), thống kê ở [Phần 3](/blog/toan-va-thong-ke-cho-sinh-hoc/). [Bài mở đầu](/blog/gioi-thieu-va-cach-dung-giao-trinh/) sắp các phần thành lộ trình 36 tuần và đối chiếu với khung năng lực ISCB.
 
 **Batch effect là gì?** Là khác biệt kỹ thuật giữa các nhóm mẫu xử lý khác ngày, khác lô hoá chất hoặc khác người làm. Cách phòng hiệu quả nhất là chia đều các nhóm so sánh vào mỗi lô ngay khi thiết kế.
 

@@ -254,7 +254,7 @@ Hình 2 cho thấy điều "p = 0,0015" che mất: hai nhóm chồng nhau nhiề
 
 Nhóm sống sót lớn hơn ở cả bốn đặc điểm, khác biệt có ý nghĩa ở khối lượng, cánh và độ sâu mỏ. Vì các đặc điểm đều tương quan với kích thước cơ thể, bảng này **không** cho phép kết luận đặc điểm nào "quan trọng nhất"; đó là một câu hỏi khác, cần mô hình nhiều biến. Câu hỏi nêu rõ chiều so sánh còn giúp bắt lỗi viết ngược chiều khác biệt, nhất là khi phần mềm trả về t âm.
 
-Giới hạn cần nói: đây là 100 con được chọn cho mục đích giáo dục, không phải toàn bộ khoảng 1.200 con trên đảo, và cách chọn không được mô tả, nên không suy rộng ra ngoài mẫu. Cỡ mẫu nên được **lên kế hoạch** từ câu hỏi, theo độ lớn hiệu ứng muốn phát hiện (→ Toán và thống kê cho sinh học).
+Giới hạn cần nói: đây là 100 con được chọn cho mục đích giáo dục, không phải toàn bộ khoảng 1.200 con trên đảo, và cách chọn không được mô tả, nên không suy rộng ra ngoài mẫu. Cỡ mẫu nên được **lên kế hoạch** từ câu hỏi, theo độ lớn hiệu ứng muốn phát hiện (→ [Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/)).
 
 ### 5.2. Ví dụ kinh doanh giả định
 

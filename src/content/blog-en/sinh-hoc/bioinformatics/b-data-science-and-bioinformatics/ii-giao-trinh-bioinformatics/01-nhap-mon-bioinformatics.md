@@ -237,7 +237,7 @@ Quality control (QC) is a step of its own: the RNA-seq best-practice review by C
 
 ### Step 5. Main analysis
 
-In the example, 335 proteins were identified and 281 quantified. A fold change ≥ 1.5 or < 0.66 picked out 54 proteins; 27 of them had p < 0.05, with 13 up and 14 down (Dong et al., 2022). When you read a list like this, ask whether the p-values were corrected for multiple testing. Test 281 proteins at a 0.05 threshold and, even with no true differences at all, about 14 proteins will come out "significant" by chance on average (→ Part 3: FDR). The paper applies a Benjamini–Hochberg correction at the enrichment step (Step 6); for the threshold that selected the 27 proteins, check the figure legends and supplementary files yourself.
+In the example, 335 proteins were identified and 281 quantified. A fold change ≥ 1.5 or < 0.66 picked out 54 proteins; 27 of them had p < 0.05, with 13 up and 14 down (Dong et al., 2022). When you read a list like this, ask whether the p-values were corrected for multiple testing. Test 281 proteins at a 0.05 threshold and, even with no true differences at all, about 14 proteins will come out "significant" by chance on average (→ [Part 3: FDR](/en/blog/toan-va-thong-ke-cho-sinh-hoc/)). The paper applies a Benjamini–Hochberg correction at the enrichment step (Step 6); for the threshold that selected the 27 proteins, check the figure legends and supplementary files yourself.
 
 ### Step 6. Biological interpretation
 
@@ -277,7 +277,7 @@ Exercise: pick an open-access omics paper on PubMed, copy Table 4 with the last 
 
 **What is bioinformatics, in plain terms?** It is the field that builds and uses computational tools to store, analyze and visualize biological data such as DNA sequences or gene expression data. In Vietnamese it is called "tin sinh học."
 
-**What should I learn before getting into bioinformatics?** This series goes in order: molecular biology in this article, programming in [Part 2](/en/blog/nen-tang-tinh-toan/), statistics in Part 3. The [introduction](/en/blog/gioi-thieu-va-cach-dung-giao-trinh/) arranges the parts into a 36-week roadmap and maps it against the ISCB competency framework.
+**What should I learn before getting into bioinformatics?** This series goes in order: molecular biology in this article, programming in [Part 2](/en/blog/nen-tang-tinh-toan/), statistics in [Part 3](/en/blog/toan-va-thong-ke-cho-sinh-hoc/). The [introduction](/en/blog/gioi-thieu-va-cach-dung-giao-trinh/) arranges the parts into a 36-week roadmap and maps it against the ISCB competency framework.
 
 **What is a batch effect?** It is a technical difference between groups of samples processed on different days, with different reagent lots or by different people. The most effective prevention is to spread the groups you are comparing evenly across every batch at the design stage.
 

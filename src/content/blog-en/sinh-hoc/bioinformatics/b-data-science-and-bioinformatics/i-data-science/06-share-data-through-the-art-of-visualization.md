@@ -198,7 +198,7 @@ The PCA plot uses the best channel, position on two axes, but three details deci
 
 ### 5.3. Volcano plots
 
-Cui and Churchill (2003) describe the volcano plot as a scatter plot of −log10 p-value against fold change, which lets you see two criteria at once: how large the change is and how strong the statistical evidence is. Both are on position axes (Figure 5b); the risk lies elsewhere. The two threshold lines are the analyst's decisions, so their values must be stated. The vertical axis should use p-values adjusted for multiple testing, because with tens of thousands of genes, a 0.05 cutoff on raw p-values will color a great many false positives (Math and statistics for biology). Genes of interest should be labeled directly next to their points.
+Cui and Churchill (2003) describe the volcano plot as a scatter plot of −log10 p-value against fold change, which lets you see two criteria at once: how large the change is and how strong the statistical evidence is. Both are on position axes (Figure 5b); the risk lies elsewhere. The two threshold lines are the analyst's decisions, so their values must be stated. The vertical axis should use p-values adjusted for multiple testing, because with tens of thousands of genes, a 0.05 cutoff on raw p-values will color a great many false positives ([Math and statistics for biology](/en/blog/toan-va-thong-ke-cho-sinh-hoc/)). Genes of interest should be labeled directly next to their points.
 
 ### 5.4. MA plots
 

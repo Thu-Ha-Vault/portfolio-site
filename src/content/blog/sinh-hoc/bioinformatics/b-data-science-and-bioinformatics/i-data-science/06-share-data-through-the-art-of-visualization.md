@@ -197,7 +197,7 @@ PCA plot dùng kênh tốt nhất, vị trí trên hai trục, nhưng có ba chi
 
 ### 5.3. Volcano plot
 
-Cui và Churchill (2003) mô tả volcano plot là scatter plot của −log10 p-value theo fold change, cho phép nhìn đồng thời hai tiêu chí: thay đổi lớn đến đâu và bằng chứng thống kê mạnh đến đâu. Cả hai đều nằm trên trục vị trí (Hình 5b); rủi ro nằm ở chỗ khác. Hai đường ngưỡng là quyết định của người phân tích, nên phải ghi rõ giá trị. Trục tung nên dùng p-value đã hiệu chỉnh cho kiểm định nhiều lần, vì với hàng chục nghìn gen, ngưỡng 0,05 trên p-value thô sẽ tô màu cho rất nhiều dương tính giả (Toán và thống kê cho sinh học). Các gen đáng chú ý nên được gắn nhãn trực tiếp cạnh điểm.
+Cui và Churchill (2003) mô tả volcano plot là scatter plot của −log10 p-value theo fold change, cho phép nhìn đồng thời hai tiêu chí: thay đổi lớn đến đâu và bằng chứng thống kê mạnh đến đâu. Cả hai đều nằm trên trục vị trí (Hình 5b); rủi ro nằm ở chỗ khác. Hai đường ngưỡng là quyết định của người phân tích, nên phải ghi rõ giá trị. Trục tung nên dùng p-value đã hiệu chỉnh cho kiểm định nhiều lần, vì với hàng chục nghìn gen, ngưỡng 0,05 trên p-value thô sẽ tô màu cho rất nhiều dương tính giả ([Toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/)). Các gen đáng chú ý nên được gắn nhãn trực tiếp cạnh điểm.
 
 ### 5.4. MA plot
 

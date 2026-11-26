@@ -254,7 +254,7 @@ Figure 2 shows what "p = 0.0015" hides: the two groups overlap a great deal; sel
 
 The survivors were larger on all four traits, and the difference was significant for body mass, wing length, and beak depth. Because all of these traits are correlated with body size, the table does **not** support a conclusion about which trait "matters most"; that is a different question, and it needs a multivariable model. A question that states the direction of the comparison also helps catch a difference written the wrong way around, especially when the software returns a negative t.
 
-One limitation has to be stated: these are 100 birds selected for teaching purposes, not all of the roughly 1,200 birds on the island, and how they were selected is not described, so the result should not be generalized beyond the sample. Sample size should be **planned** from the question, according to the effect size you want to detect (→ Mathematics and statistics for biology).
+One limitation has to be stated: these are 100 birds selected for teaching purposes, not all of the roughly 1,200 birds on the island, and how they were selected is not described, so the result should not be generalized beyond the sample. Sample size should be **planned** from the question, according to the effect size you want to detect (→ [Mathematics and statistics for biology](/en/blog/toan-va-thong-ke-cho-sinh-hoc/)).
 
 ### 5.2. A hypothetical business example
 
