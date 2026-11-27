@@ -306,7 +306,7 @@ Khi vẽ PCA cho RNA-seq, nên giữ ba quy tắc. Thứ nhất, chạy trên d�
 
 ### 5.3. UMAP và t-SNE: dùng để xem, không dùng để đo
 
-Nén dữ liệu hàng nghìn chiều xuống 2 chiều tất yếu gây méo đáng kể khoảng cách, và Chari và Pachter (2023) lập luận rằng méo này khiến embedding 2D phản tác dụng cho phân tích khám phá. t-SNE thể hiện tốt cấu trúc cục bộ nhưng cấu trúc toàn cục thường sai khi dùng tham số mặc định (Kobak & Berens, 2019). UMAP (McInnes et al., 2018) phổ biến trong single-cell nhưng chịu cùng giới hạn của mọi phép nhúng 2D. Kết luận về batch vì vậy nên dựa trên PCA và các chỉ số định lượng; UMAP chỉ để minh hoạ. Tích hợp nhiều mẫu trong single-cell là bài toán riêng (xem bài về transcriptomics).
+Nén dữ liệu hàng nghìn chiều xuống 2 chiều tất yếu gây méo đáng kể khoảng cách, và Chari và Pachter (2023) lập luận rằng méo này khiến embedding 2D phản tác dụng cho phân tích khám phá. t-SNE thể hiện tốt cấu trúc cục bộ nhưng cấu trúc toàn cục thường sai khi dùng tham số mặc định (Kobak & Berens, 2019). UMAP (McInnes et al., 2018) phổ biến trong single-cell nhưng chịu cùng giới hạn của mọi phép nhúng 2D. Kết luận về batch vì vậy nên dựa trên PCA và các chỉ số định lượng; UMAP chỉ để minh hoạ. Tích hợp nhiều mẫu trong single-cell là bài toán riêng (xem [bài về transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)).
 
 ### 5.4. Mô phỏng 4: thiết kế cân bằng và thiết kế lệch
 

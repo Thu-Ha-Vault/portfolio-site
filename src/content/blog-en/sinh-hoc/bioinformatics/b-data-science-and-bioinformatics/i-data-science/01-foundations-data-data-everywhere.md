@@ -230,7 +230,7 @@ Buffalo (2015) adds three habits that connect the Process phase to archiving: tr
 
 ## 5. An RNA-seq project, all the way around
 
-A hypothetical example: comparing gene expression between drug-treated tissue and control tissue with RNA-seq (Transcriptomics). The framework used here is Google's six phases plus three more: **Design** before Prepare, **Validate** before Share, and **FAIR Archive** after Share. It is this article's own proposal, assembled from the models in Section 2, and not a published model (Figure 2).
+A hypothetical example: comparing gene expression between drug-treated tissue and control tissue with RNA-seq ([Transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/)). The framework used here is Google's six phases plus three more: **Design** before Prepare, **Validate** before Share, and **FAIR Archive** after Share. It is this article's own proposal, assembled from the models in Section 2, and not a published model (Figure 2).
 
 ```mermaid
 flowchart TB

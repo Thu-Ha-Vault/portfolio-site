@@ -436,7 +436,7 @@ A pipeline that runs without errors proves one thing: the machine finished. Prec
 
 These eight points also make the skeleton of a complete portfolio project: one repo with a Snakefile, an environment file for each step, the hap.py results table and a precision/recall figure per caller, showing that you understand both how to run a pipeline and how to check it (→ Part 12). For a lab's own samples, where there is no truth set, the next step is to include a GIAB sample in every sequencing batch. That sample's scores from batch to batch tell you whether the pipeline's quality holds up over time.
 
-The RNA branch of the diagram is covered in Part 7; packaging the pipeline in Snakemake is in Part 11.
+The RNA branch of the diagram is covered in [Part 7](/en/blog/transcriptomics-rna-seq-va-single-cell/); packaging the pipeline in Snakemake is in Part 11.
 
 ## References
 

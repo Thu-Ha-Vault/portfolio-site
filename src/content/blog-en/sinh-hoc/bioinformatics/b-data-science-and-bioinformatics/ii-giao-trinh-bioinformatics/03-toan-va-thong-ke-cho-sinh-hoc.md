@@ -307,7 +307,7 @@ When you plot PCA for RNA-seq, keep three rules. First, run it on VST or rlog da
 
 ### 5.3. UMAP and t-SNE: for looking, not for measuring
 
-Squeezing data with thousands of dimensions into 2 inevitably distorts distances substantially, and Chari and Pachter (2023) argue that this distortion makes 2D embeddings counterproductive for exploratory analysis. t-SNE shows local structure well, but global structure is often wrong with default parameters (Kobak & Berens, 2019). UMAP (McInnes et al., 2018) is popular in single-cell work but shares the limits of every 2D embedding. Conclusions about batch should therefore rest on PCA and quantitative metrics, with UMAP used only for illustration. Integrating many samples in single-cell data is a separate problem (see the article on transcriptomics).
+Squeezing data with thousands of dimensions into 2 inevitably distorts distances substantially, and Chari and Pachter (2023) argue that this distortion makes 2D embeddings counterproductive for exploratory analysis. t-SNE shows local structure well, but global structure is often wrong with default parameters (Kobak & Berens, 2019). UMAP (McInnes et al., 2018) is popular in single-cell work but shares the limits of every 2D embedding. Conclusions about batch should therefore rest on PCA and quantitative metrics, with UMAP used only for illustration. Integrating many samples in single-cell data is a separate problem (see [the article on transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/)).
 
 ### 5.4. Simulation 4: balanced versus confounded designs
 

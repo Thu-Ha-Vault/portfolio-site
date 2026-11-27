@@ -187,7 +187,7 @@ Khi mẫu lớn hơn, box plot là bước tiếp theo, nhưng nên tránh với
 
 ### 5.2. PCA plot
 
-Phân tích thành phần chính (principal component analysis, PCA) chiếu dữ liệu nhiều chiều lên vài trục giữ được nhiều phương sai nhất; bài nhập môn của Ringnér (2008) giới thiệu cách dùng nó cho dữ liệu biểu hiện gen. Trong RNA-seq, PCA plot thường là hình kiểm tra chất lượng đầu tiên: mẫu có tách theo điều kiện không, có mẫu ngoại lai hay batch effect không (Transcriptomics).
+Phân tích thành phần chính (principal component analysis, PCA) chiếu dữ liệu nhiều chiều lên vài trục giữ được nhiều phương sai nhất; bài nhập môn của Ringnér (2008) giới thiệu cách dùng nó cho dữ liệu biểu hiện gen. Trong RNA-seq, PCA plot thường là hình kiểm tra chất lượng đầu tiên: mẫu có tách theo điều kiện không, có mẫu ngoại lai hay batch effect không ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)).
 
 ![bv-06-share-data-through-the-art-of-visuali-4](/vault-assets/bv-06-share-data-through-the-art-of-visuali-4-aa01a248.webp)
 

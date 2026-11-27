@@ -150,7 +150,7 @@ TypeError: can't multiply sequence by non-int of type 'list'
 
 Với list phải viết vòng lặp; với mảng, một phép nhân làm việc đó cho cả dãy. Code ngắn hơn, ít chỗ để nhầm chỉ số hơn và, như mục 2.3 sẽ đo, nhanh hơn nhiều khi dữ liệu nằm sẵn trong mảng.
 
-Broadcasting mở rộng ý tưởng này cho hai mảng khác shape: mảng nhỏ được nhân bản ảo cho khớp với mảng lớn mà không sao chép dữ liệu trong bộ nhớ (Harris et al., 2020). Một ví dụ quen thuộc với dữ liệu RNA-seq là chia ma trận đếm gen × mẫu cho tổng số read của từng mẫu rồi nhân với một triệu (counts per million, CPM) để so sánh được giữa các mẫu (Transcriptomics):
+Broadcasting mở rộng ý tưởng này cho hai mảng khác shape: mảng nhỏ được nhân bản ảo cho khớp với mảng lớn mà không sao chép dữ liệu trong bộ nhớ (Harris et al., 2020). Một ví dụ quen thuộc với dữ liệu RNA-seq là chia ma trận đếm gen × mẫu cho tổng số read của từng mẫu rồi nhân với một triệu (counts per million, CPM) để so sánh được giữa các mẫu ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)):
 
 ```python
 counts = np.array([[120,   98,  15],       # 3 gen (hàng) × 3 mẫu (cột)

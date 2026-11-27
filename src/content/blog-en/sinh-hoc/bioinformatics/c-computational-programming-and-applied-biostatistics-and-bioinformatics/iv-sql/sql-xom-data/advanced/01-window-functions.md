@@ -348,7 +348,7 @@ For a whole-genome depth table with hundreds of millions of positions, SQL is no
 
 ## 7. Application 2: ranking genes and computing TPM within each sample
 
-A gene expression table in long format, `(sample, gene, len_kb, count)`, is a natural input for window functions (→ Transcriptomics). TPM (transcripts per million) divides each gene by the total for its sample, which is exactly the job of an aggregate window without `ORDER BY`:
+A gene expression table in long format, `(sample, gene, len_kb, count)`, is a natural input for window functions (→ [Transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/)). TPM (transcripts per million) divides each gene by the total for its sample, which is exactly the job of an aggregate window without `ORDER BY`:
 
 ```sql
 WITH rpk AS (

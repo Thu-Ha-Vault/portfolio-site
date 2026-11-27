@@ -345,7 +345,7 @@ Với bảng độ phủ cả hệ gen, hàng trăm triệu vị trí, SQL khôn
 
 ## 7. Ứng dụng 2: xếp hạng gene và tính TPM trong từng mẫu
 
-Bảng biểu hiện gene ở dạng dài `(sample, gene, len_kb, count)` là đầu vào tự nhiên cho window function (→ Transcriptomics). TPM (transcripts per million) cần chia mỗi gene cho tổng của mẫu, đúng việc của một aggregate window không có `ORDER BY`:
+Bảng biểu hiện gene ở dạng dài `(sample, gene, len_kb, count)` là đầu vào tự nhiên cho window function (→ [Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)). TPM (transcripts per million) cần chia mỗi gene cho tổng của mẫu, đúng việc của một aggregate window không có `ORDER BY`:
 
 ```sql
 WITH rpk AS (

@@ -151,7 +151,7 @@ TypeError: can't multiply sequence by non-int of type 'list'
 
 With lists you have to write a loop; with arrays, a single multiplication does the job for the whole sequence. The code is shorter, leaves fewer places to get an index wrong and, as Section 2.3 will measure, is much faster when the data are already in an array.
 
-Broadcasting extends this idea to two arrays of different shapes: the smaller array is virtually replicated to match the larger one without copying any data in memory (Harris et al., 2020). A familiar example from RNA-seq data is dividing a gene × sample count matrix by each sample's total number of reads and multiplying by one million (counts per million, CPM) so that samples can be compared (Transcriptomics):
+Broadcasting extends this idea to two arrays of different shapes: the smaller array is virtually replicated to match the larger one without copying any data in memory (Harris et al., 2020). A familiar example from RNA-seq data is dividing a gene × sample count matrix by each sample's total number of reads and multiplying by one million (counts per million, CPM) so that samples can be compared ([Transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/)):
 
 ```python
 counts = np.array([[120,   98,  15],       # 3 genes (rows) × 3 samples (columns)

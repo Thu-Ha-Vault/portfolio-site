@@ -42,7 +42,7 @@ isIndex: true
 ### Cấp 2 – Trung cấp (Tuần 12–24)
 - [Phần 5 – Phân tích trình tự](/blog/phan-tich-trinh-tu/)
 - [Phần 6 – NGS và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)
-- Phần 7 – Transcriptomics: RNA-seq và single-cell
+- [Phần 7 – Transcriptomics: RNA-seq và single-cell](/blog/transcriptomics-rna-seq-va-single-cell/)
 
 ### Cấp 3 – Nâng cao (Tuần 25–36)
 - Phần 8 – Proteomics và cấu trúc protein

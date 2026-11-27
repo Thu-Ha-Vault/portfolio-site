@@ -372,7 +372,7 @@ Microsoft’s support page advises formatting cells as Text before entering data
 
 ### 5.4. Check for yourself: scanning a DEG file
 
-Differentially expressed gene (DEG) tables are often exported to Excel at the end of an RNA-seq pipeline (Transcriptomics). Read the file as text and search the gene symbol column for values that look like dates or numbers. With `pd.read_excel(path, dtype=str)`, a cell that has become a date comes back as “2021-09-02 00:00:00,” an internal day count as “44075,” and 2.31 × 10¹³ as “23100000000000”; the search pattern has to catch these forms too:
+Differentially expressed gene (DEG) tables are often exported to Excel at the end of an RNA-seq pipeline ([Transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/)). Read the file as text and search the gene symbol column for values that look like dates or numbers. With `pd.read_excel(path, dtype=str)`, a cell that has become a date comes back as “2021-09-02 00:00:00,” an internal day count as “44075,” and 2.31 × 10¹³ as “23100000000000”; the search pattern has to catch these forms too:
 
 ```python
 import pandas as pd

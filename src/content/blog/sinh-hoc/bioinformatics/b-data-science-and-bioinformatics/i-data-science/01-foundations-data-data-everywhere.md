@@ -230,7 +230,7 @@ Buffalo (2015) bổ sung ba thói quen nối pha Process với pha lưu trữ: c
 
 ## 5. Một dự án RNA-seq đi trọn vòng
 
-Ví dụ giả định: so sánh biểu hiện gene giữa mô xử lý thuốc và mô đối chứng bằng RNA-seq (Transcriptomics). Khung dùng ở đây là sáu pha của Google cộng ba pha: **Design** trước Prepare, **Validate** trước Share, **Archive theo FAIR** sau Share. Đây là đề xuất của bài, ghép từ các mô hình ở mục 2, không phải mô hình đã công bố (Hình 2).
+Ví dụ giả định: so sánh biểu hiện gene giữa mô xử lý thuốc và mô đối chứng bằng RNA-seq ([Transcriptomics](/blog/transcriptomics-rna-seq-va-single-cell/)). Khung dùng ở đây là sáu pha của Google cộng ba pha: **Design** trước Prepare, **Validate** trước Share, **Archive theo FAIR** sau Share. Đây là đề xuất của bài, ghép từ các mô hình ở mục 2, không phải mô hình đã công bố (Hình 2).
 
 ```mermaid
 flowchart TB

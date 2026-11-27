@@ -188,7 +188,7 @@ With larger samples, the box plot is the next step, but it should be avoided for
 
 ### 5.2. PCA plots
 
-Principal component analysis (PCA) projects high-dimensional data onto a few axes that retain the most variance; Ringnér's (2008) primer introduces its use for gene-expression data. In RNA-seq, the PCA plot is often the first quality-control figure: do the samples separate by condition, are there outlier samples or batch effects (Transcriptomics)?
+Principal component analysis (PCA) projects high-dimensional data onto a few axes that retain the most variance; Ringnér's (2008) primer introduces its use for gene-expression data. In RNA-seq, the PCA plot is often the first quality-control figure: do the samples separate by condition, are there outlier samples or batch effects ([Transcriptomics](/en/blog/transcriptomics-rna-seq-va-single-cell/))?
 
 ![bv-06-share-data-through-the-art-of-visuali-4-en](/vault-assets/bv-06-share-data-through-the-art-of-visuali-4-en-3d1a6b66.webp)
 
