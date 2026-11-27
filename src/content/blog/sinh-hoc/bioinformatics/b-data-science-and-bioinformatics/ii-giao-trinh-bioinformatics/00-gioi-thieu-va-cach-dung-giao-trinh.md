@@ -232,7 +232,7 @@ So với Discovery biologist, lộ trình đạt hoặc vượt ở C3, D3, F3, 
 
 ### 5.1. Đạo đức, pháp lý và quyền riêng tư dữ liệu (J3)
 
-Cả ba phiên bản ISCB đều coi đạo đức và pháp lý là năng lực cho mọi người học (Welch et al., 2014; Mulder et al., 2018; Brooksbank et al., 2024). Lộ trình thì đưa bạn vào dữ liệu người khá sớm: exome từ SRA ở Phần 6, RNA-seq khối u và mô lành từ GEO ở Phần 7, dữ liệu TCGA ở Phần 9 và 10.
+Cả ba phiên bản ISCB đều coi đạo đức và pháp lý là năng lực cho mọi người học (Welch et al., 2014; Mulder et al., 2018; Brooksbank et al., 2024). Lộ trình thì đưa bạn vào dữ liệu người khá sớm: exome từ SRA ở [Phần 6](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/), RNA-seq khối u và mô lành từ GEO ở Phần 7, dữ liệu TCGA ở Phần 9 và 10.
 
 Dữ liệu giải trình tự thường được chia sẻ sau khi bỏ tên. Nhưng "ẩn danh" không có nghĩa là không truy ra được người. Gymrek et al. (2013) cho thấy có thể suy ra họ của một người từ genome cá nhân bằng các đoạn lặp ngắn trên nhiễm sắc thể Y (Y-STR) và cơ sở dữ liệu phả hệ công khai. Ghép họ với tuổi và bang cư trú là đủ để thu hẹp tới danh tính. Nhóm tác giả đã truy được danh tính nhiều người tham gia các dự án giải trình tự công khai, chỉ bằng tài nguyên miễn phí trên Internet. Zook et al. (2017) gói các bài học kiểu này thành mười quy tắc cho nghiên cứu dữ liệu lớn có trách nhiệm. Mấy quy tắc đầu nói rằng dữ liệu là con người và có thể gây hại, quyền riêng tư không phải chuyện có hoặc không, cần đề phòng tái định danh và chia sẻ dữ liệu có đạo đức.
 

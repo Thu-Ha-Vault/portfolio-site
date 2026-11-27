@@ -162,7 +162,7 @@ Các định nghĩa học thuật sau đó giữ khung của Laney và thêm h�
 | Veracity | độ tin cậy, chất lượng | V bổ sung, không định nghĩa (Laney, 2001) |
 | Value | giá trị tạo ra nhờ công nghệ và phân tích | hệ quả (De Mauro et al., 2016) |
 
-Dữ liệu giải trình tự thế hệ mới minh hoạ cả ba V gốc: mỗi lần chạy tạo ra rất nhiều dữ liệu, máy sinh dữ liệu liên tục trong khi phòng thí nghiệm cần kết quả sớm, và một dự án thường ghép trình tự với dữ liệu biểu hiện, hình ảnh và lâm sàng (→ NGS và genomics).
+Dữ liệu giải trình tự thế hệ mới minh hoạ cả ba V gốc: mỗi lần chạy tạo ra rất nhiều dữ liệu, máy sinh dữ liệu liên tục trong khi phòng thí nghiệm cần kết quả sớm, và một dự án thường ghép trình tự với dữ liệu biểu hiện, hình ảnh và lâm sàng (→ [NGS và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)).
 
 ### 4.2. Small data và big data
 

@@ -162,7 +162,7 @@ Later academic definitions kept Laney's frame and added a consequence. De Mauro 
 | Veracity | trustworthiness, quality | added V, not defining (Laney, 2001) |
 | Value | value created through technology and analysis | consequence (De Mauro et al., 2016) |
 
-Next-generation sequencing data illustrate all three original Vs: each run produces a very large amount of data, the instruments generate data continuously while the lab needs results soon, and a project typically combines sequences with expression, imaging, and clinical data (→ NGS and genomics).
+Next-generation sequencing data illustrate all three original Vs: each run produces a very large amount of data, the instruments generate data continuously while the lab needs results soon, and a project typically combines sequences with expression, imaging, and clinical data (→ [NGS and genomics](/en/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)).
 
 ### 4.2. Small data and big data
 

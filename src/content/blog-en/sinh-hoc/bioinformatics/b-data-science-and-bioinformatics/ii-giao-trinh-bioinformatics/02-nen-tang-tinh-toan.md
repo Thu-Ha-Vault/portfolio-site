@@ -442,7 +442,7 @@ Hypothesis one: reads that contain adapter pull GC down. The numbers support it:
 
 Hypothesis two: Illumina GC bias. Benjamini and Speed (2012) showed that Illumina data under-represent both GC-rich and AT-rich fragments, and that PCR is probably the main cause. This effect can push read-based GC away from genome GC in either direction.
 
-To tell the two apart, you would need to trim adapters with a dedicated tool and recompute, which is a job for the article on next-generation sequencing (NGS) and genomics. The GC number isn't the main thing to take away from this exercise. The method is: two independent calculations plus an outside reference value caught the `^@` error that no command reported, which is exactly the spirit of Buffalo's (2015) golden rule.
+To tell the two apart, you would need to trim adapters with a dedicated tool and recompute, which is a job for the article on [next-generation sequencing (NGS) and genomics](/en/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/). The GC number isn't the main thing to take away from this exercise. The method is: two independent calculations plus an outside reference value caught the `^@` error that no command reported, which is exactly the spirit of Buffalo's (2015) golden rule.
 
 ## 8. Discussion and conclusions
 

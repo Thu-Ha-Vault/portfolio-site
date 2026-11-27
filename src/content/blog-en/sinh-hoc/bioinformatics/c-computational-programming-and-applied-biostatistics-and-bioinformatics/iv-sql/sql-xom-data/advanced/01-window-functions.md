@@ -342,7 +342,7 @@ Just after the gap in Figure 2, at position 121, the 10-row average is 28.0 beca
 <div class="callout callout-note">
 <p class="callout-title">Limits</p>
 
-For a whole-genome depth table with hundreds of millions of positions, SQL is no substitute for samtools, BEDTools or mosdepth. SQL suits tables that have already been summarized; in the same spirit, GEMINI loads variants and genome annotations into a single database for users to query (Paila et al., 2013) (→ NGS and genomics).
+For a whole-genome depth table with hundreds of millions of positions, SQL is no substitute for samtools, BEDTools or mosdepth. SQL suits tables that have already been summarized; in the same spirit, GEMINI loads variants and genome annotations into a single database for users to query (Paila et al., 2013) (→ [NGS and genomics](/en/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)).
 
 </div>
 

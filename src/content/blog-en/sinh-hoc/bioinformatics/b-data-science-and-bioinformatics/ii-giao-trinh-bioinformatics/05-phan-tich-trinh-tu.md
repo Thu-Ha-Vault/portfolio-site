@@ -450,7 +450,7 @@ Limitations to state when reporting an analysis like this one: one gene and few 
 
 *Table 6. Checklist.*
 
-After all these steps, a single human p53 sequence has become a comparison table, a conservation profile and a tree. At every step one parameter can change the result: the gap model in pairwise alignment, the database size in BLAST, how orthologs are chosen, the MAFFT mode and whether to trim, the evolutionary model and the type of bootstrap. Recording those parameters matters as much as the results themselves. And the final tree, however well supported, is still a hypothesis about the history of one gene. The next article in the series, on next-generation sequencing, moves from a few protein sequences to millions of short reads, where alignment needs very different algorithms.
+After all these steps, a single human p53 sequence has become a comparison table, a conservation profile and a tree. At every step one parameter can change the result: the gap model in pairwise alignment, the database size in BLAST, how orthologs are chosen, the MAFFT mode and whether to trim, the evolutionary model and the type of bootstrap. Recording those parameters matters as much as the results themselves. And the final tree, however well supported, is still a hypothesis about the history of one gene. The next article in the series, on [next-generation sequencing](/en/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/), moves from a few protein sequences to millions of short reads, where alignment needs very different algorithms.
 
 Further reading: Durbin et al. (1998) for the algorithms, Pearson (2013) for how to read similarity search results.
 

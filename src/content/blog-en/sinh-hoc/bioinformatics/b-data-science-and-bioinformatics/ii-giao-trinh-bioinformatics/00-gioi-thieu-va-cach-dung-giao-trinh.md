@@ -233,7 +233,7 @@ Against the Discovery biologist profile, the roadmap meets or exceeds the bar fo
 
 ### 5.1. Ethics, law and data privacy (J3)
 
-All three versions of the ISCB framework treat ethics and law as a competency for every learner (Welch et al., 2014; Mulder et al., 2018; Brooksbank et al., 2024). The roadmap, meanwhile, puts you in front of human data fairly early: exomes from SRA in Part 6, tumor and normal-tissue RNA-seq from GEO in Part 7, and TCGA data in Parts 9 and 10.
+All three versions of the ISCB framework treat ethics and law as a competency for every learner (Welch et al., 2014; Mulder et al., 2018; Brooksbank et al., 2024). The roadmap, meanwhile, puts you in front of human data fairly early: exomes from SRA in [Part 6](/en/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/), tumor and normal-tissue RNA-seq from GEO in Part 7, and TCGA data in Parts 9 and 10.
 
 Sequencing data is usually shared after names are removed. But "anonymous" does not mean a person can't be traced. Gymrek et al. (2013) showed that a person's surname can be inferred from their personal genome using short tandem repeats on the Y chromosome (Y-STRs) and public genealogy databases. Combining the surname with age and state of residence is enough to narrow down an identity. The authors identified a number of participants in public sequencing projects using nothing but free resources on the internet. Zook et al. (2017) distilled lessons like this into ten rules for responsible big data research. The first few say that data are people and can do harm, that privacy is more than a binary, that you should guard against re-identification and that data should be shared ethically.
 

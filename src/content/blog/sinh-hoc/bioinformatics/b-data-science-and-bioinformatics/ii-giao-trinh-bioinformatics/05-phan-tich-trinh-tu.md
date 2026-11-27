@@ -447,7 +447,7 @@ Các giới hạn cần nêu khi báo cáo một phân tích như thế này: m�
 
 *Bảng 6. Checklist.*
 
-Đi hết các bước, một trình tự p53 người đã thành một bảng so sánh, một hồ sơ bảo tồn và một cây. Ở mỗi bước có một tham số làm đổi kết quả: mô hình gap ở bước sắp gióng cặp, kích thước cơ sở dữ liệu ở bước BLAST, cách chọn ortholog, chế độ MAFFT và việc có trim hay không, mô hình tiến hoá và loại bootstrap. Ghi lại các tham số đó quan trọng không kém chính kết quả. Và cây cuối cùng, dù có độ hỗ trợ cao, vẫn là giả thuyết về lịch sử của một gen. Bài sau của series, giải trình tự thế hệ mới, chuyển từ vài trình tự protein sang hàng triệu read ngắn, nơi sắp gióng cần những thuật toán khác hẳn.
+Đi hết các bước, một trình tự p53 người đã thành một bảng so sánh, một hồ sơ bảo tồn và một cây. Ở mỗi bước có một tham số làm đổi kết quả: mô hình gap ở bước sắp gióng cặp, kích thước cơ sở dữ liệu ở bước BLAST, cách chọn ortholog, chế độ MAFFT và việc có trim hay không, mô hình tiến hoá và loại bootstrap. Ghi lại các tham số đó quan trọng không kém chính kết quả. Và cây cuối cùng, dù có độ hỗ trợ cao, vẫn là giả thuyết về lịch sử của một gen. Bài sau của series, [giải trình tự thế hệ mới](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/), chuyển từ vài trình tự protein sang hàng triệu read ngắn, nơi sắp gióng cần những thuật toán khác hẳn.
 
 Đọc thêm: Durbin et al. (1998) cho phần thuật toán, Pearson (2013) cho cách đọc kết quả tìm kiếm tương đồng.
 

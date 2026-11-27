@@ -439,7 +439,7 @@ Giả thuyết thứ nhất: read chứa adapter kéo GC xuống. Số liệu �
 
 Giả thuyết thứ hai: GC bias của Illumina. Benjamini và Speed (2012) cho thấy dữ liệu Illumina thiếu cả đoạn giàu GC lẫn đoạn giàu AT, và nguyên nhân chính có lẽ là PCR. Hiệu ứng này có thể làm GC đo từ read lệch khỏi GC genome theo hướng nào cũng được.
 
-Muốn phân biệt hai giả thuyết, bạn cần cắt adapter bằng công cụ chuyên dụng rồi tính lại, việc thuộc bài Giải trình tự thế hệ mới (NGS) và genomics. Con số GC không phải điều đáng giữ lại nhất từ phần thực hành. Điều đáng giữ là cách làm: hai cách tính độc lập và một giá trị tham chiếu bên ngoài đã bắt được lỗi `^@` mà không lệnh nào báo, đúng tinh thần quy tắc vàng của Buffalo (2015).
+Muốn phân biệt hai giả thuyết, bạn cần cắt adapter bằng công cụ chuyên dụng rồi tính lại, việc thuộc bài [Giải trình tự thế hệ mới (NGS) và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/). Con số GC không phải điều đáng giữ lại nhất từ phần thực hành. Điều đáng giữ là cách làm: hai cách tính độc lập và một giá trị tham chiếu bên ngoài đã bắt được lỗi `^@` mà không lệnh nào báo, đúng tinh thần quy tắc vàng của Buffalo (2015).
 
 ## 8. Bàn luận và kết luận
 

@@ -339,7 +339,7 @@ Ngay sau vùng trống trong Hình 2, ở vị trí 121, trung bình 10 dòng l�
 <div class="callout callout-note">
 <p class="callout-title">Giới hạn</p>
 
-Với bảng độ phủ cả hệ gen, hàng trăm triệu vị trí, SQL không thay được samtools, BEDTools hay mosdepth. SQL hợp với bảng đã tóm tắt; tương tự, GEMINI nạp biến thể và chú giải hệ gen vào một cơ sở dữ liệu thống nhất để người dùng truy vấn (Paila et al., 2013) (→ NGS và genomics).
+Với bảng độ phủ cả hệ gen, hàng trăm triệu vị trí, SQL không thay được samtools, BEDTools hay mosdepth. SQL hợp với bảng đã tóm tắt; tương tự, GEMINI nạp biến thể và chú giải hệ gen vào một cơ sở dữ liệu thống nhất để người dùng truy vấn (Paila et al., 2013) (→ [NGS và genomics](/blog/giai-trinh-tu-the-he-moi-ngs-va-genomics/)).
 
 </div>
 
