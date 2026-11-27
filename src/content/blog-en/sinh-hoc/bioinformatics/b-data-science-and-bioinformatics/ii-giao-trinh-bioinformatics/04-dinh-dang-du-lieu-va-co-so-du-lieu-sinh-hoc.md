@@ -422,7 +422,7 @@ A genome build error is bigger still: using the GRCh37 coordinate (7578406) on G
 
 ### 8.4. Protein coordinates
 
-UniProt P04637 (P53_HUMAN) is 393 amino acids long, with a DNA-binding region from 102 to 292; R175 falls inside it (The UniProt Consortium, 2025). Protein coordinates also count from 1. The AlphaFold model AF-P04637-F1 (version 6) has a global pLDDT of 75.06 (Varadi et al., 2024; queried November 11, 2026); how to read pLDDT is saved for Part 8.
+UniProt P04637 (P53_HUMAN) is 393 amino acids long, with a DNA-binding region from 102 to 292; R175 falls inside it (The UniProt Consortium, 2025). Protein coordinates also count from 1. The AlphaFold model AF-P04637-F1 (version 6) has a global pLDDT of 75.06 (Varadi et al., 2024; queried November 11, 2026); how to read pLDDT is saved for [Part 8](/en/blog/proteomics-va-cau-truc-protein/).
 
 ### 8.5. Exercises
 

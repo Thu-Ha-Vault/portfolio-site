@@ -147,7 +147,7 @@ A single omics layer usually yields a list of differences between disease and co
 2. **Phenotype first:** start from a phenotype and trace related pathways across layers.
 3. **Environment first:** start from a factor such as diet and see how it changes each layer.
 
-One layer cannot stand in for another. Transcript and protein levels correlate only moderately for most pairs, because of translational regulation, post-translational modification and protein degradation rates (Hasin et al., 2017; → Part 8). RNA-seq data can be compared across studies only when they use the same genome build, annotation and tools (→ Part 11). And proof of causation still requires in vivo or in vitro experiments (Hasin et al., 2017). Manzoni et al. (2018) is a readable review of genomics, transcriptomics and proteomics data for newcomers.
+One layer cannot stand in for another. Transcript and protein levels correlate only moderately for most pairs, because of translational regulation, post-translational modification and protein degradation rates (Hasin et al., 2017; → [Part 8](/en/blog/proteomics-va-cau-truc-protein/)). RNA-seq data can be compared across studies only when they use the same genome build, annotation and tools (→ Part 11). And proof of causation still requires in vivo or in vitro experiments (Hasin et al., 2017). Manzoni et al. (2018) is a readable review of genomics, transcriptomics and proteomics data for newcomers.
 
 ## 3. The 7-step life cycle, illustrated with a liver cancer proteomics study
 

@@ -145,7 +145,7 @@ Một tầng omics thường cho một danh sách khác biệt giữa bệnh và
 2. **Phenotype first:** từ kiểu hình, tìm con đường liên quan qua nhiều tầng.
 3. **Environment first:** từ một yếu tố như chế độ ăn, xem nó thay đổi các tầng ra sao.
 
-Không thể lấy tầng này thay tầng kia. Tương quan giữa transcript và protein chỉ ở mức vừa phải với phần lớn các cặp, do điều hoà dịch mã, biến đổi sau dịch mã và tốc độ phân huỷ protein (Hasin et al., 2017; → Phần 8). Dữ liệu RNA-seq chỉ so sánh được giữa các nghiên cứu khi dùng cùng phiên bản genome, chú giải và công cụ (→ Phần 11). Và bằng chứng nhân quả cuối cùng vẫn cần thí nghiệm in vivo hoặc in vitro (Hasin et al., 2017). Manzoni et al. (2018) là một tổng quan dễ đọc cho người mới về dữ liệu genomics, transcriptomics và proteomics.
+Không thể lấy tầng này thay tầng kia. Tương quan giữa transcript và protein chỉ ở mức vừa phải với phần lớn các cặp, do điều hoà dịch mã, biến đổi sau dịch mã và tốc độ phân huỷ protein (Hasin et al., 2017; → [Phần 8](/blog/proteomics-va-cau-truc-protein/)). Dữ liệu RNA-seq chỉ so sánh được giữa các nghiên cứu khi dùng cùng phiên bản genome, chú giải và công cụ (→ Phần 11). Và bằng chứng nhân quả cuối cùng vẫn cần thí nghiệm in vivo hoặc in vitro (Hasin et al., 2017). Manzoni et al. (2018) là một tổng quan dễ đọc cho người mới về dữ liệu genomics, transcriptomics và proteomics.
 
 ## 3. Vòng đời 7 bước, minh hoạ bằng một nghiên cứu proteomics ung thư gan
 

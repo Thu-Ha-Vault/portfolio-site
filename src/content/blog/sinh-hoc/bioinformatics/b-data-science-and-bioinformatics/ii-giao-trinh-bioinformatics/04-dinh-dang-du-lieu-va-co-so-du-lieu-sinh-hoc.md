@@ -421,7 +421,7 @@ Lỗi bản genome còn lớn hơn: dùng tọa độ GRCh37 (7578406) trên GRC
 
 ### 8.4. Tọa độ protein
 
-UniProt P04637 (P53_HUMAN) dài 393 amino acid, với vùng gắn DNA (DNA binding) từ 102 đến 292; R175 nằm trong vùng này (The UniProt Consortium, 2025). Tọa độ protein cũng đếm từ 1. Mô hình AlphaFold AF-P04637-F1 (phiên bản 6) có pLDDT toàn cục 75,06 (Varadi et al., 2024; truy vấn 11/11/2026); cách đọc pLDDT để dành cho Phần 8.
+UniProt P04637 (P53_HUMAN) dài 393 amino acid, với vùng gắn DNA (DNA binding) từ 102 đến 292; R175 nằm trong vùng này (The UniProt Consortium, 2025). Tọa độ protein cũng đếm từ 1. Mô hình AlphaFold AF-P04637-F1 (phiên bản 6) có pLDDT toàn cục 75,06 (Varadi et al., 2024; truy vấn 11/11/2026); cách đọc pLDDT để dành cho [Phần 8](/blog/proteomics-va-cau-truc-protein/).
 
 ### 8.5. Bài tập tự làm
 

@@ -45,7 +45,7 @@ isIndex: true
 - [Phần 7 – Transcriptomics: RNA-seq và single-cell](/blog/transcriptomics-rna-seq-va-single-cell/)
 
 ### Cấp 3 – Nâng cao (Tuần 25–36)
-- Phần 8 – Proteomics và cấu trúc protein
+- [Phần 8 – Proteomics và cấu trúc protein](/blog/proteomics-va-cau-truc-protein/)
 - Phần 9 – Epigenomics, metagenomics và đa omics
 - Phần 10 – Machine learning và AI trong sinh học
 - Phần 11 – Quy trình tái lập
