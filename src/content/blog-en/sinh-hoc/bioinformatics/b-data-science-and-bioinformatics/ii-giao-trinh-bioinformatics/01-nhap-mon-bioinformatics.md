@@ -120,7 +120,7 @@ flowchart TB
 
 *Compiled for this article; the two microbiome methods follow Ranjan et al. (2016) and Quince et al. (2017).*
 
-The last row combines two different ways of measuring. 16S rRNA amplicon sequencing reads only one conserved marker gene to identify bacteria; shotgun metagenomics reads DNA from every genome in the sample. On the same human stool samples, shotgun detected more species, measured higher diversity and predicted more genes (Ranjan et al., 2016), at the cost of a more complex computational pipeline (Quince et al., 2017). Part 9 analyzes the two with different tools.
+The last row combines two different ways of measuring. 16S rRNA amplicon sequencing reads only one conserved marker gene to identify bacteria; shotgun metagenomics reads DNA from every genome in the sample. On the same human stool samples, shotgun detected more species, measured higher diversity and predicted more genes (Ranjan et al., 2016), at the cost of a more complex computational pipeline (Quince et al., 2017). [Part 9](/en/blog/epigenomics-metagenomics-va-da-omics/) analyzes the two with different tools.
 
 ### 2.4. One landmark study per layer
 

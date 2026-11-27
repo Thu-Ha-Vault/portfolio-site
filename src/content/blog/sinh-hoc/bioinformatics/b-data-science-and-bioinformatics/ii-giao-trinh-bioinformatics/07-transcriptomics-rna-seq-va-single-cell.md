@@ -66,7 +66,7 @@ flowchart TB
 
 Phạm vi của bài: bulk RNA-seq poly(A) ở người, phân tích ở mức gen, hai điều kiện ghép cặp; single-cell dạng droplet với một mẫu. Isoform, splicing, gen dung hợp (fusion) và RNA nhỏ nằm ngoài phạm vi (Conesa et al., 2016). Nền thống kê (phân phối nhị thức âm, p-value, FDR) được trình bày trong [bài toán và thống kê cho sinh học](/blog/toan-va-thong-ke-cho-sinh-hoc/); bài này chỉ nhắc lại khi cần.
 
-Các mục đi theo thứ tự quyết định. Mục 2 và 3 nói về những gì phải chốt trước khi có bảng số đếm; mục 4 và 5 về kiểm định và diễn giải; mục 6 về single-cell; mục 7 là quy trình để bạn tự chạy lại trên dữ liệu công khai. Nếu bạn định đưa phân tích vào hồ sơ năng lực, mục 7 có thể trở thành một repo hoàn chỉnh (xem bài về dự án portfolio), và làm đúng một tầng omics là bước cần có trước khi tích hợp nhiều tầng (xem bài về đa omics).
+Các mục đi theo thứ tự quyết định. Mục 2 và 3 nói về những gì phải chốt trước khi có bảng số đếm; mục 4 và 5 về kiểm định và diễn giải; mục 6 về single-cell; mục 7 là quy trình để bạn tự chạy lại trên dữ liệu công khai. Nếu bạn định đưa phân tích vào hồ sơ năng lực, mục 7 có thể trở thành một repo hoàn chỉnh (xem bài về dự án portfolio), và làm đúng một tầng omics là bước cần có trước khi tích hợp nhiều tầng (xem [bài về đa omics](/blog/epigenomics-metagenomics-va-da-omics/)).
 
 ## 2. Thiết kế thí nghiệm: quyết định trước khi giải trình tự
 

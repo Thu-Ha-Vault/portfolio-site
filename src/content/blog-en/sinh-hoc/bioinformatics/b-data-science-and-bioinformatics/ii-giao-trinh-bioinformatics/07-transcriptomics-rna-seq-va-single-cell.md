@@ -67,7 +67,7 @@ flowchart TB
 
 Scope: poly(A) bulk RNA-seq in humans, analyzed at the gene level, with two paired conditions; droplet-based single-cell data from one sample. Isoforms, splicing, fusion genes and small RNAs are out of scope (Conesa et al., 2016). The statistical background (the negative binomial distribution, p-values, FDR) is covered in [the article on math and statistics for biology](/en/blog/toan-va-thong-ke-cho-sinh-hoc/); this article only recaps it where needed.
 
-The sections follow the order of decisions. Sections 2 and 3 cover what has to be settled before you have a count table; sections 4 and 5 cover testing and interpretation; section 6 covers single-cell; section 7 is a workflow you can rerun on public data yourself. If you plan to put the analysis in a portfolio, section 7 can become a complete repository (see the article on portfolio projects), and getting one omics layer right is a prerequisite for integrating several (see the article on multi-omics).
+The sections follow the order of decisions. Sections 2 and 3 cover what has to be settled before you have a count table; sections 4 and 5 cover testing and interpretation; section 6 covers single-cell; section 7 is a workflow you can rerun on public data yourself. If you plan to put the analysis in a portfolio, section 7 can become a complete repository (see the article on portfolio projects), and getting one omics layer right is a prerequisite for integrating several (see [the article on multi-omics](/en/blog/epigenomics-metagenomics-va-da-omics/)).
 
 ## 2. Experimental design: decisions made before sequencing
 

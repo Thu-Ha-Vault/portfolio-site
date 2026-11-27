@@ -46,7 +46,7 @@ isIndex: true
 
 ### Cấp 3 – Nâng cao (Tuần 25–36)
 - [Phần 8 – Proteomics và cấu trúc protein](/blog/proteomics-va-cau-truc-protein/)
-- Phần 9 – Epigenomics, metagenomics và đa omics
+- [Phần 9 – Epigenomics, metagenomics và đa omics](/blog/epigenomics-metagenomics-va-da-omics/)
 - Phần 10 – Machine learning và AI trong sinh học
 - Phần 11 – Quy trình tái lập
 - Phần 12 – Dự án tổng hợp và portfolio

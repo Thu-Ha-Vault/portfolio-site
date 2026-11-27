@@ -118,7 +118,7 @@ flowchart TB
 
 *Bảng tự tổng hợp; hai cách đo microbiome theo Ranjan et al. (2016) và Quince et al. (2017).*
 
-Dòng cuối gộp hai cách đo khác nhau. Giải trình tự amplicon 16S rRNA chỉ đọc một gen đánh dấu bảo tồn để nhận diện vi khuẩn; shotgun metagenomics đọc DNA của toàn bộ genome trong mẫu. Trên cùng một mẫu phân người, shotgun phát hiện nhiều loài hơn, đo được độ đa dạng cao hơn và dự đoán được nhiều gen hơn (Ranjan et al., 2016), đổi lại cần pipeline tính toán phức tạp (Quince et al., 2017). Phần 9 phân tích hai loại này bằng công cụ khác nhau.
+Dòng cuối gộp hai cách đo khác nhau. Giải trình tự amplicon 16S rRNA chỉ đọc một gen đánh dấu bảo tồn để nhận diện vi khuẩn; shotgun metagenomics đọc DNA của toàn bộ genome trong mẫu. Trên cùng một mẫu phân người, shotgun phát hiện nhiều loài hơn, đo được độ đa dạng cao hơn và dự đoán được nhiều gen hơn (Ranjan et al., 2016), đổi lại cần pipeline tính toán phức tạp (Quince et al., 2017). [Phần 9](/blog/epigenomics-metagenomics-va-da-omics/) phân tích hai loại này bằng công cụ khác nhau.
 
 ### 2.4. Mỗi tầng một nghiên cứu mẫu
 
