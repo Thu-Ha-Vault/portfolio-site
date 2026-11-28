@@ -7,6 +7,12 @@
       "title": "Sinh học"
     },
     {
+      "topic": "ai-development",
+      "notes": 1,
+      "url": "/topics/ai-development/",
+      "title": "AI và DEV"
+    },
+    {
       "topic": "business",
       "notes": 1,
       "url": "/topics/business/",
@@ -20,6 +26,11 @@
     }
   ],
   "edges": [
+    {
+      "a": "ai-development",
+      "b": "biology",
+      "weight": 8
+    },
     {
       "a": "biology",
       "b": "business",

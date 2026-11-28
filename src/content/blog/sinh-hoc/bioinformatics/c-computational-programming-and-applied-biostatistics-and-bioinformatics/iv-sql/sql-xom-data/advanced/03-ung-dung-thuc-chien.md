@@ -161,7 +161,7 @@ Schmittlein, Morrison và Colombo (1987) đề xuất mô hình Pareto/NBD để
 | Giả định | Không nêu rõ | Nêu rõ quá trình mua và rời đi |
 | Tính bằng SQL | Dễ (`NTILE`, `CASE`) | Cần phần mềm ước lượng tham số |
 
-RFM cũng thường là đầu vào cho phân cụm khi muốn tìm phân khúc từ dữ liệu (Data Mining); với CLV, bài tổng quan của Gupta và cộng sự (2006) là điểm xuất phát tốt.
+RFM cũng thường là đầu vào cho phân cụm khi muốn tìm phân khúc từ dữ liệu ([Data Mining](/blog/data-mining/)); với CLV, bài tổng quan của Gupta và cộng sự (2006) là điểm xuất phát tốt.
 
 ## 4. Cohort: khái niệm mượn từ nhân khẩu học và dịch tễ học
 

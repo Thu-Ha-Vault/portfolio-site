@@ -77,7 +77,7 @@ Fayyad et al. (1996a) describe KDD as an **interactive and iterative** process w
 8. interpreting the mined patterns, possibly returning to any of steps 1–7;
 9. acting on the discovered knowledge, including checking for and resolving conflicts with existing knowledge.
 
-The process can loop between any two steps. A shorter version appeared the same year in *Communications of the ACM* (Fayyad et al., 1996b). A closer look at KDD is in the Data Mining article.
+The process can loop between any two steps. A shorter version appeared the same year in *Communications of the ACM* (Fayyad et al., 1996b). A closer look at KDD is in [the Data Mining article](/en/blog/data-mining/).
 
 ### 2.3. CRISP-DM
 

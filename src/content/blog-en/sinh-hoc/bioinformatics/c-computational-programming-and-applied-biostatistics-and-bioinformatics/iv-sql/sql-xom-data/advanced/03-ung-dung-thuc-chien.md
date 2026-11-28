@@ -164,7 +164,7 @@ Schmittlein, Morrison, and Colombo (1987) proposed the Pareto/NBD model to answe
 | Assumptions | Not stated | Explicit purchase and dropout process |
 | Computable in SQL | Easy (`NTILE`, `CASE`) | Needs software to estimate parameters |
 
-RFM is also a common input to clustering when you want segments to emerge from the data (Data Mining); for CLV, the review by Gupta and colleagues (2006) is a good starting point.
+RFM is also a common input to clustering when you want segments to emerge from the data ([Data Mining](/en/blog/data-mining/)); for CLV, the review by Gupta and colleagues (2006) is a good starting point.
 
 ## 4. Cohort: a concept borrowed from demography and epidemiology
 

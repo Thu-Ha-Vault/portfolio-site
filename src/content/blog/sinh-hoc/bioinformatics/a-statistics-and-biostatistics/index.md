@@ -21,4 +21,4 @@ isIndex: true
 
 - [Probability (Xác suất)](/topics/probability/)
 - Statistical Inference (Suy rộng thống kê)
-- Statistical Models and Method (Mô hình thống kê và phương pháp) (→ AI Course Tsing Hua)
+- Statistical Models and Method (Mô hình thống kê và phương pháp) (→ [AI Course Tsing Hua](/topics/khoa-hoc-ai-cua-tsing-hua-university/))

@@ -77,7 +77,7 @@ Fayyad et al. (1996a) mô tả KDD là quá trình **tương tác và lặp (int
 8. diễn giải mẫu tìm được, có thể quay lại bất kỳ bước 1–7;
 9. hành động dựa trên tri thức, gồm cả kiểm tra và giải quyết mâu thuẫn với tri thức đã có.
 
-Quá trình có thể lặp giữa hai bước bất kỳ. Một bản ngắn hơn được công bố cùng năm trên *Communications of the ACM* (Fayyad et al., 1996b). Phân tích sâu hơn về KDD có ở bài Data Mining.
+Quá trình có thể lặp giữa hai bước bất kỳ. Một bản ngắn hơn được công bố cùng năm trên *Communications of the ACM* (Fayyad et al., 1996b). Phân tích sâu hơn về KDD có ở [bài Data Mining](/blog/data-mining/).
 
 ### 2.3. CRISP-DM
 
