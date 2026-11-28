@@ -347,7 +347,7 @@ birthweight-project/
     └── birthweight_clean.csv  # file xuất, row.names = FALSE
 ```
 
-Người nhận chỉ cần mở file `.Rproj` và chạy `scripts/01-import.R`; mọi đường dẫn tương đối sẽ đúng mà không phải sửa dòng nào. Phần làm sạch dữ liệu sau bước nhập được trình bày kỹ ở [bài làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/), và cách tổ chức dự án lớn hơn với workflow, container ở bài quy trình tái lập.
+Người nhận chỉ cần mở file `.Rproj` và chạy `scripts/01-import.R`; mọi đường dẫn tương đối sẽ đúng mà không phải sửa dòng nào. Phần làm sạch dữ liệu sau bước nhập được trình bày kỹ ở [bài làm sạch dữ liệu](/blog/process-data-from-dirty-to-clean/), và cách tổ chức dự án lớn hơn với workflow, container ở [bài quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 **Bảng 2.** Checklist dữ liệu bảng cho phòng thí nghiệm
 

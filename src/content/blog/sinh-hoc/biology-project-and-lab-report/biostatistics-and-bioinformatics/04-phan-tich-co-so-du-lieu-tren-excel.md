@@ -66,7 +66,7 @@ Bảng 1 là từ điển dữ liệu (data dictionary) của bảng *C. grayii*
 
 ### 2.2. Quy trình
 
-Nguyên tắc đầu tiên là coi dữ liệu gốc là chỉ đọc (Buffalo, 2015): không sửa ô rồi lưu đè, mà để script đọc bản gốc và ghi kết quả ra file mới. Hình 1 tóm tắt quy trình dùng trong bài; mỗi bước có một file đầu ra riêng, nên bất kỳ ai cũng chạy lại được từ đầu (Broman & Woo, 2018; Wilson et al., 2017; → Quy trình tái lập).
+Nguyên tắc đầu tiên là coi dữ liệu gốc là chỉ đọc (Buffalo, 2015): không sửa ô rồi lưu đè, mà để script đọc bản gốc và ghi kết quả ra file mới. Hình 1 tóm tắt quy trình dùng trong bài; mỗi bước có một file đầu ra riêng, nên bất kỳ ai cũng chạy lại được từ đầu (Broman & Woo, 2018; Wilson et al., 2017; → [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ```mermaid
 flowchart TB

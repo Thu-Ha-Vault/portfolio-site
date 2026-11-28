@@ -523,7 +523,7 @@ Data validation is commonly divided into six types: the first five check the dat
 | Data structure | Is the table tidy before aggregating? | the GTEx file is in wide format (54 tissue columns): select one column or reshape to long format with `melt()` |
 | Code validation | Does a rerun from scratch give the same result? Is the code correct on a small table with known answers? | the extract in Section 2.3; compare two independent tools |
 
-Each type catches only one kind of error. A key of the right type can still be duplicated; a unique key can still be out of date; matching row counts and totals still do not tell you whether the join paired the right genes. Data that passes the whole checklist can still be wrong, so the checklist does not replace reading the list of unmatched rows. For organizing a project so it can be rerun from scratch, see Reproducible workflows.
+Each type catches only one kind of error. A key of the right type can still be duplicated; a unique key can still be out of date; matching row counts and totals still do not tell you whether the join paired the right genes. Data that passes the whole checklist can still be wrong, so the checklist does not replace reading the list of unmatched rows. For organizing a project so it can be rerun from scratch, see [Reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## 6. Conclusion
 

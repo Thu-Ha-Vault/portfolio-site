@@ -397,7 +397,7 @@ Trên dữ liệu này, Random Forest dự đoán tốt nhất, nhưng khoảng 
 
 </div>
 
-Bài tiếp theo quay về [thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/), nơi các giá trị bị chặn như `medv` = 50 lẽ ra đã được phát hiện trước khi fit mô hình. Tái lập ở mức dự án được bàn trong bài về quy trình tái lập.
+Bài tiếp theo quay về [thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/), nơi các giá trị bị chặn như `medv` = 50 lẽ ra đã được phát hiện trước khi fit mô hình. Tái lập ở mức dự án được bàn trong [bài về quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## Tài liệu tham khảo
 

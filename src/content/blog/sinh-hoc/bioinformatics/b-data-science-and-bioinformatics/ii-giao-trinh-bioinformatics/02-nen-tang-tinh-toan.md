@@ -303,7 +303,7 @@ Cài mọi thứ vào môi trường `base` khiến các dự án dùng chung m�
 
 </div>
 
-Trang Bioconda cũng hướng dẫn dùng Pixi, một frontend mới cho gói conda. Container và BioContainers là bước tiếp theo khi conda chưa đủ để tái lập, thuộc bài Quy trình tái lập (Grüning, Chilton, et al., 2018).
+Trang Bioconda cũng hướng dẫn dùng Pixi, một frontend mới cho gói conda. Container và BioContainers là bước tiếp theo khi conda chưa đủ để tái lập, thuộc bài [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/) (Grüning, Chilton, et al., 2018).
 
 ## 6. Lớp 5 – Git và tổ chức dự án "đủ tốt"
 

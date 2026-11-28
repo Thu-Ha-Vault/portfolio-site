@@ -399,7 +399,7 @@ On these data, Random Forest predicts best, but its lead over the linear model w
 
 </div>
 
-The next article returns to [descriptive statistics](/en/blog/data-exploration-using-descriptive-statistics/), where capped values such as `medv` = 50 should have been caught before any model was fitted. Project-level reproducibility is discussed in the article on reproducible workflows.
+The next article returns to [descriptive statistics](/en/blog/data-exploration-using-descriptive-statistics/), where capped values such as `medv` = 50 should have been caught before any model was fitted. Project-level reproducibility is discussed in the [article on reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## References
 

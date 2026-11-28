@@ -408,7 +408,7 @@ Every omics layer in this article is a relative measurement: peaks against input
 | 16S, shotgun | The sample's total reads | Negative controls, decontam | CLR or log-ratio | Spurious decreases, spurious correlations |
 | Survival | Risk set | Pre-specified endpoint | Not applicable | Median in the tail, multiple tests |
 
-The whole analysis should be packaged as notebooks and reproducible workflows (see reproducible workflows).
+The whole analysis should be packaged as notebooks and reproducible workflows (see [reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 The question most worth carrying with you is the one from the start of the article: what is this number a ratio of? The TCGA-LIHC example shows that the same dataset can give a "significant" or "not significant" conclusion just by switching endpoints; the "bloom" example shows that three species can "decrease" without losing a single cell. Multi-omics integration does not fix those errors, it stacks them. Name the denominator, set up controls, pre-specify the primary analysis, and only then combine the layers.
 

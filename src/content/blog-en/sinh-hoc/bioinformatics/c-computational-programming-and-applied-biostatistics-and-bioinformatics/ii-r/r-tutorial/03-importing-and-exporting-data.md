@@ -348,7 +348,7 @@ birthweight-project/
     └── birthweight_clean.csv  # exported file, row.names = FALSE
 ```
 
-The recipient only needs to open the `.Rproj` file and run `scripts/01-import.R`; every relative path works without changing a line. Cleaning data after import is covered in depth in the [article on data cleaning](/en/blog/process-data-from-dirty-to-clean/), and organizing larger projects with workflows and containers in the article on reproducible workflows.
+The recipient only needs to open the `.Rproj` file and run `scripts/01-import.R`; every relative path works without changing a line. Cleaning data after import is covered in depth in the [article on data cleaning](/en/blog/process-data-from-dirty-to-clean/), and organizing larger projects with workflows and containers in the [article on reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 **Table 2.** Tabular data checklist for the lab
 

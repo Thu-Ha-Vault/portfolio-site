@@ -407,7 +407,7 @@ Mỗi tầng omics trong bài là một phép đo tương đối: đỉnh so v�
 | 16S, shotgun | Tổng read của mẫu | Đối chứng âm, decontam | CLR hoặc log-ratio | Giảm giả, tương quan giả |
 | Sống còn | Tập nguy cơ | Endpoint định trước | Không áp dụng | Trung vị ở đuôi, nhiều kiểm định |
 
-Toàn bộ phân tích nên được đóng gói thành notebook và workflow tái lập được (xem quy trình tái lập).
+Toàn bộ phân tích nên được đóng gói thành notebook và workflow tái lập được (xem [quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 Câu hỏi đáng mang theo nhất là câu hỏi ở đầu bài: con số này là tỷ lệ so với cái gì? Ví dụ TCGA-LIHC cho thấy cùng một bộ dữ liệu có thể cho kết luận "có ý nghĩa" hay "không có ý nghĩa" chỉ vì đổi endpoint; ví dụ "nở hoa" cho thấy ba loài có thể "giảm" mà không mất tế bào nào. Tích hợp đa omics không sửa được những lỗi đó, nó cộng dồn chúng. Gọi tên mẫu số, đặt đối chứng, chọn trước phân tích chính, rồi mới ghép các tầng.
 

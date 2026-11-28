@@ -156,7 +156,7 @@ Salmon cho ước lượng ở mức transcript, nhưng câu hỏi thường ở
 | Mức transcript | Cần thêm công cụ | Có sẵn |
 | Dùng tiếp cho | Đột biến, splicing, kiểm tra trực quan | Biểu hiện khác biệt mức gen, mức transcript |
 
-Một cạm bẫy hay gặp khi tái phân tích dữ liệu công khai: bảng đã xử lý trên GEO thường không phải số đếm. GSE94660 chỉ có bảng "RPKM_normalized" (Yoo et al., 2017); GSE124535, bộ 35 cặp HCC của Jiang et al. (2019), theo mô tả GEO chỉ cung cấp FPKM từ TopHat/Cufflinks. DESeq2 cần số đếm chưa chuẩn hoá hoặc số đếm ước lượng (Love et al., 2014), nên phải chạy lại từ FASTQ. Bảng RPKM/FPKM chỉ dùng để đối chiếu chiều thay đổi. Nếu không muốn tự nối từng công cụ, nf-core/rnaseq chạy toàn bộ chuỗi này với báo cáo QC (xem bài về quy trình tái lập).
+Một cạm bẫy hay gặp khi tái phân tích dữ liệu công khai: bảng đã xử lý trên GEO thường không phải số đếm. GSE94660 chỉ có bảng "RPKM_normalized" (Yoo et al., 2017); GSE124535, bộ 35 cặp HCC của Jiang et al. (2019), theo mô tả GEO chỉ cung cấp FPKM từ TopHat/Cufflinks. DESeq2 cần số đếm chưa chuẩn hoá hoặc số đếm ước lượng (Love et al., 2014), nên phải chạy lại từ FASTQ. Bảng RPKM/FPKM chỉ dùng để đối chiếu chiều thay đổi. Nếu không muốn tự nối từng công cụ, nf-core/rnaseq chạy toàn bộ chuỗi này với báo cáo QC (xem [bài về quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 <div class="callout callout-warning">
 <p class="callout-title">Lỗi hay gặp ở bước định lượng</p>

@@ -306,7 +306,7 @@ Installing everything into the `base` environment makes all your projects share 
 
 </div>
 
-The Bioconda site also documents Pixi, a newer frontend for conda packages. Containers and BioContainers are the next step when conda isn't enough for reproducibility; they belong to the article on reproducible workflows (Grüning, Chilton, et al., 2018).
+The Bioconda site also documents Pixi, a newer frontend for conda packages. Containers and BioContainers are the next step when conda isn't enough for reproducibility; they belong to the article on [reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/) (Grüning, Chilton, et al., 2018).
 
 ## 6. Layer 5 – Git and a "good enough" project layout
 

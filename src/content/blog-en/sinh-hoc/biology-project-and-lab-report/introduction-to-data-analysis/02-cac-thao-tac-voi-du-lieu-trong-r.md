@@ -471,7 +471,7 @@ The checklist below applies to biology lab data as much as to retail data:
 4. **Ask the people who collected the data why values are missing** and record your MCAR, MAR or MNAR assumption; if MNAR is possible, plan a sensitivity analysis.
 5. **Check for functional dependencies**: is the incomplete variable fixed by a key (product code, individual ID, sample ID)? If so, look it up first.
 6. **Choose the method by mechanism**: delete rows only when close to MCAR and few rows are lost; avoid mean replacement for inference; use MI when MAR is plausible, with variables that explain both the missingness and the missing values in the imputation model (White et al., 2011), and read warnings such as `imp$loggedEvents`.
-7. **Report fully**: row counts before and after, the method, the number of imputations, the variables in the imputation model, package versions and the seed (Sterne et al., 2009); use relative paths instead of `setwd()` to an absolute folder (Wilson et al., 2017; see also reproducible workflows).
+7. **Report fully**: row counts before and after, the method, the number of imputations, the variables in the imputation model, package versions and the seed (Sterne et al., 2009); use relative paths instead of `setwd()` to an absolute folder (Wilson et al., 2017; see also [reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 The next articles in the series keep practicing these operations: [basic R exercises](/en/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/), [regression on the Boston housing data](/en/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/) and [descriptive statistics](/en/blog/data-exploration-using-descriptive-statistics/) with medians and outliers.
 

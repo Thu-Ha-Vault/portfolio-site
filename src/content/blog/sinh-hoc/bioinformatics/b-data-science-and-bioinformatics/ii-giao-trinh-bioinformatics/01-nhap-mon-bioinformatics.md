@@ -145,7 +145,7 @@ Một tầng omics thường cho một danh sách khác biệt giữa bệnh và
 2. **Phenotype first:** từ kiểu hình, tìm con đường liên quan qua nhiều tầng.
 3. **Environment first:** từ một yếu tố như chế độ ăn, xem nó thay đổi các tầng ra sao.
 
-Không thể lấy tầng này thay tầng kia. Tương quan giữa transcript và protein chỉ ở mức vừa phải với phần lớn các cặp, do điều hoà dịch mã, biến đổi sau dịch mã và tốc độ phân huỷ protein (Hasin et al., 2017; → [Phần 8](/blog/proteomics-va-cau-truc-protein/)). Dữ liệu RNA-seq chỉ so sánh được giữa các nghiên cứu khi dùng cùng phiên bản genome, chú giải và công cụ (→ Phần 11). Và bằng chứng nhân quả cuối cùng vẫn cần thí nghiệm in vivo hoặc in vitro (Hasin et al., 2017). Manzoni et al. (2018) là một tổng quan dễ đọc cho người mới về dữ liệu genomics, transcriptomics và proteomics.
+Không thể lấy tầng này thay tầng kia. Tương quan giữa transcript và protein chỉ ở mức vừa phải với phần lớn các cặp, do điều hoà dịch mã, biến đổi sau dịch mã và tốc độ phân huỷ protein (Hasin et al., 2017; → [Phần 8](/blog/proteomics-va-cau-truc-protein/)). Dữ liệu RNA-seq chỉ so sánh được giữa các nghiên cứu khi dùng cùng phiên bản genome, chú giải và công cụ (→ [Phần 11](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)). Và bằng chứng nhân quả cuối cùng vẫn cần thí nghiệm in vivo hoặc in vitro (Hasin et al., 2017). Manzoni et al. (2018) là một tổng quan dễ đọc cho người mới về dữ liệu genomics, transcriptomics và proteomics.
 
 ## 3. Vòng đời 7 bước, minh hoạ bằng một nghiên cứu proteomics ung thư gan
 
@@ -247,7 +247,7 @@ Kiểm chứng có hai nghĩa. **Xác nhận trực giao** là đo lại cùng m
 
 Với RNA-seq, qPCR không phải lúc nào cũng cần. Khi so 5 quy trình RNA-seq với qPCR trên toàn bộ gen mã hoá protein, khoảng 85% số gen có fold change nhất quán; gen không nhất quán thường ngắn, ít exon và biểu hiện thấp (Everaert et al., 2017). Coenye (2021) tóm tắt: chỉ khoảng 1,8% gen không nhất quán nghiêm trọng, và qPCR có giá trị khi kết luận dựa vào vài gen biểu hiện thấp hoặc khác biệt nhỏ, hoặc khi cần đo thêm ở điều kiện khác.
 
-**Bước 7b: chia sẻ dữ liệu, mã và phiên bản.** Khi hai nhóm độc lập thử lặp lại phân tích của 18 bài báo microarray, chỉ 2 bài lặp lại được về nguyên tắc, 6 bài một phần, 10 bài không; lý do chính là dữ liệu không được công bố (Ioannidis et al., 2009). Ca minh hoạ cũng vậy: dữ liệu mức người tham gia của Dong et al. (2022) chỉ được cung cấp theo yêu cầu, khi tác giả liên hệ đồng ý. Hãy nộp dữ liệu thô lên kho công khai, công bố mã và ghi phiên bản genome, chú giải, công cụ (→ Phần 11, Phần 12).
+**Bước 7b: chia sẻ dữ liệu, mã và phiên bản.** Khi hai nhóm độc lập thử lặp lại phân tích của 18 bài báo microarray, chỉ 2 bài lặp lại được về nguyên tắc, 6 bài một phần, 10 bài không; lý do chính là dữ liệu không được công bố (Ioannidis et al., 2009). Ca minh hoạ cũng vậy: dữ liệu mức người tham gia của Dong et al. (2022) chỉ được cung cấp theo yêu cầu, khi tác giả liên hệ đồng ý. Hãy nộp dữ liệu thô lên kho công khai, công bố mã và ghi phiên bản genome, chú giải, công cụ (→ [Phần 11](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/), Phần 12).
 
 **Bảng 4.** Dong et al. (2022) đọc theo 7 bước
 

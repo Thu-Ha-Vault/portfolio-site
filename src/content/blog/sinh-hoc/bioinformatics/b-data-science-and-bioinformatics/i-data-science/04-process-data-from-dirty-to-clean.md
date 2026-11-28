@@ -148,7 +148,7 @@ Buffalo (2015) khuyên coi mọi dữ liệu là chỉ đọc (read-only): khôn
 - Ghi lại mọi bước xử lý, tốt nhất bằng script; thao tác tay thì ghi rõ đã làm gì.
 - Cho mỗi bản ghi một định danh duy nhất, cùng định dạng ở mọi bảng: “14025” ở bảng này mà “014025” ở bảng kia thì phép nối sẽ trượt.
 
-Ellis và Leek (2018) khuyên đưa raw data cho người phân tích, kèm thông tin thí nghiệm và mọi bước tiền xử lý. Muốn lần ngược dòng dữ liệu khi diagnosing thì bản gốc phải còn nguyên, như thư mục `data/raw/` chỉ đọc trong Quy trình tái lập.
+Ellis và Leek (2018) khuyên đưa raw data cho người phân tích, kèm thông tin thí nghiệm và mọi bước tiền xử lý. Muốn lần ngược dòng dữ liệu khi diagnosing thì bản gốc phải còn nguyên, như thư mục `data/raw/` chỉ đọc trong [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## 4. Quy trình làm sạch có ghi chép: một ví dụ chạy được
 

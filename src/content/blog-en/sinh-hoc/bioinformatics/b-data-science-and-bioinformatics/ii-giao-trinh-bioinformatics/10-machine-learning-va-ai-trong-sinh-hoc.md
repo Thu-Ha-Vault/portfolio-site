@@ -411,7 +411,7 @@ An independent cohort isn't always available. When it's missing, the minimum is 
 
 ## 7. Conclusion
 
-Most of the inflated numbers in biological ML come from a test set that isn't independent, not from a weak algorithm. Next time you train a model, do three things before reporting: put every learning step in a `Pipeline`, choose the unit you split on (patient, homology cluster, batch), and set a baseline next to your result. When reading a benchmark like ProteinGym, look at the subgroup columns and the error column before the average. With chatbots, lock the reference answers before asking and look up every DOI they give you. The next article in the series covers reproducible workflows (→ Reproducible workflows).
+Most of the inflated numbers in biological ML come from a test set that isn't independent, not from a weak algorithm. Next time you train a model, do three things before reporting: put every learning step in a `Pipeline`, choose the unit you split on (patient, homology cluster, batch), and set a baseline next to your result. When reading a benchmark like ProteinGym, look at the subgroup columns and the error column before the average. With chatbots, lock the reference answers before asking and look up every DOI they give you. The next article in the series covers reproducible workflows (→ [Reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ## References
 

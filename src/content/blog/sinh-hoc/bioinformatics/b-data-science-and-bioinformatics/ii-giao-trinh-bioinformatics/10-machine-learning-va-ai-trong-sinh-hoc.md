@@ -410,7 +410,7 @@ Không phải lúc nào cũng có cohort độc lập. Khi thiếu, mức tối 
 
 ## 7. Kết luận
 
-Phần lớn con số đẹp bị thổi phồng trong ML sinh học đến từ tập test không độc lập, không phải từ thuật toán kém. Lần tới khi huấn luyện một mô hình, trước khi báo cáo hãy làm ba việc: đưa mọi bước học vào `Pipeline`, chọn đơn vị chia (bệnh nhân, cụm tương đồng, lô) và đặt một mô hình cơ sở cạnh kết quả. Khi đọc một benchmark như ProteinGym, xem cột theo nhóm và cột sai số trước cột trung bình. Với chatbot, khoá đáp án tham chiếu trước khi hỏi và tra từng DOI nó đưa ra. Bài tiếp theo của series bàn về quy trình tái lập (→ Quy trình tái lập).
+Phần lớn con số đẹp bị thổi phồng trong ML sinh học đến từ tập test không độc lập, không phải từ thuật toán kém. Lần tới khi huấn luyện một mô hình, trước khi báo cáo hãy làm ba việc: đưa mọi bước học vào `Pipeline`, chọn đơn vị chia (bệnh nhân, cụm tương đồng, lô) và đặt một mô hình cơ sở cạnh kết quả. Khi đọc một benchmark như ProteinGym, xem cột theo nhóm và cột sai số trước cột trung bình. Với chatbot, khoá đáp án tham chiếu trước khi hỏi và tra từng DOI nó đưa ra. Bài tiếp theo của series bàn về quy trình tái lập (→ [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ## Tài liệu tham khảo
 

@@ -67,7 +67,7 @@ Table 1 is the data dictionary for the *C. grayii* table, with field names in lo
 
 ### 2.2. Workflow
 
-The first principle is to treat raw data as read-only (Buffalo, 2015): never edit a cell and save over the file; let a script read the original and write results to a new file. Figure 1 summarizes the workflow used here; each step produces its own output file, so anyone can rerun it from the start (Broman & Woo, 2018; Wilson et al., 2017; → Reproducible workflows).
+The first principle is to treat raw data as read-only (Buffalo, 2015): never edit a cell and save over the file; let a script read the original and write results to a new file. Figure 1 summarizes the workflow used here; each step produces its own output file, so anyone can rerun it from the start (Broman & Woo, 2018; Wilson et al., 2017; → [Reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ```mermaid
 flowchart TB

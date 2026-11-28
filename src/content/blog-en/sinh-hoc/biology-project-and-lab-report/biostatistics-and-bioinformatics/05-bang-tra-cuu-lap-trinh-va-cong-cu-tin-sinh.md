@@ -280,7 +280,7 @@ DIALIGN illustrates the most important point: when an algorithm is packaged and 
 
 ### 5.4. Infrastructure solutions
 
-**Bioconda** is a distribution channel for bioinformatics software for the Conda package manager, letting you install a specific version of a tool with one command (The Bioconda Team et al., 2018). **BioContainers** provides platform-independent execution environments based on Docker and can keep multiple versions of the same software (da Veiga Leprevost et al., 2017). **Galaxy** brings tools to a web interface that records the analysis history, a good fit for people new to the command line (The Galaxy Community et al., 2024). Grüning, Chilton, et al. (2018) propose combining these layers: portable software packages, containers to isolate environments, and workflow systems to orchestrate whole pipelines (→ reproducible workflows and containers).
+**Bioconda** is a distribution channel for bioinformatics software for the Conda package manager, letting you install a specific version of a tool with one command (The Bioconda Team et al., 2018). **BioContainers** provides platform-independent execution environments based on Docker and can keep multiple versions of the same software (da Veiga Leprevost et al., 2017). **Galaxy** brings tools to a web interface that records the analysis history, a good fit for people new to the command line (The Galaxy Community et al., 2024). Grüning, Chilton, et al. (2018) propose combining these layers: portable software packages, containers to isolate environments, and workflow systems to orchestrate whole pipelines (→ [reproducible workflows and containers](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ### 5.5. Limitations
 

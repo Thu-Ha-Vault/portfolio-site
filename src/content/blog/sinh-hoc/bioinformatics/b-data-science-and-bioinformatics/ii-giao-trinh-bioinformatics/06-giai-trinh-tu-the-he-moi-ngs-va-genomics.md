@@ -435,7 +435,7 @@ Pipeline chạy không báo lỗi chỉ chứng minh một điều: máy đã ch
 
 Tám điểm này cũng là khung của một dự án portfolio hoàn chỉnh: một repo chứa Snakefile, file môi trường cho từng bước, bảng kết quả hap.py và một hình precision/recall theo caller cho thấy người làm hiểu cả cách chạy lẫn cách kiểm tra pipeline (→ Phần 12). Với mẫu của phòng thí nghiệm, nơi không có bộ đáp án, việc nên làm tiếp là chạy kèm một mẫu GIAB trong cùng lô giải trình tự. Điểm của mẫu đó qua từng lô cho biết chất lượng pipeline có giữ được theo thời gian hay không.
 
-Nhánh RNA của sơ đồ được trình bày trong [Phần 7](/blog/transcriptomics-rna-seq-va-single-cell/); đóng gói pipeline thành Snakemake ở Phần 11.
+Nhánh RNA của sơ đồ được trình bày trong [Phần 7](/blog/transcriptomics-rna-seq-va-single-cell/); đóng gói pipeline thành Snakemake ở [Phần 11](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## Tài liệu tham khảo
 

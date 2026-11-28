@@ -280,7 +280,7 @@ DIALIGN cho thấy điều quan trọng nhất: khi thuật toán được đón
 
 ### 5.4. Giải pháp hạ tầng
 
-**Bioconda** là kênh phân phối phần mềm tin sinh cho trình quản lý gói Conda, cho phép cài một công cụ với phiên bản xác định bằng một lệnh (The Bioconda Team et al., 2018). **BioContainers** cung cấp môi trường chạy độc lập nền tảng dựa trên Docker, giữ được nhiều phiên bản của cùng phần mềm (da Veiga Leprevost et al., 2017). **Galaxy** đưa các công cụ lên giao diện web có lưu lịch sử phân tích, hợp với người chưa quen dòng lệnh (The Galaxy Community et al., 2024). Grüning, Chilton, et al. (2018) đề xuất kết hợp ba lớp này: gói phần mềm di động, container để cô lập môi trường, và hệ thống workflow để điều phối toàn bộ pipeline (→ quy trình tái lập với workflow và container).
+**Bioconda** là kênh phân phối phần mềm tin sinh cho trình quản lý gói Conda, cho phép cài một công cụ với phiên bản xác định bằng một lệnh (The Bioconda Team et al., 2018). **BioContainers** cung cấp môi trường chạy độc lập nền tảng dựa trên Docker, giữ được nhiều phiên bản của cùng phần mềm (da Veiga Leprevost et al., 2017). **Galaxy** đưa các công cụ lên giao diện web có lưu lịch sử phân tích, hợp với người chưa quen dòng lệnh (The Galaxy Community et al., 2024). Grüning, Chilton, et al. (2018) đề xuất kết hợp ba lớp này: gói phần mềm di động, container để cô lập môi trường, và hệ thống workflow để điều phối toàn bộ pipeline (→ [quy trình tái lập với workflow và container](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 ### 5.5. Hạn chế
 

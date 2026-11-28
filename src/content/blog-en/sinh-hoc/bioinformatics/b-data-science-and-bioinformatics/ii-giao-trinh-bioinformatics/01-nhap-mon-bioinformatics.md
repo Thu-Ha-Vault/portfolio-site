@@ -147,7 +147,7 @@ A single omics layer usually yields a list of differences between disease and co
 2. **Phenotype first:** start from a phenotype and trace related pathways across layers.
 3. **Environment first:** start from a factor such as diet and see how it changes each layer.
 
-One layer cannot stand in for another. Transcript and protein levels correlate only moderately for most pairs, because of translational regulation, post-translational modification and protein degradation rates (Hasin et al., 2017; → [Part 8](/en/blog/proteomics-va-cau-truc-protein/)). RNA-seq data can be compared across studies only when they use the same genome build, annotation and tools (→ Part 11). And proof of causation still requires in vivo or in vitro experiments (Hasin et al., 2017). Manzoni et al. (2018) is a readable review of genomics, transcriptomics and proteomics data for newcomers.
+One layer cannot stand in for another. Transcript and protein levels correlate only moderately for most pairs, because of translational regulation, post-translational modification and protein degradation rates (Hasin et al., 2017; → [Part 8](/en/blog/proteomics-va-cau-truc-protein/)). RNA-seq data can be compared across studies only when they use the same genome build, annotation and tools (→ [Part 11](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)). And proof of causation still requires in vivo or in vitro experiments (Hasin et al., 2017). Manzoni et al. (2018) is a readable review of genomics, transcriptomics and proteomics data for newcomers.
 
 ## 3. The 7-step life cycle, illustrated with a liver cancer proteomics study
 
@@ -249,7 +249,7 @@ Validation has two meanings. **Orthogonal confirmation** re-measures the same sa
 
 For RNA-seq, qPCR is not always needed. When 5 RNA-seq workflows were compared with qPCR across all protein-coding genes, about 85% of genes had consistent fold changes; inconsistent genes tended to be short, have few exons and be expressed at low levels (Everaert et al., 2017). Coenye (2021) sums it up: only about 1.8% of genes were severely inconsistent, and qPCR adds value when a conclusion rests on a few low-expression genes or small differences, or when you need measurements under other conditions.
 
-**Step 7b: share data, code and versions.** When two independent teams tried to repeat the analyses of 18 microarray papers, only 2 could be reproduced in principle, 6 partially and 10 not at all; the main reason was unavailable data (Ioannidis et al., 2009). The example is no exception: participant-level data from Dong et al. (2022) are available only on request, if the corresponding author agrees. Deposit raw data in a public repository, publish your code, and record the genome build, annotation and tool versions (→ Part 11, Part 12).
+**Step 7b: share data, code and versions.** When two independent teams tried to repeat the analyses of 18 microarray papers, only 2 could be reproduced in principle, 6 partially and 10 not at all; the main reason was unavailable data (Ioannidis et al., 2009). The example is no exception: participant-level data from Dong et al. (2022) are available only on request, if the corresponding author agrees. Deposit raw data in a public repository, publish your code, and record the genome build, annotation and tool versions (→ [Part 11](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/), Part 12).
 
 **Table 4.** Dong et al. (2022) read through the 7 steps
 

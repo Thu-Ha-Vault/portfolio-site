@@ -157,7 +157,7 @@ Salmon produces transcript-level estimates, but the question is usually at the g
 | Transcript level | Needs an extra tool | Built in |
 | Downstream use | Variants, splicing, visual inspection | Gene- and transcript-level differential expression |
 
-A common trap when reanalyzing public data: the processed tables on GEO are often not counts. GSE94660 provides only an "RPKM_normalized" table (Yoo et al., 2017); GSE124535, the 35-pair HCC set from Jiang et al. (2019), provides only FPKM from TopHat/Cufflinks according to its GEO description. DESeq2 needs unnormalized counts or estimated counts (Love et al., 2014), so you have to start again from FASTQ. RPKM/FPKM tables are only useful for checking the direction of change. If you would rather not chain the tools yourself, nf-core/rnaseq runs the whole pipeline with a QC report (see the article on reproducible workflows).
+A common trap when reanalyzing public data: the processed tables on GEO are often not counts. GSE94660 provides only an "RPKM_normalized" table (Yoo et al., 2017); GSE124535, the 35-pair HCC set from Jiang et al. (2019), provides only FPKM from TopHat/Cufflinks according to its GEO description. DESeq2 needs unnormalized counts or estimated counts (Love et al., 2014), so you have to start again from FASTQ. RPKM/FPKM tables are only useful for checking the direction of change. If you would rather not chain the tools yourself, nf-core/rnaseq runs the whole pipeline with a QC report (see [the article on reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 <div class="callout callout-warning">
 <p class="callout-title">Common mistakes at the quantification step</p>

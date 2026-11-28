@@ -148,7 +148,7 @@ Buffalo (2015) advises treating all data as read-only: instead of editing Excel 
 - Record every processing step, preferably in a script; for manual operations, write down exactly what was done.
 - Give each record a unique identifier, in the same format in every table: “14025” in one table and “014025” in another will make a join miss.
 
-Ellis and Leek (2018) recommend giving the analyst the raw data, together with information about the experiment and every preprocessing step. Tracing back through the data flow during diagnosis requires an intact original, such as the read-only `data/raw/` folder in Reproducible workflows.
+Ellis and Leek (2018) recommend giving the analyst the raw data, together with information about the experiment and every preprocessing step. Tracing back through the data flow during diagnosis requires an intact original, such as the read-only `data/raw/` folder in [Reproducible workflows](/en/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## 4. A documented cleaning workflow: a runnable example
 

@@ -470,7 +470,7 @@ Checklist dưới đây áp dụng được cho số liệu thí nghiệm sinh h
 4. **Hỏi người thu thập vì sao thiếu** và ghi giả định MCAR, MAR hay MNAR; nếu có thể MNAR, lên kế hoạch phân tích độ nhạy.
 5. **Kiểm tra phụ thuộc hàm**: biến thiếu có cố định theo một khoá (mã sản phẩm, mã cá thể, mã mẫu) không? Nếu có, tra cứu trước.
 6. **Chọn phương pháp theo cơ chế**: xoá hàng chỉ khi gần MCAR và mất ít dòng; tránh thay bằng trung bình cho suy luận; dùng MI khi MAR hợp lý, với các biến giải thích cả sự thiếu lẫn giá trị thiếu trong mô hình điền (White et al., 2011), và đọc cảnh báo như `imp$loggedEvents`.
-7. **Báo cáo đầy đủ**: số dòng trước và sau, phương pháp, số bộ điền, biến trong mô hình điền, phiên bản gói và seed (Sterne et al., 2009); dùng đường dẫn tương đối thay cho `setwd()` tới thư mục tuyệt đối (Wilson et al., 2017; xem thêm quy trình tái lập).
+7. **Báo cáo đầy đủ**: số dòng trước và sau, phương pháp, số bộ điền, biến trong mô hình điền, phiên bản gói và seed (Sterne et al., 2009); dùng đường dẫn tương đối thay cho `setwd()` tới thư mục tuyệt đối (Wilson et al., 2017; xem thêm [quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/)).
 
 Các bài sau trong series luyện tiếp những thao tác này: [bài tập R cơ bản](/blog/bai-tap-r-co-ban-buoi-5-buoi-6-va-buoi-7/), [hồi quy trên dữ liệu nhà ở Boston](/blog/tieu-luan-van-dung-r-phan-tich-du-lieu-nha-o-boston/) và [thống kê mô tả](/blog/data-exploration-using-descriptive-statistics/) với trung vị và giá trị ngoại lai.
 

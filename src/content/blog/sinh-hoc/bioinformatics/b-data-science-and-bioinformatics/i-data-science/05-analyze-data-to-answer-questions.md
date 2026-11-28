@@ -522,7 +522,7 @@ Data validation thường được chia thành sáu loại: năm loại đầu k
 | Data structure | Bảng đã ở dạng tidy trước khi gộp chưa? | file GTEx ở dạng rộng (54 cột mô): chọn một cột hoặc chuyển sang dạng dài bằng `melt()` |
 | Code validation | Chạy lại từ đầu có ra cùng kết quả không? Code có đúng trên bảng nhỏ đã biết đáp án không? | bảng trích ở mục 2.3; so hai công cụ độc lập |
 
-Mỗi loại chỉ bắt được một kiểu lỗi. Khoá đúng kiểu vẫn có thể trùng; khoá duy nhất vẫn có thể lỗi thời; số dòng và tổng khớp nhau vẫn chưa nói được phép ghép có đúng gen hay không. Dữ liệu qua hết checklist vẫn có thể sai, nên checklist không thay cho việc đọc danh sách dòng không khớp. Về cách tổ chức dự án để chạy lại được từ đầu, xem Quy trình tái lập.
+Mỗi loại chỉ bắt được một kiểu lỗi. Khoá đúng kiểu vẫn có thể trùng; khoá duy nhất vẫn có thể lỗi thời; số dòng và tổng khớp nhau vẫn chưa nói được phép ghép có đúng gen hay không. Dữ liệu qua hết checklist vẫn có thể sai, nên checklist không thay cho việc đọc danh sách dòng không khớp. Về cách tổ chức dự án để chạy lại được từ đầu, xem [Quy trình tái lập](/blog/quy-trinh-tai-lap-workflow-container-hpc-va-cloud/).
 
 ## 6. Kết luận
 
