@@ -97,7 +97,7 @@ More than 100,000 self-selected records, with a correlation of only 0.006, give 
 
 **Figure 2.** Error in an estimated proportion by sample size: simple random sample versus a slightly biased self-selected sample (simulated data, same model as the code above).
 
-Sample-size and margin-of-error calculators all assume random sampling, so they measure only random error: the "±1%" attached to an online survey with a huge number of respondents says nothing about self-selection bias (→ sampling and statistical inference).
+Sample-size and margin-of-error calculators all assume random sampling, so they measure only random error: the "±1%" attached to an online survey with a huge number of respondents says nothing about self-selection bias (→ [sampling and statistical inference](/en/blog/statistic-and-regression/)).
 
 ### 2.2. Four common types of bias, compared with the scientific literature
 

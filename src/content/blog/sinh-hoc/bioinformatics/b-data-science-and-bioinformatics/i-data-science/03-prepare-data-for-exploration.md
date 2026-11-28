@@ -97,7 +97,7 @@ Hơn 100.000 bản ghi tự chọn, với tương quan chỉ 0,006, cho sai số
 
 **Hình 2.** Sai số ước lượng tỉ lệ theo cỡ mẫu: mẫu ngẫu nhiên đơn giản so với mẫu tự chọn có thiên lệch nhẹ (dữ liệu mô phỏng, cùng mô hình với code trên).
 
-Các công cụ tính cỡ mẫu và sai số biên (margin of error) đều giả định mẫu ngẫu nhiên, nên chỉ đo sai số ngẫu nhiên: con số "±1%" của một khảo sát online đông người trả lời không phản ánh thiên lệch tự chọn (→ lấy mẫu và suy diễn thống kê).
+Các công cụ tính cỡ mẫu và sai số biên (margin of error) đều giả định mẫu ngẫu nhiên, nên chỉ đo sai số ngẫu nhiên: con số "±1%" của một khảo sát online đông người trả lời không phản ánh thiên lệch tự chọn (→ [lấy mẫu và suy diễn thống kê](/blog/statistic-and-regression/)).
 
 ### 2.2. Bốn loại bias thường gặp, đối chiếu với tài liệu khoa học
 

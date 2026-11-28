@@ -8,7 +8,7 @@
     },
     {
       "topic": "ai-development",
-      "notes": 1,
+      "notes": 2,
       "url": "/topics/ai-development/",
       "title": "AI và DEV"
     },
@@ -29,7 +29,7 @@
     {
       "a": "ai-development",
       "b": "biology",
-      "weight": 8
+      "weight": 10
     },
     {
       "a": "biology",

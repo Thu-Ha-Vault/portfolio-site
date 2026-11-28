@@ -343,7 +343,7 @@ Gặp một danh sách "top 10", hãy hỏi ai chọn, năm nào, theo tiêu ch�
 
 Dự báo không phải nhân quả. Tương quan giữa truy vấn và ILI không cho biết vì sao hai chuỗi đi cùng nhau. Một truy vấn có thể tăng vì người ốm tìm thuốc, vì báo chí đưa tin, hay chỉ vì mùa đông. Mô hình dự báo không phân biệt được các trường hợp này cho đến khi chúng tách ra, như năm 2009 và mùa 2012/13 (→ Causal Inference).
 
-Dữ liệu sinh ra từ một nền tảng sẽ đổi khi nền tảng đổi. Trên nền tảng học trực tuyến, số lần xem video có thể mang ý nghĩa khác sau khi giao diện thay đổi; đây là câu hỏi mở cho bài về AI in Education, chưa phải kết luận. Chất lượng dữ liệu trước khi chạy hồi quy được bàn trong Statistic and Regression.
+Dữ liệu sinh ra từ một nền tảng sẽ đổi khi nền tảng đổi. Trên nền tảng học trực tuyến, số lần xem video có thể mang ý nghĩa khác sau khi giao diện thay đổi; đây là câu hỏi mở cho bài về AI in Education, chưa phải kết luận. Chất lượng dữ liệu trước khi chạy hồi quy được bàn trong [Statistic and Regression](/blog/statistic-and-regression/).
 
 Minh bạch là một phần của độ tin cậy. Lazer et al. (2014) chỉ ra rằng tài liệu công bố của GFT không đủ để người ngoài tái lập. ARGO mô tả đủ công thức, cấu hình và nguồn dữ liệu để người khác chạy lại. Theo nghĩa của Fayyad et al. (1996a), một mẫu chỉ "hợp lệ trên dữ liệu mới" khi người khác có thể đưa dữ liệu mới vào để kiểm tra.
 
