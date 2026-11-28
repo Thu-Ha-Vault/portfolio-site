@@ -304,7 +304,7 @@ Trong thực hành, một trình tự câu hỏi đơn giản giúp chọn chi�
 
 **WGCNA** dựng mạng tương quan có trọng số và các module gen đồng biểu hiện (Langfelder & Horvath, 2008). Bản chất đây là phân tích **một tầng**, thường là biểu hiện gen; module có thể được đối chiếu với tầng khác sau đó, nhưng WGCNA không tự nó là phương pháp tích hợp.
 
-**Benchmark.** Cantini et al. (2021) so sánh 9 phương pháp giảm chiều kết hợp (joint dimensionality reduction, jDR) trên dữ liệu mô phỏng, TCGA (dự đoán sống còn, chú giải lâm sàng, pathway) và đơn bào. intNMF tốt nhất về phân cụm, MCIA ổn định trong nhiều bối cảnh; không phương pháp nào thắng ở mọi tiêu chí. Với người mới, chạy hai phương pháp khác nhau rồi so kết quả đáng làm hơn đi tìm "phương pháp tốt nhất". Phần tích hợp sâu bằng deep learning được bàn ở phần machine learning.
+**Benchmark.** Cantini et al. (2021) so sánh 9 phương pháp giảm chiều kết hợp (joint dimensionality reduction, jDR) trên dữ liệu mô phỏng, TCGA (dự đoán sống còn, chú giải lâm sàng, pathway) và đơn bào. intNMF tốt nhất về phân cụm, MCIA ổn định trong nhiều bối cảnh; không phương pháp nào thắng ở mọi tiêu chí. Với người mới, chạy hai phương pháp khác nhau rồi so kết quả đáng làm hơn đi tìm "phương pháp tốt nhất". Phần tích hợp sâu bằng deep learning được bàn ở [phần machine learning](/blog/machine-learning-va-ai-trong-sinh-hoc/).
 
 ### 5.3 Thực tế dữ liệu TCGA-LIHC
 

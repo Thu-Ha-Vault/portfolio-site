@@ -328,7 +328,7 @@ Trong thiết kế cân bằng, cả hai mô hình giữ FDP dưới 5%, và đ�
 
 ### 5.5. Thiết kế trước, mô hình sau, "sửa dữ liệu" sau cùng
 
-Nygaard et al. (2016) khuyên trước hết phải bảo đảm thiết kế cân bằng; nếu dữ liệu đã lệch một phần, đưa lô vào mô hình thống kê thay vì sửa dữ liệu trước rồi mới kiểm định. Các phương pháp chỉnh lô giữ lại khác biệt nhóm, như ComBat với nhóm làm covariate, có thể làm khoảng tin cậy hẹp giả tạo và phóng đại độ tin cậy của khác biệt giữa các nhóm khi thiết kế không cân bằng (Nygaard et al., 2016). ComBat dùng empirical Bayes để tránh chỉnh quá tay với lô nhỏ (Johnson et al., 2007), nhưng điều đó không giải quyết vấn đề thiết kế. Dữ liệu đã chỉnh lô hợp với trực quan hoá hoặc làm đầu vào machine learning, không hợp để tính p-value; trong machine learning, mô hình có thể học lô thay vì học sinh học (xem bài về machine learning trong sinh học).
+Nygaard et al. (2016) khuyên trước hết phải bảo đảm thiết kế cân bằng; nếu dữ liệu đã lệch một phần, đưa lô vào mô hình thống kê thay vì sửa dữ liệu trước rồi mới kiểm định. Các phương pháp chỉnh lô giữ lại khác biệt nhóm, như ComBat với nhóm làm covariate, có thể làm khoảng tin cậy hẹp giả tạo và phóng đại độ tin cậy của khác biệt giữa các nhóm khi thiết kế không cân bằng (Nygaard et al., 2016). ComBat dùng empirical Bayes để tránh chỉnh quá tay với lô nhỏ (Johnson et al., 2007), nhưng điều đó không giải quyết vấn đề thiết kế. Dữ liệu đã chỉnh lô hợp với trực quan hoá hoặc làm đầu vào machine learning, không hợp để tính p-value; trong machine learning, mô hình có thể học lô thay vì học sinh học (xem [bài về machine learning trong sinh học](/blog/machine-learning-va-ai-trong-sinh-hoc/)).
 
 ## 6. Checklist đọc một bảng kết quả DE
 

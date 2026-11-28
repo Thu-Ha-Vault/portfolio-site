@@ -184,7 +184,7 @@ print(psm.to_string(index=False))
 
 The first four PSMs have q = 0. The PSM scoring 60 has an FDR of 0.20 but q ≈ 0.14: lowering the cutoff to 55 still keeps it in the list, and at 55 there is 1 decoy against 7 targets.
 
-Each PSM carries many features besides its main score. Percolator uses semi-supervised learning, with decoy PSMs as negative examples, to combine those features and separate correct PSMs from wrong ones more effectively (Käll et al., 2007). It was an early use of machine learning in proteomics; Article 10 comes back to this topic.
+Each PSM carries many features besides its main score. Percolator uses semi-supervised learning, with decoy PSMs as negative examples, to combine those features and separate correct PSMs from wrong ones more effectively (Käll et al., 2007). It was an early use of machine learning in proteomics; [Article 10](/en/blog/machine-learning-va-ai-trong-sinh-hoc/) comes back to this topic.
 
 ### 3.3. FDR by level: PSM, peptide, protein
 

@@ -354,7 +354,7 @@ Erlich và Narayanan (2014) hệ thống hoá các con đường xâm phạm quy
 **Tầng 1: Đại diện**
 - Ai được lấy mẫu, ai bị bỏ sót (Popejoy & Fullerton, 2016)? Dữ liệu từ lấy mẫu xác suất hay tự đăng ký? Không có lấy mẫu xác suất thì cỡ mẫu lớn không bù được thiên lệch (Meng, 2018).
 - Người đo, người chấm kết cục có được làm mù không (Hróbjartsson et al., 2012)?
-- Dữ liệu dùng huấn luyện mô hình thì thiên lệch trong mẫu thành thiên lệch trong dự đoán (→ machine learning trong sinh học).
+- Dữ liệu dùng huấn luyện mô hình thì thiên lệch trong mẫu thành thiên lệch trong dự đoán (→ [machine learning trong sinh học](/blog/machine-learning-va-ai-trong-sinh-hoc/)).
 
 **Tầng 2: Mô tả**
 - Có accession ổn định, ngày tải, phiên bản genome, annotation, platform không (Buffalo, 2015)?

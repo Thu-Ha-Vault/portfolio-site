@@ -255,7 +255,7 @@ Suppose the command `blastp -outfmt "6 qseqid sseqid pident length evalue bitsco
 
 ### 3.4. When the data get too big
 
-With millions of queries, DIAMOND (Buchfink et al., 2015) and MMseqs2 (Steinegger & Söding, 2017) replace BLAST for large-scale protein searches. MMseqs2 is also used to split training and test sets by homology clusters, a topic of the article on machine learning in biology.
+With millions of queries, DIAMOND (Buchfink et al., 2015) and MMseqs2 (Steinegger & Söding, 2017) replace BLAST for large-scale protein searches. MMseqs2 is also used to split training and test sets by homology clusters, a topic of the [article on machine learning in biology](/en/blog/machine-learning-va-ai-trong-sinh-hoc/).
 
 ## 4. Homologs, orthologs, paralogs: the trap in the p53 family
 

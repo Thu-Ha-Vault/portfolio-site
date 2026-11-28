@@ -354,7 +354,7 @@ Erlich and Narayanan (2014) systematized the routes for breaching genetic privac
 **Layer 1: Representation**
 - Who was sampled, and who was left out (Popejoy & Fullerton, 2016)? Does the data come from probability sampling or from self-registration? Without probability sampling, a large sample size cannot make up for bias (Meng, 2018).
 - Were the people measuring or assessing outcomes blinded (Hróbjartsson et al., 2012)?
-- If the data is used to train a model, bias in the sample becomes bias in the predictions (→ machine learning in biology).
+- If the data is used to train a model, bias in the sample becomes bias in the predictions (→ [machine learning in biology](/en/blog/machine-learning-va-ai-trong-sinh-hoc/)).
 
 **Layer 2: Description**
 - Are there stable accessions, download dates, and genome, annotation, and platform versions (Buffalo, 2015)?

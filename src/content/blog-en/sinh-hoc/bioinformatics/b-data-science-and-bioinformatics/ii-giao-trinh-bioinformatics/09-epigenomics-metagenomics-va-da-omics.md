@@ -305,7 +305,7 @@ In practice, a simple sequence of questions helps you choose a strategy:
 
 **WGCNA** builds weighted correlation networks and modules of co-expressed genes (Langfelder & Horvath, 2008). At its core it is a **single-layer** analysis, usually of gene expression; modules can be compared with other layers afterward, but WGCNA is not an integration method in itself.
 
-**Benchmark.** Cantini et al. (2021) compared 9 joint dimensionality reduction (jDR) methods on simulated data, TCGA (survival prediction, clinical annotation, pathways) and single-cell data. intNMF was best at clustering and MCIA was consistently solid across settings; no method won on every criterion. For beginners, running two different methods and comparing the results is worth more than hunting for "the best method." Integration with deep learning is covered in the machine learning part.
+**Benchmark.** Cantini et al. (2021) compared 9 joint dimensionality reduction (jDR) methods on simulated data, TCGA (survival prediction, clinical annotation, pathways) and single-cell data. intNMF was best at clustering and MCIA was consistently solid across settings; no method won on every criterion. For beginners, running two different methods and comparing the results is worth more than hunting for "the best method." Integration with deep learning is covered in the [machine learning part](/en/blog/machine-learning-va-ai-trong-sinh-hoc/).
 
 ### 5.3 What TCGA-LIHC data actually look like
 

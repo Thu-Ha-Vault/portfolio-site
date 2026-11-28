@@ -252,7 +252,7 @@ Giả sử lệnh `blastp -outfmt "6 qseqid sseqid pident length evalue bitscore
 
 ### 3.4. Khi dữ liệu quá lớn
 
-Với hàng triệu truy vấn, DIAMOND (Buchfink et al., 2015) và MMseqs2 (Steinegger & Söding, 2017) thay BLAST cho tìm kiếm protein quy mô lớn. MMseqs2 còn dùng để chia tập huấn luyện và kiểm tra theo cụm tương đồng, chủ đề của bài về machine learning trong sinh học.
+Với hàng triệu truy vấn, DIAMOND (Buchfink et al., 2015) và MMseqs2 (Steinegger & Söding, 2017) thay BLAST cho tìm kiếm protein quy mô lớn. MMseqs2 còn dùng để chia tập huấn luyện và kiểm tra theo cụm tương đồng, chủ đề của [bài về machine learning trong sinh học](/blog/machine-learning-va-ai-trong-sinh-hoc/).
 
 ## 4. Homolog, ortholog, paralog: bẫy trong họ p53
 

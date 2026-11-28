@@ -183,7 +183,7 @@ print(psm.to_string(index=False))
 
 Bốn PSM đầu có q = 0. PSM điểm 60 có FDR 0,20 nhưng q ≈ 0,14: hạ ngưỡng xuống 55 vẫn giữ nó trong danh sách, và ở ngưỡng 55 có 1 decoy so với 7 target.
 
-Mỗi PSM còn nhiều đặc trưng khác ngoài điểm chính. Percolator dùng học bán giám sát, lấy PSM decoy làm ví dụ âm, để kết hợp các đặc trưng đó và tách PSM đúng khỏi PSM sai tốt hơn (Käll et al., 2007). Đây là một ứng dụng sớm của học máy trong proteomics; bài 10 sẽ quay lại chủ đề này.
+Mỗi PSM còn nhiều đặc trưng khác ngoài điểm chính. Percolator dùng học bán giám sát, lấy PSM decoy làm ví dụ âm, để kết hợp các đặc trưng đó và tách PSM đúng khỏi PSM sai tốt hơn (Käll et al., 2007). Đây là một ứng dụng sớm của học máy trong proteomics; [bài 10](/blog/machine-learning-va-ai-trong-sinh-hoc/) sẽ quay lại chủ đề này.
 
 ### 3.3. FDR theo cấp: PSM, peptide, protein
 
